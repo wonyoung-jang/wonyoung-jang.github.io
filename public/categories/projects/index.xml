@@ -8,22 +8,23 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoung-jang.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Projects - Software Development</title>
-      <link>https://wonyoung-jang.github.io/pages/projects-software-development/</link>
+      <title>Software Development Projects</title>
+      <link>https://wonyoung-jang.github.io/pages/software-development-projects/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/projects-software-development/</guid>
-      <description>Logseq Markdown Tokenizer
+      <guid>https://wonyoung-jang.github.io/pages/software-development-projects/</guid>
+      <description>FIRST LEGO League Challenge Q-Learning Event Scheduler
+Logseq Markdown Tokenizer
 Save Top Level Reddit Comments
-Projects - University</description>
+University Coursework Projects</description>
     </item>
     
     <item>
-      <title>Projects - University</title>
-      <link>https://wonyoung-jang.github.io/pages/projects-university/</link>
+      <title>University Coursework Projects</title>
+      <link>https://wonyoung-jang.github.io/pages/university-coursework-projects/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/projects-university/</guid>
+      <guid>https://wonyoung-jang.github.io/pages/university-coursework-projects/</guid>
       <description>About This page holds a collection of projects I developed for the completion of my computer science degree coursework.
 Organized by Language Python Package Delivery Route Optimization
 C++ Student Record System
@@ -34,6 +35,15 @@ AIML CS Career Recommendation Chatbot
 Lua Disaster Recovery Robot Simulation
 SQL Bagel Corner and Mister Coffee Database Management
 DVD Rental Database Revenue Insights</description>
+    </item>
+    
+    <item>
+      <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
+      <link>https://wonyoung-jang.github.io/pages/first-lego-league-challenge-q-learning-event-scheduler/</link>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoung-jang.github.io/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
+      <description>GitHub: @fllc-qlearning-scheduler</description>
     </item>
     
     <item>

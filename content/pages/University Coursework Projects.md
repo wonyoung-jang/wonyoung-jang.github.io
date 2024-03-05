@@ -4,7 +4,7 @@ tags:
 - None
 categories:
 - Projects
-title: Projects - University
+title: University Coursework Projects
 lastMod: 2024-03-05
 ---
 ## About
