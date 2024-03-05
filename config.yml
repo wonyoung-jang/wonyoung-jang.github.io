@@ -6,7 +6,7 @@ theme: "PaperMod"
 params:
   homeInfoParams:
     Title: Wonyoung Jang
-    Content: Home Content
+    Content: Hi, I'm Wonyoung.
 
   socialIcons: # optional
     - name: "github"
@@ -58,7 +58,7 @@ menu:
       name: Search
       url: /search/
       weight: 20
-    - identifier: archive
-      name: Archive
+    - identifier: archives
+      name: Archives
       url: /archives/
       weight: 20
