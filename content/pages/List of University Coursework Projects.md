@@ -1,10 +1,9 @@
 ---
 date: 2024-03-05
-tags:
-- None
 categories:
 - Projects
-title: University Coursework Projects
+title: List of University Coursework Projects
+tags:
 lastMod: 2024-03-05
 ---
 ## About

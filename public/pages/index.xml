@@ -8,33 +8,23 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoung-jang.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Software Development Projects</title>
-      <link>https://wonyoung-jang.github.io/pages/software-development-projects/</link>
+      <title>List of Software Development Projects</title>
+      <link>https://wonyoung-jang.github.io/pages/list-of-software-development-projects/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/software-development-projects/</guid>
-      <description>FIRST LEGO League Challenge Q-Learning Event Scheduler
+      <guid>https://wonyoung-jang.github.io/pages/list-of-software-development-projects/</guid>
+      <description>Python FIRST LEGO League Challenge Q-Learning Event Scheduler
 Logseq Markdown Tokenizer
 Save Top Level Reddit Comments
-This Website
-University Coursework Projects</description>
+HTML, CSS, Javascript This Website </description>
     </item>
     
     <item>
-      <title>This Website</title>
-      <link>https://wonyoung-jang.github.io/pages/this-website/</link>
+      <title>List of University Coursework Projects</title>
+      <link>https://wonyoung-jang.github.io/pages/list-of-university-coursework-projects/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/this-website/</guid>
-      <description>GitHub: @wonyoung-jang.github.io</description>
-    </item>
-    
-    <item>
-      <title>University Coursework Projects</title>
-      <link>https://wonyoung-jang.github.io/pages/university-coursework-projects/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoung-jang.github.io/pages/university-coursework-projects/</guid>
+      <guid>https://wonyoung-jang.github.io/pages/list-of-university-coursework-projects/</guid>
       <description>About This page holds a collection of projects I developed for the completion of my computer science degree coursework.
 Organized by Language Python Package Delivery Route Optimization
 C++ Student Record System
@@ -45,6 +35,15 @@ AIML CS Career Recommendation Chatbot
 Lua Disaster Recovery Robot Simulation
 SQL Bagel Corner and Mister Coffee Database Management
 DVD Rental Database Revenue Insights</description>
+    </item>
+    
+    <item>
+      <title>This Website</title>
+      <link>https://wonyoung-jang.github.io/pages/this-website/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoung-jang.github.io/pages/this-website/</guid>
+      <description>GitHub: @wonyoung-jang.github.io</description>
     </item>
     
     <item>

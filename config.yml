@@ -6,9 +6,20 @@ theme: "PaperMod"
 params:
   homeInfoParams:
     Title: Wonyoung Jang
-    Content: Hi, I'm Wonyoung.
+    Content: "
+      [Search: To search for projects and posts.](/search)
 
-  socialIcons: # optional
+
+      [Categories: To browse posts by category.](/categories)
+      
+
+      [Archives: To browse posts by date.](/archives)
+
+
+      [About: To learn more about me and this site.](/about)
+    "
+  # Social Icons
+  socialIcons:
     - name: "github"
       url: "https://github.com/wonyoung-jang"
     # - name: "youtube"
@@ -21,10 +32,14 @@ params:
     #   url: "https://XXX.github.io/index.xml"
   ShowReadingTime: true
   author: "Wonyoung Jang"
-  # contact: "LinusT@example.com"
+  ShowCodeCopyButtons: true
+  ShowShareButtons: true
   feedlinks: true
-  copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
   mobileMenu: true
+  copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+  assets:
+      disableHLJS: true
+      favicon: TODO
 
 # Google Analytics 4 optional
 #  env: #production
@@ -38,27 +53,31 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary
-  section:
-    - HTML
-    - RSS
     - JSON
+  #section:
+  #  - HTML
+  #  - RSS
+  #  - JSON
 
 menu:
   main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
     - identifier: search
       name: Search
       url: /search/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
       weight: 20
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 20
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about
+      weight: 40
+    #- identifier: tags
+    #  name: Tags
+    #  url: /tags/
+    #  weight: 30

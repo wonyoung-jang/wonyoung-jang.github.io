@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
-
+    
 <head>
     {{- partial "head.html" . }}
     {{ if .Site.Params.GoogleAnalytics }}
     {{ partial "analytics-gtag.html" . }}
     {{ end }}
+    <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
 </head>
 
 <body class="
-{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`) (eq .Layout `about`)) -}}
 {{- print "list" -}}
 {{- end -}}
 {{- if eq $.Site.Params.defaultTheme `dark` -}}

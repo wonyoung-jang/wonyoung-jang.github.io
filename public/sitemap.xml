@@ -5,7 +5,10 @@
     <loc>https://wonyoung-jang.github.io/categories/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/tags/none/</loc>
+    <loc>https://wonyoung-jang.github.io/pages/list-of-software-development-projects/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoung-jang.github.io/pages/list-of-university-coursework-projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/</loc>
@@ -14,16 +17,10 @@
     <loc>https://wonyoung-jang.github.io/categories/projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/pages/software-development-projects/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoung-jang.github.io/tags/</loc>
+    <loc>https://wonyoung-jang.github.io/categories/software-development-projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/this-website/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoung-jang.github.io/pages/university-coursework-projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/</loc>
@@ -36,6 +33,9 @@
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/disaster-recovery-robot-simulation/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoung-jang.github.io/categories/university-coursework-projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/cs-career-recommendation-chatbot/</loc>
@@ -65,8 +65,12 @@
     <loc>https://wonyoung-jang.github.io/pages/bagel-corner-and-mister-coffee-database-management/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://wonyoung-jang.github.io/about/</loc>
+  </url><url>
     <loc>https://wonyoung-jang.github.io/archives/</loc>
   </url><url>
     <loc>https://wonyoung-jang.github.io/search/</loc>
+  </url><url>
+    <loc>https://wonyoung-jang.github.io/tags/</loc>
   </url>
 </urlset>
