@@ -7,18 +7,7 @@ theme: ["PaperMod"]
 params:
   homeInfoParams:
     Title: Wonyoung Jang
-    Content: "
-      [Search: To search for projects and posts.](/search)
-
-
-      [Categories: To browse posts by category.](/categories)
-      
-
-      [Archives: To browse posts by date.](/archives)
-
-
-      [About: To learn more about me and this site.](/about)
-    "
+    Content: "Hello! You may find me at:"
   # Social Icons
   socialIcons:
     - name: "github"
@@ -41,6 +30,10 @@ params:
   assets:
       disableHLJS: true
       favicon: TODO
+
+ignoreFiles:
+  \.zip$
+
 markup:
   tableOfContents:
     startLevel: 1

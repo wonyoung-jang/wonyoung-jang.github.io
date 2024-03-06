@@ -1,31 +1,34 @@
-{{ $re := $.File.BaseFileName }} {{ $backlinks := slice }} {{ range where
-.Site.RegularPages "Type" "page" }} {{ if and (findRE $re .RawContent) (not (eq
-$re .File.BaseFileName)) }} {{ $backlinks = $backlinks | append . }} {{ end }}
-{{ end }} {{ if gt (len $backlinks) 0 }}
-<aside>
-  <h3>Backlinks</h3>
-  <div class="backlinks">
-    <ul>
-      {{ range $backlinks }}
-      <li class="capitalize"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
-  </div>
-</aside>
-{{ else }}
-<aside>
-  <h4>No notes link to this note</h4>
-</aside>
+{{ $re := $.File.BaseFileName }}
+{{ $backlinks := slice }}
+{{ range where .Site.RegularPages "Type" "pages" }}
+   {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+      {{ $backlinks = $backlinks | append . }}
+   {{ end }}
 {{ end }}
 
+<hr>
+{{ if gt (len $backlinks) 0 }}
+  <aside>
+    <h3>Linked From These Notes</h3>
+    <div class="backlinks">
+        <ul>
+          {{ range $backlinks }}
+              <p class="capitalize"><a style="color: var(--link);" href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+          {{ end }}
+        </ul>
+    </div>
+  </aside>
+{{ end }}
+
+<br>
 <aside class="related">
-  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3
-  -}} {{ with $related -}}
-  <h3>slightly related</h3>
-  <ul>
-    {{ range . -}}
-    <li class="capitalize"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end -}}
-  </ul>
+  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
+  {{ with $related -}}
+    <h3>Related Pages</h3>
+    <ul>
+      {{ range . -}}
+        <p class="capitalize"><a style="color: var(--link);" href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{ end -}}
+    </ul>
   {{ end -}}
 </aside>

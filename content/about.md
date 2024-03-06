@@ -18,3 +18,11 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 ## About this Site
 
 This site is hosted using [Hugo](https://gohugo.io/) and [GitHub Pages](https://pages.github.com/). It is created using [Logseq Schrodinger](https://github.com/sawhney17/logseq-schrodinger) to convert Logseq's markdown to suitable Hugo format markdown.
+
+You may navigate this site by going to:
+
+- [**Tags**: To browse posts by category.](/tags)
+- [**Search**: To search for projects and posts.](/search)
+- [**Archives**: To browse posts by date.](/archives)
+
+[The associated project for running this site is here.]({{< ref "/pages/This Website" >}})

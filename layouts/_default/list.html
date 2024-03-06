@@ -41,6 +41,7 @@
         {{- partial "home_info.html" . }}
     {{- end }}
 
+    <div class="posts-container">
     {{- $term := .Data.Term }}
     {{- range $index, $page := $paginator.Pages }}
         {{- $class := "post-entry" }}
@@ -51,28 +52,31 @@
         {{- else if $term }}
             {{- $class = "post-entry tag-entry" }}
         {{- end }}
-
         
         <article class="{{ $class }}">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
             {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            
+            {{- if .Params.coverimage }}
+                <img class="entry-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
+            {{- end }}
+            {{- if not (.Param "hideMeta") }}
+                <footer class="entry-footer">
+                    {{- partial "post_meta.html" . -}}
+                </footer>
+            {{- end }}
             <header class="entry-header">
                 <h2>
                     {{- .Title }}
                     {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
                 </h2>
             </header>
-
-            {{- if .Params.coverimage }} 
-                <img class="entry-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
-            {{- end }}
-
             {{- if (ne (.Param "hideSummary") true) }}
                 <section class="entry-content">
                     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
                 </section>
             {{- end }}
-            
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
             {{- if .Params.tags }}
                 <div class="tag-entry">
                     {{- range .Params.tags }}
@@ -80,17 +84,9 @@
                     {{- end }}
                 </div>
             {{- end }}
-            
-            {{- if not (.Param "hideMeta") }}
-                <footer class="entry-footer">
-                    <br>
-                    {{- partial "post_meta.html" . -}}
-                </footer>
-            {{- end }}
-
-            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
         </article>
     {{- end }}
+    </div>
 
     {{- if gt $paginator.TotalPages 1 }}
         <footer class="page-footer">

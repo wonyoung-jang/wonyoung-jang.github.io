@@ -2,10 +2,13 @@
 date: 2024-03-05
 tags:
 - Projects
+coverimage: ../assets/list_of_software_development_projects_1709750726693_0.png
 title: List of Software Development Projects
 categories:
-lastMod: 2024-03-05
+lastMod: 2024-03-06
 ---
+![List of Software Development Projects.png](/assets/list_of_software_development_projects_1709750726693_0.png)
+
 ## Python
 
   + [FIRST LEGO League Challenge Q-Learning Event Scheduler]({{< ref "/pages/FIRST LEGO League Challenge Q-Learning Event Scheduler" >}})
