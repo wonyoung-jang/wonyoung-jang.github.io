@@ -1,10 +1,10 @@
 ---
 date: 2024-01-28
 coverimage: ../assets/reddit_top_level_comments_1709664702436_0.png
-categories:
+tags:
 - Software Development Projects
 title: Save Top Level Reddit Comments
-tags:
+categories:
 lastMod: 2024-03-05
 ---
 ![reddit_top_level_comments.png](/assets/reddit_top_level_comments_1709664702436_0.png)

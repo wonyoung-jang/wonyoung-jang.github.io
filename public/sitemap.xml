@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wonyoung-jang.github.io/categories/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://wonyoung-jang.github.io/pages/list-of-software-development-projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,10 +11,13 @@
     <loc>https://wonyoung-jang.github.io/pages/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/categories/projects/</loc>
+    <loc>https://wonyoung-jang.github.io/tags/projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/categories/software-development-projects/</loc>
+    <loc>https://wonyoung-jang.github.io/tags/software-development-projects/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoung-jang.github.io/tags/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/this-website/</loc>
@@ -35,7 +35,7 @@
     <loc>https://wonyoung-jang.github.io/pages/disaster-recovery-robot-simulation/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/categories/university-coursework-projects/</loc>
+    <loc>https://wonyoung-jang.github.io/tags/university-coursework-projects/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/cs-career-recommendation-chatbot/</loc>
@@ -69,8 +69,10 @@
   </url><url>
     <loc>https://wonyoung-jang.github.io/archives/</loc>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/search/</loc>
+    <loc>https://wonyoung-jang.github.io/categories/</loc>
   </url><url>
-    <loc>https://wonyoung-jang.github.io/tags/</loc>
+    <loc>https://wonyoung-jang.github.io/contact/</loc>
+  </url><url>
+    <loc>https://wonyoung-jang.github.io/search/</loc>
   </url>
 </urlset>

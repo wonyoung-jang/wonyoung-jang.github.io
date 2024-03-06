@@ -1,9 +1,9 @@
 ---
 date: 2024-03-05
-categories:
+tags:
 - Projects
 title: List of Software Development Projects
-tags:
+categories:
 lastMod: 2024-03-05
 ---
 ## Python
@@ -14,6 +14,6 @@ lastMod: 2024-03-05
 
   + [Save Top Level Reddit Comments]({{< ref "/pages/Save Top Level Reddit Comments" >}})
 
-## HTML, CSS, Javascript
+## Go, Javascript, HTML, CSS
 
   + [This Website]({{< ref "/pages/This Website" >}})

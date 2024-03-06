@@ -16,7 +16,7 @@
       <description>Python FIRST LEGO League Challenge Q-Learning Event Scheduler
 Logseq Markdown Tokenizer
 Save Top Level Reddit Comments
-HTML, CSS, Javascript This Website </description>
+Go, Javascript, HTML, CSS This Website </description>
     </item>
     
     <item>
@@ -25,15 +25,10 @@ HTML, CSS, Javascript This Website </description>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/list-of-university-coursework-projects/</guid>
-      <description>About This page holds a collection of projects I developed for the completion of my computer science degree coursework.
-Organized by Language Python Package Delivery Route Optimization
-C++ Student Record System
-Java, HTML, CSS Retail Inventory Manager
+      <description>About This page holds a collection of projects I developed for the completion of my computer science degree coursework. Python Package Delivery Route Optimization C++ Student Record System Java, HTML, CSS Retail Inventory Manager
 Vacation Cart Manager
 Hotel Reservation Manager
-AIML CS Career Recommendation Chatbot
-Lua Disaster Recovery Robot Simulation
-SQL Bagel Corner and Mister Coffee Database Management
+AIML CS Career Recommendation Chatbot Lua Disaster Recovery Robot Simulation SQL Bagel Corner and Mister Coffee Database Management
 DVD Rental Database Revenue Insights</description>
     </item>
     
@@ -163,6 +158,15 @@ DVD Rental Database Revenue Insights</description>
       <description>about</description>
     </item>
     
+    
+    <item>
+      <title>Contact</title>
+      <link>https://wonyoung-jang.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoung-jang.github.io/contact/</guid>
+      <description></description>
+    </item>
     
     
   </channel>
