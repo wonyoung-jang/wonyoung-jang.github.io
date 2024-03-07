@@ -1,11 +1,11 @@
 ---
 date: 2024-03-05
 tags:
-- Projects
+- Lists
 coverimage: ../assets/list_of_software_development_projects_1709750726693_0.png
 title: List of Software Development Projects
 categories:
-lastMod: 2024-03-06
+lastMod: 2024-03-07
 ---
 ![List of Software Development Projects.png](/assets/list_of_software_development_projects_1709750726693_0.png)
 

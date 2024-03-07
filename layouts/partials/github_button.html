@@ -1,0 +1,4 @@
+{{ $repoName := split .githubRepo "/" | last 1 }}
+<a href="https://github.com/{{ .githubRepo }}" class="github-button" target="_blank" rel="noopener noreferrer">
+    View the Source on GitHub: @{{ index $repoName 0 }}
+</a>

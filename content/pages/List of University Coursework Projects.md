@@ -1,11 +1,11 @@
 ---
 date: 2024-03-05
 tags:
-- Projects
+- Lists
 coverimage: ../assets/list_of_university_coursework_projects_1709750754129_0.png
 title: List of University Coursework Projects
 categories:
-lastMod: 2024-03-06
+lastMod: 2024-03-07
 ---
 ![List of University Coursework Projects.png](/assets/list_of_university_coursework_projects_1709750754129_0.png)
 

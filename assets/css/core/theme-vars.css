@@ -1,0 +1,40 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(255, 240, 255); /* Light purple background */
+    --entry: rgb(250, 235, 250); /* Slightly lighter purple for entry */
+    --primary: rgb(75, 0, 130); /* Indigo for primary text */
+    --secondary: rgb(147, 112, 219); /* Medium purple for secondary text */
+    --tertiary: rgb(216, 191, 216); /* Thistle for tertiary elements */
+    --content: rgb(75, 0, 130); /* Indigo for content */
+    --hljs-bg: rgb(233, 230, 255); /* Very light purple for code highlight background */
+    --code-bg: rgb(240, 230, 255); /* Light purple for code blocks */
+    --border: rgb(221, 160, 221); /* Plum for borders */
+    --link: #8a2be2; /* BlueViolet for links */
+}
+
+.dark {
+    --theme: rgb(19, 12, 26); /* Darker purple for the dark theme background */
+    --entry: rgb(34, 0, 61); /* Darker indigo for entry */
+    --primary: rgb(200, 198, 255); /* Slightly darker purple for primary text */
+    --secondary: rgb(175, 150, 195); /* Darker thistle for secondary text */
+    --tertiary: rgb(123, 90, 179); /* Darker medium purple for tertiary elements */
+    --content: rgb(200, 198, 255); /* Slightly darker purple for content */
+    --hljs-bg: rgb(55, 0, 100); /* Darker indigo for code highlight background */
+    --code-bg: rgb(19, 12, 26); /* Darker purple for code blocks */
+    --border: rgb(55, 0, 100); /* Darker indigo for borders */
+    --link: #7a57d1; /* Darker medium purple for links */
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.dark.list {
+    background: var(--theme);
+}
