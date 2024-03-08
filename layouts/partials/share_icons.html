@@ -4,16 +4,25 @@
 {{- $.Scratch.Set "tags" ""}}
 
 {{- with .Params.Tags }}
-{{- $hashtags := newScratch}}
-{{- range . }}{{ $hashtags.Add "tags" (slice (replaceRE "(\\s)" "" . ))}}{{end}}
-{{- $.Scratch.Set "tags" (delimit ($hashtags.Get "tags") ",") }}
+    {{- $hashtags := newScratch}}
+
+    {{- range . }}
+        {{ $hashtags.Add "tags" (slice (replaceRE "(\\s)" "" . ))}}
+    {{end}}
+
+    {{- $.Scratch.Set "tags" (delimit ($hashtags.Get "tags") ",") }}
 {{- end -}}
 
 {{- $custom := false }}
 {{- $ShareButtons := (.Param "ShareButtons")}}
-{{- with $ShareButtons }}{{ $custom = true }}{{ end }}
 
+{{- with $ShareButtons }}
+    {{ $custom = true }}
+{{ end }}
+<hr>
+<br>
 <div class="share-buttons">
+    <span class="share-text">Share:</span>
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) }}
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on twitter"
         href="https://twitter.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "tags" -}}">

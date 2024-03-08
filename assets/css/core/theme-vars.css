@@ -16,6 +16,7 @@
     --code-bg: rgb(240, 230, 255); /* Light purple for code blocks */
     --border: rgb(221, 160, 221); /* Plum for borders */
     --link: #8a2be2; /* BlueViolet for links */
+    --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
 }
 
 .dark {
@@ -29,6 +30,7 @@
     --code-bg: rgb(19, 12, 26); /* Darker purple for code blocks */
     --border: rgb(55, 0, 100); /* Darker indigo for borders */
     --link: #7a57d1; /* Darker medium purple for links */
+    --shadow: rgb(83, 79, 90); /* Plum for shadows */
 }
 
 .list {
