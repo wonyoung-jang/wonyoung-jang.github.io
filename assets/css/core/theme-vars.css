@@ -17,6 +17,45 @@
     --border: rgb(221, 160, 221); /* Plum for borders */
     --link: #8a2be2; /* BlueViolet for links */
     --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
+    --toc-background-color: rgb(248, 226, 226); /* White with 90% opacity for TOC background */
+    --toc-text-color: rgb(75, 0, 130); /* Indigo for TOC text */
+
+    /* Admonition colors for light theme */
+    --quote-bg: #f8d0cb; /* Light pastel red */
+    --quote-text: #5a2a27; /* Dark red text for contrast */
+
+    --caution-bg: #f8e0cb; /* Light pastel orange */
+    --caution-text: #5a4227; /* Dark orange text for contrast */
+
+    --tip-bg: #fbf4cd; /* Light pastel yellow */
+    --tip-text: #5a5927; /* Dark yellow text for contrast */
+
+    --important-bg: #daf8cb; /* Light pastel lime green */
+    --important-text: #3e5a27; /* Dark green text for contrast */
+
+    --note-bg: #cbe4f8; /* Light pastel blue */
+    --note-text: #27435a; /* Dark blue text for contrast */
+
+    --pinned-bg: #cbc9f8; /* Light pastel indigo */
+    --pinned-text: #2e275a; /* Dark indigo text for contrast */
+
+    --comment-bg: #e2cbf8; /* Light pastel purple */
+    --comment-text: #4a275a; /* Dark purple text for contrast */
+
+    --example-bg: #f8cbd4; /* Light pastel pink */
+    --example-text: #5a2734; /* Dark pink text for contrast */
+
+    --warning-bg: #f8d0d1; /* Light pastel rose */
+    --warning-text: #5a2a2b; /* Dark rose text for contrast */
+
+    --query-bg: #cbf0f8; /* Light pastel cyan */
+    --query-text: #275a5c; /* Dark cyan text for contrast */
+
+    --export-bg: #cbf8dc; /* Light pastel mint green */
+    --export-text: #275a3e; /* Dark mint text for contrast */
+
+    --verse-bg: #e8cbf8; /* Light pastel lavender */
+    --verse-text: #40275a; /* Dark lavender text for contrast */
 }
 
 .dark {
@@ -27,10 +66,48 @@
     --tertiary: rgb(123, 90, 179); /* Darker medium purple for tertiary elements */
     --content: rgb(200, 198, 255); /* Slightly darker purple for content */
     --hljs-bg: rgb(55, 0, 100); /* Darker indigo for code highlight background */
-    --code-bg: rgb(19, 12, 26); /* Darker purple for code blocks */
-    --border: rgb(55, 0, 100); /* Darker indigo for borders */
+    --code-bg: rgb(50, 35, 61); /* Darker purple for code blocks */
+    --border: rgb(81, 23, 128); /* Darker indigo for borders */
     --link: #7a57d1; /* Darker medium purple for links */
     --shadow: rgb(83, 79, 90); /* Plum for shadows */
+    --toc-background-color: rgb(55, 34, 78); /* Dark purple with 90% opacity for TOC background */
+    --toc-text-color: rgb(200, 198, 255); /* Slightly darker purple for TOC text */
+    /* Admonition colors for dark theme */
+    --quote-bg: #f2b2a8; /* Pastel red */
+    --quote-text: #333333; /* Dark grey text for contrast */
+
+    --caution-bg: #f3cea2; /* Pastel orange */
+    --caution-text: #333333; /* Dark grey text for contrast */
+
+    --tip-bg: #f7eb9b; /* Pastel yellow */
+    --tip-text: #333333; /* Dark grey text for contrast */
+    
+    --important-bg: #c8f2a2; /* Pastel lime green */
+    --important-text: #333333; /* Dark grey text for contrast */
+    
+    --note-bg: #9ed2f6; /* Pastel blue */
+    --note-text: #333333; /* Dark grey text for contrast */
+    
+    --pinned-bg: #9fa7f2; /* Pastel indigo */
+    --pinned-text: #333333; /* Dark grey text for contrast */
+
+    --comment-bg: #cd9ef6; /* Pastel purple */
+    --comment-text: #333333; /* Dark grey text for contrast */
+
+    --example-bg: #f2a2d2; /* Pastel pink */
+    --example-text: #333333; /* Dark grey text for contrast */
+
+    --warning-bg: #f2a2a8; /* Pastel rose */
+    --warning-text: #333333; /* Dark grey text for contrast */
+
+    --query-bg: #a2e2f2; /* Pastel cyan */
+    --query-text: #333333; /* Dark grey text for contrast */
+
+    --export-bg: #a2f2b2; /* Pastel mint green */
+    --export-text: #333333; /* Dark grey text for contrast */
+
+    --verse-bg: #e4a2f2; /* Pastel lavender */
+    --verse-text: #333333; /* Dark grey text for contrast */
 }
 
 .list {

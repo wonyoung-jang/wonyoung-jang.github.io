@@ -46,27 +46,35 @@
       </div>
     {{- end }}
 
-
     {{ with .Params.githubRepo }}
       {{ partial "github_button.html" (dict "githubRepo" .) }}
+      <br><br>
+    {{ else }}
+      <br>
     {{ end }}
 
+    <hr>
     {{ partial "backlinks.html" . }}
     
+    <hr>
     <footer class="post-footer">
       {{- if .Params.tags }}
-        <h4>Tags</h4>
-        <br>
-        <div class="post-tags">
+      <div class="post-tags">
+        <h5>Tags</h5>
+        <div class="tags-container">
           {{- range .Params.tags }}
-            <div>
               <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag {{ . | urlize }}">{{ . }}</a>
-            </div>
           {{- end }}
         </div>
+      </div>
+      <br>
+      {{ else }}
+        <div class="post-tags">
+          <h5>No Tags</h5>
+        </div>
+        <br>
       {{- end }}
 
-      
       {{- if (.Param "ShowPostNavLinks") }}
         {{- partial "post_nav_links.html" . }}
       {{- end }}

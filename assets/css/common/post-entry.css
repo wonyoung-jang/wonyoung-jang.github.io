@@ -41,8 +41,8 @@
 }
 
 .post-entry:hover {
-    box-shadow: 4px 4px 5px 0 var(--tertiary); /* Reduced shadow size for less intensity */
-    transform: translate(0, -2px); /* Smaller translation for a subtle lift */
+    filter:drop-shadow(0 0 0.5rem var(--shadow));
+    transform: scale(0.99);
 }
 
 
@@ -56,7 +56,7 @@
 
 .entry-content {
     margin: 8px 0;
-    font-size: 12px;
+    font-size: 13px;
     overflow: hidden;
     color: var(--primary);
     display: -webkit-box;
@@ -81,6 +81,7 @@
     z-index: 1;
 }
 
+/* Entry Cover */
 .entry-cover,
 .entry-isdraft {
     display: inline-block;
@@ -99,9 +100,7 @@
     color: var(--secondary);
 }
 
-
 /* Tags */
-
 .tag {
     border-radius: 15px; /* Increased border-radius for more rounded corners */
 
@@ -137,14 +136,12 @@
 }
 
 .tag:hover {
-    background-color: var(--primary); /* Change background color on hover */
-    color: var(--entry); /* Change text color on hover for contrast */
+    filter: brightness(1.1); /* Slightly brighter on hover */
+    transform: scale(0.99);
 }
 
-
-/* Post Container */
 .posts-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--gap);
 }

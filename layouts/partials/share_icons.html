@@ -20,7 +20,6 @@
     {{ $custom = true }}
 {{ end }}
 <hr>
-<br>
 <div class="share-buttons">
     <span class="share-text">Share:</span>
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) }}
@@ -78,3 +77,4 @@
     </a>
     {{- end }}
 </div>
+<br>

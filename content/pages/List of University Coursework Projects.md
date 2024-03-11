@@ -5,17 +5,17 @@ tags:
 coverimage: ../assets/list_of_university_coursework_projects_1709750754129_0.png
 title: List of University Coursework Projects
 categories:
-lastMod: 2024-03-07
+lastMod: 2024-03-09
 ---
 ![List of University Coursework Projects.png](/assets/list_of_university_coursework_projects_1709750754129_0.png)
 
-## About
-
-  + This page holds a collection of projects I developed for the completion of my computer science degree coursework.
+This page is a list of projects completed and submitted for my computer science degree coursework.
 
 ---
 
 ## Python
+
+  + [FIRST LEGO League Challenge Q-Learning Event Scheduler]({{< ref "/pages/FIRST LEGO League Challenge Q-Learning Event Scheduler" >}})
 
   + [Package Delivery Route Optimization]({{< ref "/pages/Package Delivery Route Optimization" >}})
 

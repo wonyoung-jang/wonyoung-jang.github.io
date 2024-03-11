@@ -6,10 +6,9 @@
    {{ end }}
 {{ end }}
 
-<hr>
 {{ if gt (len $backlinks) 0 }}
   <aside>
-    <h3>Pages That Link Here</h3>
+    <h5>Pages That Link Here</h5>
     <div class="backlinks">
         <ul>
           {{ range $backlinks }}
@@ -18,12 +17,16 @@
         </ul>
     </div>
   </aside>
-  <br>
+{{ else }}
+  <aside>
+    <h5>No Pages Link Here</h5>
+  </aside>
 {{ end }}
+<br>
 <aside class="related">
   {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
   {{ with $related -}}
-    <h3>Pages That May Be Related</h3>
+    <h5>Pages That May Be Related</h5>
     <ul>
       {{ range . -}}
         <p class="capitalize"><a style="color: var(--link);" href="{{ .RelPermalink }}">{{ .Title }}</a></p>
@@ -32,4 +35,3 @@
     <br>
   {{ end -}}
 </aside>
-<hr>

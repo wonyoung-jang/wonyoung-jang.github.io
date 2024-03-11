@@ -13,7 +13,7 @@
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/realtime-multiplayer-drawing-app/</guid>
-      <description></description>
+      <description>Draw in realtime on a blank canvas with others on the same server.</description>
     </item>
     
     <item>
@@ -22,7 +22,11 @@
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/this-website/</guid>
-      <description></description>
+      <description>This page is a meta presentation for the deployment of this website (and this page).
+How It&amp;rsquo;s Made Pages (notes, articles, projects) are written in Logseq markdown.
+Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.
+The exported assets and pages folders are placed in the content folder of this Hugo site.
+hugo -D + hugo serve -D to build and serve the site locally.</description>
     </item>
     
     <item>
@@ -31,7 +35,9 @@
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
-      <description></description>
+      <description>A FLLC event scheduler using Q-Learning.
+Update: As of 2024-03-08 this project is presented here in its submission state for my Computer Science degree&amp;rsquo;s capstone project.Designing, developing, and implementing a capstone project that incorporates machine learning and data visualization to address a specific business or organizational need.
+Learning Objectives and Requirements Write a Letter of Transmittal and a Project Proposal Create a compelling letter of transmittal and project proposal to convince senior, non-technical managers and executives to implement the data product.</description>
     </item>
     
     <item>
@@ -40,7 +46,7 @@
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/save-top-level-reddit-comments/</guid>
-      <description></description>
+      <description>Extract the parent comments of a reddit post.</description>
     </item>
     
     <item>
@@ -49,7 +55,13 @@
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/logseq-markdown-tokenizer/</guid>
-      <description></description>
+      <description>Estimate the cost of tokenizing markdown files for OpenAI&amp;rsquo;s text-embedding models.
+The Problem Logseq does not have a native way to view the character count of your notes (aka pages).
+Logseq&amp;rsquo;s performance is a balance of the number of pages, and the size of each page.
+Logseq&amp;rsquo;s graph is difficult to search.
+Logseq&amp;rsquo;s graph is difficult to prune manually.
+Proposed Solution Encode Logseq&amp;rsquo;s graph to enable semantic search.
+Leverage the encoding to develop an automatic pruning tool of some kind.</description>
     </item>
     
   </channel>

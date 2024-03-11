@@ -7,10 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Vacation Cart Manager | Wonyoung Jang</title>
 <meta name="keywords" content="University Coursework Projects" />
-<meta name="description" content="">
+<meta name="description" content="Developing a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.
+This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.">
 <meta name="author" content="">
 <link rel="canonical" href="https://wonyoung-jang.github.io/pages/vacation-cart-manager/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.33ee0f3588df05d17d3ec0e33656f225a709a88dd7077e0d5d813ceeeb78ffe7.css" integrity="sha256-M&#43;4PNYjfBdF9PsDjNlbyJacJqI3XB34NXYE87ut4/&#43;c=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.e7b04877e1be35ed2c01cc41be70a5274df955d0326afd4cf99b5ba645361ef6.css" integrity="sha256-57BId&#43;G&#43;Ne0sAcxBvnClJ035VdAyav1M&#43;ZtbpkU2HvY=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://wonyoung-jang.github.io/favicon.ico">
@@ -58,15 +59,17 @@
 
     </style>
 </noscript><meta property="og:title" content="Vacation Cart Manager" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Developing a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.
+This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wonyoung-jang.github.io/pages/vacation-cart-manager/" /><meta property="article:section" content="pages" />
 <meta property="article:published_time" content="2023-11-21T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2024-03-07T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2024-03-11T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Vacation Cart Manager"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Developing a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.
+This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university."/>
 
 
 <script type="application/ld+json">
@@ -95,15 +98,15 @@
   "@type": "BlogPosting",
   "headline": "Vacation Cart Manager",
   "name": "Vacation Cart Manager",
-  "description": "\r",
+  "description": "Developing a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.\nThis project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.",
   "keywords": [
     "University Coursework Projects"
   ],
-  "articleBody": "\r",
-  "wordCount" : "0",
+  "articleBody": "\rDeveloping a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.\nThis project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.\rLearning Objectives and Requirements Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok.\nEstablish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion.\nConstruct four new packages within the project to organize the codebase: controllers, entities, dao (Data Access Object), and services, focusing on functionalities related to a checkout form and vacation packages list.\nDevelop entity classes and an enumerator in the entities package that align with the provided UML diagram, ensuring accurate mapping to the project’s MySQL database.\nCreate repository interfaces in the dao package that extend JpaRepository, adding cross-origin support to facilitate communication with the Angular front end.\nImplement service classes in the services package to handle purchase data and responses, including a checkout service interface and its implementation.\nIntegrate validation within the application to ensure the data inputs meet the front-end requirements.\nDevelop a REST controller in the controllers package to manage checkout processes, including a post mapping to handle order placements.\nAdd five sample customers to the application programmatically, ensuring their data persist correctly without duplication on subsequent application runs.\nTest the integrated application by placing an order for a vacation with two excursions, verifying that there are no network errors and the data is correctly stored in the MySQL database, supported by appropriate screenshots.\n",
+  "wordCount" : "313",
   "inLanguage": "en",
   "datePublished": "2023-11-21T00:00:00Z",
-  "dateModified": "2024-03-07T00:00:00Z",
+  "dateModified": "2024-03-11T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://wonyoung-jang.github.io/pages/vacation-cart-manager/"
@@ -198,25 +201,76 @@
       </h1>
         <div class="post-meta">
 
-<span title='2023-11-21 00:00:00 +0000 UTC'>November 21, 2023</span>&nbsp;·&nbsp;0 min read
+<span title='2023-11-21 00:00:00 +0000 UTC'>November 21, 2023</span>&nbsp;·&nbsp;2 min
 
 </div>
-    </header> 
+    </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#learning-objectives-and-requirements" aria-label="Learning Objectives and Requirements">Learning Objectives and Requirements</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
 
       <div class="post-content"><p><img loading="lazy" src="/assets/vacation_cart_manager_1709746642372_0.png" alt="vacation_cart_manager.png"  />
 </p>
+<p>Developing a <a href="https://spring.io/projects/spring-framework">Spring Framework</a> Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing <a href="https://angular.io/">Angular</a> front end without modifying it.</p>
+<div class="warning ">
+    This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
+</div>
+<h2 id="learning-objectives-and-requirements">Learning Objectives and Requirements<a hidden class="anchor" aria-hidden="true" href="#learning-objectives-and-requirements">#</a></h2>
+<ul>
+<li>
+<p>Create a new Java project using <a href="https://start.spring.io/">Spring Initializr</a>, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok.</p>
+</li>
+<li>
+<p>Establish a <a href="https://gitlab.com/">GitLab</a> repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion.</p>
+</li>
+<li>
+<p>Construct four new packages within the project to organize the codebase: <code>controllers</code>, <code>entities</code>, <code>dao</code> (Data Access Object), and <code>services</code>, focusing on functionalities related to a checkout form and vacation packages list.</p>
+</li>
+<li>
+<p>Develop <code>entity</code> classes and an enumerator in the <code>entities</code> package that align with the provided UML diagram, ensuring accurate mapping to the project&rsquo;s <a href="https://www.mysql.com/">MySQL</a> database.</p>
+</li>
+<li>
+<p>Create <code>repository</code> interfaces in the <code>dao</code> package that extend <code>JpaRepository</code>, adding cross-origin support to facilitate communication with the Angular front end.</p>
+</li>
+<li>
+<p>Implement <code>service</code> classes in the <code>services</code> package to handle purchase data and responses, including a checkout service interface and its implementation.</p>
+</li>
+<li>
+<p>Integrate validation within the application to ensure the data inputs meet the front-end requirements.</p>
+</li>
+<li>
+<p>Develop a <a href="https://github.com/spring-guides/tut-rest">REST controller</a> in the <code>controllers</code> package to manage checkout processes, including a post mapping to handle order placements.</p>
+</li>
+<li>
+<p>Add five sample customers to the application programmatically, ensuring their data persist correctly without duplication on subsequent application runs.</p>
+</li>
+<li>
+<p>Test the integrated application by placing an order for a vacation with two excursions, verifying that there are no network errors and the data is correctly stored in the MySQL database, supported by appropriate screenshots.</p>
+</li>
+</ul>
 
 
       </div>
-
 
     
       
 <a href="https://github.com/wonyoung-jang/vacation-cart-manager" class="github-button" target="_blank" rel="noopener noreferrer">
     View the Source on GitHub: @vacation-cart-manager
 </a>
+      <br><br>
     
 
+    <hr>
     
 
 
@@ -255,10 +309,9 @@
    
 
 
-<hr>
 
   <aside>
-    <h3>Pages That Link Here</h3>
+    <h5>Pages That Link Here</h5>
     <div class="backlinks">
         <ul>
           
@@ -267,10 +320,10 @@
         </ul>
     </div>
   </aside>
-  <br>
 
+<br>
 <aside class="related">
-  <h3>Pages That May Be Related</h3>
+  <h5>Pages That May Be Related</h5>
     <ul>
       <p class="capitalize"><a style="color: var(--link);" href="/pages/retail-inventory-manager/">Retail Inventory Manager</a></p>
       <p class="capitalize"><a style="color: var(--link);" href="/pages/dvd-rental-database-revenue-insights/">DVD Rental Database Revenue Insights</a></p>
@@ -278,20 +331,21 @@
       </ul>
     <br>
   </aside>
-<hr>
+
     
+    <hr>
     <footer class="post-footer">
-        <h4>Tags</h4>
-        <br>
-        <div class="post-tags">
-            <div>
+      <div class="post-tags">
+        <h5>Tags</h5>
+        <div class="tags-container">
               <a href="/tags/university-coursework-projects" class="tag university-coursework-projects">University Coursework Projects</a>
-            </div>
         </div>
+      </div>
+      <br>
+      
         
     
 <hr>
-<br>
 <div class="share-buttons">
     <span class="share-text">Share:</span>
     <a target="_blank" rel="noopener noreferrer" aria-label="share Vacation Cart Manager on twitter"
@@ -337,6 +391,7 @@
         </svg>
     </a>
 </div>
+<br>
 
     </footer>
   </article>
@@ -348,9 +403,8 @@
     <br>
     <span>
         Powered by
-        
-        
-       <a href="https://github.com/sawhney17/logseq-schrodinger" rel="noopener" target="_blank">Logseq Schrödinger</a>
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> and
+        <a href="https://github.com/sawhney17/logseq-schrodinger" rel="noopener" target="_blank">Logseq Schrödinger</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

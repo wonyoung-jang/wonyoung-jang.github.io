@@ -5,9 +5,11 @@ tags:
 coverimage: ../assets/list_of_software_development_projects_1709750726693_0.png
 title: List of Software Development Projects
 categories:
-lastMod: 2024-03-07
+lastMod: 2024-03-09
 ---
 ![List of Software Development Projects.png](/assets/list_of_software_development_projects_1709750726693_0.png)
+
+This page is a list of my software projects at varying stages of development.
 
 ## Python
 
@@ -18,5 +20,7 @@ lastMod: 2024-03-07
   + [Save Top Level Reddit Comments]({{< ref "/pages/Save Top Level Reddit Comments" >}})
 
 ## Go, Javascript, HTML, CSS
+
+  + [Realtime Multiplayer Drawing App]({{< ref "/pages/Realtime Multiplayer Drawing App" >}})
 
   + [This Website]({{< ref "/pages/This Website" >}})
