@@ -1,5 +1,4 @@
 /* First Entry */
-
 .first-entry {
     position: relative;
     display: flex;
@@ -30,7 +29,6 @@
 
 
 /* Post Entry */
-
 .post-entry {
     background: var(--entry);
     border-radius: var(--radius);
@@ -47,13 +45,12 @@
 
 
 /* Entry Header */
-
 .entry-header h2 {
     font-size: 16px;
     padding-left: 5%;
-    line-height: 2.0;
 }
 
+/* Entry Content */
 .entry-content {
     margin: 8px 0;
     font-size: 13px;
@@ -65,12 +62,14 @@
     padding-left: 5%;
 }
 
+/* Entry Footer */
 .entry-footer {
     color: var(--secondary);
     font-size: 12px;
     padding-left: 5%;
 }
 
+/* Entry Link */
 .entry-link {
     position: absolute;
     top: 0;
@@ -102,22 +101,19 @@
 
 /* Tags */
 .tag {
+    display: inline-flex;
+
     border-radius: 15px; /* Increased border-radius for more rounded corners */
 
-    margin: 0 0 0 12px; /* Reduced margin for tags to be closer together */
+    margin: 0 -1vw 0 2vw; /* Reduced margin for tags to be closer together */
     padding: 3px 10px; /* Reduced padding to make tags smaller */
     
     font-size: 11px;
     font-weight: bold;
-    
-    display: inline-block;
-    text-decoration: none;
-    
+
     position: relative;
     pointer-events: auto;
     z-index: 2;
-
-    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .tag.lists {
@@ -140,8 +136,81 @@
     transform: scale(0.99);
 }
 
+/* General button styling */
+#toggleViewBtn {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 var(--gap) auto;
+    background-color: var(--theme);
+    color: var(--primary);
+    border: 1px solid var(--tertiary);
+    border-radius: 10px;
+    height: 5vh;
+    width: 5vh;
+    filter: opacity(0.8);
+}
+
+#toggleViewBtn:hover {
+    background-color: var(--tertiary);
+    filter: opacity(1);
+}
+
+/* Container for the posts */
 .posts-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex-direction: column;
     gap: var(--gap);
+}
+
+/* List View for posts-container not in grid mode */
+.posts-container:not([style*="grid"]) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust the post entry styles for list view */
+.posts-container:not([style*="grid"]) .post-entry {
+    padding-bottom: 3%; /* remove padding for list view */
+    border-radius: 0%;
+}
+
+/* Adjust the entry cover styles for list view */
+.posts-container:not([style*="grid"]) .entry-cover {
+    display: inline-block; /* show entry cover on hover, replacing the rest of the post entry */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust the entry content styles for list view */
+.posts-container:not([style*="grid"]) .entry-content {
+    -webkit-line-clamp: 1; /* increase number of lines if necessary */
+    padding-left: 12vw; /* remove padding for list view */
+}
+
+/* Adjust the entry header styles for list view */
+.posts-container:not([style*="grid"]) .entry-header h2 {
+    padding-left: 12vw; /* remove padding for list view */
+}
+
+/* Adjust the entry footer styles for list view */
+.posts-container:not([style*="grid"]) .entry-footer {
+    margin-top: 1vw;
+    padding-left: 12vw; /* remove padding for list view */
+}
+
+/* Adjust the tag styles for list view */
+.posts-container:not([style*="grid"]) .tag {
+    margin: 0 -11vw 0 12vw; /* reduced margin for tags to be closer together */
+}
+
+/* Hover effect for list view */
+.posts-container:not([style*="grid"]) .post-entry:hover {
+    filter: brightness(1.05); /* slightly brighter on hover */
+    transform: none; /* remove scale on hover */
 }

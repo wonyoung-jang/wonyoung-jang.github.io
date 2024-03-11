@@ -15,7 +15,6 @@
                     {{ .Description | markdownify }}
                 </div>
             {{- end }}
-
         </header>
     {{- end }}
 
@@ -40,7 +39,36 @@
     {{- if and .IsHome .Site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
         {{- partial "home_info.html" . }}
     {{- end }}
-      
+
+    
+    <script>
+        function toggleGrid(){
+            // Get references to elements
+            const btn = document.getElementById('toggleViewBtn');
+            const container = document.querySelector('.posts-container');
+        
+            // Check if the container has 'grid' applied
+            if (!container.style.display || container.style.display === 'flex') {
+                // Set 'grid' style
+                container.style.setProperty("display", "grid");
+                container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
+                container.style.setProperty("gap","var(--gap)");
+        
+                // Update button label
+                btn.innerText = "\u2630";
+            } else {
+                // Remove 'grid' styles
+                container.style.removeProperty("display");
+                container.style.removeProperty("gridTemplateColumns");
+            
+                // Update button label
+                btn.innerText = "\u229E";
+            }
+        };
+    </script>
+
+    <button id="toggleViewBtn" onclick="toggleGrid()">&#x229E</button>
+
     <div class="posts-container">
         {{- $term := .Data.Term }}
         {{- range $index, $page := $paginator.Pages }}
@@ -112,7 +140,6 @@
             </nav>
         </footer>
     {{- end }}
-
 
 {{- end }} 
     {{/* end profileMode */}}
