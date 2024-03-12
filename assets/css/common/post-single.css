@@ -77,7 +77,6 @@
 }
 
 .post-content a code {
-    margin: auto 0;
     border-radius: 0;
     box-shadow: 0 -1px 0 var(--primary) inset;
 }
@@ -200,8 +199,8 @@
     padding: 4px 6px;
     font-size: 0.78em;
     line-height: 1.5;
-    background: var(--code-bg);
     border-radius: 2px;
+    background: var(--code-bg);
 }
 
 .post-content pre code {
@@ -236,7 +235,7 @@
 .post-content img {
     border-radius: 4px;
     margin: 1rem 0;
-    box-shadow: 4px 4px 4px 0 var(--shadow);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .post-content img[src*="#center"] {
@@ -261,7 +260,6 @@
 }
 
 /* Table of Contents */
-
 .toc {
     background-color: var(--toc-background-color);
     color: var(--toc-text-color);
@@ -293,9 +291,7 @@
     outline: 0;
 }
 
-
 /* Post Tags */
-
 .post-tags div {
     display: inline-block;
 }
@@ -303,7 +299,6 @@
 .post-tags a {
     font-size: 11px;
     font-weight: bold;
-
     transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out; /* Smooth transition for hover effect */
 }
 
@@ -329,15 +324,14 @@
 }
 
 .post-tags .tags-container {
-    display: flow-root;
+    display: inline-block;
+    margin-left: -2vw;
+    margin-top: 1vh;
     border-radius: var(--radius);
-    padding: 1vh 1vw;
-    margin: 10px 0;    
     background-color: var(--toc-background-color);
 }
 
 /* Share Buttons and Pagination */
-
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
@@ -382,7 +376,6 @@
 }
 
 /* Headers */
-
 h1:hover .anchor,
 h2:hover .anchor,
 h3:hover .anchor,
@@ -397,7 +390,6 @@ h6:hover .anchor {
 }
 
 /* Scrollbar Styling */
-
 .post-content :not(table) ::-webkit-scrollbar-thumb {
     border: 2px solid var(--hljs-bg);
     background: rgb(113, 113, 117);

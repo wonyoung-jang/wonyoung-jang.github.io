@@ -6,19 +6,21 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(255, 240, 255); /* Light purple background */
-    --entry: rgb(250, 235, 250); /* Slightly lighter purple for entry */
-    --primary: rgb(75, 0, 130); /* Indigo for primary text */
-    --secondary: rgb(147, 112, 219); /* Medium purple for secondary text */
-    --tertiary: rgb(216, 191, 216); /* Thistle for tertiary elements */
-    --content: rgb(75, 0, 130); /* Indigo for content */
-    --hljs-bg: rgb(233, 230, 255); /* Very light purple for code highlight background */
-    --code-bg: rgb(240, 230, 255); /* Light purple for code blocks */
+
+    --theme: rgb(255, 255, 255); /* White background */
+    --entry: rgb(222, 240, 255); /* Light blue for entry */
+    --primary: rgb(0, 0, 0); /* Black for primary text */
+    --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
+    --tertiary: rgb(102, 102, 102); /* Light grey for tertiary elements */
+    --content: rgb(0, 0, 0); /* Black for content */
+    --hljs-bg: rgb(15, 10, 10); /* Very light purple for code highlight background */
+    --code-bg: rgb(226, 131, 226); /* Light purple for code blocks */
     --border: rgb(221, 160, 221); /* Plum for borders */
-    --link: #8a2be2; /* BlueViolet for links */
+    --link: rgb(0, 0, 255); /* Blue for links */
     --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
-    --toc-background-color: rgb(248, 226, 226); /* White with 90% opacity for TOC background */
-    --toc-text-color: rgb(75, 0, 130); /* Indigo for TOC text */
+    
+    --toc-background-color: rgb(255, 255, 255); /* White with 90% opacity for TOC background */
+    --toc-text-color: rgb(0, 0, 0); /* Indigo for TOC text */
 
     /* Admonition colors for light theme */
     --quote-bg: #f8d0cb; /* Light pastel red */
@@ -59,19 +61,21 @@
 }
 
 .dark {
-    --theme: rgb(19, 12, 26); /* Darker purple for the dark theme background */
-    --entry: rgb(34, 0, 61); /* Darker indigo for entry */
-    --primary: rgb(200, 198, 255); /* Slightly darker purple for primary text */
-    --secondary: rgb(175, 150, 195); /* Darker thistle for secondary text */
-    --tertiary: rgb(123, 90, 179); /* Darker medium purple for tertiary elements */
-    --content: rgb(200, 198, 255); /* Slightly darker purple for content */
-    --hljs-bg: rgb(55, 0, 100); /* Darker indigo for code highlight background */
-    --code-bg: rgb(50, 35, 61); /* Darker purple for code blocks */
+    --theme: rgb(23, 23, 23); /* Dark background */
+    --entry: rgb(9, 31, 44); /* Dark blue for entry */
+    --primary: rgb(230, 230, 230); /* Light grey for primary text */
+    --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
+    --tertiary: rgb(230, 230, 230); /* Light grey for tertiary elements */
+    --content: rgb(230, 230, 230); /* Light grey for content */
+    --hljs-bg: rgb(33, 26, 37); /* Darker indigo for code highlight background */
+    --code-bg: rgb(34, 0, 61); /* Darker indigo for code blocks */
     --border: rgb(81, 23, 128); /* Darker indigo for borders */
-    --link: #7a57d1; /* Darker medium purple for links */
+    --link: rgb(39, 140, 218); /* Dodger blue for tertiary elements */
     --shadow: rgb(83, 79, 90); /* Plum for shadows */
-    --toc-background-color: rgb(55, 34, 78); /* Dark purple with 90% opacity for TOC background */
-    --toc-text-color: rgb(200, 198, 255); /* Slightly darker purple for TOC text */
+
+    --toc-background-color: rgb(23, 23, 23); /* Dark background for TOC */
+    --toc-text-color: rgb(255, 255, 255);  /* White for TOC text */
+
     /* Admonition colors for dark theme */
     --quote-bg: #f2b2a8; /* Pastel red */
     --quote-text: #333333; /* Dark grey text for contrast */
@@ -111,7 +115,7 @@
 }
 
 .list {
-    background: var(--code-bg);
+    background: var(--theme);
 }
 
 .dark.list {

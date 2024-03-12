@@ -6,27 +6,23 @@ coverimage: ../assets/logseq_tokenizer_1709673334004_0.png
 githubrepo: wonyoung-jang/logseq-tokenizer
 title: Logseq Markdown Tokenizer
 categories:
-lastMod: 2024-03-11
+lastMod: 2024-03-12
 ---
 ![logseq_tokenizer.png](/assets/logseq_tokenizer_1709673334004_0.png)
 
-Estimate the cost of tokenizing markdown files for OpenAI's text-embedding models.
+Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/).
 
 ## The Problem
 
-  + Logseq does not have a native way to view the character count of your notes (aka pages).
+  + [Logseq](https://logseq.com/) does not have a native way to view the character count of your notes (aka pages).
 
-  + Logseq's performance is a balance of the number of pages, and the size of each page.
+  + Logseq's performance is a balance between the number of pages and the size of each page.
 
-  + Logseq's graph is difficult to search.
-
-  + Logseq's graph is difficult to prune manually.
+  + Logseq's graph is difficult to search and prune manually.
 
 ## Proposed Solution
 
-  + Encode Logseq's graph to enable semantic search.
-
-  + Leverage the encoding to develop an automatic pruning tool of some kind.
+Encode Logseq's graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
 
 ## Implementation
 
@@ -42,12 +38,12 @@ Estimate the cost of tokenizing markdown files for OpenAI's text-embedding model
 
   + If have the token counts, I can estimate the cost of embedding for OpenAI's three available `text-embedding` models.
 
-  + If I output this data as a CSV, I can manipulate and format the data.
+## Outputting the Data to CSV
 
-  + For instance, with conditional formatting:
+If I output this data as a CSV, I can manipulate and format the data. For instance, with conditional formatting:
 
 ![example_output.png](/assets/example_output_1710007420546_0.png)
 
 ## Summary
 
-  + This is my answer to efficiently managing large texts within the note-taking tool [Logseq](https://logseq.com/), particularly when dealing with extensive book highlights and other sizable content sources, like automatic imports of highlights of large articles from Read-Later apps like [Omnivore](https://omnivore.app/).
+This is my answer to efficiently managing large texts within the note-taking tool [Logseq](https://logseq.com/), particularly when dealing with extensive book highlights and other sizable content sources, like automatic imports of highlights of large articles from Read-Later apps like [Omnivore](https://omnivore.app/).

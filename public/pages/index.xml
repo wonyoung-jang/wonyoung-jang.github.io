@@ -13,7 +13,9 @@
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/realtime-multiplayer-drawing-app/</guid>
-      <description>Draw in realtime on a blank canvas with others on the same server.</description>
+      <description>Draw in realtime on a blank canvas with others on the same server.
+Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.
+Why Did I Fork This? While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description>
     </item>
     
     <item>

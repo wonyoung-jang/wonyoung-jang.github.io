@@ -1,7 +1,9 @@
 #searchbox input {
     padding: 4px 10px;
     width: 100%;
+    height: auto;
     color: var(--primary);
+    font-size: 32px;
     font-weight: bold;
     border: 2px solid var(--tertiary);
     border-radius: var(--radius);
