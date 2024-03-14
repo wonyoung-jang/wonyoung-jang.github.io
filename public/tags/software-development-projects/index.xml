@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Software Development Projects on Wonyoung Jang</title>
-    <link>https://wonyoung-jang.github.io/tags/software-development-projects/</link>
+    <link>https://wonyoungjang.org/tags/software-development-projects/</link>
     <description>Recent content in Software Development Projects on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoung-jang.github.io/tags/software-development-projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/tags/software-development-projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Realtime Multiplayer Drawing App</title>
-      <link>https://wonyoung-jang.github.io/pages/realtime-multiplayer-drawing-app/</link>
+      <link>https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/realtime-multiplayer-drawing-app/</guid>
+      <guid>https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/</guid>
       <description>Draw in realtime on a blank canvas with others on the same server.
 Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.
 Why Did I Fork This? While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description>
@@ -20,10 +20,10 @@ Why Did I Fork This? While the demonstration shows no errors, the instructions i
     
     <item>
       <title>This Website</title>
-      <link>https://wonyoung-jang.github.io/pages/this-website/</link>
+      <link>https://wonyoungjang.org/pages/this-website/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/this-website/</guid>
+      <guid>https://wonyoungjang.org/pages/this-website/</guid>
       <description>This page is a meta presentation for the deployment of this website (and this page).
 How It&amp;rsquo;s Made Pages (notes, articles, projects) are written in Logseq markdown.
 Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.
@@ -33,10 +33,10 @@ hugo -D + hugo serve -D to build and serve the site locally.</description>
     
     <item>
       <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
-      <link>https://wonyoung-jang.github.io/pages/first-lego-league-challenge-q-learning-event-scheduler/</link>
+      <link>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</link>
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
+      <guid>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
       <description>A FLLC event scheduler using Q-Learning.
 Update: As of 2024-03-08 this project is presented here in its submission state for my Computer Science degree&amp;rsquo;s capstone project.Designing, developing, and implementing a capstone project that incorporates machine learning and data visualization to address a specific business or organizational need.
 Learning Objectives and Requirements Write a Letter of Transmittal and a Project Proposal Create a compelling letter of transmittal and project proposal to convince senior, non-technical managers and executives to implement the data product.</description>
@@ -44,10 +44,10 @@ Learning Objectives and Requirements Write a Letter of Transmittal and a Project
     
     <item>
       <title>Save Top Level Reddit Comments</title>
-      <link>https://wonyoung-jang.github.io/pages/save-top-level-reddit-comments/</link>
+      <link>https://wonyoungjang.org/pages/save-top-level-reddit-comments/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/save-top-level-reddit-comments/</guid>
+      <guid>https://wonyoungjang.org/pages/save-top-level-reddit-comments/</guid>
       <description>Extract the parent comments of a reddit post.
 Premise Sometimes I just want the top voted parent comments of a reddit post.
 Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
@@ -55,10 +55,10 @@ Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV f
     
     <item>
       <title>Logseq Markdown Tokenizer</title>
-      <link>https://wonyoung-jang.github.io/pages/logseq-markdown-tokenizer/</link>
+      <link>https://wonyoungjang.org/pages/logseq-markdown-tokenizer/</link>
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoung-jang.github.io/pages/logseq-markdown-tokenizer/</guid>
+      <guid>https://wonyoungjang.org/pages/logseq-markdown-tokenizer/</guid>
       <description>Estimate the cost of tokenizing markdown files for OpenAI&amp;rsquo;s text-embedding models.
 The Problem Logseq does not have a native way to view the character count of your notes (aka pages).
 Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.

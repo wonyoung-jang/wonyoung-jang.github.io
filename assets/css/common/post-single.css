@@ -294,6 +294,11 @@
     margin-inline-start: var(--gap);
 }
 
+.toc a {
+    color: var(--link);
+    font-weight: 500;
+}
+
 .toc summary:focus {
     outline: 0;
 }
@@ -310,18 +315,18 @@
 }
 
 .post-tags.lists a {
-    background-color: #ffdb79;
-    color: rgb(0, 0, 0);
+    background-color: var(--lists-bg);
+    color: var(--lists-text);
 }
 
 .post-tags.software-development-projects a {
-    background-color: #cc9fff;
-    color: rgb(0, 0, 0);
+    background-color: var(--software-bg);
+    color: var(--software-text);
 }
 
 .post-tags.university-coursework-projects a {
-    background-color: #abbfff;
-    color: rgb(0, 0, 0);
+    background-color: var(--university-bg);
+    color: var(--university-text);
 }
 
 .post-tags a:hover,
@@ -331,10 +336,8 @@
 }
 
 .post-tags .tags-container {
-    display: inline-block;
-    margin-left: -2vw;
-    border-radius: var(--radius);
-    background-color: var(--toc-background-color);
+    display: flow-root;
+    margin: 1vh -2vw;
 }
 
 /* Share Buttons and Pagination */

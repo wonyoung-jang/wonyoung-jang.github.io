@@ -19,8 +19,8 @@
     --link: rgb(0, 0, 255); /* Blue for links */
     --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
     
-    --toc-background-color: rgb(255, 255, 255); /* White with 90% opacity for TOC background */
-    --toc-text-color: rgb(0, 0, 0); /* Indigo for TOC text */
+    --toc-background-color: rgb(219, 219, 219); /* White with 90% opacity for TOC background */
+    --toc-text-color: rgb(32, 32, 32); /* Indigo for TOC text */
 
     /* Admonition colors for light theme */
     --quote-bg: #f8d0cb; /* Light pastel red */
@@ -58,6 +58,17 @@
 
     --verse-bg: #e8cbf8; /* Light pastel lavender */
     --verse-text: #40275a; /* Dark lavender text for contrast */
+
+    /* Tag Colors */
+    --lists-bg: #ffdb79;
+    --lists-text: rgb(0, 0, 0);
+
+    --software-bg: #cc9fff;
+    --software-text: rgb(0, 0, 0);
+
+    --university-bg: #abbfff;
+    --university-text: rgb(0, 0, 0);
+
 }
 
 .dark {
@@ -73,8 +84,8 @@
     --link: rgb(71, 175, 255); /* Dodger blue for tertiary elements */
     --shadow: rgb(83, 79, 90); /* Plum for shadows */
 
-    --toc-background-color: rgb(23, 23, 23); /* Dark background for TOC */
-    --toc-text-color: rgb(255, 255, 255);  /* White for TOC text */
+    --toc-background-color: rgb(51, 51, 51); /* Dark background for TOC */
+    --toc-text-color: rgb(238, 236, 236);  /* White for TOC text */
 
     /* Admonition colors for dark theme */
     --quote-bg: #f2b2a8; /* Pastel red */
@@ -112,6 +123,16 @@
 
     --verse-bg: #e4a2f2; /* Pastel lavender */
     --verse-text: #333333; /* Dark grey text for contrast */
+
+    /* Tag Colors */
+    --lists-bg: #ffdb79;
+    --lists-text: rgb(0, 0, 0);
+
+    --software-bg: #cc9fff;
+    --software-text: rgb(0, 0, 0);
+
+    --university-bg: #abbfff;
+    --university-text: rgb(0, 0, 0);
 }
 
 .list {

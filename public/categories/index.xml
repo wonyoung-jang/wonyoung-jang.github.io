@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Wonyoung Jang</title>
-    <link>https://wonyoung-jang.github.io/categories/</link>
+    <link>https://wonyoungjang.org/categories/</link>
     <description>Recent content in Categories on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://wonyoung-jang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://wonyoungjang.org/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
