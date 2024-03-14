@@ -1,7 +1,7 @@
 .footer,
 .top-link {
     font-size: 12px;
-    color: var(--link);
+    color: var(--primary);
 }
 
 .footer {
@@ -22,21 +22,23 @@
 }
 
 .footer a {
-    color: inherit;
-    border-bottom: 1px solid var(--secondary);
+    color: var(--link);
 }
 
 .footer a:hover {
     border-bottom: 1px solid var(--primary);
 }
 
+/* Scroll to top button */
 .top-link {
     visibility: hidden;
     position: fixed;
     bottom: 60px;
     right: 30px;
     z-index: 99;
-    background: var(--tertiary);
+    background: var(--theme);
+    color: var(--link);
+    box-shadow: 1px 1px 8px 0 var(--shadow);
     width: 42px;
     height: 42px;
     padding: 12px;
@@ -51,7 +53,7 @@
 
 .footer a:hover,
 .top-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .top-link:focus,

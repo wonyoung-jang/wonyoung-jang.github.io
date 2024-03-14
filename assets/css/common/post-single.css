@@ -71,9 +71,16 @@
     font-size: 12px;
 }
 
-.post-content a,
+.post-content a {
+    color: var(--link);
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
 .toc a:hover {
-    box-shadow: 0 1px 0;
+    text-decoration: underline;
 }
 
 .post-content a code {
@@ -326,7 +333,6 @@
 .post-tags .tags-container {
     display: inline-block;
     margin-left: -2vw;
-    margin-top: 1vh;
     border-radius: var(--radius);
     background-color: var(--toc-background-color);
 }
@@ -334,7 +340,12 @@
 /* Share Buttons and Pagination */
 .share-buttons,
 .paginav {
-    border-radius: var(--radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 4px dotted var(--border);
+    padding-top: 2vh;
 }
 
 .share-buttons a:not(:last-of-type) {
@@ -355,24 +366,13 @@
 .share-buttons {
     margin: 14px 0;
     padding-inline-start: var(--radius);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-}
-
-.share-text {
-    margin-top: 1vh; /* Adjust the spacing as needed */
-    margin-right: 1vw; /* Adjust the spacing as needed */
-    white-space: nowrap;
-    line-height: 30px;
-    font-weight: bold;
 }
 
 /* Ensures icons are aligned on the same line */
 .share-buttons a {
     display: inline-flex;
-    align-items: left;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Headers */
@@ -448,7 +448,6 @@ h6:hover .anchor {
     text-align: left;
 }
 
-
 /* GitHub Button */
 .github-button {
     display: inline-flex;
@@ -465,9 +464,8 @@ h6:hover .anchor {
 }
 
 .github-button:hover, .github-button:focus {
-    background-color: var(--secondary);
+    filter: brightness(90%);
 }
-
 
 /* Admonitions */
 .warning {
@@ -675,4 +673,16 @@ h6:hover .anchor {
     content: "\2B19"; /* ⮓ - Downwards Arrow with Tip Leftwards */
     background-color: var(--verse-text);
     color: var(--verse-bg);
+}
+
+/* Related Posts and Backlinks */
+.backlinks a,
+.related a {
+    display: inline-block;
+    color: var(--link);
+}
+
+.backlinks a:hover,
+.related a:hover {
+    text-decoration: underline;
 }

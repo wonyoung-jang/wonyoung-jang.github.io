@@ -51,26 +51,19 @@
     <br>
   {{ end }}
 
-  <hr>
   {{ partial "backlinks.html" . }}
   
-  <hr>
   <footer class="post-footer">
     {{- if .Params.tags }}
       <div class="post-tags">
-        <h5>Tags</h5>
+        <h3>Tags</h3>
+        <hr>
         <div class="tags-container">
           {{- range .Params.tags }}
               <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag {{ . | urlize }}">{{ . }}</a>
           {{- end }}
         </div>
       </div>
-      <br>
-      {{ else }}
-        <div class="post-tags">
-          <h5>No Tags</h5>
-        </div>
-        <br>
     {{- end }}
 
     {{- if (.Param "ShowPostNavLinks") }}

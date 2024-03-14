@@ -15,7 +15,7 @@
     --content: rgb(0, 0, 0); /* Black for content */
     --hljs-bg: rgb(15, 10, 10); /* Very light purple for code highlight background */
     --code-bg: rgb(226, 131, 226); /* Light purple for code blocks */
-    --border: rgb(221, 160, 221); /* Plum for borders */
+    --border: rgb(70, 55, 70); /* Plum for borders */
     --link: rgb(0, 0, 255); /* Blue for links */
     --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
     
@@ -65,12 +65,12 @@
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
     --primary: rgb(230, 230, 230); /* Light grey for primary text */
     --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
-    --tertiary: rgb(230, 230, 230); /* Light grey for tertiary elements */
+    --tertiary: rgb(207, 207, 207); /* Light grey for tertiary elements */
     --content: rgb(230, 230, 230); /* Light grey for content */
     --hljs-bg: rgb(33, 26, 37); /* Darker indigo for code highlight background */
     --code-bg: rgb(34, 0, 61); /* Darker indigo for code blocks */
-    --border: rgb(81, 23, 128); /* Darker indigo for borders */
-    --link: rgb(39, 140, 218); /* Dodger blue for tertiary elements */
+    --border: rgb(239, 222, 253); /* Darker indigo for borders */
+    --link: rgb(71, 175, 255); /* Dodger blue for tertiary elements */
     --shadow: rgb(83, 79, 90); /* Plum for shadows */
 
     --toc-background-color: rgb(23, 23, 23); /* Dark background for TOC */

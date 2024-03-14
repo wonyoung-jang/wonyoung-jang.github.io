@@ -8,30 +8,29 @@
 
 {{ if gt (len $backlinks) 0 }}
   <aside>
-    <h5>Pages That Link Here</h5>
+    <h2>Internal links</h2>
+    <hr>
     <div class="backlinks">
-        <ul>
+        <ul style="padding-left: 2vw;">
           {{ range $backlinks }}
-              <p class="capitalize"><a style="color: var(--link);" href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+              <li><p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p></li>
           {{ end }}
         </ul>
     </div>
   </aside>
-{{ else }}
-  <aside>
-    <h5>No Pages Link Here</h5>
-  </aside>
+  <br>
 {{ end }}
-<br>
-<aside class="related">
-  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
-  {{ with $related -}}
-    <h5>Pages That May Be Related</h5>
-    <ul>
-      {{ range . -}}
-        <p class="capitalize"><a style="color: var(--link);" href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-      {{ end -}}
-    </ul>
-    <br>
-  {{ end -}}
-</aside>
+
+{{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
+{{ with $related -}}
+    <aside class="related">
+      <h2>See also</h2>
+      <hr>
+      <ul style="padding-left: 2vw;">
+        {{ range . -}}
+          <li><p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p></li>
+        {{ end -}}
+      </ul>
+      <br>
+    </aside>
+{{ end -}}

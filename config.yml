@@ -35,9 +35,9 @@ markup:
     endLevel: 6
     ordered: false
 
-# Google Analytics
-env: #production
-GoogleAnalytics: "G-RTMKJG4NFZ" 
+services:
+  googleAnalytics:  
+    id: G-RTMKJG4NFZ
 
 sitemap:
   filename: sitemap.xml
