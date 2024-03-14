@@ -3,19 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wonyoung-jang.github.io/pages/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/realtime-multiplayer-drawing-app/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/tags/software-development-projects/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/tags/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/list-of-software-development-projects/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
@@ -36,7 +36,7 @@
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/save-top-level-reddit-comments/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/disaster-recovery-robot-simulation/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
@@ -45,7 +45,7 @@
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/logseq-markdown-tokenizer/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoung-jang.github.io/pages/package-delivery-route-optimization/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
@@ -77,5 +77,7 @@
     <loc>https://wonyoung-jang.github.io/contact/</loc>
   </url><url>
     <loc>https://wonyoung-jang.github.io/search/</loc>
+  </url><url>
+    <loc>https://wonyoung-jang.github.io/terms/</loc>
   </url>
 </urlset>

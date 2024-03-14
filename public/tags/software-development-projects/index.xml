@@ -48,7 +48,9 @@ Learning Objectives and Requirements Write a Letter of Transmittal and a Project
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoung-jang.github.io/pages/save-top-level-reddit-comments/</guid>
-      <description>Extract the parent comments of a reddit post.</description>
+      <description>Extract the parent comments of a reddit post.
+Premise Sometimes I just want the top voted parent comments of a reddit post.
+Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
     </item>
     
     <item>
@@ -59,11 +61,9 @@ Learning Objectives and Requirements Write a Letter of Transmittal and a Project
       <guid>https://wonyoung-jang.github.io/pages/logseq-markdown-tokenizer/</guid>
       <description>Estimate the cost of tokenizing markdown files for OpenAI&amp;rsquo;s text-embedding models.
 The Problem Logseq does not have a native way to view the character count of your notes (aka pages).
-Logseq&amp;rsquo;s performance is a balance of the number of pages, and the size of each page.
-Logseq&amp;rsquo;s graph is difficult to search.
-Logseq&amp;rsquo;s graph is difficult to prune manually.
-Proposed Solution Encode Logseq&amp;rsquo;s graph to enable semantic search.
-Leverage the encoding to develop an automatic pruning tool of some kind.</description>
+Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.
+Logseq&amp;rsquo;s graph is difficult to search and prune manually.
+Proposed Solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.</description>
     </item>
     
   </channel>

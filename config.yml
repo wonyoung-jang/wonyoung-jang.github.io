@@ -35,23 +35,24 @@ markup:
     endLevel: 6
     ordered: false
 
-# Google Analytics 4 optional
-#   env: #production
-#   GoogleAnalytics: "G-00000XXXXX" 
-#   sitemap:
-#     changefreq: daily
-#     filename: sitemap.xml
-#     priority: 0.5
+# Google Analytics
+env: #production
+GoogleAnalytics: "G-RTMKJG4NFZ" 
+
+sitemap:
+  filename: sitemap.xml
+  priority: 0.5
+  changefreq: daily
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
-  #section:
-  #  - HTML
-  #  - RSS
-  #  - JSON
+  section:
+    - HTML
+    - RSS
+    - JSON
 
 menu:
   main:
