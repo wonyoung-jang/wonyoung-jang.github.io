@@ -2,9 +2,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
-<meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow">
 {{- else }}
-<meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
 {{- /* Title */}}
@@ -123,6 +123,7 @@
         }
 
     </style>
+
     {{- if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
     <style>
         @media (prefers-color-scheme: dark) {
@@ -150,7 +151,6 @@
                 border-color: var(--theme);
             }
         }
-
     </style>
     {{- end }}
 </noscript>

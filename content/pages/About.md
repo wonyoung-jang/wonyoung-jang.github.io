@@ -1,15 +1,17 @@
 ---
-title: "About"
-layout: "about"
-url: "/about"
-summary: about
+date: 2024-03-01
+tags:
+- Meta
+coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
+title: About
+categories:
+lastMod: 2024-03-15
 ---
+## About Wonyoung Jang
 
-## About Me
+Hello, that's me!
 
-Hello, I am **Wonyoung Jang**.
-
-Personally, I'm interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to these areas and more.
+Personally, I'm interested in programming, making music, formal logic, backpacking, magic and [cardistry](https://en.wikipedia.org/wiki/Cardistry), and cooking. This site is a collection of my projects and notes related to various areas of my life.
 
 I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
 
@@ -18,11 +20,3 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 ## About this Site
 
 This site is hosted using [Hugo](https://gohugo.io/) and [GitHub Pages](https://pages.github.com/). It is created using [Logseq Schrodinger](https://github.com/sawhney17/logseq-schrodinger) to convert Logseq's markdown to suitable Hugo format markdown.
-
-You may navigate this site by going to:
-
-- [**Tags**: To browse posts by category.](/tags)
-- [**Search**: To search for projects and posts.](/search)
-- [**Archives**: To browse posts by date.](/archives)
-
-[The associated project for running this site is here.]({{< ref "/pages/This Website" >}})

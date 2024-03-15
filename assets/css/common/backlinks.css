@@ -1,0 +1,11 @@
+/* Related Posts and Backlinks */
+.backlinks a,
+.related a {
+    display: inline-block;
+    color: var(--link);
+}
+
+.backlinks a:hover,
+.related a:hover {
+    text-decoration: underline;
+}

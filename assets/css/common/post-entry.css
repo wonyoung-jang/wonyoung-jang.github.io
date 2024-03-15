@@ -9,24 +9,23 @@
 
 .first-entry .entry-header {
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
 }
 
 .first-entry .entry-header h1 {
     font-size: 34px;
-    line-height: 1.3;
 }
 
 .first-entry .entry-content {
-    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    line-height: 8vh;
 }
 
 .first-entry .entry-footer {
     font-size: 14px;
 }
-
 
 /* Post Entry */
 .post-entry {
@@ -180,6 +179,7 @@
     width: 11vw;
     height: 100%;
     object-fit: cover;
+    padding: 1%;
 }
 
 /* Adjust the entry content styles for list view */

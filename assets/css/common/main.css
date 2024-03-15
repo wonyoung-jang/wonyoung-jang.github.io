@@ -42,6 +42,9 @@
 .social-icons a svg {
     height: 48px;
     width: 48px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0 calc(var(--gap) / 2) 0 0;
 }
 
 /* Code Highlight */

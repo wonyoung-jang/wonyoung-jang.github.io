@@ -2,13 +2,11 @@
 date: 2024-03-05
 tags:
 - Lists
-coverimage: ../assets/list_of_university_coursework_projects_1709750754129_0.png
+coverimage: ../assets/lists_icon_1710524790703_0.jpg
 title: List of University Coursework Projects
 categories:
-lastMod: 2024-03-09
+lastMod: 2024-03-15
 ---
-![List of University Coursework Projects.png](/assets/list_of_university_coursework_projects_1709750754129_0.png)
-
 This page is a list of projects completed and submitted for my computer science degree coursework.
 
 ---

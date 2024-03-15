@@ -2,13 +2,11 @@
 date: 2024-03-05
 tags:
 - Lists
-coverimage: ../assets/list_of_software_development_projects_1709750726693_0.png
+coverimage: ../assets/lists_icon_1710524790703_0.jpg
 title: List of Software Development Projects
 categories:
-lastMod: 2024-03-09
+lastMod: 2024-03-15
 ---
-![List of Software Development Projects.png](/assets/list_of_software_development_projects_1709750726693_0.png)
-
 This page is a list of my software projects at varying stages of development.
 
 ## Python
