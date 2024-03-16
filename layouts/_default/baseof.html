@@ -4,7 +4,7 @@
 <head>
     {{- partial "head.html" . }}
     {{ if .Site.Params.GoogleAnalytics }}
-    {{ partial "analytics-gtag.html" . }}
+        {{ partial "analytics-gtag.html" . }}
     {{ end }}
     <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
 </head>

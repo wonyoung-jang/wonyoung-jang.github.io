@@ -93,43 +93,6 @@
     border-radius: var(--radius) var(--radius) 0 0;
 }
 
-/* Tags */
-.tag {
-    display: inline-flex;
-
-    border-radius: 15px; /* Increased border-radius for more rounded corners */
-
-    margin: 0 -1vw 0 2vw; /* Reduced margin for tags to be closer together */
-    padding: 3px 10px; /* Reduced padding to make tags smaller */
-    
-    font-size: 11px;
-    font-weight: bold;
-
-    position: relative;
-    pointer-events: auto;
-    z-index: 2;
-}
-
-.tag.lists {
-    background-color: #ffdb79;
-    color: rgb(0, 0, 0);
-}
-
-.tag.software-development-projects {
-    background-color: #cc9fff;
-    color: rgb(0, 0, 0);
-}
-
-.tag.university-coursework-projects {
-    background-color: #abbfff;
-    color: rgb(0, 0, 0);
-}
-
-.tag:hover {
-    filter: brightness(1.1); /* Slightly brighter on hover */
-    transform: scale(0.99);
-}
-
 /* General button styling */
 #toggleViewBtn {
     display: flex;

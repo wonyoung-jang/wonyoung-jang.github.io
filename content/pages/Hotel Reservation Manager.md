@@ -1,12 +1,12 @@
 ---
 date: 2023-11-27
-tags:
+categories:
 - University Coursework Projects
 coverimage: ../assets/hotel_reservation_manager_1709746723628_0.png
 githubrepo: wonyoung-jang/hotel-reservation-manager
 title: Hotel Reservation Manager
-categories:
-lastMod: 2024-03-11
+tags:
+lastMod: 2024-03-16
 ---
 ![hotel_reservation_manager.png](/assets/hotel_reservation_manager_1709746723628_0.png)
 

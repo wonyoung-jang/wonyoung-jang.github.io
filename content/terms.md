@@ -1,4 +1,0 @@
----
-title: "Terms"
-layout: "terms"
----

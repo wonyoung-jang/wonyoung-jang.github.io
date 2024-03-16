@@ -3,14 +3,14 @@
 
 {{- $.Scratch.Set "tags" ""}}
 
-{{- with .Params.Tags }}
+{{- with .Params.categories }}
     {{- $hashtags := newScratch}}
 
     {{- range . }}
-        {{ $hashtags.Add "tags" (slice (replaceRE "(\\s)" "" . ))}}
+        {{ $hashtags.Add "categories" (slice (replaceRE "(\\s)" "" . ))}}
     {{end}}
 
-    {{- $.Scratch.Set "tags" (delimit ($hashtags.Get "tags") ",") }}
+    {{- $.Scratch.Set "categories" (delimit ($hashtags.Get "categories") ",") }}
 {{- end -}}
 
 {{- $custom := false }}
@@ -20,7 +20,6 @@
     {{ $custom = true }}
 {{ end }}
 
-<br><br><br>
 <div class="share-buttons">
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) }}
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on twitter"

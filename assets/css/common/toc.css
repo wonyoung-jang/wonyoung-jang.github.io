@@ -1,0 +1,41 @@
+/* Table of Contents */
+.toc {
+    background-color: var(--toc-background-color);
+    color: var(--toc-text-color);
+    border-radius: var(--radius);
+    box-shadow: 2px 2px 0.5em 0 rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 2vh;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+.toc details summary {
+    margin-inline-start: 20px;
+}
+
+.toc .details {
+    display: inline;
+    font-weight: 500;
+}
+
+.toc .inner {
+    margin: 0 20px;
+    padding: 10px 20px;
+}
+
+.toc li ul {
+    margin-inline-start: var(--gap);
+}
+
+.toc a {
+    color: var(--link);
+}
+
+.toc summary:focus {
+    outline: 0;
+}

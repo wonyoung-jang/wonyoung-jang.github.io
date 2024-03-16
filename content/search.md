@@ -1,5 +1,7 @@
 ---
 title: "Search"
 layout: "search" 
-summary: "search"
+# placeholder: "Search 2"
+# description: "Search"
+summary: Search
 ---

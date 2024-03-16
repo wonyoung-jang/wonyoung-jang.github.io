@@ -1,11 +1,11 @@
 ---
 date: 2024-03-05
-tags:
+categories:
 - Lists
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 title: List of Software Development Projects
-categories:
-lastMod: 2024-03-15
+tags:
+lastMod: 2024-03-16
 ---
 This page is a list of my software projects at varying stages of development.
 

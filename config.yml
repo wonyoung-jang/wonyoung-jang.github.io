@@ -1,13 +1,27 @@
 baseURL: https://wonyoungjang.org/
 languageCode: en-us
 title: Wonyoung Jang
+paginate: 8
 
 params:
-  homeInfoParams:
-    Title: WonyoungJang.org
-    Content: "Welcome to my site! You can also find me at:"
+  profileMode:
+    enabled: true
+    title: WonyoungJang.org
+    imageUrl: /android-chrome-512x512.png
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Search
+        url: "/search"
+      - name: Categories
+        url: "/categories"
+      - name: Archives
+        url: "/archives"
+      - name: About
+        url: "/about"
+      - name: Contact
+        url: "/contact"
 
-  # Social Icons
   socialIcons:
     - name: "github"
       url: "https://github.com/wonyoung-jang"
@@ -17,7 +31,6 @@ params:
       url: "https://wonyoungjang.org/index.xml"
     - name: "email"
       url: "mailto:contact@wonyoungjang.org"
-
     # Maybe
     # - name: "behance"
     #   url: "https://www.behance.net/XXX"
@@ -26,14 +39,34 @@ params:
     # - name: "twitter"
     #   url: "https://twitter.com/XXX"
     
+  env: production # To enable google analytics, opengraph, twitter-cards and schema.
+
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowShareButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
   ShowToc: true
+  TocOpen: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+
+  author: "Wonyoung Jang"
+  contact: "contact@wonyoungjang.org"
 
   feedlinks: true
   mobileMenu: true
   copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+
+taxonomies:
+  categories: "categories"
 
 ignoreFiles:
   \.zip$
@@ -44,9 +77,11 @@ markup:
     endLevel: 6
     ordered: false
 
-services:
-  googleAnalytics:  
-    id: G-RTMKJG4NFZ
+googleAnalytics: G-RTMKJG4NFZ
+
+minify:
+  disableXML: true
+  minifyOutput: true
 
 sitemap:
   filename: sitemap.xml
@@ -58,30 +93,26 @@ outputs:
     - HTML
     - RSS
     - JSON
-  section:
-    - HTML
-    - RSS
-    - JSON
 
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /pages/about
-      weight: 10
-    - identifier: archives
-      name: Archives
-      url: /archives/
-      weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
     - identifier: search
       name: Search
       url: /search/
-      weight: 40
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
     - identifier: contact
       name: Contact
-      url: /pages/contact/
-      weight: 50
+      url: /contact/
+      weight: 51

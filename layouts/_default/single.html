@@ -25,16 +25,26 @@
         {{- partial "post_canonical.html" . -}}
       </div>
     {{- end }}
+
+    {{- if .Params.categories }}
+      <div class="post-tags">
+        <div class="tags-container">
+          {{- range .Params.categories }}
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="tag {{ . | urlize }}">{{ . }}</a>
+          {{- end }}
+        </div>
+      </div>
+    {{- end }}
+    
   </header>
 
   {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
-
-  {{- if (.Param "ShowToc") }}
-    {{- partial "toc.html" . }}
-  {{- end }}
   
   {{- if .Content }}
+    {{- if (.Param "ShowToc") }}
+      {{- partial "toc.html" . }}
+    {{- end }}
     <div class="post-content">
       {{- if not (.Param "disableAnchoredHeadings") }}
         {{- partial "anchored_headings.html" .Content -}}
@@ -54,18 +64,6 @@
   {{ partial "backlinks.html" . }}
   
   <footer class="post-footer">
-    {{- if .Params.tags }}
-      <div class="post-tags">
-        <h3>Tags</h3>
-        <hr>
-        <div class="tags-container">
-          {{- range .Params.tags }}
-              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag {{ . | urlize }}">{{ . }}</a>
-          {{- end }}
-        </div>
-      </div>
-    {{- end }}
-
     {{- if (.Param "ShowPostNavLinks") }}
       {{- partial "post_nav_links.html" . }}
     {{- end }}

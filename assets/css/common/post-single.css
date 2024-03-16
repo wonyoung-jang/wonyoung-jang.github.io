@@ -79,10 +79,6 @@
     text-decoration: underline;
 }
 
-.toc a:hover {
-    text-decoration: underline;
-}
-
 .post-content a code {
     border-radius: 0;
     box-shadow: 0 -1px 0 var(--primary) inset;
@@ -242,7 +238,7 @@
 .post-content img {
     border-radius: 4px;
     margin: 1rem 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 0.5em 0 rgba(0, 0, 0, 0.5);
 }
 
 .post-content img[src*="#center"] {
@@ -264,43 +260,6 @@
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;
-}
-
-/* Table of Contents */
-.toc {
-    background-color: var(--toc-background-color);
-    color: var(--toc-text-color);
-    border-radius: var(--radius);
-    padding: 10px 0;
-    width: 100%;
-    overflow-y: auto;
-}
-
-.toc details summary {
-    margin-inline-start: 20px;
-}
-
-.toc .details {
-    display: inline;
-    font-weight: 500;
-}
-
-.toc .inner {
-    margin: 0 20px;
-    padding: 10px 20px;
-}
-
-.toc li ul {
-    margin-inline-start: var(--gap);
-}
-
-.toc a {
-    color: var(--link);
-    font-weight: 500;
-}
-
-.toc summary:focus {
-    outline: 0;
 }
 
 /* Post Tags */
@@ -329,8 +288,7 @@
     color: var(--university-text);
 }
 
-.post-tags a:hover,
-.paginav a:hover {
+.post-tags a:hover {
     background-color: var(--primary); /* Change background color on hover */
     color: var(--entry); /* Change text color on hover for contrast */
 }
@@ -347,7 +305,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 4px dotted var(--border);
     padding-top: 2vh;
 }
 
@@ -417,21 +374,29 @@ h6:hover .anchor {
 
 /* Pagination */
 .paginav {
-    display: flex;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     line-height: 30px;
     border-radius: var(--radius);
+    white-space: nowrap;
 }
 
 .paginav a {
     padding-inline-start: 14px;
     padding-inline-end: 14px;
-    border-radius: var(--radius);
+    background-color: var(--entry);
+    overflow-inline: hidden;
+    text-overflow: ellipsis;
 }
 
 .paginav .title {
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--secondary);
+    font-size: smaller;
+    filter: contrast(50%);
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .paginav .prev,
@@ -439,16 +404,36 @@ h6:hover .anchor {
     width: 50%;
 }
 
-.paginav span:hover:not(.title) {
-    box-shadow: 0 1px 0;
+.paginav a:hover {
+    filter: saturate(200%) brightness(110%);
 }
+
+.paginav span:hover:not(.title) {
+    text-decoration: underline;
+    color: var(--link);
+}
+
 
 .paginav .next {
     text-align: right;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.paginav .prev {
+    text-align: left;
+    border-radius: var(--radius) 0 0 var(--radius);
+    border-right: 1px dotted var(--border);
 }
 
 [dir="rtl"] .paginav .next {
     text-align: left;
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+[dir="rtl"] .paginav .prev {
+    text-align: right;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    border-left: 1px dotted var(--border);
 }
 
 /* GitHub Button */

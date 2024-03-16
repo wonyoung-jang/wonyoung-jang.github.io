@@ -1,11 +1,12 @@
 ---
 date: 2024-03-01
-tags:
+categories:
 - Meta
 coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
+url: /about
 title: About
-categories:
-lastMod: 2024-03-15
+tags:
+lastMod: 2024-03-16
 ---
 ## About Wonyoung Jang
 
@@ -17,6 +18,6 @@ I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psych
 
 I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the [Lang Science Program](https://www.amnh.org/learn-teach/children-and-families/lang-science-program) at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.
 
-## About this Site
+## About this site
 
 This site is hosted using [Hugo](https://gohugo.io/) and [GitHub Pages](https://pages.github.com/). It is created using [Logseq Schrodinger](https://github.com/sawhney17/logseq-schrodinger) to convert Logseq's markdown to suitable Hugo format markdown.

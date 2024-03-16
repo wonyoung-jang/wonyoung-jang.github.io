@@ -46,7 +46,7 @@
 
 @media (prefers-reduced-motion) {
     /* terms; profile-mode; post-single; post-entry; post-entry; search; search */
-    .terms-tags a:active,
+    .categories a:active,
     .button:active,
     .share-buttons svg:active,
     .post-entry:active,

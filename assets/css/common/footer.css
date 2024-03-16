@@ -1,20 +1,21 @@
 .footer,
 .top-link {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--primary);
 }
 
 .footer {
-    max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
     padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
-    text-align: center;
-    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer span {
-    margin-inline-start: 1px;
-    margin-inline-end: 1px;
+    margin: 0 1px;
 }
 
 .footer span:last-child {

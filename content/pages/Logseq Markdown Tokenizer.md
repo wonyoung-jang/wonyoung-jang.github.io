@@ -1,12 +1,12 @@
 ---
 date: 2024-01-13
-tags:
+categories:
 - Software Development Projects
 coverimage: ../assets/logseq_tokenizer_1709673334004_0.png
 githubrepo: wonyoung-jang/logseq-tokenizer
 title: Logseq Markdown Tokenizer
-categories:
-lastMod: 2024-03-12
+tags:
+lastMod: 2024-03-16
 ---
 ![logseq_tokenizer.png](/assets/logseq_tokenizer_1709673334004_0.png)
 

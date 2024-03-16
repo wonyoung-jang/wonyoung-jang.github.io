@@ -63,10 +63,10 @@ hugo -D + hugo serve -D to build and serve the site locally.</description>
     
     <item>
       <title>About</title>
-      <link>https://wonyoungjang.org/pages/about/</link>
+      <link>https://wonyoungjang.org/about/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/about/</guid>
+      <guid>https://wonyoungjang.org/about/</guid>
       <description>About Wonyoung Jang Hello, that&amp;rsquo;s me!
 Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
 I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
@@ -75,10 +75,10 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
     
     <item>
       <title>Contact</title>
-      <link>https://wonyoungjang.org/pages/contact/</link>
+      <link>https://wonyoungjang.org/contact/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/contact/</guid>
+      <guid>https://wonyoungjang.org/contact/</guid>
       <description>Contact Me The best way to contact me directly is through email at contact@wonyoungjang.org.</description>
     </item>
     

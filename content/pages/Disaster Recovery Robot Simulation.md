@@ -1,12 +1,12 @@
 ---
 date: 2024-01-25
-tags:
+categories:
 - University Coursework Projects
 coverimage: ../assets/image_1709746536850_0.png
 githubrepo: wonyoung-jang/disaster-recovery-robot
 title: Disaster Recovery Robot Simulation
-categories:
-lastMod: 2024-03-11
+tags:
+lastMod: 2024-03-16
 ---
 ![image.png](/assets/image_1709746536850_0.png)
 

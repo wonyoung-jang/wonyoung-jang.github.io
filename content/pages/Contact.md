@@ -1,11 +1,12 @@
 ---
 date: 2024-03-01
-tags:
+categories:
 - Meta
 coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
+url: /contact
 title: Contact
-categories:
-lastMod: 2024-03-15
+tags:
+lastMod: 2024-03-16
 ---
 ## Contact Me
 

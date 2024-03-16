@@ -1,14 +1,14 @@
 {{ $re := $.File.BaseFileName }}
 {{ $backlinks := slice }}
 {{ range where .Site.RegularPages "Type" "pages" }}
-   {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+  {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) (strings.Contains .RawContent "< ref ") }}
       {{ $backlinks = $backlinks | append . }}
    {{ end }}
 {{ end }}
 
 {{ if gt (len $backlinks) 0 }}
   <aside>
-    <h2>Internal links</h2>
+    <h2>Links here</h2>
     <hr>
     <div class="backlinks">
         <ul style="padding-left: 2vw;">
