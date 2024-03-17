@@ -10,6 +10,10 @@
     margin-bottom: 2vh;
 }
 
+.toc:hover {
+    filter: drop-shadow(2px 2px 0.5em rgba(0, 0, 0, 0.5));
+}
+
 .toc a:hover {
     text-decoration: underline;
 }
