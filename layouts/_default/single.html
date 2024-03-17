@@ -27,10 +27,10 @@
     {{- end }}
 
     {{- if .Params.categories }}
-      <div class="post-tags">
-        <div class="tags-container">
+      <div class="post-categories">
+        <div class="categories-container">
           {{- range .Params.categories }}
-              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="tag {{ . | urlize }}">{{ . }}</a>
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
           {{- end }}
         </div>
       </div>

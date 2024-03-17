@@ -162,9 +162,9 @@
     padding-left: 12vw; /* remove padding for list view */
 }
 
-/* Adjust the tag styles for list view */
-.posts-container:not([style*="grid"]) .tag {
-    margin: 0 -11vw 0 12vw; /* reduced margin for tags to be closer together */
+/* Adjust the c styles for list view */
+.posts-container:not([style*="grid"]) .category {
+    margin: 0 -11vw 0 12vw; /* reduced margin for categories to be closer together */
 }
 
 /* Hover effect for list view */

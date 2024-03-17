@@ -7,6 +7,12 @@
     --footer-height: 60px;
     --radius: 8px;
 
+    /* Category Colors */
+    --meta-bg: #ff9f9f;
+    --lists-bg: #ffdb79;
+    --software-bg: #cc9fff;
+    --university-bg: #abbfff;
+
     --theme: rgb(255, 255, 255); /* White background */
     --entry: rgb(222, 240, 255); /* Light blue for entry */
     --primary: rgb(0, 0, 0); /* Black for primary text */
@@ -58,17 +64,6 @@
 
     --verse-bg: #e8cbf8; /* Light pastel lavender */
     --verse-text: #40275a; /* Dark lavender text for contrast */
-
-    /* Tag Colors */
-    --lists-bg: #ffdb79;
-    --lists-text: rgb(0, 0, 0);
-
-    --software-bg: #cc9fff;
-    --software-text: rgb(0, 0, 0);
-
-    --university-bg: #abbfff;
-    --university-text: rgb(0, 0, 0);
-
 }
 
 .dark {
@@ -123,16 +118,6 @@
 
     --verse-bg: #e4a2f2; /* Pastel lavender */
     --verse-text: #333333; /* Dark grey text for contrast */
-
-    /* Tag Colors */
-    --lists-bg: #ffdb79;
-    --lists-text: rgb(0, 0, 0);
-
-    --software-bg: #cc9fff;
-    --software-text: rgb(0, 0, 0);
-
-    --university-bg: #abbfff;
-    --university-text: rgb(0, 0, 0);
 }
 
 .list {

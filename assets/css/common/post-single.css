@@ -262,38 +262,38 @@
     font-weight: normal;
 }
 
-/* Post Tags */
-.post-tags div {
+/* Post Categories */
+.post-categories div {
     display: inline-block;
 }
 
-.post-tags a {
+.post-categories a {
     font-size: 11px;
     font-weight: bold;
     transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.post-tags.lists a {
+.post-categories.lists a {
     background-color: var(--lists-bg);
     color: var(--lists-text);
 }
 
-.post-tags.software-development-projects a {
+.post-categories.software-development-projects a {
     background-color: var(--software-bg);
     color: var(--software-text);
 }
 
-.post-tags.university-coursework-projects a {
+.post-categories.university-coursework-projects a {
     background-color: var(--university-bg);
     color: var(--university-text);
 }
 
-.post-tags a:hover {
+.post-categories a:hover {
     background-color: var(--primary); /* Change background color on hover */
     color: var(--entry); /* Change text color on hover for contrast */
 }
 
-.post-tags .tags-container {
+.post-categories .categories-container {
     display: flow-root;
     margin: 1vh -2vw;
 }

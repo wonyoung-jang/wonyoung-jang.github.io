@@ -51,6 +51,7 @@ params:
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
+  defaultTheme: auto
 
   disableSpecial1stPost: false
   disableScrollToTop: false
