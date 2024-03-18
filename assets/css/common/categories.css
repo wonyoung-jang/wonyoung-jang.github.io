@@ -19,7 +19,6 @@
 /* Category hover effect */
 .category:hover {
     filter: brightness(1.1);
-    transform: scale(0.99);
 }
 
 /* Category colors for unique categories*/

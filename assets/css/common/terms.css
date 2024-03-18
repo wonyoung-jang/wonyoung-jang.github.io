@@ -12,8 +12,3 @@
     border-radius: 6px;
     transition: transform 0.1s;
 }
-
-.categories a:active {
-    background: var(--theme);
-    transform: scale(0.96);
-}
