@@ -5,21 +5,17 @@
 }
 
 .footer {
-    padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     bottom: 0;
-    width: 100%;
-}
+    display: flex;
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--content-gap) var(--gap);
 
-.footer span {
-    margin: 0 1px;
-}
-
-.footer span:last-child {
-    white-space: nowrap;
 }
 
 .footer a {

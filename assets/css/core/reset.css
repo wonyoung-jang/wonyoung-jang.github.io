@@ -23,8 +23,8 @@ h6 {
 
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.4;
     word-break: break-word;
     background: var(--theme);
 }
