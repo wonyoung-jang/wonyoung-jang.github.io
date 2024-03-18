@@ -6,10 +6,11 @@
    {{ end }}
   {{ end }}
 
+<hr>
+<br>
 {{ if gt (len $backlinks) 0 }}
   <aside>
     <h2>Links here</h2>
-    <hr>
     <div class="backlinks">
       <ul style="padding-left: 2vw;">
         {{ range $backlinks }}
@@ -25,7 +26,6 @@
   {{ $related := .Site.RegularPages.Related . | first 3 -}}
   {{ with $related -}}
   <h2>See also</h2>
-    <hr>
     <ul style="padding-left: 2vw;">
       {{ range . -}}
           <li><p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p></li>
@@ -36,3 +36,4 @@
     <p>No related pages found.</p>
   {{ end -}}
 </aside>
+<br>

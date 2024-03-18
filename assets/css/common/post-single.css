@@ -308,24 +308,27 @@
     padding-top: 2vh;
 }
 
-.share-buttons a:not(:last-of-type) {
-    margin-inline-end: 12px;
-}
-
 .share-buttons a svg {
     height: 30px;
     width: 30px;
-    fill: currentColor;
+    fill: var(--content);
     transition: transform 0.1s;
 }
 
 .share-buttons svg:active {
-    transform: scale(0.96);
+    filter: brightness(90%);
 }
 
 .share-buttons {
-    margin: 14px 0;
     padding-inline-start: var(--radius);
+    background-color: var(--entry);
+    border-radius: var(--radius);
+    padding: 1vh 2vh;
+    gap: var(--gap);
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: var(--gap) auto;
 }
 
 /* Ensures icons are aligned on the same line */
@@ -333,6 +336,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.share-buttons a:hover svg {
+    transform: translateY(-2px);
 }
 
 /* Headers */
