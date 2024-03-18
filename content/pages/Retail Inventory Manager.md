@@ -6,7 +6,7 @@ coverimage: ../assets/guitar_shop_inventory_1709746147769_0.png
 githubrepo: wonyoung-jang/retail-inventory-manager
 title: Retail Inventory Manager
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![guitar_shop_inventory.png](/assets/guitar_shop_inventory_1709746147769_0.png)
 
@@ -14,6 +14,8 @@ Customizing a [Spring Framework](https://spring.io/projects/spring-framework) ap
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

@@ -7,8 +7,6 @@ title: List of Software Development Projects
 tags:
 lastMod: 2024-03-17
 ---
----
-
 This page is a list of my software projects at varying stages of development.
 
 ---

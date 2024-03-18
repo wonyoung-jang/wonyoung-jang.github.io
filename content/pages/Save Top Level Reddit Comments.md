@@ -10,8 +10,6 @@ lastMod: 2024-03-17
 ---
 ![reddit_top_level_comments.png](/assets/reddit_top_level_comments_1709664702436_0.png)
 
----
-
 Extract the parent comments of a [reddit](https://www.reddit.com/) post.
 
 ---

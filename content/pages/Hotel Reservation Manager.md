@@ -6,7 +6,7 @@ coverimage: ../assets/hotel_reservation_manager_1709746723628_0.png
 githubrepo: wonyoung-jang/hotel-reservation-manager
 title: Hotel Reservation Manager
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![hotel_reservation_manager.png](/assets/hotel_reservation_manager_1709746723628_0.png)
 
@@ -14,6 +14,8 @@ Enhancing a [Spring](https://spring.io/projects/spring-framework) application fo
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

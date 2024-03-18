@@ -6,7 +6,7 @@ categories:
 githubrepo: wonyoung-jang/student-record-system
 title: Student Record System
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![student_record_system.png](/assets/student_record_system_1709746026803_0.png)
 
@@ -14,6 +14,8 @@ Developing a system in C++ to manage and maintain a student roster, involving da
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

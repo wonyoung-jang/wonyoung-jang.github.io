@@ -6,7 +6,7 @@ coverimage: ../assets/vacation_cart_manager_1709746642372_0.png
 githubrepo: wonyoung-jang/vacation-cart-manager
 title: Vacation Cart Manager
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![vacation_cart_manager.png](/assets/vacation_cart_manager_1709746642372_0.png)
 
@@ -14,6 +14,8 @@ Developing a [Spring Framework](https://spring.io/projects/spring-framework) Jav
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

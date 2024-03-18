@@ -10,8 +10,6 @@ lastMod: 2024-03-17
 ---
 ![logseq_tokenizer.png](/assets/logseq_tokenizer_1709673334004_0.png)
 
----
-
 Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/).
 
 ---

@@ -7,8 +7,6 @@ title: List of University Coursework Projects
 tags:
 lastMod: 2024-03-17
 ---
----
-
 This page is a list of projects completed and submitted for my computer science degree coursework.
 
 ---

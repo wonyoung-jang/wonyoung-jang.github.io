@@ -10,8 +10,6 @@ lastMod: 2024-03-17
 ---
 ![image.png](/assets/image_1709746330336_0.png)
 
----
-
 This page is a meta presentation for the deployment of this website (and this page).
 
 ---

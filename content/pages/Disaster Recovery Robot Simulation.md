@@ -6,7 +6,7 @@ coverimage: ../assets/image_1709746536850_0.png
 githubrepo: wonyoung-jang/disaster-recovery-robot
 title: Disaster Recovery Robot Simulation
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![image.png](/assets/image_1709746536850_0.png)
 
@@ -14,6 +14,8 @@ Developing an autonomous robotic recovery system using the [CoppeliaSim](https:/
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

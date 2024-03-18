@@ -6,7 +6,7 @@ coverimage: ../assets/dvd-rental-sample-database-diagram_1709746107091_0.png
 githubrepo: wonyoung-jang/dvd-rental-revenue
 title: DVD Rental Database Revenue Insights
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![dvd-rental-sample-database-diagram.png](/assets/dvd-rental-sample-database-diagram_1709746107091_0.png)
 
@@ -14,6 +14,8 @@ Generating a business report within a [PostgreSQL](https://www.postgresql.org/) 
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

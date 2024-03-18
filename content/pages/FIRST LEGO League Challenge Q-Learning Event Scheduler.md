@@ -11,14 +11,10 @@ lastMod: 2024-03-17
 ---
 ![fllc_qlearning_demo.png](/assets/fllc_qlearning_demo_1709746398103_0.png)
 
----
-
 A FLLC event scheduler using Q-Learning.
 
 {{< logseq/orgNOTE >}}Update: As of 2024-03-08 this project is presented here in its submission state for my Computer Science degree's capstone project.
 {{< / logseq/orgNOTE >}}
-
----
 
 Designing, developing, and implementing a capstone project that incorporates machine learning and data visualization to address a specific business or organizational need.
 

@@ -6,7 +6,7 @@ coverimage: ../assets/package_delivery_network_1709746666621_0.png
 githubrepo: wonyoung-jang/package-delivery-network
 title: Package Delivery Route Optimization
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![package_delivery_network.png](/assets/package_delivery_network_1709746666621_0.png)
 
@@ -14,6 +14,8 @@ Designing a hash table-based package delivery tracking system in Python, with pa
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

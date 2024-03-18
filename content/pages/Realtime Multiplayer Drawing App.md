@@ -10,8 +10,6 @@ lastMod: 2024-03-17
 ---
 ![realtime-multiplayer-drawing.png](/assets/realtime-multiplayer-drawing_1709917652384_0.png)
 
----
-
 Draw in realtime on a blank canvas with others on the same server.
 
 ---
