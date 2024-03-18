@@ -5,9 +5,13 @@ categories:
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 title: List of Software Development Projects
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
+---
+
 This page is a list of my software projects at varying stages of development.
+
+---
 
 ## Python
 
@@ -16,6 +20,8 @@ This page is a list of my software projects at varying stages of development.
   + [Logseq Markdown Tokenizer]({{< ref "/pages/Logseq Markdown Tokenizer" >}})
 
   + [Save Top Level Reddit Comments]({{< ref "/pages/Save Top Level Reddit Comments" >}})
+
+---
 
 ## Go, Javascript, HTML, CSS
 

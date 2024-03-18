@@ -1,13 +1,14 @@
-{{ $re := $.File.BaseFileName }} 
-{{ $backlinks := slice }}
- {{ range where .Site.RegularPages "Type" "pages" }} 
-  {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }} 
-    {{ $backlinks = $backlinks | append . }}
-   {{ end }}
+{{ $re := printf "\\({{< ref \\\"/pages/%s\\\" >}}\\)" $.File.BaseFileName}}
+{{ $backlinks := slice }} 
+{{ range where .Site.RegularPages "Type" "pages" }} 
+  {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+   {{ $backlinks = $backlinks | append . }} 
   {{ end }}
+{{ end }} 
 
 <hr>
 <br>
+
 {{ if gt (len $backlinks) 0 }}
   <aside>
     <h2>Links here</h2>
@@ -20,10 +21,10 @@
     </div>
   </aside>
 <br>
-  {{ end }}
-  
+{{ end }}
+
 <aside class="related">
-  {{ $related := .Site.RegularPages.Related . | first 3 -}}
+  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
   {{ with $related -}}
   <h2>See also</h2>
     <ul style="padding-left: 2vw;">
