@@ -7,9 +7,11 @@ coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
 githubrepo: wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![fllc_qlearning_demo.png](/assets/fllc_qlearning_demo_1709746398103_0.png)
+
+---
 
 A FLLC event scheduler using Q-Learning.
 
@@ -19,6 +21,8 @@ A FLLC event scheduler using Q-Learning.
 ---
 
 Designing, developing, and implementing a capstone project that incorporates machine learning and data visualization to address a specific business or organizational need.
+
+---
 
 ## Learning Objectives and Requirements
 

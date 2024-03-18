@@ -6,14 +6,18 @@ categories:
 githubrepo: wonyoung-jang/bagel-coffee-stores
 title: Bagel Corner and Mister Coffee Database Management
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![bagel_corner_ERD.jpg](/assets/bagel_corner_erd_1709745980175_0.jpg)
+
+---
 
 Developing normalized physical database models (including ER diagrams, tables, and queries) for two fictional small businesses (Bagel Corner and Mister Coffee) using SQL, with  table creation, data loading, and report generation.
 
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
+
+---
 
 ## Learning Objectives and Requirements
 

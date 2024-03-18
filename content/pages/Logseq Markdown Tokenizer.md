@@ -6,11 +6,15 @@ coverimage: ../assets/logseq_tokenizer_1709673334004_0.png
 githubrepo: wonyoung-jang/logseq-tokenizer
 title: Logseq Markdown Tokenizer
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![logseq_tokenizer.png](/assets/logseq_tokenizer_1709673334004_0.png)
 
+---
+
 Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/).
+
+---
 
 ## The Problem
 
@@ -20,9 +24,13 @@ Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding mode
 
   + Logseq's graph is difficult to search and prune manually.
 
+---
+
 ## Proposed Solution
 
 Encode Logseq's graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
+
+---
 
 ## Implementation
 
@@ -38,11 +46,15 @@ Encode Logseq's graph to enable semantic search, then leverage this encoding to 
 
   + If have the token counts, I can estimate the cost of embedding for OpenAI's three available `text-embedding` models.
 
+---
+
 ## Outputting the Data to CSV
 
 If I output this data as a CSV, I can manipulate and format the data. For instance, with conditional formatting:
 
 ![example_output.png](/assets/example_output_1710007420546_0.png)
+
+---
 
 ## Summary
 

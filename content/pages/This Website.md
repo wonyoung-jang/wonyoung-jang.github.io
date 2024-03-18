@@ -6,11 +6,15 @@ coverimage: ../assets/image_1709746330336_0.png
 githubrepo: wonyoung-jang/wonyoung-jang.github.io
 title: This Website
 tags:
-lastMod: 2024-03-16
+lastMod: 2024-03-17
 ---
 ![image.png](/assets/image_1709746330336_0.png)
 
+---
+
 This page is a meta presentation for the deployment of this website (and this page).
+
+---
 
 ## How It's Made
 
@@ -23,6 +27,8 @@ This page is a meta presentation for the deployment of this website (and this pa
 4. `hugo -D` + `hugo serve -D` to build and serve the site locally.
 
 5. GitHub Actions to serve the site publicly.
+
+---
 
 ## Admonitions
 
