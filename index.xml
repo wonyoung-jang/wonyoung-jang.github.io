@@ -89,8 +89,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       
       <guid>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
       <description>A FLLC event scheduler using Q-Learning.
-Update: As of 2024-03-08 this project is presented here in its submission state for my Computer Science degree&amp;rsquo;s capstone project. Designing, developing, and implementing a capstone project that incorporates machine learning and data visualization to address a specific business or organizational need.
-Learning Objectives and Requirements Write a Letter of Transmittal and a Project Proposal Create a compelling letter of transmittal and project proposal to convince senior, non-technical managers and executives to implement the data product.</description>
+Update 2024-03-18: Minimally reformatted and refactored. Organization I couldn&amp;rsquo;t do in the one month span to complete a functional product for the course. Began writing out a brief history on this project. A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year?</description>
     </item>
     
     <item>
