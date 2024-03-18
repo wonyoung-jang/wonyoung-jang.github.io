@@ -38,7 +38,7 @@ params:
     #   url: "https://www.youtube.com/channel/XXX"
     # - name: "twitter"
     #   url: "https://twitter.com/XXX"
-    
+
   env: production # To enable google analytics, opengraph, twitter-cards and schema.
 
   ShowReadingTime: true
@@ -88,6 +88,14 @@ sitemap:
   filename: sitemap.xml
   priority: 0.5
   changefreq: daily
+
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: true
+    name: categories
+    weight: 80
+  threshold: 20
 
 outputs:
   home:
