@@ -8,10 +8,16 @@
     --radius: 8px;
 
     /* Category Colors */
-    --meta-bg: #ff9f9f;
-    --lists-bg: #ffdb79;
-    --software-bg: #cc9fff;
-    --university-bg: #abbfff;
+    --meta-bg: #FFE5B4;
+    --lists-bg: #FFC0CB;
+    --university-bg: #E6E6FA;
+    --software-bg: #B0E0E6;
+    --category5-bg: #98FB98;
+    --category6-bg: #FAFAD2;
+    --category7-bg: #F0E68C;
+    --category8-bg: #FFB6C1;
+    --category9-bg: #D8BFD8;
+    --category10-bg: #ADD8E6;
 
     --theme: rgb(255, 255, 255); /* White background */
     --entry: rgb(222, 240, 255); /* Light blue for entry */

@@ -2,18 +2,18 @@
 .category {
     display: inline-flex;
 
-    border-radius: 15px; /* Increased border-radius for more rounded corners */
+    border-radius: var(--radius); /* Increased border-radius for more rounded corners */
 
     margin: 0 -1vw 0 2vw; /* Reduced margin for categories to be closer together */
-    padding: 3px 10px; /* Reduced padding to make categories smaller */
+    padding: 0.5vw 1vw;
     
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
 
     position: relative;
     pointer-events: auto;
     z-index: 2;
-    color: var(--theme);
+    color: rgb(0, 0, 0);
 }
 
 /* Category hover effect */

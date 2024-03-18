@@ -268,24 +268,19 @@
 }
 
 .post-categories a {
-    font-size: 11px;
-    font-weight: bold;
-    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out; /* Smooth transition for hover effect */
+    font-size: 12px;
 }
 
 .post-categories.lists a {
     background-color: var(--lists-bg);
-    color: var(--lists-text);
 }
 
 .post-categories.software-development-projects a {
     background-color: var(--software-bg);
-    color: var(--software-text);
 }
 
 .post-categories.university-coursework-projects a {
     background-color: var(--university-bg);
-    color: var(--university-text);
 }
 
 .post-categories a:hover {
