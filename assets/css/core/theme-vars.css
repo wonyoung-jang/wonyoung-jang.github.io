@@ -21,7 +21,7 @@
 
     --theme: rgb(255, 255, 255); /* White background */
     --entry: rgb(222, 240, 255); /* Light blue for entry */
-    --primary: rgb(0, 0, 0); /* Black for primary text */
+    --primary: rgb(26, 26, 26); /* Black for primary text */
     --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
     --tertiary: rgb(102, 102, 102); /* Light grey for tertiary elements */
     --content: rgb(0, 0, 0); /* Black for content */
@@ -75,10 +75,10 @@
 .dark {
     --theme: rgb(23, 23, 23); /* Dark background */
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
-    --primary: rgb(230, 230, 230); /* Light grey for primary text */
+    --primary: rgb(226, 226, 226); /* Light grey for primary text */
     --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
     --tertiary: rgb(207, 207, 207); /* Light grey for tertiary elements */
-    --content: rgb(230, 230, 230); /* Light grey for content */
+    --content: rgb(216, 216, 216); /* Light grey for content */
     --hljs-bg: rgb(33, 26, 37); /* Darker indigo for code highlight background */
     --code-bg: rgb(34, 0, 61); /* Darker indigo for code blocks */
     --border: rgb(239, 222, 253); /* Darker indigo for borders */
