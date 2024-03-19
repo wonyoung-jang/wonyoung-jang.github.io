@@ -3,6 +3,11 @@ languageCode: en-us
 title: Wonyoung Jang
 paginate: 9
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   # homeInfoParams:
   #   title: 
@@ -13,8 +18,8 @@ params:
     subtitle: "Welcome! Check out some of my projects: "
 
     imageUrl: /android-chrome-512x512.png
-    imageWidth: 120 # custom size
-    imageHeight: 120 # custom size
+    imageWidth: 220 # custom size
+    imageHeight: 220 # custom size
     imageTitle: WonyoungJang.org site logo
     
     buttons:
@@ -120,6 +125,10 @@ menu:
       name: Categories
       url: /categories/
       weight: 20
+    - identifier: graph
+      name: Graph
+      url: /graph/
+      weight: 25
     - identifier: archives
       name: Archives
       url: /archives/
