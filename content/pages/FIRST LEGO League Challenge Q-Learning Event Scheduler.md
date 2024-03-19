@@ -8,7 +8,6 @@ githubrepo: wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
 lastMod: 2024-03-18
-weight: 1
 ---
 ![fllc_qlearning_demo.png](/assets/fllc_qlearning_demo_1709746398103_0.png)
 
