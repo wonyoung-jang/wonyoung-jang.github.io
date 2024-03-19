@@ -22,15 +22,16 @@ params:
         url: "/categories/software-development-projects"
       - name: University Coursework
         url: "/categories/university-coursework-projects"
-    # socialIcons:
-    #   - name: "github"
-    #     url: "https://github.com/wonyoung-jang"
-    #   - name: "kofi"
-    #     url: "https://ko-fi.com/wonyoung_jang"
-    #   - name: "rss"
-    #     url: "https://wonyoungjang.org/index.xml"
-    #   - name: "email"
-    #     url: "mailto:contact@wonyoungjang.org"
+     
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/wonyoung-jang"
+    - name: "kofi"
+      url: "https://ko-fi.com/wonyoung_jang"
+    - name: "rss"
+      url: "https://wonyoungjang.org/index.xml"
+    - name: "email"
+      url: "mailto:contact@wonyoungjang.org"
       # Maybe
       # - name: "behance"
       #   url: "https://www.behance.net/XXX"

@@ -15,14 +15,14 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: var(--gap);
-    padding-bottom: var(--gap);
+    line-height: 2;
 }
 
 .footer a {
     color: var(--link);
 }
 
-.footer a:hover {
+.footer span a:hover {
     border-bottom: 1px solid var(--primary);
 }
 
@@ -56,4 +56,23 @@
 .top-link:focus,
 #theme-toggle:focus {
     outline: 0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.social-icons a svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    transition: transform 0.3s;
+    color: var(--content);
+}
+
+.social-icons svg:hover {
+    color: var(--link);
 }

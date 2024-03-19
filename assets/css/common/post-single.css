@@ -316,14 +316,13 @@
 
 .share-buttons {
     padding-inline-start: var(--radius);
-    background-color: var(--entry);
     border-radius: var(--radius);
     padding: 1vh 2vh;
-    gap: var(--gap);
+    gap: var(--content-gap);
     width: fit-content;
     justify-content: center;
     align-items: center;
-    margin: var(--gap) auto;
+    margin: var(--gap) auto 0 auto;
 }
 
 /* Ensures icons are aligned on the same line */
