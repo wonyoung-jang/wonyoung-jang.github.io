@@ -6,7 +6,6 @@
 
 .footer {
     position: relative;
-    bottom: 0;
     display: flex;
     margin-left: var(--gap);
     margin-right: var(--gap);
@@ -15,7 +14,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: var(--gap);
-    line-height: 2;
+    bottom: var(--gap);
 }
 
 .footer a {
