@@ -16,7 +16,7 @@
     other: "{{ .Count }} min read"
 
 - id: toc
-  translation: "Contents"
+  translation: "Table of Contents"
 
 - id: translations
   translation: "Translations"

@@ -50,7 +50,7 @@ params:
   TocOpen: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  UseHugoToc: false
   defaultTheme: auto
 
   disableSpecial1stPost: false

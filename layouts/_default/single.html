@@ -1,5 +1,4 @@
 {{- define "main" }}
-
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -26,10 +25,6 @@
       </div>
     {{- end }}
 
-    {{ with .Params.githubRepo }}
-      {{ partial "github_button.html" (dict "githubRepo" .) }}
-    {{ end }}
-
     {{- if .Params.categories }}
       <div class="post-categories">
         <div class="categories-container">
@@ -39,7 +34,11 @@
         </div>
       </div>
     {{- end }}
-    
+
+    {{ with .Params.githubRepo }}
+      {{ partial "github_button.html" (dict "githubRepo" .) }}
+    {{ end }}
+
   </header>
 
   {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
@@ -49,6 +48,7 @@
     {{- if (.Param "ShowToc") }}
       {{- partial "toc.html" . }}
     {{- end }}
+    
     <div class="post-content">
       {{- if not (.Param "disableAnchoredHeadings") }}
         {{- partial "anchored_headings.html" .Content -}}

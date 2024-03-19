@@ -1,4 +1,7 @@
 {{ $repoName := split .githubRepo "/" | last 1 }}
-<a href="https://github.com/{{ .githubRepo }}" class="github-button" target="_blank" rel="noopener noreferrer">
-    View the Source on GitHub: @{{ index $repoName 0 }}
-</a>
+
+<span class="">
+    <a class='github-button' href="https://github.com/{{ .githubRepo }}" target="_blank" rel="noopener noreferrer">
+        View the source&nbsp;&nbsp;<span style="font-family: 'IBM Plex Mono', monospace; color: var(--link); filter: brightness(250%);">@{{ index $repoName 0 }}</span>&nbsp;&nbsp;on GitHub
+    </a>
+</span>

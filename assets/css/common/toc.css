@@ -1,45 +1,91 @@
 /* Table of Contents */
 .toc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--toc-background-color);
     color: var(--toc-text-color);
     border-radius: var(--radius);
-    box-shadow: 2px 2px 0.5em 0 rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
-    width: 100%;
-    overflow-y: auto;
-    margin-bottom: 2vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh 0 rgba(0, 0, 0, 0.5);
+    padding: 1vh 1vh 0 1vh;
 }
 
+/* Hover effects */
 .toc:hover {
     filter: drop-shadow(2px 2px 0.5em rgba(0, 0, 0, 0.5));
 }
 
 .toc a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  
 }
 
-.toc details summary {
-    margin-inline-start: 20px;
+/* Heading with subheadings */
+.toc details {
+    margin-bottom: 0.5em;
 }
 
-.toc .details {
-    display: inline;
-    font-weight: 500;
+/* Collapsible heading */
+.toc summary {
+    cursor: pointer;
+    pointer-events: fill;
+    padding: 0.5em;
 }
 
-.toc .inner {
-    margin: 0 20px;
-    padding: 10px 20px;
+.toc summary::marker {
+    content: none;
 }
 
-.toc li ul {
-    margin-inline-start: var(--gap);
+/* Summary icon */
+.toc summary::before {
+    content: '▶ ';
+    position: relative;
+    transition: transform 0.2s;
+    display: inline-block;
+    right: 0.5em;
 }
 
-.toc a {
-    color: var(--link);
+/* Summary icon when open */
+.toc details[open] > summary::before {
+    transform: rotate(90deg);
 }
 
-.toc summary:focus {
-    outline: 0;
+/* Summary hover */
+.toc summary:hover {
+    border-right: 1px solid var(--link);
+}
+
+/* The list of links */
+.toc ul, .toc ol {
+    list-style: none;
+    padding-left: 1.5em;
+    border-left: 1px solid var(--toc-text-color);
+    margin-left: var(--gap);
+}
+
+/* The list items */
+.toc li {
+    position: relative;
+    margin: 0.5em 0;
+}
+
+/* The list item icon */
+.toc li::before {
+    content: '';
+    position: absolute;
+    left: -1.5em;
+    width: 1em;
+    height: 0.1em;
+    top: 0.8em;
+    background-color: var(--toc-text-color);
+}
+
+/* The last list item icon */
+.toc li:last-child::after {
+    content: '';
+    position: absolute;
+    left: -1.5em;
+    width: 0.1em;
+    top: 0.8em;
+    bottom: 0;
+    background-color: var(--toc-background-color);
 }
