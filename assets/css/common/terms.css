@@ -9,6 +9,23 @@
     padding: 3px 10px;
     background: var(--primary);
     color: var(--theme);
-    border-radius: 6px;
+    border-radius: var(--radius);
     transition: transform 0.1s;
+}
+
+/* Categories colors for unique categories*/
+.categories .lists {
+    background-color: var(--lists-bg);
+}
+
+.categories .software-development-projects {
+    background-color: var(--software-bg);
+}
+
+.categories .university-coursework-projects {
+    background-color: var(--university-bg);
+}
+
+.categories .meta {
+    background-color: var(--meta-bg);
 }

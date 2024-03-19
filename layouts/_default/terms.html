@@ -22,7 +22,7 @@
                 {{- continue -}}
             {{- end }}
             <li>
-                <a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+                <a href="{{ .Permalink }}" class="categories {{ .Name | urlize }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
             </li>
         {{- end }}
     {{- end }}
