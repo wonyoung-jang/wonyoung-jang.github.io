@@ -1,7 +1,7 @@
 baseURL: https://wonyoungjang.org/
 languageCode: en-us
 title: Wonyoung Jang
-paginate: 8
+paginate: 10
 
 params:
   # homeInfoParams:

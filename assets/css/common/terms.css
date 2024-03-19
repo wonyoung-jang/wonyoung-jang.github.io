@@ -11,6 +11,7 @@
     color: var(--theme);
     border-radius: var(--radius);
     transition: transform 0.1s;
+    color: rgb(0, 0, 0);
 }
 
 /* Categories colors for unique categories*/

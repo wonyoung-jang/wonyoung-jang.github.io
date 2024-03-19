@@ -4,7 +4,7 @@
 
     border-radius: var(--radius); /* Increased border-radius for more rounded corners */
 
-    margin: 0 -1vw 0 2vw; /* Reduced margin for categories to be closer together */
+    margin: 1em -1em 0 2em; /* Reduced margin for categories to be closer together */
     padding: 0.5vw 1vw;
     
     font-size: 12px;

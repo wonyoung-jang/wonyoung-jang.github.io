@@ -71,7 +71,7 @@
 
     <div class="posts-container">
         {{- $term := .Data.Term }}
-        {{- range $index, $page := first 8 $paginator.Pages }}
+        {{- range $index, $page := first 9 $paginator.Pages }}
             {{- $class := "post-entry" }}
             {{- $user_preferred := or .Site.Params.disableSpecial1stPost .Site.Params.homeInfoParams }}
             
