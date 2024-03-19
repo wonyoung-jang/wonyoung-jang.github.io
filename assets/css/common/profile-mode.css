@@ -4,6 +4,7 @@
     justify-content: center;
 }
 
+/* Profile */
 .main .profile {
     align-items: center;
     min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
@@ -23,19 +24,21 @@
     pointer-events: none;
 }
 
+/* Buttons */
 .buttons {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: var(--gap);
-    margin: var(--gap);
 }
 
 .button {
     background: var(--tertiary);
     border-radius: var(--radius);
     color: var(--theme);
-    font-size: 1.2em;
+    cursor: pointer;
+    pointer-events: fill;
+    padding: 1vh 2vw;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -45,6 +48,14 @@
 
 .button-inner {
     padding: 0 8px;
+}
+
+.button.university-coursework { 
+    background-color: var(--university-bg);
+}
+
+.button.software-development { 
+    background-color: var(--software-bg);
 }
 
 .button:active {

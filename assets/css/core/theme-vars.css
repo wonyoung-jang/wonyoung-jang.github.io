@@ -85,7 +85,7 @@
     --link: rgb(33, 159, 255); /* Dodger blue for tertiary elements */
     --shadow: rgb(83, 79, 90); /* Plum for shadows */
 
-    --toc-background-color: rgb(29, 29, 29); /* Dark background for TOC */
+    --toc-background-color: rgb(44, 44, 44); /* Dark background for TOC */
     --toc-text-color: rgb(255, 255, 255);  /* White for TOC text */
 
     /* Admonition colors for dark theme */

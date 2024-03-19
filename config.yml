@@ -4,40 +4,43 @@ title: Wonyoung Jang
 paginate: 8
 
 params:
+  # homeInfoParams:
+  #   title: 
+  #   content:
   profileMode:
     enabled: true
     title: WonyoungJang.org
+    subtitle: "Welcome! Check out some of my projects: "
+
     imageUrl: /android-chrome-512x512.png
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
+    imageTitle: WonyoungJang.org site logo
+    
     buttons:
-      - name: Search
-        url: "/search"
-      - name: Categories
-        url: "/categories"
-      - name: Archives
-        url: "/archives"
-      - name: About
-        url: "/about"
-      - name: Contact
-        url: "/contact"
-
-  socialIcons:
-    - name: "github"
-      url: "https://github.com/wonyoung-jang"
-    - name: "kofi"
-      url: "https://ko-fi.com/wonyoung_jang"
-    - name: "rss"
-      url: "https://wonyoungjang.org/index.xml"
-    - name: "email"
-      url: "mailto:contact@wonyoungjang.org"
-    # Maybe
-    # - name: "behance"
-    #   url: "https://www.behance.net/XXX"
-    # - name: "youtube"
-    #   url: "https://www.youtube.com/channel/XXX"
-    # - name: "twitter"
-    #   url: "https://twitter.com/XXX"
+      - name: Software Development
+        url: "/categories/software-development-projects"
+      - name: University Coursework
+        url: "/categories/university-coursework-projects"
+    # socialIcons:
+    #   - name: "github"
+    #     url: "https://github.com/wonyoung-jang"
+    #   - name: "kofi"
+    #     url: "https://ko-fi.com/wonyoung_jang"
+    #   - name: "rss"
+    #     url: "https://wonyoungjang.org/index.xml"
+    #   - name: "email"
+    #     url: "mailto:contact@wonyoungjang.org"
+      # Maybe
+      # - name: "behance"
+      #   url: "https://www.behance.net/XXX"
+      # - name: "youtube"
+      #   url: "https://www.youtube.com/channel/XXX"
+      # - name: "twitter"
+      #   url: "https://twitter.com/XXX"
+  label:
+      text: 'Wonyoung Jang'
+      icon: '/apple-touch-icon.png'
 
   env: production # To enable google analytics, opengraph, twitter-cards and schema.
 
@@ -52,6 +55,9 @@ params:
   ShowRssButtonInSectionTermList: true
   UseHugoToc: false
   defaultTheme: auto
+  
+  cover:
+    linkFullImages: true
 
   disableSpecial1stPost: false
   disableScrollToTop: false
