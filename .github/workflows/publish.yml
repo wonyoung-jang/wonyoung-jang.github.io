@@ -26,10 +26,11 @@ jobs:
         run: hugo --minify
 
       - name: Logseq Publish 🚩
-        uses: pengx17/logseq-publish@v0.1
+        uses: logseq/publish-spa@main
         with:
-          src: logseq
-          dest: public/graph
+          graph-directory: logseq
+          output-directory: public/graph
+          version: nightly
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.0
