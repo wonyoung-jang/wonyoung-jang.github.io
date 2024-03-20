@@ -26,8 +26,9 @@ jobs:
       - name: Logseq Publish SPA
         uses: logseq/publish-spa@v0.3.1
         with:
-          src: logseq
-          dest: public/graph
+          graph-directory: logseq
+          output-directory: public/graph
+          version: nightly
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.0
         if: github.ref == 'refs/heads/main'
