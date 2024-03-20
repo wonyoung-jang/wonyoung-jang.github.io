@@ -89,3 +89,9 @@
     bottom: 0;
     background-color: var(--toc-background-color);
 }
+
+@media (max-width: 768px) {
+    .toc {
+        margin-bottom: 1rem;
+    }
+}

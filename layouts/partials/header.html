@@ -103,19 +103,53 @@
         <ul id="menu">
             {{- range .Site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $page_url := $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
             <li>
                 <a href="{{ .URL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                 <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                     {{- .Pre }}
-                     {{- .Name -}}
-                     {{ .Post -}}
-                 </span>
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
+                {{- if .HasChildren }} class="collapsible" {{- end }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
                 </a>
+                {{- if .HasChildren }}
+                <ul class="collapsed">
+                    {{- range .Children }}
+                    {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+                    {{- $page_url := $currentPage.Permalink | absLangURL }}
+                    <li>
+                        <a href="{{ .URL }}" title="{{ .Title | default .Name }}">
+                            <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                                {{- .Pre }}
+                                {{- .Name -}}
+                                {{ .Post -}}
+                            </span>
+                        </a>
+                    </li>
+                    {{- end }}
+                </ul>
+                {{- end }}
             </li>
             {{- end }}
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var collapsibleItems = document.getElementsByClassName('collapsible');
+                    for (var i = 0; i < collapsibleItems.length; i++) {
+                        collapsibleItems[i].addEventListener('click', function(event) {
+                            event.preventDefault();
+                            var childMenu = this.nextElementSibling;
+                            if (childMenu.style.display === 'block') {
+                                childMenu.style.display = 'none';
+                            } else {
+                                childMenu.style.display = 'block';
+                            }
+                        });
+                    }
+                });
+            </script>
         </ul>
     </nav>
 </header>

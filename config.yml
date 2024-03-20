@@ -115,29 +115,33 @@ outputs:
     - RSS
     - JSON
 
-menu:
+# sectionPagesMenu: main
+
+menus:
   main:
-    - identifier: search
-      name: Search
-      url: /search
+    - name: Search
+      pageRef: /search
       weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories
+    - name: Categories
+      pageRef: /categories
       weight: 20
-    - identifier: graph
-      name: Graph
+    - name: Software Development
+      pageRef: /categories/software-development-projects
+      parent: Categories
+      weight: 1
+    - name: University Coursework
+      pageRef: /categories/university-coursework-projects
+      parent: Categories
+      weight: 2
+    - name: Graph
       url: /graph/#/graph
       weight: 25
-    - identifier: archives
-      name: Archives
-      url: /archives
+    - name: Archives
+      pageRef: /archives
       weight: 30
-    - identifier: about
-      name: About
-      url: /about
+    - name: About
+      pageRef: /about
       weight: 50
-    - identifier: contact
-      name: Contact
-      url: /contact
-      weight: 51
+    - name: Contact
+      pageRef: /contact
+      weight: 60
