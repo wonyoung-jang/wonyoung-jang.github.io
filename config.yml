@@ -127,7 +127,7 @@ menu:
       weight: 20
     - identifier: graph
       name: Graph
-      url: /graph/#/graph
+      url: /graph/#/graph/
       weight: 25
     - identifier: archives
       name: Archives
