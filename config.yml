@@ -2,16 +2,12 @@ baseURL: https://wonyoungjang.org/
 languageCode: en-us
 title: Wonyoung Jang
 paginate: 9
-
 markup:
   goldmark:
     renderer:
       unsafe: true
 
 params:
-  # homeInfoParams:
-  #   title: 
-  #   content:
   profileMode:
     enabled: true
     title: WonyoungJang.org
@@ -37,13 +33,7 @@ params:
       url: "https://wonyoungjang.org/index.xml"
     - name: "email"
       url: "mailto:contact@wonyoungjang.org"
-      # Maybe
-      # - name: "behance"
-      #   url: "https://www.behance.net/XXX"
-      # - name: "youtube"
-      #   url: "https://www.youtube.com/channel/XXX"
-      # - name: "twitter"
-      #   url: "https://twitter.com/XXX"
+
   label:
       text: 'Wonyoung Jang'
       icon: '/apple-touch-icon.png'
@@ -55,11 +45,13 @@ params:
   ShowShareButtons: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
-  ShowToc: true
-  TocOpen: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: false
+
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+  
   defaultTheme: auto
   
   cover:
