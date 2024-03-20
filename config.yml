@@ -119,25 +119,25 @@ menu:
   main:
     - identifier: search
       name: Search
-      url: /search/
+      url: /search
       weight: 10
     - identifier: categories
       name: Categories
-      url: /categories/
+      url: /categories
       weight: 20
     - identifier: graph
       name: Graph
-      url: "https://wonyoungjang.org/graph/#/graph"
+      url: /graph/#/graph
       weight: 25
     - identifier: archives
       name: Archives
-      url: /archives/
+      url: /archives
       weight: 30
     - identifier: about
       name: About
-      url: /about/
+      url: /about
       weight: 50
     - identifier: contact
       name: Contact
-      url: /contact/
+      url: /contact
       weight: 51
