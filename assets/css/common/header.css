@@ -95,7 +95,3 @@ body:not(.dark) #sun {
 .logo-switches {
     flex-wrap: inherit;
 }
-
-.collapsed {
-    display: none;
-}

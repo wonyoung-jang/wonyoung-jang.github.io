@@ -119,29 +119,37 @@ outputs:
 
 menus:
   main:
-    - name: Search
+    - identifier: Search
+      name: Search
       pageRef: /search
       weight: 10
-    - name: Categories
+    - identifier: Categories
+      name: Categories
       pageRef: /categories
       weight: 20
-    - name: Software Development
+    - identifier: Software Development
+      name: Software Development
       pageRef: /categories/software-development-projects
       parent: Categories
       weight: 1
-    - name: University Coursework
+    - identifier: University Coursework
+      name: University Coursework
       pageRef: /categories/university-coursework-projects
       parent: Categories
       weight: 2
-    - name: Graph
+    - identifier: Graph
+      name: Graph
       url: /graph/#/graph
       weight: 25
-    - name: Archives
+    - identifier: Archives
+      name: Archives
       pageRef: /archives
       weight: 30
-    - name: About
+    - identifier: About
+      name: About
       pageRef: /about
       weight: 50
-    - name: Contact
+    - identifier: Contact
+      name: Contact
       pageRef: /contact
       weight: 60
