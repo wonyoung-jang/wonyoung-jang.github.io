@@ -1,7 +1,6 @@
 ---
 title: "Search"
-layout: "search" 
-# placeholder: "Search 2"
-# description: "Search"
+layout: "search"
+url: "/search/"
 summary: Search
 ---
