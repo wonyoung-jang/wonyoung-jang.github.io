@@ -33,7 +33,9 @@
           
           <div class="archive-posts">
             {{- range .Pages }}
-
+              {{- if not .Params.categories }}
+                {{- continue -}}
+              {{- end }}
               {{- if eq .Kind "page" }}
               <div class="archive-entry">
                 <h3 class="archive-entry-title">

@@ -6,7 +6,7 @@ coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
 githubrepo: wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
-lastMod: 2024-03-20
+lastMod: 2024-03-21
 ---
 ![fllc_qlearning_demo.png](/assets/fllc_qlearning_demo_1709746398103_0.png)
 
@@ -18,13 +18,13 @@ A FLLC event scheduler using Q-Learning.
 
 ### A Nerd Snipe from a Coworker
 
-My coworker [nerd sniped](https://xkcd.com/356/) me with this problem: Given a set of constraints, can you devise a way to create schedule for the [FIRST LEGO League Challenge](https://www.firstinspires.org/robotics/fll) event we're running later this year? I liked scheduling problems and solving puzzles so it piqued my interest, and I began to get to work on it.
+My coworker [nerd sniped](https://xkcd.com/356/) me with this problem: Given a set of constraints, can you devise a way to create schedule for the [FIRST LEGO League Challenge](https://www.firstinspires.org/robotics/fll) event we're running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.
 
 ### Early Attempts
 
-Since this was not a necessary project for my job, I began working on the problem in my free time.
+Since this was not a necessary project for my job, I started to work on the problem in my free time.
 
-This project first began with trying to model how to think about the problem in the first place. I came up with 3 mental models:
+I first tried to model how to think about the problem in the first place. I came up with 3 mental models:
 
   + As a Sudoku puzzle (DFS).
 
@@ -88,7 +88,7 @@ I plan on pursuing this constraint more deeply, and am currently refining the ab
 
 ---
 
-## A Roadmap and the Current Problems
+## A Roadmap and some Current Problems
 
 {{< logseq/orgNOTE >}}Last update: 2024-03-18
 {{< / logseq/orgNOTE >}}
@@ -111,3 +111,17 @@ I plan on pursuing this constraint more deeply, and am currently refining the ab
 ### Test Cases
 
   + The goal would be to generate a large amount of simulated schedules of many varieties. Then to use a supervised learning approach or an end-to-end neural network of sorts.
+
+### General Code Cleanup
+
+  + I wrote this in two weeks, so the code is full of spaghetti at the moment.
+
+  + Adding: More complete documentation here as well.
+
+### Web Application
+
+  + This is a big maybe at the moment, but the ultimate goal would be to allow any FLLC event organizer to easily use this tool.
+
+### Generalized Scheduling Tool
+
+  + If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way...

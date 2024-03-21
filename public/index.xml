@@ -5,8 +5,44 @@
     <link>https://wonyoungjang.org/</link>
     <description>Recent content on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lists</title>
+      <link>https://wonyoungjang.org/pages/lists/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoungjang.org/pages/lists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>https://wonyoungjang.org/pages/meta/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoungjang.org/pages/meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Development Projects</title>
+      <link>https://wonyoungjang.org/pages/software-development-projects/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoungjang.org/pages/software-development-projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>University Coursework Projects</title>
+      <link>https://wonyoungjang.org/pages/university-coursework-projects/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoungjang.org/pages/university-coursework-projects/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Realtime Multiplayer Drawing App</title>
       <link>https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/</link>
@@ -89,7 +125,8 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       
       <guid>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
       <description>A FLLC event scheduler using Q-Learning.
-A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest, and I began to get to work on it.</description>
+A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.
+Early Attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
     </item>
     
     <item>

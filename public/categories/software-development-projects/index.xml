@@ -5,7 +5,7 @@
     <link>https://wonyoungjang.org/categories/software-development-projects/</link>
     <description>Recent content in Software Development Projects on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/categories/software-development-projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Realtime Multiplayer Drawing App</title>
@@ -38,7 +38,8 @@ hugo -D + hugo serve -D to build and serve the site locally.</description>
       
       <guid>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
       <description>A FLLC event scheduler using Q-Learning.
-A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest, and I began to get to work on it.</description>
+A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.
+Early Attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
     </item>
     
     <item>

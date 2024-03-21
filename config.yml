@@ -3,8 +3,6 @@ title: Wonyoung Jang
 paginate: 9
 themes: 
 
-languageCode: en-us
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -35,6 +33,7 @@ params:
   UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
+  disableAnchoredHeadings: true
   comments: true
   hideMeta: false
   hideSummary: false
