@@ -6,7 +6,7 @@ categories:
 githubrepo: wonyoung-jang/bagel-coffee-stores
 title: Bagel Corner and Mister Coffee Database Management
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![bagel_corner_ERD.jpg](/assets/bagel_corner_erd_1709745980175_0.jpg)
 

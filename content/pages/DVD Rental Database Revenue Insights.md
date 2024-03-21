@@ -6,7 +6,7 @@ coverimage: ../assets/dvd-rental-sample-database-diagram_1709746107091_0.png
 githubrepo: wonyoung-jang/dvd-rental-revenue
 title: DVD Rental Database Revenue Insights
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![dvd-rental-sample-database-diagram.png](/assets/dvd-rental-sample-database-diagram_1709746107091_0.png)
 

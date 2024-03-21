@@ -6,7 +6,7 @@ coverimage: ../assets/vacation_cart_manager_1709746642372_0.png
 githubrepo: wonyoung-jang/vacation-cart-manager
 title: Vacation Cart Manager
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![vacation_cart_manager.png](/assets/vacation_cart_manager_1709746642372_0.png)
 

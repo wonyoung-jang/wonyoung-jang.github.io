@@ -2,19 +2,15 @@
 date: 2024-02-25
 categories:
 - Software Development Projects
-- University Coursework Projects
 coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
 githubrepo: wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
-lastMod: 2024-03-18
+lastMod: 2024-03-20
 ---
 ![fllc_qlearning_demo.png](/assets/fllc_qlearning_demo_1709746398103_0.png)
 
 A FLLC event scheduler using Q-Learning.
-
-{{< logseq/orgNOTE >}}Update 2024-03-18: Minimally reformatted and refactored. Organization I couldn't do in the one month span to complete a functional product for the course. Began writing out a brief history on this project.
-{{< / logseq/orgNOTE >}}
 
 ---
 
@@ -60,43 +56,58 @@ Since existing data isn't sufficient, data is generated for this Q-learner, I th
 
 ---
 
-## Learning Objectives and Requirements
+## Constraints
 
-{{< logseq/orgWARNING >}}Below is a summarization of the given task and rubric criteria. All university specific details  are removed.
-{{< / logseq/orgWARNING >}}
+### Hard Constraints
 
-Designing, developing, and implementing a capstone project that incorporates machine learning and data visualization to address a specific business or organizational need.
+The hard constraints of a schedule are those imposed by the laws of physics and by the logical rules we usually assume without stating explicitly. There are three main hard constraints:
 
-### Write a Letter of Transmittal and a Project Proposal
+  + **Non-Overlapping Schedule Constraint:** Since teams cannot be in two place at once, a team cannot be scheduled for a time slot if the duration and time of that time slot overlaps with one the team is already scheduled for.
 
-  + Create a compelling letter of transmittal and project proposal to convince senior, non-technical managers and executives to implement the data product.
+  + **Simultaneous Match Constraint:** A team cannot be scheduled for a round without another team scheduled at the same time on the opposite side of the table.
 
-  + The proposal should succinctly describe the problem, proposed solution, benefits to the organization, costs, timeline, data considerations, ethical concerns, and my relevant expertise.
+  + **Equal Scheduling Constraint:** Every team must be scheduled an equal number of times.
 
-### Write an executive summary
+### Soft Constraints
 
-  + Write an executive summary for IT professionals, detailing the technical context, project summary, data handling, implementation plan, timeline, evaluation methods, and resource and cost estimations.
+The soft constraints of a schedule are those that maximize fairness. They are not a necessary condition to run a tournament, but aiming for them while scheduling can create a more fair experience for all teams. In the current iteration, there are four soft constraints:
 
-### Design and develop a data product
+  + **Table Consistency:** Since this competition is about autonomous robots depending on it's environment, tiny inconsistencies between competition tables and even their sides can create a large difference. So I reward the model when a team has less variety in it's scheduled table sides.
 
-  + At least one descriptive method and one non-descriptive (predictive or prescriptive) method.
+  + **Opponent Variety:** Playing with the same opposite team for all rounds is not as fun as playing with a different one each round. The model is rewarded when a team has more variety amongst it's scheduled "opponent" teams.
 
-  + A mechanism to handle data collection, processing, and management.
+  + **Back to Back Penalty:** Teams perform better when they have a chance to rest and prepare after a match. The model is penalized when the schedule places a team in consecutive rounds.
 
-  + Three different types of data visualizations integrated into a user-friendly dashboard.
+  + **Break Time:** Teams should be given at least some amount of break during the tournament for rest, adjustments, or repairs to their robots. The model is rewarded when schedules include these breaks.
 
-  + Implementation of machine learning methods and algorithms.
+### An Aside: Time Constraints
 
-### Document the project's development
+One constraint I had to grapple with is the **Back to Back Penalty**. If we assume that the duration of the round will be fully spent at that location, we can assume that teams cannot magically teleport from one location to the next. However, depending on how your event is scheduled, the size  of the teams list, or the layout of the event's venue, I've found teams scheduled back to back is necessary to generate any valid schedules.
 
-  + A detailed business vision and requirements document.
+I plan on pursuing this constraint more deeply, and am currently refining the above constraints.
 
-  + An overview of data sources, cleaning, preprocessing, and structure.
+---
 
-  + Detailed descriptions and justifications of the machine learning methods used.
+## A Roadmap and the Current Problems
 
-  + A validation plan with results and assessments.
+{{< logseq/orgNOTE >}}Last update: 2024-03-18
+{{< / logseq/orgNOTE >}}
 
-  + Visualizations and their purposes within the data product.
+### A Schedule Validator
 
-  + A user guide with installation and execution instructions.
+
+  + The model currently generates an optimal schedule based on the Q-table it generates during training.
+
+  + In some cases, this results in incomplete schedules.
+
+### Refining the Constraints
+
+  + For very large schedules, the model can appear to take a long time to learn from the soft constraints.
+
+  + Currently, the user can set weights for each soft constraint, but it's unclear what effect this has across many schedule types.
+
+  + Maybe: Some way to "backpropagate" the results of a training schedule to adjust the constraint weights dynamically?
+
+### Test Cases
+
+  + The goal would be to generate a large amount of simulated schedules of many varieties. Then to use a supervised learning approach or an end-to-end neural network of sorts.

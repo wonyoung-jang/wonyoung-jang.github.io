@@ -6,7 +6,7 @@ coverimage: ../assets/guitar_shop_inventory_1709746147769_0.png
 githubrepo: wonyoung-jang/retail-inventory-manager
 title: Retail Inventory Manager
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![guitar_shop_inventory.png](/assets/guitar_shop_inventory_1709746147769_0.png)
 

@@ -6,7 +6,7 @@ coverimage: ../assets/hotel_reservation_manager_1709746723628_0.png
 githubrepo: wonyoung-jang/hotel-reservation-manager
 title: Hotel Reservation Manager
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![hotel_reservation_manager.png](/assets/hotel_reservation_manager_1709746723628_0.png)
 

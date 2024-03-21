@@ -5,7 +5,7 @@ categories:
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 title: List of University Coursework Projects
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 This page is a list of projects completed and submitted for my computer science degree coursework.
 

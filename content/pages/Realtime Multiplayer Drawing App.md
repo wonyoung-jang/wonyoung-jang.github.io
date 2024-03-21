@@ -6,7 +6,7 @@ coverimage: ../assets/realtime-multiplayer-drawing_1709917652384_0.png
 githubrepo: wonyoung-jang/realtime-multiplayer-drawing
 title: Realtime Multiplayer Drawing App
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![realtime-multiplayer-drawing.png](/assets/realtime-multiplayer-drawing_1709917652384_0.png)
 

@@ -6,7 +6,7 @@ coverimage: ../assets/package_delivery_network_1709746666621_0.png
 githubrepo: wonyoung-jang/package-delivery-network
 title: Package Delivery Route Optimization
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![package_delivery_network.png](/assets/package_delivery_network_1709746666621_0.png)
 

@@ -6,7 +6,7 @@ coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
 url: /about
 title: About
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ---
 

@@ -6,7 +6,7 @@ categories:
 githubrepo: wonyoung-jang/student-record-system
 title: Student Record System
 tags:
-lastMod: 2024-03-17
+lastMod: 2024-03-20
 ---
 ![student_record_system.png](/assets/student_record_system_1709746026803_0.png)
 
