@@ -2,13 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wonyoungjang.org/categories/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/pages/lists/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://wonyoungjang.org/pages/meta/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://wonyoungjang.org/pages/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://wonyoungjang.org/pages/software-development-projects/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://wonyoungjang.org/pages/university-coursework-projects/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://wonyoungjang.org/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://wonyoungjang.org/categories/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,12 +43,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://wonyoungjang.org/categories/software-development-projects/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -63,7 +83,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
