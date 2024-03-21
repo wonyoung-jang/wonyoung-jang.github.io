@@ -1,13 +1,66 @@
 baseURL: https://wonyoungjang.org/
-languageCode: en-us
 title: Wonyoung Jang
 paginate: 9
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+themes: 
+
+languageCode: en-us
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: true
+
+googleAnalytics: G-RTMKJG4NFZ
+
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
+  env: production # To enable google analytics, opengraph, twitter-cards and schema.
+  author: "Wonyoung Jang"
+  description: "Wonyoung Jang's personal website"
+  contact: "contact@wonyoungjang.org"
+  images:
+  DateFormat: "2006, Jan 02"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hideMeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  feedlinks: true
+  mobileMenu: true
+  copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+
+  # Assets
+  assets:
+    disableHLJS: true
+    disableFingerprinting: false
+    favicon: '/favicon.ico'
+    favicon16x16: '/favicon-16x16.png'
+    favicon32x32: '/favicon-32x32.png'
+    apple_touch_icon: '/apple-touch-icon.png'
+    safari_pinned_tab: '/safari-pinned-tab.svg'
+
+  # Site Settings
+  label:
+    text: 'Wonyoung Jang'
+    icon: '/apple-touch-icon.png'
+    iconHeight: 
+
+  # Profile Mode
   profileMode:
     enabled: true
     title: WonyoungJang.org
@@ -24,6 +77,12 @@ params:
       - name: University Coursework
         url: "/categories/university-coursework-projects"
      
+  # Home Info Mode - NOT USED
+  homeInfoParams:
+    Title:
+    Content:
+
+  # Social Links
   socialIcons:
     - name: "github"
       url: "https://github.com/wonyoung-jang"
@@ -34,65 +93,54 @@ params:
     - name: "email"
       url: "mailto:contact@wonyoungjang.org"
 
-  label:
-      text: 'Wonyoung Jang'
-      icon: '/apple-touch-icon.png'
+  # Analytics - NOT USED
+  analytics:
+    google:
+      SiteVerificationTag: 
+    bing:
+      SiteVerificationTag:
+    yandex:
+      SiteVerificationTag:
 
-  env: production # To enable google analytics, opengraph, twitter-cards and schema.
-
-  ShowReadingTime: true
-  ShowCodeCopyButtons: true
-  ShowShareButtons: true
-  ShowBreadCrumbs: true
-  ShowPostNavLinks: true
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-
-  ShowToc: true
-  TocOpen: false
-  UseHugoToc: true
-  
-  defaultTheme: auto
-  
+  # Cover Image
   cover:
+    responsiveImages: false
     linkFullImages: true
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
 
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
-  author: "Wonyoung Jang"
-  contact: "contact@wonyoungjang.org"
+  # Search Options
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
 
-  feedlinks: true
-  mobileMenu: true
-  copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
-
+# Taxonomies
 taxonomies:
   categories: "categories"
 
+# Ignore files
 ignoreFiles:
   \.zip$
 
-markup:
-  tableOfContents:
-    startLevel: 1
-    endLevel: 6
-    ordered: false
-
-googleAnalytics: G-RTMKJG4NFZ
-
-minify:
-  disableXML: true
-  minifyOutput: true
-
+# Sitemap
 sitemap:
   filename: sitemap.xml
   priority: 0.5
   changefreq: daily
 
+# See Also
 related:
   includeNewer: true
   indices:
@@ -101,14 +149,14 @@ related:
     weight: 80
   threshold: 20
 
+# Output formats
 outputs:
   home:
     - HTML
     - RSS
     - JSON
 
-# sectionPagesMenu: main
-
+# Menus
 menus:
   main:
     - identifier: Search
@@ -145,3 +193,28 @@ menus:
       name: Contact
       pageRef: /contact
       weight: 60
+
+# Markup
+# pygmentsUseClasses: true
+markup:
+  # Highlighting
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: monokai
+    tabWidth: 4
+  
+  # TOC
+  tableOfContents:
+    startLevel: 1
+    endLevel: 6
+    ordered: false
