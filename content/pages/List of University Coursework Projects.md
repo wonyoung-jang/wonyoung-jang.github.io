@@ -3,11 +3,12 @@ date: 2024-03-05
 categories:
 - Lists
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
+coverhidden: true
 description: This page is a list of projects completed and submitted for my computer science degree coursework.
 site-link: https://wonyoungjang.org/pages/list-of-university-coursework-projects/
 title: List of University Coursework Projects
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-03-22
 ---
 ## Python
 ---

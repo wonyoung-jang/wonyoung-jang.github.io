@@ -41,7 +41,7 @@
     {{ end }}
 
     {{/* Cover Image */}}
-    {{- if .Params.coverimage }}
+    {{- if and (.Params.coverimage) (not .Params.coverhidden) }}
       <img class="single-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
     {{- end }}
     

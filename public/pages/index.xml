@@ -49,9 +49,7 @@
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/</guid>
-      <description>Draw in realtime on a blank canvas with others on the same server.
-Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.
-Why Did I Fork This? While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description>
+      <description>Draw in realtime on a blank canvas with others on the same server.</description>
     </item>
     
     <item>
@@ -60,12 +58,7 @@ Why Did I Fork This? While the demonstration shows no errors, the instructions i
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/list-of-software-development-projects/</guid>
-      <description>This page is a list of my software projects at varying stages of development.
-Python FIRST LEGO League Challenge Q-Learning Event Scheduler
-Logseq Markdown Tokenizer
-Save Top Level Reddit Comments
-Go, Javascript, HTML, CSS Realtime Multiplayer Drawing App
-This Website</description>
+      <description>This page is a list of my software projects at varying stages of development.</description>
     </item>
     
     <item>
@@ -74,14 +67,7 @@ This Website</description>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/list-of-university-coursework-projects/</guid>
-      <description>This page is a list of projects completed and submitted for my computer science degree coursework.
-Python FIRST LEGO League Challenge Q-Learning Event Scheduler
-Package Delivery Route Optimization
-C++ Student Record System Java, HTML, CSS Retail Inventory Manager
-Vacation Cart Manager
-Hotel Reservation Manager
-AIML CS Career Recommendation Chatbot Lua Disaster Recovery Robot Simulation SQL Bagel Corner and Mister Coffee Database Management
-DVD Rental Database Revenue Insights</description>
+      <description>This page is a list of projects completed and submitted for my computer science degree coursework.</description>
     </item>
     
     <item>
@@ -90,11 +76,7 @@ DVD Rental Database Revenue Insights</description>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/this-website/</guid>
-      <description>This page is a meta presentation for the deployment of this website (and this page).
-How It&amp;rsquo;s Made Pages (notes, articles, projects) are written in Logseq markdown.
-Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.
-The exported assets and pages folders are placed in the content folder of this Hugo site.
-hugo -D + hugo serve -D to build and serve the site locally.</description>
+      <description>This page is a meta presentation for the deployment of this website (and this page).</description>
     </item>
     
     <item>
@@ -124,9 +106,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
-      <description>A FLLC event scheduler using Q-Learning.
-A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.
-Early Attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
+      <description>A FLLC event scheduler using Q-Learning.</description>
     </item>
     
     <item>
@@ -135,9 +115,7 @@ Early Attempts Since this was not a necessary project for my job, I started to w
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/save-top-level-reddit-comments/</guid>
-      <description>Extract the parent comments of a reddit post.
-Premise Sometimes I just want the top voted parent comments of a reddit post.
-Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
+      <description>Extract the parent comments of a [reddit](https://www.reddit.com/) post.</description>
     </item>
     
     <item>
@@ -146,8 +124,7 @@ Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV f
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/disaster-recovery-robot-simulation/</guid>
-      <description>Developing an autonomous robotic recovery system using the CoppeliaSim virtual robot environment to demonstrate goal-seeking behaviors in a disaster recovery scenario, incorporating sensors to assist in the effort.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Developing an autonomous robotic recovery system using the [CoppeliaSim](https://www.coppeliarobotics.com/) virtual robot environment to demonstrate goal-seeking behaviors in a disaster recovery scenario, incorporating sensors to assist in the effort.</description>
     </item>
     
     <item>
@@ -156,8 +133,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/</guid>
-      <description>Creating a chatbot in the Pandorabot environment to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Creating a chatbot in the [Pandorabot environment](https://home.pandorabots.com/home.html) to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.</description>
     </item>
     
     <item>
@@ -166,11 +142,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/logseq-markdown-tokenizer/</guid>
-      <description>Estimate the cost of tokenizing markdown files for OpenAI&amp;rsquo;s text-embedding models.
-The Problem Logseq does not have a native way to view the character count of your notes (aka pages).
-Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.
-Logseq&amp;rsquo;s graph is difficult to search and prune manually.
-Proposed Solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.</description>
+      <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).</description>
     </item>
     
     <item>
@@ -179,8 +151,7 @@ Proposed Solution Encode Logseq&amp;rsquo;s graph to enable semantic search, the
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/package-delivery-route-optimization/</guid>
-      <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.Learning Objectives and Requirements Implement a hash table data structure (without external libraries) to store package data.</description>
+      <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.</description>
     </item>
     
     <item>
@@ -189,8 +160,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/hotel-reservation-manager/</guid>
-      <description>Enhancing a Spring application for a hotel reservation system by incorporating multithreaded language translation, time zone adjustments, and currency exchange functionalities. Containerizing the application using Docker, demonstrating an advanced deployment strategy.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Enhancing a [Spring](https://spring.io/projects/spring-framework) application for a hotel reservation system by incorporating multithreaded language translation, time zone adjustments, and currency exchange functionalities. Containerizing the application using [Docker](https://www.docker.com/), demonstrating an advanced deployment strategy.</description>
     </item>
     
     <item>
@@ -199,8 +169,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/vacation-cart-manager/</guid>
-      <description>Developing a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Developing a [Spring Framework](https://spring.io/projects/spring-framework) Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing [Angular](https://angular.io/) front end without modifying it.</description>
     </item>
     
     <item>
@@ -209,8 +178,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/retail-inventory-manager/</guid>
-      <description>Customizing a Spring Framework application with an HTML front-end and a Java backend to manage inventory for a specific customer&amp;rsquo;s needs, demonstrating various software development skills.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Customizing a [Spring Framework](https://spring.io/projects/spring-framework) application with an HTML front-end and a Java backend to manage inventory for a specific customer&amp;#39;s needs, demonstrating various software development skills.</description>
     </item>
     
     <item>
@@ -219,8 +187,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/</guid>
-      <description>Generating a business report within a PostgreSQL lab environment, utilizing SQL code to extract granular data (Detailed section) and summarized insights (Summary section) directly from PostgreSQLTutorial&amp;rsquo;s DVD Rental Sample Database to answer a specific business question.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Generating a business report within a [PostgreSQL](https://www.postgresql.org/) lab environment, utilizing SQL code to extract granular data (Detailed section) and summarized insights (Summary section) directly from [PostgreSQLTutorial&amp;#39;s DVD Rental Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) to answer a specific business question.</description>
     </item>
     
     <item>
@@ -229,8 +196,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/student-record-system/</guid>
-      <description>Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.Learning Objectives and Requirements Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance.</description>
+      <description>Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming.</description>
     </item>
     
     <item>
@@ -239,8 +205,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/</guid>
-      <description>Developing normalized physical database models (including ER diagrams, tables, and queries) for two fictional small businesses (Bagel Corner and Mister Coffee) using SQL, with table creation, data loading, and report generation.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Developing normalized physical database models (including ER diagrams, tables, and queries) for two fictional small businesses (Bagel Corner and Mister Coffee) using SQL, with  table creation, data loading, and report generation.</description>
     </item>
     
   </channel>

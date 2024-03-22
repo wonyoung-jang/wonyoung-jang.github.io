@@ -13,8 +13,7 @@
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/disaster-recovery-robot-simulation/</guid>
-      <description>Developing an autonomous robotic recovery system using the CoppeliaSim virtual robot environment to demonstrate goal-seeking behaviors in a disaster recovery scenario, incorporating sensors to assist in the effort.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Developing an autonomous robotic recovery system using the [CoppeliaSim](https://www.coppeliarobotics.com/) virtual robot environment to demonstrate goal-seeking behaviors in a disaster recovery scenario, incorporating sensors to assist in the effort.</description>
     </item>
     
     <item>
@@ -23,8 +22,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/</guid>
-      <description>Creating a chatbot in the Pandorabot environment to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Creating a chatbot in the [Pandorabot environment](https://home.pandorabots.com/home.html) to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.</description>
     </item>
     
     <item>
@@ -33,8 +31,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/package-delivery-route-optimization/</guid>
-      <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.Learning Objectives and Requirements Implement a hash table data structure (without external libraries) to store package data.</description>
+      <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.</description>
     </item>
     
     <item>
@@ -43,8 +40,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/hotel-reservation-manager/</guid>
-      <description>Enhancing a Spring application for a hotel reservation system by incorporating multithreaded language translation, time zone adjustments, and currency exchange functionalities. Containerizing the application using Docker, demonstrating an advanced deployment strategy.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Enhancing a [Spring](https://spring.io/projects/spring-framework) application for a hotel reservation system by incorporating multithreaded language translation, time zone adjustments, and currency exchange functionalities. Containerizing the application using [Docker](https://www.docker.com/), demonstrating an advanced deployment strategy.</description>
     </item>
     
     <item>
@@ -53,8 +49,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/vacation-cart-manager/</guid>
-      <description>Developing a Spring Framework Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing Angular front end without modifying it.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Developing a [Spring Framework](https://spring.io/projects/spring-framework) Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing [Angular](https://angular.io/) front end without modifying it.</description>
     </item>
     
     <item>
@@ -63,8 +58,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/retail-inventory-manager/</guid>
-      <description>Customizing a Spring Framework application with an HTML front-end and a Java backend to manage inventory for a specific customer&amp;rsquo;s needs, demonstrating various software development skills.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Customizing a [Spring Framework](https://spring.io/projects/spring-framework) application with an HTML front-end and a Java backend to manage inventory for a specific customer&amp;#39;s needs, demonstrating various software development skills.</description>
     </item>
     
     <item>
@@ -73,8 +67,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/</guid>
-      <description>Generating a business report within a PostgreSQL lab environment, utilizing SQL code to extract granular data (Detailed section) and summarized insights (Summary section) directly from PostgreSQLTutorial&amp;rsquo;s DVD Rental Sample Database to answer a specific business question.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Generating a business report within a [PostgreSQL](https://www.postgresql.org/) lab environment, utilizing SQL code to extract granular data (Detailed section) and summarized insights (Summary section) directly from [PostgreSQLTutorial&amp;#39;s DVD Rental Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) to answer a specific business question.</description>
     </item>
     
     <item>
@@ -83,8 +76,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/student-record-system/</guid>
-      <description>Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.Learning Objectives and Requirements Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance.</description>
+      <description>Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming.</description>
     </item>
     
     <item>
@@ -93,8 +85,7 @@ This project was completed as part of academic coursework and is no longer being
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/</guid>
-      <description>Developing normalized physical database models (including ER diagrams, tables, and queries) for two fictional small businesses (Bagel Corner and Mister Coffee) using SQL, with table creation, data loading, and report generation.
-This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.</description>
+      <description>Developing normalized physical database models (including ER diagrams, tables, and queries) for two fictional small businesses (Bagel Corner and Mister Coffee) using SQL, with  table creation, data loading, and report generation.</description>
     </item>
     
   </channel>

@@ -13,9 +13,7 @@
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/</guid>
-      <description>Draw in realtime on a blank canvas with others on the same server.
-Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.
-Why Did I Fork This? While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description>
+      <description>Draw in realtime on a blank canvas with others on the same server.</description>
     </item>
     
     <item>
@@ -24,11 +22,7 @@ Why Did I Fork This? While the demonstration shows no errors, the instructions i
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/this-website/</guid>
-      <description>This page is a meta presentation for the deployment of this website (and this page).
-How It&amp;rsquo;s Made Pages (notes, articles, projects) are written in Logseq markdown.
-Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.
-The exported assets and pages folders are placed in the content folder of this Hugo site.
-hugo -D + hugo serve -D to build and serve the site locally.</description>
+      <description>This page is a meta presentation for the deployment of this website (and this page).</description>
     </item>
     
     <item>
@@ -37,9 +31,7 @@ hugo -D + hugo serve -D to build and serve the site locally.</description>
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</guid>
-      <description>A FLLC event scheduler using Q-Learning.
-A Brief History A Nerd Snipe from a Coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.
-Early Attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
+      <description>A FLLC event scheduler using Q-Learning.</description>
     </item>
     
     <item>
@@ -48,9 +40,7 @@ Early Attempts Since this was not a necessary project for my job, I started to w
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/save-top-level-reddit-comments/</guid>
-      <description>Extract the parent comments of a reddit post.
-Premise Sometimes I just want the top voted parent comments of a reddit post.
-Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
+      <description>Extract the parent comments of a [reddit](https://www.reddit.com/) post.</description>
     </item>
     
     <item>
@@ -59,11 +49,7 @@ Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV f
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/logseq-markdown-tokenizer/</guid>
-      <description>Estimate the cost of tokenizing markdown files for OpenAI&amp;rsquo;s text-embedding models.
-The Problem Logseq does not have a native way to view the character count of your notes (aka pages).
-Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.
-Logseq&amp;rsquo;s graph is difficult to search and prune manually.
-Proposed Solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.</description>
+      <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).</description>
     </item>
     
   </channel>

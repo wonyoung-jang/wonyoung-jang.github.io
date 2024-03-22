@@ -3,11 +3,12 @@ date: 2024-03-01
 categories:
 - Meta
 coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
+coverhidden: true
 url: /about
 site-link: https://wonyoungjang.org/about/
 title: About
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-03-22
 ---
 ## About Wonyoung Jang
 

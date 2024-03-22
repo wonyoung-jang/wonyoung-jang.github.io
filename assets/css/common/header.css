@@ -6,6 +6,8 @@
     margin-inline-start: auto;
     margin-inline-end: auto;
     line-height: var(--header-height);
+    margin-top: calc(var(--header-height) / 3);
+    margin-bottom: var(--header-height);
 }
 
 .nav a {
