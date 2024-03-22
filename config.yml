@@ -63,17 +63,17 @@ params:
   profileMode:
     enabled: true
     title: WonyoungJang.org
-    subtitle: "Welcome! Check out some of my projects: "
-
+    subtitle: 
+    
     imageUrl: /android-chrome-512x512.png
     imageWidth: 220 # custom size
     imageHeight: 220 # custom size
     imageTitle: WonyoungJang.org site logo
     
     buttons:
-      - name: Software Development
+      - name: Software Development Projects
         url: "/categories/software-development-projects"
-      - name: University Coursework
+      - name: University Coursework Projects
         url: "/categories/university-coursework-projects"
      
   # Home Info Mode - NOT USED

@@ -50,11 +50,11 @@
     color: rgb(0, 0, 0);
 }
 
-.button.university-coursework { 
+.button.university-coursework-projects { 
     background-color: var(--university-bg);
 }
 
-.button.software-development { 
+.button.software-development-projects { 
     background-color: var(--software-bg);
 }
 
