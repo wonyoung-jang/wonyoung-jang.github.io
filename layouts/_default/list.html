@@ -87,6 +87,7 @@
                 {{- if .Params.coverimage }}
                     <img class="entry-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
                 {{- end }}
+                
                 {{- if not (.Param "hideMeta") }}
                     <footer class="entry-footer">
                         {{- partial "post_meta.html" . -}}

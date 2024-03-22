@@ -3,18 +3,18 @@ date: 2024-03-05
 categories:
 - Software Development Projects
 coverimage: ../assets/image_1709746330336_0.png
-githubrepo: wonyoung-jang/wonyoung-jang.github.io
 title: This Website
 tags:
 lastMod: 2024-03-20
+description: This page is a meta presentation for the deployment of this website (and this page).
+githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
+site-link: https://wonyoungjang.org/pages/this-website/
 ---
-![image.png](/assets/image_1709746330336_0.png)
 
-This page is a meta presentation for the deployment of this website (and this page).
-
----
 
 ## How It's Made
+
+---
 
 1. Pages (notes, articles, projects) are written in Logseq markdown.
 
@@ -26,9 +26,10 @@ This page is a meta presentation for the deployment of this website (and this pa
 
 5. GitHub Actions to serve the site publicly.
 
----
 
 ## Admonitions
+
+---
 
 {{< logseq/orgNOTE >}}This is a note
 {{< / logseq/orgNOTE >}}

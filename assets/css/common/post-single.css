@@ -1,7 +1,22 @@
 /* Page Header */
-.page-header,
-.post-header {
+.page-header {
     margin: 24px auto var(--content-gap) auto;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1vh 0 1vh 0;
+}
+    
+.single-cover {
+    object-fit: fill;
+    border-radius: var(--radius);
+    box-shadow: 4px 4px 0.5em 0 rgba(0, 0, 0, 0.5);
+    max-width: 100%;
 }
 
 .post-title {
@@ -10,8 +25,11 @@
 }
 
 .post-description {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 20px;
+    color: var(--primary);
+    font-style: italic;
 }
 
 .post-meta,
@@ -264,7 +282,9 @@
 
 /* Post Categories */
 .post-categories div {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .post-categories a {
@@ -286,11 +306,6 @@
 .post-categories a:hover {
     background-color: var(--primary); /* Change background color on hover */
     color: var(--entry); /* Change text color on hover for contrast */
-}
-
-.post-categories .categories-container {
-    display: flow-root;
-    margin: 1vh -2vw;
 }
 
 /* Share Buttons and Pagination */

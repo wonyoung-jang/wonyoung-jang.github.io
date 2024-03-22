@@ -4,7 +4,7 @@
 
     border-radius: var(--radius); /* Increased border-radius for more rounded corners */
 
-    margin: 1em -1em 0 2em; /* Reduced margin for categories to be closer together */
+    margin: 1vh 0 1vh 0; /* Reduced margin for categories to be closer together */
     padding: 0.5vw 1vw;
     
     font-size: 12px;
@@ -36,4 +36,10 @@
 
 .category.meta {
     background-color: var(--meta-bg);
+}
+
+.post-meta-wrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
