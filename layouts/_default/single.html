@@ -15,7 +15,7 @@
       {{- if .Params.categories }}
         <div class="post-categories">
           <div class="categories-container">
-            Posted in: &nbsp;
+            Posted in&nbsp;
             {{- range .Params.categories }}
                 <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
             {{- end }}
@@ -50,11 +50,11 @@
 
     {{/* Description */}}
     {{- if .Description }}
-      <div class="post-description">
-        {{ .Description }}
-      </div>
+      <p class="post-description">
+        {{ .Description | markdownify }}
+      </p>
     {{- end }}
-    
+
     {{/* Table of Contents */}}
     {{- if (.Param "ShowToc") }}
       {{- partial "toc.html" . }}

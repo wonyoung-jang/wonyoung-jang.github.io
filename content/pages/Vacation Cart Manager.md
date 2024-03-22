@@ -3,21 +3,18 @@ date: 2023-11-21
 categories:
 - University Coursework Projects
 coverimage: ../assets/vacation_cart_manager_1709746642372_0.png
-githubrepo: wonyoung-jang/vacation-cart-manager
+description: Developing a [Spring Framework](https://spring.io/projects/spring-framework) Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing [Angular](https://angular.io/) front end without modifying it.
+githubrepo: https://github.com/wonyoung-jang/vacation-cart-manager
+site-link: https://wonyoungjang.org/pages/vacation-cart-manager/
 title: Vacation Cart Manager
 tags:
-lastMod: 2024-03-20
+lastMod: 2024-03-21
 ---
-![vacation_cart_manager.png](/assets/vacation_cart_manager_1709746642372_0.png)
-
-Developing a [Spring Framework](https://spring.io/projects/spring-framework) Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing [Angular](https://angular.io/) front end without modifying it.
-
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
----
-
 ## Learning Objectives and Requirements
+---
 
   + Create a new Java project using [Spring Initializr](https://start.spring.io/), incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok.
 

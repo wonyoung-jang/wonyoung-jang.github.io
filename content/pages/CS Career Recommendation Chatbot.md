@@ -3,21 +3,18 @@ date: 2024-01-22
 categories:
 - University Coursework Projects
 coverimage: ../assets/pandorabots_1709746575902_0.png
-githubrepo: wonyoung-jang/cs-career-chatbot
+description: Creating a chatbot in the [Pandorabot environment](https://home.pandorabots.com/home.html) to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.
+githubrepo: https://github.com/wonyoung-jang/cs-career-chatbot
+site-link: https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/
 title: CS Career Recommendation Chatbot
 tags:
-lastMod: 2024-03-20
+lastMod: 2024-03-21
 ---
-![pandorabots.png](/assets/pandorabots_1709746575902_0.png)
-
-Creating a chatbot in the [Pandorabot environment](https://home.pandorabots.com/home.html) to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.
-
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
----
-
 ## Learning Objectives and Requirements
+---
 
   + Develop a chatbot that recommends one of five computing jobs to students.
 

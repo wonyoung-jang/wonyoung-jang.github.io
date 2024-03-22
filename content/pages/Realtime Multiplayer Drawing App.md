@@ -3,32 +3,30 @@ date: 2024-03-08
 categories:
 - Software Development Projects
 coverimage: ../assets/realtime-multiplayer-drawing_1709917652384_0.png
-githubrepo: wonyoung-jang/realtime-multiplayer-drawing
+description: Draw in realtime on a blank canvas with others on the same server.
+githubrepo: https://github.com/wonyoung-jang/realtime-multiplayer-drawing
+site-link: https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/
 title: Realtime Multiplayer Drawing App
 tags:
-lastMod: 2024-03-20
+lastMod: 2024-03-21
 ---
-![realtime-multiplayer-drawing.png](/assets/realtime-multiplayer-drawing_1709917652384_0.png)
-
-Draw in realtime on a blank canvas with others on the same server.
-
----
-
 ## Introduction
+
+---
 
 This project is a fork of [GitHub - mayfer/claude-app-generator-demo](https://github.com/mayfer/claude-app-generator-demo), which was a demonstration of [Anthropic's Claude 3 Opus](https://www.anthropic.com/news/claude-3-family) generating an app in one go without errors. You can see a demonstration of the generation and the program here: [murat on Twitter](https://twitter.com/mayfer/status/1765385826496864290).
 
----
-
 ## Why Did I Fork This?
+
+---
 
 While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.
 
 I also thought it would be a neat alternative to texting people who are in the same area.
 
----
-
 ## Improvements
+
+---
 
 Included a `package.json` file for easy installation of dependencies:
 

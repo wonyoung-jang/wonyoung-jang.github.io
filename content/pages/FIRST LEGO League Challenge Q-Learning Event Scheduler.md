@@ -3,18 +3,16 @@ date: 2024-02-25
 categories:
 - Software Development Projects
 coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
-githubrepo: wonyoung-jang/fllc-qlearning-scheduler
+description: A FLLC event scheduler using Q-Learning.
+githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
+site-link: https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
 lastMod: 2024-03-21
 ---
-![fllc_qlearning_demo.png](/assets/fllc_qlearning_demo_1709746398103_0.png)
-
-A FLLC event scheduler using Q-Learning.
+## A Brief History
 
 ---
-
-## A Brief History
 
 ### A Nerd Snipe from a Coworker
 
@@ -54,9 +52,9 @@ No, not quite yet, but this has been the most promising approach so far, and I a
 
 Since existing data isn't sufficient, data is generated for this Q-learner, I think incorporating supervised learning on a large enough corpus of generated schedules may be useful, if not interesting. A large dataset would also allow me to integrate Deep Q-learning and end-to-end neural networks to see if improves things at all.
 
----
-
 ## Constraints
+
+---
 
 ### Hard Constraints
 
@@ -86,9 +84,9 @@ One constraint I had to grapple with is the **Back to Back Penalty**. If we assu
 
 I plan on pursuing this constraint more deeply, and am currently refining the above constraints.
 
----
-
 ## A Roadmap and some Current Problems
+
+---
 
 {{< logseq/orgNOTE >}}Last update: 2024-03-18
 {{< / logseq/orgNOTE >}}

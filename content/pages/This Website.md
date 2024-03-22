@@ -3,15 +3,13 @@ date: 2024-03-05
 categories:
 - Software Development Projects
 coverimage: ../assets/image_1709746330336_0.png
-title: This Website
-tags:
-lastMod: 2024-03-20
 description: This page is a meta presentation for the deployment of this website (and this page).
 githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
 site-link: https://wonyoungjang.org/pages/this-website/
+title: This Website
+tags:
+lastMod: 2024-03-21
 ---
-
-
 ## How It's Made
 
 ---
@@ -25,7 +23,6 @@ site-link: https://wonyoungjang.org/pages/this-website/
 4. `hugo -D` + `hugo serve -D` to build and serve the site locally.
 
 5. GitHub Actions to serve the site publicly.
-
 
 ## Admonitions
 
