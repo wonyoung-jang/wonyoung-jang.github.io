@@ -31,7 +31,6 @@
 .post-meta,
 .breadcrumbs {
     color: var(--secondary);
-    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +40,6 @@
 .post-meta .i18n_list li {
     display: inline-flex;
     list-style: none;
-    margin: auto 3px;
     box-shadow: 0 1px 0 var(--secondary);
 }
 

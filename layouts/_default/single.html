@@ -15,11 +15,11 @@
       {{- if .Params.categories }}
         <div class="post-categories">
           <div class="categories-container">
-            Posted in&nbsp;
+            Posted in
             {{- range .Params.categories }}
                 <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
             {{- end }}
-            &nbsp;on&nbsp;
+            on&nbsp;
           </div>
         </div>
       {{- end }}
