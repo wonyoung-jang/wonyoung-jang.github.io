@@ -30,7 +30,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: false
+  UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   disableAnchoredHeadings: true
@@ -38,7 +38,7 @@ params:
   hideMeta: false
   hideSummary: false
   showtoc: true
-  tocopen: false
+  tocopen: true
   feedlinks: true
   mobileMenu: true
   copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"

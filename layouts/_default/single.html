@@ -40,6 +40,11 @@
       {{ partial "github_button.html" (dict "githubRepo" .) }}
     {{ end }}
 
+    {{/* Post navigation links */}}
+    {{- if (.Param "ShowPostNavLinks") }}
+      {{- partial "post_nav_links.html" . }}
+    {{- end }}
+
     {{/* Cover Image */}}
     {{- if and (.Params.coverimage) (not .Params.coverhidden) }}
       <img class="single-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
@@ -59,6 +64,7 @@
     {{- if (.Param "ShowToc") }}
       {{- partial "toc.html" . }}
     {{- end }}
+
   </header>
 
   {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
@@ -78,9 +84,6 @@
   {{ partial "backlinks.html" . }}
   
   <footer class="post-footer">
-    {{- if (.Param "ShowPostNavLinks") }}
-      {{- partial "post_nav_links.html" . }}
-    {{- end }}
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
       
       {{- partial "share_icons.html" . -}}

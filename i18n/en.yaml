@@ -1,19 +1,13 @@
 - id: prev_page
-  translation: "Prev"
+  translation: "Prev Page"
 
 - id: next_page
-  translation: "Next"
-
-- id: first_page
-  translation: "First Page"
-
-- id: last_page
-  translation: "Last Page"
+  translation: "Next Page"
 
 - id: read_time
   translation:
-    one : "1 min read"
-    other: "{{ .Count }} min read"
+    one : "Estimated 1 minute reading time"
+    other: "Estimated {{ .Count }} minutes reading time"
 
 - id: toc
   translation: "Table of Contents"

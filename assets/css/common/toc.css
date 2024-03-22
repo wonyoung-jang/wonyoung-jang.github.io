@@ -3,16 +3,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--toc-background-color);
     color: var(--toc-text-color);
     border-radius: var(--radius);
-    box-shadow: 0.2vh 0.2vh 0.5vh 0 rgba(0, 0, 0, 0.5);
-    padding: 1vh 1vh 0 2vh;
+    padding: 0.5vh 0 0 1vh;
+    filter: opacity(80%);
 }
 
 /* Hover effects */
 .toc:hover {
-    filter: drop-shadow(2px 2px 0.5em rgba(0, 0, 0, 0.5));
+    background-color: var(--toc-background-color);
+    filter: opacity(100%);
 }
 
 .toc a:hover {
