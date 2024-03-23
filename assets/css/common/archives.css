@@ -53,3 +53,31 @@
     color: var(--secondary);
     font-size: 14px;
 }
+
+.filter-and-sort {
+    display: flex;
+    justify-content: space-between;
+    gap: calc(var(--content-gap) / 4);
+    margin: 1vh 0 0 0;
+    width: 100%;
+    padding-top: var(--content-gap);
+    font-weight: bold;
+}
+
+.filter-and-sort select {
+    border-radius: calc(var(--radius) * 2);
+    color: var(--theme);
+    background: var(--secondary);
+    padding: 0.5vh 1vw 0.5vh 1vw;
+    vertical-align: auto;
+}
+
+.filter-category {
+    display: inline-flex;
+    gap: var(--content-gap);
+}
+.sort-order {
+    display: inline-flex;
+    gap: var(--content-gap);
+}
+

@@ -12,12 +12,41 @@
   {{- end }}
 </header>
 
+<span class="filter-and-sort">
+  <span class="filter-category">Filter
+  <select class="filter">
+    <option value="all">All Categories</option>
+    {{- $categories := slice }}
+    {{- range .Site.RegularPages }}
+      {{- if .Params.categories }}
+        {{- $categories = union $categories .Params.categories }}
+      {{- end }}
+    {{- end }}
+
+    {{- range $categories }}
+      <option value="{{ . | urlize }}">{{ . }}</option>
+    {{- end }}
+  </select>
+  </span>
+
+  <br>
+
+  <span class="sort-order">Sort
+  <select class="sort">
+    <option value="newest">Newest</option>
+    <option value="oldest">Oldest</option>
+  </select>
+  </span>
+</span>
+
+
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
 {{- if .Site.Params.ShowAllPagesInArchive }}
   {{- $pages = site.RegularPages }}
 {{- end }}
 
+<div class="archive">
 {{- range $pages.GroupByPublishDate "2006" }}
   {{- if ne .Key "0001" }}
     <div class="archive-year">
@@ -70,6 +99,104 @@
     </div>
   {{- end }}
 {{- end }}
+</div>
+
+<script>
+  function filterByCategory(category) {
+    const entries = document.querySelectorAll('.archive-entry');
+    entries.forEach(entry => {
+      const categories = entry.querySelector('.category-entry');
+      const categoryLinks = categories.querySelectorAll('a');
+      const isMatch = Array.from(categoryLinks).some(link => link.classList.contains(category));
+      if (category === 'all' || isMatch) {
+        entry.style.display = 'block';
+      } else {
+        entry.style.display = 'none';
+      }
+
+      const month = entry.closest('.archive-month');
+      const monthEntries = month.querySelectorAll('.archive-entry');
+      const visibleEntries = Array.from(monthEntries).filter(entry => entry.style.display !== 'none');
+      month.style.display = visibleEntries.length ? '' : 'none';
+
+      const year = month.closest('.archive-year');
+      const yearEntries = year.querySelectorAll('.archive-entry');
+      const visibleMonthEntries = Array.from(yearEntries).filter(entry => entry.style.display !== 'none');
+      year.style.display = visibleMonthEntries.length ? '' : 'none';
+    });
+  }
+</script>
+
+<script>
+  function sortOrder() { 
+    // Sort based on the selected in sort-order
+    const sortOrder = document.querySelector('.sort').value;
+    const entries = document.querySelectorAll('.archive-entry');
+
+    const sortedEntries = Array.from(entries).sort((a, b) => {
+      if (sortOrder === 'newest') {
+        return new Date(b.querySelector('.archive-meta span').textContent) - new Date(a.querySelector('.archive-meta span').textContent);
+      } else {
+        return new Date(a.querySelector('.archive-meta span').textContent) - new Date(b.querySelector('.archive-meta span').textContent);
+      }
+    });
+
+    // Sort months based on the visible entries
+    const months = document.querySelectorAll('.archive-month');
+    const sortedMonths = Array.from(months).sort((a, b) => {
+      const aEntries = a.querySelectorAll('.archive-entry');
+      const bEntries = b.querySelectorAll('.archive-entry');
+      if (sortOrder === 'newest') {
+        return bEntries.length - aEntries.length;
+      } else {
+        return aEntries.length - bEntries.length;
+      }
+    });
+
+    // Sort years based on the visible entries
+    const years = document.querySelectorAll('.archive-year');
+    const sortedYears = Array.from(years).sort((a, b) => {
+      const aEntries = a.querySelectorAll('.archive-entry');
+      const bEntries = b.querySelectorAll('.archive-entry');
+      if (sortOrder === 'newest') {
+        return bEntries.length - aEntries.length;
+      } else {
+        return aEntries.length - bEntries.length;
+      }
+    });
+
+    // Append sorted years to the parent
+    const archive = document.querySelector('.archive');
+    sortedYears.forEach(year => {
+      archive.appendChild(year);
+    });
+
+    // Append sorted months to the parents
+    sortedMonths.forEach(month => {
+      const year = month.closest('.archive-year');
+      year.appendChild(month);
+    });
+    
+    // Append sorted entries to the parents
+    sortedEntries.forEach(entry => {
+      const month = entry.closest('.archive-month');
+      month.querySelector('.archive-posts').appendChild(entry);
+    });
+
+
+  }
+</script>
+
+<script>
+  document.querySelector('.filter').addEventListener('change', (e) => {
+    filterByCategory(e.target.value);
+  });
+
+  document.querySelector('.sort').addEventListener('change', () => {
+    sortOrder();
+  });
+</script>
+
 
 {{- end }}
   {{/* end main */}}
