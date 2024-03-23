@@ -1,147 +1,134 @@
 {{- define "main" }}
+{{- if not .IsHome | and .Title }}
+    <header class="page-header">
+        {{- partial "breadcrumbs.html" . }}
+        <h1>{{ .Title }}</h1>
 
-{{- if (and .Site.Params.profileMode.enabled .IsHome) }}
-    {{- partial "profile_mode.html" . }}
-{{- else }}
-    {{/* if not profileMode */}}
+        {{- if .Description }}
+            <div class="post-description">
+                {{ .Description | markdownify }}
+            </div>
+        {{- end }}
+    </header>
+{{- end }}
 
-    {{- if not .IsHome | and .Title }}
-        <header class="page-header">
-            {{- partial "breadcrumbs.html" . }}
-            <h1>{{ .Title }}</h1>
+{{- if .Content }}
+    <div class="post-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+            {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}
+            {{ .Content }}
+        {{ end }}
+    </div>
+{{- end }}
 
-            {{- if .Description }}
-                <div class="post-description">
-                    {{ .Description | markdownify }}
+{{- $pages := union .RegularPages .Sections }}
+
+{{- if .IsHome }}
+    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+
+<script>
+    function toggleGrid(){
+        // Get references to elements
+        const btn = document.getElementById('toggleViewBtn');
+        const container = document.querySelector('.posts-container');
+    
+        // Check if the container has 'grid' applied
+        if (!container.style.display || container.style.display === 'flex') {
+            // Set 'grid' style
+            container.style.setProperty("display", "grid");
+            container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
+            container.style.setProperty("gap","var(--gap)");
+    
+            // Update button label
+            btn.innerText = "\u2630";
+        } else {
+            // Remove 'grid' styles
+            container.style.removeProperty("display");
+            container.style.removeProperty("gridTemplateColumns");
+        
+            // Update button label
+            btn.innerText = "\u229E";
+        }
+    };
+</script>
+
+<button id="toggleViewBtn" onclick="toggleGrid()">&#x229E</button>
+
+<div class="posts-container">
+    {{- $term := .Data.Term }}
+    {{- range $index, $page := first 9 $paginator.Pages }}
+        {{- $class := "post-entry" }}
+        {{- $user_preferred := or .Site.Params.disableSpecial1stPost .Site.Params.homeInfoParams }}
+        
+        {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+            {{- $class = "first-entry" }}
+        {{- else if $term }}
+            {{- $class = "post-entry category-entry" }}
+        {{- end }}
+        
+        <article class="{{ $class }}">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            
+            {{- if .Params.coverimage }}
+                <img class="entry-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
+            {{- end }}
+            
+            {{- if not (.Param "hideMeta") }}
+                <footer class="entry-footer">
+                    {{- partial "post_meta.html" . -}}
+                </footer>
+            {{- end }}
+            <header class="entry-header">
+                <h2>
+                    {{- .Title }}
+                    {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+                </h2>
+            </header>
+            {{- if (ne (.Param "hideSummary") true) }}
+                <section class="entry-content">
+                    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+                </section>
+            {{- end }}
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+            {{- if .Params.categories }}
+                <div class="category-entry">
+                    {{- range .Params.categories }}
+                        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
+                    {{- end }}
                 </div>
             {{- end }}
-        </header>
+        </article>
     {{- end }}
+</div>
 
-    {{- if .Content }}
-        <div class="post-content">
-            {{- if not (.Param "disableAnchoredHeadings") }}
-                {{- partial "anchored_headings.html" .Content -}}
-            {{- else }}
-                {{ .Content }}
-            {{ end }}
-        </div>
-    {{- end }}
-
-    {{- $pages := union .RegularPages .Sections }}
-
-    {{- if .IsHome }}
-        {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{- end }}
-
-    {{- $paginator := .Paginate $pages }}
-
-    {{- if and .IsHome .Site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
-        {{- partial "home_info.html" . }}
-    {{- end }}
-
-    <script>
-        function toggleGrid(){
-            // Get references to elements
-            const btn = document.getElementById('toggleViewBtn');
-            const container = document.querySelector('.posts-container');
-        
-            // Check if the container has 'grid' applied
-            if (!container.style.display || container.style.display === 'flex') {
-                // Set 'grid' style
-                container.style.setProperty("display", "grid");
-                container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
-                container.style.setProperty("gap","var(--gap)");
-        
-                // Update button label
-                btn.innerText = "\u2630";
-            } else {
-                // Remove 'grid' styles
-                container.style.removeProperty("display");
-                container.style.removeProperty("gridTemplateColumns");
-            
-                // Update button label
-                btn.innerText = "\u229E";
-            }
-        };
-    </script>
-
-    <button id="toggleViewBtn" onclick="toggleGrid()">&#x229E</button>
-
-    <div class="posts-container">
-        {{- $term := .Data.Term }}
-        {{- range $index, $page := first 9 $paginator.Pages }}
-            {{- $class := "post-entry" }}
-            {{- $user_preferred := or .Site.Params.disableSpecial1stPost .Site.Params.homeInfoParams }}
-            
-            {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-                {{- $class = "first-entry" }}
-            {{- else if $term }}
-                {{- $class = "post-entry category-entry" }}
-            {{- end }}
-            
-            <article class="{{ $class }}">
-                {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-                {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-                
-                {{- if .Params.coverimage }}
-                    <img class="entry-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
-                {{- end }}
-                
-                {{- if not (.Param "hideMeta") }}
-                    <footer class="entry-footer">
-                        {{- partial "post_meta.html" . -}}
-                    </footer>
-                {{- end }}
-                <header class="entry-header">
-                    <h2>
-                        {{- .Title }}
-                        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-                    </h2>
-                </header>
-                {{- if (ne (.Param "hideSummary") true) }}
-                    <section class="entry-content">
-                        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-                    </section>
-                {{- end }}
-                <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-                {{- if .Params.categories }}
-                    <div class="category-entry">
-                        {{- range .Params.categories }}
-                            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
-                        {{- end }}
-                    </div>
-                {{- end }}
-            </article>
+{{- if gt $paginator.TotalPages 1 }}    
+    <footer class="page-footer">
+        <nav class="pagination">
+        {{- if $paginator.HasPrev }}
+            <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
+        {{- else }}
+            <span class="prev disabled">« {{ i18n "prev_page" }}</span>
         {{- end }}
-    </div>
-    
-    {{- if gt $paginator.TotalPages 1 }}    
-        <footer class="page-footer">
-            <nav class="pagination">
-            {{- if $paginator.HasPrev }}
-                <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
+        
+        {{- range $paginator.Pagers }}
+            {{- if ne .PageNumber $paginator.PageNumber }}
+                <a class="pagenum" href="{{ .URL | absURL }}">{{ .PageNumber }}</a>
             {{- else }}
-                <span class="prev disabled">« {{ i18n "prev_page" }}</span>
+                <span class="pagenum disabled">{{ .PageNumber }}</span>
             {{- end }}
-            
-            {{- range $paginator.Pagers }}
-                {{- if ne .PageNumber $paginator.PageNumber }}
-                    <a class="pagenum" href="{{ .URL | absURL }}">{{ .PageNumber }}</a>
-                {{- else }}
-                    <span class="pagenum disabled">{{ .PageNumber }}</span>
-                {{- end }}
-            {{- end }}
-            {{- if $paginator.HasNext }}
-                <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
-            {{- else }}
-                <span class="next disabled">{{ i18n "next_page" }} »</span>
-            {{- end }}
-            </nav>
-        </footer>
-    {{- end }}
-
-{{- end }} 
-    {{/* end profileMode */}}
+        {{- end }}
+        {{- if $paginator.HasNext }}
+            <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
+        {{- else }}
+            <span class="next disabled">{{ i18n "next_page" }} »</span>
+        {{- end }}
+        </nav>
+    </footer>
+{{- end }}
 {{- end }} 
     {{- /* end main */ -}}
