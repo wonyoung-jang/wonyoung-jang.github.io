@@ -11,6 +11,7 @@
 
     {{/* Category + metadata wrap */}}
     <div class="post-meta-wrap">
+
       {{/* Categories */}}
       {{- if .Params.categories }}
         <div class="post-categories">
@@ -39,11 +40,6 @@
     {{ with .Params.githubRepo }}
       {{ partial "github_button.html" (dict "githubRepo" .) }}
     {{ end }}
-
-    {{/* Post navigation links */}}
-    {{- if (.Param "ShowPostNavLinks") }}
-      {{- partial "post_nav_links.html" . }}
-    {{- end }}
 
     {{/* Cover Image */}}
     {{- if and (.Params.coverimage) (not .Params.coverhidden) }}
@@ -84,8 +80,13 @@
   {{ partial "backlinks.html" . }}
   
   <footer class="post-footer">
+    {{/* Post navigation links */}}
+    {{- if (.Param "ShowPostNavLinks") }}
+      {{- partial "post_nav_links.html" . }}
+    {{- end }}
+
+    {{/* Share buttons */}}
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-      
       {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
