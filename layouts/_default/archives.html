@@ -13,8 +13,8 @@
 </header>
 
 <span class="filter-and-sort">
-  <span class="filter-category">Filter
-  <select class="filter">
+  <span class="filter-category">⫧</span>
+  <select id="filter-select" class="filter">
     <option value="all">All Categories</option>
     {{- $categories := slice }}
     {{- range .Site.RegularPages }}
@@ -27,16 +27,14 @@
       <option value="{{ . | urlize }}">{{ . }}</option>
     {{- end }}
   </select>
-  </span>
 
   <br>
 
-  <span class="sort-order">Sort
-  <select class="sort">
+  <span class="sort-order">⇅</span>
+  <select id="sort-select" class="sort">
     <option value="newest">Newest</option>
     <option value="oldest">Oldest</option>
   </select>
-  </span>
 </span>
 
 
@@ -194,6 +192,33 @@
 
   document.querySelector('.sort').addEventListener('change', () => {
     sortOrder();
+  });
+</script>
+
+<script>
+  function setSelectedOption(selectId, value) {
+    const select = document.getElementById(selectId);
+    const options = select.options;
+    for (let i = 0; i < options.length; i++) {
+      if (options[i].value === value) {
+        options[i].setAttribute('selected', 'selected');
+      } else {
+        options[i].removeAttribute('selected');
+      }
+    }
+  }
+
+  // Set the initial selected options
+  setSelectedOption('filter-select', 'all');
+  setSelectedOption('sort-select', 'newest');
+
+  // Update the selected options when they change
+  document.getElementById('filter-select').addEventListener('change', (e) => {
+    setSelectedOption('filter-select', e.target.value);
+  });
+
+  document.getElementById('sort-select').addEventListener('change', (e) => {
+    setSelectedOption('sort-select', e.target.value);
   });
 </script>
 

@@ -54,30 +54,36 @@
     font-size: 14px;
 }
 
+
+/* Filter and Sort */
 .filter-and-sort {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     gap: calc(var(--content-gap) / 4);
-    margin: 1vh 0 0 0;
-    width: 100%;
-    padding-top: var(--content-gap);
-    font-weight: bold;
+    padding: var(--content-gap) 0 var(--content-gap) 0;
 }
 
 .filter-and-sort select {
     border-radius: calc(var(--radius) * 2);
-    color: var(--theme);
-    background: var(--secondary);
+    color: var(--content);
+    background: var(--theme);
     padding: 0.5vh 1vw 0.5vh 1vw;
     vertical-align: auto;
 }
 
-.filter-category {
-    display: inline-flex;
-    gap: var(--content-gap);
-}
-.sort-order {
-    display: inline-flex;
-    gap: var(--content-gap);
+.filter-and-sort select:hover {
+    filter: brightness(1.1), contrast(1.1), saturate(1.1);
+    background-color: var(--content);
+    color: var(--theme);
 }
 
+.filter-category,
+.sort-order {
+    font-size: 2vh;
+}
+
+/* Highlight the currently selected option */
+.filter-and-sort select option[selected] {
+    font-style: italic;
+    font-weight: bold;
+}
