@@ -4,9 +4,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
     width: 100%;
     padding: 1vh 0 1vh 0;
     margin-bottom: 5vh;
-    gap: 1vh;
+    gap: var(--content-gap);
 }

@@ -1,57 +1,38 @@
 /* Table of Contents */
 .toc {
     width: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     color: var(--toc-text-color);
     border-radius: var(--radius);
-    padding: 0.5vh 0 0 1vh;
-    filter: opacity(80%);
-}
-
-/* Hover effects */
-.toc:hover {
+    width: 100%;
     background-color: var(--toc-background-color);
-    filter: opacity(100%);
-}
-
-.toc a:hover {
-    text-decoration: underline;  
-}
-
-/* Heading with subheadings */
-.toc details {
-    margin-bottom: 0.5em;
-}
-
-/* Collapsible heading */
-.toc summary {
+    padding: 1vh 1vw 1vh 1vw;
     cursor: pointer;
     pointer-events: fill;
-    padding: 0.5em;
 }
 
-.toc summary::marker {
-    content: none;
+.toc .inner summary:hover {
+    filter: brightness(1.1);
+    background-color: var(--toc-background-color);
 }
 
-/* Summary icon */
-.toc summary::before {
-    content: '▶ ';
-    position: relative;
-    transition: transform 0.2s;
-    display: inline-block;
-    right: 0.5em;
+.toc .inner ul li:hover {
+    filter: brightness(1.1);
+    background-color: var(--toc-background-color);
+
 }
 
-/* Summary icon when open */
-.toc details[open] > summary::before {
-    transform: rotate(90deg);
+.toc .inner a:hover {
+    filter: brightness(1.1);
+    text-decoration: underline;
+    color: var(--link);
 }
 
-/* Summary hover */
-.toc summary:hover {
-    border-right: 1px solid var(--link);
+/* The title of the table of contents */
+.toc summary {
+    font-weight: bold;
+    font-size-adjust: 0.8;
 }
 
 /* The list of links */
@@ -65,7 +46,7 @@
 /* The list items */
 .toc li {
     position: relative;
-    margin: 0.5em 0;
+    margin: 1vh 0 0 0;
 }
 
 /* The list item icon */

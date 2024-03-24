@@ -6,22 +6,19 @@
     padding: calc(var(--gap)/2) var(--gap);
     background-color: var(--entry);
     font-weight: bold;
-    height: auto;
     font-size: var(--content-gap);
     filter: saturate(180%) brightness(120%);
     white-space: nowrap; /* Prevent the text from wrapping */
-    box-shadow: 0.2vh 0.2vh 0.5vh 0 rgba(0, 0, 0, 0.5);
-    width: 100%;
 }
 
 .github-button .repo-name-link {
     font-family: 'IBM Plex Mono', monospace;
     color: var(--link);
-    filter: brightness(180%);
+    filter: brightness(1.4);
 }
 
 .github-button:hover, .github-button:focus {
-    filter: brightness(90%);
+    filter: brightness(1.1);
 }
 
 @media (max-width: 768px) {
