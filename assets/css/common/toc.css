@@ -33,7 +33,7 @@
 summary:before {
     color: var(--link);
     content: "▶";
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     vertical-align: text-top;
     margin-right: 0.5em;
     font-size: 1.2em;
@@ -41,7 +41,8 @@ summary:before {
 
 details[open] > summary:before {
     content: "▼";
-    color: rgb(150, 113, 161);
+    color: var(--link);
+    filter: hue-rotate(180deg);
 }
 
 summary:hover:before {
