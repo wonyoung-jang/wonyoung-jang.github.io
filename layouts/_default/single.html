@@ -41,11 +41,6 @@
       {{ partial "github_button.html" (dict "githubRepo" .) }}
     {{ end }}
 
-    {{/* Cover Image */}}
-    {{- if and (.Params.coverimage) (not .Params.coverhidden) }}
-      <img class="single-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
-    {{- end }}
-    
     {{/* Breadcrumbs */}}
     {{ partial "breadcrumbs.html" . }}
 
