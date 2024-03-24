@@ -1,5 +1,5 @@
-.footer,
-.top-link {
+/* Footer */
+.footer {
     font-size: 14px;
     color: var(--primary);
 }
@@ -7,14 +7,18 @@
 .footer {
     position: relative;
     display: flex;
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: var(--gap);
-    bottom: var(--gap);
+    width: 100%;
+    bottom: 0;
+    margin: 2vh 0 1vh 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* */
+.footer.front {
+    z-index: 1;
+    display: none;
 }
 
 .footer a {
@@ -25,8 +29,9 @@
     border-bottom: 1px solid var(--primary);
 }
 
-/* Scroll to top button */
+/* Scroll to Top */
 .top-link {
+    font-size: 14px;
     visibility: hidden;
     position: fixed;
     bottom: 60px;
