@@ -32,7 +32,7 @@
 
 summary:before {
     color: var(--link);
-    content: "→";
+    content: "▶";
     transition: all 0.3s ease-in-out;
     vertical-align: text-top;
     margin-right: 0.5em;
@@ -40,7 +40,7 @@ summary:before {
 }
 
 details[open] > summary:before {
-    content: "↓";
+    content: "▼";
     color: rgb(150, 113, 161);
 }
 
