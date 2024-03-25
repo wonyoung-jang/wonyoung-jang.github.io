@@ -1,0 +1,118 @@
+# Parameters for the site
+
+env: production # To enable google analytics, opengraph, twitter-cards and schema.
+author: "Wonyoung Jang"
+description: "Wonyoung Jang's personal website"
+contact: "contact@wonyoungjang.org"
+images:
+DateFormat: "2006, Jan 02"
+defaultTheme: auto
+disableThemeToggle: false
+ShowReadingTime: true
+ShowShareButtons: true
+ShowPostNavLinks: true
+ShowBreadCrumbs: false
+ShowCodeCopyButtons: true
+ShowWordCount: true
+
+ShowRssButtonInSectionTermList: true
+
+UseHugoToc: true
+
+disableSpecial1stPost: false
+disableScrollToTop: false
+disableAnchoredHeadings: true
+
+comments: true
+hideMeta: false
+hideSummary: false
+
+showtoc: true
+tocopen: true
+
+feedlinks: true
+mobileMenu: true
+copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+
+# Assets
+assets:
+  disableHLJS: true
+  disableFingerprinting: false
+  favicon: '/favicon.ico'
+  favicon16x16: '/favicon-16x16.png'
+  favicon32x32: '/favicon-32x32.png'
+  apple_touch_icon: '/apple-touch-icon.png'
+  safari_pinned_tab: '/safari-pinned-tab.svg'
+
+# Site Settings
+label:
+  text: 'Wonyoung Jang'
+  icon: '/apple-touch-icon.png'
+  iconHeight: 
+
+# Profile Mode
+profileMode:
+  enabled: true
+  title: WonyoungJang.org
+  subtitle: 
+  
+  imageUrl: /android-chrome-512x512.png
+  imageWidth: 220 # custom size
+  imageHeight: 220 # custom size
+  imageTitle: WonyoungJang.org site logo
+  
+  buttons:
+    - name: Software Development Projects
+      url: "/categories/software-development-projects"
+    - name: University Coursework Projects
+      url: "/categories/university-coursework-projects"
+    
+# Home Info Mode - NOT USED
+homeInfoParams:
+  Title:
+  Content:
+
+# Social Links
+socialIcons:
+  - name: "github"
+    url: "https://github.com/wonyoung-jang"
+  - name: "kofi"
+    url: "https://ko-fi.com/wonyoung_jang"
+  - name: "rss"
+    url: "https://wonyoungjang.org/index.xml"
+  - name: "email"
+    url: "mailto:contact@wonyoungjang.org"
+
+# Cover Image
+cover:
+  responsiveImages: false # Use responsive images
+  linkFullImages: true # Link to full image
+  hidden: false # Hide cover image in all views
+  hiddenInList: false # Hide cover image in list view
+  hiddenInSingle: true # Hide cover image in single post view
+
+# Search Options
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
+  keys: ["title", "permalink", "summary", "content"]
+
+# Analytics - NOT USED
+# analytics:
+#   google:
+#     SiteVerificationTag: 
+#   bing:
+#     SiteVerificationTag:
+#   yandex:
+#     SiteVerificationTag:
+
+# Edit Post - NOT USED
+# editPost:
+#   URL: "https://github.com/<path_to_repo>/content"
+#   Text: "Suggest Changes" # edit text
+#   appendFilePath: true # to append file path to Edit link

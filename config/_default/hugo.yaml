@@ -1,0 +1,44 @@
+baseURL: https://wonyoungjang.org/
+title: Wonyoung Jang
+paginate: 9
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: true
+
+googleAnalytics: G-RTMKJG4NFZ
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# Taxonomies
+taxonomies:
+  categories: "categories"
+
+# Ignore files
+ignoreFiles:
+  \.zip$
+
+# Sitemap
+sitemap:
+  filename: sitemap.xml
+  priority: 0.5
+  changefreq: daily
+
+# See Also
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: true
+    name: categories
+    weight: 80
+  threshold: 20
+
+# Output formats
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
