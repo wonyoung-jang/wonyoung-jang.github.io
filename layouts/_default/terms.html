@@ -10,19 +10,15 @@
     {{- end }}
 </header>
 {{- end }}
-
-<ul class="categories">
+ 
+<ul class="terms">
     {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- range $key, $value := .Data.Terms.ByCount }}
         {{- $name := .Name }}
         {{- $count := .Count }}
-        
         {{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}
-            {{- if or (eq .Name "Meta") (eq .Name "Lists")}}
-                {{- continue -}}
-            {{- end }}
             <li>
-                <a href="{{ .Permalink }}" class="categories {{ .Name | urlize }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+                <a href="{{ .Permalink }}" class="terms {{ .Name | urlize }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
             </li>
         {{- end }}
     {{- end }}

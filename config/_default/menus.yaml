@@ -3,33 +3,58 @@ main:
     name: Search
     pageRef: /search
     weight: 10
-  - identifier: Projects # TODO This is a temporary hack
+
+  - identifier: Projects
     name: Projects
+    pageRef: /projects
+    weight: 12
+
+  - identifier: Categories
+    name: Categories
     pageRef: /categories
-    weight: 20
-  - identifier: Software Development
-    name: Software Development
+    weight: 14
+  - identifier: Software Development Projects
+    name: Software Development Projects
     pageRef: /categories/software-development-projects
-    parent: Projects
+    parent: Categories
     weight: 1
-  - identifier: University Coursework
-    name: University Coursework
+  - identifier: University Coursework Projects
+    name: University Coursework Projects
     pageRef: /categories/university-coursework-projects
-    parent: Projects
+    parent: Categories
     weight: 2
+  - identifier: Lists
+    name: Lists
+    pageRef: /categories/lists
+    parent: Categories
+    weight: 3
+  - identifier: Meta
+    name: Meta
+    pageRef: /categories/meta
+    parent: Categories
+    weight: 4
+    
   - identifier: Graph
     name: Graph
     url: /graph/#/graph
-    weight: 25
+    weight: 20
+
   - identifier: Archives
     name: Archives
     pageRef: /archives
     weight: 30
+
   - identifier: About
     name: About
     pageRef: /about
-    weight: 50
+    weight: 32
+
   - identifier: Contact
     name: Contact
     pageRef: /contact
-    weight: 60
+    weight: 34
+
+  # - identifier: RSS
+  #   name: RSS
+  #   url: /index.xml
+  #   weight: 70

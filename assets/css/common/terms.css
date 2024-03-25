@@ -1,10 +1,17 @@
-.categories li {
-    display: inline-block;
-    margin: 10px;
-    font-weight: 500;
+.terms {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    white-space: nowrap;
+    width: fit-content;
+    list-style: none;
 }
 
-.categories a {
+.terms li {
+    font-weight: bold;
+    padding: var(--gap) 0 0 0;
+}
+
+.terms a {
     display: block;
     padding: 3px 10px;
     background: var(--primary);
@@ -14,19 +21,19 @@
     color: rgb(0, 0, 0);
 }
 
-/* Categories colors for unique categories*/
-.categories .lists {
+/* Terms colors for unique terms*/
+.terms .lists {
     background-color: var(--lists-bg);
 }
 
-.categories .software-development-projects {
+.terms .software-development-projects {
     background-color: var(--software-bg);
 }
 
-.categories .university-coursework-projects {
+.terms .university-coursework-projects {
     background-color: var(--university-bg);
 }
 
-.categories .meta {
+.terms .meta {
     background-color: var(--meta-bg);
 }

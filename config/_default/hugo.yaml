@@ -13,7 +13,6 @@ minify:
   disableXML: true
   minifyOutput: true
 
-# Taxonomies
 taxonomies:
   categories: "categories"
 

@@ -17,8 +17,6 @@ ShowWordCount: true
 
 ShowRssButtonInSectionTermList: true
 
-UseHugoToc: true
-
 disableSpecial1stPost: false
 disableScrollToTop: false
 disableAnchoredHeadings: true
@@ -27,6 +25,7 @@ comments: true
 hideMeta: false
 hideSummary: false
 
+UseHugoToc: false
 showtoc: true
 tocopen: true
 
@@ -54,7 +53,7 @@ label:
 profileMode:
   enabled: true
   title: WonyoungJang.org
-  subtitle: 
+  subtitle: '[Click on this link](/projects) to go to a full list of my projects, or on the buttons below to see my projects by category:'
   
   imageUrl: /android-chrome-512x512.png
   imageWidth: 220 # custom size
@@ -103,16 +102,16 @@ fuseOpts:
   keys: ["title", "permalink", "summary", "content"]
 
 # Analytics - NOT USED
-# analytics:
-#   google:
-#     SiteVerificationTag: 
-#   bing:
-#     SiteVerificationTag:
-#   yandex:
-#     SiteVerificationTag:
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: 
+  #   bing:
+  #     SiteVerificationTag:
+  #   yandex:
+  #     SiteVerificationTag:
 
 # Edit Post - NOT USED
-# editPost:
-#   URL: "https://github.com/<path_to_repo>/content"
-#   Text: "Suggest Changes" # edit text
-#   appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
