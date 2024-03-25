@@ -135,6 +135,7 @@ params:
 taxonomies:
   categories: "categories"
 
+
 # Ignore files
 ignoreFiles:
   \.zip$
