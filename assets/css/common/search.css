@@ -1,3 +1,9 @@
+.page-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #searchbox input {
     padding: 4px 10px;
     width: 100%;
