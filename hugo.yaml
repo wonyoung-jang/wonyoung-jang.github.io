@@ -1,7 +1,38 @@
 baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
 paginate: 9
-themes: 
+params:
+  tags: [
+    "responsive",
+    "simple",
+    "clean",
+    "light",
+    "dark",
+    "blog",
+    "minimalist",
+    "highlight.js",
+    "search"
+  ]
+  features: [
+    "responsive",
+    "single-column",
+    "blog",
+    "cover-image",
+    "table-of-contents",
+    "opengraph",
+    "highlight.js",
+    "favicon",
+    "archive",
+    "share-icons",
+    "cover",
+    "multilingual",
+    "social-icons",
+    "minified-assets",
+    "theme-toggle",
+    "menu-location-indicator",
+    "scroll-to-top",
+    "search"
+  ]
 
 enableRobotsTXT: true
 buildDrafts: false
