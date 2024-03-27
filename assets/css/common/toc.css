@@ -26,29 +26,15 @@
 /* The title of the table of contents */
 .toc summary {
     font-weight: bold;
-    font-size-adjust: 0.7;
     outline: none;
-}
-
-.toc summary::marker,
-.toc summary::-webkit-details-marker {
-    display: none;
-    content: "";
 }
 
 summary:before {
     color: var(--link);
-    content: "▶";
     transition: all 0.1s ease-in-out;
     vertical-align: text-top;
     margin-right: 0.5em;
     font-size: 1.2em;
-}
-
-details[open] > summary:before {
-    content: "▼";
-    color: var(--link);
-    filter: hue-rotate(180deg);
 }
 
 summary:hover:before {

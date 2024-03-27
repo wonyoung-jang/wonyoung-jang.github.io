@@ -1,41 +1,31 @@
 /* Responsive */
+
 @media screen and (max-width: 768px) {
     /* theme-vars */
     :root {
-        --gap: 14px;
+      --gap: 14px;
     }
 
-    
-    /* Post Entry */
-    .first-entry {
-        min-height: 260px;
-    }    
-    
-    /* Profile Mode */
-    .profile img {
-        transform: scale(0.85);
-    }
-    
     /* 404 Page */
     .not-found {
-        font-size: 2.5rem;
+      font-size: 2.5rem;
     }
 
     .go-home {
         font-size: 1.2rem;
         margin: 10px;
     }
-
+  
     /* Admonitions */
     .important, .warning, .caution, .note, .example, .tip, .pinned, .quote, .comment, .query, .verse, .export {
-        font-size: 0.8em;
+      font-size: 0.8em;
     }
 
     .quote::before, .note::before, .important::before, .warning::before, .caution::before, .example::before, .tip::before, .pinned::before, .comment::before,
     .query::before, .export::before, .verse::before{
         font-size: 1.2em;
     }
-
+  
     /* Archives */
     .archive-year {
         margin-top: 1rem;
@@ -44,7 +34,7 @@
     .archive-month {
         flex-direction: column;
     }
-
+  
     /* Related Posts and Backlinks */
     .backlinks a, .related a {
         display: inline-block;
@@ -63,7 +53,7 @@
     .footer {
         padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
     }
-
+  
     /* Github-button */
     .github-button {
         display: inline-flex;
@@ -74,6 +64,71 @@
 
     .github-button .view-source-text {
         display: none;
+    }
+
+    /* Post Entry */
+    .first-entry {
+        min-height: 260px;
+    }
+
+    /* Profile Mode */
+    .profile img {
+        transform: scale(0.85);
+    }
+
+    /* Post Meta */
+
+    .categories-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        flex-direction: row;
+    }
+
+    .categories-container a {
+        padding: 0.4rem;
+    }
+
+    /* TOC */
+    .toc {
+        width: 100%;
+    }
+
+    .category-entry div a {
+        display: none;
+    }
+
+    .entry-footer, .entry-header, .entry-content {
+        margin-left: 4rem;
+    }
+
+    #toggleViewBtn {
+        display: none;
+    }
+
+    .posts-container:not([style*="grid"]) .entry-cover {
+        width: 6rem;
+        object-fit: cover;
+    }
+
+    .page-header h1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        padding: 0 0 4rem 0;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -92,7 +147,7 @@
     .list .top-link {
         transform: translateY(-5rem);
     }
-}
+  }
 
 
 @media (prefers-reduced-motion) {
@@ -106,4 +161,4 @@
     #searchResults li:active {
         transform: none;
     }
-}
+  }
