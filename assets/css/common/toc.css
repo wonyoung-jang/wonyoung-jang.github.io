@@ -6,9 +6,15 @@
     border-radius: var(--radius);
     background-color: var(--toc-background-color);
     color: var(--toc-text-color);
-    padding: 1vh 2vw 1vh 2vw;
+    padding: 1vh 2vw 4vh 2vw;
     cursor: pointer;
     pointer-events: fill;
+    margin-bottom: 1vh;
+}
+
+.toc summary:hover {
+    filter: brightness(1.1);
+    background-color: var(--theme);
 }
 
 .toc .inner a:hover {
@@ -46,7 +52,7 @@ details[open] > summary:before {
 }
 
 summary:hover:before {
-    filter: brightness(1.1);
+    filter: brightness(1.5);
 }
 
 /* The list of headers */
@@ -107,4 +113,30 @@ summary:hover:before {
     .toc {
         margin-bottom: 1rem;
     }
+}
+
+/* Add collapse/expand buttons */
+.toc .collapse-expand {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.toc .collapse, .toc .expand {
+    filter: brightness(0.8);
+}
+
+.toc .collapse:hover, .toc .expand:hover {
+    filter: brightness(1.1);
+    background-color: var(--theme);
+}
+
+.toc .collapse::before {
+    content: "▲";
+}
+
+.toc .expand::before {
+    content: "▼";
 }

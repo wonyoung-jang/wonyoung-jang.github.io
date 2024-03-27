@@ -2,9 +2,19 @@
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
 <div class="toc">
+    <div class="collapse-expand">
+        <button class="collapse">   
+            {{- i18n "collapse" | default "Collapse All" }}
+        </button>
+        &nbsp;|&nbsp;
+        <button class="expand">
+            {{- i18n "expand" | default "Expand All" }}
+        </button>
+    </div>
+
     <details {{if (.Param "TocOpen") }} open{{ end }}>
         <summary accesskey="c" title="(Alt + C)">
-            <span class="details">{{- i18n "toc" | default "Table of Contents" }}</span>
+            <span class="details">{{- i18n "toc" | default "Contents" }}</span>
         </summary>
 
         <div class="inner">
@@ -65,4 +75,20 @@
         </div>
     </details>
 </div>
+
+<script>
+    /* Expand and collapse recursively */
+    document.querySelector('.collapse').addEventListener('click', function() {
+        document.querySelectorAll('.toc details').forEach(function(detail) {
+            detail.removeAttribute('open');
+        });
+    });
+
+    document.querySelector('.expand').addEventListener('click', function() {
+        document.querySelectorAll('.toc details').forEach(function(detail) {
+            detail.setAttribute('open', '');
+        });
+    });
+</script>
+
 {{- end }}
