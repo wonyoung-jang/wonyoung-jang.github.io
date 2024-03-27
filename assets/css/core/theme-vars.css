@@ -19,6 +19,8 @@
     --category9-bg: #D8BFD8;
     --category10-bg: #ADD8E6;
 
+
+    /* Light Theme */
     --theme: rgb(255, 255, 255); /* White background */
     --entry: rgb(222, 240, 255); /* Light blue for entry */
     --primary: rgb(26, 26, 26); /* Black for primary text */
@@ -73,6 +75,7 @@
 }
 
 .dark {
+    /* Dark Theme */
     --theme: rgb(23, 23, 23); /* Dark background */
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
     --primary: rgb(226, 226, 226); /* Light grey for primary text */

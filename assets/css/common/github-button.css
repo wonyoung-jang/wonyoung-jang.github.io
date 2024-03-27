@@ -20,16 +20,3 @@
 .github-button:hover, .github-button:focus {
     filter: brightness(1.1);
 }
-
-@media (max-width: 768px) {
-    .github-button {
-        display: inline-flex;
-        justify-content: center;        
-        text-align: center;
-        font-size: 0.9rem;
-    }
-
-    .github-button .view-source-text {
-        display: none;
-    }
-}

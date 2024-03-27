@@ -109,13 +109,7 @@ summary:hover:before {
     background-color: var(--toc-background-color);
 }
 
-@media (max-width: 768px) {
-    .toc {
-        margin-bottom: 1rem;
-    }
-}
-
-/* Add collapse/expand buttons */
+/* Collapse/expand buttons */
 .toc .collapse-expand {
     display: flex;
     justify-content: flex-end;

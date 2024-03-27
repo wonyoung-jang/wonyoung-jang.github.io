@@ -1,0 +1,109 @@
+/* Responsive */
+@media screen and (max-width: 768px) {
+    /* theme-vars */
+    :root {
+        --gap: 14px;
+    }
+
+    
+    /* Post Entry */
+    .first-entry {
+        min-height: 260px;
+    }    
+    
+    /* Profile Mode */
+    .profile img {
+        transform: scale(0.85);
+    }
+    
+    /* 404 Page */
+    .not-found {
+        font-size: 2.5rem;
+    }
+
+    .go-home {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+    /* Admonitions */
+    .important, .warning, .caution, .note, .example, .tip, .pinned, .quote, .comment, .query, .verse, .export {
+        font-size: 0.8em;
+    }
+
+    .quote::before, .note::before, .important::before, .warning::before, .caution::before, .example::before, .tip::before, .pinned::before, .comment::before,
+    .query::before, .export::before, .verse::before{
+        font-size: 1.2em;
+    }
+
+    /* Archives */
+    .archive-year {
+        margin-top: 1rem;
+    }
+
+    .archive-month {
+        flex-direction: column;
+    }
+
+    /* Related Posts and Backlinks */
+    .backlinks a, .related a {
+        display: inline-block;
+        color: var(--link);
+        font-size: 0.9rem;
+    }
+
+    /* Categories */
+    .category {
+        margin: 0.5rem 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
+    }
+
+    /* Github-button */
+    .github-button {
+        display: inline-flex;
+        justify-content: center;        
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .github-button .view-source-text {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    /* reset */
+    ::-webkit-scrollbar {
+        width: 19px;
+        height: 11px;
+    }
+}
+
+
+/* footer */
+@media screen and (max-width: 900px) {
+    .list .top-link {
+        transform: translateY(-5rem);
+    }
+}
+
+
+@media (prefers-reduced-motion) {
+    /* terms; profile-mode; post-single; post-entry; post-entry; search; search */
+    .categories a:active,
+    .button:active,
+    .share-buttons svg:active,
+    .post-entry:active,
+    .top-link,
+    #searchResults .focus,
+    #searchResults li:active {
+        transform: none;
+    }
+}
