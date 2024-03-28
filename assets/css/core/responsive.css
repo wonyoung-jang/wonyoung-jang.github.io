@@ -76,21 +76,6 @@
         transform: scale(0.85);
     }
 
-    /* Post Meta */
-
-    .categories-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.8rem;
-        flex-direction: row;
-    }
-
-    .categories-container a {
-        padding: 0.4rem;
-    }
-
     /* TOC */
     .toc {
         width: 100%;
@@ -130,6 +115,22 @@
         padding: 0.5rem 1rem;
         font-size: 1rem;
     }
+
+    .post-meta-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories-container {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .categories-container a {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
 }
 
 
