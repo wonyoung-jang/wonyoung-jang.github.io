@@ -133,7 +133,16 @@
 
     .post-description {
         font-size: 0.9rem;
-      }
+    }
+
+    #menu {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
 }
 
 
