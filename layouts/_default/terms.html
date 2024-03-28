@@ -18,7 +18,7 @@
         {{- $count := .Count }}
         {{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}
             <li>
-                <a href="{{ .Permalink }}" class="terms {{ .Name | urlize }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+                <a href="{{ .Permalink }}" class="terms {{ .Name | urlize }}" aria-label="term link to {{ .Name | urlize }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
             </li>
         {{- end }}
     {{- end }}

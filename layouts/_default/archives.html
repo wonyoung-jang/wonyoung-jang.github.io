@@ -77,7 +77,8 @@
                         {{- range .Params.categories }}
                             <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" 
                               class="category {{ . | urlize }}"
-                              style="margin: 1vh 1vw 0 0;">{{ . }}</a>
+                              style="margin: 1vh 1vw 0 0;"
+                              aria-label="{{ . }}">{{ . }}</a>
                         {{- end }}
                     </div>
                 {{- end }}
