@@ -53,7 +53,7 @@ label:
 profileMode:
   enabled: true
   title: WonyoungJang.org
-  subtitle: '[Click on this link](/projects) to go to a full list of my projects, or on the buttons below to see my projects by category:'
+  #subtitle: Personal Website  
   
   imageUrl: /android-chrome-512x512.png
   imageWidth: 220 # custom size
