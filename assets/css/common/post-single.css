@@ -16,13 +16,16 @@
 }
 
 .post-description {
+    display: inline;
     font-size: 20px;
     color: var(--primary);
     font-style: italic;
+    text-align: center;
 }
 
 .post-description a {
     color: var(--link);
+    white-space: nowrap;
 }
 
 .post-meta,
