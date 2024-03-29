@@ -97,7 +97,9 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/contact/</guid>
-      <description>Contact Me The best way to contact me directly is through email at contact@wonyoungjang.org.</description>
+      <description>Contact Me Directly The best way to contact me directly is through email at contact@wonyoungjang.org.
+Give Me Feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
+Name Email Subject Message Submit </description>
     </item>
     
     <item>
@@ -124,7 +126,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/disaster-recovery-robot-simulation/</guid>
-      <description>Developing an autonomous robotic recovery system using the [CoppeliaSim](https://www.coppeliarobotics.com/) virtual robot environment to demonstrate goal-seeking behaviors in a disaster recovery scenario, incorporating sensors to assist in the effort.</description>
+      <description>Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration.</description>
     </item>
     
     <item>
@@ -133,7 +135,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/</guid>
-      <description>Creating a chatbot in the [Pandorabot environment](https://home.pandorabots.com/home.html) to assist students in identifying suitable computing job types based on their strengths and preferences, thereby aiding a career advisor at a university.</description>
+      <description>Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.</description>
     </item>
     
     <item>
@@ -160,7 +162,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/hotel-reservation-manager/</guid>
-      <description>Enhancing a [Spring](https://spring.io/projects/spring-framework) application for a hotel reservation system by incorporating multithreaded language translation, time zone adjustments, and currency exchange functionalities. Containerizing the application using [Docker](https://www.docker.com/), demonstrating an advanced deployment strategy.</description>
+      <description>Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).</description>
     </item>
     
     <item>
@@ -169,7 +171,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/vacation-cart-manager/</guid>
-      <description>Developing a [Spring Framework](https://spring.io/projects/spring-framework) Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing [Angular](https://angular.io/) front end without modifying it.</description>
+      <description>Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&amp;#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems.</description>
     </item>
     
     <item>
@@ -178,7 +180,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/retail-inventory-manager/</guid>
-      <description>Customizing a [Spring Framework](https://spring.io/projects/spring-framework) application with an HTML front-end and a Java backend to manage inventory for a specific customer&amp;#39;s needs, demonstrating various software development skills.</description>
+      <description>Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&amp;#39;s needs.</description>
     </item>
     
     <item>
@@ -187,7 +189,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/</guid>
-      <description>Generating a business report within a [PostgreSQL](https://www.postgresql.org/) lab environment, utilizing SQL code to extract granular data (Detailed section) and summarized insights (Summary section) directly from [PostgreSQLTutorial&amp;#39;s DVD Rental Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) to answer a specific business question.</description>
+      <description>Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query.</description>
     </item>
     
     <item>
@@ -205,7 +207,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/</guid>
-      <description>Developing normalized physical database models (including ER diagrams, tables, and queries) for two fictional small businesses (Bagel Corner and Mister Coffee) using SQL, with  table creation, data loading, and report generation.</description>
+      <description>Built SQL database models for Bagel Corner &amp;amp; Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.</description>
     </item>
     
   </channel>
