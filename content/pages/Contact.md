@@ -15,3 +15,5 @@ lastMod: 2024-03-22
 ---
 
 The best way to contact me directly is through email at [contact@wonyoungjang.org](mailto:contact@wonyoungjang.org).
+
+{{< contact >}}

@@ -60,13 +60,13 @@
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   
   {{- if .Content }}
-
+    {{/* Post content */}}
     <div class="post-content">
       {{- if not (.Param "disableAnchoredHeadings") }}
         {{- partial "anchored_headings.html" .Content -}}
       {{- else }}
-        {{ .Content }}
-      {{ end }}
+        {{- .Content | safeHTML -}}
+      {{- end }}
     </div>
   {{- end }}
 
@@ -87,6 +87,7 @@
   {{- if (.Param "comments") }}
     {{- partial "comments.html" . }}
   {{- end }}
+
 </article>
 
 {{- end }}{{/* end main */}}
