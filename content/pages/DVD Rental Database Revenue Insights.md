@@ -3,12 +3,12 @@ date: 2023-07-12
 categories:
 - University Coursework Projects
 coverimage: ../assets/dvd-rental-sample-database-diagram_1709746107091_0.png
-description: Generating a business report within a [PostgreSQL](https://www.postgresql.org/) lab environment, utilizing SQL code to extract granular data (Detailed section) and summarized insights (Summary section) directly from [PostgreSQLTutorial's DVD Rental Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) to answer a specific business question.
+description: Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query.
 githubrepo: https://github.com/wonyoung-jang/dvd-rental-revenue
 site-link: https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/
 title: DVD Rental Database Revenue Insights
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-03-28
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}

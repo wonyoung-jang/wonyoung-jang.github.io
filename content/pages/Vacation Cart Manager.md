@@ -3,12 +3,12 @@ date: 2023-11-21
 categories:
 - University Coursework Projects
 coverimage: ../assets/vacation_cart_manager_1709746642372_0.png
-description: Developing a [Spring Framework](https://spring.io/projects/spring-framework) Java backend for a web application to replace the legacy backend system of a travel agency, interfacing with an existing [Angular](https://angular.io/) front end without modifying it.
+description: Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency's web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems.
 githubrepo: https://github.com/wonyoung-jang/vacation-cart-manager
 site-link: https://wonyoungjang.org/pages/vacation-cart-manager/
 title: Vacation Cart Manager
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-03-28
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
