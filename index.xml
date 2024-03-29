@@ -6,40 +6,58 @@
     <description>Recent content on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List of All Pages</title>
+      <link>https://wonyoungjang.org/pages/list-of-all-pages/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoungjang.org/pages/list-of-all-pages/</guid>
+      <description>This page is a list of all pages on this site, organized by category.</description>
+    </item>
+    
+    <item>
+      <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
+      <link>https://wonyoungjang.org/pages/list-of-keyboard-shortcuts-for-wonyoungjangorg/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://wonyoungjang.org/pages/list-of-keyboard-shortcuts-for-wonyoungjangorg/</guid>
+      <description>This page is a list of keyboard shortcuts for navigating this site.</description>
+    </item>
+    
     <item>
       <title>Lists</title>
-      <link>https://wonyoungjang.org/pages/lists/</link>
+      <link>https://wonyoungjang.org/categories/lists/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/lists/</guid>
+      <guid>https://wonyoungjang.org/categories/lists/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Meta</title>
-      <link>https://wonyoungjang.org/pages/meta/</link>
+      <link>https://wonyoungjang.org/categories/meta/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/meta/</guid>
+      <guid>https://wonyoungjang.org/categories/meta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software Development Projects</title>
-      <link>https://wonyoungjang.org/pages/software-development-projects/</link>
+      <link>https://wonyoungjang.org/categories/software-development-projects/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/software-development-projects/</guid>
+      <guid>https://wonyoungjang.org/categories/software-development-projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>University Coursework Projects</title>
-      <link>https://wonyoungjang.org/pages/university-coursework-projects/</link>
+      <link>https://wonyoungjang.org/categories/university-coursework-projects/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/university-coursework-projects/</guid>
+      <guid>https://wonyoungjang.org/categories/university-coursework-projects/</guid>
       <description></description>
     </item>
     
