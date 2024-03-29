@@ -8,7 +8,7 @@ url: /contact
 site-link: https://wonyoungjang.org/contact/
 title: Contact
 tags:
-lastMod: 2024-03-29
+lastMod: 2024-03-22
 ---
 ## Contact Me Directly
 
