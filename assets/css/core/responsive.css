@@ -3,7 +3,7 @@
 @media screen and (max-width: 768px) {
     /* theme-vars */
     :root {
-      --gap: 14px;
+      --gap: 0.7rem;
     }
 
     /* 404 Page */
@@ -11,19 +11,20 @@
       font-size: 2.5rem;
     }
 
+    /* Header */
     .go-home {
         font-size: 1.2rem;
-        margin: 10px;
+        margin: 1rem;
     }
   
     /* Admonitions */
     .important, .warning, .caution, .note, .example, .tip, .pinned, .quote, .comment, .query, .verse, .export {
-      font-size: 0.8em;
+      font-size: 0.8rem;
     }
 
     .quote::before, .note::before, .important::before, .warning::before, .caution::before, .example::before, .tip::before, .pinned::before, .comment::before,
     .query::before, .export::before, .verse::before{
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
   
     /* Archives */
@@ -51,7 +52,7 @@
 
     /* Footer */
     .footer {
-        padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
+        padding: calc((var(--footer-height) - var(--gap) - 0.5rem) / 2) var(--gap);
     }
   
     /* Github-button */
@@ -68,7 +69,7 @@
 
     /* Post Entry */
     .first-entry {
-        min-height: 260px;
+        min-height: 13rem;
     }
 
     /* Profile Mode */
@@ -81,23 +82,28 @@
         width: 100%;
     }
 
+    /* Category Entry */
     .category-entry div a {
         display: none;
     }
 
+    /* Entry */
     .entry-footer, .entry-header, .entry-content {
         margin-left: 4rem;
     }
 
+    /* Toggle View */
     #toggleViewBtn {
         display: none;
     }
 
+    /* Entry Cover */
     .posts-container:not([style*="grid"]) .entry-cover {
         width: 6rem;
         object-fit: cover;
     }
 
+    /* Post Single Header */
     .page-header h1 {
         display: flex;
         flex-direction: row;
@@ -107,6 +113,7 @@
         padding: 0 0 4rem 0;
     }
 
+    /* Buttons */
     .buttons {
         width: 100%;
     }
@@ -116,12 +123,14 @@
         font-size: 1rem;
     }
 
+    /* Post Meta */
     .post-meta-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    /* Post Entry Categories */
     .categories-container {
         padding: 0.2rem 0.5rem;
     }
@@ -131,17 +140,43 @@
         font-size: 0.7rem;
     }
 
+    /* Post Description */
     .post-description {
         font-size: 0.9rem;
     }
 
+    /* Menu - Hamburger Icon */
+    .menu-icon {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+    }
+
     #menu {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        
+        display: none;
+    }
+    
+    #menu li {
+        display: block;
+        border-bottom: 1px solid var(--primary);
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    #menu li:not(:last-child), #menu li:last-child {
+        margin-left: 0;
+    }
+
+    #menu li.active {
+        filter: brightness(1.8);
+        background-color: var(--entry);
+    }
+
+    #menu ul.sub-menu {
+        display: none;
+    }
+
+    #menu li ul {
+        display: none;
     }
 }
 
@@ -154,13 +189,81 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    /* Menu */
+    .menu-icon {
+        display: none;
+    }
+
+    #menu {
+        display: inline-block;
+        list-style: none;
+        word-break: keep-all;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu li a:hover {
+        text-decoration: underline;
+    }
+
+    #menu li ul {
+        display: none;
+        position: absolute;
+        z-index: 100;
+    }
+
+    #menu li:hover ul {
+        display: block;
+    }
+
+    #menu li ul li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu li.active a {
+        filter: brightness(1.8);
+    }
+
+    #menu li a:hover {
+        filter: brightness(1.8);
+    }
+
+    #menu ul.sub-menu {
+        display: none;
+        position: absolute;
+        background-color: var(--toc-background-color);
+        z-index: 100;
+    }
+
+    #menu ul.sub-menu li {
+        padding: 0 1vw 0 1vw;
+        border-top: 1px dotted var(--primary);
+    }
+
+    #menu ul.sub-menu li:hover {
+        background-color: var(--entry);
+        filter: brightness(1.1);
+    }
+
+    #menu ul.sub-menu li.active {
+        background-color: var(--entry);
+        text-decoration: underline;
+    }
+}
 
 /* footer */
 @media screen and (max-width: 900px) {
     .list .top-link {
         transform: translateY(-5rem);
     }
-  }
+}
 
 
 @media (prefers-reduced-motion) {
@@ -174,4 +277,4 @@
     #searchResults li:active {
         transform: none;
     }
-  }
+}

@@ -75,7 +75,6 @@
                     </svg>
                 </button>
                 {{- end }}
-
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not .Site.Params.disableThemeToggle)}}
                 {{- with $.Site.Home.AllTranslations }}
@@ -120,7 +119,6 @@
               {{ end }}
             {{ end }}
           {{ end }}
-          
           <ul>
             {{ $page := . }}
             {{ range .Site.Menus.main }}
@@ -128,5 +126,43 @@
             {{ end }}
           </ul>
         </ul>
+        <button class="menu-icon">&#x2630</button>
     </nav>
 </header>
+
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('#menu');
+
+    menuIcon.addEventListener('click', () => {
+        if (menu.style.display === 'none') {
+            menu.style.position = 'absolute';
+            menu.style.top = '4rem';
+            menu.style.left = '0';
+            
+            menu.style.display = 'block';
+            menu.style.width = '100%';
+            menu.style.zIndex = '100';
+
+            menu.style.backgroundColor = 'var(--toc-background-color)';
+        } else {
+            menu.style.display = 'none';
+        }
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menu.style.display = 'initial';
+                menu.style.position = 'initial';
+                menu.style.top = 'initial';
+                menu.style.left = 'initial';
+                menu.style.width = 'initial';
+                menu.style.backgroundColor = 'initial';
+
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+
+    });   
+    
+</script>
+

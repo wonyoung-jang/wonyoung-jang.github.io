@@ -1,4 +1,11 @@
 /* Menu */
+.menu-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+    display: none;
+}
+
 #menu {
     list-style: none;
     word-break: keep-all;

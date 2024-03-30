@@ -56,11 +56,12 @@
 
   </header>
 
+  {{/* Cover image */}}
   {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   
+  {{/* Post content */}}
   {{- if .Content }}
-    {{/* Post content */}}
     <div class="post-content">
       {{- if not (.Param "disableAnchoredHeadings") }}
         {{- partial "anchored_headings.html" .Content -}}
@@ -70,6 +71,7 @@
     </div>
   {{- end }}
 
+  {{/* Backlinks */}}
   {{ partial "backlinks.html" . }}
   
   <footer class="post-footer">
@@ -84,6 +86,7 @@
     {{- end }}
   </footer>
 
+  {{/* Comments */}}
   {{- if (.Param "comments") }}
     {{- partial "comments.html" . }}
   {{- end }}
