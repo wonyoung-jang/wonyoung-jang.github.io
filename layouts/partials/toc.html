@@ -3,12 +3,12 @@
 {{- if $has_headers -}}
 <div class="toc">
     <div class="collapse-expand">
-        <button class="collapse">   
-            {{- i18n "collapse" | default "Collapse All" }}
+        <button class="collapse" aria-label="collapse all" title="Collapse All (ALT + SHIFT + p)" accesskey="p">   
+            {{- i18n "collapse" | default "" }}
         </button>
-        &nbsp;|&nbsp;
-        <button class="expand">
-            {{- i18n "expand" | default "Expand All" }}
+        <br>
+        <button class="expand" aria-label="expand all" title="Expand All (ALT + SHIFT + b)" accesskey="b">
+            {{- i18n "expand" | default "" }}
         </button>
     </div>
 

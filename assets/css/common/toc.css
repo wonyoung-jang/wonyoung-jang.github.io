@@ -1,15 +1,14 @@
 /* Table of Contents */
 .toc {
-    width: 70%;
+    width: 85%;
     display: inline-flex;
     flex-direction: column;
     border-radius: var(--radius);
     background-color: var(--toc-background-color);
     color: var(--toc-text-color);
-    padding: 1vh 2vw 4vh 2vw;
+    padding: 1rem;
     cursor: pointer;
     pointer-events: fill;
-    margin-bottom: 1vh;
 }
 
 .toc summary:hover {
@@ -58,7 +57,7 @@ summary:hover:before {
 /* The list items */
 .toc li {
     position: relative;
-    margin: 1vh 0 0 0;
+    margin: 0.4rem 0 0 0;
     font-size-adjust: 0.5;
 }
 
@@ -97,26 +96,38 @@ summary:hover:before {
 
 /* Collapse/expand buttons */
 .toc .collapse-expand {
-    display: flex;
-    justify-content: flex-end;
-    align-items: right;
+    display: block;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: var(--radius);
+    background-color: var(--toc-background-color);
     cursor: pointer;
     pointer-events: fill;
-}
-
-.toc .collapse, .toc .expand {
-    filter: brightness(0.8);
+    position: relative;
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    width: fit-content;
+    right: -105%;
+    top: -1.5rem;
 }
 
 .toc .collapse:hover, .toc .expand:hover {
     filter: brightness(1.1);
     background-color: var(--theme);
+    color: var(--link);
 }
 
 .toc .collapse::before {
     content: "▲";
+    font-size: 1rem;
 }
 
 .toc .expand::before {
     content: "▼";
+    font-size: 1rem;
+}
+
+.toc details {
+    margin: -3rem 0 0 0;
 }

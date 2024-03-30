@@ -22,3 +22,7 @@ lastMod: 2024-03-29
 `ALT`+`SHIFT`+`t` → Toggle light/dark themes
 
 `ALT`+`SHIFT`+`c` → Toggle table of contents
+
+`ALT`+`SHIFT`+`p` → Collapse table of contents
+
+`ALT`+`SHIFT`+`b` → Expand table of contents
