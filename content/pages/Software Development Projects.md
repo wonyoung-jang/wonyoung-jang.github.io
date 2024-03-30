@@ -1,5 +1,5 @@
 ---
-url: "/categories/software-development-projects"
+url: "/categories/software-development-projects/"
 layout: "terms"
 title: Software Development Projects
 tags:

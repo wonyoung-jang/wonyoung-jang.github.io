@@ -24,9 +24,10 @@
 
 /* Buttons */
 .buttons {
+    display: inline-flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: var(--content-gap);
-    width: max-content;
 }
 
 .button {
@@ -39,7 +40,7 @@
     padding: 0.5em 1em;
     text-align: center;
     font-weight: bold;
-    width: 80%;
+    width: fit-content;
 }
 
 .button:hover {
