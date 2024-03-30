@@ -94,22 +94,26 @@ summary:hover:before {
     background-color: var(--toc-background-color);
 }
 
+
 /* Collapse/expand buttons */
 .toc .collapse-expand {
-    display: block;
-    padding: 0 0.5rem 0 0.5rem;
-    border-radius: var(--radius);
+    display: inline-flex;
+    margin: 0.8rem 0 0 0;
     background-color: var(--toc-background-color);
     cursor: pointer;
     pointer-events: fill;
     position: relative;
-    margin: 0.5rem 0 0 0;
-    text-align: center;
     font-size: 1rem;
     font-weight: bold;
-    width: fit-content;
-    right: -105%;
-    top: -1.5rem;
+    justify-content: left;
+}
+
+.toc .collapse, .toc .expand {
+    border: 1px solid var(--toc-text-color);
+    border-radius: var(--radius);
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.5rem 0 0;
+
 }
 
 .toc .collapse:hover, .toc .expand:hover {
@@ -118,16 +122,12 @@ summary:hover:before {
     color: var(--link);
 }
 
-.toc .collapse::before {
-    content: "▲";
+.toc .collapse::after {
+    content: " ▲";
     font-size: 1rem;
 }
 
 .toc .expand::before {
-    content: "▼";
+    content: "▼ ";
     font-size: 1rem;
-}
-
-.toc details {
-    margin: -3rem 0 0 0;
 }
