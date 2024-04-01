@@ -39,9 +39,9 @@ main:
     url: /graph/#/graph
     weight: 20
 
-  - identifier: Archives
-    name: Archives
-    pageRef: /archives
+  - identifier: All Pages
+    name: All Pages
+    pageRef: /all-pages
     weight: 30
 
   - identifier: About
