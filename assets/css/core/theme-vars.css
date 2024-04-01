@@ -22,6 +22,7 @@
 
     /* Light Theme */
     --theme: rgb(255, 255, 255); /* White background */
+    --form-bg: rgb(240, 240, 240); /* Lighter background for forms */
     --entry: rgb(222, 240, 255); /* Light blue for entry */
     --primary: rgb(26, 26, 26); /* Black for primary text */
     --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
@@ -77,6 +78,7 @@
 .dark {
     /* Dark Theme */
     --theme: rgb(23, 23, 23); /* Dark background */
+    --form-bg: rgb(33, 33, 33); /* Darker background for forms */
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
     --primary: rgb(226, 226, 226); /* Light grey for primary text */
     --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
