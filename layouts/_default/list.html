@@ -45,6 +45,9 @@
     
             // Update button label
             btn.innerText = "\u2630";
+
+            // Store the display state in localStorage
+            localStorage.setItem("displayState", "grid");
         } else {
             // Remove 'grid' styles
             container.style.removeProperty("display");
@@ -52,8 +55,31 @@
         
             // Update button label
             btn.innerText = "\u229E";
+
+            // Store the display state in localStorage
+            localStorage.setItem("displayState", "flex");
         }
     };
+</script>
+
+<script>
+    // Apply the stored display state on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const container = document.querySelector('.posts-container');
+        const btn = document.getElementById('toggleViewBtn');
+        const displayState = localStorage.getItem("displayState");
+
+        if (displayState === "grid") {
+            container.style.setProperty("display", "grid");
+            container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
+            container.style.setProperty("gap","var(--gap)");
+            btn.innerText = "\u2630";
+        } else {
+            container.style.removeProperty("display");
+            container.style.removeProperty("gridTemplateColumns");
+            btn.innerText = "\u229E";
+        }
+    });
 </script>
 
 <button id="toggleViewBtn" onclick="toggleGrid()">&#x229E</button>
