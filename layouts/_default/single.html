@@ -1,5 +1,8 @@
 {{- define "main" }}
 <article class="post-single">
+  {{/* Breadcrumbs */}}
+  {{ partial "breadcrumbs.html" . }}
+
   <header class="post-header">
     {{/* Title */}}
     <h1 class="post-title">
@@ -38,9 +41,6 @@
     {{ with .Params.githubRepo }}
       {{ partial "github_button.html" (dict "githubRepo" .) }}
     {{ end }}
-
-    {{/* Breadcrumbs */}}
-    {{ partial "breadcrumbs.html" . }}
 
     {{/* Description */}}
     {{- if .Description }}
