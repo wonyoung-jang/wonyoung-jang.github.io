@@ -22,7 +22,6 @@
 
     /* Light Theme */
     --theme: rgb(255, 255, 255); /* White background */
-    --form-bg: rgb(240, 240, 240); /* Lighter background for forms */
     --entry: rgb(222, 240, 255); /* Light blue for entry */
     --primary: rgb(26, 26, 26); /* Black for primary text */
     --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
@@ -34,6 +33,9 @@
     --link: rgb(79, 79, 255); /* Blue for links */
     --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
     
+    --form-bg: rgb(240, 240, 240); /* Lighter background for forms */
+    --top-link-bg: rgb(220, 220, 220); /* White background for top link */
+
     --toc-background-color: rgb(236, 236, 236); /* White with 90% opacity for TOC background */
     --toc-text-color: rgb(0, 0, 0); /* Indigo for TOC text */
 
@@ -78,7 +80,6 @@
 .dark {
     /* Dark Theme */
     --theme: rgb(23, 23, 23); /* Dark background */
-    --form-bg: rgb(33, 33, 33); /* Darker background for forms */
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
     --primary: rgb(226, 226, 226); /* Light grey for primary text */
     --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
@@ -90,6 +91,9 @@
     --link: rgb(33, 159, 255); /* Dodger blue for tertiary elements */
     --shadow: rgb(83, 79, 90); /* Plum for shadows */
 
+    --form-bg: rgb(33, 33, 33); /* Darker background for forms */
+    --top-link-bg: rgb(47, 47, 47); /* Darker background for top link */
+    
     --toc-background-color: rgb(44, 44, 44); /* Dark background for TOC */
     --toc-text-color: rgb(255, 255, 255);  /* White for TOC text */
 

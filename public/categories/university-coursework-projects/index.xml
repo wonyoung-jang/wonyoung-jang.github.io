@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>University Coursework Projects on Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/categories/university-coursework-projects/</link>
+    <link>http://localhost:1313/categories/university-coursework-projects/</link>
     <description>Recent content in University Coursework Projects on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/categories/university-coursework-projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/university-coursework-projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Disaster Recovery Robot Simulation</title>
-      <link>https://wonyoungjang.org/pages/disaster-recovery-robot-simulation/</link>
+      <link>http://localhost:1313/pages/disaster-recovery-robot-simulation/</link>
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/disaster-recovery-robot-simulation/</guid>
+      <guid>http://localhost:1313/pages/disaster-recovery-robot-simulation/</guid>
       <description>Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration.</description>
     </item>
     
     <item>
       <title>CS Career Recommendation Chatbot</title>
-      <link>https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/</link>
+      <link>http://localhost:1313/pages/cs-career-recommendation-chatbot/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/</guid>
+      <guid>http://localhost:1313/pages/cs-career-recommendation-chatbot/</guid>
       <description>Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.</description>
     </item>
     
     <item>
       <title>Package Delivery Route Optimization</title>
-      <link>https://wonyoungjang.org/pages/package-delivery-route-optimization/</link>
+      <link>http://localhost:1313/pages/package-delivery-route-optimization/</link>
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/package-delivery-route-optimization/</guid>
+      <guid>http://localhost:1313/pages/package-delivery-route-optimization/</guid>
       <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.</description>
     </item>
     
     <item>
       <title>Hotel Reservation Manager</title>
-      <link>https://wonyoungjang.org/pages/hotel-reservation-manager/</link>
+      <link>http://localhost:1313/pages/hotel-reservation-manager/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/hotel-reservation-manager/</guid>
+      <guid>http://localhost:1313/pages/hotel-reservation-manager/</guid>
       <description>Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).</description>
     </item>
     
     <item>
       <title>Vacation Cart Manager</title>
-      <link>https://wonyoungjang.org/pages/vacation-cart-manager/</link>
+      <link>http://localhost:1313/pages/vacation-cart-manager/</link>
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/vacation-cart-manager/</guid>
+      <guid>http://localhost:1313/pages/vacation-cart-manager/</guid>
       <description>Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&amp;#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems.</description>
     </item>
     
     <item>
       <title>Retail Inventory Manager</title>
-      <link>https://wonyoungjang.org/pages/retail-inventory-manager/</link>
+      <link>http://localhost:1313/pages/retail-inventory-manager/</link>
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/retail-inventory-manager/</guid>
+      <guid>http://localhost:1313/pages/retail-inventory-manager/</guid>
       <description>Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&amp;#39;s needs.</description>
     </item>
     
     <item>
       <title>DVD Rental Database Revenue Insights</title>
-      <link>https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/</link>
+      <link>http://localhost:1313/pages/dvd-rental-database-revenue-insights/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/</guid>
+      <guid>http://localhost:1313/pages/dvd-rental-database-revenue-insights/</guid>
       <description>Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query.</description>
     </item>
     
     <item>
       <title>Student Record System</title>
-      <link>https://wonyoungjang.org/pages/student-record-system/</link>
+      <link>http://localhost:1313/pages/student-record-system/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/student-record-system/</guid>
+      <guid>http://localhost:1313/pages/student-record-system/</guid>
       <description>Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming.</description>
     </item>
     
     <item>
       <title>Bagel Corner and Mister Coffee Database Management</title>
-      <link>https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/</link>
+      <link>http://localhost:1313/pages/bagel-corner-and-mister-coffee-database-management/</link>
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/</guid>
+      <guid>http://localhost:1313/pages/bagel-corner-and-mister-coffee-database-management/</guid>
       <description>Built SQL database models for Bagel Corner &amp;amp; Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.</description>
     </item>
     

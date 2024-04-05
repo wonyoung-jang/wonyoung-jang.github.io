@@ -1,0 +1,29 @@
+/* Scroll to Top */
+.top-link {
+    visibility: hidden;
+    position: fixed;
+    bottom: 8rem;
+    right: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 99;
+    color: var(--primary);
+    background: var(--top-link-bg);
+    border-radius: var(--radius);
+    padding: 0.6rem;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+.footer a:hover,
+.top-link:hover {
+    background: var(--link);
+    color: var(--theme);
+}
+
+.top-link:focus,
+#theme-toggle:focus {
+    outline: 0;
+}

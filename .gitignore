@@ -4,3 +4,5 @@ publicExport*
 *.zip
 tasks*
 node_modules
+~TASKS.txt
+.vscode/extensions.json

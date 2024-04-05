@@ -3,12 +3,10 @@ main:
     name: Search
     pageRef: /search
     weight: 10
-
   - identifier: Projects
     name: Projects
     pageRef: /projects
     weight: 12
-
   - identifier: Categories
     name: Categories
     pageRef: /categories
@@ -33,27 +31,22 @@ main:
     pageRef: /categories/meta
     parent: Categories
     weight: 4
-    
   - identifier: Graph
     name: Graph
     url: /graph/#/graph
     weight: 20
-
   - identifier: All Pages
     name: All Pages
     pageRef: /all-pages
     weight: 30
-
   - identifier: About
     name: About
     pageRef: /about
     weight: 32
-
   - identifier: Contact
     name: Contact
     pageRef: /contact
     weight: 34
-
   # - identifier: RSS
   #   name: RSS
   #   url: /index.xml

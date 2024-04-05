@@ -1,9 +1,9 @@
 {{- define "main" }}
 <article class="post-single">
-  {{/* Breadcrumbs */}}
-  {{ partial "breadcrumbs.html" . }}
-
   <header class="post-header">
+    {{/* Breadcrumbs */}}
+    {{ partial "breadcrumbs.html" . }}
+    
     {{/* Title */}}
     <h1 class="post-title">
       {{ .Title }}

@@ -37,10 +37,3 @@
 .category.meta {
     background-color: var(--meta-bg);
 }
-
-.post-meta-wrap {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-}

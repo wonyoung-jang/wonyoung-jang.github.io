@@ -1,0 +1,20 @@
+.post-meta {
+    color: var(--secondary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-meta .i18n_list li {
+    display: inline-flex;
+    list-style: none;
+    box-shadow: 0 1px 0 var(--secondary);
+}
+
+
+.post-meta-wrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}

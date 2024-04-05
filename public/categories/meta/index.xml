@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Meta on Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/categories/meta/</link>
+    <link>http://localhost:1313/categories/meta/</link>
     <description>Recent content in Meta on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/categories/meta/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://wonyoungjang.org/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>About Wonyoung Jang Hello, that&amp;rsquo;s me!
 Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
 I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
@@ -21,10 +21,10 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
     
     <item>
       <title>Contact</title>
-      <link>https://wonyoungjang.org/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://wonyoungjang.org/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>Contact Me Directly The best way to contact me directly is through email at contact@wonyoungjang.org.
 Give Me Feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
 NameEmailSubjectMessageSubmit</description>
