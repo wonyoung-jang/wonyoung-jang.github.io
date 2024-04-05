@@ -28,30 +28,6 @@
     white-space: nowrap;
 }
 
-.breadcrumbs {
-    color: var(--secondary);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.breadcrumbs {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-
-.breadcrumbs a {
-    color: var(--link);
-}
-
-.breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-.breadcrumbs span {
-    font-weight: bold;
-}
 
 /* Post Content */
 .post-content {

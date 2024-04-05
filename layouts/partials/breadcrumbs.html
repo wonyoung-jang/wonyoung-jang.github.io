@@ -16,5 +16,9 @@
 
     {{- end -}}
 
+    {{- if (gt (len .Title) 0) -}}
+    {{- print "&nbsp;>&nbsp;" | safeHTML -}}<b>{{ .Title }}</b>
+    {{- end -}}
+
 </div>
 {{- end -}}
