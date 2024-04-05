@@ -237,14 +237,6 @@ NameEmailSubjectMessageSubmit</description>
       <description>&lt;!DOCTYPE html&gt; </description>
     </item>
     
-    <item>
-      <title>All Pages</title>
-      <link>http://localhost:1313/all-pages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/all-pages/</guid>
-      <description>All Pages</description>
-    </item>
     
     <item>
       <title>List of all Projects</title>
