@@ -9,7 +9,7 @@ title: List of All Pages
 tags:
 lastMod: 2024-03-29
 ---
-## [Software Development Projects]({{< ref "/category/Software Development Projects/_index.md" >}})
+## [Software Development Projects]({{< ref "/category/Software Development Projects/_index.md" >}}) 
 ---
 
   + [Realtime Multiplayer Drawing App]({{< ref "/category/software-development-projects/Realtime Multiplayer Drawing App" >}})
@@ -50,10 +50,10 @@ lastMod: 2024-03-29
   + [List of Software Development Projects]({{< ref "/category/lists/List of Software Development Projects" >}})
 
   + [List of University Coursework Projects]({{< ref "/category/lists/List of University Coursework Projects" >}})
-  
-  + [List of Keyboard Shortcuts for WonyoungJang.org]({{< ref "/category/lists/List of Keyboard Shortcuts for WonyoungJangorg" >}})
-  
+
   + [List of All Pages]({{< ref "/category/lists/List of All Pages" >}})
+
+  + [List of Keyboard Shortcuts for WonyoungJang.org]([List of Keyboard Shortcuts for WonyoungJangorg]({{< ref "/category/lists/List of Keyboard Shortcuts for WonyoungJangorg" >}}))
 
 ## [Meta]({{< ref "/category/Meta/_index.md" >}})
 ---
