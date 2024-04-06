@@ -1,4 +1,8 @@
 main:
+  - identifier: Home
+    name: Home
+    pageRef: /
+    weight: 1
   - identifier: Search
     name: Search
     pageRef: /search

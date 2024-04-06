@@ -1,6 +1,7 @@
 ---
 url: "/categories/software-development-projects/"
 layout: "terms"
+main-section: true
 title: Software Development Projects
 tags:
 categories:
