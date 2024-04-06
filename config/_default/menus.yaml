@@ -11,29 +11,29 @@ main:
   #  name: Projects
   #  pageRef: /projects
   #  weight: 12
-  - identifier: category
-    name: category
+  - identifier: Category
+    name: Category
     pageRef: /category
     weight: 14
   - identifier: Software Development Projects
     name: Software Development Projects
     pageRef: /category/software-development-projects
-    parent: category
+    parent: Category
     weight: 1
   - identifier: University Coursework Projects
     name: University Coursework Projects
     pageRef: /category/university-coursework-projects
-    parent: category
+    parent: Category
     weight: 2
   - identifier: Lists
     name: Lists
     pageRef: /category/lists
-    parent: category
+    parent: Category
     weight: 3
   - identifier: Meta
     name: Meta
     pageRef: /category/meta
-    parent: category
+    parent: Category
     weight: 4
   - identifier: Graph
     name: Graph
