@@ -1,5 +1,5 @@
 ---
-layout: "terms"
+layout: "list"
 main-section: true
 title: Lists
 tags:
