@@ -1,5 +1,4 @@
 ---
-url: "/categories/university-coursework-projects/"
 layout: "terms"
 main-section: true
 title: University Coursework Projects

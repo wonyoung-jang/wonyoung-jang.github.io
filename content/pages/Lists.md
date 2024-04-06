@@ -1,5 +1,4 @@
 ---
-url: "/categories/lists/"
 layout: "terms"
 main-section: true
 title: Lists

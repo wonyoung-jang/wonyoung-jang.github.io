@@ -1,5 +1,4 @@
 ---
-url: "/categories/meta/"
 layout: "terms"
 main-section: true
 title: Meta
