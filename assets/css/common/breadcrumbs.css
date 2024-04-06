@@ -1,23 +1,17 @@
-.breadcrumbs {
-    color: var(--secondary);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.breadcrumb ol {
+    padding-left: 0;
 }
 
-.breadcrumbs {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+.breadcrumb li {
+    display: inline;
 }
 
-.breadcrumbs a {
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    padding: 0 0.5rem;
+}
+
+.breadcrumb:not(.active) a {
     color: var(--link);
-}
-
-.breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-.breadcrumbs span {
-    font-weight: bold;
+    text-decoration: none;
 }

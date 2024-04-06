@@ -21,11 +21,11 @@ disableSpecial1stPost: false
 disableScrollToTop: false
 disableAnchoredHeadings: true
 
-comments: true
+comments: false
 hideMeta: false
 hideSummary: false
 
-UseHugoToc: false
+UseHugoToc: true
 showtoc: true
 tocopen: true
 
@@ -67,9 +67,9 @@ profileMode:
       url: "/categories/university-coursework-projects"
     
 # Home Info Mode - NOT USED
-homeInfoParams:
-  Title:
-  Content:
+#homeInfoParams:
+#  Title:
+#  Content:
 
 # Social Links
 socialIcons:
