@@ -26,42 +26,6 @@
     </item>
     
     <item>
-      <title>Lists</title>
-      <link>http://localhost:1313/categories/lists/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/categories/lists/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Meta</title>
-      <link>http://localhost:1313/categories/meta/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/categories/meta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software Development Projects</title>
-      <link>http://localhost:1313/categories/software-development-projects/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/categories/software-development-projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>University Coursework Projects</title>
-      <link>http://localhost:1313/categories/university-coursework-projects/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/categories/university-coursework-projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Realtime Multiplayer Drawing App</title>
       <link>http://localhost:1313/category/software-development-projects/realtime-multiplayer-drawing-app/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
@@ -237,15 +201,6 @@ NameEmailSubjectMessageSubmit</description>
       <description>&lt;!DOCTYPE html&gt; </description>
     </item>
     
-    
-    <item>
-      <title>List of all Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/</guid>
-      <description>This page is a full overview of every project I&amp;#39;ve created a page for on this site.</description>
-    </item>
     
     
   </channel>

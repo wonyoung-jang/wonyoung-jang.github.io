@@ -13,8 +13,8 @@ minify:
   disableXML: true
   minifyOutput: true
 
-taxonomies:
-  categories: "categories"
+#taxonomies:
+#  category: "categories"
 
 # Ignore files
 ignoreFiles:

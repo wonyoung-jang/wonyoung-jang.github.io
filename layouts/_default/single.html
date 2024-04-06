@@ -20,7 +20,7 @@
         <div class="post-categories">
           <div class="categories-container">
             {{- range .Params.categories }}
-                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
+                <a href="{{ "/category/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
             {{- end }}
           </div>
         </div>
