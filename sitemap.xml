@@ -2,77 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wonyoungjang.org/categories/</loc>
+    <loc>https://wonyoungjang.org/category/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://wonyoungjang.org/category/lists/list-of-all-pages/</loc>
     <lastmod>2024-03-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/list-of-all-pages/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/pages/list-of-keyboard-shortcuts-for-wonyoungjangorg/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/categories/lists/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/pages/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</loc>
+    <lastmod>2024-03-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://wonyoungjang.org/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/lists/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/category/lists/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/meta/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/category/meta/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/software-development-projects/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/category/software-development-projects/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/university-coursework-projects/</loc>
-    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/</loc>
+    <loc>https://wonyoungjang.org/category/software-development-projects/realtime-multiplayer-drawing-app/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/software-development-projects/</loc>
-    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/pages/list-of-software-development-projects/</loc>
+    <loc>https://wonyoungjang.org/category/lists/list-of-software-development-projects/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/list-of-university-coursework-projects/</loc>
+    <loc>https://wonyoungjang.org/category/lists/list-of-university-coursework-projects/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/this-website/</loc>
+    <loc>https://wonyoungjang.org/category/software-development-projects/this-website/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,81 +72,71 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/meta/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/</loc>
+    <loc>https://wonyoungjang.org/category/software-development-projects/first-lego-league-challenge-q-learning-event-scheduler/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/save-top-level-reddit-comments/</loc>
+    <loc>https://wonyoungjang.org/category/software-development-projects/save-top-level-reddit-comments/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/disaster-recovery-robot-simulation/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/disaster-recovery-robot-simulation/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/categories/university-coursework-projects/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/cs-career-recommendation-chatbot/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/</loc>
-    <lastmod>2024-03-28T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://wonyoungjang.org/pages/logseq-markdown-tokenizer/</loc>
+    <loc>https://wonyoungjang.org/category/software-development-projects/logseq-markdown-tokenizer/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/package-delivery-route-optimization/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/package-delivery-route-optimization/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/hotel-reservation-manager/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/hotel-reservation-manager/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/vacation-cart-manager/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/vacation-cart-manager/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/retail-inventory-manager/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/retail-inventory-manager/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/dvd-rental-database-revenue-insights/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/dvd-rental-database-revenue-insights/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/student-record-system/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/student-record-system/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/</loc>
+    <loc>https://wonyoungjang.org/category/university-coursework-projects/bagel-corner-and-mister-coffee-database-management/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/all-pages/</loc>
+    <loc>https://wonyoungjang.org/graph/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://wonyoungjang.org/projects/</loc>
+    <loc>https://wonyoungjang.org/archives/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
