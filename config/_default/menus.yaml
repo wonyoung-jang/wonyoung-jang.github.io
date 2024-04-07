@@ -3,18 +3,10 @@ main:
     name: Home
     pageRef: /
     weight: 1
-  #- identifier: Search
-  #  name: Search
-  #  pageRef: /search
-  #  weight: 10
-  #- identifier: Projects
-  #  name: Projects
-  #  pageRef: /projects
-  #  weight: 12
   - identifier: Category
     name: Categories
     pageRef: /category
-    weight: 14
+    weight: 10
   - identifier: Software Development Projects
     name: Software Development Projects
     pageRef: /category/software-development-projects
@@ -35,14 +27,18 @@ main:
     pageRef: /category/meta
     parent: Category
     weight: 4
+  - identifier: Search
+    name: Search
+    pageRef: /search
+    weight: 20
+  - identifier: Archives
+    name: Archives
+    pageRef: /archives
+    weight: 30
   - identifier: Graph
     name: Graph
     url: /graph/#/graph
-    weight: 20
-  #- identifier: Archives
-  #  name: Archives
-  #  pageRef: /archives
-  #  weight: 30
+    weight: 40
   #- identifier: About
   #  name: About
   #  pageRef: /about

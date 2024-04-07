@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Lists on Wonyoung Jang</title>
-    <link>http://localhost:1313/category/lists/</link>
+    <link>https://wonyoungjang.org/category/lists/</link>
     <description>Recent content in Lists on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/category/lists/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/category/lists/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>List of All Pages</title>
-      <link>http://localhost:1313/category/lists/list-of-all-pages/</link>
+      <link>https://wonyoungjang.org/category/lists/list-of-all-pages/</link>
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/category/lists/list-of-all-pages/</guid>
+      <guid>https://wonyoungjang.org/category/lists/list-of-all-pages/</guid>
       <description>This page is a list of all pages on this site, organized by category.</description>
     </item>
     
     <item>
       <title>List of Keyboard Shortcuts for WonyoungJangorg</title>
-      <link>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</link>
+      <link>https://wonyoungjang.org/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</link>
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</guid>
+      <guid>https://wonyoungjang.org/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</guid>
       <description>This page is a list of keyboard shortcuts for navigating this site.</description>
     </item>
     
     <item>
       <title>List of Software Development Projects</title>
-      <link>http://localhost:1313/category/lists/list-of-software-development-projects/</link>
+      <link>https://wonyoungjang.org/category/lists/list-of-software-development-projects/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/category/lists/list-of-software-development-projects/</guid>
+      <guid>https://wonyoungjang.org/category/lists/list-of-software-development-projects/</guid>
       <description>This page is a list of my software projects at varying stages of development.</description>
     </item>
     
     <item>
       <title>List of University Coursework Projects</title>
-      <link>http://localhost:1313/category/lists/list-of-university-coursework-projects/</link>
+      <link>https://wonyoungjang.org/category/lists/list-of-university-coursework-projects/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/category/lists/list-of-university-coursework-projects/</guid>
+      <guid>https://wonyoungjang.org/category/lists/list-of-university-coursework-projects/</guid>
       <description>This page is a list of projects completed and submitted for my computer science degree coursework.</description>
     </item>
     
