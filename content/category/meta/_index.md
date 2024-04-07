@@ -2,6 +2,7 @@
 layout: "list"
 main-section: true
 coverimage: ../assets/category_meta_1712444129717_0.jpg
+hideMeta: true
 title: Meta
 tags:
 categories:

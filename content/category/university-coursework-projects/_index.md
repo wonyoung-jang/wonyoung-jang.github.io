@@ -2,6 +2,7 @@
 layout: "list"
 main-section: true
 coverimage: ../assets/category_university_coursework_1712444145055_0.jpg
+hideMeta: true
 title: University Coursework Projects
 tags:
 categories:
