@@ -4,18 +4,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 80%;
+    gap: calc(var(--gap) * 2);
+}
+
+.page-not-found-header {
+    font-weight: bold;
     font-size: 4rem;
-    font-weight: 700;
+}
+
+.page-not-found {
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .go-home {
-    font-size: 1.5rem;
-    color: var(--secondary);
-    margin: var(--gap);
+    color: var(--theme);
+    background: var(--link);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: calc(var(--radius) * 4);
 }
 
 .go-home:hover {
-    color: var(--link);
-    text-decoration: underline;
+    filter: brightness(1.1);
 }

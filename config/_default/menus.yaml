@@ -39,6 +39,7 @@ main:
     name: Graph
     url: /graph/#/graph
     weight: 40
+    
   #- identifier: About
   #  name: About
   #  pageRef: /about
@@ -47,7 +48,6 @@ main:
   #  name: Contact
   #  pageRef: /contact
   #  weight: 34
-
   # - identifier: RSS
   #   name: RSS
   #   url: /index.xml
