@@ -1,0 +1,55 @@
+.sitemap {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+    gap: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    border-radius: var(--radius);
+
+    a {
+        color: var(--link);
+        font-weight: lighter;
+    }
+
+    a:hover {
+        filter: brightness(1.2);
+        text-decoration: underline;
+    }
+    
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.sitemap-level-one {
+    margin-left: 0;
+}
+
+.sitemap-level-two {
+    margin-left: 1rem;
+
+    h3 {
+        margin-top: 1rem;
+    }
+
+    h3:before {
+        content: "-";
+        margin-right: 0.5rem;
+    }
+}
+
+.sitemap-level-three {
+    margin-left: 2rem;
+
+    h4 {
+        margin-top: 1rem;
+    }
+
+    h4:before {
+        content: "-";
+        margin-right: 0.5rem;
+    }
+}

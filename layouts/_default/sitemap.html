@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+    {{ partial "breadcrumbs.html" .}}
+    
+    <div class="sitemap">
+        <h1>{{ .Title }}</h1>
+        <div class="sitemap-level-one">
+            {{ range .Site.Sections }}
+                
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    
+                    {{ if .Pages }}
+                        <div class="sitemap-level-two">
+                            {{ range .Pages }}
+                                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                                    
+                                    {{ if .Pages }}
+                                        <div class="sitemap-level-three">
+                                            {{ range .Pages }}
+                                                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                                            {{ end }}
+                                        </div>
+                                    {{ end }}
+
+                            {{ end }}
+                        </div>
+                    {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    
+{{ end }}
