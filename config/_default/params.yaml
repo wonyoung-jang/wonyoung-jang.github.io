@@ -19,7 +19,7 @@ ShowRssButtonInSectionTermList: true
 
 disableSpecial1stPost: false
 disableScrollToTop: false
-disableAnchoredHeadings: true
+disableAnchoredHeadings: false
 
 comments: false
 hideMeta: false
