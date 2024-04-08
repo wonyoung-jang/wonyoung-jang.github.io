@@ -2,11 +2,10 @@
     margin: 1rem 0 0 0;
     padding: 1rem 0 0 0;
     gap: var(--gap);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    grid-auto-rows: auto;
-    grid-auto-flow: row;
-    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
 
     a {
         color: var(--link);
@@ -26,6 +25,13 @@
 
 .sitemap-level-one {
     margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    h2 {
+        margin-top: 0.5rem;
+    }
 }
 
 .sitemap-level-two {
