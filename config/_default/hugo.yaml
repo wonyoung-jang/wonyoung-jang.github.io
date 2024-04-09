@@ -2,24 +2,10 @@ baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
 paginate: 9
 
-# This YAML configuration file is used for configuring the Hugo static site generator.
-# It contains various settings related to the site build process.
-
 # enableRobotsTXT: Specifies whether to generate a robots.txt file for the site.
-#   - true: Generates a robots.txt file.
-#   - false: Does not generate a robots.txt file.
-
 # buildDrafts: Specifies whether to include draft content in the site build.
-#   - true: Includes draft content in the site build.
-#   - false: Excludes draft content from the site build.
-
 # buildFuture: Specifies whether to include future-dated content in the site build.
-#   - true: Includes future-dated content in the site build.
-#   - false: Excludes future-dated content from the site build.
-
 # buildExpired: Specifies whether to include expired content in the site build.
-#   - true: Includes expired content in the site build.
-#   - false: Excludes expired content from the site build.
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -30,9 +16,6 @@ googleAnalytics: G-RTMKJG4NFZ
 minify:
   disableXML: true
   minifyOutput: true
-
-#taxonomies:
-#  category: "categories"
 
 disableKinds:
 - taxonomy
@@ -63,3 +46,15 @@ outputs:
     - HTML
     - RSS
     - JSON
+  section:
+    - HTML
+    - RSS
+    - JSON
+
+
+####################
+# DISABLED CONFIGS #
+####################
+
+# taxonomies:
+#   category: "categories"
