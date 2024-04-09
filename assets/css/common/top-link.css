@@ -17,10 +17,9 @@
     transition: visibility 0.3s, opacity 0.3s ease-in-out;
 }
 
-.footer a:hover,
 .top-link:hover {
-    background: var(--link);
-    color: var(--theme);
+    color: var(--link);
+    filter: brightness(1.1);
 }
 
 .top-link:focus,
