@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 17px;
     line-height: 1.4;
@@ -40,13 +41,10 @@ footer,
 header,
 hgroup,
 nav,
+main,
 section,
 table {
     display: block;
-}
-
-main {
-    flex: 1;
 }
 
 h1,

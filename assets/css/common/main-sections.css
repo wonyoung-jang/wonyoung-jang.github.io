@@ -39,11 +39,11 @@
 
 /* Main Section Entry Cover */
 .main-section-entry-cover {
-    display: inline-block; /* show entry cover on hover, replacing the rest of the post entry */
+    display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
-    width: 4rem;
+    /*width: 4rem;*/
     height: 100%;
     object-fit: cover;
 }
