@@ -1,14 +1,17 @@
 ---
-coverimage: ../assets/bagel_corner_erd_1709745980175_0.jpg
-date: 2022-12-18
+topics: 
 categories:
 - University Coursework Projects
-description: Built SQL database models for Bagel Corner & Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.
+types: 
 githubrepo: https://github.com/wonyoung-jang/bagel-coffee-stores
 site-link: https://wonyoungjang.org/pages/bagel-corner-and-mister-coffee-database-management/
+series: 
+date: 2022-12-18
+coverimage: ../assets/bagel_corner_erd_1709745980175_0.jpg
+description: Built SQL database models for Bagel Corner & Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.
 title: Bagel Corner and Mister Coffee Database Management
 tags:
-lastMod: 2024-03-28
+lastMod: 2024-04-10
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}

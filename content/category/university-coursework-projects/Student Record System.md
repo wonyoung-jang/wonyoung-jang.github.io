@@ -1,14 +1,17 @@
 ---
-coverimage: ../assets/student_record_system_1709746026803_0.png
-date: 2023-07-01
+topics: 
 categories:
 - University Coursework Projects
-description: Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming.
+types: 
 githubrepo: https://github.com/wonyoung-jang/student-record-system
 site-link: https://wonyoungjang.org/pages/student-record-system/
+series: 
+date: 2023-07-01
+coverimage: ../assets/student_record_system_1709746026803_0.png
+description: Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming.
 title: Student Record System
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-04-10
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}

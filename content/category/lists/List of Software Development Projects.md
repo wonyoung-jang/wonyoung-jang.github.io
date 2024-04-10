@@ -1,14 +1,17 @@
 ---
-date: 2024-03-05
+topics: 
 categories:
 - Lists
-coverimage: ../assets/lists_icon_1710524790703_0.jpg
+types: 
 coverhidden: true
-description: This page is a list of my software projects at varying stages of development.
 site-link: https://wonyoungjang.org/pages/list-of-software-development-projects/
+series: 
+date: 2024-03-05
+coverimage: ../assets/lists_icon_1710524790703_0.jpg
+description: This page is a list of my software projects at varying stages of development.
 title: List of Software Development Projects
 tags:
-lastMod: 2024-03-22
+lastMod: 2024-04-10
 ---
 ## Python
 ---

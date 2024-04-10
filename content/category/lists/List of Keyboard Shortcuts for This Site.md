@@ -1,13 +1,16 @@
 ---
-title: List of Keyboard Shortcuts for WonyoungJangorg
-date: 2024-03-29
+topics: 
 categories:
 - Lists
+types: 
+site-link: https://wonyoungjang.org/pages/list-of-keyboard-shortcuts-for-wonyoungjangorg/
+title: List of Keyboard Shortcuts for This Site
+series: 
+date: 2024-03-29
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 description: This page is a list of keyboard shortcuts for navigating this site.
-site-link: https://wonyoungjang.org/pages/list-of-keyboard-shortcuts-for-wonyoungjangorg/
 tags:
-lastMod: 2024-03-30
+lastMod: 2024-04-10
 ---
 ## Navigation
 ---

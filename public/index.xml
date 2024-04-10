@@ -8,20 +8,11 @@
     <language>en</language>
     <lastBuildDate>Fri, 29 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>List of All Pages</title>
-      <link>http://localhost:1313/category/lists/list-of-all-pages/</link>
+      <title>List of Keyboard Shortcuts for This Site</title>
+      <link>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-this-site/</link>
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/category/lists/list-of-all-pages/</guid>
-      <description>This page is a list of all pages on this site, organized by category.</description>
-    </item>
-    
-    <item>
-      <title>List of Keyboard Shortcuts for WonyoungJangorg</title>
-      <link>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</link>
-      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-wonyoungjangorg/</guid>
+      <guid>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-this-site/</guid>
       <description>This page is a list of keyboard shortcuts for navigating this site.</description>
     </item>
     

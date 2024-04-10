@@ -1,14 +1,17 @@
 ---
-date: 2024-03-01
+topics: 
+url: /contact
 categories:
 - Meta
-coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
+types: 
 coverhidden: true
-url: /contact
 site-link: https://wonyoungjang.org/contact/
+series: 
+date: 2024-03-01
+coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
 title: Contact
 tags:
-lastMod: 2024-03-22
+lastMod: 2024-04-10
 ---
 ## Contact Me Directly
 

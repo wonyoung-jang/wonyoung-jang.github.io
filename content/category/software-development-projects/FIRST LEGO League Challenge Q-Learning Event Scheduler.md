@@ -1,14 +1,17 @@
 ---
-date: 2024-02-25
+topics: 
 categories:
 - Software Development Projects
-coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
-description: A FLLC event scheduler using Q-Learning.
+types: 
 githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
 site-link: https://wonyoungjang.org/pages/first-lego-league-challenge-q-learning-event-scheduler/
+series: 
+date: 2024-02-25
+coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
+description: A FLLC event scheduler using Q-Learning.
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-04-10
 ---
 ## A Brief History
 

@@ -1,14 +1,17 @@
 ---
-date: 2024-03-05
+topics: 
 categories:
 - Software Development Projects
-coverimage: ../assets/image_1709746330336_0.png
-description: This page is a meta presentation for the deployment of this website (and this page).
+types: 
 githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
 site-link: https://wonyoungjang.org/pages/this-website/
+series: 
+date: 2024-03-05
+coverimage: ../assets/image_1709746330336_0.png
+description: This page is a meta presentation for the deployment of this website (and this page).
 title: This Website
 tags:
-lastMod: 2024-03-21
+lastMod: 2024-04-10
 ---
 ## How It's Made
 

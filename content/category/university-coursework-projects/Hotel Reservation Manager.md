@@ -1,14 +1,17 @@
 ---
-date: 2023-11-27
+topics: 
 categories:
 - University Coursework Projects
-coverimage: ../assets/hotel_reservation_manager_1709746723628_0.png
-description: Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).
+types: 
 githubrepo: https://github.com/wonyoung-jang/hotel-reservation-manager
 site-link: https://wonyoungjang.org/pages/hotel-reservation-manager/
+series: 
+date: 2023-11-27
+coverimage: ../assets/hotel_reservation_manager_1709746723628_0.png
+description: Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).
 title: Hotel Reservation Manager
 tags:
-lastMod: 2024-03-28
+lastMod: 2024-04-10
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}

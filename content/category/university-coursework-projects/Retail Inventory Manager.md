@@ -1,14 +1,17 @@
 ---
-date: 2023-11-18
+topics: 
 categories:
 - University Coursework Projects
-coverimage: ../assets/guitar_shop_inventory_1709746147769_0.png
-description: Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client's needs.
+types: 
 githubrepo: https://github.com/wonyoung-jang/retail-inventory-manager
 site-link: https://wonyoungjang.org/pages/retail-inventory-manager/
+series: 
+date: 2023-11-18
+coverimage: ../assets/guitar_shop_inventory_1709746147769_0.png
+description: Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client's needs.
 title: Retail Inventory Manager
 tags:
-lastMod: 2024-03-28
+lastMod: 2024-04-10
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
