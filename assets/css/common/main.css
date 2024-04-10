@@ -1,68 +1,149 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+    overflow-y: scroll;
+    font-size: 14px;
+}
+
+a,
+button,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 1.4;
+    word-break: break-word;
+    background: var(--theme);
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+main,
+section,
+table {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+figure,
+ul {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: auto;
+    word-break: keep-all;
+}
+
+button,
+input,
+textarea {
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: 0 0;
+    border: 0;
+}
+
+input,
+textarea {
+    outline: 0;
+}
+
+button,
+input[type=button],
+input[type=submit] {
+    cursor: pointer;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    box-shadow: 0 0 0 50px var(--theme) inset;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+::-webkit-scrollbar-track {
+    background: 0 0;
+}
+
+.list:not(.dark)::-webkit-scrollbar-track {
+    background: var(--code-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border: 5px solid var(--theme);
+    border-radius: var(--radius);
+}
+
+.list:not(.dark)::-webkit-scrollbar-thumb {
+    border: 5px solid var(--code-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
 .main {
     margin: auto;
     position: relative;
     width: var(--main-width);
     flex: 1;
-}
-
-.page-header h1 {
-    font-size: 40px;
-}
-
-/* Page Footer */
-.page-footer {
-    text-align: center;
-    padding: 40px 0;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-/* Pagination */
-.pagination a,
-.pagination span {
-    padding: 1vh 1vw;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: var(--gap);
-    filter: brightness(1.1);
-}
-
-.pagination a:hover {
-    transform: scale(0.9);
-}
-
-.pagination .disabled {
-    pointer-events: none;
-    filter: grayscale(1) opacity(0.3);
-    font-weight: normal;
-    border: transparent;
-}
-
-/* Code Highlight */
-code {
-    direction: ltr;
-}
-
-.copy-code {
-    display: none;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 16px;
-    padding: 4px 8px;
-    user-select: none;
-}
-
-/* Copy Code on Hover */
-div.highlight,
-pre {
-    position: relative;
-}
-
-div.highlight:hover .copy-code,
-pre:hover .copy-code {
-    display: block;
 }

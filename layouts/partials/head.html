@@ -35,11 +35,10 @@
 
 {{- /* Styles */}}
 {{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
-{{- $reset := (resources.Get "css/core/reset.css") }}
 {{- $media := (resources.Get "css/core/responsive.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
-{{- $core := (slice $theme_vars $reset $common $media) | resources.Concat "assets/css/core.css" }}
+{{- $core := (slice $theme_vars $common $media) | resources.Concat "assets/css/core.css" }}
 {{- $stylesheet := (slice $core) | resources.Concat "assets/css/stylesheet.css" | minify }}
 
 {{- if not .Site.Params.assets.disableFingerprinting }}

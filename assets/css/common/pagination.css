@@ -1,0 +1,21 @@
+/* Pagination */
+.pagination a,
+.pagination span {
+    padding: 1vh 1vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: var(--gap);
+    filter: brightness(1.1);
+}
+
+.pagination a:hover {
+    transform: scale(0.9);
+}
+
+.pagination .disabled {
+    pointer-events: none;
+    filter: grayscale(1) opacity(0.3);
+    font-weight: normal;
+    border: transparent;
+}
