@@ -18,10 +18,10 @@ main:
     parent: Projects
     weight: 2
 
-  - identifier: Articles
-    name: Articles
-    url: /article
-    weight: 20
+  #- identifier: Articles
+  #  name: Articles
+  #  url: /article
+  #  weight: 20
 
   - identifier: Resources
     name: Resources

@@ -62,9 +62,9 @@ profileMode:
   
   buttons:
     - name: Software Development Projects
-      url: "/category/software-development-projects"
+      url: "/project/software"
     - name: University Coursework Projects
-      url: "/category/university-coursework-projects"
+      url: "/project/university"
     
 # Home Info Mode - NOT USED
 #homeInfoParams:

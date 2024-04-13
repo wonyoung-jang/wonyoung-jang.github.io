@@ -2,144 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/category/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/project/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/category/lists/list-of-keyboard-shortcuts-for-this-site/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/resource/reference/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/software/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/lists/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/meta/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/software-development-projects/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/software-development-projects/realtime-multiplayer-drawing-app/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/lists/list-of-software-development-projects/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/lists/list-of-university-coursework-projects/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/software-development-projects/this-website/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/contact/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/software-development-projects/first-lego-league-challenge-q-learning-event-scheduler/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/software-development-projects/save-top-level-reddit-comments/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/disaster-recovery-robot-simulation/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/cs-career-recommendation-chatbot/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/software-development-projects/logseq-markdown-tokenizer/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/package-delivery-route-optimization/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/hotel-reservation-manager/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/vacation-cart-manager/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/retail-inventory-manager/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/dvd-rental-database-revenue-insights/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/student-record-system/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/category/university-coursework-projects/bagel-corner-and-mister-coffee-database-management/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/graph/</loc>
+    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
+    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/resource/</loc>
+    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
+    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/sitemap/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-this-site/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/software/this-website/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/software/save-top-level-reddit-comments/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/disaster-recovery-robot-simulation/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/software/logseq-markdown-tokenizer/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/package-delivery-route-optimization/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/hotel-reservation-manager/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/vacation-cart-manager/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/retail-inventory-manager/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/student-record-system/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/graph/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
