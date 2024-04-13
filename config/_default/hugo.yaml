@@ -58,3 +58,29 @@ outputs:
 
 # taxonomies:
 #   category: "categories"
+
+# The root configuration keys are 
+  # build, 
+  # caches, 
+  # cascade,
+  # deployment, 
+  # frontmatter,
+  # imaging,
+  # languages, 
+  # markup DONE
+  # mediatypes,
+  # menus DONE
+  # minify, 
+  # module,
+  # outputformats,
+  # outputs,
+  # params DONE 
+  # permalinks,
+  # privacy,
+  # related,
+  # security,
+  # segments,
+  # server, 
+  # services,
+  # sitemap,
+  # taxonomies
