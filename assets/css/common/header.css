@@ -84,7 +84,7 @@ body:not(.dark) #sun {
 }
 
 .lang-switch {
-    display: flex;
+    display: none; /* Disabled */
     flex-wrap: inherit;
 }
 

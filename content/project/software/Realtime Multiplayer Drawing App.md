@@ -3,11 +3,10 @@ date: 2024-03-08
 coverimage: ../assets/realtime-multiplayer-drawing_1709917652384_0.png
 description: Draw in realtime on a blank canvas with others on the same server.
 githubrepo: https://github.com/wonyoung-jang/realtime-multiplayer-drawing
-site-link: https://wonyoungjang.org/pages/realtime-multiplayer-drawing-app/
 title: Realtime Multiplayer Drawing App
 tags:
 categories:
-lastMod: 2024-04-13
+lastMod: 2024-04-14
 ---
 ## Introduction
 

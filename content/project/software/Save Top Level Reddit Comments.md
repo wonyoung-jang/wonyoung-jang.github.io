@@ -3,11 +3,10 @@ date: 2024-01-28
 coverimage: ../assets/reddit_top_level_comments_1709664702436_0.png
 description: Extract the parent comments of a [reddit](https://www.reddit.com/) post.
 githubrepo: https://github.com/wonyoung-jang/top-reddit-comments
-site-link: https://wonyoungjang.org/pages/save-top-level-reddit-comments/
 title: Save Top Level Reddit Comments
 tags:
 categories:
-lastMod: 2024-04-13
+lastMod: 2024-04-14
 ---
 ## Premise
 

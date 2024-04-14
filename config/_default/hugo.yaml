@@ -46,10 +46,6 @@ outputs:
     - HTML
     - RSS
     - JSON
-  section:
-    - HTML
-    - RSS
-    - JSON
 
 
 ####################

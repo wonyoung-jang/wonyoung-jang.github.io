@@ -27,6 +27,11 @@ main:
     name: Resources
     url: /resource
     weight: 30
+  - identifier: References
+    name: References
+    url: /resource/reference
+    parent: Resources
+    weight: 1
 
   #- identifier: Updates
   #  name: Updates
@@ -42,6 +47,6 @@ main:
     pageRef: /search
     weight: 60
   - identifier: Graph
-    name: Graph
+    name: Graph 🡕
     url: /graph/#/graph
     weight: 70

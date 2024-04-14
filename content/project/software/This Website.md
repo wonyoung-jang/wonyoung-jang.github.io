@@ -3,11 +3,10 @@ date: 2024-03-05
 coverimage: ../assets/image_1709746330336_0.png
 description: This page is a meta presentation for the deployment of this website (and this page).
 githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
-site-link: https://wonyoungjang.org/pages/this-website/
 title: This Website
 tags:
 categories:
-lastMod: 2024-04-13
+lastMod: 2024-04-14
 ---
 ## How It's Made
 

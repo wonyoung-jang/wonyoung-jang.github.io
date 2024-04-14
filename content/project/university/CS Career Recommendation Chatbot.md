@@ -3,11 +3,10 @@ date: 2024-01-22
 coverimage: ../assets/pandorabots_1709746575902_0.png
 description: Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.
 githubrepo: https://github.com/wonyoung-jang/cs-career-chatbot
-site-link: https://wonyoungjang.org/pages/cs-career-recommendation-chatbot/
 title: Cs Career Recommendation Chatbot
 tags:
 categories:
-lastMod: 2024-04-13
+lastMod: 2024-04-14
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
