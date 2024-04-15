@@ -4,55 +4,146 @@
   <h1>
     {{ .Title }}
   </h1>
-  {{- if .Description }}
-  <div class="post-description">
-    {{ .Description }}
-  </div>
-  {{- end }}
 </header>
+
+<span class="filter-and-sort">
+  <span class="sort-order">⇅</span>
+  <select id="sort-select" class="sort">
+    <option value="newest">Newest</option>
+    <option value="oldest">Oldest</option>
+  </select>
+</span>
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-{{- if site.Params.ShowAllPagesInArchive }}
-{{- $pages = site.RegularPages }}
+{{- if .Site.Params.ShowAllPagesInArchive }}
+  {{- $pages = site.RegularPages }}
 {{- end }}
 
-{{- range $pages.GroupByPublishDate "2006" }}
-{{- if ne .Key "0001" }}
-<div class="archive-year">
-  <h2 class="archive-year-header">
-    {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
-  </h2>
-  {{- range .Pages.GroupByDate "January" }}
-  <div class="archive-month">
-    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
-    <div class="archive-posts">
-      {{- range .Pages }}
-      {{- if eq .Kind "page" }}
-      <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">
-          {{- .Title | markdownify }}
-          {{- if .Draft }}
-          <span class="entry-hint" title="Draft">
-            <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" fill="currentColor">
-              <path
-                d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-            </svg>
-          </span>
-          {{- end }}
-        </h3>
-        <div class="archive-meta">
-          {{- partial "post_meta.html" . -}}
-        </div>
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+<div class="archive">
+  {{- range $pages.GroupByPublishDate "2006" }}
+    {{- if ne .Key "0001" }}
+      <div class="archive-year">
+        <h2 class="archive-year-header">
+          {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
+        </h2>
+        
+        {{- range .Pages.GroupByDate "January" }}
+          <div class="archive-month">
+            <h3 class="archive-month-header">
+              {{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
+            </h3>
+            
+            <div class="archive-posts">
+              {{- range .Pages }}
+                {{- if eq .Kind "page" }}
+                <div class="archive-entry">
+                  <h3 class="archive-entry-title">
+                    {{- .Title | markdownify }}
+  
+                    {{- if .Draft }}
+                      <sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+                    {{- end }}
+                  </h3>
+  
+                  <div class="archive-meta">
+                    {{- partial "post_meta.html" . -}}
+                  </div>
+  
+                  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+                </div>
+                {{- end }}
+              {{- end }}
+            </div>
+          </div>
+        {{- end }}
       </div>
-      {{- end }}
-      {{- end }}
-    </div>
-  </div>
+    {{- end }}
   {{- end }}
 </div>
-{{- end }}
-{{- end }}
+
+<script>
+  function sortOrder() { 
+    // Sort based on the selected in sort-order
+    const sortOrder = document.querySelector('.sort').value;
+    const entries = document.querySelectorAll('.archive-entry');
+
+    const sortedEntries = Array.from(entries).sort((a, b) => {
+      if (sortOrder === 'newest') {
+        return new Date(b.querySelector('.archive-meta span').textContent) - new Date(a.querySelector('.archive-meta span').textContent);
+      } else {
+        return new Date(a.querySelector('.archive-meta span').textContent) - new Date(b.querySelector('.archive-meta span').textContent);
+      }
+    });
+
+    // Sort months based on the visible entries
+    const months = document.querySelectorAll('.archive-month');
+    const sortedMonths = Array.from(months).sort((a, b) => {
+      const aEntries = a.querySelectorAll('.archive-entry');
+      const bEntries = b.querySelectorAll('.archive-entry');
+      if (sortOrder === 'newest') {
+        return bEntries.length - aEntries.length;
+      } else {
+        return aEntries.length - bEntries.length;
+      }
+    });
+
+    // Sort years based on the visible entries
+    const years = document.querySelectorAll('.archive-year');
+    const sortedYears = Array.from(years).sort((a, b) => {
+      const aEntries = a.querySelectorAll('.archive-entry');
+      const bEntries = b.querySelectorAll('.archive-entry');
+      if (sortOrder === 'newest') {
+        return bEntries.length - aEntries.length;
+      } else {
+        return aEntries.length - bEntries.length;
+      }
+    });
+
+    // Append sorted years to the parent
+    const archive = document.querySelector('.archive');
+    sortedYears.forEach(year => {
+      archive.appendChild(year);
+    });
+
+    // Append sorted months to the parents
+    sortedMonths.forEach(month => {
+      const year = month.closest('.archive-year');
+      year.appendChild(month);
+    });
+    
+    // Append sorted entries to the parents
+    sortedEntries.forEach(entry => {
+      const month = entry.closest('.archive-month');
+      month.querySelector('.archive-posts').appendChild(entry);
+    });
+  }
+
+  document.querySelector('.sort').addEventListener('change', () => {
+    sortOrder();
+  });
+</script>
+
+<script>
+  function setSelectedOption(selectId, value) {
+    const select = document.getElementById(selectId);
+    const options = select.options;
+    for (let i = 0; i < options.length; i++) {
+      if (options[i].value === value) {
+        options[i].setAttribute('selected', 'selected');
+      } else {
+        options[i].removeAttribute('selected');
+      }
+    }
+  }
+
+  // Set the initial selected options
+  setSelectedOption('sort-select', 'newest');
+  
+  // Update the selected option when the sort order changes
+  document.getElementById('sort-select').addEventListener('change', (e) => {
+    setSelectedOption('sort-select', e.target.value);
+  });
+</script>
 
 {{- end }}{{/* end main */}}
