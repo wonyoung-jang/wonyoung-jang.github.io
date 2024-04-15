@@ -63,86 +63,90 @@
 </div>
 
 <script>
-  function sortOrder() { 
+  function sortOrder() {
     // Sort based on the selected in sort-order
-    const sortOrder = document.querySelector('.sort').value;
-    const entries = document.querySelectorAll('.archive-entry');
-
+    const sortOrder = document.querySelector(".sort").value;
+    const entries = document.querySelectorAll(".archive-entry");
+  
     const sortedEntries = Array.from(entries).sort((a, b) => {
-      if (sortOrder === 'newest') {
-        return new Date(b.querySelector('.archive-meta span').textContent) - new Date(a.querySelector('.archive-meta span').textContent);
+      if (sortOrder === "newest") {
+        return (
+          new Date(b.querySelector(".archive-meta span").textContent) -
+          new Date(a.querySelector(".archive-meta span").textContent)
+        );
       } else {
-        return new Date(a.querySelector('.archive-meta span').textContent) - new Date(b.querySelector('.archive-meta span').textContent);
+        return (
+          new Date(a.querySelector(".archive-meta span").textContent) -
+          new Date(b.querySelector(".archive-meta span").textContent)
+        );
       }
     });
-
+  
     // Sort months based on the visible entries
-    const months = document.querySelectorAll('.archive-month');
+    const months = document.querySelectorAll(".archive-month");
     const sortedMonths = Array.from(months).sort((a, b) => {
-      const aEntries = a.querySelectorAll('.archive-entry');
-      const bEntries = b.querySelectorAll('.archive-entry');
-      if (sortOrder === 'newest') {
+      const aEntries = a.querySelectorAll(".archive-entry");
+      const bEntries = b.querySelectorAll(".archive-entry");
+      if (sortOrder === "newest") {
         return bEntries.length - aEntries.length;
       } else {
         return aEntries.length - bEntries.length;
       }
     });
-
+  
     // Sort years based on the visible entries
-    const years = document.querySelectorAll('.archive-year');
+    const years = document.querySelectorAll(".archive-year");
     const sortedYears = Array.from(years).sort((a, b) => {
-      const aEntries = a.querySelectorAll('.archive-entry');
-      const bEntries = b.querySelectorAll('.archive-entry');
-      if (sortOrder === 'newest') {
+      const aEntries = a.querySelectorAll(".archive-entry");
+      const bEntries = b.querySelectorAll(".archive-entry");
+      if (sortOrder === "newest") {
         return bEntries.length - aEntries.length;
       } else {
         return aEntries.length - bEntries.length;
       }
     });
-
+  
     // Append sorted years to the parent
-    const archive = document.querySelector('.archive');
-    sortedYears.forEach(year => {
+    const archive = document.querySelector(".archive");
+    sortedYears.forEach((year) => {
       archive.appendChild(year);
     });
-
+  
     // Append sorted months to the parents
-    sortedMonths.forEach(month => {
-      const year = month.closest('.archive-year');
+    sortedMonths.forEach((month) => {
+      const year = month.closest(".archive-year");
       year.appendChild(month);
     });
-    
+  
     // Append sorted entries to the parents
-    sortedEntries.forEach(entry => {
-      const month = entry.closest('.archive-month');
-      month.querySelector('.archive-posts').appendChild(entry);
+    sortedEntries.forEach((entry) => {
+      const month = entry.closest(".archive-month");
+      month.querySelector(".archive-posts").appendChild(entry);
     });
   }
-
-  document.querySelector('.sort').addEventListener('change', () => {
+  
+  document.querySelector(".sort").addEventListener("change", () => {
     sortOrder();
   });
-</script>
-
-<script>
+  
   function setSelectedOption(selectId, value) {
     const select = document.getElementById(selectId);
     const options = select.options;
     for (let i = 0; i < options.length; i++) {
       if (options[i].value === value) {
-        options[i].setAttribute('selected', 'selected');
+        options[i].setAttribute("selected", "selected");
       } else {
-        options[i].removeAttribute('selected');
+        options[i].removeAttribute("selected");
       }
     }
   }
-
+  
   // Set the initial selected options
-  setSelectedOption('sort-select', 'newest');
+  setSelectedOption("sort-select", "newest");
   
   // Update the selected option when the sort order changes
-  document.getElementById('sort-select').addEventListener('change', (e) => {
-    setSelectedOption('sort-select', e.target.value);
+  document.getElementById("sort-select").addEventListener("change", (e) => {
+    setSelectedOption("sort-select", e.target.value);
   });
 </script>
 

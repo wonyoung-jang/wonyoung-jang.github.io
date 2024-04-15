@@ -1,25 +1,13 @@
-.page-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#inline-searchbox input {
+    display: inline-flex;
+    padding: 0.5rem;
+    color: var(--theme);
+    background: var(--content);
+    font-size: 1rem;
+    border-radius: calc(var(--radius)*4);
 }
 
-#searchbox input {
-    padding: 4px 10px;
-    width: 100%;
-    height: auto;
-    color: var(--primary);
-    font-size: 32px;
-    font-weight: bold;
-    border: 2px solid var(--tertiary);
-    border-radius: var(--radius);
-}
-
-#searchbox input:focus {
-    border-color: var(--secondary);
-}
-
-#searchResults li {
+#inline-searchResults li {
     list-style: none;
     border-radius: var(--radius);
     padding: 10px;
@@ -28,7 +16,7 @@
     font-weight: 500;
 }
 
-#searchResults {
+#inline-searchResults {
     margin: 10px 0;
     width: 100%;
     z-index: 10;
@@ -37,12 +25,12 @@
 
 }
 
-#searchResults li:active {
+#inline-searchResults li:active {
     transition: transform 0.1s;
     transform: scale(0.98);
 }
 
-#searchResults a {
+#inline-searchResults a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -51,7 +39,7 @@
     outline: none;
 }
 
-#searchResults .focus {
+#inline-searchResults .focus {
     transform: scale(0.98);
     border: 2px solid var(--tertiary);
 }

@@ -99,13 +99,25 @@
                     {{- end }}
                 </span>
             </div>
-
-            <!--{{- partial "searchbox.html" . -}}-->
-
         </div>
+        
 
-
+        {{- /* If the page is Search, then do not show searchbox */ -}}
+        
         {{- $currentPage := . }}
+        {{- if ne $currentPage.RelPermalink "/search/" }}
+            <div id="inline-searchbox">
+                <input id="inline-searchInput"
+                    autofocus placeholder="Search ↵"
+                    aria-label="inline search"
+                    type="search"
+                    autocomplete="off">
+            </div>
+        {{- end }}
+
+
+        <ul id="inline-searchResults" aria-label="inline search results"></ul>
+
         <ul id="menu">
             {{ define "menu-item" }}
             {{ $page := .page }}

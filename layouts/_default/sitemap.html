@@ -15,19 +15,19 @@
         {{ end }}
 
         <div class="sitemap-level-one">
+            {{ with .Parent }}
+                <h2><a href="{{ .Permalink }}">Home</a></h2>
+            {{ end }}
             {{ range .Site.Sections }}
-                {{ with .Parent }}
-                    <h2><a href="{{ .Permalink }}">Home</a></h2>
                     {{ if .Pages }}
                         {{ range .Pages }}
-                            {{ if or (eq .Title "Categories") (eq .Title "") }}
+                            {{ if (eq .Title "") }}
                                 {{ continue }}
                             {{ else }}
                                 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                             {{ end }}
                         {{ end }}
                     {{ end }}
-                {{ end }}
 
                 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                 {{ if .Pages }}

@@ -91,19 +91,7 @@ cover:
   hiddenInSingle: true # Hide cover image in single post view
 
 # Search Options
-fuseOpts:
-  isCaseSensitive: false
-  includeScore: true
-  includeMatches: true
-  minMatchCharLength: 0
-  shouldSort: true
-  findAllMatches: true
-  keys: ["title", "permalink", "summary", "content"]
-  
-  location: 1
-  threshold: 0.4
-  distance: 100
-  limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
+# fuseOpts
 
 # Analytics - NOT USED
   # analytics:
