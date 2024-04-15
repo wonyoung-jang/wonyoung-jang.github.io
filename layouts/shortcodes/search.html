@@ -1,8 +1,10 @@
+{{/* layouts/shortcodes/search.html */}}
+
 <p class="error message js-hidden">{{ i18n "js_required" }}</p>
 <p class="search-loading status message hidden">{{ i18n "search_loading" }}</p>
 
 <div class="search-input hidden">
-  <form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+  <form id="search-form" class="search-form" action="javascript:void(0);" onsubmit="performSearch()" accept-charset="UTF-8" role="search">
     <label for="query" class="visually-hidden">{{ i18n "search_title" }}</label>
     <input type="search" id="query" name="query" class="search-text" placeholder="{{ i18n "search_placeholder" }}" maxlength="128">
     <button type="submit" name="submit" class="form-submit" >{{ i18n "search_title" }}</button>

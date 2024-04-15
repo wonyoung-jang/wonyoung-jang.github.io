@@ -74,19 +74,25 @@ function reset() {
 
 // execute search as each character is typed
 sInput.onkeyup = function (e) {
-    // run a search query (for "term") every time a letter is typed
-    // in the search box
-    if (fuse) {
-        const results = fuse.search(this.value.trim()); // the actual query being run using fuse.js
-        if (results.length !== 0) {
-            // build our html if result exists
-            let resultSet = ''; // our results bucket
+    if (e.key !== "Enter") {
+      performSearch();
+    }
+}
 
+sInput.addEventListener('search', function (e) {
+    // clicked on x
+    if (!this.value) reset()
+})
+
+function performSearch() {
+    if (fuse) {
+        const results = fuse.search(sInput.value.trim());
+        if (results.length !== 0) {
+            let resultSet = '';
             for (let item in results) {
                 resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
-                    `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`
+                    `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`;
             }
-
             resList.innerHTML = resultSet;
             resultsAvailable = true;
             first = resList.firstChild;
@@ -98,10 +104,16 @@ sInput.onkeyup = function (e) {
     }
 }
 
-sInput.addEventListener('search', function (e) {
-    // clicked on x
-    if (!this.value) reset()
-})
+// Add event listener for the search button
+document.getElementById('searchButton').addEventListener('click', performSearch);
+
+// Modify the Enter key press event
+sInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        performSearch();
+    }
+});
 
 // kb bindings
 document.onkeydown = function (e) {
@@ -109,6 +121,12 @@ document.onkeydown = function (e) {
     var ae = document.activeElement;
 
     let inbox = document.getElementById("searchbox").contains(ae)
+
+    if (key === "Enter") {
+        if (ae === sInput) {
+            performSearch();
+        }
+    }
 
     if (ae === sInput) {
         var elements = document.getElementsByClassName('focus');

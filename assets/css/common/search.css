@@ -31,6 +31,10 @@
 #searchResults {
     margin: 10px 0;
     width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    position: absolute;
+
 }
 
 #searchResults li:active {
@@ -50,4 +54,9 @@
 #searchResults .focus {
     transform: scale(0.98);
     border: 2px solid var(--tertiary);
+}
+
+#searchButton a {
+    background: var(--entry);
+
 }

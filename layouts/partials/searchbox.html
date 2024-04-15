@@ -1,0 +1,45 @@
+{{/* layouts/partials/searchbox.html */}}
+
+<div id="searchbox">
+    <input id="searchInput"
+        autofocus placeholder="Search ↵"
+        aria-label="search"
+        type="search"
+        autocomplete="off">
+</div>
+
+<button id="searchButton" type="button">Search</button>
+
+<ul id="searchResults" aria-label="search results"></ul>
+
+<script>
+    var sInput = document.getElementById('searchInput');
+    
+    // Modify the Enter key press event
+    sInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            performSearch();
+        }
+    });
+
+    function performSearch() {
+        if (fuse) {
+            const results = fuse.search(sInput.value.trim());
+            if (results.length !== 0) {
+                let resultSet = '';
+                for (let item in results) {
+                    resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
+                        `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`;
+                }
+                resList.innerHTML = resultSet;
+                resultsAvailable = true;
+                first = resList.firstChild;
+                last = resList.lastChild;
+            } else {
+                resultsAvailable = false;
+                resList.innerHTML = '';
+            }
+        }
+    }
+</script>

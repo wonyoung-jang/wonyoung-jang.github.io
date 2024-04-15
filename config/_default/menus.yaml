@@ -42,10 +42,12 @@ main:
     name: Archives
     pageRef: /archives
     weight: 50
+  
   - identifier: Search
     name: Search
     pageRef: /search
     weight: 60
+  
   - identifier: Graph
     name: Graph 🡕
     url: /graph/#/graph

@@ -93,13 +93,17 @@ cover:
 # Search Options
 fuseOpts:
   isCaseSensitive: false
-  shouldSort: true
-  location: 0
-  distance: 1000
-  threshold: 0.4
+  includeScore: true
+  includeMatches: true
   minMatchCharLength: 0
-  limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
+  shouldSort: true
+  findAllMatches: true
   keys: ["title", "permalink", "summary", "content"]
+  
+  location: 1
+  threshold: 0.4
+  distance: 100
+  limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
 
 # Analytics - NOT USED
   # analytics:
