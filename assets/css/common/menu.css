@@ -8,9 +8,6 @@
 
 #menu {
     list-style: none;
-    word-break: keep-all;
-    overflow-x: auto;
-    white-space: nowrap;
 }
 
 #menu li {
