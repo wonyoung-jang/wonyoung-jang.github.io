@@ -1,7 +1,7 @@
 ---
 date:
 - 2024-04-12 Friday
-layout: list
+layout: section
 title: Projects
 tags:
 categories:

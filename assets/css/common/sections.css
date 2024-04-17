@@ -1,0 +1,35 @@
+/* Styles for the subsections container */
+.subsections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Styles for each individual subsection */
+.subsection {
+    width: 50%
+}
+
+/* Styles for the subsection title link */
+.subsection h2 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--entry);
+    border-radius: var(--radius);
+}
+
+
+/* Hover effect for subsection title link */
+.subsection h2 a:hover {
+    color: var(--link);
+    filter: brightness(1.1);
+}

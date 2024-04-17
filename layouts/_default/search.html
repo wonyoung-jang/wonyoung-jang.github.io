@@ -2,20 +2,11 @@
 {{/* layouts/_default/search.html */}}
 
 <header class="page-header">
-    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+    {{ partial "breadcrumbs.html" . }}
+
+    <h1>
+        {{ .Title }}
     </h1>
-
-    {{- if .Description }}
-        <div class="post-description">
-            {{ .Description }}
-        </div>
-    {{- end }}
-
-    {{- if not (.Param "hideMeta") }}
-        <div class="post-meta">
-            {{- partial "translation_list.html" . -}}
-        </div>
-    {{- end }}
 </header>
 
 
