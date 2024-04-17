@@ -1,17 +1,21 @@
-.breadcrumb ol {
-    padding-left: 0;
-}
+.breadcrumb {
+    & ol {
+        padding-left: 0;
+    }
 
-.breadcrumb li {
-    display: inline;
-}
+    & li {
+        display: inline;
+        
+        &:not(:last-child)::after {
+            content: ">";
+            padding: 0 0.5rem;
+        }
+    }
 
-.breadcrumb li:not(:last-child)::after {
-    content: ">";
-    padding: 0 0.5rem;
-}
-
-.breadcrumb:not(.active) a {
-    color: var(--link);
-    text-decoration: none;
+    &:not(.active) { 
+        & a {
+            color: var(--link);
+            text-decoration: none;
+        }
+    }
 }

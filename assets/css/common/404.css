@@ -22,11 +22,12 @@
     padding: 1rem;
     border-radius: calc(var(--radius) * 4);
     background: var(--entry);
-}
-.go-home a {
-    color: var(--primary);
-}
-
-.go-home:hover {
-    filter: brightness(1.1);
+    
+    & a {
+        color: var(--primary);
+    }
+    
+    &:hover {
+        filter: brightness(1.1);
+    }
 }

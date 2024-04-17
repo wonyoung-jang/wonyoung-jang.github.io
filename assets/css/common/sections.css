@@ -1,4 +1,4 @@
-/* Styles for the subsections container */
+/* Subsections */
 .subsections {
     display: flex;
     flex-wrap: wrap;
@@ -9,27 +9,25 @@
     margin-bottom: 2rem;
 }
 
-/* Styles for each individual subsection */
 .subsection {
-    width: 50%
-}
+    width: 50%;
 
-/* Styles for the subsection title link */
-.subsection h2 a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--entry);
-    border-radius: var(--radius);
-}
+    & h2 { 
+        & a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: var(--entry);
+            border-radius: var(--radius);
 
-
-/* Hover effect for subsection title link */
-.subsection h2 a:hover {
-    color: var(--link);
-    filter: brightness(1.1);
+            &:hover {
+                color: var(--link);
+                filter: brightness(1.1);
+            }
+        }
+    }
 }

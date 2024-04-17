@@ -7,10 +7,10 @@
 /* Archive Year */
 .archive-year {
     margin-top: 40px;
-}
-
-.archive-year:not(:last-of-type) {
-    border-bottom: 2px solid var(--border);
+    
+    &:not(:last-of-type) {
+        border-bottom: 2px solid var(--border);
+    }
 }
 
 /* Archive Month */
@@ -18,6 +18,10 @@
     display: flex;
     align-items: flex-start;
     padding: 10px 0;
+    
+    &:not(:last-of-type) {
+        border-bottom: 1px solid var(--border);
+    }
 }
 
 .archive-month-header {
@@ -25,21 +29,17 @@
     width: 200px;
 }
 
-.archive-month:not(:last-of-type) {
-    border-bottom: 1px solid var(--border);
-}
-
 /* Archive Entry */
 .archive-entry {
     position: relative;
     padding: 5px;
     margin: 10px 0;
-}
-
-.archive-entry:hover {
-    background: var(--entry);
-    filter: brightness(1.1);
-    border-radius: var(--radius);
+    
+    &:hover {
+        background-color: var(--entry);
+        filter: brightness(1.1);
+        border-radius: var(--radius);
+    }
 }
 
 .archive-entry-title {
@@ -54,36 +54,34 @@
     font-size: 14px;
 }
 
-
 /* Filter and Sort */
 .filter-and-sort {
     display: flex;
     justify-content: right;
     gap: calc(var(--content-gap) / 4);
     padding: var(--content-gap) 0 var(--content-gap) 0;
-}
+    
+    & select {
+        border-radius: calc(var(--radius) * 2);
+        color: var(--content);
+        background: var(--theme);
+        padding: 0.5vh 1vw 0.5vh 1vw;
+        vertical-align: auto;
+        
+        &:hover {
+            filter: brightness(1.1), contrast(1.1), saturate(1.1);
+            background-color: var(--content);
+            color: var(--theme);
+        }
 
-.filter-and-sort select {
-    border-radius: calc(var(--radius) * 2);
-    color: var(--content);
-    background: var(--theme);
-    padding: 0.5vh 1vw 0.5vh 1vw;
-    vertical-align: auto;
-}
-
-.filter-and-sort select:hover {
-    filter: brightness(1.1), contrast(1.1), saturate(1.1);
-    background-color: var(--content);
-    color: var(--theme);
+        & option[selected] {
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
 }
 
 .filter-category,
 .sort-order {
     font-size: 2vh;
-}
-
-/* Highlight the currently selected option */
-.filter-and-sort select option[selected] {
-    font-style: italic;
-    font-weight: bold;
 }

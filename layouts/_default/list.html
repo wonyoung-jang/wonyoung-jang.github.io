@@ -125,13 +125,6 @@
 
             <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 
-            {{- if .Params.categories }}
-                <div class="category-entry">
-                    {{- range .Params.categories }}
-                        <a href="{{ "/category/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
-                    {{- end }}
-                </div>
-            {{- end }}
         </article>
     {{- end }}
 </div>

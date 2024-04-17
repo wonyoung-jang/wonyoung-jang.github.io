@@ -9,14 +9,15 @@
     font-size: var(--content-gap);
     filter: saturate(180%) brightness(120%);
     white-space: nowrap; /* Prevent the text from wrapping */
-}
-
-.github-button .repo-name-link {
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--link);
-    filter: brightness(1.4);
-}
-
-.github-button:hover, .github-button:focus {
-    filter: brightness(1.1);
+    
+    & .repo-name-link {
+        font-family: 'IBM Plex Mono', monospace;
+        color: var(--link);
+        filter: brightness(1.4);
+    }
+    
+    &:hover, 
+    &:focus {
+        filter: brightness(1.1);
+    }
 }

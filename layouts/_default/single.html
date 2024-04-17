@@ -1,4 +1,5 @@
 {{- define "main" }}
+
 <article class="post-single">
   {{/* Breadcrumbs */}}
   {{ partial "breadcrumbs.html" . }}
@@ -14,17 +15,6 @@
 
     {{/* Category + metadata wrap */}}
     <div class="post-meta-wrap">
-
-      {{/* Categories */}}
-      {{- if .Params.categories }}
-        <div class="post-categories">
-          <div class="categories-container">
-            {{- range .Params.categories }}
-                <a href="{{ "/category/" | relLangURL }}{{ . | urlize }}" class="category {{ . | urlize }}">{{ . }}</a>
-            {{- end }}
-          </div>
-        </div>
-      {{- end }}
 
       {{/* Metadata */}}
       {{- if not (.Param "hideMeta") }}

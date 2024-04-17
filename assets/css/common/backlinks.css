@@ -1,11 +1,22 @@
-/* Related Posts and Backlinks */
-.backlinks a,
-.related a {
-    display: inline-block;
-    color: var(--link);
+/*  Backlinks & Related Posts */
+.backlinks {
+    & a {
+        display: inline-block;
+        color: var(--link);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
-.backlinks a:hover,
-.related a:hover {
-    text-decoration: underline;
+.related {
+    & a {
+        display: inline-block;
+        color: var(--link);
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

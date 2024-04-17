@@ -1,0 +1,37 @@
+/* Share Buttons */
+.share-buttons  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2vh;
+    padding-inline-start: var(--radius);
+    border-radius: var(--radius);
+    padding: 1vh 2vh;
+    gap: var(--content-gap);
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: var(--gap) auto 0 auto;
+
+    & a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        
+        & svg {
+            height: 30px;
+            width: 30px;
+            fill: var(--content);
+            transition: transform 0.1s;
+        }
+
+        &:hover svg {
+            transform: translateY(-2px);
+        }
+    }
+
+    & svg:active {
+        filter: brightness(90%);
+    }
+}

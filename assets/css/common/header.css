@@ -8,11 +8,12 @@
     margin-top: calc(var(--header-height) / 3);
     margin-bottom: var(--header-height);
     width: var(--nav-width);
+    
+    & a {
+        display: inline;
+    }
 }
 
-.nav a {
-    display: inline;
-}
 
 .logo,
 #menu {
@@ -93,13 +94,14 @@ body:not(.dark) #sun {
 .lang-switch {
     display: none;
     flex-wrap: inherit;
+    
+    & a {
+        margin: auto 3px;
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
-.lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
-}
 
 .logo-switches {
     flex-wrap: inherit;

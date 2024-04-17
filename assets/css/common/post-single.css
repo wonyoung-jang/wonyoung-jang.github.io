@@ -21,24 +21,36 @@
     color: var(--primary);
     font-style: italic;
     text-align: center;
-}
 
-.post-description a {
-    color: var(--link);
-    white-space: nowrap;
+    & a {
+        color: var(--link);
+        white-space: nowrap;
+    }
 }
 
 
 /* Post Content */
 .post-content {
     color: var(--content);
-}
 
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-    margin: 24px 0 16px;
+    & a {
+        color: var(--link);
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        & code {
+            border-radius: 0;
+            box-shadow: 0 -1px 0 var(--primary) inset;
+        }
+    }
+
+    & del {
+        text-decoration: none;
+        background: linear-gradient(to right, var(--primary) 100%, transparent 0) 0 50%/1px 1px repeat-x;
+    }
+
 }
 
 .post-content h1 {
@@ -67,22 +79,11 @@
     font-size: 12px;
 }
 
-.post-content a {
-    color: var(--link);
-}
-
-.post-content a:hover {
-    text-decoration: underline;
-}
-
-.post-content a code {
-    border-radius: 0;
-    box-shadow: 0 -1px 0 var(--primary) inset;
-}
-
-.post-content del {
-    text-decoration: none;
-    background: linear-gradient(to right, var(--primary) 100%, transparent 0) 0 50%/1px 1px repeat-x;
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    margin: 24px 0 16px;
 }
 
 .post-content dl,
@@ -286,47 +287,12 @@
     color: var(--entry); /* Change text color on hover for contrast */
 }
 
-/* Share Buttons and Pagination */
-.share-buttons,
 .paginav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 2vh;
-}
-
-.share-buttons a svg {
-    height: 30px;
-    width: 30px;
-    fill: var(--content);
-    transition: transform 0.1s;
-}
-
-.share-buttons svg:active {
-    filter: brightness(90%);
-}
-
-.share-buttons {
-    padding-inline-start: var(--radius);
-    border-radius: var(--radius);
-    padding: 1vh 2vh;
-    gap: var(--content-gap);
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    margin: var(--gap) auto 0 auto;
-}
-
-/* Ensures icons are aligned on the same line */
-.share-buttons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.share-buttons a:hover svg {
-    transform: translateY(-2px);
 }
 
 /* Headers */
@@ -351,15 +317,6 @@ h6:hover .anchor {
 
 .post-content :not(table) ::-webkit-scrollbar-thumb:hover {
     background: rgb(163, 163, 165);
-}
-
-.gist table::-webkit-scrollbar-thumb {
-    border: 2px solid rgb(255, 255, 255);
-    background: rgb(173, 173, 173);
-}
-
-.gist table::-webkit-scrollbar-thumb:hover {
-    background: rgb(112, 112, 112);
 }
 
 .post-content table::-webkit-scrollbar-thumb {

@@ -2,140 +2,101 @@
 .warning {
     background-color: var(--warning-bg);
     color: var(--warning-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .caution {
     background-color: var(--caution-bg);
     color: var(--caution-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .note {
     background-color: var(--note-bg);
     color: var(--note-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .example {
     background-color: var(--example-bg);
     color: var(--example-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .tip {
     background-color: var(--tip-bg);
     color: var(--tip-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .important {
     background-color: var(--important-bg);
     color: var(--important-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .pinned {
     background-color: var(--pinned-bg);
     color: var(--pinned-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .quote {
     background-color: var(--quote-bg);
     color: var(--quote-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .comment {
     background-color: var(--comment-bg);
     color: var(--comment-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .query {
     background-color: var(--query-bg);
     color: var(--query-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .export {
     background-color: var(--export-bg);
     color: var(--export-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 .verse {
     background-color: var(--verse-bg);
     color: var(--verse-text);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
 }
 
 /* Admonition styles with flexbox for vertical alignment */
-.important, .warning, .caution, .note, .example, .tip, .pinned, .quote, .comment, .query, .verse, .export {
+.important,
+.warning,
+.caution,
+.note,
+.example,
+.tip,
+.pinned,
+.quote,
+.comment,
+.query,
+.verse,
+.export {
     display: flex;
     align-items: center; /* Aligns children (text and ::before content) vertically in the center */
     padding: 10px 20px;
     border-radius: 5px;
     margin: 10px 0;
     font-size: 0.85em;
-}
 
-/* Admonition icons using Unicode characters */
-.quote::before, .note::before, .important::before, .warning::before, .caution::before, .example::before, .tip::before, .pinned::before, .comment::before,
-.query::before, .export::before, .verse::before{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    font-size: 2em; /* Fixed font size */
-    width: 2em; /* Fixed width for the circle */
-    height: 2em; /* Fixed height for the circle */
-    padding: 0.5em; /* Adjust padding as needed */
-    border-radius: 50%; /* This will make the box a circle */
-    line-height: 1; /* Reset line height for the icon */
-    font-weight: bold;
-    vertical-align: middle;
+    &::before {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 2em; /* Fixed font size */
+        width: 2em; /* Fixed width for the circle */
+        height: 2em; /* Fixed height for the circle */
+        padding: 0.5em; /* Adjust padding as needed */
+        border-radius: 50%; /* This will make the box a circle */
+        line-height: 1; /* Reset line height for the icon */
+        font-weight: bold;
+        vertical-align: middle;
+    }
 }
 
 .quote::before {
-    content: "\267B"; 
+    content: "\267B";
     background-color: var(--quote-text);
     color: var(--quote-bg);
 }
