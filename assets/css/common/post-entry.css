@@ -43,6 +43,8 @@
 
 /* Entry Header */
 .entry-header {
+    background: none;
+
     & h2 {
         font-size: 16px;
         padding-left: 5%;

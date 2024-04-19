@@ -1,17 +1,16 @@
 /* Subsections */
 .subsections {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items: stretch;
+    justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .subsection {
-    width: 50%;
-
     & h2 { 
         & a {
             display: flex;
@@ -22,7 +21,7 @@
             margin: 1rem;
             padding: 1rem;
             background-color: var(--entry);
-            border-radius: var(--radius);
+            border-radius: calc(var(--radius)*4);
 
             &:hover {
                 color: var(--link);

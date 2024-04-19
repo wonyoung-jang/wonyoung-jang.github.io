@@ -1,8 +1,12 @@
 {{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
+
 <div class="toc">
+
+
     <details {{if (.Param "TocOpen") }} open{{ end }}>
+
         <summary accesskey="c" title="Toggle Contents (ALT + SHIFT + c)">
             <span class="details">{{- i18n "toc" | default "Contents" }}</span>
         </summary>
@@ -64,29 +68,38 @@
             {{- end }}
         </div>
     </details>
+
     <div class="collapse-expand">
+
         <button class="collapse" aria-label="collapse all" title="Collapse All (ALT + SHIFT + p)" accesskey="p">   
             {{- i18n "collapse" | default "Collapse All" }}
         </button>
+        
         <button class="expand" aria-label="expand all" title="Expand All (ALT + SHIFT + b)" accesskey="b">
             {{- i18n "expand" | default "Expand All" }}
         </button>
+
     </div>
 </div>
 
 <script>
-    /* Expand and collapse recursively */
+    /* Toggle expand and collapse recursively */
     document.querySelector('.collapse').addEventListener('click', function() {
         document.querySelectorAll('.toc details').forEach(function(detail) {
             detail.removeAttribute('open');
         });
+        document.querySelector('.expand').style.display = 'block';
+        document.querySelector('.collapse').style.display = 'none';
     });
 
     document.querySelector('.expand').addEventListener('click', function() {
         document.querySelectorAll('.toc details').forEach(function(detail) {
             detail.setAttribute('open', '');
         });
+        document.querySelector('.collapse').style.display = 'block';
+        document.querySelector('.expand').style.display = 'none';
     });
 </script>
+
 
 {{- end }}

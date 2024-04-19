@@ -3,7 +3,7 @@ date: 2023-07-12
 coverimage: ../assets/dvd-rental-sample-database-diagram_1709746107091_0.png
 description: Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query.
 githubrepo: https://github.com/wonyoung-jang/dvd-rental-revenue
-title: Dvd Rental Database Revenue Insights
+title: DVD Rental Database Revenue Insights
 tags:
 categories:
 lastMod: 2024-04-14

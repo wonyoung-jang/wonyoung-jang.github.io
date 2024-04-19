@@ -1,5 +1,4 @@
 /* Responsive */
-
 @media screen and (max-width: 768px) {
     /* theme-vars */
     :root {
@@ -154,29 +153,7 @@
 
     #menu {
         display: none;
-    }
-    
-    #menu li {
-        display: block;
-        border-bottom: 1px solid var(--primary);
-        padding: 0 0.5rem 0 0.5rem;
-    }
-
-    #menu li:not(:last-child), #menu li:last-child {
-        margin-left: 0;
-    }
-
-    #menu li.active {
-        filter: brightness(1.8);
-        background-color: var(--entry);
-    }
-
-    #menu ul.sub-menu {
-        display: none;
-    }
-
-    #menu li ul {
-        display: none;
+        overflow: hidden;
     }
 }
 
@@ -190,71 +167,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* Menu */
+    /* Menu */ 
     .menu-icon {
         display: none;
-    }
-
-    #menu {
-        display: inline-block;
-        list-style: none;
-        word-break: keep-all;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    #menu li {
-        display: inline-block;
-    }
-
-    #menu li a:hover {
-        text-decoration: underline;
-    }
-
-    #menu li ul {
-        display: none;
-        position: absolute;
-        z-index: 100;
-    }
-
-    #menu li:hover ul {
-        display: block;
-    }
-
-    #menu li ul li {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    #menu li.active a {
-        filter: brightness(1.8);
-    }
-
-    #menu li a:hover {
-        filter: brightness(1.8);
-    }
-
-    #menu ul.sub-menu {
-        display: none;
-        position: absolute;
-        background-color: var(--toc-background-color);
-        z-index: 100;
-    }
-
-    #menu ul.sub-menu li {
-        padding: 0 1vw 0 1vw;
-        border-top: 1px dotted var(--primary);
-    }
-
-    #menu ul.sub-menu li:hover {
-        background-color: var(--entry);
-        filter: brightness(1.1);
-    }
-
-    #menu ul.sub-menu li.active {
-        background-color: var(--entry);
-        text-decoration: underline;
     }
 }
 

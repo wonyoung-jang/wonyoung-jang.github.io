@@ -2,30 +2,29 @@
     <footer class="footer">
 
         <div class="social-icons-container">
-            <h3>Share</h3>
+            <h3>Follow or Find Me At</h3>
             {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
         </div>
 
         <div class="footer-links-container">
+            <h3>Quick Links</h3>
 
             <ul class="utilities-footer">
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/sitemap">Sitemap</a></li>
             </ul>
-            
+
             <span class="copyright">
-            {{- if .Site.Copyright }}
-                {{ .Site.Copyright | markdownify }}
-            {{- else }}
-                &copy; 
-                {{ now.Year }} 
-                <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
-            {{- end }}
+                {{- if .Site.Copyright }}
+                    {{ .Site.Copyright | markdownify }}
+                {{- else }}
+                    &copy; 
+                    {{ now.Year }} 
+                    <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+                {{- end }}
             </span>
         </div>
-
-        
     </footer>
 {{- end }}
 

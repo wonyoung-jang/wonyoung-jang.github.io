@@ -1,0 +1,156 @@
+/* || SITEWIDE */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    /*
+    background: var(--background-theme);
+    color: var(--bg-text);
+    */
+}
+
+/* || GENERAL STYLES */
+html {
+    -webkit-tap-highlight-color: transparent;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+
+body {
+    background: var(--background-theme);
+    color: var(--bg-text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.4;
+    word-break: break-word;
+    margin: 0;
+}
+
+/* Typography */
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Lists */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* Tables */
+table {
+    display: block;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: auto;
+    word-break: keep-all;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Form Elements */
+button {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    &:-webkit-autofill {
+        box-shadow: 0 0 0 50px var(--theme) inset;
+    }
+}
+
+input,
+textarea,
+button {
+    background: var(--background-theme);
+    color: var(--primary);
+    border-radius: var(--radius);
+}
+
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: column wrap;
+    background: var(--theme);
+    color: var(--primary);
+    border-radius: var(--radius);
+}
+
+.main {
+    background: var(--theme);
+    color: var(--primary);
+    border-radius: var(--radius);
+    margin: auto;
+    position: relative;
+    width: var(--max-width);
+    flex: 1;
+    padding: 4rem;
+
+}
+
+.list {
+    &:not(.dark)::-webkit-scrollbar-track {
+        background: var(--code-bg);
+    }
+
+    &:not(.dark)::-webkit-scrollbar-thumb {
+        border: 5px solid var(--code-bg);
+    }
+}
+
+/* || UTILITIES */
+::-webkit-scrollbar-track {
+    background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border: 5px solid var(--theme);
+    border-radius: var(--radius);
+
+    &:hover {
+        background: var(--secondary);
+    }
+}

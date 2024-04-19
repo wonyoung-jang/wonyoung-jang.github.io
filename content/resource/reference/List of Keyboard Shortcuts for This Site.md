@@ -1,5 +1,5 @@
 ---
-title: List Of Keyboard Shortcuts For This Site
+title: List of Keyboard Shortcuts for This Site
 date: 2024-03-29
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 description: This page is a list of keyboard shortcuts for navigating this site.

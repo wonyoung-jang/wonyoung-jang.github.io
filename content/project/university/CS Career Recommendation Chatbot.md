@@ -3,7 +3,7 @@ date: 2024-01-22
 coverimage: ../assets/pandorabots_1709746575902_0.png
 description: Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.
 githubrepo: https://github.com/wonyoung-jang/cs-career-chatbot
-title: Cs Career Recommendation Chatbot
+title: CS Career Recommendation Chatbot
 tags:
 categories:
 lastMod: 2024-04-14

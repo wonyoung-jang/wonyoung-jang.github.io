@@ -1,17 +1,4 @@
 {{- define "main" }}
-{{- if not .IsHome | and .Title }}
-    <header class="page-header">
-        {{ partial "breadcrumbs.html" . }}
-        
-        <h1>{{ .Title }}</h1>
-
-        {{- if .Description }}
-            <div class="post-description">
-                {{ .Description | markdownify }}
-            </div>
-        {{- end }}
-    </header>
-{{- end }}
 
 {{- if .Content }}
     <div class="post-content">
@@ -24,11 +11,6 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
-
-{{- if .IsHome }}
-    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- end }}
-
 {{- $paginator := .Paginate $pages }}
 
 <script>
@@ -154,4 +136,4 @@
     </footer>
 {{- end }}
 
-{{- end }}{{- /* end main */ -}}
+{{- end }}

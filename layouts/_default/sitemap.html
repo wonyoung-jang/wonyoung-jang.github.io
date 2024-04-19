@@ -1,51 +1,46 @@
 {{ define "main" }}
 
-    {{ partial "breadcrumbs.html" .}}
-
-    <div class="sitemap">
-
-        <h1>{{ .Title }}</h1>
-
-        {{ if .Pages }}
-            <div class="sitemap-level-four">
-                {{ range .Pages }}
-                    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                {{ end }}
-            </div>
-        {{ end }}
-
-        <div class="sitemap-level-one">
-            {{ with .Parent }}
-                <h2><a href="{{ .Permalink }}">Home</a></h2>
-            {{ end }}
-            {{ range .Site.Sections }}
-                    {{ if .Pages }}
-                        {{ range .Pages }}
-                            {{ if (eq .Title "") }}
-                                {{ continue }}
-                            {{ else }}
-                                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                {{ if .Pages }}
-                    <div class="sitemap-level-two">
-                        {{ range .Pages }}
-                            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                                {{ if .Pages }}
-                                    <div class="sitemap-level-three">
-                                        {{ range .Pages }}
-                                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                                        {{ end }}
-                                    </div>
-                                {{ end }}
-                        {{ end }}
-                    </div>
-                {{ end }}
+<div class="sitemap">
+    {{ if .Pages }}
+        <div class="sitemap-level-four">
+            {{ range .Pages }}
+                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
             {{ end }}
         </div>
+    {{ end }}
+
+    <div class="sitemap-level-one">
+        {{ with .Parent }}
+            <h2><a href="{{ .Permalink }}">Home</a></h2>
+        {{ end }}
+        {{ range .Site.Sections }}
+                {{ if .Pages }}
+                    {{ range .Pages }}
+                        {{ if (eq .Title "") }}
+                            {{ continue }}
+                        {{ else }}
+                            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if .Pages }}
+                <div class="sitemap-level-two">
+                    {{ range .Pages }}
+                        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                            {{ if .Pages }}
+                                <div class="sitemap-level-three">
+                                    {{ range .Pages }}
+                                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                                    {{ end }}
+                                </div>
+                            {{ end }}
+                    {{ end }}
+                </div>
+            {{ end }}
+        {{ end }}
     </div>
-    
+</div>
+
 {{ end }}

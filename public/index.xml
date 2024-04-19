@@ -6,7 +6,26 @@
     <description>Recent content on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Shrodinger</title>
+      <link>http://localhost:1313/test/</link>
+      <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/</guid>
+      <description>Image {:class medium, :height 506, :width 321}
+Link Logseq
+Internal Link project/software/This Website
+Blockquote Converts &amp;ldquo;&amp;gt; Comment&amp;rdquo; to
+Comment
+Converts &amp;ldquo;Comment to
+1 Comment Namespace Namespace [[Namespace]]
+Page in Namespace
+YouTube Embed YouTube Timestamp @00:02:03
+Highlighted Text Highlighted TextOrg Mode Item 1 &amp;lsquo;&amp;lsquo;&amp;lsquo;Item 2&amp;rsquo;&amp;rsquo;&amp;rsquo; &amp;ldquo;&amp;ldquo;&amp;ldquo;Item 3&amp;quot;&amp;rdquo;&amp;rdquo;
+Clock Logbook Collapsed </description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
@@ -28,9 +47,6 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
       <guid>http://localhost:1313/contact/</guid>
       <description>Contact Me Directly The best way to contact me directly is through email at contact@wonyoungjang.org.
 Give Me Feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
-JavaScript is required to submit this form.
-Thank you for your message. It has been sent.
-There was an error sending your message. Please try again later.
 NameEmailSubjectMessageSubmit</description>
     </item>
     
@@ -45,7 +61,7 @@ NameEmailSubjectMessageSubmit</description>
     </item>
     
     <item>
-      <title>List Of Keyboard Shortcuts For This Site</title>
+      <title>List of Keyboard Shortcuts for This Site</title>
       <link>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-this-site/</link>
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
       
@@ -72,7 +88,7 @@ NameEmailSubjectMessageSubmit</description>
     </item>
     
     <item>
-      <title>First Lego League Challenge Q-Learning Event Scheduler</title>
+      <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
       <link>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       
@@ -99,7 +115,7 @@ NameEmailSubjectMessageSubmit</description>
     </item>
     
     <item>
-      <title>Cs Career Recommendation Chatbot</title>
+      <title>CS Career Recommendation Chatbot</title>
       <link>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       
@@ -153,7 +169,7 @@ NameEmailSubjectMessageSubmit</description>
     </item>
     
     <item>
-      <title>Dvd Rental Database Revenue Insights</title>
+      <title>DVD Rental Database Revenue Insights</title>
       <link>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
@@ -171,7 +187,7 @@ NameEmailSubjectMessageSubmit</description>
     </item>
     
     <item>
-      <title>Bagel Corner And Mister Coffee Database Management</title>
+      <title>Bagel Corner and Mister Coffee Database Management</title>
       <link>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</link>
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       

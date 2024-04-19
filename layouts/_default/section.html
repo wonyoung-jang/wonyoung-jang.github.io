@@ -1,16 +1,11 @@
 {{ define "main" }}
-    <header class="page-header">
-        {{ partial "breadcrumbs.html" . }}
-        <h1>
-            {{ .Title }}
-        </h1>
-    </header>
 
-    <section class="subsections">
-        {{ range .Sections }}
-            <div class="subsection">
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            </div>
-        {{ end }}
-    </section>
+<section class="subsections">
+    {{ range .Sections }}
+        <div class="subsection">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        </div>
+    {{ end }}
+</section>
+
 {{ end }}

@@ -1,13 +1,15 @@
 .toc {
-    width: 85%;
-    display: inline-flex;
-    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     border-radius: var(--radius);
     background-color: var(--toc-background-color);
     color: var(--toc-text-color);
     padding: 1rem;
     cursor: pointer;
     pointer-events: fill;
+    align-items: stretch;
+    justify-content: space-between;
 
     summary {
         font-weight: bold;
@@ -81,38 +83,47 @@
         }
     }
 
-    .collapse-expand {
-        display: inline-flex;
-        margin: 0.8rem 0 0 0;
-        background-color: var(--toc-background-color);
+    & .collapse-expand {
         cursor: pointer;
         pointer-events: fill;
         position: relative;
-        font-size: 1rem;
-        font-weight: bold;
-        justify-content: left;
-    }
-
-    .collapse, .expand {
-        border: 1px solid var(--toc-text-color);
-        border-radius: var(--radius);
-        padding: 0.2rem 0.5rem;
-        margin: 0 0.5rem 0 0;
-
-        &:hover {
-            filter: brightness(1.1);
-            background-color: var(--theme);
-            color: var(--link);
+        align-items: flex-end;
+        justify-content: flex-end; 
+        
+        & .expand {
+            display: none;
+            background: none;
+            border-radius: var(--radius);
+            margin: 0 0.2rem;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            
+            &:hover {
+                filter: brightness(1.1);
+                color: var(--link);
+            }
+            
+            &::before {
+                content: "▼ ";
+                font-size: 0.8rem;
+            }
         }
-    }
-
-    .collapse::after {
-        content: " ▲";
-        font-size: 1rem;
-    }
-
-    .expand::before {
-        content: "▼ ";
-        font-size: 1rem;
+        
+        & .collapse {
+            background: none;
+            border-radius: var(--radius);
+            margin: 0 0.2rem;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            &:hover {
+                filter: brightness(1.1);
+                color: var(--link);
+            }
+            
+            &::before {
+                content: "▲ ";
+                font-size: 0.8rem;
+            }
+        }
     }
 }

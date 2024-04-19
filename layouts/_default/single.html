@@ -1,17 +1,10 @@
 {{- define "main" }}
 
 <article class="post-single">
-  {{/* Breadcrumbs */}}
-  {{ partial "breadcrumbs.html" . }}
-  
   <header class="post-header">
-    {{/* Title */}}
-    <h1 class="post-title">
-      {{ .Title }}
-      {{- if .Draft }}
-        <sup><span class="entry-isdraft">[draft]</span></sup>
-      {{- end }}
-    </h1>
+    {{- if .Draft }}
+      <sup><span class="entry-isdraft">[draft]</span></sup>
+    {{- end }}
 
     {{/* Category + metadata wrap */}}
     <div class="post-meta-wrap">
@@ -21,7 +14,6 @@
         <div class="post-meta">
           {{- partial "post_meta.html" . -}}
           {{- partial "translation_list.html" . -}}
-          {{- partial "edit_post.html" . -}}
           {{- partial "post_canonical.html" . -}}
         </div>
       {{- end }}
@@ -43,13 +35,8 @@
     {{- if (.Param "ShowToc") }}
       {{- partial "toc.html" . }}
     {{- end }}
-
   </header>
 
-  {{/* Cover image */}}
-  {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
-  
   {{/* Post content */}}
   {{- if .Content }}
     <div class="post-content">
@@ -63,6 +50,7 @@
 
   {{/* Backlinks */}}
   {{ partial "backlinks.html" . }}
+
   
   <footer class="post-footer">
     {{/* Post navigation links */}}
@@ -72,14 +60,10 @@
 
     {{/* Share buttons */}}
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+      <h3>Share</h3>
       {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
-
-  {{/* Comments */}}
-  {{- if (.Param "comments") }}
-    {{- partial "comments.html" . }}
-  {{- end }}
 
 </article>
 

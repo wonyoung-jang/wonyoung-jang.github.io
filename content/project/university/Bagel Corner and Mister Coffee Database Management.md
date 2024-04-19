@@ -3,7 +3,7 @@ coverimage: ../assets/bagel_corner_erd_1709745980175_0.jpg
 date: 2022-12-18
 description: Built SQL database models for Bagel Corner & Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.
 githubrepo: https://github.com/wonyoung-jang/bagel-coffee-stores
-title: Bagel Corner And Mister Coffee Database Management
+title: Bagel Corner and Mister Coffee Database Management
 tags:
 categories:
 lastMod: 2024-04-14

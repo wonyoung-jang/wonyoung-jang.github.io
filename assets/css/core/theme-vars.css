@@ -1,8 +1,7 @@
 :root {
     --gap: 24px;
     --content-gap: 20px;
-    --nav-width: 100vw;
-    --main-width: 80vw;
+    --max-width: 100vw;
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 4px;
@@ -22,8 +21,10 @@
 
 
     /* Light Theme */
-    --theme: rgb(255, 255, 255); /* White background */
+    --background-theme: rgb(255, 255, 255); /* White background */
+    --theme: rgb(245, 245, 245); /* White background */
     --entry: rgb(222, 240, 255); /* Light blue for entry */
+    --bg-text: rgb(0, 0, 0); /* Black for primary text */
     --primary: rgb(26, 26, 26); /* Black for primary text */
     --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
     --tertiary: rgb(102, 102, 102); /* Light grey for tertiary elements */
@@ -80,8 +81,10 @@
 
 .dark {
     /* Dark Theme */
-    --theme: rgb(23, 23, 23); /* Dark background */
+    --background-theme: rgb(0, 0, 0); /* Dark background */
+    --theme: rgb(20, 20, 20); /* Dark background */
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
+    --bg-text: rgb(255, 255, 255); /* Light grey for primary text */
     --primary: rgb(226, 226, 226); /* Light grey for primary text */
     --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
     --tertiary: rgb(207, 207, 207); /* Light grey for tertiary elements */
@@ -134,12 +137,4 @@
 
     --verse-bg: #e4a2f2; /* Pastel lavender */
     --verse-text: #333333; /* Dark grey text for contrast */
-}
-
-.list {
-    background: var(--theme);
-}
-
-.dark.list {
-    background: var(--theme);
 }

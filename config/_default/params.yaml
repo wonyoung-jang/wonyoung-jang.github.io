@@ -14,14 +14,15 @@ ShowPostNavLinks: true
 ShowBreadCrumbs: true
 ShowCodeCopyButtons: true
 ShowWordCount: true
-
 ShowRssButtonInSectionTermList: true
+
+ShowCanonicalLink: true
+canonicalURLS: true
 
 disableSpecial1stPost: false
 disableScrollToTop: false
 disableAnchoredHeadings: false
 
-comments: false
 hideMeta: false
 hideSummary: false
 
@@ -103,7 +104,7 @@ cover:
   #     SiteVerificationTag:
 
 # Edit Post - NOT USED
-  # editPost:
-  #   URL: "https://github.com/<path_to_repo>/content"
-  #   Text: "Suggest Changes" # edit text
-  #   appendFilePath: true # to append file path to Edit link
+# editPost:
+#   URL: "https://github.com/<path_to_repo>/content"
+#   Text: "Suggest Changes" # edit text
+#   appendFilePath: true # to append file path to Edit link
