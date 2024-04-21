@@ -1,91 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/</link>
-    <description>Recent content on Wonyoung Jang</description>
+    <title>University on Wonyoung Jang</title>
+    <link>https://wonyoungjang.org/project/university/</link>
+    <description>Recent content in University on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://wonyoungjang.org/about/</link>
-      <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/about/</guid>
-      <description>About Wonyoung Jang Hello, that&amp;rsquo;s me!
-Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
-I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
-I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description>
-    </item>
-    
-    
-    <item>
-      <title>Contact</title>
-      <link>https://wonyoungjang.org/contact/</link>
-      <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/contact/</guid>
-      <description>Contact Me Directly The best way to contact me directly is through email at contact@wonyoungjang.org.
-Give Me Feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
-Name Email Subject Message Submit </description>
-    </item>
-    
-    
-    <item>
-      <title>Sitemap</title>
-      <link>https://wonyoungjang.org/sitemap/</link>
-      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/sitemap/</guid>
-      <description>Sitemap</description>
-    </item>
-    
-    <item>
-      <title>List of Keyboard Shortcuts for This Site</title>
-      <link>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/</link>
-      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/</guid>
-      <description>This page is a list of keyboard shortcuts for navigating this site.</description>
-    </item>
-    
-    <item>
-      <title>Realtime Multiplayer Drawing App</title>
-      <link>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</link>
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</guid>
-      <description>Draw in realtime on a blank canvas with others on the same server.</description>
-    </item>
-    
-    <item>
-      <title>This Website</title>
-      <link>https://wonyoungjang.org/project/software/this-website/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/this-website/</guid>
-      <description>This page is a meta presentation for the deployment of this website (and this page).</description>
-    </item>
-    
-    <item>
-      <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
-      <link>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
-      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
-      <description>A FLLC event scheduler using Q-Learning.</description>
-    </item>
-    
-    <item>
-      <title>Save Top Level Reddit Comments</title>
-      <link>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</link>
-      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</guid>
-      <description>Extract the parent comments of a [reddit](https://www.reddit.com/) post.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/project/university/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Disaster Recovery Robot Simulation</title>
       <link>https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/</link>
@@ -102,15 +23,6 @@ Name Email Subject Message Submit </description>
       
       <guid>https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/</guid>
       <description>Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.</description>
-    </item>
-    
-    <item>
-      <title>Logseq Markdown Tokenizer</title>
-      <link>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</link>
-      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</guid>
-      <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).</description>
     </item>
     
     <item>
@@ -174,15 +86,6 @@ Name Email Subject Message Submit </description>
       
       <guid>https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
       <description>Built SQL database models for Bagel Corner &amp;amp; Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://wonyoungjang.org/graph/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/graph/</guid>
-      <description>&lt;!DOCTYPE html&gt; </description>
     </item>
     
   </channel>
