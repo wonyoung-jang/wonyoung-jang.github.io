@@ -3,6 +3,7 @@ main:
     name: Home
     pageRef: /
     weight: 1
+
   - identifier: Projects
     name: Projects
     pageRef: /project
@@ -17,24 +18,44 @@ main:
     pageRef: /project/university
     parent: Projects
     weight: 2
+
   - identifier: Resource
     name: Resources
     pageRef: /resource
-    weight: 30
+    weight: 20
   - identifier: Reference
     name: Reference
     pageRef: /resource/reference
     parent: Resource
     weight: 1
+
   - identifier: Archives
     name: Archives
     pageRef: /archives
-    weight: 50
-  - identifier: Search
-    name: Search
-    pageRef: /search
-    weight: 60
+    weight: 30
   - identifier: Graph
     name: Graph
     pageRef: /graph/#/graph
-    weight: 70
+    weight: 40
+
+footer:
+  - identifier: Home
+    name: Home
+    pageRef: /
+    weight: 1
+  - identifier: About
+    name: About
+    pageRef: /about
+    weight: 10
+  - identifier: Contact
+    name: Contact
+    pageRef: /contact
+    weight: 20
+  - identifier: Search
+    name: Search
+    pageRef: /search
+    weight: 30
+  - identifier: Sitemap
+    name: Sitemap
+    pageRef: /sitemap
+    weight: 40

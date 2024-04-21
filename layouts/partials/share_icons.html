@@ -20,7 +20,9 @@
     {{ $custom = true }}
 {{ end }}
 
-<div class="share-buttons">
+<div class="share-wrap">
+    <div class="share-buttons">
+    <h3>Share</h3>
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) }}
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on twitter"
         href="https://twitter.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "categories" -}}">
@@ -75,4 +77,5 @@
         </svg>
     </a>
     {{- end }}
+</div>
 </div>

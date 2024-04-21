@@ -4,7 +4,6 @@
 
 <div class="toc">
 
-
     <details {{if (.Param "TocOpen") }} open{{ end }}>
 
         <summary accesskey="c" title="Toggle Contents (ALT + SHIFT + c)">
@@ -19,10 +18,8 @@
                 {{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
                 {{- $headerLevel := len (seq $headerLevel) -}}
 
-                {{/* get id="xyz" */}}
                 {{- $id := index (findRE "(id=\"(.*?)\")" $header 9) 0 }}
 
-                {{- /* strip id="" to leave xyz, no way to get regex capturing groups in hugo */ -}}
                 {{- $cleanedID := replace (replace $id "id=\"" "") "\"" "" }}
                 {{- $header := replaceRE "<h[1-6].*?>((.|\n])+?)</h[1-6]>" "$1" $header -}}
 
@@ -64,8 +61,8 @@
 
             {{- range seq (sub $prevHeaderLevel $topLevelHeader) }}
                 </li>
-                
             {{- end }}
+            
         </div>
     </details>
 

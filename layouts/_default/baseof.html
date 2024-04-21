@@ -1,37 +1,43 @@
 <!DOCTYPE html>
+{{/* HTML */}}    
 <html lang="{{ .Site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
     
-<head>
-    {{- partial "head.html" . }}
-    {{ if .Site.Params.GoogleAnalytics }}
-        {{ partial "analytics-gtag.html" . }}
-    {{ end }}
-    <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
+    {{/* HEAD */}}    
+    <head>
+        {{- partial "head.html" . }}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-</head>
-
-<body class="
-    {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`) (eq .Layout `about`)) -}}
+        {{ if .Site.Params.GoogleAnalytics }}
+            {{ partial "analytics-gtag.html" . }}
+        {{ end }}
+        
+        <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    
+    {{/* BODY */}}    
+    <body class="
+        {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`) (eq .Layout `about`)) -}}
         {{- print "list" -}}
-    {{- end -}}
-
-    {{- if eq $.Site.Params.defaultTheme `dark` -}}
+        {{- end -}}
+        
+        {{- if eq $.Site.Params.defaultTheme `dark` -}}
         {{- print " dark" }}
-    {{- end -}}"
-    
-    id="top">
-    
-    {{- partialCached "header.html" . .Page -}}
-    
-    <main class="main">
-        {{- block "main" . }}{{ end }}
-    </main>
+        {{- end -}}"
+        
+        id="top">
+        
+        {{- partialCached "header.html" . .Page -}}
+        
+        {{/* MAIN */}}    
+        <main class="main">
+            {{- block "main" . }}{{ end }}
+        </main>
 
-    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-</body>
+        {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    </body>
 
 </html>

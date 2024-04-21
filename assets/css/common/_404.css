@@ -1,0 +1,32 @@
+/* 404 Page */
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(var(--gap) * 2);
+}
+
+.page-not-found-header {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.page-not-found {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.go-home {
+    padding: 1rem;
+    border-radius: calc(var(--radius) * 4);
+    background: var(--entry);
+    
+    & a {
+        color: var(--primary);
+    }
+    
+    &:hover {
+        filter: brightness(1.1);
+    }
+}

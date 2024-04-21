@@ -1,15 +1,9 @@
 import * as params from '@params';
 
 var fuse; // holds our search engine
-var current_page_title = document.title;
-console.log(current_page_title);
-
-var searchInput = document.getElementById('searchInput');
-var searchResults = document.getElementById('searchResults');
-var inlineSearchInput = document.getElementById('inline-searchInput');
-var inlineSearchResults = document.getElementById('inline-searchResults');
-
-var first, last, current_elem = null;
+var resList = document.getElementById('searchResults');
+var sInput = document.getElementById('searchInput');
+var first, last, current_elem = null
 var resultsAvailable = false;
 
 // load our search index
@@ -19,7 +13,6 @@ window.onload = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 var data = JSON.parse(xhr.responseText);
-                console.log(data);
                 if (data) {
                     // fuse.js options; check fuse.js website for details
                     var options = {
@@ -46,7 +39,7 @@ window.onload = function () {
                             threshold: params.fuseOpts.threshold ? params.fuseOpts.threshold : 0.4,
                             distance: params.fuseOpts.distance ? params.fuseOpts.distance : 100,
                             ignoreLocation: params.fuseOpts.ignorelocation ? params.fuseOpts.ignorelocation : true
-                        };
+                        }
                     }
                     fuse = new Fuse(data, options); // build the index from the json file
                 }
@@ -55,128 +48,100 @@ window.onload = function () {
             }
         }
     };
-    xhr.open('GET', "../index.json");
+    xhr.open('GET', "/index.json");
     xhr.send();
-};
+}
 
 function activeToggle(ae) {
     document.querySelectorAll('.focus').forEach(function (element) {
         // rm focus class
-        element.classList.remove("focus");
+        element.classList.remove("focus")
     });
     if (ae) {
-        ae.focus();
+        ae.focus()
         document.activeElement = current_elem = ae;
-        ae.parentElement.classList.add("focus");
+        ae.parentElement.classList.add("focus")
     } else {
-        document.activeElement.parentElement.classList.add("focus");
+        document.activeElement.parentElement.classList.add("focus")
     }
 }
 
 function reset() {
     resultsAvailable = false;
-    if (searchInput) {
-        searchInput.value = '';
-    }
-    if (inlineSearchInput) {
-        inlineSearchInput.value = '';
-    }
-    if (searchResults) {
-        searchResults.innerHTML = '';
-    }
-    if (inlineSearchResults) {
-        inlineSearchResults.innerHTML = '';
-    }
-    if (searchInput) {
-        searchInput.focus();
-    } else if (inlineSearchInput) {
-        inlineSearchInput.focus();
-    }
+    resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
+    sInput.focus(); // shift focus to input box
 }
 
-function performSearch(inputElement, resultsElement) {
-    if (fuse && inputElement && resultsElement) {
-        const results = fuse.search(inputElement.value.trim());
+// execute search as each character is typed
+sInput.onkeyup = function (e) {
+    // run a search query (for "term") every time a letter is typed
+    // in the search box
+    if (fuse) {
+        const results = fuse.search(this.value.trim()); // the actual query being run using fuse.js
         if (results.length !== 0) {
-            let resultSet = '';
+            // build our html if result exists
+            let resultSet = ''; // our results bucket
+
             for (let item in results) {
                 resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
-                    `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`;
+                    `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`
             }
-            resultsElement.innerHTML = resultSet;
+
+            resList.innerHTML = resultSet;
             resultsAvailable = true;
-            first = resultsElement.firstChild;
-            last = resultsElement.lastChild;
+            first = resList.firstChild;
+            last = resList.lastChild;
         } else {
             resultsAvailable = false;
-            resultsElement.innerHTML = '';
+            resList.innerHTML = '';
         }
     }
 }
 
-function attachListeners(inputElement, resultsElement) {
-    if (inputElement) {
-        inputElement.onkeyup = function (e) {
-            if (e.key !== "Enter") {
-                performSearch(inputElement, resultsElement);
-            }
-        };
-
-        inputElement.addEventListener('search', function (e) {
-            if (!this.value) {
-                reset();
-            }
-        });
-    }
-}
-
-attachListeners(searchInput, searchResults);
-attachListeners(inlineSearchInput, inlineSearchResults);
+sInput.addEventListener('search', function (e) {
+    // clicked on x
+    if (!this.value) reset()
+})
 
 // kb bindings
 document.onkeydown = function (e) {
     let key = e.key;
     var ae = document.activeElement;
 
-    let inbox = searchInput && document.getElementById("searchbox").contains(ae) ||
-        inlineSearchInput && document.getElementById("inline-searchbox").contains(ae);
+    let inbox = document.getElementById("searchbox").contains(ae)
 
-    if (key === "Enter") {
-        if (ae === searchInput || ae === inlineSearchInput) {
-            let inputElement = ae === searchInput ? searchInput : inlineSearchInput;
-            let resultsElement = ae === searchInput ? searchResults : inlineSearchResults;
-            performSearch(inputElement, resultsElement);
-        }
-    }
-
-    if (ae === searchInput || ae === inlineSearchInput) {
+    if (ae === sInput) {
         var elements = document.getElementsByClassName('focus');
         while (elements.length > 0) {
             elements[0].classList.remove('focus');
         }
-    } else if (current_elem) {
-        ae = current_elem;
-    }
+    } else if (current_elem) ae = current_elem;
 
     if (key === "Escape") {
-        reset();
+        reset()
     } else if (!resultsAvailable || !inbox) {
-        return;
+        return
     } else if (key === "ArrowDown") {
         e.preventDefault();
-        if (ae === searchInput || ae === inlineSearchInput) {
-            activeToggle(ae.nextElementSibling.firstChild.lastChild);
+        if (ae == sInput) {
+            // if the currently focused element is the search input, focus the <a> of first <li>
+            activeToggle(resList.firstChild.lastChild);
         } else if (ae.parentElement != last) {
+            // if the currently focused element's parent is last, do nothing
+            // otherwise select the next search result
             activeToggle(ae.parentElement.nextSibling.lastChild);
         }
     } else if (key === "ArrowUp") {
         e.preventDefault();
         if (ae.parentElement == first) {
-            activeToggle(ae.parentElement.previousElementSibling);
-        } else if (ae !== searchInput && ae !== inlineSearchInput) {
+            // if the currently focused element is first item, go to input box
+            activeToggle(sInput);
+        } else if (ae != sInput) {
+            // if the currently focused element is input box, do nothing
+            // otherwise select the previous search result
             activeToggle(ae.parentElement.previousSibling.lastChild);
         }
     } else if (key === "ArrowRight") {
-        ae.click();
+        ae.click(); // click on active link
     }
-};
+}

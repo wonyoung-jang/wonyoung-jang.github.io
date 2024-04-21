@@ -1,32 +1,44 @@
 {{- if not (.Param "hideFooter") }}
+
+    {{/* FOOTER */}}
     <footer class="footer">
 
-        <div class="social-icons-container">
+        {{/* SOCIAL ICONS */}}
+        <div class="footer-social-icons">
             <h3>Follow or Find Me At</h3>
             {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
         </div>
 
-        <div class="footer-links-container">
+        {{/* QUICK LINKS - FOOTER MENU */}}
+        <div class="footer-quick-links">
             <h3>Quick Links</h3>
-
-            <ul class="utilities-footer">
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/sitemap">Sitemap</a></li>
+            <ul id="footer-menu">
+                {{ $page := . }}
+                {{ range .Site.Menus.footer }}
+                <li class="{{ if $page.IsMenuCurrent "footer" . }}active{{ end }}">
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
             </ul>
-
-            <span class="copyright">
-                {{- if .Site.Copyright }}
-                    {{ .Site.Copyright | markdownify }}
-                {{- else }}
-                    &copy; 
-                    {{ now.Year }} 
-                    <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
-                {{- end }}
-            </span>
         </div>
+
+    </footer>
+    
+    <footer class="footer-copyright">
+        
+        {{/* COPYRIGHT */}}
+        {{- if .Site.Copyright }}
+            {{ .Site.Copyright | markdownify }}
+        {{- else }}
+            &copy; 
+            {{ now.Year }} 
+            <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+        {{- end }}
+
     </footer>
 {{- end }}
+
+
 
 {{- if (not .Site.Params.disableScrollToTop) }}
     <a href="#top" aria-label="go to top" title="Go to Top (ALT + SHIFT + g)" class="top-link" id="top-link" accesskey="g">
@@ -144,4 +156,6 @@
             }
         });
     </script>
-{{- end }}
+{{ end }}
+
+

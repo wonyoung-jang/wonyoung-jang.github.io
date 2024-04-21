@@ -1,27 +1,37 @@
 {{- define "main" }}
 
 {{- if (and .Site.Params.profileMode.enabled .IsHome) }}
+{{/* HOME PAGE DIV */}}
 <div class="profile">
-
+    
     {{- with .Site.Params.profileMode }}
+    {{/* HOME PAGE INNER DIV */}}
     <div class="profile_inner">
         
+        {{/* HOME PAGE IMG */}}
         {{- if .imageUrl -}}
-        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
-            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
 
-        <h1>{{ .title | default $.Site.Title | markdownify }}</h1>
-        <span class="subtitle">{{ .subtitle | markdownify }}</span>
+        <h1>
+            {{ .title | default $.Site.Title | markdownify }}
+        </h1>
 
+        {{/* HOME PAGE SUBTITLE */}}
+        <span class="subtitle">
+            {{ .subtitle | markdownify }}
+        </span>
+        
+        {{/* HOME PAGE BUTTONS (a) */}}
         {{- with .buttons }}
-        <div class="buttons">
-            {{- range . }}
-                <a class="button {{ .name | urlize }}" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
-                    <span class="button-inner">{{ .name | title }}</span>
-                </a>
-            {{- end }}
-        </div>
+            <div class="buttons">
+                {{- range . }}
+                    <a class="button {{ .name | urlize }}" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
+                        <span class="button-inner">{{ .name | title }}</span>
+                    </a>
+                {{- end }}
+            </div>
         {{- end }}
 
     </div>

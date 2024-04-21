@@ -15,6 +15,7 @@ ShowBreadCrumbs: true
 ShowCodeCopyButtons: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
+ShowAllPagesInArchive: true
 
 ShowCanonicalLink: true
 canonicalURLS: true
@@ -36,7 +37,7 @@ copyright: "<!--Creative Commons License-->This site is licensed under a [Creati
 
 # Assets
 assets:
-  disableHLJS: true
+  disableHLJS: false
   disableFingerprinting: false
   favicon: '/favicon.ico'
   favicon16x16: '/favicon-16x16.png'

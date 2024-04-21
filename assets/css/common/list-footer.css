@@ -1,0 +1,36 @@
+/* List Footer */
+footer.list-footer {
+    text-align: center;
+    
+    /* Pagination */
+    & nav.pagination {
+        & a {
+            padding: 1vh 1vw;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: var(--gap);
+            filter: brightness(1.1);
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+        
+        & span {
+            padding: 1vh 1vw;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: var(--gap);
+            filter: brightness(1.1);
+        }
+        
+        & .disabled {
+            pointer-events: none;
+            filter: grayscale(1) opacity(0.3);
+            font-weight: normal;
+            border: transparent;
+        }
+    }
+}

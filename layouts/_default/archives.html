@@ -1,12 +1,9 @@
 {{- define "main" }}
 
-<span class="filter-and-sort">
-  <span class="sort-order">⇅</span>
-  <select id="sort-select" class="sort">
-    <option value="newest">Newest</option>
-    <option value="oldest">Oldest</option>
-  </select>
-</span>
+{{/* SORT */}}
+<div class="sort-order">
+  <button id="sort-button" class="sort">Newest</button>
+</div>
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
@@ -59,11 +56,11 @@
 <script>
   function sortOrder() {
     // Sort based on the selected in sort-order
-    const sortOrder = document.querySelector(".sort").value;
+    const sortOrder = document.querySelector(".sort").textContent;
     const entries = document.querySelectorAll(".archive-entry");
   
     const sortedEntries = Array.from(entries).sort((a, b) => {
-      if (sortOrder === "newest") {
+      if (sortOrder === "Newest") {
         return (
           new Date(b.querySelector(".archive-meta span").textContent) -
           new Date(a.querySelector(".archive-meta span").textContent)
@@ -81,7 +78,7 @@
     const sortedMonths = Array.from(months).sort((a, b) => {
       const aEntries = a.querySelectorAll(".archive-entry");
       const bEntries = b.querySelectorAll(".archive-entry");
-      if (sortOrder === "newest") {
+      if (sortOrder === "Newest") {
         return bEntries.length - aEntries.length;
       } else {
         return aEntries.length - bEntries.length;
@@ -93,7 +90,7 @@
     const sortedYears = Array.from(years).sort((a, b) => {
       const aEntries = a.querySelectorAll(".archive-entry");
       const bEntries = b.querySelectorAll(".archive-entry");
-      if (sortOrder === "newest") {
+      if (sortOrder === "Newest") {
         return bEntries.length - aEntries.length;
       } else {
         return aEntries.length - bEntries.length;
@@ -119,21 +116,15 @@
     });
   }
   
-  document.querySelector(".sort").addEventListener("change", () => {
+  document.querySelector(".sort").addEventListener("click", () => {
+    const sortButton = document.querySelector(".sort");
+    if (sortButton.textContent === "Newest") {
+      sortButton.textContent = "Oldest";
+    } else {
+      sortButton.textContent = "Newest";
+    }
     sortOrder();
   });
-  
-  function setSelectedOption(selectId, value) {
-    const select = document.getElementById(selectId);
-    const options = select.options;
-    for (let i = 0; i < options.length; i++) {
-      if (options[i].value === value) {
-        options[i].setAttribute("selected", "selected");
-      } else {
-        options[i].removeAttribute("selected");
-      }
-    }
-  }
   
   // Set the initial selected options
   setSelectedOption("sort-select", "newest");

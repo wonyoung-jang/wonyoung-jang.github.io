@@ -1,10 +1,12 @@
 :root {
+    /* || COMMON PROPERTIES */
     --gap: 24px;
     --content-gap: 20px;
     --max-width: 100vw;
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 4px;
+    --btn-rad: 16px;
 
     /* Category Colors */
     --category-text: #000000;
@@ -19,29 +21,7 @@
     --category9-bg: #D8BFD8;
     --category10-bg: #ADD8E6;
 
-
-    /* Light Theme */
-    --background-theme: rgb(255, 255, 255); /* White background */
-    --theme: rgb(245, 245, 245); /* White background */
-    --entry: rgb(222, 240, 255); /* Light blue for entry */
-    --bg-text: rgb(0, 0, 0); /* Black for primary text */
-    --primary: rgb(26, 26, 26); /* Black for primary text */
-    --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
-    --tertiary: rgb(102, 102, 102); /* Light grey for tertiary elements */
-    --content: rgb(0, 0, 0); /* Black for content */
-    --hljs-bg: rgb(15, 10, 10); /* Very light purple for code highlight background */
-    --code-bg: rgb(226, 131, 226); /* Light purple for code blocks */
-    --border: rgb(70, 55, 70); /* Plum for borders */
-    --link: rgb(79, 79, 255); /* Blue for links */
-    --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
-    
-    --form-bg: rgb(240, 240, 240); /* Lighter background for forms */
-    --top-link-bg: rgb(220, 220, 220); /* White background for top link */
-
-    --toc-background-color: rgb(236, 236, 236); /* White with 90% opacity for TOC background */
-    --toc-text-color: rgb(0, 0, 0); /* Indigo for TOC text */
-
-    /* Admonition colors for light theme */
+    /* ADMONITIONS */
     --quote-bg: #f8d0cb; /* Light pastel red */
     --quote-text: #5a2a27; /* Dark red text for contrast */
 
@@ -77,10 +57,31 @@
 
     --verse-bg: #e8cbf8; /* Light pastel lavender */
     --verse-text: #40275a; /* Dark lavender text for contrast */
+
+    /* || LIGHT THEME SPECIFIC */
+    --background-theme: rgb(255, 255, 255); /* White background */
+    --theme: rgb(245, 245, 245); /* White background */
+    --entry: rgb(222, 240, 255); /* Light blue for entry */
+    --bg-text: rgb(0, 0, 0); /* Black for primary text */
+    --primary: rgb(26, 26, 26); /* Black for primary text */
+    --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
+    --tertiary: rgb(102, 102, 102); /* Light grey for tertiary elements */
+    --content: rgb(0, 0, 0); /* Black for content */
+    --hljs-bg: rgb(15, 10, 10); /* Very light purple for code highlight background */
+    --code-bg: rgb(226, 131, 226); /* Light purple for code blocks */
+    --border: rgb(70, 55, 70); /* Plum for borders */
+    --link: rgb(79, 79, 255); /* Blue for links */
+    --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
+    
+    --form-bg: rgb(240, 240, 240); /* Lighter background for forms */
+    --top-link-bg: rgb(220, 220, 220); /* White background for top link */
+
+    --toc-background-color: rgb(236, 236, 236); /* White with 90% opacity for TOC background */
+    --toc-text-color: rgb(0, 0, 0); /* Indigo for TOC text */
 }
 
 .dark {
-    /* Dark Theme */
+    /* || DARK THEME SPECIFIC */
     --background-theme: rgb(0, 0, 0); /* Dark background */
     --theme: rgb(20, 20, 20); /* Dark background */
     --entry: rgb(9, 31, 44); /* Dark blue for entry */
@@ -100,41 +101,4 @@
     
     --toc-background-color: rgb(44, 44, 44); /* Dark background for TOC */
     --toc-text-color: rgb(255, 255, 255);  /* White for TOC text */
-
-    /* Admonition colors for dark theme */
-    --quote-bg: #f2b2a8; /* Pastel red */
-    --quote-text: #333333; /* Dark grey text for contrast */
-
-    --caution-bg: #f3cea2; /* Pastel orange */
-    --caution-text: #333333; /* Dark grey text for contrast */
-
-    --tip-bg: #f7eb9b; /* Pastel yellow */
-    --tip-text: #333333; /* Dark grey text for contrast */
-    
-    --important-bg: #c8f2a2; /* Pastel lime green */
-    --important-text: #333333; /* Dark grey text for contrast */
-    
-    --note-bg: #9ed2f6; /* Pastel blue */
-    --note-text: #333333; /* Dark grey text for contrast */
-    
-    --pinned-bg: #9fa7f2; /* Pastel indigo */
-    --pinned-text: #333333; /* Dark grey text for contrast */
-
-    --comment-bg: #cd9ef6; /* Pastel purple */
-    --comment-text: #333333; /* Dark grey text for contrast */
-
-    --example-bg: #f2a2d2; /* Pastel pink */
-    --example-text: #333333; /* Dark grey text for contrast */
-
-    --warning-bg: #f2a2a8; /* Pastel rose */
-    --warning-text: #333333; /* Dark grey text for contrast */
-
-    --query-bg: #a2e2f2; /* Pastel cyan */
-    --query-text: #333333; /* Dark grey text for contrast */
-
-    --export-bg: #a2f2b2; /* Pastel mint green */
-    --export-text: #333333; /* Dark grey text for contrast */
-
-    --verse-bg: #e4a2f2; /* Pastel lavender */
-    --verse-text: #333333; /* Dark grey text for contrast */
 }

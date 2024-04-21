@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wonyoung Jang</title>
-    <link>http://localhost:1313/</link>
+    <link>https://wonyoungjang.org/</link>
     <description>Recent content on Wonyoung Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Shrodinger</title>
-      <link>http://localhost:1313/test/</link>
+      <link>https://wonyoungjang.org/test/</link>
       <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/test/</guid>
+      <guid>https://wonyoungjang.org/test/</guid>
       <description>Image {:class medium, :height 506, :width 321}
 Link Logseq
 Internal Link project/software/This Website
@@ -28,10 +28,10 @@ Clock Logbook Collapsed </description>
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://wonyoungjang.org/about/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://wonyoungjang.org/about/</guid>
       <description>About Wonyoung Jang Hello, that&amp;rsquo;s me!
 Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
 I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
@@ -41,10 +41,10 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
     
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://wonyoungjang.org/contact/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://wonyoungjang.org/contact/</guid>
       <description>Contact Me Directly The best way to contact me directly is through email at contact@wonyoungjang.org.
 Give Me Feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
 NameEmailSubjectMessageSubmit</description>
@@ -53,154 +53,154 @@ NameEmailSubjectMessageSubmit</description>
     
     <item>
       <title>Sitemap</title>
-      <link>http://localhost:1313/sitemap/</link>
+      <link>https://wonyoungjang.org/sitemap/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/sitemap/</guid>
+      <guid>https://wonyoungjang.org/sitemap/</guid>
       <description>Sitemap</description>
     </item>
     
     <item>
       <title>List of Keyboard Shortcuts for This Site</title>
-      <link>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-this-site/</link>
+      <link>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/</link>
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-this-site/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/</guid>
       <description>This page is a list of keyboard shortcuts for navigating this site.</description>
     </item>
     
     <item>
       <title>Realtime Multiplayer Drawing App</title>
-      <link>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</link>
+      <link>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</guid>
+      <guid>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</guid>
       <description>Draw in realtime on a blank canvas with others on the same server.</description>
     </item>
     
     <item>
       <title>This Website</title>
-      <link>http://localhost:1313/project/software/this-website/</link>
+      <link>https://wonyoungjang.org/project/software/this-website/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/software/this-website/</guid>
+      <guid>https://wonyoungjang.org/project/software/this-website/</guid>
       <description>This page is a meta presentation for the deployment of this website (and this page).</description>
     </item>
     
     <item>
       <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
-      <link>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
+      <link>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
+      <guid>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
       <description>A FLLC event scheduler using Q-Learning.</description>
     </item>
     
     <item>
       <title>Save Top Level Reddit Comments</title>
-      <link>http://localhost:1313/project/software/save-top-level-reddit-comments/</link>
+      <link>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/software/save-top-level-reddit-comments/</guid>
+      <guid>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</guid>
       <description>Extract the parent comments of a [reddit](https://www.reddit.com/) post.</description>
     </item>
     
     <item>
       <title>Disaster Recovery Robot Simulation</title>
-      <link>http://localhost:1313/project/university/disaster-recovery-robot-simulation/</link>
+      <link>https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/</link>
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/disaster-recovery-robot-simulation/</guid>
+      <guid>https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/</guid>
       <description>Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration.</description>
     </item>
     
     <item>
       <title>CS Career Recommendation Chatbot</title>
-      <link>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</link>
+      <link>https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</guid>
+      <guid>https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/</guid>
       <description>Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.</description>
     </item>
     
     <item>
       <title>Logseq Markdown Tokenizer</title>
-      <link>http://localhost:1313/project/software/logseq-markdown-tokenizer/</link>
+      <link>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</link>
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/software/logseq-markdown-tokenizer/</guid>
+      <guid>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</guid>
       <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).</description>
     </item>
     
     <item>
       <title>Package Delivery Route Optimization</title>
-      <link>http://localhost:1313/project/university/package-delivery-route-optimization/</link>
+      <link>https://wonyoungjang.org/project/university/package-delivery-route-optimization/</link>
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/package-delivery-route-optimization/</guid>
+      <guid>https://wonyoungjang.org/project/university/package-delivery-route-optimization/</guid>
       <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.</description>
     </item>
     
     <item>
       <title>Hotel Reservation Manager</title>
-      <link>http://localhost:1313/project/university/hotel-reservation-manager/</link>
+      <link>https://wonyoungjang.org/project/university/hotel-reservation-manager/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/hotel-reservation-manager/</guid>
+      <guid>https://wonyoungjang.org/project/university/hotel-reservation-manager/</guid>
       <description>Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).</description>
     </item>
     
     <item>
       <title>Vacation Cart Manager</title>
-      <link>http://localhost:1313/project/university/vacation-cart-manager/</link>
+      <link>https://wonyoungjang.org/project/university/vacation-cart-manager/</link>
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/vacation-cart-manager/</guid>
+      <guid>https://wonyoungjang.org/project/university/vacation-cart-manager/</guid>
       <description>Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&amp;#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems.</description>
     </item>
     
     <item>
       <title>Retail Inventory Manager</title>
-      <link>http://localhost:1313/project/university/retail-inventory-manager/</link>
+      <link>https://wonyoungjang.org/project/university/retail-inventory-manager/</link>
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/retail-inventory-manager/</guid>
+      <guid>https://wonyoungjang.org/project/university/retail-inventory-manager/</guid>
       <description>Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&amp;#39;s needs.</description>
     </item>
     
     <item>
       <title>DVD Rental Database Revenue Insights</title>
-      <link>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</link>
+      <link>https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</guid>
+      <guid>https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/</guid>
       <description>Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query.</description>
     </item>
     
     <item>
       <title>Student Record System</title>
-      <link>http://localhost:1313/project/university/student-record-system/</link>
+      <link>https://wonyoungjang.org/project/university/student-record-system/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/student-record-system/</guid>
+      <guid>https://wonyoungjang.org/project/university/student-record-system/</guid>
       <description>Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming.</description>
     </item>
     
     <item>
       <title>Bagel Corner and Mister Coffee Database Management</title>
-      <link>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</link>
+      <link>https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/</link>
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
+      <guid>https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
       <description>Built SQL database models for Bagel Corner &amp;amp; Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/graph/</link>
+      <link>https://wonyoungjang.org/graph/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/graph/</guid>
+      <guid>https://wonyoungjang.org/graph/</guid>
       <description>&lt;!DOCTYPE html&gt; </description>
     </item>
     

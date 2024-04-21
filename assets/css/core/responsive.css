@@ -92,14 +92,8 @@
     }
 
     /* Toggle View */
-    #toggleViewBtn {
+    #toggle-view-button {
         display: none;
-    }
-
-    /* Entry Cover */
-    .posts-container:not([style*="grid"]) .entry-cover {
-        width: 6rem;
-        object-fit: cover;
     }
 
     /* Post Single Header */

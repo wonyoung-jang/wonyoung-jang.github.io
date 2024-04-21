@@ -1,41 +1,46 @@
 {{- define "main" }}
 
-<article class="post-single">
-  <header class="post-header">
-    {{- if .Draft }}
-      <sup><span class="entry-isdraft">[draft]</span></sup>
+{{/* Post Header */}}
+<header class="post-header">
+  {{- if .Draft }}
+    <sup><span class="entry-isdraft">[draft]</span></sup>
+  {{- end }}
+
+  {{/* Category + metadata wrap */}}
+  <div class="post-meta-wrap">
+
+    {{/* Metadata */}}
+    {{- if not (.Param "hideMeta") }}
+      <div class="post-meta">
+        {{- partial "post_meta.html" . -}}
+        {{- partial "translation_list.html" . -}}
+        {{- partial "post_canonical.html" . -}}
+      </div>
     {{- end }}
+  </div>
 
-    {{/* Category + metadata wrap */}}
-    <div class="post-meta-wrap">
-
-      {{/* Metadata */}}
-      {{- if not (.Param "hideMeta") }}
-        <div class="post-meta">
-          {{- partial "post_meta.html" . -}}
-          {{- partial "translation_list.html" . -}}
-          {{- partial "post_canonical.html" . -}}
-        </div>
-      {{- end }}
-    </div>
-
-    {{/* Github button */}}
+  {{/* Github button */}}
+  <div class="post-github-button">
     {{ with .Params.githubRepo }}
       {{ partial "github_button.html" (dict "githubRepo" .) }}
     {{ end }}
+  </div>
 
-    {{/* Description */}}
-    {{- if .Description }}
-      <p class="post-description">
-        {{ .Description | markdownify }}
-      </p>
-    {{- end }}
+  {{/* Description */}}
+  {{- if .Description }}
+    <p class="post-description">
+      {{ .Description | markdownify }}
+    </p>
+  {{- end }}
 
-    {{/* Table of Contents */}}
-    {{- if (.Param "ShowToc") }}
-      {{- partial "toc.html" . }}
-    {{- end }}
-  </header>
+  {{/* Table of Contents */}}
+  {{- if (.Param "ShowToc") }}
+    {{- partial "toc.html" . }}
+  {{- end }}
+</header>
+
+{{/* Post Single */}}
+<article class="post-single">
 
   {{/* Post content */}}
   {{- if .Content }}
@@ -51,20 +56,21 @@
   {{/* Backlinks */}}
   {{ partial "backlinks.html" . }}
 
-  
-  <footer class="post-footer">
-    {{/* Post navigation links */}}
-    {{- if (.Param "ShowPostNavLinks") }}
-      {{- partial "post_nav_links.html" . }}
-    {{- end }}
-
-    {{/* Share buttons */}}
-    {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-      <h3>Share</h3>
-      {{- partial "share_icons.html" . -}}
-    {{- end }}
-  </footer>
-
 </article>
+
+{{/* Post Footer */}}
+<footer class="post-footer">
+
+  {{/* Share buttons */}}
+  {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+  {{- end }}
+
+  {{/* Post navigation links */}}
+  {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+  {{- end }}
+  
+</footer>
 
 {{- end }}{{/* end main */}}
