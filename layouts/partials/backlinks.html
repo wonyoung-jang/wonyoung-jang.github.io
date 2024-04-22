@@ -1,41 +1,23 @@
-{{ $re := printf "\\({{< ref \\\"/pages/%s\\\" >}}\\)" $.File.BaseFileName}}
-  {{ $backlinks := slice }} 
-  {{ range where .Site.RegularPages "Type" "pages" }} 
-    {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
-      {{ $backlinks = $backlinks | append . }} 
-    {{ end }}
-  {{ end }} 
+{{ $re := $.File.BaseFileName }}
+{{ $backlinks := slice }} 
+{{ range where .Site.RegularPages "Type" "page" }} 
+  {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName))  (not (hasPrefix .RelPermalink "/graph")) }} 
+    {{ $backlinks = $backlinks | append . }} 
+  {{ end }}
+{{ end }} 
 
 {{ if gt (len $backlinks) 0 }}
 
-  <aside>
-    <h2>Links here</h2>
-
-    <div class="backlinks">
-      <ul style="padding-left: 2vw;">
-        {{ range $backlinks }}
-          <li><p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p></li>
-        {{ end }}
-      </ul>
-    </div>
-
-  </aside>
+<aside class="backlinks">
+  <h2>See Also</h2>
+  <ul>
+    {{ range $backlinks }}
+      <li>
+        <a href="{{ .RelPermalink }}"> {{ .Title }} </a>
+      </li>
+    {{ end }}
+  </ul>
+</aside>
 
 {{ end }}
 
-<aside class="related">
-
-  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
-  
-  {{ with $related -}}
-    <h2>See also</h2>
-      <ul style="padding-left: 2vw;">
-        {{ range . -}}
-            <li><p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p></li>
-        {{ end -}}
-      </ul>
-  {{ else -}}
-      <p>No related pages found.</p>
-  {{ end -}}
-
-</aside>

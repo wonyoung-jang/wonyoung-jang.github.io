@@ -27,7 +27,7 @@ disableAnchoredHeadings: false
 hideMeta: false
 hideSummary: false
 
-UseHugoToc: true
+UseHugoToc: false
 showtoc: true
 tocopen: true
 
@@ -72,6 +72,13 @@ profileMode:
 #homeInfoParams:
 #  Title:
 #  Content:
+
+googleAnalytics: G-RTMKJG4NFZ
+# Sitemap
+sitemap:
+  filename: sitemap.xml
+  priority: 0.5
+  changefreq: daily
 
 # Social Links
 socialIcons:

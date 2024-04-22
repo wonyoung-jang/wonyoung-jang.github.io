@@ -1,22 +1,41 @@
 /*  Backlinks & Related Posts */
-.backlinks {
-    & a {
-        display: inline-block;
-        color: var(--link);
+aside.backlinks {
+    background: var(--toc-background-color);
+    display: block;
+    border-radius: var(--btn-rad);
 
-        &:hover {
-            text-decoration: underline;
-        }
+    & h2 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        background: var(--background-theme);
+        border-top-left-radius: var(--btn-rad);
+        border-top-right-radius: var(--btn-rad);
     }
-}
 
-.related {
-    & a {
-        display: inline-block;
-        color: var(--link);
+    & ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        margin: 1rem 0;
+        padding: 0 1rem;
         
-        &:hover {
-            text-decoration: underline;
+        & li {
+            list-style: none;
+            padding: 1rem;
+            background: var(--entry);
+            border-radius: var(--btn-rad);
+
+            & a {
+                display: inline-block;
+                
+                &:hover {
+                    color: var(--link);
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
