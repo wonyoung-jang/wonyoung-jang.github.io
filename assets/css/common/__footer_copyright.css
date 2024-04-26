@@ -1,0 +1,18 @@
+/* || FOOTER - COPYRIGHT */
+footer.footer-copyright {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-background3);
+    color: var(--color-on-surface-low);
+
+    a {
+        color: var(--color-on-surface-low);
+        
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

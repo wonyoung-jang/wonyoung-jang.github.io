@@ -14,3 +14,7 @@ output.md
 partials.md
 content/test.md
 utils.tsx
+output.csv
+scrape2.py
+gen_sass_skel.py
+gen.py

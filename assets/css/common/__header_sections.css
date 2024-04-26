@@ -1,0 +1,83 @@
+/* || HEADER SECTIONS*/
+header.header-sections {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.07813rem;
+  font-style: normal;
+
+  & nav.nav-menu {
+    /* Styles for the main navigation menu container */
+    & svg {
+      flex-shrink: 0;
+    }
+
+    & button.menu-icon {
+      display: none;
+      font-size: 2rem;
+      color: var(--color-on-surface);
+      cursor: pointer;
+    }
+
+    & ul.menu {
+      /* Styles for the top-level <ul> element */
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: stretch;
+      justify-content: space-around;
+      width: fit-content;
+      
+      & a {
+        color: var(--color-on-surface);
+
+        &.focus {
+          background: var(--color-surface);
+        }
+      }
+
+      & li {
+        /* Styles for the top-level <li> elements */
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        position: relative;
+
+        & ul.sub-menu {
+          display: none;
+        }
+
+        &:hover ul.sub-menu {
+          display: flex;
+          flex-flow: column nowrap;
+          position: absolute;
+          top: 100%;
+          left: 0%;
+          z-index: 10;
+          background: var(--color-background0);
+        }
+
+        &.active {
+          background: var(--color-surface);
+
+          & a {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    & a {
+      /* Styles for the top-level <a> elements */
+      color: var(--color-on-surface);
+    }
+  }
+}

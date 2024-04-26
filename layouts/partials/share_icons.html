@@ -1,18 +1,6 @@
 {{- $pageurl := .Permalink }}
 {{- $title := .Title }}
 
-{{- $.Scratch.Set "categories" ""}}
-
-{{- with .Params.categories }}
-    {{- $hashtags := newScratch}}
-
-    {{- range . }}
-        {{ $hashtags.Add "categories" (slice (replaceRE "(\\s)" "" . ))}}
-    {{end}}
-
-    {{- $.Scratch.Set "categories" (delimit ($hashtags.Get "categories") ",") }}
-{{- end -}}
-
 {{- $custom := false }}
 {{- $ShareButtons := (.Param "ShareButtons")}}
 
@@ -20,9 +8,7 @@
     {{ $custom = true }}
 {{ end }}
 
-<div class="share-wrap">
-    <div class="share-buttons">
-    <h3>Share</h3>
+<div class="share-buttons">
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) }}
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on twitter"
         href="https://twitter.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "categories" -}}">
@@ -77,5 +63,4 @@
         </svg>
     </a>
     {{- end }}
-</div>
 </div>

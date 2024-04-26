@@ -1,13 +1,12 @@
 {{- define "main" }}
 
 {{- if (and .Site.Params.profileMode.enabled .IsHome) }}
+
 {{/* HOME PAGE DIV */}}
 <div class="profile">
     
     {{- with .Site.Params.profileMode }}
-    {{/* HOME PAGE INNER DIV */}}
-    <div class="profile_inner">
-        
+
         {{/* HOME PAGE IMG */}}
         {{- if .imageUrl -}}
             <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
@@ -18,26 +17,24 @@
             {{ .title | default $.Site.Title | markdownify }}
         </h1>
 
-        {{/* HOME PAGE SUBTITLE */}}
-        <span class="subtitle">
-            {{ .subtitle | markdownify }}
-        </span>
-        
-        {{/* HOME PAGE BUTTONS (a) */}}
-        {{- with .buttons }}
-            <div class="buttons">
+        {{/* HOME PAGE BUTTONS */}}
+        <div class="home-button-container">
+            {{- with .buttons }}
                 {{- range . }}
-                    <a class="button {{ .name | urlize }}" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
-                        <span class="button-inner">{{ .name | title }}</span>
+                <a class="home-button {{ .name | urlize }}" 
+                        href="{{ trim .url " " }}" 
+                        rel="noopener" 
+                        title="{{ .name | title }}">
+                        {{ .name | title }}
                     </a>
                 {{- end }}
-            </div>
-        {{- end }}
+            {{- end }}
+        </div>
 
-    </div>
     {{- end}}
 
 </div>
+
 {{- end }}
 
 {{- end }}

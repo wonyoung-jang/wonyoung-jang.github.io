@@ -5,6 +5,7 @@
     {{/* HEAD */}}    
     <head>
         {{- partial "head.html" . }}
+        {{- partial "links.html" . }}
 
         {{ if .Site.Params.GoogleAnalytics }}
             {{ partial "analytics-gtag.html" . }}
@@ -20,7 +21,7 @@
     
     {{/* BODY */}}    
     <body class="
-        {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`) (eq .Layout `about`)) -}}
+        {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
         {{- print "list" -}}
         {{- end -}}
         
@@ -34,7 +35,21 @@
         
         {{/* MAIN */}}    
         <main class="main">
-            {{- block "main" . }}{{ end }}
+            {{- if (and (ne .Layout `archives`) (ne .Layout `search`) (ne .Layout `section`) (ne .Layout `list`))  -}}
+
+                <div class="page-single-container">
+                    {{- block "main" . }}
+                    {{ end }}
+                </div>
+                
+                {{ else }}
+                
+                <div class="page-type-container">
+                    {{- block "main" . }}
+                    {{ end }}
+                </div>
+
+            {{ end }}
         </main>
 
         {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}

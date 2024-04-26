@@ -1,104 +1,241 @@
 :root {
     /* || COMMON PROPERTIES */
-    --gap: 24px;
-    --content-gap: 20px;
+    --small-gap: 1vh;
+    --large-gap: 2vh;
     --max-width: 100vw;
-    --header-height: 60px;
-    --footer-height: 60px;
-    --radius: 4px;
-    --btn-rad: 16px;
+    --radius: 1vh;
+    --btn-rad: 2vh;
 
-    /* Category Colors */
-    --category-text: #000000;
-    --meta-bg: #FFE5B4;
-    --lists-bg: #FFC0CB;
-    --university-bg: #E6E6FA;
-    --software-bg: #B0E0E6;
-    --category5-bg: #98FB98;
-    --category6-bg: #FAFAD2;
-    --category7-bg: #F0E68C;
-    --category8-bg: #FFB6C1;
-    --category9-bg: #D8BFD8;
-    --category10-bg: #ADD8E6;
-
+ 
     /* ADMONITIONS */
-    --quote-bg: #f8d0cb; /* Light pastel red */
-    --quote-text: #5a2a27; /* Dark red text for contrast */
+    --quote-bg: #f8d0cb;
+    --quote-text: #5a2a27;
 
-    --caution-bg: #f8e0cb; /* Light pastel orange */
-    --caution-text: #5a4227; /* Dark orange text for contrast */
+    --caution-bg: #f8e0cb;
+    --caution-text: #5a4227;
 
-    --tip-bg: #fbf4cd; /* Light pastel yellow */
-    --tip-text: #5a5927; /* Dark yellow text for contrast */
+    --tip-bg: #fbf4cd;
+    --tip-text: #5a5927;
 
-    --important-bg: #daf8cb; /* Light pastel lime green */
-    --important-text: #3e5a27; /* Dark green text for contrast */
+    --important-bg: #daf8cb;
+    --important-text: #3e5a27;
 
-    --note-bg: #cbe4f8; /* Light pastel blue */
-    --note-text: #27435a; /* Dark blue text for contrast */
+    --note-bg: #cbe4f8;
+    --note-text: #27435a;
 
-    --pinned-bg: #cbc9f8; /* Light pastel indigo */
-    --pinned-text: #2e275a; /* Dark indigo text for contrast */
+    --pinned-bg: #cbc9f8;
+    --pinned-text: #2e275a;
 
-    --comment-bg: #e2cbf8; /* Light pastel purple */
-    --comment-text: #4a275a; /* Dark purple text for contrast */
+    --comment-bg: #e2cbf8;
+    --comment-text: #4a275a;
 
-    --example-bg: #f8cbd4; /* Light pastel pink */
-    --example-text: #5a2734; /* Dark pink text for contrast */
+    --example-bg: #f8cbd4;
+    --example-text: #5a2734;
 
-    --warning-bg: #f8d0d1; /* Light pastel rose */
-    --warning-text: #5a2a2b; /* Dark rose text for contrast */
+    --warning-bg: #f8d0d1;
+    --warning-text: #5a2a2b;
 
-    --query-bg: #cbf0f8; /* Light pastel cyan */
-    --query-text: #275a5c; /* Dark cyan text for contrast */
+    --query-bg: #cbf0f8;
+    --query-text: #275a5c;
 
-    --export-bg: #cbf8dc; /* Light pastel mint green */
-    --export-text: #275a3e; /* Dark mint text for contrast */
+    --export-bg: #cbf8dc;
+    --export-text: #275a3e;
 
-    --verse-bg: #e8cbf8; /* Light pastel lavender */
-    --verse-text: #40275a; /* Dark lavender text for contrast */
+    --verse-bg: #e8cbf8;
+    --verse-text: #40275a;
 
-    /* || LIGHT THEME SPECIFIC */
-    --background-theme: rgb(255, 255, 255); /* White background */
-    --theme: rgb(245, 245, 245); /* White background */
-    --entry: rgb(222, 240, 255); /* Light blue for entry */
-    --bg-text: rgb(0, 0, 0); /* Black for primary text */
-    --primary: rgb(26, 26, 26); /* Black for primary text */
-    --secondary: rgb(51, 51, 51); /* Dark grey for secondary text */
-    --tertiary: rgb(102, 102, 102); /* Light grey for tertiary elements */
-    --content: rgb(0, 0, 0); /* Black for content */
-    --hljs-bg: rgb(15, 10, 10); /* Very light purple for code highlight background */
-    --code-bg: rgb(226, 131, 226); /* Light purple for code blocks */
-    --border: rgb(70, 55, 70); /* Plum for borders */
-    --link: rgb(79, 79, 255); /* Blue for links */
-    --shadow: rgb(0, 0, 0); /* Darker indigo for shadows */
-    
-    --form-bg: rgb(240, 240, 240); /* Lighter background for forms */
-    --top-link-bg: rgb(220, 220, 220); /* White background for top link */
+    --color-primary: rgba(102, 32, 238, 1);
+    --color-primary-050: rgb(237, 231, 246);
+    --color-primary-100: rgb(209, 196, 233);
+    --color-primary-300: rgb(149, 117, 205);
+    --color-primary-400: rgb(126, 87, 194);
+    --color-primary-500: rgb(102, 32, 238);
+    --color-primary-600: rgb(92, 29, 214);
+    --color-primary-700: rgb(81, 26, 190);
+    --color-primary-800: rgb(71, 22, 166);
+    --color-primary-900: rgb(58, 18, 137);
+    --color-primary-variant: rgba(55, 0, 179, 1);
 
-    --toc-background-color: rgb(236, 236, 236); /* White with 90% opacity for TOC background */
-    --toc-text-color: rgb(0, 0, 0); /* Indigo for TOC text */
+    --color-secondary: rgba(3, 218, 198, 1);
+    --color-secondary-050: rgb(224, 247, 250);
+    --color-secondary-100: rgb(178, 229, 234);
+    --color-secondary-300: rgb(77, 208, 219);
+    --color-secondary-400: rgb(38, 191, 204);
+    --color-secondary-500: rgb(3, 218, 198);
+    --color-secondary-600: rgb(2, 196, 178);
+    --color-secondary-700: rgb(2, 174, 158);
+    --color-secondary-800: rgb(2, 152, 139);
+    --color-secondary-900: rgb(1, 125, 114);
+    --color-secondary-variant: rgba(1, 135, 134, 1);
+
+    --color-background: rgba(255, 255, 255, 1);
+    --color-background0: color-mix(in srgb, var(--color-primary) 2%, var(--color-background) 100%);
+    --color-background1: color-mix(in srgb, var(--color-primary) 4%, var(--color-background) 100%);
+    --color-background2: color-mix(in srgb, var(--color-primary) 6%, var(--color-background) 100%);
+    --color-background3: color-mix(in srgb, var(--color-primary) 7%, var(--color-background) 100%);
+    --color-background4: color-mix(in srgb, var(--color-primary) 9%, var(--color-background) 100%);
+
+    --color-surface: rgba(255, 255, 255, 1);
+    --color-error: rgba(176, 0, 32, 1);
+
+    --color-on-primary: rgba(255, 255, 255, 1);
+    --color-on-primary-low: rgba(255, 255, 255, 74%);
+    --color-on-primary-disabled: rgba(255, 255, 255, 50%);
+
+    --color-on-secondary: rgba(0, 0, 0, 1);
+    --color-on-background: rgba(0, 0, 0, 1);
+
+    --color-on-surface: rgba(0, 0, 0, 87%);
+    --color-on-surface-low: rgba(0, 0, 0, 60%);
+    --color-on-surface-disabled: rgba(0, 0, 0, 38%);
+
+    --color-on-error: rgba(255, 255, 255, 1);
+
+    --color-border: rgba(0, 0, 0, 12%);
+    --hljs-bg: var(--el1);
+    --code-bg: var(--el1);
+
+    --el1: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), var(--color-surface);
+    --el2: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%), var(--color-surface);
+    --el3: linear-gradient(0deg, rgba(0, 0, 0, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%), var(--color-surface);
+    --el4: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), var(--color-surface);
+    --el5: linear-gradient(0deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.14) 100%), var(--color-surface);
+
+    --shadow0: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadow1: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+    --shadow2: 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 8px 0px rgba(0, 0, 0, 0.20);
+    --shadow3: 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 3px 5px 0px rgba(0, 0, 0, 0.20);
+    --shadow4: 0px 8px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 14px 0px rgba(0, 0, 0, 0.12), 0px 5px 5px 0px rgba(0, 0, 0, 0.20);
+    --shadow5: 0px 12px 17px 0px rgba(0, 0, 0, 0.14), 0px 5px 22px 0px rgba(0, 0, 0, 0.12), 0px 7px 8px 0px rgba(0, 0, 0, 0.20);
 }
 
-.dark {
-    /* || DARK THEME SPECIFIC */
-    --background-theme: rgb(0, 0, 0); /* Dark background */
-    --theme: rgb(20, 20, 20); /* Dark background */
-    --entry: rgb(9, 31, 44); /* Dark blue for entry */
-    --bg-text: rgb(255, 255, 255); /* Light grey for primary text */
-    --primary: rgb(226, 226, 226); /* Light grey for primary text */
-    --secondary: rgb(213, 214, 215); /* Light grey for secondary text */
-    --tertiary: rgb(207, 207, 207); /* Light grey for tertiary elements */
-    --content: rgb(216, 216, 216); /* Light grey for content */
-    --hljs-bg: rgb(33, 26, 37); /* Darker indigo for code highlight background */
-    --code-bg: rgb(34, 0, 61); /* Darker indigo for code blocks */
-    --border: rgb(239, 222, 253); /* Darker indigo for borders */
-    --link: rgb(33, 159, 255); /* Dodger blue for tertiary elements */
-    --shadow: rgb(83, 79, 90); /* Plum for shadows */
+.dark {    
+    /* ADMONITIONS */
 
-    --form-bg: rgb(33, 33, 33); /* Darker background for forms */
-    --top-link-bg: rgb(47, 47, 47); /* Darker background for top link */
+    --quote-bg: #2d1317;
+    --quote-text: #f8d0cb;
+
+    --caution-bg: #2d2113;
+    --caution-text: #f8e0cb;
+
+    --tip-bg: #2d2c13;
+    --tip-text: #fbf4cd;
+
+    --important-bg: #1f2d13;
+    --important-text: #daf8cb;
+
+    --note-bg: #132a2d;
+    --note-text: #cbe4f8;
+
+    --pinned-bg: #17132d;
+    --pinned-text: #cbc9f8;
+
+    --comment-bg: #25132d;
+    --comment-text: #e2cbf8;
+
+    --example-bg: #2d131a;
+    --example-text: #f8cbd4;
+
+    --warning-bg: #2d1415;
+    --warning-text: #f8d0d1;
+
+    --query-bg: #132d2e;
+    --query-text: #cbf0f8;
+
+    --export-bg: #132d1f;
+    --export-text: #cbf8dc;
+
+    --verse-bg: #20132d;
+    --verse-text: #e8cbf8;
+
+    /* Black Text */
+    --color-primary: rgba(187, 134, 252, 1);
+    --color-primary-050: rgb(242, 231, 254);
+    --color-primary-100: rgb(219, 178, 255);
+    --color-primary-300: rgb(152, 94, 255);
+    --color-primary-400: rgb(127, 57, 251);
+    /* White Text */
+    --color-primary-500: rgb(98, 0, 238);
+    --color-primary-600: rgb(86, 0, 232);
+    --color-primary-700: rgb(55, 0, 179);
+    --color-primary-800: rgb(48, 0, 156);
+    --color-primary-900: rgb(35, 3, 106);
+
+    --color-primary-variant: rgba(55, 0, 179, 1);
+
+    /* Black Text */
+    --color-secondary: rgba(3, 218, 198, 1);
+    --color-secondary-050: rgb(200, 255, 244);
+    --color-secondary-100: rgb(112, 239, 222);
+    --color-secondary-300: rgb(0, 196, 180);
+    --color-secondary-400: rgb(0, 179, 166);
+    /* White Text */
+    --color-secondary-500: rgb(1, 162, 153);
+    --color-secondary-600: rgb(1, 149, 146);
+    --color-secondary-700: rgb(1, 135, 134);
+    --color-secondary-800: rgb(1, 115, 116);
+    --color-secondary-900: rgb(0, 84, 87);
+
+    --color-background: rgba(18, 18, 18, 1);
+    --color-background0: color-mix(in srgb, var(--color-primary) 5%, var(--color-background) 100%);
+    --color-background1: color-mix(in srgb, var(--color-primary) 8%, var(--color-background) 100%);
+    --color-background2: color-mix(in srgb, var(--color-primary) 11%, var(--color-background) 100%);
+    --color-background3: color-mix(in srgb, var(--color-primary) 12%, var(--color-background) 100%);
+    --color-background4: color-mix(in srgb, var(--color-primary) 14%, var(--color-background) 100%);
+    --color-surface: rgba(18, 18, 18, 1);
+
+    --color-error: rgba(207, 102, 121, 1);
+
+    /* On Primary */
+    --color-on-primary: rgba(0, 0, 0, 87%);
+    --color-on-primary-low: rgba(0, 0, 0, 60%);
+    --color-on-primary-disabled: rgba(0, 0, 0, 38%);
     
-    --toc-background-color: rgb(44, 44, 44); /* Dark background for TOC */
-    --toc-text-color: rgb(255, 255, 255);  /* White for TOC text */
+    --color-on-secondary: rgba(0, 0, 0, 1);
+    --color-on-background: rgba(255, 255, 255, 1);
+    
+    /* On Surface */
+    --color-on-surface: rgba(255, 255, 255, 87%);
+    --color-on-surface-low: rgba(255, 255, 255, 60%);
+    --color-on-surface-disabled: rgba(255, 255, 255, 38%);
+    
+    --color-on-error: rgba(0, 0, 0, 1);
+    
+    /* Outline - On Surface */
+    --color-border: rgba(255, 255, 255, 12%);
+
+    --hljs-bg: var(--el1);
+    --code-bg: var(--el1);
+    
+    /* Elevations */
+    --el1: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), var(--color-surface);
+    --el2: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%), var(--color-surface);
+    --el3: linear-gradient(0deg, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.11) 100%), var(--color-surface);
+    --el4: linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%), var(--color-surface);
+    --el5: linear-gradient(0deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 100%), var(--color-surface);
+    --shadow0: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadow1: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+    --shadow2: 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 8px 0px rgba(0, 0, 0, 0.20);
+    --shadow3: 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 3px 5px 0px rgba(0, 0, 0, 0.20);
+    --shadow4: 0px 8px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 14px 0px rgba(0, 0, 0, 0.12), 0px 5px 5px 0px rgba(0, 0, 0, 0.20);
+    --shadow5: 0px 12px 17px 0px rgba(0, 0, 0, 0.14), 0px 5px 22px 0px rgba(0, 0, 0, 0.12), 0px 7px 8px 0px rgba(0, 0, 0, 0.20);
 }
+
+/* 
+Elevations
+Format
+    Level, dp, white overlay transparency
+Static
+    0, 00dp, 00%
+    1, 01dp, 05%
+    2, 03dp, 08%
+
+User Interaction
+    3, 06dp, 11%
+    4, 08dp, 12%
+    5, 12dp, 14%
+
+Text Emphasis
+  87% > 60% > 38%
+  High > Low > Disabled
+*/

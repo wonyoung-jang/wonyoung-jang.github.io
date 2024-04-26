@@ -29,14 +29,27 @@ main:
     parent: Resource
     weight: 1
 
+
   - identifier: Archives
     name: Archives
     pageRef: /archives
-    weight: 30
+    weight: 32
+  - identifier: Search
+    name: Search
+    pageRef: /search
+    weight: 34
+  - identifier: About
+    name: About
+    pageRef: /about
+    weight: 36
+  - identifier: Contact
+    name: Contact
+    pageRef: /contact
+    weight: 38
   - identifier: Graph
     name: Graph
     pageRef: /graph/#/graph
-    weight: 40
+    weight: 42
 
 footer:
   - identifier: Home

@@ -2,13 +2,11 @@
 
 <section class="subsections">
     {{ range .Sections }}
-        <div class="subsection">
-            <h2>
-                <a href="{{ .Permalink }}">
-                    {{ .Title }}
-                </a>
-            </h2>
-        </div>
+        <h2 class="subsection">
+            <a href="{{ .Permalink }}">
+                {{ .Title }}
+            </a>
+        </h2>
     {{ end }}
 </section>
 

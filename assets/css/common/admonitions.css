@@ -1,168 +1,165 @@
 /* Admonitions */
-.warning {
-    background-color: var(--warning-bg);
-    color: var(--warning-text);
-}
-
-.caution {
-    background-color: var(--caution-bg);
-    color: var(--caution-text);
-}
-
-.note {
-    background-color: var(--note-bg);
-    color: var(--note-text);
-}
-
-.example {
-    background-color: var(--example-bg);
-    color: var(--example-text);
-}
-
-.tip {
-    background-color: var(--tip-bg);
-    color: var(--tip-text);
-}
-
-.important {
-    background-color: var(--important-bg);
-    color: var(--important-text);
-}
-
-.pinned {
-    background-color: var(--pinned-bg);
-    color: var(--pinned-text);
-}
-
-.quote {
-    background-color: var(--quote-bg);
-    color: var(--quote-text);
-}
-
-.comment {
-    background-color: var(--comment-bg);
-    color: var(--comment-text);
-}
-
-.query {
-    background-color: var(--query-bg);
-    color: var(--query-text);
-}
-
-.export {
-    background-color: var(--export-bg);
-    color: var(--export-text);
-}
-
-.verse {
-    background-color: var(--verse-bg);
-    color: var(--verse-text);
-}
-
-/* Admonition styles with flexbox for vertical alignment */
-.important,
 .warning,
 .caution,
 .note,
 .example,
 .tip,
+.important,
 .pinned,
 .quote,
 .comment,
 .query,
-.verse,
-.export {
-    display: flex;
-    align-items: center; /* Aligns children (text and ::before content) vertically in the center */
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-size: 0.85em;
+.export,
+.verse {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: var(--radius);
 
-    &::before {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        font-size: 2em; /* Fixed font size */
-        width: 2em; /* Fixed width for the circle */
-        height: 2em; /* Fixed height for the circle */
-        padding: 0.5em; /* Adjust padding as needed */
-        border-radius: 50%; /* This will make the box a circle */
-        line-height: 1; /* Reset line height for the icon */
-        font-weight: bold;
-        vertical-align: middle;
-    }
+  &::before {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border-radius: 50%;
+    line-height: 1;
+    font-weight: bold;
+    vertical-align: middle;
+  }
 }
 
-.quote::before {
-    content: "\267B";
-    background-color: var(--quote-text);
-    color: var(--quote-bg);
-}
+.warning {
+  background: var(--warning-bg);
+  color: var(--warning-text);
 
-.warning::before {
-    content: "\26A0"; /* ⚠ - Warning Sign */
-    background-color: var(--warning-text);
+  &::before {
+    content: "\26A0";
+    background: var(--warning-text);
     color: var(--warning-bg);
+  }
 }
 
-.note::before {
-    content: "\269B";
-    background-color: var(--note-text);
-    color: var(--note-bg);
-}
+.caution {
+  background: var(--caution-bg);
+  color: var(--caution-text);
 
-.example::before {
-    content: "\2692";
-    background-color: var(--example-text);
-    color: var(--example-bg);
-}
-
-.important::before {
-    content: "\2605";
-    background-color: var(--important-text);
-    color: var(--important-bg);
-}
-
-.caution::before {
+  &::before {
     content: "\2612";
-    background-color: var(--caution-text);
+    background: var(--caution-text);
     color: var(--caution-bg);
+  }
 }
 
-.tip::before {
-    content: "\2611"; /* ☑ - Ballot Box with Check */
-    background-color: var(--tip-text);
+.note {
+  background: var(--note-bg);
+  color: var(--note-text);
+
+  &::before {
+    content: "\269B";
+    background: var(--note-text);
+    color: var(--note-bg);
+  }
+}
+
+.example {
+  background: var(--example-bg);
+  color: var(--example-text);
+
+  &::before {
+    content: "\2692";
+    background: var(--example-text);
+    color: var(--example-bg);
+  }
+}
+
+.tip {
+  background: var(--tip-bg);
+  color: var(--tip-text);
+
+  &::before {
+    content: "\2611";
+    background: var(--tip-text);
     color: var(--tip-bg);
+  }
 }
 
-.pinned::before {
-    content: "\1F876"; /* ⚐ - White Flag */
-    background-color: var(--pinned-text);
+.important {
+  background: var(--important-bg);
+  color: var(--important-text);
+
+  &::before {
+    content: "\2605";
+    background: var(--important-text);
+    color: var(--important-bg);
+  }
+}
+
+.pinned {
+  background: var(--pinned-bg);
+  color: var(--pinned-text);
+
+  &::before {
+    content: "\1F876";
+    background: var(--pinned-text);
     color: var(--pinned-bg);
+  }
 }
 
-.comment::before {
-    content: "\27A4"; /* ➤ - Rightwards Arrow */
-    background-color: var(--comment-text);
+.quote {
+  background: var(--quote-bg);
+  color: var(--quote-text);
+
+  &::before {
+    content: "\267B";
+    background: var(--quote-text);
+    color: var(--quote-bg);
+  }
+}
+
+.comment {
+  background: var(--comment-bg);
+  color: var(--comment-text);
+
+  &::before {
+    content: "\27A4";
+    background: var(--comment-text);
     color: var(--comment-bg);
+  }
 }
 
-.query::before {
-    content: "\27B6"; /* ➶ - Heavy Rightwards Arrow */
-    background-color: var(--query-text);
+.query {
+  background: var(--query-bg);
+  color: var(--query-text);
+
+  &::before {
+    content: "\27B6";
+    background: var(--query-text);
     color: var(--query-bg);
+  }
 }
 
-.export::before {
-    content: "\21B3"; /* ↳ - Downwards Arrow with Tip Rightwards */
-    background-color: var(--export-text);
+.export {
+  background: var(--export-bg);
+  color: var(--export-text);
+
+  &::before {
+    content: "\21B3";
+    background: var(--export-text);
     color: var(--export-bg);
+  }
 }
 
-.verse::before {
-    content: "\2B19"; /* ⮓ - Downwards Arrow with Tip Leftwards */
-    background-color: var(--verse-text);
+.verse {
+  background: var(--verse-bg);
+  color: var(--verse-text);
+
+  &::before {
+    content: "\2B19";
+    background: var(--verse-text);
     color: var(--verse-bg);
+  }
 }

@@ -8,9 +8,8 @@ code {
     position: absolute;
     top: 4px;
     right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 16px;
+    color: var(--color-on-surface);
+    background: var(--el1);
     padding: 4px 8px;
     user-select: none;
 }

@@ -34,11 +34,12 @@
 {{- end }}
 
 {{- /* Styles */}}
+{{- $normalize := (resources.Get "css/core/normalize.css") }}
 {{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
 {{- $media := (resources.Get "css/core/responsive.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
-{{- $core := (slice $theme_vars $common $media) | resources.Concat "assets/css/core.css" }}
+{{- $core := (slice $normalize $theme_vars $common $media) | resources.Concat "assets/css/core.css" }}
 {{- $stylesheet := (slice $core) | resources.Concat "assets/css/stylesheet.css" | minify }}
 
 {{- if not .Site.Params.assets.disableFingerprinting }}
@@ -118,19 +119,14 @@
     <style>
         @media (prefers-color-scheme: dark) {
             :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
+                --color-surface: rgb(29, 30, 32);
                 --hljs-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
+                --color-primary-variant: rgb(51, 51, 51);
             }
 
             .list {
-                background: var(--theme);
+                background: var(--color-surface);
             }
 
             .list:not(.dark)::-webkit-scrollbar-track {
@@ -138,7 +134,7 @@
             }
 
             .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+                border-color: var(--color-surface);
             }
         }
     </style>

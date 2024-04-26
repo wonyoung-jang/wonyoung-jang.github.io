@@ -19,13 +19,6 @@
     {{- end }}
   </div>
 
-  {{/* Github button */}}
-  <div class="post-github-button">
-    {{ with .Params.githubRepo }}
-      {{ partial "github_button.html" (dict "githubRepo" .) }}
-    {{ end }}
-  </div>
-
   {{/* Description */}}
   {{- if .Description }}
     <p class="post-description">
@@ -33,44 +26,56 @@
     </p>
   {{- end }}
 
+  {{/* Github button */}}
+  <div class="post-github-button">
+    {{ with .Params.githubRepo }}
+      {{ partial "github_button.html" (dict "githubRepo" .) }}
+    {{ end }}
+  </div>
+  
+</header>
+
+<div class="single-grid">
+  <div class="pre-div"></div>
+
+  {{/* Post Single */}}
+  <article class="post-single">
+    {{/* Post content */}}
+    {{- if .Content }}
+      <div class="post-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+          {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}
+          {{- .Content | safeHTML -}}
+        {{- end }}
+      </div>
+    {{- end }}
+    
+    {{/* Backlinks */}}
+    {{ partial "backlinks.html" . }}
+
+  </article>
+
   {{/* Table of Contents */}}
   {{- if (.Param "ShowToc") }}
     {{- partial "toc.html" . }}
   {{- end }}
-</header>
+</div>
 
-{{/* Post Single */}}
-<article class="post-single">
-
-  {{/* Post content */}}
-  {{- if .Content }}
-    <div class="post-content">
-      {{- if not (.Param "disableAnchoredHeadings") }}
-        {{- partial "anchored_headings.html" .Content -}}
-      {{- else }}
-        {{- .Content | safeHTML -}}
-      {{- end }}
-    </div>
-  {{- end }}
-
-  {{/* Backlinks */}}
-  {{ partial "backlinks.html" . }}
-
-</article>
-
-{{/* Post Footer */}}
-<footer class="post-footer">
-
+<div class="post-footer-div">
   {{/* Share buttons */}}
   {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
-  {{- end }}
-
+  {{- end }}  
+  
   {{/* Post navigation links */}}
   {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
   {{- end }}
-  
-</footer>
+
+</div>
+
+{{/* Post Footer */}}
+
 
 {{- end }}{{/* end main */}}

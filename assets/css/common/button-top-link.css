@@ -1,32 +1,20 @@
 /* Top-Link: Scroll to Top Button */
-.top-link {
-    visibility: hidden;
-    position: fixed;
-    bottom: 8rem;
-    right: 0.1rem;
+a#top-link.top-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+    position: fixed;
+    bottom: 8rem;
+    right: 1rem;
     width: 2.5rem;
     height: 2.5rem;
-    z-index: 99;
-    color: var(--primary);
-    background: var(--top-link-bg);
-    border-radius: var(--radius);
+    z-index: 100;
     padding: 0.6rem;
-    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+    border-radius: var(--btn-rad);
+    color: var(--color-on-primary);
+    background: var(--color-primary);
     
-    &:hover {
-        color: var(--link);
-        filter: brightness(1.1);
-    }
-    
-    &:focus {
-        outline: 0;
-    }
-}
-
-#theme-toggle {
     &:focus {
         outline: 0;
     }

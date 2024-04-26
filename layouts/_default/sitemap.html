@@ -1,14 +1,6 @@
 {{ define "main" }}
 
 <div class="sitemap">
-    {{ if .Pages }}
-        <div class="sitemap-level-four">
-            {{ range .Pages }}
-                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-            {{ end }}
-        </div>
-    {{ end }}
-
     <div class="sitemap-level-one">
         {{ with .Parent }}
             <h2><a href="{{ .Permalink }}">Home</a></h2>

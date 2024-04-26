@@ -6,7 +6,7 @@ githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-04-20
 ---
 ## A Brief History
 
@@ -121,3 +121,8 @@ I plan on pursuing this constraint more deeply, and am currently refining the ab
 ### Generalized Scheduling Tool
 
   + If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way...
+
+---
+
+{{< logseq/orgWARNING >}}LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.
+{{< / logseq/orgWARNING >}}

@@ -12,7 +12,7 @@
       </span>
     </a>
   {{ else }}
-    <p class="prev" href="{{ .Permalink }}">
+    <a class="prev" href="{{ .Permalink }}">
       <span class="title">
         &nbsp;
       </span>
@@ -20,8 +20,10 @@
       <span>
         &nbsp;
       </span>
-    </p>
+    </a>
   {{- end }}
+
+    {{ partial "random.html" }}
 
   {{- with $pages.Prev . }}
     <a class="next" href="{{ .Permalink }}">
@@ -34,7 +36,7 @@
       </span>
     </a>
   {{ else }}
-    <p class="next" href="{{ .Permalink }}">
+    <a class="next" href="{{ .Permalink }}">
       <span class="title">
         &nbsp;
       </span>
@@ -42,7 +44,7 @@
       <span>
         &nbsp;
       </span>
-    </p>
+    </a>
   {{- end }}
   
 </nav>

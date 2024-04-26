@@ -1,0 +1,71 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.2rem;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 80%;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: var(--el1);
+  box-shadow: var(--shadow1);
+  border: 1px solid var(--color-border);
+  
+  & label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+  }
+
+  & textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    resize: vertical;
+    background: var(--el2);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow2);
+  }
+}
+
+  
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: var(--el2);
+  box-shadow: var(--shadow2);
+}
+
+.contact-form button[type="submit"] {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: var(--shadow0);
+  
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.contact-form .error {
+  color: var(--color-on-error);
+  margin-bottom: 10px;
+}
+
+.contact-form .status {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.contact-form .hidden {
+  display: none;
+}

@@ -1,0 +1,90 @@
+/* TOC */
+div.toc {
+    text-wrap: pretty;
+    flex: 1 1;
+    position: sticky;
+    align-self: start;
+    top: 8rem;
+    border-left: 1px solid var(--color-border);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: max-content;
+    width: 100%;
+    
+    
+    & summary.toc-main {
+        padding: 1rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+    }
+
+    & div.inner {
+        display: flex;
+        flex-flow: column wrap;
+
+        & ul {
+            
+            & li {
+                position: relative;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: stretch;
+                align-self: stretch;
+                justify-content: center;
+                font-size: 1rem;
+                padding: 1rem 0 1rem 1rem;
+            
+            &:hover {
+                box-shadow: var(--shadow1);
+                background: var(--el1);                
+            }
+
+            & a {
+                color: var(--color-on-surface-low);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+
+            & ul {
+                margin: 1rem 0;
+                
+                & li {
+                    position: relative;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: stretch;
+                    justify-content: space-around;
+                    border-left: 1px solid var(--color-border);
+                    border-bottom: 1px solid var(--color-border);
+                    font-size: 0.8rem;
+                    padding: 1rem;
+                    
+                    &:hover {
+                    box-shadow: var(--shadow2);
+                    background: var(--color-background2);
+                }
+    
+                & a {
+                    color: var(--color-on-surface-disabled);
+    
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+            }
+        }
+    }
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    .collapse-expand {
+        display: none;
+    }
+}

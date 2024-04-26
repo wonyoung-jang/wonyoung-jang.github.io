@@ -1,0 +1,53 @@
+/* POST NAVIGATION */
+& nav.paginav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    border-top: 0.3rem solid var(--color-border);
+    border-bottom: 0.3rem solid var(--color-border);
+    margin: 2rem 0;
+
+    & span.title {
+        color: var(--color-on-surface-low);
+        text-transform: uppercase;
+    }
+
+    & a.prev,
+    & a.next {
+        width: 50%;
+        padding: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--color-on-surface);
+        background-color: var(--color-surface);
+   
+        &:hover {
+            color: var(--color-primary);
+            background-color: var(--color-background2);
+            box-shadow: var(--shadow2);
+            text-decoration: none;
+        }
+    }
+
+    & a.next {
+        text-align: right;
+    }
+    
+    & a.prev {
+        text-align: left;
+    }
+}
+
+[dir="rtl"] nav.paginav {
+    & a.next {
+        text-align: left;
+        border-radius: var(--radius) 0 0 var(--radius);
+    }
+
+    & a.prev {
+        text-align: right;
+        border-radius: 0 var(--radius) var(--radius) 0;
+    }
+}

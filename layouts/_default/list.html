@@ -1,21 +1,13 @@
 {{- define "main" }}
 
-{{- if .Content }}
-    <div class="post-content">
-        {{- if not (.Param "disableAnchoredHeadings") }}
-            {{- partial "anchored_headings.html" .Content -}}
-        {{- else }}
-            {{ .Content }}
-        {{ end }}
-    </div>
-{{- end }}
-
 {{- $pages := union .RegularPages .Sections }}
 {{- $paginator := .Paginate $pages }}
 
 {{/* VIEW TOGGLE BUTTON */}}
 <div class="view-toggle">
-    <button id="toggle-view-button" onclick="toggleGrid()">&#x229E</button>
+    <button id="toggle-view-button" onclick="toggleGrid()">
+        &#x229E
+    </button>
 </div>
 
 {{/* POSTS CONTAINER */}}
@@ -91,8 +83,6 @@
     </footer>
 {{- end }}
 
-
-
 <script>
     function toggleGrid(){
         // Get references to elements
@@ -104,7 +94,7 @@
             // Set 'grid' style
             container.style.setProperty("display", "grid");
             container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
-            container.style.setProperty("gap","var(--gap)");
+            container.style.setProperty("gap","var(--large-gap)");
     
             // Update button label
             btn.innerText = "\u2630";
@@ -135,7 +125,7 @@
         if (displayState === "grid") {
             container.style.setProperty("display", "grid");
             container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
-            container.style.setProperty("gap","var(--gap)");
+            container.style.setProperty("gap","var(--large-gap)");
             btn.innerText = "\u2630";
         } else {
             container.style.removeProperty("display");
