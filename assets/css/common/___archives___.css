@@ -10,9 +10,6 @@ div.sort-order {
     
     & button#sort-button {
         font-family: 'IBM Plex Mono';
-        padding: 1rem;
-        width: max-content;
-        border-radius: var(--btn-rad);
     }
     
     &::before {
@@ -27,20 +24,21 @@ div.sort-order {
 
 /* Archive Year */
 .archive-year {
-    margin-top: 40px;
-    
+    margin-top: 1rem 0;
 }
 
 /* Archive Month */
 .archive-month {
     display: flex;
     align-items: flex-start;
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 
 .archive-month-header {
-    margin: 25px 0;
-    width: 200px;
+    padding: 0;
+    margin: 1rem 0;
+    min-width: 8rem;
+    align-self: flex-start;
 }
 
 /* Archive Entry */
@@ -66,7 +64,9 @@ div.sort-order {
 }
 
 .archive-entry-title {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-weight: bold;
 }
 
 /* Archive Count */

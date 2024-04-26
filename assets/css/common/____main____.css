@@ -151,10 +151,16 @@ table {
 button {
     text-wrap: nowrap;
     border: 0;
-    background: var(--color-primary);
-    color: var(--color-on-primary);
-    border-radius: var(--btn-rad);
+    background: none;
+    border-radius: 0;
+    color: var(--color-primary);
     cursor: pointer;
+    padding: 1rem;
+    text-transform: uppercase;
+
+    &:hover {
+        background: var(--color-background1);
+    }
 }
 
 /* Text Inputs */

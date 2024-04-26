@@ -10,17 +10,8 @@ div.view-toggle {
         align-items: center; 
         justify-content: center;
         font-size: 2em;
-
-        border-radius: var(--radius);
-
         height: 1.5em;
         width: 1.5em;
-        
-        &:hover {
-            background: var(--color-on-surface);
-            color: var(--color-surface);
-            filter: opacity(1);
-        }
     }
 }
 
