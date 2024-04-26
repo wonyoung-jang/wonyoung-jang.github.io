@@ -1,12 +1,13 @@
 /* Sitemap */
 div.sitemap {
-    margin: 1rem 0 0 0;
-    padding: 1rem 0 0 0;
-    gap: var(--large-gap);
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-flow: column wrap;
+    align-items: stretch;
     justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
     
     & h1 {
         width: 100%;
@@ -16,39 +17,59 @@ div.sitemap {
     & h2,
     & h3,
     & h4 {
-        & a {
-            color: var(--color-on-surface);
-            line-height: 1.5;;
-            
-            &:hover {
-                color: var(--color-primary);
-            }
-        }
-
         margin: 0;
         padding: 0;
+        
+        & a {
+            color: var(--color-primary);
+            line-height: 1.5;
+            width: 100%;
+            height: 100%;
 
-        &::before {
-            content: "> ";
+            &:hover {
+                color: var(--color-primary-050);
+            }
+        }
+        
+        &:before {
+            content: "•";
+            margin-right: 0.5rem;
+            color: var(--color-primary);
         }
     }
     
+    h2,
+    h3 {
+        border-bottom: 1px solid var(--color-border);
+        padding: 1rem 0;
+
+        &:before {
+            content: "";
+        }
+    }
+
     & div.sitemap-level-one {
-        margin-left: 0;
+        margin: 8rem;
         padding: 1rem;
-        background: var(--el2);
-        box-shadow: var(--shadow2);
+        background: var(--color-background3);
+        box-shadow: var(--shadow3);
     }
     
     
     & div.sitemap-level-two {
         margin-left: 1rem;
         margin: 1rem;
+        padding: 1rem;
+        background: var(--el2);
+        box-shadow: var(--shadow2);
     }
     
     & div.sitemap-level-three {
         margin-left: 2rem;
         margin: 1rem;
+        padding: 1rem;
+        background: var(--color-background1);
+        box-shadow: var(--shadow1);
     }
 }
 

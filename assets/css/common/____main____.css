@@ -148,7 +148,7 @@ table {
 
 
 /* Buttons */
-button {
+button:not(:disabled) {
     text-wrap: nowrap;
     border: 0;
     background: none;
