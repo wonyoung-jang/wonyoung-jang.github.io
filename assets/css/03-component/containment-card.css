@@ -1,0 +1,93 @@
+.card {
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-align-items: flex-start;
+  --container-justify-content: center;
+  
+  --container-elevation: var(--elevation-level0);
+  --container-elevation-hover: var(--elevation-level1);
+  --container-elevation-focus: var(--elevation-level0);
+  --container-elevation-press: var(--elevation-level0);
+
+  --container-shape: var(--spacing-m);
+
+  gap: var(--spacing-s);
+
+  --bg-color: inherit;
+  --icon-color: var(--color-on-surface);
+  background-color: var(--bg-color,);
+  color: var(--icon-color,);
+    
+  * {
+    color: var(--icon-color,);
+  }
+
+  &.elevated {
+    --bg-color: var(--color-surface-container-low);
+    --icon-color: var(--color-on-surface);
+
+    --container-elevation: var(--elevation-level1);
+    --container-elevation-hover: var(--elevation-level2);
+    --container-elevation-focus: var(--elevation-level1);
+    --container-elevation-press: var(--elevation-level1);
+  }
+
+  &.filled {
+    --bg-color: var(--color-surface-container-highest);
+    --icon-color: var(--color-on-surface);
+  }
+  
+  &.outlined {
+    --bg-color: var(--color-surface);
+    --icon-color: var(--color-on-surface);
+
+    --container-outline: 1px solid var(--color-outline-variant);
+    --container-outline-hover: 1px solid var(--color-outline-variant);
+    --container-outline-focus: 1px solid var(--color-on-surface);
+    --container-outline-press: 1px solid var(--color-outline-variant);
+  }
+}
+
+.card {
+  max-height: fit-content;
+
+  .card-content {
+    flex: 3 1 0;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-inline: var(--spacing-xs);
+    padding-block: var(--spacing-l);
+    gap: var(--spacing-l);
+  }
+
+  img {
+    flex: 1 1 0;
+    max-width: 128px;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: var(--spacing-xl);
+  }
+}
+
+/* Medium */
+@media (min-width: 600px) {
+  :not(.canonical-feed) {
+    .card {
+      --container-flex-flow: column nowrap;
+      --container-align-items: stretch;
+
+      img {
+        flex: 1 1 0;
+        max-width: none;
+        margin: unset;
+        aspect-ratio: 17 / 8;
+      }
+
+      .card-content {
+        padding-inline: var(--spacing-l);
+        width: 100%;
+      }
+    }
+  }
+}

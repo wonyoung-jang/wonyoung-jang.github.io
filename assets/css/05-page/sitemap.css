@@ -1,0 +1,25 @@
+.sitemap {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--spacing-xs);
+
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  div {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-xs) 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  * {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-m);
+  }
+}

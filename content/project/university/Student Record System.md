@@ -6,13 +6,12 @@ githubrepo: https://github.com/wonyoung-jang/student-record-system
 title: Student Record System
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-05-18
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
 ## Learning Objectives and Requirements
----
 
   + Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance.
 

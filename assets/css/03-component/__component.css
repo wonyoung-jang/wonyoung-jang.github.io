@@ -1,0 +1,64 @@
+/* Component */
+.component {
+  display: var(--container-display, none);
+  flex-flow: var(--container-flex-flow, none);
+  justify-content: var(--container-justify-content, none);
+  align-items: var(--container-align-items, none);
+  gap: var(--container-gap, none);
+  height: var(--container-height, none);
+  width: var(--container-width, none);
+  padding: var(--container-padding, none);
+
+  border: var(--container-outline, none);
+  border-radius: var(--container-shape, none);
+  box-shadow: var(--container-elevation, none);
+
+  background-color: var(--bg-color, none);
+
+  color: var(--icon-color, var(--text-color, none));
+}
+
+/* Component Template */
+/* .component {
+/*  --container-display: initial;
+/*  --container-flex-flow: initial;
+/*  --container-justify-content: initial;
+/*  --container-align-items: initial;
+/*  --container-gap: initial;
+/*  --container-height: initial;
+/*  --container-width: initial;
+/*  --container-padding: initial;
+/*
+/*  --container-outline: initial;
+/*  --container-elevation: initial;
+/*  --container-shape: initial;
+/*
+/*  --bg-color: initial;
+/*
+/*  --text-color: initial;
+/*  --icon-color: initial;
+/* }
+*/
+
+.component {
+  position: relative;
+
+  * {
+    z-index: 2;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: 3;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    animation: none;
+  }
+}

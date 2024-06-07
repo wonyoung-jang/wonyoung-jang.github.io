@@ -6,38 +6,24 @@ description: This page is a list of admonitions used on this site.
 title: List of Admonitions for This Site
 tags:
 categories:
-lastMod: 2024-04-24
+lastMod: 2024-05-18
 ---
 ## Admonitions
-
----
-
-{{< logseq/orgNOTE >}}This is a note
-{{< / logseq/orgNOTE >}}
-
-{{< logseq/orgTIP >}}This is a tip
-{{< / logseq/orgTIP >}}
-
-{{< logseq/orgIMPORTANT >}}This is important
-{{< / logseq/orgIMPORTANT >}}
-
-{{< logseq/orgCAUTION >}}This is a sign of caution
-{{< / logseq/orgCAUTION >}}
-
-{{< logseq/orgPINNED >}}This is pinned
-{{< / logseq/orgPINNED >}}
 
 {{< logseq/orgWARNING >}}This is a warning
 {{< / logseq/orgWARNING >}}
 
-{{< logseq/orgEXAMPLE >}}This is an example
-{{< / logseq/orgEXAMPLE >}}
+{{< logseq/orgCAUTION >}}This is a sign of caution
+{{< / logseq/orgCAUTION >}}
 
-{{< logseq/orgCOMMENT >}}This is a comment
-{{< / logseq/orgCOMMENT >}}
+{{< logseq/orgIMPORTANT >}}This is important
+{{< / logseq/orgIMPORTANT >}}
 
-{{< logseq/orgQUERY >}}This is a query
-{{< / logseq/orgQUERY >}}
+{{< logseq/orgPINNED >}}This is pinned
+{{< / logseq/orgPINNED >}}
+
+{{< logseq/orgVERSE >}}This is a verse
+{{< / logseq/orgVERSE >}}
 
 {{< logseq/orgEXPORT >}}This is an export
 {{< / logseq/orgEXPORT >}}
@@ -48,5 +34,17 @@ lastMod: 2024-04-24
 {{< logseq/orgEXPORT >}}This is a ascii export
 {{< / logseq/orgEXPORT >}}
 
-{{< logseq/orgVERSE >}}This is a verse
-{{< / logseq/orgVERSE >}}
+{{< logseq/orgQUERY >}}This is a query
+{{< / logseq/orgQUERY >}}
+
+{{< logseq/orgNOTE >}}This is a note
+{{< / logseq/orgNOTE >}}
+
+{{< logseq/orgTIP >}}This is a tip
+{{< / logseq/orgTIP >}}
+
+{{< logseq/orgEXAMPLE >}}This is an example
+{{< / logseq/orgEXAMPLE >}}
+
+{{< logseq/orgCOMMENT >}}This is a comment
+{{< / logseq/orgCOMMENT >}}

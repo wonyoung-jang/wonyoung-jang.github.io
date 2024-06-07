@@ -7,8 +7,8 @@ paginate: 9
 # buildFuture: Specifies whether to include future-dated content in the site build.
 # buildExpired: Specifies whether to include expired content in the site build.
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
+buildDrafts: true
+buildFuture: true
 buildExpired: true
 
 related:
@@ -20,8 +20,6 @@ related:
   threshold: 20
   toLower: false
 
-
-
 minify:
   disableXML: true
   minifyOutput: true
@@ -30,14 +28,9 @@ minify:
 ignoreFiles:
   \.zip$
 
-
 # Output formats
 outputs:
   home:
-    - HTML
-    - RSS
-    - JSON
-  section:
     - HTML
     - RSS
     - JSON
@@ -50,7 +43,6 @@ disableKinds:
 ####################
 # DISABLED CONFIGS #
 ####################
-
 
 # The root configuration keys are 
   # build, 

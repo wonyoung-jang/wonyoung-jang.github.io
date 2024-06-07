@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
     <meta name="robots" content="index, follow">
 {{- else }}
@@ -8,63 +8,73 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+<title>
+    {{ .Site.Title }}
+</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
-{{ with .Site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />{{ end }}
+    {{ with .Site.Params.keywords -}}
+        <meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />
+    {{ end }}
 {{- else }}
-<meta name="keywords" content="{{ if .Params.keywords -}}
-    {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
-    {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}" />
+    <meta name="keywords" content="{{ if .Params.keywords -}}
+        {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
+        {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}" />
 {{- end }}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-    {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
-    {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+<meta name="description" content="
+    {{- with .Description }}
+        {{ . }}
+    {{- else }}
+        {{- if or .IsPage .IsSection}}
+            {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}
+        {{- else }}
+            {{- with .Site.Params.description }}
+                {{ . }}
+            {{- end }}
+        {{- end }}
+    {{- end -}}">
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
 {{- if .Site.Params.analytics.google.SiteVerificationTag }}
-<meta name="google-site-verification" content="{{ .Site.Params.analytics.google.SiteVerificationTag }}" />
+    <meta name="google-site-verification" content="{{ .Site.Params.analytics.google.SiteVerificationTag }}" />
 {{- end }}
 {{- if .Site.Params.analytics.yandex.SiteVerificationTag }}
-<meta name="yandex-verification" content="{{ .Site.Params.analytics.yandex.SiteVerificationTag }}" />
+    <meta name="yandex-verification" content="{{ .Site.Params.analytics.yandex.SiteVerificationTag }}" />
 {{- end }}
 {{- if .Site.Params.analytics.bing.SiteVerificationTag }}
-<meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
+    <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
 
 {{- /* Styles */}}
-{{- $normalize := (resources.Get "css/core/normalize.css") }}
-{{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
-{{- $media := (resources.Get "css/core/responsive.css") }}
-{{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
-
-{{- $core := (slice $normalize $theme_vars $common $media) | resources.Concat "assets/css/core.css" }}
-{{- $stylesheet := (slice $core) | resources.Concat "assets/css/stylesheet.css" | minify }}
-
+{{- $variable           := (resources.Match "css/00-variable/*.css")        | resources.Concat "assets/css/00-variable.css" }}
+{{- $base               := (resources.Match "css/01-base/*.css")            | resources.Concat "assets/css/01-base.css" }}
+{{- $layout             := (resources.Match "css/02-layout/*.css")          | resources.Concat "assets/css/02-layout.css" }}
+{{- $component          := (resources.Match "css/03-component/*.css")       | resources.Concat "assets/css/03-component.css" }}
+{{- $custom             := (resources.Match "css/04-custom/*.css")          | resources.Concat "assets/css/04-custom.css" }}
+{{- $page               := (resources.Match "css/05-page/*.css")            | resources.Concat "assets/css/05-page.css" }}
+{{- $theme              := (resources.Match "css/06-theme/*.css")           | resources.Concat "assets/css/06-theme.css" }}
+{{- $all := (slice $variable $base $layout $component $custom $page $theme) | resources.Concat "assets/css/all.css" }}
+{{- $stylesheet := $all | resources.Minify -}}
 {{- if not .Site.Params.assets.disableFingerprinting }}
-{{- $stylesheet := $stylesheet | fingerprint }}
-<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+    {{- $stylesheet := $stylesheet | fingerprint }}
+    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
 {{- else }}
-<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
 {{- end }}
-
 {{- with .Site.Params.profileMode }}
-{{- if and .enabled .imageUrl $.IsHome }}
-<link rel="preload" href="{{ .imageUrl }}" as="image">
+    {{- if and .enabled .imageUrl $.IsHome }}
+        <link rel="preload" href="{{ .imageUrl }}" as="image">
+    {{- end }}
 {{- end }}
-{{- end }}
-
 {{- with .Site.Params.label.icon }}
-<link rel="preload" href="{{ . }}" as="image">
+    <link rel="preload" href="{{ . }}" as="image">
 {{- end }}
 
 {{- /* Search */ -}}
 <link crossorigin="anonymous" rel="preload" as="fetch" href="/index.json">
-
 {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) -}}
 {{- $fusejs := resources.Get "js/fuse.js" -}}
-
 {{- if not .Site.Params.assets.disableFingerprinting -}}
   {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | minify | fingerprint -}}
   <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
@@ -75,15 +85,15 @@
 
 {{- /* Highlight.js */}}
 {{- $isHLJSdisabled := (.Site.Params.assets.disableHLJS | default .Params.disableHLJS ) }}
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isHLJSdisabled)) }}
-{{- if not .Site.Params.assets.disableFingerprinting }}
-{{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" | minify | fingerprint }}
-<script defer crossorigin="anonymous" src="{{ $highlight.RelPermalink }}" integrity="{{ $highlight.Data.Integrity }}"
-    onload="hljs.initHighlightingOnLoad();"></script>
-{{- else }}
-{{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" | minify }}
-<script defer crossorigin="anonymous" src="{{ $highlight.RelPermalink }}" onload="hljs.initHighlightingOnLoad();"></script>
-{{- end }}
+{{- if (and (eq .Kind "page") (ne .Layout "search") (not $isHLJSdisabled)) }}
+    {{- if not .Site.Params.assets.disableFingerprinting }}
+        {{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" | minify | fingerprint }}
+        <script defer crossorigin="anonymous" src="{{ $highlight.RelPermalink }}" integrity="{{ $highlight.Data.Integrity }}"
+            onload="hljs.initHighlightingOnLoad();"></script>
+    {{- else }}
+        {{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" | minify }}
+        <script defer crossorigin="anonymous" src="{{ $highlight.RelPermalink }}" onload="hljs.initHighlightingOnLoad();"></script>
+    {{- end }}
 {{- end }}
 
 {{- /* Favicons */}}
@@ -100,47 +110,19 @@
 
 {{- /* RSS */}}
 {{ range .AlternativeOutputFormats -}}
-<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
 {{- range .AllTranslations -}}
-<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
 {{ end -}}
-
 <noscript>
     <style>
-        #theme-toggle,
-        . {
-            display: none;
-        }
-
     </style>
-
     {{- if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
     <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --color-surface: rgb(29, 30, 32);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --color-primary-variant: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--color-surface);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--color-surface);
-            }
-        }
     </style>
     {{- end }}
 </noscript>
-
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}

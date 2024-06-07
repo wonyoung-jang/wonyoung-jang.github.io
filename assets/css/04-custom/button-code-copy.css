@@ -1,0 +1,29 @@
+.highlight {
+  position: relative;
+  border-radius: unset;
+
+  &:hover {
+    button.copy-code {
+      display: block;
+    }
+  }
+}
+
+button.copy-code {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 100;
+  padding: var(--spacing-s);
+  
+  border-radius: var(--shape-corner-medium);
+  
+  background-color: var(--color-tertiary-container);
+  
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: var(--typeface-weight-bold);
+  color: var(--color-on-tertiary-container);
+  
+  cursor: pointer;
+}

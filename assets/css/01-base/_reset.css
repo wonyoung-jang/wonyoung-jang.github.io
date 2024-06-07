@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  position: relative;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  
+  border: 0;
+  border-radius: inherit;
+  outline: 0;
+  
+  background: transparent;
+  
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul, 
+ol,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+
+  &:after,
+  &:before {
+    content: "";
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

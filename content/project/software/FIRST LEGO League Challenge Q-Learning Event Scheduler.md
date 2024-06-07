@@ -6,11 +6,9 @@ githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
 tags:
 categories:
-lastMod: 2024-04-20
+lastMod: 2024-05-18
 ---
 ## A Brief History
-
----
 
 ### A Nerd Snipe from a Coworker
 
@@ -52,8 +50,6 @@ Since existing data isn't sufficient, data is generated for this Q-learner, I th
 
 ## Constraints
 
----
-
 ### Hard Constraints
 
 The hard constraints of a schedule are those imposed by the laws of physics and by the logical rules we usually assume without stating explicitly. There are three main hard constraints:
@@ -83,8 +79,6 @@ One constraint I had to grapple with is the **Back to Back Penalty**. If we assu
 I plan on pursuing this constraint more deeply, and am currently refining the above constraints.
 
 ## A Roadmap and some Current Problems
-
----
 
 {{< logseq/orgNOTE >}}Last update: 2024-03-18
 {{< / logseq/orgNOTE >}}

@@ -1,0 +1,198 @@
+/* Surface */
+.surface {
+  --bg-color: var(--color-surface);
+}
+
+.surface-bright {
+  --bg-color: var(--color-surface-bright);
+}
+
+.surface-dim {
+  --bg-color: var(--color-surface-dim);
+}
+
+/* Surface containers */
+.surface-container-lowest {
+  --bg-color: var(--color-surface-container-lowest);
+}
+
+.surface-container-low {
+  --bg-color: var(--color-surface-container-low);
+}
+
+.surface-container {
+  --bg-color: var(--color-surface-container);
+}
+
+.surface-container-high {
+  --bg-color: var(--color-surface-container-high);
+}
+
+.surface-container-highest {
+  --bg-color: var(--color-surface-container-highest);
+}
+
+/* On surface */
+.on-surface {
+  --icon-color: var(--color-on-surface);
+  --text-color: var(--color-on-surface);
+}
+
+.on-surface-variant {
+  --icon-color: var(--color-on-surface-variant);
+  --text-color: var(--color-on-surface-variant);
+}
+
+/* Primary */
+.primary {
+  --bg-color: var(--color-primary);
+
+  --icon-color: var(--color-on-primary);
+  --text-color: var(--color-on-primary);
+}
+
+.primary-container {
+  --bg-color: var(--color-primary-container);
+
+  --icon-color: var(--color-on-primary-container);
+  --text-color: var(--color-on-primary-container);
+}
+
+/* Secondary */
+.secondary {
+  --bg-color: var(--color-secondary);
+
+  --icon-color: var(--color-on-secondary);
+  --text-color: var(--color-on-secondary);
+}
+
+.secondary-container {
+  --bg-color: var(--color-secondary-container);
+
+  --icon-color: var(--color-on-secondary-container);
+  --text-color: var(--color-on-secondary-container);
+}
+
+/* Tertiary */
+.tertiary {
+  --bg-color: var(--color-tertiary);
+
+  --icon-color: var(--color-on-tertiary);
+  --text-color: var(--color-on-tertiary);
+}
+
+.tertiary-container {
+  --bg-color: var(--color-tertiary-container);
+
+  --icon-color: var(--color-on-tertiary-container);
+  --text-color: var(--color-on-tertiary-container);
+}
+
+/* Inverse */
+.inverse-surface {
+  --bg-color: var(--color-inverse-surface);
+
+  --icon-color: var(--color-inverse-on-surface);
+  --text-color: var(--color-inverse-on-surface);
+}
+
+.inverse-primary {
+  --bg-color: var(--color-inverse-surface);
+
+  --icon-color: var(--color-inverse-primary);
+  --text-color: var(--color-inverse-primary);
+}
+
+/* Error */
+.error {
+  --bg-color: var(--color-error);
+
+  --icon-color: var(--color-on-error);
+  --text-color: var(--color-on-error);
+}
+
+.error-container {
+  --bg-color: var(--color-error-container);
+
+  --icon-color: var(--color-on-error-container);
+  --text-color: var(--color-on-error-container);
+}
+
+/* || Add on color roles */
+
+/* Scrim and shadow */
+.scrim {
+  --bg-color: var(--color-scrim);
+}
+
+.shadow {
+  --bg-color: var(--color-shadow);
+}
+
+/* Outlines */
+.outline {
+  border: 1px solid var(--color-outline);
+}
+
+.outline-variant {
+  border: 1px solid var(--color-outline-variant);
+}
+
+/* Fixed accent colors */
+
+/* Primary */
+.primary-fixed {
+  --bg-color: var(--color-primary-fixed);
+}
+
+.on-primary-fixed {
+  --icon-color: var(--color-on-primary-fixed);
+  --text-color: var(--color-on-primary-fixed);
+}
+
+.primary-fixed-dim {
+  --bg-color: var(--color-primary-fixed-dim);
+}
+
+.on-primary-fixed-variant {
+  --icon-color: var(--color-on-primary-fixed-variant);
+  --text-color: var(--color-on-primary-fixed-variant);
+}
+
+/* Secondary */
+.secondary-fixed {
+  --bg-color: var(--color-secondary-fixed);
+}
+
+.on-secondary-fixed {
+  --icon-color: var(--color-on-secondary-fixed);
+  --text-color: var(--color-on-secondary-fixed);
+}
+
+.secondary-fixed-dim {
+  --bg-color: var(--color-secondary-fixed-dim);
+}
+
+.on-secondary-fixed-variant {
+  --icon-color: var(--color-on-secondary-fixed-variant);
+  --text-color: var(--color-on-secondary-fixed-variant);
+}
+
+/* Tertiary */
+.tertiary-fixed {
+  --bg-color: var(--color-tertiary-fixed);
+}
+
+.on-tertiary-fixed {
+  --icon-color: var(--color-on-tertiary-fixed);
+  --text-color: var(--color-on-tertiary-fixed);
+}
+
+.tertiary-fixed-dim {
+  --bg-color: var(--color-tertiary-fixed-dim);
+}
+
+.on-tertiary-fixed-variant {
+  --icon-color: var(--color-on-tertiary-fixed-variant);
+  --text-color: var(--color-on-tertiary-fixed-variant);
+}

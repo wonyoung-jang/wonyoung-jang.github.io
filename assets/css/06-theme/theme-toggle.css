@@ -1,0 +1,13 @@
+body {
+  &.dark {
+    #moon {
+      display: none;
+    }
+  }
+
+  &:not(.dark) {
+    #sun {
+      display: none;
+    }
+  }
+}

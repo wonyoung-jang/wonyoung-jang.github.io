@@ -1,0 +1,20 @@
+.component {
+  border: var(--container-outline, none);
+  box-shadow: var(--container-elevation, none);
+
+  &:hover {
+    border: var(--container-outline-hover, none);
+    box-shadow: var(--container-elevation-hover, none);
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: var(--container-outline-focus, none);
+    box-shadow: var(--container-elevation-focus, none);
+  }
+
+  &:active {
+    border: var(--container-outline-press, none);
+    box-shadow: var(--container-elevation-press, none);
+  }
+}

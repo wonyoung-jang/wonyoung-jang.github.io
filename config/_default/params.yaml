@@ -9,9 +9,12 @@ DateFormat: "2006, Jan 02"
 defaultTheme: auto
 disableThemeToggle: false
 ShowReadingTime: true
+
+ShowBreadCrumbs: true
+
 ShowShareButtons: true
 ShowPostNavLinks: true
-ShowBreadCrumbs: true
+
 ShowCodeCopyButtons: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
@@ -54,8 +57,8 @@ label:
 # Profile Mode
 profileMode:
   enabled: true
-  title: WonyoungJang.org
-  #subtitle: Personal Website  
+  title: Wonyoung Jang
+  #subtitle: Personal Website
   
   imageUrl: /android-chrome-512x512.png
   imageWidth: 220 # custom size
@@ -93,11 +96,11 @@ socialIcons:
 
 # Cover Image
 cover:
-  responsiveImages: false # Use responsive images
+  responsiveImages: true # Use responsive images
   linkFullImages: true # Link to full image
   hidden: false # Hide cover image in all views
   hiddenInList: false # Hide cover image in list view
-  hiddenInSingle: true # Hide cover image in single post view
+  hiddenInSingle: false # Hide cover image in single post view
 
 # Search Options
 # fuseOpts

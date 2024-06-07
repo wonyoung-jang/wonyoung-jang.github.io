@@ -1,0 +1,288 @@
+:root {
+  /* Scrim and Shadow */
+  --color-scrim:  var(--palette-neutral0);
+  --color-shadow: var(--palette-neutral0);
+
+  /* Primary */
+  --color-primary:    var(--palette-primary40);
+  --color-on-primary: var(--palette-primary100);
+
+  --color-primary-container:    var(--palette-primary90);
+  --color-on-primary-container: var(--palette-primary10);
+
+  /* Secondary */
+  --color-secondary:    var(--palette-secondary40);
+  --color-on-secondary: var(--palette-secondary100);
+
+  --color-secondary-container:    var(--palette-secondary90);
+  --color-on-secondary-container: var(--palette-secondary10);
+
+  /* Tertiary */
+  --color-tertiary:     var(--palette-tertiary40);
+  --color-on-tertiary:  var(--palette-tertiary100);
+
+  --color-tertiary-container:     var(--palette-tertiary90);
+  --color-on-tertiary-container:  var(--palette-tertiary10);
+
+  /* Error */
+  --color-error:    var(--palette-error40);
+  --color-on-error: var(--palette-error100);
+
+  --color-error-container:    var(--palette-error90);
+  --color-on-error-container: var(--palette-error10);
+
+  /* Surface */
+  --color-surface: var(--palette-neutral96);
+
+  /* Bright and Dim Surface Roles */
+  --color-surface-dim:    var(--palette-neutral80);
+  --color-surface-bright: var(--palette-neutral99);
+
+  --color-surface-container-lowest:   var(--palette-neutral90);
+  --color-surface-container-low:      var(--palette-neutral92);
+  --color-surface-container:          var(--palette-neutral94);
+  --color-surface-container-high:     var(--palette-neutral98);
+  --color-surface-container-highest:  var(--palette-neutral99);
+
+  --color-on-surface:         var(--palette-neutral10);
+  --color-on-surface-variant: var(--palette-neutral-variant30);
+
+  /* Inverse */
+  --color-inverse-on-surface: var(--palette-neutral94);
+  --color-inverse-primary:    var(--palette-primary80);
+  --color-inverse-surface:    var(--palette-neutral20);
+
+  /* Outline */
+  --color-outline:          var(--palette-neutral-variant50);
+  --color-outline-variant:  var(--palette-neutral-variant80);
+
+  /* || Add on color roles */
+  /* Fixed Accent Colors */
+  --color-primary-fixed:    var(--palette-primary90);
+  --color-on-primary-fixed: var(--palette-primary10);
+
+  --color-primary-fixed-dim:        var(--palette-primary80);
+  --color-on-primary-fixed-variant: var(--palette-primary30);
+
+  --color-secondary-fixed:    var(--palette-secondary90);
+  --color-on-secondary-fixed: var(--palette-secondary10);
+
+  --color-secondary-fixed-dim:        var(--palette-secondary80);
+  --color-on-secondary-fixed-variant: var(--palette-secondary30);
+
+  --color-tertiary-fixed:     var(--palette-tertiary90);
+  --color-on-tertiary-fixed:  var(--palette-tertiary10);
+
+  --color-tertiary-fixed-dim:         var(--palette-tertiary80);
+  --color-on-tertiary-fixed-variant:  var(--palette-tertiary30);
+
+  /* || Semantic Colors */
+
+  /* Admonitions */
+  --color-warning: var(--palette-warning40);
+  --color-on-warning: var(--palette-warning100);
+
+  --color-warning-container: var(--palette-warning90);
+  --color-on-warning-container: var(--palette-warning10);
+
+  --color-caution: var(--palette-caution40);
+  --color-on-caution: var(--palette-caution100);
+
+  --color-caution-container: var(--palette-caution90);
+  --color-on-caution-container: var(--palette-caution10);
+
+  --color-important: var(--palette-important40);
+  --color-on-important: var(--palette-important100);
+
+  --color-important-container: var(--palette-important90);
+  --color-on-important-container: var(--palette-important10);
+
+  --color-pinned: var(--palette-pinned40);
+  --color-on-pinned: var(--palette-pinned100);
+
+  --color-pinned-container: var(--palette-pinned90);
+  --color-on-pinned-container: var(--palette-pinned10);
+
+  --color-verse: var(--palette-verse40);
+  --color-on-verse: var(--palette-verse100);
+
+  --color-verse-container: var(--palette-verse90);
+  --color-on-verse-container: var(--palette-verse10);
+
+  --color-export: var(--palette-export40);
+  --color-on-export: var(--palette-export100);
+
+  --color-export-container: var(--palette-export90);
+  --color-on-export-container: var(--palette-export10);
+
+  --color-query: var(--palette-query40);
+  --color-on-query: var(--palette-quote100);
+
+  --color-query-container: var(--palette-query90);
+  --color-on-query-container: var(--palette-quote10);
+
+  --color-note: var(--palette-note40);
+  --color-on-note: var(--palette-note100);
+
+  --color-note-container: var(--palette-note90);
+  --color-on-note-container: var(--palette-note10);
+
+  --color-tip: var(--palette-tip40);
+  --color-on-tip: var(--palette-tip100);
+
+  --color-tip-container: var(--palette-tip90);
+  --color-on-tip-container: var(--palette-tip10);
+
+  --color-example: var(--palette-example40);
+  --color-on-example: var(--palette-example100);
+
+  --color-example-container: var(--palette-example90);
+  --color-on-example-container: var(--palette-example10);
+
+  --color-comment: var(--palette-comment40);
+  --color-on-comment: var(--palette-comment100);
+
+  --color-comment-container: var(--palette-comment90);
+  --color-on-comment-container: var(--palette-comment10);
+
+  --color-quote: var(--palette-quote40);
+  --color-on-quote: var(--palette-quote100);
+
+  --color-quote-container: var(--palette-quote90);
+  --color-on-quote-container: var(--palette-quote10);
+}
+
+.dark {
+  /* Scrim and Shadow */
+  --color-scrim:  var(--palette-neutral0);
+  --color-shadow: var(--palette-neutral0);
+
+  /* Primary */
+  --color-primary:    var(--palette-primary80);
+  --color-on-primary: var(--palette-primary20);
+
+  --color-primary-container:    var(--palette-primary30);
+  --color-on-primary-container: var(--palette-primary90);
+
+  /* Secondary */
+  --color-secondary:    var(--palette-secondary80);
+  --color-on-secondary: var(--palette-secondary20);
+
+  --color-secondary-container:    var(--palette-secondary30);
+  --color-on-secondary-container: var(--palette-secondary90);
+
+  /* Tertiary */
+  --color-tertiary:     var(--palette-tertiary80);
+  --color-on-tertiary:  var(--palette-tertiary20);
+
+  --color-tertiary-container:     var(--palette-tertiary30);
+  --color-on-tertiary-container:  var(--palette-tertiary90);
+
+  /* Error */
+  --color-error:    var(--palette-error80);
+  --color-on-error: var(--palette-error20);
+
+  --color-error-container:    var(--palette-error30);
+  --color-on-error-container: var(--palette-error90);
+
+  /* Surface */
+  --color-surface: var(--palette-neutral6);
+  
+  /* Bright and Dim Surface Roles */
+  --color-surface-dim:    var(--palette-neutral6);
+  --color-surface-bright: var(--palette-neutral25);
+
+  --color-surface-container-lowest:   var(--palette-neutral4);
+  --color-surface-container-low:      var(--palette-neutral10);
+  --color-surface-container:          var(--palette-neutral12);
+  --color-surface-container-high:     var(--palette-neutral18);
+  --color-surface-container-highest:  var(--palette-neutral20);
+
+  --color-on-surface:         var(--palette-neutral90);
+  --color-on-surface-variant: var(--palette-neutral-variant90);
+
+  /* Inverse */
+  --color-inverse-on-surface: var(--palette-neutral20);
+  --color-inverse-primary:    var(--palette-primary40);
+  --color-inverse-surface:    var(--palette-neutral90);
+
+  /* Outline */
+  --color-outline:          var(--palette-neutral-variant60);
+  --color-outline-variant:  var(--palette-neutral-variant30);
+
+  /* || Semantic Colors */
+  
+  /* Admonitions */
+
+  --color-warning: var(--palette-warning80);
+  --color-on-warning: var(--palette-warning20);
+
+  --color-warning-container: var(--palette-warning30);
+  --color-on-warning-container: var(--palette-warning90);
+
+  --color-caution: var(--palette-caution80);
+  --color-on-caution: var(--palette-caution20);
+
+  --color-caution-container: var(--palette-caution30);
+  --color-on-caution-container: var(--palette-caution90);
+
+  --color-important: var(--palette-important80);
+  --color-on-important: var(--palette-important20);
+
+  --color-important-container: var(--palette-important30);
+  --color-on-important-container: var(--palette-important90);
+
+  --color-pinned: var(--palette-pinned80);
+  --color-on-pinned: var(--palette-pinned20);
+
+  --color-pinned-container: var(--palette-pinned30);
+  --color-on-pinned-container: var(--palette-pinned90);
+
+  --color-verse: var(--palette-verse80);
+  --color-on-verse: var(--palette-verse20);
+
+  --color-verse-container: var(--palette-verse30);
+  --color-on-verse-container: var(--palette-verse90);
+
+  --color-export: var(--palette-export80);
+  --color-on-export: var(--palette-export20);
+
+  --color-export-container: var(--palette-export30);
+  --color-on-export-container: var(--palette-export90);
+
+  --color-query: var(--palette-query80);
+  --color-on-query: var(--palette-quote20);
+
+  --color-query-container: var(--palette-query30);
+  --color-on-query-container: var(--palette-quote90);
+
+  --color-note: var(--palette-note80);
+  --color-on-note: var(--palette-note20);
+
+  --color-note-container: var(--palette-note30);
+  --color-on-note-container: var(--palette-note90);
+
+  --color-tip: var(--palette-tip80);
+  --color-on-tip: var(--palette-tip20);
+
+  --color-tip-container: var(--palette-tip30);
+  --color-on-tip-container: var(--palette-tip90);
+
+  --color-example: var(--palette-example80);
+  --color-on-example: var(--palette-example20);
+
+  --color-example-container: var(--palette-example30);
+  --color-on-example-container: var(--palette-example90);
+
+  --color-comment: var(--palette-comment80);
+  --color-on-comment: var(--palette-comment20);
+
+  --color-comment-container: var(--palette-comment30);
+  --color-on-comment-container: var(--palette-comment90);
+
+  --color-quote: var(--palette-quote80);
+  --color-on-quote: var(--palette-quote20);
+
+  --color-quote-container: var(--palette-quote30);
+  --color-on-quote-container: var(--palette-quote90);
+}

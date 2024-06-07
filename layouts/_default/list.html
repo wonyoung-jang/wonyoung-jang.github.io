@@ -3,136 +3,77 @@
 {{- $pages := union .RegularPages .Sections }}
 {{- $paginator := .Paginate $pages }}
 
-{{/* VIEW TOGGLE BUTTON */}}
-<div class="view-toggle">
-    <button id="toggle-view-button" onclick="toggleGrid()">
-        &#x229E
-    </button>
-</div>
+<article class="layout panes canonical-feed">
+    
+    <section class="layout pane">
 
-{{/* POSTS CONTAINER */}}
-<div class="posts-container">
-
-    {{- range $index, $page := first 9 $paginator.Pages }}
-        {{- $class := "post-entry" }}
-        {{- $user_preferred := or .Site.Params.disableSpecial1stPost .Site.Params.homeInfoParams }}
-        
-        {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-            {{- $class = "first-entry" }}
-        {{- end }}
-        
-        <article class="{{ $class }}">
-            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            
-            <div class="entry-image">
+        {{- range $index, $page := first 9 $paginator.Pages }}        
+            <div class="component card filled">
+                <a  aria-label="post link to {{ .Title | plainify }}" 
+                    href="{{ .Permalink }}"></a>
+                
+                {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+                {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}            
+               
                 {{- if .Params.coverimage }}
-                    <img class="entry-cover" src="{{ .Params.coverimage | absURL }}" alt="{{ $.Title }} - descriptive image of the post content">
+                    <img    src="{{ .Params.coverimage | absURL }}" 
+                            alt="{{ $.Title }} - descriptive image of the post content">
                 {{- end }}
-            </div>
-
-            <div class="contained-post">
-                {{- if not (.Param "hideMeta") }}
-                    <footer class="entry-footer">
-                        {{- partial "post_meta.html" . -}}
-                    </footer>
-                {{- end }}
-
-                <header class="entry-header">
-                    <h2>
+                
+                <div class="card-content">
+                    {{- if not (.Param "hideMeta") }}
+                        {{- partial "components/post-meta.html" . -}}
+                    {{- end }}
+                    
+                    <h6>
                         {{- .Title }}
-                        {{- if .Draft }}
-                            <sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-                        {{- end }}
-                    </h2>
-                </header>
+                    </h6>
+                </div>
             </div>
-        </article>
-    {{- end }}
-</div>
 
+        {{- end }}
+
+    </section>
+
+</article>
+
+{{- end }}
+
+{{/* TODO
+List Page Navigation 
 {{- if gt $paginator.TotalPages 1 }}    
-    <footer class="list-footer">
-        <nav class="pagination">
-            {{- if $paginator.HasPrev }}
-                <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
-            {{- else }}
-                <span class="prev disabled">« {{ i18n "prev_page" }}</span>
-            {{- end }}
-            
-            {{- range $paginator.Pagers }}
-
-                {{- if ne .PageNumber $paginator.PageNumber }}
-                    <a class="pagenum" href="{{ .URL | absURL }}">{{ .PageNumber }}</a>
-                {{- else }}
-                    <span class="pagenum disabled">{{ .PageNumber }}</span>
-                {{- end }}
-
-            {{- end }}
-
-            {{- if $paginator.HasNext }}
-                <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
-            {{- else }}
-                <span class="next disabled">{{ i18n "next_page" }} »</span>
-            {{- end }}
-
-        </nav>
-    </footer>
-{{- end }}
-
-<script>
-    function toggleGrid(){
-        // Get references to elements
-        const btn = document.getElementById('toggle-view-button');
-        const container = document.querySelector('.posts-container');
     
-        // Check if the container has 'grid' applied
-        if (!container.style.display || container.style.display === 'flex') {
-            // Set 'grid' style
-            container.style.setProperty("display", "grid");
-            container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
-            container.style.setProperty("gap","var(--large-gap)");
-    
-            // Update button label
-            btn.innerText = "\u2630";
+    {{- if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL | absURL }}">
+            {{ i18n "prev_page" }}
+        </a>
+    {{- else }}
+        <span>
+            {{ i18n "prev_page" }}
+        </span>
+    {{- end }}
 
-            // Store the display state in localStorage
-            localStorage.setItem("displayState", "grid");
-        } else {
-            // Remove 'grid' styles
-            container.style.removeProperty("display");
-            container.style.removeProperty("gridTemplateColumns");
-        
-            // Update button label
-            btn.innerText = "\u229E";
+    {{- range $paginator.Pagers }}
+        {{- if ne .PageNumber $paginator.PageNumber }}
+            <a href="{{ .URL | absURL }}">
+                {{ .PageNumber }}
+            </a>
+        {{- else }}
+            <span>
+                {{ .PageNumber }}
+            </span>
+        {{- end }}
+    {{- end }}
 
-            // Store the display state in localStorage
-            localStorage.setItem("displayState", "flex");
-        }
-    };
-</script>
-
-<script>
-    // Apply the stored display state on page load
-    document.addEventListener('DOMContentLoaded', function() {
-        const container = document.querySelector('.posts-container');
-        const btn = document.getElementById('toggle-view-button');
-        const displayState = localStorage.getItem("displayState");
-
-        if (displayState === "grid") {
-            container.style.setProperty("display", "grid");
-            container.style.setProperty("gridTemplateColumns","repeat(auto-fill,minmax(300px,1fr))");
-            container.style.setProperty("gap","var(--large-gap)");
-            btn.innerText = "\u2630";
-        } else {
-            container.style.removeProperty("display");
-            container.style.removeProperty("gridTemplateColumns");
-            btn.innerText = "\u229E";
-        }
-    });
-</script>
+    {{- if $paginator.HasNext }}
+        <a  href="{{ $paginator.Next.URL | absURL }}">
+            {{ i18n "next_page" }}
+        </a>
+    {{- else }}
+        <span>
+            {{ i18n "next_page" }}
+        </span>
+    {{- end }}
 
 {{- end }}
+*/}}

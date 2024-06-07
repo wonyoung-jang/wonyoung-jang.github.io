@@ -1,81 +1,28 @@
 {{- define "main" }}
+  <article class="layout panes basic-fixedflex" id="single">
 
-{{/* Post Header */}}
-<header class="post-header">
-  {{- if .Draft }}
-    <sup><span class="entry-isdraft">[draft]</span></sup>
-  {{- end }}
-
-  {{/* Category + metadata wrap */}}
-  <div class="post-meta-wrap">
-
-    {{/* Metadata */}}
-    {{- if not (.Param "hideMeta") }}
-      <div class="post-meta">
-        {{- partial "post_meta.html" . -}}
-        {{- partial "translation_list.html" . -}}
-        {{- partial "post_canonical.html" . -}}
-      </div>
-    {{- end }}
-  </div>
-
-  {{/* Description */}}
-  {{- if .Description }}
-    <p class="post-description">
-      {{ .Description | markdownify }}
-    </p>
-  {{- end }}
-
-  {{/* Github button */}}
-  <div class="post-github-button">
-    {{ with .Params.githubRepo }}
-      {{ partial "github_button.html" (dict "githubRepo" .) }}
-    {{ end }}
-  </div>
-  
-</header>
-
-<div class="single-grid">
-  <div class="pre-div"></div>
-
-  {{/* Post Single */}}
-  <article class="post-single">
-    {{/* Post content */}}
-    {{- if .Content }}
-      <div class="post-content">
-        {{- if not (.Param "disableAnchoredHeadings") }}
-          {{- partial "anchored_headings.html" .Content -}}
-        {{- else }}
-          {{- .Content | safeHTML -}}
+    {{/* Pane: Post content */}}
+    <section class="layout pane" id="post-content">
+        {{- if .Content }}
+          {{- if not (.Param "disableAnchoredHeadings") }}
+            {{- partial "anchored_headings.html" .Content -}}
+          {{- else }}
+            {{- .Content | safeHTML -}}
+          {{- end }}  
         {{- end }}
-      </div>
-    {{- end }}
-    
-    {{/* Backlinks */}}
-    {{ partial "backlinks.html" . }}
+    </section>
+
+    {{/* Pane: Table of Contents */}}
+    <aside class="layout pane fixed-pane" id="toc">
+      {{- partial "sections/toc.html" . }}
+    </aside>
 
   </article>
 
-  {{/* Table of Contents */}}
-  {{- if (.Param "ShowToc") }}
-    {{- partial "toc.html" . }}
-  {{- end }}
-</div>
 
-<div class="post-footer-div">
-  {{/* Share buttons */}}
-  {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
-  {{- end }}  
-  
-  {{/* Post navigation links */}}
-  {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-  {{- end }}
+  {{/* Backlinks + Share links */}}
+  <section class="layout page-links">
+    {{- partial "sections/page-links.html" . -}}
+  </section>
 
-</div>
-
-{{/* Post Footer */}}
-
-
-{{- end }}{{/* end main */}}
+{{- end }}

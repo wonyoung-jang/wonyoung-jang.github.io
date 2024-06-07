@@ -3,7 +3,6 @@ main:
     name: Home
     pageRef: /
     weight: 1
-
   - identifier: Projects
     name: Projects
     pageRef: /project
@@ -29,11 +28,6 @@ main:
     parent: Resource
     weight: 1
 
-
-  - identifier: Archives
-    name: Archives
-    pageRef: /archives
-    weight: 32
   - identifier: Search
     name: Search
     pageRef: /search
@@ -52,10 +46,10 @@ main:
     weight: 42
 
 footer:
-  - identifier: Home
-    name: Home
-    pageRef: /
-    weight: 1
+  #- identifier: Home
+  #  name: Home
+  #  pageRef: /
+  #  weight: 1
   - identifier: About
     name: About
     pageRef: /about
@@ -64,10 +58,10 @@ footer:
     name: Contact
     pageRef: /contact
     weight: 20
-  - identifier: Search
-    name: Search
-    pageRef: /search
-    weight: 30
+  #- identifier: Search
+  #  name: Search
+  #  pageRef: /search
+  #  weight: 30
   - identifier: Sitemap
     name: Sitemap
     pageRef: /sitemap

@@ -1,0 +1,9 @@
+a {
+  &.internal-link {
+    color: var(--color-primary);
+  }
+
+  &.external-link {
+    color: var(--color-tertiary);
+  }
+}

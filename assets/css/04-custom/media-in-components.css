@@ -1,0 +1,7 @@
+:is(button, .button, .chip, .field) img, svg,
+:is(.tabs) :is(img, svg) {
+  min-inline-size: 40px;
+  max-inline-size: 40px;
+  min-block-size: 40px;
+  max-block-size: 40px;
+}

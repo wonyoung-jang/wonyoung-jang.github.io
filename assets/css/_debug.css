@@ -1,0 +1,12 @@
+.layout {
+  outline: 1px solid red;
+}
+
+.component {
+  outline: 1px solid green;
+}
+
+header,
+footer {
+  outline: 1px solid blue;
+}

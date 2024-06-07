@@ -1,0 +1,33 @@
+.layout.pane {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: 100%;
+  --height: auto;
+  --min-height: auto;
+  --padding: calc(var(--spacing-panes) * 2);
+  --margin: 0;
+  --gap: 0;
+
+  --shape: inherit;
+  --border: inherit;
+
+  --bg-color: inherit;
+}
+
+.layout.pane.fixed-pane {
+  --width: 100%;
+}
+
+/* Compact */
+@media (min-width: 0px) {
+  .layout.pane {
+    &.detail-pane,
+    &.supporting-pane {
+      --display: none;
+    }
+  }
+}

@@ -6,10 +6,9 @@ githubrepo: https://github.com/wonyoung-jang/logseq-tokenizer
 title: Logseq Markdown Tokenizer
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-05-18
 ---
 ## The Problem
----
 
   + [Logseq](https://logseq.com/) does not have a native way to view the character count of your notes (aka pages).
 
@@ -19,12 +18,9 @@ lastMod: 2024-04-14
 
 ## Proposed Solution
 
----
-
 Encode Logseq's graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
 
 ## Implementation
----
 
   + If I want to enable semantic search, then I must embed my graph.
 
@@ -40,14 +36,10 @@ Encode Logseq's graph to enable semantic search, then leverage this encoding to 
 
 ## Outputting the Data to CSV
 
----
-
 If I output this data as a CSV, I can manipulate and format the data. For instance, with conditional formatting:
 
 ![example_output.png](/assets/example_output_1710007420546_0.png)
 
 ## Summary
-
----
 
 This is my answer to efficiently managing large texts within the note-taking tool [Logseq](https://logseq.com/), particularly when dealing with extensive book highlights and other sizable content sources, like automatic imports of highlights of large articles from Read-Later apps like [Omnivore](https://omnivore.app/).

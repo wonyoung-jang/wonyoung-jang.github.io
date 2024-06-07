@@ -6,13 +6,12 @@ githubrepo: https://github.com/wonyoung-jang/dvd-rental-revenue
 title: DVD Rental Database Revenue Insights
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-05-18
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
 ## Learning Objectives and Requirements
----
 
   + Create a real-world business report using data extracted and analyzed from the DVD Rental Database.
 

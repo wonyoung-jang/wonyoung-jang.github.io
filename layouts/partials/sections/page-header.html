@@ -1,0 +1,64 @@
+{{/* Layout: Special-Header */}}
+
+{{/* Post Header */}}
+{{- if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) }} 
+    <section class="layout page-header">
+
+        {{/* Breadcrumbs */}}
+        <nav class="breadcrumbs label-large" aria-label="Breadcrumbs">
+            <ol>
+                {{ range .Ancestors.Reverse }} 
+                    {{ if .IsHome }}
+                        <li>
+                            <a href="{{ .Permalink }}">
+                                Home
+                            </a>
+                        </li>
+                    {{ else }}
+                        <li>
+                            <a href="{{ .Permalink }}">
+                                {{ .LinkTitle }}
+                            </a>
+                        </li>
+                    {{ end }} 
+                {{ end }}
+            </ol>
+        </nav>    
+
+        {{/* Title */}}
+        <h1 class="title">
+            {{- .Title -}}
+        </h1> 
+
+        {{/* Description */}}
+        {{- if .Description }}
+            <span class="description title-small">
+                {{ .Description | markdownify }}
+            </span>
+        {{- end }}
+
+        {{/* Metadata */}}
+        {{- if (and (ne .Layout "list") (ne .Layout "section") (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (eq .Title "404 Page not found"))) }}
+            {{- if not (.Param "hideMeta") }}
+                <div class="label-large">
+                    {{- partial "components/post-meta.html" . -}}
+                    {{- partial "translation_list.html" . -}}
+                </div>
+            {{- end }}
+        {{- end }}
+
+        {{/* Github button */}}
+        {{ with .Params.githubRepo }}
+            {{ partial "components/github-button.html" (dict "githubRepo" .) }}
+        {{ end }}
+ 
+        {{/* Cover image */}}
+        {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+        {{- partial "components/cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+        {{- if .Params.coverimage }}
+            <img    class="cover-image"
+                    src="{{ .Params.coverimage | absURL }}" 
+                    alt="{{ $.Title }} - descriptive image of the post content">
+        {{- end }}
+    </section>
+{{ end }}

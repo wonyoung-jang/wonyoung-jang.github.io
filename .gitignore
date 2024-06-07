@@ -15,6 +15,7 @@ partials.md
 content/test.md
 utils.tsx
 output.csv
-scrape2.py
-gen_sass_skel.py
-gen.py
+element_structure.md
+csstest.json
+assets/css/components-meta.css
+assets/css/other.css

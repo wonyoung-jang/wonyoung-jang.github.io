@@ -1,0 +1,31 @@
+.divider {
+  min-inline-size: 1.5rem;
+  min-block-size: auto;
+  block-size: 0.0625rem;
+  background-color: var(--color-outline-variant);
+  display: block;
+
+  + * {
+    margin: 0;
+  }
+
+  &.left {
+    width: calc(100% - var(--spacing-l));
+    margin-left: var(--spacing-l);
+  }
+
+  &.right {
+    width: calc(100% - var(--spacing-l));
+    margin-right: var(--spacing-l);
+  }
+
+  &.none {
+    color: transparent;
+  }
+
+  &.vertical {
+    min-inline-size: auto;
+    min-block-size: 1.5rem;
+    inline-size: 0.0625rem;
+  }
+}

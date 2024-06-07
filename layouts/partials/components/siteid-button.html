@@ -1,0 +1,17 @@
+{{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
+
+<button  class="component button common with-icon">
+    <a  href="{{ "" | absLangURL }}" 
+        accesskey="h" 
+        title="{{ $label_text }} (ALT + SHIFT + h)"></a>
+
+    {{- if .Site.Params.label.icon }}
+        <img    src="{{- .Site.Params.label.icon | absURL -}}" 
+                alt="logo" 
+                aria-label="logo">
+    {{- end -}}
+    
+    <h6 class="site-headline">
+        {{- $label_text -}}
+    </h6>        
+</button>

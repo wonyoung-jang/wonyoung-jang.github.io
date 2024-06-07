@@ -1,0 +1,16 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var links = document.getElementsByTagName('a');
+      var currentDomain = window.location.hostname;
+      for (var i = 0; i < links.length; i++) {
+        var link = links[i];
+        var linkDomain = new URL(link.href).hostname;
+    
+        if (linkDomain === currentDomain) {
+          link.classList.add('internal-link');
+        } else {
+          link.classList.add('external-link');
+        }
+      }
+    });
+</script>

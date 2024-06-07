@@ -1,0 +1,181 @@
+.admonition {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-block: var(--spacing-panes);
+  padding: var(--spacing-panes);
+  gap: var(--spacing-s);
+  max-width: 60ch;
+
+  border-radius: var(--shape-corner-extra-large);
+  box-shadow: var(--elevation-level1);
+
+  background-color: var(--bg-color, inherit);
+  
+  color: var(--text-color,);
+  white-space: normal;
+  overflow-wrap: break-word;
+  
+  i {
+    width: 48px;
+    height: 48px;
+    font-size: 40px;
+    padding: 0 var(--spacing-xl);
+    border-radius: unset;
+    color: var(--icon-color,);
+  }
+}
+
+/* Warning */
+.warning {
+  --bg-color: var(--color-warning);
+  --text-color: var(--color-on-warning);
+  --icon-color: var(--color-on-warning);
+}
+
+.warning-container {
+  --bg-color: var(--color-warning-container);
+  --text-color: var(--color-on-warning-container);
+  --icon-color: var(--color-on-warning-container);
+}
+
+/* Caution */
+.caution {
+  --bg-color: var(--color-caution);
+  --text-color: var(--color-on-caution);
+  --icon-color: var(--color-on-caution);
+}
+
+.caution-container {
+  --bg-color: var(--color-caution-container);
+  --text-color: var(--color-on-caution-container);
+  --icon-color: var(--color-on-caution-container);
+}
+
+/* Important */
+.important {
+  --bg-color: var(--color-important);
+  --text-color: var(--color-on-important);
+  --icon-color: var(--color-on-important);
+}
+
+.important-container {
+  --bg-color: var(--color-important-container);
+  --text-color: var(--color-on-important-container);
+  --icon-color: var(--color-on-important-container);
+}
+
+/* Pinned */
+.pinned {
+  --bg-color: var(--color-pinned);
+  --text-color: var(--color-on-pinned);
+  --icon-color: var(--color-on-pinned);
+}
+
+.pinned-container {
+  --bg-color: var(--color-pinned-container);
+  --text-color: var(--color-on-pinned-container);
+  --icon-color: var(--color-on-pinned-container);
+}
+/* Verse */
+.verse {
+  --bg-color: var(--color-verse);
+  --text-color: var(--color-on-verse);
+  --icon-color: var(--color-on-verse);
+}
+
+.verse-container {
+  --bg-color: var(--color-verse-container);
+  --text-color: var(--color-on-verse-container);
+  --icon-color: var(--color-on-verse-container);
+}
+
+/* Export */
+.export {
+  --bg-color: var(--color-export);
+  --text-color: var(--color-on-export);
+  --icon-color: var(--color-on-export);
+}
+
+.export-container {
+  --bg-color: var(--color-export-container);
+  --text-color: var(--color-on-export-container);
+  --icon-color: var(--color-on-export-container);
+}
+
+/* Query */
+.query {
+  --bg-color: var(--color-query);
+  --text-color: var(--color-on-query);
+  --icon-color: var(--color-on-query);
+}
+
+.query-container {
+  --bg-color: var(--color-query-container);
+  --text-color: var(--color-on-query-container);
+  --icon-color: var(--color-on-query-container);
+}
+
+/* Note */
+.note {
+  --bg-color: var(--color-note);
+  --text-color: var(--color-on-note);
+  --icon-color: var(--color-on-note);
+}
+
+.note-container {
+  --bg-color: var(--color-note-container);
+  --text-color: var(--color-on-note-container);
+  --icon-color: var(--color-on-note-container);
+}
+
+/* Tip */
+.tip {
+  --bg-color: var(--color-tip);
+  --text-color: var(--color-on-tip);
+  --icon-color: var(--color-on-tip);
+}
+
+.tip-container {
+  --bg-color: var(--color-tip-container);
+  --text-color: var(--color-on-tip-container);
+  --icon-color: var(--color-on-tip-container);
+}
+
+/* Example */
+.example {
+  --bg-color: var(--color-example);
+  --text-color: var(--color-on-example);
+  --icon-color: var(--color-on-example);
+}
+
+.example-container {
+  --bg-color: var(--color-example-container);
+  --text-color: var(--color-on-example-container);
+  --icon-color: var(--color-on-example-container);
+}
+
+/* Comment */
+.comment {
+  --bg-color: var(--color-comment);
+  --text-color: var(--color-on-comment);
+  --icon-color: var(--color-on-comment);
+}
+
+.comment-container {
+  --bg-color: var(--color-comment-container);
+  --text-color: var(--color-on-comment-container);
+  --icon-color: var(--color-on-comment-container);
+}
+
+/* TODO Quote */
+.quote {
+  --bg-color: var(--color-quote);
+  --text-color: var(--color-on-quote);
+  --icon-color: var(--color-on-quote);
+}
+
+.quote-container {
+  --bg-color: var(--color-quote-container);
+  --text-color: var(--color-on-quote-container);
+  --icon-color: var(--color-on-quote-container);
+}

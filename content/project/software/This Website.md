@@ -6,11 +6,9 @@ githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
 title: This Website
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-05-18
 ---
 ## How It's Made
-
----
 
 1. Pages (notes, articles, projects) are written in Logseq markdown.
 

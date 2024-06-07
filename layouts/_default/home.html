@@ -1,40 +1,35 @@
 {{- define "main" }}
+    {{- if ( and .Site.Params.profileMode.enabled .IsHome) }}
+        {{- with .Site.Params.profileMode }}
 
-{{- if (and .Site.Params.profileMode.enabled .IsHome) }}
-
-{{/* HOME PAGE DIV */}}
-<div class="profile">
-    
-    {{- with .Site.Params.profileMode }}
-
-        {{/* HOME PAGE IMG */}}
-        {{- if .imageUrl -}}
-            <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
-                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            <article class="layout panes basic-singlepane" id="home">
+                <section class="layout pane">
+                
+                    <!-- Site Image -->
+                    {{- if .imageUrl -}}
+                        <div class="home-image">
+                            <img    src="{{ .imageUrl | absURL }}" 
+                                    alt="{{ .imageTitle | default "profile image" }}"
+                                    height="{{ .imageHeight | default 150 }}" 
+                                    width="{{ .imageWidth | default 150 }}" />
+                        </div>
+                    {{- end }}
+                    
+                    <!-- Site Title -->
+                    <h1>
+                        {{ .title | default $.Site.Title | markdownify }}
+                    </h1>        
+            
+                    <!-- Home Page Buttons -->
+                    <nav class="home-buttons" aria-label="Home buttons">
+                        {{ partialCached "components/homepage-buttons.html" .}}
+                    </nav>
+                
+                </section>
+            </article>
+        
         {{- end }}
-
-        <h1>
-            {{ .title | default $.Site.Title | markdownify }}
-        </h1>
-
-        {{/* HOME PAGE BUTTONS */}}
-        <div class="home-button-container">
-            {{- with .buttons }}
-                {{- range . }}
-                <a class="home-button {{ .name | urlize }}" 
-                        href="{{ trim .url " " }}" 
-                        rel="noopener" 
-                        title="{{ .name | title }}">
-                        {{ .name | title }}
-                    </a>
-                {{- end }}
-            {{- end }}
-        </div>
-
-    {{- end}}
-
-</div>
-
-{{- end }}
+    
+    {{- end }}
 
 {{- end }}

@@ -1,0 +1,20 @@
+{{- if (.Param "ShowToc") }}
+
+<nav class="toc" aria-label="Page Content">
+    
+    <h2 class="overline">
+        On this page
+    </h2>
+    
+    <div class="title">
+        {{ .Title }}
+    </div>
+    
+    <div id="activeIndicator" class="indicator">
+    </div>
+    
+    {{ .TableOfContents }}
+    
+</nav>
+  
+{{- end }}

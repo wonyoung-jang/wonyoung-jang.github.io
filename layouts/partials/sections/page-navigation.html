@@ -1,0 +1,50 @@
+{{- if (.Param "ShowPostNavLinks") }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if and (gt (len $pages) 1) (in $pages . ) }}
+    <nav class="layout page-navigation" aria-label="Page Navigation">
+      {{- with $pages.Next . }}
+        <div class="component card filled prev">
+          <a href="{{ .Permalink }}"></a>
+
+          <span class="page-direction">
+            <i>arrow_back</i>
+            <label>
+              {{ i18n "prev_page" }}
+            </label>
+          </span>
+          
+          <h6>
+            {{- .Name -}}
+          </h6>
+        </div>
+      {{ else }}
+      <div class="component card filled prev empty">
+        <span class="page-direction">
+        </span>
+      </div>
+      {{- end }}
+
+      {{- with $pages.Prev . }}
+      <div class="component card filled next">
+        <a href="{{ .Permalink }}"></a>
+        
+        <span class="page-direction">
+          <label>
+            {{ i18n "next_page" }}
+          </label>
+          <i>arrow_forward</i>
+        </span>
+
+        <h6>
+          {{- .Name -}}
+        </h6>
+      </div>
+      {{ else }}
+      <div class="component card filled next empty">
+        <span class="page-direction">
+        </span>
+      </div>
+      {{- end }}
+    </nav>
+{{- end }}
+{{- end }}

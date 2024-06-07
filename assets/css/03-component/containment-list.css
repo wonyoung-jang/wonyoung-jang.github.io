@@ -1,0 +1,30 @@
+.list-item {
+  --container-display: flex;
+  --container-flex-flow: row wrap;
+  --container-align-items: center;
+  --container-justify-content: flex-start;
+  
+  --container-padding: var(--spacing-s) var(--spacing-l);
+
+  --bg-color: inherit;
+  --icon-color: inherit;
+  background-color: var(--bg-color,);
+  
+  * {
+    width: 100%;
+    color: var(--icon-color,);
+  }
+  
+  &.one {
+    --container-height: 56px;
+  }
+  
+  &.two {
+    --container-height: 72px;
+  }
+  
+  &.three {
+    --container-height: 88px;
+    --container-padding: var(--spacing-m) var(--spacing-l);
+  }
+}

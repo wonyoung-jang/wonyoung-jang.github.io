@@ -6,16 +6,12 @@ githubrepo: https://github.com/wonyoung-jang/top-reddit-comments
 title: Save Top Level Reddit Comments
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-05-18
 ---
 ## Premise
-
----
 
 Sometimes I just want the top voted parent comments of a reddit post.
 
 ## Conclusion
-
----
 
 This tool, which let's me save as many as I want to a CSV file, so that I can work with the data outside of reddit.

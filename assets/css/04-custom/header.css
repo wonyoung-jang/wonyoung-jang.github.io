@@ -1,0 +1,38 @@
+header {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  background-color: var(--color-surface-container);
+  border-radius: inherit;
+}
+  
+.tabs {
+  scrollbar-color: var(--color-secondary) transparent;
+  scrollbar-width: thin;
+  overflow: auto;
+  overflow-y: hidden;
+  
+}
+
+.top-app-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  .start,
+  .end {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--spacing-s);
+  }
+}
+
+.site-headline {
+  color: var(--color-on-surface)
+}

@@ -6,13 +6,12 @@ githubrepo: https://github.com/wonyoung-jang/retail-inventory-manager
 title: Retail Inventory Manager
 tags:
 categories:
-lastMod: 2024-04-14
+lastMod: 2024-05-18
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
 ## Learning Objectives and Requirements
----
 
   + Customize the HTML user interface to reflect the specific customer's shop name, product names, and part names.
 

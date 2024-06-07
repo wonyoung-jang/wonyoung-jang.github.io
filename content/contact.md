@@ -9,12 +9,9 @@ lastMod: 2024-04-14
 ---
 ## Contact Me Directly
 
----
-
 The best way to contact me directly is through email at [contact@wonyoungjang.org](mailto:contact@wonyoungjang.org).
 
 ## Give Me Feedback
----
 
 Give me feedback! I'm always trying to learn new things and I take all feedback seriously:
 

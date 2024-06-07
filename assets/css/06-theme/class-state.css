@@ -1,0 +1,15 @@
+.drag-layer {
+  opacity: var(--state-drag-opacity);
+}
+
+.press-layer {
+  opacity: var(--state-press-opacity);
+}
+
+.focus-layer {
+  opacity: var(--state-focus-opacity);
+}
+
+.hover-layer {
+  opacity: var(--state-hover-opacity);
+}

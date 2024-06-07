@@ -1,0 +1,135 @@
+:root {
+  font-size: var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  align-items: stretch;
+  overflow-x: hidden;
+
+  background-color: var(--color-surface-dim);
+
+  color: var(--color-on-surface);
+}
+
+main {
+  max-height: calc(100dvh - 112px);
+
+  overflow-y: auto;
+  scrollbar-color: var(--color-primary) transparent;
+  scrollbar-width: thin;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: bottom;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+/* Icons */
+i {
+  --size: 24px;
+
+  font-family: var(--font-icon);
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--size);
+  letter-spacing: normal;
+  text-transform: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  word-wrap: normal;
+
+  direction: ltr;
+
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+
+  vertical-align: middle;
+  text-align: center;
+
+  overflow: hidden;
+
+  inline-size: var(--size);
+  min-inline-size: var(--size);
+  block-size: var(--size);
+  min-block-size: var(--size);
+
+  line-height: normal;
+}
+
+/* Media */
+svg {
+  fill: currentColor;
+}
+
+img,
+svg,
+video {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  border-radius: var(--shape-corner-small);
+  box-shadow: var(--elevation-level2);
+  
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--motion-duration-short3),
+    border-radius var(--motion-duration-short3),
+    padding var(--motion-duration-short3);
+}
+
+/* Medium */
+@media (min-width: 600px) {
+  :root {
+    --spacing-panes: 24px;
+    --root-font-size: 15px;
+  }
+}
+
+/* Expanded */
+@media (min-width: 840px) {
+  :root {
+    --root-font-size: 16px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  :root {
+    --fixed-pane-width: 412px;
+  }
+}
+
+/* Scrollbar */
+@media (pointer: fine) {
+  /* Firefox */
+  main {
+    scrollbar-color: var(--color-primary) transparent;
+    scrollbar-width: thin;
+
+    /* Chromium + Safari */
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: var(--spacing-s);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: var(--spacing-xs);
+    }
+  }
+}

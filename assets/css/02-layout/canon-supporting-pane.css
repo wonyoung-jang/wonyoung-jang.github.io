@@ -1,0 +1,30 @@
+.layout.panes.canonical-supporting-pane {
+  .layout.pane {
+    &.focus-pane {
+      --flex: 2 1 auto;
+      --width: calc((100% / 3) * 2 - (var(--spacing-panes) / 2));
+    }
+
+    &.supporting-pane {
+      --flex: 1 2 auto;
+      --width: calc((100% / 3) * 1 - var(--spacing-panes));
+    }
+  }
+}
+
+/* Medium */
+@media (min-width: 600px) {
+  .layout.panes.canonical-supporting-pane {
+    --flex-flow: row nowrap;
+
+    .layout.pane {
+      &.supporting-pane {
+        --display: none;
+      }
+
+      &.focus-pane {
+        --width: 100%;
+      }
+    }
+  }
+}

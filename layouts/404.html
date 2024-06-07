@@ -1,14 +1,15 @@
 {{- define "main" }}
-
-<div class="not-found">
-    <h1 class="page-not-found-header">404</h1>
-    
-    <p class="page-not-found">Page not found.</p>
-
-    <h3 class="go-home">
-        <a href="{{ "" | relURL }}">Back to Home</a>
+<div class="page-404">
+    <h1>
+        404
+    </h1>
+    <h2>
+        Page not found.
+    </h2>
+    <h3>
+        <a href="{{ "" | relURL }}">
+            Back to Home
+        </a>
     </h3>
 </div>
-
 {{- end }}
-{{/* end main */ -}}

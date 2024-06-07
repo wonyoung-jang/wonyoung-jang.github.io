@@ -1,0 +1,8 @@
+{{ $repoName := split .githubRepo "/" | last 1 }}
+<button  class="component button common elevated">
+    <a  href="{{ .githubRepo }}"
+        target="_blank" 
+        rel="noopener noreferrer" 
+        aria-label="View the source code on GitHub {{ .githubRepo }} "></a>
+    View the source @{{ index $repoName 0 }} on GitHub
+</button>

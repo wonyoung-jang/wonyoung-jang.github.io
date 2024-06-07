@@ -1,0 +1,9 @@
+#top-link {
+  position: fixed;
+  bottom: var(--spacing-s);
+  right: var(--spacing-m);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  border-radius: var(--shape-corner-full);
+}
