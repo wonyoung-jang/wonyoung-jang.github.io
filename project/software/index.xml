@@ -1,56 +1,141 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Software on Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/project/software/</link>
-    <description>Recent content in Software on Wonyoung Jang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wonyoungjang.org/project/software/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Realtime Multiplayer Drawing App</title>
-      <link>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</link>
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+    <title>
       
-      <guid>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</guid>
-      <description>Draw in realtime on a blank canvas with others on the same server.</description>
-    </item>
+        
+          Software on 
+        
+        Wonyoung Jang
+      
+    </title>
+    <link>
+      https://wonyoungjang.org/project/software/
+    </link>
+    <description>
+      Recent content 
+      
+        
+          in Software 
+        
+      
+        on Wonyoung Jang
+    </description>
+    <generator>
+      Hugo -- gohugo.io
+    </generator>
     
-    <item>
-      <title>This Website</title>
-      <link>https://wonyoungjang.org/project/software/this-website/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/this-website/</guid>
-      <description>This page is a meta presentation for the deployment of this website (and this page).</description>
-    </item>
+      <language>
+        en
+      </language>
     
-    <item>
-      <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
-      <link>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
-      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
-      <description>A FLLC event scheduler using Q-Learning.</description>
-    </item>
     
-    <item>
-      <title>Save Top Level Reddit Comments</title>
-      <link>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</link>
-      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</guid>
-      <description>Extract the parent comments of a [reddit](https://www.reddit.com/) post.</description>
-    </item>
     
-    <item>
-      <title>Logseq Markdown Tokenizer</title>
-      <link>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</link>
-      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</guid>
-      <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).</description>
-    </item>
+    
+    
+      <lastBuildDate>
+        Sat, 13 Apr 2024 00:00:00 +0000
+      </lastBuildDate>
+    <atom:link href="https://wonyoungjang.org/project/software/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>
+            Realtime Multiplayer Drawing App
+          </title>
+          <link>
+            https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/
+          </link>
+          <pubDate>
+            Fri, 08 Mar 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/
+          </guid>
+          <description>
+            
+              Draw in realtime on a blank canvas with others on the same server.
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            This Website
+          </title>
+          <link>
+            https://wonyoungjang.org/project/software/this-website/
+          </link>
+          <pubDate>
+            Tue, 05 Mar 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/project/software/this-website/
+          </guid>
+          <description>
+            
+              This page is a meta presentation for the deployment of this website (and this page).
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            FIRST LEGO League Challenge Q-Learning Event Scheduler
+          </title>
+          <link>
+            https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/
+          </link>
+          <pubDate>
+            Sun, 25 Feb 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/
+          </guid>
+          <description>
+            
+              A FLLC event scheduler using Q-Learning.
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Save Top Level Reddit Comments
+          </title>
+          <link>
+            https://wonyoungjang.org/project/software/save-top-level-reddit-comments/
+          </link>
+          <pubDate>
+            Sun, 28 Jan 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/project/software/save-top-level-reddit-comments/
+          </guid>
+          <description>
+            
+              Extract the parent comments of a [reddit](https://www.reddit.com/) post.
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Logseq Markdown Tokenizer
+          </title>
+          <link>
+            https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/
+          </link>
+          <pubDate>
+            Sat, 13 Jan 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/
+          </guid>
+          <description>
+            
+              Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).
+            </description>
+        </item>
     
   </channel>
 </rss>
