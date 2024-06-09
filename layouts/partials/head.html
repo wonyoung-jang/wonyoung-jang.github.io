@@ -47,14 +47,16 @@
 {{- end }}
 
 {{- /* Styles */}}
-{{- $variable           := (resources.Match "css/00-variable/*.css")        | resources.Concat "assets/css/00-variable.css" }}
-{{- $base               := (resources.Match "css/01-base/*.css")            | resources.Concat "assets/css/01-base.css" }}
-{{- $layout             := (resources.Match "css/02-layout/*.css")          | resources.Concat "assets/css/02-layout.css" }}
-{{- $component          := (resources.Match "css/03-component/*.css")       | resources.Concat "assets/css/03-component.css" }}
-{{- $custom             := (resources.Match "css/04-custom/*.css")          | resources.Concat "assets/css/04-custom.css" }}
-{{- $page               := (resources.Match "css/05-page/*.css")            | resources.Concat "assets/css/05-page.css" }}
-{{- $theme              := (resources.Match "css/06-theme/*.css")           | resources.Concat "assets/css/06-theme.css" }}
-{{- $all := (slice $variable $base $layout $component $custom $page $theme) | resources.Concat "assets/css/all.css" }}
+{{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
+{{- $reference          := (resources.Match "css/01-reference/*.css")   | resources.Concat "assets/css/01-reference.css" }}
+{{- $system             := (resources.Match "css/02-system/*.css")      | resources.Concat "assets/css/02-system.css" }}
+{{- $base               := (resources.Match "css/03-base/*.css")        | resources.Concat "assets/css/03-base.css" }}
+{{- $layout             := (resources.Match "css/04-layout/*.css")      | resources.Concat "assets/css/04-layout.css" }}
+{{- $component          := (resources.Match "css/05-component/*.css")   | resources.Concat "assets/css/05-component.css" }}
+{{- $custom             := (resources.Match "css/06-custom/*.css")      | resources.Concat "assets/css/06-custom.css" }}
+{{- $page               := (resources.Match "css/07-page/*.css")        | resources.Concat "assets/css/07-page.css" }}
+{{- $theme              := (resources.Match "css/08-theme/*.css")       | resources.Concat "assets/css/08-theme.css" }}
+{{- $all := (slice $reset $reference $system $base $layout $component $custom $page $theme) | resources.Concat "assets/css/all.css" }}
 {{- $stylesheet := $all | resources.Minify -}}
 {{- if not .Site.Params.assets.disableFingerprinting }}
     {{- $stylesheet := $stylesheet | fingerprint }}

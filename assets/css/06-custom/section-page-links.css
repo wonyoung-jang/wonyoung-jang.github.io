@@ -1,0 +1,36 @@
+.layout.page-links {
+  --flex: initial;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: 100%;
+  --height: auto;
+  --min-height: auto;
+  --padding: 0 calc(var(--spacing-panes) * 2);
+  --margin: 0;
+  --gap: var(--spacing-l);
+
+  --shape: inherit;
+  --border: inherit;
+
+  --bg-color: inherit;
+}
+
+.layout.page-links {
+  nav#share-links,
+  nav#backlinks {
+    flex: 1 1 auto;
+    border-radius: var(--shape-corner-m);
+    border: 1px solid var(--color-outline-variant);
+    padding: var(--spacing-xl);
+  }
+}
+
+/* Medium */
+@media (min-width: 600px) {
+  .layout.page-links {
+    flex-flow: row nowrap;
+  }
+}

@@ -1,0 +1,19 @@
+.layout.content-wrapper {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: 100%;
+  --height: auto;
+  --min-height: calc(100dvh - 112px);
+  --padding: 0;
+  --margin: 0;
+  --gap: 0;
+
+  --shape: var(--shape-corner-xl);
+  --border: inherit;
+
+  --bg-color: var(--color-surface);
+}

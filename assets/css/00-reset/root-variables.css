@@ -1,0 +1,49 @@
+:root {
+  /* Scales */
+  --scale-minor-second:   1.067;
+  --scale-major-second:   1.125;
+  --scale-minor-third:    1.2;
+  --scale-major-third:    1.25;
+  --scale-perfect-fourth: 1.33;
+  --scale-aug-fourth:     1.414;
+  --scale-perfect-fifth:  1.5;
+  --scale-golden-ratio:   1.618;
+
+  /* Typescale factors */
+  --scale-back-size:          var(--scale-major-third);
+  --scale-up-type:            var(--scale-perfect-fifth);
+  --scale-back-type:          var(--scale-minor-second);
+  --scale-line-height-small:  var(--scale-major-second);
+  --scale-line-height-large:  var(--scale-perfect-fourth);
+
+  /* Spacing */
+  --spacing-xl: 20px;
+  --spacing-l:  16px;
+  --spacing-m:  12px;
+  --spacing-s:  8px;
+  --spacing-xs: 4px;
+
+  /* Icons */
+  --typeface-icon-outlined:   'Material Symbols Outlined';
+  --typeface-icon-rounded:    'Material Symbols Rounded';
+  --typeface-icon-sharp:      'Material Symbols Sharp';
+  --font-icon: var(--typeface-icon-rounded);
+
+  /* Layout */
+  --fixed-pane-width: 360px;
+  --spacing-panes: 16px;
+
+  /* Font size */
+  --root-font-size: 14px;
+
+  /* Window size classes */
+  --window-compact-min: 0px;
+  --window-compact-max: 599px;
+  --window-medium-min: 600px;
+  --window-medium-max: 839px;
+  --window-expanded-min: 840px;
+  --window-expanded-max: 1199px;
+  --window-large-min: 1200px;
+  --window-large-max: 1599px;
+  --window-extra-large-min: 1600px;
+}
