@@ -1,0 +1,31 @@
+header {
+  border-radius: var(--shape-corner-none);
+}
+
+.layout.content-wrapper {
+  --shape: var(--shape-corner-none);
+
+  .layout.panes {
+    --shape: var(--shape-corner-none);
+
+    .layout.pane {
+      --shape: var(--shape-corner-xl);
+    }
+  }
+
+  .layout.page-header {
+    --shape: var(--shape-corner-m-bottom);
+  }
+
+  .layout.page-links {
+    --shape: var(--shape-corner-m-top);
+  }
+
+  .layout.page-navigation {
+    --shape: var(--shape-corner-none);
+  }
+}
+
+footer {
+  border-radius: var(--shape-corner-none);
+}

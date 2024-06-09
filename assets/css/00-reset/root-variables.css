@@ -51,7 +51,6 @@
   --root-font-size:   14px;
 }
 
-
 /* Medium */
 @media (min-width: 600px) {
   :root {
@@ -64,12 +63,6 @@
 @media (min-width: 840px) {
   :root {
     --root-font-size: 16px;
-
-    --spacing-xl: 24px;
-    --spacing-l:  20px;
-    --spacing-m:  16px;
-    --spacing-s:  12px;
-    --spacing-xs: 08px;
   }
 }
 

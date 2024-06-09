@@ -6,17 +6,8 @@ footer {
   flex-flow: row wrap;
 
   width: 100%;
-  padding: 20vh 8vw 4vh 8vw;
-  gap: 4vh;
-
-  background-color: var(--color-surface-container);
-}
-
-#footer-separator {
-  position: absolute;
-  top: 12vh;
-  left: 0;
-  right: 0;
+  padding: 12dvh 8dvw 4dvh 8dvw;
+  gap: 8dvh;
 }
 
 .footer-links {

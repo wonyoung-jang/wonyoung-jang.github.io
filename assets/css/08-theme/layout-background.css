@@ -1,0 +1,31 @@
+header {
+  background-color: var(--color-surface-container);
+}
+
+.layout.content-wrapper {
+  --bg-color: var(--color-surface);
+
+  .layout.panes {
+    --bg-color: var(--color-surface);
+
+    .layout.pane {
+      --bg-color: var(--color-surface);
+    }
+  }
+
+  .layout.page-header {
+    --bg-color: var(--color-surface-container-lowest);
+  }
+
+  .layout.page-links {
+    --bg-color: var(--color-surface-container-low);
+  }
+
+  .layout.page-navigation {
+    --bg-color: var(--color-surface-container-low);
+  }
+}
+
+footer {
+  background-color: var(--color-surface-container);
+}

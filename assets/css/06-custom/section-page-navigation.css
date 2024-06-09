@@ -8,14 +8,10 @@
   --width: 100%;
   --height: auto;
   --min-height: auto;
-  --padding: 0 var(--spacing-panes);
+  --padding: var(--spacing-panes);
   --margin: 0;
   --gap: var(--spacing-s);
-
-  --shape: inherit;
   --border: inherit;
-
-  --bg-color: inherit;
 }
 
 .layout.page-navigation {
@@ -32,7 +28,7 @@
     gap: var(--spacing-s);
 
     --container-shape: var(--shape-corner-xl);
-    --bg-color: var(--color-surface-container);
+    --bg-color: var(--color-surface-container-lowest);
     --icon-color: var(--color-on-surface-variant);
 
     * {
@@ -57,7 +53,7 @@
     &.empty {
       opacity: 0;
       pointer-events: none;
-      height: unset;
+      height: 0px;
     }
 
     a {

@@ -12,8 +12,6 @@
   --margin: 0;
   --gap: 0;
 
-  --shape: var(--shape-corner-xl);
   --border: inherit;
-
-  --bg-color: var(--color-surface);
 }
+

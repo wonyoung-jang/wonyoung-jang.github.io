@@ -12,10 +12,7 @@
   --margin: var(--spacing-s);
   --gap: var(--spacing-xl);
 
-  --shape: inherit;
   --border: inherit;
-
-  --bg-color: var(--color-surface-container-lowest);
 }
 
 .layout.page-header {

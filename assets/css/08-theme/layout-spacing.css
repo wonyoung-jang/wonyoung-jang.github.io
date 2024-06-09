@@ -1,0 +1,12 @@
+.layout {
+  max-inline-size: var(--window-extra-large-min);
+  margin: 0 auto;
+
+  &.page-header {
+    margin-bottom: 2rem;
+  }
+
+  &.panes {
+    margin-block: 4rem;
+  }
+}

@@ -2,7 +2,7 @@
     /* || Hues (0-360) */
 
     /* Key Hues */
-    --hue-primary:  295deg;
+    --hue-primary:  298deg;
     --hue-tertiary: calc(var(--hue-primary) - 60deg);
     
     /* Semantic Hues */

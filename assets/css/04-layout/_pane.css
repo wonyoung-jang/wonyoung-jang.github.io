@@ -12,11 +12,9 @@
   --margin: 0;
   --gap: 0;
 
-  --shape: inherit;
   --border: inherit;
-
-  --bg-color: inherit;
 }
+
 
 .layout.pane.fixed-pane {
   --width: 100%;

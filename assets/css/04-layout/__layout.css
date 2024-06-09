@@ -20,22 +20,22 @@
 
 .layout {
   --flex: initial;
-  --display: flex;
-  --flex-flow: column nowrap;
-  --align-items: stretch;
+  --display: initial;
+  --flex-flow: initial;
+  --align-items: initial;
   --align-content: initial;
   --justify-content: initial;
-  --width: 100%;
-  --height: auto;
-  --min-height: auto;
-  --padding: 0;
-  --margin: 0;
-  --gap: 0;
+  --width: initial;
+  --height: initial;
+  --min-height: initial;
+  --padding: initial;
+  --margin: initial;
+  --gap: initial;
 
-  --shape: inherit;
-  --border: inherit;
+  --shape: initial;
+  --border: initial;
 
-  --bg-color: inherit;
+  --bg-color: initial;
 }
 
 /* Transitions */
@@ -50,28 +50,6 @@ footer,
   transition-property: font-size, line-height, margin, height, min-height,
     max-height, border-radius, min-width, max-width, width, padding, transform,
     visibility, opacity;
-}
-
-/* Vertical spacing */
-.layout {
-  max-inline-size: var(--window-extra-large-min);
-  margin: 0 auto;
-
-  &.page-header {
-    margin-bottom: 5rem;
-  }
-
-  &.panes {
-    margin-bottom: 4rem;
-  }
-
-  &.page-links {
-    margin-bottom: 5rem;
-  }
-
-  &.page-navigation {
-    margin-bottom: 5rem;
-  }
 }
 
 /* .layout {

@@ -12,8 +12,7 @@
   --margin: 0;
   --gap: var(--spacing-panes);
 
-  --shape: inherit;
   --border: inherit;
-
-  --bg-color: inherit;
 }
+ 
+
