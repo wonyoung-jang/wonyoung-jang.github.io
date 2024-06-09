@@ -1,132 +1,120 @@
 /* Surface */
 .surface {
-  --bg-color: var(--color-surface);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
 }
 
 .surface-bright {
-  --bg-color: var(--color-surface-bright);
+  background-color: var(--color-surface-bright);
+  color: var(--color-on-surface);
 }
 
 .surface-dim {
-  --bg-color: var(--color-surface-dim);
+  background-color: var(--color-surface-dim);
+  color: var(--color-on-surface);
 }
 
 /* Surface containers */
 .surface-container-lowest {
-  --bg-color: var(--color-surface-container-lowest);
+  background-color: var(--color-surface-container-lowest);
+  color: var(--color-on-surface);
 }
 
 .surface-container-low {
-  --bg-color: var(--color-surface-container-low);
+  background-color: var(--color-surface-container-low);
+  color: var(--color-on-surface);
 }
 
 .surface-container {
-  --bg-color: var(--color-surface-container);
+  background-color: var(--color-surface-container);
+  color: var(--color-on-surface);
 }
 
 .surface-container-high {
-  --bg-color: var(--color-surface-container-high);
+  background-color: var(--color-surface-container-high);
+  color: var(--color-on-surface);
 }
 
 .surface-container-highest {
-  --bg-color: var(--color-surface-container-highest);
+  background-color: var(--color-surface-container-highest);
+  color: var(--color-on-surface);
 }
 
 /* On surface */
 .on-surface {
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
+  color: var(--color-on-surface);
 }
 
 .on-surface-variant {
-  --icon-color: var(--color-on-surface-variant);
-  --text-color: var(--color-on-surface-variant);
+  color: var(--color-on-surface-variant);
 }
 
 /* Primary */
 .primary {
-  --bg-color: var(--color-primary);
-
-  --icon-color: var(--color-on-primary);
-  --text-color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
 }
 
 .primary-container {
-  --bg-color: var(--color-primary-container);
-
-  --icon-color: var(--color-on-primary-container);
-  --text-color: var(--color-on-primary-container);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
 }
 
 /* Secondary */
 .secondary {
-  --bg-color: var(--color-secondary);
-
-  --icon-color: var(--color-on-secondary);
-  --text-color: var(--color-on-secondary);
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
 }
 
 .secondary-container {
-  --bg-color: var(--color-secondary-container);
-
-  --icon-color: var(--color-on-secondary-container);
-  --text-color: var(--color-on-secondary-container);
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
 }
 
 /* Tertiary */
 .tertiary {
-  --bg-color: var(--color-tertiary);
-
-  --icon-color: var(--color-on-tertiary);
-  --text-color: var(--color-on-tertiary);
+  background-color: var(--color-tertiary);
+  color: var(--color-on-tertiary);
 }
 
 .tertiary-container {
-  --bg-color: var(--color-tertiary-container);
-
-  --icon-color: var(--color-on-tertiary-container);
-  --text-color: var(--color-on-tertiary-container);
+  background-color: var(--color-tertiary-container);
+  color: var(--color-on-tertiary-container);
 }
 
 /* Inverse */
 .inverse-surface {
-  --bg-color: var(--color-inverse-surface);
-
-  --icon-color: var(--color-inverse-on-surface);
-  --text-color: var(--color-inverse-on-surface);
+  background-color: var(--color-inverse-surface);
+  color: var(--color-inverse-on-surface);
 }
 
 .inverse-primary {
-  --bg-color: var(--color-inverse-surface);
-
-  --icon-color: var(--color-inverse-primary);
-  --text-color: var(--color-inverse-primary);
+  background-color: var(--color-inverse-surface);
+  color: var(--color-inverse-primary);
 }
 
 /* Error */
 .error {
-  --bg-color: var(--color-error);
-
-  --icon-color: var(--color-on-error);
-  --text-color: var(--color-on-error);
+  background-color: var(--color-error);
+  color: var(--color-on-error);
 }
 
 .error-container {
-  --bg-color: var(--color-error-container);
-
-  --icon-color: var(--color-on-error-container);
-  --text-color: var(--color-on-error-container);
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
 }
 
 /* || Add on color roles */
 
 /* Scrim and shadow */
 .scrim {
-  --bg-color: var(--color-scrim);
+  background-color: var(--color-scrim);
+  color: var(--palette-neutral100);
 }
 
 .shadow {
-  --bg-color: var(--color-shadow);
+  background-color: var(--color-shadow);
+  color: var(--palette-neutral100);
 }
 
 /* Outlines */
@@ -138,63 +126,65 @@
   border: 1px solid var(--color-outline-variant);
 }
 
+.outline-container {
+  background-color: var(--color-outline);
+}
+
+.outline-variant-container {
+  background-color: var(--color-outline-variant);
+}
+
 /* Fixed accent colors */
 
 /* Primary */
 .primary-fixed {
-  --bg-color: var(--color-primary-fixed);
+  background-color: var(--color-primary-fixed);
 }
 
 .on-primary-fixed {
-  --icon-color: var(--color-on-primary-fixed);
-  --text-color: var(--color-on-primary-fixed);
+  color: var(--color-on-primary-fixed);
 }
 
 .primary-fixed-dim {
-  --bg-color: var(--color-primary-fixed-dim);
+  background-color: var(--color-primary-fixed-dim);
 }
 
 .on-primary-fixed-variant {
-  --icon-color: var(--color-on-primary-fixed-variant);
-  --text-color: var(--color-on-primary-fixed-variant);
+  color: var(--color-on-primary-fixed-variant);
 }
 
 /* Secondary */
 .secondary-fixed {
-  --bg-color: var(--color-secondary-fixed);
+  background-color: var(--color-secondary-fixed);
 }
 
 .on-secondary-fixed {
-  --icon-color: var(--color-on-secondary-fixed);
-  --text-color: var(--color-on-secondary-fixed);
+  color: var(--color-on-secondary-fixed);
 }
 
 .secondary-fixed-dim {
-  --bg-color: var(--color-secondary-fixed-dim);
+  background-color: var(--color-secondary-fixed-dim);
 }
 
 .on-secondary-fixed-variant {
-  --icon-color: var(--color-on-secondary-fixed-variant);
-  --text-color: var(--color-on-secondary-fixed-variant);
+  color: var(--color-on-secondary-fixed-variant);
 }
 
 /* Tertiary */
 .tertiary-fixed {
-  --bg-color: var(--color-tertiary-fixed);
+  background-color: var(--color-tertiary-fixed);
 }
 
 .on-tertiary-fixed {
-  --icon-color: var(--color-on-tertiary-fixed);
-  --text-color: var(--color-on-tertiary-fixed);
+  color: var(--color-on-tertiary-fixed);
 }
 
 .tertiary-fixed-dim {
-  --bg-color: var(--color-tertiary-fixed-dim);
+  background-color: var(--color-tertiary-fixed-dim);
 }
 
 .on-tertiary-fixed-variant {
-  --icon-color: var(--color-on-tertiary-fixed-variant);
-  --text-color: var(--color-on-tertiary-fixed-variant);
+  color: var(--color-on-tertiary-fixed-variant);
 }
 
 /* || Not MD 3 */
@@ -338,7 +328,7 @@
 
   * {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     border-radius: inherit;

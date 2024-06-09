@@ -228,7 +228,7 @@
   /* || Add on color roles */
   
   /* Bright and Dim Surface Roles */
-  --color-surface-dim:                var(--palette-neutral85);
+  --color-surface-dim:                var(--palette-neutral88);
   --color-surface-bright:             var(--palette-neutral96);
 
   /* Fixed Accent Colors */
@@ -484,41 +484,3 @@
   --color-surface-dim:    var(--palette-neutral6);
   --color-surface-bright: var(--palette-neutral20);
 }
-
-/*
-Color Palette HTML
-
-  <div class="color-palette">
-      <div class="primary-container-test">0</div>
-      <div class="sub30-container">30</div>
-      <div class="add30-container">30</div>
-      <div class="sub60-container">60</div>
-      <div class="add60-container">60</div>
-      <div class="sub90-container">90</div>
-      <div class="add90-container">90</div>
-      <div class="sub120-container">120</div>
-      <div class="add120-container">120</div>
-      <div class="sub150-container">150</div>
-      <div class="add150-container">150</div>
-      <div class="sub180-container">180</div>
-      <div class="add180-container">180</div>
-      <div class="complementary-container">Complementary</div>
-  </div>
-
-  <div class="color-palette">
-      <div class="primary-test">0</div>
-      <div class="sub30">30</div>
-      <div class="add30">30</div>
-      <div class="sub60">60</div>
-      <div class="add60">60</div>
-      <div class="sub90">90</div>
-      <div class="add90">90</div>
-      <div class="sub120">120</div>
-      <div class="add120">120</div>
-      <div class="sub150">150</div>
-      <div class="add150">150</div>
-      <div class="sub180">180</div>
-      <div class="add180">180</div>
-      <div class="complementary">Complementary</div>
-  </div>
-*/
