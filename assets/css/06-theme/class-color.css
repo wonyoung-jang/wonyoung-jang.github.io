@@ -196,3 +196,165 @@
   --icon-color: var(--color-on-tertiary-fixed-variant);
   --text-color: var(--color-on-tertiary-fixed-variant);
 }
+
+
+.primary-test {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  grid-column: span 2;
+}
+
+.primary-container-test {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  grid-column: span 2;
+}
+
+.sub180 {
+  background-color: var(--color-sub180);
+  color: var(--color-on-sub180);
+}
+
+.sub180-container {
+  background-color: var(--color-sub180-container);
+  color: var(--color-on-sub180-container);
+}
+
+.add180 {
+  background-color: var(--color-add180);
+  color: var(--color-on-add180);
+}
+
+.add180-container {
+  background-color: var(--color-add180-container);
+  color: var(--color-on-add180-container);
+}
+
+.sub30 {
+  background-color: var(--color-sub30);
+  color: var(--color-on-sub30);
+}
+
+.sub30-container {
+  background-color: var(--color-sub30-container);
+  color: var(--color-on-sub30-container);
+}
+
+.add30 {
+  background-color: var(--color-add30);
+  color: var(--color-on-add30);
+}
+
+.add30-container {
+  background-color: var(--color-add30-container);
+  color: var(--color-on-add30-container);
+}
+
+.sub60 {
+  background-color: var(--color-sub60);
+  color: var(--color-on-sub60);
+}
+
+.sub60-container {
+  background-color: var(--color-sub60-container);
+  color: var(--color-on-sub60-container);
+}
+
+.add60 {
+  background-color: var(--color-add60);
+  color: var(--color-on-add60);
+}
+
+.add60-container {
+  background-color: var(--color-add60-container);
+  color: var(--color-on-add60-container);
+}
+
+.sub90 {
+  background-color: var(--color-sub90);
+  color: var(--color-on-sub90);
+}
+
+.sub90-container {
+  background-color: var(--color-sub90-container);
+  color: var(--color-on-sub90-container);
+}
+
+.add90 {
+  background-color: var(--color-add90);
+  color: var(--color-on-add90);
+}
+
+.add90-container {
+  background-color: var(--color-add90-container);
+  color: var(--color-on-add90-container);
+}
+
+.sub120 {
+  background-color: var(--color-sub120);
+  color: var(--color-on-sub120);
+}
+
+.sub120-container {
+  background-color: var(--color-sub120-container);
+  color: var(--color-on-sub120-container);
+}
+
+.add120 {
+  background-color: var(--color-add120);
+  color: var(--color-on-add120);
+}
+
+.add120-container {
+  background-color: var(--color-add120-container);
+  color: var(--color-on-add120-container);
+}
+
+.sub150 {
+  background-color: var(--color-sub150);
+  color: var(--color-on-sub150);
+}
+
+.sub150-container {
+  background-color: var(--color-sub150-container);
+  color: var(--color-on-sub150-container);
+}
+
+.add150 {
+  background-color: var(--color-add150);
+  color: var(--color-on-add150);
+}
+
+.add150-container {
+  background-color: var(--color-add150-container);
+  color: var(--color-on-add150-container);
+}
+
+.complementary {
+  background-color: var(--color-complementary);
+  color: var(--color-on-complementary);
+  grid-column: span 2;
+}
+
+.complementary-container {
+  background-color: var(--color-complementary-container);
+  color: var(--color-on-complementary-container);
+  grid-column: span 2;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem;
+  border-radius: var(--shape-corner-none);
+
+  * {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+
+    padding: 1rem;
+  }
+}

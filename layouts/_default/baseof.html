@@ -34,27 +34,24 @@
     <!-- Body -->
     <body id="top">        
         
-        <!-- * Header -->
+        <!-- Header -->
         <header role="banner">
-            <!-- Component: Top App Bar + Tabs -->
             {{- partialCached "base/header.html" . .Page -}}
         </header>
 
-        <!-- * Main -->
+        <!-- Main -->
         <main role="main">
 
             <!-- Layout: Content Wrapper -->
             <div class="layout content-wrapper">
-                
                 <!-- Layout: Page Header -->
                 {{- partialCached "sections/page-header.html" . .Page -}}
 
-                {{/* Layout: Main */}}
+                <!-- Layout: Main -->
                 {{- block "main" . }}{{ end }}
 
-                {{/* Layout: Page Navigation */}}
+                <!-- Layout: Page Navigation -->
                 {{- partial "sections/page-navigation.html" . }}
-
             </div>
             
             <!-- Component: Top-Link -->
@@ -65,9 +62,6 @@
                 <!-- * Content: Links + Copyright -->
                 {{- partialCached "base/footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
             </footer>
-
         </main>
-        
     </body>
-
 </html>

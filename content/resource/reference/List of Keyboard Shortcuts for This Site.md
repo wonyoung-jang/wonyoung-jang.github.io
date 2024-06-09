@@ -16,9 +16,3 @@ lastMod: 2024-05-18
 ## Customizing Appearance
 
 `ALT`+`SHIFT`+`t` → Toggle light/dark themes
-
-`ALT`+`SHIFT`+`c` → Toggle table of contents
-
-`ALT`+`SHIFT`+`p` → Collapse table of contents
-
-`ALT`+`SHIFT`+`b` → Expand table of contents

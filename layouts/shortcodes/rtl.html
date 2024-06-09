@@ -4,6 +4,7 @@
 {{ else }}
   {{ $.Scratch.Set "md" (.Get 0) }}
 {{ end }}
+
 <div dir="rtl">
   {{ if eq ($.Scratch.Get "md") false }}
     {{ .Inner }}

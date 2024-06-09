@@ -48,3 +48,6 @@ lastMod: 2024-05-18
 
 {{< logseq/orgCOMMENT >}}This is a comment
 {{< / logseq/orgCOMMENT >}}
+
+{{< logseq/orgQUOTE >}}This is a quote
+{{< / logseq/orgQUOTE >}}

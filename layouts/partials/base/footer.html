@@ -1,6 +1,5 @@
-{{/* Layout: Special-Footer */}}
+{{/* Layout: Footer */}}
 
-{{/* Footer */}}    
 {{/* Divider */}}
 <div class="divider" id="footer-separator"></div>
 
@@ -29,13 +28,11 @@
         </h6>
 
         {{- range $.Site.Params.socialIcons }}
-            <li>
-                <a  href="{{ trim .url " " }}" 
-                    target="_blank" 
-                    rel="noopener noreferrer me">
-                    {{ .name | title }}
-                </a>
-            </li>
+            <a  href="{{ trim .url " " }}" 
+                target="_blank" 
+                rel="noopener noreferrer me">
+                {{ .name | title }}
+            </a>
         {{- end }}
 
     </ul>
@@ -43,10 +40,9 @@
 
 {{/* Copyright */}}
 <section class="copyright">
-    <button class="component button with-icon surface-container">
+    <button class="component button with-icon">
         <a href="{{ "" | absLangURL }}"></a>
-        © {{ now.Year }}
-        {{ .Site.Title }}
+        © {{ now.Year }} {{ .Site.Title }}
     </button>
 </section>
 
