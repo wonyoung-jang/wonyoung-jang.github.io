@@ -197,26 +197,9 @@
   --text-color: var(--color-on-tertiary-fixed-variant);
 }
 
-.sub180 {
-  background-color: var(--color-sub180);
-  color: var(--color-on-sub180);
-}
+/* || Not MD 3 */
 
-.sub180-container {
-  background-color: var(--color-sub180-container);
-  color: var(--color-on-sub180-container);
-}
-
-.add180 {
-  background-color: var(--color-add180);
-  color: var(--color-on-add180);
-}
-
-.add180-container {
-  background-color: var(--color-add180-container);
-  color: var(--color-on-add180-container);
-}
-
+/* || Classic Palettes */
 .sub30 {
   background-color: var(--color-sub30);
   color: var(--color-on-sub30);
@@ -315,6 +298,26 @@
 .add150-container {
   background-color: var(--color-add150-container);
   color: var(--color-on-add150-container);
+}
+
+.sub180 {
+  background-color: var(--color-sub180);
+  color: var(--color-on-sub180);
+}
+
+.sub180-container {
+  background-color: var(--color-sub180-container);
+  color: var(--color-on-sub180-container);
+}
+
+.add180 {
+  background-color: var(--color-add180);
+  color: var(--color-on-add180);
+}
+
+.add180-container {
+  background-color: var(--color-add180-container);
+  color: var(--color-on-add180-container);
 }
 
 .complementary {

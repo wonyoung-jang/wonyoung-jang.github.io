@@ -1,5 +1,5 @@
 :root {
-  /* Label */
+  /* 1 Label */
   --typescale-label-small-size: calc(var(--typescale-label-medium-size) / var(--scale-back-size));
   --typescale-label-small-line-height: var(--scale-line-height-large);
   --typescale-label-small-weight: var(--typeface-weight-medium);
@@ -15,7 +15,7 @@
   --typescale-label-large-weight: var(--typeface-weight-medium);
   --typescale-label-large-font: var(--typeface-plain);
 
-  /* Body */
+  /* 2 Body */
   --typescale-body-small-size: calc(var(--typescale-body-medium-size) / var(--scale-back-size));
   --typescale-body-small-line-height: var(--scale-line-height-large);
   --typescale-body-small-weight: var(--typeface-weight-regular);
@@ -31,7 +31,7 @@
   --typescale-body-large-weight: var(--typeface-weight-regular);
   --typescale-body-large-font: var(--typeface-plain);
 
-  /* Title */
+  /* 3 Title */
   --typescale-title-small-size: calc(var(--typescale-title-medium-size) / var(--scale-back-size));
   --typescale-title-small-line-height: var(--scale-line-height-small);
   --typescale-title-small-weight: var(--typeface-weight-semi-bold);
@@ -47,7 +47,7 @@
   --typescale-title-large-weight: var(--typeface-weight-semi-bold);
   --typescale-title-large-font: var(--typeface-brand);
 
-  /* Headline */
+  /* 4 Headline */
   --typescale-headline-small-size: calc(var(--typescale-headline-medium-size) / var(--scale-back-size));
   --typescale-headline-small-line-height: var(--scale-line-height-small);
   --typescale-headline-small-weight: var(--typeface-weight-bold);
@@ -63,7 +63,7 @@
   --typescale-headline-large-weight: var(--typeface-weight-bold);
   --typescale-headline-large-font: var(--typeface-brand);
 
-  /* Display */
+  /* 5 Display */
   --typescale-display-small-size: calc(var(--typescale-display-medium-size) / var(--scale-back-size));
   --typescale-display-small-line-height: var(--scale-line-height-small);
   --typescale-display-small-weight: var(--typeface-weight-bold);

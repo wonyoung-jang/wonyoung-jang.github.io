@@ -1,0 +1,33 @@
+/* || Default transitions */
+
+/* Emphasized */
+.begin-and-end {
+  transition-timing-function: var(--motion-easing-emphasized);
+  transition-duration: var(--motion-duration-long2);
+}
+
+.enter-screen {
+  transition-timing-function: var(--motion-easing-emphasized-decelerate);
+  transition-duration: var(--motion-duration-medium4);
+}
+
+.exit-screen {
+  transition-timing-function: var(--motion-easing-emphasized-accelerate);
+  transition-duration: var(--motion-duration-short4);
+}
+
+/* Standard */
+.begin-and-end-standard {
+  transition-timing-function: var(--motion-easing-standard);
+  transition-duration: var(--motion-duration-medium2);
+}
+
+.enter-screen-standard {
+  transition-timing-function: var(--motion-easing-standard-decelerate);
+  transition-duration: var(--motion-duration-medium1);
+}
+
+.exit-screen-standard {
+  transition-timing-function: var(--motion-easing-standard-accelerate);
+  transition-duration: var(--motion-duration-short4);
+}

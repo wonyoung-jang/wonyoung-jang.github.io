@@ -92,28 +92,6 @@ video {
     padding var(--motion-duration-short3);
 }
 
-/* Medium */
-@media (min-width: 600px) {
-  :root {
-    --spacing-panes: 24px;
-    --root-font-size: 15px;
-  }
-}
-
-/* Expanded */
-@media (min-width: 840px) {
-  :root {
-    --root-font-size: 16px;
-  }
-}
-
-/* Large */
-@media (min-width: 1200px) {
-  :root {
-    --fixed-pane-width: 412px;
-  }
-}
-
 /* Scrollbar */
 @media (pointer: fine) {
   /* Firefox */

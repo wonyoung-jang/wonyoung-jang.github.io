@@ -1,42 +1,42 @@
 :root {
-  /* No rounding */
+  /* 1 No rounding */
   --shape-corner-none: 0px;
 
-  /* Extra small rounding */
+  /* 2 Extra small rounding */
   --shape-corner-xs:        04px;
   --shape-corner-xs-top:    04px 04px 00px 00px;
   --shape-corner-xs-bottom: 00px 00px 04px 04px;
   --shape-corner-xs-start:  04px 00px 00px 04px;
   --shape-corner-xs-end:    00px 04px 04px 00px;
 
-  /* Small rounding */
+  /* 3 Small rounding */
   --shape-corner-s:         08px;
   --shape-corner-s-top:     08px 08px 00px 00px;
   --shape-corner-s-bottom:  00px 00px 08px 08px;
   --shape-corner-s-start:   08px 00px 00px 08px;
   --shape-corner-s-end:     00px 08px 08px 00px;
 
-  /* Medium rounding */
+  /* 4 Medium rounding */
   --shape-corner-m:         12px;
   --shape-corner-m-top:     12px 12px 00px 00px;
   --shape-corner-m-bottom:  00px 00px 12px 12px;
   --shape-corner-m-start:   12px 00px 00px 12px;
   --shape-corner-m-end:     00px 12px 12px 00px;
 
-  /* Large rounding */
+  /* 5 Large rounding */
   --shape-corner-l:         16px;
   --shape-corner-l-top:     16px 16px 00px 00px;
   --shape-corner-l-bottom:  00px 00px 16px 16px;
   --shape-corner-l-start:   16px 00px 00px 16px;
   --shape-corner-l-end:     00px 16px 16px 00px;
 
-  /* Extra large rounding */
+  /* 6 Extra large rounding */
   --shape-corner-xl:        28px;
   --shape-corner-xl-top:    28px 28px 00px 00px;
   --shape-corner-xl-bottom: 00px 00px 28px 28px;
-  --shape-corner-xl-start:  28px 00px 00px 28px;
+  --shape-corner-xl-start:  28px 00pcx 00px 28px;
   --shape-corner-xl-end:    00px 28px 28px 00px;
 
-  /* Fully rounded */
+  /* 7 Fully rounded */
   --shape-corner-full: 50%;
 }

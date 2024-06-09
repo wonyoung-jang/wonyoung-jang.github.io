@@ -1,4 +1,3 @@
-/* Reference Tokens: Palette */
 :root {
     /* || Hues (0-360) */
 
@@ -20,15 +19,31 @@
     --hue-example:      calc(285deg + ((285 / 360) * var(--hue-primary)));
     --hue-comment:      calc(315deg + ((315 / 360) * var(--hue-primary)));
     --hue-quote:        calc(345deg + ((345 / 360) * var(--hue-primary)));
+
+    /* Classic Palette Hues */
+    --hue-complementary: calc(var(--hue-primary) + 180deg);
+    --hue-sub30: calc((var(--hue-primary) - 30deg) + (30deg / 36));
+    --hue-sub60: calc((var(--hue-primary) - 60deg) + (60deg / 36));
+    --hue-sub90: calc((var(--hue-primary) - 90deg) + (90deg / 36));
+    --hue-sub120: calc((var(--hue-primary) - 120deg) + (120deg / 36));
+    --hue-sub150: calc((var(--hue-primary) - 150deg) + (150deg / 36));
+    --hue-sub180: calc((var(--hue-primary) - 180deg) + (180deg / 36));
+    --hue-add30: calc((var(--hue-primary) + 30deg) - (30deg / 36));
+    --hue-add60: calc((var(--hue-primary) + 60deg) - (60deg / 36));
+    --hue-add90: calc((var(--hue-primary) + 90deg) - (90deg / 36));
+    --hue-add120: calc((var(--hue-primary) + 120deg) - (120deg / 36));
+    --hue-add150: calc((var(--hue-primary) + 150deg) - (150deg / 36));
+    --hue-add180: calc((var(--hue-primary) + 180deg) - (180deg / 36));
     
     /* || Chromas (0-150) */
-    --chroma-primary:           55;
+    --chroma-primary:           80;
     --chroma-error:             80;
+    --chroma-other: 48;
     --chroma-tertiary:          calc(var(--chroma-primary) / 2);
     --chroma-secondary:         calc(var(--chroma-primary) / 3);
     --chroma-neutral-variant:   calc(var(--chroma-primary) / 5);
     --chroma-neutral:           calc(var(--chroma-primary) / 8);
-    --chroma-admonition:        calc(var(--chroma-primary) / 1.618);
+    --chroma-admonition:        calc(var(--chroma-primary) / var(--scale-fibonacci));
 
     /* Primary */
     --palette-primary0:  lch(0% var(--chroma-primary) var(--hue-primary));
@@ -315,24 +330,6 @@
 
     /* || Different palettes */
 
-    /* Hues */
-    --hue-complementary: calc(var(--hue-primary) + 180deg);
-    --hue-sub30: calc((var(--hue-primary) - 30deg) + (30deg / 36));
-    --hue-sub60: calc((var(--hue-primary) - 60deg) + (60deg / 36));
-    --hue-sub90: calc((var(--hue-primary) - 90deg) + (90deg / 36));
-    --hue-sub120: calc((var(--hue-primary) - 120deg) + (120deg / 36));
-    --hue-sub150: calc((var(--hue-primary) - 150deg) + (150deg / 36));
-    --hue-sub180: calc((var(--hue-primary) - 180deg) + (180deg / 36));
-    --hue-add30: calc((var(--hue-primary) + 30deg) - (30deg / 36));
-    --hue-add60: calc((var(--hue-primary) + 60deg) - (60deg / 36));
-    --hue-add90: calc((var(--hue-primary) + 90deg) - (90deg / 36));
-    --hue-add120: calc((var(--hue-primary) + 120deg) - (120deg / 36));
-    --hue-add150: calc((var(--hue-primary) + 150deg) - (150deg / 36));
-    --hue-add180: calc((var(--hue-primary) + 180deg) - (180deg / 36));
-
-    /* Chroma */
-    --chroma-other: 48;
-    
     /* Sub 30 */
     --palette-sub30-0: lch(0% var(--chroma-other) var(--hue-sub30));
     --palette-sub30-10: lch(10% var(--chroma-other) var(--hue-sub30));

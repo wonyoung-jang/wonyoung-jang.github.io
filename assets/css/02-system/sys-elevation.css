@@ -1,10 +1,10 @@
 :root {
-  /* Resting */
+  /* 1 Resting */
   --elevation0: 00px;
   --elevation1: 00px 01px 03px 01px rgba(0, 0, 0, 0.15), 00px 01px 02px rgba(0, 0, 0, 0.30);
   --elevation2: 00px 02px 06px 02px rgba(0, 0, 0, 0.15), 00px 01px 02px rgba(0, 0, 0, 0.30);
   
-  /* Interactions */
+  /* 2 Interactions */
   --elevation3: 00px 04px 08px 03px rgba(0, 0, 0, 0.15), 00px 01px 03px rgba(0, 0, 0, 0.30);
   --elevation4: 00px 06px 10px 04px rgba(0, 0, 0, 0.15), 00px 02px 03px rgba(0, 0, 0, 0.30);
   --elevation5: 00px 08px 12px 06px rgba(0, 0, 0, 0.15), 00px 04px 04px rgba(0, 0, 0, 0.30);

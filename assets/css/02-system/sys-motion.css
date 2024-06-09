@@ -13,25 +13,25 @@
 
   /* || Duration */
 
-  /* Short */
+  /* 1 Short */
   --motion-duration-short1: 50ms;
   --motion-duration-short2: 100ms;
   --motion-duration-short3: 150ms;
   --motion-duration-short4: 200ms;
 
-  /* Medium */
+  /* 2 Medium */
   --motion-duration-medium1: 250ms;
   --motion-duration-medium2: 300ms;
   --motion-duration-medium3: 350ms;
   --motion-duration-medium4: 400ms;
 
-  /* Long */
+  /* 3 Long */
   --motion-duration-long1: 450ms;
   --motion-duration-long2: 500ms;
   --motion-duration-long3: 550ms;
   --motion-duration-long4: 600ms;
 
-  /* Extra long */
+  /* 4 Extra long */
   --motion-duration-extra-long1: 700ms;
   --motion-duration-extra-long2: 800ms;
   --motion-duration-extra-long3: 900ms;
