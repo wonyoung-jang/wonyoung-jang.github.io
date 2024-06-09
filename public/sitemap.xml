@@ -83,6 +83,12 @@
     <loc>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</loc>
     <lastmod>2024-05-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/canonfeed/</loc>
+  </url><url>
+    <loc>http://localhost:1313/canonlistdetail/</loc>
+  </url><url>
+    <loc>http://localhost:1313/canonsupportingpane/</loc>
+  </url><url>
     <loc>http://localhost:1313/colors/</loc>
   </url><url>
     <loc>http://localhost:1313/graph/</loc>

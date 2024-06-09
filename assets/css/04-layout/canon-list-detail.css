@@ -3,7 +3,15 @@
     &.detail-pane,
     &.list-pane {
       --flex: 1 1 auto;
-      --width: calc((100% / 2) - (var(--spacing-panes) / 2));
+    }
+  }
+}
+
+/* Compact */
+@media (max-width: 599px) {
+  .layout.panes.canonical-list-detail {
+    .layout.pane.detail-pane {
+      display: none;
     }
   }
 }

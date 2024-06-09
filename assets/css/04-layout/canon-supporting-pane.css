@@ -1,29 +1,24 @@
 .layout.panes.canonical-supporting-pane {
-  .layout.pane {
-    &.focus-pane {
-      --flex: 2 1 auto;
-      --width: calc((100% / 3) * 2 - (var(--spacing-panes) / 2));
-    }
+  --flex-flow: column nowrap;
 
-    &.supporting-pane {
-      --flex: 1 2 auto;
-      --width: calc((100% / 3) * 1 - var(--spacing-panes));
-    }
   }
+
+.layout.pane {
+  display: flex;
 }
 
-/* Medium */
-@media (min-width: 600px) {
+/* Expanded */
+@media (min-width: 840px) {
   .layout.panes.canonical-supporting-pane {
     --flex-flow: row nowrap;
 
     .layout.pane {
-      &.supporting-pane {
-        --display: none;
-      }
-
       &.focus-pane {
-        --width: 100%;
+        --flex: 2 1 0;
+      }
+  
+      &.supporting-pane {
+        --flex: 1 2 0;
       }
     }
   }
