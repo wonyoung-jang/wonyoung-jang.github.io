@@ -1,0 +1,36 @@
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  border-radius: var(--shape-corner-none);
+
+  * {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+
+    padding: 0.5rem;
+  }
+
+  .primary-test {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    grid-column: span 2;
+  }
+
+  .primary-container-test {
+    background-color: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+    grid-column: span 2;
+  }
+
+  .complementary {
+    grid-column: span 2;
+  }
+
+  .complementary-container {
+    grid-column: span 2;
+  }
+}

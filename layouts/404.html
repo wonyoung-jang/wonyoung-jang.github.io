@@ -1,15 +1,18 @@
 {{- define "main" }}
-<div class="page-404">
-    <h1>
-        404
-    </h1>
-    <h2>
-        Page not found.
-    </h2>
-    <h3>
-        <a href="{{ "" | relURL }}">
-            Back to Home
-        </a>
-    </h3>
-</div>
+    <section class="page-404">
+        <h1>
+            404
+        </h1>
+
+        <h2>
+            Page not found
+        </h2>
+
+        <button class="component button common filled with-icon">
+            <a href="{{ "" | relURL }}"></a>
+            <i>home</i>
+            <span>Back to Home</span>
+        </button>
+
+    </section>
 {{- end }}
