@@ -89,8 +89,8 @@
   </url><url>
     <loc>http://localhost:1313/canonsupportingpane/</loc>
   </url><url>
-    <loc>http://localhost:1313/colors/</loc>
-  </url><url>
     <loc>http://localhost:1313/graph/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resource/reference/colors/</loc>
   </url>
 </urlset>

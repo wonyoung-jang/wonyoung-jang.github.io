@@ -2,7 +2,7 @@
     /* || Hues (0-360) */
 
     /* Key Hues */
-    --hue-primary:  300deg;
+    --hue-primary:  305deg;
     --hue-tertiary: calc(var(--hue-primary) - 60deg);
     
     /* Semantic Hues */
@@ -44,6 +44,20 @@
     --chroma-neutral-variant:   8%;
     --chroma-neutral:           4%;
     --chroma-admonition:        calc(var(--chroma-primary) / var(--scale-fibonacci));
+
+    /* Absolute Hues */
+    --palette-hue-0:    lch(55% 55% 0deg);
+    --palette-hue-30:   lch(55% 55% 30deg);
+    --palette-hue-60:   lch(55% 55% 60deg);
+    --palette-hue-90:   lch(55% 55% 90deg);
+    --palette-hue-120:  lch(55% 55% 120deg);
+    --palette-hue-150:  lch(55% 55% 150deg);
+    --palette-hue-180:  lch(55% 55% 180deg);
+    --palette-hue-210:  lch(55% 55% 210deg);
+    --palette-hue-240:  lch(55% 55% 240deg);
+    --palette-hue-270:  lch(55% 55% 270deg);
+    --palette-hue-300:  lch(55% 55% 300deg);
+    --palette-hue-330:  lch(55% 55% 330deg);
 
     /* Black and White */
     --palette-black: #000000;
@@ -175,7 +189,6 @@
     --palette-error80:      lch(80% var(--chroma-error) var(--hue-error));
     --palette-error90:      lch(90% var(--chroma-error) var(--hue-error));
     --palette-error100:     var(--palette-white);
-
     
     /* Warning */
     --palette-warning0:     var(--palette-black);

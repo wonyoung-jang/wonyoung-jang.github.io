@@ -23,36 +23,63 @@
 
   --color-tertiary-container:     var(--palette-tertiary90);
   --color-on-tertiary-container:  var(--palette-tertiary10);
-
-  /* Surface */
-  --color-surface: var(--palette-neutral96);
-
-  --color-surface-container-lowest:   var(--palette-neutral99);
-  --color-surface-container-low:      var(--palette-neutral98);
-  --color-surface-container:          var(--palette-neutral94);
-  --color-surface-container-high:     var(--palette-neutral92);
-  --color-surface-container-highest:  var(--palette-neutral90);
-
-  --color-on-surface:         var(--palette-neutral10);
-  --color-on-surface-variant: var(--palette-neutral-variant30);
-
-  /* Inverse */
-  --color-inverse-on-surface: var(--palette-neutral94);
-  --color-inverse-primary:    var(--palette-primary80);
-  --color-inverse-surface:    var(--palette-neutral20);
-
-  /* Outline */
-  --color-outline:          var(--palette-neutral-variant50);
-  --color-outline-variant:  var(--palette-neutral-variant80);
-
-  /* || Semantic Colors */
-
+  
   /* Error */
   --color-error:    var(--palette-error40);
   --color-on-error: var(--palette-error100);
 
   --color-error-container:    var(--palette-error90);
   --color-on-error-container: var(--palette-error10);
+
+  /* || Surface */
+
+  /* Surface roles */
+  --color-surface: var(--palette-neutral96);
+  --color-on-surface:         var(--palette-neutral10);
+  --color-on-surface-variant: var(--palette-neutral-variant30);
+
+  /* Surface container roles */
+  --color-surface-container-lowest:   var(--palette-neutral99);
+  --color-surface-container-low:      var(--palette-neutral98);
+  --color-surface-container:          var(--palette-neutral94);
+  --color-surface-container-high:     var(--palette-neutral92);
+  --color-surface-container-highest:  var(--palette-neutral90);
+
+  /* Inverse */
+  --color-inverse-surface:    var(--palette-neutral20);
+  --color-inverse-on-surface: var(--palette-neutral94);
+  --color-inverse-primary:    var(--palette-primary80);
+
+  /* Outline */
+  --color-outline:          var(--palette-neutral-variant50);
+  --color-outline-variant:  var(--palette-neutral-variant80);
+  
+  /* || Add on color roles */
+
+  /* Fixed Accent Colors */
+  --color-primary-fixed:              var(--palette-primary90);
+  --color-on-primary-fixed:           var(--palette-primary10);
+
+  --color-primary-fixed-dim:          var(--palette-primary80);
+  --color-on-primary-fixed-variant:   var(--palette-primary30);
+
+  --color-secondary-fixed:            var(--palette-secondary90);
+  --color-on-secondary-fixed:         var(--palette-secondary10);
+
+  --color-secondary-fixed-dim:        var(--palette-secondary80);
+  --color-on-secondary-fixed-variant: var(--palette-secondary30);
+
+  --color-tertiary-fixed:             var(--palette-tertiary90);
+  --color-on-tertiary-fixed:          var(--palette-tertiary10);
+
+  --color-tertiary-fixed-dim:         var(--palette-tertiary80);
+  --color-on-tertiary-fixed-variant:  var(--palette-tertiary30);
+    
+  /* Bright and Dim Surface Roles */
+  --color-surface-dim:                var(--palette-neutral88);
+  --color-surface-bright:             var(--palette-neutral96);
+
+  /* || Semantic colors */
 
   /* Warning */
   --color-warning: var(--palette-warning40);
@@ -138,7 +165,7 @@
   --color-quote-container: var(--palette-quote90);
   --color-on-quote-container: var(--palette-quote10);
 
-  /* || Classic Palettes */
+  /* || Classic palettes */
 
   /* 30 */
   --color-sub30: var(--palette-sub30-40);
@@ -224,35 +251,10 @@
 
   --color-complementary-container: var(--palette-complementary-90);
   --color-on-complementary-container: var(--palette-complementary-10);
-
-  /* || Add on color roles */
-  
-  /* Bright and Dim Surface Roles */
-  --color-surface-dim:                var(--palette-neutral88);
-  --color-surface-bright:             var(--palette-neutral96);
-
-  /* Fixed Accent Colors */
-  --color-primary-fixed:              var(--palette-primary90);
-  --color-on-primary-fixed:           var(--palette-primary10);
-
-  --color-primary-fixed-dim:          var(--palette-primary80);
-  --color-on-primary-fixed-variant:   var(--palette-primary30);
-
-  --color-secondary-fixed:            var(--palette-secondary90);
-  --color-on-secondary-fixed:         var(--palette-secondary10);
-
-  --color-secondary-fixed-dim:        var(--palette-secondary80);
-  --color-on-secondary-fixed-variant: var(--palette-secondary30);
-
-  --color-tertiary-fixed:             var(--palette-tertiary90);
-  --color-on-tertiary-fixed:          var(--palette-tertiary10);
-
-  --color-tertiary-fixed-dim:         var(--palette-tertiary80);
-  --color-on-tertiary-fixed-variant:  var(--palette-tertiary30);
 }
 
 .dark {
-  /* Scrim and Shadow */
+  /* Scrim and shadow */
   --color-scrim:  var(--palette-neutral0);
   --color-shadow: var(--palette-neutral0);
 
@@ -277,17 +279,26 @@
   --color-tertiary-container:     var(--palette-tertiary30);
   --color-on-tertiary-container:  var(--palette-tertiary90);
 
-  /* Surface */
-  --color-surface: var(--palette-neutral6);
+  /* Error */
+  --color-error:    var(--palette-error80);
+  --color-on-error: var(--palette-error20);
 
+  --color-error-container:    var(--palette-error30);
+  --color-on-error-container: var(--palette-error90);
+  
+  /* || Surface */
+  
+  /* Surface roles */
+  --color-surface: var(--palette-neutral6);
+  --color-on-surface:         var(--palette-neutral90);
+  --color-on-surface-variant: var(--palette-neutral-variant90);
+
+  /* Surface container roles */
   --color-surface-container-lowest:   var(--palette-neutral4);
   --color-surface-container-low:      var(--palette-neutral8);
   --color-surface-container:          var(--palette-neutral12);
   --color-surface-container-high:     var(--palette-neutral16);
   --color-surface-container-highest:  var(--palette-neutral20);
-
-  --color-on-surface:         var(--palette-neutral90);
-  --color-on-surface-variant: var(--palette-neutral-variant90);
 
   /* Inverse */
   --color-inverse-on-surface: var(--palette-neutral20);
@@ -298,14 +309,13 @@
   --color-outline:          var(--palette-neutral-variant60);
   --color-outline-variant:  var(--palette-neutral-variant30);
 
+  /* || Add on color roles */
+
+  /* Bright and Dim Surface Roles */
+  --color-surface-dim:    var(--palette-neutral6);
+  --color-surface-bright: var(--palette-neutral20);
+
   /* || Semantic Colors */
-
-  /* Error */
-  --color-error:    var(--palette-error80);
-  --color-on-error: var(--palette-error20);
-
-  --color-error-container:    var(--palette-error30);
-  --color-on-error-container: var(--palette-error90);
 
   /* Warning */
   --color-warning: var(--palette-warning80);
@@ -477,10 +487,4 @@
 
   --color-complementary-container: var(--palette-complementary-30);
   --color-on-complementary-container: var(--palette-complementary-90);
-
-  /* || Add on color roles */
-
-  /* Bright and Dim Surface Roles */
-  --color-surface-dim:    var(--palette-neutral6);
-  --color-surface-bright: var(--palette-neutral20);
 }

@@ -197,10 +197,36 @@
 
 .ref-default-palette,
 .ref-admon-palette,
-.ref-classic-palette {
+.ref-classic-palette,
+.ref-hue-reference {
   padding: 2rem;
   border: 1px solid var(--color-outline);
   margin-bottom: 2em;
+}
+
+.ref-hue-reference {
+  .reference-palette.hue {
+    grid-template-columns: repeat(12, 1fr);
+
+    * {
+      opacity: unset;
+      color: var(--palette-white);
+      font-weight: 900;
+    }
+
+    div:nth-child(1) { background-color: var(--palette-hue-0); }
+    div:nth-child(2) { background-color: var(--palette-hue-30); }
+    div:nth-child(3) { background-color: var(--palette-hue-60); }
+    div:nth-child(4) { background-color: var(--palette-hue-90); }
+    div:nth-child(5) { background-color: var(--palette-hue-120); }
+    div:nth-child(6) { background-color: var(--palette-hue-150); }
+    div:nth-child(7) { background-color: var(--palette-hue-180); }
+    div:nth-child(8) { background-color: var(--palette-hue-210); }
+    div:nth-child(9) { background-color: var(--palette-hue-240); }
+    div:nth-child(10) { background-color: var(--palette-hue-270); }
+    div:nth-child(11) { background-color: var(--palette-hue-300); }
+    div:nth-child(12) { background-color: var(--palette-hue-330); }
+  }
 }
 
 .primary,
