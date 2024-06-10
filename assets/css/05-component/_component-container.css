@@ -1,20 +1,20 @@
 .component {
-  border: var(--container-outline, none);
-  box-shadow: var(--container-elevation, none);
+  border: var(--container-outline,);
+  box-shadow: var(--container-elevation,);
 
   &:hover {
-    border: var(--container-outline-hover, none);
-    box-shadow: var(--container-elevation-hover, none);
+    border: var(--container-outline-hover,);
+    box-shadow: var(--container-elevation-hover,);
   }
 
   &:focus,
   &:focus-visible {
-    border: var(--container-outline-focus, none);
-    box-shadow: var(--container-elevation-focus, none);
+    border: var(--container-outline-focus,);
+    box-shadow: var(--container-elevation-focus,);
   }
 
   &:active {
-    border: var(--container-outline-press, none);
-    box-shadow: var(--container-elevation-press, none);
+    border: var(--container-outline-press,);
+    box-shadow: var(--container-elevation-press,);
   }
 }

@@ -1,156 +1,262 @@
 {{- define "main" }}
-    <article class="layout panes basic-singlepane">
+    <article class="layout panes basic-singlepane" id="page-colors">
         <section class="layout pane">
-            <h1>Material Design palette</h1>
+            
+            <h1>Material Design</h1>
+            
+            <h2 class="key-color">Key color: Primary 55</h2>
 
-            <h2>Theme</h2>
+            <h2>Reference tokens</h2>
+            <section class="ref-default-palette">
+                <h3>Default</h3>
+                <div class="reference-palette primary">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette secondary">  
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette tertiary">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette neutral">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>  
+                </div>
+                <div class="reference-palette neutral-variant">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette error">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+            </section>
+            <section class="ref-admon-palette">
+                <h3>Admonition</h3>
+                <div class="reference-palette warning">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette caution">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette important">  
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette pinned">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette verse">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette export">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette query">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette note">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette tip">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette example">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>  
+                </div>
+                <div class="reference-palette comment">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette quote">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+            </section>
+            <section class="ref-classic-palette">
+                <h3>Classic</h3>
+                <div class="reference-palette sub30">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette sub60">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette sub90">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div> 
+                <div class="reference-palette sub120">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>  
+                </div>
+                <div class="reference-palette sub150">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette sub180">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette complementary">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette add180">  
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette add150">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>  
+                </div>
+                <div class="reference-palette add120">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette add90">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+                <div class="reference-palette add60">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div> 
+                <div class="reference-palette add30">
+                    <div>0</div><div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+                    <div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
+                </div>
+            </section>
+
+            <h2>System tokens</h2>
+            <section class="system-colors-palette">
+                <div class="color-palette">
+                    <h3>Theme</h3>
+                    <div class="primary">Primary</div>
+                    <div class="primary-container">Primary container</div>
+                    <div class="secondary">Secondary</div>
+                    <div class="secondary-container">Secondary container</div>
+                    <div class="tertiary">Tertiary</div>
+                    <div class="tertiary-container">Tertiary container</div>
+                    <div class="inverse-surface">Inverse surface</div>
+                    <div class="inverse-primary">Inverse primary</div>
+                    <div class="error">Error</div>
+                    <div class="error-container">Error  container</div>
+                </div>
+
+                <div class="color-palette">
+                    <h3>Surface</h3>
+                    <div class="surface">Surface</div>
+                    <div class="surface-container">Surface container</div>
+                    <div class="surface-container-low">Surface container low</div>
+                    <div class="surface-container-lowest">Surface container lowest</div>
+                    <div class="surface-container-high">Surface container high</div>
+                    <div class="surface-container-highest">Surface container highest</div>
+                    <div class="surface-dim">Surface dim</div>
+                    <div class="surface-bright">Surface bright</div>
+                    <div class="outline-container">Outline</div>
+                    <div class="outline-variant-container">Outline variant</div>
+                </div>
+            </section>
+
             <div class="color-palette">
-                <div class="primary">P</div>
-                <div class="primary-container">PC</div>
-                <div class="secondary">S</div>
-                <div class="secondary-container">SC</div>
-                <div class="tertiary">T</div>
-                <div class="tertiary-container">TC</div>
-                <div class="inverse-surface">IS</div>
-                <div class="inverse-primary">IP</div>
-                <div class="error">E</div>
-                <div class="error-container">EC</div>
+                <h3>Fixed</h3>
+                <div class="shadow">Shadow</div>
+                <div class="scrim">Scrim</div>
+                <div class="primary-fixed on-primary-fixed">Primary-fixed</div>
+                <div class="primary-fixed-dim on-primary-fixed">Primary-fixed-dim</div>
+                <div class="secondary-fixed on-secondary-fixed">Secondary-fixed</div>
+                <div class="secondary-fixed-dim on-secondary-fixed">Secondary-fixed-dim</div>
+                <div class="tertiary-fixed on-tertiary-fixed">Tertiary-fixed</div>
+                <div class="tertiary-fixed-dim on-tertiary-fixed">Tertiary-fixed-dim</div>
             </div>
 
-            <h2>Surface</h2>
-            <div class="color-palette">
-                <div class="surface">
-                    S
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
+            <h2>Admonitions</h2>
+            <section class="admonitions-palette">
+                <div class="color-palette custom">
+                    <h3>Containers</h3>
+                    <div class="admonition warning-container">Warning</div>
+                    <div class="admonition caution-container">Caution</div>
+                    <div class="admonition important-container">Important</div>
+                    <div class="admonition pinned-container">Pinned</div>
+                    <div class="admonition verse-container">Verse</div>
+                    <div class="admonition export-container">Export</div>
+                    <div class="admonition query-container">Query</div>
+                    <div class="admonition note-container">Note</div>
+                    <div class="admonition tip-container">Tip</div>
+                    <div class="admonition example-container">Example</div>
+                    <div class="admonition comment-container">Comment</div>
+                    <div class="admonition quote-container">Quote</div>
                 </div>
-                <div class="surface-container">
-                    SC
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
+                
+                <div class="color-palette custom">
+                    <h3>Elements</h3>
+                    <div class="admonition warning">Warning</div>
+                    <div class="admonition caution">Caution</div>
+                    <div class="admonition important">Important</div>
+                    <div class="admonition pinned">Pinned</div>
+                    <div class="admonition verse">Verse</div>
+                    <div class="admonition export">Export</div>
+                    <div class="admonition query">Query</div>
+                    <div class="admonition note">Note</div>
+                    <div class="admonition tip">Tip</div>
+                    <div class="admonition example">Example</div>
+                    <div class="admonition comment">Comment</div>
+                    <div class="admonition quote">Quote</div>
                 </div>
-                <div class="surface-container-low">
-                    SCL
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
-                </div>
-                <div class="surface-container-lowest">
-                    SCLS
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
-                </div>
-                <div class="surface-container-high">
-                    SCH
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
-                </div>
-                <div class="surface-container-highest">
-                    SCHS
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
-                </div>
-                <div class="surface-dim">
-                    SD
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
-                </div>
-                <div class="surface-bright">
-                    SB
-                    <span class="on-surface-variant">
-                        OSV
-                    </span>
-                </div>
-                <div class="outline-container">O</div>
-                <div class="outline-variant-container">OV</div>
-            </div>
+            </section>
 
-            <h2>Fixed colors</h2>
-            <div class="color-palette">
-                <div class="shadow">SHA</div>
-                <div class="scrim">SCR</div>
+            <h2>Classic</h2>
+            <section class="classics-palette">
+                <div class="color-palette classic-wheel">
+                    <h3>Containers</h3>
+                    <div class="primary-container-test">Primary</div>
+                    <div class="sub30-container">-30</div>
+                    <div class="add30-container">+30</div>
+                    <div class="sub60-container">-60</div>
+                    <div class="add60-container">+60</div>
+                    <div class="sub90-container">-90</div>
+                    <div class="add90-container">+90</div>
+                    <div class="sub120-container">-120</div>
+                    <div class="add120-container">+120</div>
+                    <div class="sub150-container">-150</div>
+                    <div class="add150-container">+150</div>
+                    <div class="sub180-container">-180</div>
+                    <div class="add180-container">+180</div>
+                    <div class="complementary-container">Complementary</div>
+                </div>
 
-                <div class="primary-fixed on-primary-fixed">
-                    PF
-                    <span class="on-primary-fixed-variant">
-                        OPFV
-                    </span>
+                <div class="color-palette classic-wheel">
+                    <h3>Elements</h3>
+                    <div class="primary-test">Primary</div>
+                    <div class="sub30">-30</div>
+                    <div class="add30">+30</div>
+                    <div class="sub60">-60</div>
+                    <div class="add60">+60</div>
+                    <div class="sub90">-90</div>
+                    <div class="add90">+90</div>
+                    <div class="sub120">-120</div>
+                    <div class="add120">+120</div>
+                    <div class="sub150">-150</div>
+                    <div class="add150">+150</div>
+                    <div class="sub180">-180</div>
+                    <div class="add180">+180</div>
+                    <div class="complementary">Complementary</div>
                 </div>
-                <div class="primary-fixed-dim on-primary-fixed">
-                    PFD
-                    <span class="on-primary-fixed-variant">
-                        OPFV
-                    </span>
-                </div>
-                <div class="secondary-fixed on-secondary-fixed">
-                    SF
-                    <span class="on-secondary-fixed-variant">
-                        OSFV
-                    </span>
-                </div>
-                <div class="secondary-fixed-dim on-secondary-fixed">
-                    SFD
-                    <span class="on-secondary-fixed-variant">
-                        OSFV
-                    </span>
-                </div>
-                <div class="tertiary-fixed on-tertiary-fixed">
-                    TF
-                    <span class="on-tertiary-fixed-variant">
-                        OTFV
-                    </span>
-                </div>
-                <div class="tertiary-fixed-dim on-tertiary-fixed">
-                    TFD
-                    <span class="on-tertiary-fixed-variant">
-                        OTFV
-                    </span>
-                </div>
-            </div>
-
-            <h1>Classic palette</h1>
-
-            <h2>Container</h2>
-            <div class="color-palette">
-                <div class="primary-container-test">Primary</div>
-                <div class="sub30-container">-30</div>
-                <div class="add30-container">+30</div>
-                <div class="sub60-container">-60</div>
-                <div class="add60-container">+60</div>
-                <div class="sub90-container">-90</div>
-                <div class="add90-container">+90</div>
-                <div class="sub120-container">-120</div>
-                <div class="add120-container">+120</div>
-                <div class="sub150-container">-150</div>
-                <div class="add150-container">+150</div>
-                <div class="sub180-container">-180</div>
-                <div class="add180-container">+180</div>
-                <div class="complementary-container">Complementary</div>
-            </div>
-
-            <h2>Main</h2>
-            <div class="color-palette">
-                <div class="primary-test">Primary</div>
-                <div class="sub30">-30</div>
-                <div class="add30">+30</div>
-                <div class="sub60">-60</div>
-                <div class="add60">+60</div>
-                <div class="sub90">-90</div>
-                <div class="add90">+90</div>
-                <div class="sub120">-120</div>
-                <div class="add120">+120</div>
-                <div class="sub150">-150</div>
-                <div class="add150">+150</div>
-                <div class="sub180">-180</div>
-                <div class="add180">+180</div>
-                <div class="complementary">Complementary</div>
-            </div>
+            </section>
         </section>
     </article>
 {{ end }}
