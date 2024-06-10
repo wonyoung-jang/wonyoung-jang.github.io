@@ -97,5 +97,25 @@
             </description>
         </item>
     
+        <item>
+          <title>
+            Typography
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/typography/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/typography/
+          </guid>
+          <description>
+            
+              Serves as a reference for the typefaces and typescales available for wonyoungjang.org
+            </description>
+        </item>
+    
   </channel>
 </rss>
