@@ -42,13 +42,6 @@
   font-family: var(--typescale-body-large-font);
 }
 
-.code-typeface {
-  font-size: var(--typescale-body-large-size);
-  line-height: var(--typescale-body-large-line-height);
-  font-weight: var(--typescale-body-large-weight);
-  font-family: var(--typeface-mono);
-}
-
 /* Title */
 .title-small {
   font-size: var(--typescale-title-small-size);
@@ -113,4 +106,12 @@
   line-height: var(--typescale-display-large-line-height);
   font-weight: var(--typescale-display-large-weight);
   font-family: var(--typescale-display-large-font);
+}
+
+/* || Code */
+.code-typeface {
+  font-size: var(--typescale-body-large-size);
+  line-height: var(--typescale-body-large-line-height);
+  font-weight: var(--typescale-body-large-weight);
+  font-family: var(--typeface-mono);
 }

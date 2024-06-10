@@ -10,4 +10,7 @@
   
   /* Drag */
   --state-drag-opacity: 16%;
+  
+  /* Disabled */
+  --state-disabled-opacity: 38%;
 }

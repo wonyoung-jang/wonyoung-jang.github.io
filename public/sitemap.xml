@@ -92,5 +92,9 @@
     <loc>http://localhost:1313/graph/</loc>
   </url><url>
     <loc>http://localhost:1313/resource/reference/colors/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resource/reference/states/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resource/reference/typography/</loc>
   </url>
 </urlset>

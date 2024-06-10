@@ -13,3 +13,7 @@
 .state-hover {
   opacity: var(--state-hover-opacity);
 }
+
+.state-disabled {
+  opacity: var(--state-disabled-opacity);
+}
