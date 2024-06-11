@@ -10,7 +10,7 @@
   --scale-fibonacci:      1.618;
 
   /* Typescale factors */
-  --scale-back-size:          var(--scale-major-third);
+  --scale-back-size:          var(--scale-minor-second);
   --scale-up-type:            var(--scale-perfect-fifth);
   --scale-back-type:          var(--scale-minor-second);
   --scale-line-height-small:  var(--scale-major-second);
