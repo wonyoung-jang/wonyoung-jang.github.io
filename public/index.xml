@@ -604,6 +604,26 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
+            Shapes
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/shapes/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/shapes/
+          </guid>
+          <description>
+            
+              Serves as a reference for
+            </description>
+        </item>
+    
+        <item>
+          <title>
             States and elevation
           </title>
           <link>
