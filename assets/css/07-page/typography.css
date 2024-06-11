@@ -1,6 +1,6 @@
 .typeface-weights-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 1rem;
 
     .typeface-weights:nth-child(1) h3 { font-family: var(--typeface-brand); }
@@ -16,7 +16,7 @@
 
         background-color: var(--color-surface-container-lowest);
 
-        h3 {
+        h6 {
             min-height: 8rem;
             background-color: var(--color-surface-container);
             border-radius: var(--shape-corner-m);
@@ -47,7 +47,14 @@
 .typescale-container {
     display: flex;
     flex-flow: column nowrap;
-    padding: calc(var(--spacing-panes) * 2);
     gap: 2em;
-    background-color: var(--color-surface-container-lowest);
+
+    [class*="typescale-"] {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1em;
+        padding: 1em;
+        border: 1px solid var(--color-outline);
+        border-radius: var(--shape-corner-m);
+    }
 }
