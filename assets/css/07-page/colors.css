@@ -25,7 +25,7 @@
   color: var(--palette-white);
 
   &::before {
-    color: var(--color-on-surface);
+    color: var(--palette-white);
     
     z-index: 1;
     display: flex;
@@ -109,7 +109,8 @@
 
   padding: calc(var(--spacing-panes) * 2);
   margin-bottom: 2em;
-  background-color: var(--color-surface-container-lowest);
+  background-color: var(--palette-neutral-variant8);
+  color: var(--palette-white);
 
   h3 {
     padding-bottom: 1em;
@@ -790,7 +791,8 @@
     flex-flow: row nowrap;
     gap: var(--spacing-xs);
 
-    background-color: var(--color-surface-container-lowest);
+    background-color: var(--palette-neutral-variant8);
+    color: var(--palette-white);
     padding: calc(var(--spacing-panes) * 2);
 
     h3 {
@@ -812,7 +814,8 @@
     display: flex; 
     flex-flow: row nowrap;
     gap: var(--spacing-xs);
-    background-color: var(--color-surface-container-lowest);
+    background-color: var(--palette-neutral-variant8);
+    color: var(--palette-white);
     padding: calc(var(--spacing-panes) * 2);
 
     h3 {
@@ -991,20 +994,19 @@
   flex-flow: column nowrap;
 
   gap: 16px;
-  padding: var(--spacing-xl);
+  padding: calc(var(--spacing-panes) * 2);
 
   font-size: var(--typescale-body-medium-size);
   font-family: var(--typescale-body-medium-font);
 
-  border-radius: var(--shape-corner-none);
-
-  background-color: var(--palette-white);
+  background-color: var(--palette-neutral-variant8);
 
   [class*="swatch"] {
     display: flex;
     flex-flow: row nowrap;
     padding: var(--spacing-m);
     align-self: stretch;
+    border-radius: unset;
   }
 
   .swatch-group {
