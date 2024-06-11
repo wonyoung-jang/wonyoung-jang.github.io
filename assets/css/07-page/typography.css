@@ -17,11 +17,12 @@
         background-color: var(--color-surface-container-lowest);
 
         h3 {
-            min-height: 8dvh;
-            background-color: var(--color-surface-container-highest);
+            min-height: 8rem;
+            background-color: var(--color-surface-container);
             border-radius: var(--shape-corner-m);
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1rem;
         }
     
         div:nth-child(2) { font-weight: var(--typeface-weight-black); }
@@ -46,7 +47,7 @@
 .typescale-container {
     display: flex;
     flex-flow: column nowrap;
-    padding: var(--spacing-panes);
+    padding: calc(var(--spacing-panes) * 2);
     gap: 2em;
     background-color: var(--color-surface-container-lowest);
 }
