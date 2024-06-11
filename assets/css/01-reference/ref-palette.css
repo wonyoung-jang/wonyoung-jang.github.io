@@ -46,18 +46,18 @@
     --chroma-admonition:        calc(var(--chroma-primary) / var(--scale-fibonacci));
 
     /* Absolute Hues */
-    --palette-hue-0:    lch(55% 55% 0deg);
-    --palette-hue-30:   lch(55% 55% 30deg);
-    --palette-hue-60:   lch(55% 55% 60deg);
-    --palette-hue-90:   lch(55% 55% 90deg);
-    --palette-hue-120:  lch(55% 55% 120deg);
-    --palette-hue-150:  lch(55% 55% 150deg);
-    --palette-hue-180:  lch(55% 55% 180deg);
-    --palette-hue-210:  lch(55% 55% 210deg);
-    --palette-hue-240:  lch(55% 55% 240deg);
-    --palette-hue-270:  lch(55% 55% 270deg);
-    --palette-hue-300:  lch(55% 55% 300deg);
-    --palette-hue-330:  lch(55% 55% 330deg);
+    --palette-hue-0:    lch(70% 70% 0deg);
+    --palette-hue-30:   lch(70% 70% 30deg);
+    --palette-hue-60:   lch(70% 70% 60deg);
+    --palette-hue-90:   lch(70% 70% 90deg);
+    --palette-hue-120:  lch(70% 70% 120deg);
+    --palette-hue-150:  lch(70% 70% 150deg);
+    --palette-hue-180:  lch(70% 70% 180deg);
+    --palette-hue-210:  lch(70% 70% 210deg);
+    --palette-hue-240:  lch(70% 70% 240deg);
+    --palette-hue-270:  lch(70% 70% 270deg);
+    --palette-hue-300:  lch(70% 70% 300deg);
+    --palette-hue-330:  lch(70% 70% 330deg);
 
     /* Black and White */
     --palette-black: #000000;
