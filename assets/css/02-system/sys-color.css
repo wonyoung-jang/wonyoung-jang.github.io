@@ -34,9 +34,9 @@
   /* || Surface */
 
   /* Surface roles */
-  --color-surface: var(--palette-neutral96);
-  --color-on-surface:         var(--palette-neutral10);
-  --color-on-surface-variant: var(--palette-neutral-variant30);
+  --color-surface:                    var(--palette-neutral96);
+  --color-on-surface:                 var(--palette-neutral10);
+  --color-on-surface-variant:         var(--palette-neutral-variant30);
 
   /* Surface container roles */
   --color-surface-container-lowest:   var(--palette-neutral99);
@@ -46,13 +46,13 @@
   --color-surface-container-highest:  var(--palette-neutral90);
 
   /* Inverse */
-  --color-inverse-surface:    var(--palette-neutral20);
-  --color-inverse-on-surface: var(--palette-neutral94);
-  --color-inverse-primary:    var(--palette-primary80);
+  --color-inverse-surface:            var(--palette-neutral20);
+  --color-inverse-on-surface:         var(--palette-neutral94);
+  --color-inverse-primary:            var(--palette-primary80);
 
   /* Outline */
-  --color-outline:          var(--palette-neutral-variant50);
-  --color-outline-variant:  var(--palette-neutral-variant80);
+  --color-outline:                    var(--palette-neutral-variant50);
+  --color-outline-variant:            var(--palette-neutral-variant80);
   
   /* || Add on color roles */
 
