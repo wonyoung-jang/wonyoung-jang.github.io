@@ -1,4 +1,12 @@
 .layout.panes.basic-fixedflex {
+  --flex-flow: row nowrap;
+
+  .layout.pane.fixed-pane {
+    width: var(--fixed-pane-width);
+  }
+}
+
+.layout.panes.basic-fixedflex#single {
   --flex-flow: column-reverse nowrap;
 
   .layout.pane,
@@ -10,7 +18,7 @@
 
 /* Large */
 @media (min-width: 1200px) {
-  .layout.panes.basic-fixedflex {
+  .layout.panes.basic-fixedflex#single {
     --flex-flow: row nowrap;
 
     .layout.pane.fixed-pane {
