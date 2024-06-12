@@ -1,9 +1,25 @@
 a {
-  &.internal-link {
+  &.internal-link:link {
     color: var(--color-primary);
   }
 
-  &.external-link {
+  &.external-link:link {
     color: var(--color-tertiary);
+  }
+
+  &.internal-link:visited {
+    color: var(--color-primary-fixed);
+  }
+
+  &.external-link:visited {
+    color: var(--color-tertiary-fixed);
+  }
+
+  &.internal-link:hover {
+    color: var(--color-primary-fixed-dim);
+  }
+
+  &.external-link:hover {
+    color: var(--color-tertiary-fixed-dim);
   }
 }
