@@ -672,7 +672,8 @@
 .sem-admon-swatches,
 .sem-classic-swatches {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
 
   gap: var(--spacing-l);
   padding: var(--spacing-panes);
@@ -692,21 +693,31 @@
   border-radius: unset;
   
   div {
+    max-height: calc(50% - var(--spacing-xs));
+    flex: 1 1 0;
     display: grid;
-    grid-template-rows: 8fr 5fr;
+    grid-template-rows: repeat(13, 1fr);
 
     > span {
+      display: flex;
+      flex-flow: row wrap;
       padding: var(--spacing-m);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
     }
 
     > span:nth-child(1) {
       background-color: var(--bg-color);
       color: var(--icon-color);
+      grid-row: span 8;
     }
       
     > span:nth-child(2) {
       background-color: var(--icon-color);
       color: var(--bg-color);
+      grid-row: span 5;
     }
   }
 }
