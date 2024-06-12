@@ -21,10 +21,6 @@
         color: var(--color-on-secondary-container);
     }
 
-    span {
-        width: 100%;
-    }
-
     .shape-none,
     .shape-full {
         flex: 0 0 auto;
