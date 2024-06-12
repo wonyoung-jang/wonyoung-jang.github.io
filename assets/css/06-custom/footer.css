@@ -6,7 +6,7 @@ footer {
   flex-flow: row wrap;
 
   width: 100%;
-  padding: 12dvh 8dvw 4dvh 8dvw;
+  padding: 20dvh 8dvw 4dvh 8dvw;
   gap: 8dvh;
 }
 
