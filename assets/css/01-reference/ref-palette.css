@@ -36,6 +36,7 @@
     --hue-add180: calc((var(--hue-primary) + 180deg) - (180deg / 36));
     
     /* || Chromas (0-150) */
+
     --chroma-primary:           60%;
     --chroma-error:             55%;
     --chroma-other:             25%;
@@ -113,8 +114,10 @@
     --palette-neutral12: lch(12% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral14: lch(14% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral16: lch(16% var(--chroma-neutral) var(--hue-primary));
+    --palette-neutral17: lch(17% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral18: lch(18% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral20: lch(20% var(--chroma-neutral) var(--hue-primary));
+    --palette-neutral24: lch(24% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral25: lch(25% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral30: lch(30% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral35: lch(35% var(--chroma-neutral) var(--hue-primary));
@@ -130,10 +133,12 @@
     --palette-neutral82: lch(82% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral84: lch(84% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral86: lch(86% var(--chroma-neutral) var(--hue-primary));
+    --palette-neutral87: lch(87% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral88: lch(88% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral90: lch(90% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral92: lch(92% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral94: lch(94% var(--chroma-neutral) var(--hue-primary));
+    --palette-neutral95: lch(95% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral96: lch(96% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral98: lch(98% var(--chroma-neutral) var(--hue-primary));
     --palette-neutral99: lch(99% var(--chroma-neutral) var(--hue-primary));
