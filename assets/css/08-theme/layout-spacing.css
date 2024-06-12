@@ -1,5 +1,4 @@
 .layout {
-  max-inline-size: var(--window-extra-large-min);
   margin: 0 auto;
 
   &.page-header {

@@ -3,10 +3,10 @@
 
     /* Key Hues */
     --hue-primary:  305deg;
+    --hue-error:    25deg;
     --hue-tertiary: calc(var(--hue-primary) - 60deg);
     
     /* Semantic Hues */
-    --hue-error:        calc(25deg  + ((25  / 360) * var(--hue-primary)));
     --hue-warning:      calc(15deg  + ((15  / 360) * var(--hue-primary)));
     --hue-caution:      calc(45deg  + ((45  / 360) * var(--hue-primary)));
     --hue-important:    calc(75deg  + ((75  / 360) * var(--hue-primary)));
@@ -36,8 +36,8 @@
     --hue-add180: calc((var(--hue-primary) + 180deg) - (180deg / 36));
     
     /* || Chromas (0-150) */
-    --chroma-primary:           50%;
-    --chroma-error:             50%;
+    --chroma-primary:           60%;
+    --chroma-error:             55%;
     --chroma-other:             25%;
     --chroma-tertiary:          calc(var(--chroma-primary) / 2);
     --chroma-secondary:         calc(var(--chroma-primary) / 3);

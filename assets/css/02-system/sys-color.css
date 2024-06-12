@@ -1,7 +1,25 @@
 :root {
+  /* || Add on color roles */
+
+  /* Fixed Accent Colors */
+  --color-primary-fixed:                var(--palette-primary90);
+  --color-on-primary-fixed:             var(--palette-primary10);
+  --color-primary-fixed-dim:            var(--palette-primary80);
+  --color-on-primary-fixed-variant:     var(--palette-primary30);
+  --color-secondary-fixed:              var(--palette-secondary90);
+  --color-on-secondary-fixed:           var(--palette-secondary10);
+  --color-secondary-fixed-dim:          var(--palette-secondary80);
+  --color-on-secondary-fixed-variant:   var(--palette-secondary30);
+  --color-tertiary-fixed:               var(--palette-tertiary90);
+  --color-on-tertiary-fixed:            var(--palette-tertiary10);
+  --color-tertiary-fixed-dim:           var(--palette-tertiary80);
+  --color-on-tertiary-fixed-variant:    var(--palette-tertiary30);
   /* Scrim and Shadow */
   --color-scrim:                        var(--palette-neutral0);
   --color-shadow:                       var(--palette-neutral0);
+
+  /* || Main */
+
   /* Primary */
   --color-primary:                      var(--palette-primary40);
   --color-on-primary:                   var(--palette-primary100);
@@ -26,43 +44,27 @@
   /* || Surface */
 
   /* Surface roles */
-  --color-surface:                      var(--palette-neutral96);
+  --color-surface-dim:                  var(--palette-neutral88);
+  --color-surface:                      var(--palette-neutral98);
+  --color-surface-bright:               var(--palette-neutral98);
+  /* On surface roles */
   --color-on-surface:                   var(--palette-neutral10);
   --color-on-surface-variant:           var(--palette-neutral-variant30);
   /* Surface container roles */
-  --color-surface-container-lowest:     var(--palette-neutral99);
-  --color-surface-container-low:        var(--palette-neutral98);
+  --color-surface-container-lowest:     var(--palette-neutral100);
+  --color-surface-container-low:        var(--palette-neutral96);
   --color-surface-container:            var(--palette-neutral94);
   --color-surface-container-high:       var(--palette-neutral92);
   --color-surface-container-highest:    var(--palette-neutral90);
   /* Inverse */
   --color-inverse-surface:              var(--palette-neutral20);
-  --color-inverse-on-surface:           var(--palette-neutral94);
+  --color-inverse-on-surface:           var(--palette-neutral96);
   --color-inverse-primary:              var(--palette-primary80);
   /* Outline */
   --color-outline:                      var(--palette-neutral-variant50);
   --color-outline-variant:              var(--palette-neutral-variant80);
 
-  /* || Add on color roles */
-
-  /* Fixed Accent Colors */
-  --color-primary-fixed:                var(--palette-primary90);
-  --color-on-primary-fixed:             var(--palette-primary10);
-  --color-primary-fixed-dim:            var(--palette-primary80);
-  --color-on-primary-fixed-variant:     var(--palette-primary30);
-  --color-secondary-fixed:              var(--palette-secondary90);
-  --color-on-secondary-fixed:           var(--palette-secondary10);
-  --color-secondary-fixed-dim:          var(--palette-secondary80);
-  --color-on-secondary-fixed-variant:   var(--palette-secondary30);
-  --color-tertiary-fixed:               var(--palette-tertiary90);
-  --color-on-tertiary-fixed:            var(--palette-tertiary10);
-  --color-tertiary-fixed-dim:           var(--palette-tertiary80);
-  --color-on-tertiary-fixed-variant:    var(--palette-tertiary30);
-  /* Bright and Dim Surface Roles */
-  --color-surface-dim:                  var(--palette-neutral88);
-  --color-surface-bright:               var(--palette-neutral96);
-
-  /* || Semantic palette */
+  /* || Semantic */
 
   /* Warning */
   --color-warning:                      var(--palette-warning40);
@@ -96,9 +98,9 @@
   --color-on-export-container:          var(--palette-export10);
   /* Query */
   --color-query:                        var(--palette-query40);
-  --color-on-query:                     var(--palette-quote100);
+  --color-on-query:                     var(--palette-query100);
   --color-query-container:              var(--palette-query90);
-  --color-on-query-container:           var(--palette-quote10);
+  --color-on-query-container:           var(--palette-query10);
   /* Note */
   --color-note:                         var(--palette-note40);
   --color-on-note:                      var(--palette-note100);
@@ -125,7 +127,7 @@
   --color-quote-container:              var(--palette-quote90);
   --color-on-quote-container:           var(--palette-quote10);
 
-  /* || Classic palettes */
+  /* || Classics */
 
   /* 30 */
   --color-sub30:                        var(--palette-sub30-40);
@@ -189,9 +191,8 @@
 }
 
 .dark {
-  /* Scrim and shadow */
-  --color-scrim:                        var(--palette-neutral0);
-  --color-shadow:                       var(--palette-neutral0);
+  /* || Main */
+
   /* Primary */
   --color-primary:                      var(--palette-primary80);
   --color-on-primary:                   var(--palette-primary20);
@@ -216,30 +217,27 @@
   /* || Surface */
 
   /* Surface roles */
+  --color-surface-dim:                  var(--palette-neutral6);
   --color-surface:                      var(--palette-neutral6);
+  --color-surface-bright:               var(--palette-neutral25);
+  /* On surface roles */
   --color-on-surface:                   var(--palette-neutral90);
   --color-on-surface-variant:           var(--palette-neutral-variant90);
   /* Surface container roles */
   --color-surface-container-lowest:     var(--palette-neutral4);
-  --color-surface-container-low:        var(--palette-neutral8);
+  --color-surface-container-low:        var(--palette-neutral10);
   --color-surface-container:            var(--palette-neutral12);
-  --color-surface-container-high:       var(--palette-neutral16);
-  --color-surface-container-highest:    var(--palette-neutral20);
+  --color-surface-container-high:       var(--palette-neutral18);
+  --color-surface-container-highest:    var(--palette-neutral25);
   /* Inverse */
+  --color-inverse-surface:              var(--palette-neutral90);
   --color-inverse-on-surface:           var(--palette-neutral20);
   --color-inverse-primary:              var(--palette-primary40);
-  --color-inverse-surface:              var(--palette-neutral90);
   /* Outline */
   --color-outline:                      var(--palette-neutral-variant60);
   --color-outline-variant:              var(--palette-neutral-variant30);
 
-  /* || Add on color roles */
-
-  /* Bright and Dim Surface Roles */
-  --color-surface-dim:                  var(--palette-neutral6);
-  --color-surface-bright:               var(--palette-neutral20);
-
-  /* || Semantic palette */
+  /* || Semantic */
 
   /* Warning */
   --color-warning:                      var(--palette-warning80);
@@ -273,9 +271,9 @@
   --color-on-export-container:          var(--palette-export90);
   /* Query */
   --color-query:                        var(--palette-query80);
-  --color-on-query:                     var(--palette-quote20);
+  --color-on-query:                     var(--palette-query20);
   --color-query-container:              var(--palette-query30);
-  --color-on-query-container:           var(--palette-quote90);
+  --color-on-query-container:           var(--palette-query90);
   /* Note */
   --color-note:                         var(--palette-note80);
   --color-on-note:                      var(--palette-note20);
@@ -302,7 +300,7 @@
   --color-quote-container:              var(--palette-quote30);
   --color-on-quote-container:           var(--palette-quote90);
 
-  /* || Classic palette */
+  /* || Classic */
 
   /* 30 */
   --color-sub30:                        var(--palette-sub30-80);
