@@ -187,135 +187,317 @@
   color: var(--color-on-tertiary-fixed-variant);
 }
 
-/* || Not MD 3 */
+/* || Admonition swatches */
 
-/* || Classic Palettes */
-.sub30 {
-  background-color: var(--color-sub30);
-  color: var(--color-on-sub30);
+/* Warning */
+.warning {
+  --bg-color: var(--color-warning);
+  --text-color: var(--color-on-warning);
+  --icon-color: var(--color-on-warning);
 }
 
-.sub30-container {
-  background-color: var(--color-sub30-container);
-  color: var(--color-on-sub30-container);
+.warning-container {
+  --bg-color: var(--color-warning-container);
+  --text-color: var(--color-on-warning-container);
+  --icon-color: var(--color-on-warning-container);
 }
 
-.add30 {
-  background-color: var(--color-add30);
-  color: var(--color-on-add30);
+/* Caution */
+.caution {
+  --bg-color: var(--color-caution);
+  --text-color: var(--color-on-caution);
+  --icon-color: var(--color-on-caution);
 }
 
-.add30-container {
-  background-color: var(--color-add30-container);
-  color: var(--color-on-add30-container);
+.caution-container {
+  --bg-color: var(--color-caution-container);
+  --text-color: var(--color-on-caution-container);
+  --icon-color: var(--color-on-caution-container);
 }
 
-.sub60 {
-  background-color: var(--color-sub60);
-  color: var(--color-on-sub60);
+/* Important */
+.important {
+  --bg-color: var(--color-important);
+  --text-color: var(--color-on-important);
+  --icon-color: var(--color-on-important);
 }
 
-.sub60-container {
-  background-color: var(--color-sub60-container);
-  color: var(--color-on-sub60-container);
+.important-container {
+  --bg-color: var(--color-important-container);
+  --text-color: var(--color-on-important-container);
+  --icon-color: var(--color-on-important-container);
 }
 
-.add60 {
-  background-color: var(--color-add60);
-  color: var(--color-on-add60);
+/* Pinned */
+.pinned {
+  --bg-color: var(--color-pinned);
+  --text-color: var(--color-on-pinned);
+  --icon-color: var(--color-on-pinned);
 }
 
-.add60-container {
-  background-color: var(--color-add60-container);
-  color: var(--color-on-add60-container);
+.pinned-container {
+  --bg-color: var(--color-pinned-container);
+  --text-color: var(--color-on-pinned-container);
+  --icon-color: var(--color-on-pinned-container);
+}
+/* Verse */
+.verse {
+  --bg-color: var(--color-verse);
+  --text-color: var(--color-on-verse);
+  --icon-color: var(--color-on-verse);
 }
 
-.sub90 {
-  background-color: var(--color-sub90);
-  color: var(--color-on-sub90);
+.verse-container {
+  --bg-color: var(--color-verse-container);
+  --text-color: var(--color-on-verse-container);
+  --icon-color: var(--color-on-verse-container);
 }
 
-.sub90-container {
-  background-color: var(--color-sub90-container);
-  color: var(--color-on-sub90-container);
+/* Export */
+.export {
+  --bg-color: var(--color-export);
+  --text-color: var(--color-on-export);
+  --icon-color: var(--color-on-export);
 }
 
-.add90 {
-  background-color: var(--color-add90);
-  color: var(--color-on-add90);
+.export-container {
+  --bg-color: var(--color-export-container);
+  --text-color: var(--color-on-export-container);
+  --icon-color: var(--color-on-export-container);
 }
 
-.add90-container {
-  background-color: var(--color-add90-container);
-  color: var(--color-on-add90-container);
+/* Query */
+.query {
+  --bg-color: var(--color-query);
+  --text-color: var(--color-on-query);
+  --icon-color: var(--color-on-query);
 }
 
-.sub120 {
-  background-color: var(--color-sub120);
-  color: var(--color-on-sub120);
+.query-container {
+  --bg-color: var(--color-query-container);
+  --text-color: var(--color-on-query-container);
+  --icon-color: var(--color-on-query-container);
 }
 
-.sub120-container {
-  background-color: var(--color-sub120-container);
-  color: var(--color-on-sub120-container);
+/* Note */
+.note {
+  --bg-color: var(--color-note);
+  --text-color: var(--color-on-note);
+  --icon-color: var(--color-on-note);
 }
 
-.add120 {
-  background-color: var(--color-add120);
-  color: var(--color-on-add120);
+.note-container {
+  --bg-color: var(--color-note-container);
+  --text-color: var(--color-on-note-container);
+  --icon-color: var(--color-on-note-container);
 }
 
-.add120-container {
-  background-color: var(--color-add120-container);
-  color: var(--color-on-add120-container);
+/* Tip */
+.tip {
+  --bg-color: var(--color-tip);
+  --text-color: var(--color-on-tip);
+  --icon-color: var(--color-on-tip);
 }
 
-.sub150 {
-  background-color: var(--color-sub150);
-  color: var(--color-on-sub150);
+.tip-container {
+  --bg-color: var(--color-tip-container);
+  --text-color: var(--color-on-tip-container);
+  --icon-color: var(--color-on-tip-container);
 }
 
-.sub150-container {
-  background-color: var(--color-sub150-container);
-  color: var(--color-on-sub150-container);
+/* Example */
+.example {
+  --bg-color: var(--color-example);
+  --text-color: var(--color-on-example);
+  --icon-color: var(--color-on-example);
 }
 
-.add150 {
-  background-color: var(--color-add150);
-  color: var(--color-on-add150);
+.example-container {
+  --bg-color: var(--color-example-container);
+  --text-color: var(--color-on-example-container);
+  --icon-color: var(--color-on-example-container);
 }
 
-.add150-container {
-  background-color: var(--color-add150-container);
-  color: var(--color-on-add150-container);
+/* Comment */
+.comment {
+  --bg-color: var(--color-comment);
+  --text-color: var(--color-on-comment);
+  --icon-color: var(--color-on-comment);
 }
+
+.comment-container {
+  --bg-color: var(--color-comment-container);
+  --text-color: var(--color-on-comment-container);
+  --icon-color: var(--color-on-comment-container);
+}
+
+/* Quote */
+.quote {
+  --bg-color: var(--color-quote);
+  --text-color: var(--color-on-quote);
+  --icon-color: var(--color-on-quote);
+}
+
+.quote-container {
+  --bg-color: var(--color-quote-container);
+  --text-color: var(--color-on-quote-container);
+  --icon-color: var(--color-on-quote-container);
+}
+
+/* || Classic swatches */
 
 .sub180 {
-  background-color: var(--color-sub180);
-  color: var(--color-on-sub180);
+  --bg-color: var(--color-sub180);
+  --icon-color: var(--color-on-sub180);
+  --text-color: var(--color-on-sub180);
 }
 
 .sub180-container {
-  background-color: var(--color-sub180-container);
-  color: var(--color-on-sub180-container);
+  --bg-color: var(--color-sub180-container);
+  --icon-color: var(--color-on-sub180-container);
+  --text-color: var(--color-on-sub180-container);
+}
+
+.sub150 {
+  --bg-color: var(--color-sub150);
+  --icon-color: var(--color-on-sub150);
+  --text-color: var(--color-on-sub150);
+}
+
+.sub150-container {
+  --bg-color: var(--color-sub150-container);
+  --icon-color: var(--color-on-sub150-container);
+  --text-color: var(--color-on-sub150-container);
+}
+
+.sub120 {
+  --bg-color: var(--color-sub120);
+  --icon-color: var(--color-on-sub120);
+  --text-color: var(--color-on-sub120);
+}
+
+.sub120-container {
+  --bg-color: var(--color-sub120-container);
+  --icon-color: var(--color-on-sub120-container);
+  --text-color: var(--color-on-sub120-container);
+}
+
+.sub90 {
+  --bg-color: var(--color-sub90);
+  --icon-color: var(--color-on-sub90);
+  --text-color: var(--color-on-sub90);
+}
+
+.sub90-container {
+  --bg-color: var(--color-sub90-container);
+  --icon-color: var(--color-on-sub90-container);
+  --text-color: var(--color-on-sub90-container);
+}
+
+.sub60 {
+  --bg-color: var(--color-sub60);
+  --icon-color: var(--color-on-sub60);
+  --text-color: var(--color-on-sub60);
+}
+
+.sub60-container {
+  --bg-color: var(--color-sub60-container);
+  --icon-color: var(--color-on-sub60-container);
+  --text-color: var(--color-on-sub60-container);
+}
+
+.sub30 {
+  --bg-color: var(--color-sub30);
+  --icon-color: var(--color-on-sub30);
+  --text-color: var(--color-on-sub30);
+}
+
+.sub30-container {
+  --bg-color: var(--color-sub30-container);
+  --icon-color: var(--color-on-sub30-container);
+  --text-color: var(--color-on-sub30-container);
+}
+
+.add30 {
+  --bg-color: var(--color-add30);
+  --icon-color: var(--color-on-add30);
+  --text-color: var(--color-on-add30);
+}
+
+.add30-container {
+  --bg-color: var(--color-add30-container);
+  --icon-color: var(--color-on-add30-container);
+  --text-color: var(--color-on-add30-container);
+}
+
+.add60 {
+  --bg-color: var(--color-add60);
+  --icon-color: var(--color-on-add60);
+  --text-color: var(--color-on-add60);
+}
+
+.add60-container {
+  --bg-color: var(--color-add60-container);
+  --icon-color: var(--color-on-add60-container);
+  --text-color: var(--color-on-add60-container);
+}
+
+.add90 {
+  --bg-color: var(--color-add90);
+  --icon-color: var(--color-on-add90);
+  --text-color: var(--color-on-add90);
+}
+
+.add90-container {
+  --bg-color: var(--color-add90-container);
+  --icon-color: var(--color-on-add90-container);
+  --text-color: var(--color-on-add90-container);
+}
+
+.add120 {
+  --bg-color: var(--color-add120);
+  --icon-color: var(--color-on-add120);
+  --text-color: var(--color-on-add120);
+}
+
+.add120-container {
+  --bg-color: var(--color-add120-container);
+  --icon-color: var(--color-on-add120-container);
+  --text-color: var(--color-on-add120-container);
+}
+
+.add150 {
+  --bg-color: var(--color-add150);
+  --icon-color: var(--color-on-add150);
+  --text-color: var(--color-on-add150);
+}
+
+.add150-container {
+  --bg-color: var(--color-add150-container);
+  --icon-color: var(--color-on-add150-container);
+  --text-color: var(--color-on-add150-container);
 }
 
 .add180 {
-  background-color: var(--color-add180);
-  color: var(--color-on-add180);
+  --bg-color: var(--color-add180);
+  --icon-color: var(--color-on-add180);
+  --text-color: var(--color-on-add180);
 }
 
 .add180-container {
-  background-color: var(--color-add180-container);
-  color: var(--color-on-add180-container);
+  --bg-color: var(--color-add180-container);
+  --icon-color: var(--color-on-add180-container);
+  --text-color: var(--color-on-add180-container);
 }
 
 .complementary {
-  background-color: var(--color-complementary);
-  color: var(--color-on-complementary);
+  --bg-color: var(--color-complementary);
+  --icon-color: var(--color-on-complementary);
+  --text-color: var(--color-on-complementary);
 }
 
 .complementary-container {
-  background-color: var(--color-complementary-container);
-  color: var(--color-on-complementary-container);
+  --bg-color: var(--color-complementary-container);
+  --icon-color: var(--color-on-complementary-container);
+  --text-color: var(--color-on-complementary-container);
 }
