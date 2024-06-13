@@ -1,17 +1,17 @@
 ---
 coverimage: ../assets/bagel_corner_erd_1709745980175_0.jpg
 date: 2022-12-18
-description: Built SQL database models for Bagel Corner & Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.
+description: Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting
 githubrepo: https://github.com/wonyoung-jang/bagel-coffee-stores
 title: Bagel Corner and Mister Coffee Database Management
 tags:
 categories:
-lastMod: 2024-05-18
+lastMod: 2024-06-13
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
-## Learning Objectives and Requirements
+## Course requirements
 
   + Design a normalized physical database model for an ordering system (Bagel Corner).
 

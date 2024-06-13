@@ -1,17 +1,13 @@
-{{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
-
-<button  class="component button common with-icon">
-    <a  href="{{ "" | absLangURL }}" 
+<button  class="component button icon" id="site-icon">
+    <a  href="{{ "" | absLangURL }}"
         accesskey="h" 
-        title="{{ $label_text }} (ALT + SHIFT + h)"></a>
+        title="Wonyoung Jang (ALT + SHIFT + h)"></a>
 
     {{- if .Site.Params.label.icon }}
-        <img    src="{{- .Site.Params.label.icon | absURL -}}" 
-                alt="logo" 
-                aria-label="logo">
+        <i>
+            <img    src="{{- .Site.Params.label.icon | absURL -}}" 
+                    alt="logo" 
+                    aria-label="logo">
+        </i>    
     {{- end -}}
-    
-    <h6 class="site-headline">
-        {{- $label_text -}}
-    </h6>        
-</button>
+</button>  

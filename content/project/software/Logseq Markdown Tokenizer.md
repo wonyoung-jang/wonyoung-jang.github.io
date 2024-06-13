@@ -1,14 +1,14 @@
 ---
 date: 2024-01-13
 coverimage: ../assets/logseq_tokenizer_1709673334004_0.png
-description: Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/).
+description: Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/)
 githubrepo: https://github.com/wonyoung-jang/logseq-tokenizer
 title: Logseq Markdown Tokenizer
 tags:
 categories:
-lastMod: 2024-05-18
+lastMod: 2024-06-13
 ---
-## The Problem
+## Problem
 
   + [Logseq](https://logseq.com/) does not have a native way to view the character count of your notes (aka pages).
 
@@ -16,7 +16,7 @@ lastMod: 2024-05-18
 
   + Logseq's graph is difficult to search and prune manually.
 
-## Proposed Solution
+## Possible solution
 
 Encode Logseq's graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
 
@@ -34,9 +34,9 @@ Encode Logseq's graph to enable semantic search, then leverage this encoding to 
 
   + If have the token counts, I can estimate the cost of embedding for OpenAI's three available `text-embedding` models.
 
-## Outputting the Data to CSV
+## Outputting the data as a csv file
 
-If I output this data as a CSV, I can manipulate and format the data. For instance, with conditional formatting:
+If I output this data as a csv, I can manipulate and format the data. For instance, with conditional formatting:
 
 ![example_output.png](/assets/example_output_1710007420546_0.png)
 

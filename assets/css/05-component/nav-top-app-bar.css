@@ -37,24 +37,9 @@
   }
 }
 
-/* Compact */
-@media (min-width: 0px) {
-  .top-app-bar {
-    .headline span {
-      display: none;
-    }
-
-    .site-headline {
-      display: none;
-    }
-  }
-}
-
 /* Medium */
 @media (min-width: 600px) {
-  .top-app-bar {
-    .site-headline {
-      display: flex;
-    }
+  a#site-headline {
+    display: flex;
   }
 }

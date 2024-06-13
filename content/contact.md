@@ -4,14 +4,14 @@ coverhidden: true
 title: Contact
 tags:
 categories:
-date: 2024-04-12
-lastMod: 2024-04-14
+date: 2024-06-11
+lastMod: 2024-06-11
 ---
-## Contact Me Directly
+## Contact me directly
 
 The best way to contact me directly is through email at [contact@wonyoungjang.org](mailto:contact@wonyoungjang.org).
 
-## Give Me Feedback
+## Give me feedback
 
 Give me feedback! I'm always trying to learn new things and I take all feedback seriously:
 

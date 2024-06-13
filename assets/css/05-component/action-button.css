@@ -82,7 +82,7 @@
   --bg-color: none;
   --icon-color: var(--color-on-surface-variant);
 
-  & i {
+  i {
     font-size: 24px;
   }
 

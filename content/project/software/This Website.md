@@ -1,14 +1,14 @@
 ---
 date: 2024-03-05
 coverimage: ../assets/image_1709746330336_0.png
-description: This page is a meta presentation for the deployment of this website (and this page).
+description: This page is a meta presentation for the deployment of this website (and this page)
 githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
 title: This Website
 tags:
 categories:
-lastMod: 2024-05-18
+lastMod: 2024-06-13
 ---
-## How It's Made
+## How it's made
 
 1. Pages (notes, articles, projects) are written in Logseq markdown.
 

@@ -7,19 +7,11 @@ header {
   top: 0;
   z-index: 999999;
 }
-  
-.tabs {
-  scrollbar-color: var(--color-secondary) transparent;
-  scrollbar-width: thin;
-  overflow: auto;
-  overflow-y: hidden;
-}
 
 .top-app-bar {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
 
   .start,
   .end {
@@ -28,8 +20,22 @@ header {
     align-items: center;
     gap: var(--spacing-s);
   }
+
+  .end {
+    margin-left: auto;
+  }
 }
 
-.site-headline {
-  color: var(--color-on-surface)
+#site-headline {
+  position: relative;
+  color: var(--color-on-surface);
+  display: none;
+  flex-flow: row nowrap;
+}
+
+.tabs {
+  scrollbar-color: var(--color-secondary) transparent;
+  scrollbar-width: thin;
+  overflow: auto;
+  overflow-y: hidden;
 }

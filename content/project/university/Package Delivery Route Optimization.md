@@ -1,17 +1,17 @@
 ---
 date: 2024-01-08
 coverimage: ../assets/package_delivery_network_1709746666621_0.png
-description: Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.
+description: Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface
 githubrepo: https://github.com/wonyoung-jang/package-delivery-network
 title: Package Delivery Route Optimization
 tags:
 categories:
-lastMod: 2024-05-18
+lastMod: 2024-06-13
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
-## Learning Objectives and Requirements
+## Course requirements
 
   + Implement a hash table data structure (without external libraries) to store package data.
 

@@ -1,17 +1,17 @@
 ---
 date: 2023-11-27
 coverimage: ../assets/hotel_reservation_manager_1709746723628_0.png
-description: Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).
+description: Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/)
 githubrepo: https://github.com/wonyoung-jang/hotel-reservation-manager
 title: Hotel Reservation Manager
 tags:
 categories:
-lastMod: 2024-05-18
+lastMod: 2024-06-13
 ---
 {{< logseq/orgWARNING >}}This project was completed as part of academic coursework and is no longer being actively maintained. Certain names, identifiers, and other details have been modified from the original submission for academic integrity purposes. This page contains a summarized list of the main requirements given by the university.
 {{< / logseq/orgWARNING >}}
 
-## Learning Objectives and Requirements
+## Course requirements
 
   + Integrate resource bundles in the application for English and French translations, including a welcome message.
 

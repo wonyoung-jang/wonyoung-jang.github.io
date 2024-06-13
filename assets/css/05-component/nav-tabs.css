@@ -1,6 +1,5 @@
 .tabs {
   align-self: center;
-  max-width: var(--window-extra-large-min);
 
   --container-width: calc(100% - var(--spacing-xl));
   --container-height: 48px;

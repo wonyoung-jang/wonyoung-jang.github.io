@@ -34,62 +34,22 @@
     
     
       <lastBuildDate>
-        Sat, 13 Apr 2024 00:00:00 +0000
+        Tue, 11 Jun 2024 00:00:00 +0000
       </lastBuildDate>
     <atom:link href="http://localhost:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-          <title>
-            List of Admonitions for This Site
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
-          </link>
-          <pubDate>
-            Sat, 18 May 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
-          </guid>
-          <description>
-            
-              This page is a list of admonitions used on this site.
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            List of Keyboard Shortcuts for This Site
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-this-site/
-          </link>
-          <pubDate>
-            Fri, 29 Mar 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-this-site/
-          </guid>
-          <description>
-            
-              This page is a list of keyboard shortcuts for navigating this site.
-            </description>
-        </item>
-    
         <item>
           <title>
             (Basic) Fixed and flexible layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/basic---fixed-and-flexible-layout/
+            http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/basic---fixed-and-flexible-layout/
+            http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/
           </guid>
           <description>
             
@@ -102,14 +62,14 @@
             (Basic) Single pane layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/basic---single-pane-layout/
+            http://localhost:1313/resource/reference/basic-single-pane-layout/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/basic---single-pane-layout/
+            http://localhost:1313/resource/reference/basic-single-pane-layout/
           </guid>
           <description>
             
@@ -122,14 +82,14 @@
             (Basic) Split-pane layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/basic---split-pane-layout/
+            http://localhost:1313/resource/reference/basic-split-pane-layout/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/basic---split-pane-layout/
+            http://localhost:1313/resource/reference/basic-split-pane-layout/
           </guid>
           <description>
             
@@ -142,14 +102,14 @@
             (Canonical) Feed layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/canonical---feed-layout/
+            http://localhost:1313/resource/reference/canonical-feed-layout/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/canonical---feed-layout/
+            http://localhost:1313/resource/reference/canonical-feed-layout/
           </guid>
           <description>
             
@@ -162,14 +122,14 @@
             (Canonical) List-detail layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/canonical---list-detail-layout/
+            http://localhost:1313/resource/reference/canonical-list-detail-layout/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/canonical---list-detail-layout/
+            http://localhost:1313/resource/reference/canonical-list-detail-layout/
           </guid>
           <description>
             
@@ -182,14 +142,14 @@
             (Canonical) Supporting pane layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/canonical---supporting-pane-layout/
+            http://localhost:1313/resource/reference/canonical-supporting-pane-layout/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/canonical---supporting-pane-layout/
+            http://localhost:1313/resource/reference/canonical-supporting-pane-layout/
           </guid>
           <description>
             
@@ -202,18 +162,38 @@
             Colors
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/colors/
+            http://localhost:1313/resource/reference/colors/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/colors/
+            http://localhost:1313/resource/reference/colors/
           </guid>
           <description>
             
-              Color palettes and swatches available for [wonyoungjang.org]({{&amp;lt; ref &amp;#34;/&amp;#34; &amp;gt;}})
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            List of Admonitions for This Site
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
+          </guid>
+          <description>
+            
+              This page is a list of admonitions used on this site
             </description>
         </item>
     
@@ -222,18 +202,18 @@
             Shapes
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/shapes/
+            http://localhost:1313/resource/reference/shapes/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/shapes/
+            http://localhost:1313/resource/reference/shapes/
           </guid>
           <description>
             
-              Shapes available for [wonyoungjang.org]({{&amp;lt; ref &amp;#34;/&amp;#34; &amp;gt;}})
+              
             </description>
         </item>
     
@@ -242,18 +222,18 @@
             States and elevation
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/states/
+            http://localhost:1313/resource/reference/states-and-elevation/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/states/
+            http://localhost:1313/resource/reference/states-and-elevation/
           </guid>
           <description>
             
-              States and elevations available for [wonyoungjang.org]({{&amp;lt; ref &amp;#34;/&amp;#34; &amp;gt;}})
+              
             </description>
         </item>
     
@@ -262,18 +242,38 @@
             Typography
           </title>
           <link>
-            http://localhost:1313/resource/reference/showcase-pages/typography/
+            http://localhost:1313/resource/reference/typography/
           </link>
           <pubDate>
-            Mon, 01 Jan 0001 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/showcase-pages/typography/
+            http://localhost:1313/resource/reference/typography/
           </guid>
           <description>
             
-              Typeface and typescale available for [wonyoungjang.org]({{&amp;lt; ref &amp;#34;/&amp;#34; &amp;gt;}})
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            List of Keyboard Shortcuts for WonyoungJang.org
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          </link>
+          <pubDate>
+            Fri, 29 Mar 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          </guid>
+          <description>
+            
+              This page is a list of keyboard shortcuts for navigating this site
             </description>
         </item>
     

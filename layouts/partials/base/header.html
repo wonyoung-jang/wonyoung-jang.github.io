@@ -1,51 +1,54 @@
 {{/* Top App Bar */}}
 <nav class="component top-app-bar center small" aria-label="Top App Bar">
-    {{- /* Headline */ -}}
-    {{- if .Site.Title }}
-        <section class="start">
-            {{/* Site ID */}}
-            {{ partial "components/siteid-button.html" . }}
+    <!-- Site Headline -->
+    <section class="start">
+        <!-- Site ID -->
+        {{ partial "components/siteid-button.html" . }}
+        
+        <!-- Site Headline -->
+        <a  id="site-headline"
+            class="title-medium"
+            href="{{ "" | absLangURL }}">
+            Wonyoung Jang
+        </a>
+    </section>
 
-            {{/* LANGUAGE SWITCH 
-            {{- $lang := .Lang}}
-            {{- with $.Site.Home.AllTranslations }}
-                <ul class="lang-switch">
-                    {{- range . -}}
-                        {{- if ne $lang .Lang }}
-                            <a  href="{{- .Permalink -}}" 
-                                title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                                aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                                
-                                {{- if (and $.Site.Params.displayFullLangName (.Language.LanguageName)) }}
-                                    {{- .Language.LanguageName | emojify -}}
-                                {{- else }}
-                                    {{- .Lang | title -}}
-                                {{- end -}}
-
-                            </a>
-                        {{- end -}}
-                    {{- end}}
-                </ul>
-            {{- end }}
-            */}}
-
-        </section>
-    {{- end }}
-
-    {{/* End section: Buttons */}}
+    <!-- Buttons -->
     <section class="end">
-        {{/* Theme */}}
+        <!-- Language switch -->
+        {{- $lang := .Lang}}
+        {{- with $.Site.Home.AllTranslations }}
+            <ul class="lang-switch">
+                {{- range . -}}
+                    {{- if ne $lang .Lang }}
+                        <a  href="{{- .Permalink -}}" 
+                            title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            
+                            {{- if (and $.Site.Params.displayFullLangName (.Language.LanguageName)) }}
+                                {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                                {{- .Lang | title -}}
+                            {{- end -}}
+
+                        </a>
+                    {{- end -}}
+                {{- end}}
+            </ul>
+        {{- end }}
+
+        <!-- Theme toggle -->
         {{ partial "components/theme-button.html" . }}        
         
-        {{/* Random */}}
+        <!-- Random page -->
         {{ partial "components/random-button.html" . }}
         
-        {{/* Search */}}
+        <!-- Search-->
         {{ partial "components/search-button.html" . }}
     </section>
 </nav>
 
-{{/* Tabs */}}
+<!-- Tabs -->
 <div class="component tabs title-medium">
     {{ define "menu-item" }}   
         {{ $page := .page }}
@@ -101,44 +104,29 @@
     </div>
 </div>
 
-{{- /* Theme-toggle is enabled */}}
-{{- if (not .Site.Params.disableThemeToggle) }}
-
-    {{- /* Theme is light */}}
-    {{- if (eq .Site.Params.defaultTheme "light") }}
-        <script>
-            if (localStorage.getItem("pref-theme") === "dark") {
-                document.body.classList.add('dark');
-            }
-        </script>
-
-    {{- /* Theme is dark */}}
-    {{- else if (eq .Site.Params.defaultTheme "dark") }}
-        <script>
-            if (localStorage.getItem("pref-theme") === "light") {
-                document.body.classList.remove('dark')
-            }
-        </script>
-
-    {{- /* Theme is auto */}}
-    {{- else }}
-        <script>
-            if (localStorage.getItem("pref-theme") === "dark") {
-                document.body.classList.add('dark');
-            } else if (localStorage.getItem("pref-theme") === "light") {
-                document.body.classList.remove('dark')
-            } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.body.classList.add('dark');
-            }
-        </script>
-    {{- end }}
-
-{{- /* Theme-toggle is disabled and theme is auto */}}
-{{- else if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark"))}}
+<!-- Light -->
+{{- if (eq .Site.Params.defaultTheme "light") }}
     <script>
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (localStorage.getItem("pref-theme") === "dark") {
             document.body.classList.add('dark');
         }
     </script>
-    
+<!-- Dark -->
+{{- else if (eq .Site.Params.defaultTheme "dark") }}
+    <script>
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.body.classList.remove('dark')
+        }
+    </script>
+<!-- Auto -->
+{{- else }}
+    <script>
+        if (localStorage.getItem("pref-theme") === "dark") {
+            document.body.classList.add('dark');
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            document.body.classList.remove('dark')
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+        }
+    </script>
 {{- end }}

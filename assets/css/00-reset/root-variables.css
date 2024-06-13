@@ -29,17 +29,9 @@
 
   /* Window size classes */
   --window-compact-min:     0px;
-  --window-compact-max:     599px;
-  
   --window-medium-min:      600px;
-  --window-medium-max:      839px;
-  
   --window-expanded-min:    840px;
-  --window-expanded-max:    1199px;
-  
   --window-large-min:       1200px;
-  --window-large-max:       1599px;
-  
   --window-extra-large-min: 1600px;
 
   /* Spacing */
@@ -52,21 +44,21 @@
   /* Core */
   --spacing-panes:    16px;
   --fixed-pane-width: 360px;
-  --root-font-size:   14px;
+  --root-font-size:   13.618px;
 }
 
 /* Medium */
 @media (min-width: 600px) {
   :root {
     --spacing-panes:  24px;
-    --root-font-size: 14.5px;
+    --root-font-size: 14px;
   }
 }
 
 /* Expanded */
 @media (min-width: 840px) {
   :root {
-    --root-font-size: 15px;
+    --root-font-size: 14.618px;
   }
 }
 

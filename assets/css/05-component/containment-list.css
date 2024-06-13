@@ -6,14 +6,9 @@
   
   --container-padding: var(--spacing-s) var(--spacing-l);
 
-  --bg-color: inherit;
-  --icon-color: inherit;
-  background-color: var(--bg-color,);
-  
-  * {
-    width: 100%;
-    color: var(--icon-color,);
-  }
+  --icon-color: var(--color-on-surface);
+  --text-color: var(--color-on-surface);
+  --bg-color: var(--color-surface);
   
   &.one {
     --container-height: 56px;
