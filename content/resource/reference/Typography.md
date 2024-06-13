@@ -4,5 +4,6 @@ date:
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 description: Serves as a reference for the typefaces and typescales available for wonyoungjang.org
 title: Typography
+type: showcase/tokens
 layout: typography
 ---

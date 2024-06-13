@@ -1,4 +1,8 @@
 ---
-layout: basicfixedflex
+date:
+- 2024-06-10 Monday
+type: showcase/layouts/basic
+layout: fixedflex
+coverimage: ../assets/lists_icon_1710524790703_0.jpg
 title: (Basic) Fixed and flexible layout
 ---

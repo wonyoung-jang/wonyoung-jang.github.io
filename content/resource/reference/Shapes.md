@@ -4,5 +4,6 @@ date:
 coverimage: ../assets/lists_icon_1710524790703_0.jpg
 description: Serves as a reference for
 title: Shapes
+type: showcase/tokens
 layout: shapes
 ---
