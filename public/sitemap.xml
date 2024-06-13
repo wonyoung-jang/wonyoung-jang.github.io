@@ -85,24 +85,24 @@
   </url><url>
     <loc>http://localhost:1313/graph/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/basic---fixed-and-flexible-layout/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/basic---fixed-and-flexible-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/basic---single-pane-layout/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/basic---single-pane-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/basic---split-pane-layout/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/basic---split-pane-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/canonical---feed-layout/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/canonical---feed-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/canonical---list-detail-layout/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/canonical---list-detail-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/canonical---supporting-pane-layout/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/canonical---supporting-pane-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/colors/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/colors/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/shapes/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/shapes/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/states/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/states/</loc>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/typography/</loc>
+    <loc>http://localhost:1313/resource/reference/showcase-pages/typography/</loc>
   </url>
 </urlset>
