@@ -464,17 +464,17 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
-            Basic - Fixed Flex Layout
+            (Basic) Single pane layout
           </title>
           <link>
-            http://localhost:1313/basicfixedflex/
+            http://localhost:1313/resource/reference/basic---single-pane-layout/
           </link>
           <pubDate>
             Mon, 01 Jan 0001 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/basicfixedflex/
+            http://localhost:1313/resource/reference/basic---single-pane-layout/
           </guid>
           <description>
             
@@ -484,17 +484,17 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
-            Basic - Single Pane Layout
+            (Basic) Split-pane layout
           </title>
           <link>
-            http://localhost:1313/basicsingle/
+            http://localhost:1313/resource/reference/basic---split-pane-layout/
           </link>
           <pubDate>
             Mon, 01 Jan 0001 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/basicsingle/
+            http://localhost:1313/resource/reference/basic---split-pane-layout/
           </guid>
           <description>
             
@@ -504,17 +504,17 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
-            Basic - Split Pane Layout
+            (Canonical) Feed layout
           </title>
           <link>
-            http://localhost:1313/basicsplit/
+            http://localhost:1313/resource/reference/canonical---feed-layout/
           </link>
           <pubDate>
             Mon, 01 Jan 0001 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/basicsplit/
+            http://localhost:1313/resource/reference/canonical---feed-layout/
           </guid>
           <description>
             
@@ -524,17 +524,17 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
-            Canonical - Feed Layout
+            (Canonical) List-detail layout
           </title>
           <link>
-            http://localhost:1313/canonfeed/
+            http://localhost:1313/resource/reference/canonical---list-detail-layout/
           </link>
           <pubDate>
             Mon, 01 Jan 0001 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/canonfeed/
+            http://localhost:1313/resource/reference/canonical---list-detail-layout/
           </guid>
           <description>
             
@@ -544,17 +544,17 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
-            Canonical - List-Detail Layout
+            (Canonical) Supporting pane layout
           </title>
           <link>
-            http://localhost:1313/canonlistdetail/
+            http://localhost:1313/resource/reference/canonical---supporting-pane-layout/
           </link>
           <pubDate>
             Mon, 01 Jan 0001 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/canonlistdetail/
+            http://localhost:1313/resource/reference/canonical---supporting-pane-layout/
           </guid>
           <description>
             
@@ -564,17 +564,17 @@ NameEmailSubjectMessageSubmit
     
         <item>
           <title>
-            Canonical - Supporting Pane Layout
+            Basic - Fixed and flexible layout
           </title>
           <link>
-            http://localhost:1313/canonsupportingpane/
+            http://localhost:1313/resource/reference/basic---fixed-and-flexible-layout/
           </link>
           <pubDate>
             Mon, 01 Jan 0001 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/canonsupportingpane/
+            http://localhost:1313/resource/reference/basic---fixed-and-flexible-layout/
           </guid>
           <description>
             

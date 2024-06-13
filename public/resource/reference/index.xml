@@ -79,6 +79,126 @@
     
         <item>
           <title>
+            (Basic) Single pane layout
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/basic---single-pane-layout/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/basic---single-pane-layout/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Basic) Split-pane layout
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/basic---split-pane-layout/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/basic---split-pane-layout/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Canonical) Feed layout
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/canonical---feed-layout/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/canonical---feed-layout/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Canonical) List-detail layout
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/canonical---list-detail-layout/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/canonical---list-detail-layout/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Canonical) Supporting pane layout
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/canonical---supporting-pane-layout/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/canonical---supporting-pane-layout/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Basic - Fixed and flexible layout
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/basic---fixed-and-flexible-layout/
+          </link>
+          <pubDate>
+            Mon, 01 Jan 0001 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/basic---fixed-and-flexible-layout/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
             Colors
           </title>
           <link>

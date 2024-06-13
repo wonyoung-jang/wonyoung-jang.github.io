@@ -1,79 +1,39 @@
 {{- define "main" }}
 
-{{- $pages := union .RegularPages .Sections }}
-{{- $paginator := .Paginate $pages }}
+    {{- $pages := union .RegularPages .Sections }}
 
-<article class="layout panes canonical-feed">
-    
-    <section class="layout pane">
+    <article class="layout panes canonical-feed">
+        
+        <section class="layout pane">
 
-        {{- range $index, $page := first 9 $paginator.Pages }}        
-            <div class="component card filled">
-                <a  aria-label="post link to {{ .Title | plainify }}" 
-                    href="{{ .Permalink }}"></a>
+            {{- range $index, $page := $pages }}        
+                <div class="component card filled">
+                    <a  aria-label="post link to {{ .Title | plainify }}" 
+                        href="{{ .Permalink }}"></a>
+                    
+                    {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+                    {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}            
                 
-                {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-                {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}            
-               
-                {{- if .Params.coverimage }}
-                    <img    src="{{ .Params.coverimage | absURL }}" 
-                            alt="{{ $.Title }} - descriptive image of the post content">
-                {{- end }}
-                
-                <div class="card-content">
-                    {{- if not (.Param "hideMeta") }}
-                        {{- partial "components/post-meta.html" . -}}
+                    {{- if .Params.coverimage }}
+                        <img    src="{{ .Params.coverimage | absURL }}" 
+                                alt="{{ $.Title }} - descriptive image of the post content">
                     {{- end }}
                     
-                    <h6>
-                        {{- .Title }}
-                    </h6>
+                    <div class="card-content">
+                        {{- if not (.Param "hideMeta") }}
+                            {{- partial "components/post-meta.html" . -}}
+                        {{- end }}
+                        
+                        <h6>
+                            {{- .Title }}
+                        </h6>
+                    </div>
                 </div>
-            </div>
 
-        {{- end }}
+            {{- end }}
 
-    </section>
+        </section>
 
-</article>
-
-{{- end }}
-
-{{/* TODO
-List Page Navigation 
-{{- if gt $paginator.TotalPages 1 }}    
-    
-    {{- if $paginator.HasPrev }}
-        <a href="{{ $paginator.Prev.URL | absURL }}">
-            {{ i18n "prev_page" }}
-        </a>
-    {{- else }}
-        <span>
-            {{ i18n "prev_page" }}
-        </span>
-    {{- end }}
-
-    {{- range $paginator.Pagers }}
-        {{- if ne .PageNumber $paginator.PageNumber }}
-            <a href="{{ .URL | absURL }}">
-                {{ .PageNumber }}
-            </a>
-        {{- else }}
-            <span>
-                {{ .PageNumber }}
-            </span>
-        {{- end }}
-    {{- end }}
-
-    {{- if $paginator.HasNext }}
-        <a  href="{{ $paginator.Next.URL | absURL }}">
-            {{ i18n "next_page" }}
-        </a>
-    {{- else }}
-        <span>
-            {{ i18n "next_page" }}
-        </span>
-    {{- end }}
+    </article>
 
 {{- end }}
-*/}}

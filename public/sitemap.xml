@@ -85,17 +85,17 @@
   </url><url>
     <loc>http://localhost:1313/graph/</loc>
   </url><url>
-    <loc>http://localhost:1313/basicfixedflex/</loc>
+    <loc>http://localhost:1313/resource/reference/basic---fixed-and-flexible-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/basicsingle/</loc>
+    <loc>http://localhost:1313/resource/reference/basic---single-pane-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/basicsplit/</loc>
+    <loc>http://localhost:1313/resource/reference/basic---split-pane-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/canonfeed/</loc>
+    <loc>http://localhost:1313/resource/reference/canonical---feed-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/canonlistdetail/</loc>
+    <loc>http://localhost:1313/resource/reference/canonical---list-detail-layout/</loc>
   </url><url>
-    <loc>http://localhost:1313/canonsupportingpane/</loc>
+    <loc>http://localhost:1313/resource/reference/canonical---supporting-pane-layout/</loc>
   </url><url>
     <loc>http://localhost:1313/resource/reference/colors/</loc>
   </url><url>
