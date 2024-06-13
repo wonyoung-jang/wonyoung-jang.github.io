@@ -2,16 +2,6 @@
 <html   lang="{{ .Site.Language }}" 
         dir="{{ .Language.LanguageDirection | default "auto" }}">
     <head>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <!-- Sans-Serif -->    
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-        <!-- Titles -->    
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <!-- Monospace -->    
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        
         {{- partial "head.html" . }}
         
         {{- partial "scripts/links.html" . }}
@@ -19,16 +9,6 @@
         {{ if .Site.Params.GoogleAnalytics }}
             {{ partial "scripts/analytics-gtag.html" . }}
         {{ end }}
-        
-        <!-- Icons -->
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
-        <!-- Outlined Icons -->
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-        <!-- Rounded Icons -->
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
-        <!-- Sharp Icons -->
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
     </head>
     
     <!-- Body -->
@@ -48,7 +28,9 @@
                 {{- partialCached "sections/page-header.html" . .Page -}}
 
                 <!-- Layout: Main -->
-                {{- block "main" . }}{{ end }}
+                {{ block "main" . }}
+                
+                {{ end }}
 
                 <!-- Layout: Page Navigation -->
                 {{- partial "sections/page-navigation.html" . }}

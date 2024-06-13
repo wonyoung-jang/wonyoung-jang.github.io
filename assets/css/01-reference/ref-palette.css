@@ -4,7 +4,7 @@
     /* Key Hues */
     --hue-primary:  305deg;
     --hue-error:    25deg;
-    --hue-tertiary: calc(var(--hue-primary) - 60deg);
+    --hue-tertiary:         calc(var(--hue-primary) - 60deg);
     --hue-complementary:    calc(var(--hue-primary) + 180deg);
     
     /* Harmonization */
