@@ -59,14 +59,14 @@
 @media (min-width: 600px) {
   :root {
     --spacing-panes:  24px;
-    --root-font-size: 15px;
+    --root-font-size: 14.5px;
   }
 }
 
 /* Expanded */
 @media (min-width: 840px) {
   :root {
-    --root-font-size: 16px;
+    --root-font-size: 15px;
   }
 }
 
