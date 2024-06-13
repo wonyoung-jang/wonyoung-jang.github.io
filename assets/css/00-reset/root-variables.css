@@ -1,19 +1,23 @@
 :root {
   /* Scales */
-  --scale-minor-second:   1.067;
-  --scale-major-second:   1.125;
-  --scale-minor-third:    1.200;
-  --scale-major-third:    1.250;
-  --scale-perfect-fourth: 1.330;
-  --scale-aug-fourth:     1.414;
-  --scale-perfect-fifth:  1.500;
+  --scale-min-2:          calc(16 / 15);
+  --scale-maj-2:          calc(9 / 8);
+  --scale-min-3:          calc(6 / 5);
+  --scale-maj-3:          calc(5 / 4);
+  --scale-perfect-fourth: calc(4 / 3);
+  --scale-tritone:        calc(45 / 32);
+  --scale-perfect-fifth:  calc(3 / 2);
+  --scale-min-6:          calc(8 / 5);
+  --scale-maj-6:          calc(5 / 3);
+  --scale-min-7:          calc(9 / 5);
+  --scale-maj-7:          calc(15 / 8);
   --scale-fibonacci:      1.618;
 
   /* Typescale factors */
-  --scale-back-size:          var(--scale-minor-second);
+  --scale-back-size:          var(--scale-min-2);
   --scale-up-type:            var(--scale-perfect-fifth);
-  --scale-back-type:          var(--scale-minor-second);
-  --scale-line-height-small:  var(--scale-major-second);
+  --scale-back-type:          var(--scale-min-2);
+  --scale-line-height-small:  var(--scale-maj-2);
   --scale-line-height-large:  var(--scale-perfect-fourth);
 
   /* Icons */
