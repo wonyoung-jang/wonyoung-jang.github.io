@@ -51,7 +51,7 @@ assets:
 label:
   text: 'Wonyoung Jang'
   icon: '/apple-touch-icon.png'
-  iconHeight: 
+  iconHeight: 40px
 
 # Profile Mode
 profileMode:

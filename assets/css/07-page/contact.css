@@ -4,7 +4,7 @@
   padding: var(--spacing-xl);
   gap: var(--spacing-m);
   
-  border-radius: var(--shape-corner-l);
+  border-radius: var(--shape-corner-xs);
   box-shadow: var(--elevation1);
 
   background: var(--color-surface-container);
