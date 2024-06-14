@@ -29,7 +29,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   border-radius: var(--shape-corner-xl-bottom);
-  padding: var(--spacing-m);
+  padding: var(--size-3);
   min-height: 48px;
   width: 100%;
 }
@@ -65,7 +65,7 @@
   min-height: 5em;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--spacing-xs);
+  padding: var(--size-1);
   font-family: var(--typeface-mono);
 
   opacity: 0.4;
@@ -93,10 +93,10 @@
 .ref-classic-palettes {
   display: grid;
   grid-template-columns: 1fr 8fr;
-  gap: var(--spacing-l);
+  gap: var(--size-4);
 
   label {
-    padding: var(--spacing-xs);
+    padding: var(--size-1);
   }
 }
 
@@ -675,7 +675,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: minmax(100px, 1fr);
 
-  gap: var(--spacing-l);
+  gap: var(--size-4);
   padding: var(--spacing-panes);
 
   border-radius: var(--shape-corner-xl-bottom);
@@ -689,11 +689,11 @@
   display: flex;
   flex-flow: column nowrap;
   background-color: transparent;
-  gap: var(--spacing-xs);
+  gap: var(--size-1);
   border-radius: unset;
   
   div {
-    max-height: calc(50% - var(--spacing-xs));
+    max-height: calc(50% - var(--size-1));
     flex: 1 1 0;
     display: grid;
     grid-template-rows: repeat(13, 1fr);
@@ -701,7 +701,7 @@
     > span {
       display: flex;
       flex-flow: row wrap;
-      padding: var(--spacing-m);
+      padding: var(--size-3);
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
@@ -744,7 +744,7 @@
   [class*="swatch"] {
     display: flex;
     flex-flow: row nowrap;
-    padding: var(--spacing-m);
+    padding: var(--size-3);
     align-self: stretch;
     border-radius: unset;
   }
@@ -765,13 +765,13 @@
 .top-row {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--spacing-xs);
+  gap: var(--size-1);
 
   [class*="tokens"] {
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
-    gap: var(--spacing-xs);
+    gap: var(--size-1);
 
     .swatch-group {
       div:nth-child(1) {
@@ -788,7 +788,7 @@
 .fixed-colors {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--spacing-xs);
+  gap: var(--size-1);
 
   .swatch-group {
     [class*="swatch"] {
@@ -810,13 +810,13 @@
 .bottom-row {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--spacing-s);
+  gap: var(--size-2);
 
   .surfaces {
     flex: 6;
     display: flex;
     flex-flow: column nowrap;
-    gap: var(--spacing-xs);
+    gap: var(--size-1);
 
     .surface-group {
       flex: 6;
@@ -838,7 +838,7 @@
     flex-flow: column nowrap;
     align-content: space-between;
     align-items: stretch;
-    gap: var(--spacing-l);
+    gap: var(--size-4);
     
     .inverses {
       flex: 6;
@@ -861,7 +861,7 @@
       flex-flow: row nowrap;
 
       color: var(--palette-white);
-      gap: var(--spacing-xs);
+      gap: var(--size-1);
       height: 3rem;
     }
   }

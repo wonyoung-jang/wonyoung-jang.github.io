@@ -15,7 +15,7 @@ button.copy-code {
   top: 0.5rem;
   right: 0.5rem;
   z-index: 100;
-  padding: var(--spacing-s);
+  padding: var(--size-2);
   
   border-radius: var(--shape-corner-m);
   

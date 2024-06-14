@@ -1,6 +1,6 @@
 .layout.panes.canonical-feed {
   .layout.pane {
-    --gap: var(--spacing-s);
+    --gap: var(--size-2);
     --display: flex;
     --flex-flow: row wrap;
 

@@ -159,26 +159,6 @@
     
         <item>
           <title>
-            Buttons
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/buttons/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/buttons/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
-    
-        <item>
-          <title>
             Colors
           </title>
           <link>
@@ -190,6 +170,26 @@
           
           <guid>
             http://localhost:1313/resource/reference/colors/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Components
+          </title>
+          <link>
+            http://localhost:1313/resource/reference/components/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            http://localhost:1313/resource/reference/components/
           </guid>
           <description>
             

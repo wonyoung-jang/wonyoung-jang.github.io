@@ -1,6 +1,6 @@
 /* TODO Focus ring */
 .component:focus-visible {
-  --active-width: var(--spacing-s);
+  --active-width: var(--size-2);
   --duration: var(--motion-duration-long2);
 
   --inward-offset: 2px;

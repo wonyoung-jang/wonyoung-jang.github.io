@@ -9,7 +9,7 @@
 
   #searchResults {
     flex: 1 1 auto;
-    margin: var(--spacing-xs) 0;
+    margin: var(--size-1) 0;
 
     li {
       position: relative;
@@ -19,8 +19,8 @@
       background-color: var(--color-surface-container-low);
       border-radius: var(--shape-corner-l);
       color: var(--color-on-surface);
-      margin: var(--spacing-xs) 0;
-      padding: var(--spacing-m);
+      margin: var(--size-1) 0;
+      padding: var(--size-3);
 
       &:active {
         background-color: var(--color-primary-container);

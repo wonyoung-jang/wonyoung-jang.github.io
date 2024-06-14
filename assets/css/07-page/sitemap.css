@@ -1,7 +1,7 @@
 .sitemap {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--spacing-xs);
+  padding: var(--size-1);
 
   h3,
   h4,
@@ -11,7 +11,7 @@
   div {
     display: block;
     width: 100%;
-    padding: var(--spacing-xs) 0;
+    padding: var(--size-1) 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -20,6 +20,6 @@
   * {
     display: flex;
     flex-flow: column nowrap;
-    gap: var(--spacing-m);
+    gap: var(--size-3);
   }
 }

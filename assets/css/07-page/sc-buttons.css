@@ -1,24 +1,22 @@
-#buttons {
+#components-showcase {
     section {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
+        gap: var(--size-4);
 
         h2,
         section {
             display: flex;
             flex-flow: row nowrap;
             width: 100%;
-            margin-block: var(--spacing-m);
+            margin-block: var(--size-3);
         }
 
         .card {
-            min-width: 128px;
-            min-height: 128px;
-            --container-padding: 16px;
-            --container-align-items: center;
-            --container-justify-content: center;
+            --container-padding: var(--size-8);
+            --container-align-items: flex-start;
+            --container-justify-content: flex-start;
         }
     }
 }

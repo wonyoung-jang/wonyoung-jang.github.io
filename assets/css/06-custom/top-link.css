@@ -1,7 +1,7 @@
 #top-link {
   position: fixed;
-  bottom: var(--spacing-s);
-  right: var(--spacing-m);
+  bottom: var(--size-2);
+  right: var(--size-3);
   visibility: hidden;
   opacity: 0;
   z-index: 9999;

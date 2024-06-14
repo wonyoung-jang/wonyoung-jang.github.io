@@ -10,7 +10,7 @@
   --min-height: auto;
   --padding: var(--spacing-panes);
   --margin: 0;
-  --gap: var(--spacing-s);
+  --gap: var(--size-2);
   --border: inherit;
 }
 
@@ -25,7 +25,7 @@
     justify-content: flex-start;
     
     padding: calc(var(--spacing-panes));
-    gap: var(--spacing-s);
+    gap: var(--size-2);
 
     --container-shape: var(--shape-corner-xl);
     --bg-color: var(--color-surface-container-low);
@@ -43,7 +43,7 @@
       text-wrap: nowrap;
       width: fit-content;
       
-      gap: var(--spacing-s);
+      gap: var(--size-2);
 
       * {
         color: var(--color-on-secondary-container);

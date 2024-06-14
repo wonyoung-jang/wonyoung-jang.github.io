@@ -102,12 +102,12 @@ video {
     /* Chromium + Safari */
     &::-webkit-scrollbar {
       background-color: transparent;
-      width: var(--spacing-s);
+      width: var(--size-2);
     }
 
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-primary);
-      border-radius: var(--spacing-xs);
+      border-radius: var(--size-1);
     }
   }
 }

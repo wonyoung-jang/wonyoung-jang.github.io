@@ -8,7 +8,7 @@
 
   --container-height: 56px;
   --container-shape: 56px;
-  --container-padding: 0 var(--spacing-l);
+  --container-padding: 0 var(--size-4);
 
   --bg-color: var(--color-surface-container-high);
   --icon-color: var(--color-on-surface);
@@ -41,6 +41,6 @@
 
     color: var(--color-on-surface);
 
-    margin-right: var(--spacing-l);
+    margin-right: var(--size-4);
   }
 }

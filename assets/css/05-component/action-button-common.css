@@ -24,8 +24,8 @@
 
 /* Common Buttons */
 .button.common {
-  padding: 0 var(--spacing-m);
-  gap: var(--spacing-s);
+  padding: 0 var(--size-3);
+  gap: var(--size-2);
 
   --bg-color: none;
   --icon-color: var(--color-primary);
@@ -35,7 +35,7 @@
   }
 
   &.with-icon {
-    padding-right: var(--spacing-l);
+    padding-right: var(--size-4);
   }
 
   &.filled,

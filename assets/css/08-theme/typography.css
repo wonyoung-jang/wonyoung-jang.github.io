@@ -87,7 +87,7 @@ em {
   align-items: stretch;
   align-content: stretch;
   overflow: auto;
-  padding-block: var(--spacing-s);
+  padding-block: var(--size-2);
 }
 
 pre,
@@ -131,7 +131,7 @@ code {
 
 .highlight {
   font-family: var(--typeface-mono);
-  margin-block: var(--spacing-s);
+  margin-block: var(--size-2);
 }
 
 #post-content {  

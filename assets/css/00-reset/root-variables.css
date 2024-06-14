@@ -81,13 +81,6 @@
   --window-expanded-min:    var(--size-210);
   --window-large-min:       var(--size-300);
   --window-extra-large-min: var(--size-400);
-
-  /* Spacing */
-  --spacing-xl: var(--size-5);
-  --spacing-l:  var(--size-4);
-  --spacing-m:  var(--size-3);
-  --spacing-s:  var(--size-2);
-  --spacing-xs: var(--size-1);
   
   /* Core */
   --spacing-panes:    var(--size-4);
@@ -97,7 +90,7 @@
 }
 
 /* Medium */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   :root {
     --spacing-panes:  var(--size-6);
     --root-font-size: 15px;
@@ -105,14 +98,14 @@
 }
 
 /* Expanded */
-@media (min-width: 840px) {
+@media screen and (min-width: 840px) {
   :root {
     --root-font-size: 16px;
   }
 }
 
 /* Large */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   :root {
     --fixed-pane-width: var(--size-103);
   }

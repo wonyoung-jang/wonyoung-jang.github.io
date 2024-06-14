@@ -9,9 +9,9 @@
   --container-elevation-focus: var(--elevation0);
   --container-elevation-press: var(--elevation0);
 
-  --container-shape: var(--spacing-m);
+  --container-shape: var(--size-3);
 
-  gap: var(--spacing-s);
+  gap: var(--size-2);
 
   --bg-color: inherit;
   --icon-color: var(--color-on-surface);
@@ -55,9 +55,9 @@
     flex: 3 1 0;
     display: flex;
     flex-flow: column nowrap;
-    padding-inline: var(--spacing-xs);
-    padding-block: var(--spacing-l);
-    gap: var(--spacing-l);
+    padding-inline: var(--size-1);
+    padding-block: var(--size-4);
+    gap: var(--size-4);
   }
 
   img {
@@ -66,7 +66,7 @@
 
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    margin: var(--spacing-xl);
+    margin: var(--size-5);
   }
 }
 
@@ -85,7 +85,7 @@
       }
 
       .card-content {
-        padding-inline: var(--spacing-l);
+        padding-inline: var(--size-4);
         width: 100%;
       }
     }

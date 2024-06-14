@@ -1,8 +1,8 @@
 .contact-form {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--spacing-xl);
-  gap: var(--spacing-m);
+  padding: var(--size-5);
+  gap: var(--size-3);
   
   border-radius: var(--shape-corner-xs);
   box-shadow: var(--elevation1);
@@ -16,13 +16,13 @@
     background: var(--color-surface-container-high);
     color: var(--color-on-surface-variant);
     box-shadow: var(--elevation2);
-    padding: var(--spacing-l);
+    padding: var(--size-4);
   }
 
   input[type="text"],
   input[type="email"] {
     height: 56px;
-    padding: 0 var(--spacing-l);
+    padding: 0 var(--size-4);
 
     box-shadow: var(--elevation2);
     
@@ -32,8 +32,8 @@
   }
 
   button[type="submit"] {
-    margin: var(--spacing-s) 0;
-    padding: var(--spacing-s) var(--spacing-l);
+    margin: var(--size-2) 0;
+    padding: var(--size-2) var(--size-4);
     align-self: center;
     
     border-radius: var(--shape-corner-xl);

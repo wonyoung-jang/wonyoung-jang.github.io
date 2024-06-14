@@ -4,7 +4,7 @@
   --container-align-items: center;
   --container-justify-content: flex-start;
   
-  --container-padding: var(--spacing-s) var(--spacing-l);
+  --container-padding: var(--size-2) var(--size-4);
 
   --icon-color: var(--color-on-surface);
   --text-color: var(--color-on-surface);
@@ -20,6 +20,6 @@
   
   &.three {
     --container-height: 88px;
-    --container-padding: var(--spacing-m) var(--spacing-l);
+    --container-padding: var(--size-3) var(--size-4);
   }
 }
