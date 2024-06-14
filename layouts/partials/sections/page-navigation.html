@@ -4,7 +4,10 @@
     <nav class="layout page-navigation" aria-label="Page Navigation">
       {{- with $pages.Next . }}
         <div class="component card filled prev">
-          <a href="{{ .Permalink }}"></a>
+          <a 
+            href="{{ .Permalink }}"
+            accesskey="p"
+            title="Previous page (ALT + SHIFT + p)"></a>
 
           <span class="page-direction">
             <i>arrow_back</i>
@@ -13,9 +16,9 @@
             </label>
           </span>
           
-          <h6>
+          <span class="title-large">
             {{- .Name -}}
-          </h6>
+          </span>
         </div>
       {{ else }}
       <div class="component card filled prev empty">
@@ -26,7 +29,10 @@
 
       {{- with $pages.Prev . }}
       <div class="component card filled next">
-        <a href="{{ .Permalink }}"></a>
+        <a 
+          href="{{ .Permalink }}"
+          accesskey="n"
+          title="Next page (ALT + SHIFT + n)"></a>
         
         <span class="page-direction">
           <label>
@@ -35,9 +41,9 @@
           <i>arrow_forward</i>
         </span>
 
-        <h6>
+        <span class="title-large">
           {{- .Name -}}
-        </h6>
+        </span>
       </div>
       {{ else }}
       <div class="component card filled next empty">
