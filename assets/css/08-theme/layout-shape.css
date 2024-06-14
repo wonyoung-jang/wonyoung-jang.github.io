@@ -9,16 +9,16 @@ header {
     --shape: var(--shape-corner-none);
 
     .layout.pane {
-      --shape: var(--shape-corner-xl);
+      --shape: var(--shape-corner-none);
     }
   }
 
   .layout.page-header {
-    --shape: var(--shape-corner-m-bottom);
+    --shape: var(--shape-corner-xl-bottom);
   }
 
   .layout.page-links {
-    --shape: var(--shape-corner-m-top);
+    --shape: var(--shape-corner-xl-top);
   }
 
   .layout.page-navigation {

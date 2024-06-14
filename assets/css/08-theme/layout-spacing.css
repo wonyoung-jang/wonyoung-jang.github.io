@@ -1,11 +1,11 @@
 .layout {
   margin: 0 auto;
+}
 
-  &.page-header {
-    margin-bottom: 2rem;
-  }
+.layout.page-header {
+  margin-bottom: 2rem;
+}
 
-  &.panes {
-    margin-block: 4rem;
-  }
+.layout.panes {
+  margin-block: 4rem;
 }

@@ -18,11 +18,11 @@ header {
   }
 
   .layout.page-links {
-    --bg-color: var(--color-surface-container-low);
+    --bg-color: var(--color-surface-container-lowest);
   }
 
   .layout.page-navigation {
-    --bg-color: var(--color-surface-container-low);
+    --bg-color: var(--color-surface-container-lowest);
   }
 }
 
