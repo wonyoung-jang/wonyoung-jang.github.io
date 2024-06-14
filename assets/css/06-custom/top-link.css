@@ -6,8 +6,6 @@
   opacity: 0;
   z-index: 9999;
   border-radius: 28px;
-  --bg-color: var(--color-primary);
-  --icon-color: var(--color-on-primary);
 
   i {
     color: var(--icon-color);

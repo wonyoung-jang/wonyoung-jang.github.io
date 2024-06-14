@@ -1,0 +1,47 @@
+/* FABs */
+.button.fab {
+  width: var(--size-14);
+  height: var(--size-14);
+  border-radius: var(--shape-corner-l);
+  padding: var(--spacing-l);
+  box-shadow: var(--elevation3);
+
+  & i {
+    font-size: var(--size-6);
+  }
+
+  &.small {
+    width: var(--size-12);
+    height: var(--size-12);
+    border-radius: var(--shape-corner-m);
+    padding: 0;
+
+    & i {
+      font-size: var(--size-3);
+    }
+  }
+
+  &.large {
+    width: var(--size-24);
+    height: var(--size-24);
+    border-radius: var(--size-9);
+    padding: var(--spacing-l);
+
+    & i {
+      font-size: var(--size-9);
+    }
+  }
+}
+
+.button.fab.extended {
+  min-width: var(--size-20);
+  width: auto;
+  height: var(--size-14);
+  border-radius: var(--shape-corner-l);
+  padding: var(--spacing-l);
+  gap: var(--spacing-l);
+
+  & i {
+    font-size: var(--size-6);
+  }
+}

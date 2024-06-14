@@ -1,23 +1,3 @@
-/* Component */
-.component {
-  display: var(--container-display, none);
-  flex-flow: var(--container-flex-flow, none);
-  justify-content: var(--container-justify-content, none);
-  align-items: var(--container-align-items, none);
-  gap: var(--container-gap, none);
-  height: var(--container-height, none);
-  width: var(--container-width, none);
-  padding: var(--container-padding, none);
-
-  border: var(--container-outline, none);
-  border-radius: var(--container-shape, none);
-  box-shadow: var(--container-elevation, none);
-
-  background-color: var(--bg-color, none);
-
-  color: var(--icon-color, var(--text-color, none));
-}
-
 /* Component Template */
 /* .component {
 /*  --container-display: initial;
@@ -39,6 +19,55 @@
 /*  --icon-color: initial;
 /* }
 */
+
+:root {
+  --size-0: 0px;
+  --size-1: 4px;
+  --size-2: calc(var(--size-1) * 2); /* 8px */
+  --size-3: calc(var(--size-1) * 3); /* 12px */
+  --size-4: calc(var(--size-1) * 4); /* 16px */
+  --size-5: calc(var(--size-1) * 5); /* 20px */
+  --size-6: calc(var(--size-1) * 6); /* 24px */
+  --size-7: calc(var(--size-1) * 7); /* 28px */
+  --size-8: calc(var(--size-1) * 8); /* 32px */
+  --size-9: calc(var(--size-1) * 9); /* 36px */
+  --size-10: calc(var(--size-1) * 10); /* 40px */
+  --size-11: calc(var(--size-1) * 11); /* 44px */
+  --size-12: calc(var(--size-1) * 12); /* 48px */
+  --size-13: calc(var(--size-1) * 13); /* 52px */
+  --size-14: calc(var(--size-1) * 14); /* 56px */
+  --size-15: calc(var(--size-1) * 15); /* 60px */
+  --size-16: calc(var(--size-1) * 16); /* 64px */
+  --size-17: calc(var(--size-1) * 17); /* 68px */
+  --size-18: calc(var(--size-1) * 18); /* 72px */
+  --size-19: calc(var(--size-1) * 19); /* 76px */
+  --size-20: calc(var(--size-1) * 20); /* 80px */
+  --size-21: calc(var(--size-1) * 21); /* 84px */
+  --size-22: calc(var(--size-1) * 22); /* 88px */
+  --size-23: calc(var(--size-1) * 23); /* 92px */
+  --size-24: calc(var(--size-1) * 24); /* 96px */
+
+  --size-32: calc(var(--size-1) * 32); /* 128px */
+}
+
+.component {
+  display:          var(--container-display, auto);
+  flex-flow:        var(--container-flex-flow, auto);
+  justify-content:  var(--container-justify-content, auto);
+  align-items:      var(--container-align-items, auto);
+  gap:              var(--container-gap, auto);
+  height:           var(--container-height, auto);
+  width:            var(--container-width, auto);
+  padding:          var(--container-padding, auto);
+
+  border:           var(--container-outline, auto);
+  border-radius:    var(--container-shape, auto);
+  box-shadow:       var(--container-elevation, auto);
+
+  background-color: var(--bg-color, auto);
+
+  color:            var(--icon-color, var(--text-color, auto));
+}
 
 .component {
   position: relative;

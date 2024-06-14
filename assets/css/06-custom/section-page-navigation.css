@@ -24,7 +24,7 @@
     align-items: stretch;
     justify-content: flex-start;
     
-    padding: calc(var(--spacing-panes) * 1.48);
+    padding: calc(var(--spacing-panes));
     gap: var(--spacing-s);
 
     --container-shape: var(--shape-corner-xl);
