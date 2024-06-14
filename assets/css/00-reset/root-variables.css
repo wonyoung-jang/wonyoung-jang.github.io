@@ -1,24 +1,30 @@
 :root {
   /* Scales */
-  --scale-min-2:          calc(16 / 15);
-  --scale-maj-2:          calc(9 / 8);
-  --scale-min-3:          calc(6 / 5);
-  --scale-maj-3:          calc(5 / 4);
-  --scale-perfect-fourth: calc(4 / 3);
-  --scale-tritone:        calc(45 / 32);
-  --scale-perfect-fifth:  calc(3 / 2);
-  --scale-min-6:          calc(8 / 5);
-  --scale-maj-6:          calc(5 / 3);
-  --scale-min-7:          calc(9 / 5);
-  --scale-maj-7:          calc(15 / 8);
+  --scale-min-2:          calc(16 / 15);  /* 1.0625 */
+  --scale-maj-2:          calc(9 / 8);    /* 1.125 */
+  --scale-min-3:          calc(6 / 5);    /* 1.20 */
+  --scale-maj-3:          calc(5 / 4);    /* 1.25 */
+  --scale-perfect-fourth: calc(4 / 3);    /* 1.33 */
+  --scale-tritone:        calc(45 / 32);  /* 1.40625 */
+  --scale-perfect-fifth:  calc(3 / 2);    /* 1.50 */
+  --scale-min-6:          calc(8 / 5);    /* 1.60 */
+  --scale-maj-6:          calc(5 / 3);    /* 1.67 */
+  --scale-min-7:          calc(9 / 5);    /* 1.70 */
+  --scale-maj-7:          calc(15 / 8);   /* 1.77 */
   --scale-fibonacci:      1.618;
 
   /* Typescale factors */
-  --scale-back-size:          var(--scale-min-2);
-  --scale-up-type:            var(--scale-perfect-fifth);
+  --scale-up-type:            var(--scale-maj-6);
   --scale-back-type:          var(--scale-min-2);
-  --scale-line-height-small:  var(--scale-maj-2);
-  --scale-line-height-large:  var(--scale-perfect-fourth);
+
+  --scale-up-size:            var(--scale-maj-2);
+  --scale-back-size:          var(--scale-min-2);
+
+  --scale-line-height-display:    var(--scale-maj-2);
+  --scale-line-height-headline:   var(--scale-min-3);
+  --scale-line-height-title:      var(--scale-maj-3);
+  --scale-line-height-body:       var(--scale-perfect-fifth);
+  --scale-line-height-label:      var(--scale-maj-6);
 
   /* Icons */
   --typeface-icon-outlined:   'Material Symbols Outlined';
@@ -44,21 +50,21 @@
   /* Core */
   --spacing-panes:    16px;
   --fixed-pane-width: 360px;
-  --root-font-size:   13.618px;
+  --root-font-size:   14px;
 }
 
 /* Medium */
 @media (min-width: 600px) {
   :root {
     --spacing-panes:  24px;
-    --root-font-size: 14px;
+    --root-font-size: 15px;
   }
 }
 
 /* Expanded */
 @media (min-width: 840px) {
   :root {
-    --root-font-size: 14.618px;
+    --root-font-size: 16px;
   }
 }
 

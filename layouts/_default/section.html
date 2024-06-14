@@ -1,20 +1,21 @@
 {{- define "main" }}
-<article class="layout panes basic-singlepane">
-    <section class="layout pane">
 
-        {{ range .Sections }}
-            <div  class="component list-item one">
-                <a  href="{{ .Permalink }}"></a>
-                
-                <span class="title-medium">
-                    {{ .Title }}
-                </span>
-            </div>
+    <article class="layout panes basic-singlepane">
+        <section class="layout pane">
 
-            <div class="divider"></div>
-        {{ end }}
+            {{ range .Sections }}
+                <div class="component list-item one">
+                    <a href="{{ .Permalink }}"></a>
+                    
+                    <span class="title-medium">
+                        {{ .Title }}
+                    </span>
+                </div>
 
-    </section>
-</article>
+                <div class="divider"></div>
+            {{ end }}
+
+        </section>
+    </article>
 
 {{ end }}

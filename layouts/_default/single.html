@@ -1,28 +1,28 @@
 {{- define "main" }}
-  <article class="layout panes basic-fixedflex" id="single">
 
-    {{/* Pane: Post content */}}
-    <section class="layout pane" id="post-content">
-        {{- if .Content }}
-          {{- if not (.Param "disableAnchoredHeadings") }}
-            {{- partial "anchored_headings.html" .Content -}}
-          {{- else }}
-            {{- .Content | safeHTML -}}
-          {{- end }}  
-        {{- end }}
-    </section>
+<article class="layout panes basic-fixedflex" id="single">
+  <section class="layout pane" id="post-content">
+      {{- if .Content }}
+        {{- if not (.Param "disableAnchoredHeadings") }}
+          {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}
+          {{- .Content | safeHTML -}}
+        {{- end }}  
+      {{- end }}
 
-    {{/* Pane: Table of Contents */}}
-    <aside class="layout pane fixed-pane" id="toc">
-      {{- partial "sections/toc.html" . }}
-    </aside>
-
-  </article>
-
-
-  {{/* Backlinks + Share links */}}
-  <section class="layout page-links">
-    {{- partial "sections/page-links.html" . -}}
+      <!-- Feedback form for Contact page -->
+      {{ if eq .Title "Contact"}}
+        {{- partial "sections/feedback-form.html" . -}}
+      {{- end }}
   </section>
+
+  <aside class="layout pane fixed-pane" id="toc">
+    {{- partial "sections/toc.html" . }}
+  </aside>
+</article>
+
+<section class="layout page-links">
+  {{- partial "sections/page-links.html" . -}}
+</section>
 
 {{- end }}

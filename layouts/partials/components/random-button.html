@@ -1,9 +1,12 @@
 {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ $randomPage := index (shuffle $pages) 0 }}
 
-<button class="component button icon"
-        onclick="navigateToRandomPage(); return false;">
-    <i>ifl</i>
+<button 
+  class="component button icon"
+  accesskey="r"
+  title="Random page (ALT + SHIFT + R)"
+  onclick="navigateToRandomPage(); return false;">
+  <i>ifl</i>
 </button>
 
 <script>

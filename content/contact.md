@@ -14,5 +14,3 @@ The best way to contact me directly is through email at [contact@wonyoungjang.or
 ## Give me feedback
 
 Give me feedback! I'm always trying to learn new things and I take all feedback seriously:
-
-{{< contact >}}

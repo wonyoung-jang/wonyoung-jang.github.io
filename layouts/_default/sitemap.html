@@ -1,21 +1,22 @@
 {{- define "main" }}
-  <article class="layout panes basic-singlepane">
-    <section class="layout pane">
 
-      <div> 
-        <ul>
-          {{ range .Site.Pages.ByParam "title" }}
-            {{ if eq .Title "" }}
-              {{ continue }} 
-            {{ else }}
-              <li class="">
-                <a href="{{ .Permalink }}"> {{ .Title }}</a>
-              </li>
-            {{ end }}
-          {{ end }}
-        </ul>
-      </div>
+<article class="layout panes basic-singlepane">
+  <section class="layout pane">
 
-    </section>
-  </article>
+      {{ range .Site.Pages.ByParam "title" }}
+        {{ if eq .Title "" }}
+          {{ continue }} 
+        {{ else }}
+          <div class="component list-item one">
+            <a href="{{ .Permalink }}"></a>
+            <span class="title-small">
+              {{ .Title }}
+            </span>
+          </div>
+        {{ end }}
+      {{ end }}
+
+  </section>
+</article>
+
 {{ end }}

@@ -3,7 +3,6 @@
     {{- $pages := union .RegularPages .Sections }}
 
     <article class="layout panes canonical-feed">
-        
         <section class="layout pane">
 
             {{- range $index, $page := $pages }}        
@@ -24,16 +23,15 @@
                             {{- partial "components/post-meta.html" . -}}
                         {{- end }}
                         
-                        <h6>
+                        <span class="title-small">
                             {{- .Title }}
-                        </h6>
+                        </span>
                     </div>
                 </div>
 
             {{- end }}
 
         </section>
-
     </article>
 
 {{- end }}
