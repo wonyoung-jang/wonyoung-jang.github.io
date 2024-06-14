@@ -46,10 +46,6 @@ main:
     weight: 42
 
 footer:
-  #- identifier: Home
-  #  name: Home
-  #  pageRef: /
-  #  weight: 1
   - identifier: About
     name: About
     pageRef: /about
@@ -58,11 +54,15 @@ footer:
     name: Contact
     pageRef: /contact
     weight: 20
-  #- identifier: Search
-  #  name: Search
-  #  pageRef: /search
-  #  weight: 30
+  - identifier: Search
+    name: Search
+    pageRef: /search
+    weight: 30
   - identifier: Sitemap
     name: Sitemap
     pageRef: /sitemap
     weight: 40
+  - identifier: Graph
+    name: Graph
+    pageRef: /graph/#/graph
+    weight: 50

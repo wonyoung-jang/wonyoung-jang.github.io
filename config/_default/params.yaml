@@ -60,14 +60,12 @@ profileMode:
   #subtitle: Personal Website
   
   imageUrl: /android-chrome-512x512.png
-  imageWidth: 220 # custom size
-  imageHeight: 220 # custom size
   imageTitle: WonyoungJang.org site logo
   
   buttons:
-    - name: Software Development Projects
+    - name: Software development projects
       url: "/project/software"
-    - name: University Coursework Projects
+    - name: University coursework projects
       url: "/project/university"
     
 # Home Info Mode - NOT USED
