@@ -7,8 +7,18 @@
 
         h2,
         section {
+            display: flex;
+            flex-flow: row nowrap;
             width: 100%;
             margin-block: var(--spacing-m);
+        }
+
+        .card {
+            min-width: 128px;
+            min-height: 128px;
+            --container-padding: 16px;
+            --container-align-items: center;
+            --container-justify-content: center;
         }
     }
 }
