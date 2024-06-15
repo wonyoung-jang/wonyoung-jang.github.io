@@ -4,11 +4,11 @@
     <head>
         {{- partial "head.html" . }}
         
-        {{- partial "scripts/links.html" . }}
-        
         {{ if .Site.Params.GoogleAnalytics }}
             {{ partial "scripts/analytics-gtag.html" . }}
         {{ end }}
+
+        {{- partial "scripts/links.html" . }}
     </head>
     
     <!-- Body -->

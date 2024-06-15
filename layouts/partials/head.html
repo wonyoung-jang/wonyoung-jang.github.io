@@ -1,38 +1,6 @@
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<!-- Typeface - Brand -->
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-<!-- Typeface - Plain -->    
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!-- Typeface - Mono -->    
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!-- Icons -->
-<!-- Favicon -->
-<link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
-<!-- Outlined Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-<!-- Rounded Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
-<!-- Sharp Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
-
-<!-- Title -->
-<title>
-    {{ if .IsHome }}
-    {{ else }}
-        {{ if .Title }}
-            {{ .Title }} - 
-        {{ end }}
-    {{ end }}
-
-    {{ site.Title }}
-</title>
-
-<!-- Meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
     <meta name="robots" content="index, follow">
@@ -40,6 +8,21 @@
     <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<title>
+    {{ if .IsHome }}
+        {{ site.Title }}
+    {{ else }}
+        {{ if .Title }}
+            {{ .Title }} - 
+        {{ end }}
+        {{ site.Title }}
+    {{ end }}
+</title>
+
+<!-- Meta -->
 {{- if .IsHome }}
     {{ with .Site.Params.keywords -}}
         <meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />
@@ -79,6 +62,15 @@
     <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
 
+{{- if site.Params.analytics.naver.SiteVerificationTag }}
+    <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
+{{- end }}
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="preload stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="preload stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="preload stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="preload stylesheet">
+
 <!-- Styles -->
 {{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
 {{- $reference          := (resources.Match "css/01-reference/*.css")   | resources.Concat "assets/css/01-reference.css" }}
@@ -89,15 +81,7 @@
 {{- $custom             := (resources.Match "css/06-custom/*.css")      | resources.Concat "assets/css/06-custom.css" }}
 {{- $page               := (resources.Match "css/07-page/*.css")        | resources.Concat "assets/css/07-page.css" }}
 {{- $theme              := (resources.Match "css/08-theme/*.css")       | resources.Concat "assets/css/08-theme.css" }}
-{{- $all := (slice $reset $reference $system $base $layout $component $custom $page $theme) | resources.Concat "assets/css/all.css" }}
-{{- $stylesheet := $all | resources.Minify -}}
-
-{{- if not .Site.Params.assets.disableFingerprinting }}
-    {{- $stylesheet := $stylesheet | fingerprint }}
-    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
-{{- else }}
-    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
-{{- end }}
+{{- $stylesheet := slice $reset $reference $system $base $layout $component $custom $page $theme | resources.Concat "assets/css/all.css" | resources.Minify }}
 
 {{- with .Site.Params.profileMode }}
     {{- if and .enabled .imageUrl $.IsHome }}
@@ -113,16 +97,22 @@
 <link crossorigin="anonymous" rel="preload" as="fetch" href="/index.json">
 
 {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) -}}
-
 {{- $fusejs := resources.Get "js/fuse.js" -}}
 
-{{- if not .Site.Params.assets.disableFingerprinting -}}
-  {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | minify | fingerprint -}}
-  <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
-{{- else -}}
-  {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | minify -}}
-  <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}"></script>
-{{- end -}}
+{{- if not .Site.Params.assets.disableFingerprinting }}
+    {{- $stylesheet = $stylesheet | fingerprint }}
+    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- else }}
+    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{- end }}
+
+{{- $searchScripts := slice $fusejs $fastsearch | resources.Concat "assets/js/search.js" | resources.Minify }}
+{{- if not .Site.Params.assets.disableFingerprinting }}
+    {{- $searchScripts = $searchScripts | fingerprint }}
+    <script defer crossorigin="anonymous" src="{{ $searchScripts.RelPermalink }}" integrity="{{ $searchScripts.Data.Integrity }}"></script>
+{{- else }}
+    <script defer crossorigin="anonymous" src="{{ $searchScripts.RelPermalink }}"></script>
+{{- end }}
 
 <!-- Highlight.js -->
 {{- $isHLJSdisabled := (.Site.Params.assets.disableHLJS | default .Params.disableHLJS ) }}
@@ -158,14 +148,44 @@
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
 {{ end -}}
 
+<!-- No script styles -->
 <noscript>
-    
-    <style></style>
-    
-    {{- if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
-        <style></style>
-    {{- end }}
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+    </style>
 
+    {{- if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
+        <style>
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --theme: rgb(29, 30, 32);
+                    --entry: rgb(46, 46, 51);
+                    --primary: rgb(218, 218, 219);
+                    --secondary: rgb(155, 156, 157);
+                    --tertiary: rgb(65, 66, 68);
+                    --content: rgb(196, 196, 197);
+                    --code-block-bg: rgb(46, 46, 51);
+                    --code-bg: rgb(55, 56, 62);
+                    --border: rgb(51, 51, 51);
+                }
+
+                .list {
+                    background: var(--theme);
+                }
+
+                .list:not(.dark)::-webkit-scrollbar-track {
+                    background: 0 0;
+                }
+
+                .list:not(.dark)::-webkit-scrollbar-thumb {
+                    border-color: var(--theme);
+                }
+            }
+        </style>
+    {{- end }}
 </noscript>
 
 <!-- Misc -->
