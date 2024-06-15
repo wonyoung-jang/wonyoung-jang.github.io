@@ -42,15 +42,15 @@ assets:
   disableHLJS: false
   disableFingerprinting: false
   favicon: '/favicon.ico'
-  favicon16x16: '/favicon-16x16.png'
-  favicon32x32: '/favicon-32x32.png'
-  apple_touch_icon: '/apple-touch-icon.png'
+  favicon16x16: '/favicon-16x16.webp'
+  favicon32x32: '/favicon-32x32.webp'
+  apple_touch_icon: '/apple-touch-icon.webp'
   safari_pinned_tab: '/safari-pinned-tab.svg'
 
 # Site Settings
 label:
   text: 'Wonyoung Jang'
-  icon: '/apple-touch-icon.png'
+  icon: '/android-chrome-192x192.webp'
   iconHeight: 40px
 
 # Profile Mode
@@ -59,7 +59,7 @@ profileMode:
   title: Wonyoung Jang
   #subtitle: Personal Website
   
-  imageUrl: /android-chrome-512x512.png
+  imageUrl: /android-chrome-512x512.webp
   imageTitle: WonyoungJang.org site logo
   
   buttons:

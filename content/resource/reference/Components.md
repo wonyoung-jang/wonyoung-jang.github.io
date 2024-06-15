@@ -1,7 +1,7 @@
 ---
 date:
 - 2024-06-11 Tuesday
-coverimage: ../assets/lists_icon_1710524790703_0.jpg
+coverimage: ../assets/lists_icon_1710524790703_0.webp
 description:
 - WonyoungJang.org
 type: showcase/components

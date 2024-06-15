@@ -1,7 +1,7 @@
 ---
 date:
 - 2024-06-10 Monday
-coverimage: ../assets/lists_icon_1710524790703_0.jpg
+coverimage: ../assets/lists_icon_1710524790703_0.webp
 description: A single pane layout with one flexible pane
 type: showcase/layouts/basic
 layout: single

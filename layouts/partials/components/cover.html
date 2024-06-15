@@ -1,7 +1,6 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
     {{- if (and .Params.cover.image (not $.isHidden)) }}
         {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
-       
         
         <div class="entry-cover">
             {{- $responsiveImages := (.Params.cover.responsiveImages | default .Site.Params.cover.responsiveImages) | default true }}
@@ -16,28 +15,31 @@
                 {{ end -}}
 
                 {{- $sizes := (slice "360" "480" "720" "1080" "1500") }}
-                {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
-                
-                {{- if hugo.IsExtended -}}
-                    {{- $processableFormats = $processableFormats | append "webp" -}}
-                {{- end -}}
                 
                 {{- $prod := (hugo.IsProduction | or (eq .Site.Params.env "production")) }}
                 
-                {{- if (and (in $processableFormats $cover.MediaType.SubType) ($responsiveImages) (eq $prod true)) }}
-                    <img    loading="lazy" 
-                            srcset="{{- range $size := $sizes -}}
-                                        {{- if (ge $cover.Width $size) -}}
-                                            {{ printf "%s %s" (($cover.Resize (printf "%sx" $size)).Permalink) (printf "%sw ," $size) -}}
-                                        {{ end }}
-                                    {{- end -}}
-                                    {{$cover.Permalink }} 
-                                    {{printf "%dw" ($cover.Width)}}" 
-                            sizes="(min-width: 768px) 720px, 100vw" 
-                            src="{{ $cover.Permalink }}" 
-                            alt="{{ $alt }}" 
-                            width="{{ $cover.Width }}" 
-                            height="{{ $cover.Height }}">
+                {{- if (and ($responsiveImages) (eq $prod true)) }}
+                    {{- $webpCover := $cover.Resize "800x q75 webp" -}}
+                    <picture>
+                        <source type="image/webp" srcset="{{- range $size := $sizes -}}
+                            {{- if (ge $cover.Width $size) -}}
+                                {{ printf "%s %sw," (($cover.Resize (printf "%sx" $size)).Permalink) $size -}}
+                            {{ end }}
+                        {{- end -}}
+                        {{$webpCover.Permalink}} 800w">
+                        <img    loading="lazy" 
+                                srcset="{{- range $size := $sizes -}}
+                                    {{- if (ge $cover.Width $size) -}}
+                                        {{ printf "%s %sw," (($cover.Resize (printf "%sx" $size)).Permalink) $size -}}
+                                    {{ end }}
+                                {{- end -}}
+                                {{$cover.Permalink}} {{printf "%dw" ($cover.Width)}}" 
+                                sizes="(min-width: 768px) 720px, 100vw" 
+                                src="{{ $cover.Permalink }}" 
+                                alt="{{ $alt }}" 
+                                width="{{ $cover.Width }}" 
+                                height="{{ $cover.Height }}">
+                    </picture>
                 {{- else }}{{/* Unprocessable image or responsive images disabled */}}
                     <img    loading="lazy" 
                             src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" 

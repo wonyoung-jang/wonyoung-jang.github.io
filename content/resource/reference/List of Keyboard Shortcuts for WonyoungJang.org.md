@@ -1,7 +1,7 @@
 ---
 title: List of Keyboard Shortcuts for WonyoungJang.org
 date: 2024-03-29
-coverimage: ../assets/lists_icon_1710524790703_0.jpg
+coverimage: ../assets/lists_icon_1710524790703_0.webp
 description: This page is a list of keyboard shortcuts for navigating this site
 tags:
 categories:
