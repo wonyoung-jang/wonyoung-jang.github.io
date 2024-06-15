@@ -273,7 +273,6 @@ html[data-theme=light] {
   --ls-primary-text-color: var(--fg-default);
   --ls-primary-text-color-1: rgb(40, 40, 40);
   --ls-secondary-text-color: var(--fg-muted);
-  --ls-title-text-color: var(--fg-default);
   --ls-link-text-color: var(--ls-active-primary-color);
   --ls-link-text-hover-color: var(--ls-active-secondary-color);
   --ls-link-ref-text-color: var(--ls-link-text-color);
@@ -360,9 +359,9 @@ html[data-theme=dark] {
   --fg-muted: #ffffff;
   --fg-on-emphasis: #ffffff;
   
-  --canvas-default: #0d1117;
-  --canvas-overlay: #161b22;
-  --canvas-subtle: #161b22;
+  --canvas-default: #141316;
+  --canvas-overlay: #141316;
+  --canvas-subtle: #141316;
   
   --scale-gray-7: #21262d;
   --scale-gray-6: #30363d;
@@ -432,8 +431,6 @@ html[data-theme=dark] {
   --ls-primary-text-color-1: rgb(235, 235, 235);
   
   --ls-secondary-text-color: var(--fg-muted);
-  
-  --ls-title-text-color: var(--fg-default);
   
   --ls-link-text-color: var(--ls-active-primary-color);
   --ls-link-text-hover-color: var(--ls-active-secondary-color);
@@ -784,16 +781,34 @@ a.tooltip-priority:first-of-type::before {
   background-clip: text;
   -webkit-background-clip: text;
   /*color: transparent; /* Makes the text color transparent to show the gradient */
-  font-family: "IBM Plex Sans", monospace;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Assigning a specific color to each heading level */
-.ls-block h1 { color: #ABCABC; /* Starting color for h1 */ }
-.ls-block h2 { color: #C53EFF; /* Slightly different shade, closer to h6 */ }
-.ls-block h3 { color: #D575D5; /* Midway color between h1 and h6 */ }
-.ls-block h4 { color: #EACDD5; /* Transitioning closer to h6 color */ }
-.ls-block h5 { color: #F2E0CA; /* Almost at h6 color */ }
-.ls-block h6 { color: #F6EAA8; /* Ending color for h6 */ }
+.ls-block h1 { 
+  color: #ABCABC; /* Starting color for h1 */ 
+  font-size: 2rem
+}
+.ls-block h2 {
+  color: #C53EFF; /* Slightly different shade, closer to h6 */ 
+  font-size: 1.8rem
+}
+.ls-block h3 { 
+  color: #D575D5; /* Midway color between h1 and h6 */ 
+  font-size: 1.6rem
+}
+.ls-block h4 { 
+  color: #EACDD5; /* Transitioning closer to h6 color */ 
+  font-size: 1.4rem
+}
+.ls-block h5 { 
+  color: #F2E0CA; /* Almost at h6 color */ 
+  font-size: 1.2rem
+}
+.ls-block h6 { 
+  color: #F6EAA8; /* Ending color for h6 */ 
+  font-size: 1rem
+}
 
 /* Increase the opacity of the heading level indicator on hover */
 /* .ls-block :is(h1, h2, h3, h4, h5, h6):hover::after { opacity: 1; } */
