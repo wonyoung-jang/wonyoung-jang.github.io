@@ -7,12 +7,12 @@
         {{ if eq .Title "" }}
           {{ continue }} 
         {{ else }}
-          <div class="component list-item one">
-            <a href="{{ .Permalink }}"></a>
-            <span class="title-small">
-              {{ .Title }}
-            </span>
-          </div>
+          <a class="component list-item one"
+              href="{{ .Permalink }}">
+              <span class="title-small">
+                {{ .Title }}
+              </span>
+          </a>
         {{ end }}
       {{ end }}
 
