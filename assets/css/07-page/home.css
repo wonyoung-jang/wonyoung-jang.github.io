@@ -41,10 +41,15 @@
   .showcase-panel {
     display: flex;
     flex-flow: column nowrap;
-    padding: var(--spacing-panes);
-    background-color: var(--color-surface-container-low);
+    align-items: stretch;
+    padding: var(--size-12);
+    background-color: var(--color-surface-container);
     gap: 2rem;
     border-radius: var(--shape-corner-xl);
     margin-top: 4em;
+    
+    h2 {
+      text-align: center;
+    }
   }
 }
