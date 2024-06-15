@@ -1,10 +1,10 @@
 ---
+date:
+- 2024-04-01 Monday
 coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
-coverhidden: true
 title: About
 tags:
 categories:
-date: 2024-06-11
 lastMod: 2024-06-13
 ---
 ## About me

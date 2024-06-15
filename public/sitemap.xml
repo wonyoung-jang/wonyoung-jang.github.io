@@ -20,10 +20,16 @@
     <loc>http://localhost:1313/resource/reference/canonical-supporting-pane-layout/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/resource/reference/colors/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/resource/reference/components/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</loc>
@@ -39,13 +45,7 @@
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/contact/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/project/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
@@ -72,7 +72,7 @@
     <lastmod>2024-04-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
-    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>

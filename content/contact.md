@@ -1,11 +1,11 @@
 ---
+date:
+- 2024-04-01 Monday
 coverimage: ../assets/meta_page_icon_1710524695411_0.jpg
-coverhidden: true
 title: Contact
 tags:
 categories:
-date: 2024-06-11
-lastMod: 2024-06-11
+lastMod: 2024-06-13
 ---
 ## Contact me directly
 
@@ -13,4 +13,4 @@ The best way to contact me directly is through email at [contact@wonyoungjang.or
 
 ## Give me feedback
 
-Give me feedback! I'm always trying to learn new things and I take all feedback seriously:
+Give me feedback! I'm always learning and will take all of your feedback seriously.

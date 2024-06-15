@@ -1,6 +1,6 @@
 ---
 date: 2024-02-25
-coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.png
+coverimage: ../assets/fllc_qlearning_demo_1709746398103_0.webp
 description: A FLLC event scheduler using Q-Learning
 githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler

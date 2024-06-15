@@ -1,6 +1,6 @@
 ---
 date: 2024-01-13
-coverimage: ../assets/logseq_tokenizer_1709673334004_0.png
+coverimage: ../assets/logseq_tokenizer_1709673334004_0.webp
 description: Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/)
 githubrepo: https://github.com/wonyoung-jang/logseq-tokenizer
 title: Logseq Markdown Tokenizer
