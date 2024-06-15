@@ -2,83 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/basic-single-pane-layout/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/basic-split-pane-layout/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/canonical-feed-layout/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/colors/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/components/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/shapes/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/states-and-elevation/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/typography/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoungjang.org/project/</loc>
-    <lastmod>2024-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoungjang.org/resource/</loc>
-    <lastmod>2024-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoungjang.org/resource/reference/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoungjang.org/project/software/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wonyoungjang.org/project/university/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/about/</loc>
-    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/contact/</loc>
-    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/project/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/search/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/sitemap/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <loc>https://wonyoungjang.org/project/software/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/project/university/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/software/this-website/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/package-delivery-route-optimization/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/hotel-reservation-manager/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/vacation-cart-manager/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/retail-inventory-manager/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/student-record-system/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/</loc>
-    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wonyoungjang.org/graph/</loc>
   </url>

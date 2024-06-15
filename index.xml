@@ -27,9 +27,169 @@
     
     
       <lastBuildDate>
-        Sat, 18 May 2024 00:00:00 +0000
+        Thu, 13 Jun 2024 00:00:00 +0000
       </lastBuildDate>
     <atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>
+            (Basic) Fixed and flexible layout
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/
+          </guid>
+          <description>
+            
+              A two-pane layout with one fixed width pane and one flexible pane
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Basic) Single pane layout
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/basic-single-pane-layout/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/basic-single-pane-layout/
+          </guid>
+          <description>
+            
+              A single pane layout with one flexible pane
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Basic) Split-pane layout
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/basic-split-pane-layout/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/basic-split-pane-layout/
+          </guid>
+          <description>
+            
+              A two-pane layout with two flexible panes
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Canonical) Feed layout
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/canonical-feed-layout/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/canonical-feed-layout/
+          </guid>
+          <description>
+            
+              A canonical layout for items that can flow into a feed
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Canonical) List-detail layout
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/
+          </guid>
+          <description>
+            
+              A canonical layout with a list pane and a detail pane
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            (Canonical) Supporting pane layout
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/
+          </guid>
+          <description>
+            
+              A canonical layout with a focus (primary) pane and a supporting (secondary) pane
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Colors
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/colors/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/colors/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Components
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/components/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/components/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
         <item>
           <title>
             List of Admonitions for This Site
@@ -38,7 +198,7 @@
             https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/
           </link>
           <pubDate>
-            Sat, 18 May 2024 00:00:00 +0000
+            Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
@@ -46,7 +206,67 @@
           </guid>
           <description>
             
-              This page is a list of admonitions used on this site.
+              This page is a list of admonitions used on this site
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Shapes
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/shapes/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/shapes/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            States and elevation
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/states-and-elevation/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/states-and-elevation/
+          </guid>
+          <description>
+            
+              
+            </description>
+        </item>
+    
+        <item>
+          <title>
+            Typography
+          </title>
+          <link>
+            https://wonyoungjang.org/resource/reference/typography/
+          </link>
+          <pubDate>
+            Thu, 13 Jun 2024 00:00:00 +0000
+          </pubDate>
+          
+          <guid>
+            https://wonyoungjang.org/resource/reference/typography/
+          </guid>
+          <description>
+            
+              
             </description>
         </item>
     
@@ -58,7 +278,7 @@
             https://wonyoungjang.org/about/
           </link>
           <pubDate>
-            Fri, 12 Apr 2024 00:00:00 +0000
+            Tue, 11 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
@@ -66,7 +286,7 @@
           </guid>
           <description>
             
-              About Wonyoung Jang Hello, that&amp;rsquo;s me!
+              About me Hello!
 Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
 I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
 I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.
@@ -81,7 +301,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
             https://wonyoungjang.org/contact/
           </link>
           <pubDate>
-            Fri, 12 Apr 2024 00:00:00 +0000
+            Tue, 11 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
@@ -89,9 +309,8 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
           </guid>
           <description>
             
-              Contact Me Directly The best way to contact me directly is through email at contact@wonyoungjang.org.
-Give Me Feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
-Name Email Subject Message Submit 
+              Contact me directly The best way to contact me directly is through email at contact@wonyoungjang.org.
+Give me feedback Give me feedback! I&amp;rsquo;m always trying to learn new things and I take all feedback seriously:
             </description>
         </item>
     
@@ -104,7 +323,7 @@ Name Email Subject Message Submit
             https://wonyoungjang.org/sitemap/
           </link>
           <pubDate>
-            Tue, 09 Apr 2024 00:00:00 +0000
+            Tue, 11 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
@@ -118,21 +337,21 @@ Name Email Subject Message Submit
     
         <item>
           <title>
-            List of Keyboard Shortcuts for This Site
+            List of Keyboard Shortcuts for WonyoungJang.org
           </title>
           <link>
-            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/
+            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
           </link>
           <pubDate>
             Fri, 29 Mar 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-this-site/
+            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
           </guid>
           <description>
             
-              This page is a list of keyboard shortcuts for navigating this site.
+              This page is a list of keyboard shortcuts for navigating this site
             </description>
         </item>
     
@@ -152,7 +371,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Draw in realtime on a blank canvas with others on the same server.
+              Draw in realtime on a blank canvas with others on the same server
             </description>
         </item>
     
@@ -172,7 +391,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              This page is a meta presentation for the deployment of this website (and this page).
+              This page is a meta presentation for the deployment of this website (and this page)
             </description>
         </item>
     
@@ -192,7 +411,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              A FLLC event scheduler using Q-Learning.
+              A FLLC event scheduler using Q-Learning
             </description>
         </item>
     
@@ -212,7 +431,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Extract the parent comments of a [reddit](https://www.reddit.com/) post.
+              Extract the parent comments of a [reddit](https://www.reddit.com/) post
             </description>
         </item>
     
@@ -232,7 +451,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration.
+              Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration
             </description>
         </item>
     
@@ -252,7 +471,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor.
+              Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor
             </description>
         </item>
     
@@ -272,7 +491,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/).
+              Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/)
             </description>
         </item>
     
@@ -292,7 +511,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface.
+              Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface
             </description>
         </item>
     
@@ -312,7 +531,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/).
+              Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/)
             </description>
         </item>
     
@@ -332,7 +551,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&amp;#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems.
+              Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&amp;#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems
             </description>
         </item>
     
@@ -352,7 +571,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&amp;#39;s needs.
+              Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&amp;#39;s needs
             </description>
         </item>
     
@@ -372,7 +591,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query.
+              Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query
             </description>
         </item>
     
@@ -392,7 +611,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming.
+              Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming
             </description>
         </item>
     
@@ -412,7 +631,7 @@ Name Email Subject Message Submit
           </guid>
           <description>
             
-              Built SQL database models for Bagel Corner &amp;amp; Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting.
+              Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting
             </description>
         </item>
     
