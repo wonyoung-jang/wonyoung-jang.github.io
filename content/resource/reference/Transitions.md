@@ -1,4 +1,5 @@
 ---
+type: showcase/tokens
 layout: transitions
 summary: Transitions
 title: Transitions
