@@ -6,10 +6,10 @@
         <section class="layout pane">
 
             {{- range $index, $page := $pages }}        
-                <div class="component card outlined">
-                    <a  aria-label="post link to {{ .Title | plainify }}" 
-                        href="{{ .Permalink }}"></a>
-                    
+                <a  class="component card outlined"
+                    aria-label="post link to {{ .Title | plainify }}" 
+                    href="{{ .Permalink }}">
+
                     {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
                     {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}            
                 
@@ -27,8 +27,7 @@
                             {{- .Title }}
                         </span>
                     </div>
-                </div>
-
+                </a>
             {{- end }}
 
         </section>

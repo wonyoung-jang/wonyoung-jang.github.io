@@ -3,13 +3,13 @@
   border-radius: unset;
 
   &:hover {
-    button.copy-code {
+    .copy-code {
       display: block;
     }
   }
 }
 
-button.copy-code {
+.copy-code {
   display: none;
   position: absolute;
   top: 0.5rem;

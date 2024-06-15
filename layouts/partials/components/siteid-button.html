@@ -1,7 +1,7 @@
-<button  class="component button icon" id="site-icon">
-    <a  href="{{ "" | absLangURL }}"
-        accesskey="h" 
-        title="Wonyoung Jang (ALT + SHIFT + h)"></a>
+<a  class="component button icon" id="site-icon"
+    href="{{ "" | absLangURL }}"
+    accesskey="h" 
+    title="Wonyoung Jang (ALT + SHIFT + h)">
 
     {{- if .Site.Params.label.icon }}
         <i>
@@ -10,4 +10,4 @@
                     aria-label="logo">
         </i>    
     {{- end -}}
-</button>  
+</a>

@@ -37,10 +37,11 @@
 
 {{/* Copyright */}}
 <section class="copyright">
-    <button class="component button common with-icon" id="copyright-button">
-        <a href="{{ "" | absLangURL }}"></a>
-        <label>© {{ now.Year }} {{ .Site.Title }}</label>
-    </button>
+    <a  class="component button common with-icon"
+        id="copyright-button"
+        href="{{ "" | absLangURL }}">
+        © {{ now.Year }} {{ .Site.Title }}
+    </a>
 </section>
 
 <script>

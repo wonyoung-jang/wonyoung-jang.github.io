@@ -55,8 +55,9 @@
         {{ with .entry }}
             {{ if .HasChildren }}
                 {{ if or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
-                    <li class="component tab active">
-                        <a href="{{ .URL }}"></a>
+                    <a  class="component tab active"
+                        href="{{ .URL }}">
+
                         {{ .Name }}
 
                         <section class="sub-menu">
@@ -64,33 +65,31 @@
                                 {{ template "menu-item" (dict "entry" . "page" $page) }}
                             {{ end }}
                         </section>
-
-                    </li>
+                    </a>
                 {{ else }}
-                    <li class="component tab">
-                        <a href="{{ .URL }}"></a>
-                        {{ .Name }}
+                    <a  class="component tab"
+                        href="{{ .URL }}">
 
+                        {{ .Name }}
+                        
                         <section class="sub-menu">
                             {{ range .Children }}
                                 {{ template "menu-item" (dict "entry" . "page" $page) }}
                             {{ end }}
                         </section>
-                    </li>
+                    </a>
                 {{ end }}
             {{ else }}
                 {{ if $page.IsMenuCurrent "main" . }}
-                    <li class="component tab active">
-                        <a href="{{ .URL }}"></a>
+                    <a class="component tab active"
+                        href="{{ .URL }}">
                         {{ .Name }}
-                    </li>
-
+                    </a>
                 {{ else }}
-                    <li class="component tab">
-                        <a href="{{ .URL }}"></a>
+                    <a class="component tab" 
+                        href="{{ .URL }}">
                         {{ .Name }}
-                    </li>
-
+                    </a>
                 {{ end }}
             {{ end }}
         {{ end }}

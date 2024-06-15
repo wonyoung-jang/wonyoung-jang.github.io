@@ -1,9 +1,20 @@
 a {
-  &.internal-link {
-    color: var(--color-primary);
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
   }
 
-  &.external-link {
-    color: var(--color-tertiary);
+  &:not(.component) {
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    &.internal-link {
+      color: var(--color-primary);
+    }
+
+    &.external-link {
+      color: var(--color-tertiary);
+    }
   }
 }

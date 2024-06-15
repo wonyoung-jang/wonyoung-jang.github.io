@@ -4,12 +4,12 @@
     <section class="layout pane">
 
         {{ range .Sections }}
-            <div class="component list-item one">
-                <a href="{{ .Permalink }}"></a>
+            <a  class="component list-item one"
+                href="{{ .Permalink }}">
                 <span class="title-medium">
                     {{ .Title }}
                 </span>
-            </div>
+            </a>
         {{ end }}
 
     </section>

@@ -33,6 +33,11 @@ header {
   flex-flow: row nowrap;
 }
 
+#theme-toggle,
+#random-button {
+  cursor: pointer;
+}
+
 .tabs {
   scrollbar-color: var(--color-secondary) transparent;
   scrollbar-width: thin;

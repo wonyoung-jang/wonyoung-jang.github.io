@@ -1,7 +1,0 @@
-#copyright-button {
-    --bg-color: var(--color-surface-container);
-}
-
-#copyright-button label {
-    color: var(--color-on-surface-variant);
-}

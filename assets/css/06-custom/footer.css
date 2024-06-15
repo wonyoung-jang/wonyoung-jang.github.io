@@ -39,4 +39,10 @@ footer {
 
   align-items: center;
   justify-content: center;
+
+  #copyright-button {
+    --bg-color: var(--color-surface-container);
+    --icon-color: var(--color-on-surface-variant);
+    --text-color: var(--color-on-surface-variant);
+  }
 }

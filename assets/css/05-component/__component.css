@@ -45,15 +45,6 @@
   * {
     z-index: 2;
   }
-
-  a:first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    z-index: 3;
-  }
 }
 
 @media (prefers-reduced-motion) {
