@@ -1,8 +1,6 @@
-/* TODO Focus ring */
 .component:focus-visible {
   --active-width: var(--size-1);
   --duration: var(--motion-duration-long2);
-
   --width: 2px;
 
   color: var(--color-secondary);
@@ -15,6 +13,10 @@
 
   outline: var(--width) solid currentColor;
   outline-offset: calc(-2 * var(--width));
+} 
+
+a:not(.component):focus-visible {
+  text-decoration: underline;
 } 
 
 .component::-moz-focus-inner {
