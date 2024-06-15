@@ -10,7 +10,7 @@
       
     </title>
     <link>
-      http://localhost:1313/resource/
+      https://wonyoungjang.org/resource/
     </link>
     <description>
       Recent content 
@@ -36,6 +36,6 @@
       <lastBuildDate>
         Tue, 11 Jun 2024 00:00:00 +0000
       </lastBuildDate>
-    <atom:link href="http://localhost:1313/resource/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wonyoungjang.org/resource/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

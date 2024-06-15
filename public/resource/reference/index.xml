@@ -10,7 +10,7 @@
       
     </title>
     <link>
-      http://localhost:1313/resource/reference/
+      https://wonyoungjang.org/resource/reference/
     </link>
     <description>
       Recent content 
@@ -36,20 +36,20 @@
       <lastBuildDate>
         Tue, 11 Jun 2024 00:00:00 +0000
       </lastBuildDate>
-    <atom:link href="http://localhost:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wonyoungjang.org/resource/reference/index.xml" rel="self" type="application/rss+xml" />
         <item>
           <title>
             (Basic) Fixed and flexible layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/
+            https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/
+            https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/
           </guid>
           <description>
             
@@ -62,14 +62,14 @@
             (Basic) Single pane layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/basic-single-pane-layout/
+            https://wonyoungjang.org/resource/reference/basic-single-pane-layout/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/basic-single-pane-layout/
+            https://wonyoungjang.org/resource/reference/basic-single-pane-layout/
           </guid>
           <description>
             
@@ -82,14 +82,14 @@
             (Basic) Split-pane layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/basic-split-pane-layout/
+            https://wonyoungjang.org/resource/reference/basic-split-pane-layout/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/basic-split-pane-layout/
+            https://wonyoungjang.org/resource/reference/basic-split-pane-layout/
           </guid>
           <description>
             
@@ -102,14 +102,14 @@
             (Canonical) Feed layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/canonical-feed-layout/
+            https://wonyoungjang.org/resource/reference/canonical-feed-layout/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/canonical-feed-layout/
+            https://wonyoungjang.org/resource/reference/canonical-feed-layout/
           </guid>
           <description>
             
@@ -122,14 +122,14 @@
             (Canonical) List-detail layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/canonical-list-detail-layout/
+            https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/canonical-list-detail-layout/
+            https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/
           </guid>
           <description>
             
@@ -142,14 +142,14 @@
             (Canonical) Supporting pane layout
           </title>
           <link>
-            http://localhost:1313/resource/reference/canonical-supporting-pane-layout/
+            https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/canonical-supporting-pane-layout/
+            https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/
           </guid>
           <description>
             
@@ -162,14 +162,14 @@
             Colors
           </title>
           <link>
-            http://localhost:1313/resource/reference/colors/
+            https://wonyoungjang.org/resource/reference/colors/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/colors/
+            https://wonyoungjang.org/resource/reference/colors/
           </guid>
           <description>
             
@@ -182,14 +182,14 @@
             Components
           </title>
           <link>
-            http://localhost:1313/resource/reference/components/
+            https://wonyoungjang.org/resource/reference/components/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/components/
+            https://wonyoungjang.org/resource/reference/components/
           </guid>
           <description>
             
@@ -202,14 +202,14 @@
             List of Admonitions for This Site
           </title>
           <link>
-            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
+            https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
+            https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/
           </guid>
           <description>
             
@@ -222,14 +222,14 @@
             Shapes
           </title>
           <link>
-            http://localhost:1313/resource/reference/shapes/
+            https://wonyoungjang.org/resource/reference/shapes/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/shapes/
+            https://wonyoungjang.org/resource/reference/shapes/
           </guid>
           <description>
             
@@ -242,14 +242,14 @@
             States and elevation
           </title>
           <link>
-            http://localhost:1313/resource/reference/states-and-elevation/
+            https://wonyoungjang.org/resource/reference/states-and-elevation/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/states-and-elevation/
+            https://wonyoungjang.org/resource/reference/states-and-elevation/
           </guid>
           <description>
             
@@ -262,14 +262,14 @@
             Typography
           </title>
           <link>
-            http://localhost:1313/resource/reference/typography/
+            https://wonyoungjang.org/resource/reference/typography/
           </link>
           <pubDate>
             Thu, 13 Jun 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/typography/
+            https://wonyoungjang.org/resource/reference/typography/
           </guid>
           <description>
             
@@ -282,14 +282,14 @@
             List of Keyboard Shortcuts for WonyoungJang.org
           </title>
           <link>
-            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
           </link>
           <pubDate>
             Fri, 29 Mar 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
           </guid>
           <description>
             
