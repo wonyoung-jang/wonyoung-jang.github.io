@@ -1,7 +1,7 @@
 ---
 date:
 - 2024-06-10 Monday
-coverimage: ../assets/lists_icon_1710524790703_0.webp
+coverimage: ../assets/split.webp
 description: A two-pane layout with two flexible panes
 type: showcase/layouts/basic
 layout: split

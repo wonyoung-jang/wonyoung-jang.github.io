@@ -1,7 +1,7 @@
 ---
 date:
 - 2024-06-10 Monday
-coverimage: ../assets/lists_icon_1710524790703_0.webp
+coverimage: ../assets/feed.webp
 description: A canonical layout for items that can flow into a feed
 type: showcase/layouts/canonical
 layout: feed
