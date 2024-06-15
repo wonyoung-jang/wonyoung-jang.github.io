@@ -1,0 +1,82 @@
+{{- define "main" }}
+    <style>
+        .container {
+            margin-bottom: 40px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: var(--color-add30-container);
+            transition: all 0.5s ease-in-out;
+        }
+        .box:hover.fade {
+            opacity: 0;
+        }
+        .box:hover.slide {
+            transform: translateX(200px);
+        }
+        .box:hover.scale {
+            transform: scale(1.5);
+        }
+        .clean-fade-in {
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+
+            &:hover {
+                opacity: 0;
+                transition: opacity 0.5s ease-out;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+        .skeleton {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: var(--color-surface-bright);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                background-color: var(--color-surface-bright);
+            }
+            50% {
+                background-color: var(--color-surface-dim);
+            }
+            100% {
+                background-color: var(--color-surface-bright);
+            }
+        }
+    </style>
+    <article class="layout panes basic-singlepane">
+        <section class="layout pane">
+            <h1>Transitions</h1>
+            <div class="container">
+                <h2>Fade Transition</h2>
+                <div class="box fade"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Slide Transition</h2>
+                <div class="box slide"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Scale Transition</h2>
+                <div class="box scale"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Clean Fade</h2>
+                <div class="box clean-fade-in"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Skeleton Loader</h2>
+                <div class="skeleton"></div>
+            </div>
+        </section>
+    </article>
+{{- end }}
