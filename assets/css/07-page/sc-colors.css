@@ -68,14 +68,7 @@
   padding: var(--size-1);
   font-family: var(--typeface-mono);
 
-  opacity: 0.4;
-
   border-radius: unset;
-
-  &:hover {
-    opacity: 1;
-    z-index: 1;
-  }
 }
 
 .ref-main-palettes,

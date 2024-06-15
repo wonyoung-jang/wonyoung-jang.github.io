@@ -8,7 +8,7 @@
     --hue-complementary:    calc(var(--hue-primary) + 180deg);
     
     /* Harmonization */
-    --harmonization: calc(360deg * (1 / var(--scale-fibonacci)) / 10); /* This simplifies the adjustment calculation */
+    --harmonization: calc(360deg / var(--scale-fibonacci) / 24); /* This simplifies the adjustment calculation */
 
     /* Admonition Hues (Harmonized) */
     --hue-warning:      calc(var(--hue-primary) + 80deg - var(--harmonization));
@@ -43,7 +43,7 @@
     --chroma-primary:           55;
     --chroma-secondary:         calc(var(--chroma-primary) / 3);
     --chroma-tertiary:          calc(var(--chroma-primary) / 2);
-    --chroma-neutral:           calc(var(--chroma-primary) / 13);
+    --chroma-neutral:           calc(var(--chroma-primary) / 21);
     --chroma-neutral-variant:   calc(var(--chroma-primary) / 8);
     --chroma-error:             70;
 
