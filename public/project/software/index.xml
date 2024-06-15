@@ -10,7 +10,7 @@
       
     </title>
     <link>
-      https://wonyoungjang.org/project/software/
+      http://localhost:1313/project/software/
     </link>
     <description>
       Recent content 
@@ -36,20 +36,20 @@
       <lastBuildDate>
         Tue, 11 Jun 2024 00:00:00 +0000
       </lastBuildDate>
-    <atom:link href="https://wonyoungjang.org/project/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/project/software/index.xml" rel="self" type="application/rss+xml" />
         <item>
           <title>
             Realtime Multiplayer Drawing App
           </title>
           <link>
-            https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/
+            http://localhost:1313/project/software/realtime-multiplayer-drawing-app/
           </link>
           <pubDate>
             Fri, 08 Mar 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/
+            http://localhost:1313/project/software/realtime-multiplayer-drawing-app/
           </guid>
           <description>
             
@@ -62,14 +62,14 @@
             This Website
           </title>
           <link>
-            https://wonyoungjang.org/project/software/this-website/
+            http://localhost:1313/project/software/this-website/
           </link>
           <pubDate>
             Tue, 05 Mar 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/software/this-website/
+            http://localhost:1313/project/software/this-website/
           </guid>
           <description>
             
@@ -82,14 +82,14 @@
             FIRST LEGO League Challenge Q-Learning Event Scheduler
           </title>
           <link>
-            https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/
+            http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/
           </link>
           <pubDate>
             Sun, 25 Feb 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/
+            http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/
           </guid>
           <description>
             
@@ -102,14 +102,14 @@
             Save Top Level Reddit Comments
           </title>
           <link>
-            https://wonyoungjang.org/project/software/save-top-level-reddit-comments/
+            http://localhost:1313/project/software/save-top-level-reddit-comments/
           </link>
           <pubDate>
             Sun, 28 Jan 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/software/save-top-level-reddit-comments/
+            http://localhost:1313/project/software/save-top-level-reddit-comments/
           </guid>
           <description>
             
@@ -122,14 +122,14 @@
             Logseq Markdown Tokenizer
           </title>
           <link>
-            https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/
+            http://localhost:1313/project/software/logseq-markdown-tokenizer/
           </link>
           <pubDate>
             Sat, 13 Jan 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/
+            http://localhost:1313/project/software/logseq-markdown-tokenizer/
           </guid>
           <description>
             

@@ -10,7 +10,7 @@
       
     </title>
     <link>
-      https://wonyoungjang.org/project/university/
+      http://localhost:1313/project/university/
     </link>
     <description>
       Recent content 
@@ -36,20 +36,20 @@
       <lastBuildDate>
         Tue, 11 Jun 2024 00:00:00 +0000
       </lastBuildDate>
-    <atom:link href="https://wonyoungjang.org/project/university/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/project/university/index.xml" rel="self" type="application/rss+xml" />
         <item>
           <title>
             Disaster Recovery Robot Simulation
           </title>
           <link>
-            https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/
+            http://localhost:1313/project/university/disaster-recovery-robot-simulation/
           </link>
           <pubDate>
             Thu, 25 Jan 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/
+            http://localhost:1313/project/university/disaster-recovery-robot-simulation/
           </guid>
           <description>
             
@@ -62,14 +62,14 @@
             CS Career Recommendation Chatbot
           </title>
           <link>
-            https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/
+            http://localhost:1313/project/university/cs-career-recommendation-chatbot/
           </link>
           <pubDate>
             Mon, 22 Jan 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/
+            http://localhost:1313/project/university/cs-career-recommendation-chatbot/
           </guid>
           <description>
             
@@ -82,14 +82,14 @@
             Package Delivery Route Optimization
           </title>
           <link>
-            https://wonyoungjang.org/project/university/package-delivery-route-optimization/
+            http://localhost:1313/project/university/package-delivery-route-optimization/
           </link>
           <pubDate>
             Mon, 08 Jan 2024 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/package-delivery-route-optimization/
+            http://localhost:1313/project/university/package-delivery-route-optimization/
           </guid>
           <description>
             
@@ -102,14 +102,14 @@
             Hotel Reservation Manager
           </title>
           <link>
-            https://wonyoungjang.org/project/university/hotel-reservation-manager/
+            http://localhost:1313/project/university/hotel-reservation-manager/
           </link>
           <pubDate>
             Mon, 27 Nov 2023 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/hotel-reservation-manager/
+            http://localhost:1313/project/university/hotel-reservation-manager/
           </guid>
           <description>
             
@@ -122,14 +122,14 @@
             Vacation Cart Manager
           </title>
           <link>
-            https://wonyoungjang.org/project/university/vacation-cart-manager/
+            http://localhost:1313/project/university/vacation-cart-manager/
           </link>
           <pubDate>
             Tue, 21 Nov 2023 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/vacation-cart-manager/
+            http://localhost:1313/project/university/vacation-cart-manager/
           </guid>
           <description>
             
@@ -142,14 +142,14 @@
             Retail Inventory Manager
           </title>
           <link>
-            https://wonyoungjang.org/project/university/retail-inventory-manager/
+            http://localhost:1313/project/university/retail-inventory-manager/
           </link>
           <pubDate>
             Sat, 18 Nov 2023 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/retail-inventory-manager/
+            http://localhost:1313/project/university/retail-inventory-manager/
           </guid>
           <description>
             
@@ -162,14 +162,14 @@
             DVD Rental Database Revenue Insights
           </title>
           <link>
-            https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/
+            http://localhost:1313/project/university/dvd-rental-database-revenue-insights/
           </link>
           <pubDate>
             Wed, 12 Jul 2023 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/
+            http://localhost:1313/project/university/dvd-rental-database-revenue-insights/
           </guid>
           <description>
             
@@ -182,14 +182,14 @@
             Student Record System
           </title>
           <link>
-            https://wonyoungjang.org/project/university/student-record-system/
+            http://localhost:1313/project/university/student-record-system/
           </link>
           <pubDate>
             Sat, 01 Jul 2023 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/student-record-system/
+            http://localhost:1313/project/university/student-record-system/
           </guid>
           <description>
             
@@ -202,14 +202,14 @@
             Bagel Corner and Mister Coffee Database Management
           </title>
           <link>
-            https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/
+            http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/
           </link>
           <pubDate>
             Sun, 18 Dec 2022 00:00:00 +0000
           </pubDate>
           
           <guid>
-            https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/
+            http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/
           </guid>
           <description>
             
