@@ -24,30 +24,77 @@
                     <nav class="home-buttons" aria-label="Home buttons">
                         {{ partialCached "components/homepage-buttons.html" .}}
                     </nav>
-
-                    <h2>Showcases</h2>
-                    <h3>Tokens</h3>
-                    <a href="/resource/reference/colors">Colors</a>
-                    <a href="/resource/reference/typography">Typography</a>
-                    <a href="/resource/reference/shapes">Shapes</a>
-                    <a href="/resource/reference/states-and-elevation">States and elevations</a>
-
-                    <h3>Layouts</h3>
-                    <h4>Basic</h4>
-                    <a href="/resource/reference/basic-single-pane-layout">Single pane</a>
-                    <a href="/resource/reference/basic-split-pane-layout">Split-pane</a>
-                    <a href="/resource/reference/basic-fixed-and-flexible-layout">Fixed and flex pane</a>
-
-                    <h4>Canonical</h4>
-                    <a href="/resource/reference/canonical-feed-layout">Feed</a>
-                    <a href="/resource/reference/canonical-supporting-pane-layout">Supporting pane</a>
-                    <a href="/resource/reference/canonical-list-detail-layout">List-detail</a>
-
-                    <h3>Components</h3>
-                    <a href="/resource/reference/components">Components</a>
-
-                    <h3>404</h3>
-                    <a href="/resource/reference/404">404</a>
+                    
+                    <section class="showcase-panel">
+                        <h2>Showcases</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="1">Category</th>
+                                    <th scope="col" colspan="1">Subcategory</th>
+                                    <th scope="col" colspan="1">Description</th>
+                                    <th scope="col" colspan="1">Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4" colspan="2">Tokens</td>
+                                    <td>Colors</td>
+                                    <td><a href="/resource/reference/colors">Colors</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Typography</td>
+                                    <td><a href="/resource/reference/typography">Typography</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Shapes</td>
+                                    <td><a href="/resource/reference/shapes">Shapes</a></td>
+                                </tr>
+                                <tr>
+                                    <td>States and elevations</td>
+                                    <td><a href="/resource/reference/states-and-elevation">States and elevations</a></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">Layouts</td>
+                                    <td rowspan="3">Basic</td>
+                                    <td>Single pane</td>
+                                    <td><a href="/resource/reference/basic-single-pane-layout">Single pane</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Split-pane</td>
+                                    <td><a href="/resource/reference/basic-split-pane-layout">Split-pane</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Fixed and flex pane</td>
+                                    <td><a href="/resource/reference/basic-fixed-and-flexible-layout">Fixed and flex pane</a></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Canonical</td>
+                                    <td>Feed</td>
+                                    <td><a href="/resource/reference/canonical-feed-layout">Feed</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Supporting pane</td>
+                                    <td><a href="/resource/reference/canonical-supporting-pane-layout">Supporting pane</a></td>
+                                </tr>
+                                <tr>
+                                    <td>List-detail</td>
+                                    <td><a href="/resource/reference/canonical-list-detail-layout">List-detail</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Components</td>
+                                    <td>Components</td>
+                                    <td><a href="/resource/reference/components">Components</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">404</td>
+                                    <td>404</td>
+                                    <td><a href="/resource/reference/404">404</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                                    
                 </section>
             </article>
         

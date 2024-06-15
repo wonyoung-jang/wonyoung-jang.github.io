@@ -40,7 +40,7 @@
     
     /* || Chromas (0-120-150) */
 
-    --chroma-primary:           60;
+    --chroma-primary:           55;
     --chroma-secondary:         calc(var(--chroma-primary) / 3);
     --chroma-tertiary:          calc(var(--chroma-primary) / 2);
     --chroma-neutral:           calc(var(--chroma-primary) / 13);
