@@ -23,7 +23,6 @@
 }
 
 .key-color {
-  flex: 1 1 auto;
   background-color: var(--palette-primary60);
   display: flex;
   align-items: flex-start;
