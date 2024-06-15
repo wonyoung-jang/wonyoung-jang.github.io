@@ -1,15 +1,11 @@
 /* TODO Focus ring */
 .component:focus-visible {
-  --active-width: var(--size-2);
+  --active-width: var(--size-1);
   --duration: var(--motion-duration-long2);
-
-  --inward-offset: 2px;
-  --outward-offset: 2px;
 
   --width: 2px;
 
   color: var(--color-secondary);
-  border-radius: 8px;
 
   animation-delay: 0s, calc(var(--duration) * 0.25);
   animation-duration: calc(var(--duration) * 0.25), calc(var(--duration) * 0.75);
@@ -18,11 +14,11 @@
   animation-name: outward-grow, outward-shrink;
 
   outline: var(--width) solid currentColor;
-  inset: calc(-2 * var(--outward-offset));
-}
+  outline-offset: calc(-2 * var(--width));
+} 
 
 .component::-moz-focus-inner {
-  border: none;
+  outline: none;
 }
 
 @keyframes outward-grow {
