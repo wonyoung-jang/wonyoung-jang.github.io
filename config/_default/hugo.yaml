@@ -1,5 +1,6 @@
 baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
+languageCode: en-us
 
 # enableRobotsTXT: Specifies whether to generate a robots.txt file for the site.
 # buildDrafts: Specifies whether to include draft content in the site build.
@@ -27,17 +28,15 @@ minify:
 ignoreFiles:
   \.zip$
 
-# Output formats
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
 # Taxonomies
 disableKinds:
 - taxonomy
 - term
+
+services:
+  googleAnalytics: 
+    ID: G-RTMKJG4NFZ
+
 
 ####################
 # DISABLED CONFIGS #

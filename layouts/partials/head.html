@@ -8,39 +8,23 @@
     <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
 
 <!-- Meta -->
 {{- if .IsHome }}
-{{ with site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
+{{ with .Site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
 {{- else }}
 <meta name="keywords" content="{{ if .Params.keywords -}}
     {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
     {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
 {{- end }}
 <meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-    {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
-    {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+    {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
+    {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
     
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
-
-{{- if .Site.Params.analytics.google.SiteVerificationTag }}
-    <meta name="google-site-verification" content="{{ .Site.Params.analytics.google.SiteVerificationTag }}" />
-{{- end }}
-
-{{- if .Site.Params.analytics.yandex.SiteVerificationTag }}
-    <meta name="yandex-verification" content="{{ .Site.Params.analytics.yandex.SiteVerificationTag }}" />
-{{- end }}
-
-{{- if .Site.Params.analytics.bing.SiteVerificationTag }}
-    <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
-{{- end }}
-
-{{- if site.Params.analytics.naver.SiteVerificationTag }}
-    <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
-{{- end }}
 
 <!-- Styles -->
 {{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
@@ -54,7 +38,7 @@
 {{- $theme              := (resources.Match "css/08-theme/*.css")       | resources.Concat "assets/css/08-theme.css" }}
 {{- $stylesheet := (slice $reset $reference $system $base $layout $component $custom $page $theme) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
 
-{{- with .Site.Params.profileMode }}
+{{- with .Site.Params.home }}
     {{- if and .enabled .imageUrl $.IsHome }}
         <link rel="preload" href="{{ .imageUrl }}" as="image">
     {{- end }}
@@ -64,8 +48,8 @@
     <link rel="preload" href="{{ . }}" as="image">
 {{- end }}
 
-{{- if not site.Params.assets.disableFingerprinting }}
-{{- $stylesheet := $stylesheet | fingerprint }}
+{{- if not .Site.Params.assets.disableFingerprinting }}
+    {{- $stylesheet := $stylesheet | fingerprint }}
     <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
 {{- else }}
     <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
@@ -74,9 +58,9 @@
 <!-- Search -->
 {{- if (eq .Layout `search`) -}}
     <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-    {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
+    {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) | resources.Minify }}
     {{- $fusejs := resources.Get "js/fuse.js" }}
-    {{- if not site.Params.assets.disableFingerprinting }}
+    {{- if not .Site.Params.assets.disableFingerprinting }}
         {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
         <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
     {{- else }}
@@ -90,9 +74,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.assets.favicon16x16 | default "favicon-16x16.webp" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.assets.favicon32x32 | default "favicon-32x32.webp" | absURL }}">
 <link rel="apple-touch-icon" href="{{ .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.webp" | absURL }}">
-<link rel="mask-icon" href="{{ .Site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.webp" | absURL }}">
-<meta name="theme-color" content="{{ .Site.Params.assets.theme_color | default "#2e2e33" }}">
-<meta name="msapplication-TileColor" content="{{ .Site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
 <!-- Generator -->
 {{ hugo.Generator }}
@@ -105,46 +86,6 @@
 {{- range .AllTranslations -}}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
-
-<!-- No script styles -->
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-    </style>
-
-    {{- if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
-        <style>
-            @media (prefers-color-scheme: dark) {
-                :root {
-                    --theme: rgb(29, 30, 32);
-                    --entry: rgb(46, 46, 51);
-                    --primary: rgb(218, 218, 219);
-                    --secondary: rgb(155, 156, 157);
-                    --tertiary: rgb(65, 66, 68);
-                    --content: rgb(196, 196, 197);
-                    --code-block-bg: rgb(46, 46, 51);
-                    --code-bg: rgb(55, 56, 62);
-                    --border: rgb(51, 51, 51);
-                }
-
-                .list {
-                    background: var(--theme);
-                }
-
-                .list:not(.dark)::-webkit-scrollbar-track {
-                    background: 0 0;
-                }
-
-                .list:not(.dark)::-webkit-scrollbar-thumb {
-                    border-color: var(--theme);
-                }
-            }
-        </style>
-    {{- end }}
-</noscript>
 
 <!-- Misc -->
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}

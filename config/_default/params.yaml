@@ -1,10 +1,64 @@
-# Parameters for the site
+assets:
+  disableHLJS: false
+  disableFingerprinting: false
+  favicon: '/favicon.ico'
+  favicon16x16: '/favicon-16x16.webp'
+  favicon32x32: '/favicon-32x32.webp'
+  apple_touch_icon: '/apple-touch-icon.webp'
 
-env: production # To enable google analytics, opengraph, twitter-cards and schema.
+label:
+  text: 'Wonyoung Jang'
+  icon: '/favicon-32x32.webp'
+  iconHeight: 24px
+
+socialIcons:
+  - name: "github"
+    url: "https://github.com/wonyoung-jang"
+  - name: "kofi"
+    url: "https://ko-fi.com/wonyoung_jang"
+  - name: "rss"
+    url: "https://wonyoungjang.org/index.xml"
+  - name: "email"
+    url: "mailto:contact@wonyoungjang.org"
+
+sitemap:
+  filename: sitemap.xml
+  priority: 0.5
+  changefreq: daily
+
+home:
+  enabled: true
+  title: Wonyoung Jang
+  subtitle: Personal Website
+  
+  imageUrl: /android-chrome-192x192.webp
+  imageTitle: WonyoungJang.org site logo
+  imageHeight: 150px
+  imageWidth: 150px
+  
+  buttons:
+    - name: Software development projects
+      url: "/project/software"
+    - name: University coursework projects
+      url: "/project/university"
+
+cover:
+  responsiveImages: true # Use responsive images
+  linkFullImages: true # Link to full image
+  hidden: false # Hide cover image in all views
+  hiddenInList: false # Hide cover image in list view
+  hiddenInSingle: false # Hide cover image in single post view
+
+env: production
+
 author: "Wonyoung Jang"
-description: "Wonyoung Jang's personal website"
 contact: "contact@wonyoungjang.org"
-images:
+description: "Wonyoung Jang's personal website"
+
+feedlinks: true
+copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+mobileMenu: true
+
 DateFormat: "2006, Jan 02"
 defaultTheme: auto
 ShowReadingTime: true
@@ -29,86 +83,6 @@ disableAnchoredHeadings: false
 hideMeta: false
 hideSummary: false
 
-UseHugoToc: false
+UseHugoToc: true
 showtoc: true
 tocopen: true
-
-feedlinks: true
-mobileMenu: true
-copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
-googleAnalytics: G-RTMKJG4NFZ
-
-# Assets
-assets:
-  disableHLJS: false
-  disableFingerprinting: false
-  favicon: '/favicon.ico'
-  favicon16x16: '/favicon-16x16.webp'
-  favicon32x32: '/favicon-32x32.webp'
-  apple_touch_icon: '/apple-touch-icon.webp'
-
-# Site Settings
-label:
-  text: 'Wonyoung Jang'
-  icon: '/favicon-32x32.webp'
-  iconHeight: 24px
-
-# Home
-home:
-  enabled: true
-  title: Wonyoung Jang
-  subtitle: Personal Website
-  
-  imageUrl: /android-chrome-192x192.webp
-  imageTitle: WonyoungJang.org site logo
-  imageHeight: 150px
-  imageWidth: 150px
-  
-  buttons:
-    - name: Software development projects
-      url: "/project/software"
-    - name: University coursework projects
-      url: "/project/university"
-  
-# Sitemap
-sitemap:
-  filename: sitemap.xml
-  priority: 0.5
-  changefreq: daily
-
-# Social Links
-socialIcons:
-  - name: "github"
-    url: "https://github.com/wonyoung-jang"
-  - name: "kofi"
-    url: "https://ko-fi.com/wonyoung_jang"
-  - name: "rss"
-    url: "https://wonyoungjang.org/index.xml"
-  - name: "email"
-    url: "mailto:contact@wonyoungjang.org"
-
-# Cover Image
-cover:
-  responsiveImages: true # Use responsive images
-  linkFullImages: true # Link to full image
-  hidden: false # Hide cover image in all views
-  hiddenInList: false # Hide cover image in list view
-  hiddenInSingle: false # Hide cover image in single post view
-
-# Search Options
-# fuseOpts
-
-# Analytics - NOT USED
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: 
-  #   bing:
-  #     SiteVerificationTag:
-  #   yandex:
-  #     SiteVerificationTag:
-
-# Edit Post - NOT USED
-# editPost:
-#   URL: "https://github.com/<path_to_repo>/content"
-#   Text: "Suggest Changes" # edit text
-#   appendFilePath: true # to append file path to Edit link

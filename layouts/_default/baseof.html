@@ -7,15 +7,11 @@
 
         {{ partial "head.html" . }}
         
-        {{ if .Site.Params.GoogleAnalytics }}
-            {{ partial "scripts/analytics-gtag.html" . }}
-        {{ end }}
+        {{ template "_internal/google_analytics.html" . }}
             
         {{ partial "scripts/links.html" . }}
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     </head>
     
     <!-- Body -->
