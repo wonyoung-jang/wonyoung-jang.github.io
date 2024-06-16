@@ -11,7 +11,7 @@
 }
 
 /* Medium */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .layout.panes.canonical-feed {
     .layout.pane {
       .card {
@@ -26,7 +26,7 @@
 }
 
 /* Expanded */
-@media (min-width: 840px) {
+@media screen and (min-width: 840px) {
   .layout.panes.canonical-feed {
     .layout.pane {
       .card {

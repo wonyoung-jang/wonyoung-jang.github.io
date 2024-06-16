@@ -8,7 +8,7 @@
 }
 
 /* Compact */
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .layout.panes.canonical-list-detail {
     .layout.pane.detail-pane {
       display: none;

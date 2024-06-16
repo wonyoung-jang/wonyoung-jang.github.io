@@ -21,7 +21,7 @@
 }
 
 /* Compact */
-@media (min-width: 0px) {
+@media screen and (min-width: 0px) {
   .layout.pane {
     &.detail-pane,
     &.supporting-pane {

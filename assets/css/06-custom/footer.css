@@ -14,22 +14,25 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   .footer-links-list {
     display: flex;
     flex-flow: column nowrap;
+    padding: var(--spacing-panes);
+    width: 100%;
   }
 
   a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    min-height: 48px;
+    min-height: 42px;
+    width: 100%;
 
     &:hover {
       text-decoration: underline;
+      background-color: var(--color-surface-container-highest);
     }
   }
 }

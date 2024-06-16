@@ -86,7 +86,7 @@
 }
 
 /* Large */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .toc .title {
     display: block;
   }

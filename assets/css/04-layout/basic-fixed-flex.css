@@ -23,7 +23,7 @@
 }
 
 /* Large */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .layout.panes.basic-fixedflex,
   .layout.panes.basic-fixedflex#single {
     --flex-flow: row nowrap;

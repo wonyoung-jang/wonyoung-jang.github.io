@@ -8,7 +8,7 @@
 }
 
 /* Expanded */
-@media (min-width: 840px) {
+@media screen and (min-width: 840px) {
   .layout.panes.canonical-supporting-pane {
     --flex-flow: row nowrap;
 

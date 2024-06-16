@@ -25,7 +25,7 @@
 }
 
 /* Medium */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .layout.page-links {
     flex-flow: row nowrap;
   }

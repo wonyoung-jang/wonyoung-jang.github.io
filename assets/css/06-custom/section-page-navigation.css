@@ -67,7 +67,7 @@
 }
 
 /* Medium */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .layout.page-navigation {
     --flex-flow: row nowrap;
 
