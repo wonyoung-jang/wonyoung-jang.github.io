@@ -20,7 +20,8 @@
                         <!-- Site Image -->
                         {{- if .imageUrl -}}
                             <div class="home-image">
-                                <img    src="{{ .imageUrl | absURL }}" 
+                                <img    loading="lazy" 
+                                        src="{{ .imageUrl | absURL }}" 
                                         alt="{{ .imageTitle | default "profile image" }}"
                                         height="{{ .imageHeight | default 150 }}" 
                                         width="{{ .imageWidth | default 150 }}" />

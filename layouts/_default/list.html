@@ -14,7 +14,8 @@
                     {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}            
                 
                     {{- if .Params.coverimage }}
-                        <img    src="{{ .Params.coverimage | absURL }}" 
+                        <img    loading="lazy" 
+                                src="{{ .Params.coverimage | absURL }}" 
                                 alt="{{ $.Title }} - descriptive image of the post content">
                     {{- end }}
                     
