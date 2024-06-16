@@ -36,6 +36,7 @@ tocopen: true
 feedlinks: true
 mobileMenu: true
 copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+googleAnalytics: G-RTMKJG4NFZ
 
 # Assets
 assets:
@@ -49,30 +50,26 @@ assets:
 # Site Settings
 label:
   text: 'Wonyoung Jang'
-  icon: '/android-chrome-192x192.webp'
-  iconHeight: 40px
+  icon: '/favicon-32x32.webp'
+  iconHeight: 24px
 
-# Profile Mode
-profileMode:
+# Home
+home:
   enabled: true
   title: Wonyoung Jang
-  #subtitle: Personal Website
+  subtitle: Personal Website
   
-  imageUrl: /android-chrome-512x512.webp
+  imageUrl: /android-chrome-192x192.webp
   imageTitle: WonyoungJang.org site logo
+  imageHeight: 150px
+  imageWidth: 150px
   
   buttons:
     - name: Software development projects
       url: "/project/software"
     - name: University coursework projects
       url: "/project/university"
-    
-# Home Info Mode - NOT USED
-#homeInfoParams:
-#  Title:
-#  Content:
-
-googleAnalytics: G-RTMKJG4NFZ
+  
 # Sitemap
 sitemap:
   filename: sitemap.xml

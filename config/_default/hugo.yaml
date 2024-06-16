@@ -1,6 +1,5 @@
 baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
-paginate: 9
 
 # enableRobotsTXT: Specifies whether to generate a robots.txt file for the site.
 # buildDrafts: Specifies whether to include draft content in the site build.
