@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html   lang="{{ .Site.Language }}" 
         dir="{{ .Language.LanguageDirection | default "auto" }}">
     <head>
@@ -6,11 +6,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         {{ partial "head.html" . }}
-        
-        {{ template "_internal/google_analytics.html" . }}
-            
-        {{ partial "scripts/links.html" . }}
 
+        <style>
+            /* Critical CSS goes here */
+            body {
+                margin: 0;
+            }
+        </style>
+        
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     </head>
     
@@ -46,5 +49,7 @@
                 {{ partialCached "base/footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") }}
             </footer>
         </main>
+
+        {{ partial "scripts/links.html" . }}
     </body>
 </html>
