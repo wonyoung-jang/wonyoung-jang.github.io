@@ -34,33 +34,33 @@
   /* 3 Title */
   --typescale-title-small-size: calc(var(--typescale-title-medium-size) / var(--scale-back-size));
   --typescale-title-small-line-height: var(--scale-line-height-title);
-  --typescale-title-small-weight: var(--typeface-weight-semi-bold);
+  --typescale-title-small-weight: var(--typeface-weight-medium);
   --typescale-title-small-font: var(--typeface-brand);
 
   --typescale-title-medium-size: var(--root-font-size);
   --typescale-title-medium-line-height: var(--scale-line-height-title);
-  --typescale-title-medium-weight: var(--typeface-weight-semi-bold);
+  --typescale-title-medium-weight: var(--typeface-weight-medium);
   --typescale-title-medium-font: var(--typeface-brand);
 
   --typescale-title-large-size: calc(var(--typescale-title-medium-size) * var(--scale-up-size));
   --typescale-title-large-line-height: var(--scale-line-height-title);
-  --typescale-title-large-weight: var(--typeface-weight-semi-bold);
+  --typescale-title-large-weight: var(--typeface-weight-medium);
   --typescale-title-large-font: var(--typeface-brand);
 
   /* 4 Headline */
   --typescale-headline-small-size: calc(var(--typescale-headline-medium-size) / var(--scale-back-size));
   --typescale-headline-small-line-height: var(--scale-line-height-headline);
-  --typescale-headline-small-weight: var(--typeface-weight-bold);
+  --typescale-headline-small-weight: var(--typeface-weight-medium);
   --typescale-headline-small-font: var(--typeface-brand);
 
   --typescale-headline-medium-size: calc(var(--typescale-title-medium-size) * var(--scale-up-type));
   --typescale-headline-medium-line-height: var(--scale-line-height-headline);
-  --typescale-headline-medium-weight: var(--typeface-weight-bold);
+  --typescale-headline-medium-weight: var(--typeface-weight-medium);
   --typescale-headline-medium-font: var(--typeface-brand);
 
   --typescale-headline-large-size: calc(var(--typescale-headline-medium-size) * var(--scale-up-size));
   --typescale-headline-large-line-height: var(--scale-line-height-headline);
-  --typescale-headline-large-weight: var(--typeface-weight-bold);
+  --typescale-headline-large-weight: var(--typeface-weight-medium);
   --typescale-headline-large-font: var(--typeface-brand);
 
   /* 5 Display */

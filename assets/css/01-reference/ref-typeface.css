@@ -1,17 +1,11 @@
 :root {
     /* Fonts */
-    --typeface-brand:   'Raleway', Arial, Helvetica, sans-serif;
-    --typeface-plain:   'IBM Plex Sans', Arial, Helvetica, sans-serif;
-    --typeface-mono:    'IBM Plex Mono', 'Courier New', Courier, monospace;
+    --typeface-brand:   'Raleway', 'Arial', 'Helvetica', sans-serif;
+    --typeface-plain:   'Arial', 'Helvetica', sans-serif;
+    --typeface-mono:    'Courier New', 'Courier', monospace;
 
     /* Weights */
-    --typeface-weight-black:        900;
-    --typeface-weight-extra-bold:   800;
     --typeface-weight-bold:         700;
-    --typeface-weight-semi-bold:    600;
     --typeface-weight-medium:       500;
     --typeface-weight-regular:      400;
-    --typeface-weight-light:        300;
-    --typeface-weight-extra-light:  200;
-    --typeface-weight-thin:         100;
 }
