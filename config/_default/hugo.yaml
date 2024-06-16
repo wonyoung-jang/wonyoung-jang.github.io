@@ -2,68 +2,49 @@ baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
 languageCode: en-us
 
-# enableRobotsTXT: Specifies whether to generate a robots.txt file for the site.
-# buildDrafts: Specifies whether to include draft content in the site build.
-# buildFuture: Specifies whether to include future-dated content in the site build.
-# buildExpired: Specifies whether to include expired content in the site build.
 enableRobotsTXT: true
-buildDrafts: true
-buildFuture: true
-buildExpired: true
 
-related:
-  includeNewer: true
-  #indices:
-  #- applyFilter: true
-  #  type: fragments
-  #  weight: 80
-  threshold: 20
-  toLower: false
-
-minify:
-  disableXML: true
-  minifyOutput: true
+titleCaseStyle: ap
 
 # Ignore files
-ignoreFiles:
-  \.zip$
+ignoreFiles: 
+- \.zip$
 
 # Taxonomies
 disableKinds:
 - taxonomy
 - term
 
-services:
-  googleAnalytics: 
-    ID: G-RTMKJG4NFZ
-
 
 ####################
-# DISABLED CONFIGS #
+# All root configs #
 ####################
 
-# The root configuration keys are 
-  # build, 
-  # caches, 
-  # cascade,
-  # deployment, 
-  # frontmatter,
-  # imaging,
-  # languages, 
-  # markup DONE
-  # mediatypes,
-  # menus DONE
-  # minify, 
-  # module,
-  # outputformats,
-  # outputs,
-  # params DONE 
-  # permalinks,
-  # privacy,
-  # related,
-  # security,
-  # segments,
-  # server, 
-  # services,
-  # sitemap,
-  # taxonomies
+# build:
+# caches:
+# cascade:
+# deployment:
+# frontmatter:
+# httpcache:
+# imaging:
+# languages:
+#   en:
+#     menus:
+#     params:
+# markup: → markup.yaml
+# mediatypes:
+# menus: → menus.yaml
+# minify: → minify.yaml
+# module:
+# outputformats:
+# outputs: → outputs.yaml
+# params: → params.yaml
+# permalinks:
+# privacy:
+# related: → related.yaml
+# security:
+# segments:
+# server:
+# services: → services.yaml
+# sitemap: → sitemap.yaml
+# taxonomies:

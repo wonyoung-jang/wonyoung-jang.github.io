@@ -1,0 +1,7 @@
+includeNewer: true
+#indices:
+#- applyFilter: true
+#  type: fragments
+#  weight: 80
+threshold: 20
+toLower: false

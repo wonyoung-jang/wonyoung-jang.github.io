@@ -21,11 +21,6 @@ socialIcons:
   - name: "email"
     url: "mailto:contact@wonyoungjang.org"
 
-sitemap:
-  filename: sitemap.xml
-  priority: 0.5
-  changefreq: daily
-
 home:
   enabled: true
   title: Wonyoung Jang

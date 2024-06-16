@@ -1,13 +1,21 @@
-# Highlighting
 highlight:
   lineNos: true
   style: github-dark
   tabWidth: 4
 
-# Table of Contents
 tableOfContents:
   startLevel: 1
   endLevel: 6
   ordered: false
 
 defaultMarkdownHandler: goldmark
+
+goldmark:
+  renderHooks:
+    image:
+      enableDefault: true
+    link:
+      enableDefault: true
+  parser:
+    attribute:
+      title: true
