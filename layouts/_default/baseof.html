@@ -14,12 +14,7 @@
         {{ partial "scripts/links.html" . }}
 
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-            @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
             @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:ital,wght@0,100..900;1,100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
     </head>
     
@@ -40,9 +35,7 @@
                 {{ partialCached "sections/page-header.html" . .Page }}
 
                 <!-- Layout: Main -->
-                {{ block "main" . }}
-                
-                {{ end }}
+                {{ block "main" . }}{{ end }}
 
                 <!-- Layout: Page Navigation -->
                 {{ partial "sections/page-navigation.html" . }}

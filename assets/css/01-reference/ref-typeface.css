@@ -1,8 +1,8 @@
 :root {
     /* Fonts */
-    --typeface-brand:   'Raleway', sans-serif;
-    --typeface-plain:   'Roboto Flex', sans-serif;
-    --typeface-mono:    'Roboto Mono', monospace;
+    --typeface-brand:   Helvetica, Arial, sans-serif;
+    --typeface-plain:   Helvetica, Arial, sans-serif;
+    --typeface-mono:    "Courier New", Courier, monospace;
 
     /* Weights */
     --typeface-weight-bold:         700;

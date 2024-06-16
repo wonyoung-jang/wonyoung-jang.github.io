@@ -8,8 +8,10 @@
   --bg-color: none;
   --icon-color: var(--color-on-surface-variant);
 
-  i {
+  i, img {
     font-size: 24px;
+    width: 24px;
+    height: 24px;
   }
 
   &.filled {
