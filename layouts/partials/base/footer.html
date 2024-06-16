@@ -1,28 +1,27 @@
-{{/* Layout: Footer */}}
+<!-- Layout: Footer -->
 
-{{/* Links */}}
+<!-- Links -->
 <section class="footer-links">
-    {{/* Quick links */}}
-    <ul>
-        <h6>
+    <div class="footer-links-list">
+        <!-- Quick links -->
+        <span class="title-large">
             Quick links
-        </h6>
+        </span>
 
         {{ $page := . }}
         {{ range .Site.Menus.footer }}
-            <li class="{{ if $page.IsMenuCurrent "footer" . }}active{{ end }}">
-                <a href="{{ .URL }}">
-                    {{ .Name }}
-                </a>
-            </li>
+            <a  class="{{ if $page.IsMenuCurrent "footer" . }}active{{ end }}"
+                href="{{ .URL }}">
+                {{ .Name }}
+            </a>
         {{ end }}
-    </ul>
+    </div>
 
-    {{/* Connect links */}}
-    <ul>
-        <h6>
+    <div class="footer-links-list">
+        <!-- Connect links -->
+        <span class="title-large">
             Connect
-        </h6>
+        </span>
 
         {{- range $.Site.Params.socialIcons }}
             <a  href="{{ trim .url " " }}" 
@@ -31,11 +30,10 @@
                 {{ .name | title }}
             </a>
         {{- end }}
-
-    </ul>
+    </div>
 </section>
 
-{{/* Copyright */}}
+<!-- Copyright -->
 <section class="copyright">
     <a  class="component button common with-icon"
         id="copyright-button"

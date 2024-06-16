@@ -17,14 +17,16 @@ footer {
 
   justify-content: space-evenly;
 
-  ul {
+  .footer-links-list {
     display: flex;
     flex-flow: column nowrap;
   }
 
   a {
     display: flex;
+    align-items: center;
     text-decoration: none;
+    min-height: 48px;
 
     &:hover {
       text-decoration: underline;
