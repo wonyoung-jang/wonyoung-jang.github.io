@@ -1,32 +1,33 @@
-{{- define "main" }}
-    {{- if ( and .Site.Params.home.enabled .IsHome) }}
-        {{- with .Site.Params.home }}
+{{- define "main" -}}
+
+    {{- if ( and .Site.Params.home.enabled .IsHome) -}}
+        {{- with .Site.Params.home -}}
 
             <article class="layout panes basic-singlepane" id="home">
                 <section class="layout pane">
                     <div class="home-header">
                         <div class="home-left">
-                            <!-- Site Title -->
+                            {{/* Site Title */}}
                             <h1>
-                                {{ .title | default $.Site.Title | markdownify }}
+                                {{- .title | default $.Site.Title | markdownify -}}
                             </h1>        
                     
-                            <!-- Home Page Buttons -->
+                            {{/* Home Page Buttons */}}
                             <nav class="home-buttons" aria-label="Home buttons">
-                                {{ partialCached "components/homepage-buttons.html" .}}
+                                {{- partialCached "components/homepage-buttons.html" .}}
                             </nav>
                         </div>
                     
-                        <!-- Site Image -->
+                        {{/* Site Image */}}
                         {{- if .imageUrl -}}
                             <div class="home-image">
                                 <img    loading="lazy" 
-                                        src="{{ .imageUrl | absURL }}" 
-                                        alt="{{ .imageTitle | default "profile image" }}"
-                                        height="{{ .imageHeight | default 150 }}" 
-                                        width="{{ .imageWidth | default 150 }}" />
+                                        src="{{- .imageUrl | absURL -}}" 
+                                        alt="{{- .imageTitle | default "profile image" -}}"
+                                        height="{{- .imageHeight | default 150 -}}" 
+                                        width="{{- .imageWidth | default 150 -}}" />
                             </div>
-                        {{- end }}
+                        {{- end -}}
                     </div>
                     <section class="showcase-panel">
                         <h2>Showcases</h2>
@@ -91,8 +92,8 @@
                 </section>
             </article>
         
-        {{- end }}
+        {{- end -}}
     
-    {{- end }}
+    {{- end -}}
 
-{{- end }}
+{{- end -}}

@@ -1,16 +1,16 @@
-{{- if (.Param "ShowPostNavLinks") }}
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- if and (gt (len $pages) 1) (in $pages . ) }}
+{{- if (.Param "ShowPostNavLinks") -}}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+{{- if and (gt (len $pages) 1) (in $pages . ) -}}
     <nav class="layout page-navigation" aria-label="Page Navigation">
-      {{- with $pages.Next . }}
+      {{- with $pages.Next . -}}
         <a  class="component card filled prev"
-            href="{{ .Permalink }}"
+            href="{{- .Permalink -}}"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
           <span class="page-direction">
             <i>arrow_back</i>
             <label>
-              {{ i18n "prev_page" }}
+              {{- i18n "prev_page" -}}
             </label>
           </span>
           
@@ -18,21 +18,21 @@
             {{- .Name -}}
           </span>
         </a>
-      {{ else }}
+      {{- else -}}
         <div class="component card filled prev empty">
           <span class="page-direction">
           </span>
         </div>
-      {{- end }}
+      {{- end -}}
 
-      {{- with $pages.Prev . }}
+      {{- with $pages.Prev . -}}
       <a  class="component card filled next"
-          href="{{ .Permalink }}"
+          href="{{- .Permalink -}}"
           accesskey="n"
           title="Next page (ALT + SHIFT + n)">
         <span class="page-direction">
           <label>
-            {{ i18n "next_page" }}
+            {{- i18n "next_page" -}}
           </label>
           <i>arrow_forward</i>
         </span>
@@ -41,12 +41,12 @@
           {{- .Name -}}
         </span>
       </a>
-      {{ else }}
+      {{- else -}}
         <div class="component card filled next empty">
           <span class="page-direction">
           </span>
         </div>
-      {{- end }}
+      {{- end -}}
     </nav>
-{{- end }}
-{{- end }}
+{{- end -}}
+{{- end -}}

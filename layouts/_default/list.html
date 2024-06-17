@@ -1,37 +1,37 @@
-{{- define "main" }}
+{{- define "main" -}}
 
-    {{- $pages := union .RegularPages .Sections }}
+    {{- $pages := union .RegularPages .Sections -}}
 
     <article class="layout panes canonical-feed">
         <section class="layout pane">
 
-            {{- range $index, $page := $pages }}        
+            {{- range $index, $page := $pages -}}        
                 <a  class="component card outlined"
-                    aria-label="post link to {{ .Title | plainify }}" 
-                    href="{{ .Permalink }}">
+                    aria-label="post link to {{- .Title | plainify -}}" 
+                    href="{{- .Permalink -}}">
 
-                    {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-                    {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}            
+                    {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) -}}
+                    {{- partial "components/cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) -}}            
                 
-                    {{- if .Params.coverimage }}
+                    {{- if .Params.coverimage -}}
                         <img    loading="lazy" 
-                                src="{{ .Params.coverimage | absURL }}" 
-                                alt="{{ $.Title }} - descriptive image of the post content">
-                    {{- end }}
+                                src="{{- .Params.coverimage | absURL -}}" 
+                                alt="{{- $.Title -}} - descriptive image of the post content">
+                    {{- end -}}
                     
                     <div class="card-content">
-                        {{- if not (.Param "hideMeta") }}
+                        {{- if not (.Param "hideMeta") -}}
                             {{- partial "components/post-meta.html" . -}}
-                        {{- end }}
+                        {{- end -}}
                         
                         <span class="title-small">
-                            {{- .Title }}
+                            {{- .Title -}}
                         </span>
                     </div>
                 </a>
-            {{- end }}
+            {{- end -}}
 
         </section>
     </article>
 
-{{- end }}
+{{- end -}}

@@ -1,23 +1,23 @@
-{{- define "main" }}
+{{- define "main" -}}
 
 <article class="layout panes basic-fixedflex" id="single">
   <section class="layout pane" id="post-content">
-      {{- if .Content }}
-        {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- if .Content -}}
+        {{- if not (.Param "disableAnchoredHeadings") -}}
           {{- partial "anchored_headings.html" .Content -}}
-        {{- else }}
+        {{- else -}}
           {{- .Content | safeHTML -}}
-        {{- end }}  
-      {{- end }}
+        {{- end -}}  
+      {{- end -}}
 
-      <!-- Feedback form for Contact page -->
-      {{ if eq .Title "Contact"}}
+      {{/* Feedback form for Contact page */}}
+      {{- if eq .Title "Contact"}}
         {{- partial "sections/feedback-form.html" . -}}
-      {{- end }}
+      {{- end -}}
   </section>
 
   <aside class="layout pane fixed-pane" id="toc">
-    {{- partial "sections/toc.html" . }}
+    {{- partial "sections/toc.html" . -}}
   </aside>
 </article>
 
@@ -25,4 +25,4 @@
   {{- partial "sections/page-links.html" . -}}
 </section>
 
-{{- end }}
+{{- end -}}

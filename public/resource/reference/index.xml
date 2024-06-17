@@ -1,321 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>
-      
-        
-          Reference on 
-        
-        Wonyoung Jang
-      
-    </title>
-    <link>
-      http://localhost:1313/resource/reference/
-    </link>
+    <title>Reference onWonyoung Jang</title>
+    <link>http://localhost:1313/resource/reference/</link>
     <description>
-      Recent content 
-      
-        
-          in Reference 
-        
-      
-        on Wonyoung Jang
-    </description>
-    <generator>
+      Recent contentin ReferenceonWonyoung Jang</description><generator>
       Hugo -- gohugo.io
-    </generator>
-    
-      <language>
+    </generator><language>
         en-us
       </language>
-    
-    
-    
-    
-    
-      <lastBuildDate>
-        Tue, 11 Jun 2024 00:00:00 +0000
-      </lastBuildDate>
-    <atom:link href="http://localhost:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-          <title>
-            (Basic) Fixed and flexible layout
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/
-          </guid>
-          <description>
-            
-              A two-pane layout with one fixed width pane and one flexible pane
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            (Basic) Single pane layout
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/basic-single-pane-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/basic-single-pane-layout/
-          </guid>
-          <description>
-            
-              A single pane layout with one flexible pane
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            (Basic) Split-pane layout
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/basic-split-pane-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/basic-split-pane-layout/
-          </guid>
-          <description>
-            
-              A two-pane layout with two flexible panes
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            (Canonical) Feed layout
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/canonical-feed-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/canonical-feed-layout/
-          </guid>
-          <description>
-            
-              A canonical layout for items that can flow into a feed
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            (Canonical) List-detail layout
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/canonical-list-detail-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/canonical-list-detail-layout/
-          </guid>
-          <description>
-            
-              A canonical layout with a list pane and a detail pane
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            (Canonical) Supporting pane layout
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/canonical-supporting-pane-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/canonical-supporting-pane-layout/
-          </guid>
-          <description>
-            
-              A canonical layout with a focus (primary) pane and a supporting (secondary) pane
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            Colors
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/colors/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/colors/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            Components
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/components/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/components/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            List of Admonitions for This Site
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/
-          </guid>
-          <description>
-            
-              This page is a list of admonitions used on this site
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            Shapes
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/shapes/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/shapes/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            States and elevation
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/states-and-elevation/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/states-and-elevation/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            Typography
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/typography/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/typography/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            Transitions
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/transitions/
-          </link>
-          <pubDate>
-            Tue, 11 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/transitions/
-          </guid>
-          <description>
-            
-              Transitions
-            </description>
-        </item>
-    
-        <item>
-          <title>
-            List of Keyboard Shortcuts for WonyoungJang.org
-          </title>
-          <link>
-            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
-          </link>
-          <pubDate>
-            Fri, 29 Mar 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
-          </guid>
-          <description>
-            
-              This page is a list of keyboard shortcuts for navigating this site
-            </description>
-        </item>
-    
-  </channel>
+    <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" /><item>
+          <title>(Basic) Fixed and flexible layout</title>
+          <link>http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/basic-fixed-and-flexible-layout/</guid>
+          <description>A two-pane layout with one fixed width pane and one flexible pane</description></item><item>
+          <title>(Basic) Single pane layout</title>
+          <link>http://localhost:1313/resource/reference/basic-single-pane-layout/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/basic-single-pane-layout/</guid>
+          <description>A single pane layout with one flexible pane</description></item><item>
+          <title>(Basic) Split-pane layout</title>
+          <link>http://localhost:1313/resource/reference/basic-split-pane-layout/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/basic-split-pane-layout/</guid>
+          <description>A two-pane layout with two flexible panes</description></item><item>
+          <title>(Canonical) Feed layout</title>
+          <link>http://localhost:1313/resource/reference/canonical-feed-layout/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/canonical-feed-layout/</guid>
+          <description>A canonical layout for items that can flow into a feed</description></item><item>
+          <title>(Canonical) List-detail layout</title>
+          <link>http://localhost:1313/resource/reference/canonical-list-detail-layout/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/canonical-list-detail-layout/</guid>
+          <description>A canonical layout with a list pane and a detail pane</description></item><item>
+          <title>(Canonical) Supporting pane layout</title>
+          <link>http://localhost:1313/resource/reference/canonical-supporting-pane-layout/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/canonical-supporting-pane-layout/</guid>
+          <description>A canonical layout with a focus (primary) pane and a supporting (secondary) pane</description></item><item>
+          <title>Colors</title>
+          <link>http://localhost:1313/resource/reference/colors/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/colors/</guid>
+          <description></description></item><item>
+          <title>Components</title>
+          <link>http://localhost:1313/resource/reference/components/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/components/</guid>
+          <description></description></item><item>
+          <title>List of Admonitions for This Site</title>
+          <link>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
+          <description>This page is a list of admonitions used on this site</description></item><item>
+          <title>Shapes</title>
+          <link>http://localhost:1313/resource/reference/shapes/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/shapes/</guid>
+          <description></description></item><item>
+          <title>States and elevation</title>
+          <link>http://localhost:1313/resource/reference/states-and-elevation/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/states-and-elevation/</guid>
+          <description></description></item><item>
+          <title>Typography</title>
+          <link>http://localhost:1313/resource/reference/typography/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/typography/</guid>
+          <description></description></item><item>
+          <title>Transitions</title>
+          <link>http://localhost:1313/resource/reference/transitions/</link>
+          <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/transitions/</guid>
+          <description>Transitions</description></item><item>
+          <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
+          <link>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
+          <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+          <guid>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
+          <description>This page is a list of keyboard shortcuts for navigating this site</description></item></channel>
 </rss>

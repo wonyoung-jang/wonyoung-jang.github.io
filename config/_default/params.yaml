@@ -78,6 +78,8 @@ disableAnchoredHeadings: false
 hideMeta: false
 hideSummary: false
 
-UseHugoToc: true
+UseHugoToc: false
 showtoc: true
 tocopen: true
+
+debug: false

@@ -10,7 +10,7 @@
 
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
 
-<!-- Meta -->
+{{/* Meta */}}
 {{- if .IsHome }}
 {{ with .Site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
 {{- else }}
@@ -26,7 +26,7 @@
 
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
 
-<!-- Styles -->
+{{/* Styles */}}
 {{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
 {{- $reference          := (resources.Match "css/01-reference/*.css")   | resources.Concat "assets/css/01-reference.css" }}
 {{- $system             := (resources.Match "css/02-system/*.css")      | resources.Concat "assets/css/02-system.css" }}
@@ -55,7 +55,7 @@
     <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="stylesheet">
 {{- end }}
 
-<!-- Search -->
+{{/* Search */}}
 {{- if (eq .Layout `search`) -}}
     <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
     {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) | resources.Minify }}
@@ -69,16 +69,16 @@
     {{- end }}
 {{- end -}}
 
-<!-- Favicons -->
+{{/* Favicons */}}
 <link rel="icon" href="{{ .Site.Params.assets.favicon | default "favicon.ico" | absURL }}">
 <link rel="icon" type="image/webp" sizes="16x16" href="{{ .Site.Params.assets.favicon16x16 | default "favicon-16x16.webp" | absURL }}">
 <link rel="icon" type="image/webp" sizes="32x32" href="{{ .Site.Params.assets.favicon32x32 | default "favicon-32x32.webp" | absURL }}">
 <link rel="apple-touch-icon" href="{{ .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.webp" | absURL }}">
 
-<!-- Generator -->
+{{/* Generator */}}
 {{ hugo.Generator }}
 
-<!-- RSS -->
+{{/* RSS */}}
 {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
@@ -87,7 +87,7 @@
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
 
-<!-- Misc -->
+{{/* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/opengraph.html" . }}

@@ -1,8 +1,8 @@
-{{ $repoName := split .githubRepo "/" | last 1 }}
+{{- $repoName := split .githubRepo "/" | last 1 -}}
 <a  class="component button common elevated"
-    href="{{ .githubRepo }}"
+    href="{{- .githubRepo -}}"
     target="_blank" 
     rel="noopener noreferrer" 
-    aria-label="View the source code on GitHub {{ .githubRepo }} ">
-    View the source @{{ index $repoName 0 }} on GitHub
+    aria-label="View the source code on GitHub {{- .githubRepo -}} ">
+    View the source @{{- index $repoName 0 -}} on GitHub
 </a>

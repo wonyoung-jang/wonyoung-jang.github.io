@@ -1,11 +1,11 @@
-{{- with .buttons }}
-    {{- range . }}
+{{- with .buttons -}}
+    {{- range . -}}
         <a  class="component button common filled-tonal"
-            id="{{ .name | urlize }}"
-            href="{{ trim .url " " }}" 
+            id="{{- .name | urlize -}}"
+            href="{{- trim .url " " -}}" 
             rel="noopener" 
-            title="{{ .name | title }}">
-            {{ .name | title }}
+            title="{{- .name | title -}}">
+            {{- .name | title -}}
         </a>
-    {{- end }}
-{{- end }}
+    {{- end -}}
+{{- end -}}

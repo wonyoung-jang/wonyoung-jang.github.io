@@ -6,26 +6,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <style>
-             
-            body {
-                margin: 0;
+            .debug {
+                display: flex;
+                flex-flow: column nowrap;
+
+                pre {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    flex: 1 1 0;
+                    border: 1px solid black;
+                    text-wrap: auto;
+                }
             }
-        </style>
-        
-        <meta charset="utf-8">
+        </style><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
 
-<title>Projects | Wonyoung Jang</title>
+<title>404 Page not found | Wonyoung Jang</title>
 
 
 <meta name="keywords" content="">
-<meta name="description" content="Projects - Wonyoung Jang">
+<meta name="description" content="Wonyoung Jang&#39;s personal website">
     
 <meta name="author" content="Wonyoung Jang">
 
-<link rel="canonical" href="http://localhost:1313/project/" />
+<link rel="canonical" href="http://localhost:1313/404.html" />
 
 
     <link rel="preload" href="/favicon-32x32.webp" as="image">
@@ -38,45 +44,53 @@
 <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.webp">
 
 
-<meta name="generator" content="Hugo 0.124.1">
+<meta name="generator" content="Hugo 0.127.0">
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/project/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/project/index.json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/project/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/404.html">
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTMKJG4NFZ"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-RTMKJG4NFZ', { 'anonymize_ip': false });
-}
-</script>
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTMKJG4NFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RTMKJG4NFZ');
+        }
+      </script>
+    
+  
 
-    <meta property="og:title" content="Projects" />
-<meta property="og:description" content="Wonyoung Jang&#39;s personal website" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/project/" />
 
-    <meta itemprop="name" content="Projects">
-<meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
-    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Wonyoung Jang&#39;s personal website"/>
+    <meta property="og:url" content="http://localhost:1313/404.html">
+  <meta property="og:site_name" content="Wonyoung Jang">
+  <meta property="og:title" content="404 Page not found">
+  <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-        
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    
+  <meta itemprop="name" content="404 Page not found">
+  <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="404 Page not found">
+  <meta name="twitter:description" content="Wonyoung Jang&#39;s personal website">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     </head>
     
     
     <body id="top">        
         
-        
         <header role="banner">
-            
 <nav class="component top-app-bar center small" aria-label="Top App Bar">
     
     <section class="start">
@@ -84,8 +98,7 @@ if (!doNotTrack) {
         <a  class="component button icon" id="site-icon"
     href="http://localhost:1313/"
     accesskey="h" 
-    title="Wonyoung Jang (ALT + SHIFT + h)">
-        <img    loading="lazy" 
+    title="Wonyoung Jang (ALT + SHIFT + h)"><img    loading="lazy" 
                 src="http://localhost:1313/favicon-32x32.webp" 
                 alt="logo" 
                 aria-label="logo"
@@ -108,21 +121,16 @@ if (!doNotTrack) {
             </ul>
 
         
-        
-    <button class="component button icon" 
+        <button class="component button icon" 
             id="theme-toggle" 
             accesskey="t" 
             title="Toggle Theme (ALT + SHIFT + t)" >
         <i id="moon">dark_mode</i>
         <i id="sun">light_mode</i>
-    </button>
+    </button>        
         
         
-        
-        
-
-
-<button 
+        <button 
   class="component button icon"
   id="random-button"
   accesskey="r"
@@ -133,7 +141,7 @@ if (!doNotTrack) {
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/first-lego-league-challenge-q-learning-event-scheduler\/";
+    window.location.href = "\/project\/university\/package-delivery-route-optimization\/";
   }
 </script>
         
@@ -172,7 +180,7 @@ if (!doNotTrack) {
         
         
             
-                <a  class="component tab active"
+                <a  class="component tab"
                     href="/project/">
                     Projects
                 </a>
@@ -217,8 +225,7 @@ if (!doNotTrack) {
             document.body.classList.add('dark');
         }
     </script>
-
-        </header>
+</header>
 
         
         <main role="main">
@@ -226,73 +233,30 @@ if (!doNotTrack) {
             
             <div class="layout content-wrapper">
                 
-                
 
- 
-    <section class="layout page-header">
+<section class="layout page-header">
 
         
         <nav class="breadcrumbs label-large" aria-label="Breadcrumbs">
-            <ol>
-                 
-                    
-                        <li>
+            <ol><li>
                             <a href="http://localhost:1313/">
                                 Home
                             </a>
-                        </li>
-                     
-                
-            </ol>
+                        </li></ol>
         </nav>    
 
         
-        <h1 class="title">
-            Projects
-        </h1> 
+        <h1 class="title">Projects</h1> 
 
-        
-
-        
-
-        
-        
- 
-         
-    </section>
-
-
-                
-                
-
-<article class="layout panes basic-singlepane">
-    <section class="layout pane">
-
-        
-            <a  class="component list-item one"
+         </section><article class="layout panes basic-singlepane">
+    <section class="layout pane"><a  class="component list-item one"
                 href="http://localhost:1313/project/software/">
-                <span class="title-medium">
-                    Software
-                </span>
-            </a>
-        
-            <a  class="component list-item one"
+                <span class="title-medium">Software</span>
+            </a><a  class="component list-item one"
                 href="http://localhost:1313/project/university/">
-                <span class="title-medium">
-                    University
-                </span>
-            </a>
-        
-
-    </section>
-</article>
-
-
-
-                
-                
-            </div>
-            
+                <span class="title-medium">University</span>
+            </a></section>
+</article></div>
             
             
 <a  class="component button fab primary-container"
@@ -302,8 +266,7 @@ if (!doNotTrack) {
     title="Go to Top (ALT + SHIFT + g)" 
     accesskey="g">
     <i>vertical_align_top</i>
-</a>
-    <script>
+</a><script>
         var mybutton = document.getElementById("top-link");
         var scrollWrapper = document.querySelector("main");
         function handleScroll() {
@@ -327,10 +290,7 @@ if (!doNotTrack) {
             });
         });
     </script>
-
-            
             <footer role="contentinfo">    
-                
                 
 
 
@@ -439,11 +399,8 @@ if (!doNotTrack) {
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script>
-            </footer>
-        </main>
-
-        <script defer>
+    </script></footer>
+        </main><script defer>
     document.addEventListener('DOMContentLoaded', function() {
       var links = document.getElementsByTagName('a');
       var currentDomain = window.location.hostname;
@@ -458,6 +415,5 @@ if (!doNotTrack) {
         }
       }
     });
-</script>
-    </body>
+</script></body>
 </html>

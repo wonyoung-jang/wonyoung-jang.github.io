@@ -1,22 +1,22 @@
-{{- define "main" }}
+{{- define "main" -}}
 
 <article class="layout panes basic-singlepane">
   <section class="layout pane">
 
-      {{ range .Site.Pages.ByParam "title" }}
-        {{ if eq .Title "" }}
-          {{ continue }} 
-        {{ else }}
+      {{- range .Site.Pages.ByParam "title" -}}
+        {{- if eq .Title "" -}}
+          {{- continue -}} 
+        {{- else -}}
           <a class="component list-item one"
-              href="{{ .Permalink }}">
+              href="{{- .Permalink -}}">
               <span class="title-small">
-                {{ .Title }}
+                {{- .Title -}}
               </span>
           </a>
-        {{ end }}
-      {{ end }}
+        {{- end -}}
+      {{- end -}}
 
   </section>
 </article>
 
-{{ end }}
+{{- end -}}
