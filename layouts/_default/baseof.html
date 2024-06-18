@@ -5,37 +5,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <style>
-            .debug {
-                display: flex;
-                flex-flow: column nowrap;
-
-                pre {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    flex: 1 1 0;
-                    border: 1px solid black;
-                    text-wrap: auto;
-                }
-            }
-        </style>
-
         {{- partialCached "head.html" . -}}
         
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     
     {{/* Body */}}
-    <body id="top">        
+    <body id="top">     
+
+        {{/* Header */}}
+        <header role="banner">
+            {{- partialCached "base/header.html" . .Page -}}
+        </header>
+
         {{/* Debug */}}
         {{- if .Site.Params.Debug -}}
             {{- partial "debug.html" . -}}
         {{- end -}}
-
-        {{/* Header */}}
-        <header role="banner">
-            {{- partialCached "base/header.html" . -}}
-        </header>
 
         {{/* Main */}}
         <main role="main">
@@ -61,7 +50,5 @@
                 {{- partialCached "base/footer.html" . -}}
             </footer>
         </main>
-
-        {{- partialCached "scripts/links.html" . -}}
     </body>
 </html>

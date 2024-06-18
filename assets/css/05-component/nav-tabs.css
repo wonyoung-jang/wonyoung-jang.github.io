@@ -44,24 +44,6 @@
   }
 }
 
-.sub-menu {
-  display: none;
-  flex-flow: column nowrap;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  
-  z-index: 5;
-
-  color: var(--color-on-surface-variant);
-  background-color: var(--color-surface-container-lowest);
-  
-  border-radius: none;
-}
-
 /* Customize */
 .tabs,
 .tab {
@@ -69,10 +51,5 @@
 }
 
 .tabs {
-  box-shadow: var(--elevation2);
-
-  .tabs {
-    flex: 1 1 0;
-    box-shadow: var(--elevation0);
-  }
+  flex: 1 1 0;
 }

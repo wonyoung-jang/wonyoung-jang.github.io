@@ -21,8 +21,7 @@
                         {{/* Site Image */}}
                         {{- if .imageUrl -}}
                             <div class="home-image">
-                                <img    loading="lazy" 
-                                        src="{{- .imageUrl | absURL -}}" 
+                                <img    src="{{- .imageUrl | absURL -}}" 
                                         alt="{{- .imageTitle | default "profile image" -}}"
                                         height="{{- .imageHeight | default 150 -}}" 
                                         width="{{- .imageWidth | default 150 -}}" />

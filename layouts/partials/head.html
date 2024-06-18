@@ -26,18 +26,6 @@
 
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
 
-{{/* Styles */}}
-{{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
-{{- $reference          := (resources.Match "css/01-reference/*.css")   | resources.Concat "assets/css/01-reference.css" }}
-{{- $system             := (resources.Match "css/02-system/*.css")      | resources.Concat "assets/css/02-system.css" }}
-{{- $base               := (resources.Match "css/03-base/*.css")        | resources.Concat "assets/css/03-base.css" }}
-{{- $layout             := (resources.Match "css/04-layout/*.css")      | resources.Concat "assets/css/04-layout.css" }}
-{{- $component          := (resources.Match "css/05-component/*.css")   | resources.Concat "assets/css/05-component.css" }}
-{{- $custom             := (resources.Match "css/06-custom/*.css")      | resources.Concat "assets/css/06-custom.css" }}
-{{- $page               := (resources.Match "css/07-page/*.css")        | resources.Concat "assets/css/07-page.css" }}
-{{- $theme              := (resources.Match "css/08-theme/*.css")       | resources.Concat "assets/css/08-theme.css" }}
-{{- $stylesheet := (slice $reset $reference $system $base $layout $component $custom $page $theme) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
-
 {{- with .Site.Params.home }}
     {{- if and .enabled .imageUrl $.IsHome }}
         <link rel="preload" href="{{ .imageUrl }}" as="image">
@@ -46,13 +34,6 @@
 
 {{- with .Site.Params.label.icon }}
     <link rel="preload" href="{{ . }}" as="image">
-{{- end }}
-
-{{- if not .Site.Params.assets.disableFingerprinting }}
-    {{- $stylesheet := $stylesheet | fingerprint }}
-    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet">
-{{- else }}
-    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="stylesheet">
 {{- end }}
 
 {{/* Search */}}
@@ -75,9 +56,6 @@
 <link rel="icon" type="image/webp" sizes="32x32" href="{{ .Site.Params.assets.favicon32x32 | default "favicon-32x32.webp" | absURL }}">
 <link rel="apple-touch-icon" href="{{ .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.webp" | absURL }}">
 
-{{/* Generator */}}
-{{ hugo.Generator }}
-
 {{/* RSS */}}
 {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
@@ -94,3 +72,22 @@
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
 {{- end -}}
+
+{{/* Styles */}}
+{{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
+{{- $reference          := (resources.Match "css/01-reference/*.css")   | resources.Concat "assets/css/01-reference.css" }}
+{{- $system             := (resources.Match "css/02-system/*.css")      | resources.Concat "assets/css/02-system.css" }}
+{{- $base               := (resources.Match "css/03-base/*.css")        | resources.Concat "assets/css/03-base.css" }}
+{{- $layout             := (resources.Match "css/04-layout/*.css")      | resources.Concat "assets/css/04-layout.css" }}
+{{- $component          := (resources.Match "css/05-component/*.css")   | resources.Concat "assets/css/05-component.css" }}
+{{- $custom             := (resources.Match "css/06-custom/*.css")      | resources.Concat "assets/css/06-custom.css" }}
+{{- $page               := (resources.Match "css/07-page/*.css")        | resources.Concat "assets/css/07-page.css" }}
+{{- $theme              := (resources.Match "css/08-theme/*.css")       | resources.Concat "assets/css/08-theme.css" }}
+{{- $stylesheet := (slice $reset $reference $system $base $layout $component $custom $page $theme) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
+
+{{- if not .Site.Params.assets.disableFingerprinting }}
+    {{- $stylesheet := $stylesheet | fingerprint }}
+    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet">
+{{- else }}
+    <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="stylesheet">
+{{- end }}

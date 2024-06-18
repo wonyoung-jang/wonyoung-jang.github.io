@@ -1,11 +1,18 @@
 ---
-date:
-- 2024-04-01 Monday
-coverimage: ../assets/meta_page_icon_1710524695411_0.webp
-title: About
+aliases: 
 tags:
 categories:
-lastMod: 2024-06-13
+draft: false
+slug: 
+layout: 
+githubrepo: 
+keywords: 
+type: 
+date:
+- 2024-04-01 Monday
+description: 
+title: About
+lastMod: 2024-06-18
 ---
 ## About me
 

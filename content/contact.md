@@ -5,7 +5,7 @@ coverimage: ../assets/meta_page_icon_1710524695411_0.webp
 title: Contact
 tags:
 categories:
-lastMod: 2024-06-13
+lastMod: 2024-06-15
 ---
 ## Contact me directly
 

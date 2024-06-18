@@ -1,20 +1,15 @@
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }
 
   &:not(.component) {
+    color: var(--color-primary);
+    
     &:hover {
       text-decoration: underline;
-    }
-    
-    &.internal-link {
-      color: var(--color-primary);
-    }
-
-    &.external-link {
-      color: var(--color-tertiary);
     }
   }
 }

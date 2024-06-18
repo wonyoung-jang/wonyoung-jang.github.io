@@ -10,8 +10,7 @@
 
         {{ $page := . }}
         {{ range .Site.Menus.footer }}
-            <a  class="{{ if $page.IsMenuCurrent "footer" . }}active{{ end }}"
-                href="{{ .URL }}">
+            <a  href="{{ .URL }}">
                 {{ .Name }}
             </a>
         {{ end }}

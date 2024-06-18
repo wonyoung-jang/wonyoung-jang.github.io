@@ -40,9 +40,7 @@ home:
 cover:
   responsiveImages: true # Use responsive images
   linkFullImages: true # Link to full image
-  hidden: false # Hide cover image in all views
   hiddenInList: false # Hide cover image in list view
-  hiddenInSingle: false # Hide cover image in single post view
 
 env: production
 

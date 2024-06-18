@@ -11,14 +11,6 @@
   border-radius: inherit;
   outline: 0;
   
-  background: transparent;
-  
-  color: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  font-family: inherit;
-  
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -38,4 +30,12 @@ q {
     content: "";
     content: none;
   }
+}
+
+input, 
+button,
+textarea,
+select {
+  font: inherit;
+  background-color: transparent;
 }
