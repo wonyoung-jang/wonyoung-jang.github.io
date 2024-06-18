@@ -198,15 +198,89 @@
         </nav>    
 
         
-        <h1 class="title">Single pane layout</h1> 
+        <h1 class="title">Motion</h1> 
 
-        <span class="description title-small">A  single pane layout with one flexible pane</span><div class="label-large"><em class='metadata' title='2024-06-18 00:00:00 +0000 UTC'><span>Tuesday, June 18, 2024 - 0 min read</span></em></div></section><article class="layout panes basic-singlepane" style="border: 1px solid">
-    <section class="layout pane" style="border: 1px dashed">
-        <h2>Single pane layout</h2>
-        <p>Lorem ipsum</p>
-    </section>
-</article><nav class="layout page-navigation" aria-label="Page Navigation"><a  class="component card filled prev"
-            href="http://192.168.40.181:1313/resource/reference/motion/"
+        <div class="label-large"><em class='metadata' title='2024-06-18 00:00:00 +0000 UTC'><span>Tuesday, June 18, 2024 - 0 min read</span></em></div></section><style>
+        .container {
+            margin-bottom: 40px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: var(--color-add30-container);
+            transition: all 0.5s ease-in-out;
+        }
+        .box:hover.fade {
+            opacity: 0;
+        }
+        .box:hover.slide {
+            transform: translateX(200px);
+        }
+        .box:hover.scale {
+            transform: scale(1.5);
+        }
+        .clean-fade-in {
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+
+            &:hover {
+                opacity: 0;
+                transition: opacity 0.5s ease-out;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+        .skeleton {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: var(--color-surface-bright);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                background-color: var(--color-surface-bright);
+            }
+            50% {
+                background-color: var(--color-surface-dim);
+            }
+            100% {
+                background-color: var(--color-surface-bright);
+            }
+        }
+    </style>
+    <article class="layout panes basic-singlepane">
+        <section class="layout pane">
+            <h1>Transitions</h1>
+            <div class="container">
+                <h2>Fade Transition</h2>
+                <div class="box fade"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Slide Transition</h2>
+                <div class="box slide"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Scale Transition</h2>
+                <div class="box scale"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Clean Fade</h2>
+                <div class="box clean-fade-in"></div>
+            </div>
+            
+            <div class="container">
+                <h2>Skeleton Loader</h2>
+                <div class="skeleton"></div>
+            </div>
+        </section>
+    </article><nav class="layout page-navigation" aria-label="Page Navigation"><a  class="component card filled prev"
+            href="http://192.168.40.181:1313/resource/reference/list-detail-layout/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
           <span class="page-direction">
@@ -214,9 +288,9 @@
             <label>Previous</label>
           </span>
           
-          <span class="title-large">Motion</span>
+          <span class="title-large">List-detail layout</span>
         </a><a  class="component card filled next"
-          href="http://192.168.40.181:1313/resource/reference/split-pane-layout/"
+          href="http://192.168.40.181:1313/resource/reference/single-pane-layout/"
           accesskey="n"
           title="Next page (ALT + SHIFT + n)">
         <span class="page-direction">
@@ -224,7 +298,7 @@
           <i>arrow_forward</i>
         </span>
 
-        <span class="title-large">Split-pane layout</span>
+        <span class="title-large">Single pane layout</span>
       </a></nav></div>
             
             
