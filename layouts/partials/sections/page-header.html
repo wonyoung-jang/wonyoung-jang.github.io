@@ -38,12 +38,10 @@
 
         {{/* Metadata */}}
         {{- if (and (ne .Layout "list") (ne .Layout "section") (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (eq .Title "404 Page not found"))) -}}
-            {{- if not (.Param "hideMeta") -}}
-                <div class="label-large">
-                    {{- partial "components/post-meta.html" . -}}
-                    {{- partial "translation_list.html" . -}}
-                </div>
-            {{- end -}}
+            <div class="label-large">
+                {{- partial "components/post-meta.html" . -}}
+                {{- partial "translation_list.html" . -}}
+            </div>
         {{- end -}}
 
         {{/* Github button */}}

@@ -1,7 +1,7 @@
 {{- if .IsTranslated -}}
 
     {{- if (ne .Layout "search") }}
-        {{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) }}
+        {{- if or .Params.author $.Site.Params.author (not .Date.IsZero) }}
             &nbsp;|&nbsp;
         {{- end -}}
     {{- end }}

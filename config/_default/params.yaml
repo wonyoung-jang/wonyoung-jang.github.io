@@ -1,28 +1,24 @@
 assets:
-  disableHLJS: false
-  disableFingerprinting: false
   favicon: '/favicon.ico'
   favicon16x16: '/favicon-16x16.webp'
   favicon32x32: '/favicon-32x32.webp'
   apple_touch_icon: '/apple-touch-icon.webp'
 
 label:
-  text: 'Wonyoung Jang'
   icon: '/favicon-32x32.webp'
-  iconHeight: 24px
+  iconHeight: 24
 
 socialIcons:
-  - name: "github"
+  - name: "GitHub"
     url: "https://github.com/wonyoung-jang"
-  - name: "kofi"
+  - name: "Ko-fi"
     url: "https://ko-fi.com/wonyoung_jang"
-  - name: "rss"
-    url: "https://wonyoungjang.org/index.xml"
-  - name: "email"
+  - name: "Email"
     url: "mailto:contact@wonyoungjang.org"
+  - name: "RSS"
+    url: "https://wonyoungjang.org/index.xml"
 
 home:
-  enabled: true
   title: Wonyoung Jang
   subtitle: Personal Website
   
@@ -37,44 +33,6 @@ home:
     - name: University coursework projects
       url: "/project/university"
 
-cover:
-  responsiveImages: true # Use responsive images
-  linkFullImages: true # Link to full image
-  hiddenInList: false # Hide cover image in list view
-
-env: production
-
-contact: "contact@wonyoungjang.org"
-description: "Wonyoung Jang's personal website"
-
-feedlinks: true
-copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
-mobileMenu: true
-
-DateFormat: "2006, Jan 02"
 defaultTheme: auto
-
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowShareButtons: true
-ShowPostNavLinks: true
-ShowCodeCopyButtons: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-ShowAllPagesInArchive: true
-ShowCanonicalLink: true
-
-canonicalURLS: true
-
-disableSpecial1stPost: false
-disableScrollToTop: false
-disableAnchoredHeadings: false
-
-hideMeta: false
-hideSummary: false
-
-UseHugoToc: false
-showtoc: true
-tocopen: true
 
 debug: false

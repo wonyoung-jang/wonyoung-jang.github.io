@@ -8,29 +8,27 @@
     <i>vertical_align_top</i>
 </a>
 
-{{- if (not .Site.Params.disableScrollToTop) -}}
-    <script>
-        var mybutton = document.getElementById("top-link");
-        var scrollWrapper = document.querySelector("main");
-        function handleScroll() {
-            if (scrollWrapper.scrollTop > 100) {
-                mybutton.style.visibility = "visible";
-                mybutton.style.opacity = "1";
-            } else if (window.pageYOffset > 100) {
-                mybutton.style.visibility = "visible";
-                mybutton.style.opacity = "1";
-            } else {
-                mybutton.style.visibility = "hidden";
-                mybutton.style.opacity = "0";
-            }
+<script>
+    var mybutton = document.getElementById("top-link");
+    var scrollWrapper = document.querySelector("main");
+    function handleScroll() {
+        if (scrollWrapper.scrollTop > 100) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else if (window.pageYOffset > 100) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
         }
-        window.addEventListener("scroll", handleScroll);
-        scrollWrapper.addEventListener("scroll", handleScroll);
-        mybutton.addEventListener("click", function() {
-            scrollWrapper.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+    }
+    window.addEventListener("scroll", handleScroll);
+    scrollWrapper.addEventListener("scroll", handleScroll);
+    mybutton.addEventListener("click", function() {
+        scrollWrapper.scrollTo({
+            top: 0,
+            behavior: "smooth"
         });
-    </script>
-{{- end -}}
+    });
+</script>

@@ -8,6 +8,9 @@
     </generator><language>
         en-us
       </language>
+    <copyright>
+        &lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;
+      </copyright>
     <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.40.181:1313/index.xml" rel="self" type="application/rss+xml" /><item>
           <title>Components</title>
           <link>http://192.168.40.181:1313/resource/reference/components/</link>

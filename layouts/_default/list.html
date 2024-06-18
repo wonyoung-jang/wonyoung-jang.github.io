@@ -11,9 +11,7 @@
                     href="{{- .Permalink -}}">        
                     
                     <div class="card-content">
-                        {{- if not (.Param "hideMeta") -}}
-                            {{- partial "components/post-meta.html" . -}}
-                        {{- end -}}
+                        {{- partial "components/post-meta.html" . -}}
                         
                         <span class="title-small">
                             {{- .Title -}}

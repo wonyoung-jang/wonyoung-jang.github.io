@@ -1,6 +1,6 @@
 {{- define "main" -}}
     {{- if .IsHome -}}
-        {{- with .Site.Params.home -}}
+        {{- with .Site.Params.Home -}}
 
             <article class="layout panes singlepane" id="home">
                 <section class="layout pane">
@@ -15,6 +15,7 @@
                             {{- partialCached "components/homepage-buttons.html" .}}
                         </nav>
                     </div>
+                    
                     <div class="showcase-panel">
                         <h2>Showcases</h2>
                         <table>

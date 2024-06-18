@@ -3,12 +3,11 @@
     accesskey="h" 
     title="Wonyoung Jang (ALT + SHIFT + h)">
 
-    {{- if .Site.Params.label.icon -}}
-        <img    
-                src="{{- .Site.Params.label.icon | absURL -}}" 
+    {{- if .Site.Params.Label.Icon -}}
+        <img    src="{{- .Site.Params.Label.Icon | absURL -}}" 
                 alt="logo" 
                 aria-label="logo"
-                width="24"
-                height="24">
+                width="{{- .Site.Params.Label.IconHeight -}}"
+                height="{{- .Site.Params.Label.IconHeight -}}">
     {{- end -}}
 </a>

@@ -1,5 +1,4 @@
-{{- if (.Param "ShowPostNavLinks") -}}
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+{{- $pages := site.RegularPages -}}
 {{- if and (gt (len $pages) 1) (in $pages . ) -}}
     <nav class="layout page-navigation" aria-label="Page Navigation">
       {{- with $pages.Next . -}}
@@ -48,5 +47,4 @@
         </div>
       {{- end -}}
     </nav>
-{{- end -}}
 {{- end -}}
