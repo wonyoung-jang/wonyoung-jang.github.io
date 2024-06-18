@@ -1,11 +1,17 @@
 ---
-url: /sitemap/
+aliases: 
+draft: false
+slug: 
 layout: sitemap
-type: sitemap
-summary: Sitemap
+githubrepo: 
+keywords: 
+type: 
+date:
+- 2024-01-01 Monday
+description: A sitemap for https://wonyoungjang.org
 title: Sitemap
 tags:
 categories:
-date: 2024-06-11
 lastMod: 2024-06-11
 ---
+

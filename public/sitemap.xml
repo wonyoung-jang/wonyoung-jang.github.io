@@ -2,63 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.40.181:1313/resource/reference/basic-fixed-and-flexible-layout/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/components/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/basic-single-pane-layout/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/feed-layout/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/basic-split-pane-layout/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/canonical-list-detail-layout/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/list-detail-layout/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/canonical-supporting-pane-layout/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/single-pane-layout/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/colors/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/split-pane-layout/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/project/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/states-and-elevation/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/typography/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <loc>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</loc>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -72,7 +52,12 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/canonical-feed-layout/</loc>
+    <loc>http://192.168.40.181:1313/resource/reference/colors/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -82,7 +67,27 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/states-and-elevation/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/typography/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/project/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/</loc>
+    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -108,7 +113,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
-    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-14T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -118,6 +123,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/project/software/this-website/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -178,10 +188,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/graph/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

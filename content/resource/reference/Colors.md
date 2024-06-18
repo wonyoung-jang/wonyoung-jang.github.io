@@ -1,17 +1,13 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: colors
-githubrepo: 
-keywords: 
-type: showcase/tokens
 date:
 - 2024-06-10 Monday
+coverimage: ../assets/colors.webp
 description:
 - WonyoungJang.org
+type: showcase/tokens
+layout: colors
 title: Colors
-lastMod: 2024-06-17
+tags:
+categories:
+lastMod: 2024-06-13
 ---

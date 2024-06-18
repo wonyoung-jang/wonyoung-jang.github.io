@@ -44,7 +44,6 @@ cover:
 
 env: production
 
-author: "Wonyoung Jang"
 contact: "contact@wonyoungjang.org"
 description: "Wonyoung Jang's personal website"
 
@@ -54,19 +53,17 @@ mobileMenu: true
 
 DateFormat: "2006, Jan 02"
 defaultTheme: auto
+
 ShowReadingTime: true
-
 ShowBreadCrumbs: true
-
 ShowShareButtons: true
 ShowPostNavLinks: true
-
 ShowCodeCopyButtons: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 ShowAllPagesInArchive: true
-
 ShowCanonicalLink: true
+
 canonicalURLS: true
 
 disableSpecial1stPost: false

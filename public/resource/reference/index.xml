@@ -9,60 +9,65 @@
         en-us
       </language>
     <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.40.181:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" /><item>
-          <title>(Basic) Fixed and flexible layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/basic-fixed-and-flexible-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/basic-fixed-and-flexible-layout/</guid>
+          <title>Components</title>
+          <link>http://192.168.40.181:1313/resource/reference/components/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
+          <description></description></item><item>
+          <title>Feed layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/feed-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/feed-layout/</guid>
+          <description>A canonical layout for items that can flow into a feed</description></item><item>
+          <title>Fixed and flexible layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</guid>
           <description>A two pane layout with one fixed and one flexible pane</description></item><item>
-          <title>(Basic) Single pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/basic-single-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/basic-single-pane-layout/</guid>
-          <description>A  single pane layout with one flexible pane</description></item><item>
-          <title>(Basic) Split-pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/basic-split-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/basic-split-pane-layout/</guid>
-          <description>A two-pane layout with two flexible panes</description></item><item>
-          <title>(Canonical) List-detail layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/canonical-list-detail-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/canonical-list-detail-layout/</guid>
+          <title>List-detail layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
           <description>A canonical layout with a list pane and a detail pane</description></item><item>
-          <title>(Canonical) Supporting pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/canonical-supporting-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/canonical-supporting-pane-layout/</guid>
+          <title>Single pane layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/single-pane-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/single-pane-layout/</guid>
+          <description>A  single pane layout with one flexible pane</description></item><item>
+          <title>Split-pane layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/split-pane-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/split-pane-layout/</guid>
+          <description>A two-pane layout with two flexible panes</description></item><item>
+          <title>Supporting pane layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
           <description>A canonical layout with a focus (primary) pane and a supporting (secondary) pane</description></item><item>
           <title>Colors</title>
           <link>http://192.168.40.181:1313/resource/reference/colors/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
           <description></description></item><item>
           <title>List of Admonitions for This Site</title>
           <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
           <description>This page is a list of admonitions used on this site</description></item><item>
-          <title>States and elevation</title>
-          <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
-          <description></description></item><item>
-          <title>Typography</title>
-          <link>http://192.168.40.181:1313/resource/reference/typography/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
-          <description></description></item><item>
-          <title>(Canonical) Feed layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/canonical-feed-layout/</link>
-          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/canonical-feed-layout/</guid>
-          <description>A canonical layout for items that can flow into a feed</description></item><item>
           <title>Shapes</title>
           <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
           <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
+          <description></description></item><item>
+          <title>States and elevation</title>
+          <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
+          <description></description></item><item>
+          <title>Typography</title>
+          <link>http://192.168.40.181:1313/resource/reference/typography/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
           <description></description></item><item>
           <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
           <link>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>

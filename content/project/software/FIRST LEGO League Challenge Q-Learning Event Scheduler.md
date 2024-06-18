@@ -11,9 +11,9 @@ type:
 date: 2024-02-25
 description: A FLLC event scheduler using Q-Learning
 title: FIRST LEGO League Challenge Q-Learning Event Scheduler
-lastMod: 2024-06-18
+lastMod: 2024-06-13
 ---
-![image.png](/assets/fllc.png)
+
 
 ## A brief history
 

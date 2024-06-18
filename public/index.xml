@@ -9,145 +9,159 @@
         en-us
       </language>
     <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.40.181:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+          <title>Components</title>
+          <link>http://192.168.40.181:1313/resource/reference/components/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
+          <description></description></item><item>
+          <title>Feed layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/feed-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/feed-layout/</guid>
+          <description>A canonical layout for items that can flow into a feed</description></item><item>
+          <title>Fixed and flexible layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</guid>
+          <description>A two pane layout with one fixed and one flexible pane</description></item><item>
+          <title>List-detail layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
+          <description>A canonical layout with a list pane and a detail pane</description></item><item>
+          <title>Single pane layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/single-pane-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/single-pane-layout/</guid>
+          <description>A  single pane layout with one flexible pane</description></item><item>
+          <title>Split-pane layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/split-pane-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/split-pane-layout/</guid>
+          <description>A two-pane layout with two flexible panes</description></item><item>
+          <title>Supporting pane layout</title>
+          <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
+          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
+          <description>A canonical layout with a focus (primary) pane and a supporting (secondary) pane</description></item><item>
           <title>About</title>
           <link>http://192.168.40.181:1313/about/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+          <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/about/</guid>
           <description>About me Hello!
 Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
 I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
 I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description></item><item>
-          <title>(Basic) Fixed and flexible layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/basic-fixed-and-flexible-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/basic-fixed-and-flexible-layout/</guid>
-          <description>A two pane layout with one fixed and one flexible pane</description></item><item>
-          <title>(Basic) Fixed and flexible layout</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/basic-fixed-and-flexible-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/basic-fixed-and-flexible-layout/</guid>
-          <description>A two pane layout with one fixed and one flexible pane</description></item><item>
-          <title>(Basic) Single pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/basic-single-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/basic-single-pane-layout/</guid>
-          <description>A  single pane layout with one flexible pane</description></item><item>
-          <title>(Basic) Single pane layout</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/basic-single-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/basic-single-pane-layout/</guid>
-          <description>A  single pane layout with one flexible pane</description></item><item>
-          <title>(Basic) Split-pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/basic-split-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/basic-split-pane-layout/</guid>
-          <description>A two-pane layout with two flexible panes</description></item><item>
-          <title>(Basic) Split-pane layout</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/basic-split-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/basic-split-pane-layout/</guid>
-          <description>A two-pane layout with two flexible panes</description></item><item>
-          <title>(Canonical) List-detail layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/canonical-list-detail-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/canonical-list-detail-layout/</guid>
-          <description>A canonical layout with a list pane and a detail pane</description></item><item>
-          <title>(Canonical) List-detail layout</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/canonical-list-detail-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/canonical-list-detail-layout/</guid>
-          <description>A canonical layout with a list pane and a detail pane</description></item><item>
-          <title>(Canonical) Supporting pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/canonical-supporting-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/canonical-supporting-pane-layout/</guid>
-          <description>A canonical layout with a focus (primary) pane and a supporting (secondary) pane</description></item><item>
-          <title>(Canonical) Supporting pane layout</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/canonical-supporting-pane-layout/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/canonical-supporting-pane-layout/</guid>
-          <description>A canonical layout with a focus (primary) pane and a supporting (secondary) pane</description></item><item>
-          <title>Colors</title>
-          <link>http://192.168.40.181:1313/resource/reference/colors/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
-          <description></description></item><item>
-          <title>Colors</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/colors/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/colors/</guid>
-          <description></description></item><item>
-          <title>List of Admonitions for This Site</title>
-          <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
-          <description>This page is a list of admonitions used on this site</description></item><item>
-          <title>List of Admonitions for This Site</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/list-of-admonitions-for-this-site/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/list-of-admonitions-for-this-site/</guid>
-          <description>This page is a list of admonitions used on this site</description></item><item>
-          <title>States and elevation</title>
-          <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
-          <description></description></item><item>
-          <title>States and elevation</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/states-and-elevation/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/states-and-elevation/</guid>
-          <description></description></item><item>
-          <title>Typography</title>
-          <link>http://192.168.40.181:1313/resource/reference/typography/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
-          <description></description></item><item>
-          <title>Typography</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/typography/</link>
-          <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/typography/</guid>
-          <description></description></item><item>
           <title>Contact</title>
           <link>http://192.168.40.181:1313/contact/</link>
           <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/contact/</guid>
-          <description>Contact me directly The best way to contact me directly is through email at contact@wonyoungjang.org.
-Give me feedback Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.</description></item><item>
-          <title>(Canonical) Feed layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/canonical-feed-layout/</link>
+          <description></description></item><item>
+          <title>Colors</title>
+          <link>http://192.168.40.181:1313/resource/reference/colors/</link>
           <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/canonical-feed-layout/</guid>
-          <description>A canonical layout for items that can flow into a feed</description></item><item>
-          <title>(Canonical) Feed layout</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/canonical-feed-layout/</link>
+          <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
+          <description></description></item><item>
+          <title>List of Admonitions for This Site</title>
+          <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</link>
           <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/canonical-feed-layout/</guid>
-          <description>A canonical layout for items that can flow into a feed</description></item><item>
+          <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
+          <description>This page is a list of admonitions used on this site</description></item><item>
           <title>Shapes</title>
           <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
           <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
           <description></description></item><item>
-          <title>Shapes</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/shapes/</link>
+          <title>States and elevation</title>
+          <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
           <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/shapes/</guid>
+          <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
+          <description></description></item><item>
+          <title>Typography</title>
+          <link>http://192.168.40.181:1313/resource/reference/typography/</link>
+          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
           <description></description></item><item>
           <title>Sitemap</title>
           <link>http://192.168.40.181:1313/sitemap/</link>
           <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/sitemap/</guid>
-          <description>Sitemap</description></item><item>
+          <description>A sitemap for https://wonyoungjang.org</description></item><item>
           <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
           <link>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
           <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
           <description>This page is a list of keyboard shortcuts for navigating this site</description></item><item>
-          <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
-          <link>http://192.168.40.181:1313/resource/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
-          <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
-          <description>This page is a list of keyboard shortcuts for navigating this site</description></item><item>
+          <title>Realtime Multiplayer Drawing App</title>
+          <link>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing-app/</link>
+          <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing-app/</guid>
+          <description>Draw in realtime on a blank canvas with others on the same server</description></item><item>
+          <title>This Website</title>
+          <link>http://192.168.40.181:1313/project/software/this-website/</link>
+          <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/software/this-website/</guid>
+          <description>This page is a meta presentation for the deployment of this website (and this page)</description></item><item>
+          <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
+          <link>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
+          <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
+          <description>A FLLC event scheduler using Q-Learning</description></item><item>
+          <title>Save Top Level Reddit Comments</title>
+          <link>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</link>
+          <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</guid>
+          <description>Extract the parent comments of a [reddit](https://www.reddit.com/) post</description></item><item>
+          <title>Disaster Recovery Robot Simulation</title>
+          <link>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</link>
+          <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</guid>
+          <description>Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration</description></item><item>
+          <title>CS Career Recommendation Chatbot</title>
+          <link>http://192.168.40.181:1313/project/university/cs-career-recommendation-chatbot/</link>
+          <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/cs-career-recommendation-chatbot/</guid>
+          <description>Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor</description></item><item>
+          <title>Logseq Markdown Tokenizer</title>
+          <link>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</link>
+          <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</guid>
+          <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/)</description></item><item>
+          <title>Package Delivery Route Optimization</title>
+          <link>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</link>
+          <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</guid>
+          <description>Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface</description></item><item>
+          <title>Hotel Reservation Manager</title>
+          <link>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</link>
+          <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</guid>
+          <description>Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/)</description></item><item>
+          <title>Vacation Cart Manager</title>
+          <link>http://192.168.40.181:1313/project/university/vacation-cart-manager/</link>
+          <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/vacation-cart-manager/</guid>
+          <description>Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&amp;#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems</description></item><item>
+          <title>Retail Inventory Manager</title>
+          <link>http://192.168.40.181:1313/project/university/retail-inventory-manager/</link>
+          <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/retail-inventory-manager/</guid>
+          <description>Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&amp;#39;s needs</description></item><item>
+          <title>DVD Rental Database Revenue Insights</title>
+          <link>http://192.168.40.181:1313/project/university/dvd-rental-database-revenue-insights/</link>
+          <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/dvd-rental-database-revenue-insights/</guid>
+          <description>Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query</description></item><item>
+          <title>Student Record System</title>
+          <link>http://192.168.40.181:1313/project/university/student-record-system/</link>
+          <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/student-record-system/</guid>
+          <description>Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming</description></item><item>
+          <title>Bagel Corner and Mister Coffee Database Management</title>
+          <link>http://192.168.40.181:1313/project/university/bagel-corner-and-mister-coffee-database-management/</link>
+          <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
+          <description>Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting</description></item><item>
           <title></title>
           <link>http://192.168.40.181:1313/graph/</link>
           <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

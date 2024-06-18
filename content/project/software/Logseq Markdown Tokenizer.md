@@ -43,7 +43,7 @@ Encode Logseq's graph to enable semantic search, then leverage this encoding to 
 
 If I output this data as a csv, I can manipulate and format the data. For instance, with conditional formatting:
 
-![example_output.png](/assets/example_output_1710007420546_0.png)
+
 
 ## Summary
 

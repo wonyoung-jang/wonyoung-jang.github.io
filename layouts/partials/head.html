@@ -22,7 +22,7 @@
     {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
     {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
     
-<meta name="author" content="{{ (partial "author.html" . ) }}">
+<meta name="author" content="{{ (partial "author.html" .Site ) }}">
 
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
 

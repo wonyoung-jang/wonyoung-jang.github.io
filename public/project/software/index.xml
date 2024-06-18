@@ -19,6 +19,11 @@
           <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/project/software/this-website/</guid>
           <description>This page is a meta presentation for the deployment of this website (and this page)</description></item><item>
+          <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
+          <link>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
+          <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+          <guid>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
+          <description>A FLLC event scheduler using Q-Learning</description></item><item>
           <title>Save Top Level Reddit Comments</title>
           <link>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</link>
           <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
@@ -28,10 +33,5 @@
           <link>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</link>
           <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
           <guid>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</guid>
-          <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/)</description></item><item>
-          <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
-          <link>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
-          <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
-          <description>A FLLC event scheduler using Q-Learning</description></item></channel>
+          <description>Estimate the cost of tokenizing markdown files for [OpenAI&amp;#39;s text-embedding models](https://platform.openai.com/docs/guides/embeddings/)</description></item></channel>
 </rss>

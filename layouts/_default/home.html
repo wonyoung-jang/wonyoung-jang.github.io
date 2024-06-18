@@ -1,34 +1,21 @@
 {{- define "main" -}}
-
-    {{- if ( and .Site.Params.home.enabled .IsHome) -}}
+    {{- if .IsHome -}}
         {{- with .Site.Params.home -}}
 
-            <article class="layout panes basic-singlepane" id="home">
+            <article class="layout panes singlepane" id="home">
                 <section class="layout pane">
                     <div class="home-header">
-                        <div class="home-left">
-                            {{/* Site Title */}}
-                            <h1>
-                                {{- .title | default $.Site.Title | markdownify -}}
-                            </h1>        
-                    
-                            {{/* Home Page Buttons */}}
-                            <nav class="home-buttons" aria-label="Home buttons">
-                                {{- partialCached "components/homepage-buttons.html" .}}
-                            </nav>
-                        </div>
-                    
-                        {{/* Site Image */}}
-                        {{- if .imageUrl -}}
-                            <div class="home-image">
-                                <img    src="{{- .imageUrl | absURL -}}" 
-                                        alt="{{- .imageTitle | default "profile image" -}}"
-                                        height="{{- .imageHeight | default 150 -}}" 
-                                        width="{{- .imageWidth | default 150 -}}" />
-                            </div>
-                        {{- end -}}
+                        {{/* Site Title */}}
+                        <h1>
+                            {{- .title | default $.Site.Title | markdownify -}}
+                        </h1>        
+                
+                        {{/* Home Page Buttons */}}
+                        <nav class="home-buttons" aria-label="Home buttons">
+                            {{- partialCached "components/homepage-buttons.html" .}}
+                        </nav>
                     </div>
-                    <section class="showcase-panel">
+                    <div class="showcase-panel">
                         <h2>Showcases</h2>
                         <table>
                             <thead>
@@ -58,23 +45,23 @@
                                 <tr>
                                     <td rowspan="6">Layouts</td>
                                     <td rowspan="3">Basic</td>
-                                    <td><a href="/resource/reference/basic-single-pane-layout">Single pane</a></td>
+                                    <td><a href="/resource/reference/single-pane-layout">Single pane</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="/resource/reference/basic-split-pane-layout">Split-pane</a></td>
+                                    <td><a href="/resource/reference/split-pane-layout">Split-pane</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="/resource/reference/basic-fixed-and-flexible-layout">Fixed and flex pane</a></td>
+                                    <td><a href="/resource/reference/fixed-and-flexible-layout">Fixed and flex pane</a></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="3">Canonical</td>
-                                    <td><a href="/resource/reference/canonical-feed-layout">Feed</a></td>
+                                    <td><a href="/resource/reference/feed-layout">Feed</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="/resource/reference/canonical-supporting-pane-layout">Supporting pane</a></td>
+                                    <td><a href="/resource/reference/supporting-pane-layout">Supporting pane</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="/resource/reference/canonical-list-detail-layout">List-detail</a></td>
+                                    <td><a href="/resource/reference/list-detail-layout">List-detail</a></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">Components</td>
@@ -86,13 +73,11 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </section>
+                    </div>
                                     
                 </section>
             </article>
         
         {{- end -}}
-    
     {{- end -}}
-
 {{- end -}}

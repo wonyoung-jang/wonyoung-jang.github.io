@@ -2,6 +2,8 @@ baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
 languageCode: en-us
 
+author: "Wonyoung Jang"
+
 enableRobotsTXT: true
 
 titleCaseStyle: ap

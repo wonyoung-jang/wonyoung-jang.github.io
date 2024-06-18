@@ -1,19 +1,33 @@
 :root {
   /* Scales */
-  --scale-min-2:          calc(11 / 10); 
-  --scale-maj-2:          calc(28 / 25); 
-  --scale-min-3:          calc(6  / 5);  
-  --scale-maj-3:          calc(13 / 10); 
-  --scale-perfect-fourth: calc(4  / 3);  
-  --scale-tritone:        calc(7  / 5);  
-  --scale-perfect-fifth:  calc(3  / 2);  
-  --scale-min-6:          calc(8  / 5);  
-  --scale-maj-6:          calc(7  / 4);  
-  --scale-min-7:          calc(9  / 5);  
-  --scale-maj-7:          calc(19 / 10); 
-  --scale-fibonacci:      calc(55 / 34); 
-  --scale-octave:         calc(2  / 1);  
+  --scale-min-2:          calc(pow(2, (1 / 12)));   /* 1.0594... */
+  --scale-maj-2:          calc(pow(2, (2 / 12)));   /* 1.1224... */
+  --scale-min-3:          calc(pow(2, (3 / 12)));   /* 1.1892... */
+  --scale-maj-3:          calc(pow(2, (4 / 12)));   /* 1.2599... */
+  --scale-perfect-fourth: calc(pow(2, (5 / 12)));   /* 1.3348... */
+  --scale-tritone:        calc(pow(2, (6 / 12)));   /* 1.4142... */
+  --scale-perfect-fifth:  calc(pow(2, (7 / 12)));   /* 1.4983... */
+  --scale-min-6:          calc(pow(2, (8 / 12)));   /* 1.5874... */
+  --scale-maj-6:          calc(pow(2, (9 / 12)));   /* 1.6817... */
+  --scale-min-7:          calc(pow(2, (10 / 12)));  /* 1.7817... */
+  --scale-maj-7:          calc(pow(2, (11 / 12)));  /* 1.8877... */
+  --scale-octave:         calc(pow(2, (12 / 12)));  /* 2 */
 
+  --scale-fibonacci:      1.618; 
+
+  /* Typescale factors */
+  --scale-up-type:            var(--scale-maj-6);
+  --scale-back-type:          var(--scale-min-2);
+
+  --scale-up-size:            var(--scale-maj-2);
+  --scale-back-size:          var(--scale-min-2);
+
+  --scale-line-height-display:    var(--scale-maj-2);
+  --scale-line-height-headline:   var(--scale-min-3);
+  --scale-line-height-title:      var(--scale-maj-3);
+  --scale-line-height-body:       var(--scale-perfect-fifth);
+  --scale-line-height-label:      var(--scale-maj-6);
+  
   /* Sizes */
   --size-0:   0px;
   --size-1:   4px;
@@ -54,19 +68,6 @@
   --size-210: calc(var(--size-1) * 210);  /* 840px */
   --size-300: calc(var(--size-1) * 300);  /* 1200px */
   --size-400: calc(var(--size-1) * 400);  /* 1600px */
-
-  /* Typescale factors */
-  --scale-up-type:            var(--scale-maj-6);
-  --scale-back-type:          var(--scale-min-2);
-
-  --scale-up-size:            var(--scale-maj-2);
-  --scale-back-size:          var(--scale-min-2);
-
-  --scale-line-height-display:    var(--scale-maj-2);
-  --scale-line-height-headline:   var(--scale-min-3);
-  --scale-line-height-title:      var(--scale-maj-3);
-  --scale-line-height-body:       var(--scale-perfect-fifth);
-  --scale-line-height-label:      var(--scale-maj-6);
 
   /* Icons */
   --typeface-icon-outlined:   'Material Symbols Outlined';

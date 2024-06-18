@@ -1,75 +1,50 @@
 #home {
-  .pane {
-    --bg-color: var(--color-surface-container-lowest);
-    --width: 100%;
-    gap: 1rem;
+  padding: unset;
+  margin: unset;
 
-    * {
-      width: 100%;
-    }
+  .pane {
+    padding: unset;
+    margin: unset;
+  }
+
+  h1, h2 {
+    text-align: center;
+    margin-block: var(--spacing-panes);
   }
 
   .home-header {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    gap: 2em;
-
-    img {
-      align-self: center;
-      border-radius: var(--shape-corner-xl);
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
-      height: auto;
-      max-width: fit-content;
-    }
-
-    .home-image {
-      max-width: fit-content;
-    }
-
-
-    .home-image,
-    .home-left {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: stretch;
-    }
-
-    .home-left {
-      background-color: var(--color-surface-container-low);
-      border-radius: var(--shape-corner-xl);
-      padding: 1em;
-      gap: 2em;
-
-      h1 {
-        flex: 1 1 0;
-        color: var(--color-secondary);
-        padding: var(--spacing-panes);
-        margin: 0;
-      }
-  
-      .home-buttons {
-        flex: 1 1 0;
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 1em;
-      }  
-    }
-  }
-
-  .showcase-panel {
+    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    padding: var(--size-12);
-    background-color: var(--color-surface-container);
-    gap: 2rem;
-    border-radius: var(--shape-corner-xl);
-    margin-top: 4em;
+    justify-content: center;
+    background-color: var(--color-surface-container-lowest);
+    padding: var(--spacing-panes);
+    gap: var(--spacing-panes);
+
+    .home-buttons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .button {
+        width: fit-content;
+      }
+    }  
+  }
+
+  .showcase-panel {
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    padding: var(--spacing-panes);
+    gap: var(--spacing-panes);
+    background-color: var(--color-surface);
     
-    h2 {
-      text-align: center;
+    *:not(h1, h2) {
+      width: 100%;
     }
   }
 }
