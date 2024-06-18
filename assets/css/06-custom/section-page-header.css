@@ -9,8 +9,8 @@
   --height: auto;
   --min-height: auto;
   --border: inherit;
-  --padding: var(--spacing-panes);
-  --gap: var(--spacing-panes);
+  --padding: var(--size-16);
+  --gap: var(--size-4);
 }
 
 .title,
