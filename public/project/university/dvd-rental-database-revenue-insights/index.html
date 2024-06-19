@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/dvd-rental-database-revenue-insights/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2023-07-12T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="DVD Rental Database Revenue Insights">
   <meta itemprop="description" content="Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query">
   <meta itemprop="datePublished" content="2023-07-12T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="157">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/save-top-level-reddit-comments\/";
+    window.location.href = "\/project\/university\/cs-career-recommendation-chatbot\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">DVD Rental Database Revenue Insights</h1> 
 
-        <span class="description title-small">Created a <a href="https://www.postgresql.org/">PostgreSQL</a> lab report with SQL, extracting detailed data and summaries from the  <a href="https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/">DVD Rental Database</a>  for a business query</span><div class="label-large"><em class='metadata' title='2023-07-12 00:00:00 +0000 UTC'><span>Wednesday, July 12, 2023 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Created a <a href="https://www.postgresql.org/">PostgreSQL</a> lab report with SQL, extracting detailed data and summaries from the  <a href="https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/">DVD Rental Database</a>  for a business query</span><div class="label-large"><span class='metadata' title='2023-07-12 00:00:00 +0000 UTC'><span>July 7, 2023 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/dvd-rental-revenue"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @dvd-rental-revenue on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/dvd-rental-database.webp                         
+                 
+        "
+        alt="🖼 dvd-rental-database.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -260,34 +271,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Create a real-world business report using data extracted and analyzed from the DVD Rental Database</p>
-</li>
-<li>
-<p>Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension</p>
-</li>
-<li>
-<p>Identify necessary data tables and specific fields required for both the detailed and summary sections of the report</p>
-</li>
-<li>
-<p>Explain the transformation required for a specific field in the detailed section</p>
-</li>
-<li>
-<p>Clarify the business uses of both report sections and the frequency at which the report should be refreshed</p>
-</li>
-<li>
-<p>Develop SQL code for creating report tables, extracting raw data, applying data transformations, and creating a trigger to update the summary table automatically</p>
-</li>
-<li>
-<p>Implement a stored procedure to refresh data in the report tables, including the ETL load process, with a clear schedule for execution</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -514,7 +497,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

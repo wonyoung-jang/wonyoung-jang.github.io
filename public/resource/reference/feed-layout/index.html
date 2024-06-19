@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/resource/reference/feed-layout/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -134,7 +137,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/bagel-corner-and-mister-coffee-database-management\/";
+    window.location.href = "\/project\/software\/first-lego-league-challenge-q-learning-event-scheduler\/";
   }
 </script>
         
@@ -220,7 +223,7 @@
         
         <h1 class="title">Feed layout</h1> 
 
-        <span class="description title-small">A canonical layout for items that can flow into a feed</span><div class="label-large"><em class='metadata' title='2024-06-18 00:00:00 +0000 UTC'><span>Tuesday, June 18, 2024 - 0 min read</span></em></div></section><article class="layout panes canonical-feed" style="border: 1px solid">
+        <span class="description title-small">A canonical layout for items that can flow into a feed</span><div class="label-large"><span class='metadata' title='2024-06-18 00:00:00 +0000 UTC'><span>June 6, 2024 | 0 min read</span></span></div></section><article class="layout panes canonical-feed" style="border: 1px solid">
     <section class="layout pane" style="border: 1px dashed">
         <div class="component card outlined">lorem ipsum</div>
         <div class="component card outlined">lorem ipsum</div>
@@ -394,7 +397,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

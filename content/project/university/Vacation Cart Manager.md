@@ -11,8 +11,10 @@ type:
 date: 2023-11-21
 description: Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency's web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems
 title: Vacation Cart Manager
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![🖼 vacation-cart-manager.webp](/assets/vacation-cart-manager.webp)
+
 {{< logseq/orgWARNING >}}This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university's main requirements.
 {{< / logseq/orgWARNING >}}
 

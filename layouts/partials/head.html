@@ -49,6 +49,9 @@
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
 
+{{/* Generator */}}
+{{ hugo.Generator }}
+
 {{/* Misc */}}
 {{ template "_internal/google_analytics.html" . }}
 {{ template "_internal/opengraph.html" . }}

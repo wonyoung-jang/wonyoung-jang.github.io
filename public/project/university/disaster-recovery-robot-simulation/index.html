@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/disaster-recovery-robot-simulation/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2024-01-25T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Disaster Recovery Robot Simulation">
   <meta itemprop="description" content="Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration">
   <meta itemprop="datePublished" content="2024-01-25T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="136">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/this-website\/";
+    window.location.href = "\/project\/software\/realtime-multiplayer-drawing-app\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Disaster Recovery Robot Simulation</h1> 
 
-        <span class="description title-small">Created an autonomous robotic system in <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> for disaster recovery, demonstrating goal-seeking with sensor integration</span><div class="label-large"><em class='metadata' title='2024-01-25 00:00:00 +0000 UTC'><span>Thursday, January 25, 2024 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Created an autonomous robotic system in <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> for disaster recovery, demonstrating goal-seeking with sensor integration</span><div class="label-large"><span class='metadata' title='2024-01-25 00:00:00 +0000 UTC'><span>January 1, 2024 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/disaster-recovery-robot"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @disaster-recovery-robot on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/disaster-recovery-robot.webp                         
+                 
+        "
+        alt="disaster-recovery-robot.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -260,34 +271,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Familiarize with CoppeliaSim robotics virtual environment and tools</p>
-</li>
-<li>
-<p>Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment</p>
-</li>
-<li>
-<p>Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task</p>
-</li>
-<li>
-<p>Justify the choice of sensors and modifications made to the robot&rsquo;s architecture, explaining how they contribute to the disaster recovery effort</p>
-</li>
-<li>
-<p>Describe how the robot maintains an internal representation of the environment for decision-making</p>
-</li>
-<li>
-<p>Explain the robot&rsquo;s implementation of reasoning, knowledge representation, uncertainty, and intelligence in achieving its goal</p>
-</li>
-<li>
-<p>Discuss potential improvements for the prototype, including the application of reinforced learning and advanced search algorithms</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -514,7 +497,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

@@ -33,6 +33,9 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/about/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -146,7 +149,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/save-top-level-reddit-comments\/";
+    window.location.href = "\/project\/university\/hotel-reservation-manager\/";
   }
 </script>
         
@@ -228,7 +231,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
         
         <h1 class="title">About</h1> 
 
-        <div class="label-large"><em class='metadata' title='2024-06-15 00:00:00 +0000 UTC'><span>Saturday, June 15, 2024 - 1 min read</span></em></div></section><article class="layout panes basic-fixedflex" id="single">
+        <div class="label-large"><span class='metadata' title='2024-06-15 00:00:00 +0000 UTC'><span>June 6, 2024 | 1 min read</span></span></div></section><article class="layout panes basic-fixedflex" id="single">
   <section class="layout pane" id="post-content"><h2 id="about-me">About me<a hidden class="anchor" aria-hidden="true" href="#about-me">#</a></h2>
 <p>Hello!</p>
 <p>Personally, I&rsquo;m interested in programming, making music, formal logic, backpacking, magic and <a href="https://en.wikipedia.org/wiki/Cardistry">cardistry</a>, and cooking. This site is a collection of my projects and notes related to various areas of my life.</p>
@@ -237,13 +240,6 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 <h2 id="about-wonyoungjangorg">About wonyoungjang.org<a hidden class="anchor" aria-hidden="true" href="#about-wonyoungjangorg">#</a></h2>
 <p>This site is hosted using <a href="https://gohugo.io/">Hugo</a> and <a href="https://pages.github.com/">GitHub Pages</a>. It is created using <a href="https://github.com/sawhney17/logseq-schrodinger">Logseq Schrodinger</a> to convert Logseq&rsquo;s markdown to suitable Hugo format markdown.</p>
 
-<h2 id="about-me">About me</h2>
-<p>Hello!</p>
-<p>Personally, I&rsquo;m interested in programming, making music, formal logic, backpacking, magic and <a href="https://en.wikipedia.org/wiki/Cardistry">cardistry</a>, and cooking. This site is a collection of my projects and notes related to various areas of my life.</p>
-<p>I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.</p>
-<p>I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the <a href="https://www.amnh.org/learn-teach/children-and-families/lang-science-program">Lang Science Program</a> at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</p>
-<h2 id="about-wonyoungjangorg">About wonyoungjang.org</h2>
-<p>This site is hosted using <a href="https://gohugo.io/">Hugo</a> and <a href="https://pages.github.com/">GitHub Pages</a>. It is created using <a href="https://github.com/sawhney17/logseq-schrodinger">Logseq Schrodinger</a> to convert Logseq&rsquo;s markdown to suitable Hugo format markdown.</p>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -471,7 +467,50 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

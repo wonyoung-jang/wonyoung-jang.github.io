@@ -4,7 +4,6 @@
   <section class="layout pane" id="post-content">
       {{- if .Content -}}
         {{- partial "anchored_headings.html" .Content -}}
-        {{- .Content | safeHTML -}}
       {{- end -}}
 
       {{/* Feedback form for Contact page */}}

@@ -11,8 +11,10 @@ type:
 date: 2024-01-08
 description: Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface
 title: Package Delivery Route Optimization
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![🖼 package-delivery-network.webp](/assets/package-delivery-network.webp)
+
 {{< logseq/orgWARNING >}}This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university's main requirements.
 {{< / logseq/orgWARNING >}}
 

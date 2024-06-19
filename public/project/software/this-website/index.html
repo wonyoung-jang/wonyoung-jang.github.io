@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/software/this-website/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2024-03-05T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="This Website">
   <meta itemprop="description" content="This page is a meta presentation for the deployment of this website (and this page)">
   <meta itemprop="datePublished" content="2024-03-05T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="65">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/dvd-rental-database-revenue-insights\/";
+    window.location.href = "\/project\/university\/student-record-system\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">This Website</h1> 
 
-        <span class="description title-small">This page is a meta presentation for the deployment of this website (and this page)</span><div class="label-large"><em class='metadata' title='2024-03-05 00:00:00 +0000 UTC'><span>Tuesday, March 5, 2024 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">This page is a meta presentation for the deployment of this website (and this page)</span><div class="label-large"><span class='metadata' title='2024-03-05 00:00:00 +0000 UTC'><span>March 3, 2024 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/wonyoung-jang.github.io"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @wonyoung-jang.github.io on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><h2 id="how-its-made">How it&rsquo;s made<a hidden class="anchor" aria-hidden="true" href="#how-its-made">#</a></h2>
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/wonyoungjang-org.webp                         
+                 
+        "
+        alt="wonyoungjang-org.webp" 
+         
+/> </p>
+<h2 id="how-its-made">How it&rsquo;s made<a hidden class="anchor" aria-hidden="true" href="#how-its-made">#</a></h2>
 <ol>
 <li>
 <p>Pages (notes, articles, projects) are written in Logseq markdown.</p>
@@ -250,24 +261,6 @@
 </li>
 </ol>
 
-<h2 id="how-its-made">How it&rsquo;s made</h2>
-<ol>
-<li>
-<p>Pages (notes, articles, projects) are written in Logseq markdown.</p>
-</li>
-<li>
-<p>Pages with a <code>public</code> property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.</p>
-</li>
-<li>
-<p>The exported <code>assets</code> and <code>pages</code> folders are placed in the <code>content</code> folder of this Hugo site.</p>
-</li>
-<li>
-<p><code>hugo -D</code> + <code>hugo serve -D</code> to build and serve the site locally.</p>
-</li>
-<li>
-<p>GitHub Actions to serve the site publicly.</p>
-</li>
-</ol>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -494,7 +487,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

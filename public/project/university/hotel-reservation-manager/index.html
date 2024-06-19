@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/hotel-reservation-manager/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2023-11-27T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Hotel Reservation Manager">
   <meta itemprop="description" content="Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/)">
   <meta itemprop="datePublished" content="2023-11-27T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="163">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/dvd-rental-database-revenue-insights\/";
+    window.location.href = "\/project\/software\/this-website\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Hotel Reservation Manager</h1> 
 
-        <span class="description title-small">Upgraded a <a href="https://spring.io/projects/spring-framework">Spring</a> hotel booking app with multilingual, timezone, and currency features. Deployed via <a href="https://www.docker.com/">Docker</a></span><div class="label-large"><em class='metadata' title='2023-11-27 00:00:00 +0000 UTC'><span>Monday, November 27, 2023 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Upgraded a <a href="https://spring.io/projects/spring-framework">Spring</a> hotel booking app with multilingual, timezone, and currency features. Deployed via <a href="https://www.docker.com/">Docker</a></span><div class="label-large"><span class='metadata' title='2023-11-27 00:00:00 +0000 UTC'><span>November 11, 2023 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/hotel-reservation-manager"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @hotel-reservation-manager on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/hotel-reservation-manager.webp                         
+                 
+        "
+        alt="🖼 hotel-reservation-manager.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -263,37 +274,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Integrate resource bundles in the application for English and French translations, including a welcome message</p>
-</li>
-<li>
-<p>Implement multithreading to display the welcome message in both English and French simultaneously</p>
-</li>
-<li>
-<p>Modify the front end to show reservation prices in USD, CAD, and EUR</p>
-</li>
-<li>
-<p>Develop a Java method to convert time between Eastern, Mountain, and Coordinated Universal Time zones</p>
-</li>
-<li>
-<p>Display the times of an online presentation at the Landon Hotel in all three time zones using the conversion method</p>
-</li>
-<li>
-<p>Create a Dockerfile to build a single image of the application, encapsulating all code modifications</p>
-</li>
-<li>
-<p>Test the Docker image by creating and running a container, ensuring the application functions correctly within the containerized environment</p>
-</li>
-<li>
-<p>Describe a deployment strategy for the multithreaded Spring application to a cloud service, detailing the steps and the chosen cloud service provider</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -520,7 +500,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

@@ -8,16 +8,9 @@ copyright: <!--Creative Commons License-->This site is licensed under a [Creativ
 
 enableRobotsTXT: true
 
-titleCaseStyle: ap
-
-ignoreFiles: 
-- \.zip$
-
 disableKinds:
 - taxonomy
 - term
-
-taxonomies:
 
 ####################
 # All root configs #

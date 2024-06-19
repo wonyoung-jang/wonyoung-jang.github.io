@@ -1,26 +1,26 @@
 {{- define "main" -}}
 
-    {{- $pages := union .RegularPages .Sections -}}
+{{- $pages := union .RegularPages .Sections -}}
 
-    <article class="layout panes canonical-feed">
-        <section class="layout pane">
+<article class="layout panes canonical-feed">
+    <section class="layout pane">
 
-            {{- range $index, $page := $pages -}}        
-                <a  class="component card outlined"
-                    aria-label="post link to {{- .Title | plainify -}}" 
-                    href="{{- .Permalink -}}">        
+        {{- range $index, $page := $pages -}}        
+            <a  class="component card outlined"
+                aria-label="post link to {{- .Title | plainify -}}" 
+                href="{{- .Permalink -}}">        
+                
+                <div class="card-content">
+                    {{- partial "components/post-meta.html" . -}}
                     
-                    <div class="card-content">
-                        {{- partial "components/post-meta.html" . -}}
-                        
-                        <span class="title-small">
-                            {{- .Title -}}
-                        </span>
-                    </div>
-                </a>
-            {{- end -}}
+                    <span class="title-small">
+                        {{- .Title -}}
+                    </span>
+                </div>
+            </a>
+        {{- end -}}
 
-        </section>
-    </article>
+    </section>
+</article>
 
 {{- end -}}

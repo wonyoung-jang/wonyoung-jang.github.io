@@ -11,8 +11,10 @@ type:
 date: 2024-01-25
 description: Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration
 title: Disaster Recovery Robot Simulation
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![disaster-recovery-robot.webp](/assets/disaster-recovery-robot.webp)
+
 {{< logseq/orgWARNING >}}This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university's main requirements.
 {{< / logseq/orgWARNING >}}
 

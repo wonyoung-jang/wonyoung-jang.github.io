@@ -18,12 +18,12 @@
 
         {{/* Header */}}
         <header role="banner">
-            {{- partialCached "base/header.html" . .Page -}}
+            {{- partial "base/header.html" . .Page -}}
         </header>
 
         {{/* Debug */}}
         {{- if .Site.Params.Debug -}}
-            {{- partial "debug.html" . -}}
+            {{- partial "debug.html" .Page -}}
         {{- end -}}
 
         {{/* Main */}}
@@ -32,7 +32,7 @@
             {{/* Layout: Content Wrapper */}}
             <div class="layout content-wrapper">
                 {{/* Layout: Page Header */}}
-                {{- partialCached "sections/page-header.html" . .Page -}}
+                {{- partial "sections/page-header.html" . -}}
 
                 {{/* Layout: Main */}}
                 {{- block "main" . -}}{{- end -}}
@@ -42,12 +42,12 @@
             </div>
             
             {{/* Component: Top-Link */}}
-            {{- partialCached "components/top-link-fab.html" . -}}
+            {{- partial "components/top-link-fab.html" . -}}
 
             {{/* Footer */}}
             <footer role="contentinfo">    
                 {{/* Links + Copyright */}}
-                {{- partialCached "base/footer.html" . -}}
+                {{- partial "base/footer.html" . -}}
             </footer>
         </main>
     </body>

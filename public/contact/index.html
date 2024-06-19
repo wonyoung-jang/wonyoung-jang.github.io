@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/contact/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -130,7 +133,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/retail-inventory-manager\/";
+    window.location.href = "\/project\/software\/logseq-markdown-tokenizer\/";
   }
 </script>
         
@@ -212,7 +215,7 @@
         
         <h1 class="title">Contact</h1> 
 
-        <div class="label-large"><em class='metadata' title='2024-06-15 00:00:00 +0000 UTC'><span>Saturday, June 15, 2024 - 0 min read</span></em></div></section><article class="layout panes basic-fixedflex" id="single">
+        <div class="label-large"><span class='metadata' title='2024-06-15 00:00:00 +0000 UTC'><span>June 6, 2024 | 0 min read</span></span></div></section><article class="layout panes basic-fixedflex" id="single">
   <section class="layout pane" id="post-content"><form 
     class="contact-form" 
     action="https://formspree.io/f/xjvnaory" 
@@ -504,7 +507,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

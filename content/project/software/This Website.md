@@ -11,8 +11,10 @@ type:
 date: 2024-03-05
 description: This page is a meta presentation for the deployment of this website (and this page)
 title: This Website
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![wonyoungjang-org.webp](/assets/wonyoungjang-org.webp)
+
 ## How it's made
 
 1. Pages (notes, articles, projects) are written in Logseq markdown.

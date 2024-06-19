@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/cs-career-recommendation-chatbot/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2024-01-22T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="CS Career Recommendation Chatbot">
   <meta itemprop="description" content="Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor">
   <meta itemprop="datePublished" content="2024-01-22T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="134">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/package-delivery-route-optimization\/";
+    window.location.href = "\/project\/university\/cs-career-recommendation-chatbot\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">CS Career Recommendation Chatbot</h1> 
 
-        <span class="description title-small">Built a  <a href="https://home.pandorabots.com/home.html">Pandorabot</a> chatbot to help students find computing jobs matching their skills, assisting a university career advisor</span><div class="label-large"><em class='metadata' title='2024-01-22 00:00:00 +0000 UTC'><span>Monday, January 22, 2024 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Built a  <a href="https://home.pandorabots.com/home.html">Pandorabot</a> chatbot to help students find computing jobs matching their skills, assisting a university career advisor</span><div class="label-large"><span class='metadata' title='2024-01-22 00:00:00 +0000 UTC'><span>January 1, 2024 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/cs-career-chatbot"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @cs-career-chatbot on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/pandorabots.webp                         
+                 
+        "
+        alt="pandorabots.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -260,34 +271,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Develop a chatbot that recommends one of five computing jobs to students</p>
-</li>
-<li>
-<p>Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method</p>
-</li>
-<li>
-<p>Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods</p>
-</li>
-<li>
-<p>Use <a href="http://www.aiml.foundation/doc.html">AIML</a> to enhance the chatbot&rsquo;s functionality and address specific training cases</p>
-</li>
-<li>
-<p>Create an installation manual for the chatbot with step-by-step instructions for accessing it on the Pandorabot platform</p>
-</li>
-<li>
-<p>Assess the strengths and weaknesses of the Pandorabot environment and AIML in the context of chatbot construction</p>
-</li>
-<li>
-<p>Describe how the chatbot will be monitored and maintained post-deployment to improve user experience</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -514,7 +497,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

@@ -11,8 +11,10 @@ type:
 date: 2024-01-28
 description: Extract the parent comments of a [reddit](https://www.reddit.com/) post
 title: Save Top Level Reddit Comments
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![reddit-top-comments.webp](/assets/reddit-top-comments.webp)
+
 ## Premise
 
 Sometimes I just want the top voted parent comments of a reddit post.

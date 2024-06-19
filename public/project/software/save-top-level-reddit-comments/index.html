@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/software/save-top-level-reddit-comments/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2024-01-28T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Save Top Level Reddit Comments">
   <meta itemprop="description" content="Extract the parent comments of a [reddit](https://www.reddit.com/) post">
   <meta itemprop="datePublished" content="2024-01-28T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="41">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/first-lego-league-challenge-q-learning-event-scheduler\/";
+    window.location.href = "\/project\/university\/dvd-rental-database-revenue-insights\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Save Top Level Reddit Comments</h1> 
 
-        <span class="description title-small">Extract the parent comments of a <a href="https://www.reddit.com/">reddit</a> post</span><div class="label-large"><em class='metadata' title='2024-01-28 00:00:00 +0000 UTC'><span>Sunday, January 28, 2024 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Extract the parent comments of a <a href="https://www.reddit.com/">reddit</a> post</span><div class="label-large"><span class='metadata' title='2024-01-28 00:00:00 +0000 UTC'><span>January 1, 2024 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/top-reddit-comments"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,15 +234,19 @@
     View the source @top-reddit-comments on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><h2 id="premise">Premise<a hidden class="anchor" aria-hidden="true" href="#premise">#</a></h2>
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/reddit-top-comments.webp                         
+                 
+        "
+        alt="reddit-top-comments.webp" 
+         
+/> </p>
+<h2 id="premise">Premise<a hidden class="anchor" aria-hidden="true" href="#premise">#</a></h2>
 <p>Sometimes I just want the top voted parent comments of a reddit post.</p>
 <h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
 <p>This tool, which let&rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</p>
 
-<h2 id="premise">Premise</h2>
-<p>Sometimes I just want the top voted parent comments of a reddit post.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>This tool, which let&rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</p>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -467,7 +474,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

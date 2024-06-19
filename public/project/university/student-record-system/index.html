@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/student-record-system/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,14 +62,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2023-07-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Student Record System">
   <meta itemprop="description" content="Developing a system in C&#43;&#43; to manage and maintain a student roster, involving data manipulation and object-oriented programming">
   <meta itemprop="datePublished" content="2023-07-01T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
-  <meta itemprop="wordCount" content="243">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="247">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Student Record System">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/first-lego-league-challenge-q-learning-event-scheduler\/";
+    window.location.href = "\/project\/university\/retail-inventory-manager\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Student Record System</h1> 
 
-        <span class="description title-small">Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming</span><div class="label-large"><em class='metadata' title='2023-07-01 00:00:00 +0000 UTC'><span>Saturday, July 1, 2023 - 2 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming</span><div class="label-large"><span class='metadata' title='2023-07-01 00:00:00 +0000 UTC'><span>July 7, 2023 | 2 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/student-record-system"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,8 @@
     View the source @student-record-system on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p>![🖼 student- record-system.webp](/assets/student- record-system.webp)</p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -272,46 +276,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance</p>
-</li>
-<li>
-<p>Develop a program with two main classes: <code>Student</code> and <code>Roster</code>, to manage student data and course enrollment</p>
-</li>
-<li>
-<p>Ensure the program reads and processes a list of five students, creating student objects from the provided data</p>
-</li>
-<li>
-<p>Store the student list in an array called <code>classRosterArray</code>, with specific output directed to the console</p>
-</li>
-<li>
-<p>Include essential student information like <code>ID</code>, <code>name</code>, <code>email</code>, <code>age</code>, <code>course completion days</code>, and <code>degree program</code></p>
-</li>
-<li>
-<p>Modify the <code>StudentData</code> table as required, and create six specific files (<code>main.cpp,</code> <code>degree.h</code>, <code>student.h/cpp</code>, <code>roster.h/cpp</code>) with appropriate source and header separations</p>
-</li>
-<li>
-<p>Define an enumerated data type <code>DegreeProgram</code> with values <code>SECURITY</code>, <code>NETWORK</code>, and <code>SOFTWARE</code></p>
-</li>
-<li>
-<p>Implement and use accessor and mutator functions in the <code>Student</code> class for data manipulation, along with a constructor and a print function</p>
-</li>
-<li>
-<p>Develop the <code>Roster</code> class to manage the student data array, including functions to add, remove, print, and manage student data based on specific criteria like degree program and average days in courses</p>
-</li>
-<li>
-<p>Demonstrate program functionality in <code>main.cpp</code> with specific function calls and logic to manage and display student data effectively, including handling invalid email addresses and specific student removal scenarios.</p>
-</li>
-<li>
-<p>Implement memory management practices, ensuring the dynamic memory allocated in <code>Roster</code> is appropriately released</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -538,7 +502,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

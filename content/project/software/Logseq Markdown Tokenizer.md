@@ -11,8 +11,10 @@ type:
 date: 2024-01-13
 description: Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/)
 title: Logseq Markdown Tokenizer
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![logseq-tokenizer.webp](/assets/logseq-tokenizer.webp)
+
 ## Problem
 
   + [Logseq](https://logseq.com/) does not have a native way to view the character count of your notes (aka pages).
@@ -43,7 +45,7 @@ Encode Logseq's graph to enable semantic search, then leverage this encoding to 
 
 If I output this data as a csv, I can manipulate and format the data. For instance, with conditional formatting:
 
-
+![example-output-tokenizer.webp](/assets/example-output-tokenizer_1718808205376_0.webp)
 
 ## Summary
 

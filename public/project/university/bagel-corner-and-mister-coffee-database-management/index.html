@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2022-12-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Bagel Corner and Mister Coffee Database Management">
   <meta itemprop="description" content="Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting">
   <meta itemprop="datePublished" content="2022-12-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="87">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/cs-career-recommendation-chatbot\/";
+    window.location.href = "\/project\/software\/this-website\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Bagel Corner and Mister Coffee Database Management</h1> 
 
-        <span class="description title-small">Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting</span><div class="label-large"><em class='metadata' title='2022-12-18 00:00:00 +0000 UTC'><span>Sunday, December 18, 2022 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting</span><div class="label-large"><span class='metadata' title='2022-12-18 00:00:00 +0000 UTC'><span>December 12, 2022 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/bagel-coffee-stores"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @bagel-coffee-stores on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/bagel-corner-erd.webp                         
+                 
+        "
+        alt="bagel-corner-erd.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -251,25 +262,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Design a normalized physical database model for an ordering system (Bagel Corner)</p>
-</li>
-<li>
-<p>Create a database for another business (Mister Coffee) using a provided design document</p>
-</li>
-<li>
-<p>Load tables with sample data and create a view and an index to enhance query performance</p>
-</li>
-<li>
-<p>Develop SQL queries, including a simple query and a more complex query involving table joins</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -496,7 +488,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

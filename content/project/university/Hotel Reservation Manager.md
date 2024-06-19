@@ -11,8 +11,10 @@ type:
 date: 2023-11-27
 description: Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/)
 title: Hotel Reservation Manager
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![🖼 hotel-reservation-manager.webp](/assets/hotel-reservation-manager.webp)
+
 {{< logseq/orgWARNING >}}This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university's main requirements.
 {{< / logseq/orgWARNING >}}
 

@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/student-record-system\/";
+    window.location.href = "\/project\/university\/bagel-corner-and-mister-coffee-database-management\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">List of Keyboard Shortcuts for WonyoungJang.org</h1> 
 
-        <span class="description title-small">This page is a list of keyboard shortcuts for navigating this site</span><div class="label-large"><em class='metadata' title='2024-03-29 00:00:00 +0000 UTC'><span>Friday, March 29, 2024 - 1 min read</span></em></div></section><article class="layout panes basic-fixedflex" id="single">
+        <span class="description title-small">This page is a list of keyboard shortcuts for navigating this site</span><div class="label-large"><span class='metadata' title='2024-03-29 00:00:00 +0000 UTC'><span>March 3, 2024 | 1 min read</span></span></div></section><article class="layout panes basic-fixedflex" id="single">
   <section class="layout pane" id="post-content"><h2 id="navigation">Navigation<a hidden class="anchor" aria-hidden="true" href="#navigation">#</a></h2>
 <p><code>ALT</code>+<code>SHIFT</code>+<code>h</code> → Go to home page</p>
 <p><code>ALT</code>+<code>SHIFT</code>+<code>g</code> → Go back to top</p>
@@ -234,15 +237,6 @@
 <h2 id="appearance">Appearance<a hidden class="anchor" aria-hidden="true" href="#appearance">#</a></h2>
 <p><code>ALT</code>+<code>SHIFT</code>+<code>t</code> → Toggle light/dark themes</p>
 
-<h2 id="navigation">Navigation</h2>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>h</code> → Go to home page</p>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>g</code> → Go back to top</p>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>s</code> → Go to search page</p>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>r</code> → Go to random page</p>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>p</code> → Go to previous page</p>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>n</code> → Go to next page</p>
-<h2 id="appearance">Appearance</h2>
-<p><code>ALT</code>+<code>SHIFT</code>+<code>t</code> → Toggle light/dark themes</p>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -470,7 +464,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

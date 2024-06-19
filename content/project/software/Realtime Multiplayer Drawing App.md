@@ -11,8 +11,10 @@ type:
 date: 2024-03-08
 description: Draw in realtime on a blank canvas with others on the same server
 title: Realtime Multiplayer Drawing App
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![realtime-drawing.webp](/assets/realtime-drawing.webp)
+
 ## Introduction
 
 This project is a fork of [GitHub - mayfer/claude-app-generator-demo](https://github.com/mayfer/claude-app-generator-demo), which was a demonstration of [Anthropic's Claude 3 Opus](https://www.anthropic.com/news/claude-3-family) generating an app in one go without errors. You can see a demonstration of the generation and the program here: [murat on Twitter](https://twitter.com/mayfer/status/1765385826496864290).

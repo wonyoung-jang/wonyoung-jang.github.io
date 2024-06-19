@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/vacation-cart-manager/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2023-11-21T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Vacation Cart Manager">
   <meta itemprop="description" content="Developed a [Spring](https://spring.io/projects/spring-framework) Java backend for a travel agency&#39;s web app, interfacing with an existing [Angular](https://angular.io/)  front end, updating legacy systems">
   <meta itemprop="datePublished" content="2023-11-21T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="263">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/bagel-corner-and-mister-coffee-database-management\/";
+    window.location.href = "\/project\/university\/package-delivery-route-optimization\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Vacation Cart Manager</h1> 
 
-        <span class="description title-small">Developed a <a href="https://spring.io/projects/spring-framework">Spring</a> Java backend for a travel agency&rsquo;s web app, interfacing with an existing <a href="https://angular.io/">Angular</a>  front end, updating legacy systems</span><div class="label-large"><em class='metadata' title='2023-11-21 00:00:00 +0000 UTC'><span>Tuesday, November 21, 2023 - 2 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Developed a <a href="https://spring.io/projects/spring-framework">Spring</a> Java backend for a travel agency&rsquo;s web app, interfacing with an existing <a href="https://angular.io/">Angular</a>  front end, updating legacy systems</span><div class="label-large"><span class='metadata' title='2023-11-21 00:00:00 +0000 UTC'><span>November 11, 2023 | 2 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/vacation-cart-manager"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @vacation-cart-manager on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/vacation-cart-manager.webp                         
+                 
+        "
+        alt="🖼 vacation-cart-manager.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -269,43 +280,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Create a new Java project using <a href="https://start.spring.io/">Spring Initializr</a>, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok</p>
-</li>
-<li>
-<p>Establish a <a href="https://gitlab.com/">GitLab</a> repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</p>
-</li>
-<li>
-<p>Construct four new packages within the project to organize the codebase: <code>controllers</code>, <code>entities</code>, <code>dao</code> (Data Access Object), and <code>services</code>, focusing on functionalities related to a checkout form and vacation packages list</p>
-</li>
-<li>
-<p>Develop <code>entity</code> classes and an enumerator in the <code>entities</code> package that align with the provided UML diagram, ensuring accurate mapping to the project&rsquo;s <a href="https://www.mysql.com/">MySQL</a> database</p>
-</li>
-<li>
-<p>Create <code>repository</code> interfaces in the <code>dao</code> package that extend <code>JpaRepository</code>, adding cross-origin support to facilitate communication with the Angular front end</p>
-</li>
-<li>
-<p>Implement <code>service</code> classes in the <code>services</code> package to handle purchase data and responses, including a checkout service interface and its implementation</p>
-</li>
-<li>
-<p>Integrate validation within the application to ensure the data inputs meet the front-end requirements</p>
-</li>
-<li>
-<p>Develop a <a href="https://github.com/spring-guides/tut-rest">REST controller</a> in the <code>controllers</code> package to manage checkout processes, including a post mapping to handle order placements</p>
-</li>
-<li>
-<p>Add five sample customers to the application programmatically, ensuring their data persist correctly without duplication on subsequent application runs</p>
-</li>
-<li>
-<p>Test the integrated application by placing an order for a vacation with two excursions, verifying that there are no network errors and the data is correctly stored in the MySQL database, supported by appropriate screenshots</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -532,7 +506,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>

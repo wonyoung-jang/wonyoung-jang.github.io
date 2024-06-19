@@ -11,8 +11,10 @@ type:
 date: 2023-07-01
 description: Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming
 title: Student Record System
-lastMod: 2024-06-13
+lastMod: 2024-06-19
 ---
+![🖼 student- record-system.webp](/assets/student- record-system.webp)
+
 {{< logseq/orgWARNING >}}This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university's main requirements.
 {{< / logseq/orgWARNING >}}
 

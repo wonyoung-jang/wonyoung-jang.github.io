@@ -30,6 +30,9 @@
 
 <link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/retail-inventory-manager/">
 
+<meta name="generator" content="Hugo 0.127.0">
+
+
 
   
     
@@ -59,13 +62,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2023-11-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-19T00:00:00+00:00">
 
 
   <meta itemprop="name" content="Retail Inventory Manager">
   <meta itemprop="description" content="Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client&#39;s needs">
   <meta itemprop="datePublished" content="2023-11-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-19T00:00:00+00:00">
   <meta itemprop="wordCount" content="162">
 
   <meta name="twitter:card" content="summary">
@@ -137,7 +140,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/save-top-level-reddit-comments\/";
+    window.location.href = "\/project\/software\/first-lego-league-challenge-q-learning-event-scheduler\/";
   }
 </script>
         
@@ -223,7 +226,7 @@
         
         <h1 class="title">Retail Inventory Manager</h1> 
 
-        <span class="description title-small">Customized a <a href="https://spring.io/projects/spring-framework">Spring</a> app with HTML and Java for inventory management, showcasing software development skills for a client&rsquo;s needs</span><div class="label-large"><em class='metadata' title='2023-11-18 00:00:00 +0000 UTC'><span>Saturday, November 18, 2023 - 1 min read</span></em></div><a  class="component button common outlined"
+        <span class="description title-small">Customized a <a href="https://spring.io/projects/spring-framework">Spring</a> app with HTML and Java for inventory management, showcasing software development skills for a client&rsquo;s needs</span><div class="label-large"><span class='metadata' title='2023-11-18 00:00:00 +0000 UTC'><span>November 11, 2023 | 1 min read</span></span></div><a  class="component button common outlined"
     href="https://github.com/wonyoung-jang/retail-inventory-manager"
     target="_blank" 
     rel="noopener noreferrer" 
@@ -231,7 +234,15 @@
     View the source @retail-inventory-manager on GitHub
 </a>
 </section><article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content"><div class="admonition warning-container ">
+  <section class="layout pane" id="post-content"><p><img    loading="lazy" 
+        src="    
+                        /assets/retail-inventory.webp                         
+                 
+        "
+        alt="🖼 retail-inventory.webp" 
+         
+/> </p>
+<div class="admonition warning-container ">
     <i>warning</i>
     This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
 </div>
@@ -260,34 +271,6 @@
 </li>
 </ul>
 
-<div class="admonition warning-container ">
-    <i>warning</i>
-    This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.
-</div>
-<h2 id="requirements">Requirements</h2>
-<ul>
-<li>
-<p>Customize the HTML user interface to reflect the specific customer&rsquo;s shop name, product names, and part names</p>
-</li>
-<li>
-<p>Add an <code>About</code> page that accurately describes the customer&rsquo;s company and ensure proper navigation within the application</p>
-</li>
-<li>
-<p>Integrate a sample inventory for the chosen store, including five products and five parts, ensuring no data overwrite and handling duplicates as &ldquo;multi-pack&rdquo; parts</p>
-</li>
-<li>
-<p>Implement a <code>Buy Now</code> button in the product list that decrements the product inventory without affecting associated parts and provides purchase feedback</p>
-</li>
-<li>
-<p>Modify part entities to track maximum and minimum inventory levels, including updates to forms and persistent storage</p>
-</li>
-<li>
-<p>Introduce validation for inventory levels, displaying appropriate error messages for violations of maximum and minimum thresholds</p>
-</li>
-<li>
-<p>Develop at least two unit tests for the new maximum and minimum inventory fields within the <code>PartTest</code> class</p>
-</li>
-</ul>
 </section>
 
   <aside class="layout pane fixed-pane" id="toc"><nav class="toc" aria-label="Page Content">
@@ -514,7 +497,50 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+</footer>
         </main>
     </body>
 </html>
