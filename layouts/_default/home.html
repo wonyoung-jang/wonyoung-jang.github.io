@@ -7,7 +7,7 @@
                     <div class="home-header">
                         {{/* Site Title */}}
                         <h1>
-                            {{- .title | default $.Site.Title | markdownify -}}
+                            {{- .title | default site.Title | markdownify -}}
                         </h1>        
                 
                         {{/* Home Page Buttons */}}

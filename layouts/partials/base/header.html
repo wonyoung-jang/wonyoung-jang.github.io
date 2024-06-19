@@ -17,7 +17,7 @@
     <section class="end">
         {{/* Language switch */}}
         {{- $lang := .Lang}}
-        {{- with $.Site.Home.AllTranslations }}
+        {{- with site.Home.AllTranslations }}
             <ul class="lang-switch">
                 {{- range . -}}
                     {{- if ne $lang .Lang }}
@@ -25,7 +25,7 @@
                             title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
                             aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
                             
-                            {{- if (and $.Site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
                                 {{- .Language.LanguageName | emojify -}}
                             {{- else }}
                                 {{- .Lang | title -}}
