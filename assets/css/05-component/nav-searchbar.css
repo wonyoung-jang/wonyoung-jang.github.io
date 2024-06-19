@@ -14,7 +14,6 @@
   --icon-color: var(--color-on-surface);
   
   width: 100%;
-  max-width: 50rem;
   
   #searchInput {
     flex: 1 1 auto;
