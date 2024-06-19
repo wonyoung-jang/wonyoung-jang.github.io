@@ -3,11 +3,6 @@ highlight:
   style: github-dark
   tabWidth: 4
 
-tableOfContents:
-  startLevel: 1
-  endLevel: 6
-  ordered: false
-
 defaultMarkdownHandler: goldmark
 
 goldmark:

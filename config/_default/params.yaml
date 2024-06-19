@@ -1,3 +1,8 @@
+defaultTheme: auto
+debug: false
+env: production
+title: Wonyoung Jang
+
 assets:
   favicon: '/favicon.ico'
   favicon16x16: '/favicon-16x16.webp'
@@ -16,7 +21,7 @@ socialIcons:
   - name: "Email"
     url: "mailto:contact@wonyoungjang.org"
   - name: "RSS"
-    url: "https://wonyoungjang.org/index.xml"
+    url: "/index.xml"
 
 home:
   title: Wonyoung Jang
@@ -33,6 +38,6 @@ home:
     - name: University coursework projects
       url: "/project/university"
 
-defaultTheme: auto
-
-debug: false
+author:
+  name: "Wonyoung Jang"
+  email: "contact@wonyoungjang.org"

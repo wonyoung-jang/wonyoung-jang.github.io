@@ -58,6 +58,8 @@
     <section>
         <h6>Site Information</h6>
         <pre><b>Title:</b> {{- debug.Dump site.Title -}}</pre>
+        <pre><b>Language:</b> {{- debug.Dump site.Language -}}</pre>
+        <pre><b>IsHome:</b> {{- debug.Dump .IsHome -}}</pre>
     </section>
 
   <section>
@@ -66,14 +68,6 @@
       <tr>
         <th>Attribute</th>
         <th>Value</th>
-      </tr>
-      <tr>
-        <td><b>Keywords:</b></td>
-        <td><pre>{{- debug.Dump .Page.Keywords }}</pre></td>
-      </tr>
-      <tr>
-        <td><b>Slug:</b></td>
-        <td><pre>{{- debug.Dump .Page.Slug }}</pre></td>
       </tr>
       <tr>
         <td><b>File:</b></td>

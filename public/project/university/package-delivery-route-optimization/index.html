@@ -3,37 +3,81 @@
         dir="auto">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="noindex, nofollow">
-
-<title>About | Wonyoung Jang</title>
+<meta name="robots" content="index, follow">
 
 
-    <meta name="keywords" content="">
+<title>Package Delivery Route Optimization | Wonyoung Jang</title>
 
-<meta name="description" content="About me Hello!
-Personally, I&rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.
-I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.
-I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.">
-    
-<meta name="author" content="">
 
-<link rel="canonical" href="http://192.168.40.181:1313/about/" />
+<meta name="description" content="Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface">
+
+<meta name="author" content="Wonyoung Jang">
+
+<link rel="canonical" href="http://localhost:1313/project/university/package-delivery-route-optimization/" />
     <link rel="preload" href="/favicon-32x32.webp" as="image">
 
 
-<link rel="icon" href="http://192.168.40.181:1313/favicon.ico">
-<link rel="icon" type="image/webp" sizes="16x16" href="http://192.168.40.181:1313/favicon-16x16.webp">
-<link rel="icon" type="image/webp" sizes="32x32" href="http://192.168.40.181:1313/favicon-32x32.webp">
-<link rel="apple-touch-icon" href="http://192.168.40.181:1313/apple-touch-icon.webp">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/webp" sizes="16x16" href="http://localhost:1313/favicon-16x16.webp">
+<link rel="icon" type="image/webp" sizes="32x32" href="http://localhost:1313/favicon-32x32.webp">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.webp">
 
 
-<link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/about/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/project/university/package-delivery-route-optimization/">
 
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.3556c4358533dcf90c5c2a529d14d28915684a0c8bdaab817b5d2be76603b650.css" integrity="sha256-NVbENYUz3PkMXCpSnRTSiRVoSgyL2quBe10r52YDtlA=" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTMKJG4NFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RTMKJG4NFZ');
+        }
+      </script>
+    
+  
+
+
+<meta property="og:url" content="http://localhost:1313/project/university/package-delivery-route-optimization/">
+  <meta property="og:site_name" content="Wonyoung Jang">
+  <meta property="og:title" content="Package Delivery Route Optimization">
+  <meta property="og:description" content="Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="project">
+    <meta property="article:published_time" content="2024-01-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-13T00:00:00+00:00">
+
+
+  <meta itemprop="name" content="Package Delivery Route Optimization">
+  <meta itemprop="description" content="Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface">
+  <meta itemprop="datePublished" content="2024-01-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-13T00:00:00+00:00">
+  <meta itemprop="wordCount" content="168">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Package Delivery Route Optimization">
+  <meta name="twitter:description" content="Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface">
+
+
+
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.css" integrity="" rel="stylesheet">
+
+        
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -49,9 +93,9 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
     <section class="start">
         
         <a  class="component button icon" id="site-icon"
-    href="http://192.168.40.181:1313/"
+    href="http://localhost:1313/"
     accesskey="h" 
-    title="Wonyoung Jang (ALT + SHIFT + h)"><img    src="http://192.168.40.181:1313/favicon-32x32.webp" 
+    title="Wonyoung Jang (ALT + SHIFT + h)"><img    src="http://localhost:1313/favicon-32x32.webp" 
                 alt="logo" 
                 aria-label="logo"
                 width="24"
@@ -61,7 +105,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
         
         <a  id="site-headline"
             class="title-medium"
-            href="http://192.168.40.181:1313/">
+            href="http://localhost:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -93,7 +137,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/save-top-level-reddit-comments\/";
+    window.location.href = "\/project\/university\/vacation-cart-manager\/";
   }
 </script>
         
@@ -120,18 +164,6 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
         
         
             
-                <a  class="component tab"
-                    href="/">
-                    Home
-                </a>
-            
-        
-    
-        
-               
-        
-        
-            
                 <a  class="component tab active"
                     href="/project/">
                     Projects
@@ -147,18 +179,6 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
                 <a  class="component tab"
                     href="/resource/">
                     Resources
-                </a>
-            
-        
-    
-        
-               
-        
-        
-            
-                <a  class="component tab"
-                    href="/search/">
-                    Search
                 </a>
             
         
@@ -190,13 +210,13 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
         
         <nav class="breadcrumbs label-large" aria-label="Breadcrumbs">
             <ol><li>
-                            <a href="http://192.168.40.181:1313/">
+                            <a href="http://localhost:1313/">
                                 Home
                             </a>
                         </li><li>
-                            <a href="http://192.168.40.181:1313/project/">Projects</a>
+                            <a href="http://localhost:1313/project/">Projects</a>
                         </li><li>
-                            <a href="http://192.168.40.181:1313/project/university/">University</a>
+                            <a href="http://localhost:1313/project/university/">University</a>
                         </li></ol>
         </nav>    
 
@@ -293,11 +313,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
     <div id="activeIndicator" class="indicator">
     </div><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#requirements">Requirements</a></li>
-      </ul>
-    </li>
+    <li><a href="#requirements">Requirements</a></li>
   </ul>
 </nav></nav></aside>
 </article>
@@ -310,36 +326,36 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 
     <ul><li>
                 <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationon twitter"
-                    href="https://twitter.com/intent/tweet/?text=Package%20Delivery%20Route%20Optimization&amp;url=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f&amp;hashtags=">      
+                    href="https://twitter.com/intent/tweet/?text=Package%20Delivery%20Route%20Optimization&amp;url=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f&amp;hashtags=">      
                     Twitter/X
                 </a>
             </li><li>
                 <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationon linkedin"
-                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f&amp;title=Package%20Delivery%20Route%20Optimization&amp;summary=Package%20Delivery%20Route%20Optimization&amp;source=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
+                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f&amp;title=Package%20Delivery%20Route%20Optimization&amp;summary=Package%20Delivery%20Route%20Optimization&amp;source=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
                     LinkedIn
                 </a>
             </li><li>
                 <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationon reddit"
-                    href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f&title=Package%20Delivery%20Route%20Optimization">
+                    href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f&title=Package%20Delivery%20Route%20Optimization">
                 Reddit
                     </a>
             </li><li>
                 <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationon facebook"
-                    href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
+                    href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
                 Facebook
                     </a>
             </li><li>
                 <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationon whatsapp"
-                    href="https://api.whatsapp.com/send?text=Package%20Delivery%20Route%20Optimization%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
+                    href="https://api.whatsapp.com/send?text=Package%20Delivery%20Route%20Optimization%20-%20http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
                 WhatsApp
                     </a>
             </li><li>
                 <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationon telegram"
-                    href="https://telegram.me/share/url?text=Package%20Delivery%20Route%20Optimization&amp;url=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
+                    href="https://telegram.me/share/url?text=Package%20Delivery%20Route%20Optimization&amp;url=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
                 Telegram
                     </a>
             </li><li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationvia email" href="mailto:?subject=Package%20Delivery%20Route%20Optimization&amp;body=http%3a%2f%2f192.168.40.181%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
+                <a target="_blank" rel="noopener noreferrer" aria-label="sharePackage Delivery Route Optimizationvia email" href="mailto:?subject=Package%20Delivery%20Route%20Optimization&amp;body=http%3a%2f%2flocalhost%3a1313%2fproject%2funiversity%2fpackage-delivery-route-optimization%2f">
                     Email
                 </a>
             </li><li>
@@ -349,7 +365,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
             </li></ul>
 </nav>
 </section><nav class="layout page-navigation" aria-label="Page Navigation"><a  class="component card filled prev"
-            href="http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/"
+            href="http://localhost:1313/project/software/logseq-markdown-tokenizer/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
           <span class="page-direction">
@@ -359,7 +375,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
           
           <span class="title-large">Logseq Markdown Tokenizer</span>
         </a><a  class="component card filled next"
-          href="http://192.168.40.181:1313/project/university/hotel-reservation-manager/"
+          href="http://localhost:1313/project/university/hotel-reservation-manager/"
           accesskey="n"
           title="Next page (ALT + SHIFT + n)">
         <span class="page-direction">
@@ -456,7 +472,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
                 rel="noopener noreferrer me">
                 Email
             </a>
-            <a  href="https://wonyoungjang.org/index.xml" 
+            <a  href="/index.xml" 
                 target="_blank" 
                 rel="noopener noreferrer me">
                 RSS
@@ -468,7 +484,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
 <section class="copyright">
     <a  class="component button common with-icon"
         id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="http://localhost:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -510,50 +526,7 @@ I grew up in The Bronx, NYC where I started learning magic tricks at the age of 
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script>
-    <script>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
-</footer>
+    </script></footer>
         </main>
     </body>
 </html>

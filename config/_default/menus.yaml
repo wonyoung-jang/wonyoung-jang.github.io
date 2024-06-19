@@ -1,23 +1,12 @@
 main:
-  - identifier: Home
-    name: Home
-    pageRef: /
-    weight: 1
-
   - identifier: Projects
     name: Projects
     pageRef: /project
     weight: 10
-
   - identifier: Resource
     name: Resources
     pageRef: /resource
     weight: 20
-
-  - identifier: Search
-    name: Search
-    pageRef: /search
-    weight: 30
 
 footer:
   - identifier: About

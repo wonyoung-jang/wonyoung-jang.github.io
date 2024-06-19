@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html   lang="{{- .Site.Language -}}" 
-        dir="{{- .Language.LanguageDirection | default "auto" -}}">
+<html   lang="{{- .Site.Language.Lang -}}" 
+        dir="{{- .Site.Language.LanguageDirection | default "auto" -}}">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        {{- partialCached "head.html" . -}}
+        {{ partial "head.html" . }}
         
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">

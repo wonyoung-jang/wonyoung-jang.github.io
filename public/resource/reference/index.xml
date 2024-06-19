@@ -1,85 +1,224 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reference onWonyoung Jang</title>
-    <link>http://192.168.40.181:1313/resource/reference/</link>
-    <description>
-      Recent contentin ReferenceonWonyoung Jang</description><generator>
-      Hugo -- gohugo.io
-    </generator><language>
-        en-us
-      </language>
-    <copyright>
-        &lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;
-      </copyright>
-    <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.40.181:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" /><item>
-          <title>Components</title>
-          <link>http://192.168.40.181:1313/resource/reference/components/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
-          <description></description></item><item>
-          <title>Feed layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/feed-layout/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/feed-layout/</guid>
-          <description>A canonical layout for items that can flow into a feed</description></item><item>
-          <title>Fixed and flexible layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</guid>
-          <description>A two pane layout with one fixed and one flexible pane</description></item><item>
-          <title>List of Admonitions for This Site</title>
-          <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
-          <description>This page is a list of admonitions used on this site</description></item><item>
-          <title>List-detail layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
-          <description>A canonical layout with a list pane and a detail pane</description></item><item>
-          <title>Motion</title>
-          <link>http://192.168.40.181:1313/resource/reference/motion/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/motion/</guid>
-          <description></description></item><item>
-          <title>Single pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/single-pane-layout/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/single-pane-layout/</guid>
-          <description>A  single pane layout with one flexible pane</description></item><item>
-          <title>Split-pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/split-pane-layout/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/split-pane-layout/</guid>
-          <description>A two-pane layout with two flexible panes</description></item><item>
-          <title>Supporting pane layout</title>
-          <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
-          <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
-          <description>A canonical layout with a focus (primary) pane and a supporting (secondary) pane</description></item><item>
-          <title>Colors</title>
-          <link>http://192.168.40.181:1313/resource/reference/colors/</link>
-          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
-          <description></description></item><item>
-          <title>Shapes</title>
-          <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
-          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
-          <description></description></item><item>
-          <title>States and elevation</title>
-          <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
-          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
-          <description></description></item><item>
-          <title>Typography</title>
-          <link>http://192.168.40.181:1313/resource/reference/typography/</link>
-          <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
-          <description></description></item><item>
-          <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
-          <link>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
-          <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
-          <guid>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
-          <description>This page is a list of keyboard shortcuts for navigating this site</description></item></channel>
+    <title>Reference on Wonyoung Jang</title>
+    
+    <link>http://localhost:1313/resource/reference/</link>
+    
+    <description>Recent content in Reference on Wonyoung Jang</description>
+    
+    <generator>Hugo</generator>
+    
+    <language>en-US</language>
+    
+    
+    <managingEditor>contact@wonyoungjang.org (Wonyoung Jang)</managingEditor>
+
+    
+    <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
+
+    
+    <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
+    
+    
+    <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
+      <atom:link href="http://localhost:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+    
+      <title>Components</title>
+    
+      <link>http://localhost:1313/resource/reference/components/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/components/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Feed layout</title>
+    
+      <link>http://localhost:1313/resource/reference/feed-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/feed-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Fixed and flexible layout</title>
+    
+      <link>http://localhost:1313/resource/reference/fixed-and-flexible-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/fixed-and-flexible-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>List of Admonitions for This Site</title>
+    
+      <link>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
+    
+      <description>Admonitions warning&#xD;This is a warning&#xD;error&#xD;This is a sign of caution&#xD;stars&#xD;This is important&#xD;keep&#xD;This is pinned&#xD;lyrics&#xD;This is a verse&#xD;prompt_suggestion This is an export&#xD;prompt_suggestion This is a latex export&#xD;prompt_suggestion This is a ascii export&#xD;query_stats&#xD;This is a query&#xD;sticky_note_2&#xD;This is a note&#xD;lightbulb&#xD;This is a tip&#xD;description&#xD;This is an example&#xD;comment&#xD;This is a comment&#xD;format_quote&#xD;This is a quote&#xD;</description>
+    
+    </item>
+    
+    <item>
+    
+      <title>List-detail layout</title>
+    
+      <link>http://localhost:1313/resource/reference/list-detail-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/list-detail-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Motion</title>
+    
+      <link>http://localhost:1313/resource/reference/motion/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/motion/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Single pane layout</title>
+    
+      <link>http://localhost:1313/resource/reference/single-pane-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/single-pane-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Split-pane layout</title>
+    
+      <link>http://localhost:1313/resource/reference/split-pane-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/split-pane-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Supporting pane layout</title>
+    
+      <link>http://localhost:1313/resource/reference/supporting-pane-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/supporting-pane-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Colors</title>
+    
+      <link>http://localhost:1313/resource/reference/colors/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/colors/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Shapes</title>
+    
+      <link>http://localhost:1313/resource/reference/shapes/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/shapes/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>States and elevation</title>
+    
+      <link>http://localhost:1313/resource/reference/states-and-elevation/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/states-and-elevation/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Typography</title>
+    
+      <link>http://localhost:1313/resource/reference/typography/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/typography/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
+    
+      <link>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
+    
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
+    
+      <description>Navigation ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance ALT+SHIFT+t → Toggle light/dark themes</description>
+    
+    </item>
+  </channel>
 </rss>
