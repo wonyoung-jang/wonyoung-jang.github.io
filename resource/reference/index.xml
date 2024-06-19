@@ -1,321 +1,224 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>
-      
-        
-          Reference on 
-        
-        Wonyoung Jang
-      
-    </title>
-    <link>
-      https://wonyoungjang.org/resource/reference/
-    </link>
-    <description>
-      Recent content 
-      
-        
-          in Reference 
-        
-      
-        on Wonyoung Jang
-    </description>
-    <generator>
-      Hugo -- gohugo.io
-    </generator>
+    <title>Reference on Wonyoung Jang</title>
     
-      <language>
-        en-us
-      </language>
+    <link>https://wonyoungjang.org/resource/reference/</link>
+    
+    <description>Recent content in Reference on Wonyoung Jang</description>
+    
+    <generator>Hugo</generator>
+    
+    <language>en-US</language>
     
     
+    <managingEditor>contact@wonyoungjang.org (Wonyoung Jang)</managingEditor>
+
+    
+    <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
+
+    
+    <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     
     
+    <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
+      <atom:link href="https://wonyoungjang.org/resource/reference/index.xml" rel="self" type="application/rss+xml" />
     
-      <lastBuildDate>
-        Tue, 11 Jun 2024 00:00:00 +0000
-      </lastBuildDate>
-    <atom:link href="https://wonyoungjang.org/resource/reference/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-          <title>
-            (Basic) Fixed and flexible layout
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/basic-fixed-and-flexible-layout/
-          </guid>
-          <description>
-            
-              A two-pane layout with one fixed width pane and one flexible pane
-            </description>
-        </item>
+    <item>
     
-        <item>
-          <title>
-            (Basic) Single pane layout
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/basic-single-pane-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/basic-single-pane-layout/
-          </guid>
-          <description>
-            
-              A single pane layout with one flexible pane
-            </description>
-        </item>
+      <title>Components</title>
     
-        <item>
-          <title>
-            (Basic) Split-pane layout
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/basic-split-pane-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/basic-split-pane-layout/
-          </guid>
-          <description>
-            
-              A two-pane layout with two flexible panes
-            </description>
-        </item>
+      <link>https://wonyoungjang.org/resource/reference/components/</link>
     
-        <item>
-          <title>
-            (Canonical) Feed layout
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/canonical-feed-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/canonical-feed-layout/
-          </guid>
-          <description>
-            
-              A canonical layout for items that can flow into a feed
-            </description>
-        </item>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-        <item>
-          <title>
-            (Canonical) List-detail layout
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/canonical-list-detail-layout/
-          </guid>
-          <description>
-            
-              A canonical layout with a list pane and a detail pane
-            </description>
-        </item>
+      <guid>https://wonyoungjang.org/resource/reference/components/</guid>
     
-        <item>
-          <title>
-            (Canonical) Supporting pane layout
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/canonical-supporting-pane-layout/
-          </guid>
-          <description>
-            
-              A canonical layout with a focus (primary) pane and a supporting (secondary) pane
-            </description>
-        </item>
+      <description></description>
     
-        <item>
-          <title>
-            Colors
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/colors/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/colors/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
+    </item>
     
-        <item>
-          <title>
-            Components
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/components/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/components/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
+    <item>
     
-        <item>
-          <title>
-            List of Admonitions for This Site
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/
-          </guid>
-          <description>
-            
-              This page is a list of admonitions used on this site
-            </description>
-        </item>
+      <title>Feed layout</title>
     
-        <item>
-          <title>
-            Shapes
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/shapes/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/shapes/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
+      <link>https://wonyoungjang.org/resource/reference/feed-layout/</link>
     
-        <item>
-          <title>
-            States and elevation
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/states-and-elevation/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/states-and-elevation/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-        <item>
-          <title>
-            Typography
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/typography/
-          </link>
-          <pubDate>
-            Thu, 13 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/typography/
-          </guid>
-          <description>
-            
-              
-            </description>
-        </item>
+      <guid>https://wonyoungjang.org/resource/reference/feed-layout/</guid>
     
-        <item>
-          <title>
-            Transitions
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/transitions/
-          </link>
-          <pubDate>
-            Tue, 11 Jun 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/transitions/
-          </guid>
-          <description>
-            
-              Transitions
-            </description>
-        </item>
+      <description></description>
     
-        <item>
-          <title>
-            List of Keyboard Shortcuts for WonyoungJang.org
-          </title>
-          <link>
-            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
-          </link>
-          <pubDate>
-            Fri, 29 Mar 2024 00:00:00 +0000
-          </pubDate>
-          
-          <guid>
-            https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/
-          </guid>
-          <description>
-            
-              This page is a list of keyboard shortcuts for navigating this site
-            </description>
-        </item>
+    </item>
     
+    <item>
+    
+      <title>Fixed and flexible layout</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/fixed-and-flexible-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/fixed-and-flexible-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>List of Admonitions for This Site</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/</guid>
+    
+      <description>Admonitions warning This is a warning error This is a sign of caution stars This is important keep This is pinned lyrics This is a verse prompt_suggestion This is an export prompt_suggestion This is a latex export prompt_suggestion This is a ascii export query_stats This is a query sticky_note_2 This is a note lightbulb This is a tip description This is an example comment This is a comment format_quote This is a quote </description>
+    
+    </item>
+    
+    <item>
+    
+      <title>List-detail layout</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/list-detail-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/list-detail-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Motion</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/motion/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/motion/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Single pane layout</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/single-pane-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/single-pane-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Split-pane layout</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/split-pane-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/split-pane-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Supporting pane layout</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/supporting-pane-layout/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/supporting-pane-layout/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Colors</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/colors/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/colors/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Shapes</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/shapes/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/shapes/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>States and elevation</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/states-and-elevation/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/states-and-elevation/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>Typography</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/typography/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/typography/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    <item>
+    
+      <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
+    
+      <link>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
+    
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
+    
+      <description>Navigation ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance ALT+SHIFT+t → Toggle light/dark themes</description>
+    
+    </item>
   </channel>
 </rss>
