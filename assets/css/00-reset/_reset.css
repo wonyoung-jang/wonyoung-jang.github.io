@@ -11,6 +11,11 @@
   border-radius: inherit;
   outline: 0;
   
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }

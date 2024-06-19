@@ -24,6 +24,10 @@
   max-width: 60ch;
   white-space: normal;
   overflow-wrap: break-word;
+  
+  a {
+    vertical-align: baseline;
+  }
 }
 
 .breadcrumbs {

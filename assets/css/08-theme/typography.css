@@ -1,4 +1,4 @@
-p, a {
+p {
   font-size: var(--typescale-body-large-size);
   line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typescale-body-large-weight);
