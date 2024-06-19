@@ -1,13 +1,24 @@
 <div class="debug">
-    <section>
-        <h6>Site Information</h6>
-        <pre><b>Title:</b> {{- debug.Dump site.Title -}}</pre>
-        <pre><b>Language:</b> {{- debug.Dump site.Language -}}</pre>
-        <pre><b>IsHome:</b> {{- debug.Dump .IsHome -}}</pre>
-        <pre><b>IsPage:</b> {{- debug.Dump .IsPage -}}</pre>
-        <pre><b>IsSection:</b> {{- debug.Dump .IsSection -}}</pre>
-        <pre><b>IsNode:</b> {{- debug.Dump .IsNode -}}</pre>
-    </section>
+  <section>
+    <h6>Site</h6>
+    {{ range site.Pages.GroupBy "Kind" }}
+      <p>{{ .Key }}</p>
+
+      {{ range .Pages }}
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ end }}
+    {{ end }}
+  </section>
+
+  <section>
+      <h6>Site Information</h6>
+      <pre><b>Title:</b> {{- debug.Dump site.Title -}}</pre>
+      <pre><b>Language:</b> {{- debug.Dump site.Language -}}</pre>
+      <pre><b>IsHome:</b> {{- debug.Dump .IsHome -}}</pre>
+      <pre><b>IsPage:</b> {{- debug.Dump .IsPage -}}</pre>
+      <pre><b>IsSection:</b> {{- debug.Dump .IsSection -}}</pre>
+      <pre><b>IsNode:</b> {{- debug.Dump .IsNode -}}</pre>
+  </section>
 
   <section>
     <h6>Page Information</h6>

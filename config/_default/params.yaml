@@ -1,5 +1,6 @@
-defaultTheme: auto
 debug: false
+
+defaultTheme: auto
 env: production
 title: Wonyoung Jang
 
