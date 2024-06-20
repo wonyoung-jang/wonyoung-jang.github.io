@@ -18,8 +18,9 @@ a:not(.component) {
     color: var(--color-tertiary);
     
     i {
+      display: unset;
       font-size: inherit;
-      vertical-align: sub;
+      font-weight: inherit;
     }
   }
 }

@@ -1,8 +1,9 @@
 {{- define "main" -}}
 
 <article class="layout panes basic-singlepane">
-  <section class="layout pane">
-
+  <section class="layout pane" id="sitemap">
+    <div>
+      <h6>Page</h6>
       {{- range .Site.Pages.ByParam "title" -}}
         {{- if eq .Title "" -}}
           {{- continue -}} 
@@ -15,6 +16,31 @@
           </a>
         {{- end -}}
       {{- end -}}
+    </div>
+    <div class="dates-sitemap">
+      <h6>Date created</h6>
+      {{- range .Site.Pages.ByParam "title" -}}
+        {{- if eq .Title "" -}}
+          {{- continue -}} 
+        {{- else -}}
+          <span>
+            {{- .Date.Format "January 01, 2006" -}}
+          </span>
+        {{- end -}}
+      {{- end -}}
+    </div>
+    <div class="dates-sitemap">
+      <h6>Last modified</h6>
+      {{- range .Site.Pages.ByParam "title" -}}
+        {{- if eq .Title "" -}}
+          {{- continue -}} 
+        {{- else -}}
+          <span>
+            {{- .Lastmod.Format "January 01, 2006" -}}
+          </span>
+        {{- end -}}
+      {{- end -}}
+    </div>
 
   </section>
 </article>
