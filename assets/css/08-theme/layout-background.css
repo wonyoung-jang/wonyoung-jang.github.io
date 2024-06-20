@@ -14,15 +14,15 @@ header {
   }
 
   .layout.page-header {
-    --bg-color: var(--color-surface-container-lowest);
+    --bg-color: var(--color-surface-container-low);
   }
 
   .layout.page-links {
-    --bg-color: var(--color-surface-container-lowest);
+    --bg-color: var(--color-surface-container-low);
   }
 
   .layout.page-navigation {
-    --bg-color: var(--color-surface-container-lowest);
+    --bg-color: var(--color-surface-container-low);
   }
 }
 

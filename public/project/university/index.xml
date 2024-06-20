@@ -91,7 +91,7 @@
     
       <guid>http://localhost:1313/project/university/vacation-cart-manager/</guid>
     
-      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description>
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a new Java project using Spring Initializr&#xD;, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab&#xD;repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description>
     
     </item>
     

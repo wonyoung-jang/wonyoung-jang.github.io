@@ -23,9 +23,9 @@
         {{- range site.Params.ConnectLinks }}
             <a  href="{{ trim .url " " }}" 
                 target="_blank" 
-                rel="noopener noreferrer me">
+                rel="external noopener noreferrer me">
                 {{ .name }}
-                <i style="font-size: 16px">outbound</i>
+                <i>outbound</i>
             </a>
         {{- end }}
     </div>

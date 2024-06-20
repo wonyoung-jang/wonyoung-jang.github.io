@@ -163,7 +163,7 @@
     
       <guid>http://localhost:1313/about/</guid>
     
-      <description>About me Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description>
+      <description>About me Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry&#xD;outbound&#xD;, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program&#xD;outbound&#xD;at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description>
     
     </item>
     
@@ -289,7 +289,7 @@
     
       <guid>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</guid>
     
-      <description>Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.&#xA;Why While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.</description>
+      <description>Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo&#xD;outbound&#xD;, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus&#xD;outbound&#xD;generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter&#xD;outbound&#xD;.&#xA;Why While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description>
     
     </item>
     
@@ -317,7 +317,7 @@
     
       <guid>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
     
-      <description>A brief history A nerd snipe from a coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
+      <description>A brief history A nerd snipe from a coworker My coworker nerd sniped&#xD;outbound&#xD;me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge&#xD;outbound&#xD;event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
     
     </item>
     
@@ -373,7 +373,7 @@
     
       <guid>http://localhost:1313/project/software/logseq-markdown-tokenizer/</guid>
     
-      <description>Problem Logseq does not have a native way to view the character count of your notes (aka pages).&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually.&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph.</description>
+      <description>Problem Logseq&#xD;outbound&#xD;does not have a native way to view the character count of your notes (aka pages).&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually.&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph.</description>
     
     </item>
     
@@ -415,7 +415,7 @@
     
       <guid>http://localhost:1313/project/university/vacation-cart-manager/</guid>
     
-      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description>
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a new Java project using Spring Initializr&#xD;outbound&#xD;, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab&#xD;outbound&#xD;repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description>
     
     </item>
     

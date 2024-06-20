@@ -8,6 +8,9 @@ copyright: <!--Creative Commons License-->This site is licensed under a [Creativ
 
 enableRobotsTXT: true
 
+capitalizeListTitles: true
+pluralizeListTitles: true
+
 disableKinds:
 - taxonomy
 - term
@@ -22,7 +25,7 @@ disableKinds:
 # deployment:
 # frontmatter:
 # httpcache:
-# imaging:
+# imaging: → imaging.yaml
 # languages:
 #   en:
 #     menus:
@@ -30,7 +33,7 @@ disableKinds:
 # markup: → markup.yaml
 # mediatypes:
 # menus: → menus.yaml
-# minify: → minify.yaml
+# minify:
 # module:
 # outputformats:
 # outputs: → outputs.yaml

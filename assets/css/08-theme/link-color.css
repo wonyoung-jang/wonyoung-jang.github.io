@@ -1,15 +1,33 @@
-a {
+a:not(.component) {
+  text-decoration: none;
+  color: var(--color-primary);
+  border-radius: unset;
+
+  &:hover {
+    text-decoration: unset;
+    color: var(--color-add30);
+
+    &[rel*="external"] {
+      text-decoration: unset;
+      color: var(--color-sub30);
+    }
+  }
+ 
+  &[rel*="external"] {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    
+    i {
+      font-size: inherit;
+      vertical-align: sub;
+    }
+  }
+}
+
+a.component {
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
-  }
-
-  &:not(.component) {
-    color: var(--color-primary);
-    
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
