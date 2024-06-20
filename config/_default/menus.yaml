@@ -25,3 +25,7 @@ footer:
     name: Sitemap
     pageRef: /sitemap
     weight: 40
+  - identifier: RSS
+    name: RSS
+    pageRef: /index.xml
+    weight: 50

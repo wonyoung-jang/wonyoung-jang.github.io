@@ -137,7 +137,7 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/reference\/list-of-keyboard-shortcuts-for-wonyoungjang.org\/";
+    window.location.href = "\/project\/university\/vacation-cart-manager\/";
   }
 </script>
         
@@ -324,6 +324,10 @@
                 Sitemap
             </a>
         
+            <a  href="">
+                RSS
+            </a>
+        
     </div>
 
     <div class="footer-links-list">
@@ -335,21 +339,19 @@
                 target="_blank" 
                 rel="noopener noreferrer me">
                 GitHub
+                <i style="font-size: 16px">outbound</i>
             </a>
             <a  href="https://ko-fi.com/wonyoung_jang" 
                 target="_blank" 
                 rel="noopener noreferrer me">
                 Ko-fi
+                <i style="font-size: 16px">outbound</i>
             </a>
             <a  href="mailto:contact@wonyoungjang.org" 
                 target="_blank" 
                 rel="noopener noreferrer me">
                 Email
-            </a>
-            <a  href="/index.xml" 
-                target="_blank" 
-                rel="noopener noreferrer me">
-                RSS
+                <i style="font-size: 16px">outbound</i>
             </a>
     </div>
 </section>
@@ -363,33 +365,7 @@
     </a>
 </section>
 
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-</script>
+
     <script>
         document.getElementById("theme-toggle").addEventListener("click", () => {
             if (document.body.className.includes("dark")) {
@@ -400,7 +376,10 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
-    </script></footer>
+    </script>
+
+
+</footer>
         </main>
     </body>
 </html>

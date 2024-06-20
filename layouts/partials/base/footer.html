@@ -1,9 +1,7 @@
-<!-- Layout: Footer -->
-
-<!-- Links -->
+{{/* Links */}}
 <section class="footer-links">
+    {{/* Quick links */}}
     <div class="footer-links-list">
-        <!-- Quick links -->
         <span class="title-large">
             Quick links
         </span>
@@ -16,23 +14,24 @@
         {{ end }}
     </div>
 
+    {{/* Connect links */}}
     <div class="footer-links-list">
-        <!-- Connect links -->
         <span class="title-large">
             Connect
         </span>
 
-        {{- range site.Params.socialIcons }}
+        {{- range site.Params.ConnectLinks }}
             <a  href="{{ trim .url " " }}" 
                 target="_blank" 
                 rel="noopener noreferrer me">
                 {{ .name }}
+                <i style="font-size: 16px">outbound</i>
             </a>
         {{- end }}
     </div>
 </section>
 
-<!-- Copyright -->
+{{/* Copyright */}}
 <section class="copyright">
     <a  class="component button common with-icon"
         id="copyright-button"
@@ -41,34 +40,7 @@
     </a>
 </section>
 
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-</script>
-
+{{/* Script for theme toggle */}}
 {{- if (not .Site.Params.disableThemeToggle) }}
     <script>
         document.getElementById("theme-toggle").addEventListener("click", () => {
@@ -83,6 +55,7 @@
     </script>
 {{- end }}
 
+{{/* Script for code copy button */}}
 {{- if (and (eq .Kind "page") (ne .Layout "search") ) }}
     <script>
         document.querySelectorAll('pre > code').forEach((codeblock) => {

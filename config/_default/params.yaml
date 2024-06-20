@@ -14,15 +14,13 @@ label:
   icon: '/favicon-32x32.webp'
   iconHeight: 24
 
-socialIcons:
+connectLinks:
   - name: "GitHub"
     url: "https://github.com/wonyoung-jang"
   - name: "Ko-fi"
     url: "https://ko-fi.com/wonyoung_jang"
   - name: "Email"
     url: "mailto:contact@wonyoungjang.org"
-  - name: "RSS"
-    url: "/index.xml"
 
 home:
   title: Wonyoung Jang
