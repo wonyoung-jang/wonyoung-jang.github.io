@@ -1,0 +1,56 @@
+.text-field.filled {
+    --container-display: flex;
+    --container-flex-flow: row nowrap;
+    --container-justify-content: flex-start;
+    --container-align-items: center;
+    --container-gap: var(--size-4);
+    --container-height: var(--size-14);
+    --container-width: 100%;
+    --container-padding: 0 var(--size-4);
+    --container-outline: initial;
+    --container-elevation: initial;
+    --container-shape: var(--shape-corner-xs);
+    --bg-color: var(--color-surface-container-highest);
+    --text-color: var(--color-on-surface);
+    --icon-color: var(--color-on-surface);
+
+    input {
+        color: var(--color-on-surface);
+    }
+}
+
+.text-field.outlined {
+    --container-display: flex;
+    --container-flex-flow: row nowrap;
+    --container-justify-content: flex-start;
+    --container-align-items: center;
+    --container-gap: var(--size-4);
+    --container-height: var(--size-14);
+    --container-width: 100%;
+    --container-padding: 0 var(--size-4);
+    --container-outline: 1px solid var(--color-outline);
+    --container-elevation: initial;
+    --container-shape: var(--shape-corner-xs);
+    --bg-color: inherit;
+    --text-color: var(--color-on-surface-variant);
+    --icon-color: var(--color-on-surface-variant);
+
+    input {
+        color: var(--color-on-surface-variant);
+    }
+}
+
+.text-field {
+    flex: 1 1 auto;
+
+    * {
+        width: 100%;
+    }
+}
+
+.text-field:is(textarea) {
+    padding: var(--size-4);
+    color: var(--color-on-surface);
+    resize: vertical;
+    height: var(--size-42);
+}

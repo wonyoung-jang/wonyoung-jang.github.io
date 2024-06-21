@@ -7,63 +7,59 @@
     <label for="edit-name">
         {{ i18n "contact_name" }}
     </label>
-
-    <input 
-        type="text" 
-        id="edit-name" 
-        name="name" 
-        placeholder="{{ i18n "contact_name_placeholder" }}" 
-        tabindex="1" 
-        required 
-        autofocus>
+    
+    <div class="component text-field filled">
+        <input 
+            type="text" 
+            id="edit-name" 
+            name="name" 
+            placeholder="{{ i18n "contact_name_placeholder" }}" 
+            required>
+    </div>
 
     <label for="edit-mail">
         {{ i18n "contact_mail" }}
     </label>
+    
+    <div class="component text-field filled">
+        <input 
+            type="email" 
+            id="edit-mail" 
+            name="email" 
+            placeholder="{{ i18n "contact_mail_placeholder" }}" 
+            required>
+    </div>
 
-    <input 
-        type="email" 
-        id="edit-mail" 
-        name="email" 
-        placeholder="{{ i18n "contact_mail_placeholder" }}" 
-        tabindex="2" 
-        required>
-
-    <input 
-        type="text" 
-        id="edit-url" 
-        class="hidden" 
-        name="url" 
-        placeholder="{{ i18n "contact_honypot" }}">
     <label for="edit-subject">
         {{ i18n "contact_subject" }}
     </label>
 
-    <input 
-        type="text" 
-        id="edit-subject" 
-        name="subject" 
-        placeholder="{{ i18n "contact_subject_placeholder" }}" 
-        tabindex="3" 
-        required>
+    <div class="component text-field filled">
+        <input 
+            type="text" 
+            id="edit-subject" 
+            name="subject" 
+            placeholder="{{ i18n "contact_subject_placeholder" }}" 
+            required>
+    </div>
 
     <label for="edit-message">
         {{ i18n "contact_message" }}
     </label>
 
     <textarea 
+        class="component text-field filled"
         id="edit-message" 
         name="message" 
         rows="5" 
         placeholder="{{ i18n "contact_message_placeholder" }}" 
-        tabindex="4" 
         required>
     </textarea>
 
     <button 
+        class="component button common filled"
         type="submit" 
-        name="submit" 
-        class="form-submit">
+        name="submit">
         {{ i18n "contact_submit" }}
     </button>
     

@@ -1,49 +1,20 @@
 .contact-form {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--size-5);
-  gap: var(--size-3);
-  
-  border-radius: var(--shape-corner-xs);
+  padding: var(--size-8);
+  gap: var(--size-4);
+  border-radius: var(--shape-corner-xl);
   box-shadow: var(--elevation1);
-
   background: var(--color-surface-container);
-
   color: var(--color-on-surface);
 
-  textarea {
-    resize: vertical;
-    background: var(--color-surface-container-high);
-    color: var(--color-on-surface-variant);
-    box-shadow: var(--elevation2);
-    padding: var(--size-4);
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    height: 56px;
-    padding: 0 var(--size-4);
-
-    box-shadow: var(--elevation2);
-    
-    background: var(--color-surface-container-high);
-
-    color: var(--color-on-surface-variant);
-  }
-
-  button[type="submit"] {
-    margin: var(--size-2) 0;
-    padding: var(--size-2) var(--size-4);
-    align-self: center;
-    
-    border-radius: var(--shape-corner-xl);
-    box-shadow: var(--elevation1);
-
-    background-color: var(--color-primary);
-
-    color: var(--color-on-primary);
-    
+  [type="submit"] {
     cursor: pointer;
+    margin-top: var(--size-8);
+  }
+
+  label {
+    margin-top: var(--size-4);
   }
 
   .error {
