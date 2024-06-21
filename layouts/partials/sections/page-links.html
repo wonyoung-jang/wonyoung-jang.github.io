@@ -14,15 +14,11 @@
         <div class="divider"></div>
         </h5>
         
-        <ul>
-            {{- range $backlinks -}}
-            <li>
-                <a href="{{- .RelPermalink -}}">
-                    {{- .Title -}} 
-                </a>
-            </li>
-            {{- end -}}
-        </ul>
+        {{- range $backlinks -}}
+            <a href="{{- .RelPermalink -}}">
+                {{- .Title -}} 
+            </a>
+        {{- end -}}
     </nav>
 
 {{- end -}}
@@ -34,84 +30,66 @@
         <div class="divider"></div>
     </h5>
 
-    <ul>
-        {{- $pageurl := .Permalink -}}
-        {{- $title := .Title -}}
-        {{- $custom := false -}}
-        {{- $ShareButtons := (.Param "ShareButtons")}}
+    {{- $pageurl := .Permalink -}}
+    {{- $title := .Title -}}
+    {{- $custom := false -}}
+    {{- $ShareButtons := (.Param "ShareButtons")}}
 
-        {{- with $ShareButtons -}}
-            {{- $custom = true -}}
-        {{- end -}}
+    {{- with $ShareButtons -}}
+        {{- $custom = true -}}
+    {{- end -}}
 
-        {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on twitter"
-                    href="https://twitter.com/intent/tweet/?text={{- $title -}}&amp;url={{- $pageurl -}}&amp;hashtags={{- $.Scratch.Get "categories" -}}">      
-                    Twitter/X
+    {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) -}}
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on twitter"
+            href="https://twitter.com/intent/tweet/?text={{- $title -}}&amp;url={{- $pageurl -}}&amp;hashtags={{- $.Scratch.Get "categories" -}}">      
+            Twitter/X
+        </a>
+    {{- end -}}
+
+    {{- if (cond ($custom) (in $ShareButtons "linkedin") (true)) -}}
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{- $pageurl -}}&amp;title={{- $title -}}&amp;summary={{- $title -}}&amp;source={{- $pageurl -}}">
+            LinkedIn
+        </a>
+    {{- end -}}
+
+    {{- if (cond ($custom) (in $ShareButtons "reddit") (true)) -}}
+            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on reddit"
+                href="https://reddit.com/submit?url={{- $pageurl -}}&title={{- $title -}}">
+            Reddit
                 </a>
-            </li>
-        {{- end -}}
+    {{- end -}}
 
-        {{- if (cond ($custom) (in $ShareButtons "linkedin") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on linkedin"
-                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{- $pageurl -}}&amp;title={{- $title -}}&amp;summary={{- $title -}}&amp;source={{- $pageurl -}}">
-                    LinkedIn
+    {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) -}}
+            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on facebook"
+                href="https://facebook.com/sharer/sharer.php?u={{- $pageurl -}}">
+            Facebook
                 </a>
-            </li>
-        {{- end -}}
+    {{- end -}}
 
-        {{- if (cond ($custom) (in $ShareButtons "reddit") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on reddit"
-                    href="https://reddit.com/submit?url={{- $pageurl -}}&title={{- $title -}}">
-                Reddit
-                    </a>
-            </li>
-        {{- end -}}
-
-        {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on facebook"
-                    href="https://facebook.com/sharer/sharer.php?u={{- $pageurl -}}">
-                Facebook
-                    </a>
-            </li>
-        {{- end -}}
-
-        {{- if (cond ($custom) (in $ShareButtons "whatsapp") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on whatsapp"
-                    href="https://api.whatsapp.com/send?text={{- $title -}}%20-%20{{- $pageurl -}}">
-                WhatsApp
-                    </a>
-            </li>
-        {{- end -}}
-
-        {{- if (cond ($custom) (in $ShareButtons "telegram") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on telegram"
-                    href="https://telegram.me/share/url?text={{- $title -}}&amp;url={{- $pageurl -}}">
-                Telegram
-                    </a>
-            </li>
-        {{- end -}}
-
-        {{- if (cond ($custom) (in $ShareButtons "email") (true)) -}}
-            <li>
-                <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} via email" href="mailto:?subject={{- $title -}}&amp;body={{- $pageurl -}}">
-                    Email
+    {{- if (cond ($custom) (in $ShareButtons "whatsapp") (true)) -}}
+            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on whatsapp"
+                href="https://api.whatsapp.com/send?text={{- $title -}}%20-%20{{- $pageurl -}}">
+            WhatsApp
                 </a>
-            </li>
-        {{- end -}}
+    {{- end -}}
 
-        {{- if (cond ($custom) (in $ShareButtons "print") (true)) -}}
-            <li>
-                <a href="javascript:window.print()" aria-label="print {{- $title | plainify -}}">
-                    Print
+    {{- if (cond ($custom) (in $ShareButtons "telegram") (true)) -}}
+            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on telegram"
+                href="https://telegram.me/share/url?text={{- $title -}}&amp;url={{- $pageurl -}}">
+            Telegram
                 </a>
-            </li>
-        {{- end -}}
-    </ul>
+    {{- end -}}
+
+    {{- if (cond ($custom) (in $ShareButtons "email") (true)) -}}
+            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} via email" href="mailto:?subject={{- $title -}}&amp;body={{- $pageurl -}}">
+                Email
+            </a>
+    {{- end -}}
+
+    {{- if (cond ($custom) (in $ShareButtons "print") (true)) -}}
+            <a href="javascript:window.print()" aria-label="print {{- $title | plainify -}}">
+                Print
+            </a>
+    {{- end -}}
 </nav>
