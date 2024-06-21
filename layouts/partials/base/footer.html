@@ -1,35 +1,38 @@
 {{/* Links */}}
 <section class="footer-links">
+
     {{/* Quick links */}}
     <div class="footer-links-list">
         <span class="title-large">
             Quick links
         </span>
 
-        {{ $page := . }}
         {{ range site.Menus.footer }}
             <a  href="{{ .URL }}">
                 {{ .Name }}
             </a>
         {{ end }}
     </div>
+    
+    {{/* Sections */}}
+    <div class="footer-links-list">
+        <span class="title-large">
+            Sections
+        </span>
 
+        {{ range site.Menus.sections }}
+            <a  href="{{ .URL }}">
+                {{ .Name }}
+            </a>
+        {{ end }}
+    </div>
+    
     {{/* Connect links */}}
     <div class="footer-links-list">
         <span class="title-large">
             Connect
         </span>
 
-        {{/*- range .Site.Menus.Connect }}
-            <a  href="{{ .pageRef }}" 
-                target="_blank" 
-                rel="external noopener noreferrer me">
-                {{ .Name }}
-                <i>outbound</i>
-            </a>
-        {{- end */}}
-
-        {{ $page := . }}
         {{ range site.Menus.connect }}
             <a  href="{{ .URL }}"
                 target="_blank" 

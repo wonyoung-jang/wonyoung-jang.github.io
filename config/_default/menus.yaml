@@ -37,3 +37,12 @@ connect:
   - name: Email
     pageRef: mailto:contact@wonyoungjang.org
     weight: 20
+
+sections:
+  - identifier: Projects
+    name: Projects
+    pageRef: /project
+    weight: 10
+  - name: Resources
+    pageRef: /resource
+    weight: 20
