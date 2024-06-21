@@ -1,7 +1,11 @@
 highlight:
+  anchorLineNos: true
+  codeFences: true
+  guessSyntax: true
   lineNos: true
-  style: github-dark
   tabWidth: 4
+  pygmentsUseClasses: true
+  style: github-dark
 
 defaultMarkdownHandler: goldmark
 
