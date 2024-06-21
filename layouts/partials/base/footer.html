@@ -7,7 +7,7 @@
         </span>
 
         {{ $page := . }}
-        {{ range .Site.Menus.footer }}
+        {{ range site.Menus.footer }}
             <a  href="{{ .URL }}">
                 {{ .Name }}
             </a>
@@ -20,15 +20,45 @@
             Connect
         </span>
 
-        {{- range site.Params.ConnectLinks }}
-            <a  href="{{ trim .url " " }}" 
+        {{/*- range .Site.Menus.Connect }}
+            <a  href="{{ .pageRef }}" 
                 target="_blank" 
                 rel="external noopener noreferrer me">
-                {{ .name }}
+                {{ .Name }}
                 <i>outbound</i>
             </a>
-        {{- end }}
+        {{- end */}}
+
+        {{ $page := . }}
+        {{ range site.Menus.connect }}
+            <a  href="{{ .URL }}"
+                target="_blank" 
+                rel="external noopener noreferrer me">
+                {{ .Name }}
+                <i>outbound</i>
+            </a>
+        {{ end }}
     </div>
+
+    {{/* Ko-fi link links */}}
+    <div class="footer-links-list">
+        <span class="title-large">
+            Support me
+        </span>
+        
+        <div class="kofi-widget">
+            <script
+                type='text/javascript' 
+                src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'>
+            </script>
+            <script
+                type='text/javascript'>
+                kofiwidget2.init('Donate on Ko-fi', 'var(--color-sub180-container)', 'G2G3VPF5D');
+                kofiwidget2.draw();
+            </script> 
+        </div>
+    </div>
+
 </section>
 
 {{/* Copyright */}}

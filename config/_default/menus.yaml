@@ -29,3 +29,11 @@ footer:
     name: RSS
     pageRef: /index.xml
     weight: 50
+
+connect:
+  - name: GitHub
+    pageRef: https://github.com/wonyoung-jang
+    weight: 10
+  - name: Email
+    pageRef: mailto:contact@wonyoungjang.org
+    weight: 20

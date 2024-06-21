@@ -35,6 +35,21 @@ footer {
       background-color: var(--color-surface-container-highest);
     }
   }
+
+  .kofi-widget {
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 42px;
+    width: 100%;
+    
+    .kofitext {
+      color: var(--color-on-sub180-container) !important;
+    }
+  }
+
+  span {
+    margin-block: var(--spacing-panes);
+  }
 }
 
 .copyright {
