@@ -3,6 +3,23 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html:is(.is-publish-mode) {
+  header,
+  .page-header,
+  .page-links,
+  .page-navigation,
+  footer,
+  #toc,
+  #top-link {
+    display: none;
+  }
+  main,
+  .panes,
+  .pane {
+    all: unset;
+  }
+}
+
 body {
   display: flex;
   flex-flow: column nowrap;
