@@ -6,7 +6,7 @@
   <channel>
     <title>Wonyoung Jang</title>
     
-    <link>https://wonyoungjang.org/</link>
+    <link>http://localhost:1313/</link>
     
     <description>Recent content on Wonyoung Jang</description>
     
@@ -25,17 +25,17 @@
     
     
     <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate>
-      <atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
     
       <title>About</title>
     
-      <link>https://wonyoungjang.org/about/</link>
+      <link>http://localhost:1313/about/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
     
       <description>About me Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry&#xD;outbound&#xD;, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program&#xD;outbound&#xD;at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description>
     
@@ -45,11 +45,11 @@
     
       <title>Components</title>
     
-      <link>https://wonyoungjang.org/resource/reference/components/</link>
+      <link>http://localhost:1313/resource/reference/components/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/components/</guid>
+      <guid>http://localhost:1313/resource/reference/components/</guid>
     
       <description></description>
     
@@ -59,11 +59,11 @@
     
       <title>Contact</title>
     
-      <link>https://wonyoungjang.org/contact/</link>
+      <link>http://localhost:1313/contact/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
     
       <description>Contact me directly The best way to contact me directly is through email at contact@wonyoungjang.org&#xD;outbound&#xD;.&#xA;Give me feedback Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.</description>
     
@@ -73,11 +73,11 @@
     
       <title>Feed layout</title>
     
-      <link>https://wonyoungjang.org/resource/reference/feed-layout/</link>
+      <link>http://localhost:1313/resource/reference/feed-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/feed-layout/</guid>
+      <guid>http://localhost:1313/resource/reference/feed-layout/</guid>
     
       <description></description>
     
@@ -87,11 +87,11 @@
     
       <title>Fixed and flexible layout</title>
     
-      <link>https://wonyoungjang.org/resource/reference/fixed-and-flexible-layout/</link>
+      <link>http://localhost:1313/resource/reference/fixed-and-flexible-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/fixed-and-flexible-layout/</guid>
+      <guid>http://localhost:1313/resource/reference/fixed-and-flexible-layout/</guid>
     
       <description></description>
     
@@ -101,11 +101,11 @@
     
       <title>List of Admonitions for This Site</title>
     
-      <link>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/</link>
+      <link>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-this-site/</guid>
+      <guid>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</guid>
     
       <description>What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.</description>
     
@@ -115,11 +115,11 @@
     
       <title>List-detail layout</title>
     
-      <link>https://wonyoungjang.org/resource/reference/list-detail-layout/</link>
+      <link>http://localhost:1313/resource/reference/list-detail-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/list-detail-layout/</guid>
+      <guid>http://localhost:1313/resource/reference/list-detail-layout/</guid>
     
       <description></description>
     
@@ -129,11 +129,11 @@
     
       <title>Motion</title>
     
-      <link>https://wonyoungjang.org/resource/reference/motion/</link>
+      <link>http://localhost:1313/resource/reference/motion/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/motion/</guid>
+      <guid>http://localhost:1313/resource/reference/motion/</guid>
     
       <description></description>
     
@@ -143,11 +143,11 @@
     
       <title>Search</title>
     
-      <link>https://wonyoungjang.org/search/</link>
+      <link>http://localhost:1313/search/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/search/</guid>
+      <guid>http://localhost:1313/search/</guid>
     
       <description></description>
     
@@ -157,11 +157,11 @@
     
       <title>Shapes</title>
     
-      <link>https://wonyoungjang.org/resource/reference/shapes/</link>
+      <link>http://localhost:1313/resource/reference/shapes/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/shapes/</guid>
+      <guid>http://localhost:1313/resource/reference/shapes/</guid>
     
       <description></description>
     
@@ -171,11 +171,11 @@
     
       <title>Single pane layout</title>
     
-      <link>https://wonyoungjang.org/resource/reference/single-pane-layout/</link>
+      <link>http://localhost:1313/resource/reference/single-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/single-pane-layout/</guid>
+      <guid>http://localhost:1313/resource/reference/single-pane-layout/</guid>
     
       <description></description>
     
@@ -185,11 +185,11 @@
     
       <title>Sitemap</title>
     
-      <link>https://wonyoungjang.org/sitemap/</link>
+      <link>http://localhost:1313/sitemap/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/sitemap/</guid>
+      <guid>http://localhost:1313/sitemap/</guid>
     
       <description></description>
     
@@ -199,11 +199,11 @@
     
       <title>Split-pane layout</title>
     
-      <link>https://wonyoungjang.org/resource/reference/split-pane-layout/</link>
+      <link>http://localhost:1313/resource/reference/split-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/split-pane-layout/</guid>
+      <guid>http://localhost:1313/resource/reference/split-pane-layout/</guid>
     
       <description></description>
     
@@ -213,11 +213,11 @@
     
       <title>States and elevation</title>
     
-      <link>https://wonyoungjang.org/resource/reference/states-and-elevation/</link>
+      <link>http://localhost:1313/resource/reference/states-and-elevation/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/states-and-elevation/</guid>
+      <guid>http://localhost:1313/resource/reference/states-and-elevation/</guid>
     
       <description></description>
     
@@ -227,11 +227,11 @@
     
       <title>Supporting pane layout</title>
     
-      <link>https://wonyoungjang.org/resource/reference/supporting-pane-layout/</link>
+      <link>http://localhost:1313/resource/reference/supporting-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/supporting-pane-layout/</guid>
+      <guid>http://localhost:1313/resource/reference/supporting-pane-layout/</guid>
     
       <description></description>
     
@@ -241,11 +241,11 @@
     
       <title>Typography</title>
     
-      <link>https://wonyoungjang.org/resource/reference/typography/</link>
+      <link>http://localhost:1313/resource/reference/typography/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/typography/</guid>
+      <guid>http://localhost:1313/resource/reference/typography/</guid>
     
       <description></description>
     
@@ -255,11 +255,11 @@
     
       <title>List of Keyboard Shortcuts for WonyoungJang.org</title>
     
-      <link>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
+      <link>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
     
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
+      <guid>http://localhost:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
     
       <description>Navigation ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance ALT+SHIFT+t → Toggle light/dark themes</description>
     
@@ -269,11 +269,11 @@
     
       <title>Realtime Multiplayer Drawing App</title>
     
-      <link>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</link>
+      <link>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</link>
     
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing-app/</guid>
+      <guid>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</guid>
     
       <description>Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo&#xD;outbound&#xD;, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus&#xD;outbound&#xD;generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter&#xD;outbound&#xD;.&#xA;Why While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description>
     
@@ -283,11 +283,11 @@
     
       <title>This Website</title>
     
-      <link>https://wonyoungjang.org/project/software/this-website/</link>
+      <link>http://localhost:1313/project/software/this-website/</link>
     
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/this-website/</guid>
+      <guid>http://localhost:1313/project/software/this-website/</guid>
     
       <description>How it&amp;rsquo;s made Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.</description>
     
@@ -297,11 +297,11 @@
     
       <title>FIRST LEGO League Challenge Q-Learning Event Scheduler</title>
     
-      <link>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
+      <link>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</link>
     
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
+      <guid>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</guid>
     
       <description>A brief history A nerd snipe from a coworker My coworker nerd sniped&#xD;outbound&#xD;me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge&#xD;outbound&#xD;event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
     
@@ -311,11 +311,11 @@
     
       <title>Save Top Level Reddit Comments</title>
     
-      <link>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</link>
+      <link>http://localhost:1313/project/software/save-top-level-reddit-comments/</link>
     
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</guid>
+      <guid>http://localhost:1313/project/software/save-top-level-reddit-comments/</guid>
     
       <description>Premise Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
     
@@ -325,11 +325,11 @@
     
       <title>Disaster Recovery Robot Simulation</title>
     
-      <link>https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/</link>
+      <link>http://localhost:1313/project/university/disaster-recovery-robot-simulation/</link>
     
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/</guid>
+      <guid>http://localhost:1313/project/university/disaster-recovery-robot-simulation/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Familiarize with CoppeliaSim robotics virtual environment and tools&#xA;Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment&#xA;Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task</description>
     
@@ -339,11 +339,11 @@
     
       <title>CS Career Recommendation Chatbot</title>
     
-      <link>https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/</link>
+      <link>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</link>
     
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/cs-career-recommendation-chatbot/</guid>
+      <guid>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Develop a chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods</description>
     
@@ -353,11 +353,11 @@
     
       <title>Logseq Markdown Tokenizer</title>
     
-      <link>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</link>
+      <link>http://localhost:1313/project/software/logseq-markdown-tokenizer/</link>
     
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</guid>
+      <guid>http://localhost:1313/project/software/logseq-markdown-tokenizer/</guid>
     
       <description>Problem Logseq&#xD;outbound&#xD;does not have a native way to view the character count of your notes (aka pages).&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually.&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph.</description>
     
@@ -367,11 +367,11 @@
     
       <title>Package Delivery Route Optimization</title>
     
-      <link>https://wonyoungjang.org/project/university/package-delivery-route-optimization/</link>
+      <link>http://localhost:1313/project/university/package-delivery-route-optimization/</link>
     
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/package-delivery-route-optimization/</guid>
+      <guid>http://localhost:1313/project/university/package-delivery-route-optimization/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Implement a hash table data structure (without external libraries) to store package data&#xA;Create an insertion function to add package details (address, deadline, city, zip code, weight, status) to the hash table&#xA;Create a lookup function to retrieve package details based on package ID</description>
     
@@ -381,11 +381,11 @@
     
       <title>Hotel Reservation Manager</title>
     
-      <link>https://wonyoungjang.org/project/university/hotel-reservation-manager/</link>
+      <link>http://localhost:1313/project/university/hotel-reservation-manager/</link>
     
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/hotel-reservation-manager/</guid>
+      <guid>http://localhost:1313/project/university/hotel-reservation-manager/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Integrate resource bundles in the application for English and French translations, including a welcome message&#xA;Implement multithreading to display the welcome message in both English and French simultaneously&#xA;Modify the front end to show reservation prices in USD, CAD, and EUR</description>
     
@@ -395,11 +395,11 @@
     
       <title>Vacation Cart Manager</title>
     
-      <link>https://wonyoungjang.org/project/university/vacation-cart-manager/</link>
+      <link>http://localhost:1313/project/university/vacation-cart-manager/</link>
     
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/vacation-cart-manager/</guid>
+      <guid>http://localhost:1313/project/university/vacation-cart-manager/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a new Java project using Spring Initializr&#xD;outbound&#xD;, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab&#xD;outbound&#xD;repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description>
     
@@ -409,11 +409,11 @@
     
       <title>Retail Inventory Manager</title>
     
-      <link>https://wonyoungjang.org/project/university/retail-inventory-manager/</link>
+      <link>http://localhost:1313/project/university/retail-inventory-manager/</link>
     
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/retail-inventory-manager/</guid>
+      <guid>http://localhost:1313/project/university/retail-inventory-manager/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Customize the HTML user interface to reflect the specific customer&amp;rsquo;s shop name, product names, and part names&#xA;Add an About page that accurately describes the customer&amp;rsquo;s company and ensure proper navigation within the application&#xA;Integrate a sample inventory for the chosen store, including five products and five parts, ensuring no data overwrite and handling duplicates as &amp;ldquo;multi-pack&amp;rdquo; parts</description>
     
@@ -423,11 +423,11 @@
     
       <title>DVD Rental Database Revenue Insights</title>
     
-      <link>https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/</link>
+      <link>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</link>
     
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/dvd-rental-database-revenue-insights/</guid>
+      <guid>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report</description>
     
@@ -437,11 +437,11 @@
     
       <title>Student Record System</title>
     
-      <link>https://wonyoungjang.org/project/university/student-record-system/</link>
+      <link>http://localhost:1313/project/university/student-record-system/</link>
     
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/student-record-system/</guid>
+      <guid>http://localhost:1313/project/university/student-record-system/</guid>
     
       <description>![🖼 student- record-system.webp](/assets/student- record-system.webp)&#xA;warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data</description>
     
@@ -451,11 +451,11 @@
     
       <title>Bagel Corner and Mister Coffee Database Management</title>
     
-      <link>https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/</link>
+      <link>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</link>
     
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
+      <guid>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance</description>
     
@@ -465,11 +465,11 @@
     
       <title></title>
     
-      <link>https://wonyoungjang.org/graph/</link>
+      <link>http://localhost:1313/graph/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/graph/</guid>
+      <guid>http://localhost:1313/graph/</guid>
     
       <description>&lt;!DOCTYPE html&gt; </description>
     
