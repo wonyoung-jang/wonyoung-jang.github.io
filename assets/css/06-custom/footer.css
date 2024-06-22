@@ -1,18 +1,18 @@
 footer {
   position: relative;
 
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
+  align-items: stretch;
 
-  width: 100%;
   padding: 20dvh 8dvw 4dvh 8dvw;
   gap: 8dvh;
 }
 
 .footer-links {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: 100%;
   justify-content: space-around;
 
@@ -20,7 +20,6 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
-    width: 100%;
   }
 
   a {
@@ -40,7 +39,6 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     min-height: 42px;
-    width: 100%;
     
     .kofitext {
       color: var(--color-on-sub180-container) !important;
@@ -53,16 +51,18 @@ footer {
 }
 
 .copyright {
+  flex: 1 1 0;
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
 
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 
   #copyright-button {
+    flex: 1 1 0;
     --bg-color: var(--color-surface-container);
     --icon-color: var(--color-on-surface-variant);
     --text-color: var(--color-on-surface-variant);
+    --container-shape: var(--shape-corner-m);
   }
 }
