@@ -1,27 +1,17 @@
-<div class="debug">
-  <section>
-    <h6>Site</h6>
-    {{ range site.Pages.GroupBy "Kind" }}
-      <p>{{ .Key }}</p>
-
-      {{ range .Pages }}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      {{ end }}
-    {{ end }}
-  </section>
-
-  <section>
-      <h6>Site Information</h6>
+<details class="debug-config">
+  <summary>Debug</summary>
+  <details>
+      <summary><h6>Site Debug Information</h6></summary>
       <pre><b>Title:</b> {{- debug.Dump site.Title -}}</pre>
       <pre><b>Language:</b> {{- debug.Dump site.Language -}}</pre>
       <pre><b>IsHome:</b> {{- debug.Dump .IsHome -}}</pre>
       <pre><b>IsPage:</b> {{- debug.Dump .IsPage -}}</pre>
       <pre><b>IsSection:</b> {{- debug.Dump .IsSection -}}</pre>
       <pre><b>IsNode:</b> {{- debug.Dump .IsNode -}}</pre>
-  </section>
+  </details>
 
-  <section>
-    <h6>Page Information</h6>
+  <details>
+    <summary><h6>Page Debug Information</h6></summary>
     <table>
       <tr>
         <th>Attribute</th>
@@ -76,10 +66,10 @@
         <td><pre>{{- debug.Dump .Page.Description }}</pre></td>
       </tr>
     </table>
-  </section>
+  </details>
 
-  <section>
-    <h6>Content Information</h6>
+  <details>
+    <summary><h6> Content Debug Information</h6></summary>
     <table>
       <tr>
         <th>Attribute</th>
@@ -98,5 +88,5 @@
         <td>{{ debug.Dump .Page.Len }}</td>
       </tr>
     </table>
-  </section>
-</div>
+  </details>
+</details>
