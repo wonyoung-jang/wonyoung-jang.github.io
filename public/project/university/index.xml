@@ -133,7 +133,7 @@
     
       <guid>http://localhost:1313/project/university/student-record-system/</guid>
     
-      <description>![🖼 student- record-system.webp](/assets/student- record-system.webp)&#xA;warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data</description>
+      <description>![student-record-system.webp](/assets/student- record-system.webp)&#xA;warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data</description>
     
     </item>
     
