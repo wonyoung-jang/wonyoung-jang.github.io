@@ -3,7 +3,8 @@
 <article class="layout panes basic-singlepane">
   <section id="components-showcase" class="layout pane">
 
-    <section>
+    {{/*  Text fields  */}}
+    <section class="component-group">
       <h2>Text Input</h2>
       <div class="component text-field filled">
         <input type="text" placeholder="Placeholder">
@@ -12,7 +13,9 @@
         <input type="text" placeholder="Placeholder">
       </div>
     </section>
-    <section>
+
+    {{/*  Buttons  */}}
+    <section class="component-group">
       <h2>Common buttons</h2>
       <button class="component button common">Text</button>
       <button class="component button common elevated">Elevated</button>
@@ -21,7 +24,8 @@
       <button class="component button common outlined">Outlined</button>
     </section>
 
-    <section>
+    {{/*  Icon buttons  */}}
+    <section class="component-group">
       <h2>Icon buttons</h2>
       <button class="component button icon">
         <i>settings</i>
@@ -37,57 +41,82 @@
       </button>
     </section>
 
-    <section>
+    {{/*  FABs  */}}
+    <section class="component-group">
       <h2>FABs</h2>
-
       <section>
-        <button class="component button surface-container-high fab">
+        <button class="component button surface-container-high fab small">
           <i>add</i>
         </button>
-        <button class="component button surface-container-high fab small">
+        <button class="component button surface-container-high fab">
           <i>add</i>
         </button>
         <button class="component button surface-container-high fab large">
           <i>add</i>
         </button>
-        <button class="component button surface-container-high fab extended">
-          <i>add</i>
-        </button>
-        <button class="component button surface-container-high fab extended">
-          Extended
-          <i>add</i>
-        </button>
       </section>
 
       <section>
-        <button class="component button primary-container fab">
+        <button class="component button primary-container fab small">
           <i>add</i>
         </button>
-        <button class="component button primary-container fab small">
+        <button class="component button primary-container fab">
           <i>add</i>
         </button>
         <button class="component button primary-container fab large">
           <i>add</i>
         </button>
-        <button class="component button primary-container fab extended">
-          <i>add</i>
-        </button>
-        <button class="component button primary-container fab extended">
-          Extended
-          <i>add</i>
-        </button>
       </section>
 
       <section>
-        <button class="component button secondary-container fab">
+        <button class="component button secondary-container fab small">
           <i>add</i>
         </button>
-        <button class="component button secondary-container fab small">
+        <button class="component button secondary-container fab">
           <i>add</i>
         </button>
         <button class="component button secondary-container fab large">
           <i>add</i>
         </button>
+      </section>
+
+      <section>
+        <button class="component button tertiary-container fab small">
+          <i>add</i>
+        </button>
+        <button class="component button tertiary-container fab">
+          <i>add</i>
+        </button>
+        <button class="component button tertiary-container fab large">
+          <i>add</i>
+        </button>
+      </section>
+    </section>
+
+    {{/*  Extended FABs  */}}
+    <section class="component-group">
+      <h2>Extended FABs</h2>
+      <section>
+        <button class="component button surface-container-high fab extended">
+          <i>add</i>
+        </button>
+        <button class="component button surface-container-high fab extended">
+          Extended
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button primary-container fab extended">
+          <i>add</i>
+        </button>
+        <button class="component button primary-container fab extended">
+          Extended
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
         <button class="component button secondary-container fab extended">
           <i>add</i>
         </button>
@@ -98,15 +127,6 @@
       </section>
 
       <section>
-        <button class="component button tertiary-container fab">
-          <i>add</i>
-        </button>
-        <button class="component button tertiary-container fab small">
-          <i>add</i>
-        </button>
-        <button class="component button tertiary-container fab large">
-          <i>add</i>
-        </button>
         <button class="component button tertiary-container fab extended">
           <i>add</i>
         </button>
@@ -117,7 +137,8 @@
       </section>
     </section>
 
-    <section>
+    {{/*  Cards  */}}
+    <section class="component-group">
       <h2>Cards</h2>
       <div class="component card elevated">
         <span>Elevated card</span>
@@ -129,6 +150,7 @@
         <span>Outlined card</span>
       </div>
     </section>
+
   </section>
 </article>
 
