@@ -15,17 +15,7 @@ window.onload = function () {
                 let data = JSON.parse(xhr.responseText);
                 if (data) {
                     // fuse.js options; check fuse.js website for details
-                    let options = {
-                        distance: 100,
-                        threshold: 0.4,
-                        ignoreLocation: true,
-                        keys: [
-                            'title',
-                            'permalink',
-                            'summary',
-                            'content'
-                        ]
-                    };
+                    let options;
                     if (params.fuseOpts) {
                         options = {
                             isCaseSensitive: params.fuseOpts.iscasesensitive ?? false,
@@ -35,10 +25,11 @@ window.onload = function () {
                             shouldSort: params.fuseOpts.shouldsort ?? true,
                             findAllMatches: params.fuseOpts.findallmatches ?? false,
                             keys: params.fuseOpts.keys ?? ['title', 'permalink', 'summary', 'content'],
+                            
                             location: params.fuseOpts.location ?? 0,
-                            threshold: params.fuseOpts.threshold ?? 0.4,
+                            threshold: params.fuseOpts.threshold ?? 0.6,
                             distance: params.fuseOpts.distance ?? 100,
-                            ignoreLocation: params.fuseOpts.ignorelocation ?? true
+                            ignoreLocation: params.fuseOpts.ignorelocation ?? false
                         }
                     }
                     fuse = new Fuse(data, options); // build the index from the json file
@@ -52,11 +43,13 @@ window.onload = function () {
     xhr.send();
 }
 
+// function to focus on search input
 function activeToggle(ae) {
+    // remove focus from all elements
     document.querySelectorAll('.focus').forEach(function (element) {
-        // rm focus class
         element.classList.remove("focus")
     });
+    // focus on element
     if (ae) {
         ae.focus()
         document.activeElement = current_elem = ae;
@@ -66,6 +59,7 @@ function activeToggle(ae) {
     }
 }
 
+// reset search results
 function reset() {
     resultsAvailable = false;
     resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
@@ -78,11 +72,13 @@ sInput.onkeyup = function (e) {
     // in the search box
     if (fuse) {
         let results;
+        // if the search input is not empty run the search
         if (params.fuseOpts) {
             results = fuse.search(this.value.trim(), {limit: params.fuseOpts.limit}); // the actual query being run using fuse.js along with options
         } else {
             results = fuse.search(this.value.trim()); // the actual query being run using fuse.js
         }
+        // populate searchResults
         if (results.length !== 0) {
             // build our html if result exists
             let resultSet = ''; // our results bucket
@@ -103,33 +99,36 @@ sInput.onkeyup = function (e) {
     }
 }
 
+// clicking outside makes the search results disappear
 sInput.addEventListener('search', function (e) {
     // clicked on x
     if (!this.value) reset()
 })
 
-// kb bindings
+// keyboard bindings
 document.onkeydown = function (e) {
     let key = e.key;
     let ae = document.activeElement;
 
     let inbox = document.getElementById("searchbox").contains(ae)
 
+    // if the search input is focused and user presses escape
     if (ae === sInput) {
         let elements = document.getElementsByClassName('focus');
         while (elements.length > 0) {
             elements[0].classList.remove('focus');
         }
     } else if (current_elem) ae = current_elem;
-
     if (key === "Escape") {
         reset()
     } else if (!resultsAvailable || !inbox) {
         return
     } else if (key === "ArrowDown") {
+        // if the currently focused element is not the search input, move focus to next element
         e.preventDefault();
         if (ae == sInput) {
-            // if the currently focused element is the search input, focus the <a> of first <li>
+            // if the currently focused element is the search input, 
+            // focus the <a> of first <li>
             activeToggle(resList.firstChild.lastChild);
         } else if (ae.parentElement != last) {
             // if the currently focused element's parent is last, do nothing
@@ -137,6 +136,7 @@ document.onkeydown = function (e) {
             activeToggle(ae.parentElement.nextSibling.lastChild);
         }
     } else if (key === "ArrowUp") {
+        // if the currently focused element is not the search input, move focus to previous element
         e.preventDefault();
         if (ae.parentElement == first) {
             // if the currently focused element is first item, go to input box
@@ -147,6 +147,7 @@ document.onkeydown = function (e) {
             activeToggle(ae.parentElement.previousSibling.lastChild);
         }
     } else if (key === "ArrowRight") {
+        // if arrow right is pressed, click on the active link
         ae.click(); // click on active link
     }
 }

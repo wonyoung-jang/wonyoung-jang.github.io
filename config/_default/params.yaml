@@ -1,4 +1,4 @@
-debug: true
+debug: false
 
 defaultTheme: auto
 env: production
@@ -24,3 +24,21 @@ home:
 author:
   name: "Wonyoung Jang"
   email: "contact@wonyoungjang.org"
+
+fuseOpts:
+  # Basic
+  isCaseSensitive: false
+  includeScore: true
+  includeMatches: true
+  minMatchCharLength: 1
+  shouldSort: true
+  findAllMatches: false
+  keys: ["title", "permalink", "summary", "content"]
+
+  # Fuzzy matching
+  location: 0
+  threshold: 0.6
+  distance: 100
+  ignoreLocation: false
+
+  limit: 5
