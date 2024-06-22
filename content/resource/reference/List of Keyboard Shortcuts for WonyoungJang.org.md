@@ -11,7 +11,7 @@ type:
 date: 2024-03-29
 description: This page is a list of keyboard shortcuts for navigating this site
 title: List of Keyboard Shortcuts for WonyoungJang.org
-lastMod: 2024-06-14
+lastMod: 2024-06-22
 ---
 ## Navigation
 

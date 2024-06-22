@@ -4,7 +4,7 @@
   <channel>
     <title>Resources on Wonyoung Jang</title>
     
-    <link>http://localhost:1313/resource/</link>
+    <link>https://wonyoungjang.org/resource/</link>
     
     <description>Recent content in Resources on Wonyoung Jang</description>
     
@@ -23,6 +23,6 @@
     
     
     <lastBuildDate></lastBuildDate>
-      <atom:link href="http://localhost:1313/resource/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resource/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

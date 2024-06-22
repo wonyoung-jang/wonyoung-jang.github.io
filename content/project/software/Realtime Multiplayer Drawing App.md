@@ -11,7 +11,7 @@ type:
 date: 2024-03-08
 description: Draw in realtime on a blank canvas with others on the same server
 title: Realtime Multiplayer Drawing App
-lastMod: 2024-06-19
+lastMod: 2024-06-22
 ---
 ![realtime-drawing.webp](/assets/realtime-drawing.webp)
 

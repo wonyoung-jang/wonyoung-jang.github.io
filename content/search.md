@@ -12,6 +12,5 @@ description: Search the contents of https://wonyoungjang.org
 title: Search
 tags:
 categories:
-lastMod: 2024-06-11
+lastMod: 2024-06-22
 ---
-

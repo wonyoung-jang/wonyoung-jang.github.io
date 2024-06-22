@@ -11,7 +11,7 @@ type:
 date: 2022-12-18
 description: Built SQL database models for Bagel Corner and Mister Coffee, including ER diagrams, tables, and queries, plus data loading and reporting
 title: Bagel Corner and Mister Coffee Database Management
-lastMod: 2024-06-19
+lastMod: 2024-06-22
 ---
 ![bagel-corner-erd.webp](/assets/bagel-corner-erd.webp)
 

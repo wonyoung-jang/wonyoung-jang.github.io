@@ -13,6 +13,6 @@ date:
 description:
 - WonyoungJang.org
 title: Typography
-lastMod: 2024-06-13
+lastMod: 2024-06-22
 ---
 

@@ -11,7 +11,7 @@ type:
 date: 2023-07-12
 description: Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query
 title: DVD Rental Database Revenue Insights
-lastMod: 2024-06-19
+lastMod: 2024-06-22
 ---
 ![🖼 dvd-rental-database.webp](/assets/dvd-rental-database.webp)
 

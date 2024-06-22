@@ -1,11 +1,18 @@
 ---
+aliases: 
+draft: false
+slug: 
+layout: 
+githubrepo: 
+keywords: 
+type: 
 date:
 - 2024-04-01 Monday
-coverimage: ../assets/meta_page_icon_1710524695411_0.webp
+description: 
 title: Contact
 tags:
 categories:
-lastMod: 2024-06-15
+lastMod: 2024-06-22
 ---
 ## Contact me directly
 

@@ -12,7 +12,7 @@ date:
 - 2024-04-01 Monday
 description: 
 title: About
-lastMod: 2024-06-15
+lastMod: 2024-06-22
 ---
 ## About me
 

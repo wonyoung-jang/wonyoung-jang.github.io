@@ -11,7 +11,7 @@ type:
 date: 2024-01-25
 description: Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration
 title: Disaster Recovery Robot Simulation
-lastMod: 2024-06-19
+lastMod: 2024-06-22
 ---
 ![disaster-recovery-robot.webp](/assets/disaster-recovery-robot.webp)
 

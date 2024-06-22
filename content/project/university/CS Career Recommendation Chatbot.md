@@ -11,7 +11,7 @@ type:
 date: 2024-01-22
 description: Built a  [Pandorabot](https://home.pandorabots.com/home.html) chatbot to help students find computing jobs matching their skills, assisting a university career advisor
 title: CS Career Recommendation Chatbot
-lastMod: 2024-06-19
+lastMod: 2024-06-22
 ---
 ![pandorabots.webp](/assets/pandorabots.webp)
 
