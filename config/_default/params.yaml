@@ -6,9 +6,6 @@ title: Wonyoung Jang
 
 assets:
   favicon: '/sitelogo.svg'
-  favicon16x16: '/sitelogo.svg'
-  favicon32x32: '/sitelogo.svg'
-  apple_touch_icon: '/sitelogo.svg'
 
 label:
   icon: '/sitelogo.svg'
@@ -17,12 +14,7 @@ label:
 home:
   title: Wonyoung Jang
   subtitle: Personal Website
-  
-  imageUrl: /sitelogo.svg
-  imageTitle: WonyoungJang.org site logo
-  imageHeight: 150px
-  imageWidth: 150px
-  
+
   buttons:
     - name: Software development projects
       url: "/project/software"
