@@ -7,7 +7,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/color/</loc>
+    <loc>http://localhost:1313/resource/reference/colors/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -32,7 +32,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/resource/reference/list-of-admonitions-for-this-site/</loc>
+    <loc>http://localhost:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -122,17 +122,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/project/software/realtime-multiplayer-drawing-app/</loc>
+    <loc>http://localhost:1313/project/software/realtime-multiplayer-drawing/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/project/software/this-website/</loc>
+    <loc>http://localhost:1313/project/software/wonyoungjang.org/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/project/software/first-lego-league-challenge-q-learning-event-scheduler/</loc>
+    <loc>http://localhost:1313/project/software/q-learning-tournament-scheduler/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -147,7 +147,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</loc>
+    <loc>http://localhost:1313/project/university/cs-career-chatbot/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -177,7 +177,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</loc>
+    <loc>http://localhost:1313/project/university/dvd-rental-database/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -187,12 +187,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</loc>
+    <loc>http://localhost:1313/project/university/food-shop-database-management/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/graph/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

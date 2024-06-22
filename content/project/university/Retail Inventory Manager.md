@@ -10,7 +10,7 @@ keywords:
 type: 
 date: 2023-11-18
 description: Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client's needs
-title: Retail Inventory Manager
+title: Retail inventory manager
 lastMod: 2024-06-22
 ---
 ![🖼 retail-inventory.webp](/assets/retail-inventory.webp)

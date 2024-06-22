@@ -10,7 +10,7 @@ keywords:
 type: 
 date: 2023-07-01
 description: Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming
-title: Student Record System
+title: Student record system
 lastMod: 2024-06-22
 ---
 ![🖼 student- record-system.webp](/assets/student- record-system.webp)

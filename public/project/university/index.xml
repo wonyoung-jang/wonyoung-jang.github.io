@@ -27,7 +27,7 @@
     
     <item>
     
-      <title>Disaster Recovery Robot Simulation</title>
+      <title>Disaster recovery robot simulation</title>
     
       <link>http://localhost:1313/project/university/disaster-recovery-robot-simulation/</link>
     
@@ -41,13 +41,13 @@
     
     <item>
     
-      <title>CS Career Recommendation Chatbot</title>
+      <title>CS career chatbot</title>
     
-      <link>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</link>
+      <link>http://localhost:1313/project/university/cs-career-chatbot/</link>
     
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://localhost:1313/project/university/cs-career-recommendation-chatbot/</guid>
+      <guid>http://localhost:1313/project/university/cs-career-chatbot/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Develop a chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods</description>
     
@@ -55,7 +55,7 @@
     
     <item>
     
-      <title>Package Delivery Route Optimization</title>
+      <title>Package delivery route optimization</title>
     
       <link>http://localhost:1313/project/university/package-delivery-route-optimization/</link>
     
@@ -69,7 +69,7 @@
     
     <item>
     
-      <title>Hotel Reservation Manager</title>
+      <title>Hotel reservation manager</title>
     
       <link>http://localhost:1313/project/university/hotel-reservation-manager/</link>
     
@@ -83,7 +83,7 @@
     
     <item>
     
-      <title>Vacation Cart Manager</title>
+      <title>Vacation cart manager</title>
     
       <link>http://localhost:1313/project/university/vacation-cart-manager/</link>
     
@@ -97,7 +97,7 @@
     
     <item>
     
-      <title>Retail Inventory Manager</title>
+      <title>Retail inventory manager</title>
     
       <link>http://localhost:1313/project/university/retail-inventory-manager/</link>
     
@@ -111,13 +111,13 @@
     
     <item>
     
-      <title>DVD Rental Database Revenue Insights</title>
+      <title>DVD rental database</title>
     
-      <link>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</link>
+      <link>http://localhost:1313/project/university/dvd-rental-database/</link>
     
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://localhost:1313/project/university/dvd-rental-database-revenue-insights/</guid>
+      <guid>http://localhost:1313/project/university/dvd-rental-database/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report</description>
     
@@ -125,7 +125,7 @@
     
     <item>
     
-      <title>Student Record System</title>
+      <title>Student record system</title>
     
       <link>http://localhost:1313/project/university/student-record-system/</link>
     
@@ -139,13 +139,13 @@
     
     <item>
     
-      <title>Bagel Corner and Mister Coffee Database Management</title>
+      <title>Food shop database management</title>
     
-      <link>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</link>
+      <link>http://localhost:1313/project/university/food-shop-database-management/</link>
     
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://localhost:1313/project/university/bagel-corner-and-mister-coffee-database-management/</guid>
+      <guid>http://localhost:1313/project/university/food-shop-database-management/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance</description>
     

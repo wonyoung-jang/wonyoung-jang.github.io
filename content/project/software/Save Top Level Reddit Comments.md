@@ -10,7 +10,7 @@ keywords:
 type: 
 date: 2024-01-28
 description: Extract the parent comments of a [reddit](https://www.reddit.com/) post
-title: Save Top Level Reddit Comments
+title: Save top level reddit comments
 lastMod: 2024-06-22
 ---
 ![reddit-top-comments.webp](/assets/reddit-top-comments.webp)

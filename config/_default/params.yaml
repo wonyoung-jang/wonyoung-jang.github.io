@@ -5,20 +5,20 @@ env: production
 title: Wonyoung Jang
 
 assets:
-  favicon: '/favicon.ico'
-  favicon16x16: '/favicon-16x16.webp'
-  favicon32x32: '/favicon-32x32.webp'
-  apple_touch_icon: '/apple-touch-icon.webp'
+  favicon: '/sitelogo.svg'
+  favicon16x16: '/sitelogo.svg'
+  favicon32x32: '/sitelogo.svg'
+  apple_touch_icon: '/sitelogo.svg'
 
 label:
-  icon: '/favicon-32x32.webp'
+  icon: '/sitelogo.svg'
   iconHeight: 24
 
 home:
   title: Wonyoung Jang
   subtitle: Personal Website
   
-  imageUrl: /android-chrome-192x192.webp
+  imageUrl: /sitelogo.svg
   imageTitle: WonyoungJang.org site logo
   imageHeight: 150px
   imageWidth: 150px

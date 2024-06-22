@@ -10,7 +10,7 @@ keywords:
 type: 
 date: 2024-01-13
 description: Estimate the cost of tokenizing markdown files for [OpenAI's text-embedding models](https://platform.openai.com/docs/guides/embeddings/)
-title: Logseq Markdown Tokenizer
+title: Logseq markdown tokenizer
 lastMod: 2024-06-22
 ---
 ![logseq-tokenizer.webp](/assets/logseq-tokenizer.webp)
