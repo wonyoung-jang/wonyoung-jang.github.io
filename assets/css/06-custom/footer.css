@@ -50,6 +50,17 @@ footer {
   }
 }
 
+#connect-links {
+  display: flex; 
+  flex-flow: column nowrap;
+  gap: var(--size-2);
+
+  .button {
+    justify-content: flex-start;
+  }
+  
+}
+
 .copyright {
   flex: 1 1 0;
   display: flex;

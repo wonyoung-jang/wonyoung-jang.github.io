@@ -32,11 +32,17 @@ footer:
 
 connect:
   - name: GitHub
-    pageRef: https://github.com/wonyoung-jang
+    url: https://github.com/wonyoung-jang
     weight: 10
+    pre: <i>code</i>
   - name: Email
-    pageRef: mailto:contact@wonyoungjang.org
+    url: mailto:contact@wonyoungjang.org
     weight: 20
+    pre: <i>outgoing_mail</i>
+  - name: Ko-fi
+    url: https://ko-fi.com/wonyoung_jang
+    weight: 30
+    pre: <i>loyalty</i>
 
 sections:
   - identifier: Projects
