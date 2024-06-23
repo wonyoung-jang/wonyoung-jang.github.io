@@ -3,10 +3,10 @@ header {
 }
 
 .layout.content-wrapper {
-  --bg-color: var(--color-surface);
+  --bg-color: var(--color-surface-container-lowest);
 
   .layout.panes {
-    --bg-color: var(--color-surface);
+    --bg-color: var(--color-surface-container-lowest);
 
     .layout.pane {
       --bg-color: var(--color-surface);

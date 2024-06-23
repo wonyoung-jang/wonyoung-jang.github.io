@@ -9,7 +9,7 @@
   --container-elevation-focus: var(--elevation0);
   --container-elevation-press: var(--elevation0);
 
-  --container-shape: var(--size-3);
+  --container-shape: var(--shape-corner-xs);
 
   gap: var(--size-2);
 

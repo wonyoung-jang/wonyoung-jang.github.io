@@ -9,20 +9,20 @@ header {
     --shape: var(--shape-corner-none);
 
     .layout.pane {
-      --shape: var(--shape-corner-none);
+      --shape: var(--shape-corner-m);
     }
   }
 
   .layout.page-header {
-    --shape: var(--shape-corner-xl-bottom);
+    --shape: var(--shape-corner-xs-bottom);
   }
 
   .layout.page-links {
-    --shape: var(--shape-corner-xl-top);
+    --shape: var(--shape-corner-xs-top);
   }
 
   .layout.page-navigation {
-    --shape: var(--shape-corner-none);
+    --shape: var(--shape-corner-xs-top);
   }
 }
 

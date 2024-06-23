@@ -53,12 +53,10 @@ a {
 
 /* Icons */
 i {
-  --size: 24px;
-
   font-family: var(--font-icon);
   font-weight: normal;
   font-style: normal;
-  font-size: var(--size);
+  font-size: var(--size-6);
   letter-spacing: normal;
   text-transform: none;
 
@@ -79,23 +77,18 @@ i {
 
   overflow: hidden;
 
-  inline-size: var(--size);
-  min-inline-size: var(--size);
-  block-size: var(--size);
-  min-block-size: var(--size);
+  inline-size: var(--size-6);
+  min-inline-size: var(--size-6);
+  block-size: var(--size-6);
+  min-block-size: var(--size-6);
 
   line-height: normal;
 }
 
 /* Media */
-svg {
-  fill: currentColor;
-}
-
 img,
 svg,
 video {
-  width: 100%;
   max-width: 100%;
   max-height: 100%;
 
@@ -107,6 +100,10 @@ video {
   transition: transform var(--motion-duration-short3),
     border-radius var(--motion-duration-short3),
     padding var(--motion-duration-short3);
+}
+
+svg {
+  fill: currentColor;
 }
 
 /* Scrollbar */

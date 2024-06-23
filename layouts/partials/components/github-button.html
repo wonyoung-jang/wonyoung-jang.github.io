@@ -1,5 +1,6 @@
 {{- $repoName := split .githubRepo "/" | last 1 -}}
-<a  class="component button common outlined"
+<a  class="component button common outlined with-icon"
+    id="github-button"
     href="{{- .githubRepo -}}"
     target="_blank" 
     rel="noopener noreferrer" 

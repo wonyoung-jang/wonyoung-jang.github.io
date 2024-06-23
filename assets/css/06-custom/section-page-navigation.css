@@ -27,9 +27,9 @@
     padding: calc(var(--spacing-panes));
     gap: var(--size-2);
 
-    --container-shape: var(--shape-corner-xl);
-    --bg-color: var(--color-surface-container-lowest);
-    --icon-color: var(--color-on-surface-variant);
+    --container-shape: var(--shape-corner-s);
+    --bg-color: var(--color-surface-container-high);
+    --icon-color: var(--color-on-surface);
 
     * {
       width: 100%;

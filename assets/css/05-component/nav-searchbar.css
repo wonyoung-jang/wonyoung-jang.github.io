@@ -7,7 +7,7 @@
   --container-elevation: var(--elevation3);
 
   --container-height: 56px;
-  --container-shape: 56px;
+  --container-shape: var(--shape-corner-m);
   --container-padding: 0 var(--size-4);
 
   --bg-color: var(--color-surface-container-high);

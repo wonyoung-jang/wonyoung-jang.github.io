@@ -10,13 +10,13 @@
   --contianer-flex-flow: row nowrap;
   --container-align-items: stretch;
   --container-justify-content: stretch;
-  --container-gap: 0;
+  --container-gap: var(--size-2);
   
   --active-indicator-height: 3px;
   --active-indicator-shape: 3px 3px 0 0;
   --active-indicator-color: var(--color-primary);
 
-  --bg-color: var(--color-surface-container-high);
+  --bg-color: var(--color-surface-container-low);
 
   .tab {
     flex: 1 1 0;
@@ -47,7 +47,7 @@
 /* Customize */
 .tabs,
 .tab {
-  border-radius: 24px;
+  border-radius: var(--shape-corner-m-top);
 }
 
 .tabs {

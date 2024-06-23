@@ -1,0 +1,9 @@
+#github-button {
+    
+    svg {
+        display: none;
+        fill: var(--color-on-surface-container);
+        height: 24px;
+        width: 24px;
+    }
+}

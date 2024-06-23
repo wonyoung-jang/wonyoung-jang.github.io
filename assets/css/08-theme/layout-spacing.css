@@ -2,10 +2,6 @@
   margin: 0 auto;
 }
 
-.layout.page-header {
-  margin-bottom: 2rem;
-}
-
 .layout.panes {
-  margin-block: 3rem;
+  margin-block: calc(1 * var(--spacing-panes));
 }

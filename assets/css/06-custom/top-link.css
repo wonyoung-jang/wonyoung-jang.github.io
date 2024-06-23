@@ -5,7 +5,6 @@
   visibility: hidden;
   opacity: 0;
   z-index: 9999;
-  border-radius: 28px;
 
   i {
     color: var(--icon-color);

@@ -63,6 +63,5 @@ footer {
     --bg-color: var(--color-surface-container);
     --icon-color: var(--color-on-surface-variant);
     --text-color: var(--color-on-surface-variant);
-    --container-shape: var(--shape-corner-m);
   }
 }

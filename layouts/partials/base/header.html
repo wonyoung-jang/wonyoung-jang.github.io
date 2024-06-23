@@ -49,30 +49,44 @@
 </nav>
 
 {{/* Tabs */}}
-<div class="component tabs title-medium">
-    {{ define "menu-item" }}   
-        {{ $page := .page }}
-        {{ with .entry }}
-            {{ if or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
-                <a  class="component tab active"
-                    href="{{ .URL }}">
-                    {{ .Name }}
-                </a>
-            {{ else }}
-                <a  class="component tab"
-                    href="{{ .URL }}">
-                    {{ .Name }}
-                </a>
-            {{ end }}
-        {{ end }}
-    {{ end }}
+    {{- $page := . }}
+    {{- $menuID := "main" }}
+
+    {{- with index site.Menus $menuID }}
+        <div class="component tabs title-medium">
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </div>
+    {{- end }}
     
-    <div class="component tabs">
-        {{ $page := . }}
-        {{ range .Site.Menus.main }}
-            {{ template "menu-item" (dict "entry" . "page" $page) }}
-        {{ end }}
-    </div>
+    {{- define "partials/inline/menu/walk.html" }}
+        {{- $page := .page }}
+        {{- range .menuEntries }}
+            {{- $attrs := dict "href" .URL }}
+
+            {{- if $page.IsMenuCurrent .Menu . }}
+                {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+            {{- else if $page.HasMenuCurrent .Menu .}}
+                {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+            {{- end }}
+
+            {{- $name := .Name }}
+
+            {{- with .Identifier }}
+                {{- with T . }}
+                    {{- $name = . }}
+                {{- end }}
+            {{- end }}
+
+            <a class="component tab"
+                {{- range $k, $v := $attrs }}
+                    {{- with $v }}
+                        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                    {{- end }}
+                {{- end -}}>
+                {{ $name }}
+            </a>
+        {{- end }}
+    {{- end }}
 </div>
 
 {{/* Light theme script */}}
