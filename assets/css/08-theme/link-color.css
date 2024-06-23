@@ -14,14 +14,11 @@ a:not(.component) {
   }
  
   &[rel*="external"] {
+    display: inline-flex;
+    display: inline flex;
     text-decoration: none;
+    align-items: center;
     color: var(--color-tertiary);
-    
-    i {
-      display: unset;
-      font-size: inherit;
-      font-weight: inherit;
-    }
   }
 }
 
