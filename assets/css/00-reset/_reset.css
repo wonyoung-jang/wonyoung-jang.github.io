@@ -2,20 +2,11 @@
 *,
 *::before,
 *::after {
-  position: relative;
   vertical-align: middle;
   margin: 0;
   padding: 0;
-  
   border: 0;
-  border-radius: inherit;
   outline: 0;
-  
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  font-family: inherit;
-
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -30,8 +21,8 @@ blockquote,
 q {
   quotes: none;
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     content: "";
     content: none;
   }
@@ -42,5 +33,5 @@ button,
 textarea,
 select {
   font: inherit;
-  background-color: transparent;
+  background-color: initial;
 }

@@ -35,7 +35,11 @@
                 {{- partial "sections/page-header.html" . -}}
 
                 {{/* Layout: Main */}}
-                {{- block "main" . -}}{{- end -}}
+                {{- if .IsHome -}}
+                    {{- partial "base/home.html" . -}}
+                {{- else -}}
+                    {{- block "main" . -}}{{- end -}}
+                {{- end -}}
 
                 {{/* Layout: Page Navigation */}}
                 {{- partial "sections/page-navigation.html" . -}}

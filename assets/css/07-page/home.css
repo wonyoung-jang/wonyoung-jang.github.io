@@ -1,47 +1,40 @@
-#home {
-  padding: unset;
-  margin: unset;
+#home-page {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
 
-  .pane {
-    padding: unset;
-    margin: unset;
+  * {
+    flex: 1 1 auto;
   }
 
-  h1, h2 {
-    text-align: center;
-    margin-block: var(--spacing-panes);
-  }
 
   .home-header {
-    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
-    align-items: stretch;
+    padding: var(--spacing-panes);
+    align-items: center;
     justify-content: center;
     background-color: var(--color-surface-container-lowest);
-    padding: var(--spacing-panes);
     gap: var(--spacing-panes);
-
+    
     .home-buttons {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-evenly;
       align-items: center;
-
-      .button {
-        width: fit-content;
-      }
+      justify-content: space-between;
+      gap: var(--spacing-panes);
     }  
   }
 
   .showcase-panel {
-    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
-    align-items: stretch;
     padding: var(--spacing-panes);
-    gap: var(--spacing-panes);
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-surface);
+    gap: var(--spacing-panes);
     
     *:not(h1, h2) {
       width: 100%;

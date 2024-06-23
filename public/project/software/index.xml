@@ -4,7 +4,7 @@
   <channel>
     <title>Software on Wonyoung Jang</title>
     
-    <link>https://wonyoungjang.org/project/software/</link>
+    <link>http://192.168.40.181:1313/project/software/</link>
     
     <description>Recent content in Software on Wonyoung Jang</description>
     
@@ -23,17 +23,17 @@
     
     
     <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate>
-      <atom:link href="https://wonyoungjang.org/project/software/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/project/software/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
     
       <title>Realtime multiplayer drawing</title>
     
-      <link>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing/</link>
+      <link>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</link>
     
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/realtime-multiplayer-drawing/</guid>
+      <guid>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</guid>
     
       <description>Introduction This project is a fork of GitHub - mayfer/claude-app-generator-demo&#xD;, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus&#xD;generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter&#xD;.&#xA;Why While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.</description>
     
@@ -43,11 +43,11 @@
     
       <title>Wonyoungjang.org</title>
     
-      <link>https://wonyoungjang.org/project/software/wonyoungjang.org/</link>
+      <link>http://192.168.40.181:1313/project/software/wonyoungjang.org/</link>
     
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/wonyoungjang.org/</guid>
+      <guid>http://192.168.40.181:1313/project/software/wonyoungjang.org/</guid>
     
       <description>How it&amp;rsquo;s made Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.</description>
     
@@ -57,11 +57,11 @@
     
       <title>Q-learning tournament scheduler</title>
     
-      <link>https://wonyoungjang.org/project/software/q-learning-tournament-scheduler/</link>
+      <link>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</link>
     
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/q-learning-tournament-scheduler/</guid>
+      <guid>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</guid>
     
       <description>A brief history A nerd snipe from a coworker My coworker nerd sniped&#xD;me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge&#xD;event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
     
@@ -71,11 +71,11 @@
     
       <title>Save top level reddit comments</title>
     
-      <link>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</link>
+      <link>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</link>
     
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/save-top-level-reddit-comments/</guid>
+      <guid>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</guid>
     
       <description>Premise Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
     
@@ -85,11 +85,11 @@
     
       <title>Logseq markdown tokenizer</title>
     
-      <link>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</link>
+      <link>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</link>
     
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>https://wonyoungjang.org/project/software/logseq-markdown-tokenizer/</guid>
+      <guid>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</guid>
     
       <description>Problem Logseq&#xD;does not have a native way to view the character count of your notes (aka pages).&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually.&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph.</description>
     

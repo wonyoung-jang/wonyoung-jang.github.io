@@ -1,11 +1,13 @@
-{{- with .buttons -}}
-    {{- range . -}}
-        <a  class="component button common outlined"
-            id="{{- .name | urlize -}}"
-            href="{{- trim .url " " -}}" 
-            rel="noopener" 
-            title="{{- .name -}}">
-            {{- .name -}}
-        </a>
-    {{- end -}}
+{{- with .Buttons -}}
+    <div class="home-buttons">
+        {{- range . -}}
+            <a  class="component button common filled-tonal"
+                id="{{- .name | urlize -}}"
+                href="{{- trim .url " " -}}" 
+                rel="noopener" 
+                title="{{ .name }}">
+                {{ .name }}
+            </a>
+        {{- end -}}
+    </div>
 {{- end -}}
