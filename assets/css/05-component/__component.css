@@ -1,43 +1,42 @@
-/* Component Template */
-/* .component {
-/*  --container-display: initial;
-/*  --container-flex-flow: initial;
-/*  --container-justify-content: initial;
-/*  --container-align-items: initial;
-/*  --container-gap: initial;
-/*  --container-height: initial;
-/*  --container-width: initial;
-/*  --container-padding: initial;
-/*
-/*  --container-outline: initial;
-/*  --container-elevation: initial;
-/*  --container-shape: initial;
-/*
-/*  --bg-color: initial;
-/*
-/*  --text-color: initial;
-/*  --icon-color: initial;
-/* }
-*/
+.component {
+  display:          var(--container-display,);
+  flex-flow:        var(--container-flex-flow,);
+  justify-content:  var(--container-justify-content,);
+  align-items:      var(--container-align-items,);
+  gap:              var(--container-gap,);
+  height:           var(--container-height,);
+  width:            var(--container-width,);
+  padding:          var(--container-padding,);
+
+  border:           var(--container-outline,);
+  border-radius:    var(--container-shape,);
+  box-shadow:       var(--container-elevation,);
+
+  background-color: var(--bg-color,);
+
+  color:            var(--icon-color, var(--text-color),);
+}
 
 .component {
-  display:          var(--container-display, auto);
-  flex-flow:        var(--container-flex-flow, auto);
-  justify-content:  var(--container-justify-content, auto);
-  align-items:      var(--container-align-items, auto);
-  gap:              var(--container-gap, auto);
-  height:           var(--container-height, auto);
-  width:            var(--container-width, auto);
-  padding:          var(--container-padding, auto);
+  --container-display: inherit;
+  --container-flex-flow: inherit;
+  --container-justify-content: inherit;
+  --container-align-items: inherit;
+  --container-gap: inherit;
+  --container-height: inherit;
+  --container-width: inherit;
+  --container-padding: inherit;
 
-  border:           var(--container-outline, auto);
-  border-radius:    var(--container-shape, auto);
-  box-shadow:       var(--container-elevation, auto);
+  --container-outline: inherit;
+  --container-elevation: inherit;
+  --container-shape: inherit;
 
-  background-color: var(--bg-color, auto);
-
-  color:            var(--icon-color, var(--text-color, auto));
+  --bg-color: inherit;
+  
+  --text-color: inherit;
+  --icon-color: inherit;
 }
+
 
 .component {
   position: relative;

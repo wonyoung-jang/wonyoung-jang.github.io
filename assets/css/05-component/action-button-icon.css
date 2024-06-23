@@ -1,5 +1,5 @@
 /* Icon Buttons */
-.button.icon {
+.icon-button {
   max-width: 40px;
 
   --container-padding: 0;
@@ -8,23 +8,26 @@
   --bg-color: none;
   --icon-color: var(--color-on-surface-variant);
 
-  i, img {
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
-  }
-
-  &.filled {
+  &[filled] {
     --bg-color: var(--color-primary);
     --icon-color: var(--color-on-primary);
   }
 
-  &.filled-tonal {
+  &[filled-tonal] {
     --bg-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
   }
 
-  &.outlined {
+  &[outlined] {
     --container-outline: 1px solid var(--color-outline);
   }
 }
+  
+.icon-button i, 
+.icon-button img {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+

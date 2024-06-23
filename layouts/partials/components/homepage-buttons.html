@@ -1,7 +1,7 @@
 {{- with .Buttons -}}
     <div class="home-buttons">
         {{- range . -}}
-            <a  class="component button common filled-tonal"
+            <a  class="component button common-button" filled-tonal
                 id="{{- .name | urlize -}}"
                 href="{{- trim .url " " -}}" 
                 rel="noopener" 

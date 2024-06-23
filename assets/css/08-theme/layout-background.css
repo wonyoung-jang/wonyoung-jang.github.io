@@ -3,26 +3,26 @@ header {
 }
 
 .layout.content-wrapper {
-  --bg-color: var(--color-surface-container-lowest);
+  --bg: var(--color-surface-container-lowest);
 
   .layout.panes {
-    --bg-color: var(--color-surface-container-lowest);
+    --bg: var(--color-surface-container-lowest);
 
     .layout.pane {
-      --bg-color: var(--color-surface);
+      --bg: var(--color-surface);
     }
   }
 
   .layout.page-header {
-    --bg-color: var(--color-surface-container-low);
+    --bg: var(--color-surface-container-low);
   }
 
   .layout.page-links {
-    --bg-color: var(--color-surface-container-low);
+    --bg: var(--color-surface-container-low);
   }
 
   .layout.page-navigation {
-    --bg-color: var(--color-surface-container-low);
+    --bg: var(--color-surface-container-low);
   }
 }
 

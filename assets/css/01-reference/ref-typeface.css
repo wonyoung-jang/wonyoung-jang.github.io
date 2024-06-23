@@ -4,6 +4,11 @@
     --typeface-plain:   "IBM Plex Sans", sans-serif;
     --typeface-mono:    "IBM Plex Mono", monospace;
 
+    /* Icons */
+    --typeface-icon-outlined:   'Material Symbols Outlined';
+    --typeface-icon-rounded:    'Material Symbols Rounded';
+    --typeface-icon-sharp:      'Material Symbols Sharp';
+
     /* Weights */
     --typeface-weight-black:        900;
     --typeface-weight-extra-bold:   800;

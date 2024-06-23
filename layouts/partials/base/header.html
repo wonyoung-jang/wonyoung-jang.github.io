@@ -18,7 +18,7 @@
         {{/* Language switch */}}
         {{- $lang := .Lang}}
         {{- with site.Home.AllTranslations }}
-            <ul class="lang-switch">
+            <div class="lang-switch">
                 {{- range . -}}
                     {{- if ne $lang .Lang }}
                         <a  href="{{- .Permalink -}}" 
@@ -34,7 +34,7 @@
                         </a>
                     {{- end -}}
                 {{- end}}
-            </ul>
+            </div>
         {{- end }}
 
         {{/* Theme toggle */}}

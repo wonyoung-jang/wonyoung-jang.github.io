@@ -69,11 +69,6 @@
   --size-300: calc(var(--size-1) * 300);  /* 1200px */
   --size-400: calc(var(--size-1) * 400);  /* 1600px */
 
-  /* Icons */
-  --typeface-icon-outlined:   'Material Symbols Outlined';
-  --typeface-icon-rounded:    'Material Symbols Rounded';
-  --typeface-icon-sharp:      'Material Symbols Sharp';
-
   --font-icon: var(--typeface-icon-sharp);
 
   /* Window size classes */

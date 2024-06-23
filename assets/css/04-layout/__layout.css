@@ -1,41 +1,41 @@
 .layout {
-  flex: var(--flex, none);
-  display: var(--display, none);
-  flex-flow: var(--flex-flow, none);
-  align-items: var(--align-items, none);
-  align-content: var(--align-content, none);
-  justify-content: var(--justify-content, none);
-  width: var(--width, none);
-  height: var(--height, none);
-  min-height: var(--min-height, none);
-  padding: var(--padding, none);
-  margin: var(--margin, none);
-  gap: var(--gap, none);
+  flex: var(--flex);
+  display: var(--display);
+  flex-flow: var(--flex-flow);
+  align-items: var(--align-items);
+  align-content: var(--align-content);
+  justify-content: var(--justify-content);
+  width: var(--width);
+  height: var(--height);
+  min-height: var(--min-height);
+  padding: var(--padding);
+  margin: var(--margin);
+  gap: var(--gap);
 
-  border-radius: var(--shape, none);
-  border: var(--border, none);
+  border-radius: var(--shape);
+  border: var(--border);
 
-  background-color: var(--bg-color, none);
+  background-color: var(--bg);
 }
 
 .layout {
-  --flex: initial;
-  --display: initial;
-  --flex-flow: initial;
-  --align-items: initial;
-  --align-content: initial;
-  --justify-content: initial;
-  --width: initial;
-  --height: initial;
-  --min-height: initial;
-  --padding: initial;
-  --margin: initial;
-  --gap: initial;
+  --flex: inherit;
+  --display: inherit;
+  --flex-flow: inherit;
+  --align-items: inherit;
+  --align-content: inherit;
+  --justify-content: inherit;
+  --width: inherit;
+  --height: inherit;
+  --min-height: inherit;
+  --padding: inherit;
+  --margin: inherit;
+  --gap: inherit;
 
-  --shape: initial;
-  --border: initial;
+  --shape: inherit;
+  --border: inherit;
 
-  --bg-color: initial;
+  --bg: inherit;
 }
 
 /* Transitions */
@@ -51,24 +51,3 @@ footer,
     max-height, border-radius, min-width, max-width, width, padding, transform,
     visibility, opacity;
 }
-
-/* .layout {
-/*   --flex: inherit;
-/*   --display: inherit;
-/*   --flex-flow: inherit;
-/*   --align-items: inherit;
-/*   --align-content: inherit;
-/*   --justify-content: inherit;
-/*   --width: inherit;
-/*   --height: inherit;
-/*   --min-height: inherit;
-/*   --padding: inherit;
-/*   --margin: inherit;
-/*   --gap: inherit;
-/*   
-/*   --shape: inherit;
-/*   --border: inherit;
-/* 
-/*   --bg-color: inherit;
-/* } 
-*/
