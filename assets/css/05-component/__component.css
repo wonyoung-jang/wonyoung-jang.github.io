@@ -18,23 +18,23 @@
 }
 
 .component {
-  --container-display: inherit;
-  --container-flex-flow: inherit;
-  --container-justify-content: inherit;
-  --container-align-items: inherit;
-  --container-gap: inherit;
-  --container-height: inherit;
-  --container-width: inherit;
-  --container-padding: inherit;
+  --container-display: initial;
+  --container-flex-flow: initial;
+  --container-justify-content: initial;
+  --container-align-items: initial;
+  --container-gap: initial;
+  --container-height: initial;
+  --container-width: initial;
+  --container-padding: initial;
 
-  --container-outline: inherit;
-  --container-elevation: inherit;
-  --container-shape: inherit;
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: initial;
 
-  --bg-color: inherit;
+  --bg-color: initial;
   
-  --text-color: inherit;
-  --icon-color: inherit;
+  --text-color: initial;
+  --icon-color: initial;
 }
 
 
