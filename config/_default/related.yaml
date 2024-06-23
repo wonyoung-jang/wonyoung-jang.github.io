@@ -1,7 +1,21 @@
+threshold: 10
 includeNewer: true
-#indices:
-#- applyFilter: true
-#  type: fragments
-#  weight: 80
-threshold: 20
-toLower: false
+
+indices:
+  - name: title
+    weight: 40
+    type: basic
+    includeNewer: true
+  - name: type
+    weight: 30
+    type: basic
+    includeNewer: true
+  - name: description
+    weight: 20
+    type: basic
+    includeNewer: true
+  - name: date
+    weight: 10
+    type: basic
+    pattern: 2006
+    includeNewer: true

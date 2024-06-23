@@ -1,34 +1,7 @@
-{{- $re := $.File.BaseFileName -}}
-{{- $backlinks := slice -}} 
-{{- range where .Site.RegularPages "Type" "page" -}} 
-  {{- if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName))  (not (hasPrefix .RelPermalink "/graph")) -}} 
-    {{- $backlinks = $backlinks | append . -}} 
-  {{- end -}}
-{{- end -}} 
-
-{{- if gt (len $backlinks) 0 -}}
-
-    <nav id="backlinks" aria-label="Backlinks">
-        <h5>
-        Backlinks
-        <div class="divider"></div>
-        </h5>
-        
-        {{- range $backlinks -}}
-            <a href="{{- .RelPermalink -}}">
-                {{- .Title -}} 
-            </a>
-        {{- end -}}
-    </nav>
-
-{{- end -}}
-
-
+{{/*  Share links  */}}
 <nav id="share-links" aria-label="Share Links">
-    <h5>
-        Share
-        <div class="divider"></div>
-    </h5>
+    <h5>Share</h5>
+    <div class="divider"></div>
 
     {{- $pageurl := .Permalink -}}
     {{- $title := .Title -}}
@@ -40,49 +13,49 @@
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) -}}
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on twitter"
+        <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on twitter"
             href="https://twitter.com/intent/tweet/?text={{- $title -}}&amp;url={{- $pageurl -}}&amp;hashtags={{- $.Scratch.Get "categories" -}}">      
             Twitter/X
         </a>
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "linkedin") (true)) -}}
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on linkedin"
+        <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on linkedin"
             href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{- $pageurl -}}&amp;title={{- $title -}}&amp;summary={{- $title -}}&amp;source={{- $pageurl -}}">
             LinkedIn
         </a>
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "reddit") (true)) -}}
-            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on reddit"
+            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on reddit"
                 href="https://reddit.com/submit?url={{- $pageurl -}}&title={{- $title -}}">
             Reddit
                 </a>
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) -}}
-            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on facebook"
+            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on facebook"
                 href="https://facebook.com/sharer/sharer.php?u={{- $pageurl -}}">
             Facebook
                 </a>
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "whatsapp") (true)) -}}
-            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on whatsapp"
+            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on whatsapp"
                 href="https://api.whatsapp.com/send?text={{- $title -}}%20-%20{{- $pageurl -}}">
             WhatsApp
                 </a>
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "telegram") (true)) -}}
-            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} on telegram"
+            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on telegram"
                 href="https://telegram.me/share/url?text={{- $title -}}&amp;url={{- $pageurl -}}">
             Telegram
                 </a>
     {{- end -}}
 
     {{- if (cond ($custom) (in $ShareButtons "email") (true)) -}}
-            <a target="_blank" rel="noopener noreferrer" aria-label="share {{- $title | plainify -}} via email" href="mailto:?subject={{- $title -}}&amp;body={{- $pageurl -}}">
+            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} via email" href="mailto:?subject={{- $title -}}&amp;body={{- $pageurl -}}">
                 Email
             </a>
     {{- end -}}
@@ -93,3 +66,38 @@
             </a>
     {{- end -}}
 </nav>
+
+{{/* Backlinks */}}
+{{- $re := $.File.BaseFileName -}}
+{{- $backlinks := slice -}} 
+
+{{- range where site.RegularPages "Type" "page" -}} 
+  {{- if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName))  (not (hasPrefix .RelPermalink "/graph")) -}} 
+    {{- $backlinks = $backlinks | append . -}} 
+  {{- end -}}
+{{- end -}} 
+
+{{- if gt (len $backlinks) 0 -}}
+    <nav id="backlinks" aria-label="Backlinks">
+        <h5>Backlinks</h5>
+        <div class="divider"></div>
+        
+        {{- range $backlinks -}}
+            <a href="{{- .RelPermalink -}}">
+                {{- .Title -}} 
+            </a>
+        {{- end -}}
+    </nav>
+{{- end -}}
+
+{{/* Related */}}
+{{- $related := site.RegularPages.Related . | complement $backlinks | first 4 -}}
+{{ with $related }}
+    <nav id="related-pages">
+        <h5>See also</h5>
+        <div class="divider"></div>
+        {{ range $i, $p := . }}
+            <a href="{{- .RelPermalink -}}">{{ .Title }}</a>
+        {{ end }}
+    </nav>
+{{ end }}

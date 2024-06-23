@@ -17,7 +17,8 @@
 
 .layout.page-links {
   nav#share-links,
-  nav#backlinks {
+  nav#backlinks,
+  nav#related-pages {
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
