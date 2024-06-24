@@ -11,11 +11,11 @@
                 href="{{ .Permalink }}">        
                 
                 <div class="card-content">
-                    {{ partial "components/post-meta.html" . }}
-                    
-                    <span class="title-small">
+                    <span class="title-large">
                         {{ .Title }}
                     </span>
+
+                    {{ partial "components/post-meta.html" . }}
                 </div>
             </a>
         {{ end }}
