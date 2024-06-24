@@ -4,7 +4,6 @@
     href="{{ .githubRepo }}"
     target="_blank" 
     rel="noopener noreferrer" 
-    aria-label="View source code on GitHub {{ .githubRepo }} ">
-    GitHub @{{ index $repoName 0 }}
-    <i>code</i>
+    aria-label="@{{ .githubRepo }} on GitHub">
+    @{{ index $repoName 0 }} on GitHub
 </a>
