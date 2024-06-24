@@ -17,6 +17,7 @@ footer {
   justify-content: space-around;
 
   .footer-links-list {
+    flex: 1 1 auto;
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
