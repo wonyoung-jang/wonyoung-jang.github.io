@@ -7,7 +7,7 @@
     min-width: var(--size-10);
   
     --container-height: var(--size-10);
-    --container-shape: var(--shape-corner-s);
+    --container-shape: var(--shape-corner-xl);
     --container-padding: 0 var(--size-6);
   
     transition: transform var(--motion-duration-short3),

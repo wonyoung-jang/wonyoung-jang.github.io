@@ -9,7 +9,7 @@
   --container-elevation-focus: var(--elevation0);
   --container-elevation-press: var(--elevation0);
 
-  --container-shape: var(--shape-corner-xs);
+  --container-shape: var(--shape-corner-m);
 
   gap: var(--size-2);
 
@@ -22,7 +22,7 @@
     color: var(--icon-color,);
   }
 
-  &.elevated {
+  &[elevated] {
     --bg-color: var(--color-surface-container-low);
     --icon-color: var(--color-on-surface);
 
@@ -32,12 +32,12 @@
     --container-elevation-press: var(--elevation1);
   }
 
-  &.filled {
+  &[filled] {
     --bg-color: var(--color-surface-container-highest);
     --icon-color: var(--color-on-surface);
   }
   
-  &.outlined {
+  &[outlined] {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
 

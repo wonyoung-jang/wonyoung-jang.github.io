@@ -38,5 +38,5 @@
   --shape-corner-xl-end:    00px var(--shape-corner-xl) var(--shape-corner-xl) 00px;
 
   /* 7 Fully rounded */
-  --shape-corner-full: 50%;
+  --shape-corner-full: 9999px;
 }

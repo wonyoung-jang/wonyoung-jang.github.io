@@ -6,7 +6,7 @@
     <section class="layout pane">
 
         {{- range $index, $page := $pages -}}        
-            <a  class="component card outlined"
+            <a  class="component card" elevated
                 aria-label="post link to {{- .Title | plainify -}}" 
                 href="{{- .Permalink -}}">        
                 
