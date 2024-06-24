@@ -15,7 +15,9 @@
                         {{ .Title }}
                     </span>
 
-                    {{ partial "components/post-meta.html" . }}
+                    <div class="meta-block">
+                        {{ partial "components/post-meta.html" . }}
+                    </div>
                 </div>
             </a>
         {{ end }}
