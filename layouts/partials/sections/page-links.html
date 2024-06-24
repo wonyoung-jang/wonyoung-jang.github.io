@@ -5,66 +5,60 @@
 
     {{- $pageurl := .Permalink -}}
     {{- $title := .Title -}}
-    {{- $custom := false -}}
-    {{- $ShareButtons := (.Param "ShareButtons")}}
 
-    {{- with $ShareButtons -}}
-        {{- $custom = true -}}
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} on twitter"
+        href="https://twitter.com/intent/tweet/?text={{- $title -}}&amp;url={{- $pageurl -}}&amp;hashtags={{- $.Scratch.Get "categories" -}}">      
+        Twitter/X
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) -}}
-        <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on twitter"
-            href="https://twitter.com/intent/tweet/?text={{- $title -}}&amp;url={{- $pageurl -}}&amp;hashtags={{- $.Scratch.Get "categories" -}}">      
-            Twitter/X
-        </a>
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{- $pageurl -}}&amp;title={{- $title -}}&amp;summary={{- $title -}}&amp;source={{- $pageurl -}}">
+        LinkedIn
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "linkedin") (true)) -}}
-        <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{- $pageurl -}}&amp;title={{- $title -}}&amp;summary={{- $title -}}&amp;source={{- $pageurl -}}">
-            LinkedIn
-        </a>
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} on reddit"
+        href="https://reddit.com/submit?url={{- $pageurl -}}&title={{- $title -}}">
+        Reddit
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "reddit") (true)) -}}
-            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on reddit"
-                href="https://reddit.com/submit?url={{- $pageurl -}}&title={{- $title -}}">
-            Reddit
-                </a>
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} on facebook"
+        href="https://facebook.com/sharer/sharer.php?u={{- $pageurl -}}">
+        Facebook
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) -}}
-            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on facebook"
-                href="https://facebook.com/sharer/sharer.php?u={{- $pageurl -}}">
-            Facebook
-                </a>
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} on whatsapp"
+        href="https://api.whatsapp.com/send?text={{- $title -}}%20-%20{{- $pageurl -}}">
+        WhatsApp
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "whatsapp") (true)) -}}
-            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on whatsapp"
-                href="https://api.whatsapp.com/send?text={{- $title -}}%20-%20{{- $pageurl -}}">
-            WhatsApp
-                </a>
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} on telegram"
+        href="https://telegram.me/share/url?text={{- $title -}}&amp;url={{- $pageurl -}}">
+        Telegram
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "telegram") (true)) -}}
-            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} on telegram"
-                href="https://telegram.me/share/url?text={{- $title -}}&amp;url={{- $pageurl -}}">
-            Telegram
-                </a>
-    {{- end -}}
+    <a  target="_blank" 
+        rel="external noopener noreferrer" 
+        aria-label="share {{- $title | plainify -}} via email" 
+        href="mailto:?subject={{- $title -}}&amp;body={{- $pageurl -}}">
+        Email
+    </a>
 
-    {{- if (cond ($custom) (in $ShareButtons "email") (true)) -}}
-            <a target="_blank" rel="external noopener noreferrer" aria-label="share {{- $title | plainify -}} via email" href="mailto:?subject={{- $title -}}&amp;body={{- $pageurl -}}">
-                Email
-            </a>
-    {{- end -}}
-
-    {{- if (cond ($custom) (in $ShareButtons "print") (true)) -}}
-            <a href="javascript:window.print()" aria-label="print {{- $title | plainify -}}">
-                Print
-            </a>
-    {{- end -}}
+    <a  aria-label="print {{- $title | plainify -}}"
+        href="javascript:window.print()">
+        Print
+    </a>
 </nav>
 
 {{/* Backlinks */}}
@@ -77,27 +71,32 @@
   {{- end -}}
 {{- end -}} 
 
-{{- if gt (len $backlinks) 0 -}}
-    <nav id="backlinks" aria-label="Backlinks">
-        <h5>Backlinks</h5>
-        <div class="divider"></div>
-        
-        {{- range $backlinks -}}
-            <a href="{{- .RelPermalink -}}">
-                {{- .Title -}} 
-            </a>
-        {{- end -}}
-    </nav>
-{{- end -}}
-
 {{/* Related */}}
 {{- $related := site.RegularPages.Related . | complement $backlinks | first 4 -}}
 {{ with $related }}
     <nav id="related-pages">
         <h5>See also</h5>
         <div class="divider"></div>
+        
         {{ range $i, $p := . }}
-            <a href="{{- .RelPermalink -}}">{{ .Title }}</a>
+            <a href="{{- .RelPermalink -}}">
+                {{ .Title }}
+            </a>
         {{ end }}
     </nav>
 {{ end }}
+
+{{/*  Backlinks  */}}
+<nav id="backlinks" aria-label="Backlinks">
+    <h5>Links here</h5>
+    <div class="divider"></div>
+    {{- if gt (len $backlinks) 0 -}}
+        {{- range $backlinks -}}
+            <a href="{{- .RelPermalink -}}">
+                {{- .Title -}} 
+            </a>
+        {{- end -}}
+    {{- else -}}
+        <p>No backlinks found</p>
+    {{- end -}}
+</nav>

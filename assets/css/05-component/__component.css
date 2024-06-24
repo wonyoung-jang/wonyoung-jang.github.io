@@ -1,23 +1,4 @@
 .component {
-  display:          var(--container-display,);
-  flex-flow:        var(--container-flex-flow,);
-  justify-content:  var(--container-justify-content,);
-  align-items:      var(--container-align-items,);
-  gap:              var(--container-gap,);
-  height:           var(--container-height,);
-  width:            var(--container-width,);
-  padding:          var(--container-padding,);
-
-  border:           var(--container-outline,);
-  border-radius:    var(--container-shape,);
-  box-shadow:       var(--container-elevation,);
-
-  background-color: var(--bg-color,);
-
-  color:            var(--icon-color, var(--text-color),);
-}
-
-.component {
   --container-display: initial;
   --container-flex-flow: initial;
   --container-justify-content: initial;
@@ -37,6 +18,24 @@
   --icon-color: initial;
 }
 
+.component {
+  display:          var(--container-display,);
+  flex-flow:        var(--container-flex-flow,);
+  justify-content:  var(--container-justify-content,);
+  align-items:      var(--container-align-items,);
+  gap:              var(--container-gap,);
+  height:           var(--container-height,);
+  width:            var(--container-width,);
+  padding:          var(--container-padding,);
+
+  border:           var(--container-outline,);
+  border-radius:    var(--container-shape,);
+  box-shadow:       var(--container-elevation,);
+
+  background-color: var(--bg-color,);
+
+  color:            var(--icon-color, var(--text-color),);
+}
 
 .component {
   position: relative;
