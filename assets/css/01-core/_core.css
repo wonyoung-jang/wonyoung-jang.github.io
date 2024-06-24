@@ -1,0 +1,143 @@
+:root {
+  font-size: var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--typeface-plain);
+  font-weight: var(--typeface-weight-regular);
+}
+
+html:is(.is-publish-mode) {
+  header,
+  .page-header,
+  .page-links,
+  .page-navigation,
+  footer,
+  #toc,
+  #top-link {
+    display: none;
+  }
+  main,
+  .panes,
+  .pane {
+    all: unset;
+  }
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  align-items: stretch;
+  overflow-x: hidden;
+
+  background-color: var(--color-surface-dim);
+
+  color: var(--color-on-surface);
+}
+
+main {
+  max-height: calc(100dvh - 112px);
+
+  overflow-y: auto;
+  scrollbar-color: var(--color-primary) transparent;
+  scrollbar-width: thin;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: bottom;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+/* Icons */
+i {
+  font-family: var(--font-icon);
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--size-6);
+  letter-spacing: normal;
+  text-transform: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  word-wrap: normal;
+
+  direction: ltr;
+
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+
+  vertical-align: middle;
+  text-align: center;
+
+  overflow: hidden;
+
+  inline-size: var(--size-6);
+  min-inline-size: var(--size-6);
+  block-size: var(--size-6);
+  min-block-size: var(--size-6);
+
+  line-height: normal;
+}
+
+/* Media */
+img,
+svg,
+video {
+  max-width: 100%;
+  max-height: 100%;
+
+  border-radius: var(--shape-corner-s);
+  box-shadow: var(--elevation2);
+  
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--motion-duration-short3),
+    border-radius var(--motion-duration-short3),
+    padding var(--motion-duration-short3);
+}
+
+svg {
+  fill: currentColor;
+}
+
+/* Transitions */
+:root,
+body,
+header,
+main,
+footer,
+.layout,
+#top-link {
+  transition: var(--motion-duration-medium2) var(--motion-easing-emphasized);
+  transition-property:  font-size, line-height, margin, height, min-height,
+                        max-height, border-radius, min-width, max-width, 
+                        width, padding, transform, visibility, opacity;
+}
+
+/* Scrollbar */
+@media (pointer: fine) {
+  /* Firefox */
+  main {
+    scrollbar-color: var(--color-primary) transparent;
+    scrollbar-width: thin;
+
+    /* Chromium + Safari */
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: var(--size-2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: var(--size-1);
+    }
+  }
+}

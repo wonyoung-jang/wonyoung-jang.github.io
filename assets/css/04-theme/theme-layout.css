@@ -1,0 +1,40 @@
+.layout.content-wrapper {
+  --bg: var(--color-surface-container-lowest);
+  --shape: var(--shape-corner-none);
+
+  .layout.panes {
+    margin-block: calc(var(--scale-fibonacci) * var(--spacing-panes));
+    --bg: var(--color-surface-container-lowest);
+    --shape: var(--shape-corner-none);
+
+    .layout.pane {
+      --bg: var(--color-surface);
+      --shape: var(--shape-corner-m);
+    }
+  }
+
+  .layout.page-header {
+    --bg: var(--color-surface-container-low);
+    --shape: var(--shape-corner-xs-bottom);
+  }
+
+  .layout.page-links {
+    --bg: var(--color-surface-container-low);
+    --shape: var(--shape-corner-xs-top);
+  }
+
+  .layout.page-navigation {
+    --bg: var(--color-surface-container-low);
+    --shape: var(--shape-corner-xs-top);
+  }
+}
+
+header,
+footer {
+  background-color: var(--color-surface-container);
+  border-radius: var(--shape-corner-none);
+}
+
+.layout {
+  margin: 0 auto;
+}

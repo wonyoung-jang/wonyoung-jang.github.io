@@ -59,14 +59,11 @@
 {{ template "_internal/twitter_cards.html" . }}
 
 {{/* Styles */}}
-{{- $reset              := (resources.Match "css/00-reset/*.css")       | resources.Concat "assets/css/00-reset.css" }}
-{{- $reference          := (resources.Match "css/01-reference/*.css")   | resources.Concat "assets/css/01-reference.css" }}
-{{- $system             := (resources.Match "css/02-system/*.css")      | resources.Concat "assets/css/02-system.css" }}
-{{- $base               := (resources.Match "css/03-base/*.css")        | resources.Concat "assets/css/03-base.css" }}
-{{- $layout             := (resources.Match "css/04-layout/*.css")      | resources.Concat "assets/css/04-layout.css" }}
-{{- $component          := (resources.Match "css/05-component/*.css")   | resources.Concat "assets/css/05-component.css" }}
-{{- $custom             := (resources.Match "css/06-custom/*.css")      | resources.Concat "assets/css/06-custom.css" }}
-{{- $page               := (resources.Match "css/07-page/*.css")        | resources.Concat "assets/css/07-page.css" }}
-{{- $theme              := (resources.Match "css/08-theme/*.css")       | resources.Concat "assets/css/08-theme.css" }}
-{{- $stylesheet := (slice $reset $reference $system $base $layout $component $custom $page $theme) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
+{{- $base               := (resources.Match "css/00-base/*.css")                | resources.Concat "assets/css/00-base.css" }}
+{{- $core               := (resources.Match "css/01-core/*.css")                | resources.Concat "assets/css/01-core.css" }}
+{{- $layoutComponents   := (resources.Match "css/02-layout-components/*.css")   | resources.Concat "assets/css/02-layout-components.css" }}
+{{- $custom             := (resources.Match "css/03-custom/*.css")              | resources.Concat "assets/css/03-custom.css" }}
+{{- $theme              := (resources.Match "css/04-theme/*.css")               | resources.Concat "assets/css/04-theme.css" }}
+{{- $helpers            := (resources.Match "css/05-helpers/*.css")               | resources.Concat "assets/css/05-helpers.css" }}
+{{- $stylesheet := (slice $base $core $layoutComponents $custom $theme $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet">

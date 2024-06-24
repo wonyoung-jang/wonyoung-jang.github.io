@@ -1,0 +1,63 @@
+.layout.content-wrapper {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: 100%;
+  --height: auto;
+  --min-height: calc(100dvh - 112px);
+  --margin: 0;
+  --gap: 0;
+
+  --border: inherit;
+}
+
+.layout.panes {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: row nowrap;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: 100%;
+  --height: auto;
+  --min-height: auto;
+  --padding: 0 var(--spacing-panes);
+  --margin: 0;
+  --gap: var(--spacing-panes);
+
+  --border: inherit;
+}
+
+.layout.pane {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: 100%;
+  --height: auto;
+  --min-height: auto;
+  --padding: calc(var(--spacing-panes) * 2);
+  --margin: 0;
+  --gap: 0;
+
+  --border: inherit;
+}
+
+.layout.pane.fixed-pane {
+  --width: 100%;
+}
+
+/* Compact: 0px-599px */
+@media screen and (min-width: 0px) {
+  .layout.pane {
+    &.detail-pane,
+    &.supporting-pane {
+      --display: none;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul, 
+ol,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+
+  &::after,
+  &::before {
+    content: "";
+    content: none;
+  }
+}
+
+input, 
+button,
+textarea,
+select {
+  font: inherit;
+  background-color: initial;
+}
