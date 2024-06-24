@@ -2,10 +2,11 @@
 {{- if and (gt (len $pages) 1) (in $pages . ) -}}
     <nav class="layout page-navigation" aria-label="Page Navigation">
       {{- with $pages.Next . -}}
-        <a  class="component card filled prev"
+        <a  class="component card prev" filled
             href="{{- .Permalink -}}"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
+
           <span class="page-direction">
             <i>arrow_back</i>
             <label>
@@ -18,30 +19,31 @@
           </span>
         </a>
       {{- else -}}
-        <div class="component card filled prev empty">
+        <div class="component card prev empty" filled>
           <span class="page-direction">
           </span>
         </div>
       {{- end -}}
 
       {{- with $pages.Prev . -}}
-      <a  class="component card filled next"
-          href="{{- .Permalink -}}"
-          accesskey="n"
-          title="Next page (ALT + SHIFT + n)">
-        <span class="page-direction">
-          <label>
-            {{- i18n "next_page" -}}
-          </label>
-          <i>arrow_forward</i>
-        </span>
+        <a  class="component card next" filled
+            href="{{- .Permalink -}}"
+            accesskey="n"
+            title="Next page (ALT + SHIFT + n)">
+            
+          <span class="page-direction">
+            <label>
+              {{- i18n "next_page" -}}
+            </label>
+            <i>arrow_forward</i>
+          </span>
 
-        <span class="title-large">
-          {{- .Name -}}
-        </span>
-      </a>
+          <span class="title-large">
+            {{- .Name -}}
+          </span>
+        </a>
       {{- else -}}
-        <div class="component card filled next empty">
+        <div class="component card next empty" filled>
           <span class="page-direction">
           </span>
         </div>
