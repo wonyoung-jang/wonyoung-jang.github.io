@@ -5,7 +5,7 @@ env: production
 title: Wonyoung Jang
 
 assets:
-  favicon: 'static/sitelogo.svg'
+  favicon: 'sitelogo.svg'
 
 label:
   icon: 'static/sitelogo.svg'
