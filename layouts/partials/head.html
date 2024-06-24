@@ -5,34 +5,34 @@
 
 {{/* Title */}}
 <title>
-    {{- if .IsHome -}}
+    {{ if .IsHome }}
         {{ .Site.Title }}
-    {{- else -}}
+    {{ else }}
         {{ .Title }} | {{ .Site.Title }}
-    {{- end -}}
+    {{ end }}
 </title>
 
 {{/* Meta */}}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-    {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
-    {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if or .IsPage .IsSection}}
+    {{ .Summary | default (printf "%s - %s" .Title  site.Title) }}{{ else }}
+    {{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
 <meta name="author" content="Wonyoung Jang">
 
-<link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
+<link rel="canonical" href="{{ if .Params.canonicalURL }} {{ trim .Params.canonicalURL " " }} {{ else }} {{ .Permalink }} {{ end }}" />
 
-{{- with .Site.Params.Label.Icon }}
+{{ with .Site.Params.Label.Icon }}
     <link rel="preload" href="{{ . }}" as="image">
-{{- end }}
+{{ end }}
 
 {{/* Search */}}
-{{- if (eq .Layout `search`) -}}
+{{ if (eq .Layout `search`) }}
     <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-    {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) | resources.Minify }}
-    {{- $fusejs := resources.Get "js/fuse.js" }}
-    {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
+    {{ $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) | resources.Minify }}
+    {{ $fusejs := resources.Get "js/fuse.js" }}
+    {{ $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
     <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
-{{- end -}}
+{{ end }}
 
 {{/* Favicons */}}
 <link rel="icon" href="{{ .Site.Params.assets.favicon | default "favicon.ico" | absURL }}">
@@ -41,13 +41,13 @@
 <link rel="apple-touch-icon" href="{{ .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.webp" | absURL }}">
 
 {{/* RSS */}}
-{{ range .AlternativeOutputFormats -}}
+{{ range .AlternativeOutputFormats }}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
-{{ end -}}
+{{ end }}
 
-{{- range .AllTranslations -}}
+{{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-{{ end -}}
+{{ end }}
 
 {{/* Generator */}}
 {{ hugo.Generator }}
@@ -59,11 +59,11 @@
 {{ template "_internal/twitter_cards.html" . }}
 
 {{/* Styles */}}
-{{- $base               := (resources.Match "css/00-base/*.css")                | resources.Concat "assets/css/00-base.css" }}
-{{- $core               := (resources.Match "css/01-core/*.css")                | resources.Concat "assets/css/01-core.css" }}
-{{- $layoutComponents   := (resources.Match "css/02-layout-components/*.css")   | resources.Concat "assets/css/02-layout-components.css" }}
-{{- $custom             := (resources.Match "css/03-custom/*.css")              | resources.Concat "assets/css/03-custom.css" }}
-{{- $theme              := (resources.Match "css/04-theme/*.css")               | resources.Concat "assets/css/04-theme.css" }}
-{{- $helpers            := (resources.Match "css/05-helpers/*.css")               | resources.Concat "assets/css/05-helpers.css" }}
-{{- $stylesheet := (slice $base $core $layoutComponents $custom $theme $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
+{{ $base               := (resources.Match "css/00-base/*.css")                | resources.Concat "assets/css/00-base.css" }}
+{{ $core               := (resources.Match "css/01-core/*.css")                | resources.Concat "assets/css/01-core.css" }}
+{{ $layoutComponents   := (resources.Match "css/02-layout-components/*.css")   | resources.Concat "assets/css/02-layout-components.css" }}
+{{ $custom             := (resources.Match "css/03-custom/*.css")              | resources.Concat "assets/css/03-custom.css" }}
+{{ $theme              := (resources.Match "css/04-theme/*.css")               | resources.Concat "assets/css/04-theme.css" }}
+{{ $helpers            := (resources.Match "css/05-helpers/*.css")               | resources.Concat "assets/css/05-helpers.css" }}
+{{ $stylesheet := (slice $base $core $layoutComponents $custom $theme $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet">

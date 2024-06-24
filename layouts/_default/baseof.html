@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html   lang="{{- .Site.Language.Lang -}}" 
-        dir="{{- .Site.Language.LanguageDirection | default "auto" -}}">
+<html   lang="{{ .Site.Language.Lang }}" 
+        dir="{{ .Site.Language.LanguageDirection | default "auto" }}">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,13 @@
 
         {{/* Header */}}
         <header role="banner">
-            {{- partial "base/header.html" . .Page -}}
+            {{ partial "base/header.html" . .Page }}
         </header>
 
         {{/* Debug */}}
-        {{- if .Site.Params.Debug -}}
-            {{- partial "debug.html" .Page -}}
-        {{- end -}}
+        {{ if .Site.Params.Debug }}
+            {{ partial "debug.html" .Page }}
+        {{ end }}
 
         {{/* Main */}}
         <main role="main">
@@ -32,26 +32,26 @@
             {{/* Layout: Content Wrapper */}}
             <div class="layout content-wrapper">
                 {{/* Layout: Page Header */}}
-                {{- partial "sections/page-header.html" . -}}
+                {{ partial "sections/page-header.html" . }}
 
                 {{/* Layout: Main */}}
-                {{- if .IsHome -}}
-                    {{- partial "base/home.html" . -}}
-                {{- else -}}
-                    {{- block "main" . -}}{{- end -}}
-                {{- end -}}
+                {{ if .IsHome }}
+                    {{ partial "base/home.html" . }}
+                {{ else }}
+                    {{ block "main" . }}{{ end }}
+                {{ end }}
 
                 {{/* Layout: Page Navigation */}}
-                {{- partial "sections/page-navigation.html" . -}}
+                {{ partial "sections/page-navigation.html" . }}
             </div>
             
             {{/* Component: Top-Link */}}
-            {{- partial "components/top-link-fab.html" . -}}
+            {{ partial "components/top-link-fab.html" . }}
 
             {{/* Footer */}}
             <footer role="contentinfo">    
                 {{/* Links + Copyright */}}
-                {{- partial "base/footer.html" . -}}
+                {{ partial "base/footer.html" . }}
             </footer>
         </main>
     </body>

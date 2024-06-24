@@ -1,48 +1,48 @@
-{{- define "main" -}}
+{{ define "main" }}
 
 <article class="layout panes basic-singlepane">
   <section class="layout pane" id="sitemap">
     <div>
       <h6>Page</h6>
-      {{- range .Site.Pages.ByParam "title" -}}
-        {{- if eq .Title "" -}}
-          {{- continue -}} 
-        {{- else -}}
+      {{ range .Site.Pages.ByParam "title" }}
+        {{ if eq .Title "" }}
+          {{ continue }} 
+        {{ else }}
           <a class="component list-item one"
-              href="{{- .Permalink -}}">
+              href="{{ .Permalink }}">
               <span class="title-small">
-                {{- .Title -}}
+                {{ .Title }}
               </span>
           </a>
-        {{- end -}}
-      {{- end -}}
+        {{ end }}
+      {{ end }}
     </div>
     <div class="dates-sitemap">
       <h6>Date created</h6>
-      {{- range .Site.Pages.ByParam "title" -}}
-        {{- if eq .Title "" -}}
-          {{- continue -}} 
-        {{- else -}}
+      {{ range .Site.Pages.ByParam "title" }}
+        {{ if eq .Title "" }}
+          {{ continue }} 
+        {{ else }}
           <span>
-            {{- .Date.Format "January 01, 2006" -}}
+            {{ .Date.Format "January 01, 2006" }}
           </span>
-        {{- end -}}
-      {{- end -}}
+        {{ end }}
+      {{ end }}
     </div>
     <div class="dates-sitemap">
       <h6>Last modified</h6>
-      {{- range .Site.Pages.ByParam "title" -}}
-        {{- if eq .Title "" -}}
-          {{- continue -}} 
-        {{- else -}}
+      {{ range .Site.Pages.ByParam "title" }}
+        {{ if eq .Title "" }}
+          {{ continue }} 
+        {{ else }}
           <span>
-            {{- .Lastmod.Format "January 01, 2006" -}}
+            {{ .Lastmod.Format "January 01, 2006" }}
           </span>
-        {{- end -}}
-      {{- end -}}
+        {{ end }}
+      {{ end }}
     </div>
 
   </section>
 </article>
 
-{{- end -}}
+{{ end }}

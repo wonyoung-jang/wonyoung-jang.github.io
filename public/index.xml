@@ -1,5 +1,34 @@
 
+
   
+    
+      
+    
+  
+
+
+
+
+  
+    
+      
+    
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -25,7 +54,12 @@
     
     
     <lastBuildDate>Mon, 24 Jun 2024 10:39:31 -0400</lastBuildDate>
+    
+    
       <atom:link href="http://192.168.40.181:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    
     
     <item>
     
@@ -33,7 +67,9 @@
     
       <link>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</guid>
     
@@ -41,13 +77,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>About</title>
     
       <link>http://192.168.40.181:1313/about/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/about/</guid>
     
@@ -55,13 +95,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Colors</title>
     
       <link>http://192.168.40.181:1313/resource/reference/colors/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
     
@@ -69,13 +113,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Components</title>
     
       <link>http://192.168.40.181:1313/resource/reference/components/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
     
@@ -83,13 +131,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Contact</title>
     
       <link>http://192.168.40.181:1313/contact/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/contact/</guid>
     
@@ -97,13 +149,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Feed layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/feed-layout/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/feed-layout/</guid>
     
@@ -111,13 +167,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Fixed and flexible layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</guid>
     
@@ -125,13 +185,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>List of admonitions for wonyoungjang.org</title>
     
       <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
     
@@ -139,13 +203,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>List-detail layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
     
@@ -153,13 +221,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Motion</title>
     
       <link>http://192.168.40.181:1313/resource/reference/motion/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/motion/</guid>
     
@@ -167,13 +239,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Search</title>
     
       <link>http://192.168.40.181:1313/search/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/search/</guid>
     
@@ -181,13 +257,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Shapes</title>
     
       <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
     
@@ -195,13 +275,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Single pane layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/single-pane-layout/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/single-pane-layout/</guid>
     
@@ -209,13 +293,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Sitemap</title>
     
       <link>http://192.168.40.181:1313/sitemap/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/sitemap/</guid>
     
@@ -223,13 +311,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Split-pane layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/split-pane-layout/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/split-pane-layout/</guid>
     
@@ -237,13 +329,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>States and elevation</title>
     
       <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
     
@@ -251,13 +347,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Supporting pane layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
     
@@ -265,13 +365,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Typography</title>
     
       <link>http://192.168.40.181:1313/resource/reference/typography/</link>
     
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
     
@@ -279,13 +383,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>List of keyboard shortcuts for wonyoungjang.org</title>
     
       <link>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
     
-      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
     
@@ -293,13 +401,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Realtime multiplayer drawing</title>
     
       <link>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</link>
     
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</guid>
     
@@ -307,13 +419,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Wonyoungjang.org</title>
     
       <link>http://192.168.40.181:1313/project/software/wonyoungjang.org/</link>
     
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/wonyoungjang.org/</guid>
     
@@ -321,13 +437,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Q-learning tournament scheduler</title>
     
       <link>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</link>
     
-      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</guid>
     
@@ -335,13 +455,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Save top level reddit comments</title>
     
       <link>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</link>
     
-      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</guid>
     
@@ -349,13 +473,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Disaster recovery robot simulation</title>
     
       <link>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</link>
     
-      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</guid>
     
@@ -363,13 +491,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>CS career chatbot</title>
     
       <link>http://192.168.40.181:1313/project/university/cs-career-chatbot/</link>
     
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/cs-career-chatbot/</guid>
     
@@ -377,13 +509,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Logseq markdown tokenizer</title>
     
       <link>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</link>
     
-      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</guid>
     
@@ -391,13 +527,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Package delivery route optimization</title>
     
       <link>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</link>
     
-      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</guid>
     
@@ -405,13 +545,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Hotel reservation manager</title>
     
       <link>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</link>
     
-      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</guid>
     
@@ -419,13 +563,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Vacation cart manager</title>
     
       <link>http://192.168.40.181:1313/project/university/vacation-cart-manager/</link>
     
-      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/vacation-cart-manager/</guid>
     
@@ -433,13 +581,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Retail inventory manager</title>
     
       <link>http://192.168.40.181:1313/project/university/retail-inventory-manager/</link>
     
-      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/retail-inventory-manager/</guid>
     
@@ -447,13 +599,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>DVD rental database</title>
     
       <link>http://192.168.40.181:1313/project/university/dvd-rental-database/</link>
     
-      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/dvd-rental-database/</guid>
     
@@ -461,13 +617,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Student record system</title>
     
       <link>http://192.168.40.181:1313/project/university/student-record-system/</link>
     
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/student-record-system/</guid>
     
@@ -475,18 +635,24 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Food shop database management</title>
     
       <link>http://192.168.40.181:1313/project/university/food-shop-database-management/</link>
     
-      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/food-shop-database-management/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance</description>
     
     </item>
+    
+    
   </channel>
 </rss>

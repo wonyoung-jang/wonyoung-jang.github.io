@@ -1,3 +1,32 @@
+
+
+  
+    
+      
+    
+  
+
+
+
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -23,7 +52,12 @@
     
     
     <lastBuildDate>Sat, 22 Jun 2024 15:07:15 -0400</lastBuildDate>
+    
+    
       <atom:link href="http://192.168.40.181:1313/project/software/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    
     
     <item>
     
@@ -31,7 +65,9 @@
     
       <link>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</link>
     
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</guid>
     
@@ -39,13 +75,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Wonyoungjang.org</title>
     
       <link>http://192.168.40.181:1313/project/software/wonyoungjang.org/</link>
     
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/wonyoungjang.org/</guid>
     
@@ -53,13 +93,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Q-learning tournament scheduler</title>
     
       <link>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</link>
     
-      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</guid>
     
@@ -67,13 +111,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Save top level reddit comments</title>
     
       <link>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</link>
     
-      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</guid>
     
@@ -81,18 +129,24 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Logseq markdown tokenizer</title>
     
       <link>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</link>
     
-      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</guid>
     
       <description>Problem Logseq&#xD;does not have a native way to view the character count of your notes (aka pages).&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually.&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph.</description>
     
     </item>
+    
+    
   </channel>
 </rss>

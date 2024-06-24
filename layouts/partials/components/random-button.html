@@ -1,5 +1,5 @@
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
-{{- $randomPage := index (shuffle $pages) 0 -}}
+{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $randomPage := index (shuffle $pages) 0 }}
 
 <button 
   class="component button icon-button"
@@ -12,6 +12,6 @@
 
 <script>
   function navigateToRandomPage() {
-    window.location.href = "{{- $randomPage.RelPermalink -}}";
+    window.location.href = "{{ $randomPage.RelPermalink }}";
   }
 </script>

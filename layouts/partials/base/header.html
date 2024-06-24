@@ -16,26 +16,26 @@
     {{/* Buttons */}}
     <section class="end">
         {{/* Language switch */}}
-        {{- $lang := .Lang}}
-        {{- with site.Home.AllTranslations }}
+        {{ $lang := .Lang}}
+        {{ with site.Home.AllTranslations }}
             <div class="lang-switch">
-                {{- range . -}}
-                    {{- if ne $lang .Lang }}
-                        <a  href="{{- .Permalink -}}" 
+                {{ range . }}
+                    {{ if ne $lang .Lang }}
+                        <a  href="{{ .Permalink }}" 
                             title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
                             aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
                             
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                                {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
-                                {{- .Lang | title -}}
-                            {{- end -}}
+                            {{ if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                                {{ .Language.LanguageName | emojify }}
+                            {{ else }}
+                                {{ .Lang | title }}
+                            {{ end }}
 
                         </a>
-                    {{- end -}}
-                {{- end}}
+                    {{ end }}
+                {{ end}}
             </div>
-        {{- end }}
+        {{ end }}
 
         {{/* Theme toggle */}}
         {{ partial "components/theme-button.html" . }}        
@@ -49,63 +49,63 @@
 </nav>
 
 {{/* Tabs */}}
-{{- $page := . }}
-{{- $menuID := "main" }}
+{{ $page := . }}
+{{ $menuID := "main" }}
 
-{{- with index site.Menus $menuID }}
+{{ with index site.Menus $menuID }}
     <div class="component tabs title-medium">
-        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        {{ partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </div>
-{{- end }}
+{{ end }}
 
-{{- define "partials/inline/menu/walk.html" }}
-    {{- $page := .page }}
-    {{- range .menuEntries }}
-        {{- $attrs := dict "href" .URL }}
+{{ define "partials/inline/menu/walk.html" }}
+    {{ $page := .page }}
+    {{ range .menuEntries }}
+        {{ $attrs := dict "href" .URL }}
 
-        {{- if $page.IsMenuCurrent .Menu . }}
-            {{- $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "page") }}
-        {{- else if $page.HasMenuCurrent .Menu .}}
-            {{- $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "true") }}
-        {{- else }}
-            {{- $attrs = merge $attrs (dict "class" "component tab") }}
-        {{- end }}
+        {{ if $page.IsMenuCurrent .Menu . }}
+            {{ $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "page") }}
+        {{ else if $page.HasMenuCurrent .Menu .}}
+            {{ $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "true") }}
+        {{ else }}
+            {{ $attrs = merge $attrs (dict "class" "component tab") }}
+        {{ end }}
 
-        {{- $name := .Name }}
+        {{ $name := .Name }}
 
-        {{- with .Identifier }}
-            {{- with T . }}
-                {{- $name = . }}
-            {{- end }}
-        {{- end }}
+        {{ with .Identifier }}
+            {{ with T . }}
+                {{ $name = . }}
+            {{ end }}
+        {{ end }}
 
         <a 
-            {{- range $k, $v := $attrs }}
-                {{- with $v }}
-                    {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-                {{- end }}
-            {{- end -}}>
+            {{ range $k, $v := $attrs }}
+                {{ with $v }}
+                    {{ printf " %s=%q" $k $v | safeHTMLAttr }}
+                {{ end }}
+            {{ end }}>
             {{ $name }}
         </a>
-    {{- end }}
-{{- end }}
+    {{ end }}
+{{ end }}
 
 {{/* Light theme script */}}
-{{- if (eq .Site.Params.defaultTheme "light") }}
+{{ if (eq .Site.Params.defaultTheme "light") }}
     <script>
         if (localStorage.getItem("pref-theme") === "dark") {
             document.body.classList.add('dark');
         }
     </script>
 {{/* Dark theme script */}}
-{{- else if (eq .Site.Params.defaultTheme "dark") }}
+{{ else if (eq .Site.Params.defaultTheme "dark") }}
     <script>
         if (localStorage.getItem("pref-theme") === "light") {
             document.body.classList.remove('dark')
         }
     </script>
 {{/* Auto theme script */}}
-{{- else }}
+{{ else }}
     <script>
         if (localStorage.getItem("pref-theme") === "dark") {
             document.body.classList.add('dark');
@@ -115,4 +115,4 @@
             document.body.classList.add('dark');
         }
     </script>
-{{- end }}
+{{ end }}

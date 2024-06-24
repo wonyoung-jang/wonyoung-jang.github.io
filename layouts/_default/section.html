@@ -1,19 +1,19 @@
-{{- define "main" -}}
+{{ define "main" }}
 
 <article class="layout panes basic-singlepane">
     <section class="layout pane">
 
-        {{- range .Sections -}}
+        {{ range .Sections }}
             <a  class="component list-item one"
-                href="{{- .Permalink -}}">
+                href="{{ .Permalink }}">
                 <span class="title-medium">
-                    {{- .Title -}}
+                    {{ .Title }}
                 </span>
             </a>
             <div class="divider"></div>
-        {{- end -}}
+        {{ end }}
 
     </section>
 </article>
 
-{{- end -}}
+{{ end }}

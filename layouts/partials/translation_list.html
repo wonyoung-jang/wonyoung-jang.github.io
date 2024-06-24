@@ -1,22 +1,22 @@
-{{- if .IsTranslated -}}
+{{ if .IsTranslated }}
 
-    {{- if (ne .Layout "search") }}
-        {{- if or .Params.author site.Params.author (not .Date.IsZero) }}
+    {{ if (ne .Layout "search") }}
+        {{ if or .Params.author site.Params.author (not .Date.IsZero) }}
             &nbsp;|&nbsp;
-        {{- end -}}
-    {{- end }}
+        {{ end }}
+    {{ end }}
 
     <div class="i18n_list">
-        {{- i18n "translations" | default "Translations" }}:
-        {{- range .Translations }}
+        {{ i18n "translations" | default "Translations" }}:
+        {{ range .Translations }}
             <a href="{{ .Permalink }}">
-                {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                    {{- .Language.LanguageName | emojify -}}
-                {{- else }}
-                    {{- .Lang | title -}}
-                {{- end -}}
+                {{ if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                    {{ .Language.LanguageName | emojify }}
+                {{ else }}
+                    {{ .Lang | title }}
+                {{ end }}
             </a>
-        {{- end }}
+        {{ end }}
     </div>
 
-{{- end -}}
+{{ end }}

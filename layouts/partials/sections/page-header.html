@@ -1,45 +1,45 @@
 {{/* Layout: Special-Header */}}
 
 {{/* Post Header */}}
-{{- if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) -}} 
+{{ if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) }} 
     <section class="layout page-header">
         {{/* Breadcrumbs */}}
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
-            {{- range .Ancestors.Reverse -}} 
-                <a href="{{- .Permalink -}}">
-                    {{- if .IsHome -}}
+            {{ range .Ancestors.Reverse }} 
+                <a href="{{ .Permalink }}">
+                    {{ if .IsHome }}
                         Home
-                    {{- else -}}
-                        {{- .LinkTitle -}}
-                    {{- end -}} 
+                    {{ else }}
+                        {{ .LinkTitle }}
+                    {{ end }} 
                 </a>
                 <span>/</span>
-            {{- end -}}
+            {{ end }}
         </nav>    
 
         {{/* Title */}}
         <h1 class="title">
-            {{- .Title -}}
+            {{ .Title }}
         </h1> 
 
         {{/* Description */}}
-        {{- if .Description -}}
+        {{ if .Description }}
             <span class="description title-small">
-                {{- .Description | markdownify -}}
+                {{ .Description | markdownify }}
             </span>
-        {{- end -}}
+        {{ end }}
 
         {{/* Metadata */}}
-        {{- if (and (ne .Layout "list") (ne .Layout "section") (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (eq .Title "404 Page not found"))) -}}
+        {{ if (and (ne .Layout "list") (ne .Layout "section") (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (eq .Title "404 Page not found"))) }}
             <div class="label-large">
-                {{- partial "components/post-meta.html" . -}}
-                {{- partial "translation_list.html" . -}}
+                {{ partial "components/post-meta.html" . }}
+                {{ partial "translation_list.html" . }}
             </div>
-        {{- end -}}
+        {{ end }}
 
         {{/* Github button */}}
-        {{- with .Params.githubRepo -}}
-            {{- partial "components/github-button.html" (dict "githubRepo" .) -}}
-        {{- end -}}
+        {{ with .Params.githubRepo }}
+            {{ partial "components/github-button.html" (dict "githubRepo" .) }}
+        {{ end }}
     </section>
-{{- end -}}
+{{ end }}

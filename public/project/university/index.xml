@@ -1,3 +1,32 @@
+
+
+  
+    
+      
+    
+  
+
+
+
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -23,7 +52,12 @@
     
     
     <lastBuildDate>Sat, 22 Jun 2024 15:07:15 -0400</lastBuildDate>
+    
+    
       <atom:link href="http://192.168.40.181:1313/project/university/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    
     
     <item>
     
@@ -31,7 +65,9 @@
     
       <link>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</link>
     
-      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</guid>
     
@@ -39,13 +75,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>CS career chatbot</title>
     
       <link>http://192.168.40.181:1313/project/university/cs-career-chatbot/</link>
     
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/cs-career-chatbot/</guid>
     
@@ -53,13 +93,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Package delivery route optimization</title>
     
       <link>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</link>
     
-      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</guid>
     
@@ -67,13 +111,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Hotel reservation manager</title>
     
       <link>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</link>
     
-      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</guid>
     
@@ -81,13 +129,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Vacation cart manager</title>
     
       <link>http://192.168.40.181:1313/project/university/vacation-cart-manager/</link>
     
-      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/vacation-cart-manager/</guid>
     
@@ -95,13 +147,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Retail inventory manager</title>
     
       <link>http://192.168.40.181:1313/project/university/retail-inventory-manager/</link>
     
-      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/retail-inventory-manager/</guid>
     
@@ -109,13 +165,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>DVD rental database</title>
     
       <link>http://192.168.40.181:1313/project/university/dvd-rental-database/</link>
     
-      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/dvd-rental-database/</guid>
     
@@ -123,13 +183,17 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Student record system</title>
     
       <link>http://192.168.40.181:1313/project/university/student-record-system/</link>
     
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/student-record-system/</guid>
     
@@ -137,18 +201,24 @@
     
     </item>
     
+    
+    
     <item>
     
       <title>Food shop database management</title>
     
       <link>http://192.168.40.181:1313/project/university/food-shop-database-management/</link>
     
-      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/project/university/food-shop-database-management/</guid>
     
       <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance</description>
     
     </item>
+    
+    
   </channel>
 </rss>

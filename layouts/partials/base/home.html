@@ -1,15 +1,17 @@
-{{- with .Site.Params.Home -}}
+{{ with .Site.Params.Home }}
     <article id="home-page">
+        {{/* Home page header */}}
         <section class="home-header">
-            {{/* Site Title */}}
+            {{/* Site title */}}
             <h1>
-                {{- .title | default site.Title | markdownify -}}
+                {{ .title | default site.Title | markdownify }}
             </h1>        
     
-            {{/* Home Page Buttons */}}
-            {{- partial "components/homepage-buttons.html" . -}}
+            {{/* Home page buttons */}}
+            {{ partial "components/homepage-buttons.html" . }}
         </section>
 
+        {{/*  Showcase pages table  */}}
         <section class="showcase-panel">
             <h2>Showcases</h2>
             <table>
@@ -71,4 +73,4 @@
         </section>
     </article>
 
-{{- end -}}
+{{ end }}

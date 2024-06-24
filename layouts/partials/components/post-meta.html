@@ -1,12 +1,12 @@
-{{- $scratch := newScratch }}
+{{ $scratch := newScratch }}
 
-{{- if not .Date.IsZero -}}
-    {{- $scratch.Add "meta" (slice (printf "<span class='metadata' title='%s'><span>%s" (.Date) (.Date | time.Format (default "January 1, 2006")))) }}
-{{- end }}
+{{ if not .Date.IsZero }}
+    {{ $scratch.Add "meta" (slice (printf "<span class='metadata' title='%s'><span>%s" (.Date) (.Date | time.Format (default "January 1, 2006")))) }}
+{{ end }}
 
-{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{ $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
 
-{{- with ($scratch.Get "meta") }}
-    {{- delimit . " | " | safeHTML -}}
+{{ with ($scratch.Get "meta") }}
+    {{ delimit . " | " | safeHTML }}
     </span></span>
-{{- end -}}
+{{ end }}
