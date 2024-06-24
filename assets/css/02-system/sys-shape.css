@@ -1,37 +1,40 @@
 :root {
+  /* Scale */
+  --shape-scale: var(--scale-min-6);
+  
   /* 1 No rounding */
   --shape-corner-none: 0px;
 
   /* 2 Extra small rounding - 1x */
-  --shape-corner-xs:        2.4px;
+  --shape-corner-xs:        2px;
   --shape-corner-xs-top:    var(--shape-corner-xs) var(--shape-corner-xs) 00px 00px;
   --shape-corner-xs-bottom: 00px 00px var(--shape-corner-xs) var(--shape-corner-xs);
   --shape-corner-xs-start:  var(--shape-corner-xs) 00px 00px var(--shape-corner-xs);
   --shape-corner-xs-end:    00px var(--shape-corner-xs) var(--shape-corner-xs) 00px;
 
   /* 3 Small rounding - 2x */
-  --shape-corner-s:         calc(var(--shape-corner-xs) * 2);
+  --shape-corner-s:         calc(var(--shape-corner-xs) * var(--shape-scale));
   --shape-corner-s-top:     var(--shape-corner-s) var(--shape-corner-s) 00px 00px;
   --shape-corner-s-bottom:  00px 00px var(--shape-corner-s) var(--shape-corner-s);
   --shape-corner-s-start:   var(--shape-corner-s) 00px 00px var(--shape-corner-s);
   --shape-corner-s-end:     00px var(--shape-corner-s) var(--shape-corner-s) 00px;
 
   /* 4 Medium rounding - 3x */
-  --shape-corner-m:         calc(var(--shape-corner-xs) * 3);
+  --shape-corner-m:         calc(var(--shape-corner-s) * var(--shape-scale));
   --shape-corner-m-top:     var(--shape-corner-m) var(--shape-corner-m) 00px 00px;
   --shape-corner-m-bottom:  00px 00px var(--shape-corner-m) var(--shape-corner-m);
   --shape-corner-m-start:   var(--shape-corner-m) 00px 00px var(--shape-corner-m);
   --shape-corner-m-end:     00px var(--shape-corner-m) var(--shape-corner-m) 00px;
 
   /* 5 Large rounding -4x */
-  --shape-corner-l:         calc(var(--shape-corner-xs) * 4);
+  --shape-corner-l:         calc(var(--shape-corner-m) * var(--shape-scale));
   --shape-corner-l-top:     var(--shape-corner-l) var(--shape-corner-l) 00px 00px;
   --shape-corner-l-bottom:  00px 00px var(--shape-corner-l) var(--shape-corner-l);
   --shape-corner-l-start:   var(--shape-corner-l) 00px 00px var(--shape-corner-l);
   --shape-corner-l-end:     00px var(--shape-corner-l) var(--shape-corner-l) 00px;
 
   /* 6 Extra large rounding -7x */
-  --shape-corner-xl:        calc(var(--shape-corner-xs) * 7);
+  --shape-corner-xl:        calc(var(--shape-corner-l) * var(--shape-scale));
   --shape-corner-xl-top:    var(--shape-corner-xl) var(--shape-corner-xl) 00px 00px;
   --shape-corner-xl-bottom: 00px 00px var(--shape-corner-xl) var(--shape-corner-xl);
   --shape-corner-xl-start:  var(--shape-corner-xl) 00px 00px var(--shape-corner-xl);
