@@ -6,42 +6,43 @@
   padding: var(--size-4);
   box-shadow: var(--elevation3);
 
-  & i {
-    font-size: var(--size-6);
-  }
-
-  &.small {
+  &[small] {
     width: var(--size-12);
     height: var(--size-12);
     border-radius: var(--shape-corner-m);
     padding: 0;
-
-    & i {
-      font-size: var(--size-3);
-    }
   }
 
-  &.large {
+  &[small] i {
+    font-size: var(--size-5);
+  }
+
+  &[large] {
     width: var(--size-24);
     height: var(--size-24);
     border-radius: var(--size-9);
     padding: var(--size-4);
+  }
 
-    & i {
-      font-size: var(--size-9);
-    }
+  &[large] i {
+    font-size: var(--size-9);
+  }
+  
+  &[extended] {
+    min-width: var(--size-20);
+    width: auto;
+    height: var(--size-14);
+    border-radius: var(--shape-corner-l);
+    padding: var(--size-4);
+    gap: var(--size-4);
+  }
+  
+  &[extended] i {
+    font-size: var(--size-6);
   }
 }
 
-.fab.extended {
-  min-width: var(--size-20);
-  width: auto;
-  height: var(--size-14);
-  border-radius: var(--shape-corner-l);
-  padding: var(--size-4);
-  gap: var(--size-4);
 
-  & i {
-    font-size: var(--size-6);
-  }
+.fab i {
+  font-size: var(--size-6);
 }

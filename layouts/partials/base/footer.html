@@ -34,14 +34,14 @@
         </span>
 
         {{ range site.Menus.connect }}
-            <a  class="component button fab extended 
+            <a  class="component button fab
                 {{ if eq .Name "GitHub" }}
                     {{ "sub120-container" }}
                 {{ else if eq .Name "Email" }}
                     {{ "sub150-container" }}
                 {{ else if eq .Name "Ko-fi" }}
                     {{ "sub180-container" }}
-                {{ end }}"
+                {{ end }}" extended
 
                 href="{{ .URL }}"
                 target="_blank" 
