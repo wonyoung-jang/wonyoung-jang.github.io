@@ -9,15 +9,15 @@ githubrepo: https://github.com/wonyoung-jang/top-reddit-comments
 keywords: 
 type: 
 date: 2024-01-28
-description: Extract the parent comments of a [reddit](https://www.reddit.com/) post
+description: Extract the parent comments of a reddit post
 title: Save top level reddit comments
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---
 ![reddit-top-comments.webp](/assets/reddit-top-comments.webp)
 
 ## Premise
 
-Sometimes I just want the top voted parent comments of a reddit post.
+Sometimes I just want the top voted parent comments of a [reddit](https://www.reddit.com/) post.
 
 ## Conclusion
 

@@ -15,7 +15,6 @@ title: About
 lastMod: 2024-06-22
 ---
 ## About me
-
 Hello!
 
 Personally, I'm interested in programming, making music, formal logic, backpacking, magic and [cardistry](https://en.wikipedia.org/wiki/Cardistry), and cooking. This site is a collection of my projects and notes related to various areas of my life.

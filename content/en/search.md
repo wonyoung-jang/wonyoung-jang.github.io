@@ -8,9 +8,9 @@ keywords:
 type: 
 date:
 - 2024-01-01 Monday
-description: Search the contents of https://wonyoungjang.org
+description: Search the contents of wonyoungjang.org
 title: Search
 tags:
 categories:
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---

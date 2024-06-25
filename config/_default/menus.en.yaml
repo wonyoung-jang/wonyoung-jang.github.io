@@ -2,10 +2,12 @@ main:
   - identifier: Projects
     name: Projects
     pageRef: /project
+    pre: <i>code</i>
     weight: 10
   - identifier: Resource
     name: Resources
     pageRef: /resource
+    pre: <i>developer_guide</i>
     weight: 20
 
 footer:

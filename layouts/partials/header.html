@@ -79,12 +79,13 @@
             {{ end }}
         {{ end }}
 
-        <a 
+        <a
             {{ range $k, $v := $attrs }}
                 {{ with $v }}
                     {{ printf " %s=%q" $k $v | safeHTMLAttr }}
                 {{ end }}
             {{ end }}>
+            {{ .Pre }}
             {{ $name }}
         </a>
     {{ end }}

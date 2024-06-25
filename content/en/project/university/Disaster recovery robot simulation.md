@@ -9,9 +9,9 @@ githubrepo: https://github.com/wonyoung-jang/disaster-recovery-robot
 keywords: 
 type: 
 date: 2024-01-25
-description: Created an autonomous robotic system in [CoppeliaSim](https://www.coppeliarobotics.com/) for disaster recovery, demonstrating goal-seeking with sensor integration
+description: Created an autonomous robotic system in CoppeliaSim for disaster recovery, demonstrating goal-seeking with sensor integration
 title: Disaster recovery robot simulation
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---
 ![disaster-recovery-robot.webp](/assets/disaster-recovery-robot.webp)
 
@@ -20,7 +20,7 @@ lastMod: 2024-06-22
 
 ## Requirements
 
-  + Familiarize with CoppeliaSim robotics virtual environment and tools
+  + Familiarize with [CoppeliaSim](https://www.coppeliarobotics.com/) robotics virtual environment and tools
 
   + Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment
 

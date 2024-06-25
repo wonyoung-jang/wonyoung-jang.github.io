@@ -9,9 +9,9 @@ githubrepo: https://github.com/wonyoung-jang/hotel-reservation-manager
 keywords: 
 type: 
 date: 2023-11-27
-description: Upgraded a [Spring](https://spring.io/projects/spring-framework) hotel booking app with multilingual, timezone, and currency features. Deployed via [Docker](https://www.docker.com/)
+description: Upgraded a Spring hotel booking app with multilingual, timezone, and currency features. Deployed via Docker
 title: Hotel reservation manager
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---
 ![🖼 hotel-reservation-manager.webp](/assets/hotel-reservation-manager.webp)
 
@@ -20,7 +20,7 @@ lastMod: 2024-06-22
 
 ## Requirements
 
-  + Integrate resource bundles in the application for English and French translations, including a welcome message
+  + Integrate resource bundles in the [Spring](https://spring.io/projects/spring-framework) application for English and French translations, including a welcome message
 
   + Implement multithreading to display the welcome message in both English and French simultaneously
 
@@ -32,6 +32,6 @@ lastMod: 2024-06-22
 
   + Create a Dockerfile to build a single image of the application, encapsulating all code modifications
 
-  + Test the Docker image by creating and running a container, ensuring the application functions correctly within the containerized environment
+  + Test the [Docker](https://www.docker.com/) image by creating and running a container, ensuring the application functions correctly within the containerized environment
 
   + Describe a deployment strategy for the multithreaded Spring application to a cloud service, detailing the steps and the chosen cloud service provider

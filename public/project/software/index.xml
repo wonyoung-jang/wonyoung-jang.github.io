@@ -125,7 +125,7 @@
     
       <guid>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</guid>
     
-      <description>Premise Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
+      <description>Premise Sometimes I just want the top voted parent comments of a reddit&#xD;post.&#xA;Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
     
     </item>
     
@@ -143,7 +143,7 @@
     
       <guid>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</guid>
     
-      <description>Problem Logseq&#xD;does not have a native way to view the character count of your notes (aka pages).&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page.&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually.&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph.</description>
+      <description>Problem Logseq&#xD;does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph</description>
     
     </item>
     

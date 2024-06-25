@@ -9,9 +9,9 @@ githubrepo: https://github.com/wonyoung-jang/dvd-rental-revenue
 keywords: 
 type: 
 date: 2023-07-12
-description: Created a [PostgreSQL](https://www.postgresql.org/) lab report with SQL, extracting detailed data and summaries from the  [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)  for a business query
+description: Created a PostgreSQL lab report with SQL, extracting detailed data and summaries from the DVD Rental Database for a business query
 title: DVD rental database
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---
 ![🖼 dvd-rental-database.webp](/assets/dvd-rental-database.webp)
 
@@ -20,7 +20,7 @@ lastMod: 2024-06-22
 
 ## Requirements
 
-  + Create a real-world business report using data extracted and analyzed from the DVD Rental Database
+  + Create a [PostgreSQL](https://www.postgresql.org/) real-world business report using data extracted and analyzed from the [DVD Rental Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
 
   + Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension
 

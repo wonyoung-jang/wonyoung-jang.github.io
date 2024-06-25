@@ -9,9 +9,9 @@ githubrepo: https://github.com/wonyoung-jang/retail-inventory-manager
 keywords: 
 type: 
 date: 2023-11-18
-description: Customized a [Spring](https://spring.io/projects/spring-framework) app with HTML and Java for inventory management, showcasing software development skills for a client's needs
+description: Customized a Spring app with HTML and Java for inventory management, showcasing software development skills for a client's needs
 title: Retail inventory manager
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---
 ![🖼 retail-inventory.webp](/assets/retail-inventory.webp)
 
@@ -20,7 +20,7 @@ lastMod: 2024-06-22
 
 ## Requirements
 
-  + Customize the HTML user interface to reflect the specific customer's shop name, product names, and part names
+  + Customize the HTML user interface of the [Spring](https://spring.io/projects/spring-framework) application to reflect the specific customer's shop name, product names, and part names
 
   + Add an `About` page that accurately describes the customer's company and ensure proper navigation within the application
 

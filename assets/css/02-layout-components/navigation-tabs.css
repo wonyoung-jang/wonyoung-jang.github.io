@@ -28,10 +28,10 @@
     --container-padding: 0 var(--size-2);
     
     --container-display: flex;
-    --container-flex-flow: column nowrap;
+    --container-flex-flow: row nowrap;
     --container-justify-content: center;
     --container-align-items: center;
-    --container-gap: none;
+    --container-gap: var(--size-2);
 
     --icon-color: var(--color-on-surface-variant);
     --text-color: var(--color-on-surface-variant);

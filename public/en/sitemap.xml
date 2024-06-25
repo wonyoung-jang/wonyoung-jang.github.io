@@ -2,19 +2,139 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</loc>
+    <loc>http://192.168.40.181:1313/resource/reference/colors/</loc>
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/all-logseq-elements/"
+                href="http://192.168.40.181:1313/ko/resource/reference/colors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/all-logseq-elements/"
+                href="http://192.168.40.181:1313/resource/reference/colors/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/components/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/resource/reference/components/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/resource/reference/components/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/resource/reference/list-of-admonitions-for-wonyoungjang.org/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/motion/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/resource/reference/motion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/resource/reference/motion/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/search/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/search/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/shapes/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/resource/reference/shapes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/resource/reference/shapes/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/sitemap/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/sitemap/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/sitemap/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/states-and-elevation/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/resource/reference/states-and-elevation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/resource/reference/states-and-elevation/"
+                />
+  </url><url>
+    <loc>http://192.168.40.181:1313/resource/reference/typography/</loc>
+    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://192.168.40.181:1313/ko/resource/reference/typography/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://192.168.40.181:1313/resource/reference/typography/"
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
@@ -45,36 +165,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/about/"
-                />
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/colors/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/colors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/colors/"
-                />
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/components/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/components/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/components/"
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/contact/</loc>
@@ -122,21 +212,6 @@
                 href="http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/"
                 />
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/list-of-admonitions-for-wonyoungjang.org/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/"
-                />
-  </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/list-detail-layout/</loc>
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -150,21 +225,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/list-detail-layout/"
-                />
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/motion/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/motion/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/motion/"
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/</loc>
@@ -212,36 +272,6 @@
                 href="http://192.168.40.181:1313/resource/"
                 />
   </url><url>
-    <loc>http://192.168.40.181:1313/search/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/search/"
-                />
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/shapes/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/shapes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/shapes/"
-                />
-  </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/single-pane-layout/</loc>
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -255,21 +285,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/single-pane-layout/"
-                />
-  </url><url>
-    <loc>http://192.168.40.181:1313/sitemap/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/sitemap/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/sitemap/"
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/software/</loc>
@@ -302,21 +317,6 @@
                 href="http://192.168.40.181:1313/resource/reference/split-pane-layout/"
                 />
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/states-and-elevation/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/states-and-elevation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/states-and-elevation/"
-                />
-  </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</loc>
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -330,21 +330,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/supporting-pane-layout/"
-                />
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/typography/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://192.168.40.181:1313/ko/resource/reference/typography/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://192.168.40.181:1313/resource/reference/typography/"
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/</loc>

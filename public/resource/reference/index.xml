@@ -61,24 +61,6 @@
     
     <item>
     
-      <title>All Logseq elements</title>
-    
-      <link>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</link>
-    
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    
-      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-    
-      <guid>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</guid>
-    
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Centered admon&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Block quote with &amp;quot;``&amp;quot;&#xA;An internal link to my about page: WonyoungJang.org/about&#xD;An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/&#xD;An embedded internal page: {{embed WonyoungJang.org/about&#xD;}}&#xA;A block reference: ## About me&#xA;A block embed: {{embed ## About me }}</description>
-    
-    </item>
-    
-    
-    
-    <item>
-    
       <title>Colors</title>
     
       <link>http://192.168.40.181:1313/resource/reference/colors/</link>
@@ -106,6 +88,96 @@
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>List of admonitions for wonyoungjang.org</title>
+    
+      <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
+    
+      <description>What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Motion</title>
+    
+      <link>http://192.168.40.181:1313/resource/reference/motion/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/resource/reference/motion/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Shapes</title>
+    
+      <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>States and elevation</title>
+    
+      <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Typography</title>
+    
+      <link>http://192.168.40.181:1313/resource/reference/typography/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
     
       <description></description>
     
@@ -151,24 +223,6 @@
     
     <item>
     
-      <title>List of admonitions for wonyoungjang.org</title>
-    
-      <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
-    
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    
-      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-    
-      <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
-    
-      <description>What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.</description>
-    
-    </item>
-    
-    
-    
-    <item>
-    
       <title>List-detail layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
@@ -178,42 +232,6 @@
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
-    
-      <description></description>
-    
-    </item>
-    
-    
-    
-    <item>
-    
-      <title>Motion</title>
-    
-      <link>http://192.168.40.181:1313/resource/reference/motion/</link>
-    
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    
-      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-    
-      <guid>http://192.168.40.181:1313/resource/reference/motion/</guid>
-    
-      <description></description>
-    
-    </item>
-    
-    
-    
-    <item>
-    
-      <title>Shapes</title>
-    
-      <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
-    
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    
-      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-    
-      <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
     
       <description></description>
     
@@ -259,24 +277,6 @@
     
     <item>
     
-      <title>States and elevation</title>
-    
-      <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
-    
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    
-      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-    
-      <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
-    
-      <description></description>
-    
-    </item>
-    
-    
-    
-    <item>
-    
       <title>Supporting pane layout</title>
     
       <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
@@ -286,24 +286,6 @@
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
       <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
-    
-      <description></description>
-    
-    </item>
-    
-    
-    
-    <item>
-    
-      <title>Typography</title>
-    
-      <link>http://192.168.40.181:1313/resource/reference/typography/</link>
-    
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    
-      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-    
-      <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
     
       <description></description>
     

@@ -10,8 +10,7 @@ keywords:
 type: showcase/tokens
 date:
 - 2024-06-10 Monday
-description:
-- WonyoungJang.org
+description: Shapes available for wonyoungjang.org
 title: Shapes
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---

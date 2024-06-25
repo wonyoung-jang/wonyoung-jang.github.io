@@ -10,9 +10,9 @@ keywords:
 type: 
 date:
 - 2024-04-24 Wednesday
-description: This page is a list of admonitions used on this site
+description: This page is a list of admonitions used on wonyoungjang.org
 title: List of admonitions for wonyoungjang.org
-lastMod: 2024-06-22
+lastMod: 2024-06-25
 ---
 ## What an admonition is
 
