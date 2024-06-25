@@ -38,17 +38,17 @@
                 {{ if .IsHome }}
                     {{ partial "home.html" . }}
                 {{ else }}
-                    {{ block "main" . }}
-                    {{ end }}
-                    
-                    {{/* Layout: Page Navigation */}}
-                    {{ partial "page-navigation.html" . }}
-                    
-                    {{/* Layout: Page Links */}}
-                    {{ partial "page-links.html" . }}
+                    {{ block "main" . }}{{ end }}
                 {{ end }}
             </div>
-
+            
+            {{/* Layout: Page Navigation */}}
+            {{ partial "page-navigation.html" . }}
+            
+            {{ if .IsPage }}
+                {{/* Layout: Page Links */}}
+                {{ partial "page-links.html" . }}
+            {{ end }}
 
             {{/* Component: Top-Link */}}
             {{ partial "top-link-fab.html" . }}
