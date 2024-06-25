@@ -33,7 +33,6 @@
         {{ if (and (ne .Layout "list") (ne .Layout "section") (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (eq .Title "404 Page not found"))) }}
             <div class="label-large">
                 {{ partial "post-meta.html" . }}
-                {{ partial "translation_list.html" . }}
             </div>
         {{ end }}
 
