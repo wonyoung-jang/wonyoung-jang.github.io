@@ -1,6 +1,8 @@
-#sitemap {
+.pane#sitemap {
   display: flex;
   flex-flow: row nowrap;
+  padding: unset;
+  margin: unset;
 
   h6 {
     display: flex;

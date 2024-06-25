@@ -2,45 +2,39 @@
 
 <article class="layout panes basic-singlepane">
   <section class="layout pane" id="sitemap">
-    <div>
-      <h6>Page</h6>
-      {{ range .Site.Pages.ByParam "title" }}
-        {{ if eq .Title "" }}
-          {{ continue }} 
-        {{ else }}
-          <a class="component list-item one"
-              href="{{ .Permalink }}">
-              <span class="title-small">
-                {{ .Title }}
-              </span>
-          </a>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>URL</th>
+          <th>Kind</th>
+          <th>Type</th>
+          <th>Date Created</th>
+          <th>Last Modified</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ $index := 0 }}
+        {{ range .Site.Pages.ByParam "title" }}
+          {{ if ne .Title "" }}
+            {{ $index = add $index 1 }}
+            <tr class="label-medium">
+              <td>{{ $index }}</td>
+              <td>{{ .Title }}</td>
+              <td>
+                <a href="{{ .Permalink }}">{{ .Permalink }}</a>
+              </td>
+              <td>{{ .Kind }}</td>
+              <td>{{ .Type }}</td>
+              <td>{{ .Date.Format "January 02, 2006" }}</td>
+              <td>{{ .Lastmod.Format "January 02, 2006" }}</td>
+            </tr>
+          {{ end }}
         {{ end }}
-      {{ end }}
-    </div>
-    <div class="dates-sitemap">
-      <h6>Date created</h6>
-      {{ range .Site.Pages.ByParam "title" }}
-        {{ if eq .Title "" }}
-          {{ continue }} 
-        {{ else }}
-          <span>
-            {{ .Date.Format "January 01, 2006" }}
-          </span>
-        {{ end }}
-      {{ end }}
-    </div>
-    <div class="dates-sitemap">
-      <h6>Last modified</h6>
-      {{ range .Site.Pages.ByParam "title" }}
-        {{ if eq .Title "" }}
-          {{ continue }} 
-        {{ else }}
-          <span>
-            {{ .Lastmod.Format "January 01, 2006" }}
-          </span>
-        {{ end }}
-      {{ end }}
-    </div>
+      </tbody>
+    </table>
 
   </section>
 </article>
