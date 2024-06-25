@@ -16,17 +16,6 @@ li {
   list-style: none;
 }
 
-blockquote,
-q {
-  quotes: none;
-
-  &::after,
-  &::before {
-    content: "";
-    content: none;
-  }
-}
-
 input, 
 button,
 textarea,

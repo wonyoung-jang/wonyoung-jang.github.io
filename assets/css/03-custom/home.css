@@ -9,7 +9,7 @@
   }
 
 
-  .home-header {
+  #home-header {
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
@@ -27,14 +27,16 @@
     }  
   }
 
-  .showcase-panel {
+  #showcase-panel {
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
     align-items: center;
     justify-content: center;
-    background-color: var(--color-surface);
+    background-color: var(--color-surface-container-high);
     gap: var(--spacing-panes);
+    margin: var(--spacing-panes);
+    border-radius: var(--shape-corner-xl);
     
     *:not(h1, h2) {
       width: 100%;

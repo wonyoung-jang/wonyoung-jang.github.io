@@ -1,7 +1,7 @@
 {{ with .Site.Params.Home }}
     <article id="home-page">
         {{/* Home page header */}}
-        <section class="home-header">
+        <section id="home-header">
             {{/* Site title */}}
             <h1>
                 {{ .title | default site.Title | markdownify }}
@@ -12,7 +12,7 @@
         </section>
 
         {{/*  Showcase pages table  */}}
-        <section class="showcase-panel">
+        <section id="showcase-panel">
             <h2>Showcases</h2>
             <table>
                 <thead>
