@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://192.168.40.181:1313/resource/reference/colors/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -18,7 +18,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/components/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -33,7 +33,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,7 +48,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/motion/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -63,7 +63,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/search/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -78,7 +78,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/shapes/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -93,7 +93,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/sitemap/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -108,7 +108,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/states-and-elevation/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -123,7 +123,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/typography/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -138,7 +138,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -153,7 +153,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/about/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -408,7 +408,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -423,7 +423,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -438,7 +438,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/cs-career-chatbot/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -453,7 +453,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -483,7 +483,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -498,7 +498,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/vacation-cart-manager/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -513,7 +513,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/retail-inventory-manager/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -528,7 +528,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/dvd-rental-database/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -543,7 +543,7 @@
                 />
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/student-record-system/</loc>
-    <lastmod>2024-06-25T08:21:38-04:00</lastmod>
+    <lastmod>2024-06-25T10:22:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link

@@ -3,6 +3,7 @@ debug: false
 defaultTheme: auto
 env: production
 title: Wonyoung Jang
+dateFormat: January 2, 2006
 
 assets:
   favicon: 'sitelogo.svg'

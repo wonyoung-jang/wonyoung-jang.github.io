@@ -1,12 +1,19 @@
 .meta-block {
-    flex: 1;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    gap: var(--size-2);
-    
-    * {
-        font-style: italic;
-        color: var(--color-on-surface-variant);
-    }
+    display: inline-flex;
+    display: inline flex;
+    flex-flow: row nowrap;
+    color: var(--color-on-surface-variant);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+#list-page .card-title {
+    flex: 1 1 auto;
+    color: var(--color-on-surface);
+}
+
+#list-page .card-content {
+    height: 100%;
+    padding: var(--size-8);
 }

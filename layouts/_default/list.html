@@ -3,7 +3,7 @@
 {{ $pages := union .RegularPages .Sections }}
 
 <article class="layout panes canonical-feed">
-    <section class="layout pane">
+    <section class="layout pane" id="list-page">
 
         {{ range $index, $page := $pages }}        
             <a  class="component card" elevated
@@ -11,7 +11,7 @@
                 href="{{ .Permalink }}">        
                 
                 <div class="card-content">
-                    <span class="title-large">
+                    <span class="card-title headline-small">
                         {{ .Title }}
                     </span>
 
