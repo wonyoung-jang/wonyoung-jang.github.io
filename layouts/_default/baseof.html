@@ -18,7 +18,7 @@
 
         {{/* Header */}}
         <header role="banner">
-            {{ partial "base/header.html" . .Page }}
+            {{ partial "header.html" . .Page }}
         </header>
 
         {{/* Debug */}}
@@ -32,26 +32,26 @@
             {{/* Layout: Content Wrapper */}}
             <div class="layout content-wrapper">
                 {{/* Layout: Page Header */}}
-                {{ partial "sections/page-header.html" . }}
+                {{ partial "page-header.html" . }}
 
                 {{/* Layout: Main */}}
                 {{ if .IsHome }}
-                    {{ partial "base/home.html" . }}
+                    {{ partial "home.html" . }}
                 {{ else }}
                     {{ block "main" . }}{{ end }}
                 {{ end }}
 
                 {{/* Layout: Page Navigation */}}
-                {{ partial "sections/page-navigation.html" . }}
+                {{ partial "page-navigation.html" . }}
             </div>
             
             {{/* Component: Top-Link */}}
-            {{ partial "components/top-link-fab.html" . }}
+            {{ partial "top-link-fab.html" . }}
 
             {{/* Footer */}}
             <footer role="contentinfo">    
                 {{/* Links + Copyright */}}
-                {{ partial "base/footer.html" . }}
+                {{ partial "footer.html" . }}
             </footer>
         </main>
     </body>

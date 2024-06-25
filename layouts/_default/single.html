@@ -8,17 +8,17 @@
 
       {{/* Feedback form for Contact page */}}
       {{ if eq .Title "Contact"}}
-        {{ partial "sections/feedback-form.html" . }}
+        {{ partial "feedback-form.html" . }}
       {{ end }}
   </section>
 
   <aside class="layout pane fixed-pane" id="toc">
-    {{ partial "sections/toc.html" . }}
+    {{ partial "toc.html" . }}
   </aside>
 </article>
 
 <section class="layout page-links">
-  {{ partial "sections/page-links.html" . }}
+  {{ partial "page-links.html" . }}
 </section>
 
 {{ end }}

@@ -51,13 +51,3 @@
 .layout.pane.fixed-pane {
   --width: 100%;
 }
-
-/* Compact: 0px-599px */
-@media screen and (min-width: 0px) {
-  .layout.pane {
-    &.detail-pane,
-    &.supporting-pane {
-      --display: none;
-    }
-  }
-}
