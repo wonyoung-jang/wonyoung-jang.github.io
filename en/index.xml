@@ -1,0 +1,134 @@
+
+
+  
+    
+      
+    
+  
+
+
+
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ens on Wonyoung Jang</title>
+    
+    <link>http://192.168.40.181:1313/en/</link>
+    
+    <description>Recent content in Ens on Wonyoung Jang</description>
+    
+    <generator>Hugo</generator>
+    
+    <language>en</language>
+    
+    
+    <managingEditor>contact@wonyoungjang.org (Wonyoung Jang)</managingEditor>
+
+    
+    <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
+
+    
+    <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
+    
+    
+    <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate>
+    
+    
+      <atom:link href="http://192.168.40.181:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    
+    
+    <item>
+    
+      <title>About</title>
+    
+      <link>http://192.168.40.181:1313/en/about/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/en/about/</guid>
+    
+      <description>About me Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry&#xD;, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program&#xD;at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Contact</title>
+    
+      <link>http://192.168.40.181:1313/en/contact/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/en/contact/</guid>
+    
+      <description>Contact me directly The best way to contact me directly is through email at contact@wonyoungjang.org&#xD;.&#xA;Give me feedback Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Search</title>
+    
+      <link>http://192.168.40.181:1313/en/search/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/en/search/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Sitemap</title>
+    
+      <link>http://192.168.40.181:1313/en/sitemap/</link>
+    
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/en/sitemap/</guid>
+    
+      <description></description>
+    
+    </item>
+    
+    
+  </channel>
+</rss>
