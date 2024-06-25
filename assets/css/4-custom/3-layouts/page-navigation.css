@@ -1,4 +1,4 @@
-.layout.page-navigation {
+.page-navigation {
   --flex: initial;
   --display: flex;
   --flex-flow: row wrap;
@@ -14,7 +14,7 @@
   --border: inherit;
 }
 
-.layout.page-navigation {
+.page-navigation {
   .prev,
   .next {
     flex: 1 1 auto;
@@ -52,7 +52,7 @@
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
-  .layout.page-navigation {
+  .page-navigation {
     --flex-flow: row nowrap;
 
     .prev,

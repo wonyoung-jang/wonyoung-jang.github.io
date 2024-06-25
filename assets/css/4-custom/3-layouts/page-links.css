@@ -1,4 +1,4 @@
-.layout.page-links {
+.page-links {
   --flex: initial;
   --display: flex;
   --flex-flow: column nowrap;
@@ -15,7 +15,7 @@
   --border: inherit;
 }
 
-.layout.page-links {
+.page-links {
   #share-links,
   #backlinks,
   #related-pages {
@@ -41,7 +41,7 @@
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
-  .layout.page-links {
+  .page-links {
     --flex-flow: row nowrap;
   }
 }

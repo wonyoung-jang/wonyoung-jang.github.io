@@ -59,11 +59,11 @@
 {{ template "_internal/twitter_cards.html" . }}
 
 {{/* Styles */}}
-{{ $base               := (resources.Match "css/00-base/*.css")                | resources.Concat "assets/css/00-base.css" }}
-{{ $core               := (resources.Match "css/01-core/*.css")                | resources.Concat "assets/css/01-core.css" }}
-{{ $layoutComponents   := (resources.Match "css/02-layout-components/*.css")   | resources.Concat "assets/css/02-layout-components.css" }}
-{{ $custom             := (resources.Match "css/03-custom/*.css")              | resources.Concat "assets/css/03-custom.css" }}
-{{ $theme              := (resources.Match "css/04-theme/*.css")               | resources.Concat "assets/css/04-theme.css" }}
-{{ $helpers            := (resources.Match "css/05-helpers/*.css")               | resources.Concat "assets/css/05-helpers.css" }}
-{{ $stylesheet := (slice $base $core $layoutComponents $custom $theme $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
+{{- $base       := (resources.Match "css/0-base/**.css")           | resources.Concat "assets/css/0-base.css" -}}
+{{- $tokens     := (resources.Match "css/1-tokens/**.css")         | resources.Concat "assets/css/1-tokens.css" -}}
+{{- $layouts    := (resources.Match "css/2-layouts/**.css")        | resources.Concat "assets/css/2-layouts.css" -}}
+{{- $components := (resources.Match "css/3-components/**.css")     | resources.Concat "assets/css/3-components.css" -}}
+{{- $custom     := (resources.Match "css/4-custom/**.css")         | resources.Concat "assets/css/4-custom.css" -}}
+{{- $helpers    := (resources.Match "css/5-helpers/**.css")        | resources.Concat "assets/css/5-helpers.css" -}}
+{{ $stylesheet := (slice $base $tokens $layouts $components $custom $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet">

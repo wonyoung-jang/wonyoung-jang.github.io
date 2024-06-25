@@ -1,21 +1,21 @@
-.layout.panes.basic-singlepane {
-  .layout.pane {
+.panes.basic-singlepane {
+  .pane {
     --flex: 1 1 auto;
     --width: 100%;
   }
 }
 
-.layout.panes.basic-splitpane {
-  .layout.pane {
+.panes.basic-splitpane {
+  .pane {
     --flex: 1 1 0;
     --width: calc(50% - var(--spacing-panes) / 2);
   }
 }
 
-.layout.panes.basic-fixedflex {
+.panes.basic-fixedflex {
   --flex-flow: row nowrap;
 
-  .layout.pane {
+  .pane {
     --flex: 1 1 0;
 
     &.fixed-pane {
@@ -25,11 +25,11 @@
   }
 }
 
-.layout.panes.basic-fixedflex#single {
+.panes.basic-fixedflex#single {
   --flex-flow: column-reverse nowrap;
 
-  .layout.pane,
-  .layout.pane.fixed-pane {
+  .pane,
+  .pane.fixed-pane {
     --flex: 1 1 auto;
     --width: 100%;
   }
@@ -37,11 +37,11 @@
 
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
-  .layout.panes.basic-fixedflex,
-  .layout.panes.basic-fixedflex#single {
+  .panes.basic-fixedflex,
+  .panes.basic-fixedflex#single {
     --flex-flow: row nowrap;
 
-    .layout.pane {
+    .pane {
       --flex: 1 1 0;
 
       &.fixed-pane {

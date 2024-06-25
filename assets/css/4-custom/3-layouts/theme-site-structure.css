@@ -1,32 +1,32 @@
-.layout.content-wrapper {
+.content-wrapper {
   --bg: var(--color-surface-container-lowest);
   --shape: var(--shape-corner-none);
 
-  .layout.panes {
+  .panes {
     margin-block: calc(var(--scale-fibonacci) * var(--spacing-panes));
     --bg: var(--color-surface-container-lowest);
     --shape: var(--shape-corner-none);
 
-    .layout.pane {
+    .pane {
       --bg: var(--color-surface);
       --shape: var(--shape-corner-m);
     }
   }
 
-  .layout.page-header {
+  .page-header {
     --bg: var(--color-surface-container-low);
-    --shape: var(--shape-corner-xs-bottom);
+    --shape: var(--shape-corner-xl-bottom);
   }
+}
 
-  .layout.page-links {
-    --bg: var(--color-surface-container-low);
-    --shape: var(--shape-corner-xs-top);
-  }
+.page-navigation {
+  --bg: var(--color-surface-container-low);
+  --shape: var(--shape-corner-xl-top);
+}
 
-  .layout.page-navigation {
-    --bg: var(--color-surface-container-low);
-    --shape: var(--shape-corner-xs-top);
-  }
+.page-links {
+  --bg: var(--color-surface-container-low);
+  --shape: var(--shape-corner-none);
 }
 
 header,

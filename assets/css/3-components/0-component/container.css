@@ -1,43 +1,3 @@
-.layout {
-  --flex: initial;
-  --display: initial;
-  --flex-flow: initial;
-  --align-items: initial;
-  --align-content: initial;
-  --justify-content: initial;
-  --width: initial;
-  --height: initial;
-  --min-height: initial;
-  --padding: initial;
-  --margin: initial;
-  --gap: initial;
-
-  --shape: initial;
-  --border: initial;
-
-  --bg: initial;
-}
-
-.layout {
-  flex: var(--flex);
-  display: var(--display);
-  flex-flow: var(--flex-flow);
-  align-items: var(--align-items);
-  align-content: var(--align-content);
-  justify-content: var(--justify-content);
-  width: var(--width);
-  height: var(--height);
-  min-height: var(--min-height);
-  padding: var(--padding);
-  margin: var(--margin);
-  gap: var(--gap);
-
-  border-radius: var(--shape);
-  border: var(--border);
-
-  background-color: var(--bg);
-}
-
 .component {
   --container-display: initial;
   --container-flex-flow: initial;
@@ -85,8 +45,23 @@
   }
 }
 
-@media (prefers-reduced-motion) {
-  :root {
-    animation: none;
+.component {
+  border: var(--container-outline,);
+  box-shadow: var(--container-elevation,);
+
+  &:hover {
+    border: var(--container-outline-hover,);
+    box-shadow: var(--container-elevation-hover,);
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: var(--container-outline-focus,);
+    box-shadow: var(--container-elevation-focus,);
+  }
+
+  &:active {
+    border: var(--container-outline-press,);
+    box-shadow: var(--container-elevation-press,);
   }
 }

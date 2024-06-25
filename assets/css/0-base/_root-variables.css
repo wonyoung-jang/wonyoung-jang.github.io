@@ -106,3 +106,9 @@
     --fixed-pane-width: var(--size-103);
   }
 }
+
+@media (prefers-reduced-motion) {
+  :root {
+    animation: none;
+  }
+}
