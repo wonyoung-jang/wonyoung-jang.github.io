@@ -61,7 +61,7 @@
   flex: 1 1 auto;
   display: flex;
   flex-flow: row wrap;
-  height: 100%;
+  max-height: fit-content;
 }
 
 .component.card .card-title {
@@ -77,10 +77,10 @@
   padding: var(--size-3);
   width: 100%;
   flex-flow: row wrap;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
-  align-content: space-between;
-  gap: var(--size-2);
+  align-content: flex-end;
+  gap: var(--size-4);
 }
 
 /* Medium: 600px-839px */

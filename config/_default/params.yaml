@@ -9,7 +9,7 @@ assets:
   favicon: 'sitelogo.svg'
 
 label:
-  icon: 'static/sitelogo.svg'
+  icon: '/static/sitelogo.svg'
   iconHeight: 24
 
 home:
