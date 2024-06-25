@@ -13,6 +13,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/"
                 />
@@ -26,6 +31,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/about/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,6 +53,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/colors/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/colors/"
                 />
@@ -56,6 +71,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/components/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -73,6 +93,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/contact/"
                 />
@@ -86,6 +111,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/feed-layout/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -103,6 +133,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/fixed-and-flexible-layout/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/"
                 />
@@ -116,6 +151,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/list-of-admonitions-for-wonyoungjang.org/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -133,6 +173,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/list-detail-layout/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/list-detail-layout/"
                 />
@@ -146,6 +191,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/motion/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -163,6 +213,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/"
                 />
@@ -176,6 +231,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -193,6 +253,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/"
                 />
@@ -206,6 +271,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/search/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -223,6 +293,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/shapes/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/shapes/"
                 />
@@ -236,6 +311,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/single-pane-layout/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -253,6 +333,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/sitemap/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/sitemap/"
                 />
@@ -266,6 +351,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/software/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -283,6 +373,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/split-pane-layout/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/split-pane-layout/"
                 />
@@ -296,6 +391,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/states-and-elevation/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -313,6 +413,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/supporting-pane-layout/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/resource/reference/supporting-pane-layout/"
                 />
@@ -326,6 +431,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/typography/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -343,6 +453,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/university/"
                 />
@@ -356,6 +471,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -373,6 +493,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/software/realtime-multiplayer-drawing/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/"
                 />
@@ -386,6 +511,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/software/wonyoungjang.org/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -403,6 +533,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/software/q-learning-tournament-scheduler/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/"
                 />
@@ -416,6 +551,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/software/save-top-level-reddit-comments/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -433,6 +573,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/disaster-recovery-robot-simulation/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/"
                 />
@@ -446,6 +591,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/cs-career-chatbot/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -463,6 +613,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/software/logseq-markdown-tokenizer/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/"
                 />
@@ -476,6 +631,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/package-delivery-route-optimization/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -493,6 +653,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/hotel-reservation-manager/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/university/hotel-reservation-manager/"
                 />
@@ -506,6 +671,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/vacation-cart-manager/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -523,6 +693,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/retail-inventory-manager/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/university/retail-inventory-manager/"
                 />
@@ -536,6 +711,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/dvd-rental-database/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -553,6 +733,11 @@
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/student-record-system/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://192.168.40.181:1313/project/university/student-record-system/"
                 />
@@ -566,6 +751,11 @@
     <lastmod>2024-06-25T08:21:38-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://192.168.40.181:1313/es/project/university/food-shop-database-management/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

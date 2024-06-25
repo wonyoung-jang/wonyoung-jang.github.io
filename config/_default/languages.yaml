@@ -8,9 +8,17 @@ en:
   weight: 0
 ko:
   contentDir: content/ko
-  disabled: false
+  disabled: true
   languageCode: "ko"
   languageDirection: "ltr"
   languageName: "Korean"
   title: "장원영"
   weight: 1
+es:
+  contentDir: content/es
+  disabled: true
+  languageCode: "es"
+  languageDirection: "ltr"
+  languageName: "Spanish"
+  title: "Wonyoung Jang"
+  weight: 2
