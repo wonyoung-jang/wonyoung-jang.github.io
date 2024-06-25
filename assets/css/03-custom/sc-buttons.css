@@ -1,22 +1,29 @@
-#components-showcase {
-    section {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        gap: var(--size-4);
+#components-showcase .component-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: var(--size-4);
+}
 
-        h2,
-        section {
-            display: flex;
-            flex-flow: row nowrap;
-            width: 100%;
-            margin-block: var(--size-3);
-        }
+#components-showcase .component-group h2 {
+    width: 100%;
+}
 
-        .card {
-            --container-padding: var(--size-8);
-            --container-align-items: flex-start;
-            --container-justify-content: flex-start;
-        }
-    }
+#components-showcase .component-group {
+    margin-block: var(--size-3);
+}
+
+#components-showcase .component-group section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: var(--size-4);
+    width: 100%;
+}
+
+#components-showcase .component-group h2 .card,
+#components-showcase .component-group .card {
+    --container-padding: var(--size-8);
+    --container-align-items: flex-start;
+    --container-justify-content: flex-start;
 }
