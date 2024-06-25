@@ -11,12 +11,8 @@
 
   --container-shape: var(--shape-corner-m);
 
-  gap: var(--size-2);
-
   --bg-color: inherit;
   --icon-color: var(--color-on-surface);
-  background-color: var(--bg-color,);
-  color: var(--icon-color,);
     
   * {
     color: var(--icon-color,);
@@ -50,24 +46,41 @@
 
 .card {
   max-height: fit-content;
+}
 
-  .card-content {
-    flex: 3 1 0;
-    display: flex;
-    flex-flow: column nowrap;
-    padding-inline: var(--size-1);
-    padding-block: var(--size-4);
-    gap: var(--size-4);
-  }
+.card img {
+  flex: 1 1 0;
+  max-width: 128px;
 
-  img {
-    flex: 1 1 0;
-    max-width: 128px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: var(--size-5);
+}
 
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    margin: var(--size-5);
-  }
+.component.card .card-content{
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.component.card .card-title {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: var(--size-3);
+}
+
+.component.card .card-inner-content{
+  flex: 1 1 auto;
+  display: flex;
+  padding: var(--size-3);
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: space-between;
+  gap: var(--size-2);
 }
 
 /* Medium: 600px-839px */
@@ -76,18 +89,17 @@
     .card {
       --container-flex-flow: column nowrap;
       --container-align-items: stretch;
+    }
 
-      img {
+    .card img {
         flex: 1 1 0;
-        max-width: none;
+        max-width: 100%;
         margin: unset;
         aspect-ratio: 17 / 8;
-      }
+    }
 
-      .card-content {
-        padding-inline: var(--size-4);
-        width: 100%;
-      }
+    .component.card .card-content {
+      height: unset;
     }
   }
 }

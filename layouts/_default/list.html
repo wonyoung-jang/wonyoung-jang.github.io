@@ -6,20 +6,36 @@
     <section class="layout pane" id="list-page">
 
         {{ range $index, $page := $pages }}        
-            <a  class="component card" elevated
+
+            <a  class="component card" filled
                 aria-label="post link to {{ .Title | plainify }}" 
-                href="{{ .Permalink }}">        
+                href="{{ .Permalink }}">      
+                
+                {{ $imageURL := partial "first-image.html" . }}
+                {{ if $imageURL }}
+                    <img 
+                        src="{{ $imageURL }}" 
+                        alt="First image from {{ .Title }}">
+                {{ end }}
+
                 
                 <div class="card-content">
                     <span class="card-title headline-small">
                         {{ .Title }}
                     </span>
 
-                    <div class="meta-block">
-                        {{ partial "post-meta.html" . }}
+                    <div class="card-inner-content">
+                        <span class="card-description">
+                            {{ .Description }}
+                        </span>
+        
+                        <span class="card-meta">
+                            {{ partial "post-meta.html" . }}
+                        </span>
                     </div>
                 </div>
             </a>
+
         {{ end }}
 
     </section>

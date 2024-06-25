@@ -1,4 +1,7 @@
-.meta-block {
+#list-page * {
+}
+
+#list-page .card-meta {
     display: inline-flex;
     display: inline flex;
     flex-flow: row nowrap;
@@ -6,14 +9,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-}
-
-#list-page .card-title {
-    flex: 1 1 auto;
-    color: var(--color-on-surface);
-}
-
-#list-page .card-content {
-    height: 100%;
-    padding: var(--size-8);
+    white-space: nowrap;
+    padding: unset;
+    margin: unset;
 }
