@@ -1,102 +1,106 @@
 {{/*  Share links  */}}
-<nav id="share-links" aria-label="Share Links">
-    <h5>Share</h5>
-    <div class="divider"></div>
-
-    {{ $pageurl := .Permalink }}
-    {{ $title := .Title }}
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} on twitter"
-        href="https://twitter.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{ $.Scratch.Get "categories" }}">      
-        Twitter/X
-    </a>
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $pageurl }}&amp;title={{ $title }}&amp;summary={{ $title }}&amp;source={{ $pageurl }}">
-        LinkedIn
-    </a>
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} on reddit"
-        href="https://reddit.com/submit?url={{ $pageurl }}&title={{ $title }}">
-        Reddit
-    </a>
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} on facebook"
-        href="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
-        Facebook
-    </a>
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} on whatsapp"
-        href="https://api.whatsapp.com/send?text={{ $title }}%20-%20{{ $pageurl }}">
-        WhatsApp
-    </a>
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} on telegram"
-        href="https://telegram.me/share/url?text={{ $title }}&amp;url={{ $pageurl }}">
-        Telegram
-    </a>
-
-    <a  target="_blank" 
-        rel="external noopener noreferrer" 
-        aria-label="share {{ $title | plainify }} via email" 
-        href="mailto:?subject={{ $title }}&amp;body={{ $pageurl }}">
-        Email
-    </a>
-
-    <a  aria-label="print {{ $title | plainify }}"
-        href="javascript:window.print()">
-        Print
-    </a>
-</nav>
-
-{{/* Backlinks */}}
-{{ $re := $.File.BaseFileName }}
-{{ $backlinks := slice }} 
-
-{{ range where site.RegularPages "Type" "page" }} 
-  {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName))  (not (hasPrefix .RelPermalink "/graph")) }} 
-    {{ $backlinks = $backlinks | append . }} 
-  {{ end }}
-{{ end }} 
-
-{{/* Related */}}
-{{ $related := site.RegularPages.Related . | complement $backlinks | first 4 }}
-{{ with $related }}
-    <nav id="related-pages">
-        <h5>See also</h5>
+<section class="layout page-links">
+    <nav id="share-links" aria-label="Share Links">
+        <h5>Share</h5>
         <div class="divider"></div>
-        
-        {{ range $i, $p := . }}
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-            </a>
-        {{ end }}
-    </nav>
-{{ end }}
 
-{{/*  Backlinks  */}}
-<nav id="backlinks" aria-label="Backlinks">
-    <h5>Links here</h5>
-    <div class="divider"></div>
-    {{ if gt (len $backlinks) 0 }}
-        {{ range $backlinks }}
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }} 
-            </a>
-        {{ end }}
-    {{ else }}
-        <p>No backlinks found</p>
+        {{ $pageurl := .Permalink }}
+        {{ $title := .Title }}
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} on twitter"
+            href="https://twitter.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{ $.Scratch.Get "categories" }}">      
+            Twitter/X
+        </a>
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $pageurl }}&amp;title={{ $title }}&amp;summary={{ $title }}&amp;source={{ $pageurl }}">
+            LinkedIn
+        </a>
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} on reddit"
+            href="https://reddit.com/submit?url={{ $pageurl }}&title={{ $title }}">
+            Reddit
+        </a>
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} on facebook"
+            href="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
+            Facebook
+        </a>
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} on whatsapp"
+            href="https://api.whatsapp.com/send?text={{ $title }}%20-%20{{ $pageurl }}">
+            WhatsApp
+        </a>
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} on telegram"
+            href="https://telegram.me/share/url?text={{ $title }}&amp;url={{ $pageurl }}">
+            Telegram
+        </a>
+
+        <a  target="_blank" 
+            rel="external noopener noreferrer" 
+            aria-label="share {{ $title | plainify }} via email" 
+            href="mailto:?subject={{ $title }}&amp;body={{ $pageurl }}">
+            Email
+        </a>
+
+        <a  aria-label="print {{ $title | plainify }}"
+            href="javascript:window.print()">
+            Print
+        </a>
+    </nav>
+
+    {{/* Backlinks */}}
+    {{ $re := $.File.BaseFileName }}
+    {{ $backlinks := slice }} 
+
+    {{ range where site.RegularPages "Type" "page" }} 
+    {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName))  (not (hasPrefix .RelPermalink "/graph")) }} 
+        {{ $backlinks = $backlinks | append . }} 
     {{ end }}
-</nav>
+    {{ end }} 
+
+    {{/* Related */}}
+    {{ $related := site.RegularPages.Related . | complement $backlinks | first 4 }}
+    {{ with $related }}
+        <nav id="related-pages">
+            <h5>See also</h5>
+            <div class="divider"></div>
+            
+            {{ range $i, $p := . }}
+                <a href="{{ .RelPermalink }}">
+                    {{ .Title }}
+                </a>
+            {{ end }}
+        </nav>
+    {{ end }}
+
+    {{/*  Backlinks  */}}
+    {{ if gt (len $backlinks) 0 }}
+        <nav id="backlinks" aria-label="Backlinks">
+            <h5>Links here</h5>
+            <div class="divider"></div>
+            {{ if gt (len $backlinks) 0 }}
+                {{ range $backlinks }}
+                    <a href="{{ .RelPermalink }}">
+                        {{ .Title }} 
+                    </a>
+                {{ end }}
+            {{ else }}
+                <p>No backlinks found</p>
+            {{ end }}
+        </nav>
+    {{ end }}
+</section>
