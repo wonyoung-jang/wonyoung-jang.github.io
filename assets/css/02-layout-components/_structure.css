@@ -1,4 +1,4 @@
-.layout.content-wrapper {
+.content-wrapper {
   --flex: 1 1 auto;
   --display: flex;
   --flex-flow: column nowrap;
@@ -14,7 +14,7 @@
   --border: inherit;
 }
 
-.layout.panes {
+.panes {
   --flex: 1 1 auto;
   --display: flex;
   --flex-flow: row nowrap;
@@ -31,7 +31,7 @@
   --border: inherit;
 }
 
-.layout.pane {
+.pane {
   --flex: 1 1 auto;
   --display: flex;
   --flex-flow: column nowrap;
@@ -48,6 +48,6 @@
   --border: inherit;
 }
 
-.layout.pane.fixed-pane {
+.pane.fixed-pane {
   --width: 100%;
 }
