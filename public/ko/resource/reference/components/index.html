@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html   lang="ko" 
+        dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+
+
+<title>
+    
+        Components | 장원영
+    
+</title>
+
+
+<meta name="description" content="
+    Components - 장원영">
+
+<meta name="author" content="Wonyoung Jang">
+
+<link rel="canonical" href=" http://192.168.40.181:1313/ko/resource/reference/components/ " />
+
+
+    <link rel="preload" href="static/sitelogo.svg" as="image">
+
+
+
+
+
+
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" type="image/webp" sizes="16x16" href="http://192.168.40.181:1313/favicon-16x16.webp">
+<link rel="icon" type="image/webp" sizes="32x32" href="http://192.168.40.181:1313/favicon-32x32.webp">
+<link rel="apple-touch-icon" href="http://192.168.40.181:1313/apple-touch-icon.webp">
+
+
+
+
+
+    <link rel="alternate" hreflang="ko" href="http://192.168.40.181:1313/ko/resource/reference/components/">
+
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resource/reference/components/">
+
+
+
+<meta name="generator" content="Hugo 0.127.0">
+
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTMKJG4NFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RTMKJG4NFZ');
+        }
+      </script>
+    
+  
+
+
+<meta property="og:url" content="http://192.168.40.181:1313/ko/resource/reference/components/">
+  <meta property="og:site_name" content="장원영">
+  <meta property="og:title" content="Components">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="resource">
+    <meta property="article:modified_time" content="2024-06-22T00:00:00+00:00">
+
+
+  <meta itemprop="name" content="Components">
+  <meta itemprop="dateModified" content="2024-06-22T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Components">
+
+
+
+
+
+
+
+
+
+
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.css" integrity="" rel="stylesheet">
+
+        
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body id="top">     
+
+        
+        <header role="banner">
+            
+<nav class="component top-app-bar center small" aria-label="Top App Bar">
+    
+    <section class="start">
+        
+        <a  id="site-icon"
+    href="http://192.168.40.181:1313/ko/"
+    accesskey="h" 
+    title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
+
+    <svg width="263" height="282" viewBox="0 0 263 282" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M71.9672 2.5H115.185L130.879 53.0859L146.815 2.5H190.033L161.06 80.8042L175.055 114.297L210.527 0.765747L262.631 0.765762L197.101 167.055H156.684L130.879 107.83L156.684 166.638V167.055L130.879 107.83L106.011 211.5H65.2068L0.5 2.5H51.4445L88.6267 114.297L100.457 80.8042L71.9672 2.5Z" fill="#8C64C5"/>
+<path d="M156.684 281.5V234.378C157.83 235.777 154.822 233.601 156.684 234.378C158.546 235.311 154.822 234.378 156.684 234.378C164.632 228.628 155.538 235.155 156.684 234.378C157.973 233.601 155.968 235.933 156.684 234.378C157.4 232.824 156.684 236.399 156.684 234.378V166.638V167.055H197.101L197.5 230.881C197.5 240.985 195.567 249.923 191.7 257.695C187.976 265.468 182.821 271.53 176.233 275.883C169.645 280.235 156.684 281.5 156.684 281.5Z" fill="#447EA1"/>
+<path d="M130.869 281.5V230.881H106.011V221.5H65.2068C65.2068 231.604 65.5329 249.923 69.3996 257.695C73.1232 265.468 124.281 277.147 130.869 281.5Z" fill="#447EA1"/>
+<path d="M156.684 166.638L130.879 107.83L156.684 167.055V166.638L130.879 107.83L156.684 167.055V166.638Z" fill="#8C64C5"/>
+</svg>
+
+</a>
+
+        
+        
+        <a  id="site-headline"
+            class="title-medium"
+            href="http://192.168.40.181:1313/ko/">
+            Wonyoung Jang
+        </a>
+    </section>
+
+    
+    <section class="end">
+        
+        
+        
+            <div class="lang-switch">
+                
+                    
+                
+                    
+                        <a  href="http://192.168.40.181:1313/" 
+                            title="English"
+                            aria-label="English">
+                            
+                            
+                                En
+                            
+
+                        </a>
+                    
+                
+            </div>
+        
+
+        
+        
+    <button class="component button icon-button"
+            id="theme-toggle" 
+            accesskey="t" 
+            title="Toggle Theme (ALT + SHIFT + t)" >
+        <i id="moon">dark_mode</i>
+        <i id="sun">light_mode</i>
+    </button>
+
+        
+        
+        
+        
+
+
+<button 
+  class="component button icon-button"
+  id="random-button"
+  accesskey="r"
+  title="Random page (ALT + SHIFT + R)"
+  onclick="navigateToRandomPage(); return false;">
+  <i>ifl</i>
+</button>
+
+<script>
+  function navigateToRandomPage() {
+    window.location.href = "\/ko\/resource\/reference\/all-logseq-elements\/";
+  }
+</script>
+        
+        
+        <a
+  class="component button icon-button"
+  href="/search"
+  accesskey="s"
+  title="Search page (ALT + SHIFT + S)">
+  <i>search</i>
+</a>
+
+    </section>
+</nav>
+
+
+
+
+
+
+    <div class="component tabs title-medium">
+        
+    
+    
+        
+
+        
+            
+        
+
+        
+
+        
+            
+        
+
+        <a 
+            
+                
+                     class="component tab"
+                
+            
+                
+                     href="/ko/project/"
+                
+            >
+            프로젝트
+        </a>
+    
+        
+
+        
+            
+        
+
+        
+
+        
+            
+        
+
+        <a 
+            
+                
+                     aria-current="true"
+                
+            
+                
+                     class="component tab active"
+                
+            
+                
+                     href="/ko/resource/"
+                
+            >
+            자료
+        </a>
+    
+
+    </div>
+
+
+
+
+
+
+    <script>
+        if (localStorage.getItem("pref-theme") === "dark") {
+            document.body.classList.add('dark');
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            document.body.classList.remove('dark')
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+        }
+    </script>
+
+
+        </header>
+
+        
+        
+
+        
+        <main role="main">
+
+            
+            <div class="layout content-wrapper">
+                
+                
+
+
+ 
+    <section class="layout page-header">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+             
+                <a href="http://192.168.40.181:1313/ko/">
+                    
+                        Home
+                     
+                </a>
+                <span>/</span>
+             
+                <a href="http://192.168.40.181:1313/ko/resource/">
+                    
+                        Resources
+                     
+                </a>
+                <span>/</span>
+             
+                <a href="http://192.168.40.181:1313/ko/resource/reference/">
+                    
+                        Reference
+                     
+                </a>
+                <span>/</span>
+            
+        </nav>    
+
+        
+        <h1 class="title">
+            Components
+        </h1> 
+
+        
+        
+
+        
+        
+            <div class="label-large">
+                
+
+
+
+
+
+
+
+
+    
+
+
+
+    <span title='2024-06-22 00:00:00 +0000 UTC'>6월 6, 2024</span>
+
+
+                
+
+    
+        
+            &nbsp;|&nbsp;
+        
+    
+
+    <div class="i18n_list">
+        번역:
+        
+            <a href="http://192.168.40.181:1313/resource/reference/components/">
+                
+                    En
+                
+            </a>
+        
+    </div>
+
+
+
+            </div>
+        
+
+        
+        
+    </section>
+
+
+                
+                
+                    
+
+<article class="layout panes basic-singlepane">
+  <section id="components-showcase" class="layout pane">  
+    
+    <section class="component-group">
+      <h2>Text Input</h2>
+      <div class="component text-field filled">
+        <input type="text" placeholder="Placeholder">
+      </div>
+      <div class="component text-field outlined">
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </section>
+
+    
+    <section class="component-group">
+      <h2>Common buttons</h2>
+      <button class="component button common-button">Text</button>
+      <button class="component button common-button" elevated>Elevated</button>
+      <button class="component button common-button" filled>Filled</button>
+      <button class="component button common-button" filled-tonal>Filled-Tonal</button>
+      <button class="component button common-button" outlined>Outlined</button>
+    </section>
+
+    
+    <section class="component-group">
+      <h2>Icon buttons</h2>
+      <button class="component button icon-button">
+        <i>settings</i>
+      </button>
+      <button class="component button icon-button" filled>
+        <i>settings</i>
+      </button>
+      <button class="component button icon-button" filled-tonal>
+        <i>settings</i>
+      </button>
+      <button class="component button icon-button" outlined>
+        <i>settings</i>
+      </button>
+    </section>
+
+    
+    <section class="component-group">
+      <h2>FABs</h2>
+      <section>
+        <button class="component button surface-container-high fab" small>
+          <i>add</i>
+        </button>
+        <button class="component button surface-container-high fab">
+          <i>add</i>
+        </button>
+        <button class="component button surface-container-high fab" large>
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button primary-container fab" small>
+          <i>add</i>
+        </button>
+        <button class="component button primary-container fab">
+          <i>add</i>
+        </button>
+        <button class="component button primary-container fab" large>
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button secondary-container fab" small>
+          <i>add</i>
+        </button>
+        <button class="component button secondary-container fab">
+          <i>add</i>
+        </button>
+        <button class="component button secondary-container fab" large>
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button tertiary-container fab" small>
+          <i>add</i>
+        </button>
+        <button class="component button tertiary-container fab">
+          <i>add</i>
+        </button>
+        <button class="component button tertiary-container fab" large>
+          <i>add</i>
+        </button>
+      </section>
+    </section>
+
+    
+    <section class="component-group">
+      <h2>Extended FABs</h2>
+      <section>
+        <button class="component button surface-container-high fab" extended>
+          <i>add</i>
+        </button>
+        <button class="component button surface-container-high fab" extended>
+          Extended
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button primary-container fab" extended>
+          <i>add</i>
+        </button>
+        <button class="component button primary-container fab" extended>
+          Extended
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button secondary-container fab" extended>
+          <i>add</i>
+        </button>
+        <button class="component button secondary-container fab" extended>
+          Extended
+          <i>add</i>
+        </button>
+      </section>
+
+      <section>
+        <button class="component button tertiary-container fab" extended>
+          <i>add</i>
+        </button>
+        <button class="component button tertiary-container fab" extended>
+          Extended
+          <i>add</i>
+        </button>
+      </section>
+    </section>
+
+    
+    <section class="component-group">
+      <h2>Cards</h2>
+      <div class="component card" elevated>
+        <span>Elevated card</span>
+      </div>
+      <div class="component card" filled>
+        <span>Filled card</span>
+      </div>
+      <div class="component card" outlined>
+        <span>Outlined card</span>
+      </div>
+    </section>
+
+  </section>
+</article>
+
+
+                
+
+                
+                
+
+    <nav class="layout page-navigation" aria-label="Page Navigation">
+      
+        <a  class="component card prev" filled
+            href="http://192.168.40.181:1313/ko/resource/reference/colors/"
+            accesskey="p"
+            title="Previous page (ALT + SHIFT + p)">
+
+          <span class="page-direction">
+            <i>arrow_back</i>
+            <label>
+              이전
+            </label>
+          </span>
+          
+          <span class="title-large">
+            Colors
+          </span>
+        </a>
+      
+
+      
+        <a  class="component card next" filled
+            href="http://192.168.40.181:1313/ko/contact/"
+            accesskey="n"
+            title="Next page (ALT + SHIFT + n)">
+            
+          <span class="page-direction">
+            <label>
+              다음
+            </label>
+            <i>arrow_forward</i>
+          </span>
+
+          <span class="title-large">
+            Contact
+          </span>
+        </a>
+      
+    </nav>
+
+
+            </div>
+            
+            
+            <a  class="component button fab primary-container"
+    id="top-link"
+    href="#top" 
+    aria-label="go to top" 
+    title="Go to Top (ALT + SHIFT + g)" 
+    accesskey="g">
+    <i>vertical_align_top</i>
+</a>
+
+<script>
+    var mybutton = document.getElementById("top-link");
+    var scrollWrapper = document.querySelector("main");
+    function handleScroll() {
+        if (scrollWrapper.scrollTop > 100) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else if (window.pageYOffset > 100) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    }
+    window.addEventListener("scroll", handleScroll);
+    scrollWrapper.addEventListener("scroll", handleScroll);
+    mybutton.addEventListener("click", function() {
+        scrollWrapper.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+
+            
+            <footer role="contentinfo">    
+                
+                
+<section class="footer-links">
+
+    
+    <div class="footer-links-list">
+        <span class="title-large">
+            Quick links
+        </span>
+
+        
+            <a  href="/ko/about/">
+                소개
+            </a>
+        
+            <a  href="/ko/contact/">
+                연락
+            </a>
+        
+            <a  href="/ko/search/">
+                검색
+            </a>
+        
+            <a  href="/ko/sitemap/">
+                사이트맵
+            </a>
+        
+            <a  href="">
+                RSS
+            </a>
+        
+    </div>
+    
+    
+    <div class="footer-links-list">
+        <span class="title-large">
+            Sections
+        </span>
+
+        
+            <a  href="/ko/project/">
+                프로젝트
+            </a>
+        
+            <a  href="/ko/resource/">
+                자료
+            </a>
+        
+    </div>
+    
+    
+    <div class="footer-links-list" id="connect-links">
+        <span class="title-large">
+            Connect
+        </span>
+
+        
+            <a  class="component button fab
+                " extended
+
+                href="https://github.com/wonyoung-jang"
+                target="_blank" 
+                rel="external noopener noreferrer me">
+                <i>code</i>
+                깃허브
+            </a>
+        
+            <a  class="component button fab
+                " extended
+
+                href="mailto:contact@wonyoungjang.org"
+                target="_blank" 
+                rel="external noopener noreferrer me">
+                <i>outgoing_mail</i>
+                이메일
+            </a>
+        
+            <a  class="component button fab
+                " extended
+
+                href="https://ko-fi.com/wonyoung_jang"
+                target="_blank" 
+                rel="external noopener noreferrer me">
+                <i>loyalty</i>
+                코-피
+            </a>
+        
+    </div>
+</section>
+
+
+<section class="copyright">
+    <a  class="component button common-button" with-icon
+        id="copyright-button"
+        href="http://192.168.40.181:1313/ko/">
+        © 2024 장원영
+    </a>
+</section>
+
+
+
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            if (document.body.className.includes("dark")) {
+                document.body.classList.remove('dark');
+                localStorage.setItem("pref-theme", 'light');
+            } else {
+                document.body.classList.add('dark');
+                localStorage.setItem("pref-theme", 'dark');
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = '복사';
+            function copyingDone() {
+                copybutton.innerText = '복사됨!';
+                setTimeout(() => {
+                    copybutton.innerText = '복사';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
+
+
+            </footer>
+        </main>
+    </body>
+</html>

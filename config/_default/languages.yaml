@@ -1,0 +1,16 @@
+en:
+  contentDir: content/en
+  disabled: false
+  languageCode: "en"
+  languageDirection: "ltr"
+  languageName: "English"
+  title: "Wonyoung Jang"
+  weight: 0
+ko:
+  contentDir: content/ko
+  disabled: false
+  languageCode: "ko"
+  languageDirection: "ltr"
+  languageName: "Korean"
+  title: "장원영"
+  weight: 1

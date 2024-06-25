@@ -1,0 +1,224 @@
+
+
+  
+    
+      
+    
+  
+
+
+
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>University on 장원영</title>
+    
+    <link>http://192.168.40.181:1313/ko/project/university/</link>
+    
+    <description>Recent content in University on 장원영</description>
+    
+    <generator>Hugo</generator>
+    
+    <language>ko</language>
+    
+    
+    <managingEditor>contact@wonyoungjang.org (Wonyoung Jang)</managingEditor>
+
+    
+    <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
+
+    
+    <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
+    
+    
+    <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate>
+    
+    
+      <atom:link href="http://192.168.40.181:1313/ko/project/university/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    
+    
+    <item>
+    
+      <title>Disaster recovery robot simulation</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/disaster-recovery-robot-simulation/</link>
+    
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/disaster-recovery-robot-simulation/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Familiarize with CoppeliaSim robotics virtual environment and tools&#xA;Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment&#xA;Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>CS career chatbot</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/cs-career-chatbot/</link>
+    
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/cs-career-chatbot/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Develop a chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Package delivery route optimization</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/package-delivery-route-optimization/</link>
+    
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/package-delivery-route-optimization/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Implement a hash table data structure (without external libraries) to store package data&#xA;Create an insertion function to add package details (address, deadline, city, zip code, weight, status) to the hash table&#xA;Create a lookup function to retrieve package details based on package ID</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Hotel reservation manager</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/hotel-reservation-manager/</link>
+    
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/hotel-reservation-manager/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Integrate resource bundles in the application for English and French translations, including a welcome message&#xA;Implement multithreading to display the welcome message in both English and French simultaneously&#xA;Modify the front end to show reservation prices in USD, CAD, and EUR</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Vacation cart manager</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/vacation-cart-manager/</link>
+    
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/vacation-cart-manager/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a new Java project using Spring Initializr&#xD;, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab&#xD;repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Retail inventory manager</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/retail-inventory-manager/</link>
+    
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/retail-inventory-manager/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Customize the HTML user interface to reflect the specific customer&amp;rsquo;s shop name, product names, and part names&#xA;Add an About page that accurately describes the customer&amp;rsquo;s company and ensure proper navigation within the application&#xA;Integrate a sample inventory for the chosen store, including five products and five parts, ensuring no data overwrite and handling duplicates as &amp;ldquo;multi-pack&amp;rdquo; parts</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>DVD rental database</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/dvd-rental-database/</link>
+    
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/dvd-rental-database/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Create a real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Student record system</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/student-record-system/</link>
+    
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/student-record-system/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data</description>
+    
+    </item>
+    
+    
+    
+    <item>
+    
+      <title>Food shop database management</title>
+    
+      <link>http://192.168.40.181:1313/ko/project/university/food-shop-database-management/</link>
+    
+      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+    
+      <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+    
+      <guid>http://192.168.40.181:1313/ko/project/university/food-shop-database-management/</guid>
+    
+      <description>warning&#xD;This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance</description>
+    
+    </item>
+    
+    
+  </channel>
+</rss>

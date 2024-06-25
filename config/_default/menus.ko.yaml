@@ -1,0 +1,53 @@
+main:
+  - identifier: Projects
+    name: 프로젝트
+    pageRef: /project
+    weight: 10
+  - identifier: Resource
+    name: 자료
+    pageRef: /resource
+    weight: 20
+
+footer:
+  - identifier: About
+    name: 소개
+    pageRef: /about
+    weight: 10
+  - identifier: Contact
+    name: 연락
+    pageRef: /contact
+    weight: 20
+  - identifier: Search
+    name: 검색
+    pageRef: /search
+    weight: 30
+  - identifier: Sitemap
+    name: 사이트맵
+    pageRef: /sitemap
+    weight: 40
+  - identifier: RSS
+    name: RSS
+    pageRef: /index.xml
+    weight: 50
+
+connect:
+  - name: 깃허브
+    url: https://github.com/wonyoung-jang
+    weight: 10
+    pre: <i>code</i>
+  - name: 이메일
+    url: mailto:contact@wonyoungjang.org
+    weight: 20
+    pre: <i>outgoing_mail</i>
+  - name: 코-피
+    url: https://ko-fi.com/wonyoung_jang
+    weight: 30
+    pre: <i>loyalty</i>
+
+sections:
+  - name: 프로젝트
+    pageRef: /project
+    weight: 10
+  - name: 자료
+    pageRef: /resource
+    weight: 20
