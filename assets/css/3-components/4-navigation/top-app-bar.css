@@ -1,7 +1,7 @@
 .top-app-bar {
   --bg-color: var(--color-surface-container);
   
-  &.center {
+  &[center] {
     --container-shape: 0;
     --container-height: 64px;
     --container-width: 100%;
@@ -12,7 +12,7 @@
     --icon-color: var(--color-on-surface);
   }
   
-  &.small {
+  &[small] {
     --container-shape: 0;
     --container-height: 64px;
     --container-width: 100%;
@@ -20,7 +20,7 @@
     --container-gap: 24px;
   }
 
-  &.medium {
+  &[medium] {
     --container-shape: 0;
     --container-height: 112px;
     --container-width: 100%;
@@ -28,7 +28,7 @@
     --container-gap: 24px;
   }
 
-  &.large {
+  &[large] {
     --container-shape: 0;
     --container-height: 152px;
     --container-width: 100%;

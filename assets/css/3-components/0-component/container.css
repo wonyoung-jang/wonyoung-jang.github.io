@@ -39,29 +39,29 @@
 
 .component {
   position: relative;
+}
 
-  * {
-    z-index: 2;
-  }
+.component * {
+  z-index: 2;
 }
 
 .component {
   border: var(--container-outline,);
   box-shadow: var(--container-elevation,);
+}
 
-  &:hover {
-    border: var(--container-outline-hover,);
-    box-shadow: var(--container-elevation-hover,);
-  }
+.component:hover {
+  border: var(--container-outline-hover,);
+  box-shadow: var(--container-elevation-hover,);
+}
 
-  &:focus,
-  &:focus-visible {
-    border: var(--container-outline-focus,);
-    box-shadow: var(--container-elevation-focus,);
-  }
+.component:focus,
+.component:focus-visible {
+  border: var(--container-outline-focus,);
+  box-shadow: var(--container-elevation-focus,);
+}
 
-  &:active {
-    border: var(--container-outline-press,);
-    box-shadow: var(--container-elevation-press,);
-  }
+.component:active {
+  border: var(--container-outline-press,);
+  box-shadow: var(--container-elevation-press,);
 }
