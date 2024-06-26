@@ -31,6 +31,7 @@
       flex-flow: row wrap;
       min-height: 42px;
       align-items: center;
+      padding-inline-start: var(--size-2);
 
       &:hover {
         background-color: var(--color-surface-container-highest);
