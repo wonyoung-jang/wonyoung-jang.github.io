@@ -5,8 +5,16 @@
     gap: var(--size-4);
 }
 
-#components-showcase .component-group h2 {
+#components-showcase > .card {
     width: 100%;
+    margin-top: 4rem;
+    padding: 0.5rem;
+}
+
+#components-showcase .component-group h3 {
+    width: 100%;
+    margin-block: 0.5rem;
+    padding: 1rem;
 }
 
 #components-showcase .component-group {
