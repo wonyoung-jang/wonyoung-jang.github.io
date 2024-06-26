@@ -43,13 +43,13 @@ lastMod: 2024-06-24
 
 >Blockquote with ">"
 
-`Block quote with "``"`
+`Block quote with "````" `
 
-An internal link to my about page: [WonyoungJang.org/about]({{< ref "/about" >}})
+An internal link to my about page: [About]({{< ref "/about" >}})
 
 An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/
 
-An embedded internal page: {{embed [WonyoungJang.org/about]({{< ref "/about" >}})}}
+An embedded internal page: {{embed [About]({{< ref "/about" >}})}}
 
 A block reference: ## About me
 

@@ -11,6 +11,6 @@ type:
 date:
 - 2024-04-12 Friday
 description: 
-title: Projects
+title: Project
 lastMod: 2024-06-22
 ---
