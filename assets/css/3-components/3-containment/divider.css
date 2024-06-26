@@ -1,31 +1,30 @@
 .divider {
-  min-inline-size: 1.5rem;
-  min-block-size: auto;
-  block-size: 0.0625rem;
-  background-color: var(--color-outline-variant);
-  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  color: var(--color-outline-variant);
+  height: 1px;
+  width: 100%;
 
-  + * {
-    margin: 0;
+  &[mid],
+  &[start] {
+    padding-inline-start: var(--size-4);
   }
-
-  &.left {
-    width: calc(100% - var(--size-4));
-    margin-left: var(--size-4);
+  
+  &[mid],
+  &[end] {
+    padding-inline-end: 16px;
   }
-
-  &.right {
-    width: calc(100% - var(--size-4));
-    margin-right: var(--size-4);
+  
+  &::before {
+    content: "";
+    background: currentColor;
+    height: 100%;
+    width: 100%;
   }
+}
 
-  &.none {
-    color: transparent;
-  }
-
-  &.vertical {
-    min-inline-size: auto;
-    min-block-size: 1.5rem;
-    inline-size: 0.0625rem;
+@media (forced-colors: active) {
+  .divider::before {
+    background: CanvasText;
   }
 }
