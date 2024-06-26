@@ -1,14 +1,16 @@
 {{ define "main" }}
-    <section class="page-404">
-        <h1>404</h1>
 
-        <h2>Page not found</h2>
+    <section class="page-404">
+
+        <p class="display-large">404</p>
+        <h3>{{ i18n "404_message" }}</h3>
 
         <a  class="component button common-button" outlined with-icon
             href="{{ "" | relURL }}">
             <i>home</i>
-            <span>Back to Home</span>
+            <span>{{ i18n "404_back_home" }}</span>
         </a>
 
     </section>
+
 {{ end }}

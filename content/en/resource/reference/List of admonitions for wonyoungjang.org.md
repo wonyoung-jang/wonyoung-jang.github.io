@@ -12,8 +12,10 @@ date:
 - 2024-04-24 Wednesday
 description: This page is a list of admonitions used on wonyoungjang.org
 title: List of admonitions for wonyoungjang.org
-lastMod: 2024-06-25
+lastMod: 2024-06-26
 ---
+![list-of-admonitions.svg](/assets/list-of-admonitions_1719429415850_0.svg)
+
 ## What an admonition is
 
 An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:

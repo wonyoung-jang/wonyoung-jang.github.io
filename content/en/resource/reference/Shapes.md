@@ -12,5 +12,6 @@ date:
 - 2024-06-10 Monday
 description: Shapes available for wonyoungjang.org
 title: Shapes
-lastMod: 2024-06-25
+lastMod: 2024-06-26
 ---
+![tokens-shape.svg](/assets/tokens-shape_1719430219211_0.svg)

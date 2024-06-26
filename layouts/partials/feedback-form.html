@@ -4,9 +4,7 @@
     method="POST" 
     accept-charset="UTF-8">
 
-    <label for="edit-name">
-        {{ i18n "contact_name" }}
-    </label>
+    <label for="edit-name">{{ i18n "contact_name" }}</label>
     
     <div class="component text-field" filled>
         <input 
@@ -17,9 +15,7 @@
             required>
     </div>
 
-    <label for="edit-mail">
-        {{ i18n "contact_mail" }}
-    </label>
+    <label for="edit-mail">{{ i18n "contact_mail" }}</label>
     
     <div class="component text-field" filled>
         <input 
@@ -30,9 +26,7 @@
             required>
     </div>
 
-    <label for="edit-subject">
-        {{ i18n "contact_subject" }}
-    </label>
+    <label for="edit-subject">{{ i18n "contact_subject" }}</label>
 
     <div class="component text-field" filled>
         <input 
@@ -43,15 +37,13 @@
             required>
     </div>
 
-    <label for="edit-message">
-        {{ i18n "contact_message" }}
-    </label>
+    <label for="edit-message">{{ i18n "contact_message" }}</label>
 
     <textarea 
         class="component text-field" filled
         id="edit-message" 
+        type="text"
         name="message" 
-        rows="5" 
         placeholder="{{ i18n "contact_message_placeholder" }}" 
         required>
     </textarea>
@@ -60,7 +52,7 @@
         class="component button common-button" filled
         type="submit" 
         name="submit">
-        {{ i18n "contact_submit" }}
+        {{ i18n "contact_submit_feedback" }}
     </button>
     
 </form>

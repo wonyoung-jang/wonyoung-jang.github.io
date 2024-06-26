@@ -29,4 +29,8 @@
   .hidden {
     display: none;
   }
+
+  textarea::placeholder {
+    color: var(--color-on-surface);
+  }
 }

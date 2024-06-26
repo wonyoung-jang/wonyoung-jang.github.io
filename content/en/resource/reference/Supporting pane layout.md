@@ -12,5 +12,6 @@ date:
 - 2024-06-10 Monday
 description: A canonical layout with a focus (primary) pane and a supporting (secondary) pane
 title: Supporting pane layout
-lastMod: 2024-06-22
+lastMod: 2024-06-26
 ---
+![layout-supporting-pane.svg](/assets/layout-supporting-pane_1719430876715_0.svg)

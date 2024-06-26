@@ -6,7 +6,7 @@
 
 {{/*  Read time  */}}
 {{- if .ReadingTime -}}
-{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime)) }}
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}

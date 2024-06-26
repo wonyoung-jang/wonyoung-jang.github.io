@@ -9,9 +9,7 @@
 # Post meta
 
 - id: read_time
-  translation:
-    one : "1 min read"
-    other: "{{ .Count }} min read"
+  translation: "{{ .Count }} min read"
 
 # Table of contents
 
@@ -26,6 +24,9 @@
 - id: home
   translation: "Home"
 
+- id: search_placeholder
+  translation: "Search"
+
 # Code block
 
 - id: code_copy
@@ -34,7 +35,7 @@
 - id: code_copied
   translation: "copied!"
 
-# Contact form
+# Contact 
 
 - id: js_required
   translation: "JavaScript is required to submit this form."
@@ -69,5 +70,22 @@
 - id: contact_message_placeholder
   translation: "Enter your message"
 
-- id: contact_submit
-  translation: "Submit"
+- id: contact_submit_feedback
+  translation: "Submit feedback"
+
+# 404
+
+- id: 404_message
+  translation: "Page not found"
+
+- id: 404_back_home
+  translation: "Back to home"
+
+# Input list of other UI components to translate
+
+# Navigation labels
+# Button text
+# Form labels
+# Section headings
+# Footer text
+# Error messages

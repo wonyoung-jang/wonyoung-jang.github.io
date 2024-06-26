@@ -12,5 +12,6 @@ date:
 - 2024-06-10 Monday
 description: A  single pane layout with one flexible pane
 title: Single pane layout
-lastMod: 2024-06-22
+lastMod: 2024-06-26
 ---
+![layout-single-pane.svg](/assets/layout-single-pane_1719430813363_0.svg)

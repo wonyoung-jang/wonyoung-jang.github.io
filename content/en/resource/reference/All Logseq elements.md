@@ -12,8 +12,10 @@ description:
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-06-24
+lastMod: 2024-06-26
 ---
+![logseq-elements.svg](/assets/logseq-elements_1719431175533_0.svg)
+
 # Heading 1
 
 ## Heading 2
