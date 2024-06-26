@@ -10,15 +10,15 @@
   --text-color: var(--color-on-surface);
   --bg-color: var(--color-surface);
   
-  &.one {
+  &[one] {
     --container-height: 56px;
   }
   
-  &.two {
+  &[two] {
     --container-height: 72px;
   }
   
-  &.three {
+  &[three] {
     --container-height: 88px;
     --container-padding: var(--size-3) var(--size-4);
   }

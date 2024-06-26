@@ -1,22 +1,27 @@
 {{ define "main" }}
 
 <article class="layout panes basic-singlepane">
+
     <section class="layout pane" id="sections-page">
 
         {{ range .Sections }}
-            <a  class="component list-item one"
+
+            <a  class="component list-item" two
                 href="{{ .Permalink }}">
+
                 <span class="headline-small">
-                    {{ .Title }}
-                </span>
+                    {{ .Title }}</span>
+
                 <sup class="page-count code-typeface">
-                    {{len .Pages }}
-                </sup>
+                    {{len .Pages }}</sup>
+                
             </a>
+
             <div class="divider"></div>
         {{ end }}
 
     </section>
+
 </article>
 
 {{ end }}
