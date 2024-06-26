@@ -14,50 +14,51 @@
   --border: inherit;
 }
 
-.page-navigation {
-  .prev,
-  .next {
-    flex: 1 1 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: flex-start;
-    align-items: stretch;
-    justify-content: flex-start;
-    
-    padding: calc(var(--spacing-panes));
-    gap: var(--size-2);
+.page-navigation .prev,
+.page-navigation .next {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  align-items: stretch;
+  justify-content: flex-start;
+  
+  padding: calc(var(--spacing-panes));
+  gap: var(--size-2);
 
-    --container-shape: var(--shape-corner-s);
-    --bg-color: var(--color-surface-container-high);
-    --icon-color: var(--color-on-surface);
+  --container-shape: var(--shape-corner-s);
+  --bg-color: var(--color-surface-container-high);
+  --icon-color: var(--color-on-surface);
+}
 
-    .page-direction {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: flex-start;
+.page-navigation .prev .page-direction, 
+.page-navigation .next .page-direction {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-      * {
-        color: var(--color-on-secondary-container);
-      }
-    }
+.page-navigation .prev .page-direction *,
+.page-navigation .next .page-direction * {
+  color: var(--color-on-secondary-container);
+}
 
-    &.empty {
-      opacity: 0;
-      pointer-events: none;
-      height: 0px;
-    }
-  }
+.page-navigation .prev.empty,
+.page-navigation .next.empty {
+  opacity: 0;
+  pointer-events: none;
+  height: 0px;
 }
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
   .page-navigation {
     --flex-flow: row nowrap;
+  }
 
-    .prev,
-    .next {
-      flex: 1 1 0;
-    }
+  .page-navigation .prev,
+  .page-navigation .next {
+    flex: 1 1 0;
   }
 }

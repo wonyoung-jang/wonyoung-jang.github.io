@@ -12,24 +12,7 @@
   --gap: var(--size-8);
 }
 
-.title,
-.description {
-  display: inline;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-.description {
-  max-width: 60ch;
-  white-space: normal;
-  overflow-wrap: break-word;
-  
-  a {
-    vertical-align: baseline;
-  }
-}
-
-.breadcrumbs {
+.page-header .breadcrumbs {
   border-radius: unset;
   display: flex;
   flex-flow: row nowrap;
@@ -38,6 +21,20 @@
   padding: var(--size-0);
 }
 
-.metadata {
+.page-header .title,
+.page-header .description {
+  display: inline;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.page-header .description {
+  max-width: 60ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  
+}
+
+.page-header .metadata {
   color: var(--color-on-surface-variant);
 }

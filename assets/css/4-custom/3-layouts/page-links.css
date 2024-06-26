@@ -15,29 +15,31 @@
   --border: inherit;
 }
 
-.page-links {
-  #share-links,
-  #backlinks,
-  #related-pages {
-    flex: 1 1 0;
-    display: flex;
-    flex-flow: column nowrap;
+.page-links #share-links,
+.page-links #backlinks,
+.page-links #related-pages {
+  flex: 1 1 0;
+  display: flex;
+  flex-flow: column nowrap;
+  
+  border-radius: var(--shape-corner-m);
+  padding: var(--size-5);
+}
 
-    border-radius: var(--shape-corner-m);
-    padding: var(--size-5);
+.page-links #share-links a,
+.page-links #backlinks a,
+.page-links #related-pages a {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 42px;
+  align-items: center;
+  padding-inline-start: var(--size-2);
+}
 
-    a {
-      display: flex;
-      flex-flow: row wrap;
-      min-height: 42px;
-      align-items: center;
-      padding-inline-start: var(--size-2);
-
-      &:hover {
-        background-color: var(--color-surface-container-highest);
-      }
-    }
-  }
+.page-links #share-links a:hover,
+.page-links #backlinks a:hover,
+.page-links #related-pages a:hover {
+  background-color: var(--color-surface-container-highest);
 }
 
 /* Medium: 600px-839px */

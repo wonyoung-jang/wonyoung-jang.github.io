@@ -1,22 +1,22 @@
 .content-wrapper {
   --bg: var(--color-surface-container-lowest);
   --shape: var(--shape-corner-none);
+}
 
-  .panes {
-    margin-block: calc(var(--scale-fibonacci) * var(--spacing-panes));
-    --bg: var(--color-surface-container-lowest);
-    --shape: var(--shape-corner-none);
+.content-wrapper .panes {
+  margin-block: calc(var(--scale-fibonacci) * var(--spacing-panes));
+  --bg: var(--color-surface-container-lowest);
+  --shape: var(--shape-corner-none);
+}
 
-    .pane {
-      --bg: var(--color-surface);
-      --shape: var(--shape-corner-m);
-    }
-  }
+.panes .pane {
+  --bg: var(--color-surface);
+  --shape: var(--shape-corner-m);
+}
 
-  .page-header {
-    --bg: var(--color-surface-container-low);
-    --shape: var(--shape-corner-xl-bottom);
-  }
+.page-header {
+  --bg: var(--color-surface-container-low);
+  --shape: var(--shape-corner-xl-bottom);
 }
 
 .page-navigation {

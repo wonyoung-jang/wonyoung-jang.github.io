@@ -41,7 +41,7 @@
   --width: 100%;
   --height: auto;
   --min-height: auto;
-  --padding: calc(var(--spacing-panes) * 2);
+  --padding: var(--spacing-panes);
   --margin: 0;
   --gap: 0;
 
