@@ -1,10 +1,11 @@
 .list-item {
   --container-display: flex;
-  --container-flex-flow: row wrap;
+  --container-flex-flow: row nowrap;
   --container-align-items: center;
   --container-justify-content: flex-start;
-  
   --container-padding: var(--size-2) var(--size-4);
+  --container-width: 100%;
+
 
   --icon-color: var(--color-on-surface);
   --text-color: var(--color-on-surface);
@@ -15,11 +16,17 @@
   }
   
   &[two] {
+    --container-flex-flow: column nowrap;
+    --container-align-items: flex-start;
+    --container-justify-content: center;
     --container-height: 72px;
   }
   
   &[three] {
-    --container-height: 88px;
+    --container-flex-flow: column nowrap;
+    --container-align-items: flex-start;
+    --container-justify-content: center;
     --container-padding: var(--size-3) var(--size-4);
+    --container-height: 88px;
   }
 }
