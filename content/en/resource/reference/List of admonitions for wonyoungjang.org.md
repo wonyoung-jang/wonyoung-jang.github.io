@@ -14,7 +14,7 @@ description: This page is a list of admonitions used on wonyoungjang.org
 title: List of admonitions for wonyoungjang.org
 lastMod: 2024-06-26
 ---
-![list-of-admonitions.svg](/assets/list-of-admonitions_1719429415850_0.svg)
+![list-of-admonitions.png](/assets/list-of-admonitions_1719437030704_0.png)
 
 ## What an admonition is
 

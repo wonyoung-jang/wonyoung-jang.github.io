@@ -13,7 +13,7 @@ description: This page is a list of keyboard shortcuts for navigating this site
 title: List of keyboard shortcuts for wonyoungjang.org
 lastMod: 2024-06-26
 ---
-![list-of-keyboard-shortcuts.svg](/assets/list-of-keyboard-shortcuts_1719429441282_0.svg)
+![list-of-keyboard-shortcuts.png](/assets/list-of-keyboard-shortcuts_1719437044181_0.png)
 
 ## Navigation
 

@@ -14,4 +14,4 @@ description: A canonical layout with a list pane and a detail pane
 title: List-detail layout
 lastMod: 2024-06-26
 ---
-![layout-list-detail.svg](/assets/layout-list-detail_1719430854280_0.svg)
+![layout-list-detail.png](/assets/layout-list-detail_1719437058105_0.png)

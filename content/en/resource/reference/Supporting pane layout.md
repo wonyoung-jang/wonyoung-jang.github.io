@@ -14,4 +14,4 @@ description: A canonical layout with a focus (primary) pane and a supporting (se
 title: Supporting pane layout
 lastMod: 2024-06-26
 ---
-![layout-supporting-pane.svg](/assets/layout-supporting-pane_1719430876715_0.svg)
+![layout-supporting-pane.png](/assets/layout-supporting-pane_1719437145639_0.png)

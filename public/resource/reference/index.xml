@@ -71,7 +71,7 @@
     
       <guid>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</guid>
     
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Centered admon&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Block quote with &amp;quot;````&amp;quot; An internal link to my about page: About&#xD;An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/&#xD;An embedded internal page: {{embed About&#xD;}}&#xA;A block reference: ## About me&#xA;A block embed: {{embed ## About me }}</description>
+      <description>Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Centered admon&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Block quote with &amp;quot;````&amp;quot; An internal link to my about page: About&#xD;An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/&#xD;An embedded internal page: {{embed About&#xD;}}&#xA;A block reference: ## About me&#xA;A block embed: {{embed ## About me }}</description>
     
     </item>
     

@@ -14,4 +14,4 @@ description: States and elevations available for wonyounjang.org
 title: States and elevation
 lastMod: 2024-06-26
 ---
-![tokens-state.svg](/assets/tokens-state_1719430233371_0.svg)
+![tokens-state.png](/assets/tokens-state_1719437133480_0.png)

@@ -50,7 +50,7 @@
 
 .card img {
   flex: 1 1 0;
-  max-width: 128px;
+  max-width: 64px;
 
   aspect-ratio: 1 / 1;
   object-fit: cover;

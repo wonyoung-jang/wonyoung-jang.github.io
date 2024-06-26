@@ -14,4 +14,4 @@ description: Typefaces and typescales available for wonyoungjang.org
 title: Typography
 lastMod: 2024-06-26
 ---
-![tokens-typography.svg](/assets/tokens-typography_1719430206377_0.svg)
+![tokens-typography.png](/assets/tokens-typography_1719437155688_0.png)

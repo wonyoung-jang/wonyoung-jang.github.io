@@ -14,4 +14,4 @@ description: A canonical layout for items that can flow into a feed
 title: Feed layout
 lastMod: 2024-06-26
 ---
-![layout-feed.svg](/assets/layout-feed_1719430839167_0.svg)
+![layout-feed.png](/assets/layout-feed_1719436990845_0.png)

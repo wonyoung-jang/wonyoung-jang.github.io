@@ -14,4 +14,4 @@ description: Shapes available for wonyoungjang.org
 title: Shapes
 lastMod: 2024-06-26
 ---
-![tokens-shape.svg](/assets/tokens-shape_1719430219211_0.svg)
+![tokens-shape.png](/assets/tokens-shape_1719437097209_0.png)

@@ -14,4 +14,4 @@ description: Components available for wonyoungjang.org
 title: Components
 lastMod: 2024-06-26
 ---
-![tokens-components.svg](/assets/tokens-components_1719430998924_0.svg)
+![site-components.png](/assets/site-components_1719436976806_0.png)

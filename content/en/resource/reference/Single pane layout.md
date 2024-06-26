@@ -14,4 +14,4 @@ description: A  single pane layout with one flexible pane
 title: Single pane layout
 lastMod: 2024-06-26
 ---
-![layout-single-pane.svg](/assets/layout-single-pane_1719430813363_0.svg)
+![layout-single-pane.png](/assets/layout-single-pane_1719437108466_0.png)

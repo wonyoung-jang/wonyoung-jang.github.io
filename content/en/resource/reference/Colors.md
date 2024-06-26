@@ -14,4 +14,4 @@ description: Colors available for wonyoungjang.org
 title: Colors
 lastMod: 2024-06-26
 ---
-![tokens-colors.svg](/assets/tokens-colors_1719429838961_0.svg)
+![tokens-colors.png](/assets/tokens-colors_1719436945160_0.png)
