@@ -64,11 +64,11 @@
 
     {{/* Backlinks */}}
     
-    {{ $re := $.File.BaseFileName }}
+    {{ $re := printf "/%s" $.File.BaseFileName }}
     {{ $backlinks := slice }} 
 
-    {{ range where site.RegularPages "Type" "page" }} 
-        {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName))  (not (hasPrefix .RelPermalink "/graph")) }} 
+    {{ range where site.RegularPages "Kind" "page" }} 
+        {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }} 
             {{ $backlinks = $backlinks | append . }} 
         {{ end }}
     {{ end }} 
