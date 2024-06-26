@@ -33,7 +33,7 @@
     padding: var(--spacing-panes);
     align-items: center;
     justify-content: center;
-    background-color: var(--color-surface-container-high);
+    background-color: var(--color-surface-container-low);
     gap: var(--spacing-panes);
     margin: var(--spacing-panes);
     border-radius: var(--shape-corner-xl);
