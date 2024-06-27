@@ -24,17 +24,18 @@
     flex: 1 1 0;
     margin-block: 1rem;
     margin-inline: 2rem;
+    
+    &:nth-child(2) { font-weight: var(--typeface-weight-black); }
+    &:nth-child(3) { font-weight: var(--typeface-weight-extra-bold); }
+    &:nth-child(4) { font-weight: var(--typeface-weight-bold); }
+    &:nth-child(5) { font-weight: var(--typeface-weight-semi-bold); }
+    &:nth-child(6) { font-weight: var(--typeface-weight-medium); }
+    &:nth-child(7) { font-weight: var(--typeface-weight-regular); }
+    &:nth-child(8) { font-weight: var(--typeface-weight-light); }
+    &:nth-child(9) { font-weight: var(--typeface-weight-extra-light); }
+    &:nth-child(10) { font-weight: var(--typeface-weight-thin); }
 }
 
-.typeface-weights div:nth-child(2) { font-weight: var(--typeface-weight-black); }
-.typeface-weights div:nth-child(3) { font-weight: var(--typeface-weight-extra-bold); }
-.typeface-weights div:nth-child(4) { font-weight: var(--typeface-weight-bold); }
-.typeface-weights div:nth-child(5) { font-weight: var(--typeface-weight-semi-bold); }
-.typeface-weights div:nth-child(6) { font-weight: var(--typeface-weight-medium); }
-.typeface-weights div:nth-child(7) { font-weight: var(--typeface-weight-regular); }
-.typeface-weights div:nth-child(8) { font-weight: var(--typeface-weight-light); }
-.typeface-weights div:nth-child(9) { font-weight: var(--typeface-weight-extra-light); }
-.typeface-weights div:nth-child(10) { font-weight: var(--typeface-weight-thin); }
 
 .typeface-weights h6 {
     display: flex;
