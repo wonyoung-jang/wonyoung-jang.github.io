@@ -8,49 +8,49 @@
 
     border-radius: var(--shape-corner-s);
     gap: var(--size-2);
+}
 
-    div {
-        position: relative;
-        display: flex;
-        flex-flow: column nowrap;
-        padding: var(--spacing-panes);
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: var(--color-surface-container);
+.state-opacities-container div {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: var(--spacing-panes);
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--color-surface-container);
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: var(--color-on-surface);
-        }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-on-surface);
+    }
 
-        &:nth-child(1)::after {
-            opacity: 0;
-        }
-    
-        &:nth-child(2)::after {
-            opacity: var(--state-disabled-opacity);
-        }
-    
-        &:nth-child(3)::after {
-            opacity: var(--state-hover-opacity);
-        }
-    
-        &:nth-child(4)::after {
-            opacity: var(--state-focus-opacity);
-        }
-    
-        &:nth-child(5)::after {
-            opacity: var(--state-press-opacity);
-        }
-    
-        &:nth-child(6)::after {
-            opacity: var(--state-drag-opacity);
-        }
+    &:nth-child(1)::after {
+        opacity: 0;
+    }
+
+    &:nth-child(2)::after {
+        opacity: var(--state-disabled-opacity);
+    }
+
+    &:nth-child(3)::after {
+        opacity: var(--state-hover-opacity);
+    }
+
+    &:nth-child(4)::after {
+        opacity: var(--state-focus-opacity);
+    }
+
+    &:nth-child(5)::after {
+        opacity: var(--state-press-opacity);
+    }
+
+    &:nth-child(6)::after {
+        opacity: var(--state-drag-opacity);
     }
 }
 
@@ -63,38 +63,38 @@
 
     background-color: var(--color-surface-container-lowest);
     padding: calc(var(--spacing-panes) * 2);
+}
 
-    div {
-        position: relative;
-        display: flex;
-        flex-flow: column nowrap;
-        padding: var(--spacing-panes);
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: var(--color-surface-container);
+.elevations-container div {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: var(--spacing-panes);
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--color-surface-container);
 
-        &:nth-child(1) {
-            box-shadow: var(--elevation0);
-        }
-    
-        &:nth-child(2) {
-            box-shadow: var(--elevation1);
-        }
-    
-        &:nth-child(3) {
-            box-shadow: var(--elevation2);
-        }
-    
-        &:nth-child(4) {
-            box-shadow: var(--elevation3);
-        }
-    
-        &:nth-child(5) {
-            box-shadow: var(--elevation4);
-        }
-    
-        &:nth-child(6) {
-            box-shadow: var(--elevation5);
-        }
+    &:nth-child(1) {
+        box-shadow: var(--elevation0);
+    }
+
+    &:nth-child(2) {
+        box-shadow: var(--elevation1);
+    }
+
+    &:nth-child(3) {
+        box-shadow: var(--elevation2);
+    }
+
+    &:nth-child(4) {
+        box-shadow: var(--elevation3);
+    }
+
+    &:nth-child(5) {
+        box-shadow: var(--elevation4);
+    }
+
+    &:nth-child(6) {
+        box-shadow: var(--elevation5);
     }
 }
