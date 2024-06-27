@@ -35,11 +35,7 @@
                 {{ partial "page-header.html" . }}
 
                 {{/* Layout: Main */}}
-                {{ if .IsHome }}
-                    {{ partial "home.html" . }}
-                {{ else }}
-                    {{ block "main" . }}{{ end }}
-                {{ end }}
+                {{ block "main" . }}{{ end }}
             </div>
                 
             {{/* Layout: Page Navigation */}}
