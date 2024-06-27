@@ -9,28 +9,28 @@
   background: var(--color-surface-container);
   color: var(--color-on-surface);
 
-  [type="submit"] {
+  & [type="submit"] {
     cursor: pointer;
     margin-top: var(--size-8);
   }
 
-  label {
+  & label {
     margin-top: var(--size-4);
   }
 
-  .error {
+  & .error {
     color: var(--color-on-error);
   }
 
-  .status {
+  & .status {
     color: var(--color-inverse-primary);
   }
 
-  .hidden {
+  & .hidden {
     display: none;
   }
 
-  textarea::placeholder {
-    color: var(--color-on-surface);
+  & textarea::placeholder {
+    color: var(--color-on-surface-variant);
   }
 }

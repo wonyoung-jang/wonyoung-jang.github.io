@@ -15,7 +15,7 @@
         --text-color: var(--color-on-surface);
         --icon-color: var(--color-on-surface);
 
-        input {
+        & input {
             color: var(--color-on-surface);
         }
     }
@@ -36,7 +36,7 @@
         --text-color: var(--color-on-surface-variant);
         --icon-color: var(--color-on-surface-variant);
 
-        input {
+        & input {
             color: var(--color-on-surface-variant);
         }
     }
@@ -45,14 +45,14 @@
 .text-field {
     flex: 1 1 auto;
 
-    * {
+    & * {
         width: 100%;
     }
-}
-
-.text-field:is(textarea) {
-    padding: var(--size-4);
-    color: var(--color-on-surface);
-    resize: vertical;
-    height: var(--size-42);
+    
+    &:is(textarea) {
+        padding: var(--size-4);
+        color: var(--color-on-surface);
+        resize: vertical;
+        height: var(--size-42);
+    }
 }

@@ -1,10 +1,10 @@
-.pane#sitemap {
+#sitemap {
   display: flex;
   flex-flow: row nowrap;
   padding: unset;
   margin: unset;
 
-  h6 {
+  & h6 {
     display: flex;
     flex-flow: row nowrap;
     text-overflow: ellipsis;
@@ -12,28 +12,5 @@
     border-left: 1px solid var(--color-outline);
     padding: var(--size-4);
   }
-
-  div {
-    flex: 2 1 0;
-    display: flex;
-    flex-flow: column nowrap;
-
-    a {
-      border: 1px solid var(--color-outline-variant);
-      overflow: hidden;
-    }
-  }
-
-  .dates-sitemap {
-    flex: 1 1 0;
-    justify-content: space-between;
-
-    span {
-      flex: 1 1 0;
-      display: flex;
-      place-items: center;
-      border: 1px solid var(--color-outline-variant);
-      padding: var(--size-4);
-    }
-  }
 }
+

@@ -16,14 +16,14 @@ footer {
   width: 100%;
   justify-content: space-around;
 
-  .footer-links-list {
+  & .footer-links-list {
     flex: 1 1 auto;
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
   }
 
-  a {
+  & a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -37,17 +37,7 @@ footer {
     }
   }
 
-  .kofi-widget {
-    display: flex;
-    flex-flow: row nowrap;
-    min-height: 42px;
-    
-    .kofitext {
-      color: var(--color-on-sub180-container) !important;
-    }
-  }
-
-  span {
+  & span {
     margin-block: var(--spacing-panes);
   }
 }
@@ -57,10 +47,9 @@ footer {
   flex-flow: column nowrap;
   gap: var(--size-2);
 
-  .button {
+  & .button {
     justify-content: flex-start;
   }
-  
 }
 
 .copyright {
@@ -71,7 +60,7 @@ footer {
   align-items: stretch;
   justify-content: center;
 
-  #copyright-button {
+  & #copyright-button {
     flex: 1 1 0;
     --bg-color: var(--color-surface-container);
     --icon-color: var(--color-on-surface-variant);

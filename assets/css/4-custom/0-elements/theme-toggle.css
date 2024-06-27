@@ -1,12 +1,12 @@
 body {
   &.dark {
-    #moon {
+    & #moon {
       display: none;
     }
   }
 
   &:not(.dark) {
-    #sun {
+    & #sun {
       display: none;
     }
   }

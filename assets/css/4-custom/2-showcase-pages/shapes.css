@@ -10,7 +10,7 @@
     padding: calc(var(--spacing-panes) * 2);
     overflow-x: auto;
 
-    :not(.shape-row)[class^="shape-"] {
+    & *:not(.shape-row)[class^="shape-"] {
         flex: 1 1 0;
         position: relative;
         display: flex;
@@ -24,15 +24,15 @@
         color: var(--color-on-surface-container);
     }
 
-    .shape-row {
+    & .shape-row {
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
         gap: var(--size-3);
         border-radius: unset;
         
-        .shape-none,
-        .shape-full {
+        & .shape-none,
+        & .shape-full {
             flex: 0 0 auto;
             height: 100%;
             width: 100%;

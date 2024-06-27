@@ -44,9 +44,10 @@
     --bg-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
   }
+  
+  & i {
+    font-size: 18px;
+  }
 }
 
-.common-button i {
-  font-size: 18px;
-}
   

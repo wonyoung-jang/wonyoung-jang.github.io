@@ -1,39 +1,41 @@
-.component:not(.top-app-bar):after {
-  content: "";
-  position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
-  z-index: 1;
-  inset: 0;
-  opacity: 0;
+.component {
+  &:not(.top-app-bar)::after {
+    content: "";
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: 1;
+    inset: 0;
+    opacity: 0;
+  
+    border-radius: inherit;
+  
+    background-position: center;
+    background-image: radial-gradient(
+      circle,
+      var(--icon-color, var(--text-color)) 1%,
+      transparent 1%
+    );
+    background-size: 0%;
+  
+    transition: none;
+  }
 
-  border-radius: inherit;
+  &:hover::after {
+    opacity: var(--state-hover-opacity);
+    background-size: 50000%;
+    transition: background-size var(--motion-duration-short4)
+      var(--motion-easing-standard);
+  }
 
-  background-position: center;
-  background-image: radial-gradient(
-    circle,
-    var(--icon-color, var(--text-color)) 1%,
-    transparent 1%
-  );
-  background-size: 0%;
+  &:active::after {
+    opacity: var(--state-press-opacity);
+    background-size: 0%;
+    transition: background-size var(--motion-duration-short1)
+      var(--motion-easing-standard);
+  }
 
-  transition: none;
-}
-
-.component:hover::after {
-  opacity: var(--state-hover-opacity);
-  background-size: 50000%;
-  transition: background-size var(--motion-duration-short4)
-    var(--motion-easing-standard);
-}
-
-.component:active::after {
-  opacity: var(--state-press-opacity);
-  background-size: 0%;
-  transition: background-size var(--motion-duration-short1)
-    var(--motion-easing-standard);
-}
-
-.component:focus-within::after {
-  opacity: var(--state-focus-opacity);
+  &:focus-within::after {
+    opacity: var(--state-focus-opacity);
+  }
 }

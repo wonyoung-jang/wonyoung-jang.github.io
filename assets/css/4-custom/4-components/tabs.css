@@ -18,7 +18,7 @@
 
   --bg-color: var(--color-surface-container-low);
 
-  .tab {
+  & .tab {
     flex: 1 1 0;
     min-width: fit-content;
 
@@ -44,7 +44,7 @@
   }
 }
 
-/* Customize */
+/* Custom */
 .tabs,
 .tab {
   border-radius: var(--shape-corner-m-top);

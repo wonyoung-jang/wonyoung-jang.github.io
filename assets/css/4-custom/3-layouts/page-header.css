@@ -10,31 +10,31 @@
   --border: inherit;
   --padding: var(--size-8);
   --gap: var(--size-8);
-}
-
-.page-header .breadcrumbs {
-  border-radius: unset;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: var(--size-2);
-  padding: var(--size-0);
-}
-
-.page-header .title,
-.page-header .description {
-  display: inline;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-.page-header .description {
-  max-width: 60ch;
-  white-space: normal;
-  overflow-wrap: break-word;
   
-}
-
-.page-header .metadata {
-  color: var(--color-on-surface-variant);
+  & .breadcrumbs {
+    border-radius: unset;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-2);
+    padding: var(--size-0);
+  }
+  
+  & .title,
+  & .description {
+    display: inline;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  
+  & .description {
+    max-width: 60ch;
+    white-space: normal;
+    overflow-wrap: break-word;
+    
+  }
+  
+  & .metadata {
+    color: var(--color-on-surface-variant);
+  }
 }

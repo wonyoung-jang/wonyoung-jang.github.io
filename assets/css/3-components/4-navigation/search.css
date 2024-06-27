@@ -16,7 +16,7 @@
     
     width: 100%;
     
-    #searchInput {
+    & #searchInput {
       flex: 1 1 auto;
       border-radius: unset;
       color: var(--color-on-surface);
@@ -26,7 +26,7 @@
       }
     }
     
-    i {
+    & i {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;

@@ -4,12 +4,11 @@
   flex-flow: column nowrap;
   height: 100%;
 
-  * {
+  & * {
     flex: 1 1 auto;
   }
 
-
-  #home-header {
+  & #home-header {
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
@@ -18,7 +17,7 @@
     background-color: var(--color-surface-container-lowest);
     gap: var(--spacing-panes);
     
-    .home-buttons {
+    & .home-buttons {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
@@ -27,7 +26,7 @@
     }  
   }
 
-  #showcase-panel {
+  & #showcase-panel {
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
@@ -38,7 +37,7 @@
     margin: var(--spacing-panes);
     border-radius: var(--shape-corner-xl);
     
-    *:not(h1, h2) {
+    & *:not(h1, h2) {
       width: 100%;
     }
   }

@@ -21,13 +21,11 @@
   &[outlined] {
     --container-outline: 1px solid var(--color-outline);
   }
-}
-  
-.icon-button i, 
-.icon-button img {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-}
 
-
+  & i, 
+  & img {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}

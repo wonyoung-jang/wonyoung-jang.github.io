@@ -92,12 +92,11 @@ em {
   font-weight: var(--typescale-body-large-weight);
   font-family: var(--typeface-mono);
   
-
-  span {
+  & span {
     display: flex;
     flex-flow: row nowrap;
     
-    a {
+    & a {
       color: var(--color-secondary) !important;
 
       &:hover {
@@ -108,24 +107,25 @@ em {
 }
 
 #post-content {  
-  h2:not(:first-child),
-  h3,
-  h4,
-  h5,
-  h6 {
+  & h2:not(:first-child),
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
     margin-block-start: 1.618em;
     margin-block-end: 0.618em;
   }
 
-  ul,
-  ol,
-  li {
+  & ul,
+  & ol,
+  & li {
     list-style-type: disc;
     margin-inline-start: 1rem;
   }
 }
 
-:not(pre, .highlight) > code {
+:not(pre, .highlight) code {
+  display: inline-flex;
   display: inline flex;
   flex-flow: row nowrap;
   font-family: var(--typeface-mono);

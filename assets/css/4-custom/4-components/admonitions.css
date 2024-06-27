@@ -15,7 +15,7 @@
   white-space: normal;
   overflow-wrap: break-word;
   
-  i {
+  & i {
     width: 48px;
     height: 48px;
     font-size: 40px;

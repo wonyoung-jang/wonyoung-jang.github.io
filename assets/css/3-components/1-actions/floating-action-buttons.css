@@ -11,22 +11,24 @@
     height: var(--size-12);
     border-radius: var(--shape-corner-m);
     padding: 0;
+    
+    & i {
+      font-size: var(--size-5);
+    }
   }
 
-  &[small] i {
-    font-size: var(--size-5);
-  }
 
   &[large] {
     width: var(--size-24);
     height: var(--size-24);
     border-radius: var(--size-9);
     padding: var(--size-4);
+    
+    & i {
+      font-size: var(--size-9);
+    }
   }
 
-  &[large] i {
-    font-size: var(--size-9);
-  }
   
   &[extended] {
     min-width: var(--size-20);
@@ -35,13 +37,15 @@
     border-radius: var(--shape-corner-l);
     padding: var(--size-4);
     gap: var(--size-4);
+    
+    & i {
+      font-size: var(--size-6);
+    }
   }
   
-  &[extended] i {
+  
+  & i {
     font-size: var(--size-6);
   }
 }
 
-.fab i {
-  font-size: var(--size-6);
-}
