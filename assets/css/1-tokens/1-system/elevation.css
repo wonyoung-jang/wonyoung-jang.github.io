@@ -1,6 +1,6 @@
 :root {
-  --ambient-shadow: rgba(0, 0, 0, 0.15);
-  --key-shadow:     rgba(0, 0, 0, 0.30);
+  --ambient-shadow: rgba(0, 0, 0, 0.17);
+  --key-shadow:     rgba(0, 0, 0, 0.28);
 
   /* 1 Resting */
   --elevation0: 0px 0px 0px 0px var(--key-shadow), 0px 0px 0px 0px var(--ambient-shadow);

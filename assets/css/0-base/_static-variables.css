@@ -65,12 +65,22 @@
     /* Core */
     --spacing-panes:    var(--size-4);
     --fixed-pane-width: var(--size-90);
+
+    --root-font-size:   var(--input-font-size);
 }
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
     :root {
       --spacing-panes:  var(--size-6);
+      --root-font-size: var(--input-font-size) * var(--scale-min-2);
+    }
+}
+
+/* Expanded: 840px-1199px */
+@media screen and (min-width: 840px) {
+    :root {
+      --root-font-size: calc(var(--input-font-size) * var(--scale-maj-2));
     }
 }
   

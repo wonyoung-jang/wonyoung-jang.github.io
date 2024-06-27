@@ -3,13 +3,10 @@
     --palette-black: #000000;
     --palette-white: #FFFFFF;
 
-    /* Harmonization */
-    --harmonization: calc(360deg / var(--scale-fibonacci) / 24); /* This simplifies the adjustment calculation */
-
     /* || Hues (0-360) */
 
     /* Key hues */
-    --hue-primary:  305deg;
+    --hue-primary:  var(--input-color-hue);
     --hue-error:    25deg;
     --hue-tertiary:         calc(var(--hue-primary) - 60deg);
     --hue-complementary:    calc(var(--hue-primary) + 180deg);
@@ -56,7 +53,7 @@
     /* || Chromas (0-120-150) */
 
     /* Defaults */
-    --chroma-primary:           55;
+    --chroma-primary:           var(--input-color-chroma);
     --chroma-secondary:         calc(var(--chroma-primary) / 3);
     --chroma-tertiary:          calc(var(--chroma-primary) / 2);
     --chroma-neutral:           calc(var(--chroma-primary) / 21);

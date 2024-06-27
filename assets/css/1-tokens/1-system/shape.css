@@ -5,7 +5,7 @@
   /* 1 No rounding */
   --shape-corner-none: 0px;
   /* 2 Extra small rounding - 1x */
-  --shape-corner-xs:        2px;
+  --shape-corner-xs:        var(--input-shape-corner);
   --shape-corner-xs-top:    var(--shape-corner-xs) var(--shape-corner-xs) 0px 0px;
   --shape-corner-xs-bottom: 0px 0px var(--shape-corner-xs) var(--shape-corner-xs);
   --shape-corner-xs-start:  var(--shape-corner-xs) 0px 0px var(--shape-corner-xs);

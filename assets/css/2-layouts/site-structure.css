@@ -46,8 +46,9 @@
   --gap: 0;
 
   --border: inherit;
+  
+  &.fixed-pane {
+    --width: 100%;
+  }
 }
 
-.pane.fixed-pane {
-  --width: 100%;
-}
