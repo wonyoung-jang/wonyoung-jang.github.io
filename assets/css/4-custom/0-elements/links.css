@@ -29,3 +29,13 @@ a.component {
     text-decoration: none;
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover .anchor {
+    display: inline-flex;
+    display: inline flex;
+    color: var(--color-on-surface-variant);
+    margin-inline-start: var(--size-2);
+    user-select: none;
+  }
+}
