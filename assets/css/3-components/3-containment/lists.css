@@ -29,4 +29,16 @@
     --container-padding: var(--size-3) var(--size-4);
     --container-height: 88px;
   }
+
+  &[with-icon] {
+    --container-padding: var(--size-2) 0;
+
+    & i {
+      font-size: var(--size-10);
+      margin-inline: var(--size-4);
+      margin-block: var(--size-2);
+      color: var(--icon-color);
+      overflow: visible;
+    }
+  }
 }

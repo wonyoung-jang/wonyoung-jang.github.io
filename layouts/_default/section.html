@@ -6,8 +6,17 @@
 
         {{ range .Sections }}
 
-            <a  class="component list-item" one
+            <a  class="component list-item" one with-icon
                 href="{{ .Permalink }}">
+
+                {{/*  TODO Turn this into a slice to iterate  */}}
+                {{ if eq .Title "Software" }}
+                    <i>terminal</i>
+                {{ else if eq .Title "University" }}
+                    <i>school</i>
+                {{ else }}
+                    <i>quick_reference</i>
+                {{ end }}
 
                 <span class="headline-small">
                     {{ .Title }}
