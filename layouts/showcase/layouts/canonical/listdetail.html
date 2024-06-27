@@ -1,16 +1,15 @@
 {{ define "main" }}
 
-<article class="layout panes canonical-list-detail" style="border: 1px solid">
-    <section class="layout pane list-pane" style="border: 1px dashed">
+<article class="layout panes canonical-list-detail">
+    <section class="layout pane list-pane">
         <h2>List pane</h2>
         {{ if .Content }}
             {{ .Content }}
         {{ end }}
     </section>
     
-    <section class="layout pane detail-pane" style="border: 1px dashed">
+    <section class="layout pane detail-pane">
         <h2>Detail pane</h2>
-        <p>Lorem ipsum</p>
     </section>
 </article>
 

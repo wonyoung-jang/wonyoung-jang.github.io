@@ -1,4 +1,22 @@
 #page-colors {
+  & details {
+    margin-block: var(--size-2);
+  }
+
+  & summary {
+    &:hover {
+      cursor: pointer;
+
+      & h2 {
+        background-color: var(--color-tertiary-container);
+      }
+    }
+
+    &::marker {
+      content: "";
+    }
+  }
+
   & h2 {
     background-color: var(--color-secondary-container);
     text-align: center;

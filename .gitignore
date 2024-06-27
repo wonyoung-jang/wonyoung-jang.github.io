@@ -6,19 +6,9 @@ tasks*
 node_modules
 ~TASKS.txt
 .vscode/extensions.json
-nester.py
-scraper.py
-classes.md
-ids.md
-output.md
-partials.md
-content/test.md
+
 utils.tsx
-output.csv
-element_structure.md
 csstest.json
 main.py
 components-meta.css
 other copy.css
-unnester.py
-output_unnest/

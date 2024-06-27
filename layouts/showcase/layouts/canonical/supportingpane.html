@@ -1,16 +1,15 @@
 {{ define "main" }}
 
-<article class="layout panes canonical-supporting-pane" style="border: 1px solid">
-    <section class="layout pane focus-pane" style="border: 1px dashed">
+<article class="layout panes canonical-supporting-pane">
+    <section class="layout pane focus-pane">
         <h2>Focus pane</h2>
         {{ if .Content }}
             {{ .Content }}
         {{ end }}
     </section>
 
-    <section class="layout pane supporting-pane" style="border: 1px dashed">
+    <section class="layout pane supporting-pane">
         <h2>Supporting pane</h2>
-        <p>Lorem ipsum</p>
     </section>
 </article>
 

@@ -1,15 +1,14 @@
 {{ define "main" }}
 
-<article class="layout panes basic-splitpane" style="border: 1px solid">
-    <section class="layout pane" style="border: 1px dashed">
+<article class="layout panes basic-splitpane">
+    <section class="layout pane">
         <h2>Split 1</h2>
         {{ if .Content }}
             {{ .Content }}
         {{ end }}
     </section>
-    <section class="layout pane" style="border: 1px dashed">
+    <section class="layout pane">
         <h2>Split 2</h2>
-        <p>Lorem ipsum</p>
     </section>
 </article>
 
