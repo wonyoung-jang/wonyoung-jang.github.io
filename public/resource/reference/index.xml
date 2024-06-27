@@ -33,7 +33,7 @@
   <channel>
     <title>Reference on Wonyoung Jang</title>
     
-    <link>http://192.168.40.181:1313/resource/reference/</link>
+    <link>https://wonyoungjang.org/resource/reference/</link>
     
     <description>Recent content in Reference on Wonyoung Jang</description>
     
@@ -54,7 +54,7 @@
     <lastBuildDate>Wed, 26 Jun 2024 17:29:34 -0400</lastBuildDate>
     
     
-      <atom:link href="http://192.168.40.181:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resource/reference/index.xml" rel="self" type="application/rss+xml" />
     
 
     
@@ -63,13 +63,13 @@
     
       <title>All Logseq elements</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</link>
+      <link>https://wonyoungjang.org/resource/reference/all-logseq-elements/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/all-logseq-elements/</guid>
     
       <description>Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Centered admon&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Block quote with &amp;quot;````&amp;quot; An internal link to my about page: About&#xD;An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/&#xD;An embedded internal page: {{embed About&#xD;}}&#xA;A block reference: ## About me&#xA;A block embed: {{embed ## About me }}</description>
     
@@ -81,13 +81,13 @@
     
       <title>Colors</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/colors/</link>
+      <link>https://wonyoungjang.org/resource/reference/colors/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/colors/</guid>
     
       <description> </description>
     
@@ -99,13 +99,13 @@
     
       <title>Components</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/components/</link>
+      <link>https://wonyoungjang.org/resource/reference/components/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/components/</guid>
     
       <description> </description>
     
@@ -117,13 +117,13 @@
     
       <title>Feed layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/feed-layout/</link>
+      <link>https://wonyoungjang.org/resource/reference/feed-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/feed-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/feed-layout/</guid>
     
       <description> </description>
     
@@ -135,13 +135,13 @@
     
       <title>Fixed and flexible layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</link>
+      <link>https://wonyoungjang.org/resource/reference/fixed-and-flexible-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/fixed-and-flexible-layout/</guid>
     
       <description> </description>
     
@@ -153,13 +153,13 @@
     
       <title>List of admonitions for wonyoungjang.org</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
+      <link>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
     
       <description>What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.</description>
     
@@ -171,13 +171,13 @@
     
       <title>List-detail layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
+      <link>https://wonyoungjang.org/resource/reference/list-detail-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/list-detail-layout/</guid>
     
       <description> </description>
     
@@ -189,13 +189,13 @@
     
       <title>Motion</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/motion/</link>
+      <link>https://wonyoungjang.org/resource/reference/motion/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/motion/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/motion/</guid>
     
       <description> </description>
     
@@ -207,13 +207,13 @@
     
       <title>Shapes</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
+      <link>https://wonyoungjang.org/resource/reference/shapes/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/shapes/</guid>
     
       <description> </description>
     
@@ -225,13 +225,13 @@
     
       <title>Single pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/single-pane-layout/</link>
+      <link>https://wonyoungjang.org/resource/reference/single-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/single-pane-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/single-pane-layout/</guid>
     
       <description> </description>
     
@@ -243,13 +243,13 @@
     
       <title>Split-pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/split-pane-layout/</link>
+      <link>https://wonyoungjang.org/resource/reference/split-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/split-pane-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/split-pane-layout/</guid>
     
       <description> </description>
     
@@ -261,13 +261,13 @@
     
       <title>States and elevation</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
+      <link>https://wonyoungjang.org/resource/reference/states-and-elevation/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/states-and-elevation/</guid>
     
       <description> </description>
     
@@ -279,13 +279,13 @@
     
       <title>Supporting pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
+      <link>https://wonyoungjang.org/resource/reference/supporting-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/supporting-pane-layout/</guid>
     
       <description> </description>
     
@@ -297,13 +297,13 @@
     
       <title>Typography</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/typography/</link>
+      <link>https://wonyoungjang.org/resource/reference/typography/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/typography/</guid>
     
       <description> </description>
     
@@ -315,13 +315,13 @@
     
       <title>List of keyboard shortcuts for wonyoungjang.org</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
+      <link>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
     
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
+      <guid>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
     
       <description>Navigation ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance ALT+SHIFT+t → Toggle light/dark themes</description>
     

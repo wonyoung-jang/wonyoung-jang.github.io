@@ -4,7 +4,7 @@ tags:
 categories:
 draft: false
 slug: 
-layout: list
+layout: subsection
 githubrepo: 
 keywords: 
 type: 
