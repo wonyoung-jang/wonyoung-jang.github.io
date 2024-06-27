@@ -3,7 +3,9 @@
 <article class="layout panes basic-singlepane" style="border: 1px solid">
     <section class="layout pane" style="border: 1px dashed">
         <h2>Single pane layout</h2>
-        <p>Lorem ipsum</p>
+        {{ if .Content }}
+            {{ .Content }}
+        {{ end }}
     </section>
 </article>
 
