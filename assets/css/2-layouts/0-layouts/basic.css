@@ -1,37 +1,47 @@
-.panes.basic-singlepane {
-  .pane {
-    --flex: 1 1 auto;
-    --width: 100%;
-  }
+.panes.basic-singlepane .pane {
+  --flex: 1 1 auto;
+  --width: 100%;
 }
 
-.panes.basic-splitpane {
-  .pane {
-    --flex: 1 1 0;
-    --width: calc(50% - var(--spacing-panes) / 2);
-  }
+.panes.basic-splitpane .pane {
+  --flex: 1 1 0;
+  --width: calc(50% - var(--spacing-panes) / 2);
 }
 
 .panes.basic-fixedflex {
   --flex-flow: row nowrap;
+}
 
-  .pane {
-    --flex: 1 1 0;
+.panes.basic-fixedflex .pane {
+  --flex: 1 1 0;
+}
 
-    &.fixed-pane {
-      --flex: 0 0 var(--fixed-pane-width);
-      --width: var(--fixed-pane-width);
-    }
-  }
+.panes.basic-fixedflex .pane.fixed-pane {
+  --flex: 0 0 var(--fixed-pane-width);
+  --width: var(--fixed-pane-width);
 }
 
 .panes.basic-fixedflex#single {
   --flex-flow: column-reverse nowrap;
+}
 
-  .pane,
-  .pane.fixed-pane {
-    --flex: 1 1 auto;
-    --width: 100%;
+.panes.basic-fixedflex#single .pane,
+.panes.basic-fixedflex#single .pane.fixed-pane {
+  --flex: 1 1 auto;
+  --width: 100%;
+}
+
+/* Compact: 0px-599px */
+@media screen and (max-width: 600px) {
+  .panes.basic-fixedflex .pane {
+    --display: none;
+  }
+
+  .panes.basic-fixedflex::before {
+    content: "Compact: do not use this layout on screens smaller than 600px wide.";
+    display: flex;
+    color: var(--color-error);
+    padding: 1em;
   }
 }
 
@@ -40,14 +50,16 @@
   .panes.basic-fixedflex,
   .panes.basic-fixedflex#single {
     --flex-flow: row nowrap;
-
-    .pane {
-      --flex: 1 1 0;
-
-      &.fixed-pane {
-        --flex: 0 0 var(--fixed-pane-width);
-        --width: var(--fixed-pane-width);
-      }
-    }
+  }
+  
+  .panes.basic-fixedflex .pane,
+  .panes.basic-fixedflex#single .pane {
+    --flex: 1 1 0;
+  }
+  
+  .panes.basic-fixedflex .pane.fixed-pane,
+  .panes.basic-fixedflex#single .pane.fixed-pane {
+    --flex: 0 0 var(--fixed-pane-width);
+    --width: var(--fixed-pane-width);
   }
 }
