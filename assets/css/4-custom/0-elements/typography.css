@@ -124,7 +124,7 @@ em {
   }
 }
 
-:not(pre, .highlight) code {
+:not(pre, .highlight) > code {
   display: inline-flex;
   display: inline flex;
   flex-flow: row nowrap;
