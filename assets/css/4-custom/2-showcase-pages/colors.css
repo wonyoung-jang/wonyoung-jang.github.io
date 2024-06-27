@@ -1,25 +1,6 @@
 #page-colors {
-  & details {
-    margin-block: var(--size-2);
-  }
-
   & summary {
-    &:hover {
-      cursor: pointer;
-
-      & h2 {
-        background-color: var(--color-tertiary-container);
-      }
-    }
-
-    &::marker {
-      content: "";
-    }
-  }
-
-  & h2 {
     background-color: var(--color-secondary-container);
-    text-align: center;
   }
 
   & h3 {
@@ -27,16 +8,30 @@
     margin-top: var(--spacing-panes);
   }
 
-  & h2, 
+  & summary, 
   & h3 {
-    padding: 1em;
+    padding: 1rem;
     border-radius: var(--shape-corner-xl-top);
   }
   
-  & section {
+  & details {
     border-radius: var(--shape-corner-xl);
     margin-bottom: calc(var(--spacing-panes) * 3);
     box-shadow: var(--elevation5);
+
+    & summary {
+      list-style: none;
+
+      &::marker,
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    
+    & summary:hover {
+      cursor: pointer;
+      background-color: var(--color-tertiary-container);
+    }
   }
 }
 
