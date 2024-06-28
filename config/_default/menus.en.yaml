@@ -24,6 +24,10 @@ footer:
     name: Contact
     pageRef: /contact
     weight: 20
+  - identifier: Now
+    name: Now
+    pageRef: /now
+    weight: 25
   - identifier: Search
     name: Search
     pageRef: /search
@@ -56,6 +60,17 @@ sections:
     name: Projects
     pageRef: /project
     weight: 10
+  - identifier: Software
+    name: Software
+    pageRef: /software
+    weight: 15
+  - identifier: University
+    name: University
+    pageRef: /university
+    weight: 17
   - name: Resources
     pageRef: /resource
     weight: 20
+  - name: References
+    pageRef: /reference
+    weight: 25
