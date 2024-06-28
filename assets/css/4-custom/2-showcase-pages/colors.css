@@ -11,27 +11,11 @@
   & summary, 
   & h3 {
     padding: 1rem;
-    border-radius: var(--shape-corner-xl-top);
   }
   
   & details {
-    border-radius: var(--shape-corner-xl);
     margin-bottom: calc(var(--spacing-panes) * 3);
     box-shadow: var(--elevation5);
-    
-    & summary:hover {
-      cursor: pointer;
-      background-color: var(--color-tertiary-container);
-    }
-  }
-}
-
-summary {
-  list-style: none;
-
-  &::marker,
-  &::-webkit-details-marker {
-    display: none;
   }
 }
 
