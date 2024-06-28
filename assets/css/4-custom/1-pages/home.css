@@ -2,27 +2,35 @@
   flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
+  padding: unset;
+  margin: unset;
   height: 100%;
 
   & #home-header {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: var(--size-17);
-    padding: var(--spacing-panes);
-    margin-block: var(--size-8);
-    border-radius: var(--shape-corner-xs);
-    
+
+    & h1 {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-block-start: var(--size-16);
+    }
+
     & .home-buttons {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: var(--spacing-panes);
+      margin-block: var(--size-16);
 
       & .button {
         flex: 1 1 auto;
+        max-width: fit-content;
       }
     }  
   }
@@ -40,24 +48,18 @@
       cursor: pointer;
       display: flex;
       flex-flow: row nowrap;
-      padding: var(--size-4);
+      padding: var(--size-6);
       border-radius: var(--shape-corner-none);
-
-      & h2 {
-        flex: 1 1 auto;
-      }
+      align-items: center;
   
       &::after {
         content: "▲";
-        flex: 0 1 0;
-        align-self: center;
         font-size: 24px;
       }
     }
 
     &[open] > summary::after {
       content: "▼";
-      font-size: 24px;
     }
     
     & *:not(h1, h2) {
