@@ -75,21 +75,21 @@
 
 {{/* Light theme script */}}
 {{ if (eq .Site.Params.defaultTheme "light") }}
-    <script>
+    <script defer>
         if (localStorage.getItem("pref-theme") === "dark") {
             document.body.classList.add('dark');
         }
     </script>
 {{/* Dark theme script */}}
 {{ else if (eq .Site.Params.defaultTheme "dark") }}
-    <script>
+    <script defer>
         if (localStorage.getItem("pref-theme") === "light") {
             document.body.classList.remove('dark')
         }
     </script>
 {{/* Auto theme script */}}
 {{ else }}
-    <script>
+    <script defer>
         if (localStorage.getItem("pref-theme") === "dark") {
             document.body.classList.add('dark');
         } else if (localStorage.getItem("pref-theme") === "light") {

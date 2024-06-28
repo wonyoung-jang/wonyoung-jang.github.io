@@ -9,9 +9,10 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-surface-container-lowest);
-    gap: var(--spacing-panes);
+    gap: var(--size-17);
+    padding: var(--spacing-panes);
     margin-block: var(--size-8);
+    border-radius: var(--shape-corner-xs);
     
     & .home-buttons {
       display: flex;
@@ -33,10 +34,38 @@
     justify-content: center;
     background-color: var(--color-surface-container-low);
     gap: var(--spacing-panes);
-    border-radius: var(--shape-corner-xl);
+    border-radius: var(--shape-corner-xs);
+
+    & summary {
+      cursor: pointer;
+      display: flex;
+      flex-flow: row nowrap;
+      padding: var(--size-4);
+      border-radius: var(--shape-corner-none);
+
+      & h2 {
+        flex: 1 1 auto;
+      }
+  
+      &::after {
+        content: "▲";
+        flex: 0 1 0;
+        align-self: center;
+        font-size: 24px;
+      }
+    }
+
+    &[open] > summary::after {
+      content: "▼";
+      font-size: 24px;
+    }
     
     & *:not(h1, h2) {
       width: 100%;
+    }
+
+    & table {
+      padding: var(--size-8);
     }
   }
 }

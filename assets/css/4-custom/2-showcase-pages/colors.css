@@ -18,20 +18,20 @@
     border-radius: var(--shape-corner-xl);
     margin-bottom: calc(var(--spacing-panes) * 3);
     box-shadow: var(--elevation5);
-
-    & summary {
-      list-style: none;
-
-      &::marker,
-      &::-webkit-details-marker {
-        display: none;
-      }
-    }
     
     & summary:hover {
       cursor: pointer;
       background-color: var(--color-tertiary-container);
     }
+  }
+}
+
+summary {
+  list-style: none;
+
+  &::marker,
+  &::-webkit-details-marker {
+    display: none;
   }
 }
 

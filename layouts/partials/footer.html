@@ -64,7 +64,7 @@
 
 {{/* Script for theme toggle */}}
 {{ if (not .Site.Params.disableThemeToggle) }}
-    <script>
+    <script defer>
         document.getElementById("theme-toggle").addEventListener("click", () => {
             if (document.body.className.includes("dark")) {
                 document.body.classList.remove('dark');
@@ -79,7 +79,7 @@
 
 {{/* Script for code copy button */}}
 {{ if (and (eq .Kind "page") (ne .Layout "search") ) }}
-    <script>
+    <script defer>
         document.querySelectorAll('pre > code').forEach((codeblock) => {
             const container = codeblock.parentNode.parentNode;
             const copybutton = document.createElement('button');
