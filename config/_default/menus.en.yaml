@@ -9,6 +9,11 @@ main:
     pageRef: /resource
     pre: <i>developer_guide</i>
     weight: 20
+  - identifier: Now
+    name: Now
+    pageRef: /now
+    pre: <i>update</i>
+    weight: 30
 
 footer:
   - identifier: About
