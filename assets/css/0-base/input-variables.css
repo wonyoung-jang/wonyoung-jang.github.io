@@ -21,11 +21,11 @@
   --input-font-size:  14px;
 
   /* Shape corner */
-  --input-shape-corner: 1.7px;
+  --input-shape-corner: 1.4px;
 
   /* Color primary */
-  --input-color-hue: 305deg;
-  --input-color-chroma: 55;
+  --input-color-hue: 302.8deg;
+  --input-color-chroma: 58;
 
   /* Color harmonization */
   --harmonization: calc(360deg / var(--scale-fibonacci) / 17);
