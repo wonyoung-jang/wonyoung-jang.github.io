@@ -18,6 +18,10 @@
     align-items: center;
     gap: var(--size-2);
     padding: var(--size-0);
+
+    & .breadcrumb-delimiter {
+      color: var(--color-on-surface-variant);
+    }
   }
   
   & .title,

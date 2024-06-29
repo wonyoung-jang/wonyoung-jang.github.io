@@ -5,7 +5,7 @@
     <section class="layout page-header">
         {{/* Breadcrumbs */}}
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
-            {{ range .Ancestors.Reverse }} 
+            {{ range $index, $ancestor := .Ancestors.Reverse }} 
                 <a href="{{ .Permalink }}">
                     {{ if .IsHome }}
                         Home
@@ -13,7 +13,7 @@
                         {{ .LinkTitle }}
                     {{ end }} 
                 </a>
-                <span>/</span>
+                <span class="breadcrumb-delimiter">/</span>
             {{ end }}
         </nav>    
 

@@ -24,7 +24,7 @@
   }
 
   & .pane-heading {
-    margin-bottom: var(--size-3);
+    margin-bottom: var(--size-8);
   }
 }
 
