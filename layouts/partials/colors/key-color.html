@@ -1,0 +1,15 @@
+<details open>
+  <summary><h2 class="title-large">Key</h2></summary>
+
+  <div class="key-color"></div>
+
+  <div class="component palette" id="absolute-hues">
+    {{ range seq 0 30 330 }}
+      <div
+        style="background-color: var(--palette-hue-{{ . }});">
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
+  
+</details>

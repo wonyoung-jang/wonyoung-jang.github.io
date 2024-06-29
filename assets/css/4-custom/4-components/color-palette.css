@@ -1,0 +1,58 @@
+.palette {
+    --container-display: flex;
+    --container-flex-flow: row nowrap;
+    --container-justify-content: space-between;
+    --container-align-items: center;
+    --container-gap: initial;
+    --container-height: initial;
+    --container-width: initial;
+    --container-padding: initial;
+
+    --container-outline: initial;
+    --container-elevation: initial;
+    --container-shape: unset;
+
+    --bg-color: unset;
+
+    color: var(--palette-white);
+
+    & div {
+        flex: 1 1 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: var(--size-2);
+        font-family: var(--typeface-mono);
+
+        border-radius: unset;
+
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11) {
+            color: var(--palette-black);
+        }
+    }
+
+    /* Hue Palette */
+    &#absolute-hues {
+        padding: var(--spacing-panes);
+        color: var(--palette-white);
+    
+        & div {
+            color: var(--palette-black);
+        }
+    }
+}
+
+.palettes-main,
+.palettes-admonitions,
+.palettes-classic {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    padding: var(--spacing-panes);
+}
+    

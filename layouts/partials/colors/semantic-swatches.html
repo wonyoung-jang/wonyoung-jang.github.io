@@ -1,0 +1,17 @@
+<details open>
+  <summary><h2 class="title-large">Semantic</h2></summary>
+  
+  {{ range $group, $swatches := .Site.Data.palettes }}
+    {{ if eq $group "main" }}
+      {{ continue }}
+    {{ end }}
+    <details open>
+      <summary><h3 class="title-medium">{{ title $group }} swatches</h3></summary>
+      <div class="swatches-{{ $group }}">
+        {{ range $swatches }}
+          {{ partial "colors/semantic-swatch.html" . }}
+        {{ end }}
+      </div>
+    </details>
+  {{ end }}
+</details>

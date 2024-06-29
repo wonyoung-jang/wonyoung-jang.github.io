@@ -1,0 +1,23 @@
+<details open>
+  <summary><h2 class="title-large">Reference</h2></summary>
+
+  {{ range $group, $palettes := .Site.Data.palettes }}
+    <details open>
+        <summary><h3 class="title-medium">{{ title $group }} palettes</h3></summary>
+        <div class="palettes-{{ $group }}">
+            {{ range $palettes }}
+                {{ $name := . }}
+                <label>{{ title $name }}</label>
+                <div class="component palette {{ $name }}">
+                    {{ range seq 0 10 100 }}
+                        <div 
+                            style="background-color: var(--palette-{{ $name }}-{{ . }})">
+                            {{ . }}
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </details>
+  {{ end }}
+</details>

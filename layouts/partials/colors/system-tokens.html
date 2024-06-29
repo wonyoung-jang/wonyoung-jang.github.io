@@ -1,0 +1,61 @@
+<details open>
+    <summary><h2 class="title-large">System</h2></summary>
+    <div class="sys-tokens">
+        {{ range slice "primary" "secondary" "tertiary" "error" }}
+            <div class="component swatch">
+                <div class="{{ . }}">
+                    <span>{{ title . }}</span>
+                    <span>On {{ title . }}</span>
+                </div>
+                <div class="{{ . }}-container">
+                    <span>{{ title . }} Container</span>
+                    <span>On {{ title . }} Container</span>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+
+    <div class="sys-tokens">
+        {{ range slice "primary-fixed" "secondary-fixed" "tertiary-fixed" }}
+            <div class="component swatch">
+                <div class="{{ . }} on-{{ . }}">
+                    <span>{{ title . }}</span>
+                    <span>On {{ title . }}</span>
+                </div>
+                <div class="{{ . }}-dim on-{{ . }}-variant"> 
+                    <span>{{ title . }} Dim</span>
+                    <span>On {{ title . }} Variant</span>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+
+    <div class="sys-tokens" id="on-and-outline">
+        <span style="background-color: var(--color-on-surface); color: var(--color-surface);">
+            On-Surface
+        </span>
+        <span style="background-color: var(--color-on-surface-variant); color: var(--color-surface);">
+            On-Surface Variant
+        </span>
+        <span style="background-color: var(--color-outline); color: var(--color-surface);">
+            Outline
+        </span>
+        <span style="background-color: var(--color-outline-variant); color: var(--color-surface-container-bright);">
+            Outline Variant
+        </span>
+    </div>
+
+    <div class="sys-tokens">
+        <div class="component surface-dim">Surface Dim</div>
+        <div class="component surface">Surface</div>
+        <div class="component surface-bright">Surface Bright</div>
+    </div>
+    
+    <div class="sys-tokens">
+        <div class="component surface-container-lowest">Surface Container Lowest</div>
+        <div class="component surface-container-low">Surface Container Low</div>
+        <div class="component surface-container">Surface Container</div>
+        <div class="component surface-container-high">Surface Container High</div>
+        <div class="component surface-container-highest">Surface Container Highest</div>
+    </div>
+</details>
