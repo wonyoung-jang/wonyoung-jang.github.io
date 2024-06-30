@@ -128,11 +128,12 @@ em {
   display: inline-flex;
   display: inline flex;
   flex-flow: row nowrap;
+  line-height: unset;
   font-family: var(--typeface-mono);
-  background-color: var(--color-secondary-container);
-  color: var(--color-on-secondary-container);
-  padding: 0.125em 0.5em;
-  margin-block: 0 0.125em;
-  margin-inline: 0.125em;
-  border-radius: var(--shape-corner-xs);
+  font-size: inherit;
+  font-weight: inherit;  
+  background-color: var(--color-surface-container-high);
+  color: var(--color-on-surface-variant);
+  padding-inline: var(--size-1);
+  border-radius: var(--shape-corner-xl);
 }
