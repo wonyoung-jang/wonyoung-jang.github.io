@@ -1,16 +1,12 @@
-#showcase-typography h1 {
-    margin-block: 1rem;
-    margin-inline: 0;
-    padding: 1rem;
-}
-
 .typeface-container {
     display: flex;
     flex-flow: row wrap;
     gap: var(--size-2);
+    background-color: var(--color-surface-container);
+    padding: var(--size-3);
 
     & h2 {
-        margin-block: 1rem;
+        margin-bottom: 1rem;
         margin-inline: 0;
         padding: 1rem;
         width: 100%;
@@ -23,7 +19,7 @@
         padding-bottom: 1rem;
     
         color: var(--color-on-surface);
-        background-color: var(--color-surface-container);
+        background-color: var(--color-surface-container-high);
         
         & div {
             flex: 1 1 0;
@@ -51,7 +47,7 @@
             min-height: var(--size-16);
             margin: unset;
             border-radius: var(--shape-corner-xl-top);
-            background-color: var(--color-surface-container-high);
+            background-color: var(--color-surface-container-highest);
         }
     }
 }
@@ -60,10 +56,12 @@
     display: flex;
     flex-flow: column nowrap;
     gap: var(--size-2);
+    background-color: var(--color-surface-container);
+    padding: var(--size-3);
+    margin-top: var(--size-8);
 
     & h2 {
         margin-bottom: 1rem;
-        margin-top: 3rem;
         margin-inline: 0;
         padding: 1rem;
         width: 100%;
@@ -76,6 +74,6 @@
         padding: 1em;
         border-radius: var(--shape-corner-m);
         color: var(--color-on-surface);
-        background-color: var(--color-surface-container);
+        background-color: var(--color-surface-container-high);
     }
 }
