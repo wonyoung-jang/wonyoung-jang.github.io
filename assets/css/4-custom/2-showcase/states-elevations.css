@@ -9,6 +9,10 @@
   border-radius: var(--shape-corner-s);
   gap: var(--size-2);
 
+  & h2 {
+    grid-column: 1 / -1;
+  }
+
   & div {
     position: relative;
     display: flex;
@@ -28,27 +32,27 @@
       background-color: var(--color-on-surface);
     }
 
-    &:nth-child(1)::after {
+    &:nth-child(2)::after {
       opacity: 0;
     }
 
-    &:nth-child(2)::after {
+    &:nth-child(3)::after {
       opacity: var(--state-disabled-opacity);
     }
 
-    &:nth-child(3)::after {
+    &:nth-child(4)::after {
       opacity: var(--state-hover-opacity);
     }
 
-    &:nth-child(4)::after {
+    &:nth-child(5)::after {
       opacity: var(--state-focus-opacity);
     }
 
-    &:nth-child(5)::after {
+    &:nth-child(6)::after {
       opacity: var(--state-press-opacity);
     }
 
-    &:nth-child(6)::after {
+    &:nth-child(7)::after {
       opacity: var(--state-drag-opacity);
     }
   }
@@ -61,8 +65,12 @@
   border-radius: var(--shape-corner-s);
   gap: var(--size-2);
 
-  background-color: var(--color-surface-container-lowest);
+  background-color: var(--color-surface-container);
   padding: calc(var(--spacing-panes) * 2);
+
+  & h2 {
+    grid-column: 1 / -1;
+  }
 
   & div {
     position: relative;
@@ -71,29 +79,29 @@
     padding: var(--spacing-panes);
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: var(--color-surface-container);
+    background-color: var(--color-surface-container-high);
 
-    &:nth-child(1) {
+    &:nth-child(2) {
       box-shadow: var(--elevation0);
     }
 
-    &:nth-child(2) {
+    &:nth-child(3) {
       box-shadow: var(--elevation1);
     }
 
-    &:nth-child(3) {
+    &:nth-child(4) {
       box-shadow: var(--elevation2);
     }
 
-    &:nth-child(4) {
+    &:nth-child(5) {
       box-shadow: var(--elevation3);
     }
 
-    &:nth-child(5) {
+    &:nth-child(6) {
       box-shadow: var(--elevation4);
     }
 
-    &:nth-child(6) {
+    &:nth-child(7) {
       box-shadow: var(--elevation5);
     }
   }
