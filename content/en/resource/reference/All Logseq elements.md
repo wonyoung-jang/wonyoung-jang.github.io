@@ -8,11 +8,11 @@ keywords:
 type: 
 date:
 - 2024-06-24 Monday
-description: 
+description: A work in progress page showcasing how elements are rendered from Logseq
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-06-26
+lastMod: 2024-06-30
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 

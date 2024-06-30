@@ -121,7 +121,7 @@
     {{ $related := site.RegularPages.Related . | complement $backlinks | complement $nextprev |first 4 }}
     {{ with $related }}
         <nav id="related-pages">
-            <h5>See also</h5>
+            <h5>Related</h5>
             <div class="divider"></div>
             {{ range $i, $p := . }}
                 <a  class="component card" outlined
@@ -140,7 +140,7 @@
     {{/*  Backlinks  */}}
     {{ if gt (len $backlinks) 0 }}
         <nav id="backlinks" aria-label="Backlinks">
-            <h5>Links here</h5>
+            <h5>Backlinks</h5>
             <div class="divider"></div>
             {{ if gt (len $backlinks) 0 }}
                 {{ range $backlinks }}

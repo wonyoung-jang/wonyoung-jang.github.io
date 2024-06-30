@@ -32,7 +32,7 @@
       flex-flow: row wrap;
       min-height: 42px;
       align-items: center;
-      margin-top: var(--size-3);
+      margin-top: var(--size-2);
     }
   }
 

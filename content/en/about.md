@@ -10,9 +10,9 @@ keywords:
 type: 
 date:
 - 2024-04-01 Monday
-description: 
+description: About page
 title: About
-lastMod: 2024-06-22
+lastMod: 2024-06-30
 ---
 ## About me
 Hello!
