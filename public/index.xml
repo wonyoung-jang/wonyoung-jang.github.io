@@ -101,13 +101,13 @@
     
       <title>Colors</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/colors/</link>
+      <link>http://192.168.40.181:1313/resource/token/colors/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/colors/</guid>
+      <guid>http://192.168.40.181:1313/resource/token/colors/</guid>
     
       <description> </description>
     
@@ -119,13 +119,13 @@
     
       <title>Components</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/components/</link>
+      <link>http://192.168.40.181:1313/resource/token/components/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/components/</guid>
+      <guid>http://192.168.40.181:1313/resource/token/components/</guid>
     
       <description> </description>
     
@@ -137,13 +137,13 @@
     
       <title>Feed layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/feed-layout/</link>
+      <link>http://192.168.40.181:1313/resource/layout/feed-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/feed-layout/</guid>
+      <guid>http://192.168.40.181:1313/resource/layout/feed-layout/</guid>
     
       <description> </description>
     
@@ -155,13 +155,13 @@
     
       <title>Fixed and flexible layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</link>
+      <link>http://192.168.40.181:1313/resource/layout/fixed-and-flexible-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/fixed-and-flexible-layout/</guid>
+      <guid>http://192.168.40.181:1313/resource/layout/fixed-and-flexible-layout/</guid>
     
       <description> </description>
     
@@ -191,13 +191,13 @@
     
       <title>List-detail layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/list-detail-layout/</link>
+      <link>http://192.168.40.181:1313/resource/layout/list-detail-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/list-detail-layout/</guid>
+      <guid>http://192.168.40.181:1313/resource/layout/list-detail-layout/</guid>
     
       <description> </description>
     
@@ -209,13 +209,13 @@
     
       <title>Motion</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/motion/</link>
+      <link>http://192.168.40.181:1313/resource/token/motion/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/motion/</guid>
+      <guid>http://192.168.40.181:1313/resource/token/motion/</guid>
     
       <description> </description>
     
@@ -227,13 +227,13 @@
     
       <title>Shapes</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/shapes/</link>
+      <link>http://192.168.40.181:1313/resource/token/shapes/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/shapes/</guid>
+      <guid>http://192.168.40.181:1313/resource/token/shapes/</guid>
     
       <description> </description>
     
@@ -245,13 +245,13 @@
     
       <title>Single pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/single-pane-layout/</link>
+      <link>http://192.168.40.181:1313/resource/layout/single-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/single-pane-layout/</guid>
+      <guid>http://192.168.40.181:1313/resource/layout/single-pane-layout/</guid>
     
       <description> </description>
     
@@ -263,13 +263,13 @@
     
       <title>Split-pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/split-pane-layout/</link>
+      <link>http://192.168.40.181:1313/resource/layout/split-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/split-pane-layout/</guid>
+      <guid>http://192.168.40.181:1313/resource/layout/split-pane-layout/</guid>
     
       <description> </description>
     
@@ -281,13 +281,13 @@
     
       <title>States and elevation</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/states-and-elevation/</link>
+      <link>http://192.168.40.181:1313/resource/token/states-and-elevation/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/states-and-elevation/</guid>
+      <guid>http://192.168.40.181:1313/resource/token/states-and-elevation/</guid>
     
       <description> </description>
     
@@ -299,13 +299,13 @@
     
       <title>Supporting pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</link>
+      <link>http://192.168.40.181:1313/resource/layout/supporting-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/supporting-pane-layout/</guid>
+      <guid>http://192.168.40.181:1313/resource/layout/supporting-pane-layout/</guid>
     
       <description> </description>
     
@@ -317,13 +317,13 @@
     
       <title>Typography</title>
     
-      <link>http://192.168.40.181:1313/resource/reference/typography/</link>
+      <link>http://192.168.40.181:1313/resource/token/typography/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/reference/typography/</guid>
+      <guid>http://192.168.40.181:1313/resource/token/typography/</guid>
     
       <description> </description>
     
