@@ -10,7 +10,7 @@ keywords:
 type: 
 date:
 - 2024-06-30 Sunday
-description: 
-title: Layout
+description: Showcasing my interpretation of Material's layouts specification
+title: Layouts
 lastMod: 2024-06-30
 ---

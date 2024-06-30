@@ -6,25 +6,32 @@
 
         {{ range .Sections }}
 
-            <a  class="component list-item" one with-icon
+            <a  class="component list-item" three with-avatar
                 href="{{ .Permalink }}">
 
                 {{/*  TODO Turn this into a slice to iterate  */}}
                 {{ if eq .Title "Software" }}
-                    <i>terminal</i>
+                    <i class="avatar">terminal</i>
                 {{ else if eq .Title "University" }}
-                    <i>school</i>
+                    <i class="avatar">school</i>
                 {{ else }}
-                    <i>quick_reference</i>
+                    <i class="avatar">quick_reference</i>
                 {{ end }}
 
-                <span class="headline-small">
-                    {{ .Title }}
-                </span>
+                <div class="list-content">
+                    <span class="headline-small">
+                        {{ .Title }}
+                        
+                        <sup class="page-count code-typeface">
+                            {{len .Pages }}
+                        </sup>
+                    </span>
+                    
+                    <span class="description">
+                        {{ .Description }}
+                    </span>
+                </div>
 
-                <sup class="page-count code-typeface">
-                    {{len .Pages }}
-                </sup>
                 
             </a>
 

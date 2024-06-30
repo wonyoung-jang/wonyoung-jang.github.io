@@ -10,7 +10,7 @@ keywords:
 type: 
 date:
 - 2024-04-13 Saturday
-description: 
-title: Reference
-lastMod: 2024-06-27
+description: General references for wonyoungjang.org
+title: References
+lastMod: 2024-06-30
 ---

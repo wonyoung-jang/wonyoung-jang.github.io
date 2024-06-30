@@ -10,7 +10,7 @@ keywords:
 type: 
 date:
 - 2024-04-12 Friday
-description: 
+description: Some personal software development projects
 title: Software
-lastMod: 2024-06-27
+lastMod: 2024-06-30
 ---

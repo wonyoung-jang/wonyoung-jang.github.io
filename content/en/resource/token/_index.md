@@ -10,7 +10,7 @@ keywords:
 type: 
 date:
 - 2024-06-30 Sunday
-description: 
-title: Token
+description: Showcasing my interpretation of Material's design tokens
+title: Tokens
 lastMod: 2024-06-30
 ---

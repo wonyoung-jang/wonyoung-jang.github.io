@@ -31,11 +31,11 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Token on Wonyoung Jang</title>
+    <title>Tokens on Wonyoung Jang</title>
     
     <link>http://192.168.40.181:1313/resource/token/</link>
     
-    <description>Recent content in Token on Wonyoung Jang</description>
+    <description>Recent content in Tokens on Wonyoung Jang</description>
     
     <generator>Hugo</generator>
     
@@ -51,7 +51,7 @@
     <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     
     
-    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2024 10:13:36 -0400</lastBuildDate>
     
     
       <atom:link href="http://192.168.40.181:1313/resource/token/index.xml" rel="self" type="application/rss+xml" />

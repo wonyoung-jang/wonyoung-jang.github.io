@@ -3,22 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://192.168.40.181:1313/resource/layout/</loc>
-    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/</loc>
-    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/now/</loc>
-    <lastmod>2024-06-28T16:22:28-04:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -32,8 +17,23 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.40.181:1313/resource/token/</loc>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.40.181:1313/project/university/</loc>
     <lastmod>2024-06-28T16:17:43-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/</loc>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/now/</loc>
+    <lastmod>2024-06-28T16:22:28-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -43,22 +43,22 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/colors/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/components/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/layout/feed-layout/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/layout/fixed-and-flexible-layout/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -68,42 +68,42 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/layout/list-detail-layout/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/motion/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/shapes/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/layout/single-pane-layout/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/layout/split-pane-layout/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/states-and-elevation/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/layout/supporting-pane-layout/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/typography/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

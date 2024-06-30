@@ -16,29 +16,51 @@
   }
   
   &[two] {
-    --container-flex-flow: column nowrap;
-    --container-align-items: flex-start;
-    --container-justify-content: center;
     --container-height: 72px;
   }
   
   &[three] {
-    --container-flex-flow: column nowrap;
-    --container-align-items: flex-start;
-    --container-justify-content: center;
     --container-padding: var(--size-3) var(--size-4);
     --container-height: 88px;
   }
 
   &[with-icon] {
-    --container-padding: var(--size-2) 0;
-
     & i {
       font-size: var(--size-10);
       margin-inline: var(--size-4);
       margin-block: var(--size-2);
       color: var(--icon-color);
       overflow: visible;
+    }
+  }
+
+  &[with-avatar] {
+    & .avatar {
+      font-size: var(--size-5);
+      height: var(--size-10);
+      width: var(--size-10);
+      background-color: var(--color-primary-container);
+      color: var(--color-on-primary-container);
+      border-radius: var(--shape-corner-xl);
+      margin-inline-end: var(--size-4);
+    }
+  }
+
+  
+  & .list-content {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    & .description {
+      color: var(--color-on-surface-variant);
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    & .page-count {
+      color: var(--color-on-surface-variant);
     }
   }
 }
