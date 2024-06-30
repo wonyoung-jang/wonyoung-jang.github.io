@@ -3,32 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://192.168.40.181:1313/resource/layout/</loc>
-    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/reference/</loc>
-    <lastmod>2024-06-28T16:17:43-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/project/software/</loc>
-    <lastmod>2024-06-28T16:17:43-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/token/</loc>
-    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/project/university/</loc>
-    <lastmod>2024-06-28T16:17:43-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-06-30T10:13:36-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -128,12 +128,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/project/</loc>
-    <lastmod>2024-06-26T12:26:15-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resource/</loc>
-    <lastmod>2024-06-26T12:26:15-04:00</lastmod>
+    <lastmod>2024-06-30T11:19:02-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
