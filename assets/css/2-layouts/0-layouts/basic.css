@@ -33,6 +33,7 @@
 
 /* Compact: 0px-599px */
 @media screen and (max-width: 600px) {
+  .basic-splitpane,  
   .basic-fixedflex:not(#single) {
     & .pane {
       --display: none;
