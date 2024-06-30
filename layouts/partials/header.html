@@ -54,6 +54,7 @@
         {{ end }}
 
         {{ $name := .Name }}
+        {{ $icon := .Pre }}
 
         {{ with .Identifier }}
             {{ with T . }}
@@ -67,7 +68,7 @@
                     {{ printf " %s=%q" $k $v | safeHTMLAttr }}
                 {{ end }}
             {{ end }}>
-            {{ .Pre }}
+            {{ $icon }}
             {{ $name }}
         </a>
     {{ end }}

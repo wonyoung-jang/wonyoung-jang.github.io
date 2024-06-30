@@ -103,10 +103,13 @@
         </div>
     </nav>
 
+    {{ $next := .Next }}
+    {{ $prev := .Prev }}
     {{/* Backlinks */}}
     
     {{ $re := printf "/%s" $.File.BaseFileName }}
     {{ $backlinks := slice }} 
+    {{ $nextprev := slice $next $prev }}
 
     {{ range where site.RegularPages "Kind" "page" }} 
         {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }} 
@@ -115,16 +118,21 @@
     {{ end }} 
 
     {{/* Related */}}
-    {{ $related := site.RegularPages.Related . | complement $backlinks | first 4 }}
+    {{ $related := site.RegularPages.Related . | complement $backlinks | complement $nextprev |first 4 }}
     {{ with $related }}
         <nav id="related-pages">
             <h5>See also</h5>
             <div class="divider"></div>
-            
             {{ range $i, $p := . }}
-                <a href="{{ .RelPermalink }}">
-                    {{ .Title }}
+                <a  class="component card" outlined
+                    href="{{ .RelPermalink }}">
+                    <div class="card-content">
+                        <span class="card-title title-small">
+                            {{ .Title }}
+                        </span>
+                    </div>
                 </a>
+
             {{ end }}
         </nav>
     {{ end }}
@@ -136,8 +144,13 @@
             <div class="divider"></div>
             {{ if gt (len $backlinks) 0 }}
                 {{ range $backlinks }}
-                    <a href="{{ .RelPermalink }}">
-                        {{ .Title }} 
+                    <a  class="component card" filled
+                        href="{{ .RelPermalink }}">
+                        <div class="card-content">
+                            <span class="card-title title-small">
+                                {{ .Title }}
+                            </span>
+                        </div>
                     </a>
                 {{ end }}
             {{ else }}
