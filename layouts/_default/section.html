@@ -4,40 +4,41 @@
 
     <section class="layout pane" id="sections-page">
 
-        {{ range .Sections }}
+        <div class="list-container">
+            {{ range .Sections }}
 
-            <a  class="component list-item" three with-avatar
-                href="{{ .Permalink }}">
+                <a  class="component list-item" three with-avatar
+                    href="{{ .Permalink }}">
 
-                {{/*  TODO Turn this into a slice to iterate  */}}
-                {{ if eq .Title "Software" }}
-                    <i class="avatar">terminal</i>
-                {{ else if eq .Title "University" }}
-                    <i class="avatar">school</i>
-                {{ else }}
-                    <i class="avatar">quick_reference</i>
-                {{ end }}
+                    {{/*  TODO Turn this into a slice to iterate  */}}
+                    {{ if eq .Title "Software" }}
+                        <i class="avatar">terminal</i>
+                    {{ else if eq .Title "University" }}
+                        <i class="avatar">school</i>
+                    {{ else }}
+                        <i class="avatar">quick_reference</i>
+                    {{ end }}
 
-                <div class="list-content">
-                    <span class="headline-small">
-                        {{ .Title }}
+                    <div class="list-content">
+                        <span class="headline-small">
+                            {{ .Title }}
+                            
+                            <sup class="page-count code-typeface">
+                                {{len .Pages }}
+                            </sup>
+                        </span>
                         
-                        <sup class="page-count code-typeface">
-                            {{len .Pages }}
-                        </sup>
-                    </span>
+                        <span class="description">
+                            {{ .Description }}
+                        </span>
+                    </div>
+
                     
-                    <span class="description">
-                        {{ .Description }}
-                    </span>
-                </div>
+                </a>
 
-                
-            </a>
-
-            <div class="divider"></div>
-        {{ end }}
-
+                <div class="divider"></div>
+            {{ end }}
+        </div>
     </section>
 
 </article>

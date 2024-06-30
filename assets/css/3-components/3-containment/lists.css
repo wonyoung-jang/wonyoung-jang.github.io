@@ -1,11 +1,18 @@
+.list-container {
+  display: flex;
+  flex-flow: column nowrap;
+  outline: 0;
+  padding: var(--size-2) 0;
+  position: relative;
+}
+
 .list-item {
   --container-display: flex;
   --container-flex-flow: row nowrap;
-  --container-align-items: center;
+  --container-align-items: flex-start;
   --container-justify-content: flex-start;
   --container-padding: var(--size-2) var(--size-4);
   --container-width: 100%;
-
 
   --icon-color: var(--color-on-surface);
   --text-color: var(--color-on-surface);
@@ -36,6 +43,7 @@
 
   &[with-avatar] {
     & .avatar {
+      align-self: flex-start;
       font-size: var(--size-5);
       height: var(--size-10);
       width: var(--size-10);

@@ -21,7 +21,7 @@
   --input-font-size:  14px;
 
   /* Shape corner */
-  --input-shape-corner: 2px;
+  --input-shape-corner: 0.8px;
 
   /* Color primary */
   --input-color-hue: 302.8deg;
