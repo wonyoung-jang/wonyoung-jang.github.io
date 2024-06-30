@@ -1,39 +1,37 @@
-a:not(.component) {
+a {
+  display: inline;
+  vertical-align: text-bottom;
   text-decoration: none;
-  color: var(--color-primary);
-  border-radius: 0px;
 
-  &:hover {
-    text-decoration: none;
-    color: var(--color-add30);
-
+  &:not(.component) {
+    color: var(--color-primary);
+  
     &[rel*="external"] {
-      text-decoration: none;
-      color: var(--color-sub30);
+      color: var(--color-tertiary);
+    }
+    
+    &:hover {
+      color: var(--color-add30);
+
+      &[rel*="external"] {
+        color: var(--color-sub30);
+      }
     }
   }
- 
-  &[rel*="external"] {
-    display: inline-flex;
-    display: inline flex;
-    text-decoration: none;
-    align-items: center;
-    color: var(--color-tertiary);
-  }
-}
-
-a.component {
-  text-decoration: none;
-
+  
   &:hover {
     text-decoration: none;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
+  & .anchor {
+    display: none;
+  }
+
   &:hover .anchor {
-    display: inline-flex;
-    display: inline flex;
+    display: inline;
+    vertical-align: text-bottom;
     color: var(--color-on-surface-variant);
     margin-inline-start: var(--size-2);
     user-select: none;

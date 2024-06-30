@@ -32,7 +32,6 @@ footer {
     width: 100%;
 
     &:hover {
-      text-decoration: underline;
       background-color: var(--color-surface-container-highest);
     }
   }

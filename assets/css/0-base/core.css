@@ -44,16 +44,6 @@ main {
   scrollbar-width: thin;
 }
 
-a {
-  text-decoration: none;
-  vertical-align: bottom;
-
-  &:hover,
-  &:focus-visible {
-    text-decoration: underline;
-  }
-}
-
 /* Icons */
 i {
   font-family: var(--font-icon);
