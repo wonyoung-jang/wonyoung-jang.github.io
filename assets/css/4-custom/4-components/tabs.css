@@ -38,8 +38,8 @@
     --bg-color: var(--color-surface-container-high);
 
     &.active {
-      background-color: var(--color-secondary-container);
-      color: var(--color-on-secondary-container)
+      background-color: var(--color-surface-container-lowest);
+      color: var(--color-primary)
     }
   }
 }
@@ -47,7 +47,7 @@
 /* Custom */
 .tabs,
 .tab {
-  border-radius: var(--shape-corner-m-top);
+  border-radius: var(--shape-corner-xl-top);
 }
 
 .tabs {

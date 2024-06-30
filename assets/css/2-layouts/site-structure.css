@@ -10,8 +10,7 @@
   --min-height: calc(100dvh - 112px);
   --margin: 0;
   --gap: 0;
-
-  --border: inherit;
+  --border: initial;
 }
 
 .panes {
@@ -27,8 +26,7 @@
   --padding: 0 var(--spacing-panes);
   --margin: 0;
   --gap: var(--spacing-panes);
-
-  --border: inherit;
+  --border: initial;
 }
 
 .pane {
@@ -44,8 +42,7 @@
   --padding: var(--spacing-panes);
   --margin: 0;
   --gap: 0;
-
-  --border: inherit;
+  --border: initial;
   
   &.fixed-pane {
     --width: 100%;

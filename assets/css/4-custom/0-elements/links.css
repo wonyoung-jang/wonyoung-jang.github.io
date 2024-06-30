@@ -1,14 +1,14 @@
 a:not(.component) {
   text-decoration: none;
   color: var(--color-primary);
-  border-radius: unset;
+  border-radius: 0px;
 
   &:hover {
-    text-decoration: unset;
+    text-decoration: none;
     color: var(--color-add30);
 
     &[rel*="external"] {
-      text-decoration: unset;
+      text-decoration: none;
       color: var(--color-sub30);
     }
   }

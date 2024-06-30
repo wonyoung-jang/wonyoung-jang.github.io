@@ -33,7 +33,7 @@
   <channel>
     <title>Project on Wonyoung Jang</title>
     
-    <link>https://wonyoungjang.org/project/</link>
+    <link>http://192.168.40.181:1313/project/</link>
     
     <description>Recent content in Project on Wonyoung Jang</description>
     
@@ -54,7 +54,7 @@
     <lastBuildDate></lastBuildDate>
     
     
-      <atom:link href="https://wonyoungjang.org/project/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/project/index.xml" rel="self" type="application/rss+xml" />
     
 
     
