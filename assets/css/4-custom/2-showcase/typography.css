@@ -2,8 +2,6 @@
     display: flex;
     flex-flow: row wrap;
     gap: var(--size-2);
-    background-color: var(--color-surface-container);
-    padding: var(--size-3);
 
     & h2 {
         margin-bottom: 1rem;
@@ -19,7 +17,7 @@
         padding-bottom: 1rem;
     
         color: var(--color-on-surface);
-        background-color: var(--color-surface-container-high);
+        background-color: var(--color-surface-container);
         
         & div {
             flex: 1 1 0;
@@ -46,8 +44,7 @@
             padding: 1rem;
             min-height: var(--size-16);
             margin: unset;
-            border-radius: var(--shape-corner-xl-top);
-            background-color: var(--color-surface-container-highest);
+            background-color: var(--color-surface-container-high);
         }
     }
 }
@@ -56,9 +53,6 @@
     display: flex;
     flex-flow: column nowrap;
     gap: var(--size-2);
-    background-color: var(--color-surface-container);
-    padding: var(--size-3);
-    margin-top: var(--size-8);
 
     & h2 {
         margin-bottom: 1rem;
@@ -74,6 +68,13 @@
         padding: 1em;
         border-radius: var(--shape-corner-m);
         color: var(--color-on-surface);
-        background-color: var(--color-surface-container-high);
+        background-color: var(--color-surface-container);
     }
+}
+
+.typeface-container,
+.typescale-container {
+    padding: var(--spacing-panes);
+    margin: var(--spacing-panes);
+    background-color: var(--color-surface);
 }
