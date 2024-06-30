@@ -23,8 +23,11 @@
     
     border-radius: var(--shape-corner-m);
     padding: var(--size-5);
-    
-    & a {
+  }
+
+  & #backlinks,
+  & #related-pages {
+    & a:not(.button) {
       display: flex;
       flex-flow: row wrap;
       min-height: 42px;
@@ -34,6 +37,16 @@
       &:hover {
         background-color: var(--color-surface-container-highest);
       }
+    }
+  }
+
+  & #share-links {
+    & .share-buttons,
+    & .action-buttons {
+      display: flex;
+      flex-flow: row wrap;
+      gap: var(--size-2);
+      margin-top: var(--size-3);
     }
   }
 }
