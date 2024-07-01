@@ -29,3 +29,11 @@
     }
   }
 }
+
+.swatches-admonitions,
+.swatches-classic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: var(--spacing-panes);
+  gap: var(--size-2);
+}
