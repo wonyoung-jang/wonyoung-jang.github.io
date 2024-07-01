@@ -5,13 +5,13 @@
 }
 
 .page-navigation {
-  --bg: var(--color-surface-container-low);
+  --bg: var(--color-surface);
   --shape: var(--shape-corner-none);
   margin-top: var(--spacing-panes);
 }
 
 .page-links {
-  --bg: var(--color-surface-container-low);
+  --bg: var(--color-surface);
   --shape: var(--shape-corner-none);
 }
 

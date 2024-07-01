@@ -2,7 +2,7 @@
 <section class="layout page-links">
     <nav id="share-links" aria-label="Share Links">
         <h5>Share</h5>
-        <div class="divider"></div>
+        <div class="divider" end></div>
 
         {{ $pageurl := .Permalink }}
         {{ $title := .Title }}
@@ -122,9 +122,9 @@
     {{ with $related }}
         <nav id="related-pages">
             <h5>Related</h5>
-            <div class="divider"></div>
+            <div class="divider" end></div>
             {{ range $i, $p := . }}
-                <a  class="component card" outlined
+                <a  class="component card" elevated
                     href="{{ .RelPermalink }}">
                     <div class="card-content">
                         <span class="card-title title-small">
@@ -141,10 +141,10 @@
     {{ if gt (len $backlinks) 0 }}
         <nav id="backlinks" aria-label="Backlinks">
             <h5>Backlinks</h5>
-            <div class="divider"></div>
+            <div class="divider" end></div>
             {{ if gt (len $backlinks) 0 }}
                 {{ range $backlinks }}
-                    <a  class="component card" filled
+                    <a  class="component card" elevated
                         href="{{ .RelPermalink }}">
                         <div class="card-content">
                             <span class="card-title title-small">

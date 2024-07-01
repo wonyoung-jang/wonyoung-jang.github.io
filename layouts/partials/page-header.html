@@ -13,6 +13,7 @@
                         {{ .LinkTitle }}
                     {{ end }} 
                 </a>
+
                 <span class="breadcrumb-delimiter">/</span>
             {{ end }}
         </nav>    
@@ -41,4 +42,6 @@
             {{ partial "github-button.html" (dict "githubRepo" .) }}
         {{ end }}
     </section>
+
+    <div class="divider" mid></div>
 {{ end }}

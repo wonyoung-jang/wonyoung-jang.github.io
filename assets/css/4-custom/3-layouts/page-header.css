@@ -11,8 +11,6 @@
   --padding: var(--size-8);
   --gap: var(--size-8);
 
-  border-bottom: 1px solid var(--color-outline-variant);
-
   & .breadcrumbs {
     border-radius: unset;
     display: flex;
