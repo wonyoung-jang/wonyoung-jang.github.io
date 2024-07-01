@@ -1,11 +1,15 @@
 body {
   &.dark {
+    --color-token-set-container: var(--palette-neutral-variant-10);
+    
     & #moon {
       display: none;
     }
   }
-
+  
   &:not(.dark) {
+    --color-token-set-container: var(--palette-neutral-variant-90);
+    
     & #sun {
       display: none;
     }

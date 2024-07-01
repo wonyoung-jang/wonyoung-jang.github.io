@@ -1,36 +1,36 @@
-.panes.canonical-feed .pane {
+.canonical-feed .pane {
   --gap: var(--size-2);
   --display: flex;
   --flex-flow: row wrap;
   
   & .card {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
   }
 }
 
-.panes.canonical-list-detail .pane {
+.canonical-list-detail .pane {
   &.detail-pane,
   &.list-pane {
     --flex: 1 1 0;
   }
 }
 
-.panes.canonical-supporting-pane {
+.canonical-supporting-pane {
   --flex-flow: column nowrap;
 }
 
 /* Compact: 0px-599px */
 @media screen and (max-width: 599px) {
-  .panes.canonical-list-detail .detail-pane {
+  .canonical-list-detail .detail-pane {
     --display: none;
   }
 }
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
-  .panes.canonical-feed .pane .card {
+  .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 2 - var(--spacing-panes));
-    
+
     & img {
       max-height: 50%;
     }
@@ -39,15 +39,15 @@
 
 /* Expanded: 840px-1199px */
 @media screen and (min-width: 840px) {
-  .panes.canonical-feed .pane .card {
+  .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 3 - var(--spacing-panes));
-    
+
     & img {
       max-height: 33%;
     }
   }  
 
-  .panes.canonical-supporting-pane {
+  .canonical-supporting-pane {
     --flex-flow: row nowrap;
     
     & .pane.focus-pane {
@@ -63,7 +63,7 @@
 
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
-  .panes.canonical-feed .pane .card {
+  .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 4 - var(--spacing-panes));
     
     & img {
@@ -74,7 +74,7 @@
 
 /* Extra large: 1600px+ */
 @media screen and (min-width: 1600px) {
-  .panes.canonical-feed .pane .card {
+  .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 5 - var(--spacing-panes));
     
     & img {

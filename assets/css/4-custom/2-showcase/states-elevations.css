@@ -4,9 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
   grid-auto-rows: minmax(128px, auto);
   gap: var(--size-2);
-  padding: var(--spacing-panes);
   margin: var(--spacing-panes);
-  background-color: var(--color-surface);
 
 
   & h2 {

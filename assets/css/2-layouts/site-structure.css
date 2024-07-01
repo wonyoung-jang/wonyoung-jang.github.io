@@ -11,6 +11,9 @@
   --margin: 0;
   --gap: 0;
   --border: initial;
+
+  --bg: var(--color-surface);
+  --shape: var(--shape-corner-none);
 }
 
 .panes {
@@ -27,6 +30,9 @@
   --margin: 0;
   --gap: var(--spacing-panes);
   --border: initial;
+
+  --bg: inherit;
+  --shape: inherit;
 }
 
 .pane {
@@ -44,8 +50,10 @@
   --gap: 0;
   --border: initial;
   
+  --bg: inherit;
+  --shape: var(--shape-corner-xl);
+
   &.fixed-pane {
     --width: 100%;
   }
 }
-

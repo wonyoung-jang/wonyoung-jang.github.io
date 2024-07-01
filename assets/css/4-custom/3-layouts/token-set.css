@@ -15,7 +15,7 @@
   --shape: initial;
   --border: initial;
 
-  --bg: var(--color-surface-container-low);
+  --bg: var(--color-token-set-container);
 
   margin-top: var(--size-3);
 
@@ -29,10 +29,10 @@
     font-weight: var(--typescale-title-large-weight);
     line-height: var(--typescale-title-large-line-height);
     color: var(--color-on-surface);
-    background-color: var(--color-surface-container-low);
+    background-color: var(--color-surface-container-high);
 
     &:hover {
-      background-color: var(--color-surface-container);
+      background-color: var(--color-surface-container-highest);
     }
   }
 }

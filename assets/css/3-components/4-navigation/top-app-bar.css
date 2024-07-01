@@ -1,5 +1,5 @@
 .top-app-bar {
-  --bg-color: var(--color-surface-container);
+  /* --bg-color: var(--color-surface);*/
   
   &[center] {
     --container-shape: 0;

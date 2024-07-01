@@ -16,8 +16,6 @@
   --active-indicator-shape: 3px 3px 0 0;
   --active-indicator-color: var(--color-primary);
 
-  --bg-color: var(--color-surface-container-low);
-
   & .tab {
     flex: 1 1 0;
     min-width: fit-content;
@@ -35,10 +33,10 @@
 
     --icon-color: var(--color-on-surface-variant);
     --text-color: var(--color-on-surface-variant);
-    --bg-color: var(--color-surface-container-high);
+    --bg-color: var(--color-surface-container);
 
     &.active {
-      background-color: var(--color-surface-container-lowest);
+      background-color: var(--color-surface-container-high);
       color: var(--color-primary)
     }
   }

@@ -17,8 +17,8 @@
         padding-bottom: 1rem;
     
         color: var(--color-on-surface);
-        background-color: var(--color-surface-container);
-        
+        background-color: var(--color-surface-container-lowest);
+                
         & div {
             flex: 1 1 0;
             margin-block: 1rem;
@@ -68,13 +68,11 @@
         padding: 1em;
         border-radius: var(--shape-corner-m);
         color: var(--color-on-surface);
-        background-color: var(--color-surface-container);
+        background-color: var(--color-surface-container-lowest);
     }
 }
 
 .typeface-container,
 .typescale-container {
-    padding: var(--spacing-panes);
     margin: var(--spacing-panes);
-    background-color: var(--color-surface);
 }

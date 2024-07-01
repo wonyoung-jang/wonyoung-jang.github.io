@@ -1,16 +1,11 @@
 {{ define "main" }}
-<article class="layout panes canonical-supporting-pane" id="page-colors">
-  
-  <section class="layout pane focus-pane">
-    <h2 class="pane-heading">Swatches</h2>
-    {{ partial "colors/system-tokens.html" . }}
-    {{ partial "colors/semantic-swatches.html" . }}
-  </section>
+<article class="layout panes basic-singlepane">
 
-  <section class="layout pane supporting-pane">
-    <h2 class="pane-heading">Palettes</h2>
+  <section class="layout pane">
     {{ partial "colors/key-color.html" . }}
     {{ partial "colors/reference-palettes.html" . }}
+    {{ partial "colors/system-tokens.html" . }}
+    {{ partial "colors/semantic-swatches.html" . }}
   </section>
         
 </article>

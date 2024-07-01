@@ -5,9 +5,7 @@
     border-radius: var(--shape-corner-xl);
     gap: var(--size-5);
     
-    padding: var(--spacing-panes);
     margin: var(--spacing-panes);
-    background-color: var(--color-surface);
     
     overflow-x: auto;
 
@@ -23,7 +21,7 @@
         padding: var(--size-3);
         justify-content: center;
         align-items: center;
-        background-color: var(--color-surface-container);
+        background-color: var(--color-surface-container-lowest);
         color: var(--color-on-surface);
         min-height: var(--size-20);
         min-width: var(--size-20);

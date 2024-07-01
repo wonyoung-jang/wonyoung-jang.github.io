@@ -1,15 +1,25 @@
-<details open>
-  <summary><h2 class="title-large">Semantic</h2></summary>
+<details class="layout token-set" open>
+  <summary class="token-set-title">Semantic</summary>
   
   {{ range $group, $swatches := .Site.Data.palettes }}
     {{ if eq $group "main" }}
       {{ continue }}
     {{ end }}
-    <details open>
-      <summary><h3 class="title-medium">{{ title $group }} swatches</h3></summary>
+    <details class="layout token-set" open>
+      <summary class="token-set-title">{{ title $group }} swatches</summary>
       <div class="swatches-{{ $group }}">
         {{ range $swatches }}
-          {{ partial "colors/semantic-swatch.html" . }}
+          {{ $name := . }}
+          <div class="component swatch">
+            <div class="{{ $name }}">
+              <span>{{ title $name }}</span>
+              <span>On {{ title $name }}</span>
+            </div>
+            <div class="{{ $name }}-container">
+              <span>{{ title $name }} Container</span>
+              <span>On {{ title $name }} Container</span>
+            </div>
+          </div>
         {{ end }}
       </div>
     </details>
