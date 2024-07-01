@@ -65,3 +65,10 @@ footer {
     --text-color: var(--color-on-surface-variant);
   }
 }
+
+/* Compact: add space for scrollbar */
+@media screen and (max-width: 599px) {
+  footer {
+    margin-right: var(--size-2)
+  }
+}

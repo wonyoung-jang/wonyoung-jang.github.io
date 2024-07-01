@@ -4,8 +4,8 @@
   <section class="layout pane">
 
     <table>
-      <thead>
-        <tr class="title-small">
+      <thead class="title-small">
+        <tr>
           <th>#</th>
           <th>Title</th>
           <th>Link</th>
@@ -16,13 +16,13 @@
           <th>Layout</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="label-medium">
         {{ $index := 0 }}
         {{ range .Site.Pages.ByParam "title" }}
           {{ if ne .Title "" }}
             {{ $index = add $index 1 }}
 
-            <tr class="label-medium">
+            <tr>
               <td>{{ $index }}</td>
               <td>{{ .Title }}</td>
               <td>
