@@ -1,5 +1,5 @@
 .page-header {
-  --bg: var(--color-surface-container-low);
+  --bg: var(--color-surface);
   --shape: var(--shape-corner-none);
   margin-bottom: var(--spacing-panes);
 }
@@ -17,6 +17,6 @@
 
 header,
 footer {
-  background-color: var(--color-surface-container-lowest) !important;
+  background-color: var(--color-surface-container);
   border-radius: var(--shape-corner-none);
 }

@@ -12,10 +12,6 @@
   --container-justify-content: stretch;
   --container-gap: var(--size-2);
   
-  --active-indicator-height: 3px;
-  --active-indicator-shape: 3px 3px 0 0;
-  --active-indicator-color: var(--color-primary);
-
   & .tab {
     flex: 1 1 0;
     min-width: fit-content;
@@ -33,11 +29,29 @@
 
     --icon-color: var(--color-on-surface-variant);
     --text-color: var(--color-on-surface-variant);
-    --bg-color: var(--color-surface-container);
+    --bg-color: var(--color-surface-container-high);
 
     &.active {
-      background-color: var(--color-surface-container-high);
-      color: var(--color-primary)
+      --icon-color: var(--color-primary);
+      --text-color: var(--color-primary);
+      --bg-color: var(--color-surface);
+    }
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 5;
+      bottom: 0;
+      left: 42.5%;
+      width: 15%;
+      height: var(--size-1);
+      border-radius: var(--shape-corner-xl-top);
+      background-color: var(--color-primary);
+    }
+
+    &:not(.active)::before {
+      display: none;
     }
   }
 }
