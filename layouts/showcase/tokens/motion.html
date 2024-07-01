@@ -1,8 +1,9 @@
 {{ define "main" }}
     <style>
         .container {
-            margin-bottom: 40px;
-            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 40px;
         }
         .box {
             width: 100px;
@@ -55,28 +56,17 @@
         <section class="layout pane">
             <details class="layout token-set" open>
                 <summary class="token-set-title">Transitions</summary>
+
                 <div class="container">
-                    <h3>Fade Transition</h3>
+                    <span>Fade Transition</span>
                     <div class="box fade"></div>
-                </div>
-                
-                <div class="container">
-                    <h3>Slide Transition</h3>
+                    <span>Slide Transition</span>
                     <div class="box slide"></div>
-                </div>
-                
-                <div class="container">
-                    <h3>Scale Transition</h3>
+                    <span>Scale Transition</span>
                     <div class="box scale"></div>
-                </div>
-                
-                <div class="container">
-                    <h3>Clean Fade</h3>
+                    <span>Clean Fade</span>
                     <div class="box clean-fade-in"></div>
-                </div>
-                
-                <div class="container">
-                    <h3>Skeleton Loader</h3>
+                    <span>Skeleton Loader</span>
                     <div class="skeleton"></div>
                 </div>
             </details>
