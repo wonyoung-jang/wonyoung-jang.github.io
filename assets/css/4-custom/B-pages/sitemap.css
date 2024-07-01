@@ -1,16 +1,13 @@
-#sitemap {
+#page-sitemap {
   display: flex;
   flex-flow: row nowrap;
   padding: unset;
   margin: unset;
 
-  & h6 {
-    display: flex;
-    flex-flow: row nowrap;
-    text-overflow: ellipsis;
-    text-wrap: nowrap;
-    border-left: 1px solid var(--color-outline);
-    padding: var(--size-4);
+  & * {
+    font-size: var(--typescale-label-medium-size);
+    line-height: var(--typescale-label-medium-line-height);
+    font-weight: var(--typescale-label-medium-weight);    
+    font-family: var(--typescale-label-medium-font);
   }
 }
-

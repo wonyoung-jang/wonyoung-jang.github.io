@@ -61,7 +61,6 @@
       max-width: calc(100% - var(--size-14));
     }
   }
-
   
   & .list-content {
     display: flex;

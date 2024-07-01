@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-<article class="layout panes basic-singlepane">
-  <section class="layout pane" id="sitemap">
+<article class="layout panes basic-singlepane" id="page-sitemap">
+  <section class="layout pane">
 
     <table>
       <thead>
@@ -21,11 +21,14 @@
         {{ range .Site.Pages.ByParam "title" }}
           {{ if ne .Title "" }}
             {{ $index = add $index 1 }}
-            <tr class="label-medium">
+            <tr>
               <td>{{ $index }}</td>
               <td>{{ .Title }}</td>
               <td>
-                <a href="{{ .Permalink }}">{{ .Permalink }}</a>
+                <a
+                  href="{{ .Permalink | safeHTML }}">
+                  {{ .Permalink | safeHTML }}
+                </a>
               </td>
               <td>{{ .Date.Format "January 02, 2006" }}</td>
               <td>{{ .Lastmod.Format "January 02, 2006" }}</td>
