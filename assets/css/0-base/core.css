@@ -157,7 +157,7 @@ footer,
 /* Scrollbar */
 @media (pointer: fine) {
   /* Firefox */
-  main {
+  * {
     scrollbar-color: var(--color-primary) transparent;
     scrollbar-width: thin;
 
