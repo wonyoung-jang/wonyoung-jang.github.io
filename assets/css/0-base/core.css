@@ -5,6 +5,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
+/* Logseq Graph */
 html.is-publish-mode {
   & header,
   & .page-header,
@@ -23,6 +24,7 @@ html.is-publish-mode {
   }
 }
 
+/* Body */
 body {
   display: flex;
   flex-flow: column nowrap;
@@ -36,6 +38,7 @@ body {
   color: var(--color-on-surface);
 }
 
+/* Main */
 main {
   max-height: calc(100dvh - 112px);
 
@@ -94,10 +97,12 @@ video {
     padding var(--motion-duration-short3);
 }
 
+/* SVG */
 svg {
   fill: currentColor;
 }
 
+/* Details/summary/expansions */
 details {
   & summary {
     cursor: pointer;
@@ -140,6 +145,13 @@ footer,
   transition-property:  font-size, line-height, margin, height, min-height,
                         max-height, border-radius, min-width, max-width, 
                         width, padding, transform, visibility, opacity;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion) {
+  :root {
+      animation: none;
+  }
 }
 
 /* Scrollbar */
