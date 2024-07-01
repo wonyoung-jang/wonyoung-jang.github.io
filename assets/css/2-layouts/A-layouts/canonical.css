@@ -15,7 +15,7 @@
   }
 }
 
-.canonical-supporting-pane {
+.panes.canonical-supporting-pane {
   --flex-flow: column nowrap;
 }
 
@@ -47,7 +47,7 @@
     }
   }  
 
-  .canonical-supporting-pane {
+  .panes.canonical-supporting-pane {
     --flex-flow: row nowrap;
     
     & .pane.focus-pane {
