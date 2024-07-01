@@ -38,7 +38,7 @@ footer:
     weight: 40
   - identifier: RSS
     name: RSS
-    pageRef: /index.xml
+    url: https://wonyoungjang.org/index.xml
     weight: 50
 
 connect:

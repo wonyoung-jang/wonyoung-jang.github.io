@@ -18,13 +18,13 @@ home:
 
   buttons:
     - name: Software development projects
-      url: "/project/software"
+      url: /project/software
     - name: University coursework projects
-      url: "/project/university"
+      url: /project/university
 
 author:
-  name: "Wonyoung Jang"
-  email: "contact@wonyoungjang.org"
+  name: Wonyoung Jang
+  email: contact@wonyoungjang.org
 
 fuseOpts:
   # Basic
