@@ -58,21 +58,19 @@
   }
 }
 
-.page-header {
-  --bg: var(--color-surface);
+.page-header,
+.page-navigation,
+.page-links {
+  --bg: inherit;
   --shape: var(--shape-corner-none);
+}
+
+.page-header {
   margin-bottom: var(--spacing-panes);
 }
 
 .page-navigation {
-  --bg: var(--color-surface);
-  --shape: var(--shape-corner-none);
   margin-top: var(--spacing-panes);
-}
-
-.page-links {
-  --bg: var(--color-surface);
-  --shape: var(--shape-corner-none);
 }
 
 header,
