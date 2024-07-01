@@ -1,13 +1,4 @@
 #page-sitemap {
-  display: flex;
-  flex-flow: row nowrap;
   padding: unset;
   margin: unset;
-
-  & * {
-    font-size: var(--typescale-label-medium-size);
-    line-height: var(--typescale-label-medium-line-height);
-    font-weight: var(--typescale-label-medium-weight);    
-    font-family: var(--typescale-label-medium-font);
-  }
 }
