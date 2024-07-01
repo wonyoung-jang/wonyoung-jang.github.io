@@ -33,7 +33,7 @@
   <channel>
     <title>Layouts on Wonyoung Jang</title>
     
-    <link>http://192.168.40.181:1313/resource/layout/</link>
+    <link>https://wonyoungjang.org/resource/layout/</link>
     
     <description>Recent content in Layouts on Wonyoung Jang</description>
     
@@ -54,7 +54,7 @@
     <lastBuildDate>Sun, 30 Jun 2024 10:13:36 -0400</lastBuildDate>
     
     
-      <atom:link href="http://192.168.40.181:1313/resource/layout/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resource/layout/index.xml" rel="self" type="application/rss+xml" />
     
 
     
@@ -63,13 +63,13 @@
     
       <title>Feed layout</title>
     
-      <link>http://192.168.40.181:1313/resource/layout/feed-layout/</link>
+      <link>https://wonyoungjang.org/resource/layout/feed-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/layout/feed-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/layout/feed-layout/</guid>
     
       <description> </description>
     
@@ -81,13 +81,13 @@
     
       <title>Fixed and flexible layout</title>
     
-      <link>http://192.168.40.181:1313/resource/layout/fixed-and-flexible-layout/</link>
+      <link>https://wonyoungjang.org/resource/layout/fixed-and-flexible-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/layout/fixed-and-flexible-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/layout/fixed-and-flexible-layout/</guid>
     
       <description> </description>
     
@@ -99,13 +99,13 @@
     
       <title>List-detail layout</title>
     
-      <link>http://192.168.40.181:1313/resource/layout/list-detail-layout/</link>
+      <link>https://wonyoungjang.org/resource/layout/list-detail-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/layout/list-detail-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/layout/list-detail-layout/</guid>
     
       <description> </description>
     
@@ -117,13 +117,13 @@
     
       <title>Single pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/layout/single-pane-layout/</link>
+      <link>https://wonyoungjang.org/resource/layout/single-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/layout/single-pane-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/layout/single-pane-layout/</guid>
     
       <description> </description>
     
@@ -135,13 +135,13 @@
     
       <title>Split-pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/layout/split-pane-layout/</link>
+      <link>https://wonyoungjang.org/resource/layout/split-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/layout/split-pane-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/layout/split-pane-layout/</guid>
     
       <description> </description>
     
@@ -153,13 +153,13 @@
     
       <title>Supporting pane layout</title>
     
-      <link>http://192.168.40.181:1313/resource/layout/supporting-pane-layout/</link>
+      <link>https://wonyoungjang.org/resource/layout/supporting-pane-layout/</link>
     
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     
       <author>contact@wonyoungjang.org (Wonyoung Jang)</author>
     
-      <guid>http://192.168.40.181:1313/resource/layout/supporting-pane-layout/</guid>
+      <guid>https://wonyoungjang.org/resource/layout/supporting-pane-layout/</guid>
     
       <description> </description>
     

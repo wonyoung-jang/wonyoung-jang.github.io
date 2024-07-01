@@ -4,11 +4,13 @@
     flex-flow: row wrap;
     align-items: flex-start;
     gap: var(--size-4);
-    margin-block: var(--size-3);
+    margin: var(--size-3);
+    padding: var(--size-3);
+    background-color: var(--color-surface-container-lowest);
+    border-radius: var(--shape-corner-xl);
 
-    & h3 {
+    & > span {
       width: 100%;
-      margin-top: 0.5rem;
       padding: var(--size-2);
     }
 
@@ -31,5 +33,21 @@
     padding: var(--size-1);
     align-items: flex-start;
     justify-content: flex-start;
+  }
+
+  & #test-components {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    gap: var(--size-3);
+    margin: var(--size-3);
+    padding: var(--size-3);
+    background-color: var(--color-surface-container-lowest);
+    border-radius: var(--shape-corner-xl);
+
+    & * {
+      flex: 1 1 auto;
+      overflow: hidden;
+    }
   }
 }

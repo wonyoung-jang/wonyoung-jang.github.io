@@ -9,7 +9,7 @@
 
       {{/*  Buttons  */}}
       <section class="component-group">
-        <h3>Common buttons</h2>
+        <span class="title-large">Common buttons</span>
         <button class="component button common-button">Text</button>
         <button class="component button common-button" elevated>Elevated</button>
         <button class="component button common-button" filled>Filled</button>
@@ -19,7 +19,7 @@
 
       {{/*  Icon buttons  */}}
       <section class="component-group">
-        <h3>Icon buttons</h3>
+        <span class="title-large">Icon buttons</span>
         <button class="component button icon-button">
           <i>settings</i>
         </button>
@@ -36,7 +36,7 @@
 
       {{/*  FABs  */}}
       <section class="component-group">
-        <h3>FABs</h3>
+        <span class="title-large">FABs</span>
         <section>
           <button class="component button surface-container-high fab" small>
             <i>add</i>
@@ -88,7 +88,7 @@
 
       {{/*  Extended FABs  */}}
       <section class="component-group">
-        <h3>Extended FABs</h3>
+        <span class="title-large">Extended FABs</span>
         <section>
           <button class="component button surface-container-high fab" extended>
             <i>add</i>
@@ -137,7 +137,7 @@
 
       {{/*  Cards  */}}
       <section class="component-group">
-        <h3>Cards</h3>
+        <span class="title-large">Cards</span>
         <div class="component card" elevated>
           <span>Elevated card</span>
         </div>
@@ -151,7 +151,7 @@
       
       {{/*  Divider  */}}
       <section class="component-group">
-        <h3>Divider</h3>
+        <span class="title-large">Divider</span>
         <div class="divider" mid></div>
         <div class="divider" start></div>
         <div class="divider" end></div>
@@ -160,7 +160,7 @@
 
       {{/*  Lists  */}}
       <section class="component-group">
-        <h3>Lists</h3>
+        <span class="title-large">Lists</span>
         <div class="component list-item" one>
           <span>List-item one line</span>
         </div>
@@ -181,9 +181,9 @@
       <summary class="token-set-title">Navigation</summary>
 
       <section class="component-group">
-        <h3>Search</h3>
+        <span class="title-large">Search</span>
         <span class="component search" bar>
-          <i>search</i>
+          <i id="searchIcon">search</i>
           <input  id="searchInput"  
                   placeholder="Search"
                   aria-label="search" 
@@ -194,7 +194,7 @@
       </section>
 
       <section class="component-group">
-        <h3>Top app bar</h3>
+        <span class="title-large">Top app bar</span>
         <div class="component top-app-bar" center small>
           <span class="start">Top app bar</span>
           <span class="end">Small</span>
@@ -216,7 +216,7 @@
 
       {{/*  Text fields  */}}
       <section class="component-group">
-        <h3>Text fields</h3>
+        <span class="title-large">Text fields</span>
         <div class="component text-field" filled>
           <input type="text" placeholder="Placeholder text">
         </div>
@@ -237,14 +237,12 @@
     {{/*  || Test  */}}
     <details class="layout token-set" open>
       <summary class="token-set-title">
-        <i>warning</i>
         Test
-        <i>warning</i>
       </summary>
 
       {{/*  Test input buttons  */}}
-      <section class="component-group">
-        <h3>Test input buttons</h3>
+      <section class="component-group" id="test-components">
+        <span class="title-large">Test input buttons</span>
         <button class="component button icon-button" outlined>
           <i>attach_file</i>
           <input type="file">
