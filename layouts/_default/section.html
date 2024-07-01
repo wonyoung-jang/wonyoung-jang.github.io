@@ -11,13 +11,17 @@
                     href="{{ .Permalink }}">
 
                     {{/*  TODO Turn this into a slice to iterate  */}}
-                    {{ if eq .Title "Software" }}
-                        <i class="avatar">terminal</i>
-                    {{ else if eq .Title "University" }}
-                        <i class="avatar">school</i>
-                    {{ else }}
-                        <i class="avatar">quick_reference</i>
-                    {{ end }}
+                    <span class="avatar">
+                        <i>
+                            {{ if eq .Title "Software" }}
+                                terminal
+                            {{ else if eq .Title "University" }}
+                                school
+                            {{ else }}
+                                quick_reference
+                            {{ end }}
+                        </i>
+                    </span>
 
                     <div class="list-content">
                         <span class="headline-small">

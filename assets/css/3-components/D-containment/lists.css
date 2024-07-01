@@ -44,6 +44,10 @@
   &[with-avatar] {
     & .avatar {
       align-self: flex-start;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
       font-size: var(--size-5);
       height: var(--size-10);
       width: var(--size-10);
@@ -51,6 +55,10 @@
       color: var(--color-on-primary-container);
       border-radius: var(--shape-corner-xl);
       margin-inline-end: var(--size-4);
+    }
+
+    & .list-content {
+      max-width: calc(100% - var(--size-14));
     }
   }
 
