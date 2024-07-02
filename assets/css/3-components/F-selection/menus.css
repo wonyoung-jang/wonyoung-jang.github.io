@@ -3,10 +3,8 @@ menu {
     border-radius: var(--shape-corner-xs);
     box-shadow: var(--elevation2);
     color: var(--color-on-secondary-container);
-
     
-
-    inset: auto auto 0 0;
+    inset: auto 0 0 auto;
     border: none;
     padding: 0 var(--size-3);
     z-index: 20;
