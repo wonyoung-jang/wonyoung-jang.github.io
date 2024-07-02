@@ -23,16 +23,6 @@
             flex: 1 1 0;
             margin-block: 1rem;
             margin-inline: 2rem;
-            
-            &:nth-child(2) { font-weight: var(--typeface-weight-black); }
-            &:nth-child(3) { font-weight: var(--typeface-weight-extra-bold); }
-            &:nth-child(4) { font-weight: var(--typeface-weight-bold); }
-            &:nth-child(5) { font-weight: var(--typeface-weight-semi-bold); }
-            &:nth-child(6) { font-weight: var(--typeface-weight-medium); }
-            &:nth-child(7) { font-weight: var(--typeface-weight-regular); }
-            &:nth-child(8) { font-weight: var(--typeface-weight-light); }
-            &:nth-child(9) { font-weight: var(--typeface-weight-extra-light); }
-            &:nth-child(10) { font-weight: var(--typeface-weight-thin); }
         }
         
         & :first-child {
