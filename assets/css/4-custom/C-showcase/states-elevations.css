@@ -64,29 +64,5 @@
 .elevations-container {
   & div {
     background-color: var(--color-surface-container-high);
-
-    &:nth-child(1) {
-      box-shadow: var(--elevation0);
-    }
-
-    &:nth-child(2) {
-      box-shadow: var(--elevation1);
-    }
-
-    &:nth-child(3) {
-      box-shadow: var(--elevation2);
-    }
-
-    &:nth-child(4) {
-      box-shadow: var(--elevation3);
-    }
-
-    &:nth-child(5) {
-      box-shadow: var(--elevation4);
-    }
-
-    &:nth-child(6) {
-      box-shadow: var(--elevation5);
-    }
   }
 }
