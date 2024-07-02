@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>References on Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/resource/reference/</link>
+    <link>http://192.168.40.181:1313/resource/reference/</link>
     <description>Recent content in References on Wonyoung Jang</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,26 +10,26 @@
     <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
     <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     <lastBuildDate>Sun, 30 Jun 2024 14:10:17 -0400</lastBuildDate>
-    <atom:link href="https://wonyoungjang.org/resource/reference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.40.181:1313/resource/reference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All Logseq elements</title>
-      <link>https://wonyoungjang.org/resource/reference/all-logseq-elements/</link>
+      <link>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/resource/reference/all-logseq-elements/</guid>
+      <guid>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</guid>
       <description>Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Centered admon&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Block quote with &amp;quot;````&amp;quot; An internal link to my about page: About&#xD;An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/&#xD;An embedded internal page: {{embed About&#xD;}}&#xA;A block reference: ## About me&#xA;A block embed: {{embed ## About me }}</description>
     </item>
     <item>
       <title>List of admonitions for wonyoungjang.org</title>
-      <link>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
+      <link>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
+      <guid>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid>
       <description>What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.</description>
     </item>
     <item>
       <title>List of keyboard shortcuts for wonyoungjang.org</title>
-      <link>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
+      <link>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link>
       <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
+      <guid>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid>
       <description>Navigation ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance ALT+SHIFT+t → Toggle light/dark themes</description>
     </item>
   </channel>

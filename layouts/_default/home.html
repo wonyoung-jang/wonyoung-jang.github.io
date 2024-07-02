@@ -2,23 +2,61 @@
 {{ with .Site.Params.Home }}
     <article class="layout panes basic-singlepane" id="home-page">
         <section class="layout pane">
-
             {{/* Home page header */}}
             <section id="home-header">
                 {{/* Site title */}}
                 <h1>
-                    {{ .title | default site.Title | markdownify }}
+                    {{ .title | default $.Site.Title | markdownify }}
                 </h1>        
-        
+       
                 {{/* Home page buttons */}}
                 {{ partial "homepage-buttons.html" . }}
             </section>
+            
+            {{/*  Test button: font switcher  */}}
+            {{/*  <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+             
+            <label for="brand-font-selector">Brand Font</label>
+            <select id="brand-font-selector">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            <label for="plain-font-selector">Plain Font</label>
+            <select id="plain-font-selector">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            <label for="code-font-selector">Code Font</label>
+            <select id="code-font-selector">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>  */}}
 
             {{/*  Showcase pages table  */}}
             {{ partial "home-showcase-panel.html" . }}
-
         </section>
     </article>
-
 {{ end }}
+<!-- script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var brandFontSelector = document.getElementById('brand-font-selector');
+        var plainFontSelector = document.getElementById('plain-font-selector');
+        var codeFontSelector = document.getElementById('code-font-selector');
+        var root = document.documentElement;
+        brandFontSelector.addEventListener('change', function(event) {
+            root.style.setProperty('--typeface-brand', event.target.value);
+        });
+        plainFontSelector.addEventListener('change', function(event) {
+            root.style.setProperty('--typeface-plain', event.target.value);
+        });
+        codeFontSelector.addEventListener('change', function(event) {
+            root.style.setProperty('--typeface-code', event.target.value);
+        });
+    });
+</script-->
 {{ end }}
