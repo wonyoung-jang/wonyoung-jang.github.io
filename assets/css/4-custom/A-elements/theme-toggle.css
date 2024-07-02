@@ -1,17 +1,69 @@
 body {
   &.dark {
     --color-token-set-container: var(--palette-neutral-variant-10);
-    
+   
     & #moon {
-      display: none;
+      animation: set-moon var(--motion-duration-long2) var(--motion-easing-emphasized) forwards;
+    }
+   
+    & #sun {
+      animation: rise-sun var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
     }
   }
-  
+ 
   &:not(.dark) {
     --color-token-set-container: var(--palette-neutral-variant-90);
-    
+   
     & #sun {
-      display: none;
+      animation: set-sun var(--motion-duration-long2) var(--motion-easing-emphasized) forwards;
     }
+   
+    & #moon {
+      animation: rise-moon var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+    }
+  }
+}
+
+@keyframes rise-moon {
+  0% {
+    transform: translate(-36px, 48px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(12px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes rise-sun {
+  0% {
+    transform: translate(-60px, 48px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-12px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes set-moon {
+  0% {
+    transform: translate(12px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(60px, 48px);
+    opacity: 0;
+  }
+}
+
+@keyframes set-sun {
+  0% {
+    transform: translate(-12px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(36px, 48px);
+    opacity: 0;
   }
 }
