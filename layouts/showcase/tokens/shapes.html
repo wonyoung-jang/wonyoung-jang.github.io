@@ -3,48 +3,20 @@
         <section class="layout pane">
             <details class="layout token-set" open>
                 <summary class="token-set-title">Shapes</summary>
-                
+                {{ $sequenceCorners := "none xs s m l xl full" }}
+                {{ $sequenceMods := "top bottom start end" }}
+                {{ $shapes := split $sequenceCorners " " }}
+                {{ $mods := split $sequenceMods " " }}
                 <div id="shapes-container">
-                    <label>None</label>
-                    <div class="shape-none">None</div>
-                
-                    <label>Extra small</label>
-                    <div class="shape-xs">*</div>
-                    <div class="shape-xs-top">top</div>
-                    <div class="shape-xs-bottom">bottom</div>
-                    <div class="shape-xs-start">start</div>
-                    <div class="shape-xs-end">end</div>
-                
-                    <label>Small</label>
-                    <div class="shape-s">*</div>
-                    <div class="shape-s-top">top</div>
-                    <div class="shape-s-bottom">bottom</div>
-                    <div class="shape-s-start">start</div>
-                    <div class="shape-s-end">end</div>
-                
-                    <label>Medium</label>
-                    <div class="shape-m">*</div>
-                    <div class="shape-m-top">top</div>
-                    <div class="shape-m-bottom">bottom</div>
-                    <div class="shape-m-start">start</div>
-                    <div class="shape-m-end">end</div>
-
-                    <label>Large</label>
-                    <div class="shape-l">*</div>
-                    <div class="shape-l-top">top</div>
-                    <div class="shape-l-bottom">bottom</div>
-                    <div class="shape-l-start">start</div>
-                    <div class="shape-l-end">end</div>
-
-                    <label>Extra large</label>
-                    <div class="shape-xl">*</div>
-                    <div class="shape-xl-top">top</div>
-                    <div class="shape-xl-bottom">bottom</div>
-                    <div class="shape-xl-start">start</div>
-                    <div class="shape-xl-end">end</div>
-                
-                    <label>Full</label>
-                    <div class="shape-full">Full</div>
+                    {{ range $shapes }}
+                        <label>{{ upper . }}</label>
+                        <div class="shape-{{ . }}">{{ . }}</div>
+                        {{ if and (ne . "none") (ne . "full")}}
+                            {{ range $mods }}
+                                <div class="shape-{{ . }}-{{ . }}">{{ . }}</div>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
                 </div>
             </details>
         </section>
