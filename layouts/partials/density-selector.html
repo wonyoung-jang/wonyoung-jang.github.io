@@ -1,0 +1,16 @@
+<label for="line-density-selector">Line Density</label>
+<select id="line-density-selector">
+    <option value="var(--scale-perfect-fourth)">Compact</option>
+    <option value="var(--scale-perfect-fifth)" selected>Normal</option>
+    <option value="var(--scale-maj-6)">Spacious</option>
+</select>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var lineDensitySelector = document.getElementById('line-density-selector');            
+    var root = document.documentElement;
+    lineDensitySelector.addEventListener('change', function(event) {
+      root.style.setProperty('--line-height', event.target.value);
+    }); 
+  });
+</script>

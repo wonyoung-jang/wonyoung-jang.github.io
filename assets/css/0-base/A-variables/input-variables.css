@@ -8,11 +8,12 @@
   --scale-back-size:          var(--scale-min-2);
 
   /* Line heights */
-  --scale-line-height-display:    var(--scale-maj-2);
-  --scale-line-height-headline:   var(--scale-min-3);
-  --scale-line-height-title:      var(--scale-maj-3);
-  --scale-line-height-body:       var(--scale-perfect-fifth);
-  --scale-line-height-label:      var(--scale-maj-6);
+  --line-height:                  var(--scale-perfect-fifth);
+  --scale-line-height-display:    var(--line-height) / 0.85;
+  --scale-line-height-headline:   var(--line-height) / 0.90;
+  --scale-line-height-title:      var(--line-height) / 0.95;
+  --scale-line-height-body:       var(--line-height);
+  --scale-line-height-label:      var(--line-height) * 1.05;
 
   /* Icon font family */
   --font-icon: var(--typeface-icon-sharp);
