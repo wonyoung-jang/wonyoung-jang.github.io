@@ -13,11 +13,17 @@
             Wonyoung Jang
         </a>
     </section>
+    
+    {{/*  Density  */}}
+    {{/*  {{ partial "density-selector.html" . }}  */}}
 
     {{/* Buttons */}}
     <section class="end">
         {{/* Language switch */}}
         {{ partial "translation_list.html" . }}
+
+        {{/* Theme selector */}}
+        {{ partial "theme-selector.html" . }} 
 
         {{/* Theme toggle */}}
         {{ partial "theme-button.html" . }}        

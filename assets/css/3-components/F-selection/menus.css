@@ -1,0 +1,36 @@
+menu {
+    background-color: var(--color-surface-container);
+    border-radius: var(--shape-corner-xs);
+    box-shadow: var(--elevation2);
+    color: var(--color-on-secondary-container);
+
+    
+
+    inset: auto auto 0 0;
+    border: none;
+    padding: 0 var(--size-3);
+    z-index: 20;
+    position: absolute;
+    min-width: 112px;
+    max-width: 280px;
+    
+    text-transform: none;
+    text-align: start;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8) translateY(120%);
+    transition: all var(--motion-duration-short1);
+}
+
+#theme-selector:active,
+#theme-selector:focus-within {
+    & menu {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1) translateY(100%);
+    }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="ltr">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -22,7 +22,7 @@
 
 <meta name="author" content="Wonyoung Jang">
 
-<link rel="canonical" href=" https://wonyoungjang.org/project/university/ " />
+<link rel="canonical" href=" http://192.168.40.181:1313/project/university/ " />
 
 
     <link rel="preload" href="/static/sitelogo.svg" as="image">
@@ -32,18 +32,18 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
-<link rel="icon" type="image/webp" sizes="16x16" href="https://wonyoungjang.org/favicon-16x16.webp">
-<link rel="icon" type="image/webp" sizes="32x32" href="https://wonyoungjang.org/favicon-32x32.webp">
-<link rel="apple-touch-icon" href="https://wonyoungjang.org/apple-touch-icon.webp">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" type="image/webp" sizes="16x16" href="http://192.168.40.181:1313/favicon-16x16.webp">
+<link rel="icon" type="image/webp" sizes="32x32" href="http://192.168.40.181:1313/favicon-32x32.webp">
+<link rel="apple-touch-icon" href="http://192.168.40.181:1313/apple-touch-icon.webp">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/project/university/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/project/university/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/project/university/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/project/university/">
 
 
 
@@ -71,7 +71,7 @@
   
 
 
-<meta property="og:url" content="https://wonyoungjang.org/project/university/">
+<meta property="og:url" content="http://192.168.40.181:1313/project/university/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="University">
   <meta property="og:description" content="An archive of various university projects completed for my Computer Science degree">
@@ -112,7 +112,7 @@
     <section class="start">
         
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -128,16 +128,69 @@
         
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
+    
+    
+    
 
     
     <section class="end">
         
         
 
+
+        
+        <button class="component button icon-button" id="theme-selector">
+  <i>palette</i>
+  <menu>
+
+    <span>
+      <label for="hue-selector">Hue (0-360)</label>
+      <input  type="range"
+              id="hue-selector"
+              min="0"
+              max="360"
+              value="302.8"/>
+      
+    </span>
+    
+    <span>
+      <label for="chroma-selector">Chroma (0-100)</label>
+      <input  type="range"
+              id="chroma-selector"
+              min="0"
+              max="100"
+              value="58"/>
+    </span>
+
+  </menu>
+</button>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var hueSelector = document.getElementById("hue-selector");
+    var chromaSelector = document.getElementById("chroma-selector");
+    var root = document.documentElement;
+
+    function updateColor() {
+      var hue = hueSelector.value;
+      var chroma = chromaSelector.value;
+      root.style.setProperty("--input-color-hue", hue + "deg");
+      root.style.setProperty("--input-color-chroma", chroma);
+    }
+
+    hueSelector.addEventListener("input", updateColor);
+    chromaSelector.addEventListener("input", updateColor);
+
+    
+    updateColor();
+  });
+</script>
+ 
 
         
         
@@ -167,12 +220,12 @@
   
   
   
-   5 
+   29 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/reference\/all-logseq-elements\/";
+    window.location.href = "\/resource\/token\/colors\/";
   }
 </script>
         
@@ -320,7 +373,7 @@
         
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
              
-                <a href="https://wonyoungjang.org/">
+                <a href="http://192.168.40.181:1313/">
                     
                         Home
                      
@@ -328,7 +381,7 @@
 
                 <span class="breadcrumb-delimiter">/</span>
              
-                <a href="https://wonyoungjang.org/project/">
+                <a href="http://192.168.40.181:1313/project/">
                     
                         Projects
                      
@@ -379,7 +432,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Disaster recovery robot simulation" 
-                href="https://wonyoungjang.org/project/university/disaster-recovery-robot-simulation/">      
+                href="http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/">      
                 
                 
                 
@@ -413,7 +466,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to CS career chatbot" 
-                href="https://wonyoungjang.org/project/university/cs-career-chatbot/">      
+                href="http://192.168.40.181:1313/project/university/cs-career-chatbot/">      
                 
                 
                 
@@ -447,7 +500,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Package delivery route optimization" 
-                href="https://wonyoungjang.org/project/university/package-delivery-route-optimization/">      
+                href="http://192.168.40.181:1313/project/university/package-delivery-route-optimization/">      
                 
                 
                 
@@ -481,7 +534,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Hotel reservation manager" 
-                href="https://wonyoungjang.org/project/university/hotel-reservation-manager/">      
+                href="http://192.168.40.181:1313/project/university/hotel-reservation-manager/">      
                 
                 
                 
@@ -515,7 +568,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Vacation cart manager" 
-                href="https://wonyoungjang.org/project/university/vacation-cart-manager/">      
+                href="http://192.168.40.181:1313/project/university/vacation-cart-manager/">      
                 
                 
                 
@@ -549,7 +602,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Retail inventory manager" 
-                href="https://wonyoungjang.org/project/university/retail-inventory-manager/">      
+                href="http://192.168.40.181:1313/project/university/retail-inventory-manager/">      
                 
                 
                 
@@ -583,7 +636,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to DVD rental database" 
-                href="https://wonyoungjang.org/project/university/dvd-rental-database/">      
+                href="http://192.168.40.181:1313/project/university/dvd-rental-database/">      
                 
                 
                 
@@ -617,7 +670,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Student record system" 
-                href="https://wonyoungjang.org/project/university/student-record-system/">      
+                href="http://192.168.40.181:1313/project/university/student-record-system/">      
                 
                 
                 
@@ -651,7 +704,7 @@
 
             <a  class="component card" elevated
                 aria-label="post link to Food shop database management" 
-                href="https://wonyoungjang.org/project/university/food-shop-database-management/">      
+                href="http://192.168.40.181:1313/project/university/food-shop-database-management/">      
                 
                 
                 
@@ -851,7 +904,7 @@
 <section class="copyright">
     <a  class="component button common-button" with-icon
         id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>

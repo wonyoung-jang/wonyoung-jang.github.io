@@ -1,5 +1,6 @@
 .top-app-bar {
   /* --bg-color: var(--color-surface);*/
+  z-index: 3;
   
   &[center] {
     --container-shape: 0;
