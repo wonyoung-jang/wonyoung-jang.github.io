@@ -42,6 +42,43 @@ header {
   cursor: pointer;
 }
 
+#random-button:hover,
+#random-button:focus {
+  animation: rattle var(--motion-duration-short4) var(--motion-easing-emphasized) infinite;
+}
+
+#random-button:active {
+  animation: roll var(--motion-duration-extra-long4) var(--motion-easing-emphasized) infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rattle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+  
+
 .tabs {
   scrollbar-color: var(--color-secondary) transparent;
   scrollbar-width: thin;
