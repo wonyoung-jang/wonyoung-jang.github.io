@@ -1,25 +1,50 @@
 body {
   &.dark {
     --color-token-set-container: var(--palette-neutral-variant-10);
-   
     & #moon {
-      animation: set-moon var(--motion-duration-long2) var(--motion-easing-emphasized) forwards;
+      transform: translate(-36px, 48px);
+      opacity: 0;
     }
-   
+
     & #sun {
-      animation: rise-sun var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+      transform: translate(-12px, 0px);
+      opacity: 1;
+    }
+
+    & #theme-toggle:active,
+    & #theme-toggle:focus {
+      & #moon {
+        animation: set-moon var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+      }
+    
+      & #sun {
+        animation: rise-sun var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+      }
     }
   }
  
   &:not(.dark) {
     --color-token-set-container: var(--palette-neutral-variant-90);
-   
+    
     & #sun {
-      animation: set-sun var(--motion-duration-long2) var(--motion-easing-emphasized) forwards;
+      transform: translate(-60px, 48px);
+      opacity: 0;
     }
-   
+
     & #moon {
-      animation: rise-moon var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+      transform: translate(12px, 0px);
+      opacity: 1;
+    }
+
+    & #theme-toggle:active,
+    & #theme-toggle:focus {
+      & #sun {
+        animation: set-sun var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+      }
+    
+      & #moon {
+        animation: rise-moon var(--motion-duration-medium2) var(--motion-easing-emphasized) forwards;
+      }
     }
   }
 }
