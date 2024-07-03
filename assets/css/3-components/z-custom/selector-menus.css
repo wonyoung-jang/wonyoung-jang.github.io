@@ -1,18 +1,43 @@
+#theme-selector,
+#typography-selector {        
+    & .divider {
+        margin-block: var(--size-3);
+    }
 
-#theme-selector:active,
-#theme-selector:focus-within,
-#typography-selector:active,
-#typography-selector:focus-within {
-    & menu {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1) translateY(100%);
+    & .menu {
+        padding: var(--size-3);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.8) translateY(120%);
+        transition: all var(--motion-duration-short1);
+        
+        position: absolute;
+        right: 0;
+        z-index: 20;
+        max-height: 80dvh;
+        overflow-y: auto;
+
+        & .typography-fieldset {
+            display: flex;
+            flex-flow: column nowrap;
+        
+            & label,
+            & legend {
+                display: flex;
+                flex-flow: row nowrap;
+                text-wrap: nowrap;
+                align-items: center;
+                text-overflow: ellipsis;
+            }
+        }
     }
 }
 
 #theme-selector {
-    & .divider {
-        margin-block: var(--size-4);
+    & .menu label {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
     }
 
     & .slider {
@@ -21,11 +46,6 @@
         & label {
             margin-top: var(--size-2);
         }
-    }
-
-    & menu {
-        border-radius: var(--shape-corner-m);
-        padding: var(--size-4);
     }
 
     & #theme-hues,
@@ -39,8 +59,7 @@
     }
     
     & #theme-hues {
-        background: linear-gradient(
-            0.25turn, 
+        background: linear-gradient(0.25turn, 
             var(--palette-hue-0), 
             var(--palette-hue-30),
             var(--palette-hue-60),
@@ -57,8 +76,7 @@
     }
 
     & #theme-chromas {
-        background: linear-gradient(
-            0.25turn,
+        background: linear-gradient(0.25turn,
             var(--palette-primary-10),
             var(--palette-primary-20),
             var(--palette-primary-30),
@@ -72,18 +90,13 @@
     }
 }
 
-#typography-selector {
-    & legend {
-        margin-top: var(--size-4);
-    }
-}
-
-#theme-selector,
-#typography-selector {
-    & menu {
-        flex: 1 1 auto;
-        display: flex;
-        flex-flow: column nowrap;
-        gap: var(--size-2);
-    }
+#theme-selector:hover .menu,
+#theme-selector:focus-within .menu,
+#theme-selector:active .menu,
+#typography-selector:hover .menu,
+#typography-selector:focus-within .menu,
+#typography-selector:active .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(100%);
 }

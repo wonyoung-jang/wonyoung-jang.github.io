@@ -144,8 +144,30 @@
         
         <button class="component button icon-button" id="typography-selector">
     <i>custom_typography</i>
-    <menu>
-        <fieldset>
+    <menu class="menu">
+        <fieldset class="typography-fieldset">
+            <legend class="title-medium">Font Size</legend>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-14" name="font-size" value="14" checked>
+                <label for="font-size-14">14px</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-15" name="font-size" value="15">
+                <label for="font-size-15">15px</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-16" name="font-size" value="16">
+                <label for="font-size-16">16px</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-17" name="font-size" value="17">
+                <label for="font-size-17">17px</label>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
+
+        <fieldset class="typography-fieldset">
             <legend class="title-medium">Brand Font</legend>
             <div class="component radio-button">
                 <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
@@ -167,7 +189,7 @@
 
         <div class="divider"></div>
        
-        <fieldset>
+        <fieldset class="typography-fieldset">
             <legend class="title-medium">Plain Font</legend>
             <div class="component radio-button">
                 <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
@@ -189,7 +211,7 @@
 
         <div class="divider"></div>
        
-        <fieldset>
+        <fieldset class="typography-fieldset">
             <legend class="title-medium">Code Font</legend>
             <div class="component radio-button">
                 <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
@@ -210,30 +232,8 @@
         </fieldset>
 
         <div class="divider"></div>
-
-        <fieldset>
-            <legend class="title-medium">Font Size</legend>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-14" name="font-size" value="14" checked>
-                <label for="font-size-14">14px</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-15" name="font-size" value="15">
-                <label for="font-size-15">15px</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-16" name="font-size" value="16">
-                <label for="font-size-16">16px</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-17" name="font-size" value="17">
-                <label for="font-size-17">17px</label>
-            </div>
-        </fieldset>
-
-        <div class="divider"></div>
        
-        <fieldset>
+        <fieldset class="typography-fieldset">
             <legend class="title-medium">Line Density</legend>
             <div class="component radio-button">
                 <input type="radio" id="density-compact" name="line-density" value="var(--scale-perfect-fourth)" checked>
@@ -301,7 +301,7 @@
         
         <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
-  <menu>
+  <menu class="menu">
     <label class="title-large" for="hue-selector">Hue</label>
     <div class="slider">
       <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
@@ -316,7 +316,6 @@
       <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
       <div class="tooltip" id="chroma-tooltip"></div>
     </div>
-    
     <div id="theme-chromas"></div>
   </menu>
 </button>
@@ -438,12 +437,12 @@
   
   
   
-   10 
+   30 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/cs-career-chatbot\/";
+    window.location.href = "\/project\/software\/";
   }
 </script>
         
