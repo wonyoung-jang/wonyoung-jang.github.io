@@ -240,6 +240,41 @@
         Test
       </summary>
       
+      {{/*  Test container  */}}
+      <section class="component-group">
+        <span class="title-large">Test {}</span>
+        
+      </section>
+      
+      {{/*  Test radio button  */}}
+      <section class="component-group">
+        <span class="title-large">Test radio button</span>
+
+        <fieldset>
+          <legend>Test radios</legend>
+          <div>
+            <div class="component radio-button">
+              <input type="radio" id="contactChoice1" name="contact" value="email" checked/>
+              <label for="contactChoice1">contactChoice1</label>
+            </div>
+            
+            <div class="component radio-button">
+              <input type="radio" id="contactChoice2" name="contact" value="phone" />
+              <label for="contactChoice2">contactChoice2</label>
+            </div>
+
+            <div class="component radio-button">
+              <input type="radio" id="contactChoice3" name="contact" value="mail" />
+              <label for="contactChoice3">contactChoice3</label>
+            </div>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+        
+      </section>
+
       {{/*  Test sliders  */}}
       <section class="component-group">
         <span class="title-large">Test sliders</span>
