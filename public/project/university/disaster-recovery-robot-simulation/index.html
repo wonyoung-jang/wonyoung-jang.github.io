@@ -149,25 +149,16 @@
         <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
   <menu>
-
     <label for="hue-selector">Hue (0-360)</label>
-
     <label class="slider">
       <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
-      <span></span>
-    </label> 
-
+    </label>
     <label for="chroma-selector">Chroma (0-100)</label>
-
     <label class="slider">
       <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
-      <span></span>
     </label>
-
   </menu>
 </button>
-
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var hueSelector = document.getElementById("hue-selector");
@@ -179,16 +170,30 @@
       var chroma = chromaSelector.value;
       root.style.setProperty("--input-color-hue", hue + "deg");
       root.style.setProperty("--input-color-chroma", chroma);
+      
+      
+      localStorage.setItem("theme-hue", hue);
+      localStorage.setItem("theme-chroma", chroma);
     }
 
-    hueSelector.addEventListener("input", updateColor);
-    chromaSelector.addEventListener("input", updateColor);
+    
+    var savedHue = localStorage.getItem("theme-hue");
+    var savedChroma = localStorage.getItem("theme-chroma");
+
+    if (savedHue !== null) {
+      hueSelector.value = savedHue;
+    }
+    if (savedChroma !== null) {
+      chromaSelector.value = savedChroma;
+    }
 
     
     updateColor();
+
+    hueSelector.addEventListener("input", updateColor);
+    chromaSelector.addEventListener("input", updateColor);
   });
-</script>
- 
+</script> 
 
         
         
@@ -218,12 +223,12 @@
   
   
   
-   7 
+   25 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/";
+    window.location.href = "\/resource\/layout\/feed-layout\/";
   }
 </script>
         

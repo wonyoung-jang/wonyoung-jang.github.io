@@ -1,22 +1,16 @@
 <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
   <menu>
-
     <label for="hue-selector">Hue (0-360)</label>
-
     <label class="slider">
       <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
-    </label> 
-
+    </label>
     <label for="chroma-selector">Chroma (0-100)</label>
-
     <label class="slider">
       <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
     </label>
-
   </menu>
 </button>
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -29,12 +23,27 @@
       var chroma = chromaSelector.value;
       root.style.setProperty("--input-color-hue", hue + "deg");
       root.style.setProperty("--input-color-chroma", chroma);
+      
+      // Store values in localStorage
+      localStorage.setItem("theme-hue", hue);
+      localStorage.setItem("theme-chroma", chroma);
     }
+
+    // Load saved values from localStorage
+    var savedHue = localStorage.getItem("theme-hue");
+    var savedChroma = localStorage.getItem("theme-chroma");
+
+    if (savedHue !== null) {
+      hueSelector.value = savedHue;
+    }
+    if (savedChroma !== null) {
+      chromaSelector.value = savedChroma;
+    }
+
+    // Apply saved or default values
+    updateColor();
 
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
-
-    // Initialize with default values
-    updateColor();
   });
 </script>
