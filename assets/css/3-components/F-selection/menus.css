@@ -24,6 +24,8 @@ menu {
     transition: all var(--motion-duration-short1);
 }
 
+#typography-selector:active,
+#typography-selector:focus-within,
 #theme-selector:active,
 #theme-selector:focus-within {
     & menu {

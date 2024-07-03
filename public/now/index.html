@@ -135,13 +135,97 @@
     
     
     
-
-    
     <section class="end">
         
         
+        
 
+        
+        
+        <button class="component button icon-button" id="typography-selector">
+    <i>custom_typography</i>
+    <menu>
+        <label for="brand-font-selector">Brand Font</label>
+        <select id="brand-font-selector">
+            <option value="Raleway">Raleway</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+       
+        <label for="plain-font-selector">Plain Font</label>
+        <select id="plain-font-selector">
+            <option value="IBM Plex Sans">IBM Plex Sans</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+       
+        <label for="code-font-selector">Code Font</label>
+        <select id="code-font-selector">
+            <option value="IBM Plex Mono">IBM Plex Mono</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>  
+       
+        <label for="line-density-selector">Line Density</label>
+        <select id="line-density-selector">
+            <option value="var(--scale-perfect-fourth)">Compact</option>
+            <option value="var(--scale-perfect-fifth)">Normal</option>
+            <option value="var(--scale-maj-6)">Spacious</option>
+        </select>
+    </menu>
+</button>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var brandFontSelector = document.getElementById('brand-font-selector');
+        var plainFontSelector = document.getElementById('plain-font-selector');
+        var codeFontSelector = document.getElementById('code-font-selector');
+        var lineDensitySelector = document.getElementById('line-density-selector');
+        var root = document.documentElement;
+
+        function updateTypography() {
+            var brandFont = brandFontSelector.value;
+            var plainFont = plainFontSelector.value;
+            var codeFont = codeFontSelector.value;
+            var lineDensity = lineDensitySelector.value;
+
+            root.style.setProperty('--typeface-brand', brandFont);
+            root.style.setProperty('--typeface-plain', plainFont);
+            root.style.setProperty('--typeface-code', codeFont);
+            root.style.setProperty('--line-height', lineDensity);
+
+            
+            localStorage.setItem('typography-brand-font', brandFont);
+            localStorage.setItem('typography-plain-font', plainFont);
+            localStorage.setItem('typography-code-font', codeFont);
+            localStorage.setItem('typography-line-density', lineDensity);
+        }
+
+        
+        var savedBrandFont = localStorage.getItem('typography-brand-font');
+        var savedPlainFont = localStorage.getItem('typography-plain-font');
+        var savedCodeFont = localStorage.getItem('typography-code-font');
+        var savedLineDensity = localStorage.getItem('typography-line-density');
+
+        if (savedBrandFont) brandFontSelector.value = savedBrandFont;
+        if (savedPlainFont) plainFontSelector.value = savedPlainFont;
+        if (savedCodeFont) codeFontSelector.value = savedCodeFont;
+        if (savedLineDensity) lineDensitySelector.value = savedLineDensity;
+
+        
+        updateTypography();
+
+        
+        brandFontSelector.addEventListener('change', updateTypography);
+        plainFontSelector.addEventListener('change', updateTypography);
+        codeFontSelector.addEventListener('change', updateTypography);
+        lineDensitySelector.addEventListener('change', updateTypography);
+    });
+</script>
+        
         
         <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
@@ -221,12 +305,12 @@
   
   
   
-   5 
+   29 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/student-record-system\/";
+    window.location.href = "\/project\/software\/save-top-level-reddit-comments\/";
   }
 </script>
         
