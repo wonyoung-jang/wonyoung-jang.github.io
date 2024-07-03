@@ -4,6 +4,7 @@ defaultTheme: auto
 env: production
 title: Wonyoung Jang
 dateFormat: January 2, 2006
+description: "Wonyoung Jang's personal website"
 
 assets:
   favicon: 'sitelogo.svg'
