@@ -1,6 +1,6 @@
 input[type="range"] {
   width: min-content;
-  height: var(--size-11); /* needed for Firefox*/
+  height: var(--size-11);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -19,32 +19,54 @@ input[type="range"] {
   &::-moz-range-thumb {
     height: var(--size-11);
     box-shadow: 0 0 0 var(--size-4) inset var(--color-primary);
-    border-image: 
-      linear-gradient(90deg, var(--color-primary) 50%, 
-      var(--color-primary-container) 0) 0 1 /
-      calc(50% - var(--size-4) / 2) 
-      100vw/0 calc(100vw + var(--size-2));
+    border-image: linear-gradient(90deg, var(--color-primary) 50%, var(--color-primary-container) 0) 0 1 /
+      calc(50% - var(--size-4) / 2) 100vw/0 calc(100vw + var(--size-2));
     -moz-appearance: none;
     appearance: none;
     border-radius: var(--shape-corner-xl);
   }
-  
+
   &::-webkit-slider-thumb {
     aspect-ratio: 1;
   }
-  
+
   &::-moz-range-thumb {
     width: var(--size-1);
     background: none;
   }
-  
-  
+
   /* track thickness */
   &::-webkit-slider-runnable-track,
   &::-moz-range-track {
     height: var(--size-4);
     background: var(--color-primary-container);
     border-radius: var(--shape-corner-xl);
-    width: fit-content
+    width: fit-content;
+  }
+}
+
+.slider {
+  position: relative;
+
+  & .tooltip {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -75%;
+    transform: translateX(-50%);
+
+    width: fit-content;
+    height: fit-content;
+    padding: var(--size-1) var(--size-2);
+
+    background-color: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+    border-radius: var(--shape-corner-xl);
+    
+    opacity: 0;
+    transition: opacity 0.2s;
   }
 }

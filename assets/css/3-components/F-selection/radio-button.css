@@ -1,0 +1,19 @@
+.radio-button {
+    --container-display: flex;
+    --container-flex-flow: row nowrap;
+    --container-justify-content: initial;
+    --container-align-items: center;
+    --container-gap: var(--size-2);
+    --container-height: initial;
+    --container-width: initial;
+    --container-padding: initial;
+  
+    --container-outline: initial;
+    --container-elevation: initial;
+    --container-shape: initial;
+  
+    --bg-color: initial;
+    
+    --text-color: initial;
+    --icon-color: initial;
+}

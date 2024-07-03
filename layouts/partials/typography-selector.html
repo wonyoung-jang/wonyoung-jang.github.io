@@ -1,62 +1,135 @@
 <button class="component button icon-button" id="typography-selector">
     <i>custom_typography</i>
     <menu>
-        <label for="brand-font-selector">Brand Font</label>
-        <select id="brand-font-selector">
-            <option value="Raleway">Raleway</option>
-            <option value="Arial">Arial</option>
-            <option value="Times New Roman">Times New Roman</option>
-            <option value="Courier New">Courier New</option>
-        </select>
+        <fieldset>
+            <legend class="title-medium">Brand Font</legend>
+            <div class="component radio-button">
+                <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
+                <label for="brand-raleway">Raleway</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="brand-arial" name="brand-font" value="Arial">
+                <label for="brand-arial">Arial</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
+                <label for="brand-times">Times New Roman</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
+                <label for="brand-courier">Courier New</label>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
        
-        <label for="plain-font-selector">Plain Font</label>
-        <select id="plain-font-selector">
-            <option value="IBM Plex Sans">IBM Plex Sans</option>
-            <option value="Arial">Arial</option>
-            <option value="Times New Roman">Times New Roman</option>
-            <option value="Courier New">Courier New</option>
-        </select>
+        <fieldset>
+            <legend class="title-medium">Plain Font</legend>
+            <div class="component radio-button">
+                <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
+                <label for="plain-ibm">IBM Plex Sans</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="plain-arial" name="plain-font" value="Arial">
+                <label for="plain-arial">Arial</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
+                <label for="plain-times">Times New Roman</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
+                <label for="plain-courier">Courier New</label>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
        
-        <label for="code-font-selector">Code Font</label>
-        <select id="code-font-selector">
-            <option value="IBM Plex Mono">IBM Plex Mono</option>
-            <option value="Arial">Arial</option>
-            <option value="Times New Roman">Times New Roman</option>
-            <option value="Courier New">Courier New</option>
-        </select>  
+        <fieldset>
+            <legend class="title-medium">Code Font</legend>
+            <div class="component radio-button">
+                <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
+                <label for="code-ibm">IBM Plex Mono</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="code-arial" name="code-font" value="Arial">
+                <label for="code-arial">Arial</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="code-times" name="code-font" value="Times New Roman">
+                <label for="code-times">Times New Roman</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="code-courier" name="code-font" value="Courier New">
+                <label for="code-courier">Courier New</label>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
+
+        <fieldset>
+            <legend class="title-medium">Font Size</legend>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-14" name="font-size" value="14" checked>
+                <label for="font-size-14">14px</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-15" name="font-size" value="15">
+                <label for="font-size-15">15px</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-16" name="font-size" value="16">
+                <label for="font-size-16">16px</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="font-size-17" name="font-size" value="17">
+                <label for="font-size-17">17px</label>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
        
-        <label for="line-density-selector">Line Density</label>
-        <select id="line-density-selector">
-            <option value="var(--scale-perfect-fourth)">Compact</option>
-            <option value="var(--scale-perfect-fifth)">Normal</option>
-            <option value="var(--scale-maj-6)">Spacious</option>
-        </select>
+        <fieldset>
+            <legend class="title-medium">Line Density</legend>
+            <div class="component radio-button">
+                <input type="radio" id="density-compact" name="line-density" value="var(--scale-perfect-fourth)" checked>
+                <label for="density-compact">Compact</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="density-normal" name="line-density" value="var(--scale-perfect-fifth)">
+                <label for="density-normal">Normal</label>
+            </div>
+            <div class="component radio-button">
+                <input type="radio" id="density-spacious" name="line-density" value="var(--scale-maj-6)">
+                <label for="density-spacious">Spacious</label>
+            </div>
+        </fieldset>
     </menu>
 </button>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var brandFontSelector = document.getElementById('brand-font-selector');
-        var plainFontSelector = document.getElementById('plain-font-selector');
-        var codeFontSelector = document.getElementById('code-font-selector');
-        var lineDensitySelector = document.getElementById('line-density-selector');
         var root = document.documentElement;
+        var typographySelector = document.getElementById('typography-selector');
 
         function updateTypography() {
-            var brandFont = brandFontSelector.value;
-            var plainFont = plainFontSelector.value;
-            var codeFont = codeFontSelector.value;
-            var lineDensity = lineDensitySelector.value;
+            var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
+            var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
+            var codeFont = document.querySelector('input[name="code-font"]:checked').value;
+            var fontSize = document.querySelector('input[name="font-size"]:checked').value;
+            var lineDensity = document.querySelector('input[name="line-density"]:checked').value;
 
             root.style.setProperty('--typeface-brand', brandFont);
             root.style.setProperty('--typeface-plain', plainFont);
             root.style.setProperty('--typeface-code', codeFont);
+            root.style.setProperty('--input-font-size', fontSize + 'px');
             root.style.setProperty('--line-height', lineDensity);
 
             // Store values in localStorage
             localStorage.setItem('typography-brand-font', brandFont);
             localStorage.setItem('typography-plain-font', plainFont);
             localStorage.setItem('typography-code-font', codeFont);
+            localStorage.setItem('typography-font-size', fontSize);
             localStorage.setItem('typography-line-density', lineDensity);
         }
 
@@ -64,20 +137,19 @@
         var savedBrandFont = localStorage.getItem('typography-brand-font');
         var savedPlainFont = localStorage.getItem('typography-plain-font');
         var savedCodeFont = localStorage.getItem('typography-code-font');
+        var savedFontSize = localStorage.getItem('typography-font-size');
         var savedLineDensity = localStorage.getItem('typography-line-density');
 
-        if (savedBrandFont) brandFontSelector.value = savedBrandFont;
-        if (savedPlainFont) plainFontSelector.value = savedPlainFont;
-        if (savedCodeFont) codeFontSelector.value = savedCodeFont;
-        if (savedLineDensity) lineDensitySelector.value = savedLineDensity;
+        if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
+        if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
+        if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+        if (savedFontSize) document.querySelector(`input[name="font-size"][value="${savedFontSize}"]`).checked = true;
+        if (savedLineDensity) document.querySelector(`input[name="line-density"][value="${savedLineDensity}"]`).checked = true;
 
         // Apply saved or default values
         updateTypography();
 
-        // Add event listeners
-        brandFontSelector.addEventListener('change', updateTypography);
-        plainFontSelector.addEventListener('change', updateTypography);
-        codeFontSelector.addEventListener('change', updateTypography);
-        lineDensitySelector.addEventListener('change', updateTypography);
+        // Add event listener
+        typographySelector.addEventListener('change', updateTypography);
     });
 </script>

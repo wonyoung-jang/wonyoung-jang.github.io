@@ -1,0 +1,89 @@
+
+#theme-selector:active,
+#theme-selector:focus-within,
+#typography-selector:active,
+#typography-selector:focus-within {
+    & menu {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1) translateY(100%);
+    }
+}
+
+#theme-selector {
+    & .divider {
+        margin-block: var(--size-4);
+    }
+
+    & .slider {
+        margin-block: var(--size-2);
+
+        & label {
+            margin-top: var(--size-2);
+        }
+    }
+
+    & menu {
+        border-radius: var(--shape-corner-m);
+        padding: var(--size-4);
+    }
+
+    & #theme-hues,
+    & #theme-chromas {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: var(--size-4);
+        margin-bottom: var(--size-3);
+        border-radius: var(--shape-corner-full);
+    }
+    
+    & #theme-hues {
+        background: linear-gradient(
+            0.25turn, 
+            var(--palette-hue-0), 
+            var(--palette-hue-30),
+            var(--palette-hue-60),
+            var(--palette-hue-90),
+            var(--palette-hue-120),
+            var(--palette-hue-150),
+            var(--palette-hue-180),
+            var(--palette-hue-210),
+            var(--palette-hue-240),
+            var(--palette-hue-270),
+            var(--palette-hue-300),
+            var(--palette-hue-330)
+        );
+    }
+
+    & #theme-chromas {
+        background: linear-gradient(
+            0.25turn,
+            var(--palette-primary-10),
+            var(--palette-primary-20),
+            var(--palette-primary-30),
+            var(--palette-primary-40),
+            var(--palette-primary-50),
+            var(--palette-primary-60),
+            var(--palette-primary-70),
+            var(--palette-primary-80),
+            var(--palette-primary-90)
+        );
+    }
+}
+
+#typography-selector {
+    & legend {
+        margin-top: var(--size-4);
+    }
+}
+
+#theme-selector,
+#typography-selector {
+    & menu {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--size-2);
+    }
+}
