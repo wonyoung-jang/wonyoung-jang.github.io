@@ -28,12 +28,6 @@
             {{- end }}">
 <meta name="author" content="Wonyoung Jang">
 
-<link rel="canonical" href="{{ if .Params.canonicalURL }} {{ trim .Params.canonicalURL " " }} {{ else }} {{ .Permalink }} {{ end }}" />
-
-{{ with .Site.Params.Label.Icon }}
-    <link rel="preload" href="{{ . }}" as="image">
-{{ end }}
-
 {{/* Search */}}
 {{ if (eq .Layout `search`) }}
     <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
@@ -45,9 +39,6 @@
 
 {{/* Favicons */}}
 <link rel="icon" href="{{ .Site.Params.assets.favicon | default "favicon.ico" | absURL }}">
-<link rel="icon" type="image/webp" sizes="16x16" href="{{ .Site.Params.assets.favicon16x16 | default "favicon-16x16.webp" | absURL }}">
-<link rel="icon" type="image/webp" sizes="32x32" href="{{ .Site.Params.assets.favicon32x32 | default "favicon-32x32.webp" | absURL }}">
-<link rel="apple-touch-icon" href="{{ .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.webp" | absURL }}">
 
 {{/* RSS */}}
 {{ range .AlternativeOutputFormats }}

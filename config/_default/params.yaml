@@ -9,10 +9,6 @@ description: "Wonyoung Jang's personal website"
 assets:
   favicon: 'sitelogo.svg'
 
-label:
-  icon: '/static/sitelogo.svg'
-  iconHeight: 24
-
 home:
   title: Wonyoung Jang
   subtitle: Personal Website
