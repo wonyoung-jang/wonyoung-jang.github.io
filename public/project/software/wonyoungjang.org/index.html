@@ -155,21 +155,9 @@
     <menu class="menu">
         <fieldset class="typography-fieldset">
             <legend class="title-medium">Font Size</legend>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-14" name="font-size" value="14" checked>
-                <label for="font-size-14">14px</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-15" name="font-size" value="15">
-                <label for="font-size-15">15px</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-16" name="font-size" value="16">
-                <label for="font-size-16">16px</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="font-size-17" name="font-size" value="17">
-                <label for="font-size-17">17px</label>
+            <div class="slider">
+                <input type="range" id="font-size-slider" name="font-size" min="8" max="24" value="14" step="1">
+                <output for="font-size-slider" id="font-size-output">14px</output>
             </div>
         </fieldset>
 
@@ -263,12 +251,14 @@
     document.addEventListener('DOMContentLoaded', function() {
         var root = document.documentElement;
         var typographySelector = document.getElementById('typography-selector');
+        var fontSizeSlider = document.getElementById('font-size-slider');
+        var fontSizeOutput = document.getElementById('font-size-output');
 
         function updateTypography() {
             var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
             var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
             var codeFont = document.querySelector('input[name="code-font"]:checked').value;
-            var fontSize = document.querySelector('input[name="font-size"]:checked').value;
+            var fontSize = fontSizeSlider.value;
             var lineDensity = document.querySelector('input[name="line-density"]:checked').value;
 
             root.style.setProperty('--typeface-brand', brandFont);
@@ -276,6 +266,8 @@
             root.style.setProperty('--typeface-code', codeFont);
             root.style.setProperty('--input-font-size', fontSize + 'px');
             root.style.setProperty('--line-height', lineDensity);
+
+            fontSizeOutput.textContent = fontSize + 'px';
 
             
             localStorage.setItem('typography-brand-font', brandFont);
@@ -295,7 +287,7 @@
         if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
         if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
         if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
-        if (savedFontSize) document.querySelector(`input[name="font-size"][value="${savedFontSize}"]`).checked = true;
+        if (savedFontSize) fontSizeSlider.value = savedFontSize;
         if (savedLineDensity) document.querySelector(`input[name="line-density"][value="${savedLineDensity}"]`).checked = true;
 
         
@@ -303,6 +295,7 @@
 
         
         typographySelector.addEventListener('change', updateTypography);
+        fontSizeSlider.addEventListener('input', updateTypography);
     });
 </script>
         
@@ -313,7 +306,7 @@
     <label class="title-large" for="hue-selector">Hue</label>
     <div class="slider">
       <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
-      <div class="tooltip" id="hue-tooltip"></div>
+      <span class="tooltip" id="hue-tooltip"></span>
     </div>
     <div id="theme-hues"></div>
     
@@ -322,7 +315,7 @@
     <label class="title-large" for="chroma-selector">Chroma</label>
     <div class="slider">
       <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
-      <div class="tooltip" id="chroma-tooltip"></div>
+      <span class="tooltip" id="chroma-tooltip"></span>
     </div>
     <div id="theme-chromas"></div>
   </menu>
@@ -445,12 +438,12 @@
   
   
   
-   10 
+   13 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/software\/realtime-multiplayer-drawing\/";
+    window.location.href = "\/project\/university\/disaster-recovery-robot-simulation\/";
   }
 </script>
         
@@ -473,94 +466,9 @@
 
     <div class="component tabs title-medium">
         
-    
-    
-        
-
-        
-            
-        
-
-        
-        
-
-        
-            
-        
-
-        <a
-            
-                
-                     aria-current="true"
-                
-            
-                
-                     class="component tab active"
-                
-            
-                
-                     href="/project/"
-                
-            >
-            <i>code</i>
-            Projects
-        </a>
-    
-        
-
-        
-            
-        
-
-        
-        
-
-        
-            
-        
-
-        <a
-            
-                
-                     class="component tab"
-                
-            
-                
-                     href="/resource/"
-                
-            >
-            <i>developer_guide</i>
-            Resources
-        </a>
-    
-        
-
-        
-            
-        
-
-        
-        
-
-        
-            
-        
-
-        <a
-            
-                
-                     class="component tab"
-                
-            
-                
-                     href="/now/"
-                
-            >
-            <i>update</i>
-            Now
-        </a>
-    
-
+        <a aria-current="true" class="ancestor" href="/project/">Projects</a>
+        <a href="/resource/">Resources</a>
+        <a href="/now/">Now</a>
     </div>
 
 
@@ -1107,26 +1015,17 @@
         </span>
 
         
-            <a  href="/project/">
-                Projects
-            </a>
+
         
-            <a  href="/project/software/">
-                Software
-            </a>
-        
-            <a  href="/project/university/">
-                University
-            </a>
-        
-            <a  href="/resource/">
-                Resources
-            </a>
-        
-            <a  href="/resource/reference/">
-                References
-            </a>
-        
+    <nav>
+        <a href="/project/">Projects</a>
+        <a href="/project/software/">Software</a>
+        <a href="/project/university/">University</a>
+        <a href="/resource/">Resources</a>
+        <a href="/resource/layout/">Layouts</a>
+        <a href="/resource/reference/">References</a>
+        <a href="/resource/token/">Tokens</a>
+    </nav>        
     </div>
     
     

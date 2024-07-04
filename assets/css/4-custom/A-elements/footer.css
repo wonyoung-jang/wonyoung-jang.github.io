@@ -28,12 +28,7 @@ footer {
     align-items: center;
     text-decoration: none;
     min-height: 42px;
-    padding-inline-start: var(--size-2);
     width: 100%;
-
-    &:hover {
-      background-color: var(--color-surface-container-highest);
-    }
   }
 
   & span {

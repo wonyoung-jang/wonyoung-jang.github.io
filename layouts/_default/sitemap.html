@@ -18,7 +18,7 @@
       </thead>
       <tbody class="label-medium">
         {{ $index := 0 }}
-        {{ range .Site.Pages.ByParam "title" }}
+        {{ range site.Pages.ByParam "title" }}
           {{ if ne .Title "" }}
             {{ $index = add $index 1 }}
 

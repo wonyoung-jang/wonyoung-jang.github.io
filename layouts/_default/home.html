@@ -1,12 +1,12 @@
 {{ define "main" }}
-{{ with .Site.Params.Home }}
+{{ with site.Params.Home }}
     <article class="layout panes basic-singlepane" id="home-page">
         <section class="layout pane">
             {{/* Home page header */}}
             <section id="home-header">
                 {{/* Site title */}}
                 <h1>
-                    {{ .title | default $.Site.Title | markdownify }}
+                    {{ .title | default site.Title | markdownify }}
                 </h1>        
        
                 {{/* Home page buttons */}}
@@ -15,15 +15,6 @@
 
             {{/*  Showcase pages table  */}}
             {{ partial "home-showcase-panel.html" . }}
-            
-
-            {{/*  Test  */}}
-            {{/*
-            {{ partial "font-selector.html" . }}
-            
-            {{ partial "theme-selector.html" . }}
-            
-            */}}
         </section>
     </article>
 {{ end }}

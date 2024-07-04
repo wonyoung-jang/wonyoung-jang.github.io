@@ -41,6 +41,36 @@ footer:
     url: https://wonyoungjang.org/index.xml
     weight: 50
 
+sections:
+  - identifier: Projects
+    name: Projects
+    pageRef: /project
+    weight: 10
+  - name: Software
+    pageRef: /project/software
+    weight: 1
+    parent: Projects
+  - name: University
+    pageRef: /project/university
+    weight: 2
+    parent: Projects
+  - identifier: Resources
+    name: Resources
+    pageRef: /resource
+    weight: 20
+  - name: Layouts
+    pageRef: /resource/layout
+    weight: 1
+    parent: Resources
+  - name: References
+    pageRef: /resource/reference
+    weight: 2
+    parent: Resources
+  - name: Tokens
+    pageRef: /resource/token
+    weight: 3
+    parent: Resources
+
 connect:
   - name: GitHub
     url: https://github.com/wonyoung-jang
@@ -54,23 +84,3 @@ connect:
     url: https://ko-fi.com/wonyoung_jang
     weight: 30
     pre: <i>loyalty</i>
-
-sections:
-  - identifier: Projects
-    name: Projects
-    pageRef: /project
-    weight: 10
-  - identifier: Software
-    name: Software
-    pageRef: /software
-    weight: 15
-  - identifier: University
-    name: University
-    pageRef: /university
-    weight: 17
-  - name: Resources
-    pageRef: /resource
-    weight: 20
-  - name: References
-    pageRef: /reference
-    weight: 25

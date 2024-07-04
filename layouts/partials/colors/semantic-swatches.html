@@ -1,7 +1,7 @@
 <details class="layout token-set" open>
   <summary class="token-set-title">Semantic color swatches</summary>
   
-  {{ range $group, $swatches := .Site.Data.palettes }}
+  {{ range $group, $swatches := site.Data.palettes }}
     {{ if eq $group "main" }}
       {{ continue }}
     {{ end }}

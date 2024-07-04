@@ -437,12 +437,12 @@
   
   
   
-   4 
+   21 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/reference\/";
+    window.location.href = "\/now\/";
   }
 </script>
         
@@ -465,90 +465,9 @@
 
     <div class="component tabs title-medium">
         
-    
-    
-        
-
-        
-            
-        
-
-        
-        
-
-        
-            
-        
-
-        <a
-            
-                
-                     class="component tab"
-                
-            
-                
-                     href="/project/"
-                
-            >
-            <i>code</i>
-            Projects
-        </a>
-    
-        
-
-        
-            
-        
-
-        
-        
-
-        
-            
-        
-
-        <a
-            
-                
-                     class="component tab"
-                
-            
-                
-                     href="/resource/"
-                
-            >
-            <i>developer_guide</i>
-            Resources
-        </a>
-    
-        
-
-        
-            
-        
-
-        
-        
-
-        
-            
-        
-
-        <a
-            
-                
-                     class="component tab"
-                
-            
-                
-                     href="/now/"
-                
-            >
-            <i>update</i>
-            Now
-        </a>
-    
-
+        <a href="/project/">Projects</a>
+        <a href="/resource/">Resources</a>
+        <a href="/now/">Now</a>
     </div>
 
 
@@ -684,10 +603,6 @@
         </tbody>
     </table>
 </details>
-            
-
-            
-            
         </section>
     </article>
 
@@ -784,26 +699,17 @@
         </span>
 
         
-            <a  href="/project/">
-                Projects
-            </a>
+
         
-            <a  href="/project/software/">
-                Software
-            </a>
-        
-            <a  href="/project/university/">
-                University
-            </a>
-        
-            <a  href="/resource/">
-                Resources
-            </a>
-        
-            <a  href="/resource/reference/">
-                References
-            </a>
-        
+    <nav>
+        <a href="/project/">Projects</a>
+        <a href="/project/software/">Software</a>
+        <a href="/project/university/">University</a>
+        <a href="/resource/">Resources</a>
+        <a href="/resource/layout/">Layouts</a>
+        <a href="/resource/reference/">References</a>
+        <a href="/resource/token/">Tokens</a>
+    </nav>        
     </div>
     
     
@@ -877,6 +783,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 
             </footer>

@@ -20,11 +20,7 @@
             Sections
         </span>
 
-        {{ range site.Menus.sections }}
-            <a  href="{{ .URL }}">
-                {{ .Name }}
-            </a>
-        {{ end }}
+        {{ partial "menu.html" (dict "menuID" "sections" "page" .) }}     
     </div>
     
     {{/* Connect links */}}
@@ -58,12 +54,12 @@
     <a  class="component button common-button" with-icon
         id="copyright-button"
         href="{{ "" | absLangURL }}">
-        © {{ now.Year }} {{ .Site.Title }}
+        © {{ now.Year }} {{ site.Title }}
     </a>
 </section>
 
 {{/* Script for theme toggle */}}
-{{ if (not .Site.Params.disableThemeToggle) }}
+{{ if (not site.Params.disableThemeToggle) }}
     <script defer>
         document.getElementById("theme-toggle").addEventListener("click", () => {
             if (document.body.className.includes("dark")) {
