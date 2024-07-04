@@ -8,35 +8,54 @@
 {{ end }}
 
 {{ define "partials/inline/tab_menu/walk.html" }}
-    {{ $page := .page }}
-    {{ range .menuEntries }}
-        {{ $attrs := dict "href" .URL }}
+    {{- $page := .page }}
+    {{- range .menuEntries }}
+        {{- $attrs := dict "href" .URL }}
 
-        {{ if $page.IsMenuCurrent .Menu . }}
-            {{ $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "page") }}
-        {{ else if $page.HasMenuCurrent .Menu .}}
-            {{ $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "true") }}
-        {{ else }}
-            {{ $attrs = merge $attrs (dict "class" "component tab") }}
-        {{ end }}
+        {{- if $page.IsMenuCurrent .Menu . }}
+            {{- $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "page") }}
+        {{- else if $page.HasMenuCurrent .Menu .}}
+            {{- $attrs = merge $attrs (dict "class" "component tab active ancestor" "aria-current" "true") }}
+        {{- else }}
+            {{- $attrs = merge $attrs (dict "class" "component tab") }}
+        {{- end }}
 
-        {{ $name := .Name }}
-        {{ $icon := .Pre }}
+        {{- $name := .Name }}
+        {{- $icon := .Pre }}
 
-        {{ with .Identifier }}
-            {{ with T . }}
-                {{ $name = . }}
-            {{ end }}
-        {{ end }}
+        {{- with .Identifier }}
+            {{- with T . }}
+                {{- $name = . }}
+            {{- end }}
+        {{- end }}
 
-        <a
-            {{ range $k, $v := $attrs }}
-                {{ with $v }}
-                    {{ printf " %s=%q" $k $v | safeHTMLAttr }}
-                {{ end }}
-            {{ end }}>
-            {{ $icon }}
-            {{ $name }}
-        </a>
-    {{ end }}
-{{ end }}
+        {{- if .Children }}
+            <div class="sub-tabs-container">
+                <a
+                    {{- range $k, $v := $attrs }}
+                        {{- with $v }}
+                            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                        {{- end }}
+                    {{- end -}}>
+                    {{ $icon }}
+                    {{ $name }}
+                </a>
+                {{- with .Children }}
+                    <div class="component tabs title-medium sub-tabs">
+                        {{- partial "inline/tab_menu/walk.html" (dict "page" $page "menuEntries" .) }}
+                    </div>
+                {{- end }}
+            </div>
+        {{- else }}
+            <a
+                {{- range $k, $v := $attrs }}
+                    {{- with $v }}
+                        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                    {{- end }}
+                {{- end -}}>
+                {{ $icon }}
+                {{ $name }}
+            </a>
+        {{- end }}
+    {{- end }}
+{{- end }}

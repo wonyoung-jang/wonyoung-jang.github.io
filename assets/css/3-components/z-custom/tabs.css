@@ -1,4 +1,5 @@
-.tabs {
+.tabs:not(.sub-tabs) {
+  position: relative;
   align-self: center;
 
   --container-width: calc(100% - var(--size-5));
@@ -11,14 +12,15 @@
   --container-align-items: stretch;
   --container-justify-content: stretch;
   --container-gap: var(--size-2);
-  
+  overflow: visible;
+
   & .tab {
     flex: 1 1 0;
     min-width: fit-content;
 
     --container-width: auto;
     --container-height: 48px;
-    --container-shape: none;
+    --container-shape: var(--shape-corner-xl-top);
     --container-padding: 0 var(--size-2);
     
     --container-display: flex;
@@ -41,7 +43,7 @@
       content: '';
       display: block;
       position: absolute;
-      z-index: 5;
+      z-index: 9999;
       bottom: 0;
       left: 42.5%;
       width: 15%;
@@ -57,11 +59,46 @@
 }
 
 /* Custom */
-.tabs,
-.tab {
-  border-radius: var(--shape-corner-xl-top);
+.tabs.sub-tabs {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 1 1 0;
+  width: 100%;
+  height: auto;
+  
+  & .tab {
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    border-radius: unset;
+    background-color: var(--color-surface-container-highest);
+    margin-left: var(--size-4);
+    padding: var(--size-5);
+    border-bottom: 3px solid var(--color-outline-variant);
+    border-inline: 1px solid var(--color-outline);
+
+    &::before {
+      display: none;
+    }
+
+    &.active {
+      color: var(--color-on-secondary-container);
+      background-color: var(--color-secondary-container);
+      border-bottom: 3px solid var(--color-primary);
+    }
+  }
 }
 
-.tabs {
+.sub-tabs-container {
   flex: 1 1 0;
+  position: relative;
+
+  &:hover .sub-tabs,
+  &:focus .sub-tabs {
+    display: flex;
+  }
 }

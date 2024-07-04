@@ -4,11 +4,36 @@ main:
     pageRef: /project
     pre: <i>code</i>
     weight: 10
-  - identifier: Resource
+  - name: Software
+    pageRef: /software
+    pre: <i>terminal</i>
+    parent: Projects
+    weight: 1
+  - name: University
+    pageRef: /university
+    pre: <i>school</i>
+    parent: Projects
+    weight: 2
+  - identifier: Resources
     name: Resources
     pageRef: /resource
     pre: <i>developer_guide</i>
     weight: 20
+  - name: Layouts
+    pageRef: /layout
+    pre: <i>quick_reference</i>
+    parent: Resources
+    weight: 1
+  - name: Tokens
+    pageRef: /token
+    pre: <i>quick_reference</i>
+    parent: Resources
+    weight: 2
+  - name: References
+    pageRef: /reference
+    pre: <i>quick_reference</i>
+    parent: Resources
+    weight: 3
   - identifier: Now
     name: Now
     pageRef: /now

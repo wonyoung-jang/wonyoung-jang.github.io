@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,13 +33,13 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/404.html">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/404.html">
 
 
 
@@ -76,7 +76,7 @@
   
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/404.html">
+<meta property="og:url" content="https://wonyoungjang.org/404.html">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="404 Page not found">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -108,7 +108,7 @@
     <section class="start">
         
         <a  id="site-icon"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -130,11 +130,10 @@
         
         <a  id="site-headline"
             class="title-medium"
-            href="http://192.168.40.181:1313/">
+            href="https://wonyoungjang.org/">
             Wonyoung Jang
         </a>
     </section>
-    
     
     
     <section class="end">
@@ -259,7 +258,7 @@
             root.style.setProperty('--typeface-plain', plainFont);
             root.style.setProperty('--typeface-code', codeFont);
             root.style.setProperty('--input-font-size', fontSize + 'px');
-            root.style.setProperty('--line-height', lineDensity);
+            root.style.setProperty('--input-line-height', lineDensity);
 
             fontSizeOutput.textContent = fontSize + 'px';
 
@@ -432,12 +431,12 @@
   
   
   
-   40 
+   41 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/token\/";
+    window.location.href = "\/project\/software\/logseq-markdown-tokenizer\/";
   }
 </script>
         
@@ -455,20 +454,55 @@
 
 
 
-    <nav>
 
-        <a href="/project/">
-            Projects
-        </a>
 
-        <a href="/resource/">
-            Resources
-        </a>
+    <div class="component tabs title-medium">
+        
+            <div class="sub-tabs-container">
+                <a class="component tab" href="/project/">
+                    <i>code</i>
+                    Projects
+                </a>
+                    <div class="component tabs title-medium sub-tabs">
+            <a class="component tab" href="/project/software/">
+                <i>terminal</i>
+                Software
+            </a>
+            <a class="component tab" href="/project/university/">
+                <i>school</i>
+                University
+            </a>
+                    </div>
+            </div>
+            <div class="sub-tabs-container">
+                <a class="component tab" href="/resource/">
+                    <i>developer_guide</i>
+                    Resources
+                </a>
+                    <div class="component tabs title-medium sub-tabs">
+            <a class="component tab" href="/resource/layout/">
+                <i>quick_reference</i>
+                Layouts
+            </a>
+            <a class="component tab" href="/resource/token/">
+                <i>quick_reference</i>
+                Tokens
+            </a>
+            <a class="component tab" href="/resource/reference/">
+                <i>quick_reference</i>
+                References
+            </a>
+                    </div>
+            </div>
+            <a class="component tab" href="/now/">
+                <i>update</i>
+                Now
+            </a>
+    </div>
 
-        <a href="/now/">
-            Now
-        </a>
-    </nav>        
+
+
+     
 
 
 
@@ -690,7 +724,7 @@
 <section class="copyright">
     <a  class="component button common-button" with-icon
         id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -711,6 +745,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 
             </footer>
