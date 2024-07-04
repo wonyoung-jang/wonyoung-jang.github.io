@@ -39,48 +39,7 @@
 </nav>
 
 {{/* Tabs */}}
-{{ $page := . }}
-{{ $menuID := "main" }}
-
-{{ with index site.Menus $menuID }}
-    <div class="component tabs title-medium">
-        {{ partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </div>
-{{ end }}
-
-{{ define "partials/inline/menu/walk.html" }}
-    {{ $page := .page }}
-    {{ range .menuEntries }}
-        {{ $attrs := dict "href" .URL }}
-
-        {{ if $page.IsMenuCurrent .Menu . }}
-            {{ $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "page") }}
-        {{ else if $page.HasMenuCurrent .Menu .}}
-            {{ $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "true") }}
-        {{ else }}
-            {{ $attrs = merge $attrs (dict "class" "component tab") }}
-        {{ end }}
-
-        {{ $name := .Name }}
-        {{ $icon := .Pre }}
-
-        {{ with .Identifier }}
-            {{ with T . }}
-                {{ $name = . }}
-            {{ end }}
-        {{ end }}
-
-        <a
-            {{ range $k, $v := $attrs }}
-                {{ with $v }}
-                    {{ printf " %s=%q" $k $v | safeHTMLAttr }}
-                {{ end }}
-            {{ end }}>
-            {{ $icon }}
-            {{ $name }}
-        </a>
-    {{ end }}
-{{ end }}
+{{ partial "tab_menu.html" (dict "menuID" "main" "page" .) }}     
 
 {{/* Light theme script */}}
 {{ if (eq site.Params.defaultTheme "light") }}

@@ -435,12 +435,12 @@
   
   
   
-   28 
+   38 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/";
+    window.location.href = "\/about\/";
   }
 </script>
         
@@ -458,18 +458,20 @@
 
 
 
+    <nav>
 
+        <a href="/project/">
+            Projects
+        </a>
 
+        <a aria-current="true" class="ancestor" href="/resource/">
+            Resources
+        </a>
 
-    <div class="component tabs title-medium">
-        
-        <a href="/project/">Projects</a>
-        <a aria-current="true" class="ancestor" href="/resource/">Resources</a>
-        <a href="/now/">Now</a>
-    </div>
-
-
-
+        <a href="/now/">
+            Now
+        </a>
+    </nav>        
 
 
 
@@ -1003,16 +1005,35 @@
         </span>
 
         
-
-        
     <nav>
-        <a href="/project/">Projects</a>
-        <a href="/project/software/">Software</a>
-        <a href="/project/university/">University</a>
-        <a href="/resource/">Resources</a>
-        <a href="/resource/layout/">Layouts</a>
-        <a href="/resource/reference/">References</a>
-        <a href="/resource/token/">Tokens</a>
+
+        <a href="/project/">
+            Projects
+        </a>
+
+        <a href="/project/software/">
+            Software
+        </a>
+
+        <a href="/project/university/">
+            University
+        </a>
+
+        <a href="/resource/">
+            Resources
+        </a>
+
+        <a href="/resource/layout/">
+            Layouts
+        </a>
+
+        <a href="/resource/reference/">
+            References
+        </a>
+
+        <a href="/resource/token/">
+            Tokens
+        </a>
     </nav>        
     </div>
     
@@ -1087,49 +1108,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 
             </footer>
