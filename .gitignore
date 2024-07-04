@@ -10,5 +10,5 @@ node_modules
 utils.tsx
 csstest.json
 main.py
-components-meta.css
+*meta.css
 other copy.css

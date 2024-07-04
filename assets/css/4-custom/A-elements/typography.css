@@ -1,4 +1,6 @@
-p {
+/* Basic text */
+p,
+a {
   font-size: var(--typescale-body-large-size);
   line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typescale-body-large-weight);
@@ -12,6 +14,7 @@ label {
   font-family: var(--typescale-label-large-font);
 }
 
+/* Headings */
 h1 {
   font-size: var(--typescale-display-large-size);
   line-height: var(--typescale-display-large-line-height);
@@ -54,6 +57,10 @@ h6 {
   font-family: var(--typescale-headline-small-font);
 }
 
+p {
+  margin-block-start: var(--size-2);
+}
+
 strong,
 b {
   font-weight: var(--typeface-weight-bold);
@@ -61,22 +68,6 @@ b {
 
 em {
   font-style: italic;
-}
-
-p {
-  margin-block: 1em;
-}
-
-p,
-ul,
-ol,
-li,
-strong,
-b,
-em {
-  max-width: 60ch;
-  white-space: normal;
-  overflow-wrap: break-word;
 }
 
 .highlight {
@@ -107,20 +98,24 @@ em {
 }
 
 #post-content {  
-  & h2:not(:first-child),
+  & h2:not(:first-child) {
+    margin-block-start: var(--size-21);
+    margin-block-end: var(--size-3);
+  }
+
   & h3,
   & h4,
   & h5,
   & h6 {
-    margin-block-start: 1.618em;
-    margin-block-end: 0.618em;
+    margin-block-start: var(--size-8);
+    margin-block-end: var(--size-2);
   }
 
   & ul,
   & ol,
   & li {
     list-style-type: disc;
-    margin-inline-start: 1rem;
+    margin-inline-start: var(--size-3);
   }
 }
 

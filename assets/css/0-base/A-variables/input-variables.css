@@ -8,12 +8,13 @@
   --scale-back-size:          var(--scale-min-2);
 
   /* Line heights */
-  --line-height:                  var(--scale-perfect-fifth);
-  --scale-line-height-display:    var(--line-height) / 0.85;
-  --scale-line-height-headline:   var(--line-height) / 0.90;
-  --scale-line-height-title:      var(--line-height) / 0.95;
-  --scale-line-height-body:       var(--line-height);
-  --scale-line-height-label:      var(--line-height) * 1.05;
+  --input-line-height:                  var(--scale-perfect-fifth);
+  
+  --scale-line-height-display:    var(--input-line-height) / 0.85;
+  --scale-line-height-headline:   var(--input-line-height) / 0.90;
+  --scale-line-height-title:      var(--input-line-height) / 0.95;
+  --scale-line-height-body:       var(--input-line-height);
+  --scale-line-height-label:      var(--input-line-height) * 1.05;
 
   /* Icon font family */
   --font-icon: var(--typeface-icon-sharp);

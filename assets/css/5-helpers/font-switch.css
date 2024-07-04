@@ -1,7 +1,0 @@
-& #font-switch {
-    &:active {
-        & :root {
-            --typeface-brand: "IBM Plex Mono", monospace;
-        }
-    }
-}

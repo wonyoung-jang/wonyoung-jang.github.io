@@ -1,6 +1,4 @@
 a {
-  display: inline;
-  vertical-align: text-bottom;
   text-decoration: none;
 
   &:not(.component) {
@@ -25,15 +23,20 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  
   & .anchor {
     display: none;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-size: 80%;
+    color: var(--color-on-surface-variant);
+    margin-inline-end: var(--size-2);
+    user-select: none;
   }
 
   &:hover .anchor {
     display: inline;
-    vertical-align: text-bottom;
-    color: var(--color-on-surface-variant);
-    margin-inline-start: var(--size-2);
-    user-select: none;
   }
 }
