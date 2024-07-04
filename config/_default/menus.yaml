@@ -5,12 +5,12 @@ main:
     pre: <i>code</i>
     weight: 10
   - name: Software
-    pageRef: /software
+    pageRef: /project/software
     pre: <i>terminal</i>
     parent: Projects
     weight: 1
   - name: University
-    pageRef: /university
+    pageRef: /project/university
     pre: <i>school</i>
     parent: Projects
     weight: 2
@@ -20,17 +20,17 @@ main:
     pre: <i>developer_guide</i>
     weight: 20
   - name: Layouts
-    pageRef: /layout
+    pageRef: /resource/layout
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 1
   - name: Tokens
-    pageRef: /token
+    pageRef: /resource/token
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 2
   - name: References
-    pageRef: /reference
+    pageRef: /resource/reference
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 3
