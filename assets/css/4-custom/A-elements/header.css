@@ -33,10 +33,6 @@ header {
   flex-flow: row nowrap;
 }
 
-#site-icon * {
-  box-shadow: unset;
-}
-
 #theme-toggle,
 #random-button {
   cursor: pointer;
