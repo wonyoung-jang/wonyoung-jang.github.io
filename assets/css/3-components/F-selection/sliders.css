@@ -29,7 +29,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: none;
+    background: transparent;
     cursor: grab;
     overflow: hidden;
   
