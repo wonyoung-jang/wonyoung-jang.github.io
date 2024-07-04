@@ -29,7 +29,7 @@
 <button class="component button icon-button" id=random-button accesskey=r title="Random page (ALT + SHIFT + R)" onclick="return navigateToRandomPage(),!1">
 <i>ifl</i>
 </button>
-<script defer>40;function navigateToRandomPage(){window.location.href="/now/"}</script><a class="component button icon-button" href=/search accesskey=s title="Search page (ALT + SHIFT + S)"><i>search</i></a></section></nav><div class="component tabs title-medium"><div class=sub-tabs-container><a aria-current=true class="component tab active ancestor" href=/project/><i>code</i>
+<script defer>33;function navigateToRandomPage(){window.location.href="/resource/layout/split-pane-layout/"}</script><a class="component button icon-button" href=/search accesskey=s title="Search page (ALT + SHIFT + S)"><i>search</i></a></section></nav><div class="component tabs title-medium"><div class=sub-tabs-container><a aria-current=true class="component tab active ancestor" href=/project/><i>code</i>
 Projects</a><div class="component tabs title-medium sub-tabs"><a class="component tab"><i>terminal</i>
 Software
 </a><a class="component tab"><i>school</i>
@@ -68,9 +68,9 @@ This project was completed for coursework and is no longer maintained. Names and
 </a><a href=/now/>Now
 </a><a href=/search/>Search
 </a><a href=/sitemap/>Sitemap
-</a><a href=https://wonyoungjang.org/index.xml>RSS</a></div><div class=footer-links-list><span class=title-large>Sections</span><nav><a href=/project/>Projects
+</a><a href=https://wonyoungjang.org/index.xml>RSS</a></div><div class=footer-links-list><span class=title-large>Sections</span><nav><a aria-current=true class=ancestor href=/project/>Projects
 </a><a href=/project/software/>Software
-</a><a href=/project/university/>University
+</a><a aria-current=true class=ancestor href=/project/university/>University
 </a><a href=/resource/>Resources
 </a><a href=/resource/layout/>Layouts
 </a><a href=/resource/reference/>References
@@ -83,4 +83,4 @@ sub150-container" extended href=mailto:contact@wonyoungjang.org target=_blank re
 Email
 </a><a class="component button fab
 sub180-container" extended href=https://ko-fi.com/wonyoung_jang target=_blank rel="external noopener noreferrer me"><i>loyalty</i>
-Ko-fi</a></div></section><section class=copyright><a class="component button common-button" with-icon id=copyright-button href=https://wonyoungjang.org/>© 2024 Wonyoung Jang</a></section><script defer>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></footer></main></body></html>
+Ko-fi</a></div></section><section class=copyright><a class="component button common-button" with-icon id=copyright-button href=https://wonyoungjang.org/>© 2024 Wonyoung Jang</a></section><script defer>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script defer>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerText="copy";function s(){t.innerText="copied!",setTimeout(()=>{t.innerText="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.prepend(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(t):e.parentNode.prepend(t))})</script></footer></main></body></html>
