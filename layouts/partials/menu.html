@@ -2,22 +2,13 @@
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-    <nav>
-        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </nav>
+    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
     {{- $page := .page }}
     {{- range .menuEntries }}
         {{- $attrs := dict "href" .URL }}
-        
-        {{- if $page.IsMenuCurrent .Menu . }}
-            {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-        {{- else if $page.HasMenuCurrent .Menu .}}
-            {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-        {{- end }}
-
         {{- $name := .Name }}
 
         {{- with .Identifier }}
@@ -26,16 +17,28 @@
             {{- end }}
         {{- end }}
 
-        <a  {{- range $k, $v := $attrs }}
-                {{- with $v }}
-                    {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+        {{- if .Children }}
+            <div class="sub-sections-container">
+                <a {{- range $k, $v := $attrs }}
+                        {{- with $v }}
+                            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                        {{- end }}
+                    {{- end -}}>
+                    {{ $name }}
+                </a>
+                {{- with .Children }}
+                    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
                 {{- end }}
-            {{- end -}}>
-            {{ $name }}
-        </a>
-
-        {{- with .Children }}
-            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+            </div>
+        {{- else }}
+            <a  {{- range $k, $v := $attrs }}
+                    {{- with $v }}
+                        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                    {{- end }}
+                {{- end -}}>
+                {{ $name }}
+            </a>
         {{- end }}
+
     {{- end }}
 {{- end }}   

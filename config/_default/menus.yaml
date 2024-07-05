@@ -24,13 +24,13 @@ main:
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 1
-  - name: Tokens
-    pageRef: /resource/token
+  - name: References
+    pageRef: /resource/reference
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 2
-  - name: References
-    pageRef: /resource/reference
+  - name: Tokens
+    pageRef: /resource/token
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 3
