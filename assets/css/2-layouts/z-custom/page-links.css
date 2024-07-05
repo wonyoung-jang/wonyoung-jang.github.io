@@ -58,7 +58,7 @@
   }
 }
 
-.share-buttons a svg {
-  padding: var(--size-1) !important;
+.share-buttons svg {
+  padding: var(--size-2) !important;
   margin: 0 !important;
 }
