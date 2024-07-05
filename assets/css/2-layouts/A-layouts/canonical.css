@@ -5,6 +5,7 @@
   
   & .card {
     flex: 1 1 calc(100% - var(--spacing-panes));
+    min-height: fit-content;
     max-height: 50%;
   }
 }
