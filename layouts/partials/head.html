@@ -1,7 +1,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+    <meta name="robots" content="index, follow">
+{{- else }}
+    <meta name="robots" content="noindex, nofollow">
+{{- end }}
+
+{{/* Meta */}}
+<meta name="description" content="{{- with .Description -}}{{- . -}}{{- else -}}{{- if or .IsPage .IsSection -}}{{- .Summary | default (printf "%s - %s" .Title  site.Title) -}}{{- else -}}{{- with site.Params.description -}}{{- . -}}{{- end -}}{{- end -}}{{- end }}">
+<meta name="author" content="Wonyoung Jang">
+{{- if site.Config.Services.GoogleAnalytics.ID }}
+    <meta name="google-site-verification" content="{{ site.Config.Services.GoogleAnalytics.ID }}">
+{{- end }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 {{/* Title */}}
 <title>
@@ -12,21 +26,7 @@
     {{ end }}
 </title>
 
-{{/* Meta */}}
-<meta 
-    name="description" 
-    content="{{- with .Description -}}
-                {{- . -}}
-            {{- else -}}
-                {{- if or .IsPage .IsSection -}}
-                    {{- .Summary | default (printf "%s - %s" .Title  site.Title) -}}
-                {{- else -}}
-                    {{- with site.Params.description -}}
-                        {{- . -}}
-                    {{- end -}}
-                {{- end -}}
-            {{- end }}">
-<meta name="author" content="Wonyoung Jang">
+{{ partialCached "fonts.html" . }}
 
 {{/* Styles */}}
 {{- $base       := (resources.Match "css/0-base/**.css")           | resources.Concat "assets/css/0-base.css" -}}
@@ -35,14 +35,13 @@
 {{- $components := (resources.Match "css/3-components/**.css")     | resources.Concat "assets/css/3-components.css" -}}
 {{- $custom     := (resources.Match "css/4-custom/**.css")         | resources.Concat "assets/css/4-custom.css" -}}
 {{- $helpers    := (resources.Match "css/5-helpers/**.css")        | resources.Concat "assets/css/5-helpers.css" -}}
-{{ $stylesheet := (slice $base $tokens $layouts $components $custom $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify }}
-<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet">
-
-{{ partialCached "fonts.html" . }}
+{{- $stylesheet := (slice $base $tokens $layouts $components $custom $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify -}}
+{{- $stylesheet := $stylesheet | fingerprint -}}
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
 
 {{/* Search */}}
 {{ if (eq .Layout `search`) }}
-    <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+    <link rel="preload" as="fetch" href="../index.json" crossorigin="anonymous">
     {{ $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
     {{ $fusejs := resources.Get "js/fuse.js" }}
     {{ $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
@@ -74,7 +73,6 @@
 </noscript>
 
 {{/* Misc */}}
-{{ template "_internal/google_analytics.html" . }}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
