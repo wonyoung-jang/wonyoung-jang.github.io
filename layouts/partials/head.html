@@ -42,9 +42,9 @@
 {{/* Search */}}
 {{ if (eq .Layout `search`) }}
     <link rel="preload" as="fetch" href="../index.json" crossorigin="anonymous">
-    {{ $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
+    {{ $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) }}
     {{ $fusejs := resources.Get "js/fuse.js" }}
-    {{ $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
+    {{ $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | resources.Minify | fingerprint }}
     <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
 {{ end }}
 
