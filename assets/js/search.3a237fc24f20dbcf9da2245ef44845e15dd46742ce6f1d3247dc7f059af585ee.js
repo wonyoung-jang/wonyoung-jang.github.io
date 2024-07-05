@@ -17,17 +17,13 @@ var e, t;
               return typeof e;
             }
           : function (e) {
-              return e &&
-                "function" == typeof Symbol &&
-                e.constructor === Symbol &&
-                e !== Symbol.prototype
+              return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype
                 ? "symbol"
                 : typeof e;
             })(t);
     }
     function t(e, t) {
-      if (!(e instanceof t))
-        throw new TypeError("Cannot call a class as a function");
+      if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
     }
     function n(e, t) {
       for (var n = 0; n < t.length; n++) {
@@ -76,11 +72,7 @@ var e, t;
           : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
             : o(Object(n)).forEach(function (t) {
-                Object.defineProperty(
-                  e,
-                  t,
-                  Object.getOwnPropertyDescriptor(n, t),
-                );
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
               });
       }
       return e;
@@ -91,8 +83,7 @@ var e, t;
           if (Array.isArray(e)) return s(e);
         })(e) ||
         (function (e) {
-          if ("undefined" != typeof Symbol && Symbol.iterator in Object(e))
-            return Array.from(e);
+          if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) return Array.from(e);
         })(e) ||
         (function (e, t) {
           if (e) {
@@ -102,8 +93,7 @@ var e, t;
               "Object" === n && e.constructor && (n = e.constructor.name),
               "Map" === n || "Set" === n
                 ? Array.from(e)
-                : "Arguments" === n ||
-                    /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
+                : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
                   ? s(e, t)
                   : void 0
             );
@@ -111,7 +101,7 @@ var e, t;
         })(e) ||
         (function () {
           throw new TypeError(
-            "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
+            "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
           );
         })()
       );
@@ -151,11 +141,7 @@ var e, t;
       return !e.trim().length;
     }
     function y(e) {
-      return null == e
-        ? void 0 === e
-          ? "[object Undefined]"
-          : "[object Null]"
-        : Object.prototype.toString.call(e);
+      return null == e ? (void 0 === e ? "[object Undefined]" : "[object Null]") : Object.prototype.toString.call(e);
     }
     var g = function (e) {
         return "Pattern length exceeds max of ".concat(e, ".");
@@ -168,10 +154,7 @@ var e, t;
           var i = 0;
           n.forEach(function (e) {
             var t = b(e);
-            (i += t.weight),
-              r._keys.push(t),
-              (r._keyMap[t.id] = t),
-              (i += t.weight);
+            (i += t.weight), r._keys.push(t), (r._keyMap[t.id] = t), (i += t.weight);
           }),
             this._keys.forEach(function (e) {
               e.weight /= i;
@@ -212,17 +195,14 @@ var e, t;
           throw new Error(
             (function (e) {
               return "Missing ".concat(e, " property in key");
-            })("name"),
+            })("name")
           );
         var o = e.name;
         if (((r = o), p.call(e, "weight") && (i = e.weight) <= 0))
           throw new Error(
             (function (e) {
-              return "Property 'weight' in key '".concat(
-                e,
-                "' must be a positive integer",
-              );
-            })(o),
+              return "Property 'weight' in key '".concat(e, "' must be a positive integer");
+            })(o)
           );
         (t = k(o)), (n = M(o));
       }
@@ -242,13 +222,7 @@ var e, t;
           keys: [],
           shouldSort: !0,
           sortFn: function (e, t) {
-            return e.score === t.score
-              ? e.idx < t.idx
-                ? -1
-                : 1
-              : e.score < t.score
-                ? -1
-                : 1;
+            return e.score === t.score ? (e.idx < t.idx ? -1 : 1) : e.score < t.score ? -1 : 1;
           },
         },
         {},
@@ -277,12 +251,11 @@ var e, t;
                                 var t = e + "";
                                 return "0" == t && 1 / e == -1 / 0 ? "-0" : t;
                               })(e);
-                        })(a),
+                        })(a)
                       );
                     else if (h(a)) {
                       r = !0;
-                      for (var c = 0, s = a.length; c < s; c += 1)
-                        e(a[c], i, o + 1);
+                      for (var c = 0, s = a.length; c < s; c += 1) e(a[c], i, o + 1);
                     } else i.length && e(a, i, o + 1);
                   } else n.push(t);
               })(e, u(t) ? t.split(".") : t, 0),
@@ -291,12 +264,11 @@ var e, t;
           },
           ignoreLocation: !1,
           ignoreFieldNorm: !1,
-        },
+        }
       ),
       w = /[^ ]+/g;
     function L() {
-      var e =
-          arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3,
+      var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3,
         t = new Map(),
         n = Math.pow(10, e);
       return {
@@ -314,35 +286,24 @@ var e, t;
     }
     var _ = (function () {
       function e() {
-        var n =
-            arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+        var n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
           r = n.getFn,
           i = void 0 === r ? x.getFn : r;
-        t(this, e),
-          (this.norm = L(3)),
-          (this.getFn = i),
-          (this.isCreated = !1),
-          this.setIndexRecords();
+        t(this, e), (this.norm = L(3)), (this.getFn = i), (this.isCreated = !1), this.setIndexRecords();
       }
       return (
         r(e, [
           {
             key: "setSources",
             value: function () {
-              var e =
-                arguments.length > 0 && void 0 !== arguments[0]
-                  ? arguments[0]
-                  : [];
+              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
               this.docs = e;
             },
           },
           {
             key: "setIndexRecords",
             value: function () {
-              var e =
-                arguments.length > 0 && void 0 !== arguments[0]
-                  ? arguments[0]
-                  : [];
+              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
               this.records = e;
             },
           },
@@ -350,10 +311,7 @@ var e, t;
             key: "setKeys",
             value: function () {
               var e = this,
-                t =
-                  arguments.length > 0 && void 0 !== arguments[0]
-                    ? arguments[0]
-                    : [];
+                t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
               (this.keys = t),
                 (this._keysMap = {}),
                 t.forEach(function (t, n) {
@@ -389,8 +347,7 @@ var e, t;
             key: "removeAt",
             value: function (e) {
               this.records.splice(e, 1);
-              for (var t = e, n = this.size(); t < n; t += 1)
-                this.records[t].i -= 1;
+              for (var t = e, n = this.size(); t < n; t += 1) this.records[t].i -= 1;
             },
           },
           {
@@ -424,11 +381,7 @@ var e, t;
                 if (f(o))
                   if (h(o))
                     !(function () {
-                      for (
-                        var e = [], t = [{ nestedArrIndex: -1, value: o }];
-                        t.length;
-
-                      ) {
+                      for (var e = [], t = [{ nestedArrIndex: -1, value: o }]; t.length; ) {
                         var a = t.pop(),
                           c = a.nestedArrIndex,
                           s = a.value;
@@ -463,16 +416,14 @@ var e, t;
       );
     })();
     function S(e, t) {
-      var n =
-          arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+      var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
         r = n.getFn,
         i = void 0 === r ? x.getFn : r,
         o = new _({ getFn: i });
       return o.setKeys(e.map(b)), o.setSources(t), o.create(), o;
     }
     function O(e) {
-      var t =
-          arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         n = t.errors,
         r = void 0 === n ? 0 : n,
         i = t.currentLocation,
@@ -490,12 +441,8 @@ var e, t;
     }
     function A() {
       for (
-        var e =
-            arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-          t =
-            arguments.length > 1 && void 0 !== arguments[1]
-              ? arguments[1]
-              : x.minMatchCharLength,
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
+          t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : x.minMatchCharLength,
           n = [],
           r = -1,
           i = -1,
@@ -505,11 +452,7 @@ var e, t;
         o += 1
       ) {
         var c = e[o];
-        c && -1 === r
-          ? (r = o)
-          : c ||
-            -1 === r ||
-            ((i = o - 1) - r + 1 >= t && n.push([r, i]), (r = -1));
+        c && -1 === r ? (r = o) : c || -1 === r || ((i = o - 1) - r + 1 >= t && n.push([r, i]), (r = -1));
       }
       return e[o - 1] && o - r >= t && n.push([r, o - 1]), n;
     }
@@ -523,10 +466,7 @@ var e, t;
     var E = (function () {
         function e(n) {
           var r = this,
-            i =
-              arguments.length > 1 && void 0 !== arguments[1]
-                ? arguments[1]
-                : {},
+            i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
             o = i.location,
             a = void 0 === o ? x.location : o,
             c = i.threshold,
@@ -564,8 +504,7 @@ var e, t;
               },
               w = this.pattern.length;
             if (w > 32) {
-              for (var L = 0, _ = w % 32, S = w - _; L < S; )
-                M(this.pattern.substr(L, 32), L), (L += 32);
+              for (var L = 0, _ = w % 32, S = w - _; L < S; ) M(this.pattern.substr(L, 32), L), (L += 32);
               if (_) {
                 var O = w - 32;
                 M(this.pattern.substr(O), O);
@@ -600,10 +539,7 @@ var e, t;
                     i = t.alphabet,
                     o = t.startIndex,
                     p = (function (e, t, n) {
-                      var r =
-                          arguments.length > 3 && void 0 !== arguments[3]
-                            ? arguments[3]
-                            : {},
+                      var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
                         i = r.location,
                         o = void 0 === i ? x.location : i,
                         a = r.distance,
@@ -637,15 +573,10 @@ var e, t;
                           distance: c,
                           ignoreLocation: m,
                         });
-                        if (((L = Math.min(E, L)), (_ = b + k), S))
-                          for (var I = 0; I < k; ) (j[b + I] = 1), (I += 1);
+                        if (((L = Math.min(E, L)), (_ = b + k), S)) for (var I = 0; I < k; ) (j[b + I] = 1), (I += 1);
                       }
                       _ = -1;
-                      for (
-                        var C = [], F = 1, P = k + M, N = 1 << (k - 1), $ = 0;
-                        $ < k;
-                        $ += 1
-                      ) {
+                      for (var C = [], F = 1, P = k + M, N = 1 << (k - 1), $ = 0; $ < k; $ += 1) {
                         for (var D = 0, K = P; D < K; ) {
                           var z = O(t, {
                             errors: $,
@@ -654,8 +585,7 @@ var e, t;
                             distance: c,
                             ignoreLocation: m,
                           });
-                          z <= L ? (D = K) : (P = K),
-                            (K = Math.floor((P - D) / 2 + D));
+                          z <= L ? (D = K) : (P = K), (K = Math.floor((P - D) / 2 + D));
                         }
                         P = K;
                         var J = Math.max(1, w - K + 1),
@@ -668,8 +598,7 @@ var e, t;
                           if (
                             (S && (j[q] = +!!B),
                             (T[U] = ((T[U + 1] << 1) | 1) & B),
-                            $ &&
-                              (T[U] |= ((C[U + 1] | C[U]) << 1) | 1 | C[U + 1]),
+                            $ && (T[U] |= ((C[U + 1] | C[U]) << 1) | 1 | C[U + 1]),
                             T[U] & N &&
                               (F = O(t, {
                                 errors: $,
@@ -711,9 +640,7 @@ var e, t;
                     m = p.isMatch,
                     b = p.score,
                     k = p.indices;
-                  m && (y = !0),
-                    (v += b),
-                    m && k && (f = [].concat(c(f), c(k)));
+                  m && (y = !0), (v += b), m && k && (f = [].concat(c(f), c(k)));
                 });
                 var p = { isMatch: y, score: y ? v / this.chunks.length : 1 };
                 return y && r && (p.indices = f), p;
@@ -741,10 +668,7 @@ var e, t;
             i = e.norm,
             o = e.score,
             a = n ? n.weight : null;
-          t *= Math.pow(
-            0 === o && a ? Number.EPSILON : o,
-            (a || 1) * (r ? 1 : i),
-          );
+          t *= Math.pow(0 === o && a ? Number.EPSILON : o, (a || 1) * (r ? 1 : i));
         }),
           (e.score = t);
       });
@@ -756,9 +680,7 @@ var e, t;
           n.forEach(function (e) {
             if (f(e.indices) && e.indices.length) {
               var n = { indices: e.indices, value: e.value };
-              e.key && (n.key = e.key.src),
-                e.idx > -1 && (n.refIndex = e.idx),
-                t.matches.push(n);
+              e.key && (n.key = e.key.src), e.idx > -1 && (n.refIndex = e.idx), t.matches.push(n);
             }
           });
     }
@@ -766,8 +688,7 @@ var e, t;
       t.score = e.score;
     }
     function $(e, t) {
-      var n =
-          arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+      var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
         r = n.includeMatches,
         i = void 0 === r ? x.includeMatches : r,
         o = n.includeScore,
@@ -791,14 +712,9 @@ var e, t;
     }
     var D = (function () {
       function e(n) {
-        var r =
-            arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+        var r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
           i = arguments.length > 2 ? arguments[2] : void 0;
-        if (
-          (t(this, e),
-          (this.options = a({}, x, {}, r)),
-          this.options.useExtendedSearch)
-        )
+        if ((t(this, e), (this.options = a({}, x, {}, r)), this.options.useExtendedSearch))
           throw new Error("Extended search is not available");
         (this._keyStore = new m(this.options.keys)), this.setCollection(n, i);
       }
@@ -807,11 +723,8 @@ var e, t;
           {
             key: "setCollection",
             value: function (e, t) {
-              if (((this._docs = e), t && !(t instanceof _)))
-                throw new Error("Incorrect 'index' type");
-              this._myIndex =
-                t ||
-                S(this.options.keys, this._docs, { getFn: this.options.getFn });
+              if (((this._docs = e), t && !(t instanceof _))) throw new Error("Incorrect 'index' type");
+              this._myIndex = t || S(this.options.keys, this._docs, { getFn: this.options.getFn });
             },
           },
           {
@@ -857,10 +770,7 @@ var e, t;
           {
             key: "search",
             value: function (e) {
-              var t =
-                  arguments.length > 1 && void 0 !== arguments[1]
-                    ? arguments[1]
-                    : {},
+              var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                 n = t.limit,
                 r = void 0 === n ? -1 : n,
                 i = this.options,
@@ -869,11 +779,7 @@ var e, t;
                 c = i.shouldSort,
                 s = i.sortFn,
                 h = i.ignoreFieldNorm,
-                d = u(e)
-                  ? u(this._docs[0])
-                    ? this._searchStringList(e)
-                    : this._searchObjectList(e)
-                  : this._searchLogical(e);
+                d = u(e) ? (u(this._docs[0]) ? this._searchStringList(e) : this._searchObjectList(e)) : this._searchLogical(e);
               return (
                 F(d, { ignoreFieldNorm: h }),
                 c && d.sort(s),
@@ -932,10 +838,7 @@ var e, t;
                   if (f(r)) {
                     var s = [];
                     i.forEach(function (e, i) {
-                      s.push.apply(
-                        s,
-                        c(t._findMatches({ key: e, value: r[i], searcher: n })),
-                      );
+                      s.push.apply(s, c(t._findMatches({ key: e, value: r[i], searcher: n })));
                     }),
                       s.length && a.push({ idx: o, item: r, matches: s });
                   }
@@ -980,8 +883,7 @@ var e, t;
                   s = c.isMatch,
                   u = c.score,
                   l = c.indices;
-                s &&
-                  i.push({ score: u, key: t, value: o, norm: a, indices: l });
+                s && i.push({ score: u, key: t, value: o, norm: a, indices: l });
               }
               return i;
             },
@@ -994,8 +896,7 @@ var e, t;
       (D.version = "6.4.6"),
       (D.createIndex = S),
       (D.parseIndex = function (e) {
-        var t =
-            arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
           n = t.getFn,
           r = void 0 === n ? x.getFn : n,
           i = e.keys,
