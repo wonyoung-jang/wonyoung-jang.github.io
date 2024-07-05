@@ -1,15 +1,15 @@
-{{ $u := urls.Parse .Destination }}
-<a href="{{ .Destination | safeURL }}"
-    {{ with .Title }} 
-        title="{{ . }}"
-    {{ end }}
+{{- $u := urls.Parse .Destination -}}
+<a href="{{- .Destination | safeURL -}}"
+    {{- with .Title -}} 
+        title="{{- . -}}"
+    {{- end -}}
 
-    {{ if $u.IsAbs }}
+    {{- if $u.IsAbs -}}
         target="_blank"
         rel="external noopener noreferrer me"
-    {{ end }}>
+    {{- end -}}>
 
-    {{ with .Text | safeHTML }}
-        {{ . }}
-    {{ end }}
+    {{- with .Text | safeHTML -}}
+        {{- . -}}
+    {{- end -}}
 </a>

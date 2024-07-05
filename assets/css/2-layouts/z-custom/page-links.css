@@ -10,7 +10,7 @@
   --min-height: auto;
   --padding: var(--spacing-panes);
   --margin: 0;
-  --gap: var(--size-0);
+  --gap: var(--size-2);
 
   --border: inherit;
   
@@ -22,34 +22,43 @@
     flex-flow: column nowrap;
     
     border-radius: var(--shape-corner-m);
-    padding: var(--size-5);
+    padding: var(--size-2) var(--size-5);
+    
+    & h5 {
+      margin-top: var(--spacing-panes);
+      margin-bottom: var(--size-2);
+    }
   }
 
   & #backlinks,
   & #related-pages {
-    & a:not(.button) {
+    & a {
       display: flex;
       flex-flow: row wrap;
       min-height: 42px;
       align-items: center;
-      margin-top: var(--size-2);
     }
   }
 
-  & #share-links {
+  & #share-links {    
+    gap: var(--size-3);
+
     & .share-buttons,
     & .action-buttons {
       display: flex;
       flex-flow: row wrap;
       gap: var(--size-2);
-      margin-top: var(--size-3);
+      padding: var(--size-3);
+
+      & .button {
+        flex: 1 1 0;
+        min-width: fit-content;
+      }
     }
   }
 }
 
-/* Medium: 600px-839px */
-@media screen and (min-width: 600px) {
-  .page-links {
-    --flex-flow: row nowrap;
-  }
+.share-buttons a svg {
+  padding: var(--size-1) !important;
+  margin: 0 !important;
 }
