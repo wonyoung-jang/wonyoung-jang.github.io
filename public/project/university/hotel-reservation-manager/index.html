@@ -84,13 +84,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
     <meta property="article:published_time" content="2023-11-27T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-05T11:58:05-04:00">
 
 
   <meta itemprop="name" content="Hotel reservation manager">
   <meta itemprop="description" content="Upgraded a Spring hotel booking app with multilingual, timezone, and currency features. Deployed via Docker">
   <meta itemprop="datePublished" content="2023-11-27T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-05T11:58:05-04:00">
   <meta itemprop="wordCount" content="164">
 
   <meta name="twitter:card" content="summary">
@@ -161,6 +161,16 @@
         </fieldset>
 
         <div class="divider"></div>
+       
+        <fieldset class="typography-fieldset">
+            <legend class="title-medium">Line Height</legend>
+            <div class="slider">
+                <input type="range" id="line-height-slider" name="line-height" min="1.0" max="1.6" value="1.5" step="0.050">
+                <output for="line-height-slider" id="line-height-output">1.5</output>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
 
         <fieldset class="typography-fieldset">
             <legend class="title-medium">Brand Font</legend>
@@ -225,24 +235,6 @@
                 <label for="code-courier">Courier New</label>
             </div>
         </fieldset>
-
-        <div class="divider"></div>
-       
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Line Density</legend>
-            <div class="component radio-button">
-                <input type="radio" id="density-compact" name="line-density" value="var(--scale-perfect-fourth)" checked>
-                <label for="density-compact">Compact</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="density-normal" name="line-density" value="var(--scale-perfect-fifth)">
-                <label for="density-normal">Normal</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="density-spacious" name="line-density" value="var(--scale-maj-6)">
-                <label for="density-spacious">Spacious</label>
-            </div>
-        </fieldset>
     </menu>
 </button>
 
@@ -252,28 +244,31 @@
         var typographySelector = document.getElementById('typography-selector');
         var fontSizeSlider = document.getElementById('font-size-slider');
         var fontSizeOutput = document.getElementById('font-size-output');
+        var lineHeightSlider = document.getElementById('line-height-slider');
+        var lineHeightOutput = document.getElementById('line-height-output');
 
         function updateTypography() {
             var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
             var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
             var codeFont = document.querySelector('input[name="code-font"]:checked').value;
             var fontSize = fontSizeSlider.value;
-            var lineDensity = document.querySelector('input[name="line-density"]:checked').value;
+            var lineHeight = lineHeightSlider.value;
 
             root.style.setProperty('--typeface-brand', brandFont);
             root.style.setProperty('--typeface-plain', plainFont);
             root.style.setProperty('--typeface-code', codeFont);
             root.style.setProperty('--input-font-size', fontSize + 'px');
-            root.style.setProperty('--input-line-height', lineDensity);
+            root.style.setProperty('--input-line-height', lineHeight);
 
             fontSizeOutput.textContent = fontSize + 'px';
+            lineHeightOutput.textContent = lineHeight;
 
             
             localStorage.setItem('typography-brand-font', brandFont);
             localStorage.setItem('typography-plain-font', plainFont);
             localStorage.setItem('typography-code-font', codeFont);
             localStorage.setItem('typography-font-size', fontSize);
-            localStorage.setItem('typography-line-density', lineDensity);
+            localStorage.setItem('typography-line-height', lineHeight);
         }
 
         
@@ -281,13 +276,13 @@
         var savedPlainFont = localStorage.getItem('typography-plain-font');
         var savedCodeFont = localStorage.getItem('typography-code-font');
         var savedFontSize = localStorage.getItem('typography-font-size');
-        var savedLineDensity = localStorage.getItem('typography-line-density');
+        var savedLineDensity = localStorage.getItem('typography-line-height');
 
         if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
         if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
         if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
         if (savedFontSize) fontSizeSlider.value = savedFontSize;
-        if (savedLineDensity) document.querySelector(`input[name="line-density"][value="${savedLineDensity}"]`).checked = true;
+        if (savedLineDensity) lineHeightSlider.value = savedLineDensity;
 
         
         updateTypography();
@@ -295,6 +290,7 @@
         
         typographySelector.addEventListener('change', updateTypography);
         fontSizeSlider.addEventListener('input', updateTypography);
+        lineHeightSlider.addEventListener('input', updateTypography);
     });
 </script>
         
@@ -437,12 +433,12 @@
   
   
   
-   28 
+   4 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/reference\/";
+    window.location.href = "\/project\/university\/package-delivery-route-optimization\/";
   }
 </script>
         
@@ -1089,50 +1085,31 @@
         </span>
 
         
-    <nav>
-        
-        <nav>
-            <a aria-current="true" class="ancestor" href="/project/">
-                Projects
-            </a>
-        
-        <nav>
+            <div class="sub-sections-container">
+                <a href="/project/">
+                    Projects
+                </a>
             <a href="/project/software/">
                 Software
             </a>
-        </nav>
-        
-        <nav>
-            <a aria-current="true" class="ancestor" href="/project/university/">
+            <a href="/project/university/">
                 University
             </a>
-        </nav>
-        </nav>
-        
-        <nav>
-            <a href="/resource/">
-                Resources
-            </a>
-        
-        <nav>
+            </div>
+            <div class="sub-sections-container">
+                <a href="/resource/">
+                    Resources
+                </a>
             <a href="/resource/layout/">
                 Layouts
             </a>
-        </nav>
-        
-        <nav>
             <a href="/resource/reference/">
                 References
             </a>
-        </nav>
-        
-        <nav>
             <a href="/resource/token/">
                 Tokens
             </a>
-        </nav>
-        </nav>
-    </nav>        
+            </div>        
     </div>
     
     
