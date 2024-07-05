@@ -2,9 +2,11 @@
 Highlight Bold + Highlight Italic
 Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;
 Blockquote with backticks
-An external link: https://www.pbs.org/video/art21-fantasy/ Logseq pages Page reference Input: [About](https://wonyoungjang.org/about/)
-Output: About Page embed Input: {{embed [About](https://wonyoungjang.org/about/)}}
-Output: {{embed About }}
+An external link: https://www.pbs.org/video/art21-fantasy/
+Logseq pages Page reference Input: [About](https://wonyoungjang.org/about/)
+Output: About
+Page embed Input: {{embed [About](https://wonyoungjang.org/about/)}}
+Output: {{embed About}}
 Logseq blocks Block reference Input: ## About me Output: ## About me
 Block embed Input: {{embed ## About me }}</description></item><item><title>List of admonitions for wonyoungjang.org</title><link>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-wonyoungjang.org/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author><guid>https://wonyoungjang.org/resource/reference/list-of-admonitions-for-wonyoungjang.org/</guid><description>What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:
 A distinctive visual style (e.g., colored background, border, or icon)
