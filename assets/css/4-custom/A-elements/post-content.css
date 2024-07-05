@@ -1,0 +1,25 @@
+#post-content {
+  & p {
+    margin-block-start: var(--size-2);
+  }
+
+  & h2:not(:first-child) {
+    margin-block-start: var(--size-21);
+    margin-block-end: var(--size-3);
+  }
+
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-block-start: var(--size-8);
+    margin-block-end: var(--size-2);
+  }
+
+  & ul,
+  & ol,
+  & li {
+    list-style-type: disc;
+    margin-inline-start: var(--size-3);
+  }
+}
