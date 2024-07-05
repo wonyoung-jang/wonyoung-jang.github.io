@@ -4,7 +4,8 @@
   --flex-flow: row wrap;
   
   & .card {
-    flex: 1 1 auto;
+    flex: 1 1 calc(100% - var(--spacing-panes));
+    max-height: 50%;
   }
 }
 
