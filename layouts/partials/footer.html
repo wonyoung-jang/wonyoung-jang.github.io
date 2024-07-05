@@ -31,9 +31,11 @@
 
         {{ range site.Menus.connect }}
             <a  class="component button fab
-                {{ if eq .Name "GitHub" }}
+                {{ if eq .Name "Email" }}
+                    {{ "sub90-container" }}
+                {{ else if eq .Name "Figma" }}
                     {{ "sub120-container" }}
-                {{ else if eq .Name "Email" }}
+                {{ else if eq .Name "GitHub" }}
                     {{ "sub150-container" }}
                 {{ else if eq .Name "Ko-fi" }}
                     {{ "sub180-container" }}

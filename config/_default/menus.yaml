@@ -97,15 +97,19 @@ sections:
     parent: Resources
 
 connect:
-  - name: GitHub
-    url: https://github.com/wonyoung-jang
-    weight: 10
-    pre: <i>code</i>
   - name: Email
     url: mailto:contact@wonyoungjang.org
-    weight: 20
+    weight: 10
     pre: <i>outgoing_mail</i>
+  - name: Figma
+    url: https://www.figma.com/@wonyoung_jang
+    weight: 20
+    pre: <i>palette</i>
+  - name: GitHub
+    url: https://github.com/wonyoung-jang
+    weight: 30
+    pre: <i>code</i>
   - name: Ko-fi
     url: https://ko-fi.com/wonyoung_jang
-    weight: 30
+    weight: 40
     pre: <i>loyalty</i>
