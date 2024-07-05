@@ -11,6 +11,6 @@ type:
 date:
 - 2024-04-12 Friday
 description: Some personal software development projects
-title: Software
+title: Softwares
 lastMod: 2024-06-30
 ---

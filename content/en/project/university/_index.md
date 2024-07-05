@@ -11,6 +11,6 @@ type:
 date:
 - 2024-04-13 Saturday
 description: An archive of various university projects completed for my Computer Science degree
-title: University
+title: Universitys
 lastMod: 2024-06-30
 ---

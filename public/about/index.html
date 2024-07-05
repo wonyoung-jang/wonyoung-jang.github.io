@@ -434,12 +434,12 @@
   
   
   
-   37 
+   34 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/";
+    window.location.href = "\/about\/";
   }
 </script>
         
@@ -699,15 +699,27 @@
 
     <nav class="layout page-navigation" aria-label="Page Navigation">
       
-        <div class="component card prev empty">
+        <a  class="component card prev"
+            href="http://localhost:1313/resource/reference/all-logseq-elements/"
+            accesskey="p"
+            title="Previous page (ALT + SHIFT + p)">
+
           <span class="page-direction">
+            <i>arrow_back</i>
+            <label>
+              Previous
+            </label>
           </span>
-        </div>
+          
+          <span class="title-large">
+            All Logseq elements
+          </span>
+        </a>
       
 
       
         <a  class="component card next"
-            href="http://localhost:1313/resource/reference/all-logseq-elements/"
+            href="http://localhost:1313/contact/"
             accesskey="n"
             title="Next page (ALT + SHIFT + n)">
             
@@ -719,7 +731,7 @@
           </span>
 
           <span class="title-large">
-            All Logseq elements
+            Contact
           </span>
         </a>
       
@@ -843,10 +855,10 @@
     
 
      
-        
-     
          
              
+        
+     
         
      
         
@@ -922,16 +934,6 @@
             <div class="divider" end></div>
             
                 <a  class="component card" elevated
-                    href="/contact/">
-                    <div class="card-content">
-                        <span class="card-title title-small">
-                            Contact
-                        </span>
-                    </div>
-                </a>
-
-            
-                <a  class="component card" elevated
                     href="/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
                     <div class="card-content">
                         <span class="card-title title-small">
@@ -956,6 +958,16 @@
                     <div class="card-content">
                         <span class="card-title title-small">
                             Wonyoungjang.org
+                        </span>
+                    </div>
+                </a>
+
+            
+                <a  class="component card" elevated
+                    href="/project/software/q-learning-tournament-scheduler/">
+                    <div class="card-content">
+                        <span class="card-title title-small">
+                            Q-learning tournament scheduler
                         </span>
                     </div>
                 </a>

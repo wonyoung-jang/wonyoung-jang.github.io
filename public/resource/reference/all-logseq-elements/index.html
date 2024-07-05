@@ -89,7 +89,7 @@
   <meta itemprop="name" content="All Logseq elements">
   <meta itemprop="description" content="A work in progress page showcasing how elements are rendered from Logseq">
   <meta itemprop="dateModified" content="2024-06-30T14:10:17-04:00">
-  <meta itemprop="wordCount" content="64">
+  <meta itemprop="wordCount" content="77">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="All Logseq elements">
@@ -435,12 +435,12 @@
   
   
   
-   15 
+   30 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/university\/hotel-reservation-manager\/";
+    window.location.href = "\/now\/";
   }
 </script>
         
@@ -583,7 +583,7 @@
             <div class="label-large">
                 
 
-<span title='2024-06-30 00:00:00 +0000 UTC'>June 30, 2024&nbsp;·&nbsp;1 min read
+<span title='2024-07-05 00:00:00 +0000 UTC'>July 5, 2024&nbsp;·&nbsp;1 min read
 
             </div>
         
@@ -610,12 +610,13 @@
         alt="logseq-elements.png" 
          
 /> </p>
+<h1 id="heading-1">Heading 1<a hidden class="anchor" aria-hidden="true" href="#heading-1">#</a></h1>
 <h2 id="heading-2">Heading 2<a hidden class="anchor" aria-hidden="true" href="#heading-2">#</a></h2>
 <h3 id="heading-3">Heading 3<a hidden class="anchor" aria-hidden="true" href="#heading-3">#</a></h3>
 <h4 id="heading-4">Heading 4<a hidden class="anchor" aria-hidden="true" href="#heading-4">#</a></h4>
 <h5 id="heading-5">Heading 5<a hidden class="anchor" aria-hidden="true" href="#heading-5">#</a></h5>
 <h6 id="heading-6">Heading 6<a hidden class="anchor" aria-hidden="true" href="#heading-6">#</a></h6>
-<hr>
+<h2 id="text-styling">Text styling<a hidden class="anchor" aria-hidden="true" href="#text-styling">#</a></h2>
 <p><strong>Bold</strong></p>
 <mark>
     Highlight
@@ -624,25 +625,15 @@
     Bold + Highlight
 </mark></strong></p>
 <p><em>Italic</em></p>
-<hr>
-<div class="">
-    Centered admon
+<h2 id="advanced-commands">Advanced commands<a hidden class="anchor" aria-hidden="true" href="#advanced-commands">#</a></h2>
+<div class="centered ">
+    Centered text
 </div>
 <blockquote>
 <p>Blockquote with &ldquo;&gt;&rdquo;</p>
 </blockquote>
-<p><code>Block quote with &quot;````&quot; </code></p>
-<p>An internal link to my about page: 
-<a href="http://localhost:1313/about/"
-    
-
-    >
-
-    
-        About
-    
-</a></p>
-<p>An external link to a PBS documentary on art: 
+<p><code>Blockquote with backticks</code></p>
+<p>An external link: 
 <a href="https://www.pbs.org/video/art21-fantasy/"
     
 
@@ -655,7 +646,22 @@
         https://www.pbs.org/video/art21-fantasy/
     
 </a></p>
-<p>An embedded internal page: {{embed 
+<h2 id="logseq-pages">Logseq pages<a hidden class="anchor" aria-hidden="true" href="#logseq-pages">#</a></h2>
+<h3 id="page-reference">Page reference<a hidden class="anchor" aria-hidden="true" href="#page-reference">#</a></h3>
+<p>Input: <code>[About](http://localhost:1313/about/)</code></p>
+<p>Output: 
+<a href="http://localhost:1313/about/"
+    
+
+    >
+
+    
+        About
+    
+</a></p>
+<h3 id="page-embed">Page embed<a hidden class="anchor" aria-hidden="true" href="#page-embed">#</a></h3>
+<p>Input: <code>{{embed [About](http://localhost:1313/about/)}}</code></p>
+<p>Output: {{embed 
 <a href="http://localhost:1313/about/"
     
 
@@ -665,8 +671,13 @@
         About
     
 </a>}}</p>
-<p>A block reference: ## About me</p>
-<p>A block embed: {{embed ## About me
+<h2 id="logseq-blocks">Logseq blocks<a hidden class="anchor" aria-hidden="true" href="#logseq-blocks">#</a></h2>
+<h3 id="block-reference">Block reference<a hidden class="anchor" aria-hidden="true" href="#block-reference">#</a></h3>
+<p>Input: <code>## About me </code></p>
+<p>Output: ## About me</p>
+<h3 id="block-embed">Block embed<a hidden class="anchor" aria-hidden="true" href="#block-embed">#</a></h3>
+<p>Input: <code>{{embed ## About me }}</code></p>
+<p>Output: {{embed ## About me
 }}</p>
 
 
@@ -694,7 +705,7 @@
     
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#heading-1">Heading 1</a>
       <ul>
         <li><a href="#heading-2">Heading 2</a>
           <ul>
@@ -711,6 +722,20 @@
                 </li>
               </ul>
             </li>
+          </ul>
+        </li>
+        <li><a href="#text-styling">Text styling</a></li>
+        <li><a href="#advanced-commands">Advanced commands</a></li>
+        <li><a href="#logseq-pages">Logseq pages</a>
+          <ul>
+            <li><a href="#page-reference">Page reference</a></li>
+            <li><a href="#page-embed">Page embed</a></li>
+          </ul>
+        </li>
+        <li><a href="#logseq-blocks">Logseq blocks</a>
+          <ul>
+            <li><a href="#block-reference">Block reference</a></li>
+            <li><a href="#block-embed">Block embed</a></li>
           </ul>
         </li>
       </ul>
@@ -730,27 +755,15 @@
 
     <nav class="layout page-navigation" aria-label="Page Navigation">
       
-        <a  class="component card prev"
-            href="http://localhost:1313/about/"
-            accesskey="p"
-            title="Previous page (ALT + SHIFT + p)">
-
+        <div class="component card prev empty">
           <span class="page-direction">
-            <i>arrow_back</i>
-            <label>
-              Previous
-            </label>
           </span>
-          
-          <span class="title-large">
-            About
-          </span>
-        </a>
+        </div>
       
 
       
         <a  class="component card next"
-            href="http://localhost:1313/contact/"
+            href="http://localhost:1313/about/"
             accesskey="n"
             title="Next page (ALT + SHIFT + n)">
             
@@ -762,7 +775,7 @@
           </span>
 
           <span class="title-large">
-            Contact
+            About
           </span>
         </a>
       

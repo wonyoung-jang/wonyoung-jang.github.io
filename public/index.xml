@@ -12,18 +12,18 @@
     <lastBuildDate>Sun, 30 Jun 2024 14:10:17 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>All Logseq elements</title>
+      <link>http://localhost:1313/resource/reference/all-logseq-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <guid>http://localhost:1313/resource/reference/all-logseq-elements/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Advanced commands Centered text&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xD;Logseq pages Page reference Input: [About](http://localhost:1313/about/)&#xA;Output: About&#xD;Page embed Input: {{embed [About](http://localhost:1313/about/)}}&#xA;Output: {{embed About&#xD;}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}</description>
+    </item>
+    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
       <guid>http://localhost:1313/about/</guid>
       <description>About me Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry&#xD;, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program&#xD;at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</description>
-    </item>
-    <item>
-      <title>All Logseq elements</title>
-      <link>http://localhost:1313/resource/reference/all-logseq-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://localhost:1313/resource/reference/all-logseq-elements/</guid>
-      <description>Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Centered admon&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Block quote with &amp;quot;````&amp;quot; An internal link to my about page: About&#xD;An external link to a PBS documentary on art: https://www.pbs.org/video/art21-fantasy/&#xD;An embedded internal page: {{embed About&#xD;}}&#xA;A block reference: ## About me&#xA;A block embed: {{embed ## About me }}</description>
     </item>
     <item>
       <title>Contact</title>
