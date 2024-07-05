@@ -45,7 +45,7 @@ lastMod: 2024-07-05
 
 >Blockquote with ">"
 
-`Block quote with backticks`
+`Blockquote with backticks`
 
 An external link: https://www.pbs.org/video/art21-fantasy/
 
@@ -57,7 +57,7 @@ Input: `[About]({{< ref "/about" >}})`
 
 Output: [About]({{< ref "/about" >}})
 
-### Embedded page
+### Page embed
 
 Input: `{{embed [About]({{< ref "/about" >}})}}`
 

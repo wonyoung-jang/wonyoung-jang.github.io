@@ -16,6 +16,8 @@ home:
   buttons:
     - name: Software development projects
       url: /project/software
+    - name: Design projects
+      url: /project/design
     - name: University coursework projects
       url: /project/university
 

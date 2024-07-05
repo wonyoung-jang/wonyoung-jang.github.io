@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,14 +10,14 @@
 
 <title>
     
-        Contents | Wonyoung Jang
+        Designs | Wonyoung Jang
     
 </title>
 
 
 <meta 
     name="description" 
-    content="Contents - Wonyoung Jang">
+    content="Design projects">
 <meta name="author" content="Wonyoung Jang">
 
 
@@ -33,15 +33,15 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/content/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/project/design/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/content/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/project/design/">
 
 
 
@@ -78,21 +78,21 @@
   
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/content/">
+<meta property="og:url" content="https://wonyoungjang.org/project/design/">
   <meta property="og:site_name" content="Wonyoung Jang">
-  <meta property="og:title" content="Contents">
-  <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
+  <meta property="og:title" content="Designs">
+  <meta property="og:description" content="Design projects">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
 
-  <meta itemprop="name" content="Contents">
-  <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
+  <meta itemprop="name" content="Designs">
+  <meta itemprop="description" content="Design projects">
   <meta itemprop="dateModified" content="2024-07-05T00:00:00+00:00">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Contents">
-  <meta name="twitter:description" content="Wonyoung Jang&#39;s personal website">
+  <meta name="twitter:title" content="Designs">
+  <meta name="twitter:description" content="Design projects">
 
 
         
@@ -111,7 +111,7 @@
     <section class="start">
         
         <a  id="site-icon"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -133,7 +133,7 @@
         
         <a  id="site-headline"
             class="title-medium"
-            href="http://192.168.40.181:1313/">
+            href="https://wonyoungjang.org/">
             Wonyoung Jang
         </a>
     </section>
@@ -154,6 +154,16 @@
             <div class="slider">
                 <input type="range" id="font-size-slider" name="font-size" min="8" max="24" value="14" step="1">
                 <output for="font-size-slider" id="font-size-output">14px</output>
+            </div>
+        </fieldset>
+
+        <div class="divider"></div>
+       
+        <fieldset class="typography-fieldset">
+            <legend class="title-medium">Line Height</legend>
+            <div class="slider">
+                <input type="range" id="line-height-slider" name="line-height" min="1.0" max="1.6" value="1.5" step="0.050">
+                <output for="line-height-slider" id="line-height-output">1.5</output>
             </div>
         </fieldset>
 
@@ -222,24 +232,6 @@
                 <label for="code-courier">Courier New</label>
             </div>
         </fieldset>
-
-        <div class="divider"></div>
-       
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Line Density</legend>
-            <div class="component radio-button">
-                <input type="radio" id="density-compact" name="line-density" value="var(--scale-perfect-fourth)" checked>
-                <label for="density-compact">Compact</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="density-normal" name="line-density" value="var(--scale-perfect-fifth)">
-                <label for="density-normal">Normal</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="density-spacious" name="line-density" value="var(--scale-maj-6)">
-                <label for="density-spacious">Spacious</label>
-            </div>
-        </fieldset>
     </menu>
 </button>
 
@@ -249,28 +241,31 @@
         var typographySelector = document.getElementById('typography-selector');
         var fontSizeSlider = document.getElementById('font-size-slider');
         var fontSizeOutput = document.getElementById('font-size-output');
+        var lineHeightSlider = document.getElementById('line-height-slider');
+        var lineHeightOutput = document.getElementById('line-height-output');
 
         function updateTypography() {
             var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
             var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
             var codeFont = document.querySelector('input[name="code-font"]:checked').value;
             var fontSize = fontSizeSlider.value;
-            var lineDensity = document.querySelector('input[name="line-density"]:checked').value;
+            var lineHeight = lineHeightSlider.value;
 
             root.style.setProperty('--typeface-brand', brandFont);
             root.style.setProperty('--typeface-plain', plainFont);
             root.style.setProperty('--typeface-code', codeFont);
             root.style.setProperty('--input-font-size', fontSize + 'px');
-            root.style.setProperty('--input-line-height', lineDensity);
+            root.style.setProperty('--input-line-height', lineHeight);
 
             fontSizeOutput.textContent = fontSize + 'px';
+            lineHeightOutput.textContent = lineHeight;
 
             
             localStorage.setItem('typography-brand-font', brandFont);
             localStorage.setItem('typography-plain-font', plainFont);
             localStorage.setItem('typography-code-font', codeFont);
             localStorage.setItem('typography-font-size', fontSize);
-            localStorage.setItem('typography-line-density', lineDensity);
+            localStorage.setItem('typography-line-height', lineHeight);
         }
 
         
@@ -278,13 +273,13 @@
         var savedPlainFont = localStorage.getItem('typography-plain-font');
         var savedCodeFont = localStorage.getItem('typography-code-font');
         var savedFontSize = localStorage.getItem('typography-font-size');
-        var savedLineDensity = localStorage.getItem('typography-line-density');
+        var savedLineDensity = localStorage.getItem('typography-line-height');
 
         if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
         if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
         if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
         if (savedFontSize) fontSizeSlider.value = savedFontSize;
-        if (savedLineDensity) document.querySelector(`input[name="line-density"][value="${savedLineDensity}"]`).checked = true;
+        if (savedLineDensity) lineHeightSlider.value = savedLineDensity;
 
         
         updateTypography();
@@ -292,6 +287,7 @@
         
         typographySelector.addEventListener('change', updateTypography);
         fontSizeSlider.addEventListener('input', updateTypography);
+        lineHeightSlider.addEventListener('input', updateTypography);
     });
 </script>
         
@@ -434,12 +430,12 @@
   
   
   
-   42 
+   13 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/layout\/split-pane-layout\/";
+    window.location.href = "\/sitemap\/";
   }
 </script>
         
@@ -462,7 +458,7 @@
     <div class="component tabs title-medium">
         
             <div class="sub-tabs-container">
-                <a class="component tab" href="/project/">
+                <a aria-current="true" class="component tab active ancestor" href="/project/">
                     <i>code</i>
                     Projects
                 </a>
@@ -470,6 +466,10 @@
             <a class="component tab" href="/project/software/">
                 <i>terminal</i>
                 Software
+            </a>
+            <a aria-current="page" class="component tab active" href="/project/design/">
+                <i>design_services</i>
+                Designs
             </a>
             <a class="component tab" href="/project/university/">
                 <i>school</i>
@@ -487,13 +487,13 @@
                 <i>quick_reference</i>
                 Layouts
             </a>
-            <a class="component tab" href="/resource/token/">
-                <i>quick_reference</i>
-                Tokens
-            </a>
             <a class="component tab" href="/resource/reference/">
                 <i>quick_reference</i>
                 References
+            </a>
+            <a class="component tab" href="/resource/token/">
+                <i>quick_reference</i>
+                Tokens
             </a>
                     </div>
             </div>
@@ -539,9 +539,17 @@
         
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
              
-                <a href="http://192.168.40.181:1313/">
+                <a href="https://wonyoungjang.org/">
                     
                         Home
+                     
+                </a>
+
+                <span class="breadcrumb-delimiter">/</span>
+             
+                <a href="https://wonyoungjang.org/project/">
+                    
+                        Projects
                      
                 </a>
 
@@ -551,10 +559,14 @@
 
         
         <h1 class="title">
-            Contents
+            Designs
         </h1> 
 
         
+        
+            <span class="description title-small">
+                Design projects
+            </span>
         
 
         
@@ -577,75 +589,48 @@
                 
                 
 
-<article class="layout panes basic-singlepane">
 
-    <section class="layout pane" id="sections-page">
 
-        <div class="list-container">
-            
+<article class="layout panes canonical-feed">
+    <section class="layout pane" id="list-page">
 
-                <a  class="component list-item" three with-avatar
-                    href="http://192.168.40.181:1313/content/project/">
+                
 
-                    
-                    <span class="avatar">
-                        <i>
-                            
-                                quick_reference
-                            
-                        </i>
+            <a  class="component card" elevated
+                aria-label="post link to Pit signs for robotics competition" 
+                href="https://wonyoungjang.org/project/design/pit-signs-for-robotics-competition/">      
+                
+                
+                
+                    <img 
+                        src="/assets/pit-sign-figma-design-template_1720201629920_0.webp" 
+                        alt="First image from Pit signs for robotics competition">
+                
+
+                
+                <div class="card-content">
+                    <span class="card-title headline-small">
+                        Pit signs for robotics competition
                     </span>
 
-                    <div class="list-content">
-                        <span class="headline-small">
-                            Projects
-                            
-                            <sup class="page-count code-typeface">
-                                2
-                            </sup>
+                    <div class="card-inner-content">
+                        <span class="card-description">
+                            A Figma template of pit signs to print for a large team event
                         </span>
-                        
-                        <span class="description">
+        
+                        <span class="card-meta">
                             
-                        </span>
-                    </div>
-                </a>
 
-                <div class="divider"></div>
-            
+<span title='2024-07-05 00:00:00 +0000 UTC'>July 5, 2024&nbsp;·&nbsp;1 min read
 
-                <a  class="component list-item" three with-avatar
-                    href="http://192.168.40.181:1313/content/resource/">
-
-                    
-                    <span class="avatar">
-                        <i>
-                            
-                                quick_reference
-                            
-                        </i>
-                    </span>
-
-                    <div class="list-content">
-                        <span class="headline-small">
-                            Resources
-                            
-                            <sup class="page-count code-typeface">
-                                3
-                            </sup>
-                        </span>
-                        
-                        <span class="description">
-                            
                         </span>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <div class="divider"></div>
-            
-        </div>
+        
+
     </section>
-
 </article>
 
 
@@ -741,36 +726,31 @@
         </span>
 
         
-    <nav>
-
-        <a href="/project/">
-            Projects
-        </a>
-
-        <a href="/project/software/">
-            Software
-        </a>
-
-        <a href="/project/university/">
-            University
-        </a>
-
-        <a href="/resource/">
-            Resources
-        </a>
-
-        <a href="/resource/layout/">
-            Layouts
-        </a>
-
-        <a href="/resource/reference/">
-            References
-        </a>
-
-        <a href="/resource/token/">
-            Tokens
-        </a>
-    </nav>        
+            <div class="sub-sections-container">
+                <a href="/project/">
+                    Projects
+                </a>
+            <a href="/project/software/">
+                Software
+            </a>
+            <a href="/project/university/">
+                University
+            </a>
+            </div>
+            <div class="sub-sections-container">
+                <a href="/resource/">
+                    Resources
+                </a>
+            <a href="/resource/layout/">
+                Layouts
+            </a>
+            <a href="/resource/reference/">
+                References
+            </a>
+            <a href="/resource/token/">
+                Tokens
+            </a>
+            </div>        
     </div>
     
     
@@ -835,7 +815,7 @@
 <section class="copyright">
     <a  class="component button common-button" with-icon
         id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>

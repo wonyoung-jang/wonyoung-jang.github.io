@@ -9,11 +9,16 @@ main:
     pre: <i>terminal</i>
     parent: Projects
     weight: 1
+  - name: Designs
+    pageRef: /project/design
+    pre: <i>design_services</i>
+    parent: Projects
+    weight: 2
   - name: University
     pageRef: /project/university
     pre: <i>school</i>
     parent: Projects
-    weight: 2
+    weight: 3
   - identifier: Resources
     name: Resources
     pageRef: /resource
