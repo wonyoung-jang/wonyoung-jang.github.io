@@ -40,15 +40,13 @@
     }
   }
 
-  & #share-links {    
-    gap: var(--size-3);
-
+  & #share-links {
     & .share-buttons,
     & .action-buttons {
       display: flex;
       flex-flow: row wrap;
       gap: var(--size-2);
-      padding: var(--size-3);
+      padding: var(--size-2);
 
       & .button {
         flex: 1 1 0;
