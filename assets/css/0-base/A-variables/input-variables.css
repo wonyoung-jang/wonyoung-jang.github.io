@@ -8,7 +8,7 @@
   --scale-back-size:          var(--scale-min-2);
 
   /* Line heights */
-  --input-line-height:                  var(--scale-perfect-fifth);
+  --input-line-height:            var(--scale-perfect-fifth);
   
   --scale-line-height-display:    var(--input-line-height) / 0.85;
   --scale-line-height-headline:   var(--input-line-height) / 0.90;
