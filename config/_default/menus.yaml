@@ -44,11 +44,11 @@ main:
     pageRef: /now
     pre: <i>update</i>
     weight: 30
-  # - identifier: Search
-  #   name: Search
-  #   pageRef: /search
-  #   pre: <i>search</i>
-  #   weight: 40
+  - identifier: Search
+    name: Search
+    pageRef: /search
+    pre: <i>search</i>
+    weight: 40
 
 footer:
   - identifier: About
