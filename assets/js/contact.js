@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Perform form validation
     var isValid = true;
-    // Add your validation logic here
 
     if (isValid) {
       submitButton.disabled = true;

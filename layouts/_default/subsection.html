@@ -3,7 +3,7 @@
 {{ $pages := union .RegularPages .Sections }}
 
 <article class="layout panes canonical-feed">
-    <section class="layout pane" id="list-page">
+    <section class="layout pane" id="subsection-page">
 
         {{ range $index, $page := $pages }}        
 
@@ -20,18 +20,16 @@
 
                 
                 <div class="card-content">
-                    <span class="card-title headline-small">
-                        {{ .Title }}
-                    </span>
+                    <div class="card-meta">
+                        {{ partial "post-meta.html" . }}
+                    </div>
 
-                    <div class="card-inner-content">
-                        <span class="card-description">
-                            {{ .Description }}
-                        </span>
-        
-                        <span class="card-meta">
-                            {{ partial "post-meta.html" . }}
-                        </span>
+                    <div class="card-title headline-small">
+                        {{ .Title }}
+                    </div>
+
+                    <div class="card-description">
+                        {{ .Description }}
                     </div>
                 </div>
             </a>

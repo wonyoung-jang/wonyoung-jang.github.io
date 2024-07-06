@@ -58,29 +58,34 @@
     flex: 1 1 auto;
     display: flex;
     flex-flow: column nowrap;
-    height: 100%;
     min-height: fit-content;
-  }
-  
-  & .card-title {
-    flex: 1 1 0;
-    display: flex;
-    flex-flow: column nowrap;
+    height: 100%;
     width: 100%;
     align-items: stretch;
-    padding: var(--size-3);
+    justify-content: space-between;
+    padding: var(--spacing-panes);
+
+    & .card-meta,
+    & .card-title, 
+    & .card-description { 
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    & .card-meta {
+      flex: 1 1 0;
+    }
+    
+    & .card-title {
+      flex: 2 1 0;
+    }
+    
+    & .card-description{
+      flex: 2 1 0;
+    }
   }
   
-  & .card-inner-content{
-    flex: 1 1 auto;
-    display: flex;
-    padding: var(--size-3);
-    width: 100%;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: flex-end;
-    gap: var(--size-2);
-  }
 }
 
 /* Medium: 600px-839px */
