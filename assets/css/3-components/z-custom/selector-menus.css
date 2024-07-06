@@ -1,3 +1,4 @@
+#shape-selector,
 #theme-selector,
 #typography-selector {        
     & .divider {
@@ -90,6 +91,9 @@
     }
 }
 
+#shape-selector:hover .menu,
+#shape-selector:focus-within .menu,
+#shape-selector:active .menu,
 #theme-selector:hover .menu,
 #theme-selector:focus-within .menu,
 #theme-selector:active .menu,

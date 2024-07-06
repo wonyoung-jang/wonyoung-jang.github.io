@@ -21,7 +21,7 @@
         Retail inventory manager | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.66eeabee7bc5f4ac75f77a2064bb53d3c7f71919247b2214362c86ca9cc2e736.css" integrity="sha256-Zu6r7nvF9Kx193ogZLtT08f3GRkkeyIUNiyGypzC5zY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.23a92f2b0d9c43b75e99ed67b420b0e2f598c49e19f7b106bde84774dc61714a.css" integrity="sha256-I6kvKw2cQ7deme1ntCCw4vWYxJ4Z97EGvehHdNxhcUo=" rel="preload stylesheet" as="style">
 
 
 
@@ -115,7 +115,70 @@
     <section class="end">
         
         
-<button class="component button icon-button" id="typography-selector">
+<button class="component button icon-button" id="shape-selector">
+  <i>shapes</i>
+  <menu class="menu">
+    <label class="title-large" for="shape-selector">Shape</label>
+    <div class="slider">
+      <input type="range" id="shape-selector" min="1" max="5" step="0.5" value="1.5"/>
+      <span class="tooltipShape" id="shape-tooltipShape"></span>
+    </div>
+  </menu>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var shapeSelector = document.getElementById("shape-selector");
+    var root = document.documentElement;
+
+    function updateShape() {
+      var shape = shapeSelector.value;
+      root.style.setProperty("--input-shape-corner", shape + "px");
+      
+      
+      localStorage.setItem("theme-shape", shape);
+    }
+
+    
+    var savedShape = localStorage.getItem("theme-shape");
+
+    if (savedShape !== null) {
+      shapeSelector.value = savedShape;
+    }
+
+    
+    updateShape();
+
+    shapeSelector.addEventListener("input", updateShape);
+  });
+
+  const rangeInputShape = document.getElementById('shape-selector');
+  const tooltipShape = document.getElementById('shape-tooltipShape');
+
+  function updateTooltipShape(value) {
+      tooltipShape.textContent = value;
+      const thumbPosition = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
+      const tooltipShapePosition = thumbPosition * (rangeInputShape.offsetWidth - 20) + 10;
+      tooltipShape.style.left = `${tooltipShapePosition}px`;
+      tooltipShape.style.opacity = '1';
+  }
+
+  rangeInputShape.addEventListener('input', (e) => {
+      updateTooltipShape(e.target.value);
+  });
+
+  rangeInputShape.addEventListener('mousedown', () => {
+      updateTooltipShape(rangeInputShape.value);
+  });
+
+  rangeInputShape.addEventListener('mouseup', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('mouseleave', () => {
+      tooltipShape.style.opacity = '0';
+  });
+</script><button class="component button icon-button" id="typography-selector">
     <i>custom_typography</i>
     <menu class="menu">
         <fieldset class="typography-fieldset">
@@ -391,12 +454,12 @@
   
   
   
-   6 
+   2 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/resource\/token\/";
+    window.location.href = "\/resource\/";
   }
 </script>
         
