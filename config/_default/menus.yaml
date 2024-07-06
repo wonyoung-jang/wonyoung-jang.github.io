@@ -54,48 +54,38 @@ footer:
   - identifier: About
     name: About
     pageRef: /about
-    weight: 10
   - identifier: Contact
     name: Contact
     pageRef: /contact
-    weight: 20
   - identifier: Graph
     name: Graph
     url: https://wonyoungjang.org/graph/#/graph
-    weight: 22
   - identifier: Now
     name: Now
     pageRef: /now
-    weight: 25
   - identifier: RSS
     name: RSS
     url: https://wonyoungjang.org/index.xml
-    weight: 50
   - identifier: Search
     name: Search
     pageRef: /search
-    weight: 30
   - identifier: Sitemap
     name: Sitemap
     pageRef: /sitemap
-    weight: 40
 
 sections:
   - identifier: Projects
     name: Projects
     pageRef: /project
     weight: 10
-  - name: Software
-    pageRef: /project/software
-    weight: 1
-    parent: Projects
   - name: Design
     pageRef: /project/design
-    weight: 2
+    parent: Projects
+  - name: Software
+    pageRef: /project/software
     parent: Projects
   - name: University
     pageRef: /project/university
-    weight: 3
     parent: Projects
   - identifier: Resources
     name: Resources
@@ -103,31 +93,24 @@ sections:
     weight: 20
   - name: Layouts
     pageRef: /resource/layout
-    weight: 1
     parent: Resources
   - name: References
     pageRef: /resource/reference
-    weight: 2
     parent: Resources
   - name: Tokens
     pageRef: /resource/token
-    weight: 3
     parent: Resources
 
 connect:
   - name: Email
     url: mailto:contact@wonyoungjang.org
-    weight: 10
     pre: <i>outgoing_mail</i>
   - name: Figma
     url: https://www.figma.com/@wonyoung_jang
-    weight: 20
     pre: <i>palette</i>
   - name: GitHub
     url: https://github.com/wonyoung-jang
-    weight: 30
     pre: <i>code</i>
   - name: Ko-fi
     url: https://ko-fi.com/wonyoung_jang
-    weight: 40
     pre: <i>loyalty</i>
