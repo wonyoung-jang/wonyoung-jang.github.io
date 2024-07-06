@@ -37,7 +37,7 @@
       flex-flow: row wrap;
       min-height: 42px;
       align-items: center;
-      color: var(--color-tertiary);
+      color: var(--color-sub150);
     }
   }
 

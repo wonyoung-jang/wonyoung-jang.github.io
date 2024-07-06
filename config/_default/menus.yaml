@@ -89,9 +89,13 @@ sections:
     pageRef: /project/software
     weight: 1
     parent: Projects
+  - name: Design
+    pageRef: /project/design
+    weight: 2
+    parent: Projects
   - name: University
     pageRef: /project/university
-    weight: 2
+    weight: 3
     parent: Projects
   - identifier: Resources
     name: Resources
