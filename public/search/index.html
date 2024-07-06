@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
         Search | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.8d048ec418d36919f7f930870f0682e2312dd2f365402d445360fe620713fe10.css" integrity="sha256-jQSOxBjTaRn3&#43;TCHDwaC4jEt0vNlQC1EU2D&#43;YgcT/hA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.891301483f10a0c8ef6c362f6a21ea662a9512ef4c7334c05ffe72ae34c143a1.css" integrity="sha256-iRMBSD8QoMjvbDYvaiHqZiqVEu9MczTAX/5yrjTBQ6E=" rel="preload stylesheet" as="style">
 
 
 
@@ -33,13 +33,13 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/search/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/search/">
 
 
 
@@ -55,7 +55,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/search/">
+<meta property="og:url" content="https://wonyoungjang.org/search/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Search">
   <meta property="og:description" content="Search the contents of wonyoungjang.org">
@@ -86,7 +86,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -105,7 +105,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="http://192.168.40.181:1313/">
+            href="https://wonyoungjang.org/">
             Wonyoung Jang
         </a>
     </section>
@@ -139,18 +139,19 @@
   
   
   
-   13 
+   8 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/project\/design\/";
+    window.location.href = "\/resource\/layout\/split-pane-layout\/";
   }
 </script>
 
         <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
   <menu class="menu">
+    
     <label class="title-large" for="hue-selector">Hue</label>
     <div class="slider">
       <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
@@ -167,33 +168,34 @@
 
     <div class="divider"></div>
 
-    <label class="title-large" for="shape-slider">Shape</label>
+    
+    <label class="title-large" for="shape-selector">Shape</label>
     <div class="slider">
-      <input type="range" id="shape-slider" min="0.0" max="6.0" value="1.7" step="0.1"/>
-      <span class="tooltipShape" id="shape-tooltipShape"></span>
+      <input type="range" id="shape-selector" min="0.0" max="6.0" value="1.7" step="0.1"/>
+      <span class="tooltip" id="shape-tooltip"></span>
     </div>
 
     <div class="divider"></div>
 
-    <fieldset class="typography-fieldset">
-      <legend class="title-medium">Font Size</legend>
-      <div class="slider">
-          <input type="range" id="font-size-slider" name="font-size" min="8" max="24" value="14" step="1">
-          <output for="font-size-slider" id="font-size-output">14px</output>
-      </div>
-    </fieldset>
-  
-    <fieldset class="typography-fieldset">
-        <legend class="title-medium">Line Height</legend>
-        <div class="slider">
-            <input type="range" id="line-height-slider" name="line-height" min="1.0" max="1.6" value="1.5" step="0.050">
-            <output for="line-height-slider" id="line-height-output">1.5</output>
-        </div>
-    </fieldset>
+    
+    <label class="title-large" for="font-size-selector">Font Size</label>
+    <div class="slider">
+        <input type="range" id="font-size-selector" min="8" max="24" value="14" step="1">
+        <span class="tooltip" id="font-size-tooltip">14px</span>
+    </div>
 
+    <label class="title-large" for="line-height-selector">Line Height</label>
+    <div class="slider">
+        <input type="range" id="line-height-selector" min="1.0" max="1.6" value="1.5" step="0.050">
+        <span class="tooltip" id="line-height-tooltip">1.5</span>
+    </div>
+
+    <div class="divider"></div>
+  
+    
     <div id="typography-selector">
       <fieldset class="typography-fieldset">
-          <legend class="title-medium">Brand Font</legend>
+          <legend class="title-large">Brand font family</legend>
           <div class="component radio-button">
               <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
               <label for="brand-raleway">Raleway</label>
@@ -213,7 +215,7 @@
       </fieldset>
     
       <fieldset class="typography-fieldset">
-          <legend class="title-medium">Plain Font</legend>
+          <legend class="title-large">Plain font family</legend>
           <div class="component radio-button">
               <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
               <label for="plain-ibm">IBM Plex Sans</label>
@@ -233,7 +235,7 @@
       </fieldset>
     
       <fieldset class="typography-fieldset">
-          <legend class="title-medium">Code Font</legend>
+          <legend class="title-large">Code font family</legend>
           <div class="component radio-button">
               <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
               <label for="code-ibm">IBM Plex Mono</label>
@@ -257,15 +259,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    var root = document.documentElement;
     var hueSelector = document.getElementById("hue-selector");
     var chromaSelector = document.getElementById("chroma-selector");
-    var root = document.documentElement;
-    var shapeSelector = document.getElementById("shape-slider");
+    var shapeSelector = document.getElementById("shape-selector");
     var typographySelector = document.getElementById('typography-selector');
-    var fontSizeSlider = document.getElementById('font-size-slider');
-    var fontSizeOutput = document.getElementById('font-size-output');
-    var lineHeightSlider = document.getElementById('line-height-slider');
-    var lineHeightOutput = document.getElementById('line-height-output');
+    var fontSizeSelector = document.getElementById('font-size-selector');
+    var lineHeightSelector = document.getElementById('line-height-selector');
 
     
     var savedHue = localStorage.getItem("theme-hue");
@@ -275,7 +275,7 @@
     var savedPlainFont = localStorage.getItem('typography-plain-font');
     var savedCodeFont = localStorage.getItem('typography-code-font');
     var savedFontSize = localStorage.getItem('typography-font-size');
-    var savedLineDensity = localStorage.getItem('typography-line-height');
+    var savedLineHeight = localStorage.getItem('typography-line-height');
 
     if (savedHue !== null) {
       hueSelector.value = savedHue;
@@ -289,15 +289,19 @@
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
     if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
     if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
-    if (savedFontSize) fontSizeSlider.value = savedFontSize;
-    if (savedLineDensity) lineHeightSlider.value = savedLineDensity;
+    if (savedFontSize !== null) {
+      fontSizeSelector.value = savedFontSize;
+    }
+    if (savedLineHeight !== null) {
+      lineHeightSelector.value = savedLineHeight;
+    }
 
     function updateColor() {
       var hue = hueSelector.value;
       var chroma = chromaSelector.value;
+
       root.style.setProperty("--input-color-hue", hue + "deg");
       root.style.setProperty("--input-color-chroma", chroma);
-      
       
       localStorage.setItem("theme-hue", hue);
       localStorage.setItem("theme-chroma", chroma);
@@ -305,34 +309,30 @@
 
     function updateShape() {
       var shape = shapeSelector.value;
+
       root.style.setProperty("--input-shape-corner", shape + "px");
-      
       
       localStorage.setItem("theme-shape", shape);
     }
 
     function updateTypography() {
-        var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
-        var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
-        var codeFont = document.querySelector('input[name="code-font"]:checked').value;
-        var fontSize = fontSizeSlider.value;
-        var lineHeight = lineHeightSlider.value;
+      var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
+      var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
+      var codeFont = document.querySelector('input[name="code-font"]:checked').value;
+      var fontSize = fontSizeSelector.value;
+      var lineHeight = lineHeightSelector.value;
 
-        root.style.setProperty('--typeface-brand', brandFont);
-        root.style.setProperty('--typeface-plain', plainFont);
-        root.style.setProperty('--typeface-code', codeFont);
-        root.style.setProperty('--input-font-size', fontSize + 'px');
-        root.style.setProperty('--input-line-height', lineHeight);
+      root.style.setProperty('--typeface-brand', brandFont);
+      root.style.setProperty('--typeface-plain', plainFont);
+      root.style.setProperty('--typeface-code', codeFont);
+      root.style.setProperty('--input-font-size', fontSize + 'px');
+      root.style.setProperty('--input-line-height', lineHeight);
 
-        fontSizeOutput.textContent = fontSize + 'px';
-        lineHeightOutput.textContent = lineHeight;
-
-        
-        localStorage.setItem('typography-brand-font', brandFont);
-        localStorage.setItem('typography-plain-font', plainFont);
-        localStorage.setItem('typography-code-font', codeFont);
-        localStorage.setItem('typography-font-size', fontSize);
-        localStorage.setItem('typography-line-height', lineHeight);
+      localStorage.setItem('typography-brand-font', brandFont);
+      localStorage.setItem('typography-plain-font', plainFont);
+      localStorage.setItem('typography-code-font', codeFont);
+      localStorage.setItem('typography-font-size', fontSize);
+      localStorage.setItem('typography-line-height', lineHeight);
     }
 
     
@@ -344,17 +344,21 @@
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
     shapeSelector.addEventListener("input", updateShape);
+    fontSizeSelector.addEventListener('input', updateTypography);
+    lineHeightSelector.addEventListener('input', updateTypography);
     typographySelector.addEventListener('change', updateTypography);
-    fontSizeSlider.addEventListener('input', updateTypography);
-    lineHeightSlider.addEventListener('input', updateTypography);
   });
 
   const rangeInputHues = document.getElementById('hue-selector');
   const tooltipHues = document.getElementById('hue-tooltip');
   const rangeInputChromas = document.getElementById('chroma-selector');
   const tooltipChromas = document.getElementById('chroma-tooltip');
-  const rangeInputShape = document.getElementById('shape-slider');
-  const tooltipShape = document.getElementById('shape-tooltipShape');
+  const rangeInputShape = document.getElementById('shape-selector');
+  const tooltipShape = document.getElementById('shape-tooltip');
+  const rangeInputFontSize = document.getElementById('font-size-selector');
+  const tooltipFontSize = document.getElementById('font-size-tooltip');
+  const rangeInputLineHeight = document.getElementById('line-height-selector');
+  const tooltipLineHeight = document.getElementById('line-height-tooltip');
 
   function updateTooltipHues(value) {
       tooltipHues.textContent = value;
@@ -378,6 +382,22 @@
     const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
     tooltipShape.style.left = `${tooltipShapePosition}px`;
     tooltipShape.style.opacity = '1';
+  }
+
+  function updateTooltipFontSize(value) {
+    tooltipFontSize.textContent = value + 'px';
+    const thumbPositionFontSize = (value - rangeInputFontSize.min) / (rangeInputFontSize.max - rangeInputFontSize.min);
+    const tooltipFontSizePosition = thumbPositionFontSize * (rangeInputFontSize.offsetWidth - 20) + 10;
+    tooltipFontSize.style.left = `${tooltipFontSizePosition}px`;
+    tooltipFontSize.style.opacity = '1';
+  }
+
+  function updateTooltipLineHeight(value) {
+    tooltipLineHeight.textContent = value;
+    const thumbPositionLineHeight = (value - rangeInputLineHeight.min) / (rangeInputLineHeight.max - rangeInputLineHeight.min);
+    const tooltipLineHeightPosition = thumbPositionLineHeight * (rangeInputLineHeight.offsetWidth - 20) + 10;
+    tooltipLineHeight.style.left = `${tooltipLineHeightPosition}px`;
+    tooltipLineHeight.style.opacity = '1';
   }
 
   rangeInputHues.addEventListener('input', (e) => {
@@ -428,6 +448,37 @@
       tooltipShape.style.opacity = '0';
   });
 
+  rangeInputFontSize.addEventListener('input', (e) => {
+      updateTooltipFontSize(e.target.value);
+  });
+
+  rangeInputFontSize.addEventListener('mousedown', () => {
+      updateTooltipFontSize(rangeInputFontSize.value);
+  });
+
+  rangeInputFontSize.addEventListener('mouseup', () => {
+      tooltipFontSize.style.opacity = '0';
+  });
+
+  rangeInputFontSize.addEventListener('mouseleave', () => {
+      tooltipFontSize.style.opacity = '0';
+  });
+
+  rangeInputLineHeight.addEventListener('input', (e) => {
+      updateTooltipLineHeight(e.target.value);
+  });
+
+  rangeInputLineHeight.addEventListener('mousedown', () => {
+      updateTooltipLineHeight(rangeInputLineHeight.value);
+  });
+
+  rangeInputLineHeight.addEventListener('mouseup', () => {
+      tooltipLineHeight.style.opacity = '0';
+  });
+
+  rangeInputLineHeight.addEventListener('mouseleave', () => {
+      tooltipLineHeight.style.opacity = '0';
+  });
 </script></section>
 </nav>
 
@@ -523,7 +574,7 @@
         
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
              
-                <a href="http://192.168.40.181:1313/">
+                <a href="https://wonyoungjang.org/">
                     
                         Home
                      
@@ -593,7 +644,7 @@
     <nav class="layout page-navigation" aria-label="Page Navigation">
       
         <a  class="component card prev"
-            href="http://192.168.40.181:1313/resource/token/typography/"
+            href="https://wonyoungjang.org/resource/token/typography/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -612,7 +663,7 @@
 
       
         <a  class="component card next"
-            href="http://192.168.40.181:1313/sitemap/"
+            href="https://wonyoungjang.org/sitemap/"
             accesskey="n"
             title="Next page (ALT + SHIFT + n)">
             
@@ -806,7 +857,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on twitter"
-                href="https://twitter.com/intent/tweet/?text=Search&url=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">      
+                href="https://twitter.com/intent/tweet/?text=Search&url=https%3a%2f%2fwonyoungjang.org%2fsearch%2f">      
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -819,7 +870,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on linkedin"
-                href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f&title=Search&summary=Search&source=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwonyoungjang.org%2fsearch%2f&title=Search&summary=Search&source=https%3a%2f%2fwonyoungjang.org%2fsearch%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -832,7 +883,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on reddit"
-                href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f&title=Search">
+                href="https://reddit.com/submit?url=https%3a%2f%2fwonyoungjang.org%2fsearch%2f&title=Search">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -845,7 +896,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on facebook"
-                href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">
+                href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwonyoungjang.org%2fsearch%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -858,7 +909,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on whatsapp"
-                href="https://api.whatsapp.com/send?text=Search%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">
+                href="https://api.whatsapp.com/send?text=Search%20-%20https%3a%2f%2fwonyoungjang.org%2fsearch%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -871,7 +922,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on telegram"
-                href="https://telegram.me/share/url?text=Search&url=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">
+                href="https://telegram.me/share/url?text=Search&url=https%3a%2f%2fwonyoungjang.org%2fsearch%2f">
                 <i>
                     <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" fill="currentColor">
                         <path
@@ -884,7 +935,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Search on ycombinator"
-                href="https://news.ycombinator.com/submitlink?t=Search&u=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">
+                href="https://news.ycombinator.com/submitlink?t=Search&u=https%3a%2f%2fwonyoungjang.org%2fsearch%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
@@ -900,7 +951,7 @@
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="share Search via email" 
-                href="mailto:?subject=Search&body=http%3a%2f%2f192.168.40.181%3a1313%2fsearch%2f">
+                href="mailto:?subject=Search&body=https%3a%2f%2fwonyoungjang.org%2fsearch%2f">
                 <i>email</i>
                 Email
             </a>
@@ -1085,7 +1136,7 @@
 <section class="copyright">
     <a  class="component button common-button" with-icon
         id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>

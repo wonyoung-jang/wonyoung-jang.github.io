@@ -1,6 +1,6 @@
 #theme-selector {        
     & .divider {
-        margin-block: var(--size-3);
+        margin-block: var(--size-5);
     }
 
     & .menu {
@@ -13,8 +13,10 @@
         position: absolute;
         right: 0;
         z-index: 20;
-        max-height: 80dvh;
-        overflow-y: auto;
+        max-height: 90dvh;
+        min-width: fit-content;
+        width: 50dvw;
+        overflow: auto;
 
         & .typography-fieldset {
             display: flex;
@@ -29,30 +31,44 @@
                 text-overflow: ellipsis;
             }
         }
-    }
-}
 
-#theme-selector {
-    & .menu label {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
+        & label {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
     }
 
     & .slider {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
         margin-block: var(--size-2);
+
+        & input {
+            width: 100%;
+        }
 
         & label {
             margin-top: var(--size-2);
+        }
+
+        & output {
+            display: flex;
+            width: 100%;
         }
     }
 
     & #theme-hues,
     & #theme-chromas {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
         width: 100%;
-        height: var(--size-4);
+        height: var(--size-5);
         margin-bottom: var(--size-3);
         border-radius: var(--shape-corner-full);
     }
@@ -87,9 +103,15 @@
             var(--palette-primary-90)
         );
     }
+
+    & fieldset {
+        margin-top: var(--size-3);
+        padding: var(--size-3);
+    }
 }
 
 #theme-selector:hover .menu,
+#theme-selector:focus-visible .menu,
 #theme-selector:focus-within .menu,
 #theme-selector:active .menu {
     opacity: 1;
