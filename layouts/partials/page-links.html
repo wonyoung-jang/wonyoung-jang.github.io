@@ -16,26 +16,25 @@
     {{ end }} 
 
     {{/*  Backlinks  */}}
-    {{ if gt (len $backlinks) 0 }}
+    {{ if gt (len $backlinks) 1 }}
         <nav id="backlinks" aria-label="Backlinks">
             <h5>Backlinks</h5>
-            {{ if gt (len $backlinks) 0 }}
-                <div class="list-container">
-                    {{ range $backlinks }}
-                        <a  class="component list-item surface-container-lowest" one
-                            href="{{ .RelPermalink }}">
-                            <div class="list-content">
-                                <span class="title-small">
-                                    {{ .Title }}
-                                </span>
-                            </div>
-                        </a>
-                        <div class="divider"></div>
+            <div class="list-container">
+                {{ range $backlinks }}
+                    {{ if eq .Title "" }}
+                        {{- continue -}}
                     {{ end }}
-                </div>
-            {{ else }}
-                <p>No backlinks found</p>
-            {{ end }}
+                    <a  class="component list-item surface-container-lowest" one
+                        href="{{ .RelPermalink }}">
+                        <div class="list-content">
+                            <span class="title-small">
+                                {{ .Title }}
+                            </span>
+                        </div>
+                    </a>
+                    <div class="divider"></div>
+                {{ end }}
+            </div>
         </nav>
     {{ end }}
 
