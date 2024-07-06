@@ -1,12 +1,10 @@
 {{/* Links */}}
 <section class="footer-links">
-
     {{/* Quick links */}}
     <div class="footer-links-list">
-        <span class="title-large">
+        <span class="title-medium on-surface-variant">
             Quick links
         </span>
-
         {{ range site.Menus.footer }}
             <a  href="{{ .URL }}">
                 {{ .Name }}
@@ -16,19 +14,17 @@
     
     {{/* Sections */}}
     <div class="footer-links-list">
-        <span class="title-large">
+        <span class="title-medium on-surface-variant">
             Sections
         </span>
-
         {{- partialCached "menu.html" (dict "menuID" "sections" "page" .) -}}     
     </div>
     
     {{/* Connect links */}}
     <div class="footer-links-list" id="connect-links">
-        <span class="title-large">
+        <span class="title-medium on-surface-variant">
             Connect
         </span>
-
         {{ range site.Menus.connect }}
             <a  class="component button fab
                 {{ if eq .Name "Email" }}
@@ -51,10 +47,11 @@
     </div>
 </section>
 
+<div class="divider"></div>
+
 {{/* Copyright */}}
 <section class="copyright">
-    <a  class="component button common-button" with-icon
-        id="copyright-button"
+    <a  id="copyright-button"
         href="{{ "" | absLangURL }}">
         © {{ now.Year }} {{ site.Title }}
     </a>

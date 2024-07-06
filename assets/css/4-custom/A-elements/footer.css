@@ -6,29 +6,33 @@ footer {
   flex-flow: column nowrap;
   align-items: stretch;
 
-  padding: 20dvh 8dvw 4dvh 8dvw;
-  gap: 8dvh;
+  padding-block: 21dvh 3dvh;
+  padding-inline: 8dvw;
+  gap: 5dvh;
 }
 
 .footer-links {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  justify-content: space-around;
 
   & .footer-links-list {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
     padding: var(--spacing-panes);
+
+    & span:first-child {
+      color: var(--color-on-surface-variant);
+    }
   }
 
   & a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    min-height: 42px;
     width: 100%;
+    min-height: var(--size-8);
   }
 
   & span {
@@ -50,20 +54,26 @@ footer {
   flex: 1 1 0;
   display: flex;
   flex-flow: row nowrap;
-
   align-items: stretch;
-  justify-content: center;
 
   & #copyright-button {
     flex: 1 1 0;
-    --icon-color: var(--color-on-surface-variant);
-    --text-color: var(--color-on-surface-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-on-surface-variant);
+
+    &:hover {
+      color: var(--color-on-surface);
+      text-decoration: underline;
+    }
   }
 }
 
 .sub-sections-container {
   & a:first-child {
     margin-inline-start: 0;
+    font-weight: bolder;
   }
 
   & a {
