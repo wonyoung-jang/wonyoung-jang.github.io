@@ -7,15 +7,101 @@
       <span class="tooltip" id="hue-tooltip"></span>
     </div>
     <div id="theme-hues"></div>
-    
-    <div class="divider"></div>
-    
+        
     <label class="title-large" for="chroma-selector">Chroma</label>
     <div class="slider">
       <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
       <span class="tooltip" id="chroma-tooltip"></span>
     </div>
     <div id="theme-chromas"></div>
+
+    <div class="divider"></div>
+
+    <label class="title-large" for="shape-slider">Shape</label>
+    <div class="slider">
+      <input type="range" id="shape-slider" min="0.0" max="6.0" value="1.7" step="0.1"/>
+      <span class="tooltipShape" id="shape-tooltipShape"></span>
+    </div>
+
+    <div class="divider"></div>
+
+    <fieldset class="typography-fieldset">
+      <legend class="title-medium">Font Size</legend>
+      <div class="slider">
+          <input type="range" id="font-size-slider" name="font-size" min="8" max="24" value="14" step="1">
+          <output for="font-size-slider" id="font-size-output">14px</output>
+      </div>
+    </fieldset>
+  
+    <fieldset class="typography-fieldset">
+        <legend class="title-medium">Line Height</legend>
+        <div class="slider">
+            <input type="range" id="line-height-slider" name="line-height" min="1.0" max="1.6" value="1.5" step="0.050">
+            <output for="line-height-slider" id="line-height-output">1.5</output>
+        </div>
+    </fieldset>
+
+    <div id="typography-selector">
+      <fieldset class="typography-fieldset">
+          <legend class="title-medium">Brand Font</legend>
+          <div class="component radio-button">
+              <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
+              <label for="brand-raleway">Raleway</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="brand-arial" name="brand-font" value="Arial">
+              <label for="brand-arial">Arial</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
+              <label for="brand-times">Times New Roman</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
+              <label for="brand-courier">Courier New</label>
+          </div>
+      </fieldset>
+    
+      <fieldset class="typography-fieldset">
+          <legend class="title-medium">Plain Font</legend>
+          <div class="component radio-button">
+              <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
+              <label for="plain-ibm">IBM Plex Sans</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="plain-arial" name="plain-font" value="Arial">
+              <label for="plain-arial">Arial</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
+              <label for="plain-times">Times New Roman</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
+              <label for="plain-courier">Courier New</label>
+          </div>
+      </fieldset>
+    
+      <fieldset class="typography-fieldset">
+          <legend class="title-medium">Code Font</legend>
+          <div class="component radio-button">
+              <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
+              <label for="code-ibm">IBM Plex Mono</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="code-arial" name="code-font" value="Arial">
+              <label for="code-arial">Arial</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="code-times" name="code-font" value="Times New Roman">
+              <label for="code-times">Times New Roman</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="code-courier" name="code-font" value="Courier New">
+              <label for="code-courier">Courier New</label>
+          </div>
+      </fieldset>
+    </div>
   </menu>
 </button>
 
@@ -24,6 +110,37 @@
     var hueSelector = document.getElementById("hue-selector");
     var chromaSelector = document.getElementById("chroma-selector");
     var root = document.documentElement;
+    var shapeSelector = document.getElementById("shape-slider");
+    var typographySelector = document.getElementById('typography-selector');
+    var fontSizeSlider = document.getElementById('font-size-slider');
+    var fontSizeOutput = document.getElementById('font-size-output');
+    var lineHeightSlider = document.getElementById('line-height-slider');
+    var lineHeightOutput = document.getElementById('line-height-output');
+
+    // Load saved values from localStorage
+    var savedHue = localStorage.getItem("theme-hue");
+    var savedChroma = localStorage.getItem("theme-chroma");
+    var savedShape = localStorage.getItem("theme-shape");
+    var savedBrandFont = localStorage.getItem('typography-brand-font');
+    var savedPlainFont = localStorage.getItem('typography-plain-font');
+    var savedCodeFont = localStorage.getItem('typography-code-font');
+    var savedFontSize = localStorage.getItem('typography-font-size');
+    var savedLineDensity = localStorage.getItem('typography-line-height');
+
+    if (savedHue !== null) {
+      hueSelector.value = savedHue;
+    }
+    if (savedChroma !== null) {
+      chromaSelector.value = savedChroma;
+    }
+    if (savedShape !== null) {
+      shapeSelector.value = savedShape;
+    }
+    if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
+    if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
+    if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+    if (savedFontSize) fontSizeSlider.value = savedFontSize;
+    if (savedLineDensity) lineHeightSlider.value = savedLineDensity;
 
     function updateColor() {
       var hue = hueSelector.value;
@@ -36,60 +153,98 @@
       localStorage.setItem("theme-chroma", chroma);
     }
 
-    // Load saved values from localStorage
-    var savedHue = localStorage.getItem("theme-hue");
-    var savedChroma = localStorage.getItem("theme-chroma");
-
-    if (savedHue !== null) {
-      hueSelector.value = savedHue;
+    function updateShape() {
+      var shape = shapeSelector.value;
+      root.style.setProperty("--input-shape-corner", shape + "px");
+      
+      // Store values in localStorage
+      localStorage.setItem("theme-shape", shape);
     }
-    if (savedChroma !== null) {
-      chromaSelector.value = savedChroma;
+
+    function updateTypography() {
+        var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
+        var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
+        var codeFont = document.querySelector('input[name="code-font"]:checked').value;
+        var fontSize = fontSizeSlider.value;
+        var lineHeight = lineHeightSlider.value;
+
+        root.style.setProperty('--typeface-brand', brandFont);
+        root.style.setProperty('--typeface-plain', plainFont);
+        root.style.setProperty('--typeface-code', codeFont);
+        root.style.setProperty('--input-font-size', fontSize + 'px');
+        root.style.setProperty('--input-line-height', lineHeight);
+
+        fontSizeOutput.textContent = fontSize + 'px';
+        lineHeightOutput.textContent = lineHeight;
+
+        // Store values in localStorage
+        localStorage.setItem('typography-brand-font', brandFont);
+        localStorage.setItem('typography-plain-font', plainFont);
+        localStorage.setItem('typography-code-font', codeFont);
+        localStorage.setItem('typography-font-size', fontSize);
+        localStorage.setItem('typography-line-height', lineHeight);
     }
 
     // Apply saved or default values
     updateColor();
+    updateShape();
+    updateTypography();
 
+    // Add event listeners
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
+    shapeSelector.addEventListener("input", updateShape);
+    typographySelector.addEventListener('change', updateTypography);
+    fontSizeSlider.addEventListener('input', updateTypography);
+    lineHeightSlider.addEventListener('input', updateTypography);
   });
 
-  const rangeInput = document.getElementById('hue-selector');
-  const tooltip = document.getElementById('hue-tooltip');
+  const rangeInputHues = document.getElementById('hue-selector');
+  const tooltipHues = document.getElementById('hue-tooltip');
   const rangeInputChromas = document.getElementById('chroma-selector');
   const tooltipChromas = document.getElementById('chroma-tooltip');
+  const rangeInputShape = document.getElementById('shape-slider');
+  const tooltipShape = document.getElementById('shape-tooltipShape');
 
-  function updateTooltip(value) {
-      tooltip.textContent = value;
-      const thumbPosition = (value - rangeInput.min) / (rangeInput.max - rangeInput.min);
-      const tooltipPosition = thumbPosition * (rangeInput.offsetWidth - 20) + 10;
-      tooltip.style.left = `${tooltipPosition}px`;
-      tooltip.style.opacity = '1';
+  function updateTooltipHues(value) {
+      tooltipHues.textContent = value;
+      const thumbPosition = (value - rangeInputHues.min) / (rangeInputHues.max - rangeInputHues.min);
+      const tooltipPositionHues = thumbPosition * (rangeInputHues.offsetWidth - 20) + 10;
+      tooltipHues.style.left = `${tooltipPositionHues}px`;
+      tooltipHues.style.opacity = '1';
   }
-
-  rangeInput.addEventListener('input', (e) => {
-      updateTooltip(e.target.value);
-  });
-
-  rangeInput.addEventListener('mousedown', () => {
-      updateTooltip(rangeInput.value);
-  });
-
-  rangeInput.addEventListener('mouseup', () => {
-      tooltip.style.opacity = '0';
-  });
-
-  rangeInput.addEventListener('mouseleave', () => {
-      tooltip.style.opacity = '0';
-  });
 
   function updateTooltipChromas(value) {
-      tooltipChromas.textContent = value;
-      const thumbPosition = (value - rangeInputChromas.min) / (rangeInputChromas.max - rangeInputChromas.min);
-      const tooltipPositionChromas = thumbPosition * (rangeInputChromas.offsetWidth - 20) + 10;
-      tooltipChromas.style.left = `${tooltipPositionChromas}px`;
-      tooltipChromas.style.opacity = '1';
+    tooltipChromas.textContent = value;
+    const thumbPosition = (value - rangeInputChromas.min) / (rangeInputChromas.max - rangeInputChromas.min);
+    const tooltipPositionChromas = thumbPosition * (rangeInputChromas.offsetWidth - 20) + 10;
+    tooltipChromas.style.left = `${tooltipPositionChromas}px`;
+    tooltipChromas.style.opacity = '1';
   }
+
+  function updateTooltipShape(value) {
+    tooltipShape.textContent = value;
+    const thumbPositionShape = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
+    const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
+    tooltipShape.style.left = `${tooltipShapePosition}px`;
+    tooltipShape.style.opacity = '1';
+  }
+
+  rangeInputHues.addEventListener('input', (e) => {
+      updateTooltipHues(e.target.value);
+  });
+
+  rangeInputHues.addEventListener('mousedown', () => {
+      updateTooltipHues(rangeInputHues.value);
+  });
+
+  rangeInputHues.addEventListener('mouseup', () => {
+      tooltipHues.style.opacity = '0';
+  });
+
+  rangeInputHues.addEventListener('mouseleave', () => {
+      tooltipHues.style.opacity = '0';
+  });
 
   rangeInputChromas.addEventListener('input', (e) => {
       updateTooltipChromas(e.target.value);
@@ -106,4 +261,21 @@
   rangeInputChromas.addEventListener('mouseleave', () => {
       tooltipChromas.style.opacity = '0';
   });
+
+  rangeInputShape.addEventListener('input', (e) => {
+      updateTooltipShape(e.target.value);
+  });
+
+  rangeInputShape.addEventListener('mousedown', () => {
+      updateTooltipShape(rangeInputShape.value);
+  });
+
+  rangeInputShape.addEventListener('mouseup', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('mouseleave', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
 </script>

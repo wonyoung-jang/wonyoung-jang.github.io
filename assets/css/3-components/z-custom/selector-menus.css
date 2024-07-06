@@ -1,6 +1,4 @@
-#shape-selector,
-#theme-selector,
-#typography-selector {        
+#theme-selector {        
     & .divider {
         margin-block: var(--size-3);
     }
@@ -91,15 +89,9 @@
     }
 }
 
-#shape-selector:hover .menu,
-#shape-selector:focus-within .menu,
-#shape-selector:active .menu,
 #theme-selector:hover .menu,
 #theme-selector:focus-within .menu,
-#theme-selector:active .menu,
-#typography-selector:hover .menu,
-#typography-selector:focus-within .menu,
-#typography-selector:active .menu {
+#theme-selector:active .menu {
     opacity: 1;
     visibility: visible;
     transform: scale(1) translateY(100%);

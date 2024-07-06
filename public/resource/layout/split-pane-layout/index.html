@@ -21,7 +21,7 @@
         Split-pane layout | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.04fc95e6e1d2df8f60e043b5c96833dbd8968e418294e925134ec96589f34092.css" integrity="sha256-BPyV5uHS349g4EO1yWgz29iWjkGClOklE07JZYnzQJI=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.8d048ec418d36919f7f930870f0682e2312dd2f365402d445360fe620713fe10.css" integrity="sha256-jQSOxBjTaRn3&#43;TCHDwaC4jEt0vNlQC1EU2D&#43;YgcT/hA=" rel="preload stylesheet" as="style">
 
 
 
@@ -109,213 +109,41 @@
     <section class="end">
         
         
-<button class="component button icon-button" id="shape-selector">
-  <i>shapes</i>
-  <menu class="menu">
-    <label class="title-large" for="shape-slider">Shape</label>
-    <div class="slider">
-      <input type="range" id="shape-slider" min="0.0" max="6.0" value="1.7" step="0.1"/>
-      <span class="tooltipShape" id="shape-tooltipShape"></span>
-    </div>
-  </menu>
+
+    <button class="component button icon-button"
+            id="theme-toggle" 
+            accesskey="t" 
+            title="Toggle Theme (ALT + SHIFT + t)" >
+        <i id="moon">dark_mode</i>
+        <i id="sun">light_mode</i>
+    </button>
+
+
+        
+
+<button 
+  class="component button icon-button"
+  id="random-button"
+  accesskey="r"
+  title="Random page (ALT + SHIFT + R)"
+  onclick="navigateToRandomPage(); return false;">
+  <i>ifl</i>
 </button>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var shapeSelector = document.getElementById("shape-slider");
-    var root = document.documentElement;
-
-    function updateShape() {
-      var shape = shapeSelector.value;
-      root.style.setProperty("--input-shape-corner", shape + "px");
-      
-      
-      localStorage.setItem("theme-shape", shape);
-    }
-
-    
-    var savedShape = localStorage.getItem("theme-shape");
-
-    if (savedShape !== null) {
-      shapeSelector.value = savedShape;
-    }
-
-    
-    updateShape();
-
-    shapeSelector.addEventListener("input", updateShape);
-  });
-
-  const rangeInputShape = document.getElementById('shape-slider');
-  const tooltipShape = document.getElementById('shape-tooltipShape');
-
-  function updateTooltipShape(value) {
-      tooltipShape.textContent = value;
-      const thumbPositionShape = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
-      const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
-      tooltipShape.style.left = `${tooltipShapePosition}px`;
-      tooltipShape.style.opacity = '1';
+<script defer>
+  
+  
+  
+   0 
+  
+  
+  
+  function navigateToRandomPage() {
+    window.location.href = "\/project\/university\/food-shop-database-management\/";
   }
+</script>
 
-  rangeInputShape.addEventListener('input', (e) => {
-      updateTooltipShape(e.target.value);
-  });
-
-  rangeInputShape.addEventListener('mousedown', () => {
-      updateTooltipShape(rangeInputShape.value);
-  });
-
-  rangeInputShape.addEventListener('mouseup', () => {
-      tooltipShape.style.opacity = '0';
-  });
-
-  rangeInputShape.addEventListener('mouseleave', () => {
-      tooltipShape.style.opacity = '0';
-  });
-</script><button class="component button icon-button" id="typography-selector">
-    <i>custom_typography</i>
-    <menu class="menu">
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Font Size</legend>
-            <div class="slider">
-                <input type="range" id="font-size-slider" name="font-size" min="8" max="24" value="14" step="1">
-                <output for="font-size-slider" id="font-size-output">14px</output>
-            </div>
-        </fieldset>
-
-        <div class="divider"></div>
-       
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Line Height</legend>
-            <div class="slider">
-                <input type="range" id="line-height-slider" name="line-height" min="1.0" max="1.6" value="1.5" step="0.050">
-                <output for="line-height-slider" id="line-height-output">1.5</output>
-            </div>
-        </fieldset>
-
-        <div class="divider"></div>
-
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Brand Font</legend>
-            <div class="component radio-button">
-                <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
-                <label for="brand-raleway">Raleway</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="brand-arial" name="brand-font" value="Arial">
-                <label for="brand-arial">Arial</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
-                <label for="brand-times">Times New Roman</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
-                <label for="brand-courier">Courier New</label>
-            </div>
-        </fieldset>
-
-        <div class="divider"></div>
-       
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Plain Font</legend>
-            <div class="component radio-button">
-                <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
-                <label for="plain-ibm">IBM Plex Sans</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="plain-arial" name="plain-font" value="Arial">
-                <label for="plain-arial">Arial</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
-                <label for="plain-times">Times New Roman</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
-                <label for="plain-courier">Courier New</label>
-            </div>
-        </fieldset>
-
-        <div class="divider"></div>
-       
-        <fieldset class="typography-fieldset">
-            <legend class="title-medium">Code Font</legend>
-            <div class="component radio-button">
-                <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
-                <label for="code-ibm">IBM Plex Mono</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="code-arial" name="code-font" value="Arial">
-                <label for="code-arial">Arial</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="code-times" name="code-font" value="Times New Roman">
-                <label for="code-times">Times New Roman</label>
-            </div>
-            <div class="component radio-button">
-                <input type="radio" id="code-courier" name="code-font" value="Courier New">
-                <label for="code-courier">Courier New</label>
-            </div>
-        </fieldset>
-    </menu>
-</button>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var root = document.documentElement;
-        var typographySelector = document.getElementById('typography-selector');
-        var fontSizeSlider = document.getElementById('font-size-slider');
-        var fontSizeOutput = document.getElementById('font-size-output');
-        var lineHeightSlider = document.getElementById('line-height-slider');
-        var lineHeightOutput = document.getElementById('line-height-output');
-
-        function updateTypography() {
-            var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
-            var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
-            var codeFont = document.querySelector('input[name="code-font"]:checked').value;
-            var fontSize = fontSizeSlider.value;
-            var lineHeight = lineHeightSlider.value;
-
-            root.style.setProperty('--typeface-brand', brandFont);
-            root.style.setProperty('--typeface-plain', plainFont);
-            root.style.setProperty('--typeface-code', codeFont);
-            root.style.setProperty('--input-font-size', fontSize + 'px');
-            root.style.setProperty('--input-line-height', lineHeight);
-
-            fontSizeOutput.textContent = fontSize + 'px';
-            lineHeightOutput.textContent = lineHeight;
-
-            
-            localStorage.setItem('typography-brand-font', brandFont);
-            localStorage.setItem('typography-plain-font', plainFont);
-            localStorage.setItem('typography-code-font', codeFont);
-            localStorage.setItem('typography-font-size', fontSize);
-            localStorage.setItem('typography-line-height', lineHeight);
-        }
-
-        
-        var savedBrandFont = localStorage.getItem('typography-brand-font');
-        var savedPlainFont = localStorage.getItem('typography-plain-font');
-        var savedCodeFont = localStorage.getItem('typography-code-font');
-        var savedFontSize = localStorage.getItem('typography-font-size');
-        var savedLineDensity = localStorage.getItem('typography-line-height');
-
-        if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
-        if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
-        if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
-        if (savedFontSize) fontSizeSlider.value = savedFontSize;
-        if (savedLineDensity) lineHeightSlider.value = savedLineDensity;
-
-        
-        updateTypography();
-
-        
-        typographySelector.addEventListener('change', updateTypography);
-        fontSizeSlider.addEventListener('input', updateTypography);
-        lineHeightSlider.addEventListener('input', updateTypography);
-    });
-</script><button class="component button icon-button" id="theme-selector">
+        <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
   <menu class="menu">
     <label class="title-large" for="hue-selector">Hue</label>
@@ -324,15 +152,108 @@
       <span class="tooltip" id="hue-tooltip"></span>
     </div>
     <div id="theme-hues"></div>
-    
-    <div class="divider"></div>
-    
+        
     <label class="title-large" for="chroma-selector">Chroma</label>
     <div class="slider">
       <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
       <span class="tooltip" id="chroma-tooltip"></span>
     </div>
     <div id="theme-chromas"></div>
+
+    <div class="divider"></div>
+
+    <label class="title-large" for="shape-slider">Shape</label>
+    <div class="slider">
+      <input type="range" id="shape-slider" min="0.0" max="6.0" value="1.7" step="0.1"/>
+      <span class="tooltipShape" id="shape-tooltipShape"></span>
+    </div>
+
+    <div class="divider"></div>
+
+    <fieldset class="typography-fieldset">
+      <legend class="title-medium">Font Size</legend>
+      <div class="slider">
+          <input type="range" id="font-size-slider" name="font-size" min="8" max="24" value="14" step="1">
+          <output for="font-size-slider" id="font-size-output">14px</output>
+      </div>
+    </fieldset>
+
+    <div class="divider"></div>
+  
+    <fieldset class="typography-fieldset">
+        <legend class="title-medium">Line Height</legend>
+        <div class="slider">
+            <input type="range" id="line-height-slider" name="line-height" min="1.0" max="1.6" value="1.5" step="0.050">
+            <output for="line-height-slider" id="line-height-output">1.5</output>
+        </div>
+    </fieldset>
+
+    <div class="divider"></div>
+
+    <fieldset class="typography-fieldset">
+        <legend class="title-medium">Brand Font</legend>
+        <div class="component radio-button">
+            <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
+            <label for="brand-raleway">Raleway</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="brand-arial" name="brand-font" value="Arial">
+            <label for="brand-arial">Arial</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
+            <label for="brand-times">Times New Roman</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
+            <label for="brand-courier">Courier New</label>
+        </div>
+    </fieldset>
+
+    <div class="divider"></div>
+  
+    <fieldset class="typography-fieldset">
+        <legend class="title-medium">Plain Font</legend>
+        <div class="component radio-button">
+            <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
+            <label for="plain-ibm">IBM Plex Sans</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="plain-arial" name="plain-font" value="Arial">
+            <label for="plain-arial">Arial</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
+            <label for="plain-times">Times New Roman</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
+            <label for="plain-courier">Courier New</label>
+        </div>
+    </fieldset>
+
+    <div class="divider"></div>
+  
+    <fieldset class="typography-fieldset">
+        <legend class="title-medium">Code Font</legend>
+        <div class="component radio-button">
+            <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
+            <label for="code-ibm">IBM Plex Mono</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="code-arial" name="code-font" value="Arial">
+            <label for="code-arial">Arial</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="code-times" name="code-font" value="Times New Roman">
+            <label for="code-times">Times New Roman</label>
+        </div>
+        <div class="component radio-button">
+            <input type="radio" id="code-courier" name="code-font" value="Courier New">
+            <label for="code-courier">Courier New</label>
+        </div>
+    </fieldset>
+
   </menu>
 </button>
 
@@ -424,39 +345,117 @@
       tooltipChromas.style.opacity = '0';
   });
 </script>
-    <button class="component button icon-button"
-            id="theme-toggle" 
-            accesskey="t" 
-            title="Toggle Theme (ALT + SHIFT + t)" >
-        <i id="moon">dark_mode</i>
-        <i id="sun">light_mode</i>
-    </button>
 
 
-        
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var shapeSelector = document.getElementById("shape-slider");
+    var root = document.documentElement;
 
-<button 
-  class="component button icon-button"
-  id="random-button"
-  accesskey="r"
-  title="Random page (ALT + SHIFT + R)"
-  onclick="navigateToRandomPage(); return false;">
-  <i>ifl</i>
-</button>
+    function updateShape() {
+      var shape = shapeSelector.value;
+      root.style.setProperty("--input-shape-corner", shape + "px");
+      
+      
+      localStorage.setItem("theme-shape", shape);
+    }
 
-<script defer>
-  
-  
-  
-   39 
-  
-  
-  
-  function navigateToRandomPage() {
-    window.location.href = "\/graph\/";
+    
+    var savedShape = localStorage.getItem("theme-shape");
+
+    if (savedShape !== null) {
+      shapeSelector.value = savedShape;
+    }
+
+    
+    updateShape();
+
+    shapeSelector.addEventListener("input", updateShape);
+  });
+
+  const rangeInputShape = document.getElementById('shape-slider');
+  const tooltipShape = document.getElementById('shape-tooltipShape');
+
+  function updateTooltipShape(value) {
+      tooltipShape.textContent = value;
+      const thumbPositionShape = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
+      const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
+      tooltipShape.style.left = `${tooltipShapePosition}px`;
+      tooltipShape.style.opacity = '1';
   }
+
+  rangeInputShape.addEventListener('input', (e) => {
+      updateTooltipShape(e.target.value);
+  });
+
+  rangeInputShape.addEventListener('mousedown', () => {
+      updateTooltipShape(rangeInputShape.value);
+  });
+
+  rangeInputShape.addEventListener('mouseup', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('mouseleave', () => {
+      tooltipShape.style.opacity = '0';
+  });
 </script>
-    </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var root = document.documentElement;
+      var typographySelector = document.getElementById('typography-selector');
+      var fontSizeSlider = document.getElementById('font-size-slider');
+      var fontSizeOutput = document.getElementById('font-size-output');
+      var lineHeightSlider = document.getElementById('line-height-slider');
+      var lineHeightOutput = document.getElementById('line-height-output');
+
+      function updateTypography() {
+          var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
+          var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
+          var codeFont = document.querySelector('input[name="code-font"]:checked').value;
+          var fontSize = fontSizeSlider.value;
+          var lineHeight = lineHeightSlider.value;
+
+          root.style.setProperty('--typeface-brand', brandFont);
+          root.style.setProperty('--typeface-plain', plainFont);
+          root.style.setProperty('--typeface-code', codeFont);
+          root.style.setProperty('--input-font-size', fontSize + 'px');
+          root.style.setProperty('--input-line-height', lineHeight);
+
+          fontSizeOutput.textContent = fontSize + 'px';
+          lineHeightOutput.textContent = lineHeight;
+
+          
+          localStorage.setItem('typography-brand-font', brandFont);
+          localStorage.setItem('typography-plain-font', plainFont);
+          localStorage.setItem('typography-code-font', codeFont);
+          localStorage.setItem('typography-font-size', fontSize);
+          localStorage.setItem('typography-line-height', lineHeight);
+      }
+
+      
+      var savedBrandFont = localStorage.getItem('typography-brand-font');
+      var savedPlainFont = localStorage.getItem('typography-plain-font');
+      var savedCodeFont = localStorage.getItem('typography-code-font');
+      var savedFontSize = localStorage.getItem('typography-font-size');
+      var savedLineDensity = localStorage.getItem('typography-line-height');
+
+      if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
+      if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
+      if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+      if (savedFontSize) fontSizeSlider.value = savedFontSize;
+      if (savedLineDensity) lineHeightSlider.value = savedLineDensity;
+
+      
+      updateTypography();
+
+      
+      typographySelector.addEventListener('change', updateTypography);
+      fontSizeSlider.addEventListener('input', updateTypography);
+      lineHeightSlider.addEventListener('input', updateTypography);
+  });
+</script></section>
 </nav>
 
 

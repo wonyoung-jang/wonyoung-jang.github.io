@@ -19,21 +19,15 @@
         
         {{/* Language switch */}}
         {{- partialCached "translation_list.html" . -}}
-        
-        {{/*  Shapes */}}
-        {{- partialCached "shape-selector.html" . -}}
-
-        {{/*  Typography */}}
-        {{- partialCached "typography-selector.html" . -}}
-        
-        {{/* Theme selector */}}
-        {{- partialCached "theme-selector.html" . -}} 
 
         {{/* Theme toggle */}}
         {{- partialCached "theme-button.html" . -}}        
         
         {{/* Random page */}}
         {{ partial "random-button.html" . }}
+
+        {{/* Theme selector */}}
+        {{- partialCached "theme-selector.html" . -}} 
     </section>
 </nav>
 
