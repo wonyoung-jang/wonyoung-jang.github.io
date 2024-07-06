@@ -28,12 +28,12 @@ h1, h2, h3, h4, h5, h6 {
   & .anchor {
     display: none;
     position: absolute;
-    top: 0%;
-    right: 0%;
-    font-size: 80%;
+    top: 25%;
+    right: 100%;
+
     color: var(--color-on-surface-variant);
-    margin-inline-end: var(--size-2);
     user-select: none;
+    padding: var(--size-1);
   }
 
   &:hover .anchor {
