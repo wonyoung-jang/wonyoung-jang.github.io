@@ -44,6 +44,11 @@ main:
     pageRef: /now
     pre: <i>update</i>
     weight: 30
+  # - identifier: Search
+  #   name: Search
+  #   pageRef: /search
+  #   pre: <i>search</i>
+  #   weight: 40
 
 footer:
   - identifier: About
@@ -54,10 +59,18 @@ footer:
     name: Contact
     pageRef: /contact
     weight: 20
+  - identifier: Graph
+    name: Graph
+    pageRef: /graph/
+    weight: 22
   - identifier: Now
     name: Now
     pageRef: /now
     weight: 25
+  - identifier: RSS
+    name: RSS
+    url: https://wonyoungjang.org/index.xml
+    weight: 50
   - identifier: Search
     name: Search
     pageRef: /search
@@ -66,10 +79,6 @@ footer:
     name: Sitemap
     pageRef: /sitemap
     weight: 40
-  - identifier: RSS
-    name: RSS
-    url: https://wonyoungjang.org/index.xml
-    weight: 50
 
 sections:
   - identifier: Projects

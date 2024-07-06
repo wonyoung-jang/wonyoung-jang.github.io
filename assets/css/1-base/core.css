@@ -6,12 +6,14 @@
 }
 
 /* Logseq Graph */
-html.is-publish-mode {
+html.is-publish-mode {  
+  all: unset;
+
   & header,
+  & footer,
   & .page-header,
   & .page-links,
   & .page-navigation,
-  & footer,
   & #toc,
   & #top-link {
     display: none;
@@ -21,6 +23,10 @@ html.is-publish-mode {
   & .panes,
   & .pane {
     all: unset;
+  }
+
+  & i {
+    display: none;
   }
 }
 
