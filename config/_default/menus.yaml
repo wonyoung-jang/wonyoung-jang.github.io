@@ -61,7 +61,7 @@ footer:
     weight: 20
   - identifier: Graph
     name: Graph
-    pageRef: /graph/
+    url: https://wonyoungjang.org/graph/#/graph
     weight: 22
   - identifier: Now
     name: Now
