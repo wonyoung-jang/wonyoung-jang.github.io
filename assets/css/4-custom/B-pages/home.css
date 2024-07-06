@@ -25,12 +25,11 @@
       flex-flow: row wrap;
       align-items: center;
       justify-content: center;
-      gap: var(--spacing-panes);
-      margin-block: var(--size-16);
+      gap: var(--size-3);
+      padding: var(--size-16);
 
       & .button {
         flex: 1 1 auto;
-        max-width: fit-content;
       }
     }  
   }
