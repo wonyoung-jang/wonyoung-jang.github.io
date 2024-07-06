@@ -20,7 +20,7 @@
             Sections
         </span>
 
-        {{ partial "menu.html" (dict "menuID" "sections" "page" .) }}     
+        {{- partialCached "menu.html" (dict "menuID" "sections" "page" .) -}}     
     </div>
     
     {{/* Connect links */}}

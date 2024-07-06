@@ -10,11 +10,11 @@
                 </h1>        
        
                 {{/* Home page buttons */}}
-                {{ partial "homepage-buttons.html" . }}
+                {{- partialCached "homepage-buttons.html" . -}}
             </section>
 
             {{/*  Showcase pages table  */}}
-            {{ partial "home-showcase-panel.html" . }}
+            {{- partialCached "home-showcase-panel.html" . -}}
         </section>
     </article>
 {{ end }}

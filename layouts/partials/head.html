@@ -26,7 +26,7 @@
     {{ end }}
 </title>
 
-{{ partialCached "fonts.html" . }}
+{{- partialCached "fonts.html" . -}}
 
 {{/* Styles */}}
 {{- $tokens     := (resources.Match "css/0-tokens/**.css")         | resources.Concat "assets/css/0-tokens.css" -}}

@@ -41,7 +41,7 @@
             {{ end }}
 
             {{/* Component: Top-Link */}}
-            {{ partial "top-link-fab.html" . }}
+            {{- partialCached "top-link-fab.html" . -}}
 
             {{/* Footer */}}
             <footer role="contentinfo">    

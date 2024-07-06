@@ -4,7 +4,7 @@
     {{/* Site Headline */}}
     <section class="start">
         {{/* Site ID */}}
-        {{ partialCached "siteid-button.html" . }}
+        {{- partialCached "siteid-button.html" . -}}
         
         {{/* Site Headline */}}
         <a  id="site-headline"
@@ -18,22 +18,22 @@
     <section class="end">
         
         {{/* Language switch */}}
-        {{ partial "translation_list.html" . }}
+        {{- partialCached "translation_list.html" . -}}
         
         {{/*  Typography */}}
-        {{ partial "typography-selector.html" . }}
+        {{- partialCached "typography-selector.html" . -}}
         
         {{/* Theme selector */}}
-        {{ partial "theme-selector.html" . }} 
+        {{- partialCached "theme-selector.html" . -}} 
 
         {{/* Theme toggle */}}
-        {{ partial "theme-button.html" . }}        
+        {{- partialCached "theme-button.html" . -}}        
         
         {{/* Random page */}}
         {{ partial "random-button.html" . }}
         
         {{/* Search*/}}
-        {{ partial "search-button.html" . }}
+        {{- partialCached "search-button.html" . -}}
     </section>
 </nav>
 

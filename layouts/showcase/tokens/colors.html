@@ -2,10 +2,10 @@
 <article class="layout panes basic-singlepane">
 
   <section class="layout pane">
-    {{ partial "colors/key-color.html" . }}
-    {{ partial "colors/reference-palettes.html" . }}
-    {{ partial "colors/system-tokens.html" . }}
-    {{ partial "colors/semantic-swatches.html" . }}
+    {{- partialCached "colors/key-color.html" . -}}
+    {{- partialCached "colors/reference-palettes.html" . -}}
+    {{- partialCached "colors/system-tokens.html" . -}}
+    {{- partialCached "colors/semantic-swatches.html" . -}}
   </section>
         
 </article>
