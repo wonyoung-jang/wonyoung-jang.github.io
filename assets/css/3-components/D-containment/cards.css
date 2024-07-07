@@ -57,19 +57,18 @@
   & .card-content {
     flex: 1 1 auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     padding: var(--size-5);
-    gap: var(--size-2);
 
     & .card-meta,
     & .card-title, 
     & .card-description { 
       flex: 1 1 0;
       display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
+      flex-flow: row nowrap;
+      align-items: stretch;
     }
 
     & .card-meta {
@@ -82,8 +81,7 @@
     }
   
     & .card-title {
-      margin-top: 1em;
-      margin-bottom: 0.5em;
+      padding-block: 1em 0.5em;
 
       font-family: var(--typescale-headline-small);
       font-weight: var(--typescale-headline-small-weight);
