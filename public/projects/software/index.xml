@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/projects/software/</link>
+    <link>http://192.168.40.181:1313/projects/software/</link>
     <description>Recent content in Software on Wonyoung Jang</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,33 +10,33 @@
     <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
     <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     <lastBuildDate>Sun, 07 Jul 2024 13:41:07 -0400</lastBuildDate>
-    <atom:link href="https://wonyoungjang.org/projects/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.40.181:1313/projects/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wonyoungjang.org</title>
-      <link>https://wonyoungjang.org/wonyoungjang.org/</link>
+      <link>http://192.168.40.181:1313/wonyoungjang.org/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/wonyoungjang.org/</guid>
+      <guid>http://192.168.40.181:1313/wonyoungjang.org/</guid>
       <description>How it&amp;rsquo;s made Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.</description>
     </item>
     <item>
       <title>Q-learning tournament scheduler</title>
-      <link>https://wonyoungjang.org/q-learning-tournament-scheduler/</link>
+      <link>http://192.168.40.181:1313/q-learning-tournament-scheduler/</link>
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/q-learning-tournament-scheduler/</guid>
+      <guid>http://192.168.40.181:1313/q-learning-tournament-scheduler/</guid>
       <description>A brief history A nerd snipe from a coworker My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts Since this was not a necessary project for my job, I started to work on the problem in my free time.</description>
     </item>
     <item>
       <title>Save top level reddit comments</title>
-      <link>https://wonyoungjang.org/save-top-level-reddit-comments/</link>
+      <link>http://192.168.40.181:1313/save-top-level-reddit-comments/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/save-top-level-reddit-comments/</guid>
+      <guid>http://192.168.40.181:1313/save-top-level-reddit-comments/</guid>
       <description>Premise Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.</description>
     </item>
     <item>
       <title>Logseq markdown tokenizer</title>
-      <link>https://wonyoungjang.org/logseq-markdown-tokenizer/</link>
+      <link>http://192.168.40.181:1313/logseq-markdown-tokenizer/</link>
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/logseq-markdown-tokenizer/</guid>
+      <guid>http://192.168.40.181:1313/logseq-markdown-tokenizer/</guid>
       <description>Problem Logseq does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.&#xA;Implementation If I want to enable semantic search, then I must embed my graph</description>
     </item>
   </channel>

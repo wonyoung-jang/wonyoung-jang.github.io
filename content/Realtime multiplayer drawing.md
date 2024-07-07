@@ -10,7 +10,7 @@ keywords:
 type: 
 date: 2024-03-08
 projects:
-- university
+- software
 description: Draw in realtime on a blank canvas with others on the same server
 title: Realtime multiplayer drawing
 lastMod: 2024-07-07

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,15 +27,15 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/resources/references/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/resources/references/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/resources/references/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resources/references/">
 
 
 
@@ -51,7 +51,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/resources/references/">
+<meta property="og:url" content="http://192.168.40.181:1313/resources/references/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="References">
   <meta property="og:locale" content="en">
@@ -76,7 +76,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -95,7 +95,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -129,12 +129,12 @@
   
   
   
-   18 
+   29 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/projects\/design\/";
+    window.location.href = "\/list-detail-layout\/";
   }
 </script>
 
@@ -255,227 +255,7 @@
 </button>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var root = document.documentElement;
-    var hueSelector = document.getElementById("hue-selector");
-    var chromaSelector = document.getElementById("chroma-selector");
-    var shapeSelector = document.getElementById("shape-selector");
-    var typographySelector = document.getElementById('typography-selector');
-    var fontSizeSelector = document.getElementById('font-size-selector');
-    var lineHeightSelector = document.getElementById('line-height-selector');
 
-    
-    var savedHue = localStorage.getItem("theme-hue");
-    var savedChroma = localStorage.getItem("theme-chroma");
-    var savedShape = localStorage.getItem("theme-shape");
-    var savedBrandFont = localStorage.getItem('typography-brand-font');
-    var savedPlainFont = localStorage.getItem('typography-plain-font');
-    var savedCodeFont = localStorage.getItem('typography-code-font');
-    var savedFontSize = localStorage.getItem('typography-font-size');
-    var savedLineHeight = localStorage.getItem('typography-line-height');
-
-    if (savedHue !== null) {
-      hueSelector.value = savedHue;
-    }
-    if (savedChroma !== null) {
-      chromaSelector.value = savedChroma;
-    }
-    if (savedShape !== null) {
-      shapeSelector.value = savedShape;
-    }
-    if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
-    if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
-    if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
-    if (savedFontSize !== null) {
-      fontSizeSelector.value = savedFontSize;
-    }
-    if (savedLineHeight !== null) {
-      lineHeightSelector.value = savedLineHeight;
-    }
-
-    function updateColor() {
-      var hue = hueSelector.value;
-      var chroma = chromaSelector.value;
-
-      root.style.setProperty("--input-color-hue", hue + "deg");
-      root.style.setProperty("--input-color-chroma", chroma);
-      
-      localStorage.setItem("theme-hue", hue);
-      localStorage.setItem("theme-chroma", chroma);
-    }
-
-    function updateShape() {
-      var shape = shapeSelector.value;
-
-      root.style.setProperty("--input-shape-corner", shape + "px");
-      
-      localStorage.setItem("theme-shape", shape);
-    }
-
-    function updateTypography() {
-      var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
-      var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
-      var codeFont = document.querySelector('input[name="code-font"]:checked').value;
-      var fontSize = fontSizeSelector.value;
-      var lineHeight = lineHeightSelector.value;
-
-      root.style.setProperty('--typeface-brand', brandFont);
-      root.style.setProperty('--typeface-plain', plainFont);
-      root.style.setProperty('--typeface-code', codeFont);
-      root.style.setProperty('--input-font-size', fontSize + 'px');
-      root.style.setProperty('--input-line-height', lineHeight);
-
-      localStorage.setItem('typography-brand-font', brandFont);
-      localStorage.setItem('typography-plain-font', plainFont);
-      localStorage.setItem('typography-code-font', codeFont);
-      localStorage.setItem('typography-font-size', fontSize);
-      localStorage.setItem('typography-line-height', lineHeight);
-    }
-
-    
-    updateColor();
-    updateShape();
-    updateTypography();
-
-    
-    hueSelector.addEventListener("input", updateColor);
-    chromaSelector.addEventListener("input", updateColor);
-    shapeSelector.addEventListener("input", updateShape);
-    fontSizeSelector.addEventListener('input', updateTypography);
-    lineHeightSelector.addEventListener('input', updateTypography);
-    typographySelector.addEventListener('change', updateTypography);
-  });
-
-  const rangeInputHues = document.getElementById('hue-selector');
-  const tooltipHues = document.getElementById('hue-tooltip');
-  const rangeInputChromas = document.getElementById('chroma-selector');
-  const tooltipChromas = document.getElementById('chroma-tooltip');
-  const rangeInputShape = document.getElementById('shape-selector');
-  const tooltipShape = document.getElementById('shape-tooltip');
-  const rangeInputFontSize = document.getElementById('font-size-selector');
-  const tooltipFontSize = document.getElementById('font-size-tooltip');
-  const rangeInputLineHeight = document.getElementById('line-height-selector');
-  const tooltipLineHeight = document.getElementById('line-height-tooltip');
-
-  function updateTooltipHues(value) {
-      tooltipHues.textContent = value;
-      const thumbPosition = (value - rangeInputHues.min) / (rangeInputHues.max - rangeInputHues.min);
-      const tooltipPositionHues = thumbPosition * (rangeInputHues.offsetWidth - 20) + 10;
-      tooltipHues.style.left = `${tooltipPositionHues}px`;
-      tooltipHues.style.opacity = '1';
-  }
-
-  function updateTooltipChromas(value) {
-    tooltipChromas.textContent = value;
-    const thumbPosition = (value - rangeInputChromas.min) / (rangeInputChromas.max - rangeInputChromas.min);
-    const tooltipPositionChromas = thumbPosition * (rangeInputChromas.offsetWidth - 20) + 10;
-    tooltipChromas.style.left = `${tooltipPositionChromas}px`;
-    tooltipChromas.style.opacity = '1';
-  }
-
-  function updateTooltipShape(value) {
-    tooltipShape.textContent = value;
-    const thumbPositionShape = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
-    const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
-    tooltipShape.style.left = `${tooltipShapePosition}px`;
-    tooltipShape.style.opacity = '1';
-  }
-
-  function updateTooltipFontSize(value) {
-    tooltipFontSize.textContent = value + 'px';
-    const thumbPositionFontSize = (value - rangeInputFontSize.min) / (rangeInputFontSize.max - rangeInputFontSize.min);
-    const tooltipFontSizePosition = thumbPositionFontSize * (rangeInputFontSize.offsetWidth - 20) + 10;
-    tooltipFontSize.style.left = `${tooltipFontSizePosition}px`;
-    tooltipFontSize.style.opacity = '1';
-  }
-
-  function updateTooltipLineHeight(value) {
-    tooltipLineHeight.textContent = value;
-    const thumbPositionLineHeight = (value - rangeInputLineHeight.min) / (rangeInputLineHeight.max - rangeInputLineHeight.min);
-    const tooltipLineHeightPosition = thumbPositionLineHeight * (rangeInputLineHeight.offsetWidth - 20) + 10;
-    tooltipLineHeight.style.left = `${tooltipLineHeightPosition}px`;
-    tooltipLineHeight.style.opacity = '1';
-  }
-
-  rangeInputHues.addEventListener('input', (e) => {
-      updateTooltipHues(e.target.value);
-  });
-
-  rangeInputHues.addEventListener('mousedown', () => {
-      updateTooltipHues(rangeInputHues.value);
-  });
-
-  rangeInputHues.addEventListener('mouseup', () => {
-      tooltipHues.style.opacity = '0';
-  });
-
-  rangeInputHues.addEventListener('mouseleave', () => {
-      tooltipHues.style.opacity = '0';
-  });
-
-  rangeInputChromas.addEventListener('input', (e) => {
-      updateTooltipChromas(e.target.value);
-  });
-
-  rangeInputChromas.addEventListener('mousedown', () => {
-      updateTooltipChromas(rangeInputChromas.value);
-  });
-
-  rangeInputChromas.addEventListener('mouseup', () => {
-      tooltipChromas.style.opacity = '0';
-  });
-
-  rangeInputChromas.addEventListener('mouseleave', () => {
-      tooltipChromas.style.opacity = '0';
-  });
-
-  rangeInputShape.addEventListener('input', (e) => {
-      updateTooltipShape(e.target.value);
-  });
-
-  rangeInputShape.addEventListener('mousedown', () => {
-      updateTooltipShape(rangeInputShape.value);
-  });
-
-  rangeInputShape.addEventListener('mouseup', () => {
-      tooltipShape.style.opacity = '0';
-  });
-
-  rangeInputShape.addEventListener('mouseleave', () => {
-      tooltipShape.style.opacity = '0';
-  });
-
-  rangeInputFontSize.addEventListener('input', (e) => {
-      updateTooltipFontSize(e.target.value);
-  });
-
-  rangeInputFontSize.addEventListener('mousedown', () => {
-      updateTooltipFontSize(rangeInputFontSize.value);
-  });
-
-  rangeInputFontSize.addEventListener('mouseup', () => {
-      tooltipFontSize.style.opacity = '0';
-  });
-
-  rangeInputFontSize.addEventListener('mouseleave', () => {
-      tooltipFontSize.style.opacity = '0';
-  });
-
-  rangeInputLineHeight.addEventListener('input', (e) => {
-      updateTooltipLineHeight(e.target.value);
-  });
-
-  rangeInputLineHeight.addEventListener('mousedown', () => {
-      updateTooltipLineHeight(rangeInputLineHeight.value);
-  });
-
-  rangeInputLineHeight.addEventListener('mouseup', () => {
-      tooltipLineHeight.style.opacity = '0';
-  });
-
-  rangeInputLineHeight.addEventListener('mouseleave', () => {
-      tooltipLineHeight.style.opacity = '0';
-  });
 </script></section>
 </nav>
 
@@ -596,7 +376,7 @@
                     
                 <a  class="component card" elevated
                     aria-label="post link to All Logseq elements" 
-                    href="https://wonyoungjang.org/all-logseq-elements/">
+                    href="http://192.168.40.181:1313/all-logseq-elements/">
                     
                     
                         <img 
@@ -613,7 +393,7 @@
                     
                 <a  class="component card" elevated
                     aria-label="post link to List of admonitions for wonyoungjang.org" 
-                    href="https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/">
+                    href="http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/">
                     
                     
                         <img 
@@ -630,7 +410,7 @@
                     
                 <a  class="component card" elevated
                     aria-label="post link to List of keyboard shortcuts for wonyoungjang.org" 
-                    href="https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
+                    href="http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
                     
                     
                         <img 
@@ -825,7 +605,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
