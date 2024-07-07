@@ -1,7 +1,7 @@
 {{/* Layout: Page-header */}}
 
 {{/* Post Header */}}
-{{ if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) }} 
+{{ if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) (not (or (eq .Kind "taxonomy") (eq .Kind "term"))) }}
     <section class="layout page-header">
         {{/* Breadcrumbs */}}
         <nav class="breadcrumbs" aria-label="Breadcrumbs">

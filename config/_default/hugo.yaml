@@ -9,8 +9,27 @@ copyright: <!--Creative Commons License-->This site is licensed under a [Creativ
 enableRobotsTXT: true
 enableGitInfo: true
 
+# Outputs
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Services
+services:
+  googleAnalytics: 
+    ID: G-RTMKJG4NFZ
+
+# Sitemap
+sitemap:
+  filename: sitemap.xml
+  priority: 0.5
+  changefreq: daily
+
+# Taxonomies
 taxonomies:
-  keyword: keywords
+  project: projects
 
 ####################
 # All root configs #
@@ -22,7 +41,7 @@ taxonomies:
 # deployment:
 # frontmatter:
 # httpcache:
-# imaging: → imaging.yaml
+# imaging:
 # languages:
 #   en:
 #     menus:
@@ -33,7 +52,7 @@ taxonomies:
 # minify:
 # module:
 # outputformats:
-# outputs: → outputs.yaml
+# outputs:
 # params: → params.yaml
 # permalinks:
 # privacy:
@@ -41,6 +60,6 @@ taxonomies:
 # security:
 # segments:
 # server:
-# services: → services.yaml
-# sitemap: → sitemap.yaml
+# services:
+# sitemap:
 # taxonomies:

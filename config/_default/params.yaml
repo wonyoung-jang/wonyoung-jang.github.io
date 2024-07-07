@@ -36,6 +36,8 @@ home:
       url: /index.xml
     - name: Sitemap
       url: /sitemap
+    - name: Projects
+      url: /projects
 
 author:
   name: Wonyoung Jang

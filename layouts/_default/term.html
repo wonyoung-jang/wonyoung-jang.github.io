@@ -1,17 +1,12 @@
 {{ define "main" }}
-    {{ .Kind }}
-
     <article class="layout panes canonical-feed">
-        <section class="layout pane" id="subsection-page">
+        <section class="layout pane surface-container-high">
+            <h1>{{ .Title }}</h1>
             {{ range .Pages }}        
-                <a  class="component card" elevated
+                <a  class="component list-item" one
                     aria-label="post link to {{ .Title | plainify }}" 
                     href="{{ .Permalink }}">
-                    <div class="card-content">
-                        <span class="card-meta">{{ partial "post-meta.html" . }}</span>
-                        <span class="card-title">{{ .Title }}</span>
-                        <p class="card-description">{{ .Description }}</p>
-                    </div>
+                    {{ .LinkTitle }}
                 </a>
             {{ end }}
         </section>
