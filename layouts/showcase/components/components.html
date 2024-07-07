@@ -303,8 +303,20 @@
         <div class="slider">
           <input type="range">
         </div>
-      </section>
 
+        <div class="slider">
+          <input type="range" min="1" max="100" value="50" list="markers">
+        </div>
+
+        <div class="slider">
+          <input id="test-slider" type="range" min="1" max="100" value="50" list="markers">
+          
+          <datalist id="markers">
+            <option value="0"></option>
+            <option value="100"></option>
+          </datalist>
+        </div>
+      </section>
     </details>
 
     {{/*  || Test  */}}

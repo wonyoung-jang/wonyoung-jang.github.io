@@ -1,21 +1,17 @@
 {{ define "main" }}
-{{ with site.Params.Home }}
-    <article class="layout panes basic-singlepane" id="home-page">
-        <section class="layout pane">
-            {{/* Home page header */}}
-            <section id="home-header">
-                {{/* Site title */}}
-                <h1>
-                    {{ .title | default site.Title | markdownify }}
-                </h1>        
-       
-                {{/* Home page buttons */}}
-                {{- partialCached "homepage-buttons.html" . -}}
+    {{ with site.Params.Home }}
+        <article class="layout panes basic-singlepane" id="home-page">
+            <section class="layout pane">
+                {{/* Home page header */}}
+                <section id="home-header">
+                    {{/* Site title */}}
+                    <h1>{{ .title | default site.Title | markdownify }}</h1>
+                    {{/* Home page buttons */}}
+                    {{- partialCached "home/homepage-buttons.html" . -}}
+                </section>
+                {{/*  Showcase pages table  */}}
+                {{- partialCached "home/home-showcase-panel.html" . -}}
             </section>
-
-            {{/*  Showcase pages table  */}}
-            {{- partialCached "home-showcase-panel.html" . -}}
-        </section>
-    </article>
-{{ end }}
+        </article>
+    {{ end }}
 {{ end }}

@@ -1,50 +1,38 @@
 {{ define "main" }}
-
-<article class="layout panes basic-singlepane">
-
-    <section class="layout pane" id="sections-page">
-
-        <div class="list-container">
-            {{ range .Sections }}
-
-                <a  class="component list-item" three with-avatar
-                    href="{{ .Permalink }}">
-
-                    {{/*  TODO Turn this into a slice to iterate  */}}
-                    <span class="avatar">
-                        <i>
-                            {{ if eq .Title "Software" }}
-                                terminal
-                            {{ else if eq .Title "University" }}
-                                school
-                            {{ else if eq .Title "Designs" }}
-                                design_services
-                            {{ else }}
-                                quick_reference
-                            {{ end }}
-                        </i>
-                    </span>
-
-                    <div class="list-content">
-                        <span class="headline-small">
-                            {{ .Title }}
-                            
-                            <sup class="page-count code-typeface">
-                                {{len .Pages }}
-                            </sup>
+    <article class="layout panes basic-singlepane">
+        <section class="layout pane" id="sections-page">
+            <div class="list-container">
+                {{ range .Sections }}
+                    <a  class="component list-item" three with-avatar
+                        href="{{ .Permalink }}">
+                        <span class="avatar">
+                            <i>
+                                {{ if eq .Title "Software" }}
+                                    terminal
+                                {{ else if eq .Title "University" }}
+                                    school
+                                {{ else if eq .Title "Designs" }}
+                                    design_services
+                                {{ else }}
+                                    quick_reference
+                                {{ end }}
+                            </i>
                         </span>
-                        
-                        <span class="description">
-                            {{ .Description }}
-                        </span>
-                    </div>
-                </a>
-
-                <div class="divider"></div>
-            {{ end }}
-        </div>
-    </section>
-
-</article>
-
+                        <div class="list-content">
+                            <span class="headline-small">
+                                {{ .Title }}
+                                <sup class="page-count code-typeface">
+                                    {{len .Pages }}
+                                </sup>
+                            </span>
+                            <span class="description">
+                                {{ .Description }}
+                            </span>
+                        </div>
+                    </a>
+                    <div class="divider"></div>
+                {{ end }}
+            </div>
+        </section>
+    </article>
 {{ end }}

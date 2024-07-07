@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  width: 100%;
 
   & .tooltip {
     display: flex;
@@ -25,7 +26,7 @@
 
   & input[type="range"] {
     height: var(--size-11);
-    width: min-content;
+    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -78,4 +79,28 @@
   height: var(--size-4);
   background-color: var(--color-primary-container);
   width: fit-content;
+}
+
+datalist {
+  position: absolute;
+  top: calc(50% - var(--size-1));
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: var(--size-1);
+  
+  & option {
+    display: inline-block;
+    min-width: var(--size-1);
+    min-height: var(--size-1);
+    border-radius: 50%;
+
+    &:first-child {
+      background-color: var(--color-secondary-container);
+    }
+    
+    &:last-child {
+      background-color: var(--color-primary);
+    }
+  }
 }

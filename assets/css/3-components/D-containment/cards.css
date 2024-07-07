@@ -58,8 +58,6 @@
     flex: 1 1 auto;
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
-    align-content: space-between;
     padding: var(--size-5);
     gap: var(--size-2);
 
@@ -93,7 +91,7 @@
       line-height: 1.1; /* shorter for cards */
     }
     
-    & .card-description{
+    & .card-description {
       font-family: var(--typescale-body-large);
       font-weight: var(--typescale-body-large-weight);
       font-size: var(--typescale-body-large-size);

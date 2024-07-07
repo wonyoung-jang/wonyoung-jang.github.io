@@ -1,29 +1,23 @@
 {{ define "main" }}
-
-<article class="layout panes basic-singlepane">
-  <section class="layout pane">
-
-    <div id="searchbox">
-
-      {{/* Search bar */}}   
-      <span class="component search" bar>
-        <i id="searchIcon">search</i>
-        <input  id="searchInput" 
-                placeholder="{{ i18n "search_placeholder" }}"
-                aria-label="search" 
-                type="text"
-                autofocus
-                autocomplete="off" 
-                maxlength="64">
-      </span>
-
-      {{/* Search results */}}   
-      <div id="searchResults" 
-          aria-label="search results">
+  <article class="layout panes basic-singlepane">
+    <section class="layout pane">
+      <div id="searchbox">
+        {{/* Search bar */}}   
+        <span class="component search" bar>
+          <i id="searchIcon">search</i>
+          <input  id="searchInput" 
+                  placeholder="{{ i18n "search_placeholder" }}"
+                  aria-label="search" 
+                  type="text"
+                  autofocus
+                  autocomplete="off" 
+                  maxlength="64">
+        </span>
+        {{/* Search results */}}   
+        <div id="searchResults" 
+            aria-label="search results">
+        </div>
       </div>
-    </div>
-
-  </section>
-</article>
-
+    </section>
+  </article>
 {{ end }}

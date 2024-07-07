@@ -1,24 +1,19 @@
 {{ define "main" }}
-
-<article class="layout panes basic-fixedflex" id="single">
-  <section class="layout pane" id="post-content">
-      {{ if .Content }}
-        {{ partial "anchored_headings.html" .Content }}
-      {{ end }}
-
-      {{/* Feedback form for Contact page */}}
-      {{ if eq .Title "Contact"}}
-        {{ partial "feedback-form.html" . }}
-      {{ end }}
-
-      {{ if eq .Type "showcase/tokens" }}
-        {{ .Type }}
-      {{ end }}
-  </section>
-
-  <aside class="layout pane fixed-pane" id="toc">
-    {{ partial "toc.html" . }}
-  </aside>
-</article>
-
+  <article class="layout panes basic-fixedflex" id="single">
+    <section class="layout pane" id="post-content">
+        {{ if .Content }}
+          {{ partial "anchored_headings.html" .Content }}
+        {{ end }}
+        {{/* Feedback form for Contact page */}}
+        {{ if eq .Title "Contact"}}
+          {{ partial "feedback-form.html" . }}
+        {{ end }}
+        {{ if eq .Type "showcase/tokens" }}
+          {{ .Type }}
+        {{ end }}
+    </section>
+    <aside class="layout pane fixed-pane" id="toc">
+      {{ partial "toc.html" . }}
+    </aside>
+  </article>
 {{ end }}
