@@ -24,7 +24,7 @@
                 {{ block "main" . }}{{ end }}
             </div>
             {{/* Layout: Page Navigation */}}
-            {{ partial "page-navigation.html" . }}
+            {{- partial "page-navigation.html" . -}}
             {{/* Layout: Page Links */}}
             {{ if .IsPage }}
                 {{ partial "page-links.html" . }}
@@ -34,7 +34,7 @@
             {{/* Footer */}}
             <footer role="contentinfo">    
                 {{/* Links + Copyright */}}
-                {{ partial "footer.html" . }}
+                {{- partialCached "footer.html" . -}}
             </footer>
         </main>
     </body>

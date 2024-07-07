@@ -8,6 +8,7 @@
     /* Key hues */
     --hue-primary:  var(--input-color-hue);
     --hue-error:    25deg;
+
     --hue-tertiary:         calc(var(--hue-primary) - 60deg);
     --hue-complementary:    calc(var(--hue-primary) + 180deg);
     /* Admonition hues (harmonized) */
@@ -36,6 +37,23 @@
     --hue-add120:   calc(var(--hue-primary) + 120deg - var(--harmonization) * 1.2);
     --hue-add150:   calc(var(--hue-primary) + 150deg - var(--harmonization) * 1.5);
     --hue-add180:   calc(var(--hue-primary) + 180deg - var(--harmonization) * 1.8);
+    
+    /* || Chromas (0-120-150) */
+
+    /* Defaults */
+    --chroma-primary:           var(--input-color-chroma);
+    --chroma-error:             70;
+
+    --chroma-secondary:         calc(var(--chroma-primary) / 3);
+    --chroma-tertiary:          calc(var(--chroma-primary) / 2);
+    --chroma-neutral:           calc(var(--chroma-primary) / 21);
+    --chroma-neutral-variant:   calc(var(--chroma-primary) / 8);
+    /* Custom */
+    --chroma-classic:           calc(var(--chroma-primary) / var(--scale-fibonacci));
+    --chroma-admonition:        calc(var(--chroma-primary) / var(--scale-fibonacci));
+
+    /* || Palettes */
+
     /* Absolute hues */
     --palette-hue-0:    lch(60% var(--chroma-primary) 0deg);
     --palette-hue-30:   lch(60% var(--chroma-primary) 30deg);
@@ -49,22 +67,6 @@
     --palette-hue-270:  lch(60% var(--chroma-primary) 270deg);
     --palette-hue-300:  lch(60% var(--chroma-primary) 300deg);
     --palette-hue-330:  lch(60% var(--chroma-primary) 330deg);
-    
-    /* || Chromas (0-120-150) */
-
-    /* Defaults */
-    --chroma-primary:           var(--input-color-chroma);
-    --chroma-secondary:         calc(var(--chroma-primary) / 3);
-    --chroma-tertiary:          calc(var(--chroma-primary) / 2);
-    --chroma-neutral:           calc(var(--chroma-primary) / 21);
-    --chroma-neutral-variant:   calc(var(--chroma-primary) / 8);
-    --chroma-error:             70;
-    /* Custom */
-    --chroma-classic:           calc(var(--chroma-primary) / var(--scale-fibonacci));
-    --chroma-admonition:        calc(var(--chroma-primary) / var(--scale-fibonacci));
-
-    /* || Palettes */
-
     /* Primary */
     --palette-primary-0:  var(--palette-black);
     --palette-primary-10: lch(10% var(--chroma-primary) var(--hue-primary));
@@ -177,6 +179,7 @@
     --palette-neutral-variant-100: var(--palette-white);
 
     /* || Semantic colors */
+    
     /* Error */
     --palette-error-0:       var(--palette-black);
     --palette-error-10:      lch(10% var(--chroma-error) var(--hue-error));

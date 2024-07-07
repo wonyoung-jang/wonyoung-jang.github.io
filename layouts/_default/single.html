@@ -1,5 +1,8 @@
 {{ define "main" }}
   <article class="layout panes basic-fixedflex" id="single">
+    <aside class="layout pane fixed-pane" id="toc">
+      {{ partial "toc.html" . }}
+    </aside>
     <section class="layout pane" id="post-content">
         {{ if .Content }}
           {{ partial "anchored_headings.html" .Content }}
@@ -12,8 +15,5 @@
           {{ .Type }}
         {{ end }}
     </section>
-    <aside class="layout pane fixed-pane" id="toc">
-      {{ partial "toc.html" . }}
-    </aside>
   </article>
 {{ end }}

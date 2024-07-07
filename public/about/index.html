@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,19 +21,19 @@
         About | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.02b3e523c5e680d0599d9dd8b5fcae419f757df9975799cedcb264aab51c191c.css" integrity="sha256-ArPlI8XmgNBZnZ3YtfyuQZ91ffmXV5nO3LJkqrUcGRw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.81291b8181669c04b2529b011d0287a49a6ba8bef14713827697e4c44143b63d.css" integrity="sha256-gSkbgYFmnASyUpsBHQKHpJprqL7xRxOCdpfkxEFDtj0=" rel="preload stylesheet" as="style">
 
 
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/about/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/about/">
 
 
 
@@ -49,7 +49,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/about/">
+<meta property="og:url" content="https://wonyoungjang.org/about/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="About">
   <meta property="og:description" content="About page">
@@ -79,7 +79,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -98,7 +98,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="http://192.168.40.181:1313/">
+            href="https://wonyoungjang.org/">
             Wonyoung Jang
         </a>
     </section>
@@ -132,12 +132,12 @@
   
   
   
-   5 
+   27 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/retail-inventory-manager\/";
+    window.location.href = "\/search\/";
   }
 </script>
 
@@ -258,7 +258,227 @@
 </button>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var root = document.documentElement;
+    var hueSelector = document.getElementById("hue-selector");
+    var chromaSelector = document.getElementById("chroma-selector");
+    var shapeSelector = document.getElementById("shape-selector");
+    var typographySelector = document.getElementById('typography-selector');
+    var fontSizeSelector = document.getElementById('font-size-selector');
+    var lineHeightSelector = document.getElementById('line-height-selector');
 
+    
+    var savedHue = localStorage.getItem("theme-hue");
+    var savedChroma = localStorage.getItem("theme-chroma");
+    var savedShape = localStorage.getItem("theme-shape");
+    var savedBrandFont = localStorage.getItem('typography-brand-font');
+    var savedPlainFont = localStorage.getItem('typography-plain-font');
+    var savedCodeFont = localStorage.getItem('typography-code-font');
+    var savedFontSize = localStorage.getItem('typography-font-size');
+    var savedLineHeight = localStorage.getItem('typography-line-height');
+
+    if (savedHue !== null) {
+      hueSelector.value = savedHue;
+    }
+    if (savedChroma !== null) {
+      chromaSelector.value = savedChroma;
+    }
+    if (savedShape !== null) {
+      shapeSelector.value = savedShape;
+    }
+    if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
+    if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
+    if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+    if (savedFontSize !== null) {
+      fontSizeSelector.value = savedFontSize;
+    }
+    if (savedLineHeight !== null) {
+      lineHeightSelector.value = savedLineHeight;
+    }
+
+    function updateColor() {
+      var hue = hueSelector.value;
+      var chroma = chromaSelector.value;
+
+      root.style.setProperty("--input-color-hue", hue + "deg");
+      root.style.setProperty("--input-color-chroma", chroma);
+      
+      localStorage.setItem("theme-hue", hue);
+      localStorage.setItem("theme-chroma", chroma);
+    }
+
+    function updateShape() {
+      var shape = shapeSelector.value;
+
+      root.style.setProperty("--input-shape-corner", shape + "px");
+      
+      localStorage.setItem("theme-shape", shape);
+    }
+
+    function updateTypography() {
+      var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
+      var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
+      var codeFont = document.querySelector('input[name="code-font"]:checked').value;
+      var fontSize = fontSizeSelector.value;
+      var lineHeight = lineHeightSelector.value;
+
+      root.style.setProperty('--typeface-brand', brandFont);
+      root.style.setProperty('--typeface-plain', plainFont);
+      root.style.setProperty('--typeface-code', codeFont);
+      root.style.setProperty('--input-font-size', fontSize + 'px');
+      root.style.setProperty('--input-line-height', lineHeight);
+
+      localStorage.setItem('typography-brand-font', brandFont);
+      localStorage.setItem('typography-plain-font', plainFont);
+      localStorage.setItem('typography-code-font', codeFont);
+      localStorage.setItem('typography-font-size', fontSize);
+      localStorage.setItem('typography-line-height', lineHeight);
+    }
+
+    
+    updateColor();
+    updateShape();
+    updateTypography();
+
+    
+    hueSelector.addEventListener("input", updateColor);
+    chromaSelector.addEventListener("input", updateColor);
+    shapeSelector.addEventListener("input", updateShape);
+    fontSizeSelector.addEventListener('input', updateTypography);
+    lineHeightSelector.addEventListener('input', updateTypography);
+    typographySelector.addEventListener('change', updateTypography);
+  });
+
+  const rangeInputHues = document.getElementById('hue-selector');
+  const tooltipHues = document.getElementById('hue-tooltip');
+  const rangeInputChromas = document.getElementById('chroma-selector');
+  const tooltipChromas = document.getElementById('chroma-tooltip');
+  const rangeInputShape = document.getElementById('shape-selector');
+  const tooltipShape = document.getElementById('shape-tooltip');
+  const rangeInputFontSize = document.getElementById('font-size-selector');
+  const tooltipFontSize = document.getElementById('font-size-tooltip');
+  const rangeInputLineHeight = document.getElementById('line-height-selector');
+  const tooltipLineHeight = document.getElementById('line-height-tooltip');
+
+  function updateTooltipHues(value) {
+      tooltipHues.textContent = value;
+      const thumbPosition = (value - rangeInputHues.min) / (rangeInputHues.max - rangeInputHues.min);
+      const tooltipPositionHues = thumbPosition * (rangeInputHues.offsetWidth - 20) + 10;
+      tooltipHues.style.left = `${tooltipPositionHues}px`;
+      tooltipHues.style.opacity = '1';
+  }
+
+  function updateTooltipChromas(value) {
+    tooltipChromas.textContent = value;
+    const thumbPosition = (value - rangeInputChromas.min) / (rangeInputChromas.max - rangeInputChromas.min);
+    const tooltipPositionChromas = thumbPosition * (rangeInputChromas.offsetWidth - 20) + 10;
+    tooltipChromas.style.left = `${tooltipPositionChromas}px`;
+    tooltipChromas.style.opacity = '1';
+  }
+
+  function updateTooltipShape(value) {
+    tooltipShape.textContent = value;
+    const thumbPositionShape = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
+    const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
+    tooltipShape.style.left = `${tooltipShapePosition}px`;
+    tooltipShape.style.opacity = '1';
+  }
+
+  function updateTooltipFontSize(value) {
+    tooltipFontSize.textContent = value + 'px';
+    const thumbPositionFontSize = (value - rangeInputFontSize.min) / (rangeInputFontSize.max - rangeInputFontSize.min);
+    const tooltipFontSizePosition = thumbPositionFontSize * (rangeInputFontSize.offsetWidth - 20) + 10;
+    tooltipFontSize.style.left = `${tooltipFontSizePosition}px`;
+    tooltipFontSize.style.opacity = '1';
+  }
+
+  function updateTooltipLineHeight(value) {
+    tooltipLineHeight.textContent = value;
+    const thumbPositionLineHeight = (value - rangeInputLineHeight.min) / (rangeInputLineHeight.max - rangeInputLineHeight.min);
+    const tooltipLineHeightPosition = thumbPositionLineHeight * (rangeInputLineHeight.offsetWidth - 20) + 10;
+    tooltipLineHeight.style.left = `${tooltipLineHeightPosition}px`;
+    tooltipLineHeight.style.opacity = '1';
+  }
+
+  rangeInputHues.addEventListener('input', (e) => {
+      updateTooltipHues(e.target.value);
+  });
+
+  rangeInputHues.addEventListener('mousedown', () => {
+      updateTooltipHues(rangeInputHues.value);
+  });
+
+  rangeInputHues.addEventListener('mouseup', () => {
+      tooltipHues.style.opacity = '0';
+  });
+
+  rangeInputHues.addEventListener('mouseleave', () => {
+      tooltipHues.style.opacity = '0';
+  });
+
+  rangeInputChromas.addEventListener('input', (e) => {
+      updateTooltipChromas(e.target.value);
+  });
+
+  rangeInputChromas.addEventListener('mousedown', () => {
+      updateTooltipChromas(rangeInputChromas.value);
+  });
+
+  rangeInputChromas.addEventListener('mouseup', () => {
+      tooltipChromas.style.opacity = '0';
+  });
+
+  rangeInputChromas.addEventListener('mouseleave', () => {
+      tooltipChromas.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('input', (e) => {
+      updateTooltipShape(e.target.value);
+  });
+
+  rangeInputShape.addEventListener('mousedown', () => {
+      updateTooltipShape(rangeInputShape.value);
+  });
+
+  rangeInputShape.addEventListener('mouseup', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('mouseleave', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputFontSize.addEventListener('input', (e) => {
+      updateTooltipFontSize(e.target.value);
+  });
+
+  rangeInputFontSize.addEventListener('mousedown', () => {
+      updateTooltipFontSize(rangeInputFontSize.value);
+  });
+
+  rangeInputFontSize.addEventListener('mouseup', () => {
+      tooltipFontSize.style.opacity = '0';
+  });
+
+  rangeInputFontSize.addEventListener('mouseleave', () => {
+      tooltipFontSize.style.opacity = '0';
+  });
+
+  rangeInputLineHeight.addEventListener('input', (e) => {
+      updateTooltipLineHeight(e.target.value);
+  });
+
+  rangeInputLineHeight.addEventListener('mousedown', () => {
+      updateTooltipLineHeight(rangeInputLineHeight.value);
+  });
+
+  rangeInputLineHeight.addEventListener('mouseup', () => {
+      tooltipLineHeight.style.opacity = '0';
+  });
+
+  rangeInputLineHeight.addEventListener('mouseleave', () => {
+      tooltipLineHeight.style.opacity = '0';
+  });
 </script></section>
 </nav>
 
@@ -347,7 +567,6 @@
 
 
  
-
     <section class="layout page-header">
         
         
@@ -378,28 +597,6 @@
                 
                 
   <article class="layout panes basic-fixedflex" id="single">
-    <section class="layout pane" id="post-content">
-        
-          
-<h2 id="about-me">About me<a hidden class="anchor" aria-hidden="true" href="#about-me"><i>link</i></a></h2>
-<p>Hello!</p>
-<p>Personally, I&rsquo;m interested in programming, making music, formal logic, backpacking, magic and <a href="https://en.wikipedia.org/wiki/Cardistry"target="_blank"
-        rel="external noopener noreferrer me">cardistry</a>, and cooking. This site is a collection of my projects and notes related to various areas of my life.</p>
-<p>I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.</p>
-<p>I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the <a href="https://www.amnh.org/learn-teach/children-and-families/lang-science-program"target="_blank"
-        rel="external noopener noreferrer me">Lang Science Program</a> at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</p>
-<h2 id="about-wonyoungjangorg">About wonyoungjang.org<a hidden class="anchor" aria-hidden="true" href="#about-wonyoungjangorg"><i>link</i></a></h2>
-<p>This site is hosted using <a href="https://gohugo.io/"target="_blank"
-        rel="external noopener noreferrer me">Hugo</a> and <a href="https://pages.github.com/"target="_blank"
-        rel="external noopener noreferrer me">GitHub Pages</a>. It is created using <a href="https://github.com/sawhney17/logseq-schrodinger"target="_blank"
-        rel="external noopener noreferrer me">Logseq Schrodinger</a> to convert Logseq&rsquo;s markdown to suitable Hugo format markdown.</p>
-
-
-        
-        
-        
-        
-    </section>
     <aside class="layout pane fixed-pane" id="toc">
       <nav class="toc" aria-label="Page Content">
     
@@ -427,17 +624,38 @@
     
 </nav>
     </aside>
+    <section class="layout pane" id="post-content">
+        
+          
+<h2 id="about-me">About me<a hidden class="anchor" aria-hidden="true" href="#about-me"><i>link</i></a></h2>
+<p>Hello!</p>
+<p>Personally, I&rsquo;m interested in programming, making music, formal logic, backpacking, magic and <a href="https://en.wikipedia.org/wiki/Cardistry"target="_blank"
+        rel="external noopener noreferrer me">cardistry</a>, and cooking. This site is a collection of my projects and notes related to various areas of my life.</p>
+<p>I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.</p>
+<p>I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the <a href="https://www.amnh.org/learn-teach/children-and-families/lang-science-program"target="_blank"
+        rel="external noopener noreferrer me">Lang Science Program</a> at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.</p>
+<h2 id="about-wonyoungjangorg">About wonyoungjang.org<a hidden class="anchor" aria-hidden="true" href="#about-wonyoungjangorg"><i>link</i></a></h2>
+<p>This site is hosted using <a href="https://gohugo.io/"target="_blank"
+        rel="external noopener noreferrer me">Hugo</a> and <a href="https://pages.github.com/"target="_blank"
+        rel="external noopener noreferrer me">GitHub Pages</a>. It is created using <a href="https://github.com/sawhney17/logseq-schrodinger"target="_blank"
+        rel="external noopener noreferrer me">Logseq Schrodinger</a> to convert Logseq&rsquo;s markdown to suitable Hugo format markdown.</p>
+
+
+        
+        
+        
+        
+    </section>
   </article>
 
             </div>
-            
             
 
     <nav class="layout page-navigation" aria-label="Page Navigation">
       
         
           <a  class="component card prev"
-            href="http://192.168.40.181:1313/all-logseq-elements/"
+            href="https://wonyoungjang.org/all-logseq-elements/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -459,7 +677,6 @@
     </nav>
 
 
-            
             
                 
 <section class="layout page-links">
@@ -547,10 +764,31 @@
      
         
      
+         
+             
         
      
 
     
+    
+        <nav id="backlinks" aria-label="Backlinks">
+            <h5>Backlinks</h5>
+            <div class="list-container">
+                
+                    
+                    <a  class="component list-item surface-container-lowest" one
+                        href="/all-logseq-elements/">
+                        <div class="list-content">
+                            <span class="title-small">
+                                All Logseq elements
+                            </span>
+                        </div>
+                    </a>
+                    <div class="divider"></div>
+                
+                    
+            </div>
+        </nav>
     
 
     
@@ -614,7 +852,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on twitter"
-                href="https://twitter.com/intent/tweet/?text=About&url=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">      
+                href="https://twitter.com/intent/tweet/?text=About&url=https%3a%2f%2fwonyoungjang.org%2fabout%2f">      
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -627,7 +865,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on linkedin"
-                href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f&title=About&summary=About&source=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwonyoungjang.org%2fabout%2f&title=About&summary=About&source=https%3a%2f%2fwonyoungjang.org%2fabout%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -640,7 +878,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on reddit"
-                href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f&title=About">
+                href="https://reddit.com/submit?url=https%3a%2f%2fwonyoungjang.org%2fabout%2f&title=About">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -653,7 +891,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on facebook"
-                href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">
+                href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwonyoungjang.org%2fabout%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -666,7 +904,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on whatsapp"
-                href="https://api.whatsapp.com/send?text=About%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">
+                href="https://api.whatsapp.com/send?text=About%20-%20https%3a%2f%2fwonyoungjang.org%2fabout%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -679,7 +917,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on telegram"
-                href="https://telegram.me/share/url?text=About&url=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">
+                href="https://telegram.me/share/url?text=About&url=https%3a%2f%2fwonyoungjang.org%2fabout%2f">
                 <i>
                     <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" fill="currentColor">
                         <path
@@ -692,7 +930,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share About on ycombinator"
-                href="https://news.ycombinator.com/submitlink?t=About&u=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">
+                href="https://news.ycombinator.com/submitlink?t=About&u=https%3a%2f%2fwonyoungjang.org%2fabout%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
@@ -708,7 +946,7 @@
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="share About via email" 
-                href="mailto:?subject=About&body=http%3a%2f%2f192.168.40.181%3a1313%2fabout%2f">
+                href="mailto:?subject=About&body=https%3a%2f%2fwonyoungjang.org%2fabout%2f">
                 <i>email</i>
                 Email
             </a>
@@ -758,7 +996,6 @@
 </script>
 
             <footer role="contentinfo">    
-                
                 
 <section class="footer-links">
     
@@ -893,7 +1130,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -958,8 +1195,7 @@
         });
     </script>
 
-
-            </footer>
+</footer>
         </main>
     </body>
 </html>

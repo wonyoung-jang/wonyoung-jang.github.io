@@ -1,17 +1,13 @@
-.basic-singlepane .pane {
+.layout.panes.basic-singlepane .layout.pane {
   --flex: 1 1 auto;
   --width: 100%;
 }
 
-.basic-splitpane .pane {
-  --flex: 1 1 0;
-  --width: calc(50% - var(--spacing-panes) / 2);
-}
-
-.basic-fixedflex {
+.layout.panes.basic-splitpane,  
+.layout.panes.basic-fixedflex:not(#single) {
   --flex-flow: row nowrap;
-  
-  & .pane {
+    
+  & .layout.pane {
     --flex: 1 1 0;
     
     &.fixed-pane {
@@ -19,26 +15,32 @@
       --width: var(--fixed-pane-width);
     }
   }
+}
 
-  &#single {
-    --flex-flow: column-reverse nowrap;
-    
-    & .pane,
-    & .pane.fixed-pane {
-      --flex: 1 1 auto;
-      --width: 100%;
-    }
+.layout.panes.basic-fixedflex#single {
+  --flex-flow: column nowrap;
+  
+  & .layout.pane {
+    --display: flex;
+    --flex: 1 1 auto;
+    --width: 100%;
+  }
+
+  & #toc {
+    --flex: 0 0 auto;
   }
 }
 
-/* Compact: 0px-599px */
-@media screen and (max-width: 600px) {
-  .basic-splitpane,  
-  .basic-fixedflex:not(#single) {
-    & .pane {
+/* Compact: 0-599px */
+@media screen and (max-width: 599px) {
+  .layout.panes.basic-fixedflex:not(#single),
+  .layout.panes.basic-splitpane {
+    & .layout.pane {
       --display: none;
+      --flex: 1 1 0;
+      --width: calc(50% - var(--spacing-panes) / 2);    
     }
-    
+
     &::before {
       content: "Compact: do not use this layout on screens smaller than 600px wide.";
       display: flex;
@@ -46,15 +48,27 @@
       padding: 1em;
     }
   }
+
+  .layout.panes.basic-fixedflex:not(#single) {
+    --flex-flow: row nowrap;
+    
+    & .layout.pane {
+      --flex: 1 1 0;
+      
+      &.fixed-pane {
+        --flex: 0 0 var(--fixed-pane-width);
+        --width: var(--fixed-pane-width);
+      }
+    }
+  }
 }
 
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
-  .basic-fixedflex,
-  .basic-fixedflex#single {
+  .layout.panes.basic-fixedflex#single {
     --flex-flow: row nowrap;
     
-    & .pane {
+    & .layout.pane {
       --flex: 1 1 0;
       
       &.fixed-pane {

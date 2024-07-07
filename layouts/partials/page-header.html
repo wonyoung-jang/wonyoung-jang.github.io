@@ -4,7 +4,7 @@
 {{ if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) }} 
     <section class="layout page-header">
         {{/* Metadata */}}
-        {{ if (and (not (or (eq .Kind "taxonomy") (eq .Kind "term"))) (ne .Layout "list") (ne .Layout "section") (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (or (eq .Title "404 Page not found") (eq .Title "Now")))) }}
+        {{ if (and (not (or (eq .Kind "taxonomy") (eq .Kind "term"))) (not .IsHome) (not (eq .Title "Sitemap")) (not (eq .Title "Search")) (not (or (eq .Title "404 Page not found") (eq .Title "Now")))) }}
             <div class="label-large">
                 {{ partial "post-meta.html" . }}
             </div>
