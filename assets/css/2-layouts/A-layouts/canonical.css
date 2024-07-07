@@ -32,10 +32,6 @@
 @media screen and (min-width: 600px) {
   .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 2 - var(--spacing-panes));
-
-    & img {
-      max-height: 50%;
-    }
   }
 }
 
@@ -43,10 +39,6 @@
 @media screen and (min-width: 840px) {
   .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 3 - var(--spacing-panes));
-
-    & img {
-      max-height: 33%;
-    }
   }  
 
   .panes.canonical-supporting-pane {
@@ -67,10 +59,6 @@
 @media screen and (min-width: 1200px) {
   .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 4 - var(--spacing-panes));
-    
-    & img {
-      max-height: 25%;
-    }
   }  
 }
 
@@ -78,9 +66,5 @@
 @media screen and (min-width: 1600px) {
   .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 5 - var(--spacing-panes));
-    
-    & img {
-      max-height: 20%;
-    }
   }  
 }

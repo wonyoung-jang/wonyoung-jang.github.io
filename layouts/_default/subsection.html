@@ -20,17 +20,9 @@
 
                 
                 <div class="card-content">
-                    <div class="card-meta">
-                        {{ partial "post-meta.html" . }}
-                    </div>
-
-                    <div class="card-title headline-small">
-                        {{ .Title }}
-                    </div>
-
-                    <div class="card-description">
-                        {{ .Description }}
-                    </div>
+                    <span class="card-meta">{{ partial "post-meta.html" . }}</span>
+                    <span class="card-title">{{ .Title }}</span>
+                    <span class="card-description">{{ .Description }}</span>
                 </div>
             </a>
 

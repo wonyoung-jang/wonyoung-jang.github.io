@@ -46,7 +46,7 @@
 
 .card {
   & img {
-    flex: 1 1 0;
+    flex: 1 1 auto;
     max-width: 64px;
   
     aspect-ratio: 1 / 1;
@@ -57,32 +57,47 @@
   & .card-content {
     flex: 1 1 auto;
     display: flex;
-    flex-flow: column nowrap;
-    min-height: fit-content;
-    height: 100%;
-    width: 100%;
+    flex-flow: row wrap;
     align-items: stretch;
-    justify-content: space-between;
-    padding: var(--spacing-panes);
+    align-content: space-between;
+    padding: var(--size-5);
+    gap: var(--size-2);
 
     & .card-meta,
     & .card-title, 
     & .card-description { 
+      flex: 1 1 0;
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: column nowrap;
       justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
     }
 
     & .card-meta {
-      flex: 1 1 0;
+      color: var(--color-on-surface-variant);
+      
+      font-family: var(--typescale-label-large);
+      font-weight: var(--typescale-label-large-weight);
+      font-size: var(--typescale-label-large-size);
+      line-height: var(--typescale-label-large-line-height);
     }
-    
+  
     & .card-title {
-      flex: 2 1 0;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+
+      font-family: var(--typescale-headline-small);
+      font-weight: var(--typescale-headline-small-weight);
+      font-size: var(--typescale-headline-small-size);
+      line-height: 1.1; /* shorter for cards */
     }
     
     & .card-description{
-      flex: 2 1 0;
+      font-family: var(--typescale-body-large);
+      font-weight: var(--typescale-body-large-weight);
+      font-size: var(--typescale-body-large-size);
+      line-height: var(--typescale-body-large-line-height);
     }
   }
 }
@@ -95,7 +110,6 @@
       --container-align-items: stretch;
       
       & img {
-        flex: 1 1 0;
         max-width: 100%;
         margin: unset;
         aspect-ratio: 17 / 8;
