@@ -1,5 +1,21 @@
-{{ with .Buttons }}
-    <div class="home-buttons">
+{{ with .ProjectButtons }}
+    <div class="home-buttons" id="projects">
+        <h2>Projects</h2>
+        {{ range . }}
+            <a  class="component button fab add30-container" extended
+                id="{{ .name | urlize }}"
+                href="{{ trim .url " " }}" 
+                rel="noopener" 
+                title="{{ .name }}">
+                {{ .name }}
+            </a>
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ with .ResourceButtons }}
+    <div class="home-buttons" id="resources">
+        <h2>Resources</h2>
         {{ range . }}
             <a  class="component button fab add60-container" extended
                 id="{{ .name | urlize }}"

@@ -11,15 +11,23 @@ assets:
 
 home:
   title: Wonyoung Jang
-  subtitle: Personal Website
+  tagline: Personal Website
+  blurb: 
 
-  buttons:
+  projectButtons:
     - name: Software
       url: /projects/software
     - name: Design
       url: /projects/design
-    - name: University coursework
+    - name: University
       url: /projects/university
+  resourceButtons:
+    - name: Layouts
+      url: /resources/layouts
+    - name: References
+      url: /resources/references
+    - name: Tokens
+      url: /resources/tokens
 
 author:
   name: Wonyoung Jang

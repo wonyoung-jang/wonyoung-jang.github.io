@@ -17,7 +17,7 @@
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      margin-block-start: var(--size-16);
+      margin-block: var(--size-16);
     }
 
     & .home-buttons {
@@ -25,8 +25,15 @@
       flex-flow: row wrap;
       align-items: center;
       justify-content: center;
-      gap: var(--size-3);
-      padding: var(--size-16);
+      gap: var(--size-5);
+      padding: var(--size-8) var(--size-10);
+      margin: var(--size-3);
+      background-color: var(--color-surface-container-lowest);
+      border-radius: var(--shape-corner-xl);
+
+      & h2 {
+        width: 100%;
+      }
 
       & .button {
         flex: 1 1 auto;
