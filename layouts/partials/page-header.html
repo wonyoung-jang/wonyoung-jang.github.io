@@ -1,23 +1,9 @@
 {{/* Layout: Page-header */}}
 
 {{/* Post Header */}}
-{{ if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) (not (or (eq .Kind "taxonomy") (eq .Kind "term"))) }}
+{{ if and (not .IsHome) (.Title) (not (eq .Title "404 Page not found")) }} 
+{{/*  (not (or (eq .Kind "taxonomy") (eq .Kind "term"))  */}}
     <section class="layout page-header">
-        {{/* Breadcrumbs */}}
-        <nav class="breadcrumbs" aria-label="Breadcrumbs">
-            {{ range $index, $ancestor := .Ancestors.Reverse }} 
-                <a href="{{ .Permalink }}">
-                    {{ if .IsHome }}
-                        Home
-                    {{ else }}
-                        {{ .LinkTitle }}
-                    {{ end }} 
-                </a>
-
-                <span class="breadcrumb-delimiter">/</span>
-            {{ end }}
-        </nav>    
-
         {{/* Title */}}
         <h1 class="title">
             {{ .Title }}
