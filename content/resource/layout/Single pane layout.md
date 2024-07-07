@@ -1,12 +1,12 @@
 ---
 aliases: 
-tags:
-categories:
+tags: 
+categories: 
 draft: false
 slug: 
 layout: single
 githubrepo: 
-keywords: 
+keywords: [ "Material Redesign" ]
 type: showcase/layouts/basic
 date:
 - 2024-06-10 Monday

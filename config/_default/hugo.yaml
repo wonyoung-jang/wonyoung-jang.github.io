@@ -9,9 +9,8 @@ copyright: <!--Creative Commons License-->This site is licensed under a [Creativ
 enableRobotsTXT: true
 enableGitInfo: true
 
-disableKinds:
-- taxonomy
-- term
+taxonomies:
+  keyword: keywords
 
 ####################
 # All root configs #

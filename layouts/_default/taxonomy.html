@@ -1,0 +1,25 @@
+{{ define "main" }}
+    {{ .Kind }}
+    
+    <article class="layout panes canonical-feed">
+        <section class="layout pane" id="subsection-page">
+            {{ range .Pages }}        
+                <a  class="component card" elevated
+                    aria-label="post link to {{ .Title | plainify }}" 
+                    href="{{ .Permalink }}">
+                    {{ $imageURL := partial "first-image.html" . }}
+                    {{ if $imageURL }}
+                        <img 
+                            src="{{ $imageURL }}" 
+                            alt="First image from {{ .Title }}">
+                    {{ end }}
+                    <div class="card-content">
+                        <span class="card-meta">{{ partial "post-meta.html" . }}</span>
+                        <span class="card-title">{{ .Title }}</span>
+                        <p class="card-description">{{ .Description }}</p>
+                    </div>
+                </a>
+            {{ end }}
+        </section>
+    </article>
+{{ end }}
