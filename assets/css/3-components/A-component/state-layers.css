@@ -24,15 +24,15 @@
   &:hover::after {
     opacity: var(--state-hover-opacity);
     background-size: 50000%;
-    transition: background-size var(--motion-duration-short4)
-      var(--motion-easing-standard);
+    transition: background-size var(--motion-duration-long2)
+      var(--motion-easing-emphasized);
   }
 
   &:active::after {
     opacity: var(--state-press-opacity);
     background-size: 0%;
-    transition: background-size var(--motion-duration-short1)
-      var(--motion-easing-standard);
+    transition: background-size var(--motion-duration-short2)
+      var(--motion-easing-emphasized);
   }
 
   &:focus-within::after {
