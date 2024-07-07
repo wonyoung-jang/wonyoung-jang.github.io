@@ -14,30 +14,12 @@ home:
   subtitle: Personal Website
 
   buttons:
-    - name: Software projects
-      url: /project/software
-    - name: Design projects
-      url: /project/design
+    - name: Software
+      url: /projects/software
+    - name: Design
+      url: /projects/design
     - name: University coursework
-      url: /project/university
-    - name: Redesign layouts
-      url: /resource/layout
-    - name: Redesign tokens
-      url: /resource/token
-    - name: References
-      url: /resource/reference
-    - name: About
-      url: /about
-    - name: Contact
-      url: /contact
-    - name: Graph
-      url: /graph/#/graph
-    - name: RSS
-      url: /index.xml
-    - name: Sitemap
-      url: /sitemap
-    - name: Projects
-      url: /projects
+      url: /projects/university
 
 author:
   name: Wonyoung Jang

@@ -60,9 +60,3 @@
     }
   }
 }
-
-.elevations-container {
-  & div {
-    background-color: var(--color-surface-container-high);
-  }
-}

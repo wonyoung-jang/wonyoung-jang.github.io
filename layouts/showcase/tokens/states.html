@@ -16,8 +16,11 @@
             <details class="layout token-set" open>
                 <summary class="token-set-title">Elevations</summary>
                 <section class="elevations-container">
-                    {{ range seq 0 5 }}
-                        <div class="elevation{{ . }}">Level {{ . }}</div>
+                    {{ $surfaces := "-lowest -low  -high -highest" }}
+                    {{ $surfaces := split $surfaces " " }}
+                    <div class="component surface elevation0">0</div>
+                    {{ range $i, $surface := $surfaces }}
+                        <div class="component surface-container{{ $surface }} elevation{{ add $i 1 }}">{{ add $i 1 }}</div>
                     {{ end }}
                 </section>
             </details>
