@@ -2,9 +2,9 @@
     <article class="layout panes basic-singlepane">
         <section class="layout pane" id="sections-page">
             <div class="list-container">
-                {{ range .Sections }}
+                {{ range .Pages }}
                     <a  class="component list-item" three with-avatar
-                        href="{{ .Permalink }}">
+                        href="{{ .RelPermalink }}">
                         <span class="avatar">
                             <i>
                                 {{ if eq .Title "Software" }}
