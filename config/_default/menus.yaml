@@ -1,41 +1,41 @@
 main:
   - identifier: Projects
     name: Projects
-    pageRef: /project
+    pageRef: /projects
     pre: <i>code</i>
     weight: 10
   - name: Software
-    pageRef: /project/software
+    pageRef: /projects/software
     pre: <i>terminal</i>
     parent: Projects
     weight: 1
   - name: Designs
-    pageRef: /project/design
+    pageRef: /projects/design
     pre: <i>design_services</i>
     parent: Projects
     weight: 2
   - name: University
-    pageRef: /project/university
+    pageRef: /projects/university
     pre: <i>school</i>
     parent: Projects
     weight: 3
   - identifier: Resources
     name: Resources
-    pageRef: /resource
+    pageRef: /resources
     pre: <i>developer_guide</i>
     weight: 20
   - name: Layouts
-    pageRef: /resource/layout
+    pageRef: /resources/layouts
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 1
   - name: References
-    pageRef: /resource/reference
+    pageRef: /resources/references
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 2
   - name: Tokens
-    pageRef: /resource/token
+    pageRef: /resources/tokens
     pre: <i>quick_reference</i>
     parent: Resources
     weight: 3

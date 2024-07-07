@@ -2,237 +2,233 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.40.181:1313/resource/reference/all-logseq-elements/</loc>
-    <lastmod>2024-07-05T14:15:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/project/design/</loc>
-    <lastmod>2024-07-05T14:15:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/project/design/ergodox-ez-lego-tenting-kits/</loc>
-    <lastmod>2024-07-05T19:16:28-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/project/design/pit-signs-for-robotics-competition/</loc>
-    <lastmod>2024-07-05T14:15:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-07T11:07:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://192.168.40.181:1313/about/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/all-logseq-elements/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/colors/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/components/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/contact/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/projects/design/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/software/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/feed-layout/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/fixed-and-flexible-layout/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/resources/layouts/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/list-detail-layout/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/motion/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/now/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/colors/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/pit-signs-for-robotics-competition/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/components/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/projects/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/feed-layout/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/resources/references/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/fixed-and-flexible-layout/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/list-of-admonitions-for-wonyoungjang.org/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/list-detail-layout/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/motion/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/shapes/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/single-pane-layout/</loc>
-    <lastmod>2024-07-07T11:07:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/split-pane-layout/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/states-and-elevation/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/layout/supporting-pane-layout/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resource/token/typography/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/resources/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/search/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/shapes/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/single-pane-layout/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/sitemap/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/split-pane-layout/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/states-and-elevation/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/resource/reference/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/supporting-pane-layout/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/software/realtime-multiplayer-drawing/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/resources/tokens/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/software/wonyoungjang.org/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/typography/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/software/q-learning-tournament-scheduler/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/software/save-top-level-reddit-comments/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/disaster-recovery-robot-simulation/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/realtime-multiplayer-drawing/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/cs-career-chatbot/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/projects/university/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/software/logseq-markdown-tokenizer/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/projects/software/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/package-delivery-route-optimization/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/wonyoungjang.org/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/hotel-reservation-manager/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/q-learning-tournament-scheduler/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/vacation-cart-manager/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/save-top-level-reddit-comments/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/retail-inventory-manager/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/disaster-recovery-robot-simulation/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/dvd-rental-database/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/cs-career-chatbot/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/student-record-system/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/logseq-markdown-tokenizer/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/project/university/food-shop-database-management/</loc>
-    <lastmod>2024-07-05T11:58:05-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/package-delivery-route-optimization/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/hotel-reservation-manager/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/vacation-cart-manager/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/retail-inventory-manager/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/dvd-rental-database/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/student-record-system/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/food-shop-database-management/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/graph/</loc>
     <lastmod>2024-07-06T10:29:53-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/projects/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

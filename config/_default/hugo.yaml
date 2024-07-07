@@ -30,6 +30,7 @@ sitemap:
 # Taxonomies
 taxonomies:
   project: projects
+  resource: resources
 
 ####################
 # All root configs #

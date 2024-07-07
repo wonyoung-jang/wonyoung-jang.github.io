@@ -12,7 +12,7 @@ description: Contact page
 title: Contact
 tags:
 categories:
-lastMod: 2024-06-30
+lastMod: 2024-07-07
 ---
 ## Contact me directly
 
