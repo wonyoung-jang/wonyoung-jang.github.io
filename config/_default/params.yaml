@@ -4,15 +4,17 @@ defaultTheme: auto
 env: production
 title: Wonyoung Jang
 dateFormat: January 2, 2006
-description: "Wonyoung Jang's personal website"
 
 assets:
   favicon: 'sitelogo.svg'
 
 home:
   title: Wonyoung Jang
-  tagline: Personal Website
-  blurb: 
+  tagline: exist on earth **∧** time **→** create
+  blurb: |
+    If I'm alive and have the time, then I'll create stuff and post it here.
+    You are welcome to use anything you find here.
+
 
   projectButtons:
     - name: Software

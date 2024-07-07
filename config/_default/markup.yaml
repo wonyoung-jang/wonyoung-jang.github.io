@@ -7,18 +7,6 @@ highlight:
   pygmentsUseClasses: true
   style: github-dark
 
-defaultMarkdownHandler: goldmark
-
-goldmark:
-  renderHooks:
-    image:
-      enableDefault: true
-    link:
-      enableDefault: true
-  parser:
-    attribute:
-      title: true
-
 tableOfContents:
   ordered: false
   startLevel: 1

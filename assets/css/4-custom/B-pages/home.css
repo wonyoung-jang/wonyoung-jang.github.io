@@ -4,58 +4,78 @@
   flex-flow: column nowrap;
   padding: unset;
   margin: unset;
-  height: 100%;
+}
 
-  & #home-header {
+#home-header {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-5);
+  padding: var(--size-14) var(--spacing-panes);
+  min-height: 18dvh;
+  
+  & .site-id {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: center;
-
-    & h1 {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
-      margin-block: var(--size-16);
-    }
-
-    & .home-buttons {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      gap: var(--size-5);
-      padding: var(--size-8) var(--size-10);
-      margin: var(--size-3);
-      background-color: var(--color-surface-container-lowest);
-      border-radius: var(--shape-corner-xl);
-
-      & h2 {
-        width: 100%;
-      }
-
-      & .button {
-        flex: 1 1 auto;
-      }
-    }  
-  }
-
-  & #showcase-panel {
-    display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-surface-container-low);
-    gap: var(--spacing-panes);
-    border-radius: var(--shape-corner-xs);
-    
-    & *:not(h1, h2) {
-      width: 100%;
-    }
+    gap: var(--size-5);
+  }
 
-    & table {
-      padding: var(--size-8);
+  & .tagline {
+    color: var(--color-complementary);
+
+    & strong {
+      color: var(--color-add180);
+      margin-inline: var(--size-2);
     }
   }
 }
+
+#home-blurb {
+  flex: 0 1 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--size-5);
+  padding: var(--size-8);
+  background-color: var(--color-surface-container-low);
+  border-radius: var(--shape-corner-xl);
+  
+  margin-block: var(--spacing-panes);
+
+  & .blurb {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-5);
+    padding: var(--size-5);
+    border-radius: var(--shape-corner-xl);
+  }
+}
+
+.home-buttons {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-5);
+  padding: var(--size-8) var(--size-10);
+  margin: var(--size-3);
+  background-color: var(--color-surface-container-lowest);
+  border-radius: var(--shape-corner-xl);
+
+  & h3 {
+    width: 100%;
+  }
+
+  & .button {
+    flex: 1 1 auto;
+  }
+}
+
