@@ -21,7 +21,7 @@
         Realtime multiplayer drawing | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.55378b92fc27b52d8cc59da554c8fae09fc9dcb32f63f2c19a466a8720069406.css" integrity="sha256-VTeLkvwntS2MxZ2lVMj64J/J3LMvY/LBmkZqhyAGlAY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.d04bc5d0ba593d7b1448de64c9c667dc58229cb1b58a599057f632f91b4221ee.css" integrity="sha256-0EvF0LpZPXsUSN5kycZn3FginLG1ilmQV/Yy&#43;RtCIe4=" rel="preload stylesheet" as="style">
 
 
 
@@ -135,62 +135,64 @@
   
   
   
-   31 
+   28 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/now\/";
+    window.location.href = "\/resource\/reference\/all-logseq-elements\/";
   }
 </script>
 
         <button class="component button icon-button" id="theme-selector">
   <i>palette</i>
   <menu class="menu">
+    <span class="theme-selector-title headline-medium">Theme controls</span>
     
-    <label class="title-large" for="hue-selector">Hue</label>
-    <div class="slider">
-      <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
-      <span class="tooltip" id="hue-tooltip"></span>
+    <div id="color-selector-container">
+      <label class="title-large" for="hue-selector">Hue</label>
+      <div class="slider">
+        <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
+        <span class="tooltip" id="hue-tooltip"></span>
+      </div>
+      <div id="theme-hues"></div>
+          
+      <label class="title-large" for="chroma-selector">Chroma</label>
+      <div class="slider">
+        <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
+        <span class="tooltip" id="chroma-tooltip"></span>
+      </div>
+      <div id="theme-chromas"></div>
     </div>
-    <div id="theme-hues"></div>
-        
-    <label class="title-large" for="chroma-selector">Chroma</label>
-    <div class="slider">
-      <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
-      <span class="tooltip" id="chroma-tooltip"></span>
-    </div>
-    <div id="theme-chromas"></div>
-
-    <div class="divider"></div>
-
+      
     
-    <label class="title-large" for="shape-selector">Shape</label>
-    <div class="slider">
-      <input type="range" id="shape-selector" min="0.0" max="6.0" value="1.7" step="0.1"/>
-      <span class="tooltip" id="shape-tooltip"></span>
+    <div id="shape-selector-container">
+      <label class="title-large" for="shape-selector">Shape</label>
+      <div class="slider">
+        <input type="range" id="shape-selector" min="0.0" max="6.0" value="1.7" step="0.1"/>
+        <span class="tooltip" id="shape-tooltip"></span>
+      </div>
     </div>
-
-    <div class="divider"></div>
-
+            
     
-    <label class="title-large" for="font-size-selector">Font Size</label>
-    <div class="slider">
+    <div id="font-size-selector-container">
+      <label class="title-large" for="font-size-selector">Font Size</label>
+      <div class="slider">
         <input type="range" id="font-size-selector" min="8" max="24" value="14" step="1">
         <span class="tooltip" id="font-size-tooltip">14px</span>
-    </div>
+      </div>
 
-    <label class="title-large" for="line-height-selector">Line Height</label>
-    <div class="slider">
+      <label class="title-large" for="line-height-selector">Line Height</label>
+      <div class="slider">
         <input type="range" id="line-height-selector" min="1.0" max="1.6" value="1.5" step="0.050">
         <span class="tooltip" id="line-height-tooltip">1.5</span>
+      </div>
     </div>
-
-    <div class="divider"></div>
   
     
-    <div id="typography-selector">
-      <fieldset class="typography-fieldset">
+    <div id="typography-selector-container">
+      <div id="typography-selector">
+        <fieldset class="typography-fieldset">
           <legend class="title-large">Brand font family</legend>
           <div class="component radio-button">
               <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
@@ -208,17 +210,19 @@
               <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
               <label for="brand-courier">Courier New</label>
           </div>
-      </fieldset>
+        </fieldset>
+
+        <div class="divider"></div>
     
-      <fieldset class="typography-fieldset">
+        <fieldset class="typography-fieldset">
           <legend class="title-large">Plain font family</legend>
           <div class="component radio-button">
               <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
               <label for="plain-ibm">IBM Plex Sans</label>
           </div>
           <div class="component radio-button">
-              <input type="radio" id="plain-arial" name="plain-font" value="Arial">
-              <label for="plain-arial">Arial</label>
+            <input type="radio" id="plain-arial" name="plain-font" value="Arial">
+            <label for="plain-arial">Arial</label>
           </div>
           <div class="component radio-button">
               <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
@@ -228,9 +232,11 @@
               <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
               <label for="plain-courier">Courier New</label>
           </div>
-      </fieldset>
-    
-      <fieldset class="typography-fieldset">
+        </fieldset>
+
+        <div class="divider"></div>
+        
+        <fieldset class="typography-fieldset">
           <legend class="title-large">Code font family</legend>
           <div class="component radio-button">
               <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
@@ -247,8 +253,9 @@
           <div class="component radio-button">
               <input type="radio" id="code-courier" name="code-font" value="Courier New">
               <label for="code-courier">Courier New</label>
-          </div>
-      </fieldset>
+            </div>
+          </fieldset>
+      </div>
     </div>
   </menu>
 </button>

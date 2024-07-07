@@ -3,8 +3,17 @@
         margin-block: var(--size-5);
     }
 
+    & .theme-selector-title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-block: var(--size-3);
+        padding: var(--size-2);
+    }
+
     & .menu {
-        padding: var(--size-3);
+        padding: var(--size-2);
         opacity: 0;
         visibility: hidden;
         transform: scale(0.8) translateY(120%);
@@ -17,6 +26,8 @@
         min-width: fit-content;
         width: 50dvw;
         overflow: auto;
+        box-shadow: var(--elevation4);
+        background-color: var(--color-surface-container-high);
 
         & .typography-fieldset {
             display: flex;
@@ -106,7 +117,10 @@
 
     & fieldset {
         margin-top: var(--size-3);
-        padding: var(--size-3);
+
+        & legend {
+            margin-bottom: var(--size-2);
+        }
     }
 }
 
@@ -117,4 +131,15 @@
     opacity: 1;
     visibility: visible;
     transform: scale(1) translateY(100%);
+}
+
+#color-selector-container,
+#shape-selector-container,
+#font-size-selector-container,
+#typography-selector-container {
+    border-radius: var(--shape-corner-xl);
+    background-color: var(--color-surface-container-lowest);
+    padding: var(--size-7);
+    margin-bottom: var(--size-4);
+    gap: var(--size-3);
 }
