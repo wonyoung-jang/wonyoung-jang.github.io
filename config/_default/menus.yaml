@@ -76,29 +76,29 @@ footer:
 sections:
   - identifier: Projects
     name: Projects
-    pageRef: /project
+    pageRef: /projects
     weight: 10
   - name: Design
-    pageRef: /project/design
+    pageRef: /projects/design
     parent: Projects
   - name: Software
-    pageRef: /project/software
+    pageRef: /projects/software
     parent: Projects
   - name: University
-    pageRef: /project/university
+    pageRef: /projects/university
     parent: Projects
   - identifier: Resources
     name: Resources
-    pageRef: /resource
+    pageRef: /resources
     weight: 20
   - name: Layouts
-    pageRef: /resource/layout
+    pageRef: /resources/layouts
     parent: Resources
   - name: References
-    pageRef: /resource/reference
+    pageRef: /resources/references
     parent: Resources
   - name: Tokens
-    pageRef: /resource/token
+    pageRef: /resources/tokens
     parent: Resources
 
 connect:
