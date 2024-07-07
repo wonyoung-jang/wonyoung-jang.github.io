@@ -1,5 +1,5 @@
 #post-content {
-  & &:not(li) p {
+  &:not(li) p {
     margin-block-end: 2em;
   }
 
