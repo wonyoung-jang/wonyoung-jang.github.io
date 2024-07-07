@@ -6,9 +6,7 @@
   position: relative;
 }
 
-.list-item {
-  flex: 1 1 fit-content;
-  
+.list-item {  
   --container-display: flex;
   --container-flex-flow: row nowrap;
   --container-align-items: flex-start;

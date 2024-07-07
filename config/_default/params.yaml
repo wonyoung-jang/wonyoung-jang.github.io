@@ -41,7 +41,7 @@ fuseOpts:
   minMatchCharLength: 1
   shouldSort: true
   findAllMatches: false
-  keys: ["title", "permalink", "summary", "content"]
+  keys: ["title", "permalink", "summary", "description", "content"]
 
   # Fuzzy matching
   location: 0

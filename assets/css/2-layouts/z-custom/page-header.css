@@ -3,24 +3,20 @@
   --flex-flow: column nowrap;
   --align-items: stretch;
   --align-content: initial;
-  --justify-content: initial;
+  --justify-content: space-between;
   --width: 100%;
-  --height: auto;
-  --min-height: auto;
+  --height: max-content;
   --border: inherit;
-  --padding: var(--size-8);
-  --gap: var(--size-8);
+  --padding: var(--size-14) var(--spacing-panes);
+  --gap: var(--size-5);
+
+  background-color: var(--color-surface-container-lowest);
   
   & .title,
   & .description {
     display: inline;
     word-wrap: break-word;
     white-space: normal;
-  }
-  
-  & .description {
-    white-space: normal;
-    overflow-wrap: break-word;   
   }
   
   & .metadata {
