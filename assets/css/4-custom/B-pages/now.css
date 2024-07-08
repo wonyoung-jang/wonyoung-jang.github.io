@@ -1,0 +1,17 @@
+.least-updated-pages {
+    & li {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .divider {
+        margin-bottom: var(--size-3);
+    }
+}
+
+    

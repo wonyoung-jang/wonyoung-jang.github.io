@@ -1,0 +1,16 @@
+{{ $pages := .Site.RegularPages }}
+{{ $sortedPages := sort $pages ".Lastmod" "asc" }}
+{{ $leastUpdated := first 8 $sortedPages }}
+
+<div class="least-updated-pages">
+  <h2>Least recently updated</h2>
+  <ol>
+    {{ range $leastUpdated }}
+      <li>
+        <a class="page-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="last-updated">Last updated: {{ .Lastmod.Format "January 2, 2006" }}</span>
+        </li>
+    <div class="divider" mid></div>
+    {{ end }}
+  </ol>
+</div>

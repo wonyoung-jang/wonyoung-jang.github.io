@@ -21,7 +21,7 @@
         Wonyoungjang.org | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.e323f03847f3d0ce3b4d86ec2f966fc9e829c765386bf37ec2d0162531986848.css" integrity="sha256-4yPwOEfz0M47TYbsL5Zvyegpx2U4a/N&#43;wtAWJTGYaEg=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9cfa1d735154d3dcb8e9d2b320c562b629429b7977813d9b0e572529b71663f6.css" integrity="sha256-nPodc1FU09y46dKzIMVitilCm3l3gT2bDlclKbcWY/Y=" rel="preload stylesheet" as="style">
 
 
 
@@ -128,42 +128,16 @@
   onclick="navigateToRandomPage(); return false;">
   <i>ifl</i>
 </button>
+
 <script defer>
   
   
   
-
-  function getVisitedPages() {
-    return JSON.parse(localStorage.getItem('visitedPages')) || [];
-  }
-
-  function addVisitedPage(page) {
-    const visitedPages = getVisitedPages();
-    visitedPages.push(page);
-    if (visitedPages.length > Math.min(10, Math.floor( 36  / 2))) {
-      visitedPages.shift();
-    }
-    localStorage.setItem('visitedPages', JSON.stringify(visitedPages));
-  }
-
-  function getRandomPage() {
-    const visitedPages = getVisitedPages();
-    let candidatePages = "Pages(36)".filter(page => !visitedPages.includes(page.RelPermalink));
-    
-    if (candidatePages.length === 0) {
-      
-      localStorage.removeItem('visitedPages');
-      candidatePages = "Pages(36)";
-    }
-
-    const randomIndex = Math.floor(Math.random() * candidatePages.length);
-    return candidatePages[randomIndex];
-  }
-
+  
+  
+ 
   function navigateToRandomPage() {
-    const randomPage = getRandomPage();
-    addVisitedPage(randomPage.RelPermalink);
-    window.location.href = randomPage.RelPermalink;
+    window.location.href = "\/motion\/";
   }
 </script>
 
@@ -689,6 +663,7 @@
 </ol>
 
 
+        
         
         
         

@@ -11,6 +11,9 @@
         {{ if eq .Title "Contact"}}
           {{ partial "feedback-form.html" . }}
         {{ end }}
+        {{ if eq .Title "Now"}}
+          {{ partial "least_recently_updated.html" . }}
+        {{ end }}
         {{ if eq .Type "showcase/tokens" }}
           {{ .Type }}
         {{ end }}
