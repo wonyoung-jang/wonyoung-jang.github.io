@@ -72,7 +72,8 @@
     flex-flow: column nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    width: fit-content;
+    min-width: fit-content;
+    width: 100%;
     box-shadow: var(--elevation2);
     z-index: 6;
     

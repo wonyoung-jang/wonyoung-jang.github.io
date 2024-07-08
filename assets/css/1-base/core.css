@@ -157,10 +157,13 @@ main,
 footer,
 .layout,
 #top-link {
-  transition: var(--motion-duration-medium2) var(--motion-easing-emphasized);
-  transition-property:  font-size, line-height, margin, height, min-height,
-                        max-height, border-radius, min-width, max-width, 
-                        width, padding, transform, visibility, opacity;
+  transition: var(--motion-duration-medium4) var(--motion-easing-emphasized);
+  transition-property:  
+    font-size, font-weight, line-height, margin, border-radius, 
+    height, min-height, max-height, 
+    width, min-width, max-width, 
+    transform, visibility, opacity, display,
+    padding;
 }
 
 /* Reduced motion */
