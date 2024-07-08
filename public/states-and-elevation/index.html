@@ -132,12 +132,12 @@
   
   
   
-   4 
+   22 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/colors\/";
+    window.location.href = "\/cs-career-chatbot\/";
   }
 </script>
 
@@ -1064,51 +1064,27 @@
             Connect
         </span>
         
-            <a  class="component button fab
-                
-                    sub90-container
-                " extended
-
-                href="mailto:contact@wonyoungjang.org"
+            <a  href="mailto:contact@wonyoungjang.org"
                 target="_blank" 
                 rel="external noopener noreferrer me">
-                <i>outgoing_mail</i>
                 Email
             </a>
         
-            <a  class="component button fab
-                
-                    sub120-container
-                " extended
-
-                href="https://www.figma.com/@wonyoung_jang"
+            <a  href="https://www.figma.com/@wonyoung_jang"
                 target="_blank" 
                 rel="external noopener noreferrer me">
-                <i>palette</i>
                 Figma
             </a>
         
-            <a  class="component button fab
-                
-                    sub150-container
-                " extended
-
-                href="https://github.com/wonyoung-jang"
+            <a  href="https://github.com/wonyoung-jang"
                 target="_blank" 
                 rel="external noopener noreferrer me">
-                <i>code</i>
                 GitHub
             </a>
         
-            <a  class="component button fab
-                
-                    sub180-container
-                " extended
-
-                href="https://ko-fi.com/wonyoung_jang"
+            <a  href="https://ko-fi.com/wonyoung_jang"
                 target="_blank" 
                 rel="external noopener noreferrer me">
-                <i>loyalty</i>
                 Ko-fi
             </a>
         
@@ -1141,6 +1117,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

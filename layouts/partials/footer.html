@@ -21,26 +21,14 @@
     </div>
     
     {{/* Connect links */}}
-    <div class="footer-links-list" id="connect-links">
+    <div class="footer-links-list">
         <span class="title-medium on-surface-variant">
             Connect
         </span>
         {{ range site.Menus.connect }}
-            <a  class="component button fab
-                {{ if eq .Name "Email" }}
-                    {{ "sub90-container" }}
-                {{ else if eq .Name "Figma" }}
-                    {{ "sub120-container" }}
-                {{ else if eq .Name "GitHub" }}
-                    {{ "sub150-container" }}
-                {{ else if eq .Name "Ko-fi" }}
-                    {{ "sub180-container" }}
-                {{ end }}" extended
-
-                href="{{ .URL }}"
+            <a  href="{{ .URL }}"
                 target="_blank" 
                 rel="external noopener noreferrer me">
-                {{ .Pre }}
                 {{ .Name }}
             </a>
         {{ end }}

@@ -98,13 +98,9 @@ sections:
 connect:
   - name: Email
     url: mailto:contact@wonyoungjang.org
-    pre: <i>outgoing_mail</i>
   - name: Figma
     url: https://www.figma.com/@wonyoung_jang
-    pre: <i>palette</i>
   - name: GitHub
     url: https://github.com/wonyoung-jang
-    pre: <i>code</i>
   - name: Ko-fi
     url: https://ko-fi.com/wonyoung_jang
-    pre: <i>loyalty</i>
