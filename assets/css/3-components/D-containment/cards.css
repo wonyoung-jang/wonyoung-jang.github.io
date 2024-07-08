@@ -45,6 +45,9 @@
 }
 
 .card {
+  min-height: 100%;
+  word-wrap: break-word;
+  
   & img {
     flex: 1 1 auto;
     max-width: 64px;
@@ -52,6 +55,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     margin: var(--size-5);
+    overflow-y: hidden;
   }
   
   & .card-content {
@@ -73,19 +77,22 @@
 
     & .card-meta {
       color: var(--color-on-surface-variant);
+
       
-      font-family: var(--typescale-label-large);
-      font-weight: var(--typescale-label-large-weight);
-      font-size: var(--typescale-label-large-size);
-      line-height: var(--typescale-label-large-line-height);
+      & * { 
+        font-family: var(--typescale-label-small);
+        font-weight: var(--typescale-label-small-weight);
+        font-size: var(--typescale-label-small-size);
+        line-height: var(--typescale-label-small-line-height);
+      }
     }
   
     & .card-title {
       padding-block: 1em 0.5em;
 
-      font-family: var(--typescale-headline-small);
-      font-weight: var(--typescale-headline-small-weight);
-      font-size: var(--typescale-headline-small-size);
+      font-family: var(--typescale-title-medium);
+      font-weight: var(--typescale-title-medium-weight);
+      font-size: var(--typescale-title-medium-size);
       line-height: 1.1; /* shorter for cards */
     }
     
