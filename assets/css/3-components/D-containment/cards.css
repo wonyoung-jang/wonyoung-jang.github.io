@@ -9,7 +9,7 @@
   --container-elevation-focus: var(--elevation0);
   --container-elevation-press: var(--elevation0);
 
-  --container-shape: var(--shape-corner-m);
+  --container-shape: var(--shape-corner-xl);
 
   --bg-color: inherit;
   --icon-color: var(--color-on-surface);
@@ -45,26 +45,23 @@
 }
 
 .card {
-  min-height: 100%;
-  word-wrap: break-word;
-  
   & img {
-    flex: 1 1 auto;
-    max-width: 64px;
-  
     aspect-ratio: 1 / 1;
+    flex: 1 1 0;
+    max-width: 64px;
     object-fit: cover;
-    margin: var(--size-5);
-    overflow-y: hidden;
+    overflow: hidden;
+    margin: var(--size-5) var(--size-1) var(--size-5) var(--size-5);
+    border-radius: inherit;
+    max-height: 67%;
   }
   
   & .card-content {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: var(--size-5);
+    justify-content: space-between;
+    margin: var(--size-5) var(--size-4);
 
     & .card-meta,
     & .card-title, 
@@ -72,27 +69,25 @@
       flex: 1 1 0;
       display: flex;
       flex-flow: row nowrap;
-      align-items: stretch;
     }
 
     & .card-meta {
       color: var(--color-on-surface-variant);
-
       
       & * { 
-        font-family: var(--typescale-label-small);
-        font-weight: var(--typescale-label-small-weight);
-        font-size: var(--typescale-label-small-size);
-        line-height: var(--typescale-label-small-line-height);
+        font-family: var(--typescale-label-large);
+        font-weight: var(--typescale-label-large-weight);
+        font-size: var(--typescale-label-large-size);
+        line-height: var(--typescale-label-large-line-height);
       }
     }
   
     & .card-title {
-      padding-block: 1em 0.5em;
+      padding-block: 0.5em 0.25em;
 
-      font-family: var(--typescale-title-medium);
-      font-weight: var(--typescale-title-medium-weight);
-      font-size: var(--typescale-title-medium-size);
+      font-family: var(--typescale-title-large);
+      font-weight: var(--typescale-title-large-weight);
+      font-size: var(--typescale-title-large-size);
       line-height: 1.1; /* shorter for cards */
     }
     
@@ -107,20 +102,15 @@
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
-  :not(.canonical-feed) {
-    & .card {
-      --container-flex-flow: column nowrap;
-      --container-align-items: stretch;
-      
-      & img {
-        max-width: 100%;
-        margin: unset;
-        aspect-ratio: 17 / 8;
-      }
-  
-      & .card-content {
-        height: unset;
-      }
+  & .card {
+    --container-flex-flow: column nowrap;
+    --container-align-items: stretch;
+    
+    & img {
+      width: 100%;
+      max-width: unset;
+      margin: unset;
+      aspect-ratio: unset;
     }
   }
 }

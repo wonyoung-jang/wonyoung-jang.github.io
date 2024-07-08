@@ -5,8 +5,6 @@
   
   & .card {
     flex: 1 1 calc(100% - var(--spacing-panes));
-    min-height: fit-content;
-    max-height: 50%;
   }
 }
 
@@ -41,14 +39,14 @@
     flex: 1 1 calc(100% / 3 - var(--spacing-panes));
   }  
 
-  .layout.panes.canonical-supporting-pane {
+  .layout.panes.canonical-supporting-pane .layout.pane {
     --flex-flow: row nowrap;
     
-    & .layout.pane.focus-pane {
+    &.focus-pane {
       --flex: 2 1 0;
     }
   
-    & .layout.pane.supporting-pane {
+    &.supporting-pane {
       --flex: 1 2 0;
     }
   }
