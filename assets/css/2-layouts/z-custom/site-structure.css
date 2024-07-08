@@ -65,10 +65,6 @@
   --shape: var(--shape-corner-none);
 }
 
-.page-header {
-  margin-bottom: var(--spacing-panes);
-}
-
 .page-navigation {
   margin-top: var(--spacing-panes);
 }

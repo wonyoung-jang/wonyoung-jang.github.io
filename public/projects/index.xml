@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Wonyoung Jang</title>
-    <link>https://wonyoungjang.org/projects/</link>
+    <link>http://192.168.40.181:1313/projects/</link>
     <description>Recent content in Projects on Wonyoung Jang</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,26 +10,26 @@
     <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
     <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     <lastBuildDate>Sun, 07 Jul 2024 17:06:16 -0400</lastBuildDate>
-    <atom:link href="https://wonyoungjang.org/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.40.181:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Design</title>
-      <link>https://wonyoungjang.org/projects/design/</link>
+      <link>http://192.168.40.181:1313/projects/design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/projects/design/</guid>
+      <guid>http://192.168.40.181:1313/projects/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>https://wonyoungjang.org/projects/software/</link>
+      <link>http://192.168.40.181:1313/projects/software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/projects/software/</guid>
+      <guid>http://192.168.40.181:1313/projects/software/</guid>
       <description></description>
     </item>
     <item>
       <title>University</title>
-      <link>https://wonyoungjang.org/projects/university/</link>
+      <link>http://192.168.40.181:1313/projects/university/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>https://wonyoungjang.org/projects/university/</guid>
+      <guid>http://192.168.40.181:1313/projects/university/</guid>
       <description></description>
     </item>
   </channel>

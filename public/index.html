@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,23 +21,23 @@
         Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.81291b8181669c04b2529b011d0287a49a6ba8bef14713827697e4c44143b63d.css" integrity="sha256-gSkbgYFmnASyUpsBHQKHpJprqL7xRxOCdpfkxEFDtj0=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.441276c8f5b22d08ed82afed0c6719069e98b87c792c9bf416e2cc7c31fba5da.css" integrity="sha256-RBJ2yPWyLQjtgq/tDGcZBp6YuHx5LJv0FuLMfDH7pdo=" rel="preload stylesheet" as="style">
 
 
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/index.xml">
 
-    <link rel="alternate" type="application/json" href="https://wonyoungjang.org/index.json">
+    <link rel="alternate" type="application/json" href="http://192.168.40.181:1313/index.json">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/">
 
 
 
@@ -53,7 +53,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/">
+<meta property="og:url" content="http://192.168.40.181:1313/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Wonyoung Jang">
   <meta property="og:locale" content="en">
@@ -61,7 +61,7 @@
 
 
   <meta itemprop="name" content="Wonyoung Jang">
-  <meta itemprop="dateModified" content="2024-07-07T17:06:16-04:00">
+  <meta itemprop="dateModified" content="2024-07-07T18:32:48-04:00">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Wonyoung Jang">
@@ -78,7 +78,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -97,7 +97,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -131,12 +131,12 @@
   
   
   
-   5 
+   6 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/all-logseq-elements\/";
+    window.location.href = "\/food-shop-database-management\/";
   }
 </script>
 
@@ -847,7 +847,7 @@ You are welcome to use anything you find here.
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -868,49 +868,6 @@ You are welcome to use anything you find here.
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

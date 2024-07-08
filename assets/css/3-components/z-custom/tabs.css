@@ -4,24 +4,23 @@
 
   --container-width: calc(100% - var(--size-5));
   --container-height: var(--size-16);
-  --container-shape: var(--shape-corner-xl);
+  --container-shape: initial;
   --container-padding: 0;
   
   --container-display: flex;
   --contianer-flex-flow: row nowrap;
   --container-align-items: stretch;
-  --container-justify-content: stretch;
+  --container-justify-content: space-around;
   --container-gap: var(--size-1);
-  overflow: visible;
+  overflow-x: auto;
 
   & .tab {
     flex: 1 1 0;
-    min-width: fit-content;
 
-    --container-width: auto;
+    --container-width: initial;
     --container-height: var(--size-16);
-    --container-shape: var(--shape-corner-xl-top);
-    --container-padding: 0 var(--size-2);
+    --container-shape: var(--shape-corner-m);
+    --container-padding: 0;
     
     --container-display: flex;
     --container-flex-flow: column nowrap;
@@ -45,10 +44,9 @@
       position: absolute;
       z-index: 9999;
       bottom: 0;
-      left: 40%;
-      width: 20%;
+      left: 0%;
+      width: 100%;
       height: var(--size-1);
-      border-radius: var(--shape-corner-xl-top);
       background-color: var(--color-primary);
     }
 
