@@ -1,4 +1,4 @@
-<div class="admonition note-container {{ .Get 0 }}">
+<div class="admonition note-container {{- .Get 0 -}}">
     <i>sticky_note_2</i>
-    {{ .Inner | $.Page.RenderString }}
+    {{- .Inner | $.Page.RenderString -}}
 </div>

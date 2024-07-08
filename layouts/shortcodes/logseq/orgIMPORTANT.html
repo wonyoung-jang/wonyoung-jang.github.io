@@ -1,4 +1,4 @@
-<div class="admonition important-container {{ .Get 0 }}">
+<div class="admonition important-container {{- .Get 0 -}}">
     <i>stars</i>
-    {{ .Inner | $.Page.RenderString }}
+    {{- .Inner | $.Page.RenderString -}}
 </div>

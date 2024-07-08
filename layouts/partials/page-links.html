@@ -18,25 +18,23 @@
     {{/*  Backlinks  */}}
     {{ if gt (len $backlinks) 1 }}
         <nav id="backlinks" aria-label="Backlinks">
-            <h5>Links to this page</h5>
-            <div class="cards-container">
-                {{ range $backlinks }}
-                    {{ if eq .Title "" }}
-                        {{- continue -}}
-                    {{ end }}
-                    <a  class="component card" filled
-                        href="{{ .RelPermalink }}">
-                        <div class="card-content">
-                            <span class="title-small">
-                                {{ .Title }}
-                            </span>
-                            <span class="card-description">
-                                {{ .Description }}
-                            </span>
-                        </div>
-                    </a>
+            <span class="page-links-title title-large">Links to this page</span>
+            {{ range $backlinks }}
+                {{ if eq .Title "" }}
+                    {{- continue -}}
                 {{ end }}
-            </div>
+                <a  class="component card" filled
+                    href="{{ .RelPermalink }}">
+                    <div class="card-content">
+                        <span class="title-small">
+                            {{ .Title }}
+                        </span>
+                        <span class="card-description">
+                            {{ .Description }}
+                        </span>
+                    </div>
+                </a>
+            {{ end }}
         </nav>
     {{ end }}
 
@@ -44,27 +42,25 @@
     {{ $related := site.RegularPages.Related . | complement $backlinks | complement $nextprev |first 4 }}
     {{ with $related }}
         <nav id="related-pages">
-            <h5>See also</h5>
-            <div class="cards-container">
-                {{ range $i, $p := . }}
-                    <a  class="component card" filled
-                        href="{{ .RelPermalink }}">
-                        <div class="card-content">
-                            <span class="title-small">
-                                {{ .Title }}
-                            </span>
-                            <span class="card-description">
-                                {{ .Description }}
-                            </span>
-                        </div>
-                    </a>
-                {{ end }}
-            </div>
+            <span class="page-links-title title-large">See also</span>
+            {{ range $i, $p := . }}
+                <a  class="component card" filled
+                    href="{{ .RelPermalink }}">
+                    <div class="card-content">
+                        <span class="title-small">
+                            {{ .Title }}
+                        </span>
+                        <span class="card-description">
+                            {{ .Description }}
+                        </span>
+                    </div>
+                </a>
+            {{ end }}
         </nav>
     {{ end }}
 
     <nav id="share-links" aria-label="Share Links">
-        <h5>Share</h5>
+        <span class="page-links-title title-large">Share</span>
 
         {{ $pageurl := .Permalink }}
         {{ $title := .Title }}

@@ -16,7 +16,7 @@
       <link>http://192.168.40.181:1313/all-logseq-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
       <guid>http://192.168.40.181:1313/all-logseq-elements/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight&#xD;Bold + Highlight&#xD;Italic&#xA;Advanced commands Centered text&#xD;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages Page reference Input: [About](http://192.168.40.181:1313/about/)&#xA;Output: About&#xA;Page embed Input: {{embed [About](http://192.168.40.181:1313/about/)}}&#xA;Output: {{embed About}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}</description>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages Page reference Input: [About](http://192.168.40.181:1313/about/)&#xA;Output: About&#xA;Page embed Input: {{embed [About](http://192.168.40.181:1313/about/)}}&#xA;Output: {{embed About}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}</description>
     </item>
     <item>
       <title>List of admonitions for wonyoungjang.org</title>

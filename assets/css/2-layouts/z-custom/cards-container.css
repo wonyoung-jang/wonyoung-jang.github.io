@@ -1,9 +1,0 @@
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: var(--size-2);
-    
-    & .card .card-content {
-        align-self: flex-start
-    }
-}

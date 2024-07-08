@@ -1,4 +1,4 @@
-<div class="admonition comment-container {{ .Get 0 }}">
+<div class="admonition comment-container {{- .Get 0 -}}">
     <i>comment</i>
-    {{ .Inner | $.Page.RenderString }}
+    {{- .Inner | $.Page.RenderString -}}
 </div>

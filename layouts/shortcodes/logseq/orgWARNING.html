@@ -1,4 +1,4 @@
-<div class="admonition warning-container {{ .Get 0 }}">
+<div class="admonition warning-container {{- .Get 0 -}}">
     <i>warning</i>
-    {{ .Inner | $.Page.RenderString }}
+    {{- .Inner | $.Page.RenderString -}}
 </div>
