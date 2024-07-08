@@ -12,7 +12,7 @@
   --container-align-items: stretch;
   --container-justify-content: space-around;
   --container-gap: var(--size-1);
-  overflow-x: auto;
+  overflow: visible;
 
   & .tab {
     flex: 1 1 0;
@@ -36,6 +36,8 @@
       --icon-color: var(--color-primary);
       --text-color: var(--color-primary);
       --bg-color: var(--color-surface);
+
+      font-weight: var(--typeface-weight-bold);
     }
     
     &::before {
@@ -44,9 +46,10 @@
       position: absolute;
       z-index: 9999;
       bottom: 0;
-      left: 0%;
-      width: 100%;
+      left: 5%;
+      width: 90%;
       height: var(--size-1);
+      border-radius: var(--shape-corner-xl-top);
       background-color: var(--color-primary);
     }
 

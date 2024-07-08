@@ -26,17 +26,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   
   & .anchor {
-    display: none;
+    display: flex;
     position: absolute;
-    top: 25%;
     right: 100%;
+    top: 0%;
+    bottom: 0%;
+    align-items: center;
+    padding-inline: var(--size-1);
+
+    flex: 1 1 0;
 
     color: var(--color-on-surface-variant);
     user-select: none;
-    padding: var(--size-1);
+    opacity: 0;
+    transition: opacity var(--motion-duration-medium2) var(--motion-easing-emphasized);
   }
 
   &:hover .anchor {
-    display: inline;
+    opacity: 1;
   }
 }
