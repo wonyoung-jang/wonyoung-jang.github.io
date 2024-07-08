@@ -12,8 +12,11 @@ date:
 - 2024-06-28 Friday
 description: What I'm doing now
 title: Now
-lastMod: 2024-07-07
+lastMod: 2024-07-08
 ---
+{{< logseq/orgPINNED >}}This is a now page. Inspired by: https://nownownow.com/about
+{{< / logseq/orgPINNED >}}
+
 {{< logseq/orgNOTE >}}Last update: 2024-06-28 Friday
 {{< / logseq/orgNOTE >}}
 

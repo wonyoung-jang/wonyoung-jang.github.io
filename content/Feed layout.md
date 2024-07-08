@@ -14,6 +14,8 @@ resources:
 - layouts
 description: A canonical layout for items that can flow into a feed
 title: Feed layout
-lastMod: 2024-07-07
+lastMod: 2024-07-08
 ---
 ![layout-feed.png](/assets/layout-feed_1719436990845_0.png)
+
+See: [Material Design 3 - Canonical layouts - Feed](https://m3.material.io/foundations/layout/canonical-layouts/feed)

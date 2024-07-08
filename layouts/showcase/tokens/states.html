@@ -1,6 +1,10 @@
 {{ define "main" }}
     <article class="layout panes basic-singlepane">
         <section class="layout pane">
+            {{ if .Content }}
+                {{ partial "anchored_headings.html" .Content }}
+            {{ end }}
+            
             <details class="layout token-set" open>
                 <summary class="token-set-title">States</summary>
                 <section class="state-opacities-container">

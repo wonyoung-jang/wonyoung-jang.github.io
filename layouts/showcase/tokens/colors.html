@@ -1,12 +1,14 @@
 {{ define "main" }}
 <article class="layout panes basic-singlepane">
-
   <section class="layout pane">
+    {{ if .Content }}
+      {{ partial "anchored_headings.html" .Content }}
+    {{ end }}
+    
     {{- partialCached "colors/key-color.html" . -}}
     {{- partialCached "colors/reference-palettes.html" . -}}
     {{- partialCached "colors/system-tokens.html" . -}}
     {{- partialCached "colors/semantic-swatches.html" . -}}
   </section>
-        
 </article>
 {{ end }}

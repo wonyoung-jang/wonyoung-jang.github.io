@@ -1,7 +1,10 @@
 {{ define "main" }}
     <article class="layout panes basic-singlepane" id="showcase-typography">
         <section class="layout pane">
-
+            {{ if .Content }}
+                {{ partial "anchored_headings.html" .Content }}
+            {{ end }}
+            
             <details class="layout token-set" open>
                 <summary class="token-set-title">Typeface</summary>
                 {{ $typefaceFonts := slice "Brand" "Plain" "Code" }}

@@ -17,3 +17,5 @@ title: Split-pane layout
 lastMod: 2024-07-07
 ---
 ![layout-split-pane.png](/assets/layout-split-pane_1719437118553_0.png)
+
+See: [Material Design 3 - Layout basics - Parts of layout](https://m3.material.io/foundations/layout/understanding-layout/parts-of-layout)

@@ -8,6 +8,12 @@
 /* Logseq Graph */
 html.is-publish-mode {  
   all: unset;
+  
+  & main,
+  & .panes,
+  & .pane {
+    all: unset;
+  }
 
   & header,
   & footer,
@@ -19,14 +25,18 @@ html.is-publish-mode {
     display: none;
   }
 
-  & main,
-  & .panes,
-  & .pane {
+  & #main-content-container {
     all: unset;
-  }
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    overflow-y: auto;
+    overflow-x: hidden;
 
-  & i {
-    display: none;
+    & * {
+      flex: 1 1 auto;
+    }
   }
 }
 

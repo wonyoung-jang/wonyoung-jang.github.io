@@ -2,6 +2,9 @@
 
 <article class="layout panes basic-singlepane">
   <section class="layout pane" id="components-showcase">  
+    {{ if .Content }}
+      {{ partial "anchored_headings.html" .Content }}
+    {{ end }}
     
     {{/*  || Actions  */}}
     <details class="layout token-set" open>
@@ -372,7 +375,6 @@
         </button>
       </section>
     </details> 
-
   </section>
 </article>
 

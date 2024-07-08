@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layouts on Wonyoung Jang</title>
-    <link>http://192.168.40.181:1313/resources/layouts/</link>
+    <link>https://wonyoungjang.org/resources/layouts/</link>
     <description>Recent content in Layouts on Wonyoung Jang</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,48 +10,48 @@
     <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
     <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     <lastBuildDate>Sun, 07 Jul 2024 13:41:07 -0400</lastBuildDate>
-    <atom:link href="http://192.168.40.181:1313/resources/layouts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wonyoungjang.org/resources/layouts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feed layout</title>
-      <link>http://192.168.40.181:1313/feed-layout/</link>
+      <link>https://wonyoungjang.org/feed-layout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/feed-layout/</guid>
-      <description> </description>
+      <guid>https://wonyoungjang.org/feed-layout/</guid>
+      <description>See: Material Design 3 - Canonical layouts - Feed</description>
     </item>
     <item>
       <title>Fixed and flexible layout</title>
-      <link>http://192.168.40.181:1313/fixed-and-flexible-layout/</link>
+      <link>https://wonyoungjang.org/fixed-and-flexible-layout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/fixed-and-flexible-layout/</guid>
-      <description> </description>
+      <guid>https://wonyoungjang.org/fixed-and-flexible-layout/</guid>
+      <description>See: Material Design 3 - Layout basics - Parts of layout</description>
     </item>
     <item>
       <title>List-detail layout</title>
-      <link>http://192.168.40.181:1313/list-detail-layout/</link>
+      <link>https://wonyoungjang.org/list-detail-layout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/list-detail-layout/</guid>
-      <description> </description>
+      <guid>https://wonyoungjang.org/list-detail-layout/</guid>
+      <description>See: Material Design 3 - Canonical layouts - List-detail</description>
     </item>
     <item>
       <title>Single pane layout</title>
-      <link>http://192.168.40.181:1313/single-pane-layout/</link>
+      <link>https://wonyoungjang.org/single-pane-layout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/single-pane-layout/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>Split-pane layout</title>
-      <link>http://192.168.40.181:1313/split-pane-layout/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/split-pane-layout/</guid>
-      <description> </description>
+      <guid>https://wonyoungjang.org/single-pane-layout/</guid>
+      <description>See: Material Design 3 - Layout basics - Parts of layout</description>
     </item>
     <item>
       <title>Supporting pane layout</title>
-      <link>http://192.168.40.181:1313/supporting-pane-layout/</link>
+      <link>https://wonyoungjang.org/supporting-pane-layout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/supporting-pane-layout/</guid>
-      <description> </description>
+      <guid>https://wonyoungjang.org/supporting-pane-layout/</guid>
+      <description>See: Material Design 3 - Canonical layouts - Supporting pane</description>
+    </item>
+    <item>
+      <title>Split-pane layout</title>
+      <link>https://wonyoungjang.org/split-pane-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
+      <guid>https://wonyoungjang.org/split-pane-layout/</guid>
+      <description>See: Material Design 3 - Layout basics - Parts of layout</description>
     </item>
   </channel>
 </rss>

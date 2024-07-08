@@ -14,7 +14,7 @@ description: A work in progress page showcasing how elements are rendered from L
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-07-07
+lastMod: 2024-07-08
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 
@@ -82,3 +82,5 @@ Input: `{{embed ## About me
 
 Output: {{embed ## About me
  }}
+
+See: [Logseq Documentation](https://docs.logseq.com/#/page/contents)

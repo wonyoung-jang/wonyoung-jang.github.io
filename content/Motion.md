@@ -14,6 +14,8 @@ resources:
 - tokens
 description: Motion available for wonyoungjang.org
 title: Motion
-lastMod: 2024-07-07
+lastMod: 2024-07-08
 ---
 ![tokens-motion.png](/assets/tokens-motion_1719437088987_0.png)
+
+See: [Material Design 3 - Motion](https://m3.material.io/styles/motion/overview)
