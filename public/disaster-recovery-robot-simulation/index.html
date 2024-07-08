@@ -135,12 +135,12 @@
   
   
   
-   30 
+   3 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/states-and-elevation\/";
+    window.location.href = "\/projects\/university\/";
   }
 </script>
 
@@ -493,17 +493,17 @@
         
             <div class="sub-tabs-container">
                 <a class="component tab" href="/projects/">
-                    <i>code</i>
+                    <i>folder_shared</i>
                     Projects
                 </a>
                     <div class="component tabs title-medium sub-tabs">
-            <a class="component tab" href="/projects/software/">
-                <i>terminal</i>
-                Software
-            </a>
             <a class="component tab" href="/projects/design/">
                 <i>design_services</i>
                 Designs
+            </a>
+            <a class="component tab" href="/projects/software/">
+                <i>terminal</i>
+                Software
             </a>
             <a class="component tab" href="/projects/university/">
                 <i>school</i>
@@ -513,20 +513,20 @@
             </div>
             <div class="sub-tabs-container">
                 <a class="component tab" href="/resources/">
-                    <i>developer_guide</i>
+                    <i>library_books</i>
                     Resources
                 </a>
                     <div class="component tabs title-medium sub-tabs">
             <a class="component tab" href="/resources/layouts/">
-                <i>quick_reference</i>
+                <i>view_quilt</i>
                 Layouts
             </a>
             <a class="component tab" href="/resources/references/">
-                <i>quick_reference</i>
+                <i>bookmark_border</i>
                 References
             </a>
             <a class="component tab" href="/resources/tokens/">
-                <i>quick_reference</i>
+                <i>token</i>
                 Tokens
             </a>
                     </div>
@@ -1193,49 +1193,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

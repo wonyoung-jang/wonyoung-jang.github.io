@@ -2,43 +2,37 @@ main:
   - identifier: Projects
     name: Projects
     pageRef: /projects
-    pre: <i>code</i>
+    pre: <i>folder_shared</i>
     weight: 10
-  - name: Software
-    pageRef: /projects/software
-    pre: <i>terminal</i>
-    parent: Projects
-    weight: 1
   - name: Designs
     pageRef: /projects/design
     pre: <i>design_services</i>
     parent: Projects
-    weight: 2
+  - name: Software
+    pageRef: /projects/software
+    pre: <i>terminal</i>
+    parent: Projects
   - name: University
     pageRef: /projects/university
     pre: <i>school</i>
     parent: Projects
-    weight: 3
   - identifier: Resources
     name: Resources
     pageRef: /resources
-    pre: <i>developer_guide</i>
+    pre: <i>library_books</i>
     weight: 20
   - name: Layouts
     pageRef: /resources/layouts
-    pre: <i>quick_reference</i>
+    pre: <i>view_quilt</i>
     parent: Resources
-    weight: 1
   - name: References
     pageRef: /resources/references
-    pre: <i>quick_reference</i>
+    pre: <i>bookmark_border</i>
     parent: Resources
-    weight: 2
   - name: Tokens
     pageRef: /resources/tokens
-    pre: <i>quick_reference</i>
+    pre: <i>token</i>
     parent: Resources
-    weight: 3
   - identifier: Now
     name: Now
     pageRef: /now

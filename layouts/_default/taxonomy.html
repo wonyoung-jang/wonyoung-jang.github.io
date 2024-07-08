@@ -7,14 +7,18 @@
                         href="{{ .RelPermalink }}">
                         <span class="avatar">
                             <i>
-                                {{ if eq .Title "Software" }}
+                                {{ if eq .Title "Design" }}
+                                    design_services
+                                {{ else if eq .Title "Software" }}
                                     terminal
                                 {{ else if eq .Title "University" }}
                                     school
-                                {{ else if eq .Title "Designs" }}
-                                    design_services
-                                {{ else }}
-                                    quick_reference
+                                {{ else if eq .Title "Layouts" }}
+                                    view_quilt
+                                {{ else if eq .Title "References" }}
+                                    bookmark_border
+                                {{ else if eq .Title "Tokens" }}
+                                    token
                                 {{ end }}
                             </i>
                         </span>
