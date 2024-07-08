@@ -18,21 +18,23 @@
     {{/*  Backlinks  */}}
     {{ if gt (len $backlinks) 1 }}
         <nav id="backlinks" aria-label="Backlinks">
-            <h5>Backlinks</h5>
-            <div class="list-container">
+            <h5>Links to this page</h5>
+            <div class="cards-container">
                 {{ range $backlinks }}
                     {{ if eq .Title "" }}
                         {{- continue -}}
                     {{ end }}
-                    <a  class="component list-item surface-container-lowest" one
+                    <a  class="component card" filled
                         href="{{ .RelPermalink }}">
-                        <div class="list-content">
+                        <div class="card-content">
                             <span class="title-small">
                                 {{ .Title }}
                             </span>
+                            <span class="card-description">
+                                {{ .Description }}
+                            </span>
                         </div>
                     </a>
-                    <div class="divider"></div>
                 {{ end }}
             </div>
         </nav>
@@ -42,18 +44,20 @@
     {{ $related := site.RegularPages.Related . | complement $backlinks | complement $nextprev |first 4 }}
     {{ with $related }}
         <nav id="related-pages">
-            <h5>Related</h5>
-            <div class="list-container">
+            <h5>See also</h5>
+            <div class="cards-container">
                 {{ range $i, $p := . }}
-                    <a  class="component list-item surface-container-lowest" one
+                    <a  class="component card" filled
                         href="{{ .RelPermalink }}">
-                        <div class="list-content">
+                        <div class="card-content">
                             <span class="title-small">
                                 {{ .Title }}
                             </span>
+                            <span class="card-description">
+                                {{ .Description }}
+                            </span>
                         </div>
                     </a>
-                    <div class="divider"></div>
                 {{ end }}
             </div>
         </nav>

@@ -21,7 +21,7 @@
         Feed layout | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1caf73e9a52773dd1492db8cdaa08a200db0c14cc0dc7ae4849d066abd5efa43.css" integrity="sha256-HK9z6aUnc90UktuM2qCKIA2wwUzA3HrkhJ0Gar1e&#43;kM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.fca642ba6118ed41d408ef09ff93af713bbcc51a8178cc77b1b697db3e04f33f.css" integrity="sha256-/KZCumEY7UHUCO8J/5OvcTu8xRqBeMx3sbaX2z4E8z8=" rel="preload stylesheet" as="style">
 
 
 
@@ -132,12 +132,12 @@
   
   
   
-   7 
+   27 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/supporting-pane-layout\/";
+    window.location.href = "\/contact\/";
   }
 </script>
 
@@ -793,48 +793,56 @@
     
     
         <nav id="related-pages">
-            <h5>Related</h5>
-            <div class="list-container">
+            <h5>See also</h5>
+            <div class="cards-container">
                 
-                    <a  class="component list-item surface-container-lowest" one
+                    <a  class="component card" filled
                         href="/list-detail-layout/">
-                        <div class="list-content">
+                        <div class="card-content">
                             <span class="title-small">
                                 List-detail layout
                             </span>
+                            <span class="card-description">
+                                A canonical layout with a list pane and a detail pane
+                            </span>
                         </div>
                     </a>
-                    <div class="divider"></div>
                 
-                    <a  class="component list-item surface-container-lowest" one
+                    <a  class="component card" filled
                         href="/supporting-pane-layout/">
-                        <div class="list-content">
+                        <div class="card-content">
                             <span class="title-small">
                                 Supporting pane layout
                             </span>
+                            <span class="card-description">
+                                A canonical layout with a focus (primary) pane and a supporting (secondary) pane
+                            </span>
                         </div>
                     </a>
-                    <div class="divider"></div>
                 
-                    <a  class="component list-item surface-container-lowest" one
+                    <a  class="component card" filled
                         href="/colors/">
-                        <div class="list-content">
+                        <div class="card-content">
                             <span class="title-small">
                                 Colors
                             </span>
-                        </div>
-                    </a>
-                    <div class="divider"></div>
-                
-                    <a  class="component list-item surface-container-lowest" one
-                        href="/components/">
-                        <div class="list-content">
-                            <span class="title-small">
-                                Components
+                            <span class="card-description">
+                                Colors available for wonyoungjang.org
                             </span>
                         </div>
                     </a>
-                    <div class="divider"></div>
+                
+                    <a  class="component card" filled
+                        href="/components/">
+                        <div class="card-content">
+                            <span class="title-small">
+                                Components
+                            </span>
+                            <span class="card-description">
+                                Components available for wonyoungjang.org
+                            </span>
+                        </div>
+                    </a>
                 
             </div>
         </nav>
@@ -1149,6 +1157,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

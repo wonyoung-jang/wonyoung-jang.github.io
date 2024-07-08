@@ -21,7 +21,7 @@
         Search | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1caf73e9a52773dd1492db8cdaa08a200db0c14cc0dc7ae4849d066abd5efa43.css" integrity="sha256-HK9z6aUnc90UktuM2qCKIA2wwUzA3HrkhJ0Gar1e&#43;kM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.6ed603447a0799361b30a197de6dfde28f62b1d79f99027a2f31cd8a2f3c6889.css" integrity="sha256-btYDRHoHmTYbMKGX3m394o9isdefmQJ6LzHNii88aIk=" rel="preload stylesheet" as="style">
 
 
 
@@ -137,12 +137,12 @@
   
   
   
-   21 
+   30 
   
   
   
   function navigateToRandomPage() {
-    window.location.href = "\/list-of-admonitions-for-wonyoungjang.org\/";
+    window.location.href = "\/logseq-markdown-tokenizer\/";
   }
 </script>
 
@@ -763,50 +763,36 @@
     
     
         <nav id="related-pages">
-            <h5>Related</h5>
-            <div class="list-container">
-                
-                    <a  class="component list-item surface-container-lowest" one
-                        href="/sitemap/">
-                        <div class="list-content">
-                            <span class="title-small">
-                                Sitemap
-                            </span>
-                        </div>
-                    </a>
-                    <div class="divider"></div>
-                
-                    <a  class="component list-item surface-container-lowest" one
-                        href="/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
-                        <div class="list-content">
-                            <span class="title-small">
-                                List of keyboard shortcuts for wonyoungjang.org
-                            </span>
-                        </div>
-                    </a>
-                    <div class="divider"></div>
-                
-                    <a  class="component list-item surface-container-lowest" one
-                        href="/realtime-multiplayer-drawing/">
-                        <div class="list-content">
-                            <span class="title-small">
-                                Realtime multiplayer drawing
-                            </span>
-                        </div>
-                    </a>
-                    <div class="divider"></div>
-                
-                    <a  class="component list-item surface-container-lowest" one
-                        href="/wonyoungjang.org/">
-                        <div class="list-content">
-                            <span class="title-small">
-                                Wonyoungjang.org
-                            </span>
-                        </div>
-                    </a>
-                    <div class="divider"></div>
-                
-            </div>
+            <h5>See also</h5>
+            
+                <a  class="component card" outlined
+                    href="/sitemap/">
+                    <span class="title-small">
+                        Sitemap
+                    </span>
+                </a>
+            
+                <a  class="component card" outlined
+                    href="/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
+                    <span class="title-small">
+                        List of keyboard shortcuts for wonyoungjang.org
+                    </span>
+                </a>
+            
+                <a  class="component card" outlined
+                    href="/realtime-multiplayer-drawing/">
+                    <span class="title-small">
+                        Realtime multiplayer drawing
+                    </span>
+                </a>
+            
+                <a  class="component card" outlined
+                    href="/wonyoungjang.org/">
+                    <span class="title-small">
+                        Wonyoungjang.org
+                    </span>
+                </a>
+            
         </nav>
     
 
@@ -1119,6 +1105,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
