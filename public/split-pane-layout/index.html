@@ -21,7 +21,7 @@
         Split-pane layout | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.fca642ba6118ed41d408ef09ff93af713bbcc51a8178cc77b1b697db3e04f33f.css" integrity="sha256-/KZCumEY7UHUCO8J/5OvcTu8xRqBeMx3sbaX2z4E8z8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.e323f03847f3d0ce3b4d86ec2f966fc9e829c765386bf37ec2d0162531986848.css" integrity="sha256-4yPwOEfz0M47TYbsL5Zvyegpx2U4a/N&#43;wtAWJTGYaEg=" rel="preload stylesheet" as="style">
 
 
 
@@ -117,9 +117,7 @@
     </button>
 
 
-        
-
-<button 
+        <button
   class="component button icon-button"
   id="random-button"
   accesskey="r"
@@ -127,17 +125,42 @@
   onclick="navigateToRandomPage(); return false;">
   <i>ifl</i>
 </button>
-
 <script defer>
   
   
   
-   41 
-  
-  
-  
+
+  function getVisitedPages() {
+    return JSON.parse(localStorage.getItem('visitedPages')) || [];
+  }
+
+  function addVisitedPage(page) {
+    const visitedPages = getVisitedPages();
+    visitedPages.push(page);
+    if (visitedPages.length > Math.min(10, Math.floor( 36  / 2))) {
+      visitedPages.shift();
+    }
+    localStorage.setItem('visitedPages', JSON.stringify(visitedPages));
+  }
+
+  function getRandomPage() {
+    const visitedPages = getVisitedPages();
+    let candidatePages = "Pages(36)".filter(page => !visitedPages.includes(page.RelPermalink));
+    
+    if (candidatePages.length === 0) {
+      
+      localStorage.removeItem('visitedPages');
+      candidatePages = "Pages(36)";
+    }
+
+    const randomIndex = Math.floor(Math.random() * candidatePages.length);
+    return candidatePages[randomIndex];
+  }
+
   function navigateToRandomPage() {
-    window.location.href = "\/split-pane-layout\/";
+    const randomPage = getRandomPage();
+    addVisitedPage(randomPage.RelPermalink);
+    window.location.href = randomPage.RelPermalink;
   }
 </script>
 
@@ -983,7 +1006,7 @@
                 Contact
             </a>
         
-            <a  href="https://wonyoungjang.org/graph/#/graph">
+            <a  href="/graph/">
                 Graph
             </a>
         
@@ -1040,7 +1063,7 @@
             </div>   </div>
     
     
-    <div class="footer-links-list" id="connect-links">
+    <div class="footer-links-list">
         <span class="title-medium on-surface-variant">
             Connect
         </span>
@@ -1098,49 +1121,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

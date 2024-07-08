@@ -53,7 +53,7 @@ footer:
     pageRef: /contact
   - identifier: Graph
     name: Graph
-    url: https://wonyoungjang.org/graph/#/graph
+    pageRef: /graph
   - identifier: Now
     name: Now
     pageRef: /now

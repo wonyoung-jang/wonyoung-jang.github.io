@@ -1,6 +1,4 @@
-
-
-<button 
+<button
   class="component button icon-button"
   id="random-button"
   accesskey="r"
@@ -10,13 +8,12 @@
 </button>
 
 <script defer>
-  {{ $pages := site.AllPages }}
+  {{ $pages := where site.RegularPages "RelPermalink" "ne" "/graph/" }}
   {{ $pagesLen := len $pages }}
   {{ $randomIndex := math.Rand | mul $pagesLen | math.Floor | int }}
-  {{ $randomIndex }}
   {{ $randomPages := shuffle $pages }}
   {{ $randomPage := index $randomPages $randomIndex }}
-  
+ 
   function navigateToRandomPage() {
     window.location.href = "{{ $randomPage.RelPermalink }}";
   }

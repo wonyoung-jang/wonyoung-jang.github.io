@@ -114,9 +114,7 @@
     </button>
 
 
-        
-
-<button 
+        <button
   class="component button icon-button"
   id="random-button"
   accesskey="r"
@@ -124,17 +122,42 @@
   onclick="navigateToRandomPage(); return false;">
   <i>ifl</i>
 </button>
-
 <script defer>
   
   
   
-   45 
-  
-  
-  
+
+  function getVisitedPages() {
+    return JSON.parse(localStorage.getItem('visitedPages')) || [];
+  }
+
+  function addVisitedPage(page) {
+    const visitedPages = getVisitedPages();
+    visitedPages.push(page);
+    if (visitedPages.length > Math.min(10, Math.floor( 36  / 2))) {
+      visitedPages.shift();
+    }
+    localStorage.setItem('visitedPages', JSON.stringify(visitedPages));
+  }
+
+  function getRandomPage() {
+    const visitedPages = getVisitedPages();
+    let candidatePages = "Pages(36)".filter(page => !visitedPages.includes(page.RelPermalink));
+    
+    if (candidatePages.length === 0) {
+      
+      localStorage.removeItem('visitedPages');
+      candidatePages = "Pages(36)";
+    }
+
+    const randomIndex = Math.floor(Math.random() * candidatePages.length);
+    return candidatePages[randomIndex];
+  }
+
   function navigateToRandomPage() {
-    window.location.href = "\/all-logseq-elements\/";
+    const randomPage = getRandomPage();
+    addVisitedPage(randomPage.RelPermalink);
+    window.location.href = randomPage.RelPermalink;
   }
 </script>
 
@@ -717,7 +740,7 @@
                 Contact
             </a>
         
-            <a  href="https://wonyoungjang.org/graph/#/graph">
+            <a  href="/graph/">
                 Graph
             </a>
         
