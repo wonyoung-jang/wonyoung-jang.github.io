@@ -1,0 +1,25 @@
+blockquote {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-block: var(--spacing-panes);
+  padding: var(--spacing-panes);
+  gap: var(--size-2);
+
+  border-radius: var(--shape-corner-m);
+  box-shadow: var(--elevation1);
+
+  background-color: var(--bg-color,);
+  
+  color: var(--text-color,);
+  white-space: normal;
+  overflow-wrap: break-word;
+  
+  & i {
+    width: 48px;
+    height: 48px;
+    font-size: 40px;
+    padding: 0 var(--size-5);
+    border-radius: unset;
+    color: var(--icon-color,);
+  }
+}

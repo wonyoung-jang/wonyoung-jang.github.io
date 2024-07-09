@@ -1,0 +1,339 @@
+<button class="component button icon-button" id="theme-controls">
+  <i>palette</i>
+  <menu class="menu">
+    <span class="theme-controls-title headline-medium">Theme controls</span>
+    {{/*  Colors  */}}
+    <div id="color-selector-container">
+      <label class="title-large" for="hue-selector">Hue</label>
+      <div class="slider">
+        <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
+        <span class="tooltip" id="hue-tooltip"></span>
+      </div>
+      <div id="theme-hues"></div>
+          
+      <label class="title-large" for="chroma-selector">Chroma</label>
+      <div class="slider">
+        <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
+        <span class="tooltip" id="chroma-tooltip"></span>
+      </div>
+      <div id="theme-chromas"></div>
+    </div>
+      
+    {{/*  Shape  */}}
+    <div id="shape-selector-container">
+      <label class="title-large" for="shape-selector">Shape</label>
+      <div class="slider">
+        <input type="range" id="shape-selector" min="0.0" max="5.0" value="1.5" step="0.1"/>
+        <span class="tooltip" id="shape-tooltip"></span>
+      </div>
+    </div>
+            
+    {{/*  Typography  */}}
+    <div id="font-size-selector-container">
+      <label class="title-large" for="font-size-selector">Font Size</label>
+      <div class="slider">
+        <input type="range" id="font-size-selector" min="8" max="24" value="14" step="1">
+        <span class="tooltip" id="font-size-tooltip">14px</span>
+      </div>
+
+      <label class="title-large" for="line-height-selector">Line Height</label>
+      <div class="slider">
+        <input type="range" id="line-height-selector" min="1.0" max="2.0" value="1.5" step="0.050">
+        <span class="tooltip" id="line-height-tooltip">1.5</span>
+      </div>
+    </div>
+  
+    {{/*  Font families  */}}
+    <div id="typography-selector-container">
+      <div id="typography-selector">
+        <fieldset class="typography-fieldset">
+          <legend class="title-large">Brand font family</legend>
+          <div class="component radio-button">
+              <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
+              <label for="brand-raleway">Raleway</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="brand-arial" name="brand-font" value="Arial">
+              <label for="brand-arial">Arial</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
+              <label for="brand-times">Times New Roman</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
+              <label for="brand-courier">Courier New</label>
+          </div>
+        </fieldset>
+
+        <div class="divider"></div>
+    
+        <fieldset class="typography-fieldset">
+          <legend class="title-large">Plain font family</legend>
+          <div class="component radio-button">
+              <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
+              <label for="plain-ibm">IBM Plex Sans</label>
+          </div>
+          <div class="component radio-button">
+            <input type="radio" id="plain-arial" name="plain-font" value="Arial">
+            <label for="plain-arial">Arial</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
+              <label for="plain-times">Times New Roman</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
+              <label for="plain-courier">Courier New</label>
+          </div>
+        </fieldset>
+
+        <div class="divider"></div>
+        
+        <fieldset class="typography-fieldset">
+          <legend class="title-large">Code font family</legend>
+          <div class="component radio-button">
+              <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
+              <label for="code-ibm">IBM Plex Mono</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="code-arial" name="code-font" value="Arial">
+              <label for="code-arial">Arial</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="code-times" name="code-font" value="Times New Roman">
+              <label for="code-times">Times New Roman</label>
+          </div>
+          <div class="component radio-button">
+              <input type="radio" id="code-courier" name="code-font" value="Courier New">
+              <label for="code-courier">Courier New</label>
+            </div>
+          </fieldset>
+      </div>
+    </div>
+  </menu>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var root = document.documentElement;
+    var hueSelector = document.getElementById("hue-selector");
+    var chromaSelector = document.getElementById("chroma-selector");
+    var shapeSelector = document.getElementById("shape-selector");
+    var typographySelector = document.getElementById('typography-selector');
+    var fontSizeSelector = document.getElementById('font-size-selector');
+    var lineHeightSelector = document.getElementById('line-height-selector');
+
+    // Load saved values from localStorage
+    var savedHue = localStorage.getItem("theme-hue");
+    var savedChroma = localStorage.getItem("theme-chroma");
+    var savedShape = localStorage.getItem("theme-shape");
+    var savedBrandFont = localStorage.getItem('typography-brand-font');
+    var savedPlainFont = localStorage.getItem('typography-plain-font');
+    var savedCodeFont = localStorage.getItem('typography-code-font');
+    var savedFontSize = localStorage.getItem('typography-font-size');
+    var savedLineHeight = localStorage.getItem('typography-line-height');
+
+    if (savedHue !== null) {
+      hueSelector.value = savedHue;
+    }
+    if (savedChroma !== null) {
+      chromaSelector.value = savedChroma;
+    }
+    if (savedShape !== null) {
+      shapeSelector.value = savedShape;
+    }
+    if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
+    if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
+    if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+    if (savedFontSize !== null) {
+      fontSizeSelector.value = savedFontSize;
+    }
+    if (savedLineHeight !== null) {
+      lineHeightSelector.value = savedLineHeight;
+    }
+
+    function updateColor() {
+      var hue = hueSelector.value;
+      var chroma = chromaSelector.value;
+
+      root.style.setProperty("--input-color-hue", hue + "deg");
+      root.style.setProperty("--input-color-chroma", chroma);
+      
+      localStorage.setItem("theme-hue", hue);
+      localStorage.setItem("theme-chroma", chroma);
+    }
+
+    function updateShape() {
+      var shape = shapeSelector.value;
+
+      root.style.setProperty("--input-shape-corner", shape + "px");
+      
+      localStorage.setItem("theme-shape", shape);
+    }
+
+    function updateTypography() {
+      var brandFont = document.querySelector('input[name="brand-font"]:checked').value;
+      var plainFont = document.querySelector('input[name="plain-font"]:checked').value;
+      var codeFont = document.querySelector('input[name="code-font"]:checked').value;
+      var fontSize = fontSizeSelector.value;
+      var lineHeight = lineHeightSelector.value;
+
+      root.style.setProperty('--typeface-brand', brandFont);
+      root.style.setProperty('--typeface-plain', plainFont);
+      root.style.setProperty('--typeface-code', codeFont);
+      root.style.setProperty('--input-font-size', fontSize + 'px');
+      root.style.setProperty('--input-line-height', lineHeight);
+
+      localStorage.setItem('typography-brand-font', brandFont);
+      localStorage.setItem('typography-plain-font', plainFont);
+      localStorage.setItem('typography-code-font', codeFont);
+      localStorage.setItem('typography-font-size', fontSize);
+      localStorage.setItem('typography-line-height', lineHeight);
+    }
+
+    // Apply saved or default values
+    updateColor();
+    updateShape();
+    updateTypography();
+
+    // Add event listeners
+    hueSelector.addEventListener("input", updateColor);
+    chromaSelector.addEventListener("input", updateColor);
+    shapeSelector.addEventListener("input", updateShape);
+    fontSizeSelector.addEventListener('input', updateTypography);
+    lineHeightSelector.addEventListener('input', updateTypography);
+    typographySelector.addEventListener('change', updateTypography);
+  });
+
+  const rangeInputHues = document.getElementById('hue-selector');
+  const tooltipHues = document.getElementById('hue-tooltip');
+  const rangeInputChromas = document.getElementById('chroma-selector');
+  const tooltipChromas = document.getElementById('chroma-tooltip');
+  const rangeInputShape = document.getElementById('shape-selector');
+  const tooltipShape = document.getElementById('shape-tooltip');
+  const rangeInputFontSize = document.getElementById('font-size-selector');
+  const tooltipFontSize = document.getElementById('font-size-tooltip');
+  const rangeInputLineHeight = document.getElementById('line-height-selector');
+  const tooltipLineHeight = document.getElementById('line-height-tooltip');
+
+  function updateTooltipHues(value) {
+      tooltipHues.textContent = value;
+      const thumbPosition = (value - rangeInputHues.min) / (rangeInputHues.max - rangeInputHues.min);
+      const tooltipPositionHues = thumbPosition * (rangeInputHues.offsetWidth - 20) + 10;
+      tooltipHues.style.left = `${tooltipPositionHues}px`;
+      tooltipHues.style.opacity = '1';
+  }
+
+  function updateTooltipChromas(value) {
+    tooltipChromas.textContent = value;
+    const thumbPosition = (value - rangeInputChromas.min) / (rangeInputChromas.max - rangeInputChromas.min);
+    const tooltipPositionChromas = thumbPosition * (rangeInputChromas.offsetWidth - 20) + 10;
+    tooltipChromas.style.left = `${tooltipPositionChromas}px`;
+    tooltipChromas.style.opacity = '1';
+  }
+
+  function updateTooltipShape(value) {
+    tooltipShape.textContent = value;
+    const thumbPositionShape = (value - rangeInputShape.min) / (rangeInputShape.max - rangeInputShape.min);
+    const tooltipShapePosition = thumbPositionShape * (rangeInputShape.offsetWidth - 20) + 10;
+    tooltipShape.style.left = `${tooltipShapePosition}px`;
+    tooltipShape.style.opacity = '1';
+  }
+
+  function updateTooltipFontSize(value) {
+    tooltipFontSize.textContent = value + 'px';
+    const thumbPositionFontSize = (value - rangeInputFontSize.min) / (rangeInputFontSize.max - rangeInputFontSize.min);
+    const tooltipFontSizePosition = thumbPositionFontSize * (rangeInputFontSize.offsetWidth - 20) + 10;
+    tooltipFontSize.style.left = `${tooltipFontSizePosition}px`;
+    tooltipFontSize.style.opacity = '1';
+  }
+
+  function updateTooltipLineHeight(value) {
+    tooltipLineHeight.textContent = value;
+    const thumbPositionLineHeight = (value - rangeInputLineHeight.min) / (rangeInputLineHeight.max - rangeInputLineHeight.min);
+    const tooltipLineHeightPosition = thumbPositionLineHeight * (rangeInputLineHeight.offsetWidth - 20) + 10;
+    tooltipLineHeight.style.left = `${tooltipLineHeightPosition}px`;
+    tooltipLineHeight.style.opacity = '1';
+  }
+
+  rangeInputHues.addEventListener('input', (e) => {
+      updateTooltipHues(e.target.value);
+  });
+
+  rangeInputHues.addEventListener('mousedown', () => {
+      updateTooltipHues(rangeInputHues.value);
+  });
+
+  rangeInputHues.addEventListener('mouseup', () => {
+      tooltipHues.style.opacity = '0';
+  });
+
+  rangeInputHues.addEventListener('mouseleave', () => {
+      tooltipHues.style.opacity = '0';
+  });
+
+  rangeInputChromas.addEventListener('input', (e) => {
+      updateTooltipChromas(e.target.value);
+  });
+
+  rangeInputChromas.addEventListener('mousedown', () => {
+      updateTooltipChromas(rangeInputChromas.value);
+  });
+
+  rangeInputChromas.addEventListener('mouseup', () => {
+      tooltipChromas.style.opacity = '0';
+  });
+
+  rangeInputChromas.addEventListener('mouseleave', () => {
+      tooltipChromas.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('input', (e) => {
+      updateTooltipShape(e.target.value);
+  });
+
+  rangeInputShape.addEventListener('mousedown', () => {
+      updateTooltipShape(rangeInputShape.value);
+  });
+
+  rangeInputShape.addEventListener('mouseup', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputShape.addEventListener('mouseleave', () => {
+      tooltipShape.style.opacity = '0';
+  });
+
+  rangeInputFontSize.addEventListener('input', (e) => {
+      updateTooltipFontSize(e.target.value);
+  });
+
+  rangeInputFontSize.addEventListener('mousedown', () => {
+      updateTooltipFontSize(rangeInputFontSize.value);
+  });
+
+  rangeInputFontSize.addEventListener('mouseup', () => {
+      tooltipFontSize.style.opacity = '0';
+  });
+
+  rangeInputFontSize.addEventListener('mouseleave', () => {
+      tooltipFontSize.style.opacity = '0';
+  });
+
+  rangeInputLineHeight.addEventListener('input', (e) => {
+      updateTooltipLineHeight(e.target.value);
+  });
+
+  rangeInputLineHeight.addEventListener('mousedown', () => {
+      updateTooltipLineHeight(rangeInputLineHeight.value);
+  });
+
+  rangeInputLineHeight.addEventListener('mouseup', () => {
+      tooltipLineHeight.style.opacity = '0';
+  });
+
+  rangeInputLineHeight.addEventListener('mouseleave', () => {
+      tooltipLineHeight.style.opacity = '0';
+  });
+</script>

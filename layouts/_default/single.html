@@ -3,17 +3,20 @@
     <aside class="layout pane fixed-pane" id="toc">
       {{ partial "toc.html" . }}
     </aside>
+    
     <section class="layout pane" id="post-content">
-        {{ if .Content }}
-          {{ partial "anchored_headings.html" .Content }}
+        {{ with .Content }}
+          {{ partial "anchored_headings.html" . }}
         {{ end }}
-        {{/* Feedback form for Contact page */}}
+        
         {{ if eq .Title "Contact"}}
           {{ partial "feedback-form.html" . }}
         {{ end }}
+        
         {{ if eq .Title "Now"}}
           {{ partial "least_recently_updated.html" . }}
         {{ end }}
+
         {{ if eq .Type "showcase/tokens" }}
           {{ .Type }}
         {{ end }}

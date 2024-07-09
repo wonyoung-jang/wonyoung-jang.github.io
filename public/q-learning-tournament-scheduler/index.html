@@ -21,7 +21,7 @@
         Q-learning tournament scheduler | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.e47d8d3c41050ddec1660124e0428fd836989697c912b9c9958361b2104c033b.css" integrity="sha256-5H2NPEEFDd7BZgEk4EKP2DaYlpfJErnJlYNhshBMAzs=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.3b1e48489b3d62198b96ee6c8854b16565912c2c81dd07fa7fdf290161de479a.css" integrity="sha256-Ox5ISJs9YhmLlu5siFSxZWWRLCyB3Qf6f98pAWHeR5o=" rel="preload stylesheet" as="style">
 
 
 
@@ -137,14 +137,14 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/retail-inventory-manager\/";
+    window.location.href = "\/disaster-recovery-robot-simulation\/";
   }
 </script>
 
-        <button class="component button icon-button" id="theme-selector">
+        <button class="component button icon-button" id="theme-controls">
   <i>palette</i>
   <menu class="menu">
-    <span class="theme-selector-title headline-medium">Theme controls</span>
+    <span class="theme-controls-title headline-medium">Theme controls</span>
     
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
@@ -663,6 +663,7 @@
     
 </nav>
     </aside>
+    
     <section class="layout pane" id="post-content">
         
           
@@ -733,8 +734,8 @@
 <p>One constraint I had to grapple with is the <strong>Back to Back Penalty</strong>. If we assume that the duration of the round will be fully spent at that location, we can assume that teams cannot magically teleport from one location to the next. However, depending on how your event is scheduled, the size  of the teams list, or the layout of the event&rsquo;s venue, I&rsquo;ve found teams scheduled back to back is necessary to generate any valid schedules.</p>
 <p>I plan on pursuing this constraint more deeply, and am currently refining the above constraints.</p>
 <h2 id="a-roadmap-and-some-current-problems">A roadmap and some current problems<a hidden class="anchor" aria-hidden="true" href="#a-roadmap-and-some-current-problems"><i>link</i></a></h2>
-<div class="admonition note-container">
-    <i>sticky_note_2</i>Last update: 2024-03-18</div>
+<blockquote class="note-container">
+    <i>sticky_note_2</i>Last update: 2024-03-18</blockquote>
 <h3 id="a-schedule-validator">A schedule validator<a hidden class="anchor" aria-hidden="true" href="#a-schedule-validator"><i>link</i></a></h3>
 <ul>
 <li>
@@ -777,14 +778,16 @@
 <ul>
 <li>If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way&hellip;</li>
 </ul>
-<div class="admonition warning-container">
-    <i>warning</i>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</div>
+<blockquote class="warning-container">
+    <i>warning</i>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</blockquote>
 
 
         
         
         
         
+        
+
         
     </section>
   </article>
@@ -1272,6 +1275,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

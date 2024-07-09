@@ -32,7 +32,6 @@ i {
   line-height: normal;
 }
 
-/* Media */
 img,
 svg,
 video {
@@ -48,7 +47,6 @@ video {
     padding var(--motion-duration-short3);
 }
 
-/* SVG */
 svg {
   fill: currentColor;
 }

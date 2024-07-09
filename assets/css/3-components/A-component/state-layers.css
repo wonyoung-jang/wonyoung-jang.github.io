@@ -1,4 +1,28 @@
 .component {
+  position: relative;
+  border: var(--container-outline,);
+  box-shadow: var(--container-elevation,);
+  
+  & * {
+    z-index: 2;
+  }
+  
+  &:hover {
+    border: var(--container-outline-hover,);
+    box-shadow: var(--container-elevation-hover,);
+  }
+  
+  &:focus,
+  &:focus-visible {
+    border: var(--container-outline-focus,);
+    box-shadow: var(--container-elevation-focus,);
+  }
+  
+  &:active {
+    border: var(--container-outline-press,);
+    box-shadow: var(--container-elevation-press,);
+  }
+
   &:not(.top-app-bar)::after {
     content: "";
     position: absolute;
@@ -7,32 +31,23 @@
     z-index: 1;
     inset: 0;
     opacity: 0;
-  
     border-radius: inherit;
-  
     background-position: center;
-    background-image: radial-gradient(
-      circle,
-      var(--icon-color, var(--text-color)) 1%,
-      transparent 1%
-    );
+    background-image: radial-gradient(circle, var(--icon-color, var(--text-color)) 1%, transparent 1%);
     background-size: 0%;
-  
     transition: none;
   }
 
   &:hover::after {
     opacity: var(--state-hover-opacity);
     background-size: 50000%;
-    transition: background-size var(--motion-duration-long2)
-      var(--motion-easing-emphasized);
+    transition: background-size var(--motion-duration-long2) var(--motion-easing-emphasized);
   }
 
   &:active::after {
     opacity: var(--state-press-opacity);
     background-size: 0%;
-    transition: background-size var(--motion-duration-short2)
-      var(--motion-easing-emphasized);
+    transition: background-size var(--motion-duration-short2) var(--motion-easing-emphasized);
   }
 
   &:focus-within::after {

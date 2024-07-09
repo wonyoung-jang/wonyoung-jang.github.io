@@ -1,39 +1,38 @@
-.component:focus-visible {
-  --active-width: var(--size-1);
-  --duration: var(--motion-duration-long2);
-  --width: 2px;
+.component{
+  &:focus-visible {
+    --start-width: calc(var(--size-1) / 2);
 
-  color: var(--color-secondary);
+    color: var(--color-secondary);
 
-  animation-delay: 0s, calc(var(--duration) * 0.25);
-  animation-duration: calc(var(--duration) * 0.25), calc(var(--duration) * 0.75);
-  animation-timing-function: var(--motion-easing-emphasized);
+    animation-name: outward-grow, outward-shrink;
+    animation-delay: 0s, calc(var(--motion-duration-long2) * 0.25);
+    animation-duration: calc(var(--motion-duration-long2) * 0.25), calc(var(--motion-duration-long2) * 0.75);
+    animation-timing-function: var(--motion-easing-emphasized);
 
-  animation-name: outward-grow, outward-shrink;
+    outline: var(--start-width) solid currentColor;
+    outline-offset: calc(-2 * var(--start-width));
+  } 
 
-  outline: var(--width) solid currentColor;
-  outline-offset: calc(-2 * var(--width));
-} 
+  &::-moz-focus-inner {
+    outline: none;
+  }
+}
 
 a:not(.component):focus-visible {
   text-decoration: underline;
 } 
-
-.component::-moz-focus-inner {
-  outline: none;
-}
 
 @keyframes outward-grow {
   from {
     outline-width: 0px;
   }
   to {
-    outline-width: var(--active-width);
+    outline-width: var(--size-1);
   }
 }
 
 @keyframes outward-shrink {
   from {
-    outline-width: var(--active-width);
+    outline-width: var(--size-1);
   }
 }

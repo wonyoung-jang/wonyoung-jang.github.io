@@ -20,7 +20,6 @@
 
   /* Line heights */
   --input-line-height:            var(--scale-perfect-fifth);
-  
   --scale-line-height-display:    var(--input-line-height) / 0.94;
   --scale-line-height-headline:   var(--input-line-height) / 0.96;
   --scale-line-height-title:      var(--input-line-height) / 0.98;

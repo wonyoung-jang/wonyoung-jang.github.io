@@ -10,7 +10,13 @@ table {
     white-space: nowrap;
     border-radius: unset;
   }
-  
+   
+  & td,
+  & th {
+    padding: var(--size-3) var(--size-5);
+    border: 1px solid var(--color-outline-variant);
+  }
+   
   & td {
     background: var(--color-surface);
   }
@@ -28,11 +34,4 @@ table {
     line-height: var(--typescale-title-medium-line-height);
     font-weight: var(--typescale-title-medium-weight);
   }
-  
-  & td,
-  & th {
-    padding: var(--size-3) var(--size-5);
-    border: 1px solid var(--color-outline-variant);
-  }
 }
-

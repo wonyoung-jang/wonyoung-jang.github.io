@@ -46,8 +46,8 @@
       position: absolute;
       z-index: 9999;
       bottom: 0;
-      left: 25%;
-      width: 50%;
+      left: 40%;
+      width: 20%;
       height: var(--size-1);
       border-radius: var(--shape-corner-xl-top);
       background-color: var(--color-primary);
