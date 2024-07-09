@@ -1,0 +1,19 @@
+/* Scrollbar */
+@media (pointer: fine) {
+  /* Firefox */
+  * {
+    scrollbar-color: var(--color-secondary) transparent;
+    scrollbar-width: thin;
+
+    /* Chromium + Safari */
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: var(--size-2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: var(--size-1);
+    }
+  }
+}

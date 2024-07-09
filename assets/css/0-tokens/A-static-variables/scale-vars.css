@@ -12,5 +12,7 @@
     --scale-min-7:          calc(pow(2, (10 / 12)));  /* 1.7817... */
     --scale-maj-7:          calc(pow(2, (11 / 12)));  /* 1.8877... */
     --scale-octave:         calc(pow(2, (12 / 12)));  /* 2 */
-    --scale-fibonacci:      1.618; 
+
+    /* Golden ratio up */
+    --scale-fibonacci:      1.618;
 }

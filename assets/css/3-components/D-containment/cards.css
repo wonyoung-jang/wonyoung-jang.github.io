@@ -45,21 +45,18 @@
 }
 
 .card {
-  max-height: fit-content;
-
   & img {
     aspect-ratio: 1 / 1;
-    flex: 1 1 0;
-    max-width: 64px;
+    flex: 1 1 auto;
     object-fit: cover;
     overflow: hidden;
     margin: var(--size-5) var(--size-1) var(--size-5) var(--size-5);
     border-radius: inherit;
-    max-height: 67%;
+    max-width: 64px;
   }
   
   & .card-content {
-    flex: 1 1 0;
+    flex: 1 1 auto;
     display: flex;
     flex-flow: column nowrap;
     margin: var(--size-5) var(--size-4);

@@ -1,0 +1,23 @@
+/* Transitions */
+:root,
+body,
+header,
+main,
+footer,
+.layout,
+#top-link {
+  transition: var(--motion-duration-medium4) var(--motion-easing-emphasized);
+  transition-property:  
+    font-size, font-weight, line-height, margin, border-radius, 
+    height, min-height, max-height, 
+    width, min-width, max-width, 
+    transform, visibility, opacity, display,
+    padding;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion) {
+  :root {
+      animation: none;
+  }
+}

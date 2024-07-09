@@ -6,10 +6,13 @@
   align-content: stretch;
   overflow: auto;
   padding-block: var(--size-2);
-  font-size: var(--typescale-body-large-size);
-  line-height: var(--typescale-body-large-line-height);
-  font-weight: var(--typescale-body-large-weight);
-  font-family: var(--typeface-mono);
+
+  & * {
+    font-size: var(--typescale-body-small-size);
+    line-height: var(--typescale-body-small-line-height);
+    font-weight: var(--typescale-body-small-weight);
+    font-family: var(--typeface-mono);
+  }
 
   & span {
     display: flex;
@@ -29,14 +32,15 @@
   display: inline-flex;
   display: inline flex;
   flex-flow: row nowrap;
-  line-height: unset;
-  font-family: var(--typeface-mono);
-  font-size: inherit;
-  font-weight: inherit;
-  background-color: var(--color-sub90-container);
-  color: var(--color-on-sub90-container);
-  letter-spacing: 1;
-  margin-inline: 1px;
-  padding-inline: var(--size-1);
-  border-radius: var(--shape-corner-s);
+  background-color: var(--color-sub120-container);
+  color: var(--color-on-sub120-container);
+  border-radius: var(--shape-corner-xs);
+  padding-inline: 3px;
+
+  & * {
+    font-size: var(--typeface-body-small-size);
+    font-weight: var(--typeface-body-small-weight);
+    line-height: var(--typeface-body-small-line-height);
+    font-family: var(--typeface-mono);
+  }
 }

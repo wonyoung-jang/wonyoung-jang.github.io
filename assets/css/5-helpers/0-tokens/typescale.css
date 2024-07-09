@@ -109,9 +109,10 @@
 }
 
 /* || Code */
+
 .code-typeface {
-  font-size: var(--typescale-body-large-size);
-  line-height: var(--typescale-body-large-line-height);
-  font-weight: var(--typescale-body-large-weight);
+  font-size: var(--typescale-body-small-size);
+  line-height: var(--typescale-body-small-line-height);
+  font-weight: var(--typescale-body-small-weight);
   font-family: var(--typeface-mono);
 }

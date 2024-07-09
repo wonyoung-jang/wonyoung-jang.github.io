@@ -1,4 +1,15 @@
 :root {
+  /* || Colors */
+
+  /* Color primary */
+  --input-color-hue: 302.8deg;
+  --input-color-chroma: 58;
+
+  /* Color harmonization */
+  --harmonization: calc(360deg / var(--scale-fibonacci) / 17);
+  
+  /* || Typography */
+
   /* Typescale factors (L → B → T → H → D) */
   --scale-up-type:            var(--scale-maj-6);
   --scale-back-type:          var(--scale-min-2);
@@ -22,13 +33,11 @@
   /* Font size */
   --input-font-size:  14px;
 
+  /* || Shapes */
+
   /* Shape corner */
   --input-shape-corner: 1.7px;
 
-  /* Color primary */
-  --input-color-hue: 302.8deg;
-  --input-color-chroma: 58;
-
-  /* Color harmonization */
-  --harmonization: calc(360deg / var(--scale-fibonacci) / 17);
+  /* Shape scale */
+  --input-shape-scale: var(--scale-octave);
 }

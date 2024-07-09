@@ -73,11 +73,3 @@ header {
     transform: rotate(0deg);
   }
 }
-  
-
-.tabs {
-  scrollbar-color: var(--color-secondary) transparent;
-  scrollbar-width: thin;
-  overflow: auto;
-  overflow-y: hidden;
-}

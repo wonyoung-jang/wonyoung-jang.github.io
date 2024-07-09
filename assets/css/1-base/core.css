@@ -5,42 +5,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Logseq Graph */
-html.is-publish-mode {  
-  all: unset;
-  
-  & main,
-  & .panes,
-  & .pane {
-    all: unset;
-  }
-
-  & header,
-  & footer,
-  & .page-header,
-  & .page-links,
-  & .page-navigation,
-  & #toc,
-  & #top-link {
-    display: none;
-  }
-
-  & #main-content-container {
-    all: unset;
-    flex: 1 1 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    & * {
-      flex: 1 1 auto;
-    }
-  }
-}
-
-/* Body */
 body {
   display: flex;
   flex-flow: column nowrap;
@@ -54,71 +18,11 @@ body {
   color: var(--color-on-surface);
 }
 
-/* Main */
 main {
   max-height: calc(100dvh - 132px);
-
   overflow-y: auto;
-  scrollbar-color: var(--color-primary) transparent;
-  scrollbar-width: thin;
 }
 
-/* Icons */
-i {
-  font-family: var(--font-icon);
-  font-weight: normal;
-  font-style: normal;
-  font-size: var(--size-6);
-  letter-spacing: normal;
-  text-transform: none;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  white-space: nowrap;
-  word-wrap: normal;
-
-  direction: ltr;
-
-  font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
-
-  vertical-align: middle;
-  text-align: center;
-
-  overflow: hidden;
-
-  inline-size: var(--size-6);
-  min-inline-size: var(--size-6);
-  block-size: var(--size-6);
-  min-block-size: var(--size-6);
-
-  line-height: normal;
-}
-
-/* Media */
-img,
-svg,
-video {
-  max-width: 100%;
-  max-height: 100%;
-
-  border-radius: var(--shape-corner-s);
-  
-  object-fit: cover;
-  object-position: center;
-  transition: transform var(--motion-duration-short3),
-    border-radius var(--motion-duration-short3),
-    padding var(--motion-duration-short3);
-}
-
-/* SVG */
-svg {
-  fill: currentColor;
-}
-
-/* Details/summary/expansions */
 details {
   & summary {
     cursor: pointer;
@@ -146,49 +50,5 @@ details {
 
   &[open] > summary::after {
     content: "▼";
-  }
-}
-
-/* Transitions */
-:root,
-body,
-header,
-main,
-footer,
-.layout,
-#top-link {
-  transition: var(--motion-duration-medium4) var(--motion-easing-emphasized);
-  transition-property:  
-    font-size, font-weight, line-height, margin, border-radius, 
-    height, min-height, max-height, 
-    width, min-width, max-width, 
-    transform, visibility, opacity, display,
-    padding;
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion) {
-  :root {
-      animation: none;
-  }
-}
-
-/* Scrollbar */
-@media (pointer: fine) {
-  /* Firefox */
-  * {
-    scrollbar-color: var(--color-primary) transparent;
-    scrollbar-width: thin;
-
-    /* Chromium + Safari */
-    &::-webkit-scrollbar {
-      background-color: transparent;
-      width: var(--size-2);
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--color-primary);
-      border-radius: var(--size-1);
-    }
   }
 }

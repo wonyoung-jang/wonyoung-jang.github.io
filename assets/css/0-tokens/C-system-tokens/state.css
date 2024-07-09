@@ -1,16 +1,8 @@
 :root {
-  /* Hover */
-  --state-hover-opacity: 8%;
-  
-  /* Press */
-  --state-press-opacity: 12%;
-  
-  /* Focus */
-  --state-focus-opacity: 12%;
-  
-  /* Drag */
-  --state-drag-opacity: 16%;
-  
-  /* Disabled */
+  /* State opacities */
+  --state-hover-opacity:    8%;
+  --state-press-opacity:    12%;
+  --state-focus-opacity:    12%;
+  --state-drag-opacity:     16%;
   --state-disabled-opacity: 38%;
 }
