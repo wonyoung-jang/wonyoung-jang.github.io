@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources on Wonyoung Jang</title>
-    <link>http://192.168.40.181:1313/resources/</link>
+    <link>https://wonyoungjang.org/resources/</link>
     <description>Recent content in Resources on Wonyoung Jang</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,26 +10,26 @@
     <webMaster>contact@wonyoungjang.org (Wonyoung Jang)</webMaster>
     <copyright>&lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;</copyright>
     <lastBuildDate>Mon, 08 Jul 2024 12:27:52 -0400</lastBuildDate>
-    <atom:link href="http://192.168.40.181:1313/resources/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wonyoungjang.org/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Layouts</title>
-      <link>http://192.168.40.181:1313/resources/layouts/</link>
+      <link>https://wonyoungjang.org/resources/layouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/resources/layouts/</guid>
+      <guid>https://wonyoungjang.org/resources/layouts/</guid>
       <description></description>
     </item>
     <item>
       <title>References</title>
-      <link>http://192.168.40.181:1313/resources/references/</link>
+      <link>https://wonyoungjang.org/resources/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/resources/references/</guid>
+      <guid>https://wonyoungjang.org/resources/references/</guid>
       <description></description>
     </item>
     <item>
       <title>Tokens</title>
-      <link>http://192.168.40.181:1313/resources/tokens/</link>
+      <link>https://wonyoungjang.org/resources/tokens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@wonyoungjang.org (Wonyoung Jang)</author>
-      <guid>http://192.168.40.181:1313/resources/tokens/</guid>
+      <guid>https://wonyoungjang.org/resources/tokens/</guid>
       <description></description>
     </item>
   </channel>

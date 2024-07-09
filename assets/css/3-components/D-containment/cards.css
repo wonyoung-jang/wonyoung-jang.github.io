@@ -45,6 +45,8 @@
 }
 
 .card {
+  max-height: fit-content;
+
   & img {
     aspect-ratio: 1 / 1;
     flex: 1 1 0;
@@ -60,7 +62,6 @@
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
     margin: var(--size-5) var(--size-4);
 
     & .card-meta,
