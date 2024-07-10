@@ -23,10 +23,8 @@ lastMod: 2024-07-10
 My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:
 
   + They are individually adjusted with thumbscrews, which can be finnicky
-logseq.order-list-type:: number
 
   + The maximum tenting may not be as extreme as you might like
-logseq.order-list-type:: number
 
 With a custom tenting kit, I wanted to build one that's easily adjustable (one adjustment "move" per side of keyboard), and one that you can easily take the keyboard off of when desired. I chose LEGO because that's what I had on hand.
 

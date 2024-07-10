@@ -10,7 +10,7 @@
     </title>
     
     <link>
-      https://wonyoungjang.org/
+      http://192.168.40.181:1313/
     </link>
 
     <description>
@@ -48,14 +48,14 @@
         Wed, 10 Jul 2024 12:05:37 -0400
       </lastBuildDate>
     
-      <atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           ErgoDox EZ LEGO tenting kits
         </title>
 
         <link>
-          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
         </link>
 
         <pubDate>
@@ -70,7 +70,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
         </guid>
 
         <description>
@@ -83,7 +83,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/all-logseq-elements/
+          http://192.168.40.181:1313/all-logseq-elements/
         </link>
 
         <pubDate>
@@ -98,11 +98,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/all-logseq-elements/
+          http://192.168.40.181:1313/all-logseq-elements/
         </guid>
 
         <description>
-          Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages Page reference Input: [About](https://wonyoungjang.org/about/)&#xA;Output: About&#xA;Page embed Input: {{embed [About](https://wonyoungjang.org/about/)}}&#xA;Output: {{embed About}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}
+          Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages Page reference Input: [About](http://192.168.40.181:1313/about/)&#xA;Output: About&#xA;Page embed Input: {{embed [About](http://192.168.40.181:1313/about/)}}&#xA;Output: {{embed About}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}
         </description>
       </item>
       <item>
@@ -111,7 +111,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/colors/
+          http://192.168.40.181:1313/colors/
         </link>
 
         <pubDate>
@@ -126,7 +126,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/colors/
+          http://192.168.40.181:1313/colors/
         </guid>
 
         <description>
@@ -139,7 +139,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/components/
+          http://192.168.40.181:1313/components/
         </link>
 
         <pubDate>
@@ -154,7 +154,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/components/
+          http://192.168.40.181:1313/components/
         </guid>
 
         <description>
@@ -167,7 +167,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/feed-layout/
+          http://192.168.40.181:1313/feed-layout/
         </link>
 
         <pubDate>
@@ -182,7 +182,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/feed-layout/
+          http://192.168.40.181:1313/feed-layout/
         </guid>
 
         <description>
@@ -195,7 +195,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/fixed-and-flexible-layout/
+          http://192.168.40.181:1313/fixed-and-flexible-layout/
         </link>
 
         <pubDate>
@@ -210,7 +210,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/fixed-and-flexible-layout/
+          http://192.168.40.181:1313/fixed-and-flexible-layout/
         </guid>
 
         <description>
@@ -223,7 +223,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/iconography/
+          http://192.168.40.181:1313/iconography/
         </link>
 
         <pubDate>
@@ -238,7 +238,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/iconography/
+          http://192.168.40.181:1313/iconography/
         </guid>
 
         <description>
@@ -251,7 +251,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/list-detail-layout/
+          http://192.168.40.181:1313/list-detail-layout/
         </link>
 
         <pubDate>
@@ -266,7 +266,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/list-detail-layout/
+          http://192.168.40.181:1313/list-detail-layout/
         </guid>
 
         <description>
@@ -279,7 +279,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/motion/
+          http://192.168.40.181:1313/motion/
         </link>
 
         <pubDate>
@@ -294,7 +294,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/motion/
+          http://192.168.40.181:1313/motion/
         </guid>
 
         <description>
@@ -307,7 +307,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/now/
+          http://192.168.40.181:1313/now/
         </link>
 
         <pubDate>
@@ -322,7 +322,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/now/
+          http://192.168.40.181:1313/now/
         </guid>
 
         <description>
@@ -335,7 +335,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/shapes/
+          http://192.168.40.181:1313/shapes/
         </link>
 
         <pubDate>
@@ -350,7 +350,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/shapes/
+          http://192.168.40.181:1313/shapes/
         </guid>
 
         <description>
@@ -363,7 +363,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/single-pane-layout/
+          http://192.168.40.181:1313/single-pane-layout/
         </link>
 
         <pubDate>
@@ -378,7 +378,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/single-pane-layout/
+          http://192.168.40.181:1313/single-pane-layout/
         </guid>
 
         <description>
@@ -391,7 +391,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/states-and-elevation/
+          http://192.168.40.181:1313/states-and-elevation/
         </link>
 
         <pubDate>
@@ -406,7 +406,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/states-and-elevation/
+          http://192.168.40.181:1313/states-and-elevation/
         </guid>
 
         <description>
@@ -419,7 +419,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/supporting-pane-layout/
+          http://192.168.40.181:1313/supporting-pane-layout/
         </link>
 
         <pubDate>
@@ -434,7 +434,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/supporting-pane-layout/
+          http://192.168.40.181:1313/supporting-pane-layout/
         </guid>
 
         <description>
@@ -447,7 +447,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/typography/
+          http://192.168.40.181:1313/typography/
         </link>
 
         <pubDate>
@@ -462,7 +462,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/typography/
+          http://192.168.40.181:1313/typography/
         </guid>
 
         <description>
@@ -475,7 +475,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/about/
+          http://192.168.40.181:1313/about/
         </link>
 
         <pubDate>
@@ -490,7 +490,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/about/
+          http://192.168.40.181:1313/about/
         </guid>
 
         <description>
@@ -503,7 +503,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/contact/
+          http://192.168.40.181:1313/contact/
         </link>
 
         <pubDate>
@@ -518,7 +518,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/contact/
+          http://192.168.40.181:1313/contact/
         </guid>
 
         <description>
@@ -531,7 +531,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -546,7 +546,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
         </guid>
 
         <description>
@@ -559,7 +559,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/pit-signs-for-robotics-competition/
+          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
         </link>
 
         <pubDate>
@@ -574,7 +574,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/pit-signs-for-robotics-competition/
+          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
         </guid>
 
         <description>
@@ -587,7 +587,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/search/
+          http://192.168.40.181:1313/search/
         </link>
 
         <pubDate>
@@ -602,7 +602,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/search/
+          http://192.168.40.181:1313/search/
         </guid>
 
         <description>
@@ -615,7 +615,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/sitemap/
+          http://192.168.40.181:1313/sitemap/
         </link>
 
         <pubDate>
@@ -630,7 +630,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/sitemap/
+          http://192.168.40.181:1313/sitemap/
         </guid>
 
         <description>
@@ -643,7 +643,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/split-pane-layout/
+          http://192.168.40.181:1313/split-pane-layout/
         </link>
 
         <pubDate>
@@ -658,7 +658,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/split-pane-layout/
+          http://192.168.40.181:1313/split-pane-layout/
         </guid>
 
         <description>
@@ -671,7 +671,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -686,7 +686,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </guid>
 
         <description>
@@ -699,7 +699,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/realtime-multiplayer-drawing/
+          http://192.168.40.181:1313/realtime-multiplayer-drawing/
         </link>
 
         <pubDate>
@@ -714,7 +714,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/realtime-multiplayer-drawing/
+          http://192.168.40.181:1313/realtime-multiplayer-drawing/
         </guid>
 
         <description>
@@ -727,7 +727,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/wonyoungjang.org/
+          http://192.168.40.181:1313/wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -742,7 +742,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/wonyoungjang.org/
+          http://192.168.40.181:1313/wonyoungjang.org/
         </guid>
 
         <description>
@@ -755,7 +755,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/q-learning-tournament-scheduler/
+          http://192.168.40.181:1313/q-learning-tournament-scheduler/
         </link>
 
         <pubDate>
@@ -770,7 +770,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/q-learning-tournament-scheduler/
+          http://192.168.40.181:1313/q-learning-tournament-scheduler/
         </guid>
 
         <description>
@@ -783,7 +783,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/save-top-level-reddit-comments/
+          http://192.168.40.181:1313/save-top-level-reddit-comments/
         </link>
 
         <pubDate>
@@ -798,7 +798,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/save-top-level-reddit-comments/
+          http://192.168.40.181:1313/save-top-level-reddit-comments/
         </guid>
 
         <description>
@@ -811,7 +811,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/disaster-recovery-robot-simulation/
+          http://192.168.40.181:1313/disaster-recovery-robot-simulation/
         </link>
 
         <pubDate>
@@ -826,7 +826,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/disaster-recovery-robot-simulation/
+          http://192.168.40.181:1313/disaster-recovery-robot-simulation/
         </guid>
 
         <description>
@@ -839,7 +839,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/cs-career-chatbot/
+          http://192.168.40.181:1313/cs-career-chatbot/
         </link>
 
         <pubDate>
@@ -854,7 +854,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/cs-career-chatbot/
+          http://192.168.40.181:1313/cs-career-chatbot/
         </guid>
 
         <description>
@@ -867,7 +867,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/logseq-markdown-tokenizer/
+          http://192.168.40.181:1313/logseq-markdown-tokenizer/
         </link>
 
         <pubDate>
@@ -882,7 +882,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/logseq-markdown-tokenizer/
+          http://192.168.40.181:1313/logseq-markdown-tokenizer/
         </guid>
 
         <description>
@@ -895,7 +895,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/package-delivery-route-optimization/
+          http://192.168.40.181:1313/package-delivery-route-optimization/
         </link>
 
         <pubDate>
@@ -910,7 +910,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/package-delivery-route-optimization/
+          http://192.168.40.181:1313/package-delivery-route-optimization/
         </guid>
 
         <description>
@@ -923,7 +923,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/hotel-reservation-manager/
+          http://192.168.40.181:1313/hotel-reservation-manager/
         </link>
 
         <pubDate>
@@ -938,7 +938,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/hotel-reservation-manager/
+          http://192.168.40.181:1313/hotel-reservation-manager/
         </guid>
 
         <description>
@@ -951,7 +951,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/vacation-cart-manager/
+          http://192.168.40.181:1313/vacation-cart-manager/
         </link>
 
         <pubDate>
@@ -966,7 +966,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/vacation-cart-manager/
+          http://192.168.40.181:1313/vacation-cart-manager/
         </guid>
 
         <description>
@@ -979,7 +979,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/retail-inventory-manager/
+          http://192.168.40.181:1313/retail-inventory-manager/
         </link>
 
         <pubDate>
@@ -994,7 +994,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/retail-inventory-manager/
+          http://192.168.40.181:1313/retail-inventory-manager/
         </guid>
 
         <description>
@@ -1007,7 +1007,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/dvd-rental-database/
+          http://192.168.40.181:1313/dvd-rental-database/
         </link>
 
         <pubDate>
@@ -1022,7 +1022,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/dvd-rental-database/
+          http://192.168.40.181:1313/dvd-rental-database/
         </guid>
 
         <description>
@@ -1035,7 +1035,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/student-record-system/
+          http://192.168.40.181:1313/student-record-system/
         </link>
 
         <pubDate>
@@ -1050,7 +1050,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/student-record-system/
+          http://192.168.40.181:1313/student-record-system/
         </guid>
 
         <description>
@@ -1063,7 +1063,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/food-shop-database-management/
+          http://192.168.40.181:1313/food-shop-database-management/
         </link>
 
         <pubDate>
@@ -1078,7 +1078,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/food-shop-database-management/
+          http://192.168.40.181:1313/food-shop-database-management/
         </guid>
 
         <description>
@@ -1091,7 +1091,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/graph/
+          http://192.168.40.181:1313/graph/
         </link>
 
         <pubDate>
@@ -1106,7 +1106,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/graph/
+          http://192.168.40.181:1313/graph/
         </guid>
 
         <description>

@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      https://wonyoungjang.org/projects/design/
+      http://192.168.40.181:1313/projects/design/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Wed, 10 Jul 2024 12:05:37 -0400
       </lastBuildDate>
     
-      <atom:link href="https://wonyoungjang.org/projects/design/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/projects/design/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           ErgoDox EZ LEGO tenting kits
         </title>
 
         <link>
-          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
         </link>
 
         <pubDate>
@@ -71,11 +71,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
         </guid>
 
         <description>
-          Purpose My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:&#xA;They are individually adjusted with thumbscrews, which can be finnicky logseq.order-list-type:: number&#xA;The maximum tenting may not be as extreme as you might like logseq.order-list-type:: number&#xA;With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.
+          Purpose My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:&#xA;They are individually adjusted with thumbscrews, which can be finnicky&#xA;The maximum tenting may not be as extreme as you might like&#xA;With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.
         </description>
       </item>
       <item>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/pit-signs-for-robotics-competition/
+          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/pit-signs-for-robotics-competition/
+          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
         </guid>
 
         <description>
