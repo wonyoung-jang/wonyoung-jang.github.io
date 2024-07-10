@@ -1,3 +1,12 @@
+/* Material Symbols Outlined icons */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/material-symbols-outlined.woff2") format("woff2")
+}
+
 /* Icons */
 i {
   font-family: var(--font-icon);
@@ -40,7 +49,7 @@ video {
 
   border-radius: var(--shape-corner-s);
   
-  object-fit: cover;
+  object-fit: cover; 
   object-position: center;
   transition: transform var(--motion-duration-short3),
     border-radius var(--motion-duration-short3),

@@ -10,10 +10,12 @@
         <header role="banner">
             {{ partial "header.html" . .Page }}
         </header>
+
         {{/* Debug */}}
         {{ if site.Params.Debug }}
             {{ partial "debug.html" .Page }}
         {{ end }}
+
         {{/* Main */}}
         <main role="main">
             {{/* Layout: Content Wrapper */}}
@@ -23,14 +25,18 @@
                 {{/* Layout: Main */}}
                 {{ block "main" . }}{{ end }}
             </div>
+
             {{/* Layout: Page Navigation */}}
             {{- partial "page-navigation.html" . -}}
+
             {{/* Layout: Page Links */}}
             {{ if .IsPage }}
                 {{ partial "page-links.html" . }}
             {{ end }}
+
             {{/* Component: Top-Link */}}
             {{- partialCached "top-link-fab.html" . -}}
+            
             {{/* Footer */}}
             <footer role="contentinfo">    
                 {{/* Links + Copyright */}}

@@ -27,7 +27,7 @@
   --scale-line-height-label:      var(--input-line-height) * 1.02;
 
   /* Icon font family */
-  --font-icon: var(--typeface-icon-sharp);
+  --font-icon: var(--typeface-icon-outlined);
   
   /* Font size */
   --input-font-size:  14px;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,21 +21,21 @@
         Resources | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.3b1e48489b3d62198b96ee6c8854b16565912c2c81dd07fa7fdf290161de479a.css" integrity="sha256-Ox5ISJs9YhmLlu5siFSxZWWRLCyB3Qf6f98pAWHeR5o=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1a880986bb8c9c1aa22cb6ad00cf3012da30241e12f815e4801ef0137653b2c1.css" integrity="sha256-GogJhruMnBqiLLatAM8wEtowJB4S&#43;BXkgB7wE3ZTssE=" rel="preload stylesheet" as="style">
 
 
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/resources/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/resources/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/resources/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resources/">
 
 
 
@@ -51,7 +51,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/resources/">
+<meta property="og:url" content="http://192.168.40.181:1313/resources/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Resources">
   <meta property="og:locale" content="en">
@@ -73,10 +73,11 @@
             
 <nav    class="component top-app-bar" center small 
         aria-label="Top App Bar">
+        
     
     <section class="start">
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -95,7 +96,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -131,12 +132,12 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/shapes\/";
+    window.location.href = "\/hotel-reservation-manager\/";
   }
 </script>
 
         <button class="component button icon-button" id="theme-controls">
-  <i>palette</i>
+  <i>palette</i> 
   <menu class="menu">
     <span class="theme-controls-title headline-medium">Theme controls</span>
     
@@ -550,8 +551,10 @@
 
 
         </header>
+
         
         
+
         
         <main role="main">
             
@@ -647,7 +650,7 @@
                             <span class="headline-small">
                                 Tokens
                                 <sup class="page-count code-typeface">
-                                    6
+                                    7
                                 </sup>
                             </span>
                             <span class="description">
@@ -662,17 +665,19 @@
     </article>
 
             </div>
+
             
 
 
             
+
             <a  class="component button fab primary-container"
     id="top-link"
     href="#top" 
     aria-label="go to top" 
     title="Go to Top (ALT + SHIFT + g)" 
     accesskey="g">
-    <i>vertical_align_top</i>
+    <i>vertical_align_top</i> 
 </a>
 
 <script async>
@@ -811,7 +816,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -832,49 +837,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

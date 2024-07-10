@@ -15,6 +15,12 @@ outputs:
     - HTML
     - RSS
     - JSON
+  taxonomy:
+    - HTML
+    - RSS
+  term:
+    - HTML
+    - RSS
 
 # Services
 services:

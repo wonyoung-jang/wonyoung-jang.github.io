@@ -71,7 +71,6 @@ sections:
   - identifier: Projects
     name: Projects
     pageRef: /projects
-    weight: 10
   - name: Design
     pageRef: /projects/design
     parent: Projects
@@ -84,7 +83,6 @@ sections:
   - identifier: Resources
     name: Resources
     pageRef: /resources
-    weight: 20
   - name: Layouts
     pageRef: /resources/layouts
     parent: Resources

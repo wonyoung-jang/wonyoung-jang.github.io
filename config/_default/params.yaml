@@ -13,8 +13,7 @@ home:
   tagline: exist **∧** time **→** create
   blurb: |
     If I'm existing and have the time, then I'll be creating stuff and sharing it with you.
-    You are welcome to use anything you find while you're here.
-
+    You're welcome to use anything you find here.
 
   projectButtons:
     - name: Software
@@ -23,6 +22,7 @@ home:
       url: /projects/design
     - name: University
       url: /projects/university
+
   resourceButtons:
     - name: Layouts
       url: /resources/layouts
@@ -36,19 +36,17 @@ author:
   email: contact@wonyoungjang.org
 
 fuseOpts:
-  # Basic
   isCaseSensitive: false
   includeScore: true
   includeMatches: true
   minMatchCharLength: 1
   shouldSort: true
   findAllMatches: false
-  keys: ["title", "permalink", "summary", "description", "content"]
+  keys: ["title", "permalink", "description", "summary", "content"]
 
-  # Fuzzy matching
   location: 0
   threshold: 0.6
   distance: 100
   ignoreLocation: false
 
-  limit: 5
+  limit: 12

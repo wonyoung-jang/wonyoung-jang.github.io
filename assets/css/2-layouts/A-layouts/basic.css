@@ -1,13 +1,13 @@
-.layout.panes.basic-singlepane .layout.pane {
+.basic-singlepane .pane {
   --flex: 1 1 auto;
   --width: 100%;
 }
 
-.layout.panes.basic-splitpane,  
-.layout.panes.basic-fixedflex:not(#single) {
+.basic-splitpane,  
+.basic-fixedflex:not(#single) {
   --flex-flow: row nowrap;
     
-  & .layout.pane {
+  & .pane {
     --flex: 1 1 0;
     
     &.fixed-pane {
@@ -17,10 +17,10 @@
   }
 }
 
-.layout.panes.basic-fixedflex#single {
+.basic-fixedflex#single {
   --flex-flow: column nowrap;
   
-  & .layout.pane {
+  & .pane {
     --display: flex;
     --flex: 1 1 auto;
     --width: 100%;
@@ -33,9 +33,9 @@
 
 /* Compact: 0-599px */
 @media screen and (max-width: 599px) {
-  .layout.panes.basic-fixedflex:not(#single),
-  .layout.panes.basic-splitpane {
-    & .layout.pane {
+  .basic-fixedflex:not(#single),
+  .basic-splitpane {
+    & .pane {
       --display: none;
       --flex: 1 1 0;
       --width: calc(50% - var(--spacing-panes) / 2);    
@@ -49,10 +49,10 @@
     }
   }
 
-  .layout.panes.basic-fixedflex:not(#single) {
+  .basic-fixedflex:not(#single) {
     --flex-flow: row nowrap;
     
-    & .layout.pane {
+    & .pane {
       --flex: 1 1 0;
       
       &.fixed-pane {
@@ -65,10 +65,10 @@
 
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
-  .layout.panes.basic-fixedflex#single {
+  .basic-fixedflex#single {
     --flex-flow: row nowrap;
     
-    & .layout.pane {
+    & .pane {
       --flex: 1 1 0;
       
       &.fixed-pane {
