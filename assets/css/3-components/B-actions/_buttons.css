@@ -1,23 +1,23 @@
 .button {
-    --container-display: flex;
-    --container-flex-flow: row nowrap;
-    --container-justify-content: center;
-    --container-align-items: center;
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: center;
+  --container-align-items: center;
+
+  min-width: var(--size-10);
+
+  --container-height: var(--size-10);
+  --container-shape: var(--shape-corner-xl);
+  --container-padding: 0 var(--size-6);
+
+  transition: transform var(--motion-duration-short3),
+    border-radius var(--motion-duration-short3),
+    padding var(--motion-duration-short3);
+  user-select: none;
+  background-color: none;
   
-    min-width: var(--size-10);
-  
-    --container-height: var(--size-10);
-    --container-shape: var(--shape-corner-xl);
-    --container-padding: 0 var(--size-6);
-  
-    transition: transform var(--motion-duration-short3),
-      border-radius var(--motion-duration-short3),
-      padding var(--motion-duration-short3);
-    user-select: none;
-    background-color: none;
-    
-    font-size: var(--typescale-label-large-size);
-    line-height: var(--typescale-label-large-line-height);
-    font-weight: var(--typescale-label-large-weight);
-    font-family: var(--typescale-label-large-font);
+  font-size: var(--typescale-label-large-size);
+  line-height: var(--typescale-label-large-line-height);
+  font-weight: var(--typescale-label-large-weight);
+  font-family: var(--typescale-label-large-font);
 }
