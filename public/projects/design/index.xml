@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/projects/design/
+      https://wonyoungjang.org/projects/design/
     </link>
 
     <description>
@@ -46,17 +46,17 @@
 
     
       <lastBuildDate>
-        Sun, 07 Jul 2024 13:41:07 -0400
+        Wed, 10 Jul 2024 12:05:37 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/projects/design/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/projects/design/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           ErgoDox EZ LEGO tenting kits
         </title>
 
         <link>
-          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
+          https://wonyoungjang.org/pit-signs-for-robotics-competition/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
+          https://wonyoungjang.org/pit-signs-for-robotics-competition/
         </guid>
 
         <description>
