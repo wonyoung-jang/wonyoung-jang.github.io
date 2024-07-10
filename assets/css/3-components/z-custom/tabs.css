@@ -1,6 +1,11 @@
 /* Custom */
 .tabs:has(.sub-tabs-container) {
   --container-gap: 3px;
+  --container-shape: unset;
+
+  & .tab {
+    border-radius: var(--shape-corner-l-top);
+  }
 }
 
 .sub-tabs-container {
