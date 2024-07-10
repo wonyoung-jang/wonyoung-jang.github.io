@@ -32,8 +32,12 @@
 
 .swatches-admonitions,
 .swatches-classic {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: var(--spacing-panes);
+  display: flex;
+  flex-flow: row wrap;
   gap: var(--size-2);
+
+  & .swatch {
+    flex: 1 1 0;
+    min-width: fit-content;
+  }
 }
