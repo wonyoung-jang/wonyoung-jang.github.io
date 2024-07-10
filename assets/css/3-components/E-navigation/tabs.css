@@ -1,6 +1,7 @@
 .tabs:not(.sub-tabs) {
   position: relative;
   align-self: center;
+  overflow: visible;
 
   --container-display: flex;
   --contianer-flex-flow: row nowrap;
@@ -13,7 +14,6 @@
   --container-padding: 0;
 
   --container-shape: initial;
-  overflow: visible;
 
   & .tab {
     flex: 1 1 0;

@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  max-height: calc(100dvh - 132px);
+  max-height: calc(100dvh - 128px);
   overflow-y: auto;
 }
 

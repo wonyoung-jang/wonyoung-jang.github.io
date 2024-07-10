@@ -1,16 +1,15 @@
 .page-header {
   --display: flex;
   --flex-flow: column nowrap;
-  --align-items: stretch;
-  --align-content: initial;
   --justify-content: space-between;
-  --width: 100%;
   --height: max-content;
   --border: inherit;
-  --padding: var(--size-14) var(--spacing-panes);
-  --gap: var(--size-5);
+  --padding: var(--size-14) var(--size-10);
+  --margin: var(--size-7);
+  --gap: var(--size-3);
+  border-radius: var(--shape-corner-m);
 
-  background-color: var(--color-surface-container-lowest);
+  background-color: var(--color-surface-container-low);
   
   & .title,
   & .description {
