@@ -1,0 +1,54 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  cursor: pointer;
+
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: flex-start;
+  --container-align-items: center;
+  --container-gap: var(--size-2);
+  --container-height: var(--size-8);
+  --container-width: initial;
+  --container-padding: 0 var(--size-4);
+
+  --container-outline: 1px solid var(--color-outline);
+  --container-elevation: initial;
+  --container-shape: var(--shape-corner-s);
+  
+  --bg-color: initial;
+  
+  --text-color: var(--color-on-surface);
+  --icon-color: var(--color-primary);
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  &[with-icon] {
+    --container-padding: 0 var(--size-4) 0 var(--size-2);
+  }
+
+  & *:not(i) {
+    color: var(--text-color);
+  }
+
+  & i {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  & input {
+    display: none;
+  }
+}
