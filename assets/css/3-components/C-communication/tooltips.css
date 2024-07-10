@@ -1,0 +1,55 @@
+.tooltip {
+  --container-display: flex;
+  --container-flex-flow: row wrap;
+  --container-justify-content: initial;
+  --container-align-items: initial;
+  --container-gap: initial;
+  --container-height: initial;
+  --container-width: initial;
+  --container-padding: 0 var(--size-2);
+
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: var(--shape-corner-xs);
+  
+  --bg-color: var(--color-inverse-surface);
+  
+  --text-color: var(--color-inverse-on-surface);
+  --icon-color: var(--color-inverse-on-surface);
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  min-height: var(--size-6);
+
+  &[rich] {
+    --container-flex-flow: column nowrap;
+    --container-padding: var(--size-3) var(--size-4) var(--size-2) var(--size-4);
+    
+    --container-elevation: var(--elevation2);
+    --container-shape: var(--shape-corner-m);
+
+    --bg-color: var(--color-surface-container);
+
+    --text-color: var(--color-on-surface-variant);
+    --icon-color: var(--color-on-surface-variant);
+
+    & .subhead {
+      margin-bottom: var(--size-1);
+    }
+
+    & .supporting-text {
+      margin-bottom: var(--size-3);
+    }
+
+    & .action {
+      color: var(--color-primary);
+    }
+  }
+}

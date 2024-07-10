@@ -45,7 +45,6 @@
     --container-padding: 0 var(--size-2) 0 var(--size-4);
   }
 
-
   &[with-close-button] {
     --container-padding: 0 var(--size-3) 0 var(--size-4);
   }
