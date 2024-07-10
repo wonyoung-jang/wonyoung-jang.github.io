@@ -21,7 +21,7 @@
         Components | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.91d519143255eb7bea185fc0658a641562668869f6f1f44635e8251c4053ee09.css" integrity="sha256-kdUZFDJV63vqGF/AZYpkFWJmiGn28fRGNeglHEBT7gk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.a9dbe18c5b2a1099b7a986b37f22838ff86f316cd0b2b660e7b76af982e81b19.css" integrity="sha256-qdvhjFsqEJm3qYazfyKDj/hvMWzQsrZg57dq&#43;YLoGxk=" rel="preload stylesheet" as="style">
 
 
 
@@ -136,7 +136,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/pit-signs-for-robotics-competition\/";
+    window.location.href = "\/disaster-recovery-robot-simulation\/";
   }
 </script>
 
@@ -485,7 +485,7 @@
 
 
 
-    <div class="component tabs title-medium">
+    <div class="component tabs title-medium" primary>
         
             <div class="sub-tabs-container">
                 <a class="component tab" href="/projects/">
@@ -613,6 +613,7 @@
     
     
     <details class="layout token-set" open>
+
       <summary class="token-set-title">Actions</summary>
 
       
@@ -627,19 +628,46 @@
 
       
       <section class="component-group">
-        <span class="title-large">Icon buttons</span>
-        <button class="component button icon-button">
-          <i>settings</i>
-        </button>
-        <button class="component button icon-button" filled>
-          <i>settings</i>
-        </button>
-        <button class="component button icon-button" filled-tonal>
-          <i>settings</i>
-        </button>
-        <button class="component button icon-button" outlined>
-          <i>settings</i>
-        </button>
+        <span class="title-large">Extended FABs</span>
+        <section>
+          <button class="component button surface-container-high fab" extended>
+            <i>add</i>
+          </button>
+          <button class="component button surface-container-high fab" extended>
+            Extended
+            <i>add</i>
+          </button>
+        </section>
+
+        <section>
+          <button class="component button primary-container fab" extended>
+            <i>add</i>
+          </button>
+          <button class="component button primary-container fab" extended>
+            Extended
+            <i>add</i>
+          </button>
+        </section>
+
+        <section>
+          <button class="component button secondary-container fab" extended>
+            <i>add</i>
+          </button>
+          <button class="component button secondary-container fab" extended>
+            Extended
+            <i>add</i>
+          </button>
+        </section>
+
+        <section>
+          <button class="component button tertiary-container fab" extended>
+            <i>add</i>
+          </button>
+          <button class="component button tertiary-container fab" extended>
+            Extended
+            <i>add</i>
+          </button>
+        </section>
       </section>
 
       
@@ -696,51 +724,25 @@
 
       
       <section class="component-group">
-        <span class="title-large">Extended FABs</span>
-        <section>
-          <button class="component button surface-container-high fab" extended>
-            <i>add</i>
-          </button>
-          <button class="component button surface-container-high fab" extended>
-            Extended
-            <i>add</i>
-          </button>
-        </section>
-
-        <section>
-          <button class="component button primary-container fab" extended>
-            <i>add</i>
-          </button>
-          <button class="component button primary-container fab" extended>
-            Extended
-            <i>add</i>
-          </button>
-        </section>
-
-        <section>
-          <button class="component button secondary-container fab" extended>
-            <i>add</i>
-          </button>
-          <button class="component button secondary-container fab" extended>
-            Extended
-            <i>add</i>
-          </button>
-        </section>
-
-        <section>
-          <button class="component button tertiary-container fab" extended>
-            <i>add</i>
-          </button>
-          <button class="component button tertiary-container fab" extended>
-            Extended
-            <i>add</i>
-          </button>
-        </section>
+        <span class="title-large">Icon buttons</span>
+        <button class="component button icon-button">
+          <i>settings</i>
+        </button>
+        <button class="component button icon-button" filled>
+          <i>settings</i>
+        </button>
+        <button class="component button icon-button" filled-tonal>
+          <i>settings</i>
+        </button>
+        <button class="component button icon-button" outlined>
+          <i>settings</i>
+        </button>
       </section>
 
+      
       <section class="component-group">
         <span class="title-large">Segmented buttons</span>
-        <div class="component segmented-buttons">
+        <div class="component segmented-button">
             <input type="radio" id="start" name="segmented" checked>
             <label for="start" class="component button">Start</label>
             
@@ -748,7 +750,7 @@
             <label for="end" class="component button">End</label>
         </div>
 
-        <div class="component segmented-buttons">
+        <div class="component segmented-button">
             <input type="radio" id="start2" name="segmented" checked>
             <label for="start2" class="component button">Start</label>
             
@@ -759,7 +761,7 @@
             <label for="end2" class="component button">End</label>
         </div>
 
-        <div class="component segmented-buttons">
+        <div class="component segmented-button">
             <input type="radio" id="start3" name="segmented" checked>
             <label for="start3" class="component button">Start</label>
             
@@ -773,7 +775,7 @@
             <label for="end3" class="component button">End</label>
         </div>
 
-        <div class="component segmented-buttons">
+        <div class="component segmented-button">
             <input type="radio" id="start4" name="segmented" checked>
             <label for="start4" class="component button">Start</label>
             
@@ -798,20 +800,40 @@
       <summary class="token-set-title">Communication</summary>
 
       
+      <section class="component-group">
+        <span class="title-large">Badges</span>
 
+      </section>
       
       
-      
+      <section class="component-group">
+        <span class="title-large">Progress indicators</span>
 
+      </section>
       
+      
+      <section class="component-group">
+        <span class="title-large">Snackbar</span>
+
+      </section>
+      
+      
+      <section class="component-group">
+        <span class="title-large">Tooltips</span>
+
+      </section>
+
     </details>
-
 
     
     <details class="layout token-set" open>
       <summary class="token-set-title">Containment</summary>
 
       
+      <section class="component-group">
+        <span class="title-large">Bottom sheets</span>
+
+      </section>
 
       
       <section class="component-group">
@@ -828,6 +850,10 @@
       </section>
 
       
+      <section class="component-group">
+        <span class="title-large">Carousel</span>
+
+      </section>
       
       
       <section class="component-group">
@@ -867,6 +893,11 @@
       </section>
 
       
+      <section class="component-group">
+        <span class="title-large">Side sheets</span>
+
+      </section>
+
     </details>
 
     
@@ -874,12 +905,28 @@
       <summary class="token-set-title">Navigation</summary>
 
       
+      <section class="component-group">
+        <span class="title-large">Bottom app bar</span>
 
+      </section>
       
+      
+      <section class="component-group">
+        <span class="title-large">Navigation bar</span>
 
+      </section>
       
+      
+      <section class="component-group">
+        <span class="title-large">Navigation drawer</span>
 
+      </section>
       
+      
+      <section class="component-group">
+        <span class="title-large">Navigation rail</span>
+
+      </section>
 
       
       <section class="component-group">
@@ -896,6 +943,21 @@
       </section>
 
       
+      <section class="component-group">
+        <span class="title-large">Tabs</span>
+        <span class="title-medium">Primary tabs</span>
+        <div class="component tabs" primary>
+          <span class="component tab active">Tab 1</span>
+          <span class="component tab">Tab 2</span>
+          <span class="component tab">Tab 3</span>
+        </div>
+        <span class="title-medium">Secondary tabs</span>
+        <div class="component tabs" secondary>
+          <span class="component tab">Tab 1</span>
+          <span class="component tab active">Tab 2</span>
+          <span class="component tab">Tab 3</span>
+        </div>
+      </section>
 
       
       <section class="component-group">
@@ -944,6 +1006,30 @@
 
       
       <section class="component-group">
+        <span class="title-large">Chips</span>
+
+      </section>
+      
+      
+      <section class="component-group">
+        <span class="title-large">Date pickers</span>
+
+      </section>
+      
+      
+      <section class="component-group">
+        <span class="title-large">Menus</span>
+        <div class="component menus">
+          <span class="component menu-item">Menu item 1</span>
+          <span class="component menu-item">Menu item 2</span>
+          <span class="component menu-item">Menu item 3</span>
+          <div class="divider"></div>
+          <span class="component menu-item">Menu item 4</span>
+        </div>
+      </section>
+
+      
+      <section class="component-group">
         <fieldset>
           <legend class="title-large">Radio button</legend>
           <div>
@@ -985,6 +1071,19 @@
           </datalist>
         </div>
       </section>
+
+      
+      <section class="component-group">
+        <span class="title-large">Switch</span>
+
+      </section>
+
+      
+      <section class="component-group">
+        <span class="title-large">Time pickers</span>
+
+      </section>
+
     </details>
 
     
@@ -1064,8 +1163,10 @@
         </button>
       </section>
     </details> 
+
   </section>
 </article>
+
 
             </div>
 
@@ -1128,8 +1229,6 @@
      
     
 
-     
-        
      
         
      

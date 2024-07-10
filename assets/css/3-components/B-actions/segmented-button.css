@@ -1,8 +1,8 @@
-.segmented-buttons {
+.segmented-button {
   --container-display: flex;
   --container-flex-flow: row nowrap;
   --container-align-items: center;
-  --container-padding: 0 var(--size-3);
+  --container-padding: 0;
   
   & .button {
     --bg-color: var(--color-surface);
@@ -35,6 +35,6 @@
   }
 }
 
-.segmented-buttons {
+.segmented-button {
   width: 100%;
 }

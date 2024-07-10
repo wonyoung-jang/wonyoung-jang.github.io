@@ -1,13 +1,40 @@
-.menu {
-    background-color: var(--color-surface-container);
-    border-radius: var(--shape-corner-xs);
-    box-shadow: var(--elevation2);
-    color: var(--color-on-secondary-container);
+.menus {
+    flex: 1 1 auto;
+    --container-display: flex;
+    --container-flex-flow: column nowrap;
+    --container-justify-content: center;
+    --container-align-items: flex-start;
+    --container-gap: initial;
+    --container-height: auto;
+    --container-width: auto;
+  
+    --container-outline: initial;
+    --container-elevation: initial;
+    --container-shape: initial;
     
-    inset: auto 0 0 auto;
-    border: none;
-    padding: 0 var(--size-3);
+    --bg-color: initial;
     
-    overflow-x: hidden;
-    overflow-y: auto;
+    --text-color: initial;
+    --icon-color: initial;
+
+    & .menu-item {
+        --container-display: flex;
+        --container-flex-flow: row nowrap;
+        --container-justify-content: flex-start;
+        --container-align-items: center;
+        --container-height: var(--size-12);
+        --container-width: 100%;
+        --container-padding: var(--size-2) var(--size-3);
+        --container-gap: var(--size-3);
+        
+        --bg-color: var(--color-surface-container);
+        --text-color: var(--color-on-surface);
+        --icon-color: var(--color-on-surface-variant);
+    }
+
+    & .divider {
+        padding: unset;
+        margin: unset;
+        padding-block: var(--size-4);
+    }
 }
