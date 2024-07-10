@@ -30,6 +30,8 @@ An admonition is a special callout or highlighted section on a webpage used to d
 
 Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
 
+See: [Logseq documentation - Advanced commands](https://docs.logseq.com/#/page/advanced%20commands?anchor=ls-block-66670363-773f-4f4e-992f-9b706c2f7985)
+
 ## Admonitions
 
 {{< logseq/orgWARNING >}}  This is a warning

@@ -51,6 +51,34 @@
       <atom:link href="http://192.168.40.181:1313/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
+          ErgoDox EZ LEGO tenting kits
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+        </guid>
+
+        <description>
+          Purpose My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:&#xA;They are individually adjusted with thumbscrews, which can be finnicky logseq.order-list-type:: number&#xA;The maximum tenting may not be as extreme as you might like logseq.order-list-type:: number&#xA;With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.
+        </description>
+      </item>
+      <item>
+        <title>
           All Logseq elements
         </title>
 
@@ -495,34 +523,6 @@
 
         <description>
           Contact me directly The best way to contact me directly is through email at contact@wonyoungjang.org.&#xA;Give me feedback Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.
-        </description>
-      </item>
-      <item>
-        <title>
-          ErgoDox EZ LEGO tenting kits
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
-        </guid>
-
-        <description>
-           
         </description>
       </item>
       <item>

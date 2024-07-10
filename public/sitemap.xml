@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://192.168.40.181:1313/projects/design/</loc>
+    <lastmod>2024-07-07T13:41:07-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/</loc>
+    <lastmod>2024-07-07T13:41:07-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/projects/</loc>
+    <lastmod>2024-07-07T17:06:16-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/</loc>
+    <lastmod>2024-07-08T12:27:52-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.40.181:1313/all-logseq-elements/</loc>
     <lastmod>2024-07-08T12:27:52-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -92,11 +112,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-08T12:27:52-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://192.168.40.181:1313/about/</loc>
     <lastmod>2024-07-07T13:41:07-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -107,16 +122,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/projects/design/</loc>
-    <lastmod>2024-07-07T13:41:07-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/</loc>
-    <lastmod>2024-07-07T13:41:07-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/</loc>
     <lastmod>2024-07-07T13:41:07-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -124,11 +129,6 @@
   </url><url>
     <loc>http://192.168.40.181:1313/pit-signs-for-robotics-competition/</loc>
     <lastmod>2024-07-07T13:41:07-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/projects/</loc>
-    <lastmod>2024-07-07T17:06:16-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
