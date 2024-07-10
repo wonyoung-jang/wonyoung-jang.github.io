@@ -14,19 +14,20 @@
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
+      
+      &:nth-child(1) {
+        background-color: var(--bg-color);
+        color: var(--icon-color);
+        grid-row: span 8;
+      }
+  
+      &:nth-child(2) {
+        background-color: var(--icon-color);
+        color: var(--bg-color);
+        grid-row: span 5;
+      }
     }
 
-    & span:nth-child(1) {
-      background-color: var(--bg-color);
-      color: var(--icon-color);
-      grid-row: span 8;
-    }
-
-    & span:nth-child(2) {
-      background-color: var(--icon-color);
-      color: var(--bg-color);
-      grid-row: span 5;
-    }
   }
 }
 
