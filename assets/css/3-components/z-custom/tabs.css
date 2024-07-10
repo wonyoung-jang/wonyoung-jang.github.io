@@ -1,6 +1,6 @@
 /* Custom */
 .tabs:has(.sub-tabs-container) {
-  --container-gap: var(--size-1);
+  --container-gap: 3px;
 }
 
 .sub-tabs-container {

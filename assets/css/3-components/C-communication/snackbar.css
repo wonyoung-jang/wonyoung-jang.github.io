@@ -1,0 +1,52 @@
+.snackbar {
+  flex: 1 1 auto;
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: flex-start;
+  --container-align-items: center;
+  --container-gap: var(--size-3);
+  --container-height: var(--size-12);
+  --container-width: initial;
+  --container-padding: 0 var(--size-4);
+
+  --container-outline: initial;
+  --container-elevation: var(--elevation3);
+  --container-shape: var(--shape-corner-xs);
+  
+  --bg-color: var(--color-inverse-surface);
+  
+  --text-color: var(--color-inverse-on-surface);
+  --icon-color: var(--color-inverse-primary);
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  color: var(--text-color);
+
+  & *:not(.action, i) {
+    flex: 1 1 auto;
+  }
+
+  & .action {
+    color: var(--icon-color);
+  }
+
+  &[two] {
+    --container-height: var(--size-17);
+  }
+
+  &[with-action] {
+    --container-padding: 0 var(--size-2) 0 var(--size-4);
+  }
+
+
+  &[with-close-button] {
+    --container-padding: 0 var(--size-3) 0 var(--size-4);
+  }
+}

@@ -209,7 +209,19 @@
       {{/*  TODO Snackbar  */}}
       <section class="component-group">
         <span class="title-large">Snackbar</span>
-
+        <div class="component snackbar body-medium" with-action>
+          <span>Single line snackbar with action</span>
+          <span class="action label-large">Action</span>
+        </div>
+        <div class="component snackbar body-medium" with-close-button>
+          <span>Single line snackbar with close button</span>
+          <span class="action label-large">Action</span>
+          <i>close</i>
+        </div>
+        <div class="component snackbar body-medium" two with-action>
+          <span>Two-line snackbar <br> with action</span>
+          <span class="action label-large">Action</span>
+        </div>
       </section>
       
       {{/*  TODO Tooltips  */}}
@@ -337,7 +349,7 @@
         </span>
       </section>
 
-      {{/*  TODO Tabs  */}}
+      {{/*  Tabs  */}}
       <section class="component-group">
         <span class="title-large">Tabs</span>
         <span class="title-medium">Primary tabs</span>
