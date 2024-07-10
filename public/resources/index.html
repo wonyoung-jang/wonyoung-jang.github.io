@@ -21,7 +21,7 @@
         Resources | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.18b7ae7b5f6e460670ec4741140c977fdddf8e41bb7baf5ec31760a7984bb25d.css" integrity="sha256-GLeue19uRgZw7EdBFAyXf93fjkG7e69ewxdgp5hLsl0=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.107dfbe7979f42cdcdab6c76d98adbd71105bf991443d44bc209bb617967570e.css" integrity="sha256-EH3755efQs3Nq2x22Yrb1xEFv5kUQ9RLwgm7YXlnVw4=" rel="preload stylesheet" as="style">
 
 
 
@@ -132,7 +132,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/supporting-pane-layout\/";
+    window.location.href = "\/logseq-markdown-tokenizer\/";
   }
 </script>
 
@@ -839,49 +839,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
