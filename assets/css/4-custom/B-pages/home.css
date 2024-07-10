@@ -42,10 +42,9 @@
   justify-content: flex-start;
   gap: var(--size-5);
   padding: var(--size-8);
-  background-color: var(--color-surface-container-low);
-  border-radius: var(--shape-corner-xl);
-  
-  margin-block: var(--spacing-panes);
+  margin: var(--size-8);
+  background-color: var(--color-surface-container-lowest);
+  border-radius: var(--shape-corner-m);
 
   & .blurb {
     display: flex;
@@ -64,11 +63,11 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: var(--size-5);
+  gap: var(--size-10);
   padding: var(--size-8) var(--size-10);
-  margin: var(--size-3);
-  background-color: var(--color-surface-container-lowest);
-  border-radius: var(--shape-corner-xl);
+  margin: var(--size-4);
+  background-color: var(--color-surface-container-low);
+  border-radius: var(--shape-corner-l);
 
   & h3 {
     width: 100%;
