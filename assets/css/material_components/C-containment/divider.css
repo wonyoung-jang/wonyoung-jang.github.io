@@ -1,10 +1,10 @@
-.divider {
+hr {
   display: flex;
   flex-flow: row nowrap;
   color: var(--color-outline-variant);
   height: 1px;
   width: 100%;
-
+  
   &[mid],
   &[start] {
     padding-inline-start: var(--size-4);
@@ -24,7 +24,7 @@
 }
 
 @media (forced-colors: active) {
-  .divider::before {
+  hr::before {
     background: CanvasText;
   }
 }
