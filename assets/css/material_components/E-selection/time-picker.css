@@ -1,0 +1,160 @@
+.time-picker {
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: flex-start;
+  --container-align-items: flex-start;
+  --container-gap: initial;
+  --container-height: auto;
+  --container-width: auto;
+  --container-padding: var(--size-6);
+
+  --container-outline: initial;
+  --container-elevation: var(--elevation3);
+  --container-shape: var(--shape-corner-xl);
+  
+  --bg-color: var(--color-surface-container-high);
+  
+  --text-color: initial;
+  --icon-color: initial;
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+}
+
+/* Headline */
+.time-picker-headline {
+  color: var(--color-on-surface-variant);
+  font-size: var(--typescale-label-medium-size);
+  font-weight: var(--typescale-label-medium-weight);
+  font-family: var(--typescale-label-medium-family);
+  line-height: var(--typescale-label-medium-line-height);
+  margin-bottom: var(--size-5);
+}
+
+.time-picker-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-bottom: var(--typescale-body-small-size);
+}
+
+/* Time input field */
+.time-input-field-container {
+  display: flex; 
+  flex-flow: row nowrap;
+  
+  & .time-input-option {
+    width: 96px;
+    height: 72px;
+    background-color: var(--color-surface-container-highest);
+    border-radius: var(--shape-corner-s);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    
+    font-size: var(--typescale-display-medium-size);
+    font-weight: var(--typescale-display-medium-weight);
+    font-family: var(--typescale-display-medium-family);
+    line-height: var(--typescale-display-medium-line-height);
+    color: var(--color-on-surface);
+
+    &.selected {
+      background-color: var(--color-primary-container);
+      color: var(--color-on-primary-container);
+    }
+
+    & .supporting-text {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      font-size: var(--typescale-body-small-size);
+      font-weight: var(--typescale-body-small-weight);
+      font-family: var(--typescale-body-small-family);
+      line-height: var(--typescale-body-small-line-height);
+      color: var(--color-on-surface-variant);
+    }
+  }
+  
+  /* Time input field separator */
+  & .time-input-separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--typescale-display-large-size);
+    font-weight: var(--typescale-display-large-weight);
+    font-family: var(--typescale-display-large-family);
+    line-height: var(--typescale-display-large-line-height);
+    color: var(--color-on-surface);
+    width: var(--size-6);
+  }
+}
+
+/* Period selector */
+.period-selector-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: var(--size-3);
+  
+  & .period-option {
+    flex: 1;
+    width: var(--size-13);
+    height: var(--size-18);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    border: 1px solid var(--color-outline);
+  
+    color: var(--color-on-surface);
+    font-size: var(--typescale-title-medium-size);
+    font-weight: var(--typescale-title-medium-weight);
+    font-family: var(--typescale-title-medium-family);
+    line-height: var(--typescale-title-medium-line-height);
+    
+    &:first-child {
+      border-radius: var(--shape-corner-s-top);
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-radius: var(--shape-corner-s-bottom);
+    }
+    
+    &.selected {
+      background-color: var(--color-tertiary-container);
+      color: var(--color-on-tertiary-container);
+    }
+  }
+}
+
+/* Time picker actions */
+.time-picker-actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--size-6);
+
+  
+  & .time-picker-start,
+  & .time-picker-end {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: unset;
+  }
+
+  .time-picker-end {
+    margin-left: auto;
+  }
+}

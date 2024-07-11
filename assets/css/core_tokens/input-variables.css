@@ -11,7 +11,7 @@
   /* || Typography */
 
   /* Typescale factors (L → B → T → H → D) */
-  --scale-up-type:            var(--scale-maj-6);
+  --scale-up-type:            var(--scale-min-6);
   --scale-back-type:          var(--scale-min-2);
 
   /* Typescale factors (S → M → L) */

@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 <article class="layout panes basic-single-pane">
+
   <section class="layout pane" id="components-showcase">  
+
     {{ with .Content }}
       {{ . }}
     {{ end }}
@@ -727,7 +729,7 @@
       
       {{/*  TODO Date pickers  */}}
       <section class="component-group">
-        <span class="title-medium strike-through">❌ Date pickers</span>
+        <span class="title-large">Date pickers</span>
 
       </section>
       
@@ -794,7 +796,70 @@
 
       {{/*  TODO Time pickers  */}}
       <section class="component-group">
-        <span class="title-medium strike-through">❌ Time pickers</span>
+        <span class="title-large">Time pickers</span>
+
+        <div class="component time-picker">
+
+          <div class="time-picker-headline">Enter time</div>
+
+          <div class="time-picker-container">
+            <div class="time-input-field-container">
+              <div class="time-input-option selected">
+                07
+                <span class="supporting-text">Hour</span>
+              </div>
+              <div class="time-input-separator">:</div>
+              <div class="time-input-option">
+                00
+                <span class="supporting-text">Minute</span>
+              </div>
+            </div>
+
+            <div class="period-selector-container">
+              <div class="period-option selected">AM</div>
+              <div class="period-option">PM</div>
+            </div>
+          </div>
+
+          <div class="time-picker-actions"> 
+            <div class="time-picker-start">
+              <button class="component button icon-button"><i>schedule</i></button>
+            </div>
+            <div class="time-picker-end">
+              <button class="component button common-button">Cancel</button>
+              <button class="component button common-button">OK</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="component time-picker">
+
+          <div class="time-picker-headline">Enter time</div>
+
+          <div class="time-picker-container">
+            <div class="time-input-field-container">
+              <div class="time-input-option selected">
+                07
+                <span class="supporting-text">Hour</span>
+              </div>
+              <div class="time-input-separator">:</div>
+              <div class="time-input-option">
+                00
+                <span class="supporting-text">Minute</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="time-picker-actions"> 
+            <div class="time-picker-start">
+              <button class="component button icon-button"><i>schedule</i></button>
+            </div>
+            <div class="time-picker-end">
+              <button class="component button common-button">Cancel</button>
+              <button class="component button common-button">OK</button>
+            </div>
+          </div>
+        </div>
 
       </section>
 
@@ -823,7 +888,9 @@
           placeholder="Placeholder text"></textarea>
       </section>
     </details>
+
   </section>
+
 </article>
 
 {{ end }}
