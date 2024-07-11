@@ -14,67 +14,101 @@
       {{/*  Buttons  */}}
       <section class="component-group">
         <span class="title-large">Common buttons</span>
-        <button class="component button common-button">Text</button>
-        <button class="component button common-button" elevated>Elevated</button>
-        <button class="component button common-button" filled>Filled</button>
-        <button class="component button common-button" filled-tonal>Filled-Tonal</button>
-        <button class="component button common-button" outlined>Outlined</button>
+
+        <section>
+          <span class="title-medium">No icons</span>
+          <button class="component button common-button">Text</button>
+          <button class="component button common-button" elevated>Elevated</button>
+          <button class="component button common-button" filled>Filled</button>
+          <button class="component button common-button" filled-tonal>Filled-Tonal</button>
+          <button class="component button common-button" outlined>Outlined</button>
+        </section>
+        
+        <section>
+          <span class="title-medium">With icons</span>
+          <button class="component button common-button" with-icon>
+            <i>add</i>
+            Text
+          </button>
+          <button class="component button common-button" elevated with-icon>
+            <i>add</i>
+            Elevated
+          </button>
+          <button class="component button common-button" filled with-icon>
+            <i>add</i>
+            Filled
+          </button>
+          <button class="component button common-button" filled-tonal with-icon>
+            <i>add</i>
+            Filled-Tonal
+          </button>
+          <button class="component button common-button" outlined with-icon>
+            <i>add</i>
+            Outlined
+          </button>
+        </section>
+
       </section>
 
       {{/*  Extended FABs  */}}
       <section class="component-group">
         <span class="title-large">Extended FABs</span>
+
         <section>
           <button class="component button surface-container-high fab" extended>
-            <i>add</i>
+            Extended
           </button>
           <button class="component button surface-container-high fab" extended>
-            Extended
             <i>add</i>
+            Extended
           </button>
         </section>
 
         <section>
           <button class="component button primary-container fab" extended>
-            <i>add</i>
+            Extended
           </button>
           <button class="component button primary-container fab" extended>
-            Extended
             <i>add</i>
+            Extended
           </button>
         </section>
 
         <section>
           <button class="component button secondary-container fab" extended>
-            <i>add</i>
+            Extended
           </button>
           <button class="component button secondary-container fab" extended>
-            Extended
             <i>add</i>
+            Extended
           </button>
         </section>
 
         <section>
           <button class="component button tertiary-container fab" extended>
-            <i>add</i>
+            Extended
           </button>
           <button class="component button tertiary-container fab" extended>
-            Extended
             <i>add</i>
+            Extended
           </button>
         </section>
+
       </section>
 
       {{/*  FABs  */}}
       <section class="component-group">
         <span class="title-large">FABs</span>
+
         <section>
           <button class="component button surface-container-high fab" small>
             <i>add</i>
           </button>
+          
           <button class="component button surface-container-high fab">
             <i>add</i>
           </button>
+
           <button class="component button surface-container-high fab" large>
             <i>add</i>
           </button>
@@ -115,23 +149,29 @@
             <i>add</i>
           </button>
         </section>
+
       </section>
 
       {{/*  Icon buttons  */}}
       <section class="component-group">
         <span class="title-large">Icon buttons</span>
+
         <button class="component button icon-button">
           <i>settings</i>
         </button>
+
         <button class="component button icon-button" filled>
           <i>settings</i>
         </button>
+
         <button class="component button icon-button" filled-tonal>
           <i>settings</i>
         </button>
+
         <button class="component button icon-button" outlined>
           <i>settings</i>
         </button>
+
       </section>
 
       {{/*  Segmented button  */}}
@@ -196,7 +236,13 @@
 
       {{/*  TODO Badges  */}}
       <section class="component-group">
-        <span class="title-medium strike-through">❌ Badges</span>
+        <span class="title-medium">Badges</span>
+
+        <div class="component badge" large>
+          <span class="label label-small">3</span>
+        </div>
+
+        <div class="component badge"></div>
 
       </section>
       
@@ -307,13 +353,13 @@
       <section class="component-group">
         <span class="title-large">Cards</span>
         <div class="component card" elevated>
-          <span>Elevated card</span>
+          <span class="title-medium">Elevated card</span>
         </div>
         <div class="component card" filled>
-          <span>Filled card</span>
+          <span class="title-medium">Filled card</span>
         </div>
         <div class="component card" outlined>
-          <span>Outlined card</span>
+          <span class="title-medium">Outlined card</span>
         </div>
       </section>
 
@@ -337,9 +383,13 @@
       {{/*  Divider  */}}
       <section class="component-group">
         <span class="title-large">Divider</span>
+        <span class="title-medium">Mid inset</span>
         <div class="divider" mid></div>
+        <span class="title-medium">Start inset</span>
         <div class="divider" start></div>
+        <span class="title-medium">End inset</span>
         <div class="divider" end></div>
+        <span class="title-medium">No inset</span>
         <div class="divider"></div>
       </section>
 
@@ -374,6 +424,42 @@
       {{/*  Bottom app bar  */}}
       <section class="component-group">
         <span class="title-large">Bottom app bar</span>
+
+        <span class="title-medium">No FAB</span>
+
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+        </div>
+
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+        </div>
+
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>settings</i>
+            </button>
+        </div>
+        
         <div class="component bottom-app-bar">
           <span class="start">
             <button class="component button icon-button">
@@ -391,6 +477,62 @@
             <button class="component button icon-button">
               <i>token</i>
             </button>
+        </div>
+
+        <span class="title-medium">With FAB</span>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
+        </div>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
+        </div>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>settings</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
         </div>
 
         <div class="component bottom-app-bar" with-fab>
@@ -461,11 +603,46 @@
           <span class="component tab">Tab 2</span>
           <span class="component tab">Tab 3</span>
         </div>
+
+        <div class="component tabs" primary>
+          <span class="component tab active">
+            <i>add</i>
+            Tab 1
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+            Tab 2
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+            Tab 3
+          </span>
+        </div>
+
         <span class="title-medium">Secondary tabs</span>
         <div class="component tabs" secondary>
           <span class="component tab">Tab 1</span>
           <span class="component tab active">Tab 2</span>
           <span class="component tab">Tab 3</span>
+        </div>
+
+        <div class="component tabs" secondary>
+          <span class="component tab">
+            <i>add</i>
+            Tab 1
+          </span>
+
+          <span class="component tab active">
+            <i>add</i>
+            Tab 2
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+            Tab 3
+          </span>
         </div>
       </section>
 
@@ -491,7 +668,7 @@
     <details class="layout token-set" open>
       <summary class="token-set-title">Selections</summary>
 
-      {{/*  TODO Checkbox  */}}
+      {{/*  Checkbox  */}}
       <section class="component-group">
         <fieldset>
           <legend class="title-large">Checkbox</legend>
@@ -580,10 +757,6 @@
         <span class="title-large">Sliders</span>
         <div class="slider">
           <input type="range">
-        </div>
-
-        <div class="slider">
-          <input type="range" min="1" max="100" value="50" list="markers">
         </div>
 
         <div class="slider">

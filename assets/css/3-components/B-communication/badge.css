@@ -1,0 +1,35 @@
+.badge {
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: center;
+  --container-align-items: center;
+  --container-gap: initial;
+  --container-height: 6px;
+  --container-width: 6px;
+  --container-padding: initial;
+
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: 3px;
+  
+  --bg-color: var(--color-error);
+  
+  --text-color: var(--color-on-error);
+  --icon-color: var(--color-on-error);
+
+  &[large] {
+    --container-height: var(--size-4);
+    --container-width: var(--size-4);
+    
+    --container-shape: var(--size-2);
+
+    & > .label {
+      color: var(--text-color);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: var(--size-2);
+    }
+  }
+}
