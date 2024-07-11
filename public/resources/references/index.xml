@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/resources/references/
+      https://wonyoungjang.org/resources/references/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Wed, 10 Jul 2024 12:05:37 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/resources/references/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           All Logseq elements
         </title>
 
         <link>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </link>
 
         <pubDate>
@@ -71,11 +71,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </guid>
 
         <description>
-          Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages Page reference Input: [About](http://192.168.40.181:1313/about/)&#xA;Output: About&#xA;Page embed Input: {{embed [About](http://192.168.40.181:1313/about/)}}&#xA;Output: {{embed About}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}
+          Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages Page reference Input: [About](https://wonyoungjang.org/about/)&#xA;Output: About&#xA;Page embed Input: {{embed [About](https://wonyoungjang.org/about/)}}&#xA;Output: {{embed About}}&#xA;Logseq blocks Block reference Input: ## About me&#xD;Output: ## About me&#xA;Block embed Input: {{embed ## About me&#xD;}}
         </description>
       </item>
       <item>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </guid>
 
         <description>

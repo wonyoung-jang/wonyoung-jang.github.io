@@ -22,6 +22,8 @@
             </span>
         {{ end }}
 
+        <div class="divider"></div>
+        
         {{/* Github button */}}
         {{ with .Params.githubRepo }}
             {{ partial "github-button.html" (dict "githubRepo" .) }}
