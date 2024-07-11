@@ -1,0 +1,88 @@
+.date-picker {
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: flex-start;
+  --container-align-items: flex-start;
+  --container-gap: initial;
+  --container-height: 100%;
+  --container-width: 100%;
+  --container-padding: var(--size-4) var(--size-6);
+
+  --container-outline: initial;
+  --container-elevation: var(--elevation3);
+  --container-shape: var(--shape-corner-xl);
+  
+  --bg-color: var(--color-surface-container-high);
+  
+  --text-color: initial;
+  --icon-color: initial;
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  max-width: 328px;
+  max-height: 512px;
+  
+  & .header {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    height: 100%;
+    max-width: 328px;
+    max-height: 120px;
+    
+    & .supporting-text {
+      color: var(--color-on-surface-variant);
+      font-size: var(--typescale-label-large-size);
+      font-weight: var(--typescale-label-large-weight);
+      font-family: var(--typescale-label-large-family);
+      line-height: var(--typescale-label-large-line-height);
+    }
+
+    & .headline-container {
+      flex: 1 1 auto;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      margin-top: var(--size-9);
+
+      & .headline {
+        color: var(--color-on-surface-variant);
+        font-size: var(--typescale-headline-large-size);
+        font-weight: var(--typescale-headline-large-weight);
+        font-family: var(--typescale-headline-large-family);
+        line-height: var(--typescale-headline-large-line-height);
+      }
+
+      & .icon-button {
+        margin-left: auto;
+        font-size: var(--size-6);
+      }
+    }
+  }
+
+  & .divider {
+    margin-top: 10px;
+  }
+
+  & .text-field {
+    margin-top: 10px;
+  }
+
+  & .date-picker-actions {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: auto;
+    gap: var(--size-4);
+    min-height: var(--size-4);
+    margin-top: var(--size-6);
+  }
+}
