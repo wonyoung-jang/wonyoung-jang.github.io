@@ -1,0 +1,191 @@
+progress {
+  position: relative;
+  inline-size: 100%;
+  block-size: var(--size-1);
+  color: var(--color-primary);
+  background: var(--color-secondary-container);
+  border-radius: inherit;
+  flex: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  writing-mode: horizontal-tb;
+  direction: ltr;
+  inset: 0;
+  --arc-duration: calc(var(--motion-duration-extra-long4) * 1.33);
+  --cycle-duration: calc(var(--arc-duration) * 4);
+  --linear-duration: calc(var(--motion-duration-extra-long4) * 2);
+
+  &:not([circular], [value]) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0%;
+      inline-size: 100%;
+      block-size: 100%;
+      clip-path: none;
+      background: currentcolor;      
+    }
+
+    &::-webkit-progress-value,
+    &::-moz-progress-bar {
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: var(--linear-duration);
+      animation-name:
+        linear-scale, 
+        linear-translate,
+        linear-scale-secondary,
+        linear-translate-secondary;
+    }
+  }
+  
+  &::-webkit-progress-bar {
+    background: none;
+  }
+  
+  &::-webkit-progress-value {
+    background: currentcolor;
+  }
+  
+  &::-moz-progress-bar {
+    background: currentcolor;
+  }
+
+  &[circular] {
+    display: inline-block;
+    inline-size: var(--size-12);
+    block-size: var(--size-12);
+    border-radius: var(--shape-corner-full);
+    border: var(--size-1) solid currentColor;
+    animation: var(--arc-duration) var(--motion-easing-emphasized) infinite to-circular;
+    background: none;
+    flex: none;
+    
+    &::-moz-progress-bar {
+      background: none;
+    }
+  }
+
+  &[vertical] {
+    max-inline-size: fit-content;
+    writing-mode: vertical-lr;
+  }
+}
+
+@keyframes linear-scale {
+  0% {
+    inline-size: 0%;
+    animation-timing-function: var(--motion-easing-emphasized-accelerate);
+  }
+  35% {
+    inline-size: 10%;
+    animation-timing-function: var(--motion-easing-emphasized);
+  }
+  70% {
+    inline-size: 100%;
+    animation-timing-function: var(--motion-easing-emphasized-decelerate);
+  }
+  100% {
+    inline-size: 0%;
+  }
+}
+
+@keyframes linear-scale-secondary {
+  0% {
+    inline-size: 0%;
+    animation-timing-function: var(--motion-easing-emphasized-accelerate);
+  }
+  20% {
+    inline-size: 45%;
+    animation-timing-function: var(--motion-easing-emphasized);
+  }
+  45% {
+    inline-size: 100%;
+    animation-timing-function: var(--motion-easing-emphasized-decelerate);
+  }
+  100% {
+    inline-size: 0%;
+  }
+}
+
+@keyframes linear-translate {
+  0% {
+    margin-inline-start: 0%;
+    animation-timing-function: var(--motion-easing-emphasized-accelerate);
+  }
+  20% {
+    margin-inline-start: 0%;
+    animation-timing-function: var(--motion-easing-emphasized);
+  }
+  60% {
+    margin-inline-start: 85%;
+    animation-timing-function: var(--motion-easing-emphasized-decelerate);
+  }
+  100% {
+    margin-inline-start: 200%;
+  }
+}
+
+@keyframes linear-translate-secondary {
+  0% {
+    margin-inline-start: 0%;
+    animation-timing-function: var(--motion-easing-emphasized-accelerate);
+  }
+  25% {
+    margin-inline-start: 35%;
+    animation-timing-function: var(--motion-easing-emphasized);
+  }
+  50% {
+    margin-inline-start: 85%;
+    animation-timing-function: var(--motion-easing-emphasized-decelerate);
+  }
+  100% {
+    margin-inline-start: 160%;
+  }
+}
+
+@keyframes to-circular {
+  0% {
+    transform: rotate(0deg);
+    clip-path: polygon(50% 50%, 0% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+
+  20% {
+    clip-path: polygon(50% 50%, 0% 0%, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+  }
+
+  30% {
+    clip-path: polygon(50% 50%, 0% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%);
+  }
+
+  40% {
+    clip-path: polygon(50% 50%, 0% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 50% 100%, 50% 100%);
+  }
+
+  60% {
+    clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 100%);
+  }
+
+  70% {
+    clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%, 0% 50%);
+  }
+
+  80% {
+    clip-path: polygon(50% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 50%);
+  }
+
+  90% {
+    transform: rotate(360deg);
+    clip-path: polygon(50% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%);
+  }
+
+  100% {
+    clip-path: polygon(50% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%);
+  }
+}

@@ -29,15 +29,32 @@
 {{- partialCached "fonts.html" . -}}
 
 {{/* Styles */}}
-{{- $tokens     := (resources.Match "css/0-tokens/**.css")         | resources.Concat "assets/css/0-tokens.css" -}}
-{{- $base       := (resources.Match "css/1-base/**.css")           | resources.Concat "assets/css/1-base.css" -}}
-{{- $layouts    := (resources.Match "css/2-layouts/**.css")        | resources.Concat "assets/css/2-layouts.css" -}}
-{{- $components := (resources.Match "css/3-components/**.css")     | resources.Concat "assets/css/3-components.css" -}}
-{{- $custom     := (resources.Match "css/4-custom/**.css")         | resources.Concat "assets/css/4-custom.css" -}}
-{{- $helpers    := (resources.Match "css/5-helpers/**.css")        | resources.Concat "assets/css/5-helpers.css" -}}
-{{- $stylesheet := (slice $tokens $base $layouts $components $custom $helpers) | resources.Concat "assets/css/stylesheet.css" | resources.Minify -}}
-{{- $stylesheet := $stylesheet | fingerprint -}}
-<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- $cssFiles := dict
+    "base"       (resources.Match "css/core_base/**.css")
+    "tokens"     (resources.Match "css/core_tokens/**.css")
+    "layouts"    (resources.Match "css/material_layouts/**.css")
+    "components" (resources.Match "css/material_components/**.css")
+    "custom"     (resources.Match "css/custom_custom/**.css")
+    "helpers"    (resources.Match "css/custom_helpers/**.css")
+-}}
+  
+{{- $stylesheets := dict
+"core"     (slice "base" "tokens")
+"material" (slice "layouts" "components")
+"custom"   (slice "custom" "helpers")
+-}}
+  
+{{- range $name, $parts := $stylesheets }}
+    {{- $files := slice }}
+
+    {{- range $parts }}
+        {{- $files = $files | append (index $cssFiles .) }}
+    {{- end }}
+
+    {{- $combined := $files | resources.Concat (printf "assets/css/%s.css" $name) | resources.Minify | fingerprint }}
+
+    <link crossorigin="anonymous" href="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- end }}
 
 {{/* Search */}}
 {{ if (eq .Layout `search`) }}

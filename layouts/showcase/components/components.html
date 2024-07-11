@@ -237,7 +237,7 @@
 
       {{/*  Badges  */}}
       <section class="component-group">
-        <span class="title-medium">Badges</span>
+        <span class="title-large">Badges</span>
 
         <div class="component badge" large>
           <span class="label label-small">3</span>
@@ -247,28 +247,41 @@
 
       </section>
       
-      {{/*  TODO Progress indicators  */}}
+      {{/*  Progress indicators  */}}
       <section class="component-group">
-        <span class="title-medium strike-through">❌ Progress indicators</span>
+        <span class="title-large">Progress indicators</span>
 
+        <span class="title-medium">Linear progress indicators</span>
+        <section>
+          <progress></progress>
+          <progress value="0.25"></progress>
+        </section>
+
+        <span class="title-medium">Circular progress indicators</span>
+        <section>
+          <progress circular></progress>
+        </section>
       </section>
       
       {{/*  Snackbar  */}}
       <section class="component-group">
         <span class="title-large">Snackbar</span>
-        <div class="component snackbar" with-action>
-          <span class="supporting-text body-medium">Single line snackbar with action</span>
-          <span class="action label-large">Action</span>
-        </div>
-        <div class="component snackbar" with-close-button>
-          <span class="supporting-text body-medium">Single line snackbar with close button</span>
-          <span class="action label-large">Action</span>
-          <i>close</i>
-        </div>
-        <div class="component snackbar" two with-action>
-          <span class="supporting-text body-medium">Two-line snackbar <br> with action</span>
-          <span class="action label-large">Action</span>
-        </div>
+
+        <section>
+          <div class="component snackbar" with-action>
+            <span class="supporting-text body-medium">Single line snackbar with action</span>
+            <span class="action label-large">Action</span>
+          </div>
+          <div class="component snackbar" with-close-button>
+            <span class="supporting-text body-medium">Single line snackbar with close button</span>
+            <span class="action label-large">Action</span>
+            <i>close</i>
+          </div>
+          <div class="component snackbar" two with-action>
+            <span class="supporting-text body-medium">Two-line snackbar <br> with action</span>
+            <span class="action label-large">Action</span>
+          </div>
+        </section>
       </section>
       
       {{/*  Tooltips  */}}
