@@ -1,0 +1,18 @@
+.canonical-supporting-pane {
+  --flex-flow: column nowrap;
+}
+
+/* Expanded: 840px-1199px */
+@media screen and (min-width: 840px) {
+  .canonical-supporting-pane .pane {
+    --flex-flow: row nowrap;
+    
+    &.focus-pane {
+      --flex: 2 1 0;
+    }
+  
+    &.supporting-pane {
+      --flex: 1 2 0;
+    }
+  }
+}

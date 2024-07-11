@@ -2,27 +2,9 @@
   --gap: var(--size-2);
   --display: flex;
   --flex-flow: row wrap;
-  
+ 
   & .card {
     flex: 1 1 calc(100% - var(--spacing-panes));
-  }
-}
-
-.canonical-list-detail .pane {
-  &.detail-pane,
-  &.list-pane {
-    --flex: 1 1 0;
-  }
-}
-
-.canonical-supporting-pane {
-  --flex-flow: column nowrap;
-}
-
-/* Compact: 0px-599px */
-@media screen and (max-width: 599px) {
-  .canonical-list-detail .pane.detail-pane {
-    --display: none;
   }
 }
 
@@ -38,19 +20,6 @@
   .canonical-feed .pane .card {
     flex: 1 1 calc(100% / 3 - var(--spacing-panes));
   }  
-
-  .canonical-supporting-pane .pane {
-    --flex-flow: row nowrap;
-    
-    &.focus-pane {
-      --flex: 2 1 0;
-    }
-  
-    &.supporting-pane {
-      --flex: 1 2 0;
-    }
-  }
-    
 }
 
 /* Large: 1200px-1599px */

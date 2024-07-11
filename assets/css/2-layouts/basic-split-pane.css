@@ -1,0 +1,31 @@
+.basic-split-pane,  
+.basic-fixed-flex:not(#single) {
+  --flex-flow: row nowrap;
+    
+  & .pane {
+    --flex: 1 1 0;
+    
+    &.fixed-pane {
+      --flex: 0 0 var(--fixed-pane-width);
+      --width: var(--fixed-pane-width);
+    }
+  }
+}
+
+/* Compact: 0-599px */
+@media screen and (max-width: 599px) {
+  .basic-split-pane {
+    & .pane {
+      --display: none;
+      --flex: 1 1 0;
+      --width: calc(50% - var(--spacing-panes) / 2);    
+    }
+
+    &::before {
+      content: "Compact: do not use this layout on screens smaller than 600px wide.";
+      display: flex;
+      color: var(--color-error);
+      padding: 1em;
+    }
+  }
+}

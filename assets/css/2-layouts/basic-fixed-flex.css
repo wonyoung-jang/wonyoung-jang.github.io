@@ -1,23 +1,4 @@
-.basic-singlepane .pane {
-  --flex: 1 1 auto;
-  --width: 100%;
-}
-
-.basic-splitpane,  
-.basic-fixedflex:not(#single) {
-  --flex-flow: row nowrap;
-    
-  & .pane {
-    --flex: 1 1 0;
-    
-    &.fixed-pane {
-      --flex: 0 0 var(--fixed-pane-width);
-      --width: var(--fixed-pane-width);
-    }
-  }
-}
-
-.basic-fixedflex#single {
+.basic-fixed-flex#single {
   --flex-flow: column nowrap;
   
   & .pane {
@@ -33,12 +14,18 @@
 
 /* Compact: 0-599px */
 @media screen and (max-width: 599px) {
-  .basic-fixedflex:not(#single),
-  .basic-splitpane {
+  .basic-fixed-flex:not(#single) {
+    --flex-flow: row nowrap;
+
     & .pane {
       --display: none;
       --flex: 1 1 0;
       --width: calc(50% - var(--spacing-panes) / 2);    
+
+      &.fixed-pane {
+        --flex: 0 0 var(--fixed-pane-width);
+        --width: var(--fixed-pane-width);
+      }
     }
 
     &::before {
@@ -48,24 +35,11 @@
       padding: 1em;
     }
   }
-
-  .basic-fixedflex:not(#single) {
-    --flex-flow: row nowrap;
-    
-    & .pane {
-      --flex: 1 1 0;
-      
-      &.fixed-pane {
-        --flex: 0 0 var(--fixed-pane-width);
-        --width: var(--fixed-pane-width);
-      }
-    }
-  }
 }
 
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
-  .basic-fixedflex#single {
+  .basic-fixed-flex#single {
     --flex-flow: row nowrap;
     
     & .pane {
