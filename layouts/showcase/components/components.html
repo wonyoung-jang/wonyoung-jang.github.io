@@ -495,22 +495,24 @@
       <section class="component-group">
         <fieldset>
           <legend class="title-large">Checkbox</legend>
-          <div>
-            <div class="component checkbox">
-              <input type="checkbox" id="check1" name="check1" checked/>
-              <label for="check1">Checkbox 1</label>
-            </div>
-            
-            <div class="component checkbox">
-              <input type="checkbox" id="check2" name="check2"/>
-              <label for="check2">Checkbox 2</label>
-            </div>
 
-            <div class="component checkbox">
-              <input type="checkbox" id="check3" name="check3"/>
-              <label for="check3">Checkbox 3</label>
-            </div>
-          </div>
+          <label class="component checkbox">
+            <input type="checkbox">
+            <span class="checkmark"><i>check</i></span>
+            <span class="label-large">Checkbox 1</span>
+          </label>
+
+          <label class="component checkbox">
+            <input type="checkbox">
+            <span class="checkmark"><i>check</i></span>
+            <span class="label-large">Checkbox 2</span>
+          </label>
+
+          <label class="component checkbox">
+            <input type="checkbox">
+            <span class="checkmark"><i>check</i></span>
+            <span class="label-large">Checkbox 3</span>
+          </label>
         </fieldset>
       </section>
 
@@ -594,7 +596,7 @@
         </div>
       </section>
 
-      {{/*  TODO Switch  */}}
+      {{/*  Switch  */}}
       <section class="component-group">
         <span class="title-large">Switch</span>
         <label class="component switch">
@@ -634,61 +636,6 @@
           placeholder="Placeholder text"></textarea>
       </section>
     </details>
-
-    {{/*  || Test  */}}
-    <details class="layout token-set" open>
-      <summary class="token-set-title">
-        Test
-      </summary>
-      
-      {{/*  Test container  */}}
-      <section class="component-group">
-        <span class="title-large">Test {}</span>
-        
-      </section>
-      
-      {{/*  Test input buttons  */}}
-      <section class="component-group" id="test-components">
-        <span class="title-large">Test input buttons</span>
-        <button class="component button icon-button" outlined>
-          <i>attach_file</i>
-          <input type="file">
-        </button>
-        <button class="component button icon-button" outlined>
-          <i>palette</i>
-          <input type="color">
-        </button>
-        <button class="component button icon-button" outlined>
-          <i>today</i>
-          <input type="date">
-        </button>
-        <button class="component button icon-button" outlined>
-          <i>schedule</i>
-          <input type="time">
-        </button>
-        <button class="component button common-button" outlined>
-          <i>attach_file</i>
-          <span>File</span>
-          <input type="file">
-        </button>
-        <button class="component button common-button" outlined>
-          <i>palette</i>
-          <span>Color</span>
-          <input type="color">
-        </button>
-        <button class="component button common-button" outlined>
-          <i>today</i>
-          <span>Date</span>
-          <input type="date">
-        </button>
-        <button class="component button common-button" outlined>
-          <i>schedule</i>
-          <span>Time</span>
-          <input type="time">
-        </button>
-      </section>
-    </details> 
-
   </section>
 </article>
 
