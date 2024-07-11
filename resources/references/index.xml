@@ -13,25 +13,22 @@ Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/all-logseq-elements/</guid><description>
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text styling Bold
+Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Bold
 Highlight Bold + Highlight
 Italic
-Advanced commands Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;
+Advanced commands link h2 Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;
 Blockquote with backticks
 An external link: https://www.pbs.org/video/art21-fantasy/
-Logseq pages Page reference Input: [About](https://wonyoungjang.org/about/)
+Logseq pages link h2 Page reference link h3 Input: [About](https://wonyoungjang.org/about/)
 Output: About
-Page embed Input: {{embed [About](https://wonyoungjang.org/about/)}}
-Output: {{embed About}}
-Logseq blocks Block reference Input: ## About me Output: ## About me
-Block embed Input: {{embed ## About me }}</description></item><item><title>
+Page embed link h3 Input: {{embed [About](https://wonyoungjang.org/about/)}}</description></item><item><title>
 List of admonitions for wonyoungjang.org</title><link>
 https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/</guid><description>
-What an admonition is An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:
+What an admonition is link h2 An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:
 A distinctive visual style (e.g., colored background, border, or icon)
 A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)
 Content that needs emphasis or special consideration
@@ -42,10 +39,10 @@ Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid><description>
-Navigation ALT+SHIFT+h → Go to home page
+Navigation link h2 ALT+SHIFT+h → Go to home page
 ALT+SHIFT+g → Go back to top
 ALT+SHIFT+s → Go to search page
 ALT+SHIFT+r → Go to random page
 ALT+SHIFT+p → Go to previous page
 ALT+SHIFT+n → Go to next page
-Appearance ALT+SHIFT+t → Toggle light/dark themes</description></item></channel></rss>
+Appearance link h2 ALT+SHIFT+t → Toggle light/dark themes</description></item></channel></rss>
