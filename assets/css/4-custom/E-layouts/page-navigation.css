@@ -28,6 +28,10 @@
     --container-shape: var(--shape-corner-xl);
     --bg-color: var(--color-surface-container-lowest);
     --icon-color: var(--color-on-surface);
+
+    & i {
+      font-size: 18px;
+    }
     
     & .page-direction {
       display: flex;
