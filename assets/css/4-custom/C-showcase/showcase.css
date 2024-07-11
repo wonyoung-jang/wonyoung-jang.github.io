@@ -1,0 +1,5 @@
+#showcase {  
+  & .pane {
+    border: 1px dashed var(--color-outline-variant);
+  }
+}

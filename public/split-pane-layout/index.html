@@ -21,7 +21,7 @@
         Split-pane layout | Wonyoung Jang
     
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.b1597453bb2f01163713800ef047cafb9eb840b7a4fd5347f1820946029e1956.css" integrity="sha256-sVl0U7svARY3E4AO8EfK&#43;564QLek/VNH8YIJRgKeGVY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ae065efb05053e438feb8c0527da848aaf490bf284791318a7918cb823f01525.css" integrity="sha256-rgZe&#43;wUFPkOP64wFJ9qEiq9JC/KEeRMYp5GMuCPwFSU=" rel="preload stylesheet" as="style">
 
 
 
@@ -136,7 +136,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/student-record-system\/";
+    window.location.href = "\/save-top-level-reddit-comments\/";
   }
 </script>
 
@@ -602,7 +602,7 @@
                 
                 
 
-<article class="layout panes basic-splitpane">
+<article class="layout panes basic-splitpane" id="showcase">
     <section class="layout pane">
         <h2>Split 1</h2>
         
@@ -1107,6 +1107,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
