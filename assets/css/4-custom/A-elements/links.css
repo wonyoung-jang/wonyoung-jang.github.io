@@ -2,10 +2,10 @@ a {
   text-decoration: none;
 
   &:not(.component) {
-    color: var(--color-primary);
+    color: var(--color-primary-fixed);
   
     &[rel*="external"] {
-      color: var(--color-tertiary);
+      color: var(--color-tertiary-fixed);
     }
     
     &:hover {
@@ -19,30 +19,5 @@ a {
   
   &:hover {
     text-decoration: none;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  position: relative;
-  
-  & .anchor {
-    display: flex;
-    position: absolute;
-    right: 100%;
-    top: 0%;
-    bottom: 0%;
-    align-items: center;
-    padding-inline: var(--size-1);
-
-    flex: 1 1 0;
-
-    color: var(--color-on-surface-variant);
-    user-select: none;
-    opacity: 0;
-    transition: opacity var(--motion-duration-medium2) var(--motion-easing-emphasized);
-  }
-
-  &:hover .anchor {
-    opacity: 1;
   }
 }

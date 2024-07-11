@@ -145,8 +145,11 @@
     --palette-neutral-variant-50: lch(50% var(--chroma-neutral-variant) var(--hue-primary));
     --palette-neutral-variant-60: lch(60% var(--chroma-neutral-variant) var(--hue-primary));
     --palette-neutral-variant-70: lch(70% var(--chroma-neutral-variant) var(--hue-primary));
+    --palette-neutral-variant-75: lch(75% var(--chroma-neutral-variant) var(--hue-primary));
     --palette-neutral-variant-80: lch(80% var(--chroma-neutral-variant) var(--hue-primary));
+    --palette-neutral-variant-85: lch(85% var(--chroma-neutral-variant) var(--hue-primary));
     --palette-neutral-variant-90: lch(90% var(--chroma-neutral-variant) var(--hue-primary));
+    --palette-neutral-variant-95: lch(95% var(--chroma-neutral-variant) var(--hue-primary));
     --palette-neutral-variant-100: var(--palette-white);
 
     /* || Semantic colors */

@@ -2,8 +2,8 @@
 
 <article class="layout panes basic-singlepane">
   <section class="layout pane" id="components-showcase">  
-    {{ if .Content }}
-      {{ partial "anchored_headings.html" .Content }}
+    {{ with .Content }}
+      {{ . }}
     {{ end }}
     
     {{/*  || Actions  */}}
@@ -15,8 +15,8 @@
       <section class="component-group">
         <span class="title-large">Common buttons</span>
 
+        <span class="title-medium">No icon</span>
         <section>
-          <span class="title-medium">No icons</span>
           <button class="component button common-button">Text</button>
           <button class="component button common-button" elevated>Elevated</button>
           <button class="component button common-button" filled>Filled</button>
@@ -24,8 +24,8 @@
           <button class="component button common-button" outlined>Outlined</button>
         </section>
         
+        <span class="title-medium">With icon</span>
         <section>
-          <span class="title-medium">With icons</span>
           <button class="component button common-button" with-icon>
             <i>add</i>
             Text
@@ -53,39 +53,35 @@
       {{/*  Extended FABs  */}}
       <section class="component-group">
         <span class="title-large">Extended FABs</span>
-
+        
+        <span class="title-medium">No icon</span>
         <section>
           <button class="component button surface-container-high fab" extended>
             Extended
           </button>
-          <button class="component button surface-container-high fab" extended>
-            <i>add</i>
-            Extended
-          </button>
-        </section>
-
-        <section>
           <button class="component button primary-container fab" extended>
             Extended
           </button>
-          <button class="component button primary-container fab" extended>
-            <i>add</i>
-            Extended
-          </button>
-        </section>
-
-        <section>
           <button class="component button secondary-container fab" extended>
             Extended
           </button>
-          <button class="component button secondary-container fab" extended>
-            <i>add</i>
-            Extended
-          </button>
-        </section>
-
-        <section>
           <button class="component button tertiary-container fab" extended>
+            Extended
+          </button>
+        </section>
+
+        <span class="title-medium">With icon</span>
+        <section>
+          <button class="component button surface-container-high fab" extended>
+            <i>add</i>
+            Extended
+          </button>
+          <button class="component button primary-container fab" extended>
+            <i>add</i>
+            Extended
+          </button>
+          <button class="component button secondary-container fab" extended>
+            <i>add</i>
             Extended
           </button>
           <button class="component button tertiary-container fab" extended>
@@ -93,63 +89,68 @@
             Extended
           </button>
         </section>
-
       </section>
 
       {{/*  FABs  */}}
       <section class="component-group">
         <span class="title-large">FABs</span>
-
+        
+        <span class="title-medium">Small FABs</span>
         <section>
           <button class="component button surface-container-high fab" small>
             <i>add</i>
           </button>
           
+          <button class="component button primary-container fab" small>
+            <i>add</i>
+          </button>
+
+          <button class="component button secondary-container fab" small>
+            <i>add</i>
+          </button>
+
+          <button class="component button tertiary-container fab" small>
+            <i>add</i>
+          </button>
+        </section>
+
+        <span class="title-medium">FABs</span>
+        <section>
           <button class="component button surface-container-high fab">
             <i>add</i>
           </button>
 
-          <button class="component button surface-container-high fab" large>
-            <i>add</i>
-          </button>
-        </section>
-
-        <section>
-          <button class="component button primary-container fab" small>
-            <i>add</i>
-          </button>
           <button class="component button primary-container fab">
             <i>add</i>
           </button>
-          <button class="component button primary-container fab" large>
-            <i>add</i>
-          </button>
-        </section>
 
-        <section>
-          <button class="component button secondary-container fab" small>
-            <i>add</i>
-          </button>
           <button class="component button secondary-container fab">
             <i>add</i>
           </button>
-          <button class="component button secondary-container fab" large>
+
+          <button class="component button tertiary-container fab">
             <i>add</i>
           </button>
         </section>
 
+        <span class="title-medium">Large FABs</span>
         <section>
-          <button class="component button tertiary-container fab" small>
+          <button class="component button surface-container-high fab" large>
             <i>add</i>
           </button>
-          <button class="component button tertiary-container fab">
+
+          <button class="component button primary-container fab" large>
             <i>add</i>
           </button>
+          
+          <button class="component button secondary-container fab" large>
+            <i>add</i>
+          </button>
+
           <button class="component button tertiary-container fab" large>
             <i>add</i>
           </button>
         </section>
-
       </section>
 
       {{/*  Icon buttons  */}}
@@ -234,7 +235,7 @@
     <details class="layout token-set" open>
       <summary class="token-set-title">Communication</summary>
 
-      {{/*  TODO Badges  */}}
+      {{/*  Badges  */}}
       <section class="component-group">
         <span class="title-medium">Badges</span>
 

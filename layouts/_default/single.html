@@ -6,7 +6,7 @@
     
     <section class="layout pane" id="post-content">
         {{ with .Content }}
-          {{ partial "anchored_headings.html" . }}
+          {{ . }}
         {{ end }}
         
         {{ if eq .Title "Contact"}}

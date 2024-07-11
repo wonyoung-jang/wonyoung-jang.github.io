@@ -1,8 +1,8 @@
 {{ define "main" }}
 <article class="layout panes basic-singlepane">
   <section class="layout pane">
-    {{ if .Content }}
-      {{ partial "anchored_headings.html" .Content }}
+    {{ with .Content }}
+      {{ . }}
     {{ end }}
     
     {{- partialCached "colors/key-color.html" . -}}
