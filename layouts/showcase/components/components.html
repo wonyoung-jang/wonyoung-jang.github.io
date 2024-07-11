@@ -727,9 +727,32 @@
         </label>
       </section>
       
-      {{/*  TODO Date pickers  */}}
+      {{/*  Date pickers  */}}
       <section class="component-group">
         <span class="title-large">Date pickers</span>
+
+        <div class="component date-picker">
+
+          <div class="header">
+            <div class="supporting-text">Select date</div>
+            <div class="headline-container">
+              <div class="headline">Enter date</div>
+              <button class="component button icon-button"><i>today</i></button>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="component text-field" outlined>
+            <input type="text" placeholder="mm/dd/yyyy">
+          </div>
+
+          <div class="date-picker-actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">OK</button>
+          </div>
+
+        </div>
 
         <div class="component date-picker">
 
@@ -743,8 +766,14 @@
 
           <div class="divider"></div>
 
-          <div class="component text-field" outlined>
-            <input type="text" placeholder="mm/dd/yyyy">
+          <div class="text-field-container">
+            <div class="component text-field" outlined>
+              <input type="text" placeholder="Start date">
+            </div>
+            
+            <div class="component text-field" outlined>
+              <input type="text" placeholder="End date">
+            </div>
           </div>
 
           <div class="date-picker-actions">

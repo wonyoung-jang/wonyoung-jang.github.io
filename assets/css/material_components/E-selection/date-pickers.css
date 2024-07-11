@@ -85,4 +85,10 @@
     min-height: var(--size-4);
     margin-top: var(--size-6);
   }
+
+  & .text-field-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--size-4);
+  }
 }
