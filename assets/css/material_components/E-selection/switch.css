@@ -33,12 +33,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    transition: .4s;
+    transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
     border-radius: var(--shape-corner-full);
 
     &::before {
       position: absolute;
       content: "";
+    }
+
+    & .icon-container {
+      position: relative;
+    }
+
+    & i {
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      left: 2px;
+      top: 2px;
+      font-size: var(--size-4);
     }
   }
 
@@ -54,9 +67,34 @@
         width: 16px;
         left: 4px;
         bottom: 6px;
-        transition: .4s;
+        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
         border-radius: var(--shape-corner-full);
         background-color: var(--color-outline);
+      }
+
+      &:has(.icon-container) {
+        &::before {
+          height: 24px;
+          width: 24px;
+          left: 2px;
+          bottom: 2px;
+          padding: 11px;
+          transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
+          border-radius: var(--shape-corner-full);
+          background-color: var(--color-outline);
+        }
+      }
+
+      & i {
+        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
+        
+        &.close-icon {
+          opacity: 1;
+        }
+
+        &.check-icon {
+          opacity: 0;
+        }
       }
     }
 
@@ -69,9 +107,24 @@
         width: 24px;
         left: 2px;
         bottom: 2px;
-        transition: .4s;
+        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
         border-radius: var(--shape-corner-full);
         background-color: var(--color-on-primary);
+      }
+
+      & i {
+        color: var(--color-on-primary-container);
+        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
+        
+        &.close-icon {
+          transform: translateX(20px);
+          opacity: 0;
+        }
+        
+        &.check-icon {
+          transform: translateX(20px);
+          opacity: 1;
+        }      
       }
     }
   }
