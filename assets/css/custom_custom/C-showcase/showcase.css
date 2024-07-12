@@ -63,5 +63,20 @@
         width: 100%;
       }
     }
+
+    & .divider-showcase-container-vertical {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      gap: var(--size-5);
+      height: var(--size-30);
+      
+      & div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: var(--size-2);
+      }
+    }
   }
 }
