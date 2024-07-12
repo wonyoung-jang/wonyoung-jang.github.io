@@ -1,0 +1,108 @@
+.navigation-drawer {
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: initial;
+  --container-align-items: flex-start;
+  --container-gap: initial;
+  --container-height: 100%;
+  --container-width: 360px;
+  --container-padding: var(--size-3);
+
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: var(--shape-corner-l);
+  
+  --bg-color: var(--color-surface-container-low);
+  
+  --text-color: initial;
+  --icon-color: initial;
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  & .headline,
+  & .section-header {
+    color: var(--color-on-surface-variant);
+    font-size: var(--typescale-title-small-size);
+    line-height: var(--typescale-title-small-line-height);
+    font-weight: var(--typescale-title-small-weight);
+    font-family: var(--typescale-title-small-font);
+  }
+
+  & .headline {
+    display: flex;
+    height: var(--size-14);
+    padding: var(--size-2) var(--size-2) var(--size-2) var(--size-4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+
+  & .section-header {
+    padding: 18px var(--size-4);
+  }
+
+  & .navigation-item {
+    flex: 1 0 0;
+    align-self: stretch;
+    min-height: var(--size-14);
+  
+    --container-display: flex;
+    --container-flex-flow: row nowrap;
+    --container-justify-content: flex-start;
+    --container-align-items: center;
+    --container-gap: var(--size-3);
+    --container-height: var(--size-14);
+    --container-width: 100%;
+    --container-padding: var(--size-4) var(--size-6);
+  
+    --container-outline: initial;
+    --container-elevation: initial;
+    --container-shape: var(--shape-corner-full);
+    
+    --bg-color: initial;
+    
+    --text-color: var(--color-on-surface-variant);
+    --icon-color: var(--color-on-surface-variant);
+  
+    --container-outline-hover: initial;
+    --container-elevation-hover: initial;
+  
+    --container-outline-focus: initial;
+    --container-elevation-focus: initial;
+  
+    --container-outline-press: initial;
+    --container-elevation-press: initial;
+  
+    &:has(i) {
+      --container-padding: var(--size-4) var(--size-6) var(--size-4) var(--size-4);
+    }
+
+    & .label {
+      color: var(--color-on-surface-variant);
+      font-size: var(--typescale-label-large-size);
+      line-height: var(--typescale-label-large-line-height);
+      font-weight: var(--typescale-label-large-weight);
+      font-family: var(--typescale-label-large-font);  
+    }
+
+    &.active {
+      --bg-color: var(--color-secondary-container);
+      --text-color: var(--color-on-secondary-container);
+      --icon-color: var(--color-on-secondary-container);
+
+      & .label {
+        font-weight: var(--typeface-weight-semi-bold);
+      }
+    }
+  }
+}
