@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.b812739d649c0fd70a3ebff5e622d787e038a397790890cfd1ce236ea21c7165.css" integrity="sha256-uBJznWScD9cKPr/15iLXh&#43;A4o5d5CJDP0c4jbqIccWU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.f778d29be3b8622a845451dab460e04f29fef270f42ac6a1185fc440d6fac5f8.css" integrity="sha256-93jSm&#43;O4YiqEVFHatGDgTyn&#43;8nD0KsahGF/EQNb6xfg=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.796976cd06ebc475309dae4fb3626e0d488b83b04e2bfc181c16d3f996211ddc.css" integrity="sha256-eWl2zQbrxHUwna5Ps2JuDUiLg7BOK/wYHBbT&#43;ZYhHdw=" rel="preload stylesheet" as="style">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/search\/";
+    window.location.href = "\/feed-layout\/";
   }
 </script>
 
@@ -801,8 +801,6 @@
      
         
      
-        
-     
          
              
         
@@ -1156,6 +1154,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
