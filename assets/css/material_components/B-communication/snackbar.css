@@ -58,31 +58,42 @@
     --container-height: var(--size-17);
   }
 
-  &[with-action] {
-    --container-padding: 0px var(--size-2) 0px var(--size-4);
-  }
-  
-  &[with-action][with-longer-action] .actions {
-    padding: 0px var(--size-2) 4px var(--size-2);
-  }
-
   &[with-longer-action] {
     --container-flex-flow: column nowrap;
     --container-height: 100%;
     --container-padding: 0px;
     --container-gap: 14px;
+  }
 
-    & .supporting-text {
-      align-self: flex-start;
-      padding: 14px var(--size-4) 0px var(--size-4);
-    }
+  &[with-action] {
+    --container-padding: 0px var(--size-2) 0px var(--size-4);
+    
+    &[with-longer-action] {
 
-    & .actions {
-      padding: 0px 0px 4px var(--size-2);
+      & .supporting-text {
+        align-self: flex-start;
+        padding: 14px var(--size-1) 0px var(--size-1);
+      }
+
+      & .actions {
+        padding: 0px var(--size-2) 4px var(--size-2);
+      }
     }
   }
 
   &[with-close-button] {
     --container-padding: 0px var(--size-3) 0px var(--size-4);
+
+    &[with-longer-action] {
+  
+      & .supporting-text {
+        align-self: flex-start;
+        padding: 14px var(--size-1) 0px var(--size-1);
+      }
+  
+      & .actions {
+        padding: 0px 0px 4px var(--size-2);
+      }
+    }
   }
 }
