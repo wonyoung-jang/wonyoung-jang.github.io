@@ -1,12 +1,11 @@
 .snackbar {
-  flex: 1 1 auto;
   --container-display: flex;
   --container-flex-flow: row nowrap;
   --container-justify-content: flex-start;
   --container-align-items: center;
   --container-gap: var(--size-3);
   --container-height: var(--size-12);
-  --container-width: initial;
+  --container-width: 100%;
   --container-padding: 0 var(--size-4);
 
   --container-outline: initial;
@@ -15,8 +14,8 @@
   
   --bg-color: var(--color-inverse-surface);
   
-  --text-color: var(--color-inverse-on-surface);
-  --icon-color: var(--color-inverse-primary);
+  --text-color: initial;
+  --icon-color: initial;
 
   --container-outline-hover: initial;
   --container-elevation-hover: initial;
@@ -27,14 +26,32 @@
   --container-outline-press: initial;
   --container-elevation-press: initial;
 
-  color: var(--text-color);
-
-  & *:not(.action, i) {
-    flex: 1 1 auto;
+  & .supporting-text {
+    color: var(--color-inverse-on-surface);
+    font-size: var(--typescale-body-medium-size);
+    line-height: var(--typescale-body-medium-line-height);
+    font-weight: var(--typescale-body-medium-weight);
+    font-family: var(--typescale-body-medium-font);  
   }
 
-  & .action {
-    color: var(--icon-color);
+  & .actions {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: auto;
+    gap: var(--size-3);
+    font-size: var(--typescale-label-large-size);
+    line-height: var(--typescale-label-large-line-height);
+    font-weight: var(--typescale-label-large-weight);
+    font-family: var(--typescale-label-large-font);  
+    
+    & * {
+      color: var(--color-inverse-primary);
+    }
+
+    & .close-icon {
+      font-size: var(--size-6);
+      color: var(--color-inverse-on-surface);
+    }
   }
 
   &[two] {
@@ -42,10 +59,30 @@
   }
 
   &[with-action] {
-    --container-padding: 0 var(--size-2) 0 var(--size-4);
+    --container-padding: 0px var(--size-2) 0px var(--size-4);
+  }
+  
+  &[with-action][with-longer-action] .actions {
+    padding: 0px var(--size-2) 4px var(--size-2);
+  }
+
+  &[with-longer-action] {
+    --container-flex-flow: column nowrap;
+    --container-height: 100%;
+    --container-padding: 0px;
+    --container-gap: 14px;
+
+    & .supporting-text {
+      align-self: flex-start;
+      padding: 14px var(--size-4) 0px var(--size-4);
+    }
+
+    & .actions {
+      padding: 0px 0px 4px var(--size-2);
+    }
   }
 
   &[with-close-button] {
-    --container-padding: 0 var(--size-3) 0 var(--size-4);
+    --container-padding: 0px var(--size-3) 0px var(--size-4);
   }
 }

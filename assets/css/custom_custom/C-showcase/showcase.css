@@ -4,6 +4,44 @@
   }
 }
 
+#components-showcase {
+  & .component-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--size-4);
+    margin: var(--size-5) var(--size-3);
+    padding: var(--size-8);
+    background-color: var(--color-surface-container-lowest);
+    border-radius: var(--shape-corner-s);
+    
+    & span:first-child {
+      width: 100%;
+      margin-block: 0 var(--size-3);
+    }
+    
+    & span.title-medium {
+      width: 100%;
+      margin-block: 0 var(--size-1);
+    }
+
+    & section {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      gap: var(--size-4);
+      width: 100%;
+    }
+
+    & .card {
+      flex: 1 1 0;
+      padding: var(--size-8);
+    }
+  }
+}
+
+
 .divider-showcase-example {
   width: 100%;
   display: flex;

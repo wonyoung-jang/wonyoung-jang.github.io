@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.8a91385b1f78d0d4100166f7605bc59f06b2929f75464d68475be150b627d1ca.css" integrity="sha256-ipE4Wx940NQQAWb3YFvFnwaykp91Rk1oR1vhULYn0co=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.f86c961eef8638e0ce7eaf4a25f87025a1691d4f47210b301e1eb6cc8bb934d6.css" integrity="sha256-&#43;GyWHu&#43;GOODOfq9KJfhwJaFpHU9HIQswHh62zIu5NNY=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.4fc27f886e75d0303e2b0f506c5a2c931687f95efd36e2efe6ba63afaead514e.css" integrity="sha256-T8J/iG510DA&#43;Kw9QbFoskxaH&#43;V79NuLv5rpjr66tUU4=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.4f7b01d1b8f293fa2a2b39eda455c6b077b34d1907c8f0e053cba48fad3fe317.css" integrity="sha256-T3sB0bjyk/oqKzntpFXGsHezTRkHyPDgU8ukj60/4xc=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.2ec1623efba603e69d08624f2f1a3d6c373a297f3150dcd4c351d197e61c67f9.css" integrity="sha256-LsFiPvumA&#43;adCGJPLxo9bDc6KX8xUNzUw1HRl&#43;YcZ/k=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/pit-signs-for-robotics-competition\/";
+    window.location.href = "\/hotel-reservation-manager\/";
   }
 </script>
 
@@ -880,28 +880,132 @@
       
       
       <section class="component-group">
+        
         <span class="title-large">Snackbar</span>
+        
+        <span class="title-medium">Without close button</span>
 
-        <section>
-          <div class="component snackbar" with-action>
-            <span class="supporting-text body-medium">Single line snackbar with action</span>
-            <span class="action label-large">Action</span>
+        <div class="component snackbar">
+          <div class="supporting-text">
+            Single line snackbar
           </div>
-          <div class="component snackbar" with-close-button>
-            <span class="supporting-text body-medium">Single line snackbar with close button</span>
-            <span class="action label-large">Action</span>
-            <i>close</i>
+        </div>
+        
+        <div class="component snackbar" with-action>
+          <div class="supporting-text">
+            Single line snackbar with action
           </div>
-          <div class="component snackbar" two with-action>
-            <span class="supporting-text body-medium">Two-line snackbar <br> with action</span>
-            <span class="action label-large">Action</span>
+          <div class="actions">
+            <button class="component button common-button">Action</button>
           </div>
-        </section>
+        </div>
+        
+        <div class="component snackbar" two>
+          <div class="supporting-text">
+            Two-line snackbar
+            <br> 
+            without action
+          </div>
+        </div>
+        
+        <div class="component snackbar" two with-action>
+          <div class="supporting-text">
+            Two-line snackbar with action
+            <br> 
+            with action
+          </div>
+          <div class="actions">
+            <button class="component button common-button">Action</button>
+          </div>
+        </div>
+        
+        <div class="component snackbar" two with-action with-longer-action>
+          <div class="supporting-text">
+            Two-line snackbar with longer action
+            <br> 
+            with action
+          </div>
+          <div class="actions">
+            <button class="component button common-button">Longer action</button>
+          </div>
+        </div>
+
+
+        <span class="title-medium">Without close button</span>
+
+        <div class="component snackbar" with-close-button>
+          <div class="supporting-text">
+            Single line snackbar with close button
+          </div>
+          <div class="actions">
+            <button class="component button icon-button">
+              <i class="close-icon">close</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="component snackbar" with-close-button>
+          <div class="supporting-text">
+            Single line snackbar with action
+          </div>
+          <div class="actions">
+            <button class="component button common-button">Action</button>
+            <button class="component button icon-button">
+              <i class="close-icon">close</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="component snackbar" two with-close-button>
+          <div class="supporting-text">
+            Two-line snackbar with action
+            <br> 
+            with action
+          </div>
+          <div class="actions">
+            <button class="component button common-button">Action</button>
+            <button class="component button icon-button">
+              <i class="close-icon">close</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="component snackbar" two with-close-button>
+          <div class="supporting-text">
+            Two-line snackbar with action
+            <br> 
+            with action
+          </div>
+          <div class="actions">
+            <button class="component button common-button">Action</button>
+            <button class="component button icon-button">
+              <i class="close-icon">close</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="component snackbar" two with-close-button with-longer-action>
+          <div class="supporting-text">
+            Two-line snackbar
+            <br> 
+            with longer action
+          </div>
+          <div class="actions">
+            <button class="component button common-button">Longer action</button>
+            <button class="component button icon-button">
+              <i class="close-icon">close</i>
+            </button>
+          </div>
+        </div>
+
       </section>
       
       
       <section class="component-group">
         <span class="title-large">Tooltips</span>
+
+        <span class="title-medium">Plain tooltips</span>
+
         <div class="component tooltip">
           <div class="supporting-text">
             Plain tooltip
@@ -916,6 +1020,8 @@
             veniam quod cumque. Voluptas, distinctio provident?
           </div>
         </div>
+
+        <span class="title-medium">Rich tooltips</span>
 
         <div class="component tooltip" rich>
           <span class="subhead">Rich tooltip</span>
@@ -940,6 +1046,7 @@
             veniam quod cumque. Voluptas, distinctio provident?
           </span>
         </div>
+
       </section>
 
     </details>
