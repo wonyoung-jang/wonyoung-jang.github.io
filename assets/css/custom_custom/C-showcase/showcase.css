@@ -6,6 +6,7 @@
 
 #components-showcase {
   & .component-group {
+    flex: 1 1 0;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -38,19 +39,5 @@
       flex: 1 1 0;
       padding: var(--size-8);
     }
-  }
-}
-
-
-.divider-showcase-example {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  border: 1px solid var(--color-outline-variant);
-  border-radius: var(--shape-corner-xl);
-  padding: var(--size-6);
-  
-  & hr {
-    margin-block: var(--size-6);
   }
 }
