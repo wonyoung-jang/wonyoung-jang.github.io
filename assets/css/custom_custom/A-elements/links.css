@@ -2,17 +2,17 @@ a {
   text-decoration: none;
 
   &:not(.component) {
-    color: var(--color-primary-fixed);
+    color: var(--color-primary);
   
     &[rel*="external"] {
-      color: var(--color-tertiary-fixed);
+      color: var(--color-tertiary);
     }
     
     &:hover {
-      color: var(--color-add30);
+      color: var(--color-add120);
 
       &[rel*="external"] {
-        color: var(--color-sub30);
+        color: var(--color-sub120);
       }
     }
   }
