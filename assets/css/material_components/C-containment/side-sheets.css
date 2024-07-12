@@ -1,5 +1,6 @@
 .side-sheets {
   flex: 1 0 auto;
+  margin-left: auto;
 
   --container-display: flex;
   --container-flex-flow: column nowrap;
@@ -11,7 +12,7 @@
   --container-padding: 0 0 var(--size-6) 0;
 
   --container-outline: initial;
-  --container-elevation: var(--elevation1);
+  --container-elevation: initial;
   --container-shape: initial;
   
   --bg-color: var(--color-surface-container-low);
@@ -29,7 +30,13 @@
   --container-elevation-press: initial;
   
   max-width: var(--size-100);
-  border-left: 1px solid var(--color-outline-variant);
+  border-left: 1px solid var(--color-outline);
+
+  &[modal] {
+    --container-elevation: var(--elevation1);
+    --container-shape: var(--shape-corner-l);
+    border-left: unset;
+  }
 
   & .header,
   & .content,
@@ -47,6 +54,7 @@
     & .headline {
       flex: 1 0 0;
       padding-left: var(--size-6);
+      color: var(--color-on-surface-variant);
       font-size: var(--typescale-title-large-size);
       line-height: var(--typescale-title-large-line-height);
       font-weight: var(--typescale-title-large-weight);
