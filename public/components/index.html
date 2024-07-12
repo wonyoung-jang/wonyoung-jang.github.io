@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.3f75727e72ba55d2ab3f603517a2b3c20d7481eb023e97b6212f077566f0542e.css" integrity="sha256-P3VyfnK6VdKrP2A1F6Kzwg10gesCPpe2IS8HdWbwVC4=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.b812739d649c0fd70a3ebff5e622d787e038a397790890cfd1ce236ea21c7165.css" integrity="sha256-uBJznWScD9cKPr/15iLXh&#43;A4o5d5CJDP0c4jbqIccWU=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.796976cd06ebc475309dae4fb3626e0d488b83b04e2bfc181c16d3f996211ddc.css" integrity="sha256-eWl2zQbrxHUwna5Ps2JuDUiLg7BOK/wYHBbT&#43;ZYhHdw=" rel="preload stylesheet" as="style">
 
@@ -33,13 +33,13 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/components/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/components/">
 
 
 
@@ -55,7 +55,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/components/">
+<meta property="og:url" content="http://192.168.40.181:1313/components/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Components">
   <meta property="og:description" content="Components available for wonyoungjang.org">
@@ -87,7 +87,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -106,7 +106,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/list-of-admonitions-for-wonyoungjang.org\/";
+    window.location.href = "\/package-delivery-route-optimization\/";
   }
 </script>
 
@@ -772,6 +772,8 @@
       <section class="component-group">
         <span class="title-large">Icon buttons</span>
 
+        <span class="title-medium">Icon button</span>
+
         <button class="component button icon-button">
           <i>settings</i>
         </button>
@@ -1054,11 +1056,15 @@
       <section class="component-group">
 
         <span class="title-large">Bottom sheets</span>
+        
+        <span class="title-medium">Standard bottom sheet</span>
 
         <div class="component bottom-sheets">
           <div class="drag-handle"></div>
           <div class="content">Standard bottom sheet</div>
         </div>
+
+        <span class="title-medium">Modal bottom sheet</span>
 
         <div class="component bottom-sheets" modal>
           <div class="drag-handle"></div>
@@ -1092,6 +1098,8 @@
       <section class="component-group">
         <span class="title-large">Dialogs</span>
 
+        <span class="title-medium">Basic dialog</span>
+
         <div class="component dialog">
           <span class="headline">Basic dialog</span>
           <div class="supporting-text">
@@ -1124,20 +1132,31 @@
       
       
       <section class="component-group">
+
         <span class="title-large">Divider</span>
-        <span class="title-medium">Mid inset</span>
-        <hr mid>
-        <span class="title-medium">Start inset</span>
-        <hr start>
-        <span class="title-medium">End inset</span>
-        <hr end>
-        <span class="title-medium">No inset</span>
-        <hr>
+
+        <span class="title-medium">Horizontal</span>
+
+        <div class="divider-showcase-container">
+          <div class="title-small">Mid inset</div>
+          <hr mid>
+          <div class="title-small">Start inset</div>
+          <hr start>
+          <div class="title-small">End inset</div>
+          <hr end>
+          <div class="title-small">No inset</div>
+          <hr>
+        </div>
+
       </section>
 
       
       <section class="component-group">
+
         <span class="title-large">Lists</span>
+
+        <span class="title-medium">List-item</span>
+
         <div class="component list-item" one>
           <span>List-item one line</span>
         </div>
@@ -1957,7 +1976,10 @@
       
       
       <section class="component-group">
+
         <span class="title-large">Date pickers</span>
+
+        <span class="title-medium">Input date picker</span>
 
         <div class="component date-picker">
 
@@ -2014,20 +2036,36 @@
       
       
       <section class="component-group">
+
         <span class="title-large">Menus</span>
+
+        <span class="title-medium">No divider</span>
+
         <div class="component menus">
-          <span class="component menu-item">Menu item 1</span>
-          <span class="component menu-item">Menu item 2</span>
-          <span class="component menu-item">Menu item 3</span>
+          <div class="component menu-item">Menu item 1</div>
+          <div class="component menu-item">Menu item 2</div>
+          <div class="component menu-item">Menu item 3</div>
+          <div class="component menu-item">Menu item 4</div>
+        </div>
+
+        <span class="title-medium">With divider</span>
+
+        <div class="component menus">
+          <div class="component menu-item">Menu item 1</div>
+          <div class="component menu-item">Menu item 2</div>
+          <div class="component menu-item">Menu item 3</div>
           <hr>
-          <span class="component menu-item">Menu item 4</span>
+          <div class="component menu-item">Menu item 4</div>
         </div>
       </section>
 
       
       <section class="component-group">
         <fieldset>
-          <legend class="title-large">Radio button</legend>
+          <span class="title-large">
+            <legend>Radio button</legend>
+          </span>
+          <span class="title-medium">Radios</span>
           <div>
             <div class="component radio-button">
               <input type="radio" id="radio1" name="radio1" checked/>
@@ -2050,9 +2088,14 @@
       
       <section class="component-group">
         <span class="title-large">Sliders</span>
+
+        <span class="title-medium">Continuous</span>
+
         <div class="slider">
           <input type="range">
         </div>
+
+        <span class="title-medium">Centered</span>
 
         <div class="slider">
           <input id="test-slider" type="range" min="1" max="100" value="50" list="markers">
@@ -2066,16 +2109,23 @@
 
       
       <section class="component-group">
+
         <span class="title-large">Switch</span>
+
+        <span class="title-medium">No icon</span>
+
         <label class="component switch">
             <input class="track" type="checkbox">
             <span class="handle"></span>
         </label>
+
       </section>
 
       
       <section class="component-group">
         <span class="title-large">Time pickers</span>
+
+        <span class="title-medium">Time input/keyboard picker</span>
 
         <div class="component time-picker">
 
@@ -2181,7 +2231,7 @@
       
         
           <a  class="component card prev"
-            href="https://wonyoungjang.org/feed-layout/"
+            href="http://192.168.40.181:1313/feed-layout/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -2202,7 +2252,7 @@
       
         
           <a  class="component card next"
-              href="https://wonyoungjang.org/colors/"
+              href="http://192.168.40.181:1313/colors/"
               accesskey="n"
               title="Next page (ALT + SHIFT + n)">
               
@@ -2382,7 +2432,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on twitter"
-                href="https://twitter.com/intent/tweet/?text=Components&url=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">      
+                href="https://twitter.com/intent/tweet/?text=Components&url=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">      
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -2395,7 +2445,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on linkedin"
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f&title=Components&summary=Components&source=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">
+                href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f&title=Components&summary=Components&source=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -2408,7 +2458,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on reddit"
-                href="https://reddit.com/submit?url=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f&title=Components">
+                href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f&title=Components">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -2421,7 +2471,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on facebook"
-                href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">
+                href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -2434,7 +2484,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on whatsapp"
-                href="https://api.whatsapp.com/send?text=Components%20-%20https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">
+                href="https://api.whatsapp.com/send?text=Components%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -2447,7 +2497,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on telegram"
-                href="https://telegram.me/share/url?text=Components&url=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">
+                href="https://telegram.me/share/url?text=Components&url=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">
                 <i>
                     <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" fill="currentColor">
                         <path
@@ -2460,7 +2510,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Components on ycombinator"
-                href="https://news.ycombinator.com/submitlink?t=Components&u=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">
+                href="https://news.ycombinator.com/submitlink?t=Components&u=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
@@ -2476,7 +2526,7 @@
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="share Components via email" 
-                href="mailto:?subject=Components&body=https%3a%2f%2fwonyoungjang.org%2fcomponents%2f">
+                href="mailto:?subject=Components&body=http%3a%2f%2f192.168.40.181%3a1313%2fcomponents%2f">
                 <i>email</i> 
                 Email
             </a>
@@ -2639,7 +2689,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -2660,6 +2710,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

@@ -159,6 +159,8 @@
       <section class="component-group">
         <span class="title-large">Icon buttons</span>
 
+        <span class="title-medium">Icon button</span>
+
         <button class="component button icon-button">
           <i>settings</i>
         </button>
@@ -441,11 +443,15 @@
       <section class="component-group">
 
         <span class="title-large">Bottom sheets</span>
+        
+        <span class="title-medium">Standard bottom sheet</span>
 
         <div class="component bottom-sheets">
           <div class="drag-handle"></div>
           <div class="content">Standard bottom sheet</div>
         </div>
+
+        <span class="title-medium">Modal bottom sheet</span>
 
         <div class="component bottom-sheets" modal>
           <div class="drag-handle"></div>
@@ -479,6 +485,8 @@
       <section class="component-group">
         <span class="title-large">Dialogs</span>
 
+        <span class="title-medium">Basic dialog</span>
+
         <div class="component dialog">
           <span class="headline">Basic dialog</span>
           <div class="supporting-text">
@@ -511,20 +519,31 @@
       
       {{/*  Divider  */}}
       <section class="component-group">
+
         <span class="title-large">Divider</span>
-        <span class="title-medium">Mid inset</span>
-        <hr mid>
-        <span class="title-medium">Start inset</span>
-        <hr start>
-        <span class="title-medium">End inset</span>
-        <hr end>
-        <span class="title-medium">No inset</span>
-        <hr>
+
+        <span class="title-medium">Horizontal</span>
+
+        <div class="divider-showcase-container">
+          <div class="title-small">Mid inset</div>
+          <hr mid>
+          <div class="title-small">Start inset</div>
+          <hr start>
+          <div class="title-small">End inset</div>
+          <hr end>
+          <div class="title-small">No inset</div>
+          <hr>
+        </div>
+
       </section>
 
       {{/*  Lists  */}}
       <section class="component-group">
+
         <span class="title-large">Lists</span>
+
+        <span class="title-medium">List-item</span>
+
         <div class="component list-item" one>
           <span>List-item one line</span>
         </div>
@@ -1344,7 +1363,10 @@
       
       {{/*  Date pickers  */}}
       <section class="component-group">
+
         <span class="title-large">Date pickers</span>
+
+        <span class="title-medium">Input date picker</span>
 
         <div class="component date-picker">
 
@@ -1401,20 +1423,36 @@
       
       {{/*  Menus  */}}
       <section class="component-group">
+
         <span class="title-large">Menus</span>
+
+        <span class="title-medium">No divider</span>
+
         <div class="component menus">
-          <span class="component menu-item">Menu item 1</span>
-          <span class="component menu-item">Menu item 2</span>
-          <span class="component menu-item">Menu item 3</span>
+          <div class="component menu-item">Menu item 1</div>
+          <div class="component menu-item">Menu item 2</div>
+          <div class="component menu-item">Menu item 3</div>
+          <div class="component menu-item">Menu item 4</div>
+        </div>
+
+        <span class="title-medium">With divider</span>
+
+        <div class="component menus">
+          <div class="component menu-item">Menu item 1</div>
+          <div class="component menu-item">Menu item 2</div>
+          <div class="component menu-item">Menu item 3</div>
           <hr>
-          <span class="component menu-item">Menu item 4</span>
+          <div class="component menu-item">Menu item 4</div>
         </div>
       </section>
 
       {{/*  Radio button  */}}
       <section class="component-group">
         <fieldset>
-          <legend class="title-large">Radio button</legend>
+          <span class="title-large">
+            <legend>Radio button</legend>
+          </span>
+          <span class="title-medium">Radios</span>
           <div>
             <div class="component radio-button">
               <input type="radio" id="radio1" name="radio1" checked/>
@@ -1437,9 +1475,14 @@
       {{/*  Sliders  */}}
       <section class="component-group">
         <span class="title-large">Sliders</span>
+
+        <span class="title-medium">Continuous</span>
+
         <div class="slider">
           <input type="range">
         </div>
+
+        <span class="title-medium">Centered</span>
 
         <div class="slider">
           <input id="test-slider" type="range" min="1" max="100" value="50" list="markers">
@@ -1453,16 +1496,23 @@
 
       {{/*  Switch  */}}
       <section class="component-group">
+
         <span class="title-large">Switch</span>
+
+        <span class="title-medium">No icon</span>
+
         <label class="component switch">
             <input class="track" type="checkbox">
             <span class="handle"></span>
         </label>
+
       </section>
 
       {{/*  Time pickers  */}}
       <section class="component-group">
         <span class="title-large">Time pickers</span>
+
+        <span class="title-medium">Time input/keyboard picker</span>
 
         <div class="component time-picker">
 

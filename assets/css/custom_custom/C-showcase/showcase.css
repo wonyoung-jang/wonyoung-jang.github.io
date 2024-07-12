@@ -39,5 +39,26 @@
       flex: 1 1 0;
       padding: var(--size-8);
     }
+
+    & .divider-showcase-container {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-gap: var(--size-3);
+      justify-items: flex-start;
+      align-items: center;
+      width: 100%;
+      
+      & div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: fit-content;
+      }
+      
+      & hr {
+        flex: 1 1 auto;
+        width: 100%;
+      }
+    }
   }
 }
