@@ -6,7 +6,7 @@
 
 #components-showcase {
   & .component-group {
-    flex: 1 1 0;
+    flex: 1 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -25,8 +25,9 @@
       width: 100%;
       padding: var(--size-3);
       margin-block: var(--size-6) var(--size-2);
-      color: var(--color-on-sub120-container);
-      background-color: var(--color-sub120-container);
+      color: var(--color-on-sub90-container);
+      background-color: var(--color-sub90-container);
+      border-radius: var(--shape-corner-s-start);
     }
 
     & section {
