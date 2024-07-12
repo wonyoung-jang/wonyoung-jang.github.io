@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,23 +25,23 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.4c2aec492649ed8466023314d38f01de15df3a5a5dd440c8cb8dd630d8b30b95.css" integrity="sha256-TCrsSSZJ7YRmAjMU048B3hXfOlpd1EDIy43WMNizC5U=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.eb1ee11aae450fa9100aa4614920b2de6c16e0e27a9f78a822cf631e05224dfd.css" integrity="sha256-6x7hGq5FD6kQCqRhSSCy3mwW4OJ6n3ioIs9jHgUiTf0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.08c922cf5234e69c1799c869c0b05812b0e5290ff3501f9489b7b12b79b782da.css" integrity="sha256-CMkiz1I05pwXmchpwLBYErDlKQ/zUB&#43;UibexK3m3gto=" rel="preload stylesheet" as="style">
-
-
+    <link crossorigin="anonymous" href="/assets/css/material.min.293de109ff70ed2177c22b0aa0fb24c15153c4b913b7b80b6e9166081b23db50.css" integrity="sha256-KT3hCf9w7SF3wisKoPskwVFTxLkTt7gLbpFmCBsj21A=" rel="preload stylesheet" as="style">
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+
+
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/resources/references/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/resources/references/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resources/references/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/resources/references/">
 
 
 
@@ -57,7 +57,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/resources/references/">
+<meta property="og:url" content="https://wonyoungjang.org/resources/references/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="References">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -86,7 +86,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -105,7 +105,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="http://192.168.40.181:1313/">
+            href="https://wonyoungjang.org/">
             Wonyoung Jang
         </a>
     </section>
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/cs-career-chatbot\/";
+    window.location.href = "\/hotel-reservation-manager\/";
   }
 </script>
 
@@ -603,7 +603,7 @@
                     
                 <a  class="component card" elevated
                     aria-label="post link to All Logseq elements" 
-                    href="http://192.168.40.181:1313/all-logseq-elements/">
+                    href="https://wonyoungjang.org/all-logseq-elements/">
 
                     
                     
@@ -624,7 +624,7 @@
                     
                 <a  class="component card" elevated
                     aria-label="post link to List of admonitions for wonyoungjang.org" 
-                    href="http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/">
+                    href="https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/">
 
                     
                     
@@ -645,7 +645,7 @@
                     
                 <a  class="component card" elevated
                     aria-label="post link to List of keyboard shortcuts for wonyoungjang.org" 
-                    href="http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
+                    href="https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
 
                     
                     
@@ -821,7 +821,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -842,6 +842,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
