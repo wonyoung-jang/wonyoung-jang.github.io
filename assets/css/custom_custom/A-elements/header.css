@@ -8,24 +8,6 @@ header {
   z-index: 999999;
 }
 
-.top-app-bar {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-
-  & .start,
-  & .end {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: var(--size-2);
-  }
-
-  & .end {
-    margin-left: auto;
-  }
-}
-
 #site-headline {
   position: relative;
   color: var(--color-on-surface);

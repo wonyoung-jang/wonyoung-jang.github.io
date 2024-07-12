@@ -1,40 +1,86 @@
 .top-app-bar {
-  --bg-color: var(--color-surface-container);
-  z-index: 3;
-  
-  &[center] {
-    --container-shape: 0;
-    --container-height: 64px;
-    --container-width: 100%;
-    --container-padding: 0 16px;
-    --container-gap: 24px;
+  --container-display: flex;
+  --container-flex-flow: row wrap;
+  --container-justify-content: flex-start;
+  --container-align-items: center;
+  --container-gap: 4px;
 
-    --icon-size: 24px;
-    --icon-color: var(--color-on-surface);
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: 0;
+
+  --bg-color: var(--color-surface-container);
+  color: var(--color-on-surface);
+
+  & .start,
+  & .end {
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    align-items: center;
+    gap: var(--size-2);
   }
-  
+
+  & .headline {
+    flex: 1 1 auto;
+    display: flex; 
+    flex-flow: row nowrap;
+    align-self: stretch;
+    align-items: center;
+  }
+
+  & .end {
+    color: var(--color-on-suface-variant);
+    margin-left: auto;
+  }
+
+  &[center] {
+    & .headline {
+      justify-content: center;
+    }
+  }
+
   &[small] {
-    --container-shape: 0;
     --container-height: 64px;
     --container-width: 100%;
-    --container-padding: 0 16px;
-    --container-gap: 24px;
+    --container-padding: 8px 4px;
+
+    font-size: var(--typescale-title-large-size);
+    line-height: var(--typescale-title-large-line-height);
+    font-weight: var(--typescale-title-large-weight);
+    font-family: var(--typescale-title-large-font);
+  }
+
+  &[medium],
+  &[large] {    
+    & .headline {
+      flex: 1 1 100%;
+      padding-inline: var(--size-3)
+    }
   }
 
   &[medium] {
-    --container-shape: 0;
+    --container-gap: 4px;
     --container-height: 112px;
     --container-width: 100%;
-    --container-padding: 20px 16px 24px 16px;
-    --container-gap: 24px;
+    --container-padding: 8px 4px 24px 4px;
+
+    font-size: var(--typescale-headline-small-size);
+    line-height: var(--typescale-headline-small-line-height);
+    font-weight: var(--typescale-headline-small-weight);
+    font-family: var(--typescale-headline-small-font);
   }
 
   &[large] {
-    --container-shape: 0;
+    --container-gap: 40px;
     --container-height: 152px;
     --container-width: 100%;
-    --container-padding: 20px 16px 28px 16px;
-    --container-gap: 24px;
+    --container-padding: 8px 4px 28px 4px;
+
+    font-size: var(--typescale-headline-medium-size);
+    line-height: var(--typescale-headline-medium-line-height);
+    font-weight: var(--typescale-headline-medium-weight);
+    font-family: var(--typescale-headline-medium-font);
   }
 }
 

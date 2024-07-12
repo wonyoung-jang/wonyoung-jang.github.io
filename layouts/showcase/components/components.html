@@ -1268,6 +1268,8 @@
       <section class="component-group">
         <div class="component-group-header headline-small">Search</div>
         <hr end>
+
+        <div class="sub-component-group-header title-large">Search bar</div>
         <span class="component search" bar>
           <i id="searchIcon">search</i>
           <input  id="searchInput"  
@@ -1277,6 +1279,9 @@
                   autocomplete="off" 
                   maxlength="64">
         </span>
+
+        {{/*  TODO Search view  */}}
+
       </section>
 
       {{/*  Tabs  */}}
@@ -1336,18 +1341,91 @@
       <section class="component-group">
         <div class="component-group-header headline-small">Top app bar</div>
         <hr end>
+
+        <div class="sub-component-group-header title-large">Top app bar</div>
         <div class="component top-app-bar" center small>
-          <span class="start">Top app bar</span>
-          <span class="end">Small</span>
+          
+          <div class="start">
+            <button class="component button icon-button">
+              <i>menu</i>
+            </button>
+          </div>
+
+          <div class="headline">Small + center</div>
+          
+          <div class="end">
+            <button class="component button icon-button">
+              <i>account_circle</i>
+            </button>
+          </div>
         </div>
-        <div class="component top-app-bar" center medium>
-          <span class="start">Top app bar</span>
-          <span class="end">Medium</span>
+
+        <div class="component top-app-bar" small>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+
+          <div class="headline">Small</div>
+
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
         </div>
-        <div class="component top-app-bar" center large>
-          <span class="start">Top app bar</span>
-          <span class="end">Large</span>
+
+        <div class="component top-app-bar" medium>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+                    
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+
+          <div class="headline">Medium</div>
         </div>
+
+        <div class="component top-app-bar" large>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+          
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+
+          <div class="headline">Large</div>
+        </div>
+
       </section>
     </details>
 

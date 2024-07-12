@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.f778d29be3b8622a845451dab460e04f29fef270f42ac6a1185fc440d6fac5f8.css" integrity="sha256-93jSm&#43;O4YiqEVFHatGDgTyn&#43;8nD0KsahGF/EQNb6xfg=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.4c2aec492649ed8466023314d38f01de15df3a5a5dd440c8cb8dd630d8b30b95.css" integrity="sha256-TCrsSSZJ7YRmAjMU048B3hXfOlpd1EDIy43WMNizC5U=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.796976cd06ebc475309dae4fb3626e0d488b83b04e2bfc181c16d3f996211ddc.css" integrity="sha256-eWl2zQbrxHUwna5Ps2JuDUiLg7BOK/wYHBbT&#43;ZYhHdw=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.ab4b4e6cc8a915643127ba6fd2827088bb6cc300d3e8e496671ff8495a644ad2.css" integrity="sha256-q0tObMipFWQxJ7pv0oJwiLtswwDT6OSWZx/4SVpkStI=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/q-learning-tournament-scheduler\/";
+    window.location.href = "\/components\/";
   }
 </script>
 
@@ -1881,6 +1881,8 @@
       <section class="component-group">
         <div class="component-group-header headline-small">Search</div>
         <hr end>
+
+        <div class="sub-component-group-header title-large">Search bar</div>
         <span class="component search" bar>
           <i id="searchIcon">search</i>
           <input  id="searchInput"  
@@ -1890,6 +1892,9 @@
                   autocomplete="off" 
                   maxlength="64">
         </span>
+
+        
+
       </section>
 
       
@@ -1949,18 +1954,91 @@
       <section class="component-group">
         <div class="component-group-header headline-small">Top app bar</div>
         <hr end>
+
+        <div class="sub-component-group-header title-large">Top app bar</div>
         <div class="component top-app-bar" center small>
-          <span class="start">Top app bar</span>
-          <span class="end">Small</span>
+          
+          <div class="start">
+            <button class="component button icon-button">
+              <i>menu</i>
+            </button>
+          </div>
+
+          <div class="headline">Small + center</div>
+          
+          <div class="end">
+            <button class="component button icon-button">
+              <i>account_circle</i>
+            </button>
+          </div>
         </div>
-        <div class="component top-app-bar" center medium>
-          <span class="start">Top app bar</span>
-          <span class="end">Medium</span>
+
+        <div class="component top-app-bar" small>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+
+          <div class="headline">Small</div>
+
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
         </div>
-        <div class="component top-app-bar" center large>
-          <span class="start">Top app bar</span>
-          <span class="end">Large</span>
+
+        <div class="component top-app-bar" medium>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+                    
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+
+          <div class="headline">Medium</div>
         </div>
+
+        <div class="component top-app-bar" large>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+          
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+
+          <div class="headline">Large</div>
+        </div>
+
       </section>
     </details>
 

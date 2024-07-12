@@ -2,26 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.40.181:1313/actions/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resources/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resources/tokens/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://192.168.40.181:1313/projects/design/</loc>
     <lastmod>2024-07-10T12:09:04-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -33,6 +13,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/projects/</loc>
+    <lastmod>2024-07-10T12:09:04-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/</loc>
     <lastmod>2024-07-10T12:09:04-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,6 +72,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.40.181:1313/resources/</loc>
+    <lastmod>2024-07-10T12:05:37-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.40.181:1313/shapes/</loc>
     <lastmod>2024-07-08T12:27:52-04:00</lastmod>
     <changefreq>daily</changefreq>
@@ -103,6 +93,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/supporting-pane-layout/</loc>
+    <lastmod>2024-07-08T12:27:52-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/resources/tokens/</loc>
     <lastmod>2024-07-08T12:27:52-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
