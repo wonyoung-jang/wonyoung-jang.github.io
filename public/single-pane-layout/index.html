@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.8a91385b1f78d0d4100166f7605bc59f06b2929f75464d68475be150b627d1ca.css" integrity="sha256-ipE4Wx940NQQAWb3YFvFnwaykp91Rk1oR1vhULYn0co=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.513d5ebeca5bf39ba6df8e94f21877f9725deb4648c4c9abb574854072e905a9.css" integrity="sha256-UT1evspb85um346U8hh3&#43;XJd60ZIxMmrtXSFQHLpBak=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.f86c961eef8638e0ce7eaf4a25f87025a1691d4f47210b301e1eb6cc8bb934d6.css" integrity="sha256-&#43;GyWHu&#43;GOODOfq9KJfhwJaFpHU9HIQswHh62zIu5NNY=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.16838eec04dcd1e39c0b06f35a59451fe78bedd982ab851b406d21388c9c35c8.css" integrity="sha256-FoOO7ATc0eOcCwbzWllFH&#43;eL7dmCq4UbQG0hOIycNcg=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.4f7b01d1b8f293fa2a2b39eda455c6b077b34d1907c8f0e053cba48fad3fe317.css" integrity="sha256-T3sB0bjyk/oqKzntpFXGsHezTRkHyPDgU8ukj60/4xc=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/supporting-pane-layout\/";
+    window.location.href = "\/retail-inventory-manager\/";
   }
 </script>
 
@@ -1110,6 +1110,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

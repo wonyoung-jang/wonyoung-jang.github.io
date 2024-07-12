@@ -3,3 +3,16 @@
     border: 1px dashed var(--color-outline-variant);
   }
 }
+
+.divider-showcase-example {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--shape-corner-xl);
+  padding: var(--size-6);
+  
+  & hr {
+    margin-block: var(--size-6);
+  }
+}

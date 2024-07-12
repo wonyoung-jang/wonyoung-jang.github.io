@@ -4,7 +4,7 @@
   --container-justify-content: initial;
   --container-align-items: initial;
   --container-gap: initial;
-  --container-height: initial;
+  --container-height: 100%;
   --container-width: initial;
   --container-padding: 0 var(--size-2);
 
@@ -27,10 +27,17 @@
   --container-elevation-press: initial;
 
   min-height: var(--size-6);
+  
+  & .supporting-text {
+    align-self: center;
+    font-size: var(--typescale-body-small-size);
+    line-height: var(--typescale-body-small-line-height);
+    font-weight: var(--typescale-body-small-weight);
+    font-family: var(--typescale-body-small-font);  
+  }
 
   &[rich] {
-    --container-flex-flow: column nowrap;
-    --container-padding: var(--size-3) var(--size-4) var(--size-2) var(--size-4);
+    --container-padding: 0 0 var(--size-2) 0;
     
     --container-elevation: var(--elevation2);
     --container-shape: var(--shape-corner-m);
@@ -42,14 +49,27 @@
 
     & .subhead {
       margin-bottom: var(--size-1);
+      padding: var(--size-3) var(--size-4) var(--size-1) var(--size-4);
+      font-size: var(--typescale-title-small-size);
+      line-height: var(--typescale-title-small-line-height);
+      font-weight: var(--typescale-title-small-weight);
+      font-family: var(--typescale-title-small-font);  
     }
 
     & .supporting-text {
       margin-bottom: var(--size-3);
+      padding: 0 var(--size-4);
+      font-size: var(--typescale-body-medium-size);
+      line-height: var(--typescale-body-medium-line-height);
+      font-weight: var(--typescale-body-medium-weight);
+      font-family: var(--typescale-body-medium-font);    
     }
-
-    & .action {
-      color: var(--color-primary);
+    
+    & .actions {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: var(--size-2);
+      padding: 0 var(--size-2);
     }
   }
 }
