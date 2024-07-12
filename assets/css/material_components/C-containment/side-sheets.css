@@ -1,16 +1,18 @@
 .side-sheets {
+  flex: 1 0 auto;
+
   --container-display: flex;
   --container-flex-flow: column nowrap;
   --container-justify-content: initial;
-  --container-align-items: initial;
+  --container-align-items: flex-start;
   --container-gap: initial;
-  --container-height: initial;
+  --container-height: 100%;
   --container-width: 100%;
-  --container-padding: 0 var(--size-6);
+  --container-padding: 0 0 var(--size-6) 0;
 
   --container-outline: initial;
   --container-elevation: var(--elevation1);
-  --container-shape: var(--shape-corner-xl-top);
+  --container-shape: initial;
   
   --bg-color: var(--color-surface-container-low);
   
@@ -27,9 +29,52 @@
   --container-elevation-press: initial;
   
   max-width: var(--size-100);
-  margin: var(--size-18) var(--size-14) 0 var(--size-14);
+  border-left: 1px solid var(--color-outline-variant);
+
+  & .header,
+  & .content,
+  & .actions {
+    width: 100%;
+  }
+
+  & .header {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: var(--size-3) var(--size-3) var(--size-4) var(--size-1);
+    align-items: center;
+    justify-content: space-between;
+
+    & .headline {
+      flex: 1 0 0;
+      padding-left: var(--size-6);
+      font-size: var(--typescale-title-large-size);
+      line-height: var(--typescale-title-large-line-height);
+      font-weight: var(--typescale-title-large-weight);
+      font-family: var(--typescale-title-large-font);
+    }
+
+    &:has(.back-icon) {
+      & .headline {
+        padding-left: 0px;
+      }
+    }
+  }
 
   & .content {
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    align-self: stretch;
     padding: var(--spacing-panes);
+  }
+
+  & .actions {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--size-4) var(--size-6) 0px var(--size-6);
+    gap: var(--size-2);
   }
 }
