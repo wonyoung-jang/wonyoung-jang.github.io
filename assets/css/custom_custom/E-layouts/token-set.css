@@ -17,7 +17,7 @@
 
   --bg: var(--color-token-set-container);
 
-  margin-top: var(--size-5);
+  margin-top: var(--size-8);
   overflow-x: auto;
 
   & .token-set-title {
