@@ -27,7 +27,12 @@
   --container-elevation-press: initial;
   
   max-width: 640px;
-  margin: var(--size-18) var(--size-14) 0 var(--size-14);
+  margin-top: var(--size-18);
+  margin-inline: var(--size-14);
+
+  &[modal] {
+    --container-elevation: unset;
+  }
 
   & .drag-handle {
     height: var(--size-1);
@@ -38,5 +43,12 @@
 
   & .content {
     padding: var(--spacing-panes);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .bottom-sheets {
+    margin-top: var(--size-14);
+    margin-inline: var(--size-14);
   }
 }
