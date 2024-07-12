@@ -38,7 +38,9 @@
                         {{- end }}
                     {{- end -}}>
                     {{ $icon }}
-                    {{ $name }}
+                    <div class="label">
+                        {{ $name }}
+                    </div>
                 </a>
                 {{- with .Children }}
                     <div class="component tabs title-medium sub-tabs">
@@ -54,7 +56,9 @@
                     {{- end }}
                 {{- end -}}>
                 {{ $icon }}
-                {{ $name }}
+                <div class="label">
+                    {{ $name }}
+                </div>
             </a>
         {{- end }}
     {{- end }}

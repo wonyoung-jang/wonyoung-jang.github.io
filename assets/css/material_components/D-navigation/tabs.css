@@ -1,7 +1,6 @@
 .tabs:not(.sub-tabs) {
   position: relative;
   align-self: center;
-  overflow-x: auto;
 
   --container-display: flex;
   --contianer-flex-flow: row nowrap;
@@ -16,7 +15,7 @@
   --container-shape: initial;
 
   & .tab {
-    flex: 1 1 0;
+    flex: 1 0 0;
 
     --container-width: initial;
     --container-height: var(--size-12);
