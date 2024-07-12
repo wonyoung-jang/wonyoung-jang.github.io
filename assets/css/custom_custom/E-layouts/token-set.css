@@ -17,7 +17,7 @@
 
   --bg: var(--color-token-set-container);
 
-  margin-top: var(--size-8);
+  margin-top: var(--size-15);
   overflow-x: auto;
 
   & .token-set-title {
@@ -34,26 +34,6 @@
 
     &:hover {
       background-color: var(--color-surface-container-highest);
-    }
-  }
-
-  & .token-set {
-    padding-inline: var(--size-2) 0;
-    margin-block: var(--size-2);
-
-    & .token-set-title {
-      width: 100%;
-      border-radius: var(--shape-corner-xl-start);
-      font-family: var(--typescale-title-small-font);
-      font-size: var(--typescale-title-small-size);
-      font-weight: var(--typescale-title-small-weight);
-      line-height: var(--typescale-title-small-line-height);
-      color: var(--color-on-surface-variant);
-      background-color: var(--color-surface-container-lowest);
-  
-      &:hover {
-        background-color: var(--color-surface-container-low);
-      }
     }
   }
 }
