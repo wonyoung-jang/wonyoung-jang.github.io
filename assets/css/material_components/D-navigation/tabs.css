@@ -1,7 +1,7 @@
 .tabs:not(.sub-tabs) {
   position: relative;
   align-self: center;
-  overflow: visible;
+  overflow-x: auto;
 
   --container-display: flex;
   --contianer-flex-flow: row nowrap;
@@ -34,8 +34,8 @@
     --bg-color: var(--color-surface-container-lowest);
   }
 
-  &[primary] .tab {
-    &:has(i) {
+  &[primary] .tab {    
+    &:has(i + .label) {
       --container-height: var(--size-16);
     }
     

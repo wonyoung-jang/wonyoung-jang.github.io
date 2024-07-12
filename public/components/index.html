@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/custom.min.eb1ee11aae450fa9100aa4614920b2de6c16e0e27a9f78a822cf631e05224dfd.css" integrity="sha256-6x7hGq5FD6kQCqRhSSCy3mwW4OJ6n3ioIs9jHgUiTf0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.3c218693849392aa94d1d278532b0cb7862a32fe0d553ab08ea1c24ab482bba8.css" integrity="sha256-PCGGk4STkqqU0dJ4UysMt4YqMv4NVTqwjqHCSrSCu6g=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.e61458297188eee57b9bf1dfb9f5cf73e5d7284733ae615f5af65d67044c71d4.css" integrity="sha256-5hRYKXGI7uV7m/HfufXPc&#43;XXKEczrmFfWvZdZwRMcdQ=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/list-detail-layout\/";
+    window.location.href = "\/cs-career-chatbot\/";
   }
 </script>
 
@@ -1901,27 +1901,48 @@
       <section class="component-group">
         <div class="component-group-header headline-small">Tabs</div>
         <hr end>
+
         <div class="sub-component-group-header title-large">Primary tabs</div>
         <div class="component tabs" primary>
-          <span class="component tab active">Tab 1</span>
-          <span class="component tab">Tab 2</span>
-          <span class="component tab">Tab 3</span>
+          <span class="component tab active">
+            <div class="label">Tab 1</div>
+          </span>
+          <span class="component tab">
+            <div class="label">Tab 2</div>
+          </span>
+          <span class="component tab">
+            <div class="label">Tab 3</div>
+          </span>
         </div>
 
         <div class="component tabs" primary>
           <span class="component tab active">
             <i>add</i>
-            Tab 1
+            <div class="label">Tab 1</div>
           </span>
 
           <span class="component tab">
             <i>add</i>
-            Tab 2
+            <div class="label">Tab 2</div>
           </span>
 
           <span class="component tab">
             <i>add</i>
-            Tab 3
+            <div class="label">Tab 3</div>
+          </span>
+        </div>
+
+        <div class="component tabs" primary>
+          <span class="component tab active">
+            <i>add</i>
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
           </span>
         </div>
 
@@ -2075,6 +2096,7 @@
       <section class="component-group">
         <div class="component-group-header headline-small">Chips</div>
         <hr end>
+
         <label class="component chip">
             <input type="checkbox" name="chip" value="chip1">
             <span>Chip 1</span>
