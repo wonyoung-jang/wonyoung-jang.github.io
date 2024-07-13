@@ -635,15 +635,40 @@
     <div class="component-group-header">Searches</div>
     <section class="component-group">
 
-      <div class="sub-component-group-header">Search bar</div>
+      {{/*  Search bar  */}}
+      <div class="sub-component-group-header">Search bar</div>      
       <span class="component search" bar>
-        <i id="searchIcon">search</i>
+        <div class="component button icon-button">
+          <i>menu</i>
+        </div>
         <input  id="searchInput"  
                 placeholder="Search"
                 aria-label="search" 
                 type="search"
                 autocomplete="off" 
                 maxlength="64">
+
+        <div class="component button icon-button">
+          <i>search</i>
+        </div>
+      </span>
+
+      <span class="component search" bar>
+        <div class="component button icon-button">
+          <i>menu</i>
+        </div>
+        <input  id="searchInput"  
+                placeholder="Search"
+                aria-label="search" 
+                type="search"
+                autocomplete="off" 
+                maxlength="64">
+        <div class="component button icon-button">
+          <i>search</i>
+        </div>        
+        <div class="component button icon-button">
+          <div class="avatar">A</div>
+        </div>
       </span>
 
       {{/*  TODO Search view modal  */}}
