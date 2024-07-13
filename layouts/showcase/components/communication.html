@@ -8,212 +8,207 @@
       {{ . }}
     {{ end }}
  
-    {{/* || Communication  */}}
-    <details class="layout token-set" open>
-      <summary class="token-set-title">Communication</summary>
+    {{/*  Badges  */}}
+    <section class="component-group">
+      <div class="component-group-header headline-small">Badges</div>
 
-      {{/*  Badges  */}}
-      <section class="component-group">
-        <div class="component-group-header headline-small">Badges</div>
-
-        <div class="sub-component-group-header title-large">Large</div>
-        
-        <div class="component badge" large>
-          <div class="label">3</div>
-        </div>
-        
-        <div class="sub-component-group-header title-large">Small</div>
-        
-        <div class="component badge"></div>
-
-      </section>
+      <div class="sub-component-group-header title-large">Large</div>
       
-      {{/*  Progress indicators  */}}
-      <section class="component-group">
-        <div class="component-group-header headline-small">Progress indicators</div>
-
-        {{/*  TODO Linear determinate  */}}
-        
-        <div class="sub-component-group-header title-large">Linear indeterminate</div>
-        <progress></progress>
-
-        {{/*  TODO Circular determinate  */}}
-
-        <div class="sub-component-group-header title-large">Circular indeterminate</div>
-        <progress circular></progress>
-      </section>
+      <div class="component badge" large>
+        <div class="label">3</div>
+      </div>
       
-      {{/*  Snackbar  */}}
-      <section class="component-group">
-        
-        <div class="component-group-header headline-small">Snackbar</div>
-        
-        <div class="sub-component-group-header title-large">Without close button</div>
-
-        <div class="component snackbar">
-          <div class="supporting-text">
-            Single line snackbar
-          </div>
-        </div>
-        
-        <div class="component snackbar" with-action>
-          <div class="supporting-text">
-            Single line snackbar with action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Action</button>
-          </div>
-        </div>
-        
-        <div class="component snackbar" two>
-          <div class="supporting-text">
-            Two-line snackbar
-            <br> 
-            without action
-          </div>
-        </div>
-        
-        <div class="component snackbar" two with-action>
-          <div class="supporting-text">
-            Two-line snackbar with action
-            <br> 
-            with action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Action</button>
-          </div>
-        </div>
-        
-        <div class="component snackbar" two with-action with-longer-action>
-          <div class="supporting-text">
-            Two-line snackbar with longer action
-            <br> 
-            with action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Longer action</button>
-          </div>
-        </div>
-
-
-        <div class="sub-component-group-header title-large">Without close button</div>
-
-        <div class="component snackbar" with-close-button>
-          <div class="supporting-text">
-            Single line snackbar with close button
-          </div>
-          <div class="actions">
-            <button class="component button icon-button">
-              <i class="close-icon">close</i>
-            </button>
-          </div>
-        </div>
-
-        <div class="component snackbar" with-close-button>
-          <div class="supporting-text">
-            Single line snackbar with action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Action</button>
-            <button class="component button icon-button">
-              <i class="close-icon">close</i>
-            </button>
-          </div>
-        </div>
-
-        <div class="component snackbar" two with-close-button>
-          <div class="supporting-text">
-            Two-line snackbar with action
-            <br> 
-            with action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Action</button>
-            <button class="component button icon-button">
-              <i class="close-icon">close</i>
-            </button>
-          </div>
-        </div>
-
-        <div class="component snackbar" two with-close-button>
-          <div class="supporting-text">
-            Two-line snackbar with action
-            <br> 
-            with action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Action</button>
-            <button class="component button icon-button">
-              <i class="close-icon">close</i>
-            </button>
-          </div>
-        </div>
-
-        <div class="component snackbar" two with-close-button with-longer-action>
-          <div class="supporting-text">
-            Two-line snackbar
-            <br> 
-            with longer action
-          </div>
-          <div class="actions">
-            <button class="component button common-button">Longer action</button>
-            <button class="component button icon-button">
-              <i class="close-icon">close</i>
-            </button>
-          </div>
-        </div>
-
-      </section>
+      <div class="sub-component-group-header title-large">Small</div>
       
-      {{/*  Tooltips  */}}
-      <section class="component-group">
-        <div class="component-group-header headline-small">Tooltips</div>
+      <div class="component badge"></div>
 
-        <div class="sub-component-group-header title-large">Plain tooltips</div>
+    </section>
+    
+    {{/*  Progress indicators  */}}
+    <section class="component-group">
+      <div class="component-group-header headline-small">Progress indicators</div>
 
-        <div class="component tooltip">
-          <div class="supporting-text">
-            Plain tooltip
-          </div>
+      {{/*  TODO Linear determinate  */}}
+      
+      <div class="sub-component-group-header title-large">Linear indeterminate</div>
+      <progress></progress>
+
+      {{/*  TODO Circular determinate  */}}
+
+      <div class="sub-component-group-header title-large">Circular indeterminate</div>
+      <progress circular></progress>
+    </section>
+    
+    {{/*  Snackbar  */}}
+    <section class="component-group">
+      
+      <div class="component-group-header headline-small">Snackbar</div>
+      
+      <div class="sub-component-group-header title-large">Without close button</div>
+
+      <div class="component snackbar">
+        <div class="supporting-text">
+          Single line snackbar
         </div>
-
-        <div class="component tooltip">
-          <div class="supporting-text">            
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Iste obcaecati dignissimos iure perferendis, 
-            amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-            veniam quod cumque. Voluptas, distinctio provident?
-          </div>
+      </div>
+      
+      <div class="component snackbar" with-action>
+        <div class="supporting-text">
+          Single line snackbar with action
         </div>
-
-        <div class="sub-component-group-header title-large">Rich tooltips</div>
-
-        <div class="component tooltip" rich>
-          <span class="subhead">Rich tooltip</span>
-          <span class="supporting-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Iste obcaecati dignissimos iure perferendis, 
-            amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-            veniam quod cumque. Voluptas, distinctio provident?
-          </span>
-          <div class="actions">
-            <button class="component button common-button">Cancel</button>
-            <button class="component button common-button">Accept</button>
-          </div>
+        <div class="actions">
+          <button class="component button common-button">Action</button>
         </div>
-
-        <div class="component tooltip" rich>
-          <span class="subhead">Rich tooltip</span>
-          <span class="supporting-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Iste obcaecati dignissimos iure perferendis, 
-            amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-            veniam quod cumque. Voluptas, distinctio provident?
-          </span>
+      </div>
+      
+      <div class="component snackbar" two>
+        <div class="supporting-text">
+          Two-line snackbar
+          <br> 
+          without action
         </div>
+      </div>
+      
+      <div class="component snackbar" two with-action>
+        <div class="supporting-text">
+          Two-line snackbar with action
+          <br> 
+          with action
+        </div>
+        <div class="actions">
+          <button class="component button common-button">Action</button>
+        </div>
+      </div>
+      
+      <div class="component snackbar" two with-action with-longer-action>
+        <div class="supporting-text">
+          Two-line snackbar with longer action
+          <br> 
+          with action
+        </div>
+        <div class="actions">
+          <button class="component button common-button">Longer action</button>
+        </div>
+      </div>
 
-      </section>
 
-    </details>
+      <div class="sub-component-group-header title-large">Without close button</div>
+
+      <div class="component snackbar" with-close-button>
+        <div class="supporting-text">
+          Single line snackbar with close button
+        </div>
+        <div class="actions">
+          <button class="component button icon-button">
+            <i class="close-icon">close</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="component snackbar" with-close-button>
+        <div class="supporting-text">
+          Single line snackbar with action
+        </div>
+        <div class="actions">
+          <button class="component button common-button">Action</button>
+          <button class="component button icon-button">
+            <i class="close-icon">close</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="component snackbar" two with-close-button>
+        <div class="supporting-text">
+          Two-line snackbar with action
+          <br> 
+          with action
+        </div>
+        <div class="actions">
+          <button class="component button common-button">Action</button>
+          <button class="component button icon-button">
+            <i class="close-icon">close</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="component snackbar" two with-close-button>
+        <div class="supporting-text">
+          Two-line snackbar with action
+          <br> 
+          with action
+        </div>
+        <div class="actions">
+          <button class="component button common-button">Action</button>
+          <button class="component button icon-button">
+            <i class="close-icon">close</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="component snackbar" two with-close-button with-longer-action>
+        <div class="supporting-text">
+          Two-line snackbar
+          <br> 
+          with longer action
+        </div>
+        <div class="actions">
+          <button class="component button common-button">Longer action</button>
+          <button class="component button icon-button">
+            <i class="close-icon">close</i>
+          </button>
+        </div>
+      </div>
+
+    </section>
+    
+    {{/*  Tooltips  */}}
+    <section class="component-group">
+      <div class="component-group-header headline-small">Tooltips</div>
+
+      <div class="sub-component-group-header title-large">Plain tooltips</div>
+
+      <div class="component tooltip">
+        <div class="supporting-text">
+          Plain tooltip
+        </div>
+      </div>
+
+      <div class="component tooltip">
+        <div class="supporting-text">            
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Iste obcaecati dignissimos iure perferendis, 
+          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
+          veniam quod cumque. Voluptas, distinctio provident?
+        </div>
+      </div>
+
+      <div class="sub-component-group-header title-large">Rich tooltips</div>
+
+      <div class="component tooltip" rich>
+        <span class="subhead">Rich tooltip</span>
+        <span class="supporting-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Iste obcaecati dignissimos iure perferendis, 
+          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
+          veniam quod cumque. Voluptas, distinctio provident?
+        </span>
+        <div class="actions">
+          <button class="component button common-button">Cancel</button>
+          <button class="component button common-button">Accept</button>
+        </div>
+      </div>
+
+      <div class="component tooltip" rich>
+        <span class="subhead">Rich tooltip</span>
+        <span class="supporting-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Iste obcaecati dignissimos iure perferendis, 
+          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
+          veniam quod cumque. Voluptas, distinctio provident?
+        </span>
+      </div>
+
+    </section>
+
     
 {{ end }}

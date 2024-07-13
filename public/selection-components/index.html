@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.3ea303eab7237f2f05c3325e1bed48759ac3a061548ccbcda240c55e97614619.css" integrity="sha256-PqMD6rcjfy8FwzJeG&#43;1IdZrDoGFUjMvNokDFXpdhRhk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.d00f647bf23868413ccc7f31deed1821bacac9f828788d2b84b2356bec01e581.css" integrity="sha256-0A9ke/I4aEE8zH8x3u0YIbrKyfgoeI0rhLI1a&#43;wB5YE=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.024748c6f77560925ed913f2360d0c3e377668e74b3e0b0f761dab8aa78ba9cf.css" integrity="sha256-AkdIxvd1YJJe2RPyNg0MPjd2aOdLPgsPdh2riqeLqc8=" rel="preload stylesheet" as="style">
 
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/list-of-keyboard-shortcuts-for-wonyoungjang.org\/";
+    window.location.href = "\/list-detail-layout\/";
   }
 </script>
 
@@ -647,331 +647,325 @@
     
 
     
-    <details class="layout token-set" open>
-      <summary class="token-set-title">Selections</summary>
-
+    <section class="component-group">
+      <span class="component-group-header headline-small">Checkbox</span>
       
-      <section class="component-group">
-        <span class="component-group-header headline-small">Checkbox</span>
-        
-        <div class="sub-component-group-header title-large">Primary</div>
-        
-        <label class="component checkbox">
-          <input type="checkbox">
-          <span class="checkmark"><i>check_small</i></span>
-        </label>
-        
-        
-        <label class="component checkbox">
-          <input type="checkbox">
-          <span class="checkmark"><i>check_indeterminate_small</i></span>
-        </label>
-
-        
-        <label class="component checkbox">
-          <input type="checkbox">
-          <span class="checkmark"><i>check_small</i></span>
-          <span class="label-large">Checkbox with label</span>
-        </label>
-
-        
-        <div class="sub-component-group-header title-large">Error</div>
-
-        
-        <label class="component checkbox" error>
-          <input type="checkbox">
-          <span class="checkmark "><i>check_small</i></span>
-        </label>
-        
-        
-        <label class="component checkbox" error>
-          <input type="checkbox">
-          <span class="checkmark"><i>check_indeterminate_small</i></span>
-        </label>
-
-        
-        <label class="component checkbox" error>
-          <input type="checkbox">
-          <span class="checkmark"><i>check_small</i></span>
-          <span class="label-large">Checkbox with label</span>
-        </label>
-
-      </section>
-
+      <div class="sub-component-group-header title-large">Primary</div>
       
-      <section class="component-group">
-        <div class="component-group-header headline-small">Chips</div>
-        
-
-        <label class="component chip">
-          <input type="checkbox" name="chip" value="chip1">
-          <span>Chip 1</span>
-        </label>
-        <label class="component chip">
-            <input type="checkbox" name="chip" value="chip2">
-            <span>Chip 2</span>
-        </label>
-        <label class="component chip" with-icon>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>check</i>
-            <span>Chip 3</span>
-        </label>
-        
-        
-        
-        
-
-        
-
-        
-        <div class="sub-component-group-header title-large">Suggestion chips</div>
-        
-      </section>
+      <label class="component checkbox">
+        <input type="checkbox">
+        <span class="checkmark"><i>check_small</i></span>
+      </label>
       
       
-      <section class="component-group">
+      <label class="component checkbox">
+        <input type="checkbox">
+        <span class="checkmark"><i>check_indeterminate_small</i></span>
+      </label>
 
-        <div class="component-group-header headline-small">Date pickers</div>
+      
+      <label class="component checkbox">
+        <input type="checkbox">
+        <span class="checkmark"><i>check_small</i></span>
+        <span class="label-large">Checkbox with label</span>
+      </label>
 
-        
+      
+      <div class="sub-component-group-header title-large">Error</div>
 
-        
+      
+      <label class="component checkbox" error>
+        <input type="checkbox">
+        <span class="checkmark "><i>check_small</i></span>
+      </label>
+      
+      
+      <label class="component checkbox" error>
+        <input type="checkbox">
+        <span class="checkmark"><i>check_indeterminate_small</i></span>
+      </label>
 
-        <div class="sub-component-group-header title-large">Input date picker</div>
+      
+      <label class="component checkbox" error>
+        <input type="checkbox">
+        <span class="checkmark"><i>check_small</i></span>
+        <span class="label-large">Checkbox with label</span>
+      </label>
 
-        <div class="component date-picker">
+    </section>
 
-          <div class="header">
-            <div class="supporting-text">Select date</div>
-            <div class="headline-container">
-              <div class="headline">Enter date</div>
-              <button class="component button icon-button"><i>today</i></button>
-            </div>
+    
+    <section class="component-group">
+      <div class="component-group-header headline-small">Chips</div>
+      
+
+      <label class="component chip">
+        <input type="checkbox" name="chip" value="chip1">
+        <span>Chip 1</span>
+      </label>
+      <label class="component chip">
+          <input type="checkbox" name="chip" value="chip2">
+          <span>Chip 2</span>
+      </label>
+      <label class="component chip" with-icon>
+          <input type="checkbox" name="chip" value="chip3">
+          <i>check</i>
+          <span>Chip 3</span>
+      </label>
+      
+      
+      
+      
+
+      
+
+      
+      <div class="sub-component-group-header title-large">Suggestion chips</div>
+      
+    </section>
+    
+    
+    <section class="component-group">
+
+      <div class="component-group-header headline-small">Date pickers</div>
+
+      
+
+      
+
+      <div class="sub-component-group-header title-large">Input date picker</div>
+
+      <div class="component date-picker">
+
+        <div class="header">
+          <div class="supporting-text">Select date</div>
+          <div class="headline-container">
+            <div class="headline">Enter date</div>
+            <button class="component button icon-button"><i>today</i></button>
           </div>
+        </div>
 
-          <hr>
+        <hr>
 
+        <div class="component text-field" outlined>
+          <input type="text" placeholder="mm/dd/yyyy">
+        </div>
+
+        <div class="date-picker-actions">
+          <button class="component button common-button">Cancel</button>
+          <button class="component button common-button">OK</button>
+        </div>
+
+      </div>
+
+      <div class="component date-picker">
+
+        <div class="header">
+          <div class="supporting-text">Select date</div>
+          <div class="headline-container">
+            <div class="headline">Enter dates</div>
+            <button class="component button icon-button"><i>today</i></button>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="text-field-container">
           <div class="component text-field" outlined>
-            <input type="text" placeholder="mm/dd/yyyy">
+            <input type="text" placeholder="Start date">
           </div>
-
-          <div class="date-picker-actions">
-            <button class="component button common-button">Cancel</button>
-            <button class="component button common-button">OK</button>
-          </div>
-
-        </div>
-
-        <div class="component date-picker">
-
-          <div class="header">
-            <div class="supporting-text">Select date</div>
-            <div class="headline-container">
-              <div class="headline">Enter dates</div>
-              <button class="component button icon-button"><i>today</i></button>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="text-field-container">
-            <div class="component text-field" outlined>
-              <input type="text" placeholder="Start date">
-            </div>
-            
-            <div class="component text-field" outlined>
-              <input type="text" placeholder="End date">
-            </div>
-          </div>
-
-          <div class="date-picker-actions">
-            <button class="component button common-button">Cancel</button>
-            <button class="component button common-button">OK</button>
-          </div>
-
-        </div>
-      </section>
-      
-      
-      <section class="component-group">
-
-        <div class="component-group-header headline-small">Menus</div>
-
-        <div class="sub-component-group-header title-large">No divider</div>
-
-        <div class="component menus">
-          <div class="component menu-item">Menu item 1</div>
-          <div class="component menu-item">Menu item 2</div>
-          <div class="component menu-item">Menu item 3</div>
-          <div class="component menu-item">Menu item 4</div>
-        </div>
-
-        <div class="sub-component-group-header title-large">With divider</div>
-
-        <div class="component menus">
-          <div class="component menu-item">Menu item 1</div>
-          <div class="component menu-item">Menu item 2</div>
-          <div class="component menu-item">Menu item 3</div>
-          <hr>
-          <div class="component menu-item">Menu item 4</div>
-        </div>
-      </section>
-
-      
-      <section class="component-group">
-        <fieldset>
-          <span class="title-large">
-            <legend>Radio button</legend>
-          </span>
-          <div class="sub-component-group-header title-large">Radios</div>
-          <div>
-            <div class="component radio-button">
-              <input type="radio" id="radio1" name="radio1" checked/>
-              <label for="radio1">Radio1</label>
-            </div>
-            
-            <div class="component radio-button">
-              <input type="radio" id="radio2" name="radio2"/>
-              <label for="radio2">Radio2</label>
-            </div>
-
-            <div class="component radio-button">
-              <input type="radio" id="radio3" name="radio3"/>
-              <label for="radio3">Radio3</label>
-            </div>
-          </div>
-        </fieldset>
-      </section>
-
-      
-      <section class="component-group">
-        <div class="component-group-header headline-small">Sliders</div>
-
-        
-        <div class="sub-component-group-header title-large">Continuous</div>
-
-        <div class="slider">
-          <input type="range">
-        </div>
-
-        
-        <div class="sub-component-group-header title-large">Centered</div>
-
-        <div class="slider">
-          <input id="test-slider" type="range" min="1" max="100" value="50" list="markers">
           
-          <datalist id="markers">
-            <option value="0"></option>
-            <option value="100"></option>
-          </datalist>
+          <div class="component text-field" outlined>
+            <input type="text" placeholder="End date">
+          </div>
         </div>
 
-        
+        <div class="date-picker-actions">
+          <button class="component button common-button">Cancel</button>
+          <button class="component button common-button">OK</button>
+        </div>
 
-        
+      </div>
+    </section>
+    
+    
+    <section class="component-group">
 
-      </section>
+      <div class="component-group-header headline-small">Menus</div>
+
+      <div class="sub-component-group-header title-large">No divider</div>
+
+      <div class="component menus">
+        <div class="component menu-item">Menu item 1</div>
+        <div class="component menu-item">Menu item 2</div>
+        <div class="component menu-item">Menu item 3</div>
+        <div class="component menu-item">Menu item 4</div>
+      </div>
+
+      <div class="sub-component-group-header title-large">With divider</div>
+
+      <div class="component menus">
+        <div class="component menu-item">Menu item 1</div>
+        <div class="component menu-item">Menu item 2</div>
+        <div class="component menu-item">Menu item 3</div>
+        <hr>
+        <div class="component menu-item">Menu item 4</div>
+      </div>
+    </section>
+
+    
+    <section class="component-group">
+      <fieldset>
+        <span class="title-large">
+          <legend>Radio button</legend>
+        </span>
+        <div class="sub-component-group-header title-large">Radios</div>
+        <div>
+          <div class="component radio-button">
+            <input type="radio" id="radio1" name="radio1" checked/>
+            <label for="radio1">Radio1</label>
+          </div>
+          
+          <div class="component radio-button">
+            <input type="radio" id="radio2" name="radio2"/>
+            <label for="radio2">Radio2</label>
+          </div>
+
+          <div class="component radio-button">
+            <input type="radio" id="radio3" name="radio3"/>
+            <label for="radio3">Radio3</label>
+          </div>
+        </div>
+      </fieldset>
+    </section>
+
+    
+    <section class="component-group">
+      <div class="component-group-header headline-small">Sliders</div>
 
       
-      <section class="component-group">
+      <div class="sub-component-group-header title-large">Continuous</div>
 
-        <div class="component-group-header headline-small">Switch</div>
-
-        <div class="sub-component-group-header title-large">No icon</div>
-
-        <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-        </label>
-
-        <div class="sub-component-group-header title-large">With icon</div>
-
-        <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle">
-              <div class="icon-container">
-                <i class="close-icon">close</i>
-                <i class="check-icon">check</i>
-              </div>
-            </span>
-        </label>
-
-      </section>
+      <div class="slider">
+        <input type="range">
+      </div>
 
       
-      <section class="component-group">
-        <div class="component-group-header headline-small">Time pickers</div>
+      <div class="sub-component-group-header title-large">Centered</div>
 
+      <div class="slider">
+        <input id="test-slider" type="range" min="1" max="100" value="50" list="markers">
         
+        <datalist id="markers">
+          <option value="0"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
 
-        <div class="sub-component-group-header title-large">Time input/keyboard picker</div>
+      
 
-        <div class="component time-picker">
+      
 
-          <div class="time-picker-headline">Enter time</div>
+    </section>
 
-          <div class="time-picker-container">
-            <div class="time-input-field-container">
-              <div class="time-input-option selected">
-                07
-                <span class="supporting-text">Hour</span>
-              </div>
-              <div class="time-input-separator">:</div>
-              <div class="time-input-option">
-                00
-                <span class="supporting-text">Minute</span>
-              </div>
+    
+    <section class="component-group">
+
+      <div class="component-group-header headline-small">Switch</div>
+
+      <div class="sub-component-group-header title-large">No icon</div>
+
+      <label class="component switch">
+          <input class="track" type="checkbox">
+          <span class="handle"></span>
+      </label>
+
+      <div class="sub-component-group-header title-large">With icon</div>
+
+      <label class="component switch">
+          <input class="track" type="checkbox">
+          <span class="handle">
+            <div class="icon-container">
+              <i class="close-icon">close</i>
+              <i class="check-icon">check</i>
             </div>
+          </span>
+      </label>
 
-            <div class="period-selector-container">
-              <div class="period-option selected">AM</div>
-              <div class="period-option">PM</div>
+    </section>
+
+    
+    <section class="component-group">
+      <div class="component-group-header headline-small">Time pickers</div>
+
+      
+
+      <div class="sub-component-group-header title-large">Time input/keyboard picker</div>
+
+      <div class="component time-picker">
+
+        <div class="time-picker-headline">Enter time</div>
+
+        <div class="time-picker-container">
+          <div class="time-input-field-container">
+            <div class="time-input-option selected">
+              07
+              <span class="supporting-text">Hour</span>
+            </div>
+            <div class="time-input-separator">:</div>
+            <div class="time-input-option">
+              00
+              <span class="supporting-text">Minute</span>
             </div>
           </div>
 
-          <div class="time-picker-actions"> 
-            <div class="time-picker-start">
-              <button class="component button icon-button"><i>schedule</i></button>
+          <div class="period-selector-container">
+            <div class="period-option selected">AM</div>
+            <div class="period-option">PM</div>
+          </div>
+        </div>
+
+        <div class="time-picker-actions"> 
+          <div class="time-picker-start">
+            <button class="component button icon-button"><i>schedule</i></button>
+          </div>
+          <div class="time-picker-end">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="component time-picker">
+
+        <div class="time-picker-headline">Enter time</div>
+
+        <div class="time-picker-container">
+          <div class="time-input-field-container">
+            <div class="time-input-option selected">
+              07
+              <span class="supporting-text">Hour</span>
             </div>
-            <div class="time-picker-end">
-              <button class="component button common-button">Cancel</button>
-              <button class="component button common-button">OK</button>
+            <div class="time-input-separator">:</div>
+            <div class="time-input-option">
+              00
+              <span class="supporting-text">Minute</span>
             </div>
           </div>
         </div>
 
-        <div class="component time-picker">
-
-          <div class="time-picker-headline">Enter time</div>
-
-          <div class="time-picker-container">
-            <div class="time-input-field-container">
-              <div class="time-input-option selected">
-                07
-                <span class="supporting-text">Hour</span>
-              </div>
-              <div class="time-input-separator">:</div>
-              <div class="time-input-option">
-                00
-                <span class="supporting-text">Minute</span>
-              </div>
-            </div>
+        <div class="time-picker-actions"> 
+          <div class="time-picker-start">
+            <button class="component button icon-button"><i>schedule</i></button>
           </div>
-
-          <div class="time-picker-actions"> 
-            <div class="time-picker-start">
-              <button class="component button icon-button"><i>schedule</i></button>
-            </div>
-            <div class="time-picker-end">
-              <button class="component button common-button">Cancel</button>
-              <button class="component button common-button">OK</button>
-            </div>
+          <div class="time-picker-end">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">OK</button>
           </div>
         </div>
+      </div>
 
-      </section>
-
-    </details>
+    </section>
 
   </section>
 
