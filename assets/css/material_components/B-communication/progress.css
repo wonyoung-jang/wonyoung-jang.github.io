@@ -39,6 +39,13 @@ progress {
         linear-scale-secondary,
         linear-translate-secondary;
     }
+
+    &[determinate] {
+      &::-webkit-progress-value,
+      &::-moz-progress-bar {
+        animation-iteration-count: 1;
+      }
+    }
   }
   
   &::-webkit-progress-bar {
@@ -65,6 +72,10 @@ progress {
     
     &::-moz-progress-bar {
       background: none;
+    }
+
+    &[determinate] {
+      animation: var(--arc-duration) var(--motion-easing-emphasized) to-circular;
     }
   }
 
