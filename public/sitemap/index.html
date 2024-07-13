@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.3ea303eab7237f2f05c3325e1bed48759ac3a061548ccbcda240c55e97614619.css" integrity="sha256-PqMD6rcjfy8FwzJeG&#43;1IdZrDoGFUjMvNokDFXpdhRhk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.1c28063d93d1df1d5b6e3dfa6678bf07d27b38d498e9831f0997dbd0c80d8fbe.css" integrity="sha256-HCgGPZPR3x1bbj36Zni/B9J7ONSY6YMfCZfb0MgNj74=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.024748c6f77560925ed913f2360d0c3e377668e74b3e0b0f761dab8aa78ba9cf.css" integrity="sha256-AkdIxvd1YJJe2RPyNg0MPjd2aOdLPgsPdh2riqeLqc8=" rel="preload stylesheet" as="style">
 
@@ -140,7 +140,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/fixed-and-flexible-layout\/";
+    window.location.href = "\/feed-layout\/";
   }
 </script>
 
@@ -745,24 +745,6 @@
               
               <tr>
                 <td>6</td>
-                <td>Components</td>
-                <td>
-                  <a href="http://192.168.40.181:1313/components/">
-                    http://192.168.40.181:1313/components/
-                  </a>
-                </td>
-                <td>July 08, 2024</td>
-                <td>July 08, 2024</td>
-                <td>page</td>
-                <td>showcase/components</td>
-                <td>components</td>
-              </tr>
-            
-          
-            
-              
-              <tr>
-                <td>7</td>
                 <td>Contact</td>
                 <td>
                   <a href="http://192.168.40.181:1313/contact/">
@@ -780,7 +762,7 @@
             
               
               <tr>
-                <td>8</td>
+                <td>7</td>
                 <td>Containment</td>
                 <td>
                   <a href="http://192.168.40.181:1313/containment-components/">
@@ -798,7 +780,7 @@
             
               
               <tr>
-                <td>9</td>
+                <td>8</td>
                 <td>CS career chatbot</td>
                 <td>
                   <a href="http://192.168.40.181:1313/cs-career-chatbot/">
@@ -816,7 +798,7 @@
             
               
               <tr>
-                <td>10</td>
+                <td>9</td>
                 <td>Disaster recovery robot simulation</td>
                 <td>
                   <a href="http://192.168.40.181:1313/disaster-recovery-robot-simulation/">
@@ -834,7 +816,7 @@
             
               
               <tr>
-                <td>11</td>
+                <td>10</td>
                 <td>DVD rental database</td>
                 <td>
                   <a href="http://192.168.40.181:1313/dvd-rental-database/">
@@ -846,6 +828,24 @@
                 <td>page</td>
                 <td>page</td>
                 <td></td>
+              </tr>
+            
+          
+            
+              
+              <tr>
+                <td>11</td>
+                <td>Elevations</td>
+                <td>
+                  <a href="http://192.168.40.181:1313/elevations/">
+                    http://192.168.40.181:1313/elevations/
+                  </a>
+                </td>
+                <td>July 08, 2024</td>
+                <td>July 08, 2024</td>
+                <td>page</td>
+                <td>showcase/tokens</td>
+                <td>elevations</td>
               </tr>
             
           
@@ -1285,10 +1285,10 @@
               
               <tr>
                 <td>36</td>
-                <td>States and elevation</td>
+                <td>States</td>
                 <td>
-                  <a href="http://192.168.40.181:1313/states-and-elevation/">
-                    http://192.168.40.181:1313/states-and-elevation/
+                  <a href="http://192.168.40.181:1313/states/">
+                    http://192.168.40.181:1313/states/
                   </a>
                 </td>
                 <td>July 08, 2024</td>
@@ -2096,6 +2096,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

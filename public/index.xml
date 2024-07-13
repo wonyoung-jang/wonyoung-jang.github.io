@@ -247,6 +247,34 @@
       </item>
       <item>
         <title>
+          Elevations
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/elevations/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/elevations/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Elevation
+        </description>
+      </item>
+      <item>
+        <title>
           Feed layout
         </title>
 
@@ -499,11 +527,11 @@
       </item>
       <item>
         <title>
-          States and elevation
+          States
         </title>
 
         <link>
-          http://192.168.40.181:1313/states-and-elevation/
+          http://192.168.40.181:1313/states/
         </link>
 
         <pubDate>
@@ -518,11 +546,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/states-and-elevation/
+          http://192.168.40.181:1313/states/
         </guid>
 
         <description>
-          See: Material Design 3 - States&#xA;See: Material Design 3 - Elevation
+          See: Material Design 3 - States
         </description>
       </item>
       <item>

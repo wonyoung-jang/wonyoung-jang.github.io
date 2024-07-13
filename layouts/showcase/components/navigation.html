@@ -8,6 +8,8 @@
       {{ . }}
     {{ end }}
     
+    {{/*  || App bars  */}}
+
     {{/*  Bottom app bar  */}}
     <section class="component-group">
       <div class="component-group-header headline-small">Bottom app bar</div>
@@ -149,6 +151,98 @@
       </div>
     </section>
     
+    {{/*  Top app bar  */}}
+    <section class="component-group">
+      <div class="component-group-header headline-small">Top app bar</div>
+
+      <div class="sub-component-group-header title-large">Top app bar</div>
+      <div class="component top-app-bar" center small>
+        
+        <div class="start">
+          <button class="component button icon-button">
+            <i>menu</i>
+          </button>
+        </div>
+
+        <div class="headline">Small + center</div>
+        
+        <div class="end">
+          <button class="component button icon-button">
+            <i>account_circle</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="component top-app-bar" small>
+        <div class="start">
+          <button class="component button icon-button">
+            <i>arrow_back</i>
+          </button>
+        </div>
+
+        <div class="headline">Small</div>
+
+        <div class="end">
+          <button class="component button icon-button">
+            <i>attach_file</i>
+          </button>
+          <button class="component button icon-button">
+            <i>today</i>
+          </button>
+          <button class="component button icon-button">
+            <i>more_vert</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="component top-app-bar" medium>
+        <div class="start">
+          <button class="component button icon-button">
+            <i>arrow_back</i>
+          </button>
+        </div>
+                  
+        <div class="end">
+          <button class="component button icon-button">
+            <i>attach_file</i>
+          </button>
+          <button class="component button icon-button">
+            <i>today</i>
+          </button>
+          <button class="component button icon-button">
+            <i>more_vert</i>
+          </button>
+        </div>
+
+        <div class="headline">Medium</div>
+      </div>
+
+      <div class="component top-app-bar" large>
+        <div class="start">
+          <button class="component button icon-button">
+            <i>arrow_back</i>
+          </button>
+        </div>
+        
+        <div class="end">
+          <button class="component button icon-button">
+            <i>attach_file</i>
+          </button>
+          <button class="component button icon-button">
+            <i>today</i>
+          </button>
+          <button class="component button icon-button">
+            <i>more_vert</i>
+          </button>
+        </div>
+
+        <div class="headline">Large</div>
+      </div>
+
+    </section>
+
+    {{/*  || Navigations  */}}
+
     {{/*  Navigation bar  */}}
     <section class="component-group">
       <div class="component-group-header headline-small">Navigation bar</div>
@@ -629,96 +723,6 @@
           Tab 3
         </span>
       </div>
-    </section>
-
-    {{/*  Top app bar  */}}
-    <section class="component-group">
-      <div class="component-group-header headline-small">Top app bar</div>
-
-      <div class="sub-component-group-header title-large">Top app bar</div>
-      <div class="component top-app-bar" center small>
-        
-        <div class="start">
-          <button class="component button icon-button">
-            <i>menu</i>
-          </button>
-        </div>
-
-        <div class="headline">Small + center</div>
-        
-        <div class="end">
-          <button class="component button icon-button">
-            <i>account_circle</i>
-          </button>
-        </div>
-      </div>
-
-      <div class="component top-app-bar" small>
-        <div class="start">
-          <button class="component button icon-button">
-            <i>arrow_back</i>
-          </button>
-        </div>
-
-        <div class="headline">Small</div>
-
-        <div class="end">
-          <button class="component button icon-button">
-            <i>attach_file</i>
-          </button>
-          <button class="component button icon-button">
-            <i>today</i>
-          </button>
-          <button class="component button icon-button">
-            <i>more_vert</i>
-          </button>
-        </div>
-      </div>
-
-      <div class="component top-app-bar" medium>
-        <div class="start">
-          <button class="component button icon-button">
-            <i>arrow_back</i>
-          </button>
-        </div>
-                  
-        <div class="end">
-          <button class="component button icon-button">
-            <i>attach_file</i>
-          </button>
-          <button class="component button icon-button">
-            <i>today</i>
-          </button>
-          <button class="component button icon-button">
-            <i>more_vert</i>
-          </button>
-        </div>
-
-        <div class="headline">Medium</div>
-      </div>
-
-      <div class="component top-app-bar" large>
-        <div class="start">
-          <button class="component button icon-button">
-            <i>arrow_back</i>
-          </button>
-        </div>
-        
-        <div class="end">
-          <button class="component button icon-button">
-            <i>attach_file</i>
-          </button>
-          <button class="component button icon-button">
-            <i>today</i>
-          </button>
-          <button class="component button icon-button">
-            <i>more_vert</i>
-          </button>
-        </div>
-
-        <div class="headline">Large</div>
-      </div>
-
     </section>
 
 {{ end }}

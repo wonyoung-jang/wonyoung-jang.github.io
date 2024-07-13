@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.d00f647bf23868413ccc7f31deed1821bacac9f828788d2b84b2356bec01e581.css" integrity="sha256-0A9ke/I4aEE8zH8x3u0YIbrKyfgoeI0rhLI1a&#43;wB5YE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.1c28063d93d1df1d5b6e3dfa6678bf07d27b38d498e9831f0997dbd0c80d8fbe.css" integrity="sha256-HCgGPZPR3x1bbj36Zni/B9J7ONSY6YMfCZfb0MgNj74=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.024748c6f77560925ed913f2360d0c3e377668e74b3e0b0f761dab8aa78ba9cf.css" integrity="sha256-AkdIxvd1YJJe2RPyNg0MPjd2aOdLPgsPdh2riqeLqc8=" rel="preload stylesheet" as="style">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/single-pane-layout\/";
+    window.location.href = "\/save-top-level-reddit-comments\/";
   }
 </script>
 
@@ -3256,6 +3256,18 @@
             <span class="page-links-title title-large">See also</span>
             
                 <a  class="component card" filled
+                    href="/elevations/">
+                    <div class="card-content">
+                        <span class="title-small">
+                            Elevations
+                        </span>
+                        <span class="card-description">
+                            Elevations available for wonyounjang.org
+                        </span>
+                    </div>
+                </a>
+            
+                <a  class="component card" filled
                     href="/motion/">
                     <div class="card-content">
                         <span class="title-small">
@@ -3280,25 +3292,13 @@
                 </a>
             
                 <a  class="component card" filled
-                    href="/states-and-elevation/">
+                    href="/states/">
                     <div class="card-content">
                         <span class="title-small">
-                            States and elevation
+                            States
                         </span>
                         <span class="card-description">
-                            States and elevations available for wonyounjang.org
-                        </span>
-                    </div>
-                </a>
-            
-                <a  class="component card" filled
-                    href="/typography/">
-                    <div class="card-content">
-                        <span class="title-small">
-                            Typography
-                        </span>
-                        <span class="card-description">
-                            Typefaces and typescales available for wonyoungjang.org
+                            States available for wonyounjang.org
                         </span>
                     </div>
                 </a>
@@ -3597,6 +3597,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
