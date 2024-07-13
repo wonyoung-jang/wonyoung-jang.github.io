@@ -4,8 +4,8 @@
   --container-justify-content: flex-start;
   --container-align-items: flex-start;
   --container-gap: initial;
-  --container-height: 100%;
-  --container-width: 100%;
+  --container-height: initial;
+  --container-width: initial;
   --container-padding: var(--size-6);
 
   --container-outline: initial;

@@ -4,7 +4,7 @@
   --container-justify-content: initial;
   --container-align-items: flex-start;
   --container-gap: var(--size-2);
-  --container-height: 100%;
+  --container-height: initial;
   --container-width: 100%;
   --container-padding: 0 var(--size-2);
 

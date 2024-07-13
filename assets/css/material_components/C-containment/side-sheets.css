@@ -1,14 +1,13 @@
 .side-sheets {
   flex: 1 0 auto;
-  margin-left: auto;
 
   --container-display: flex;
   --container-flex-flow: column nowrap;
   --container-justify-content: initial;
   --container-align-items: flex-start;
   --container-gap: initial;
-  --container-height: 100%;
-  --container-width: 100%;
+  --container-height: initial;
+  --container-width: initial;
   --container-padding: 0 0 var(--size-6) 0;
 
   --container-outline: initial;

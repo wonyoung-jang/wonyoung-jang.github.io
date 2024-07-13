@@ -8,7 +8,7 @@
   --container-align-items: stretch;
   --container-gap: 0;
   --container-width: 100%;
-  --container-height: 100%;
+  --container-height: initial;
   
   --container-padding: 0;
 

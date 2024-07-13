@@ -60,7 +60,7 @@
 
   &[with-longer-action] {
     --container-flex-flow: column nowrap;
-    --container-height: 100%;
+    --container-height: initial;
     --container-padding: 0px;
     --container-gap: 14px;
   }
