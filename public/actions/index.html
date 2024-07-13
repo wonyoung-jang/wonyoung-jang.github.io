@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.1eaeaf27bf116791bedc2907c911c0f1018d24b8b8f636d770eee4aa35ddb29c.css" integrity="sha256-Hq6vJ78RZ5G&#43;3CkHyRHA8QGNJLi49jbXcO7kqjXdspw=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.a488464917a44345723ce6f4b1d409434d8d8eb8465d97dd56cd59e3592702d9.css" integrity="sha256-pIhGSRekQ0VyPOb0sdQJQ02NjrhGXZfdVs1Z41knAtk=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.01cc0450dffa0cc738d54cfd4b7e7573f6e73fae1ae870a9aa99d7d09d8fc694.css" integrity="sha256-AcwEUN/6DMc41Uz9S351c/bnP64a6HCpqpnX0J2PxpQ=" rel="preload stylesheet" as="style">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/single-pane-layout\/";
+    window.location.href = "\/selections\/";
   }
 </script>
 
@@ -655,9 +655,9 @@
     
     
     
-    <div class="component-group-header headline-small">Common buttons</div>
+    <div class="component-group-header">Common buttons</div>
     <section class="component-group">
-      <div class="sub-component-group-header title-large">No icon</div>
+      <div class="sub-component-group-header">No icon</div>
       <section>
         <button class="component button common-button">Text</button>
         <button class="component button common-button" elevated>Elevated</button>
@@ -666,7 +666,7 @@
         <button class="component button common-button" outlined>Outlined</button>
       </section>
       
-      <div class="sub-component-group-header title-large">With icon</div>
+      <div class="sub-component-group-header">With icon</div>
       <section>
         <button class="component button common-button" with-icon>
           <i>add</i>
@@ -693,10 +693,10 @@
     </section>
 
     
-    <div class="component-group-header headline-small">Floating action buttons (FABs)</div>
+    <div class="component-group-header">Floating action buttons (FABs)</div>
     <section class="component-group">
       
-      <div class="sub-component-group-header title-large">Small FAB</div>
+      <div class="sub-component-group-header">Small FAB</div>
       <section>
         <button class="component button surface-container-high fab" small>
           <i>add</i>
@@ -715,7 +715,7 @@
         </button>
       </section>
 
-      <div class="sub-component-group-header title-large">FAB</div>
+      <div class="sub-component-group-header">FAB</div>
       <section>
         <button class="component button surface-container-high fab">
           <i>add</i>
@@ -734,7 +734,7 @@
         </button>
       </section>
 
-      <div class="sub-component-group-header title-large">Large FAB</div>
+      <div class="sub-component-group-header">Large FAB</div>
       <section>
         <button class="component button surface-container-high fab" large>
           <i>add</i>
@@ -753,7 +753,7 @@
         </button>
       </section>
 
-      <div class="sub-component-group-header title-large">Extended FAB - no icon</div>
+      <div class="sub-component-group-header">Extended FAB - no icon</div>
       <section>
         <button class="component button surface-container-high fab" extended>
           Extended
@@ -769,7 +769,7 @@
         </button>
       </section>
 
-      <div class="sub-component-group-header title-large">Extended FAB - with icon</div>
+      <div class="sub-component-group-header">Extended FAB - with icon</div>
       <section>
         <button class="component button surface-container-high fab" extended>
           <i>add</i>
@@ -792,10 +792,10 @@
     </section>
 
     
-    <div class="component-group-header headline-small">Icon buttons</div>
+    <div class="component-group-header">Icon buttons</div>
     <section class="component-group">
 
-      <div class="sub-component-group-header title-large">Icon button</div>
+      <div class="sub-component-group-header">Icon button</div>
 
       <button class="component button icon-button">
         <i>settings</i>
@@ -816,10 +816,10 @@
     </section>
 
     
-    <div class="component-group-header headline-small">Segmented buttons</div>
+    <div class="component-group-header">Segmented buttons</div>
     <section class="component-group">
 
-      <div class="sub-component-group-header title-large">Outlined</div>
+      <div class="sub-component-group-header">Outlined</div>
 
       <div class="component segmented-button">
           <input type="radio" id="start" name="segmented" checked>
@@ -1367,49 +1367,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
