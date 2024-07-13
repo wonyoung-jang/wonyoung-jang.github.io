@@ -1,56 +1,86 @@
 .text-field {
-    &[filled] {
-        --container-display: flex;
-        --container-flex-flow: row nowrap;
-        --container-justify-content: flex-start;
-        --container-align-items: center;
-        --container-gap: var(--size-4);
-        --container-height: var(--size-14);
-        --container-width: 100%;
-        --container-padding: 0 var(--size-4);
-        --container-outline: initial;
-        --container-elevation: initial;
-        --container-shape: var(--shape-corner-xs);
-        --bg-color: var(--color-surface-container-highest);
-        --text-color: var(--color-on-surface);
-        --icon-color: var(--color-on-surface);
+  &[filled] {
+    --container-display: flex;
+    --container-flex-flow: column nowrap;
+    --container-justify-content: flex-start;
+    --container-align-items: center;
+    --container-gap: var(--size-4);
+    --container-height: var(--size-14);
+    --container-width: 100%;
+    --container-padding: 0 var(--size-4);
+    --container-outline: initial;
+    --container-elevation: initial;
+    --container-shape: var(--shape-corner-xs-top);
+    --bg-color: var(--color-surface-container-highest);
+    --text-color: var(--color-on-surface);
+    --icon-color: var(--color-on-surface);
 
-        & input {
-            color: var(--color-on-surface);
-        }
+    & input[type="text"] {
+      flex: 1 1 auto;
+      color: var(--color-on-surface);
+
+      &::placeholder {
+        color: var(--color-on-surface-variant);
+      }
     }
     
-    &[outlined] {
-        --container-display: flex;
-        --container-flex-flow: row nowrap;
-        --container-justify-content: flex-start;
-        --container-align-items: center;
-        --container-gap: var(--size-4);
-        --container-height: var(--size-14);
-        --container-width: 100%;
-        --container-padding: 0 var(--size-4);
-        --container-outline: 1px solid var(--color-outline);
-        --container-elevation: initial;
-        --container-shape: var(--shape-corner-xs);
-        --bg-color: inherit;
-        --text-color: var(--color-on-surface-variant);
-        --icon-color: var(--color-on-surface-variant);
+    & .supporting-text {
+        flex: 1 0 0;
 
-        & input {
-            color: var(--color-on-surface-variant);
-        }
+        position: absolute;
+        bottom: calc(var(--size-5) * -1);
+
+        display: flex;
+        height: var(--size-5);
+        padding: var(--size-1) var(--size-4) 0px var(--size-4);
+        align-items: flex-start;
+        gap: 10px;
+
+        font-size: var(--typescale-body-small-size);
+        line-height: var(--typescale-body-small-line-height);
+        font-weight: var(--typescale-body-small-weight);
+        font-family: var(--typescale-body-small-font);      
+
+        color: var(--color-on-surface-variant);
     }
+
+    & hr {
+      position: absolute;
+      top: 100%;
+    }
+  }
+
+  &[outlined] {
+    --container-display: flex;
+    --container-flex-flow: row nowrap;
+    --container-justify-content: flex-start;
+    --container-align-items: center;
+    --container-gap: var(--size-4);
+    --container-height: var(--size-14);
+    --container-width: 100%;
+    --container-padding: 0 var(--size-4);
+    --container-outline: 1px solid var(--color-outline);
+    --container-elevation: initial;
+    --container-shape: var(--shape-corner-xs);
+    --bg-color: inherit;
+    --text-color: var(--color-on-surface-variant);
+    --icon-color: var(--color-on-surface-variant);
+
+    & input {
+      color: var(--color-on-surface-variant);
+    }
+  }
 }
 
 .text-field {
-    & * {
-        width: 100%;
-    }
-    
-    &:is(textarea) {
-        padding: var(--size-4);
-        color: var(--color-on-surface);
-        resize: vertical;
-        height: var(--size-42);
-    }
+  & * {
+    width: 100%;
+  }
+
+  &:is(textarea) {
+    padding: var(--size-4);
+    color: var(--color-on-surface);
+    resize: vertical;
+    height: var(--size-42);
+  }
 }

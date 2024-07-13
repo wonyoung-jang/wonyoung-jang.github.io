@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<article class="layout panes basic-single-pane">
+
+  <section class="layout pane" id="components-showcase">  
+
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+
+    {{/*  || Text inputs  */}}
+    <details class="layout token-set" open>
+      <summary class="token-set-title">Text inputs</summary>
+
+      {{/*  Text fields  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Text fields</div>
+
+        {{/*  TODO Text field configurations (many)  */}}
+
+        <div class="sub-component-group-header title-large">Filled</div>
+        <div class="component text-field" filled>
+          <input type="text" placeholder="Placeholder">
+          <hr>
+          <div class="supporting-text">Supporting text</div>
+        </div>
+        <textarea 
+          class="component text-field" filled 
+          type="text" 
+          placeholder="Placeholder - multiline"></textarea>
+
+        <div class="sub-component-group-header title-large">Outlined</div>
+        <div class="component text-field" outlined>
+          <input type="text" placeholder="Placeholder">
+        </div>
+        <textarea 
+          class="component text-field" outlined 
+          type="text" 
+          placeholder="Placeholder - multiline"></textarea>
+      </section>
+    </details>
+  </section>
+</article>
+
+{{ end }}

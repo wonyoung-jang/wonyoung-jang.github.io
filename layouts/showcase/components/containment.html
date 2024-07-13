@@ -1,0 +1,470 @@
+{{ define "main" }}
+
+<article class="layout panes basic-single-pane">
+
+  <section class="layout pane" id="components-showcase">  
+
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+    
+    
+    {{/*  || Containment  */}}
+    <details class="layout token-set" open>
+      <summary class="token-set-title">Containment</summary>
+
+      {{/*  Bottom sheets  */}}
+      <section class="component-group">
+
+        <div class="component-group-header headline-small">Bottom sheets</div>
+        
+        <div class="sub-component-group-header title-large">Standard bottom sheet</div>
+
+        <div class="component bottom-sheets">
+          <div class="drag-handle"></div>
+          <div class="content">Standard bottom sheet</div>
+        </div>
+
+        <div class="sub-component-group-header title-large">Modal bottom sheet</div>
+
+        <div class="component bottom-sheets" modal>
+          <div class="drag-handle"></div>
+          <div class="content">Modal bottom sheet</div>
+        </div>
+
+      </section>
+
+      {{/*  Cards  */}}
+      <section class="component-group">
+        {{/*  TODO Stacked card  */}}
+        
+        {{/*  TODO Horizontal card  */}}
+
+        <div class="component-group-header headline-small">Cards</div>
+
+        <div class="sub-component-group-header title-large">Elevated</div>
+        <div class="component card" elevated>
+          <div>Elevated card content</div>
+        </div>
+
+        <div class="sub-component-group-header title-large">Filled</div>
+        <div class="component card" filled>
+          <div>Filled card content</div>
+        </div>
+
+        <div class="sub-component-group-header title-large">Outlined</div>
+        <div class="component card" outlined>
+          <div>Outlined card content</div>
+        </div>
+      </section>
+
+      {{/*  Carousel  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Carousel</div>
+        
+        <div class="carousel-item"></div>
+
+        {{/*  TODO  Hero */}}
+        
+        {{/*  TODO  Center-aligned hero */}}
+
+        {{/*  TODO  Multi-browse */}}
+
+        {{/*  TODO  Uncontained */}}
+
+      </section>
+      
+      {{/*  Dialogs  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Dialogs</div>
+
+        <div class="sub-component-group-header title-large">Basic dialog</div>
+
+        <div class="component dialog">
+          <span class="headline">Basic dialog</span>
+          <div class="supporting-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non blanditiis voluptas, repellat, impedit, sit reprehenderit 
+            nam et ipsa eius amet rem! Eligendi sequi magnam 
+            exercitationem vel dignissimos similique, atque earum.          
+          </div>
+          <span class="actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">Accept</button>
+          </span>
+        </div>
+
+        <div class="component dialog">
+          <i>chat</i>
+          <span class="headline">Basic dialog with icon</span>
+          <div class="supporting-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non blanditiis voluptas, repellat, impedit, sit reprehenderit 
+            nam et ipsa eius amet rem! Eligendi sequi magnam 
+            exercitationem vel dignissimos similique, atque earum.          
+          </div>
+          <span class="actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">Accept</button>
+          </span>
+        </div>
+
+        {{/*  List dialog  */}}
+
+        <div class="sub-component-group-header title-large">List dialog</div>
+
+        <div class="component dialog">
+          <span class="headline">List dialog</span>
+          <div class="supporting-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non blanditiis voluptas, repellat, impedit, sit reprehenderit 
+            nam et ipsa eius amet rem! Eligendi sequi magnam 
+            exercitationem vel dignissimos similique, atque earum.          
+          </div>
+
+          <div class="list-container">
+            <div class="component list-item" one>
+              <span>List-item one</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item two</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item three</span>
+            </div>
+          </div>
+
+          <span class="actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">Accept</button>
+          </span>
+        </div>
+
+        <div class="component dialog">
+          <i>chat</i>
+          <span class="headline">List dialog with icon</span>
+          <div class="supporting-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non blanditiis voluptas, repellat, impedit, sit reprehenderit 
+            nam et ipsa eius amet rem! Eligendi sequi magnam 
+            exercitationem vel dignissimos similique, atque earum.          
+          </div>
+
+          <div class="list-container">
+            <div class="component list-item" one>
+              <span>List-item one</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item two</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item three</span>
+            </div>
+          </div>
+
+          <span class="actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">Accept</button>
+          </span>
+        </div>
+
+        {{/*  Scrollable list dialog  */}}
+        
+        <div class="sub-component-group-header title-large">Scrollable list dialog</div>
+
+        <div class="component dialog">
+          <span class="headline">Scrollable list dialog</span>
+          <div class="supporting-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non blanditiis voluptas, repellat, impedit, sit reprehenderit 
+            nam et ipsa eius amet rem! Eligendi sequi magnam 
+            exercitationem vel dignissimos similique, atque earum.          
+          </div>
+
+          <div class="list-container" scrollable>
+            <div class="component list-item" one>
+              <span>List-item one</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item two</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item three</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item four</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item five</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item six</span>
+            </div>
+            <hr mid>
+          </div>
+
+          <span class="actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">Accept</button>
+          </span>
+        </div>
+
+        <div class="component dialog">
+          <i>chat</i>
+          <span class="headline">Scrollable list dialog with icon</span>
+          <div class="supporting-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non blanditiis voluptas, repellat, impedit, sit reprehenderit 
+            nam et ipsa eius amet rem! Eligendi sequi magnam 
+            exercitationem vel dignissimos similique, atque earum.          
+          </div>
+
+          <div class="list-container" scrollable>
+            <div class="component list-item" one>
+              <span>List-item one</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item two</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item three</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item four</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item five</span>
+            </div>
+            <hr mid>
+            <div class="component list-item" one>
+              <span>List-item six</span>
+            </div>
+            <hr mid>
+          </div>
+
+          <span class="actions">
+            <button class="component button common-button">Cancel</button>
+            <button class="component button common-button">Accept</button>
+          </span>
+        </div>
+
+        {{/*  TODO Full screen dialog?  */}}
+
+      </section>
+      
+      {{/*  Divider  */}}
+      <section class="component-group">
+
+        <div class="component-group-header headline-small">Divider</div>
+
+        <div class="sub-component-group-header title-large">Horizontal</div>
+
+        <div class="divider-showcase-container">
+          <div class="title-small">Mid inset</div>
+          <hr mid>
+          <div class="title-small">Start inset</div>
+          <hr start>
+          <div class="title-small">End inset</div>
+          <hr end>
+          <div class="title-small">No inset</div>
+          <hr>
+        </div>
+
+        <div class="sub-component-group-header title-large">Vertical</div>
+        <div class="divider-showcase-container-vertical">
+          <div class="title-small">
+            Mid inset
+            <hr vertical mid>
+          </div>
+          <div class="title-small">
+            Start inset
+            <hr vertical start>
+          </div>
+          <div class="title-small">
+            End inset
+            <hr vertical end>
+          </div>
+          <div class="title-small">
+            No inset
+            <hr vertical>
+          </div>
+        </div>
+      </section>
+
+      {{/*  Lists  */}}
+      <section class="component-group">
+
+        <div class="component-group-header headline-small">Lists</div>
+
+        <div class="sub-component-group-header title-large">List-item</div>
+
+        <div class="component list-item" one>
+          <span>List-item one line</span>
+        </div>
+        <div class="component list-item" two>
+          <span>List-item <br> two lines</span>
+        </div>
+        <div class="component list-item" three>
+          <span>List-item <br> three <br> lines</span>
+        </div>
+
+        {{/*  TODO List configurations (many)  */}}
+
+      </section>
+
+      {{/*  Side sheets  */}}
+      <section class="component-group">
+
+        <div class="component-group-header headline-small">Side sheets</div>
+
+        
+        <div class="sub-component-group-header title-large">Standard side sheet</div>
+
+        <div class="component side-sheets">
+          <div class="header">
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+        </div>
+
+        <div class="component side-sheets">
+          <div class="header">
+            <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+        </div>
+
+        <div class="component side-sheets">
+          <div class="header">
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+          <hr>
+          <div class="actions">
+            <button class="component button common-button" filled-tonal>Save</button>
+            <button class="component button common-button" outlined>Cancel</button>
+          </div>
+        </div>
+
+        <div class="component side-sheets">
+          <div class="header">
+            <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+          <hr>
+          <div class="actions">
+            <button class="component button common-button" filled-tonal>Save</button>
+            <button class="component button common-button" outlined>Cancel</button>
+          </div>
+        </div>
+        
+        <div class="sub-component-group-header title-large">Modal side sheets</div>
+        
+        <div class="component side-sheets" modal>
+          <div class="header">
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+        </div>
+
+        <div class="component side-sheets" modal>
+          <div class="header">
+            <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+        </div>
+
+        <div class="component side-sheets" modal>
+          <div class="header">
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+          <hr>
+          <div class="actions">
+            <button class="component button common-button" filled-tonal>Save</button>
+            <button class="component button common-button" outlined>Cancel</button>
+          </div>
+        </div>
+
+        <div class="component side-sheets" modal>
+          <div class="header">
+            <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
+            <div class="headline">Title</div>
+            <button class="component button icon-button"><i>close</i></button>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Repudiandae doloribus deleniti reiciendis adipisci doloremque 
+            necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
+            molestias deserunt tempore ut nostrum non amet corrupti!
+          </div>
+          <hr>
+          <div class="actions">
+            <button class="component button common-button" filled-tonal>Save</button>
+            <button class="component button common-button" outlined>Cancel</button>
+          </div>
+        </div>
+
+      </section>
+
+    </details>
+
+{{ end }}

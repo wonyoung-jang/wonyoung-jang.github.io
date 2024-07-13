@@ -1,0 +1,729 @@
+{{ define "main" }}
+
+<article class="layout panes basic-single-pane">
+
+  <section class="layout pane" id="components-showcase">  
+
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+    
+    {{/*  || Navigation  */}}
+    <details class="layout token-set" open>
+      <summary class="token-set-title">Navigation</summary>
+
+      {{/*  Bottom app bar  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Bottom app bar</div>
+
+        <div class="sub-component-group-header title-large">No FAB</div>
+
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+        </div>
+
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+        </div>
+
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>settings</i>
+            </button>
+        </div>
+        
+        <div class="component bottom-app-bar">
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>settings</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>token</i>
+            </button>
+        </div>
+
+        <div class="sub-component-group-header title-large">With FAB</div>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
+        </div>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
+        </div>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>settings</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
+        </div>
+
+        <div class="component bottom-app-bar" with-fab>
+          <span class="start">
+            <button class="component button icon-button">
+              <i>home</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>add</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>settings</i>
+            </button>
+              
+            <button class="component button icon-button">
+              <i>token</i>
+            </button>
+          </span>
+
+          <span class="end">
+            <button class="component fab primary">
+              <i>add</i>
+            </button>
+          </span>
+        </div>
+      </section>
+      
+      {{/*  Navigation bar  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Navigation bar</div>
+        
+        <div class="sub-component-group-header title-large">Icon & label</div>
+
+        <div class="component navigation-bar">
+          <div class="component navigation-item active">
+            <div class="icon-container">
+              <i>home</i>
+            </div>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>folder</i>
+            </div>
+            <div class="label">Folder</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>note</i>
+            </div>            
+            <div class="label">Note</div>
+          </div>
+        </div>
+
+        <div class="component navigation-bar">
+          <div class="component navigation-item active">
+            <div class="icon-container">
+              <i>home</i>
+            </div>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>folder</i>
+            </div>
+            <div class="label">Folder</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>note</i>
+            </div>            
+            <div class="label">Note</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>token</i>
+            </div>            
+            <div class="label">Token</div>
+          </div>
+        </div>
+
+        <div class="component navigation-bar">
+          <div class="component navigation-item active">
+            <div class="icon-container">
+              <i>home</i>
+            </div>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>folder</i>
+            </div>
+            <div class="label">Folder</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>note</i>
+            </div>            
+            <div class="label">Note</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>token</i>
+            </div>            
+            <div class="label">Token</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>settings</i>
+            </div>            
+            <div class="label">settings</div>
+          </div>
+        </div>
+
+        <div class="sub-component-group-header title-large">Icon only</div>
+
+        <div class="component navigation-bar">
+          <div class="component navigation-item active">
+            <div class="icon-container">
+              <i>home</i>
+            </div>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>folder</i>
+            </div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>note</i>
+            </div>            
+          </div>
+        </div>
+
+        <div class="component navigation-bar">
+          <div class="component navigation-item active">
+            <div class="icon-container">
+              <i>home</i>
+            </div>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>folder</i>
+            </div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>note</i>
+            </div>            
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>token</i>
+            </div>            
+          </div>
+        </div>
+
+        <div class="component navigation-bar">
+          <div class="component navigation-item active">
+            <div class="icon-container">
+              <i>home</i>
+            </div>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>folder</i>
+            </div>
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>note</i>
+            </div>            
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>token</i>
+            </div>            
+          </div>
+          
+          <div class="component navigation-item">
+            <div class="icon-container">
+              <i>settings</i>
+            </div>            
+          </div>
+        </div>
+      </section>
+      
+      {{/*  Navigation drawer  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Navigation drawer</div>
+        
+        <div class="sub-component-group-header title-large">With icon</div>
+
+        <div class="component navigation-drawer">
+          <div class="headline">Title</div>
+
+          <div class="component navigation-item active">
+            <i>home</i>
+            <div class="label">Home</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <i>folder</i>
+            <div class="label">Folder</div>
+          </div>
+          
+          <div class="component navigation-item">
+            <i>note</i>
+            <div class="label">Note</div>
+          </div>
+
+          <hr mid>
+
+          <div class="section-header">Section header</div>
+
+          <div class="component navigation-item">
+            <i>token</i>
+            <div class="label">Token</div>        
+          </div>
+          
+          <div class="component navigation-item">
+            <i>settings</i>
+            <div class="label">Settings</div>            
+          </div>
+        </div>
+        
+      <div class="sub-component-group-header title-large">No icon</div>
+
+      <div class="component navigation-drawer">
+        <div class="headline">Title</div>
+
+        <div class="component navigation-item active">
+          <div class="label">Home</div>
+        </div>
+        
+        <div class="component navigation-item">
+          <div class="label">Folder</div>
+        </div>
+        
+        <div class="component navigation-item">
+          <div class="label">Note</div>
+        </div>
+        
+        <hr mid>
+
+        <div class="section-header">Section header</div>
+
+        <div class="component navigation-item">
+          <div class="label">Token</div>        
+        </div>
+        
+        <div class="component navigation-item">
+          <div class="label">Settings</div>            
+        </div>
+      </div>
+      </section>
+      
+      {{/*  Navigation rail  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Navigation rail</div>
+        
+        <div class="sub-component-group-header title-large">Align top</div>
+
+        <div class="component navigation-rail">
+          <div class="menu-and-fab">
+            <button class="component button icon-button">
+              <i>menu</i>
+            </button>
+
+            <button class="component button fab tertiary-container">
+              <i>add</i>
+            </button>
+          </div>
+
+          <div class="destinations">
+            <div class="component navigation-item active">
+              <div class="icon-container">
+                <i>home</i>
+              </div>
+              <div class="label">Home</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>folder</i>
+              </div>
+              <div class="label">Folder</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>note</i>
+              </div>            
+              <div class="label">Note</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>token</i>
+              </div>            
+              <div class="label">Token</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-component-group-header title-large">Align middle</div>
+
+        <div class="component navigation-rail" middle>
+          <div class="menu-and-fab">
+            <button class="component button icon-button">
+              <i>menu</i>
+            </button>
+
+            <button class="component button fab tertiary-container">
+              <i>add</i>
+            </button>
+          </div>
+
+          <div class="destinations">
+            <div class="component navigation-item active">
+              <div class="icon-container">
+                <i>home</i>
+              </div>
+              <div class="label">Home</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>folder</i>
+              </div>
+              <div class="label">Folder</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>note</i>
+              </div>            
+              <div class="label">Note</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>token</i>
+              </div>            
+              <div class="label">Token</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-component-group-header title-large">Align bottom</div>
+        
+        <div class="component navigation-rail" bottom>
+          <div class="menu-and-fab">
+            <button class="component button icon-button">
+              <i>menu</i>
+            </button>
+
+            <button class="component button fab tertiary-container">
+              <i>add</i>
+            </button>
+          </div>      
+
+          <div class="destinations">
+            <div class="component navigation-item active">
+              <div class="icon-container">
+                <i>home</i>
+              </div>
+              <div class="label">Home</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>folder</i>
+              </div>
+              <div class="label">Folder</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>note</i>
+              </div>            
+              <div class="label">Note</div>
+            </div>
+            
+            <div class="component navigation-item">
+              <div class="icon-container">
+                <i>token</i>
+              </div>            
+              <div class="label">Token</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      {{/*  Search  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Search</div>
+
+        <div class="sub-component-group-header title-large">Search bar</div>
+        <span class="component search" bar>
+          <i id="searchIcon">search</i>
+          <input  id="searchInput"  
+                  placeholder="Search"
+                  aria-label="search" 
+                  type="search"
+                  autocomplete="off" 
+                  maxlength="64">
+        </span>
+
+        {{/*  TODO Search view modal  */}}
+
+        {{/*  TODO Search view full-screen  */}}
+
+      </section>
+
+      {{/*  Tabs  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Tabs</div>
+
+        <div class="sub-component-group-header title-large">Primary tabs</div>
+        <div class="component tabs" primary>
+          <span class="component tab active">
+            <div class="label">Tab 1</div>
+          </span>
+          <span class="component tab">
+            <div class="label">Tab 2</div>
+          </span>
+          <span class="component tab">
+            <div class="label">Tab 3</div>
+          </span>
+        </div>
+
+        <div class="component tabs" primary>
+          <span class="component tab active">
+            <i>add</i>
+            <div class="label">Tab 1</div>
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+            <div class="label">Tab 2</div>
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+            <div class="label">Tab 3</div>
+          </span>
+        </div>
+
+        <div class="component tabs" primary>
+          <span class="component tab active">
+            <i>add</i>
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+          </span>
+        </div>
+
+        <div class="sub-component-group-header title-large">Secondary tabs</div>
+        <div class="component tabs" secondary>
+          <span class="component tab">Tab 1</span>
+          <span class="component tab active">Tab 2</span>
+          <span class="component tab">Tab 3</span>
+        </div>
+
+        <div class="component tabs" secondary>
+          <span class="component tab">
+            <i>add</i>
+            Tab 1
+          </span>
+
+          <span class="component tab active">
+            <i>add</i>
+            Tab 2
+          </span>
+
+          <span class="component tab">
+            <i>add</i>
+            Tab 3
+          </span>
+        </div>
+      </section>
+
+      {{/*  Top app bar  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Top app bar</div>
+
+        <div class="sub-component-group-header title-large">Top app bar</div>
+        <div class="component top-app-bar" center small>
+          
+          <div class="start">
+            <button class="component button icon-button">
+              <i>menu</i>
+            </button>
+          </div>
+
+          <div class="headline">Small + center</div>
+          
+          <div class="end">
+            <button class="component button icon-button">
+              <i>account_circle</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="component top-app-bar" small>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+
+          <div class="headline">Small</div>
+
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="component top-app-bar" medium>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+                    
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+
+          <div class="headline">Medium</div>
+        </div>
+
+        <div class="component top-app-bar" large>
+          <div class="start">
+            <button class="component button icon-button">
+              <i>arrow_back</i>
+            </button>
+          </div>
+          
+          <div class="end">
+            <button class="component button icon-button">
+              <i>attach_file</i>
+            </button>
+            <button class="component button icon-button">
+              <i>today</i>
+            </button>
+            <button class="component button icon-button">
+              <i>more_vert</i>
+            </button>
+          </div>
+
+          <div class="headline">Large</div>
+        </div>
+
+      </section>
+    </details>
+
+{{ end }}

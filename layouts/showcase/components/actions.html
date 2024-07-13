@@ -1,0 +1,242 @@
+{{ define "main" }}
+
+<article class="layout panes basic-single-pane">
+
+  <section class="layout pane" id="components-showcase">  
+
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+    
+    {{/*  || Actions  */}}
+    <details class="layout token-set" open>
+
+      <summary class="token-set-title">Actions</summary>
+
+      {{/*  Buttons  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Common buttons</div>
+
+        <div class="sub-component-group-header title-large">No icon</div>
+        <section>
+          <button class="component button common-button">Text</button>
+          <button class="component button common-button" elevated>Elevated</button>
+          <button class="component button common-button" filled>Filled</button>
+          <button class="component button common-button" filled-tonal>Filled-Tonal</button>
+          <button class="component button common-button" outlined>Outlined</button>
+        </section>
+        
+        <div class="sub-component-group-header title-large">With icon</div>
+        <section>
+          <button class="component button common-button" with-icon>
+            <i>add</i>
+            Text
+          </button>
+          <button class="component button common-button" elevated with-icon>
+            <i>add</i>
+            Elevated
+          </button>
+          <button class="component button common-button" filled with-icon>
+            <i>add</i>
+            Filled
+          </button>
+          <button class="component button common-button" filled-tonal with-icon>
+            <i>add</i>
+            Filled-Tonal
+          </button>
+          <button class="component button common-button" outlined with-icon>
+            <i>add</i>
+            Outlined
+          </button>
+        </section>
+
+      </section>
+
+      {{/*  Extended FABs  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Extended FABs</div>
+        
+        <div class="sub-component-group-header title-large">No icon</div>
+        <section>
+          <button class="component button surface-container-high fab" extended>
+            Extended
+          </button>
+          <button class="component button primary-container fab" extended>
+            Extended
+          </button>
+          <button class="component button secondary-container fab" extended>
+            Extended
+          </button>
+          <button class="component button tertiary-container fab" extended>
+            Extended
+          </button>
+        </section>
+
+        <div class="sub-component-group-header title-large">With icon</div>
+        <section>
+          <button class="component button surface-container-high fab" extended>
+            <i>add</i>
+            Extended
+          </button>
+          <button class="component button primary-container fab" extended>
+            <i>add</i>
+            Extended
+          </button>
+          <button class="component button secondary-container fab" extended>
+            <i>add</i>
+            Extended
+          </button>
+          <button class="component button tertiary-container fab" extended>
+            <i>add</i>
+            Extended
+          </button>
+        </section>
+      </section>
+
+      {{/*  FABs  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">FABs</div>
+        
+        <div class="sub-component-group-header title-large">Small FABs</div>
+        <section>
+          <button class="component button surface-container-high fab" small>
+            <i>add</i>
+          </button>
+          
+          <button class="component button primary-container fab" small>
+            <i>add</i>
+          </button>
+
+          <button class="component button secondary-container fab" small>
+            <i>add</i>
+          </button>
+
+          <button class="component button tertiary-container fab" small>
+            <i>add</i>
+          </button>
+        </section>
+
+        <div class="sub-component-group-header title-large">FABs</div>
+        <section>
+          <button class="component button surface-container-high fab">
+            <i>add</i>
+          </button>
+
+          <button class="component button primary-container fab">
+            <i>add</i>
+          </button>
+
+          <button class="component button secondary-container fab">
+            <i>add</i>
+          </button>
+
+          <button class="component button tertiary-container fab">
+            <i>add</i>
+          </button>
+        </section>
+
+        <div class="sub-component-group-header title-large">Large FABs</div>
+        <section>
+          <button class="component button surface-container-high fab" large>
+            <i>add</i>
+          </button>
+
+          <button class="component button primary-container fab" large>
+            <i>add</i>
+          </button>
+          
+          <button class="component button secondary-container fab" large>
+            <i>add</i>
+          </button>
+
+          <button class="component button tertiary-container fab" large>
+            <i>add</i>
+          </button>
+        </section>
+      </section>
+
+      {{/*  Icon buttons  */}}
+      <section class="component-group">
+        <div class="component-group-header headline-small">Icon buttons</div>
+
+        <div class="sub-component-group-header title-large">Icon button</div>
+
+        <button class="component button icon-button">
+          <i>settings</i>
+        </button>
+
+        <button class="component button icon-button" filled>
+          <i>settings</i>
+        </button>
+
+        <button class="component button icon-button" filled-tonal>
+          <i>settings</i>
+        </button>
+
+        <button class="component button icon-button" outlined>
+          <i>settings</i>
+        </button>
+
+      </section>
+
+      {{/*  Segmented button  */}}
+      <section class="component-group">
+
+        <div class="component-group-header headline-small">Segmented buttons</div>
+
+        <div class="sub-component-group-header title-large">Outlined</div>
+
+        <div class="component segmented-button">
+            <input type="radio" id="start" name="segmented" checked>
+            <label for="start" class="component button">Start</label>
+            
+            <input type="radio" id="end" name="segmented">
+            <label for="end" class="component button">End</label>
+        </div>
+
+        <div class="component segmented-button">
+            <input type="radio" id="start2" name="segmented" checked>
+            <label for="start2" class="component button">Start</label>
+            
+            <input type="radio" id="middle" name="segmented">
+            <label for="middle" class="component button">Middle</label>
+            
+            <input type="radio" id="end2" name="segmented">
+            <label for="end2" class="component button">End</label>
+        </div>
+
+        <div class="component segmented-button">
+            <input type="radio" id="start3" name="segmented" checked>
+            <label for="start3" class="component button">Start</label>
+            
+            <input type="radio" id="middle1" name="segmented">
+            <label for="middle1" class="component button">Middle 1</label>
+
+            <input type="radio" id="middle2" name="segmented">
+            <label for="middle2" class="component button">Middle 2</label>
+            
+            <input type="radio" id="end3" name="segmented">
+            <label for="end3" class="component button">End</label>
+        </div>
+
+        <div class="component segmented-button">
+            <input type="radio" id="start4" name="segmented" checked>
+            <label for="start4" class="component button">Start</label>
+            
+            <input type="radio" id="middle3" name="segmented">
+            <label for="middle3" class="component button">Middle 1</label>
+
+            <input type="radio" id="middle4" name="segmented">
+            <label for="middle4" class="component button">Middle 2</label>
+
+            <input type="radio" id="middle5" name="segmented">
+            <label for="middle5" class="component button">Middle 3</label>
+            
+            <input type="radio" id="end4" name="segmented">
+            <label for="end4" class="component button">End</label>
+        </div>
+      </section>
+
+    </details>
+
+{{ end }}

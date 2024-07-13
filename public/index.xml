@@ -79,6 +79,34 @@
       </item>
       <item>
         <title>
+          Actions
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/action-components/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/action-components/
+        </guid>
+
+        <description>
+          
+        </description>
+      </item>
+      <item>
+        <title>
           All Logseq elements
         </title>
 
@@ -135,6 +163,34 @@
       </item>
       <item>
         <title>
+          Communication
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/communication-components/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/communication-components/
+        </guid>
+
+        <description>
+          
+        </description>
+      </item>
+      <item>
+        <title>
           Components
         </title>
 
@@ -159,6 +215,34 @@
 
         <description>
           See: Material Design 3 - Components
+        </description>
+      </item>
+      <item>
+        <title>
+          Containment
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/containment-components/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/containment-components/
+        </guid>
+
+        <description>
+          
         </description>
       </item>
       <item>
@@ -275,6 +359,34 @@
       </item>
       <item>
         <title>
+          Navigation
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/navigation-components/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/navigation-components/
+        </guid>
+
+        <description>
+          
+        </description>
+      </item>
+      <item>
+        <title>
           Now
         </title>
 
@@ -299,6 +411,34 @@
 
         <description>
           keepThis is a now page. Inspired by: https://nownownow.com/about sticky_note_2Last update: 2024-06-28 Friday Material redesign of my site&#xD;link&#xD;h2&#xD;I&amp;rsquo;ve redesigned this site, wonyoungjang.org using Google&amp;rsquo;s Material Design 3 as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.
+        </description>
+      </item>
+      <item>
+        <title>
+          Selection
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/selection-components/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/selection-components/
+        </guid>
+
+        <description>
+          
         </description>
       </item>
       <item>
@@ -411,6 +551,34 @@
 
         <description>
           See: Material Design 3 - Canonical layouts - Supporting pane
+        </description>
+      </item>
+      <item>
+        <title>
+          Text inputs
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/text-input-components/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/text-input-components/
+        </guid>
+
+        <description>
+          
         </description>
       </item>
       <item>

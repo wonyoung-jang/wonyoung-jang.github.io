@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.517a8226158ae633bc66af4aecaa737edd2cbed257effaa27aeb9f54ad79fc9c.css" integrity="sha256-UXqCJhWK5jO8Zq9K7Kpzft0svtJX7/qieuufVK15/Jw=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.3ea303eab7237f2f05c3325e1bed48759ac3a061548ccbcda240c55e97614619.css" integrity="sha256-PqMD6rcjfy8FwzJeG&#43;1IdZrDoGFUjMvNokDFXpdhRhk=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.215277fe0b93a25a369e052bddcc92e58b28671bc68d349033a4ed46f94ca768.css" integrity="sha256-IVJ3/guTolo2ngUr3cyS5YsoZxvGjTSQM6TtRvlMp2g=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.deec9eafc170468b69695dbc2167582aab12194e40054b3885074eceb54cdc07.css" integrity="sha256-3uyer8FwRotpaV28IWdYKqsSGU5ABUs4hQdOzrVM3Ac=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/wonyoungjang.org\/";
+    window.location.href = "\/student-record-system\/";
   }
 </script>
 
@@ -178,15 +178,17 @@
             
     
     <div id="font-size-selector-container">
+      
       <label class="title-large" for="font-size-selector">Font Size</label>
       <div class="slider">
         <input type="range" id="font-size-selector" min="8" max="24" value="14" step="1">
         <span class="tooltip" id="font-size-tooltip">14px</span>
       </div>
 
+      
       <label class="title-large" for="line-height-selector">Line Height</label>
       <div class="slider">
-        <input type="range" id="line-height-selector" min="1.2" max="2.4" value="1.5" step="0.05">
+        <input type="range" id="line-height-selector" min="1" max="2.5" value="1.25" step="0.05">
         <span class="tooltip" id="line-height-tooltip">1.5</span>
       </div>
     </div>
@@ -334,7 +336,7 @@
       root.style.setProperty('--typeface-plain', plainFont);
       root.style.setProperty('--typeface-code', codeFont);
       root.style.setProperty('--input-font-size', fontSize + 'px');
-      root.style.setProperty('--input-line-height', lineHeight);
+      root.style.setProperty('--input-line-height', lineHeight + 'rem');
 
       localStorage.setItem('typography-brand-font', brandFont);
       localStorage.setItem('typography-plain-font', plainFont);
@@ -753,6 +755,18 @@
      
     
 
+     
+        
+     
+        
+     
+        
+     
+        
+     
+        
+     
+        
      
         
      
