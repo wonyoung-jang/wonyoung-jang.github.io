@@ -4,22 +4,23 @@
   }
 }
 
+& .component-group-header {
+  width: 100%;
+  padding: var(--size-8) var(--size-4);
+  color: var(--color-on-add60-container);
+  background-color: var(--color-add60-container);
+}
+
 & .component-group {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--size-7);
-  margin-block: var(--size-16) 0;
+  margin-bottom: var(--size-16);
   background-color: var(--color-surface-container-lowest);
   border-radius: var(--shape-corner-s);
 
-  & .component-group-header {
-    width: 100%;
-    padding: var(--size-8) var(--size-4);
-    color: var(--color-on-add60-container);
-    background-color: var(--color-add60-container);
-  }
   
   & .sub-component-group-header {
     width: 100%;
