@@ -1,6 +1,20 @@
+/* .slider {
+  position: relative;
+  width: 100%;
+
+} */
+
 .slider {
   position: relative;
   width: 100%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  
+  border-radius: var(--shape-corner-xl);
+  
+  --bg-color: var(--color-surface-container-lowest,);
 
   & .tooltip {
     display: flex;
@@ -33,67 +47,93 @@
     background: transparent;
     cursor: grab;
     overflow: hidden;
-  
+
     &:active {
       cursor: grabbing;
 
       &::-webkit-slider-thumb,
       &::-moz-range-thumb {
-        width: calc(var(--size-1) / 2);
+        width: 2px;
       }
     }
+    /* Active track */
+    &::-moz-range-progress {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      flex: 1 0 0;
+
+      height: var(--size-4);
+      border-radius: var(--shape-corner-l-start);
+      background-color: var(--color-primary);
+    }
+
+    /* Handle */
+    &::-moz-range-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+
+      border-radius: 0%;
+      padding: var(--size-3);
+      width: var(--size-1);
+      height: var(--size-11);
+      background-color: var(--color-primary);
+
+      box-shadow: 0px 0px 0px var(--size-3) inset var(--bg-color);
+    }
+
+    /* Inactive track */
+    &::-moz-range-track {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      flex: 1 0 0;
+      
+      height: var(--size-4);
+      border-radius: var(--shape-corner-l);
+      background-color: var(--color-secondary-container);
+    }
+  }
+
+  & .tracking-dot {
+    position: absolute;
+    right: 6px;
+    width: var(--size-1);
+    height: var(--size-1);
+    margin-inline: 6px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
   }
 }
 
-/* Handle */
-::-webkit-slider-thumb {
-  height: var(--size-11);
-  box-shadow: 0 0 0 var(--size-4) inset var(--color-primary);
-  border-image: linear-gradient(
-    90deg, 
-    var(--color-primary) 50%, 
-    var(--color-primary-container) 0) 0 1 /
-    calc(50% - var(--size-4) / 2) 100dvw/0 calc(100dvw + var(--size-2));
-}
-
-::-moz-range-thumb {
-  height: var(--size-11);
-  box-shadow: 0 0 0 var(--size-4) inset var(--color-primary);
-  border-image: linear-gradient(
-    90deg, 
-    var(--color-primary) 50%, 
-    var(--color-primary-container) 0) 0 1 /
-    calc(50% - var(--size-4) / 2) 100dvw/0 calc(100dvw + var(--size-2));
-  width: var(--size-1);
-  background: transparent;
-}
-
-/* Track */
-::-webkit-slider-runnable-track {
-  height: var(--size-4);
-  background-color: transparent;
-  width: fit-content;
-}
-
-::-moz-range-track {
-  height: var(--size-4);
-  background-color: var(--color-primary-container);
-  width: fit-content;
-}
-
 datalist {
-  position: absolute;
-  top: calc(50% - var(--size-1));
+  position: absolute; 
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-inline: var(--size-1);
   
   & option {
-    display: inline-block;
     min-width: var(--size-1);
     min-height: var(--size-1);
     border-radius: 50%;
+    padding: 2px;
+    margin-inline: 6px;
+
+    background-color: var(--color-surface-container);
 
     &:first-child {
       background-color: var(--color-secondary-container);
