@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,19 +27,19 @@
 
     <link crossorigin="anonymous" href="/assets/css/custom.min.c975b9267e6e022ca19e0c3fbabbeec64e15918d8c2bf40ee2a0d3a2ff8226ec.css" integrity="sha256-yXW5Jn5uAiyhngw/urvuxk4VkY2MK/QO4qDTov&#43;CJuw=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.eb1a5e6f73c21eafcc04fb6fe0d9cccf17cbaa4586b67ae78673b377b2200083.css" integrity="sha256-6xpeb3PCHq/MBPtv4NnMzxfLqkWGtnrnhnOzd7IgAIM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.be7e8e0036a1f7e8809e2f1fb434fa9895f47d4b88f892ac61c000ba39d1b7bc.css" integrity="sha256-vn6OADah9&#43;iAni8ftDT6mJX0fUuI&#43;JKsYcAAujnRt7w=" rel="preload stylesheet" as="style">
 
 
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/selections/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/selections/">
 
 
 
@@ -55,7 +55,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/selections/">
+<meta property="og:url" content="http://192.168.40.181:1313/selections/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Selections">
   <meta property="og:description" content="Selection components available for wonyoungjang.org">
@@ -87,7 +87,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -106,7 +106,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/now\/";
+    window.location.href = "\/split-pane-layout\/";
   }
 </script>
 
@@ -1000,8 +1000,7 @@
       <div class="sub-component-group-header">Centered</div>
 
       <div class="slider">
-        <input id="test-slider" type="range" min="1" max="100" value="50" list="markers">
-        
+        <input type="range" min="1" max="100" value="50" list="markers">
         <datalist id="markers">
           <option value="0"></option>
           <option value="50"></option>
@@ -1013,14 +1012,26 @@
       <div class="sub-component-group-header">Discrete</div>
 
       <div class="slider">
-        <input type="range">
+        <input type="range" step="25" list="markers-discrete">
+        <datalist id="markers-discrete">
+          <option value="0"></option>
+          <option value="25"></option>
+          <option value="50"></option>
+          <option value="75"></option>
+          <option value="100"></option>
+        </datalist>
       </div>
 
       
       <div class="sub-component-group-header">Range</div>
 
       <div class="slider">
-        <input type="range">
+        <input type="range" list="markers-range">
+        <input type="range" list="markers-range">
+        <datalist id="markers-range">
+          <option value="0"></option>
+          <option value="100"></option>
+        </datalist>
       </div>
 
     </section>
@@ -1136,7 +1147,7 @@
       
         
           <a  class="component card prev"
-            href="https://wonyoungjang.org/states/"
+            href="http://192.168.40.181:1313/states/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -1157,7 +1168,7 @@
       
         
           <a  class="component card next"
-              href="https://wonyoungjang.org/navigation/"
+              href="http://192.168.40.181:1313/navigation/"
               accesskey="n"
               title="Next page (ALT + SHIFT + n)">
               
@@ -1349,7 +1360,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on twitter"
-                href="https://twitter.com/intent/tweet/?text=Selections&url=https%3a%2f%2fwonyoungjang.org%2fselections%2f">      
+                href="https://twitter.com/intent/tweet/?text=Selections&url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">      
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -1362,7 +1373,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on linkedin"
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwonyoungjang.org%2fselections%2f&title=Selections&summary=Selections&source=https%3a%2f%2fwonyoungjang.org%2fselections%2f">
+                href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f&title=Selections&summary=Selections&source=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -1375,7 +1386,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on reddit"
-                href="https://reddit.com/submit?url=https%3a%2f%2fwonyoungjang.org%2fselections%2f&title=Selections">
+                href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f&title=Selections">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -1388,7 +1399,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on facebook"
-                href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwonyoungjang.org%2fselections%2f">
+                href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -1401,7 +1412,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on whatsapp"
-                href="https://api.whatsapp.com/send?text=Selections%20-%20https%3a%2f%2fwonyoungjang.org%2fselections%2f">
+                href="https://api.whatsapp.com/send?text=Selections%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
                         <path
@@ -1414,7 +1425,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on telegram"
-                href="https://telegram.me/share/url?text=Selections&url=https%3a%2f%2fwonyoungjang.org%2fselections%2f">
+                href="https://telegram.me/share/url?text=Selections&url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
                 <i>
                     <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" fill="currentColor">
                         <path
@@ -1427,7 +1438,7 @@
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Selections on ycombinator"
-                href="https://news.ycombinator.com/submitlink?t=Selections&u=https%3a%2f%2fwonyoungjang.org%2fselections%2f">
+                href="https://news.ycombinator.com/submitlink?t=Selections&u=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
                 <i>
                     <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
@@ -1443,7 +1454,7 @@
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="share Selections via email" 
-                href="mailto:?subject=Selections&body=https%3a%2f%2fwonyoungjang.org%2fselections%2f">
+                href="mailto:?subject=Selections&body=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
                 <i>email</i> 
                 Email
             </a>
@@ -1620,7 +1631,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
