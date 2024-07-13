@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/resources/references/
+      https://wonyoungjang.org/resources/references/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Wed, 10 Jul 2024 12:05:37 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/resources/references/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           All Logseq elements
         </title>
 
         <link>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </link>
 
         <pubDate>
@@ -71,11 +71,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </guid>
 
         <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands&#xD;link&#xD;h2&#xD;Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages&#xD;link&#xD;h2&#xD;Page reference&#xD;link&#xD;h3&#xD;Input: [About](http://192.168.40.181:1313/about/)&#xA;Output: About&#xA;Page embed&#xD;link&#xD;h3&#xD;Input: {{embed [About](http://192.168.40.181:1313/about/)}}
+          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Bold&#xA;Highlight Bold + Highlight&#xA;Italic&#xA;Advanced commands&#xD;link&#xD;h2&#xD;Centered text Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Blockquote with backticks&#xA;An external link: https://www.pbs.org/video/art21-fantasy/&#xA;Logseq pages&#xD;link&#xD;h2&#xD;Page reference&#xD;link&#xD;h3&#xD;Input: [About](https://wonyoungjang.org/about/)&#xA;Output: About&#xA;Page embed&#xD;link&#xD;h3&#xD;Input: {{embed [About](https://wonyoungjang.org/about/)}}
         </description>
       </item>
       <item>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </guid>
 
         <description>
