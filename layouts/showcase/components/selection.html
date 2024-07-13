@@ -354,7 +354,7 @@
       <div class="sub-component-group-header">Centered</div>
 
       <div class="slider">
-        <input type="range" min="1" max="100" value="50" list="markers">
+        <input type="range" value="50" list="markers">
         <datalist id="markers">
           <option value="0"></option>
           <option value="50"></option>
@@ -376,12 +376,12 @@
         </datalist>
       </div>
 
-      {{/*  TODO Range selection  */}}
+      {{/*  Range selection  */}}
       <div class="sub-component-group-header">Range</div>
 
-      <div class="slider">
-        <input type="range" list="markers-range">
-        <input type="range" list="markers-range">
+      <div class="slider" range>
+        <input type="range" list="markers-range" left>
+        <input type="range" list="markers-range" right>
         <datalist id="markers-range">
           <option value="0"></option>
           <option value="100"></option>

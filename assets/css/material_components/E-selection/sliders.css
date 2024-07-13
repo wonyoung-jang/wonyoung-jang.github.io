@@ -1,15 +1,10 @@
-/* .slider {
-  position: relative;
-  width: 100%;
-
-} */
-
 .slider {
   position: relative;
   width: 100%;
+  height: var(--size-11);
   
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: stretch;
   justify-content: center;
   
@@ -113,16 +108,39 @@
   & .tracking-dot {
     position: absolute;
     right: 6px;
+    top: var(--size-5);
+    
     width: var(--size-1);
     height: var(--size-1);
     margin-inline: 6px;
     border-radius: 50%;
     background-color: var(--color-primary);
   }
+
+  
+  &[range] {
+    & input[left] {
+      &::-moz-range-progress {
+        background-color: var(--color-secondary-container);
+      }
+      
+      &::-moz-range-track {
+        background-color: var(--color-primary);
+        border-radius: var(--shape-corner-l-start);
+      }
+    } 
+    
+    & input[right] {
+      &::-moz-range-progress {
+        border-radius: var(--shape-corner-l-end);
+      }
+    }
+  }
 }
 
 datalist {
   position: absolute; 
+  top: var(--size-5);
   display: flex;
   justify-content: space-between;
   width: 100%;
