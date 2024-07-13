@@ -18,12 +18,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-10T12:09:04-04:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/action-components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -38,12 +38,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/communication-components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resources/components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -53,7 +53,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/containment-components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -83,7 +83,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/navigation-components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -98,12 +98,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resources/</loc>
-    <lastmod>2024-07-10T12:05:37-04:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/selection-components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -128,7 +128,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/text-input-components/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

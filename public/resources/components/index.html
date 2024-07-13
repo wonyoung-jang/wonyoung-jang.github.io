@@ -67,7 +67,7 @@
 
   <meta itemprop="name" content="Components">
   <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
-  <meta itemprop="dateModified" content="2024-07-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-13T08:18:03-04:00">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Components">
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/action-components\/";
+    window.location.href = "\/about\/";
   }
 </script>
 
@@ -532,13 +532,19 @@
                     </div>
             </div>
             <div class="sub-tabs-container">
-                <a class="component tab" href="/resources/">
+                <a aria-current="true" class="component tab active ancestor" href="/resources/">
                     <i>library_books</i>
                     <div class="label">
                         Resources
                     </div>
                 </a>
                     <div class="component tabs title-medium sub-tabs">
+            <a aria-current="page" class="component tab active" href="/resources/components/">
+                <i>settings</i>
+                <div class="label">
+                    Components
+                </div>
+            </a>
             <a class="component tab" href="/resources/layouts/">
                 <i>view_quilt</i>
                 <div class="label">
@@ -826,6 +832,9 @@
                 <a href="/resources/">
                     Resources
                 </a>
+            <a href="/resources/components/">
+                Components
+            </a>
             <a href="/resources/layouts/">
                 Layouts
             </a>

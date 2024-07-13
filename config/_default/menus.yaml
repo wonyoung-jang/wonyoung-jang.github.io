@@ -26,6 +26,10 @@ main:
     pageRef: /resources
     pre: <i>library_books</i>
     weight: 20
+  - name: Components
+    pageRef: /resources/components
+    pre: <i>settings</i>
+    parent: Resources
   - name: Layouts
     pageRef: /resources/layouts
     pre: <i>view_quilt</i>
@@ -88,6 +92,9 @@ sections:
   - identifier: Resources
     name: Resources
     pageRef: /resources
+  - name: Components
+    pageRef: /resources/components
+    parent: Resources
   - name: Layouts
     pageRef: /resources/layouts
     parent: Resources
