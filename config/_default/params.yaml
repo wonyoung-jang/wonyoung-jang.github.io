@@ -25,10 +25,13 @@ home:
       url: /projects/university
 
   resourceButtons:
-    - name: Layouts
-      url: /resources/layouts
     - name: References
       url: /resources/references
+      weight: 1
+    - name: Components
+      url: /resources/components
+    - name: Layouts
+      url: /resources/layouts
     - name: Tokens
       url: /resources/tokens
 

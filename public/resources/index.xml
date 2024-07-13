@@ -80,6 +80,34 @@
       </item>
       <item>
         <title>
+          Tokens
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/resources/tokens/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/resources/tokens/
+        </guid>
+
+        <description>
+          
+        </description>
+      </item>
+      <item>
+        <title>
           Layouts
         </title>
 
@@ -128,34 +156,6 @@
 
         <guid>
           http://192.168.40.181:1313/resources/references/
-        </guid>
-
-        <description>
-          
-        </description>
-      </item>
-      <item>
-        <title>
-          Tokens
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/resources/tokens/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/resources/tokens/
         </guid>
 
         <description>

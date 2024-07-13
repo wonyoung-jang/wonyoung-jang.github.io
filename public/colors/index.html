@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/food-shop-database-management\/";
+    window.location.href = "\/q-learning-tournament-scheduler\/";
   }
 </script>
 
@@ -3103,7 +3103,7 @@
       
         
           <a  class="component card prev"
-            href="http://192.168.40.181:1313/communication-components/"
+            href="http://192.168.40.181:1313/feed-layout/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -3115,7 +3115,7 @@
             </span>
             
             <span class="title-large">
-              Communication
+              Feed layout
             </span>
           </a>
         
@@ -3239,10 +3239,6 @@
      
         
      
-        
-     
-         
-             
         
      
 
@@ -3479,7 +3475,7 @@
                 Contact
             </a>
         
-            <a  href="/graph/">
+            <a  href="">
                 Graph
             </a>
         
@@ -3608,6 +3604,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

@@ -46,7 +46,7 @@
 
     
       <lastBuildDate>
-        Sat, 13 Jul 2024 08:18:03 -0400
+        Sat, 13 Jul 2024 00:00:00 +0000
       </lastBuildDate>
     
       <atom:link href="http://192.168.40.181:1313/resources/components/index.xml" rel="self" type="application/rss+xml" />
@@ -56,7 +56,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/action-components/
+          http://192.168.40.181:1313/actions/
         </link>
 
         <pubDate>
@@ -71,11 +71,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/action-components/
+          http://192.168.40.181:1313/actions/
         </guid>
 
         <description>
-          
+          See: Material Design 3 - Components
         </description>
       </item>
       <item>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/communication-components/
+          http://192.168.40.181:1313/communication/
         </link>
 
         <pubDate>
@@ -99,11 +99,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/communication-components/
+          http://192.168.40.181:1313/communication/
         </guid>
 
         <description>
-          
+          See: Material Design 3 - Components
         </description>
       </item>
       <item>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/containment-components/
+          http://192.168.40.181:1313/containment/
         </link>
 
         <pubDate>
@@ -127,11 +127,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/containment-components/
+          http://192.168.40.181:1313/containment/
         </guid>
 
         <description>
-          
+          See: Material Design 3 - Components
         </description>
       </item>
       <item>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/navigation-components/
+          http://192.168.40.181:1313/navigation/
         </link>
 
         <pubDate>
@@ -155,20 +155,20 @@
         
 
         <guid>
-          http://192.168.40.181:1313/navigation-components/
+          http://192.168.40.181:1313/navigation/
         </guid>
 
         <description>
-          
+          See: Material Design 3 - Components
         </description>
       </item>
       <item>
         <title>
-          Selection
+          Selections
         </title>
 
         <link>
-          http://192.168.40.181:1313/selection-components/
+          http://192.168.40.181:1313/selections/
         </link>
 
         <pubDate>
@@ -183,11 +183,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/selection-components/
+          http://192.168.40.181:1313/selections/
         </guid>
 
         <description>
-          
+          See: Material Design 3 - Components
         </description>
       </item>
       <item>
@@ -196,7 +196,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/text-input-components/
+          http://192.168.40.181:1313/text-inputs/
         </link>
 
         <pubDate>
@@ -211,11 +211,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/text-input-components/
+          http://192.168.40.181:1313/text-inputs/
         </guid>
 
         <description>
-          
+          See: Material Design 3 - Components
         </description>
       </item>
   </channel>
