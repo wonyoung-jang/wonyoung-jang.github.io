@@ -5,7 +5,63 @@ en</language><managingEditor>
 contact@wonyoungjang.org (Wonyoung Jang)</managingEditor><webMaster>
 contact@wonyoungjang.org (Wonyoung Jang)</webMaster><copyright>
 &lt;!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--></copyright><lastBuildDate>
-Wed, 10 Jul 2024 12:09:04 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml"/><item><title>
+Sat, 13 Jul 2024 10:43:37 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml"/><item><title>
+Actions</title><link>
+https://wonyoungjang.org/actions/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/actions/</guid><description>
+See: Material Design 3 - Components</description></item><item><title>
+Communication</title><link>
+https://wonyoungjang.org/communication/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/communication/</guid><description>
+See: Material Design 3 - Components</description></item><item><title>
+Containment</title><link>
+https://wonyoungjang.org/containment/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/containment/</guid><description>
+See: Material Design 3 - Components</description></item><item><title>
+Elevations</title><link>
+https://wonyoungjang.org/elevations/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/elevations/</guid><description>
+See: Material Design 3 - Elevation</description></item><item><title>
+Navigation</title><link>
+https://wonyoungjang.org/navigation/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/navigation/</guid><description>
+See: Material Design 3 - Components</description></item><item><title>
+Selections</title><link>
+https://wonyoungjang.org/selections/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/selections/</guid><description>
+See: Material Design 3 - Components</description></item><item><title>
+States</title><link>
+https://wonyoungjang.org/states/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/states/</guid><description>
+See: Material Design 3 - States</description></item><item><title>
+Text inputs</title><link>
+https://wonyoungjang.org/text-inputs/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/text-inputs/</guid><description>
+See: Material Design 3 - Components</description></item><item><title>
 ErgoDox EZ LEGO tenting kits</title><link>
 https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
@@ -38,13 +94,6 @@ contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/colors/</guid><description>
 See: Material Design 3 - Colors</description></item><item><title>
-Components</title><link>
-https://wonyoungjang.org/components/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/components/</guid><description>
-See: Material Design 3 - Components</description></item><item><title>
 Feed layout</title><link>
 https://wonyoungjang.org/feed-layout/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
@@ -94,14 +143,6 @@ contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/single-pane-layout/</guid><description>
 See: Material Design 3 - Layout basics - Parts of layout</description></item><item><title>
-States and elevation</title><link>
-https://wonyoungjang.org/states-and-elevation/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/states-and-elevation/</guid><description>
-See: Material Design 3 - States
-See: Material Design 3 - Elevation</description></item><item><title>
 Supporting pane layout</title><link>
 https://wonyoungjang.org/supporting-pane-layout/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
@@ -310,10 +351,4 @@ contact@wonyoungjang.org
 https://wonyoungjang.org/food-shop-database-management/</guid><description>
 warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Design a normalized physical database model for an ordering system (Bagel Corner)
 Create a database for another business (Mister Coffee) using a provided design document
-Load tables with sample data and create a view and an index to enhance query performance</description></item><item><title/><link>
-https://wonyoungjang.org/graph/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/graph/</guid><description>
-&lt;!DOCTYPE html></description></item></channel></rss>
+Load tables with sample data and create a view and an index to enhance query performance</description></item></channel></rss>
