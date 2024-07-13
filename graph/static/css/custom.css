@@ -17,6 +17,7 @@ body {
 
 textarea {
   line-height: var(--ct-line-height);
+  color: #b1b1b1;
 }
 
 i {
@@ -192,27 +193,27 @@ html.is-native-iphone #left-sidebar {
 
 .left-sidebar-inner {
   height: 100%;
-}
+  
+  & > .wrap {
+    margin-top: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
-.left-sidebar-inner > .wrap {
-  margin-top: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
+  & a.item > span {
+    transform: translateY(2px);
+    margin-top: 0;
+  }
 
-.left-sidebar-inner a.item > span {
-  transform: translateY(2px);
-  margin-top: 0;
-}
-
-.left-sidebar-inner .new-page {
-  position: absolute;
-  bottom: 0;
-}
-
-.left-sidebar-inner .nav-content-item {
-  font-size: 0.875rem;
-  font-weight: 500;
+  & .new-page {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  & .nav-content-item {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
 }
 
 :root {
@@ -1212,13 +1213,13 @@ html[data-theme=white] {
 }
 
 span {
-  font-weight: 400;
+  font-weight: 300;
   color: #b1b1b1;
 }
 
 b, strong {
-  font-weight: 500;
-  color: #ffffff
+  font-weight: 400;
+  color: #e4e1e8
 }
 
 .favorites,
@@ -1351,7 +1352,7 @@ h6 {
 }
 
 h1 {
-  color: #ffcbef;
+  color: #ffcbef !important;
   font-size: 2rem;
   background-color: #3f0024; /* Starting color for h1 */
   
@@ -1361,7 +1362,7 @@ h1 {
 }
 
 h2 {
-  color: #ffd1ff;
+  color: #ffd1ff !important;
   font-size: 1.8rem;
   background-color: #330738;/* Slightly different shade, closer to h6 */
   
@@ -1371,7 +1372,7 @@ h2 {
 }
 
 h3 {
-  color: #e9daff; /* Midway color between h1 and h6 */
+  color: #e9daff !important; /* Midway color between h1 and h6 */
   font-size: 1.6rem;
   background-color: #191546; /* Midway color between h1 and h6 */
   
@@ -1381,7 +1382,7 @@ h3 {
 }
 
 h4 {
-  color: #c3e5ff; /* Midway color between h1 and h6 */  
+  color: #c3e5ff !important; /* Midway color between h1 and h6 */  
   font-size: 1.4rem;
   background-color: #001e4a; /* Midway color between h1 and h6 */
   
@@ -1391,7 +1392,7 @@ h4 {
 }
 
 h5 {
-  color: #9fedff; /* Midway color between h1 and h6 */  
+  color: #9fedff !important; /* Midway color between h1 and h6 */  
   font-size: 1.3rem;
   background-color: #002344; /* Midway color between h1 and h6 */
   
@@ -1401,12 +1402,19 @@ h5 {
 }
 
 h6 {
-  color: #8af3ff; /* Midway color between h1 and h6 */  
+  color: #8af3ff !important; /* Midway color between h1 and h6 */  
   font-size: 1.2rem;
   background-color: #002535; /* Midway color between h1 and h6 */
 
   &::after {
     content: "h6";
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  & b,
+  & strong {
+    color: unset;
   }
 }
 
@@ -1452,6 +1460,7 @@ h6 {
   background: #1e1a23;
 }
 
+/* Tasks */
 .TODO,
 .DOING,
 .DONE {
