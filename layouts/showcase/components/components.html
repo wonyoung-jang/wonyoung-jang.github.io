@@ -1629,33 +1629,50 @@
 
       {{/*  Checkbox  */}}
       <section class="component-group">
-        {{/*  TODO Selected  */}}
+        <span class="component-group-header headline-small">Checkbox</span>
+        
+        <div class="sub-component-group-header title-large">Primary</div>
+        {{/*  Selected  */}}
+        <label class="component checkbox">
+          <input type="checkbox">
+          <span class="checkmark"><i>check_small</i></span>
+        </label>
+        
+        {{/*  Indeterminate  */}}
+        <label class="component checkbox">
+          <input type="checkbox">
+          <span class="checkmark"><i>check_indeterminate_small</i></span>
+        </label>
 
-        {{/*  TODO Indeterminate  */}}
+        {{/*  Labeled  */}}
+        <label class="component checkbox">
+          <input type="checkbox">
+          <span class="checkmark"><i>check_small</i></span>
+          <span class="label-large">Checkbox with label</span>
+        </label>
 
-        {{/*  TODO Error  */}}
+        {{/*  Error  */}}
+        <div class="sub-component-group-header title-large">Error</div>
 
-        <fieldset>
-          <legend class="title-large">Checkbox</legend>
+        {{/*  Selected  */}}
+        <label class="component checkbox" error>
+          <input type="checkbox">
+          <span class="checkmark "><i>check_small</i></span>
+        </label>
+        
+        {{/*  Indeterminate  */}}
+        <label class="component checkbox" error>
+          <input type="checkbox">
+          <span class="checkmark"><i>check_indeterminate_small</i></span>
+        </label>
 
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check</i></span>
-            <span class="label-large">Checkbox 1</span>
-          </label>
+        {{/*  Labeled  */}}
+        <label class="component checkbox" error>
+          <input type="checkbox">
+          <span class="checkmark"><i>check_small</i></span>
+          <span class="label-large">Checkbox with label</span>
+        </label>
 
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check</i></span>
-            <span class="label-large">Checkbox 2</span>
-          </label>
-
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check</i></span>
-            <span class="label-large">Checkbox 3</span>
-          </label>
-        </fieldset>
       </section>
 
       {{/*  Chips  */}}

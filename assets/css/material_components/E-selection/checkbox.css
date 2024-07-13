@@ -44,7 +44,7 @@
     }
     
     & ~ .checkmark {
-      border: 2px solid var(--color-on-surface-variant);
+      outline: 2px solid var(--color-on-surface-variant);
       border-radius: 2px;
     }
 
@@ -60,8 +60,8 @@
     &:checked ~ .checkmark {
       background-color: var(--color-primary);
       color: var(--color-on-primary);
-      border-width: 0;
-
+      outline-width: 0px;
+      
       & i {
         font-size: 18px;
       }
@@ -72,5 +72,37 @@
     display: flex;
     align-items: center;
     margin-left: var(--size-3);
+  }
+
+  &[error] {
+    & input[type="checkbox"] {
+      &::after {
+        display: none;
+      }
+      
+      & ~ .checkmark {
+        outline: 2px solid var(--color-error);
+        border-radius: 2px;
+      }
+  
+      &:not(:checked) ~ .checkmark {
+        background-color: transparent;
+        color: transparent;
+  
+        & i {
+          font-size: 18px;
+        }
+      }  
+  
+      &:checked ~ .checkmark {
+        background-color: var(--color-error);
+        color: var(--color-on-primary);
+        outline-width: 0px;
+  
+        & i {
+          font-size: 18px;
+        }
+      }  
+    }
   }
 }
