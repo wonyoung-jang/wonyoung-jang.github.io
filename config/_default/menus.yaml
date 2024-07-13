@@ -76,34 +76,29 @@ footer:
     name: Sitemap
     pageRef: /sitemap
 
-sections:
-  - identifier: Projects
-    name: Projects
+projects:
+  - name: Projects
     pageRef: /projects
+    weight: 1
   - name: Design
     pageRef: /projects/design
-    parent: Projects
   - name: Software
     pageRef: /projects/software
-    parent: Projects
   - name: University
     pageRef: /projects/university
-    parent: Projects
-  - identifier: Resources
-    name: Resources
+
+resources:
+  - name: Resources
     pageRef: /resources
+    weight: 1
   - name: Components
     pageRef: /resources/components
-    parent: Resources
   - name: Layouts
     pageRef: /resources/layouts
-    parent: Resources
   - name: References
     pageRef: /resources/references
-    parent: Resources
   - name: Tokens
     pageRef: /resources/tokens
-    parent: Resources
 
 connect:
   - name: Email

@@ -18,7 +18,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
+    <lastmod>2024-07-13T10:00:23-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -47,18 +47,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/components/</loc>
-    <lastmod>2024-07-08T12:27:52-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://192.168.40.181:1313/containment-components/</loc>
     <lastmod>2024-07-13T08:18:03-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/elevations/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T10:00:23-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -103,7 +98,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resources/</loc>
-    <lastmod>2024-07-13T08:18:03-04:00</lastmod>
+    <lastmod>2024-07-13T10:00:23-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -123,7 +118,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/states/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-13T10:00:23-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -138,7 +133,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/resources/tokens/</loc>
-    <lastmod>2024-07-08T12:27:52-04:00</lastmod>
+    <lastmod>2024-07-13T10:00:23-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

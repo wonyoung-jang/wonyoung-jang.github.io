@@ -11,34 +11,13 @@
         {{- $attrs := dict "href" .URL }}
         {{- $name := .Name }}
 
-        {{- with .Identifier }}
-            {{- with T . }}
-                {{- $name = . }}
-            {{- end }}
-        {{- end }}
-
-        {{- if .Children }}
-            <div class="sub-sections-container">
-                <a {{- range $k, $v := $attrs }}
-                        {{- with $v }}
-                            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-                        {{- end }}
-                    {{- end -}}>
-                    {{ $name }}
-                </a>
-                {{- with .Children }}
-                    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        <a  {{- range $k, $v := $attrs }}
+                {{- with $v }}
+                    {{- printf " %s=%q" $k $v | safeHTMLAttr }}
                 {{- end }}
-            </div>
-        {{- else }}
-            <a  {{- range $k, $v := $attrs }}
-                    {{- with $v }}
-                        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-                    {{- end }}
-                {{- end -}}>
-                {{ $name }}
-            </a>
-        {{- end }}
+            {{- end -}}>
+            {{ $name }}
+        </a>
 
     {{- end }}
 {{- end }}   

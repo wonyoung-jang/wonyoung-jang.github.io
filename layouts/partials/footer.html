@@ -14,12 +14,20 @@
         {{ end }}
     </div>
     
-    {{/* Sections */}}
+    {{/* Projects */}}
     <div class="footer-links-list">
         <span class="title-medium on-surface-variant">
-            Sections
+            Projects
         </span>
-        {{- partialCached "menu.html" (dict "menuID" "sections" "page" .) -}}     
+        {{- partial "menu.html" (dict "menuID" "projects" "page" .) -}}     
+    </div>
+    
+    {{/* Resources */}}
+    <div class="footer-links-list">
+        <span class="title-medium on-surface-variant">
+            Resources
+        </span>
+        {{- partial "menu.html" (dict "menuID" "resources" "page" .) -}}     
     </div>
     
     {{/* Connect links */}}

@@ -61,12 +61,12 @@
   <meta property="og:description" content="States available for wonyounjang.org">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:modified_time" content="2024-07-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-13T10:00:23-04:00">
 
 
   <meta itemprop="name" content="States">
   <meta itemprop="description" content="States available for wonyounjang.org">
-  <meta itemprop="dateModified" content="2024-07-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-13T10:00:23-04:00">
   <meta itemprop="wordCount" content="6">
   <meta itemprop="keywords" content="Tokens">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/navigation-components\/";
+    window.location.href = "\/q-learning-tournament-scheduler\/";
   }
 </script>
 
@@ -1075,39 +1075,50 @@
     
     <div class="footer-links-list">
         <span class="title-medium on-surface-variant">
-            Sections
+            Projects
         </span>
-            <div class="sub-sections-container">
-                <a href="/projects/">
-                    Projects
-                </a>
-            <a href="/projects/design/">
-                Design
-            </a>
-            <a href="/projects/software/">
-                Software
-            </a>
-            <a href="/projects/university/">
-                University
-            </a>
-            </div>
-            <div class="sub-sections-container">
-                <a href="/resources/">
-                    Resources
-                </a>
-            <a href="/resources/components/">
-                Components
-            </a>
-            <a href="/resources/layouts/">
-                Layouts
-            </a>
-            <a href="/resources/references/">
-                References
-            </a>
-            <a href="/resources/tokens/">
-                Tokens
-            </a>
-            </div>   </div>
+
+        <a href="/projects/">
+            Projects
+        </a>
+
+        <a href="/projects/design/">
+            Design
+        </a>
+
+        <a href="/projects/software/">
+            Software
+        </a>
+
+        <a href="/projects/university/">
+            University
+        </a>   </div>
+    
+    
+    <div class="footer-links-list">
+        <span class="title-medium on-surface-variant">
+            Resources
+        </span>
+
+        <a href="/resources/">
+            Resources
+        </a>
+
+        <a href="/resources/components/">
+            Components
+        </a>
+
+        <a href="/resources/layouts/">
+            Layouts
+        </a>
+
+        <a href="/resources/references/">
+            References
+        </a>
+
+        <a href="/resources/tokens/">
+            Tokens
+        </a>   </div>
     
     
     <div class="footer-links-list">
@@ -1168,49 +1179,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
