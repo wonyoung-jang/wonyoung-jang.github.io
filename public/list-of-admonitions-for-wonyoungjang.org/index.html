@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.62641b63b8239479d904b804bec3c680339eff924acc318c7e27810b1ba9e8f3.css" integrity="sha256-YmQbY7gjlHnZBLgEvsPGgDOe/5JKzDGMfieBCxup6PM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.c975b9267e6e022ca19e0c3fbabbeec64e15918d8c2bf40ee2a0d3a2ff8226ec.css" integrity="sha256-yXW5Jn5uAiyhngw/urvuxk4VkY2MK/QO4qDTov&#43;CJuw=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.01cc0450dffa0cc738d54cfd4b7e7573f6e73fae1ae870a9aa99d7d09d8fc694.css" integrity="sha256-AcwEUN/6DMc41Uz9S351c/bnP64a6HCpqpnX0J2PxpQ=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.2acb36f0cd76ade2d167afc90443d79904f95e8621261e7bd52e0f9268995e48.css" integrity="sha256-Kss28M12reLRZ6/JBEPXmQT5XoYhJh571S4PkmiZXkg=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/vacation-cart-manager\/";
+    window.location.href = "\/feed-layout\/";
   }
 </script>
 
@@ -1264,49 +1264,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

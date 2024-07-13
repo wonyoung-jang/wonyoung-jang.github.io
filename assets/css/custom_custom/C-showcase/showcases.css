@@ -4,6 +4,10 @@
   }
 }
 
+.pane#components-showcase {
+  --padding: 0px;
+}
+
 & .component-group-header {
   width: 100%;
   padding: var(--size-5) var(--size-4);
@@ -31,8 +35,8 @@
   background-color: var(--color-surface-container-lowest);
   border-radius: var(--shape-corner-s-bottom);
   padding: var(--size-8);
-  border: 3px solid var(--color-token-set-container);
-  border-bottom-width: var(--size-1);
+  border: 0px solid var(--color-token-set-container);
+  border-bottom-width: var(--size-7);
 
   & .sub-component-group-header {
     width: 100%;

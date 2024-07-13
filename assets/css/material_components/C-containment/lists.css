@@ -9,7 +9,7 @@
 .list-item {  
   --container-display: flex;
   --container-flex-flow: row nowrap;
-  --container-align-items: flex-start;
+  --container-align-items: center;
   --container-justify-content: flex-start;
   --container-padding: var(--size-2) var(--size-4);
   --container-width: 100%;
