@@ -30,15 +30,17 @@
             
     {{/*  Typography  */}}
     <div id="font-size-selector-container">
+      {{/*  Font size  */}}
       <label class="title-large" for="font-size-selector">Font Size</label>
       <div class="slider">
         <input type="range" id="font-size-selector" min="8" max="24" value="14" step="1">
         <span class="tooltip" id="font-size-tooltip">14px</span>
       </div>
 
+      {{/*  Line height  */}}
       <label class="title-large" for="line-height-selector">Line Height</label>
       <div class="slider">
-        <input type="range" id="line-height-selector" min="1.2" max="2.4" value="1.5" step="0.05">
+        <input type="range" id="line-height-selector" min="1" max="2.5" value="1.25" step="0.05">
         <span class="tooltip" id="line-height-tooltip">1.5</span>
       </div>
     </div>
@@ -46,6 +48,7 @@
     {{/*  Font families  */}}
     <div id="typography-selector-container">
       <div id="typography-selector">
+        {{/*  Brand  */}}
         <fieldset class="typography-fieldset">
           <legend class="title-large">Brand font family</legend>
           <div class="component radio-button">
@@ -67,7 +70,8 @@
         </fieldset>
 
         <hr>
-    
+        
+        {{/*  Plain  */}}
         <fieldset class="typography-fieldset">
           <legend class="title-large">Plain font family</legend>
           <div class="component radio-button">
@@ -90,6 +94,7 @@
 
         <hr>
         
+        {{/*  Code  */}}
         <fieldset class="typography-fieldset">
           <legend class="title-large">Code font family</legend>
           <div class="component radio-button">
@@ -183,7 +188,7 @@
       root.style.setProperty('--typeface-plain', plainFont);
       root.style.setProperty('--typeface-code', codeFont);
       root.style.setProperty('--input-font-size', fontSize + 'px');
-      root.style.setProperty('--input-line-height', lineHeight);
+      root.style.setProperty('--input-line-height', lineHeight + 'rem');
 
       localStorage.setItem('typography-brand-font', brandFont);
       localStorage.setItem('typography-plain-font', plainFont);

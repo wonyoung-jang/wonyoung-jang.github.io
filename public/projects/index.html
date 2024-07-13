@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.517a8226158ae633bc66af4aecaa737edd2cbed257effaa27aeb9f54ad79fc9c.css" integrity="sha256-UXqCJhWK5jO8Zq9K7Kpzft0svtJX7/qieuufVK15/Jw=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.3ea303eab7237f2f05c3325e1bed48759ac3a061548ccbcda240c55e97614619.css" integrity="sha256-PqMD6rcjfy8FwzJeG&#43;1IdZrDoGFUjMvNokDFXpdhRhk=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/material.min.215277fe0b93a25a369e052bddcc92e58b28671bc68d349033a4ed46f94ca768.css" integrity="sha256-IVJ3/guTolo2ngUr3cyS5YsoZxvGjTSQM6TtRvlMp2g=" rel="preload stylesheet" as="style">
 
@@ -33,15 +33,15 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/projects/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/projects/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/projects/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/projects/">
 
 
 
@@ -57,7 +57,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/projects/">
+<meta property="og:url" content="http://192.168.40.181:1313/projects/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Projects">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -86,7 +86,7 @@
     
     <section class="start">
         <a  id="site-icon"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -105,7 +105,7 @@
 
         <a  id="site-headline"
             class="title-medium"
-            href="https://wonyoungjang.org/">
+            href="http://192.168.40.181:1313/">
             Wonyoung Jang
         </a>
     </section>
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/fixed-and-flexible-layout\/";
+    window.location.href = "\/feed-layout\/";
   }
 </script>
 
@@ -177,15 +177,17 @@
             
     
     <div id="font-size-selector-container">
+      
       <label class="title-large" for="font-size-selector">Font Size</label>
       <div class="slider">
         <input type="range" id="font-size-selector" min="8" max="24" value="14" step="1">
         <span class="tooltip" id="font-size-tooltip">14px</span>
       </div>
 
+      
       <label class="title-large" for="line-height-selector">Line Height</label>
       <div class="slider">
-        <input type="range" id="line-height-selector" min="1.2" max="2.4" value="1.5" step="0.05">
+        <input type="range" id="line-height-selector" min="1" max="2.5" value="1.25" step="0.05">
         <span class="tooltip" id="line-height-tooltip">1.5</span>
       </div>
     </div>
@@ -193,6 +195,7 @@
     
     <div id="typography-selector-container">
       <div id="typography-selector">
+        
         <fieldset class="typography-fieldset">
           <legend class="title-large">Brand font family</legend>
           <div class="component radio-button">
@@ -214,7 +217,8 @@
         </fieldset>
 
         <hr>
-    
+        
+        
         <fieldset class="typography-fieldset">
           <legend class="title-large">Plain font family</legend>
           <div class="component radio-button">
@@ -236,6 +240,7 @@
         </fieldset>
 
         <hr>
+        
         
         <fieldset class="typography-fieldset">
           <legend class="title-large">Code font family</legend>
@@ -330,7 +335,7 @@
       root.style.setProperty('--typeface-plain', plainFont);
       root.style.setProperty('--typeface-code', codeFont);
       root.style.setProperty('--input-font-size', fontSize + 'px');
-      root.style.setProperty('--input-line-height', lineHeight);
+      root.style.setProperty('--input-line-height', lineHeight + 'rem');
 
       localStorage.setItem('typography-brand-font', brandFont);
       localStorage.setItem('typography-plain-font', plainFont);
@@ -853,7 +858,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -874,49 +879,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

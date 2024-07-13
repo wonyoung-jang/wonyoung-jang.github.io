@@ -10,10 +10,14 @@
   text-transform: capitalize;
 }
 
-.strike-through {
+.strikethrough {
   text-decoration: line-through;
 }
 
 .underline {
   text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
 }
