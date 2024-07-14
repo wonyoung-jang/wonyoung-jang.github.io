@@ -1,0 +1,11 @@
+{{ if .type }}
+  <progress 
+    {{ .type }}
+    
+    {{ if .determinate }} 
+      determinate 
+    {{ else }} 
+      indeterminate 
+    {{ end }}>
+  </progress>
+{{ end }}
