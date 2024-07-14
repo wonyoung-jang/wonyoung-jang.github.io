@@ -1,5 +1,5 @@
 .carousel {
-  overflow: auto;
+  overflow-x: auto;
 
   --container-display: flex;
   --container-flex-flow: row nowrap;
@@ -29,16 +29,26 @@
   --container-elevation-press: initial;
 
   &.uncontained {
-    padding-top: 0px;
-
     & .carousel-item {
       min-width: 128px;
     }
 
     & .carousel-item:last-of-type {
       flex: 0 1 0;
-      overflow: auto;
       align-self: none;
+    }
+  }
+
+  &.full {
+    overflow-x: hidden;
+    overflow-y: auto;
+    --container-flex-flow: column nowrap;
+    --container-padding: unset;
+    max-height: var(--size-50);
+
+    & .carousel-item {
+      --container-width: 100%;
+      --container-height: 100%;
     }
   }
 }
@@ -47,7 +57,7 @@
   position: relative;
 
   min-width: var(--size-10);
-  min-height: 256px;
+  min-height: var(--size-50);
 
   --container-display: flex;
   --container-flex-flow: column nowrap;
@@ -84,8 +94,9 @@
   align-self: stretch;
 
   &.small {
-    flex: 0;
-    min-width: var(--size-14);
+    flex: 1 1 0;
+    min-width: var(--size-10);
+    max-width: var(--size-14);
     align-self: stretch;
   }
 

@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/custom.min.12c826026a09f51265f0be681ea1db93e9b8b8a72d7250beef61a1cc6c70aefa.css" integrity="sha256-EsgmAmoJ9RJl8L5oHqHbk&#43;m4uKctclC&#43;72GhzGxwrvo=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.f79457bb213fb37debef97370e9139a7e381f98067f1135c3e04d0048301585a.css" integrity="sha256-95RXuyE/s33r75c3DpE5p&#43;OB&#43;YBn8RNcPgTQBIMBWFo=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.7790baa8295bebaa3f728d38ec454e2bd24092eb4e1b9bc89e546474817cb9f7.css" integrity="sha256-d5C6qClb66o/co047EVOK9JAkutOG5vInlRkdIF8ufc=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/vacation-cart-manager\/";
+    window.location.href = "\/food-shop-database-management\/";
   }
 </script>
 
@@ -856,7 +856,6 @@
       </div>
       
       
-
       <div class="sub-component-group-header">Multi-browse</div>
       <div class="component carousel multi-browse">
         <div class="component carousel-item">
@@ -871,7 +870,6 @@
       </div>
 
       
-
       <div class="sub-component-group-header">Uncontained</div>
       <div class="component carousel uncontained">
         <div class="component carousel-item">
@@ -889,6 +887,20 @@
         <div class="component carousel-item">
           <i>image</i>
         </div>        
+        <div class="component carousel-item">
+          <i>image</i>
+        </div>
+      </div>
+
+      
+      <div class="sub-component-group-header">Full-screen</div>
+      <div class="component carousel full">
+        <div class="component carousel-item">
+          <i>image</i>
+        </div>
+        <div class="component carousel-item">
+          <i>image</i>
+        </div>
         <div class="component carousel-item">
           <i>image</i>
         </div>
@@ -930,7 +942,6 @@
       </div>
 
       
-
       <div class="sub-component-group-header">List dialog</div>
 
       <div class="component dialog">
@@ -1872,6 +1883,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
