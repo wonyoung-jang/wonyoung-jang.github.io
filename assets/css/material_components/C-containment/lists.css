@@ -20,6 +20,16 @@
   --text-color: var(--color-on-surface);
   --bg-color: var(--color-surface);
 
+  & .monogram {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-container);
+    border-radius: var(--shape-corner-full);
+  }
+
   & .content {
     flex: 1 0 0;
     display: flex;
@@ -59,7 +69,8 @@
     --container-height: 88px;
 
     & i,
-    & .checkbox {
+    & .checkbox,
+    & .monogram {
       align-self: flex-start;
     }
   }

@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/resources/
+      https://wonyoungjang.org/resources/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Sun, 14 Jul 2024 13:01:45 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/resources/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resources/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           References
         </title>
 
         <link>
-          http://192.168.40.181:1313/resources/references/
+          https://wonyoungjang.org/resources/references/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/resources/references/
+          https://wonyoungjang.org/resources/references/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/resources/components/
+          https://wonyoungjang.org/resources/components/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/resources/components/
+          https://wonyoungjang.org/resources/components/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/resources/tokens/
+          https://wonyoungjang.org/resources/tokens/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/resources/tokens/
+          https://wonyoungjang.org/resources/tokens/
         </guid>
 
         <description>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/resources/layouts/
+          https://wonyoungjang.org/resources/layouts/
         </link>
 
         <pubDate>
@@ -155,7 +155,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/resources/layouts/
+          https://wonyoungjang.org/resources/layouts/
         </guid>
 
         <description>
