@@ -11,37 +11,22 @@
     {{/*  Badges  */}}
     <div class="component-group-header">Badges</div>
     <section class="component-group">
-
-      <div class="sub-component-group-header">Badge</div>
-
-      <div class="component badge" large>
-        <div class="label">3</div>
-      </div>
       
-      <div class="component badge"></div>
+      <div class="sub-component-group-header">Badge</div>  
+      
+      {{ partial "components/badges.html" 
+        (dict 
+          "size" "large" 
+          "label" "3") 
+      }}
+
+      {{ partial "components/badges.html" }}
 
     </section>
     
     {{/*  Progress indicators  */}}
     <div class="component-group-header">Progress indicators</div>
-    <section class="component-group">
-
-      {{/*  Linear determinate  */}}
-      <div class="sub-component-group-header">Linear - determinate</div>
-      <progress determinate></progress>
-      
-      {{/*  Linear indeterminate  */}}
-      <div class="sub-component-group-header">Linear - indeterminate</div>
-      <progress></progress>
-
-      {{/*  Circular determinate  */}}
-      <div class="sub-component-group-header">Circular - determinate</div>
-      <progress circular determinate></progress>
-      
-      {{/*  Circular indeterminate  */}}
-      <div class="sub-component-group-header">Circular - indeterminate</div>
-      <progress circular></progress>
-    </section>
+    {{ partial "components/progress-indicators.html" . }}
     
     {{/*  Snackbars  */}}
     <div class="component-group-header">Snackbars</div>
@@ -93,7 +78,6 @@
           <button class="component button common-button">Longer action</button>
         </div>
       </div>
-
 
       <div class="sub-component-group-header">With close affordance</div>
 
@@ -166,53 +150,8 @@
     
     {{/*  Tooltips  */}}
     <div class="component-group-header">Tooltips</div>
-    <section class="component-group">
+    {{ partial "components/tooltips.html" . }} 
 
-      <div class="sub-component-group-header">Plain tooltip</div>
-
-      <div class="component tooltip">
-        <div class="supporting-text">
-          Plain tooltip
-        </div>
-      </div>
-
-      <div class="component tooltip">
-        <div class="supporting-text">            
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Iste obcaecati dignissimos iure perferendis, 
-          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-          veniam quod cumque. Voluptas, distinctio provident?
-        </div>
-      </div>
-
-      <div class="sub-component-group-header">Rich tooltip</div>
-
-      <div class="component tooltip" rich>
-        <span class="subhead">Rich tooltip</span>
-        <span class="supporting-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Iste obcaecati dignissimos iure perferendis, 
-          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-          veniam quod cumque. Voluptas, distinctio provident?
-        </span>
-        <div class="actions">
-          <button class="component button common-button">Cancel</button>
-          <button class="component button common-button">Accept</button>
-        </div>
-      </div>
-
-      <div class="component tooltip" rich>
-        <span class="subhead">Rich tooltip</span>
-        <span class="supporting-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Iste obcaecati dignissimos iure perferendis, 
-          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-          veniam quod cumque. Voluptas, distinctio provident?
-        </span>
-      </div>
-
-    </section>
-    
   </section>
 
 </article>

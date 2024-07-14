@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/contact\/";
+    window.location.href = "\/wonyoungjang.org\/";
   }
 </script>
 
@@ -657,37 +657,42 @@
     
     <div class="component-group-header">Badges</div>
     <section class="component-group">
-
-      <div class="sub-component-group-header">Badge</div>
-
-      <div class="component badge" large>
-        <div class="label">3</div>
-      </div>
       
-      <div class="component badge"></div>
+      <div class="sub-component-group-header">Badge</div>  
+      
+      
+  
+    <div class="component badge" large>
+      
+        <div class="label">3</div>
+      
+    </div>
+  
+
+
+      
+  
+    <div class="component badge"></div>
+  
+
 
     </section>
     
     
     <div class="component-group-header">Progress indicators</div>
     <section class="component-group">
+  <div class="sub-component-group-header">Linear - determinate</div>
+  <progress determinate></progress>
+  
+  <div class="sub-component-group-header">Linear - indeterminate</div>
+  <progress></progress>
 
-      
-      <div class="sub-component-group-header">Linear - determinate</div>
-      <progress determinate></progress>
-      
-      
-      <div class="sub-component-group-header">Linear - indeterminate</div>
-      <progress></progress>
-
-      
-      <div class="sub-component-group-header">Circular - determinate</div>
-      <progress circular determinate></progress>
-      
-      
-      <div class="sub-component-group-header">Circular - indeterminate</div>
-      <progress circular></progress>
-    </section>
+  <div class="sub-component-group-header">Circular - determinate</div>
+  <progress circular determinate></progress>
+  
+  <div class="sub-component-group-header">Circular - indeterminate</div>
+  <progress circular></progress>
+</section>
     
     
     <div class="component-group-header">Snackbars</div>
@@ -739,7 +744,6 @@
           <button class="component button common-button">Longer action</button>
         </div>
       </div>
-
 
       <div class="sub-component-group-header">With close affordance</div>
 
@@ -813,52 +817,65 @@
     
     <div class="component-group-header">Tooltips</div>
     <section class="component-group">
+  <div class="sub-component-group-header">Plain tooltip</div>
+  <div class="component tooltip">
+  
 
-      <div class="sub-component-group-header">Plain tooltip</div>
+  <span class="supporting-text">
+    Plain tooltip
+  </span>
 
-      <div class="component tooltip">
-        <div class="supporting-text">
-          Plain tooltip
-        </div>
-      </div>
+  
+</div>
 
-      <div class="component tooltip">
-        <div class="supporting-text">            
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Iste obcaecati dignissimos iure perferendis, 
-          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-          veniam quod cumque. Voluptas, distinctio provident?
-        </div>
-      </div>
+  <div class="component tooltip">
+  
 
-      <div class="sub-component-group-header">Rich tooltip</div>
+  <span class="supporting-text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dignissimos iure perferendis, amet error alias hic ab eius minus ipsum nam voluptatem quos, veniam quod cumque. Voluptas, distinctio provident?
+  </span>
 
-      <div class="component tooltip" rich>
-        <span class="subhead">Rich tooltip</span>
-        <span class="supporting-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Iste obcaecati dignissimos iure perferendis, 
-          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-          veniam quod cumque. Voluptas, distinctio provident?
-        </span>
-        <div class="actions">
-          <button class="component button common-button">Cancel</button>
-          <button class="component button common-button">Accept</button>
-        </div>
-      </div>
+  
+</div>
 
-      <div class="component tooltip" rich>
-        <span class="subhead">Rich tooltip</span>
-        <span class="supporting-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Iste obcaecati dignissimos iure perferendis, 
-          amet error alias hic ab eius minus ipsum nam voluptatem quos, 
-          veniam quod cumque. Voluptas, distinctio provident?
-        </span>
-      </div>
 
-    </section>
-    
+  <div class="sub-component-group-header">Rich tooltip</div>
+  <div class="component tooltip" rich>
+  
+    <span class="subhead">
+      Rich tooltip
+    </span>
+  
+
+  <span class="supporting-text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dignissimos iure perferendis, amet error alias hic ab eius minus ipsum nam voluptatem quos, veniam quod cumque. Voluptas, distinctio provident?
+  </span>
+
+  
+    <div class="actions">
+      <button class="component button common-button">Cancel</button>
+      <button class="component button common-button">Accept</button>
+    </div>
+  
+</div>
+
+  <div class="component tooltip" rich>
+  
+    <span class="subhead">
+      Rich tooltip
+    </span>
+  
+
+  <span class="supporting-text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dignissimos iure perferendis, amet error alias hic ab eius minus ipsum nam voluptatem quos, veniam quod cumque. Voluptas, distinctio provident?
+  </span>
+
+  
+</div>
+
+</section>
+ 
+
   </section>
 
 </article>
@@ -1377,6 +1394,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
