@@ -5,15 +5,21 @@ blockquote {
   padding: var(--spacing-panes);
   gap: var(--size-2);
 
+  outline: 1px solid var(--color-outline-variant);
   border-radius: var(--shape-corner-m);
   box-shadow: var(--elevation1);
 
-  background-color: var(--bg-color,);
+  background-color: var(--color-surface-container-low,);
   
   color: var(--text-color,);
   white-space: normal;
   overflow-wrap: break-word;
   
+  &[class*="-container"] {
+    outline: unset;
+    background-color: var(--bg-color,);
+  }
+
   & i {
     width: 48px;
     height: 48px;
@@ -22,4 +28,13 @@ blockquote {
     border-radius: unset;
     color: var(--icon-color,);
   }
+
+  &.centered {
+    justify-content: center;
+    align-items: center;
+    box-shadow: unset;
+    height: 100%;
+    width: 100%;
+    background-color: unset;
+  }  
 }
