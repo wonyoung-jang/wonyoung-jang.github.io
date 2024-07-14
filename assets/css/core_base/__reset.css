@@ -8,11 +8,6 @@
   outline: 0;
   color: inherit;
   -webkit-tap-highlight-color: transparent;
-}
-
-ul, 
-ol,
-li {
   list-style: none;
 }
 

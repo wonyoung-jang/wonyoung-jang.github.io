@@ -92,8 +92,16 @@ h1, h2, h3, h4, h5, h6 {
 strong,
 b {
   font-weight: var(--typeface-weight-bold);
+  -webkit-font-smoothing: antialiased;
 }
 
 em {
   font-style: italic;
+}
+
+mark {
+  background-color: var(--color-complementary);
+  color: var(--color-on-complementary);
+  width: fit-content; 
+  padding-inline: var(--size-1);
 }

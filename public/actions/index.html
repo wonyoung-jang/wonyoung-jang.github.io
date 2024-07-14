@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.ad8ff574a43374cc5641ae13f892c0d0894a76ae88dc1ecd50af0e4024be724a.css" integrity="sha256-rY/1dKQzdMxWQa4T&#43;JLA0IlKdq6I3B7NUK8OQCS&#43;cko=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.1e5028fdf85bc57bdeafa5767625824286aaef3832d0a22db3ba36ff5cd02111.css" integrity="sha256-HlAo/fhbxXver6V2diWCQoaq7zgy0KIts7o2/1zQIRE=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/custom.min.c975b9267e6e022ca19e0c3fbabbeec64e15918d8c2bf40ee2a0d3a2ff8226ec.css" integrity="sha256-yXW5Jn5uAiyhngw/urvuxk4VkY2MK/QO4qDTov&#43;CJuw=" rel="preload stylesheet" as="style">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/wonyoungjang.org\/";
+    window.location.href = "\/ergodox-ez-lego-tenting-kits\/";
   }
 </script>
 
@@ -656,7 +656,7 @@
     
     
     <div class="component-group-header">Common buttons</div>
-    <section class="component-group">
+    <div class="component-group">
       <div class="sub-component-group-header">No icon</div>
       <section>
         <button class="component button common-button">Text</button>
@@ -689,13 +689,11 @@
           Outlined
         </button>
       </section>
-
-    </section>
+    </div>
 
     
     <div class="component-group-header">Floating action buttons (FABs)</div>
-    <section class="component-group">
-      
+    <div class="component-group">
       <div class="sub-component-group-header">Small FAB</div>
       <section>
         <button class="component button surface-container-high fab" small>
@@ -788,12 +786,11 @@
           Extended
         </button>
       </section>
-
-    </section>
+    </div>
 
     
     <div class="component-group-header">Icon buttons</div>
-    <section class="component-group">
+    <div class="component-group">
       <div class="sub-component-group-header">Icon button</div>
 
       <button class="component button icon-button">
@@ -842,11 +839,11 @@
           <i>settings</i>
         </label>
       </div>
-    </section>
+    </div>
 
     
     <div class="component-group-header">Segmented buttons</div>
-    <section class="component-group">
+    <div class="component-group">
 
       <div class="sub-component-group-header">Outlined</div>
 
@@ -899,7 +896,7 @@
           <input type="radio" id="end4" name="segmented">
           <label for="end4" class="component button">End</label>
       </div>
-    </section>
+    </div>
 
   </section>
 
@@ -1400,6 +1397,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
