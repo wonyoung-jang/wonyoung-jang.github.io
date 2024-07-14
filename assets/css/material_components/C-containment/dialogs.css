@@ -20,6 +20,41 @@
   min-width: 280px;
   max-width: 560px;
 
+  &[full] {
+    --container-shape: 0;
+    min-width: unset;
+    max-width: unset;
+    --container-padding: initial;
+
+    & .header {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      height: var(--size-14);
+      width: 100%;
+      margin-top: var(--size-6);
+      padding: var(--size-6) var(--size-4);
+
+      & .headline {
+        align-items: center;
+        margin-bottom: unset;
+        font-family: var(--typescale-title-large-font);
+        font-size: var(--typescale-title-large-size);
+        font-weight: var(--typescale-title-large-weight);
+        line-height: var(--typescale-title-large-line-height);
+      }
+
+      & .common-button {
+        margin-left: auto;
+      }
+    }
+
+    & .supporting-text {
+      color: var(--color-on-surface);
+      padding: var(--size-6);
+    }
+  }
+
   & .headline {
     display: flex;
     flex-flow: row nowrap;
