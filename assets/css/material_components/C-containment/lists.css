@@ -14,10 +14,37 @@
   --container-justify-content: flex-start;
   --container-padding: var(--size-2) var(--size-4);
   --container-width: 100%;
+  --container-gap: 16px;
 
   --icon-color: var(--color-on-surface);
   --text-color: var(--color-on-surface);
   --bg-color: var(--color-surface);
+
+  & .content {
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    
+    & .headline {
+      align-self: stretch;
+      font-size: var(--typescale-body-large-size);
+      line-height: var(--typescale-body-large-line-height);
+      font-weight: var(--typescale-body-large-weight);
+      font-family: var(--typescale-body-large-font);  
+    }
+  
+    & .supporting-text {
+      align-self: stretch;
+      color: var(--color-on-surface-variant);
+      font-size: var(--typescale-body-medium-size);
+      line-height: var(--typescale-body-medium-line-height);
+      font-weight: var(--typescale-body-medium-weight);
+      font-family: var(--typescale-body-medium-font);
+    }
+  }
   
   &[one] {
     --container-height: 56px;
@@ -30,6 +57,11 @@
   &[three] {
     --container-padding: var(--size-3) var(--size-4);
     --container-height: 88px;
+
+    & i,
+    & .checkbox {
+      align-self: flex-start;
+    }
   }
 
   &[with-icon] {
