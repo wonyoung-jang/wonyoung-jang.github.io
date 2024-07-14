@@ -1,0 +1,97 @@
+.carousel {
+  overflow: auto;
+
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: initial;
+  --container-align-items: flex-start;
+  --container-gap: var(--size-2);
+  --container-height: initial;
+  --container-width: 100%;
+  --container-padding: var(--size-2) var(--size-4);
+
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: initial;
+  
+  --bg-color: initial;
+  
+  --text-color: initial;
+  --icon-color: initial;
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  &.uncontained {
+    padding-top: 0px;
+
+    & .carousel-item {
+      min-width: 128px;
+    }
+
+    & .carousel-item:last-of-type {
+      flex: 0 1 0;
+      overflow: auto;
+      align-self: none;
+    }
+  }
+}
+
+.carousel-item {
+  position: relative;
+
+  min-width: var(--size-10);
+  min-height: 256px;
+
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: center;
+  --container-align-items: center;
+  --container-gap: initial;
+  --container-height: initial;
+  --container-width: initial;
+  --container-padding: initial;
+
+  --container-outline: initial;
+  --container-elevation: initial;
+  --container-shape: var(--shape-corner-xl);
+  
+  --bg-color: var(--color-surface);
+  
+  --text-color: initial;
+  --icon-color: initial;
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  background: url(<path-to-image>) darkgray 50% / cover no-repeat;
+  background-blend-mode: multiply;
+  color: black;
+
+  flex: 1 0 0;
+  align-self: stretch;
+
+  &.small {
+    flex: 0;
+    min-width: var(--size-14);
+    align-self: stretch;
+  }
+
+  &.medium {
+    flex: 0;
+    min-width: var(--size-30);
+    align-self: stretch;
+  }
+}
