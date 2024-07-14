@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.1e5028fdf85bc57bdeafa5767625824286aaef3832d0a22db3ba36ff5cd02111.css" integrity="sha256-HlAo/fhbxXver6V2diWCQoaq7zgy0KIts7o2/1zQIRE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.fbff3afd3fb6a6b851e59e3bbb0574d9a900463407e049f62c01b507dc0e8297.css" integrity="sha256-&#43;/86/T&#43;2prhR5Z47uwV02akARjQH4En2LAG1B9wOgpc=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.7320ccb8fed2b3e9ef0147744404e5e263e3a7c1820f33284bee37dd5ad46635.css" integrity="sha256-cyDMuP7Ss&#43;nvAUd0RATl4mPjp8GCDzMoS&#43;433VrUZjU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.12c826026a09f51265f0be681ea1db93e9b8b8a72d7250beef61a1cc6c70aefa.css" integrity="sha256-EsgmAmoJ9RJl8L5oHqHbk&#43;m4uKctclC&#43;72GhzGxwrvo=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.c60f34289ea26fc7f61006f31d7aaa514c8cee9a1b62b436b99c2b90b0c37cb0.css" integrity="sha256-xg80KJ6ib8f2EAbzHXqqUUyM7pobYrQ2uZwrkLDDfLA=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.7790baa8295bebaa3f728d38ec454e2bd24092eb4e1b9bc89e546474817cb9f7.css" integrity="sha256-d5C6qClb66o/co047EVOK9JAkutOG5vInlRkdIF8ufc=" rel="preload stylesheet" as="style">
 
 
 
@@ -144,7 +144,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/retail-inventory-manager\/";
+    window.location.href = "\/pit-signs-for-robotics-competition\/";
   }
 </script>
 
@@ -1252,49 +1252,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

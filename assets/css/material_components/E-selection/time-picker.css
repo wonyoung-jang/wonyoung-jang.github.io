@@ -158,3 +158,152 @@
     margin-left: auto;
   }
 }
+
+/* Clock face */
+.clock-face {
+  width: 250px;
+  position: relative;
+  border-radius: 500px;
+  background-color: var(--color-surface-container-highest);
+  height: 16rem;
+  text-align: center;
+  font-size: var(--typescale-body-large-size);
+  color: var(--color-on-surface);
+  font-family: var(--typescale-body-large-font);
+  
+  & .center-circle {
+    position: absolute;
+    height: 3.13%;
+    width: 3.13%;
+    top: 51.56%;
+    right: 48.44%;
+    bottom: 45.31%;
+    left: 48.44%;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-sizing: border-box;
+    transform:  rotate(-90deg);
+    transform-origin: 0 0;
+  }
+
+  & .hour {
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .current {
+    border-radius: var(--shape-corner-full);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+
+  & [class*="hour-"] {
+    position: absolute;
+    height: 18.75%;
+    width: 18.75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .hour-line {
+    /* TODO For 7 only currently */
+    position: absolute;
+    width: 1px;
+    height: 125%;
+    background-color: black;
+    transform: rotate(-150deg) translateX(100%) translateY(100%);
+  }
+  
+  & .hour-12 {
+    top: 0.78%;
+    right: 40.63%;
+    bottom: 80.47%;
+    left: 40.63%;
+  }
+  
+  & .hour-11 {
+    top: 6.25%;
+    right: 60.16%;
+    bottom: 75%;
+    left: 21.09%;
+  }
+  
+  & .hour-10 {
+    top: 21.09%;
+    right: 75%;
+    bottom: 60.16%;
+    left: 6.25%;
+  }
+  
+  & .hour-9 {
+    top: 40.63%;
+    right: 80.47%;
+    bottom: 40.63%;
+    left: 0.78%;
+  }
+  
+  & .hour-8 {
+    top: 60.16%;
+    right: 75%;
+    bottom: 21.09%;
+    left: 6.25%;
+  }
+  
+  & .hour-7 {
+    top: 75%;
+    right: 60.16%;
+    bottom: 6.25%;
+    left: 21.09%;
+  }
+  
+  & .hour-6 {
+    top: 80.47%;
+    right: 40.63%;
+    bottom: 0.78%;
+    left: 40.63%;
+  }
+  
+  & .hour-5 {
+    top: 75%;
+    right: 21.09%;
+    bottom: 6.25%;
+    left: 60.16%;
+  }
+  
+  & .hour-4 {
+    top: 60.16%;
+    right: 6.25%;
+    bottom: 21.09%;
+    left: 75%;
+  }
+  
+  & .hour-3 {
+    top: 40.63%;
+    right: 0.78%;
+    bottom: 40.63%;
+    left: 80.47%;
+  }
+  
+  & .hour-2 {
+    top: 21.09%;
+    right: 6.25%;
+    bottom: 60.16%;
+    left: 75%;
+  }
+  
+  & .hour-1 {
+    top: 6.25%;
+    right: 21.09%;
+    bottom: 75%;
+    left: 60.16%;
+  }
+}
