@@ -8,6 +8,21 @@ copyright: <!--Creative Commons License-->This site is licensed under a [Creativ
 enableRobotsTXT: true
 enableGitInfo: true
 
+# Markup
+markup:
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    tabWidth: 4
+    style: github-dark
+
+  tableOfContents:
+    ordered: false
+    startLevel: 1
+    endLevel: 6
+
 # Outputs
 outputs:
   home:
@@ -20,6 +35,26 @@ outputs:
   term:
     - HTML
     - RSS
+
+# Related
+related:
+  threshold: 10
+  includeNewer: true
+
+  indices:
+    - name: title
+      weight: 40
+      type: basic
+    - name: type
+      weight: 30
+      type: basic
+    - name: description
+      weight: 20
+      type: basic
+    - name: date
+      weight: 10
+      type: basic
+      pattern: "2006"
 
 # Services
 services:
@@ -52,7 +87,7 @@ taxonomies:
 #   en:
 #     menus:
 #     params:
-# markup: → markup.yaml
+# markup:
 # mediatypes:
 # menus: → menus.yaml
 # minify:
@@ -62,7 +97,7 @@ taxonomies:
 # params: → params.yaml
 # permalinks:
 # privacy:
-# related: → related.yaml
+# related:
 # security:
 # segments:
 # server:
