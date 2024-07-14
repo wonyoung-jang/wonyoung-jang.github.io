@@ -1,16 +1,12 @@
 .component{
   &:focus-visible {
-    --start-width: calc(var(--size-1) / 2);
-
-    color: var(--color-secondary);
-
     animation-name: outward-grow, outward-shrink;
-    animation-delay: 0s, calc(var(--motion-duration-long2) * 0.25);
-    animation-duration: calc(var(--motion-duration-long2) * 0.25), calc(var(--motion-duration-long2) * 0.75);
+    animation-delay: 0s, calc(var(--motion-duration-long4) * 0.25);
+    animation-duration: calc(var(--motion-duration-long4) * 0.25), calc(var(--motion-duration-long4) * 0.75);
     animation-timing-function: var(--motion-easing-emphasized);
 
-    outline: var(--start-width) solid currentColor;
-    outline-offset: calc(-2 * var(--start-width));
+    outline: 3px solid var(--color-secondary);
+    outline-offset: -2px;
   } 
 
   &::-moz-focus-inner {
@@ -27,12 +23,12 @@ a:not(.component):focus-visible {
     outline-width: 0px;
   }
   to {
-    outline-width: var(--size-1);
+    outline-width: 8px;
   }
 }
 
 @keyframes outward-shrink {
   from {
-    outline-width: var(--size-1);
+    outline-width: 8px;
   }
 }

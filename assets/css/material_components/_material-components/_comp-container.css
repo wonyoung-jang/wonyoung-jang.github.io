@@ -16,6 +16,8 @@
   
   --text-color: initial;
   --icon-color: initial;
+  
+  --state-color: var(--state-color, var(--text-color, initial));
 
   --container-outline-hover: initial;
   --container-elevation-hover: initial;
@@ -37,11 +39,13 @@
   width:            var(--container-width, initial);
   padding:          var(--container-padding, initial);
 
-  border:           var(--container-outline, initial);
+  outline:          var(--container-outline, initial);
   border-radius:    var(--container-shape, initial);
   box-shadow:       var(--container-elevation, initial);
 
   background-color: var(--bg-color, initial);
 
-  color:            var(--icon-color, var(--text-color, initial));
+  color:            var(--icon-color, var(--text-color,));
+  
+  --state-color:    var(--icon-color, var(--text-color,));
 }

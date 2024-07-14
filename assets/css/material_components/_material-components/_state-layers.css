@@ -1,0 +1,59 @@
+.component {
+  position: relative;
+  outline: var(--container-outline, initial);
+  box-shadow: var(--container-elevation, initial);
+  
+  & * {
+    z-index: 2;
+  }
+  
+  &:hover {
+    outline: var(--container-outline-hover, initial);
+    box-shadow: var(--container-elevation-hover, initial);
+  }
+  
+  &:focus,
+  &:focus-within {
+    outline: var(--container-outline-focus, initial);
+    box-shadow: var(--container-elevation-focus, initial);
+  }
+
+  &:active {
+    outline: var(--container-outline-press, initial);
+    box-shadow: var(--container-elevation-press, initial);
+  }
+
+  &:not(.top-app-bar)::after {
+    content: "";
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: 1;
+    inset: 0;
+    opacity: 0;
+    border-radius: inherit;
+    background-position: center;
+    background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
+    background-size: 0%;
+    transition: none;
+  }
+
+  &:hover::after {
+    opacity: var(--state-hover-opacity);
+    background-size: 50000%;
+    transition: background-size var(--motion-duration-long4) var(--motion-easing-emphasized);
+  }
+
+  &:active::after {
+    opacity: var(--state-press-opacity);
+    background-size: 0%;
+    transition: background-size var(--motion-duration-short2) var(--motion-easing-emphasized);
+  }
+
+  &:focus::after,
+  &:focus-within::after {
+    opacity: var(--state-focus-opacity);
+    background-size: 50000%;
+    transition: background-size var(--motion-duration-medium4) var(--motion-easing-emphasized);
+  }
+}

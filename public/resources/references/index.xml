@@ -75,7 +75,7 @@
         </guid>
 
         <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Bold&#xA;Italic&#xA;Highlight Bold + italic&#xA;Italic + Bold&#xA;Bold + highlight&#xA;Highlight + bold Italic + highlight&#xA;Highlight + italic Strikethrough&#xA;Underline&#xA;Advanced commands&#xD;link&#xD;h2&#xD;Centered text Hugo: &amp;lt;blockquote class=&amp;quot;centered&amp;quot;&amp;gt;Centered text&amp;lt;/blockquote&amp;gt;&#xA;Blockquote with &amp;ldquo;&amp;gt;&amp;rdquo;&#xA;Hugo: &amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;Blockquote with &amp;amp;ldquo;&amp;amp;gt;&amp;amp;rdquo;&amp;lt;/p&amp;gt;&amp;lt;/blockquote&amp;gt;&#xA;Inline code with backticks
+          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Bold&#xA;Italic&#xA;Highlight Bold + italic&#xA;Bold + highlight&#xA;Bold + italic + highlight&#xA;Bold + highlight + italic&#xA;Italic + bold&#xA;Italic + highlight&#xA;Italic + bold + highlight&#xA;Italic + highlight + bold&#xA;Highlight + bold Highlight + italic Highlight + bold + italic Highlight + italic + bold Strikethrough
         </description>
       </item>
       <item>
