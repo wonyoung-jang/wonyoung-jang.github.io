@@ -5,6 +5,37 @@
   padding: var(--size-2) 0;
   position: relative;
   width: 100%;
+
+  &#terms {
+    & .content {
+      flex: 1 0 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      justify-content: center;
+      align-self: stretch;
+      
+      & .headline {
+        position: relative;
+        align-self: stretch;
+        font-size: var(--typescale-title-large-size);
+        line-height: var(--typescale-title-large-line-height);
+        font-weight: var(--typescale-title-large-weight);
+        font-family: var(--typescale-title-large-font);  
+        
+        & .page-count {
+          position: absolute;
+          bottom: 0px;
+          left: auto;
+          color: var(--color-on-surface-variant);
+          font-size: var(--typescale-body-small-size);
+          line-height: var(--typescale-body-small-line-height);
+          font-weight: var(--typescale-body-small-weight);
+          font-family: var(--typeface-code);
+        }
+      }
+    }
+  }
 }
 
 .list-item {  
@@ -72,56 +103,6 @@
     & .checkbox,
     & .monogram {
       align-self: flex-start;
-    }
-  }
-
-  &[with-icon] {
-    & i {
-      font-size: var(--size-10);
-      margin-inline: var(--size-4);
-      margin-block: var(--size-2);
-      color: var(--icon-color);
-      overflow: visible;
-    }
-  }
-
-  &[with-avatar] {
-    & .avatar {
-      align-self: flex-start;
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: center;
-      font-size: var(--size-5);
-      height: var(--size-10);
-      width: var(--size-10);
-      background-color: var(--color-primary-container);
-      color: var(--color-on-primary-container);
-      border-radius: var(--shape-corner-xl);
-      margin-inline-end: var(--size-4);
-    }
-
-    & .list-content {
-      max-width: calc(100% - var(--size-14));
-    }
-  }
-  
-  & .list-content {
-    display: flex;
-    flex-flow: column nowrap;
-    
-    & .description {
-      color: var(--color-on-surface-variant);
-      display: -webkit-box;
-      overflow: hidden;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      -moz-box-orient: vertical;
-      line-clamp: 2;
-    }
-
-    & .page-count {
-      color: var(--color-on-surface-variant);
     }
   }
 }

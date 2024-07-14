@@ -1,11 +1,11 @@
 {{ define "main" }}
     <article class="layout panes basic-single-pane">
         <section class="layout pane" id="sections-page">
-            <div class="list-container">
+            <div class="list-container" id="terms">
                 {{ range .Pages }}
-                    <a  class="component list-item" one with-avatar
+                    <a  class="component list-item" one
                         href="{{ .RelPermalink }}">
-                        <span class="avatar">
+                        <span class="monogram">
                             <i>
                                 {{ if eq .Title "Design" }}
                                     design_services
@@ -25,15 +25,12 @@
                             </i>
                         </span>
                         
-                        <div class="list-content">
-                            <span class="headline-small">
+                        <div class="content">
+                            <span class="headline">
                                 {{ .Title }}
-                                <sup class="page-count code-typeface">
+                                <sup class="page-count">
                                     {{len .Pages }}
                                 </sup>
-                            </span>
-                            <span class="description">
-                                {{ .Description }}
                             </span>
                         </div>
                     </a>
