@@ -30,8 +30,8 @@
 
 {{/* Styles */}}
 {{- $cssFiles := dict
-    "base"       (resources.Match "css/core_base/**.css")
     "tokens"     (resources.Match "css/core_tokens/**.css")
+    "base"       (resources.Match "css/core_base/**.css")
     "layouts"    (resources.Match "css/material_layouts/**.css")
     "components" (resources.Match "css/material_components/**.css")
     "custom"     (resources.Match "css/custom_custom/**.css")
@@ -39,9 +39,9 @@
 -}}
   
 {{- $stylesheets := dict
-"core"     (slice "base" "tokens")
-"material" (slice "layouts" "components")
-"custom"   (slice "custom" "helpers")
+    "_material" (slice "layouts" "components")
+    "core"      (slice "tokens" "base")
+    "custom"    (slice "custom" "helpers")
 -}}
   
 {{- range $name, $parts := $stylesheets }}

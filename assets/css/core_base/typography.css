@@ -3,8 +3,9 @@ p,
 a,
 b,
 strong,
-mark,
-em {
+em,
+del,
+mark {
   font-size: var(--typescale-body-large-size);
   line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typescale-body-large-weight);
@@ -95,15 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Styles */
-strong,
-b {
-  font-size: var(--typescale-body-large-size);
-  line-height: var(--typescale-body-large-line-height);
-  font-weight: var(--typeface-weight-bold);
-  font-family: var(--typescale-body-large-font);
-  -webkit-font-smoothing: antialiased;
-}
-
 del {
   text-decoration: line-through;
 }
@@ -112,10 +104,24 @@ em {
   font-style: italic;
 }
 
+strong,
+b {
+  font-weight: var(--typeface-weight-bold);
+  -webkit-font-smoothing: antialiased;
+
+  & * {
+    font-weight: var(--typeface-weight-bold) !important;
+  }
+}
 
 mark {
   background-color: var(--color-complementary);
   color: var(--color-on-complementary);
-  width: fit-content; 
-  padding-inline: var(--size-1);
+  padding-inline: 5px;
+  border-radius: var(--shape-corner-xs);
+  max-width: fit-content;
+
+  & * {
+    color: inherit;
+  }
 }

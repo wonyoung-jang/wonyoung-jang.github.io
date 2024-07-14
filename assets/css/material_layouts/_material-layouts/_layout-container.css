@@ -1,0 +1,39 @@
+.layout {
+  --flex: initial;
+  --display: initial;
+  --flex-flow: initial;
+  --align-items: initial;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: initial;
+  --height: initial;
+  --min-height: initial;
+  --padding: initial;
+  --margin: initial;
+  --gap: initial;
+
+  --shape: initial;
+  --border: initial;
+
+  --bg: initial;
+}
+
+.layout {
+  flex:             var(--flex, initial);
+  display:          var(--display, initial);
+  flex-flow:        var(--flex-flow, initial);
+  align-items:      var(--align-items, initial);
+  align-content:    var(--align-content, initial);
+  justify-content:  var(--justify-content, initial);
+  width:            var(--width, initial);
+  height:           var(--height, initial);
+  min-height:       var(--min-height, initial);
+  padding:          var(--padding, initial);
+  margin:           var(--margin, initial);
+  gap:              var(--gap, initial);
+
+  border-radius:    var(--shape, initial);
+  border:           var(--border, initial);
+
+  background-color: var(--bg, initial);
+}

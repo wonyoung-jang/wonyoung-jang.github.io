@@ -34,27 +34,35 @@ lastMod: 2024-07-14
 
 **Bold**
 
-*Italic*
+_Italic_
 
 {{< logseq/mark >}}Highlight{{< / logseq/mark >}}
 
 **_Bold + italic_**
 
-_**Italic + Bold**_
-
 **{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
 
-{{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
+**_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
+
+**{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
+
+_**Italic + bold**_
 
 *{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
 
+_**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
+
+_{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
+
+{{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
+
 {{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
 
----
+{{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
+
+{{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
 
 ~~Strikethrough~~
-
-<ins>Underline</ins>
 
 
 
