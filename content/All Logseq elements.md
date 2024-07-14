@@ -14,7 +14,7 @@ description: A work in progress page showcasing how elements are rendered from L
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-07-08
+lastMod: 2024-07-14
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 
@@ -34,53 +34,95 @@ lastMod: 2024-07-08
 
 **Bold**
 
+*Italic*
+
 {{< logseq/mark >}}Highlight{{< / logseq/mark >}}
 
-**{{< logseq/mark >}}Bold + Highlight{{< / logseq/mark >}}**
+**_Bold + italic_**
 
-*Italic*
+_**Italic + Bold**_
+
+**{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
+
+{{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
+
+*{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
+
+{{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
+
+---
+
+~~Strikethrough~~
+
+<ins>Underline</ins>
+
+
 
 ## Advanced commands
 
 {{< logseq/orgCENTER >}}Centered text
 {{< / logseq/orgCENTER >}}
 
+**Hugo**: `<blockquote class="centered">Centered text</blockquote>`
+
 >Blockquote with ">"
 
-`Blockquote with backticks`
+**Hugo**: `<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
+
+`Inline code with backticks`
+
+**Hugo**: `<p><code>Blockquote with backticks</code></p>`
 
 An external link: https://www.pbs.org/video/art21-fantasy/
+
+**Hugo**: `<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
 
 ## Logseq pages
 
 ### Page reference
 
-Input: `[About]({{< ref "/about" >}})`
+**Input**: `[About]({{< ref "/about" >}})`
 
-Output: [About]({{< ref "/About" >}})
+**Schrödinger**: `[About]({{< ref "/About" >}})`
+
+**Output**: [About]({{< ref "/About" >}})
 
 ### Page embed
 
-Input: `{{embed [About]({{< ref "/about" >}})}}`
+**Input**: `{{embed [About]({{< ref "/about" >}})}}`
 
-Output: {{embed [About]({{< ref "/About" >}})}}
+**Schrödinger**: `{{embed [About]({{< ref "/About" >}})}}`
+
+
+
+**Output**: {{embed [About]({{< ref "/About" >}})}}
 
 ## Logseq blocks
 
 ### Block reference
 
-Input: `## About me
+**Input**: `## About me
 `
 
-Output: ## About me
+**Schrödinger**: `## About me`
+
+**Output**: ## About me
 
 
 ### Block embed
 
-Input: `{{embed ## About me
+**Input**: `{{embed ## About me
  }}`
 
-Output: {{embed ## About me
+**Schrödinger**:
+```
+{{embed ## About me
  }}
+```
+
+**Output**: {{embed ## About me
+ }}
+
+---
 
 See: [Logseq Documentation](https://docs.logseq.com/#/page/contents)

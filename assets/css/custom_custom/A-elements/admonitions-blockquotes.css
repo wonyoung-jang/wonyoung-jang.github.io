@@ -1,40 +1,60 @@
 blockquote {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-block: var(--spacing-panes);
+  position: relative;
+  display: block;
+  
+  
+
+
+  margin-block: var(--size-3);
   padding: var(--spacing-panes);
-  gap: var(--size-2);
 
   outline: 1px solid var(--color-outline-variant);
   border-radius: var(--shape-corner-m);
   box-shadow: var(--elevation1);
+  
+  min-height: 96px;
 
   background-color: var(--color-surface-container-low,);
   
   color: var(--text-color,);
-  white-space: normal;
-  overflow-wrap: break-word;
-  
+  text-wrap: balance;
+  overflow: hidden;
+  word-wrap: break-word;
+
   &[class*="-container"] {
     outline: unset;
+    padding: 32px 64px 32px 96px;
     background-color: var(--bg-color,);
+  }
+  
+  & a {
+    display: inline;
+    word-break: break-word;
   }
 
   & i {
-    width: 48px;
-    height: 48px;
-    font-size: 40px;
-    padding: 0 var(--size-5);
-    border-radius: unset;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 96px;
+    height: 100%;
+    font-size: 48px;
     color: var(--icon-color,);
   }
 
   &.centered {
+    box-shadow: unset;
+    padding: unset;
+    background-color: unset;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: unset;
     height: 100%;
     width: 100%;
-    background-color: unset;
   }  
 }

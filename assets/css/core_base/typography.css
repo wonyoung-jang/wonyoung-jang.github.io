@@ -1,10 +1,15 @@
 /* Basic text */
 p,
-a {
+a,
+b,
+strong,
+mark,
+em {
   font-size: var(--typescale-body-large-size);
   line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typescale-body-large-weight);
   font-family: var(--typescale-body-large-font);
+  color: var(--color-on-surface);
 }
 
 label {
@@ -12,6 +17,7 @@ label {
   line-height: var(--typescale-label-large-line-height);
   font-weight: var(--typescale-label-large-weight);
   font-family: var(--typescale-label-large-font);
+  color: var(--color-on-surface-variant);
 }
 
 /* Headings */
@@ -91,13 +97,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles */
 strong,
 b {
+  font-size: var(--typescale-body-large-size);
+  line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typeface-weight-bold);
+  font-family: var(--typescale-body-large-font);
   -webkit-font-smoothing: antialiased;
+}
+
+del {
+  text-decoration: line-through;
 }
 
 em {
   font-style: italic;
 }
+
 
 mark {
   background-color: var(--color-complementary);
