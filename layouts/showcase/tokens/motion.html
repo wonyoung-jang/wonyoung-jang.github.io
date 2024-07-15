@@ -1,9 +1,6 @@
 {{ define "main" }}
-    <style>
-
-    </style>
     <article class="layout panes basic-single-pane">
-        <section class="layout pane">
+        <section class="layout pane" id="post-content">  
             {{ with .Content }}
                 {{ . }}
             {{ end }}

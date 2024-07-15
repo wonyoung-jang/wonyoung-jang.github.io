@@ -1,28 +1,33 @@
 .text-field {
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: flex-start;
+  --container-align-items: center;
+  --container-gap: var(--size-4);
+  --container-height: var(--size-14);
+  --container-width: 100%;
+  --container-padding: 0 var(--size-4);
+  --container-outline: initial;
+  --container-elevation: initial;
+
+  & input[type="text"] {
+    flex: 1 1 auto;
+    color: var(--color-on-surface);
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+
+    &::placeholder {
+      color: var(--color-on-surface-variant);
+    }
+  }
+  
   &[filled] {
-    --container-display: flex;
-    --container-flex-flow: column nowrap;
-    --container-justify-content: flex-start;
-    --container-align-items: center;
-    --container-gap: var(--size-4);
-    --container-height: var(--size-14);
-    --container-width: 100%;
-    --container-padding: 0 var(--size-4);
-    --container-outline: initial;
-    --container-elevation: initial;
     --container-shape: var(--shape-corner-xs-top);
     --bg-color: var(--color-surface-container-highest);
     --text-color: var(--color-on-surface);
     --icon-color: var(--color-on-surface);
-
-    & input[type="text"] {
-      flex: 1 1 auto;
-      color: var(--color-on-surface);
-
-      &::placeholder {
-        color: var(--color-on-surface-variant);
-      }
-    }
     
     & .supporting-text {
         flex: 1 0 0;
@@ -51,24 +56,15 @@
   }
 
   &[outlined] {
-    --container-display: flex;
-    --container-flex-flow: row nowrap;
-    --container-justify-content: flex-start;
-    --container-align-items: center;
-    --container-gap: var(--size-4);
-    --container-height: var(--size-14);
-    --container-width: 100%;
-    --container-padding: 0 var(--size-4);
     --container-outline: 1px solid var(--color-outline);
-    --container-elevation: initial;
     --container-shape: var(--shape-corner-xs);
     --bg-color: inherit;
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);
 
-    & input {
-      color: var(--color-on-surface-variant);
-    }
+    --container-outline-hover: 1px solid var(--color-on-surface);
+    --container-outline-focus: 2px solid var(--color-primary);
+    --container-outline-press: 2px solid var(--color-primary);
   }
 }
 
