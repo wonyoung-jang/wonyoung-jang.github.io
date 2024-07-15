@@ -1,15 +1,9 @@
 .least-updated-pages {
-  & li {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
 
-  & .divider {
-    margin-bottom: var(--size-3);
+  & * {
+    width: 100%;
   }
 }
