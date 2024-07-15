@@ -9,18 +9,56 @@
 
 {{ define "partials/inline/tab_menu/walk.html" }}
     {{- $page := .page }}
+    {{- $activeFound := false }}
+
     {{- range .menuEntries }}
         {{- $attrs := dict "href" .URL }}
+        {{- $name := .Name }}
 
+        {{- $isActive := false }}
+        {{- $childrenActive := false }}
+        
         {{- if $page.IsMenuCurrent .Menu . }}
+            {{- $isActive = true }}
+        {{- else if $page.HasMenuCurrent .Menu . }}
+            {{- $isActive = true }}
+        {{- else }}
+            {{- range $index, $project := $page.Params.projects }}
+                {{- with $project }}
+                    {{- $pageTerms := . }}
+                    {{- $menuTerm := $name | lower | singularize }}
+                    {{- if and $menuTerm (in $pageTerms $menuTerm) }}
+                        {{- $isActive = true }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+            {{- range $index, $resource := $page.Params.resources }}
+                {{- with $resource }}
+                    {{- $pageTerms := . }}
+                    {{- $menuTerm := $name | lower | singularize }}
+                    {{- if and $menuTerm (in $pageTerms $menuTerm) }}
+                        {{- $isActive = true }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+
+        {{- if .Children }}
+            {{- $childContext := dict "page" $page "menuEntries" .Children }}
+            {{- $childHTML := partial "inline/tab_menu/walk.html" $childContext }}
+            {{- if strings.Contains $childHTML "active" }}
+                {{- $childrenActive = true }}
+            {{- end }}
+        {{- end }}
+
+        {{- $finalActive := or $isActive $childrenActive }}
+        {{- if $finalActive }}
+            {{- $activeFound = true }}
             {{- $attrs = merge $attrs (dict "class" "component tab active" "aria-current" "page") }}
-        {{- else if $page.HasMenuCurrent .Menu .}}
-            {{- $attrs = merge $attrs (dict "class" "component tab active ancestor" "aria-current" "true") }}
         {{- else }}
             {{- $attrs = merge $attrs (dict "class" "component tab") }}
         {{- end }}
 
-        {{- $name := .Name }}
         {{- $icon := .Pre }}
 
         {{- with .Identifier }}
