@@ -46,12 +46,12 @@
     & .action-buttons {
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
       gap: var(--size-2);
       padding: var(--size-1);
 
       & .button {
         flex: 1 1 0;
-        min-width: fit-content;
       }
     }
 

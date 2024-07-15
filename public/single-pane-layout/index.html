@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.399317b4153aa6efa6df056c12cf2e18ad5ffc93881c915a22e2feb7de69f4fd.css" integrity="sha256-OZMXtBU6pu&#43;m3wVsEs8uGK1f/JOIHJFaIuL&#43;t95p9P0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.307cfd570d348a98d34c5e5de45123252e00490963a4c2173e59ee88f6f325db.css" integrity="sha256-MHz9Vw00ipjTTF5d5FEjJS4ASQljpMIXPlnuiPbzJds=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.a71d17fa43308ac082a9fcc52c7aabe7a4d9539adf740f80659c65184b3c032c.css" integrity="sha256-px0X&#43;kMwisCCqfzFLHqr56TZU5rfdA&#43;AZZxlGEs8Ayw=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/student-record-system\/";
+    window.location.href = "\/realtime-multiplayer-drawing\/";
   }
 </script>
 
@@ -873,7 +873,7 @@
         
         
         <div class="share-buttons">
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on twitter"
@@ -886,7 +886,7 @@
                 </i> 
             </a>
     
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on linkedin"
@@ -899,7 +899,7 @@
                 </i> 
             </a>
     
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on reddit"
@@ -912,7 +912,7 @@
                 </i> 
             </a>
     
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on facebook"
@@ -925,7 +925,7 @@
                 </i> 
             </a>
     
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on whatsapp"
@@ -938,7 +938,7 @@
                 </i> 
             </a>
     
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on telegram"
@@ -951,7 +951,7 @@
                 </i> 
             </a>
     
-            <a  class="component button fab surface-container-high" small
+            <a  class="component button icon-button"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share Single pane layout on ycombinator"
@@ -1168,49 +1168,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
