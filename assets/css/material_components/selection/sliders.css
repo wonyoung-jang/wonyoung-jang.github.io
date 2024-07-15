@@ -43,6 +43,8 @@
     background: transparent;
     cursor: grab;
     overflow: hidden;
+    background: transparent;
+    outline: none;
 
     &:active {
       cursor: grabbing;
@@ -52,6 +54,35 @@
         width: 2px;
       }
     }
+    
+    /* Inactive track */
+    &::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      width: 100%;
+      height: var(--size-4);
+      border-radius: var(--shape-corner-none);
+      background-color: var(--color-secondary-container);
+    }
+
+    /* Active track */
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+
+      border-radius: 0%;
+      padding: var(--size-3);
+      width: var(--size-1);
+      height: var(--size-11);
+      background-color: var(--color-primary);
+
+      box-shadow: 0px -22px 0px var(--size-1) inset var(--bg-color);
+    }
+
     /* Active track */
     &::-moz-range-progress {
       -webkit-appearance: none;
