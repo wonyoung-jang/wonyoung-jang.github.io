@@ -23,9 +23,9 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.dfb5f3dfc1393dd362a96d2c5aa043a6b1687c71ed61d795cecf7fee4fdfc7c9.css" integrity="sha256-37Xz38E5PdNiqW0sWqBDprFofHHtYdeVzs9/7k/fx8k=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.d85c6e1eba1ff2171fbf4d9309a02e4e1a5191ad17a4ba521cf23d57ce21d23f.css" integrity="sha256-2FxuHrof8hcfv02TCaAuThpRka0XpLpSHPI9V84h0j8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.8f655a9d645f92c2a12960ad1144e96f21bdff9f3cf4303a6f19047ef7d97c52.css" integrity="sha256-j2VanWRfksKhKWCtEUTpbyG9/5889DA6bxkEfvfZfFI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.96834a05e8eb6de84cd6270a3ca096704fa79921be6f1debe3483487ef684217.css" integrity="sha256-loNKBejrbehM1icKPKCWcE&#43;nmSG&#43;bx3r40g0h&#43;9oQhc=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/custom.min.8f1ce6a316cf3f35c0fe557884dd5483293af5542e810a980f92adaa22274ee5.css" integrity="sha256-jxzmoxbPPzXA/lV4hN1Ugyk69VQugQqYD5KtqiInTuU=" rel="preload stylesheet" as="style">
 
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/all-logseq-elements\/";
+    window.location.href = "\/pit-signs-for-robotics-competition\/";
   }
 </script>
 
@@ -1268,6 +1268,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

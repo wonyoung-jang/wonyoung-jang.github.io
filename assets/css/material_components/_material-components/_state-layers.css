@@ -2,16 +2,16 @@
   position: relative;
   border: var(--container-outline, initial);
   box-shadow: var(--container-elevation, initial);
-  
+ 
   & * {
     z-index: 2;
   }
-  
+ 
   &:hover {
     border: var(--container-outline-hover, initial);
     box-shadow: var(--container-elevation-hover, initial);
   }
-  
+ 
   &:focus,
   &:focus-within {
     border: var(--container-outline-focus, initial);
@@ -26,34 +26,48 @@
   &:not(.top-app-bar)::after {
     content: "";
     position: absolute;
+    border-radius: inherit;
+    inset: 0;
+    z-index: 1;
+    background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
+    background-position: center;
+    background-size: 0%;
+    opacity: 0;
     inline-size: 100%;
     block-size: 100%;
-    z-index: 1;
-    inset: 0;
-    opacity: 0;
-    border-radius: inherit;
-    background-position: center;
-    background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
-    background-size: 0%;
-    transition: none;
+    transition: none;  
   }
-
+  
   &:hover::after {
     opacity: var(--state-hover-opacity);
-    background-size: 50000%;
-    transition: background-size var(--motion-duration-long4) var(--motion-easing-emphasized);
+    animation: rippleHover var(--motion-duration-extra-long3) var(--motion-easing-emphasized) forwards;
   }
-
+  
   &:active::after {
     opacity: var(--state-press-opacity);
-    background-size: 0%;
-    transition: background-size var(--motion-duration-short2) var(--motion-easing-emphasized);
+    animation: ripplePress var(--motion-duration-extra-long4) var(--motion-easing-emphasized) forwards;
   }
-
-  &:focus::after,
+  
   &:focus-within::after {
     opacity: var(--state-focus-opacity);
     background-size: 50000%;
-    transition: background-size var(--motion-duration-medium4) var(--motion-easing-emphasized);
+  }
+}
+
+@keyframes rippleHover {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 50000%;
+  }
+}
+
+@keyframes ripplePress {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 50000%;
   }
 }
