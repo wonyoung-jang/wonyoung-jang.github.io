@@ -11,9 +11,9 @@
   --container-outline: initial;
   --container-elevation: var(--elevation3);
   --container-shape: var(--shape-corner-xs);
-  
+
   --bg-color: var(--color-inverse-surface);
-  
+
   --text-color: initial;
   --icon-color: initial;
 
@@ -31,45 +31,34 @@
     font-size: var(--typescale-body-medium-size);
     line-height: var(--typescale-body-medium-line-height);
     font-weight: var(--typescale-body-medium-weight);
-    font-family: var(--typescale-body-medium-font);  
+    font-family: var(--typescale-body-medium-font);
   }
 
   & .actions {
     display: flex;
     flex-flow: row nowrap;
     margin-left: auto;
-    gap: var(--size-3);
     font-size: var(--typescale-label-large-size);
     line-height: var(--typescale-label-large-line-height);
     font-weight: var(--typescale-label-large-weight);
-    font-family: var(--typescale-label-large-font);  
-    
+    font-family: var(--typescale-label-large-font);
+
     & * {
       color: var(--color-inverse-primary);
     }
 
     & .close-icon {
       font-size: var(--size-6);
+      width: var(--size-12);
+      height: var(--size-12);
       color: var(--color-inverse-on-surface);
     }
   }
 
-  &[two] {
-    --container-height: var(--size-17);
-  }
-
-  &[with-longer-action] {
-    --container-flex-flow: column nowrap;
-    --container-height: initial;
-    --container-padding: 0px;
-    --container-gap: 14px;
-  }
-
   &[with-action] {
-    --container-padding: 0px var(--size-2) 0px var(--size-4);
-    
-    &[with-longer-action] {
+    --container-padding: 0px 0px 0px var(--size-4);
 
+    &[with-longer-action] {
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
@@ -80,19 +69,58 @@
       }
     }
   }
-
+  
   &[with-close-button] {
-    --container-padding: 0px var(--size-3) 0px var(--size-4);
+    --container-padding: 0px 0px 0px var(--size-4);
 
     &[with-longer-action] {
-  
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
       }
-  
+
       & .actions {
-        padding: 0px 0px 4px var(--size-2);
+        padding: 0px 0px var(--size-1) var(--size-2);
+      }
+    }
+  }
+
+  &[two] {
+    --container-height: var(--size-17);
+
+    &[with-longer-action] {
+      --container-flex-flow: column nowrap;
+      --container-height: initial;
+      --container-gap: 14px;
+    }
+
+    &[with-action] {
+      --container-padding: 0px 0px 0px var(--size-4);
+
+      &[with-longer-action] {
+        & .supporting-text {
+          align-self: flex-start;
+          padding: 14px var(--size-1) 0px var(--size-1);
+        }
+
+        & .actions {
+          padding: 0px var(--size-2) 4px var(--size-2);
+        }
+      }
+    }
+
+    &[with-close-button] {
+      --container-padding: 0px 0px 0px var(--size-4);
+
+      &[with-longer-action] {
+        & .supporting-text {
+          align-self: flex-start;
+          padding: 14px var(--size-1) 0px var(--size-1);
+        }
+
+        & .actions {
+          padding: 0px 0px var(--size-1) var(--size-2);
+        }
       }
     }
   }

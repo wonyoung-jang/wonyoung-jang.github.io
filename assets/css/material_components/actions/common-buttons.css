@@ -1,10 +1,13 @@
 /* Common Buttons */
 .common-button {
+  --container-width: 100%;
   --container-padding: 0 var(--size-3);
   --container-gap: var(--size-2);
 
   --bg-color: none;
   --icon-color: var(--color-primary);
+
+  min-width: var(--size-10);
 
   &[with-icon] {
     padding-left: var(--size-3);
