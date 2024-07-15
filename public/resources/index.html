@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.8f655a9d645f92c2a12960ad1144e96f21bdff9f3cf4303a6f19047ef7d97c52.css" integrity="sha256-j2VanWRfksKhKWCtEUTpbyG9/5889DA6bxkEfvfZfFI=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.60f13d2e9729270f1a8948384c99630a8fd896594913d00602c8ccda28b2dbb7.css" integrity="sha256-YPE9LpcpJw8aiUg4TJljCo/YlllJE9AGAsjM2iiy27c=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.8f1ce6a316cf3f35c0fe557884dd5483293af5542e810a980f92adaa22274ee5.css" integrity="sha256-jxzmoxbPPzXA/lV4hN1Ugyk69VQugQqYD5KtqiInTuU=" rel="preload stylesheet" as="style">
 
 
 
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/split-pane-layout\/";
+    window.location.href = "\/disaster-recovery-robot-simulation\/";
   }
 </script>
 
@@ -910,49 +910,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
