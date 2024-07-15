@@ -4,17 +4,15 @@
   --container-justify-content: center;
   --container-align-items: center;
 
-  min-width: var(--size-10);
-
+  --container-width: var(--size-10);
   --container-height: var(--size-10);
   --container-shape: var(--shape-corner-xl);
   --container-padding: 0 var(--size-6);
-
-  transition: transform var(--motion-duration-short3),
-    border-radius var(--motion-duration-short3),
-    padding var(--motion-duration-short3);
+  
+  min-width: fit-content;
   user-select: none;
-  background-color: none;
+
+  --bg-color: none;
   
   font-size: var(--typescale-label-large-size);
   line-height: var(--typescale-label-large-line-height);
