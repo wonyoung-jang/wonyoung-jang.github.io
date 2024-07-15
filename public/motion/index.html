@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/core.min.399317b4153aa6efa6df056c12cf2e18ad5ffc93881c915a22e2feb7de69f4fd.css" integrity="sha256-OZMXtBU6pu&#43;m3wVsEs8uGK1f/JOIHJFaIuL&#43;t95p9P0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.68f7571875009df75a9466fa59f99d9203c3cf48f94b0bbd2b031e23a59240e9.css" integrity="sha256-aPdXGHUAnfdalGb6WfmdkgPDz0j5Swu9KwMeI6WSQOk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.5f17b0602b8a207748ce3b5b27fdfda2bb9b1d3299f3b1e95ef03e827eb4b00b.css" integrity="sha256-XxewYCuKIHdIzjtbJ/39orubHTKZ87HpXvA&#43;gn60sAs=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/dvd-rental-database\/";
+    window.location.href = "\/package-delivery-route-optimization\/";
   }
 </script>
 
@@ -533,7 +533,7 @@
                     </div>
             </div>
             <div class="sub-tabs-container">
-                <a class="component tab" href="/resources/">
+                <a aria-current="page" class="component tab active" href="/resources/">
                     <i>library_books</i>
                     <div class="label">
                         Resources
@@ -558,7 +558,7 @@
                     References
                 </div>
             </a>
-            <a class="component tab" href="/resources/tokens/">
+            <a aria-current="page" class="component tab active" href="/resources/tokens/">
                 <i>token</i>
                 <div class="label">
                     Tokens
@@ -641,57 +641,7 @@
                 
                 
     <style>
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 40px;
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            margin: 20px;
-            background-color: var(--color-add30-container);
-            transition: all 0.5s ease-in-out;
-        }
-        .box:hover.fade {
-            opacity: 0;
-        }
-        .box:hover.slide {
-            transform: translateX(200px);
-        }
-        .box:hover.scale {
-            transform: scale(1.5);
-        }
-        .clean-fade-in {
-            opacity: 1;
-            transition: opacity 0.5s ease-in;
 
-            &:hover {
-                opacity: 0;
-                transition: opacity 0.5s ease-out;
-            }
-        }
-        .hidden {
-            display: none;
-        }
-        .skeleton {
-            width: 100px;
-            height: 100px;
-            margin: 20px;
-            background-color: var(--color-surface-bright);
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% {
-                background-color: var(--color-surface-bright);
-            }
-            50% {
-                background-color: var(--color-surface-dim);
-            }
-            100% {
-                background-color: var(--color-surface-bright);
-            }
-        }
     </style>
     <article class="layout panes basic-single-pane">
         <section class="layout pane">
@@ -704,20 +654,182 @@
 
             
             <details class="layout token-set" open>
-                <summary class="token-set-title">Transitions</summary>
+                <summary class="token-set-title">Motions</summary>
+                
+                <div class="box-container" id="motions">           
+                    <div class="box-container">                    
+                        <span class="headline-small">Easing emphasized</span>
+                        <div class="box fade motion-easing-emphasized motion-duration-short1">
+                            <span>short1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-short2">
+                            <span>short2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-short3">
+                            <span>short3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-short4">
+                            <span>short4</span>
+                        </div>
 
-                <div class="container">
-                    <span>Fade Transition</span>
-                    <div class="box fade"></div>
-                    <span>Slide Transition</span>
-                    <div class="box slide"></div>
-                    <span>Scale Transition</span>
-                    <div class="box scale"></div>
-                    <span>Clean Fade</span>
-                    <div class="box clean-fade-in"></div>
-                    <span>Skeleton Loader</span>
-                    <div class="skeleton"></div>
+                        <div class="box fade motion-easing-emphasized motion-duration-medium1">
+                            <span>medium1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-medium2">
+                            <span>medium2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-medium3">
+                            <span>medium3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-medium4">
+                            <span>medium4</span>
+                        </div>
+
+                        <div class="box fade motion-easing-emphasized motion-duration-long1">
+                            <span>long1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-long2">
+                            <span>long2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-long3">
+                            <span>long3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-long4">
+                            <span>long4</span>
+                        </div>
+
+
+                        <div class="box fade motion-easing-emphasized motion-duration-extra-long1">
+                            <span>extra-long1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-extra-long2">
+                            <span>extra-long2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-extra-long3">
+                            <span>extra-long3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized motion-duration-extra-long4">
+                            <span>extra-long4</span>
+                        </div>
+                    </div>
+
+                    <div class="box-container">                    
+                        <span class="headline-small">Easing emphasized accelerate</span>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-short1">
+                            <span>short1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-short2">
+                            <span>short2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-short3">
+                            <span>short3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-short4">
+                            <span>short4</span>
+                        </div>
+
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-medium1">
+                            <span>medium1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-medium2">
+                            <span>medium2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-medium3">
+                            <span>medium3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-medium4">
+                            <span>medium4</span>
+                        </div>
+
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-long1">
+                            <span>long1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-long2">
+                            <span>long2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-long3">
+                            <span>long3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-long4">
+                            <span>long4</span>
+                        </div>
+
+
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-extra-long1">
+                            <span>extra-long1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-extra-long2">
+                            <span>extra-long2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-extra-long3">
+                            <span>extra-long3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-accelerate motion-duration-extra-long4">
+                            <span>extra-long4</span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="box-container">                    
+                        <span class="headline-small">Easing emphasized decelerate</span>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-short1">
+                            <span>short1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-short2">
+                            <span>short2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-short3">
+                            <span>short3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-short4">
+                            <span>short4</span>
+                        </div>
+
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-medium1">
+                            <span>medium1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-medium2">
+                            <span>medium2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-medium3">
+                            <span>medium3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-medium4">
+                            <span>medium4</span>
+                        </div>
+
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-long1">
+                            <span>long1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-long2">
+                            <span>long2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-long3">
+                            <span>long3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-long4">
+                            <span>long4</span>
+                        </div>
+
+
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-extra-long1">
+                            <span>extra-long1</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-extra-long2">
+                            <span>extra-long2</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-extra-long3">
+                            <span>extra-long3</span>
+                        </div>
+                        <div class="box fade motion-easing-emphasized-decelerate motion-duration-extra-long4">
+                            <span>extra-long4</span>
+                        </div>
+                    </div>
                 </div>
+
+                <span class="headline-small">Skeleton Loader</span>
+                <div class="box skeleton"></div>
+
             </details>
         </section>
     </article>
@@ -1234,6 +1346,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
