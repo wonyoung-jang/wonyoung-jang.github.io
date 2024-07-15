@@ -1,9 +1,6 @@
 blockquote {
   position: relative;
   display: block;
-  
-  
-
 
   margin-block: var(--size-3);
   padding: var(--spacing-panes);
@@ -17,18 +14,14 @@ blockquote {
   background-color: var(--color-surface-container-low,);
   
   color: var(--text-color,);
-  text-wrap: balance;
-  overflow: hidden;
-  word-wrap: break-word;
 
   &[class*="-container"] {
     outline: unset;
-    padding: 32px 64px 32px 96px;
+    padding: 32px 16px 32px 96px;
     background-color: var(--bg-color,);
   }
   
   & a {
-    display: inline;
     word-break: break-word;
   }
 
