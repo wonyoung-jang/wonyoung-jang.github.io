@@ -1,9 +1,23 @@
 #github-button {
-    margin-top: var(--size-7);
-    width: 100%;
-    
-    & .github-icon {
-        padding: var(--size-1) !important;
-        margin: 0 !important;
+  margin-top: var(--size-7);
+  width: 100%;
+
+  & .github-icon {
+    padding: var(--size-1) !important;
+    margin: 0 !important;
+  }
+}
+
+/* Compact: 0-599px */
+@media screen and (max-width: 599px) {
+  #github-button {
+    width: 0px;
+    padding: unset;
+    align-self: flex-end;
+    transition: width var(--motion-duration-long4) var(--motion-easing-emphasized);
+
+    & .repo-name {
+      display: none;
     }
+  }
 }
