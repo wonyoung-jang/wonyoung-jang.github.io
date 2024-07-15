@@ -1,7 +1,7 @@
 .text-field {
   --container-display: flex;
-  --container-flex-flow: column nowrap;
-  --container-justify-content: flex-start;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: initial;
   --container-align-items: center;
   --container-gap: var(--size-4);
   --container-height: var(--size-14);
@@ -9,6 +9,25 @@
   --container-padding: 0 var(--size-4);
   --container-outline: initial;
   --container-elevation: initial;
+
+  &[filled] {
+    --container-shape: var(--shape-corner-xs-top);
+    --bg-color: var(--color-surface-container-highest);
+    --text-color: var(--color-on-surface);
+    --icon-color: var(--color-on-surface);
+  }
+
+  &[outlined] {
+    --container-outline: 1px solid var(--color-outline);
+    --container-shape: var(--shape-corner-xs);
+    --bg-color: inherit;
+    --text-color: var(--color-on-surface-variant);
+    --icon-color: var(--color-on-surface-variant);
+
+    --container-outline-hover: 1px solid var(--color-on-surface);
+    --container-outline-focus: 2px solid var(--color-primary);
+    --container-outline-press: 2px solid var(--color-primary);
+  }
 
   & input[type="text"] {
     flex: 1 1 auto;
@@ -23,60 +42,52 @@
     }
   }
   
-  &[filled] {
-    --container-shape: var(--shape-corner-xs-top);
-    --bg-color: var(--color-surface-container-highest);
-    --text-color: var(--color-on-surface);
-    --icon-color: var(--color-on-surface);
-    
-    & .supporting-text {
-        flex: 1 0 0;
-
-        position: absolute;
-        bottom: calc(var(--size-5) * -1);
-
-        display: flex;
-        height: var(--size-5);
-        padding: var(--size-1) var(--size-4) 0px var(--size-4);
-        align-items: flex-start;
-        gap: 10px;
-
-        font-size: var(--typescale-body-small-size);
-        line-height: var(--typescale-body-small-line-height);
-        font-weight: var(--typescale-body-small-weight);
-        font-family: var(--typescale-body-small-font);      
-
-        color: var(--color-on-surface-variant);
-    }
-
-    & hr {
+  & .supporting-text {
       position: absolute;
       top: 100%;
-    }
+      left: 0;
+      display: flex;
+      height: var(--size-5);
+      padding: var(--size-1) var(--size-4) 0px var(--size-4);
+      align-items: flex-start;
+      gap: 10px;
+
+      font-size: var(--typescale-body-small-size);
+      line-height: var(--typescale-body-small-line-height);
+      font-weight: var(--typescale-body-small-weight);
+      font-family: var(--typescale-body-small-font);      
+
+      color: var(--color-on-surface-variant);
   }
 
-  &[outlined] {
-    --container-outline: 1px solid var(--color-outline);
-    --container-shape: var(--shape-corner-xs);
-    --bg-color: inherit;
-    --text-color: var(--color-on-surface-variant);
-    --icon-color: var(--color-on-surface-variant);
-
-    --container-outline-hover: 1px solid var(--color-on-surface);
-    --container-outline-focus: 2px solid var(--color-primary);
-    --container-outline-press: 2px solid var(--color-primary);
+  & hr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-}
-
-.text-field {
+  
   & * {
     width: 100%;
   }
 
-  &:is(textarea) {
+  &:has(textarea) {
     padding: var(--size-4);
     color: var(--color-on-surface);
     resize: vertical;
     height: var(--size-42);
+  }
+
+  &:has(.prefix) {
+    --container-flex-flow: column nowrap;
+    --container-justify-content: flex-start;
+    --container-align-items: flex-start;
+  }
+
+  &:has(.suffix) {
+    --container-align-items: center;
+  }
+
+  & .icon-button:last-child {
+    margin-left: auto;
   }
 }

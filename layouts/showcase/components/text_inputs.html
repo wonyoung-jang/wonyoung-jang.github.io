@@ -11,33 +11,154 @@
     {{/*  Text fields  */}}
     <div class="component-group-header">Text fields</div>
     <div class="component-group">
-      {{/*  TODO Text field configurations (many)  */}}
+      {{/*  Text field configurations  */}}
 
+      {{/*  Filled  */}}
       <div class="sub-component-group-header">Filled</div>
       
       <div class="component text-field" filled>
-        <input type="text" placeholder="Placeholder">
+        <input 
+          type="text" 
+          placeholder="Placeholder - supporting text">
         
         <hr>
 
         <div class="supporting-text">Supporting text</div>
       </div>
+      
+      <div class="component text-field" filled>
+        <input 
+          type="text" 
+          placeholder="Placeholder - trailing icon">
+        <div class="component button icon-button">
+          <i>cancel</i>
+        </div>
+      </div>
+      
+      <div class="component text-field" filled>
+        <div class="component button icon-button">
+          <i>search</i>
+        </div>
+        <input 
+          type="text" 
+          placeholder="Placeholder - leading icon">
+      </div>
+      
+      <div class="component text-field" filled>
+        <div class="component button icon-button">
+          <i>search</i>
+        </div>
+        <input 
+          type="text" 
+          placeholder="Placeholder - both icons">
+        <div class="component button icon-button">
+          <i>cancel</i>
+        </div>
+      </div>
+       
+      <div class="component text-field" filled>
+        <div class="prefix">
+          Prefix
+        </div>
+        <input 
+          type="text" 
+          placeholder="Placeholder - prefix">
+      </div>
+       
+      <div class="component text-field" filled>
+        <input 
+          type="text" 
+          placeholder="Placeholder - suffix">
+        <div class="suffix">
+          Suffix
+        </div>
+      </div>
+       
+      <div class="component text-field" filled>
+        <input 
+          type="text" 
+          placeholder="Placeholder">
+      </div>
+      
+      {{/*  multiline  */}}
+      <div class="component text-field" filled>
+        <textarea 
+          type="text" 
+          placeholder="Placeholder - multiline"></textarea>
+      </div>
 
-      <textarea 
-        class="component text-field" filled 
-        type="text" 
-        placeholder="Placeholder - multiline"></textarea>
 
+      {{/*  Outlined  */}}
       <div class="sub-component-group-header">Outlined</div>
       
       <div class="component text-field" outlined>
-        <input type="text" placeholder="Placeholder">
+        <input 
+          type="text" 
+          placeholder="Placeholder - supporting text">
+          
+        <div class="supporting-text">Supporting text</div>
       </div>
       
-      <textarea 
-        class="component text-field" outlined 
-        type="text" 
-        placeholder="Placeholder - multiline"></textarea>
+      <div class="component text-field" outlined>
+        <input 
+          type="text" 
+          placeholder="Placeholder - trailing icon">
+        <div class="component button icon-button">
+          <i>cancel</i>
+        </div>
+      </div>
+      
+      <div class="component text-field" outlined>
+        <div class="component button icon-button">
+          <i>search</i>
+        </div>
+        <input 
+          type="text" 
+          placeholder="Placeholder - leading icon">
+      </div>
+      
+      <div class="component text-field" outlined>
+        <div class="component button icon-button">
+          <i>search</i>
+        </div>
+        <input 
+          type="text" 
+          placeholder="Placeholder - both icons">
+        <div class="component button icon-button">
+          <i>cancel</i>
+        </div>
+      </div>
+       
+      <div class="component text-field" outlined>
+        <div class="prefix">
+          Prefix
+        </div>
+        <input 
+          type="text" 
+          placeholder="Placeholder - prefix">
+      </div>
+       
+      <div class="component text-field" outlined>
+        <input 
+          type="text" 
+          placeholder="Placeholder - suffix">
+        <div class="suffix">
+          Suffix
+        </div>
+      </div>
+       
+      <div class="component text-field" outlined>
+        <input 
+          type="text" 
+          placeholder="Placeholder">
+      </div>
+      
+      {{/*  multiline  */}}
+      <div class="component text-field" outlined>
+        <textarea 
+          type="text" 
+          placeholder="Placeholder - multiline"></textarea>
+      </div>
     </div>
 
   </section>
