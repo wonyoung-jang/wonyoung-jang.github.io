@@ -1,6 +1,6 @@
 .component {
   position: relative;
-  outline: var(--container-outline, initial);
+  border: var(--container-outline, initial);
   box-shadow: var(--container-elevation, initial);
   
   & * {
@@ -8,18 +8,18 @@
   }
   
   &:hover {
-    outline: var(--container-outline-hover, initial);
+    border: var(--container-outline-hover, initial);
     box-shadow: var(--container-elevation-hover, initial);
   }
   
   &:focus,
   &:focus-within {
-    outline: var(--container-outline-focus, initial);
+    border: var(--container-outline-focus, initial);
     box-shadow: var(--container-elevation-focus, initial);
   }
 
   &:active {
-    outline: var(--container-outline-press, initial);
+    border: var(--container-outline-press, initial);
     box-shadow: var(--container-elevation-press, initial);
   }
 

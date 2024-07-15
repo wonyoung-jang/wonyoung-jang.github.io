@@ -39,7 +39,7 @@
   width:            var(--container-width, initial);
   padding:          var(--container-padding, initial);
 
-  outline:          var(--container-outline, initial);
+  border:           var(--container-outline, initial);
   border-radius:    var(--container-shape, initial);
   box-shadow:       var(--container-elevation, initial);
 
