@@ -1,4 +1,8 @@
-#github-button .github-icon {
-    padding: var(--size-1) !important;
-    margin: 0 !important;
+#github-button {
+    margin-top: var(--size-7);
+    
+    & .github-icon {
+        padding: var(--size-1) !important;
+        margin: 0 !important;
+    }
 }
