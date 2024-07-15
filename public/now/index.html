@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.1895358ecc2ec07a56e4e4f4028d186ee5996a35c2e6fe1e0fb48219d28fb32b.css" integrity="sha256-GJU1jswuwHpW5OT0Ao0YbuWZajXC5v4eD7SCGdKPsys=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.5b746f9cdb59ce279fda2c71695ed9b4acb2d5bcb4daac28845afc68ca53a4f6.css" integrity="sha256-W3RvnNtZzief2ixxaV7ZtKyy1by02qwohFr8aMpTpPY=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/core.min.399317b4153aa6efa6df056c12cf2e18ad5ffc93881c915a22e2feb7de69f4fd.css" integrity="sha256-OZMXtBU6pu&#43;m3wVsEs8uGK1f/JOIHJFaIuL&#43;t95p9P0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.21b51dbe0e856620c767403f71d8cf44052a27098a08c4de157783642c5fad58.css" integrity="sha256-IbUdvg6FZiDHZ0A/cdjPRAUqJwmKCMTeFXeDZCxfrVg=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.e7599d96774f983aae5313c2eab387c6e0684867bd3a23b119d69ed2f8238b11.css" integrity="sha256-51mdlndPmDquUxPC6rOHxuBoSGe9OiOxGdae0vgjixE=" rel="preload stylesheet" as="style">
 
 
 
@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/save-top-level-reddit-comments\/";
+    window.location.href = "\/split-pane-layout\/";
   }
 </script>
 
@@ -582,6 +582,8 @@
 
 
      
+
+
 
 
 
@@ -1094,14 +1096,11 @@
     <i>vertical_align_top</i> 
 </a>
 
-<script async>
+<script defer>
     var mybutton = document.getElementById("top-link");
     var scrollWrapper = document.querySelector("main");
     function handleScroll() {
-        if (scrollWrapper.scrollTop > 1000) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else if (window.pageYOffset > 1000) {
+        if (scrollWrapper.scrollTop > 360) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
         } else {
@@ -1253,6 +1252,8 @@
 
 
 
+
+
     <script defer>
         document.getElementById("theme-toggle").addEventListener("click", () => {
             if (document.body.className.includes("dark")) {
@@ -1267,6 +1268,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

@@ -7,14 +7,11 @@
     <i>vertical_align_top</i> 
 </a>
 
-<script async>
+<script defer>
     var mybutton = document.getElementById("top-link");
     var scrollWrapper = document.querySelector("main");
     function handleScroll() {
-        if (scrollWrapper.scrollTop > 1000) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else if (window.pageYOffset > 1000) {
+        if (scrollWrapper.scrollTop > 360) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
         } else {

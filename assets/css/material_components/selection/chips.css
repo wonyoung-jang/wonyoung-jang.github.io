@@ -1,3 +1,15 @@
+.chips-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--size-2);
+  padding: 0 var(--size-4);
+  width: 100%;
+  height: var(--size-12);
+  overflow-x: auto;
+}
+
 .chip {
   cursor: pointer;
 
@@ -59,10 +71,6 @@
     margin: 0;
   }
   
-  & input {
-    display: none;
-  }
-
   &[outlined] {
     --container-outline: 1px solid var(--color-outline);
   }
@@ -72,21 +80,13 @@
 
     --container-elevation: var(--elevation1);
   }
+  
+  & input {
+    display: none;
+  }
 
   &:has(input[type="checkbox"]:checked) {
     background-color: var(--color-secondary-container);
     color: var(--color-on-secondary-container);
   }
-}
-
-.chips-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: var(--size-2);
-  padding: 0 var(--size-4);
-  width: 100%;
-  height: var(--size-12);
-  overflow-x: auto;
 }
