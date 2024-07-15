@@ -1,6 +1,5 @@
 /* Common Buttons */
 .common-button {
-  --container-width: fit-content;
   --container-padding: 0 var(--size-3);
   --container-gap: var(--size-2);
 

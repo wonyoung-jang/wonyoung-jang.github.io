@@ -6,22 +6,6 @@
   & * {
     z-index: 2;
   }
- 
-  &:hover {
-    border: var(--container-outline-hover, initial);
-    box-shadow: var(--container-elevation-hover, initial);
-  }
- 
-  &:focus,
-  &:focus-within {
-    border: var(--container-outline-focus, initial);
-    box-shadow: var(--container-elevation-focus, initial);
-  }
-
-  &:active {
-    border: var(--container-outline-press, initial);
-    box-shadow: var(--container-elevation-press, initial);
-  }
 
   &:not(.top-app-bar)::after {
     content: "";
@@ -31,43 +15,71 @@
     z-index: 1;
     background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
     background-position: center;
-    background-size: 0%;
+    background-size: 50000%;
     opacity: 0;
     inline-size: 100%;
     block-size: 100%;
     transition: none;  
   }
-  
-  &:hover::after {
-    opacity: var(--state-hover-opacity);
-    animation: rippleHover var(--motion-duration-extra-long3) var(--motion-easing-emphasized) forwards;
+ 
+  &:hover {
+    border: var(--container-outline-hover, initial);
+    box-shadow: var(--container-elevation-hover, initial);
+
+    &::after {
+      opacity: var(--state-hover-opacity);
+      animation: 
+        rippleHover var(--motion-duration-long1) var(--motion-easing-emphasized) both, 
+    }
   }
-  
-  &:active::after {
-    opacity: var(--state-press-opacity);
-    animation: ripplePress var(--motion-duration-extra-long4) var(--motion-easing-emphasized) forwards;
+ 
+  &:focus {
+    border: var(--container-outline-focus, initial);
+    box-shadow: var(--container-elevation-focus, initial);
+    
+    &::after {
+      opacity: var(--state-focus-opacity);
+      background-size: 50000%;
+    }
   }
-  
-  &:focus-within::after {
-    opacity: var(--state-focus-opacity);
-    background-size: 50000%;
+
+  &:active {
+    border: var(--container-outline-press, initial);
+    box-shadow: var(--container-elevation-press, initial);
+
+    &::after {
+      opacity: var(--state-press-opacity);
+      animation: ripplePress var(--motion-duration-extra-long1) var(--motion-easing-emphasized) both;
+      animation: 
+        ripplePress var(--motion-duration-long1) var(--motion-easing-emphasized) both, 
+        ripplePressFade var(--motion-duration-extra-long1) var(--motion-easing-emphasized) both;
+    }
   }
 }
 
 @keyframes rippleHover {
-  0% {
-    background-size: 0%;
-  }
-  100% {
+  from {
     background-size: 50000%;
+  }
+  to {
+    background-size: 0%;
   }
 }
 
 @keyframes ripplePress {
-  0% {
+  from {
+    background-size: 50000%;
+  }
+  to {
     background-size: 0%;
   }
-  100% {
+}
+
+@keyframes ripplePressFade {
+  from {
+    background-size: 0%;
+  }
+  to {
     background-size: 50000%;
   }
 }
