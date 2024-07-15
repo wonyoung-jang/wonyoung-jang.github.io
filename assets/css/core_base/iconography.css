@@ -40,22 +40,3 @@ i {
 
   line-height: normal;
 }
-
-img,
-svg,
-video {
-  max-width: 100%;
-  max-height: 100%;
-
-  border-radius: var(--shape-corner-s);
-  
-  object-fit: cover; 
-  object-position: center;
-  transition: transform var(--motion-duration-short3),
-    border-radius var(--motion-duration-short3),
-    padding var(--motion-duration-short3);
-}
-
-svg {
-  fill: currentColor;
-}

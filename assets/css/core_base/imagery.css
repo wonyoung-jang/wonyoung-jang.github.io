@@ -1,0 +1,28 @@
+img,
+svg,
+video {
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+  
+  border-radius: var(--shape-corner-s);
+
+  object-fit: cover;
+  object-position: center;
+  transition-duration: var(--motion-duration-short3);
+  transition-property: transform, border-radius, padding;
+}
+
+#single {
+  & img, 
+  & svg, 
+  & video {
+    object-fit: contain;
+    margin: var(--size-5) auto;
+  }
+}
+
+svg {
+  fill: currentColor;
+}
