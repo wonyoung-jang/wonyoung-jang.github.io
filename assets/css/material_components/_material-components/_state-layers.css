@@ -15,7 +15,6 @@
     z-index: 1;
     background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
     background-position: center;
-    background-size: 50000%;
     opacity: 0;
     inline-size: 100%;
     block-size: 100%;
@@ -28,8 +27,8 @@
 
     &::after {
       opacity: var(--state-hover-opacity);
-      animation: 
-        rippleHover var(--motion-duration-long1) var(--motion-easing-emphasized) both, 
+      background-size: 50000%;
+      animation: rippleHover var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both;
     }
   }
  
@@ -49,20 +48,20 @@
 
     &::after {
       opacity: var(--state-press-opacity);
-      animation: ripplePress var(--motion-duration-extra-long1) var(--motion-easing-emphasized) both;
+      background-size: 50000%;
       animation: 
-        ripplePress var(--motion-duration-long1) var(--motion-easing-emphasized) both, 
-        ripplePressFade var(--motion-duration-extra-long1) var(--motion-easing-emphasized) both;
+        ripplePress var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both, 
+        ripplePressFade var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both;
     }
   }
 }
 
 @keyframes rippleHover {
   from {
-    background-size: 50000%;
+    background-size: 0%;
   }
   to {
-    background-size: 0%;
+    background-size: 50000%;
   }
 }
 

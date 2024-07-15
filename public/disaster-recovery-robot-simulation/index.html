@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.c1260056f4f80a94fef3286c2971306a6abc2660176d14b0d7e32a85e961d89d.css" integrity="sha256-wSYAVvT4CpT&#43;8yhsKXEwamq8JmAXbRSw1&#43;Mqhelh2J0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.0cb190dd23e9f4e2a7f33bd832c89b4e679e8088718345ba72d37103b686616c.css" integrity="sha256-DLGQ3SPp9OKn8zvYMsibTmeegIhxg0W6ctNxA7aGYWw=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.d09cd90e9863653a4bd35564bdef2d926b83d00721c830c083430a312a588f9c.css" integrity="sha256-0JzZDphjZTpL01Vkve8tkmuD0AchyDDAg0MKMSpYj5w=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.9f4f5c57e5e593e4792b9c3952ec2dbb5dac07246099a79f8ed213d3a1947b7d.css" integrity="sha256-n09cV&#43;Xlk&#43;R5K5w5Uuwtu12sByRgmaefjtIT06GUe30=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.8f1ce6a316cf3f35c0fe557884dd5483293af5542e810a980f92adaa22274ee5.css" integrity="sha256-jxzmoxbPPzXA/lV4hN1Ugyk69VQugQqYD5KtqiInTuU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.07be1f8673c739bcfe2a51cc429bf99cd7223d50cd894e729d9b8bcbd01de06c.css" integrity="sha256-B74fhnPHObz&#43;KlHMQpv5nNciPVDNiU5ynZuLy9Ad4Gw=" rel="preload stylesheet" as="style">
 
 
 
@@ -144,7 +144,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/colors\/";
+    window.location.href = "\/list-of-keyboard-shortcuts-for-wonyoungjang.org\/";
   }
 </script>
 
@@ -1252,49 +1252,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
