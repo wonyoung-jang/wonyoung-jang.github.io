@@ -6,8 +6,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 999999;
-
+  
   & .top-app-bar {
+    padding-inline: var(--size-3) var(--size-4);
     z-index: 3;
   }
 }

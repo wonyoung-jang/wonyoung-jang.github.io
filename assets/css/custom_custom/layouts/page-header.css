@@ -6,7 +6,6 @@
   --justify-content: initial;
   --height: max-content;
   --padding: var(--size-13) var(--size-8);
-  --margin: var(--size-2);
   --gap: var(--size-7);
   
   --shape: var(--shape-corner-xl-bottom);
