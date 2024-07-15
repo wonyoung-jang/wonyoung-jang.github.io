@@ -25,9 +25,9 @@
     padding: calc(var(--spacing-panes));
     gap: var(--size-2);
   
-    --container-shape: var(--shape-corner-xl);
-    --bg-color: var(--color-surface-container-lowest);
-    --icon-color: var(--color-on-surface);
+    --container-shape: var(--shape-corner-s);
+    --bg-color: var(--color-on-secondary-fixed);
+    --icon-color: var(--color-secondary-fixed);
 
     & i {
       font-size: 18px;
@@ -40,7 +40,7 @@
       justify-content: flex-start;
       
       & * {
-        color: var(--color-on-secondary-container);
+        color: var(--color-secondary-fixed-dim);
       }
     }
     
