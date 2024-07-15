@@ -4,8 +4,10 @@
   }
 }
 
-.pane#components-showcase {
-  --padding: 0px;
+#components-showcase {
+  & .pane {
+    --padding: 0px;
+  }
 }
 
 & .component-group-header {

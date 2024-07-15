@@ -17,3 +17,9 @@ select {
   font: inherit;
   background-color: transparent;
 }
+
+ul,
+ol,
+li {
+  list-style: none;
+}
