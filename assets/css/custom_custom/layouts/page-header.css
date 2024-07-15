@@ -1,19 +1,21 @@
-.page-header {
+.layout.page-header {
   --display: flex;
   --flex-flow: column nowrap;
-  --justify-content: space-between;
+  --align-items: stretch;
+  --align-content: initial;
+  --justify-content: initial;
   --height: max-content;
-  --border: inherit;
-  --padding: var(--size-14) var(--size-10);
-  --margin: var(--size-7);
-  --gap: var(--size-5);
-  border-radius: var(--shape-corner-m);
+  --padding: var(--size-13) var(--size-8);
+  --margin: var(--size-2);
+  --gap: var(--size-7);
+  
+  --shape: var(--shape-corner-xl-bottom);
+  --border: initial;
 
-  background-color: var(--color-surface-container-low);
+  --bg: var(--color-surface-container-low);
   
   & .title,
   & .description {
-    display: inline;
     word-wrap: break-word;
     white-space: normal;
   }
