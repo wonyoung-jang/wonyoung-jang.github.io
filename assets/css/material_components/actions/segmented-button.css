@@ -4,12 +4,6 @@
   --container-align-items: center;
   --container-padding: 0;
   
-  --container-elevation-hover: initial;
-  
-  --container-elevation-focus: initial;
-  
-  --container-elevation-press: initial;
-  
   & .button {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);

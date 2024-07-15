@@ -1,5 +1,6 @@
 #github-button {
     margin-top: var(--size-7);
+    width: 100%;
     
     & .github-icon {
         padding: var(--size-1) !important;

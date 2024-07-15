@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.e75cdbef4351e0fb8d3a33a24ca2a01315a09f90770321722db06799d730ebe1.css" integrity="sha256-51zb70NR4PuNOjOiTKKgExWgn5B3AyFyLbBnmdcw6&#43;E=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.dfb5f3dfc1393dd362a96d2c5aa043a6b1687c71ed61d795cecf7fee4fdfc7c9.css" integrity="sha256-37Xz38E5PdNiqW0sWqBDprFofHHtYdeVzs9/7k/fx8k=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/core.min.399317b4153aa6efa6df056c12cf2e18ad5ffc93881c915a22e2feb7de69f4fd.css" integrity="sha256-OZMXtBU6pu&#43;m3wVsEs8uGK1f/JOIHJFaIuL&#43;t95p9P0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.68f7571875009df75a9466fa59f99d9203c3cf48f94b0bbd2b031e23a59240e9.css" integrity="sha256-aPdXGHUAnfdalGb6WfmdkgPDz0j5Swu9KwMeI6WSQOk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.b824a539185fd2c2a9d15b8f7aa22e1ec8b921c299008a20b3e130aa8bb86bb9.css" integrity="sha256-uCSlORhf0sKp0VuPeqIuHsi5IcKZAIogs&#43;Ewqou4a7k=" rel="preload stylesheet" as="style">
 
 
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/colors\/";
+    window.location.href = "\/single-pane-layout\/";
   }
 </script>
 
@@ -533,7 +533,7 @@
                     </div>
             </div>
             <div class="sub-tabs-container">
-                <a class="component tab" href="/resources/">
+                <a aria-current="page" class="component tab active" href="/resources/">
                     <i>library_books</i>
                     <div class="label">
                         Resources
@@ -558,7 +558,7 @@
                     References
                 </div>
             </a>
-            <a class="component tab" href="/resources/tokens/">
+            <a aria-current="page" class="component tab active" href="/resources/tokens/">
                 <i>token</i>
                 <div class="label">
                     Tokens
@@ -3607,6 +3607,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

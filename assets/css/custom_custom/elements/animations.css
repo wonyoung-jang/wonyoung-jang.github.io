@@ -15,6 +15,12 @@ footer,
     padding;
 }
 
+:root,
+body,
+.layout {
+  transition: background-color var(--motion-duration-medium2) var(--motion-easing-emphasized);
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion) {
   :root {
