@@ -61,6 +61,20 @@
     border-radius: var(--shape-corner-full);
   }
 
+  & .image {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--shape-corner-none);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+
+  & .video {
+    width: 114px;
+    height: 64px;
+    border-radius: var(--shape-corner-none);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+
   & .content {
     flex: 1 0 0;
     display: flex;
@@ -89,15 +103,38 @@
   
   &[one] {
     --container-height: 56px;
+    min-height: 56px;
+
+    &:has(.image) {
+      --container-padding: var(--size-3) var(--size-4);
+      min-height: 72px;
+    }
+
+    &:has(.video) {
+      --container-padding: var(--size-3) var(--size-4);
+      min-height: 88px;
+    }
   }
   
   &[two] {
     --container-height: 72px;
+    min-height: 72px;
+
+    &:has(.image) {
+      --container-padding: var(--size-3) var(--size-4);
+      min-height: 72px;
+    }
+
+    &:has(.video) {
+      --container-padding: var(--size-3) var(--size-4);
+      min-height: 88px;
+    }
   }
   
   &[three] {
     --container-padding: var(--size-3) var(--size-4);
     --container-height: 88px;
+    min-height: 88px;
 
     & i,
     & .checkbox,
