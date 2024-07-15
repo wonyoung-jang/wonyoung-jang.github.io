@@ -5,12 +5,25 @@
 
   --bg-color: none;
   --icon-color: var(--color-primary);
-  
+
+  &[with-icon] {
+    padding-left: var(--size-3);
+    padding-right: var(--size-4);
+  }
+
+  & i {
+    font-size: 18px;
+  }
+
   &[filled],
   &[filled-tonal],
   &[elevated],
   &[outlined] {
-    padding: 0 24px;
+    --container-padding: 0 var(--size-6);
+
+    &[with-icon] {
+      padding-left: var(--size-4);
+    }
   }
   
   &[filled] {
@@ -35,14 +48,6 @@
   &[filled-tonal] {
     --bg-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
-  }
-  
-  & i {
-    font-size: 18px;
-  }
-
-  &[with-icon] {
-    padding-left: var(--size-4);
   }
 }
 
