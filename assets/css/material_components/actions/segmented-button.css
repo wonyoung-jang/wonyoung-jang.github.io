@@ -3,6 +3,8 @@
   --container-flex-flow: row nowrap;
   --container-align-items: center;
   --container-padding: 0;
+
+  overflow-x: auto;
   
   & .button {
     --bg-color: var(--color-surface);
@@ -16,6 +18,7 @@
     --container-outline-press: 1px solid var(--color-outline);
     border-inline-end: 0px;
     cursor: pointer;
+    min-width: fit-content;
 
     &:first-of-type {
       --container-shape: var(--shape-corner-xl-start);
