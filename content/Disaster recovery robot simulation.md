@@ -22,16 +22,16 @@ lastMod: 2024-07-07
 
 ## Requirements
 
-  + Familiarize with [CoppeliaSim](https://www.coppeliarobotics.com/) robotics virtual environment and tools
+Familiarize with [CoppeliaSim](https://www.coppeliarobotics.com/) robotics virtual environment and tools
 
-  + Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment
+Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment
 
-  + Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task
+Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task
 
-  + Justify the choice of sensors and modifications made to the robot's architecture, explaining how they contribute to the disaster recovery effort
+Justify the choice of sensors and modifications made to the robot's architecture, explaining how they contribute to the disaster recovery effort
 
-  + Describe how the robot maintains an internal representation of the environment for decision-making
+Describe how the robot maintains an internal representation of the environment for decision-making
 
-  + Explain the robot's implementation of reasoning, knowledge representation, uncertainty, and intelligence in achieving its goal
+Explain the robot's implementation of reasoning, knowledge representation, uncertainty, and intelligence in achieving its goal
 
-  + Discuss potential improvements for the prototype, including the application of reinforced learning and advanced search algorithms
+Discuss potential improvements for the prototype, including the application of reinforced learning and advanced search algorithms

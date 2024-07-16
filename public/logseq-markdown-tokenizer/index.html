@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.129feec5625a44f897eefdf5c769c52bd3ba126773230b5b49250159c7378f42.css" integrity="sha256-Ep/uxWJaRPiX7v31x2nFK9O6EmdzIwtbSSUBWcc3j0I=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.5e34e0ee8ccd53ae67ee091fdfcf69dac7440184c21c0851f7f70fc0cd371e57.css" integrity="sha256-XjTg7ozNU65n7gkf389p2sdEAYTCHAhR9/cPwM03Hlc=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/core.min.d73fb805e0818bf36e1edbfd0b0df952cc1dfc8616d2b34a1bf25eea76483d34.css" integrity="sha256-1z&#43;4BeCBi/NuHtv9Cw35Uswd/IYW0rNKG/Je6nZIPTQ=" rel="preload stylesheet" as="style">
 
@@ -144,7 +144,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/split-pane-layout\/";
+    window.location.href = "\/disaster-recovery-robot-simulation\/";
   }
 </script>
 
@@ -707,18 +707,10 @@
     </span>
   </a>
 </h2>
-<ul>
-<li>
 <p><a href="https://logseq.com/"target="_blank"
         rel="external noopener noreferrer me">Logseq</a> does not have a native way to view the character count of your notes (aka pages)</p>
-</li>
-<li>
 <p>Logseq&rsquo;s performance is a balance between the number of pages and the size of each page</p>
-</li>
-<li>
 <p>Logseq&rsquo;s graph is difficult to search and prune manually</p>
-</li>
-</ul>
 <h2 id="possible-solution">
   Possible solution
   <a 
@@ -744,27 +736,13 @@
     </span>
   </a>
 </h2>
-<ul>
-<li>
 <p>If I want to enable semantic search, then I must embed my graph</p>
-</li>
-<li>
 <p>If I don&rsquo;t know the size of my graph or its pages, then there exists a chance that embedding my graph could be very costly</p>
-</li>
-<li>
 <p>If I want to tokenize all the pages in my graph, then I need to iterate through the text of each page</p>
-</li>
-<li>
 <p>If I have to do that anyways, then I may as well count the characters along the way</p>
-</li>
-<li>
 <p>If I do both, then I also increment a total counter to get a total count of characters and tokens for my graph</p>
-</li>
-<li>
 <p>If have the token counts, I can estimate the cost of embedding for <a href="https://platform.openai.com/docs/guides/embeddings/"target="_blank"
         rel="external noopener noreferrer me">OpenAI&rsquo;s text-embedding models</a></p>
-</li>
-</ul>
 <h2 id="outputting-the-data-as-a-csv-file">
   Outputting the data as a csv file
   <a 

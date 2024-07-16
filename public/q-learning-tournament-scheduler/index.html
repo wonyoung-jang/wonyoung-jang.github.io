@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.129feec5625a44f897eefdf5c769c52bd3ba126773230b5b49250159c7378f42.css" integrity="sha256-Ep/uxWJaRPiX7v31x2nFK9O6EmdzIwtbSSUBWcc3j0I=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.5e34e0ee8ccd53ae67ee091fdfcf69dac7440184c21c0851f7f70fc0cd371e57.css" integrity="sha256-XjTg7ozNU65n7gkf389p2sdEAYTCHAhR9/cPwM03Hlc=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/core.min.d73fb805e0818bf36e1edbfd0b0df952cc1dfc8616d2b34a1bf25eea76483d34.css" integrity="sha256-1z&#43;4BeCBi/NuHtv9Cw35Uswd/IYW0rNKG/Je6nZIPTQ=" rel="preload stylesheet" as="style">
 
@@ -144,7 +144,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/package-delivery-route-optimization\/";
+    window.location.href = "\/food-shop-database-management\/";
   }
 </script>
 
@@ -758,17 +758,9 @@
 </h3>
 <p>Since this was not a necessary project for my job, I started to work on the problem in my free time.</p>
 <p>I first tried to model how to think about the problem in the first place. I came up with 3 mental models:</p>
-<ul>
-<li>
 <p>As a Sudoku puzzle (DFS).</p>
-</li>
-<li>
 <p>As a constraint satisfaction problem (CSP Solvers).</p>
-</li>
-<li>
 <p>As a pathfinding optimization problem (BFS, Djikstra&rsquo;s, and A*).</p>
-</li>
-</ul>
 <p>While I made some progress pursuing each I did not find a fully satisfactory solution.</p>
 <h3 id="getting-my-bscs">
   Getting my BSCS
@@ -849,17 +841,9 @@
   </a>
 </h3>
 <p>The hard constraints of a schedule are those imposed by the laws of physics and by the logical rules we usually assume without stating explicitly. There are three main hard constraints:</p>
-<ul>
-<li>
 <p><strong>Non-Overlapping Schedule Constraint:</strong> Since teams cannot be in two place at once, a team cannot be scheduled for a time slot if the duration and time of that time slot overlaps with one the team is already scheduled for.</p>
-</li>
-<li>
 <p><strong>Simultaneous Match Constraint:</strong> A team cannot be scheduled for a round without another team scheduled at the same time on the opposite side of the table.</p>
-</li>
-<li>
 <p><strong>Equal Scheduling Constraint:</strong> Every team must be scheduled an equal number of times.</p>
-</li>
-</ul>
 <h3 id="soft-constraints">
   Soft constraints
   <a 
@@ -873,20 +857,10 @@
   </a>
 </h3>
 <p>The soft constraints of a schedule are those that maximize fairness. They are not a necessary condition to run a tournament, but aiming for them while scheduling can create a more fair experience for all teams. In the current iteration, there are four soft constraints:</p>
-<ul>
-<li>
 <p><strong>Table Consistency:</strong> Since this competition is about autonomous robots depending on it&rsquo;s environment, tiny inconsistencies between competition tables and even their sides can create a large difference. So I reward the model when a team has less variety in it&rsquo;s scheduled table sides.</p>
-</li>
-<li>
 <p><strong>Opponent Variety:</strong> Playing with the same opposite team for all rounds is not as fun as playing with a different one each round. The model is rewarded when a team has more variety amongst it&rsquo;s scheduled &ldquo;opponent&rdquo; teams.</p>
-</li>
-<li>
 <p><strong>Back to Back Penalty:</strong> Teams perform better when they have a chance to rest and prepare after a match. The model is penalized when the schedule places a team in consecutive rounds.</p>
-</li>
-<li>
 <p><strong>Break Time:</strong> Teams should be given at least some amount of break during the tournament for rest, adjustments, or repairs to their robots. The model is rewarded when schedules include these breaks.</p>
-</li>
-</ul>
 <h3 id="time-constraints">
   Time constraints
   <a 
@@ -927,14 +901,8 @@
     </span>
   </a>
 </h3>
-<ul>
-<li>
 <p>The model currently generates an optimal schedule based on the Q-table it generates during training.</p>
-</li>
-<li>
 <p>In some cases, this results in incomplete schedules.</p>
-</li>
-</ul>
 <h3 id="refining-the-constraints">
   Refining the constraints
   <a 
@@ -947,17 +915,9 @@
     </span>
   </a>
 </h3>
-<ul>
-<li>
 <p>For very large schedules, the model can appear to take a long time to learn from the soft constraints.</p>
-</li>
-<li>
 <p>Currently, the user can set weights for each soft constraint, but it&rsquo;s unclear what effect this has across many schedule types.</p>
-</li>
-<li>
 <p>Maybe: Some way to &ldquo;backpropagate&rdquo; the results of a training schedule to adjust the constraint weights dynamically?</p>
-</li>
-</ul>
 <h3 id="test-cases">
   Test cases
   <a 
@@ -970,9 +930,7 @@
     </span>
   </a>
 </h3>
-<ul>
-<li>The goal would be to generate a large amount of simulated schedules of many varieties. Then to use a supervised learning approach or an end-to-end neural network of sorts.</li>
-</ul>
+<p>The goal would be to generate a large amount of simulated schedules of many varieties. Then to use a supervised learning approach or an end-to-end neural network of sorts.</p>
 <h3 id="general-code-cleanup">
   General code cleanup
   <a 
@@ -985,14 +943,8 @@
     </span>
   </a>
 </h3>
-<ul>
-<li>
 <p>I wrote this in two weeks, so the code is full of spaghetti at the moment.</p>
-</li>
-<li>
 <p>Adding: More complete documentation here as well.</p>
-</li>
-</ul>
 <h3 id="web-application">
   Web application
   <a 
@@ -1005,9 +957,7 @@
     </span>
   </a>
 </h3>
-<ul>
-<li>This is a big maybe at the moment, but the ultimate goal would be to allow any FLLC event organizer to easily use this tool.</li>
-</ul>
+<p>This is a big maybe at the moment, but the ultimate goal would be to allow any FLLC event organizer to easily use this tool.</p>
 <h3 id="generalized-scheduling-tool">
   Generalized scheduling tool
   <a 
@@ -1020,9 +970,7 @@
     </span>
   </a>
 </h3>
-<ul>
-<li>If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way&hellip;</li>
-</ul>
+<p>If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way&hellip;</p>
 <blockquote class="warning-container">
     <i>warning</i>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</blockquote>
 

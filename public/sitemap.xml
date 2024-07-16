@@ -2,28 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.40.181:1313/all-logseq-elements/</loc>
-    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resources/references/</loc>
-    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/resources/</loc>
-    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://192.168.40.181:1313/actions/</loc>
     <lastmod>2024-07-13T10:43:37-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/all-logseq-elements/</loc>
+    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -42,13 +27,18 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/elevations/</loc>
+    <loc>http://192.168.40.181:1313/navigation/</loc>
     <lastmod>2024-07-13T10:43:37-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/navigation/</loc>
-    <lastmod>2024-07-13T10:43:37-04:00</lastmod>
+    <loc>http://192.168.40.181:1313/resources/references/</loc>
+    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/resources/</loc>
+    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -57,12 +47,22 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/states/</loc>
+    <loc>http://192.168.40.181:1313/text-inputs/</loc>
     <lastmod>2024-07-13T10:43:37-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:1313/text-inputs/</loc>
+    <loc>http://192.168.40.181:1313/</loc>
+    <lastmod>2024-07-16T14:53:25-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/elevations/</loc>
+    <lastmod>2024-07-13T10:43:37-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/states/</loc>
     <lastmod>2024-07-13T10:43:37-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

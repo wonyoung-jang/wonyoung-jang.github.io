@@ -22,11 +22,11 @@ lastMod: 2024-07-07
 
 An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:
 
-  + A distinctive visual style (e.g., colored background, border, or icon)
+A distinctive visual style (e.g., colored background, border, or icon)
 
-  + A label indicating the type of information (e.g., "Note", "Warning", "Tip")
+A label indicating the type of information (e.g., "Note", "Warning", "Tip")
 
-  + Content that needs emphasis or special consideration
+Content that needs emphasis or special consideration
 
 Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
 

@@ -29,11 +29,11 @@ Since this was not a necessary project for my job, I started to work on the prob
 
 I first tried to model how to think about the problem in the first place. I came up with 3 mental models:
 
-  + As a Sudoku puzzle (DFS).
+As a Sudoku puzzle (DFS).
 
-  + As a constraint satisfaction problem (CSP Solvers).
+As a constraint satisfaction problem (CSP Solvers).
 
-  + As a pathfinding optimization problem (BFS, Djikstra's, and A*).
+As a pathfinding optimization problem (BFS, Djikstra's, and A*).
 
 While I made some progress pursuing each I did not find a fully satisfactory solution.
 
@@ -63,23 +63,23 @@ Since existing data isn't sufficient, data is generated for this Q-learner, I th
 
 The hard constraints of a schedule are those imposed by the laws of physics and by the logical rules we usually assume without stating explicitly. There are three main hard constraints:
 
-  + **Non-Overlapping Schedule Constraint:** Since teams cannot be in two place at once, a team cannot be scheduled for a time slot if the duration and time of that time slot overlaps with one the team is already scheduled for.
+**Non-Overlapping Schedule Constraint:** Since teams cannot be in two place at once, a team cannot be scheduled for a time slot if the duration and time of that time slot overlaps with one the team is already scheduled for.
 
-  + **Simultaneous Match Constraint:** A team cannot be scheduled for a round without another team scheduled at the same time on the opposite side of the table.
+**Simultaneous Match Constraint:** A team cannot be scheduled for a round without another team scheduled at the same time on the opposite side of the table.
 
-  + **Equal Scheduling Constraint:** Every team must be scheduled an equal number of times.
+**Equal Scheduling Constraint:** Every team must be scheduled an equal number of times.
 
 ### Soft constraints
 
 The soft constraints of a schedule are those that maximize fairness. They are not a necessary condition to run a tournament, but aiming for them while scheduling can create a more fair experience for all teams. In the current iteration, there are four soft constraints:
 
-  + **Table Consistency:** Since this competition is about autonomous robots depending on it's environment, tiny inconsistencies between competition tables and even their sides can create a large difference. So I reward the model when a team has less variety in it's scheduled table sides.
+**Table Consistency:** Since this competition is about autonomous robots depending on it's environment, tiny inconsistencies between competition tables and even their sides can create a large difference. So I reward the model when a team has less variety in it's scheduled table sides.
 
-  + **Opponent Variety:** Playing with the same opposite team for all rounds is not as fun as playing with a different one each round. The model is rewarded when a team has more variety amongst it's scheduled "opponent" teams.
+**Opponent Variety:** Playing with the same opposite team for all rounds is not as fun as playing with a different one each round. The model is rewarded when a team has more variety amongst it's scheduled "opponent" teams.
 
-  + **Back to Back Penalty:** Teams perform better when they have a chance to rest and prepare after a match. The model is penalized when the schedule places a team in consecutive rounds.
+**Back to Back Penalty:** Teams perform better when they have a chance to rest and prepare after a match. The model is penalized when the schedule places a team in consecutive rounds.
 
-  + **Break Time:** Teams should be given at least some amount of break during the tournament for rest, adjustments, or repairs to their robots. The model is rewarded when schedules include these breaks.
+**Break Time:** Teams should be given at least some amount of break during the tournament for rest, adjustments, or repairs to their robots. The model is rewarded when schedules include these breaks.
 
 ### Time constraints
 
@@ -95,35 +95,35 @@ I plan on pursuing this constraint more deeply, and am currently refining the ab
 ### A schedule validator
 
 
-  + The model currently generates an optimal schedule based on the Q-table it generates during training.
+The model currently generates an optimal schedule based on the Q-table it generates during training.
 
-  + In some cases, this results in incomplete schedules.
+In some cases, this results in incomplete schedules.
 
 ### Refining the constraints
 
-  + For very large schedules, the model can appear to take a long time to learn from the soft constraints.
+For very large schedules, the model can appear to take a long time to learn from the soft constraints.
 
-  + Currently, the user can set weights for each soft constraint, but it's unclear what effect this has across many schedule types.
+Currently, the user can set weights for each soft constraint, but it's unclear what effect this has across many schedule types.
 
-  + Maybe: Some way to "backpropagate" the results of a training schedule to adjust the constraint weights dynamically?
+Maybe: Some way to "backpropagate" the results of a training schedule to adjust the constraint weights dynamically?
 
 ### Test cases
 
-  + The goal would be to generate a large amount of simulated schedules of many varieties. Then to use a supervised learning approach or an end-to-end neural network of sorts.
+The goal would be to generate a large amount of simulated schedules of many varieties. Then to use a supervised learning approach or an end-to-end neural network of sorts.
 
 ### General code cleanup
 
-  + I wrote this in two weeks, so the code is full of spaghetti at the moment.
+I wrote this in two weeks, so the code is full of spaghetti at the moment.
 
-  + Adding: More complete documentation here as well.
+Adding: More complete documentation here as well.
 
 ### Web application
 
-  + This is a big maybe at the moment, but the ultimate goal would be to allow any FLLC event organizer to easily use this tool.
+This is a big maybe at the moment, but the ultimate goal would be to allow any FLLC event organizer to easily use this tool.
 
 ### Generalized scheduling tool
 
-  + If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way...
+If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way...
 
 {{< logseq/orgWARNING >}}LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.
 {{< / logseq/orgWARNING >}}

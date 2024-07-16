@@ -32,113 +32,113 @@ lastMod: 2024-07-16
 
 ## Text styling
 
-  + ### Single formatting
+### Single formatting
 
-    + **Bold**
+**Bold**
 
-    + _Italic_
+_Italic_
 
-    + {{< logseq/mark >}}Highlight{{< / logseq/mark >}}
+{{< logseq/mark >}}Highlight{{< / logseq/mark >}}
 
-  + ### Double formatting
+### Double formatting
 
-    + **_Bold + italic_**
+**_Bold + italic_**
 
-    + **{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
+**{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
 
-    + _**Italic + bold**_
+_**Italic + bold**_
 
-    + *{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
+*{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
 
-    + {{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
+{{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
 
-    + {{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
+{{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
 
-  + ### Triple formatting
+### Triple formatting
 
-    + **_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
+**_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
 
-    + **{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
+**{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
 
-    + _**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
+_**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
 
-    + _{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
+_{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
 
-    + {{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
+{{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
 
-    + {{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
+{{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
 
-    + ~~Strikethrough~~
+~~Strikethrough~~
 
 ## Advanced commands
 
 {{< logseq/orgCENTER >}}Centered text
 {{< / logseq/orgCENTER >}}
 
-  + **Hugo**:
+**Hugo**:
 
-    + `<blockquote class="centered">Centered text</blockquote>`
+`<blockquote class="centered">Centered text</blockquote>`
 
 >Blockquote with ">"
 
-  + **Hugo**:
+**Hugo**:
 
-    + `<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
+`<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
 
 `Inline code with backticks`
 
-  + **Hugo**:
+**Hugo**:
 
-    + `<p><code>Blockquote with backticks</code></p>`
+`<p><code>Blockquote with backticks</code></p>`
 
 An external link: https://www.pbs.org/video/art21-fantasy/
 
-  + **Hugo**:
+**Hugo**:
 
-    + `<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
+`<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
 
 ## Logseq pages
 
-  + ### Page reference
+### Page reference
 
-    + **Input**: `[About]({{< ref "/about" >}})`
+**Input**: `[About]({{< ref "/about" >}})`
 
-    + **Schrödinger**: `[About]({{< ref "/About" >}})`
+**Schrödinger**: `[About]({{< ref "/About" >}})`
 
-    + **Output**: [About]({{< ref "/About" >}})
+**Output**: [About]({{< ref "/About" >}})
 
-  + ### Page embed
+### Page embed
 
-    + **Input**: `{{embed [About]({{< ref "/about" >}})}}`
+**Input**: `{{embed [About]({{< ref "/about" >}})}}`
 
-    + **Schrödinger**: `{{embed [About]({{< ref "/About" >}})}}`
+**Schrödinger**: `{{embed [About]({{< ref "/About" >}})}}`
 
-    + **Output**: {{embed [About]({{< ref "/About" >}})}}
+**Output**: {{embed [About]({{< ref "/About" >}})}}
 
 ## Logseq blocks
 
-  + ### Block reference
+### Block reference
 
-    + **Input**: `## About me
+**Input**: `## About me
 `
 
-    + **Schrödinger**: `## About me`
+**Schrödinger**: `## About me`
 
-    + **Output**: ## About me
+**Output**: ## About me
 
 
-  + ### Block embed
+### Block embed
 
-    + **Input**: `{{embed ## About me
+**Input**: `{{embed ## About me
  }}`
 
-    + **Schrödinger**:
+**Schrödinger**:
 ```
 {{embed ## About me
  }}
 ```
 
-    + **Output**: {{embed ## About me
+**Output**: {{embed ## About me
  }}
 
 ---

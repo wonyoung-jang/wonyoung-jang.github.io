@@ -14,8 +14,8 @@ resources:
 - components
 description: Containment components available for wonyoungjang.org
 title: Containment
-lastMod: 2024-07-13
+lastMod: 2024-07-16
 ---
-![site-components.png](/assets/site-components_1719436976806_0.png)
+![resize.svg](/assets/resize_1721164484243_0.svg)
 
 See: [Material Design 3 - Components](https://m3.material.io/components)

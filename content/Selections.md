@@ -14,8 +14,8 @@ resources:
 - components
 description: Selection components available for wonyoungjang.org
 title: Selections
-lastMod: 2024-07-13
+lastMod: 2024-07-16
 ---
-![site-components.png](/assets/site-components_1719436976806_0.png)
+![checklist.svg](/assets/checklist_1721164384695_0.svg)
 
 See: [Material Design 3 - Components](https://m3.material.io/components)
