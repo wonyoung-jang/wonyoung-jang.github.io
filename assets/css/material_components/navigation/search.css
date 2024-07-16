@@ -18,7 +18,7 @@
     width: 100%;
 
     & > .icon-button,
-    & > #searchIcon {
+    & > i {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
