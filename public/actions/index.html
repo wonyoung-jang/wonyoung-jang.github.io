@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.c60bb85dd7c407535d609050080cf5a68a406c9dfcb9d3d74dfb8152546a4081.css" integrity="sha256-xgu4XdfEB1NdYJBQCAz1popAbJ38udPXTfuBUlRqQIE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.bd7fe83844eb01af3bf6e8da55929b7057ba95be87fcaf61a1c8188d1d17fa7e.css" integrity="sha256-vX/oOETrAa879ujaVZKbcFe6lb6H/K9hocgYjR0X&#43;n4=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/core.min.9f4f5c57e5e593e4792b9c3952ec2dbb5dac07246099a79f8ed213d3a1947b7d.css" integrity="sha256-n09cV&#43;Xlk&#43;R5K5w5Uuwtu12sByRgmaefjtIT06GUe30=" rel="preload stylesheet" as="style">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/q-learning-tournament-scheduler\/";
+    window.location.href = "\/text-inputs\/";
   }
 </script>
 
@@ -867,53 +867,99 @@
     <div class="component-group-header">Icon buttons</div>
     <div class="component-group">
       <div class="sub-component-group-header">Icon button</div>
+      <div class="component button icon-button ">
+  
+    
+      <i>
+        settings
+      </i>
+    
+  
+</div>
 
-      <button class="component button icon-button">
-        <i>settings</i>
-      </button>
+      <div class="component button icon-button filled">
+  
+    
+      <i>
+        settings
+      </i>
+    
+  
+</div>
 
-      <button class="component button icon-button" filled>
-        <i>settings</i>
-      </button>
+      <div class="component button icon-button filled-tonal">
+  
+    
+      <i>
+        settings
+      </i>
+    
+  
+</div>
 
-      <button class="component button icon-button" filled-tonal>
-        <i>settings</i>
-      </button>
-
-      <button class="component button icon-button" outlined>
-        <i>settings</i>
-      </button>
+      <div class="component button icon-button outlined">
+  
+    
+      <i>
+        settings
+      </i>
+    
+  
+</div>
 
       
       <div class="sub-component-group-header">Icon button - toggle</div>
+      <div class="component button icon-button text">
+  
+    <input type="checkbox" id="text" />
+    <label for="text" class="component button icon-button">
+      
+        <i>
+          settings
+        </i>
+      
+    </label>
+  
+</div>
 
-      <div class="component button icon-button">
-        <input type="checkbox" id="text">
-        <label for="text" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
+      <div class="component button icon-button filled">
+  
+    <input type="checkbox" id="filled" />
+    <label for="filled" class="component button icon-button">
+      
+        <i>
+          settings
+        </i>
+      
+    </label>
+  
+</div>
 
-      <div class="component button icon-button" filled>
-        <input type="checkbox" id="filled">
-        <label for="filled" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
+      <div class="component button icon-button filled-tonal">
+  
+    <input type="checkbox" id="filled-tonal" />
+    <label for="filled-tonal" class="component button icon-button">
+      
+        <i>
+          settings
+        </i>
+      
+    </label>
+  
+</div>
 
-      <div class="component button icon-button" filled-tonal>
-        <input type="checkbox" id="filled-tonal">
-        <label for="filled-tonal" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
-
-      <div class="component button icon-button" outlined>
-        <input type="checkbox" id="outlined">
-        <label for="outlined" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
+      <div class="component button icon-button outlined">
+  
+    <input type="checkbox" id="outlined" />
+    <label for="outlined" class="component button icon-button">
+      
+        <i>
+          settings
+        </i>
+      
+    </label>
+  
+</div>
     </div>
 
     
@@ -1490,6 +1536,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

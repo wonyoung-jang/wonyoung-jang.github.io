@@ -186,53 +186,62 @@
     <div class="component-group-header">Icon buttons</div>
     <div class="component-group">
       <div class="sub-component-group-header">Icon button</div>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "icon" "settings"
+        ) 
+      }}
 
-      <button class="component button icon-button">
-        <i>settings</i>
-      </button>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "type" "filled"
+          "icon" "settings"
+        ) 
+      }}
 
-      <button class="component button icon-button" filled>
-        <i>settings</i>
-      </button>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "type" "filled-tonal"
+          "icon" "settings"
+        ) 
+      }}
 
-      <button class="component button icon-button" filled-tonal>
-        <i>settings</i>
-      </button>
-
-      <button class="component button icon-button" outlined>
-        <i>settings</i>
-      </button>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "type" "outlined"
+          "icon" "settings"
+        ) 
+      }}
 
       {{/*  Icon button - toggle  */}}
       <div class="sub-component-group-header">Icon button - toggle</div>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "id" "text"
+          "type" "text"
+          "icon" "settings"
+          "toggle" true
+        ) 
+      }}
 
-      <div class="component button icon-button">
-        <input type="checkbox" id="text">
-        <label for="text" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "id" "filled"
+          "type" "filled"
+          "icon" "settings"
+          "toggle" true
+        ) 
+      }}
 
-      <div class="component button icon-button" filled>
-        <input type="checkbox" id="filled">
-        <label for="filled" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "id" "filled-tonal"
+          "type" "filled-tonal"
+          "icon" "settings"
+          "toggle" true
+        ) 
+      }}
 
-      <div class="component button icon-button" filled-tonal>
-        <input type="checkbox" id="filled-tonal">
-        <label for="filled-tonal" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
-
-      <div class="component button icon-button" outlined>
-        <input type="checkbox" id="outlined">
-        <label for="outlined" class="component button icon-button"> 
-          <i>settings</i>
-        </label>
-      </div>
+      {{ partial "components/actions/icon-buttons.html" (dict 
+          "id" "outlined"
+          "type" "outlined"
+          "icon" "settings"
+          "toggle" true
+        ) 
+      }}
     </div>
 
     {{/*  Segmented buttons  */}}
