@@ -11,37 +11,77 @@
     {{/*  Common buttons  */}}
     <div class="component-group-header">Common buttons</div>
     <div class="component-group">
+      {{/*  Common w/o icon  */}}
       <div class="sub-component-group-header">No icon</div>
       <section>
-        <button class="component button common-button">Text</button>
-        <button class="component button common-button" elevated>Elevated</button>
-        <button class="component button common-button" filled>Filled</button>
-        <button class="component button common-button" filled-tonal>Filled-Tonal</button>
-        <button class="component button common-button" outlined>Outlined</button>
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "text"
+            "label" "Text"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "elevated"
+            "label" "Elevated"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "filled"
+            "label" "Filled"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "filled-tonal"
+            "label" "Filled tonal"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "outlined"
+            "label" "Outlined"
+          ) 
+        }}
       </section>
       
+      {{/*  Common w/ icon  */}}
       <div class="sub-component-group-header">With icon</div>
       <section>
-        <button class="component button common-button" with-icon>
-          <i>add</i>
-          Text
-        </button>
-        <button class="component button common-button" elevated with-icon>
-          <i>add</i>
-          Elevated
-        </button>
-        <button class="component button common-button" filled with-icon>
-          <i>add</i>
-          Filled
-        </button>
-        <button class="component button common-button" filled-tonal with-icon>
-          <i>add</i>
-          Filled-Tonal
-        </button>
-        <button class="component button common-button" outlined with-icon>
-          <i>add</i>
-          Outlined
-        </button>
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "text"
+            "label" "Text"
+            "icon" "add"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "elevated"
+            "label" "Elevated"
+            "icon" "add"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "filled"
+            "label" "Filled"
+            "icon" "add"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "filled-tonal"
+            "label" "Filled tonal"
+            "icon" "add"
+          ) 
+        }}
+
+        {{ partial "components/actions/common-buttons.html" (dict 
+            "type" "outlined"
+            "label" "Outlined"
+            "icon" "add"
+          ) 
+        }}
       </section>
     </div>
 

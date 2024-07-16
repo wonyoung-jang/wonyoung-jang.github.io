@@ -4,6 +4,7 @@ main:
     pageRef: /
     pre: <i>home</i>
     weight: 1
+    
   - identifier: Projects
     name: Projects
     pageRef: /projects
@@ -21,6 +22,7 @@ main:
     pageRef: /projects/university
     pre: <i>school</i>
     parent: Projects
+
   - identifier: Resources
     name: Resources
     pageRef: /resources
@@ -42,11 +44,13 @@ main:
     pageRef: /resources/tokens
     pre: <i>token</i>
     parent: Resources
+
   - identifier: Now
     name: Now
     pageRef: /now
     pre: <i>update</i>
     weight: 30
+
   - identifier: Search
     name: Search
     pageRef: /search

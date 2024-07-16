@@ -8,48 +8,47 @@
 
   min-width: var(--size-10);
 
-  &[with-icon] {
+  &:has(> i) {
     padding-left: var(--size-3);
     padding-right: var(--size-4);
+    
+    & > i {
+      font-size: 18px;
+    }
   }
 
-  & i {
-    font-size: 18px;
-  }
-
-  &[filled],
-  &[filled-tonal],
-  &[elevated],
-  &[outlined] {
+  &.filled,
+  &.filled-tonal,
+  &.elevated,
+  &.outlined {
     --container-padding: 0 var(--size-6);
 
-    &[with-icon] {
+    &:has(i) {
       padding-left: var(--size-4);
     }
   }
   
-  &[filled] {
+  &.filled {
     --bg-color: var(--color-primary);
     --icon-color: var(--color-on-primary);
   }
   
+  &.filled-tonal {
+    --bg-color: var(--color-secondary-container);
+    --icon-color: var(--color-on-secondary-container);
+  }
   
-  &[elevated] {
+  &.elevated {
     --bg-color: var(--color-surface-container-low);
     --icon-color: var(--color-primary);
     --container-elevation: var(--elevation-2);
   }
   
-  &[outlined] {
+  &.outlined {
     --container-outline: 1px solid var(--color-outline);
     --container-outline-hover: 1px solid var(--color-outline);
     --container-outline-focus: 1px solid var(--color-primary);
     --container-outline-press: 1px solid var(--color-outline);
-  }
-  
-  &[filled-tonal] {
-    --bg-color: var(--color-secondary-container);
-    --icon-color: var(--color-on-secondary-container);
   }
 }
 
