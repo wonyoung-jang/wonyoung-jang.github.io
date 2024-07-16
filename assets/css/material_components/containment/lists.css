@@ -51,6 +51,16 @@
   --text-color: var(--color-on-surface);
   --bg-color: var(--color-surface);
 
+  & .checkbox {
+    padding: unset;
+  }
+
+  & .radio-button {
+    padding: unset;
+    height: var(--size-6);
+    width: var(--size-6);
+  }
+
   & .monogram {
     display: flex;
     width: 40px;
@@ -100,6 +110,14 @@
       font-family: var(--typescale-body-medium-font);
     }
   }
+
+  & .trailing-supporting-text {
+    color: var(--color-on-surface-variant);
+    font-size: var(--typescale-label-small-size);
+    line-height: var(--typescale-label-small-line-height);
+    font-weight: var(--typescale-label-small-weight);
+    font-family: var(--typescale-label-small-font);  
+  }
   
   &[one] {
     min-height: 56px;
@@ -147,12 +165,15 @@
       -webkit-box-orient: vertical;
       line-clamp: 2;
       overflow: hidden;
-      line-height: unset;
     }
-
+    
     & i,
+    & .image,
+    & .video,
     & .checkbox,
-    & .monogram {
+    & .radio-button,
+    & .switch,
+    & .trailing-supporting-text {
       align-self: flex-start;
     }
   }
