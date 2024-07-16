@@ -14,7 +14,14 @@
 
   --bg-color: inherit;
   --icon-color: var(--color-on-surface);
-    
+  
+  &:has(.actions) {
+    --state-color: none;
+    --container-elevation-hover: intial;
+    --container-elevation-focus: intial;
+    --container-elevation-press: intial;
+  }    
+
   & * {
     color: var(--icon-color,);
   }
