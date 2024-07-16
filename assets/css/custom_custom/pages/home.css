@@ -11,6 +11,7 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: var(--size-5);
     padding: var(--size-14) var(--spacing-panes);
     min-height: 18dvh;
@@ -83,6 +84,14 @@
       & .button {
         margin: 0 var(--size-3);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #home-page {
+    & .site-id svg {
+      display: none;
     }
   }
 }
