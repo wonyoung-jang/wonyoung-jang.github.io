@@ -2,58 +2,42 @@
 .surface {
   --bg: var(--color-surface);
   --bg-color: var(--color-surface);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 .surface-bright {
   --bg: var(--color-surface-bright);
   --bg-color: var(--color-surface-bright);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 .surface-dim {
   --bg: var(--color-surface-dim);
   --bg-color: var(--color-surface-dim);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 /* Surface containers */
 .surface-container-lowest {
   --bg: var(--color-surface-container-lowest);
   --bg-color: var(--color-surface-container-lowest);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 .surface-container-low {
   --bg: var(--color-surface-container-low);
   --bg-color: var(--color-surface-container-low);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 .surface-container {
   --bg: var(--color-surface-container);
   --bg-color: var(--color-surface-container);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 .surface-container-high {
   --bg: var(--color-surface-container-high);
   --bg-color: var(--color-surface-container-high);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 .surface-container-highest {
   --bg: var(--color-surface-container-highest);
   --bg-color: var(--color-surface-container-highest);
-  --icon-color: var(--color-on-surface);
-  --text-color: var(--color-on-surface);
 }
 
 /* On surface */
@@ -148,34 +132,22 @@
 .scrim {
   --bg: var(--color-scrim);
   --bg-color: var(--color-scrim);
-  --icon-color: var(--palette-neutral100);
-  --text-color: var(--palette-neutral100);
 }
 
 .shadow {
   --bg: var(--color-shadow);
   --bg-color: var(--color-shadow);
-  --icon-color: var(--palette-neutral100);
-  --text-color: var(--palette-neutral100);
 }
 
 /* Outlines */
 .outline {
-  border: 1px solid var(--color-outline);
+  --border: 1px solid var(--color-outline);
+  --container-outline: 1px solid var(--color-outline);
 }
 
 .outline-variant {
-  border: 1px solid var(--color-outline-variant);
-}
-
-.outline-container {
-  --bg: var(--color-outline);
-  --bg-color: var(--color-outline);
-}
-
-.outline-variant-container {
-  --bg: var(--color-outline-variant);
-  --bg-color: var(--color-outline-variant);
+  --border: 1px solid var(--color-outline-variant);
+  --container-outline: 1px solid var(--color-outline-variant);
 }
 
 /* Fixed accent colors */
