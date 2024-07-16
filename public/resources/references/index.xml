@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/resources/references/
+      https://wonyoungjang.org/resources/references/
     </link>
 
     <description>
@@ -46,17 +46,17 @@
 
     
       <lastBuildDate>
-        Sun, 14 Jul 2024 16:28:42 -0400
+        Tue, 16 Jul 2024 14:53:25 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/resources/references/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           All Logseq elements
         </title>
 
         <link>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -127,39 +127,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </guid>
 
         <description>
           Navigation&#xD;link&#xD;h2&#xD;ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance&#xD;link&#xD;h2&#xD;ALT+SHIFT+t → Toggle light/dark themes
-        </description>
-      </item>
-      <item>
-        <title>
-          noteName
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/note/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/note/
-        </guid>
-
-        <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight&#xA;Italic + bold&#xA;Italic + highlight&#xA;Highlight + bold Highlight + italic Triple formatting&#xD;link&#xD;h3&#xD;Bold + italic + highlight&#xA;Bold + highlight + italic
         </description>
       </item>
   </channel>

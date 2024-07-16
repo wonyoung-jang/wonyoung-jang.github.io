@@ -15,144 +15,117 @@
 
       {{/*  Filled  */}}
       <div class="sub-component-group-header">Filled</div>
-      
-      {{/*  Supporting text  */}}
-      <div class="component text-field" filled>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <hr>
-        <div class="supporting-text">Supporting text</div>
-      </div>
-      
-      <div class="component text-field" filled>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <i>cancel</i>
-        <hr>
-      </div>
-      
-      <div class="component text-field" filled>
-        <i>search</i>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <hr>
-      </div>
-      
-      <div class="component text-field" filled>
-        <i>search</i>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <i>cancel</i>
-        <hr>
-      </div>
-       
-      <div class="component text-field" filled>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <hr>
-      </div>
-       
-      <div class="component text-field suffix" filled>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <div class="suffix-content">suffix</div>
-        <hr>
-      </div>
-       
-      <div class="component text-field" filled>
-        <input 
-          type="text" 
-          placeholder="Placeholder">
-        <hr>
-      </div>
-      
-      {{/*  multiline  */}}
-      <div class="component text-field" filled>
-        <textarea 
-          type="text" 
-          placeholder=" "></textarea>
-        <label>Label text</label>
-        <hr>
-      </div>
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        "supporting_text" "Supporting text"
+        ) 
+      }}
 
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        "trailing_icon" "cancel"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        "leading_icon" "search"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        "leading_icon" "search"
+        "trailing_icon" "cancel"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        "suffix" "suffix"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "placeholder" "Placeholder"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
+        "multiline" true
+        ) 
+      }}
 
       {{/*  Outlined  */}}
       <div class="sub-component-group-header">Outlined</div>
-      
-      <div class="component text-field" outlined>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-          
-        <div class="supporting-text">Supporting text</div>
-      </div>
-      
-      <div class="component text-field" outlined>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <i>cancel</i>
-      </div>
-      
-      <div class="component text-field" outlined>
-        <i>search</i>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-      </div>
-      
-      <div class="component text-field" outlined>
-        <i>search</i>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <i>cancel</i>
-      </div>
-       
-      <div class="component text-field prefix" outlined>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-      </div>
-       
-      <div class="component text-field suffix" outlined>
-        <input 
-          type="text" 
-          placeholder=" ">
-        <label>Label text</label>
-        <div class="suffix-content">suffix</div>
-      </div>
-       
-      <div class="component text-field" outlined>
-        <input 
-          type="text" 
-          placeholder="Placeholder">
-      </div>
-      
-      {{/*  multiline  */}}
-      <div class="component text-field" outlined>
-        <textarea 
-          type="text" 
-          placeholder=" "></textarea>
-        <label>Label text</label>
-      </div>
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "supporting_text" "Supporting text"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "trailing_icon" "cancel"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "leading_icon" "search"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "leading_icon" "search"
+        "trailing_icon" "cancel"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "suffix" "suffix"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "placeholder" "Placeholder"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "multiline" true
+        ) 
+      }}
     </div>
 
   </section>
