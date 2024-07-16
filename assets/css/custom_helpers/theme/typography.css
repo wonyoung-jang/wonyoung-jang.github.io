@@ -1,23 +1,7 @@
-.upper {
-  text-transform: uppercase;
-}
+.upper          { text-transform: uppercase; }
+.lower          { text-transform: lowercase; }
+.capitalize     { text-transform: capitalize; }
 
-.lower {
-  text-transform: lowercase;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.strikethrough {
-  text-decoration: line-through;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.overline {
-  text-decoration: overline;
-}
+.strikethrough  { text-decoration: line-through; }
+.underline      { text-decoration: underline; }
+.overline       { text-decoration: overline; }
