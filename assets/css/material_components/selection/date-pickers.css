@@ -5,7 +5,7 @@
   --container-align-items: flex-start;
   --container-gap: initial;
   --container-height: initial;
-  --container-width: 100%;
+  --container-width: initial;
   --container-padding: var(--size-4) var(--size-6);
 
   --container-outline: initial;
@@ -72,6 +72,17 @@
     margin-top: 10px;
   }
 
+  & .text-field-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--size-4);
+    align-self: stretch;
+
+    & .text-field {
+      max-width: calc(50% - var(--size-2));
+    }
+  }
+
   & .text-field {
     margin-top: 10px;
   }
@@ -84,11 +95,5 @@
     gap: var(--size-4);
     min-height: var(--size-4);
     margin-top: var(--size-6);
-  }
-
-  & .text-field-container {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: var(--size-4);
   }
 }
