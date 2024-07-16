@@ -2,9 +2,13 @@
   --gap: var(--size-2);
   --display: flex;
   --flex-flow: row wrap;
- 
-  & .card {
-    flex: 1 1 calc(100% - var(--spacing-panes));
+  --align-content: flex-start;
+}
+
+/* Compact: 0-599px */
+@media screen and (max-width: 599px) {
+  .canonical-feed .pane .card {
+    flex: 1 1 calc(100% - var(--spacing-panes));;
   }
 }
 
