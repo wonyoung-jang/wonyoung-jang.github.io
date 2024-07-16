@@ -1,9 +1,22 @@
-.least-updated-pages {
-  display: flex;
-  flex-flow: column nowrap;
+.least-recently-updated-pages {
+  overflow-x: auto;
   width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
 
-  & * {
-    width: 100%;
-  }
+.least-recently-updated-pages th,
+.least-recently-updated-pages td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.least-recently-updated-pages th:first-child,
+.least-recently-updated-pages td:first-child {
+  width: 100%;
+}
+
+.least-recently-updated-pages th:last-child,
+.least-recently-updated-pages td:last-child {
+  width: 100%;
 }
