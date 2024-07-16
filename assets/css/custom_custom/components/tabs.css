@@ -1,6 +1,6 @@
 .tabs:has(.sub-tabs-container) {
   --container-gap: 3px;
-  --container-padding: 0 var(--size-4);
+  --container-padding: 0 var(--size-1);
 
   & .tab {
     --container-shape: var(--shape-corner-m-top);
