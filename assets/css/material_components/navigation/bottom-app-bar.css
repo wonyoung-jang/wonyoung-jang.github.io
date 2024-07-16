@@ -17,15 +17,6 @@
   --text-color: initial;
   --icon-color: initial;
 
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
-
   &[with-fab] {
     --container-padding: var(--size-4);
   }

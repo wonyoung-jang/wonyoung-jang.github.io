@@ -1,3 +1,5 @@
+
+
 .text-field {
   --container-display: flex;
   --container-flex-flow: row nowrap;
@@ -6,29 +8,10 @@
   --container-gap: var(--size-4);
   --container-height: var(--size-14);
   --container-width: 100%;
-  --container-padding: 0 var(--size-4);
+  --container-padding: var(--size-2) var(--size-4);
   --container-outline: initial;
   --container-elevation: initial;
-
-  &[filled] {
-    --container-shape: var(--shape-corner-xs-top);
-    --bg-color: var(--color-surface-container-highest);
-    --text-color: var(--color-on-surface);
-    --icon-color: var(--color-on-surface);
-  }
-
-  &[outlined] {
-    --container-outline: 1px solid var(--color-outline);
-    --container-shape: var(--shape-corner-xs);
-    --bg-color: inherit;
-    --text-color: var(--color-on-surface-variant);
-    --icon-color: var(--color-on-surface-variant);
-
-    --container-outline-hover: 1px solid var(--color-on-surface);
-    --container-outline-focus: 2px solid var(--color-primary);
-    --container-outline-press: 2px solid var(--color-primary);
-  }
-
+  
   & input[type="text"] {
     flex: 1 1 auto;
     color: var(--color-on-surface);
@@ -41,7 +24,59 @@
       color: var(--color-on-surface-variant);
     }
   }
-  
+
+  &[filled] {
+    --container-shape: var(--shape-corner-xs-top);
+    --bg-color: var(--color-surface-container-highest);
+    --text-color: var(--color-on-surface);
+    --icon-color: var(--color-on-surface);
+    
+    & i:last-child {
+      display: none;
+    }
+
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+
+      & hr {
+        height: 3px;
+        color: var(--color-primary);
+      }
+    }
+
+    &:hover {
+      & hr {
+        height: 1px;
+        color: var(--color-on-surface);
+      }
+    }
+
+    &.prefix {
+      & input[type="text"]::placeholder {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &[outlined] {
+    --container-outline: 1px solid var(--color-outline);
+    --container-shape: var(--shape-corner-xs);
+    --bg-color: inherit;
+    --text-color: var(--color-on-surface-variant);
+    --icon-color: var(--color-on-surface-variant);
+
+    --container-outline-hover: 1px solid var(--color-on-surface);
+    --container-outline-focus: 2px solid var(--color-primary);
+    --container-outline-press: 1px solid var(--color-primary);
+
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      --container-outline: var(--container-outline-focus);
+    }
+  }
+
   & .supporting-text {
       position: absolute;
       top: 100%;
@@ -65,29 +100,33 @@
     bottom: 0;
     left: 0;
   }
-  
-  & * {
-    width: 100%;
-  }
 
   &:has(textarea) {
     padding: var(--size-4);
     color: var(--color-on-surface);
-    resize: vertical;
-    height: var(--size-42);
+    height: auto;
+    
+    & textarea {
+      flex: 1 1 auto;
+      resize: vertical;
+      min-height: 56px;
+    }
   }
 
-  &:has(.prefix) {
-    --container-flex-flow: column nowrap;
-    --container-justify-content: flex-start;
-    --container-align-items: flex-start;
+  &:has(i:last-child) {
+    padding-right: var(--size-3);
   }
 
-  &:has(.suffix) {
-    --container-align-items: center;
+  &:has(i:first-child) {
+    padding-left: var(--size-3);
   }
 
-  & .icon-button:last-child {
-    margin-left: auto;
+  
+  & i {
+    color: var(--color-on-surface-variant);
+
+    &:last-child {
+      margin-left: auto;
+    }
   }
 }

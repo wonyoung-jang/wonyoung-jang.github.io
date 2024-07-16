@@ -7,7 +7,7 @@
     z-index: 2;
   }
 
-  &:not(.top-app-bar)::after {
+  &::after {
     content: "";
     position: absolute;
     border-radius: inherit;
@@ -21,7 +21,21 @@
     transition: none;  
   }
  
-  &:hover {
+  &:not(
+    .badge,
+    .tooltip,
+    .snackbar,
+    progress,
+    .top-app-bar, 
+    .bottom-app-bar,
+    .navigation-bar,
+    .navigation-rail,
+    .navigation-drawer,
+    .tabs,
+    .dialog,
+    .bottom-sheets,
+    .side-sheets,
+    .menus):hover {
     border: var(--container-outline-hover, initial);
     box-shadow: var(--container-elevation-hover, initial);
 
@@ -32,7 +46,18 @@
     }
   }
  
-  &:focus {
+  &:not(
+    .badge,
+    progress,
+    .top-app-bar, 
+    .bottom-app-bar,
+    .navigation-bar,
+    .navigation-rail,
+    .navigation-drawer,
+    .tabs,
+    .dialog,
+    .bottom-sheets,
+    .side-sheets):focus {
     border: var(--container-outline-focus, initial);
     box-shadow: var(--container-elevation-focus, initial);
     
@@ -42,7 +67,21 @@
     }
   }
 
-  &:active {
+  &:not(
+    .badge,
+    .tooltip,
+    .snackbar,
+    progress,
+    .top-app-bar, 
+    .bottom-app-bar,
+    .navigation-bar,
+    .navigation-rail,
+    .navigation-drawer,
+    .tabs,
+    .menus,
+    .dialog,
+    .bottom-sheets,
+    .side-sheets):active {
     border: var(--container-outline-press, initial);
     box-shadow: var(--container-elevation-press, initial);
 
