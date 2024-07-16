@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.4a26b2fd2e00a8bdaa8491d4fa7e3e4c4cc0e3c732b37bdc023df3a24e5c8cc7.css" integrity="sha256-Siay/S4AqL2qhJHU&#43;n4&#43;TEzA48cys3vcAj3zok5cjMc=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.6217994992bf1ce834771a59d7d9642724099e294f084c0f3847e00d10a282b0.css" integrity="sha256-YheZSZK/HOg0dxpZ19lkJyQJnilPCEwPOEfgDRCigrA=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/core.min.9f4f5c57e5e593e4792b9c3952ec2dbb5dac07246099a79f8ed213d3a1947b7d.css" integrity="sha256-n09cV&#43;Xlk&#43;R5K5w5Uuwtu12sByRgmaefjtIT06GUe30=" rel="preload stylesheet" as="style">
 
@@ -142,7 +142,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/fixed-and-flexible-layout\/";
+    window.location.href = "\/actions\/";
   }
 </script>
 
@@ -2693,49 +2693,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

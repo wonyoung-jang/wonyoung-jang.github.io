@@ -1,27 +1,45 @@
-
-
 .text-field {
   --container-display: flex;
   --container-flex-flow: row nowrap;
   --container-justify-content: initial;
   --container-align-items: center;
   --container-gap: var(--size-4);
-  --container-height: var(--size-14);
+  --container-height: initial;
+  min-height: var(--size-14);
   --container-width: 100%;
   --container-padding: var(--size-2) var(--size-4);
   --container-outline: initial;
   --container-elevation: initial;
-  
+
   & input[type="text"] {
     flex: 1 1 auto;
     color: var(--color-on-surface);
     outline: none;
-    border: none;
     background-color: transparent;
-
+    z-index: 8;
+    color: transparent;
 
     &::placeholder {
       color: var(--color-on-surface-variant);
+    }
+  }
+
+  & label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    white-space: nowrap;
+    left: 0;
+    color: var(--color-on-surface-variant);
+    padding-left: var(--size-4);
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  &:has(i:first-child) {
+    & label {
+      padding-inline-start: var(--size-12);
     }
   }
 
@@ -35,14 +53,10 @@
       display: none;
     }
 
-    &:focus,
-    &:focus-within,
-    &:focus-visible {
-
-      & hr {
-        height: 3px;
-        color: var(--color-primary);
-      }
+    & hr {
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
     &:hover {
@@ -52,9 +66,42 @@
       }
     }
 
-    &.prefix {
-      & input[type="text"]::placeholder {
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      & hr {
+        height: 3px;
         color: var(--color-primary);
+      }
+
+      &:has(label) { 
+        & input[type="text"] {
+          flex: 1 1 auto;
+          padding-block-start: var(--size-2);
+          color: var(--color-on-surface);
+
+          &::placeholder {
+            color: transparent;
+          }
+        }
+          
+        & label {
+          top: 0px;
+          color: var(--color-primary);
+          font-size: var(--typescale-body-small-size);
+          line-height: var(--typescale-body-small-line-height);
+          font-weight: var(--typescale-body-small-weight);
+          font-family: var(--typescale-body-small-font);    
+        }
+      }
+
+      & input[type="text"] {
+        flex: 1 1 auto;
+        color: var(--color-on-surface);
+
+        &::placeholder {
+          color: transparent;
+        }
       }
     }
   }
@@ -74,44 +121,124 @@
     &:focus-within,
     &:focus-visible {
       --container-outline: var(--container-outline-focus);
+
+      &:has(label) { 
+        & input[type="text"] {
+          flex: 1 1 auto;
+          padding-block-start: var(--size-2);
+          color: var(--color-on-surface);
+
+          &::placeholder {
+            color: transparent;
+          }
+        }
+
+        & label {
+          top: -8px;
+          color: var(--color-primary);
+          margin-inline: var(--size-2);
+          padding-inline: var(--size-1);
+          background-color: var(--color-surface-container-lowest);
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: -8px;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-surface-container-lowest);
+          }
+
+          &::before {
+            left: 0;
+          }
+
+          &::after {
+            right: 0;
+          }
+        }
+      }
+
+      & input[type="text"] {
+        flex: 1 1 auto;
+        color: var(--color-on-surface);
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  & .suffix-content {
+    display: none;
+  }
+
+  &.suffix {
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      & .suffix-content {
+        display: inline
+      }
     }
   }
 
   & .supporting-text {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      display: flex;
-      height: var(--size-5);
-      padding: var(--size-1) var(--size-4) 0px var(--size-4);
-      align-items: flex-start;
-      gap: 10px;
-
-      font-size: var(--typescale-body-small-size);
-      line-height: var(--typescale-body-small-line-height);
-      font-weight: var(--typescale-body-small-weight);
-      font-family: var(--typescale-body-small-font);      
-
-      color: var(--color-on-surface-variant);
-  }
-
-  & hr {
     position: absolute;
-    bottom: 0;
+    top: 100%;
     left: 0;
-  }
+    display: flex;
+    height: var(--size-5);
+    padding: var(--size-1) var(--size-4) 0px var(--size-4);
+    align-items: flex-start;
+    gap: 10px;
 
-  &:has(textarea) {
+    font-size: var(--typescale-body-small-size);
+    line-height: var(--typescale-body-small-line-height);
+    font-weight: var(--typescale-body-small-weight);
+    font-family: var(--typescale-body-small-font);      
+
+    color: var(--color-on-surface-variant);
+  }
+  
+  /* Multi line input */
+  &:has(textarea[type="text"]) {
     padding: var(--size-4);
-    color: var(--color-on-surface);
     height: auto;
-    
-    & textarea {
+    color: transparent;
+
+    & textarea[type="text"] {
       flex: 1 1 auto;
       resize: vertical;
       min-height: 56px;
+      z-index: 8;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    & label {
+      align-items: flex-start;
+      top: 16px;
+    }
+    
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      & textarea[type="text"] {
+        padding-block-start: var(--size-2);
+        color: var(--color-on-surface);
+      
+        &::placeholder {
+          color: var(--color-on-surface);
+        }
+      }
     }
   }
+
 
   &:has(i:last-child) {
     padding-right: var(--size-3);
@@ -121,7 +248,6 @@
     padding-left: var(--size-3);
   }
 
-  
   & i {
     color: var(--color-on-surface-variant);
 
