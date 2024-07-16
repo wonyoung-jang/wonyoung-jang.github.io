@@ -11,77 +11,29 @@
     {{/*  Common buttons  */}}
     <div class="component-group-header">Common buttons</div>
     <div class="component-group">
+      {{ $buttonTypes := slice
+        (dict "type" "text" "label" "Text")
+        (dict "type" "elevated" "label" "Elevated")
+        (dict "type" "filled" "label" "Filled")
+        (dict "type" "filled-tonal" "label" "Filled tonal")
+        (dict "type" "outlined" "label" "Outlined")
+      }}
+
       {{/*  Common w/o icon  */}}
       <div class="sub-component-group-header">No icon</div>
       <section>
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "text"
-            "label" "Text"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "elevated"
-            "label" "Elevated"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "filled"
-            "label" "Filled"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "filled-tonal"
-            "label" "Filled tonal"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "outlined"
-            "label" "Outlined"
-          ) 
-        }}
+        {{ range $buttonTypes }}
+          {{ partial "components/actions/common-buttons.html" . }}
+        {{ end }}
       </section>
-      
+    
       {{/*  Common w/ icon  */}}
       <div class="sub-component-group-header">With icon</div>
       <section>
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "text"
-            "label" "Text"
-            "icon" "add"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "elevated"
-            "label" "Elevated"
-            "icon" "add"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "filled"
-            "label" "Filled"
-            "icon" "add"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "filled-tonal"
-            "label" "Filled tonal"
-            "icon" "add"
-          ) 
-        }}
-
-        {{ partial "components/actions/common-buttons.html" (dict 
-            "type" "outlined"
-            "label" "Outlined"
-            "icon" "add"
-          ) 
-        }}
+        {{ range $buttonTypes }}
+          {{ $withIcon := merge . (dict "icon" "add") }}
+          {{ partial "components/actions/common-buttons.html" $withIcon }}
+        {{ end }}
       </section>
     </div>
 
@@ -185,122 +137,65 @@
     {{/*  Icon buttons  */}}
     <div class="component-group-header">Icon buttons</div>
     <div class="component-group">
+      {{ $buttonTypes := slice "text" "filled" "filled-tonal" "outlined" }}
+      
+      {{/*  Icon button  */}}
       <div class="sub-component-group-header">Icon button</div>
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "icon" "settings"
-        ) 
-      }}
-
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "type" "filled"
-          "icon" "settings"
-        ) 
-      }}
-
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "type" "filled-tonal"
-          "icon" "settings"
-        ) 
-      }}
-
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "type" "outlined"
-          "icon" "settings"
-        ) 
-      }}
+      {{ range $buttonTypes }}
+        {{ partial "components/actions/icon-buttons.html" (dict
+            "type" .
+            "icon" "settings"
+          )
+        }}
+      {{ end }}
 
       {{/*  Icon button - toggle  */}}
       <div class="sub-component-group-header">Icon button - toggle</div>
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "id" "text"
-          "type" "text"
-          "icon" "settings"
-          "toggle" true
-        ) 
-      }}
-
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "id" "filled"
-          "type" "filled"
-          "icon" "settings"
-          "toggle" true
-        ) 
-      }}
-
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "id" "filled-tonal"
-          "type" "filled-tonal"
-          "icon" "settings"
-          "toggle" true
-        ) 
-      }}
-
-      {{ partial "components/actions/icon-buttons.html" (dict 
-          "id" "outlined"
-          "type" "outlined"
-          "icon" "settings"
-          "toggle" true
-        ) 
-      }}
+      {{ range $buttonTypes }}
+        {{ partial "components/actions/icon-buttons.html" (dict
+            "id" .
+            "type" .
+            "icon" "settings"
+            "toggle" true
+          )
+        }}
+      {{ end }}
     </div>
 
     {{/*  Segmented buttons  */}}
     <div class="component-group-header">Segmented buttons</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">Outlined</div>
+      
+      {{ $segmentedButtons := slice
+        (dict "name" "segmented1" "buttons" (slice
+          (dict "id" "start" "label" "Start" "checked" true)
+          (dict "id" "end" "label" "End")
+        ))
+        (dict "name" "segmented2" "buttons" (slice
+          (dict "id" "start2" "label" "Start" "checked" true)
+          (dict "id" "middle" "label" "Middle")
+          (dict "id" "end2" "label" "End")
+        ))
+        (dict "name" "segmented3" "buttons" (slice
+          (dict "id" "start3" "label" "Start" "checked" true)
+          (dict "id" "middle1" "label" "Middle 1")
+          (dict "id" "middle2" "label" "Middle 2")
+          (dict "id" "end3" "label" "End")
+        ))
+        (dict "name" "segmented4" "buttons" (slice
+          (dict "id" "start4" "label" "Start" "checked" true)
+          (dict "id" "middle3" "label" "Middle 1")
+          (dict "id" "middle4" "label" "Middle 2")
+          (dict "id" "middle5" "label" "Middle 3")
+          (dict "id" "end4" "label" "End")
+        ))
+      }}
 
-      <div class="component segmented-button">
-          <input type="radio" id="start" name="segmented" checked>
-          <label for="start" class="component button">Start</label>
-          
-          <input type="radio" id="end" name="segmented">
-          <label for="end" class="component button">End</label>
-      </div>
-
-      <div class="component segmented-button">
-          <input type="radio" id="start2" name="segmented" checked>
-          <label for="start2" class="component button">Start</label>
-          
-          <input type="radio" id="middle" name="segmented">
-          <label for="middle" class="component button">Middle</label>
-          
-          <input type="radio" id="end2" name="segmented">
-          <label for="end2" class="component button">End</label>
-      </div>
-
-      <div class="component segmented-button">
-          <input type="radio" id="start3" name="segmented" checked>
-          <label for="start3" class="component button">Start</label>
-          
-          <input type="radio" id="middle1" name="segmented">
-          <label for="middle1" class="component button">Middle 1</label>
-
-          <input type="radio" id="middle2" name="segmented">
-          <label for="middle2" class="component button">Middle 2</label>
-          
-          <input type="radio" id="end3" name="segmented">
-          <label for="end3" class="component button">End</label>
-      </div>
-
-      <div class="component segmented-button">
-          <input type="radio" id="start4" name="segmented" checked>
-          <label for="start4" class="component button">Start</label>
-          
-          <input type="radio" id="middle3" name="segmented">
-          <label for="middle3" class="component button">Middle 1</label>
-
-          <input type="radio" id="middle4" name="segmented">
-          <label for="middle4" class="component button">Middle 2</label>
-
-          <input type="radio" id="middle5" name="segmented">
-          <label for="middle5" class="component button">Middle 3</label>
-          
-          <input type="radio" id="end4" name="segmented">
-          <label for="end4" class="component button">End</label>
-      </div>
+      {{ range $segmentedButtons }}
+        {{ partial "components/actions/segmented-button.html" . }}
+      {{ end }}
     </div>
-
   </section>
 
 </article>

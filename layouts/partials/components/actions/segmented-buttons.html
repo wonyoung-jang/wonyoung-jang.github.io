@@ -1,0 +1,9 @@
+{{ define "partials/components/actions/segmented-button.html" }}
+  <div class="component segmented-button">
+    {{ $name := .name }}
+    {{ range $index, $button := .buttons }}
+      <input type="radio" id="{{ $button.id }}" name="{{ $name }}" {{ if $button.checked }}checked{{ end }}>
+      <label for="{{ $button.id }}" class="component button">{{ $button.label }}</label>
+    {{ end }}
+  </div>
+{{ end }}
