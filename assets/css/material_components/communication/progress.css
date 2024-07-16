@@ -7,27 +7,13 @@ progress {
   border-radius: inherit;
   flex: none;
   border: none;
-  display: flex;
-  align-items: center;
   overflow: hidden;
   writing-mode: horizontal-tb;
   direction: ltr;
-  inset: 0;
   --arc-duration: calc(var(--motion-duration-extra-long4) * 1.33);
-  --cycle-duration: calc(var(--arc-duration) * 4);
   --linear-duration: calc(var(--motion-duration-extra-long4) * 2);
-
-  &:not([circular], [value]) {
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0%;
-      inline-size: 100%;
-      block-size: 100%;
-      clip-path: none;
-      background: currentcolor;      
-    }
-
+  
+  &[linear] {
     &::-webkit-progress-value,
     &::-moz-progress-bar {
       animation-timing-function: linear;
@@ -39,13 +25,6 @@ progress {
         linear-scale-secondary,
         linear-translate-secondary;
     }
-
-    &[determinate] {
-      &::-webkit-progress-value,
-      &::-moz-progress-bar {
-        animation-iteration-count: 1;
-      }
-    }
   }
   
   &::-webkit-progress-bar {
@@ -53,11 +32,11 @@ progress {
   }
   
   &::-webkit-progress-value {
-    background: currentcolor;
+    background: currentColor;
   }
-  
+
   &::-moz-progress-bar {
-    background: currentcolor;
+    background: currentColor;
   }
 
   &[circular] {
@@ -66,22 +45,27 @@ progress {
     block-size: var(--size-12);
     border-radius: var(--shape-corner-full);
     border: var(--size-1) solid currentColor;
-    animation: var(--arc-duration) var(--motion-easing-emphasized) infinite to-circular;
     background: none;
     flex: none;
-    
-    &::-moz-progress-bar {
-      background: none;
-    }
 
-    &[determinate] {
-      animation: var(--arc-duration) var(--motion-easing-emphasized) to-circular;
+    animation-timing-function: var(--motion-easing-emphasized);
+    animation-iteration-count: infinite;
+    animation-duration: var(--arc-duration);
+    animation-name: to-circular;
+
+    &::-webkit-progress-value,
+    &::-moz-progress-bar {
+      background: transparent;
     }
   }
-
-  &[vertical] {
-    max-inline-size: fit-content;
-    writing-mode: vertical-lr;
+  
+  &[determinate] {
+    animation-iteration-count: 1;
+    
+    &::-webkit-progress-value,
+    &::-moz-progress-bar {
+      animation-iteration-count: 1;
+    }
   }
 }
 

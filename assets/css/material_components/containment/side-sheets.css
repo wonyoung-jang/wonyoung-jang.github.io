@@ -1,6 +1,4 @@
 .side-sheets {
-  flex: 1 0 auto;
-
   --container-display: flex;
   --container-flex-flow: column nowrap;
   --container-justify-content: initial;
