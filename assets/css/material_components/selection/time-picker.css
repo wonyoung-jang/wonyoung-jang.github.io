@@ -145,7 +145,6 @@
   width: 100%;
   margin-top: var(--size-6);
 
-  
   & .time-picker-start,
   & .time-picker-end {
     display: flex;
