@@ -1,0 +1,13 @@
+{{ define "partials/components/actions/floating-action-buttons.html" }}
+  <button 
+    class="component button {{ .class }} fab" {{ with .size }}{{ . }}{{ end }} {{ if .extended }}extended{{ end }}>
+    {{ if or (not .extended) (and .extended .icon) }}
+      <i>
+        {{ .icon }}
+      </i>
+    {{ end }}
+    {{ if .extended }}
+      {{ .label }}
+    {{ end }}
+  </button>
+{{ end }}

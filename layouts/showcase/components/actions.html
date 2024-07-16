@@ -12,11 +12,21 @@
     <div class="component-group-header">Common buttons</div>
     <div class="component-group">
       {{ $buttonTypes := slice
-        (dict "type" "text" "label" "Text")
-        (dict "type" "elevated" "label" "Elevated")
-        (dict "type" "filled" "label" "Filled")
-        (dict "type" "filled-tonal" "label" "Filled tonal")
-        (dict "type" "outlined" "label" "Outlined")
+        (dict 
+          "type" "text"
+          "label" "Text")
+        (dict 
+          "type" "elevated"
+          "label" "Elevated")
+        (dict 
+          "type" "filled"
+          "label" "Filled")
+        (dict 
+          "type" "filled-tonal" 
+          "label" "Filled tonal")
+        (dict 
+          "type" "outlined"
+          "label" "Outlined")
       }}
 
       {{/*  Common w/o icon  */}}
@@ -40,98 +50,39 @@
     {{/*  FABs  */}}
     <div class="component-group-header">Floating action buttons (FABs)</div>
     <div class="component-group">
-      <div class="sub-component-group-header">Small FAB</div>
-      <section>
-        <button class="component button surface-container-high fab" small>
-          <i>add</i>
-        </button>
-        
-        <button class="component button primary-container fab" small>
-          <i>add</i>
-        </button>
+      {{ $containerClasses := slice "surface-container-high" "primary-container" "secondary-container" "tertiary-container" }}
+      {{ $fabTypes := slice
+        (dict 
+          "title" "Small FAB" 
+          "size" "small" 
+          "icon" "add")
+        (dict 
+          "title" "FAB" 
+          "icon" "add")
+        (dict 
+          "title" "Large FAB" 
+          "size" "large" 
+          "icon" "add")
+        (dict 
+          "title" "Extended FAB - no icon" 
+          "extended" true 
+          "label" "Extended")
+        (dict 
+          "title" "Extended FAB - with icon" 
+          "extended" true 
+          "icon" "add" 
+          "label" "Extended")
+      }}
 
-        <button class="component button secondary-container fab" small>
-          <i>add</i>
-        </button>
-
-        <button class="component button tertiary-container fab" small>
-          <i>add</i>
-        </button>
-      </section>
-
-      <div class="sub-component-group-header">FAB</div>
-      <section>
-        <button class="component button surface-container-high fab">
-          <i>add</i>
-        </button>
-
-        <button class="component button primary-container fab">
-          <i>add</i>
-        </button>
-
-        <button class="component button secondary-container fab">
-          <i>add</i>
-        </button>
-
-        <button class="component button tertiary-container fab">
-          <i>add</i>
-        </button>
-      </section>
-
-      <div class="sub-component-group-header">Large FAB</div>
-      <section>
-        <button class="component button surface-container-high fab" large>
-          <i>add</i>
-        </button>
-
-        <button class="component button primary-container fab" large>
-          <i>add</i>
-        </button>
-        
-        <button class="component button secondary-container fab" large>
-          <i>add</i>
-        </button>
-
-        <button class="component button tertiary-container fab" large>
-          <i>add</i>
-        </button>
-      </section>
-
-      <div class="sub-component-group-header">Extended FAB - no icon</div>
-      <section>
-        <button class="component button surface-container-high fab" extended>
-          Extended
-        </button>
-        <button class="component button primary-container fab" extended>
-          Extended
-        </button>
-        <button class="component button secondary-container fab" extended>
-          Extended
-        </button>
-        <button class="component button tertiary-container fab" extended>
-          Extended
-        </button>
-      </section>
-
-      <div class="sub-component-group-header">Extended FAB - with icon</div>
-      <section>
-        <button class="component button surface-container-high fab" extended>
-          <i>add</i>
-          Extended
-        </button>
-        <button class="component button primary-container fab" extended>
-          <i>add</i>
-          Extended
-        </button>
-        <button class="component button secondary-container fab" extended>
-          <i>add</i>
-          Extended
-        </button>
-        <button class="component button tertiary-container fab" extended>
-          <i>add</i>
-          Extended
-        </button>
-      </section>
+      {{ range $fabType := $fabTypes }}
+        <div class="sub-component-group-header">{{ $fabType.title }}</div>
+        <section>
+          {{ range $class := $containerClasses }}
+            {{ $fabConfig := merge $fabType (dict "class" $class) }}
+            {{ partial "components/actions/floating-action-buttons.html" $fabConfig }}
+          {{ end }}
+        </section>
+      {{ end }}
     </div>
 
     {{/*  Icon buttons  */}}
@@ -168,28 +119,77 @@
       <div class="sub-component-group-header">Outlined</div>
       
       {{ $segmentedButtons := slice
-        (dict "name" "segmented1" "buttons" (slice
-          (dict "id" "start" "label" "Start" "checked" true)
-          (dict "id" "end" "label" "End")
-        ))
-        (dict "name" "segmented2" "buttons" (slice
-          (dict "id" "start2" "label" "Start" "checked" true)
-          (dict "id" "middle" "label" "Middle")
-          (dict "id" "end2" "label" "End")
-        ))
-        (dict "name" "segmented3" "buttons" (slice
-          (dict "id" "start3" "label" "Start" "checked" true)
-          (dict "id" "middle1" "label" "Middle 1")
-          (dict "id" "middle2" "label" "Middle 2")
-          (dict "id" "end3" "label" "End")
-        ))
-        (dict "name" "segmented4" "buttons" (slice
-          (dict "id" "start4" "label" "Start" "checked" true)
-          (dict "id" "middle3" "label" "Middle 1")
-          (dict "id" "middle4" "label" "Middle 2")
-          (dict "id" "middle5" "label" "Middle 3")
-          (dict "id" "end4" "label" "End")
-        ))
+        (dict 
+          "name" "segmented1" 
+          "buttons" (slice
+            (dict 
+              "id" "start" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "end" 
+              "label" "End")
+          )
+        )
+        (dict
+          "name" "segmented2" 
+          "buttons" (slice
+            (dict 
+              "id" "start2" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "middle" 
+              "label" "Middle")
+            (dict 
+              "id" "end2" 
+              "label" "End")
+          )
+        )
+        (dict 
+          "name" "segmented3" 
+          "buttons" (slice
+            (dict 
+              "id" "start3" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "middle1" 
+              "label" "Middle 1"
+              )
+            (dict 
+              "id" "middle2" 
+              "label" "Middle 2"
+              )
+            (dict 
+              "id" "end3" 
+              "label" "End")
+          )
+        )
+        (dict 
+          "name" "segmented4" 
+          "buttons" (slice
+            (dict 
+              "id" "start4" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "middle3" 
+              "label" "Middle 1"
+              )
+            (dict 
+              "id" "middle4" 
+              "label" "Middle 2"
+              )
+            (dict 
+              "id" "middle5" 
+              "label" "Middle 3"
+              )
+            (dict 
+              "id" "end4" 
+              "label" "End")
+          )
+        )
       }}
 
       {{ range $segmentedButtons }}
