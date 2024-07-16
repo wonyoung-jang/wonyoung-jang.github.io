@@ -5,24 +5,21 @@ en</language><managingEditor>
 contact@wonyoungjang.org (Wonyoung Jang)</managingEditor><webMaster>
 contact@wonyoungjang.org (Wonyoung Jang)</webMaster><copyright>
 &lt;!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--></copyright><lastBuildDate>
-Sun, 14 Jul 2024 16:28:42 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml"/><item><title>
+Tue, 16 Jul 2024 14:53:25 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml"/><item><title>
 All Logseq elements</title><link>
 https://wonyoungjang.org/all-logseq-elements/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/all-logseq-elements/</guid><description>
-Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Bold
+Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Single formatting link h3 Bold
 Italic
-Highlight Bold + italic
+Highlight Double formatting link h3 Bold + italic
 Bold + highlight
-Bold + italic + highlight
-Bold + highlight + italic
 Italic + bold
 Italic + highlight
-Italic + bold + highlight
-Italic + highlight + bold
-Highlight + bold Highlight + italic Highlight + bold + italic Highlight + italic + bold Strikethrough</description></item><item><title>
+Highlight + bold Highlight + italic Triple formatting link h3 Bold + italic + highlight
+Bold + highlight + italic</description></item><item><title>
 Actions</title><link>
 https://wonyoungjang.org/actions/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
