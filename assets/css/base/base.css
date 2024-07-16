@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  font-size: var(--root-font-size);
+  font-family: var(--typeface-plain);
+  font-weight: var(--typeface-weight-regular);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  align-items: stretch;
+  overflow-x: hidden;
+
+  background-color: var(--color-surface-dim);
+
+  color: var(--color-on-surface);
+}
+
+/* Main (content) */
+main {
+  max-height: calc(100dvh - 128px);
+  overflow-y: auto;
+}
+
+/* Expansions */
+details {
+  & summary {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: var(--size-6);
+    border-radius: var(--shape-corner-none);
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      content: "▲";
+      font-size: var(--size-5);
+    }
+
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &[open] > summary::after {
+    content: "▼";
+  }
+}
+
+/* Default inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Lists */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* Imagery */
+img,
+svg,
+video {
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  border-radius: var(--shape-corner-s);
+
+  object-fit: cover;
+  object-position: center;
+  transition-duration: var(--motion-duration-short3);
+  transition-property: transform, border-radius, padding;
+}
+
+svg {
+  fill: currentColor;
+}
+
+/* Material Symbols Outlined icons */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/material-symbols-outlined.woff2") format("woff2")
+}
+
+/* Icons */
+i {
+  font-family: var(--font-icon);
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--size-6);
+  letter-spacing: normal;
+  text-transform: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  word-wrap: normal;
+
+  direction: ltr;
+
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+
+  vertical-align: middle;
+  text-align: center;
+
+  overflow: hidden;
+
+  inline-size: var(--size-6);
+  min-inline-size: var(--size-6);
+  block-size: var(--size-6);
+  min-block-size: var(--size-6);
+
+  line-height: normal;
+}
+
+/* Basic typography */
+p,
+a,
+b,
+strong,
+em,
+del,
+mark {
+  font-size: var(--typescale-body-large-size);
+  line-height: var(--typescale-body-large-line-height);
+  font-weight: var(--typescale-body-large-weight);
+  font-family: var(--typescale-body-large-font);
+  color: var(--color-on-surface);
+}
+
+label {
+  font-size: var(--typescale-label-large-size);
+  line-height: var(--typescale-label-large-line-height);
+  font-weight: var(--typescale-label-large-weight);
+  font-family: var(--typescale-label-large-font);
+  color: var(--color-on-surface-variant);
+}
+
+/* Headings */
+h1 {
+  font-size: var(--typescale-display-large-size);
+  line-height: var(--typescale-display-large-line-height);
+  font-weight: var(--typescale-display-large-weight);
+  font-family: var(--typescale-display-large-font);
+  color: var(--color-on-surface);
+}
+
+h2 {
+  font-size: var(--typescale-display-medium-size);
+  line-height: var(--typescale-display-medium-line-height);
+  font-weight: var(--typescale-display-medium-weight);
+  font-family: var(--typescale-display-medium-font);
+  color: var(--color-heading-2);
+}
+
+h3 {
+  font-size: var(--typescale-display-small-size);
+  line-height: var(--typescale-display-small-line-height);
+  font-weight: var(--typescale-display-small-weight);
+  font-family: var(--typescale-display-small-font);
+  color: var(--color-heading-3);
+}
+
+h4 {
+  font-size: var(--typescale-headline-large-size);
+  line-height: var(--typescale-headline-large-line-height);
+  font-weight: var(--typescale-headline-large-weight);
+  font-family: var(--typescale-headline-large-font);
+  color: var(--color-heading-4);
+}
+
+h5 {
+  font-size: var(--typescale-headline-medium-size);
+  line-height: var(--typescale-headline-medium-line-height);
+  font-weight: var(--typescale-headline-medium-weight);
+  font-family: var(--typescale-headline-medium-font);
+  color: var(--color-heading-5);
+}
+
+h6 {
+  font-size: var(--typescale-headline-small-size);
+  line-height: var(--typescale-headline-small-line-height);
+  font-weight: var(--typescale-headline-small-weight);
+  font-family: var(--typescale-headline-small-font);
+  color: var(--color-heading-6);
+}
+
+
+/* Typography styles */
+del {
+  text-decoration: line-through;
+}
+
+em {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: var(--typeface-weight-bold);
+  -webkit-font-smoothing: antialiased;
+
+  & * {
+    font-weight: inherit;
+  }
+}
+
+mark {
+  background-color: var(--color-complementary);
+  color: var(--color-on-complementary);
+  padding-inline: 5px;
+  border-radius: var(--shape-corner-xs);
+  max-width: fit-content;
+
+  & * {
+    color: inherit;
+  }
+}
+
+/* Scrollbar */
+@media (pointer: fine) {
+  /* Firefox */
+  * {
+    scrollbar-color: var(--color-primary) transparent;
+    scrollbar-width: thin;
+
+    /* Chromium + Safari */
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: var(--size-2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: var(--size-1);
+    }
+  }
+}

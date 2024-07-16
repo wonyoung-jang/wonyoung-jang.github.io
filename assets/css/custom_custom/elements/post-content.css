@@ -1,6 +1,6 @@
 #post-content {
-  &:not(li) p,
-  mark {
+  & p,
+  & mark {
     margin-block-end: 2em;
   }
 
@@ -14,9 +14,8 @@
   }
 
   & ul,
-  & ol,
-  & li {
-    list-style-type: disc;
+  & ol {
+    list-style-type: none;
   }
 
   & li {
