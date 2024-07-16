@@ -26,7 +26,6 @@
   display: flex;
   flex-flow: column nowrap;
   padding: var(--spacing-panes);
-  gap: var(--spacing-panes);
   align-items: stretch;
 
   &#motions {
