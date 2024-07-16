@@ -3,8 +3,8 @@
   width: 100%;
 
   & .github-icon {
-    padding: var(--size-1) !important;
-    margin: 0 !important;
+    padding: var(--size-1);
+    margin: 0;
   }
 }
 

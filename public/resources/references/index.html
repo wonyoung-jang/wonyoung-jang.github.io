@@ -141,7 +141,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/student-record-system\/";
+    window.location.href = "\/food-shop-database-management\/";
   }
 </script>
 
@@ -648,7 +648,7 @@
                     
 
                     <div class="card-content">
-                        <div class="card-meta"><p title='2024-07-14 00:00:00 +0000 UTC'>July 14, 2024&nbsp;·&nbsp;1 min read
+                        <div class="card-meta"><p title='2024-07-16 00:00:00 +0000 UTC'>July 16, 2024&nbsp;·&nbsp;1 min read
 </div>
                         <span class="card-title">All Logseq elements</span>
                         <p class="card-description">A work in progress page showcasing how elements are rendered from Logseq</p>
@@ -694,6 +694,27 @@
 </div>
                         <span class="card-title">List of keyboard shortcuts for wonyoungjang.org</span>
                         <p class="card-description">This page is a list of keyboard shortcuts for navigating this site</p>
+                    </div>
+                </a>
+                    
+                <a  class="component card" elevated
+                    aria-label="post link to noteName" 
+                    href="http://192.168.40.181:1313/note/">
+
+                    
+                    
+                        <div class="card-image">
+                            <img    
+                                src="/assets/logseq-elements_1719436919750_0.png" 
+                                alt="Cover image for noteName">
+                        </div>
+                    
+
+                    <div class="card-content">
+                        <div class="card-meta">1 min read
+</div>
+                        <span class="card-title">noteName</span>
+                        <p class="card-description">A work in progress page showcasing how elements are rendered from Logseq</p>
                     </div>
                 </a>
             
@@ -888,49 +909,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

@@ -74,7 +74,7 @@
         </guid>
 
         <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Bold&#xA;Italic&#xA;Highlight Bold + italic&#xA;Bold + highlight&#xA;Bold + italic + highlight&#xA;Bold + highlight + italic&#xA;Italic + bold&#xA;Italic + highlight&#xA;Italic + bold + highlight&#xA;Italic + highlight + bold&#xA;Highlight + bold Highlight + italic Highlight + bold + italic Highlight + italic + bold Strikethrough
+          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight&#xA;Italic + bold&#xA;Italic + highlight&#xA;Highlight + bold Highlight + italic Triple formatting&#xD;link&#xD;h3&#xD;Bold + italic + highlight&#xA;Bold + highlight + italic
         </description>
       </item>
       <item>
@@ -1251,6 +1251,34 @@
 
         <description>
           &lt;!DOCTYPE html&gt; 
+        </description>
+      </item>
+      <item>
+        <title>
+          noteName
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/note/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/note/
+        </guid>
+
+        <description>
+          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight&#xA;Italic + bold&#xA;Italic + highlight&#xA;Highlight + bold Highlight + italic Triple formatting&#xD;link&#xD;h3&#xD;Bold + italic + highlight&#xA;Bold + highlight + italic
         </description>
       </item>
   </channel>
