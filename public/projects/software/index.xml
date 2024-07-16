@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/projects/software/
+      https://wonyoungjang.org/projects/software/
     </link>
 
     <description>
@@ -46,17 +46,17 @@
 
     
       <lastBuildDate>
-        Sun, 07 Jul 2024 17:06:16 -0400
+        Tue, 16 Jul 2024 17:22:05 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/projects/software/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/projects/software/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           Realtime multiplayer drawing
         </title>
 
         <link>
-          http://192.168.40.181:1313/realtime-multiplayer-drawing/
+          https://wonyoungjang.org/realtime-multiplayer-drawing/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/realtime-multiplayer-drawing/
+          https://wonyoungjang.org/realtime-multiplayer-drawing/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/wonyoungjang.org/
+          https://wonyoungjang.org/wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/wonyoungjang.org/
+          https://wonyoungjang.org/wonyoungjang.org/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/q-learning-tournament-scheduler/
+          https://wonyoungjang.org/q-learning-tournament-scheduler/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/q-learning-tournament-scheduler/
+          https://wonyoungjang.org/q-learning-tournament-scheduler/
         </guid>
 
         <description>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/save-top-level-reddit-comments/
+          https://wonyoungjang.org/save-top-level-reddit-comments/
         </link>
 
         <pubDate>
@@ -155,7 +155,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/save-top-level-reddit-comments/
+          https://wonyoungjang.org/save-top-level-reddit-comments/
         </guid>
 
         <description>
@@ -168,7 +168,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/logseq-markdown-tokenizer/
+          https://wonyoungjang.org/logseq-markdown-tokenizer/
         </link>
 
         <pubDate>
@@ -183,7 +183,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/logseq-markdown-tokenizer/
+          https://wonyoungjang.org/logseq-markdown-tokenizer/
         </guid>
 
         <description>

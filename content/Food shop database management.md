@@ -22,10 +22,10 @@ lastMod: 2024-07-07
 
 ## Requirements
 
-Design a normalized physical database model for an ordering system (Bagel Corner)
+  + Design a normalized physical database model for an ordering system (Bagel Corner)
 
-Create a database for another business (Mister Coffee) using a provided design document
+  + Create a database for another business (Mister Coffee) using a provided design document
 
-Load tables with sample data and create a view and an index to enhance query performance
+  + Load tables with sample data and create a view and an index to enhance query performance
 
-Develop SQL queries, including a simple query and a more complex query involving table joins
+  + Develop SQL queries, including a simple query and a more complex query involving table joins

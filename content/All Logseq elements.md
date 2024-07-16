@@ -32,116 +32,120 @@ lastMod: 2024-07-16
 
 ## Text styling
 
-### Single formatting
+  + ### Single formatting
 
-**Bold**
+    + **Bold**
 
-_Italic_
+    + _Italic_
 
-{{< logseq/mark >}}Highlight{{< / logseq/mark >}}
+    + {{< logseq/mark >}}Highlight{{< / logseq/mark >}}
 
-### Double formatting
+  + ### Double formatting
 
-**_Bold + italic_**
+    + **_Bold + italic_**
 
-**{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
+    + **{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
 
-_**Italic + bold**_
+    + _**Italic + bold**_
 
-*{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
+    + *{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
 
-{{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
+    + {{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
 
-{{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
+    + {{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
 
-### Triple formatting
+  + ### Triple formatting
 
-**_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
+    + **_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
 
-**{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
+    + **{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
 
-_**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
+    + _**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
 
-_{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
+    + _{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
 
-{{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
+    + {{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
 
-{{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
+    + {{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
 
-~~Strikethrough~~
+    + ~~Strikethrough~~
 
 ## Advanced commands
 
-{{< logseq/orgCENTER >}}Centered text
+  + {{< logseq/orgCENTER >}}Centered text
 {{< / logseq/orgCENTER >}}
 
-**Hugo**:
+    + **Hugo**: `<blockquote class="centered">Centered text</blockquote>`
 
-`<blockquote class="centered">Centered text</blockquote>`
+  + >Blockquote with ">"
 
->Blockquote with ">"
+    + **Hugo**: `<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
 
-**Hugo**:
+  + `Inline code with backticks`
 
-`<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
+    + **Hugo**: `<p><code>Blockquote with backticks</code></p>`
 
-`Inline code with backticks`
+  + An external link: https://www.pbs.org/video/art21-fantasy/
 
-**Hugo**:
-
-`<p><code>Blockquote with backticks</code></p>`
-
-An external link: https://www.pbs.org/video/art21-fantasy/
-
-**Hugo**:
-
-`<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
+    + **Hugo**: `<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
 
 ## Logseq pages
 
-### Page reference
+  + ### Page reference
 
-**Input**: `[About]({{< ref "/about" >}})`
+    + **Input**: `[About]({{< ref "/about" >}})`
 
-**Schrödinger**: `[About]({{< ref "/About" >}})`
+    + **Output**: [About]({{< ref "/About" >}})
 
-**Output**: [About]({{< ref "/About" >}})
+  + ### Page embed
 
-### Page embed
+    + **Input**: `{{embed [About]({{< ref "/about" >}})}}`
 
-**Input**: `{{embed [About]({{< ref "/about" >}})}}`
-
-**Schrödinger**: `{{embed [About]({{< ref "/About" >}})}}`
-
-**Output**: {{embed [About]({{< ref "/About" >}})}}
+    + **Output**: {{embed [About]({{< ref "/About" >}})}}
 
 ## Logseq blocks
 
-### Block reference
+  + ### Block reference
 
-**Input**: `## About me
+    + **Input**: `## About me
 `
 
-**Schrödinger**: `## About me`
-
-**Output**: ## About me
+    + **Output**: ## About me
 
 
-### Block embed
+  + ### Block embed
 
-**Input**: `{{embed ## About me
+    + **Input**: `{{embed ## About me
  }}`
 
-**Schrödinger**:
-```
-{{embed ## About me
- }}
-```
-
-**Output**: {{embed ## About me
+    + **Output**: {{embed ## About me
  }}
 
----
+## Logseq tasks
+
+  + TODO A todo task
+
+  + DOING A doing task
+
+  + DONE A done task
+
+  + NOW A now task
+
+  + LATER A later task
+
+  + WAITING A waiting task
+
+  + CANCELED A canceled task
+
+  + TODO [#A] A high priority task
+
+  + TODO [#B] A medium priority task
+
+  + TODO [#C] A low priority task
+
+## Logseq other
+
+  + draws/2024-07-16-17-32-44.excalidraw
 
 ---
 
