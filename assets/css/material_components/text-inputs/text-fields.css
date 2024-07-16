@@ -39,7 +39,7 @@
 
   &:has(i:first-child) {
     & label {
-      padding-inline-start: var(--size-12);
+      padding-inline-start: var(--size-13);
     }
   }
 
