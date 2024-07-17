@@ -61,6 +61,9 @@ footer:
   - identifier: About
     name: About
     pageRef: /about
+  - identifier: Archives
+    name: Archives
+    pageRef: /archives
   - identifier: Contact
     name: Contact
     pageRef: /contact

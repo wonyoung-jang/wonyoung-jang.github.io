@@ -53,7 +53,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/</loc>
-    <lastmod>2024-07-16T17:37:47-04:00</lastmod>
+    <lastmod>2024-07-17T10:51:01-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -268,6 +268,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.40.181:1313/archives/</loc>
+    <lastmod>2024-07-17T10:51:01-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
