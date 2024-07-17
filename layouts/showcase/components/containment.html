@@ -472,32 +472,58 @@
 
       <div class="divider-showcase-container">
         <div class="title-small">Mid inset</div>
-        <hr mid>
+        {{ partial "components/containment/dividers.html" (dict
+          "inset" "mid"
+          ) 
+        }}
         <div class="title-small">Start inset</div>
-        <hr start>
+        {{ partial "components/containment/dividers.html" (dict
+          "inset" "start"
+          ) 
+        }}
         <div class="title-small">End inset</div>
-        <hr end>
+        {{ partial "components/containment/dividers.html" (dict
+          "inset" "end"
+          ) 
+        }}
         <div class="title-small">No inset</div>
-        <hr>
+        {{ partial "components/containment/dividers.html" (dict
+          ) 
+        }}
       </div>
 
       <div class="sub-component-group-header">Vertical</div>
       <div class="divider-showcase-container-vertical">
         <div class="title-small">
           Mid inset
-          <hr vertical mid>
+          {{ partial "components/containment/dividers.html" (dict
+            "vertical" true
+            "inset" "mid"
+            ) 
+          }}
         </div>
         <div class="title-small">
           Start inset
-          <hr vertical start>
+          {{ partial "components/containment/dividers.html" (dict
+            "vertical" true
+            "inset" "start"
+            ) 
+          }}
         </div>
         <div class="title-small">
           End inset
-          <hr vertical end>
+          {{ partial "components/containment/dividers.html" (dict
+            "vertical" true
+            "inset" "end"
+            ) 
+          }}
         </div>
         <div class="title-small">
           No inset
-          <hr vertical>
+          {{ partial "components/containment/dividers.html" (dict
+            "vertical" true
+            ) 
+          }}
         </div>
       </div>
     </div>

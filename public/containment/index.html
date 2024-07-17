@@ -61,12 +61,12 @@
   <meta property="og:description" content="Containment components available for wonyoungjang.org">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:modified_time" content="2024-07-16T17:22:05-04:00">
+    <meta property="article:modified_time" content="2024-07-17T16:04:12-04:00">
 
 
   <meta itemprop="name" content="Containment">
   <meta itemprop="description" content="Containment components available for wonyoungjang.org">
-  <meta itemprop="dateModified" content="2024-07-16T17:22:05-04:00">
+  <meta itemprop="dateModified" content="2024-07-17T16:04:12-04:00">
   <meta itemprop="wordCount" content="6">
   <meta itemprop="keywords" content="Components">
 
@@ -1324,32 +1324,48 @@
 
       <div class="divider-showcase-container">
         <div class="title-small">Mid inset</div>
-        <hr mid>
+        
+  <hr mid>
+
         <div class="title-small">Start inset</div>
-        <hr start>
+        
+  <hr start>
+
         <div class="title-small">End inset</div>
-        <hr end>
+        
+  <hr end>
+
         <div class="title-small">No inset</div>
-        <hr>
+        
+  <hr ZgotmplZ>
+
       </div>
 
       <div class="sub-component-group-header">Vertical</div>
       <div class="divider-showcase-container-vertical">
         <div class="title-small">
           Mid inset
-          <hr vertical mid>
+          
+  <hr vertical mid>
+
         </div>
         <div class="title-small">
           Start inset
-          <hr vertical start>
+          
+  <hr vertical start>
+
         </div>
         <div class="title-small">
           End inset
-          <hr vertical end>
+          
+  <hr vertical end>
+
         </div>
         <div class="title-small">
           No inset
-          <hr vertical>
+          
+  <hr vertical ZgotmplZ>
+
         </div>
       </div>
     </div>
@@ -2905,6 +2921,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
