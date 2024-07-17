@@ -57,8 +57,6 @@
       max-inline-size: 100%;
       max-block-size: fit-content;
       align-items: center;
-      box-shadow: var(--elevation5);
-      outline: 1px solid var(--color-outline-variant);
     }
   } 
 }
