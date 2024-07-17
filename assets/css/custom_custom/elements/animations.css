@@ -19,7 +19,7 @@ footer,
 
 .layout,
 .layout * {
-  transition: background-color var(--motion-duration-long4) var(--motion-easing-emphasized);
+  transition: background-color var(--motion-duration-medium4) var(--motion-easing-emphasized);
 }
 
 /* Reduced motion */
