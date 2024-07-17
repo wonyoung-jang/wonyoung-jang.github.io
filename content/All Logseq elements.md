@@ -14,7 +14,7 @@ description: A work in progress page showcasing how elements are rendered from L
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-07-16
+lastMod: 2024-07-17
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 
@@ -29,6 +29,23 @@ lastMod: 2024-07-16
 ##### Heading 5
 
 ###### Heading 6
+
+# Nested headings
+
+  + ## Heading 2
+heading:: 2
+
+    + ### Heading 3
+heading:: 3
+
+      + #### Heading 4
+heading:: 4
+
+        + ##### Heading 5
+heading:: 5
+
+          + ###### Heading 6
+heading:: 6
 
 ## Text styling
 
@@ -103,6 +120,10 @@ lastMod: 2024-07-16
 
     + **Output**: {{embed [About]({{< ref "/About" >}})}}
 
+  + ## Tags
+
+    + #page
+
 ## Logseq blocks
 
   + ### Block reference
@@ -120,6 +141,12 @@ lastMod: 2024-07-16
 
     + **Output**: {{embed ## About me
  }}
+
+## Logseq tables
+
+  + | Table | Table | Table |
+|-|-|-|
+| Value | Value | Value |
 
 ## Logseq tasks
 

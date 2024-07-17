@@ -14,8 +14,8 @@ resources:
 - components
 description: Communication components available for wonyoungjang.org
 title: Communication
-lastMod: 2024-07-16
+lastMod: 2024-07-17
 ---
-![forum.svg](/assets/forum_1721164425407_0.svg)
+![communication.webp](/assets/communication_1721246145910_0.webp)
 
 See: [Material Design 3 - Components](https://m3.material.io/components)

@@ -14,8 +14,8 @@ resources:
 - components
 description: Text input components available for wonyoungjang.org
 title: Text inputs
-lastMod: 2024-07-16
+lastMod: 2024-07-17
 ---
-![variable_add.svg](/assets/variable_add_1721164472888_0.svg)
+![text-inputs.webp](/assets/text-inputs_1721246304147_0.webp)
 
 See: [Material Design 3 - Components](https://m3.material.io/components)

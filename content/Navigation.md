@@ -14,8 +14,8 @@ resources:
 - components
 description: Navigation components available for wonyoungjang.org
 title: Navigation
-lastMod: 2024-07-16
+lastMod: 2024-07-17
 ---
-![explore.svg](/assets/explore_1721164403592_0.svg)
+![navigation.webp](/assets/navigation_1721246328721_0.webp)
 
 See: [Material Design 3 - Components](https://m3.material.io/components)

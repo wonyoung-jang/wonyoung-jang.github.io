@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/custom.min.af0149f2f5a650cdeb6f5f3393212181086d45abe5548a4c766eb6f1bc5f7d90.css" integrity="sha256-rwFJ8vWmUM3rb18zkyEhgQhtRavlVIpMdm628bxffZA=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/material.min.62daaa46235dd0db9c816cbf686691bd3c5480a4ad823ef0edad4b7ae8c6c56b.css" integrity="sha256-YtqqRiNd0NucgWy/aGaRvTxUgKStgj7w7a1LeujGxWs=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material.min.a3196bbe538fa4c2071bdb4f16e3242380d66633ff782e753762142f4b07ccc4.css" integrity="sha256-oxlrvlOPpMIHG9tPFuMkI4DWZjP/eC51N2IUL0sHzMQ=" rel="preload stylesheet" as="style">
 
 
 
@@ -1384,49 +1384,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

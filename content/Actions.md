@@ -14,8 +14,8 @@ resources:
 - components
 description: Action components available for wonyoungjang.org
 title: Actions
-lastMod: 2024-07-16
+lastMod: 2024-07-17
 ---
-![touch_app.svg](/assets/touch_app_1721164446552_0.svg)
+![actions.webp](/assets/actions_1721246174666_0.webp)
 
 See: [Material Design 3 - Components](https://m3.material.io/components)
