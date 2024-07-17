@@ -78,7 +78,7 @@
     z-index: -1;
   }
   
-  /* TODO */
+  /* TODO TOC following indicator */
   & .indicator {
     display: none;
   }
