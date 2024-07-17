@@ -1,0 +1,28 @@
+.github-icon,
+.site-icon {
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  padding: 2px;
+}
+
+.site-icon-w {
+  fill: var(--color-primary);
+}
+
+.site-icon-j-left {
+  fill: var(--color-tertiary);
+}
+
+.site-icon-j-right {
+  fill: var(--color-secondary);
+}
+
+#home-page-icon {
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  padding: 8px;
+}
