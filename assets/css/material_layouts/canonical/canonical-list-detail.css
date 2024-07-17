@@ -1,13 +1,13 @@
-.canonical-list-detail .pane {
-  &.detail-pane,
-  &.list-pane {
+.canonical-list-detail {
+  & .detail-pane,
+  & .list-pane {
     --flex: 1 1 0;
   }
 }
 
 /* Compact: 0px-599px */
 @media screen and (max-width: 599px) {
-  .canonical-list-detail .pane.detail-pane {
+  .canonical-list-detail .detail-pane {
     --display: none;
   }
 }

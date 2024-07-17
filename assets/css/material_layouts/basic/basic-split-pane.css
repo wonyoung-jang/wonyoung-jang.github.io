@@ -1,14 +1,8 @@
-.basic-split-pane,  
-.basic-fixed-flex:not(#single) {
+.basic-split-pane {
   --flex-flow: row nowrap;
     
   & .pane {
     --flex: 1 1 0;
-    
-    &.fixed-pane {
-      --flex: 0 0 var(--fixed-pane-width);
-      --width: var(--fixed-pane-width);
-    }
   }
 }
 
@@ -25,7 +19,7 @@
       content: "Compact: do not use this layout on screens smaller than 600px wide.";
       display: flex;
       color: var(--color-error);
-      padding: 1em;
+      padding: 4em;
     }
   }
 }

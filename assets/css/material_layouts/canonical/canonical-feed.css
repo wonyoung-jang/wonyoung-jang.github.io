@@ -7,35 +7,35 @@
 
 /* Compact: 0-599px */
 @media screen and (max-width: 599px) {
-  .canonical-feed .pane .card {
+  .canonical-feed .card {
     flex: 1 1 calc(100% - var(--spacing-panes));
   }
 }
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
-  .canonical-feed .pane .card {
+  .canonical-feed .card {
     flex: 1 1 calc(100% / 2 - var(--spacing-panes));
   }
 }
 
 /* Expanded: 840px-1199px */
 @media screen and (min-width: 840px) {
-  .canonical-feed .pane .card {
+  .canonical-feed .card {
     flex: 1 1 calc(100% / 3 - var(--spacing-panes));
   }  
 }
 
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
-  .canonical-feed .pane .card {
+  .canonical-feed .card {
     flex: 1 1 calc(100% / 4 - var(--spacing-panes));
   }  
 }
 
 /* Extra large: 1600px+ */
 @media screen and (min-width: 1600px) {
-  .canonical-feed .pane .card {
+  .canonical-feed .card {
     flex: 1 1 calc(100% / 5 - var(--spacing-panes));
   }  
 }

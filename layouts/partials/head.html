@@ -31,17 +31,17 @@
 {{/* Styles */}}
 {{- $cssFiles := dict
     "1_base"       (resources.Match "css/base/**.css")
-    "2_layouts"    (resources.Match "css/material_layouts/**.css")
-    "3_components" (resources.Match "css/material_components/**.css")
-    "4_custom"     (resources.Match "css/custom_custom/**.css")
+    "2_components" (resources.Match "css/material_components/**.css")
+    "3_custom"     (resources.Match "css/custom_custom/**.css")
+    "4_layouts"    (resources.Match "css/material_layouts/**.css")
     "5_helpers"    (resources.Match "css/custom_helpers/**.css")
 -}}
   
 {{- $stylesheets := dict
     "1_base"                    (slice "1_base")
-    "2_material_layouts"        (slice "2_layouts")
-    "3_material_components"     (slice "3_components")
-    "4_custom"                  (slice "4_custom")
+    "2_material_components"     (slice "2_components")
+    "3_custom"                  (slice "3_custom")
+    "4_material_layouts"        (slice "4_layouts")
     "5_helpers"                 (slice "5_helpers")
 -}}
   

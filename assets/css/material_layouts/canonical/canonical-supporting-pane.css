@@ -1,20 +1,25 @@
 .canonical-supporting-pane {
   --flex-flow: column nowrap;
+
+  & .focus-pane {
+    --flex: 2 1 0;
+  }
+
+  & .supporting-pane {
+    --flex: 1 2 0;
+  }
 }
 
-/* Expanded: 840px-1199px */
 @media screen and (min-width: 840px) {
   .canonical-supporting-pane {
     --flex-flow: row nowrap;
 
-    & .pane {
-      &.focus-pane {
-        --flex: 2 1 0;
-      }
-    
-      &.supporting-pane {
-        --flex: 1 2 0;
-      }
+    & .focus-pane {
+      --flex: 2 1 0;
+    }
+  
+    & .supporting-pane {
+      --flex: 1 2 0;
     }
   }
 }
