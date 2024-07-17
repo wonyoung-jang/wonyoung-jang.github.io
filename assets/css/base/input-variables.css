@@ -32,6 +32,9 @@
   /* Font size */
   --input-font-size:  14px;
 
+  /* Line character width */
+  --input-char-width: 60ch;
+
   /* || Shapes */
 
   /* Shape corner */

@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/_material.min.e8426fb206c2ef6cf61e735a6f9b94745fcbf39e1b0bcc722f80842f189a25fa.css" integrity="sha256-6EJvsgbC72z2HnNab5uUdF/L854bC8xyL4CELxiaJfo=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.d73fb805e0818bf36e1edbfd0b0df952cc1dfc8616d2b34a1bf25eea76483d34.css" integrity="sha256-1z&#43;4BeCBi/NuHtv9Cw35Uswd/IYW0rNKG/Je6nZIPTQ=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.1794f52bd88e3841f9ff68c392053120b1325c6ac3a311a92f5b186994d9818d.css" integrity="sha256-F5T1K9iOOEH5/2jDkgUxILEyXGrDoxGpL1sYaZTZgY0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.bf3bd8f6ac0fbd68fd82d91e441bec3e02437476b7351f91bc6a59927d914455.css" integrity="sha256-vzvY9qwPvWj9gtkeRBvsPgJDdHa3NR&#43;RvGpZkn2RRFU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.c9cf2e0342ac6e74cfc3756cf1131028478ac3d089fce22d2e2b7bb5ff89d161.css" integrity="sha256-yc8uA0KsbnTPw3Vs8RMQKEeKw9CJ/OItLit7tf&#43;J0WE=" rel="preload stylesheet" as="style">
 
 
 
@@ -144,7 +144,7 @@
   
  
   function navigateToRandomPage() {
-    window.location.href = "\/pit-signs-for-robotics-competition\/";
+    window.location.href = "\/shapes\/";
   }
 </script>
 
@@ -152,6 +152,21 @@
   <i>palette</i> 
   <menu class="menu" id="theme-controls-menu">
     <span class="theme-controls-title headline-medium">Theme controls</span>
+    
+    <div id="max-width-selector-container">
+      <div class="title-large">Content text width</div>
+      <div class="component segmented-button">
+        <input type="radio" name="width" id="width-selector-60" value="60"/>
+        <label for="width-selector-60" class="component button">60ch</label>
+        
+        <input type="radio" name="width" id="width-selector-120" value="120"/>
+        <label for="width-selector-120" class="component button">120ch</label>
+        
+        <input type="radio" name="width" id="width-selector-max" value="max"/>
+        <label for="width-selector-max" class="component button">Max</label>
+      </div>
+    </div>
+
     
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
@@ -272,6 +287,10 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
+    var widthSelector = document.getElementById("width-selector");
+    var widthSelector60 = document.getElementById("width-selector-60");
+    var widthSelector120 = document.getElementById("width-selector-120");
+    var widthSelectorMax = document.getElementById("width-selector-max");
     var hueSelector = document.getElementById("hue-selector");
     var chromaSelector = document.getElementById("chroma-selector");
     var shapeSelector = document.getElementById("shape-selector");
@@ -280,6 +299,7 @@
     var lineHeightSelector = document.getElementById('line-height-selector');
 
     
+    var savedWidth = localStorage.getItem("max-char-width");
     var savedHue = localStorage.getItem("theme-hue");
     var savedChroma = localStorage.getItem("theme-chroma");
     var savedShape = localStorage.getItem("theme-shape");
@@ -289,6 +309,15 @@
     var savedFontSize = localStorage.getItem('typography-font-size');
     var savedLineHeight = localStorage.getItem('typography-line-height');
 
+    if (savedWidth !== null) {
+      if (savedWidth === "60") {
+        widthSelector60.checked = true;
+      } else if (savedWidth === "120") {
+        widthSelector120.checked = true;
+      } else if (savedWidth === "max") {
+        widthSelectorMax.checked = true;
+      }
+    }
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     }
@@ -306,6 +335,20 @@
     }
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
+    }
+
+    function updateWidth() {
+      var width = document.querySelector('input[name="width"]:checked').value;
+
+      if (width === "60") {
+        root.style.setProperty("--input-char-width", width + "ch");
+      } else if (width === "120") {
+        root.style.setProperty("--input-char-width", width + "ch");
+      } else if (width === "max") {
+        root.style.setProperty("--input-char-width", "100%");
+      }
+
+      localStorage.setItem("max-char-width", width);
     }
 
     function updateColor() {
@@ -348,11 +391,15 @@
     }
 
     
+    updateWidth();
     updateColor();
     updateShape();
     updateTypography();
 
     
+    widthSelector60.addEventListener("change", updateWidth);
+    widthSelector120.addEventListener("change", updateWidth);
+    widthSelectorMax.addEventListener("change", updateWidth);    
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
     shapeSelector.addEventListener("input", updateShape);
@@ -361,6 +408,7 @@
     typographySelector.addEventListener('change', updateTypography);
   });
 
+  
   const rangeInputHues = document.getElementById('hue-selector');
   const tooltipHues = document.getElementById('hue-tooltip');
   const rangeInputChromas = document.getElementById('chroma-selector');
@@ -1243,49 +1291,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

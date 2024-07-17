@@ -149,6 +149,7 @@
   transform: scale(1) translateY(100%);
 }
 
+#max-width-selector-container,
 #color-selector-container,
 #shape-selector-container,
 #font-size-selector-container,
@@ -158,4 +159,15 @@
   padding: var(--size-7);
   margin-bottom: var(--size-4);
   gap: var(--size-3);
+}
+
+#max-width-selector-container {
+  & div:first-child {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: var(--size-4);
+  }
+  & * {
+    flex: 1 1 0;
+  }
 }
