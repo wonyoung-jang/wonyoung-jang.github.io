@@ -60,17 +60,6 @@ footer {
   }
 }
 
-.sub-sections-container {
-  & a:first-child {
-    margin-inline-start: 0;
-    font-weight: bolder;
-  }
-
-  & a {
-    margin-inline-start: var(--size-2);
-  }
-}
-
 /* Compact: add space for scrollbar */
 @media screen and (max-width: 599px) {
   footer {
