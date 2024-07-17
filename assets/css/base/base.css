@@ -137,6 +137,7 @@ i {
 
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+  user-select: none;
 
   vertical-align: middle;
   text-align: center;

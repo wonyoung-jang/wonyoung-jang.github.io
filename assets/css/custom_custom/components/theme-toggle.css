@@ -46,6 +46,10 @@ body {
   }
 }
 
+#theme-toggle {
+  cursor: pointer;
+}
+
 @keyframes rise-moon {
   0% {
     transform: translate(-36px, 48px);

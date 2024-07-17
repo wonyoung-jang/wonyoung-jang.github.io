@@ -5,8 +5,9 @@
   --container-align-items: flex-start;
   --container-gap: initial;
   --container-height: initial;
-  --container-width: 360px;
+  --container-width: initial;
   --container-padding: var(--size-3);
+  min-width: 360px;
 
   --container-outline: initial;
   --container-elevation: initial;

@@ -266,5 +266,9 @@
     <lastmod>2024-07-13T18:50:22-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/archives/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

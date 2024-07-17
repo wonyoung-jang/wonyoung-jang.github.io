@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/_material.min.e8426fb206c2ef6cf61e735a6f9b94745fcbf39e1b0bcc722f80842f189a25fa.css" integrity="sha256-6EJvsgbC72z2HnNab5uUdF/L854bC8xyL4CELxiaJfo=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/_material.min.077c1594bcb4a0bbd435c9f09cc7b3f11bdf0c9bb2184eb3c4ded999916a5aed.css" integrity="sha256-B3wVlLy0oLvUNcnwnMez8RvfDJuyGE6zxN7ZmZFqWu0=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/core.min.1794f52bd88e3841f9ff68c392053120b1325c6ac3a311a92f5b186994d9818d.css" integrity="sha256-F5T1K9iOOEH5/2jDkgUxILEyXGrDoxGpL1sYaZTZgY0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/core.min.d03e7bed007f6881c0dfee3eac8d7813caaffaa7a99c5c360b22e59801066219.css" integrity="sha256-0D577QB/aIHA3&#43;4&#43;rI14E8qv&#43;qepnFw2CyLlmAEGYhk=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/custom.min.c9cf2e0342ac6e74cfc3756cf1131028478ac3d089fce22d2e2b7bb5ff89d161.css" integrity="sha256-yc8uA0KsbnTPw3Vs8RMQKEeKw9CJ/OItLit7tf&#43;J0WE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.f051398596a7e5962e9958b8fe959abfb26b063144efd5bf07d4206c8a5efb50.css" integrity="sha256-8FE5hZan5ZYumVi4/pWav7JrBjFE79W/B9QgbIpe&#43;1A=" rel="preload stylesheet" as="style">
 
 
 
@@ -130,8 +130,7 @@
   id="random-button"
   accesskey="r"
   title="Random page (ALT + SHIFT + R)"
-  onclick="navigateToRandomPage(); return false;"
-  onmouseover="showRandomPage(); return false;">
+  onclick="navigateToRandomPage(); return false;">
   <i>ifl</i>
 </button>
 
@@ -141,13 +140,130 @@
 
 
 
-Pages(42)
 
 <script defer>
- 
-  function navigateToRandomPage() {
-    window.location.href = "\/wonyoungjang.org\/";
+  let pages = [
+    
+      "\/actions\/",
+    
+      "\/all-logseq-elements\/",
+    
+      "\/communication\/",
+    
+      "\/resources\/components\/",
+    
+      "\/containment\/",
+    
+      "\/navigation\/",
+    
+      "\/resources\/references\/",
+    
+      "\/resources\/",
+    
+      "\/text-inputs\/",
+    
+      "\/elevations\/",
+    
+      "\/states\/",
+    
+      "\/resources\/tokens\/",
+    
+      "\/projects\/design\/",
+    
+      "\/ergodox-ez-lego-tenting-kits\/",
+    
+      "\/projects\/",
+    
+      "\/colors\/",
+    
+      "\/feed-layout\/",
+    
+      "\/fixed-and-flexible-layout\/",
+    
+      "\/resources\/layouts\/",
+    
+      "\/list-detail-layout\/",
+    
+      "\/motion\/",
+    
+      "\/now\/",
+    
+      "\/shapes\/",
+    
+      "\/single-pane-layout\/",
+    
+      "\/supporting-pane-layout\/",
+    
+      "\/typography\/",
+    
+      "\/about\/",
+    
+      "\/contact\/",
+    
+      "\/list-of-admonitions-for-wonyoungjang.org\/",
+    
+      "\/pit-signs-for-robotics-competition\/",
+    
+      "\/search\/",
+    
+      "\/sitemap\/",
+    
+      "\/split-pane-layout\/",
+    
+      "\/list-of-keyboard-shortcuts-for-wonyoungjang.org\/",
+    
+      "\/realtime-multiplayer-drawing\/",
+    
+      "\/projects\/software\/",
+    
+      "\/wonyoungjang.org\/",
+    
+      "\/q-learning-tournament-scheduler\/",
+    
+      "\/save-top-level-reddit-comments\/",
+    
+      "\/disaster-recovery-robot-simulation\/",
+    
+      "\/projects\/university\/",
+    
+      "\/cs-career-chatbot\/",
+    
+      "\/logseq-markdown-tokenizer\/",
+    
+      "\/package-delivery-route-optimization\/",
+    
+      "\/hotel-reservation-manager\/",
+    
+      "\/vacation-cart-manager\/",
+    
+      "\/retail-inventory-manager\/",
+    
+      "\/dvd-rental-database\/",
+    
+      "\/student-record-system\/",
+    
+      "\/food-shop-database-management\/",
+    
+      "\/archives\/",
+    
+  ];
+  
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
   }
+  
+  function navigateToRandomPage() {
+    shuffleArray(pages);
+    window.location.href = pages[0];
+  }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const randomButton = document.getElementById("random-button");
+    randomButton.addEventListener("click", navigateToRandomPage);
+  });  
 </script>
 
         <button class="component button icon-button" id="theme-controls">
@@ -1356,6 +1472,8 @@ Pages(42)
      
          
              
+        
+     
         
      
 
