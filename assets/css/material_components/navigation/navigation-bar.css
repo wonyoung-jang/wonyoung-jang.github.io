@@ -92,3 +92,37 @@
     }
   }
 }
+
+.icon-container {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--color-on-surface);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    &::after {
+      opacity: var(--state-hover-opacity);
+      background-size: 50000%;
+      animation: rippleHover var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both;
+    }
+  }
+}
+
+@keyframes rippleHover {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 50000%;
+  }
+}

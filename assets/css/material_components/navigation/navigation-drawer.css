@@ -15,18 +15,6 @@
   
   --bg-color: var(--color-surface-container-low);
   
-  --text-color: initial;
-  --icon-color: initial;
-
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
-
   & .headline,
   & .section-header {
     color: var(--color-on-surface-variant);
@@ -74,16 +62,7 @@
     
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);
-  
-    --container-outline-hover: initial;
-    --container-elevation-hover: initial;
-  
-    --container-outline-focus: initial;
-    --container-elevation-focus: initial;
-  
-    --container-outline-press: initial;
-    --container-elevation-press: initial;
-  
+    
     &:has(i) {
       --container-padding: var(--size-4) var(--size-6) var(--size-4) var(--size-4);
     }
