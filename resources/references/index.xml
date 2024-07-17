@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on
 Wonyoung Jang</title><link>
 https://wonyoungjang.org/resources/references/</link><description>
-Recent content in References on Wonyoung Jang</description><generator><meta name="generator" content="Hugo 0.128.2"/><language>
+Recent content in References on Wonyoung Jang</description><generator><meta name="generator" content="Hugo 0.129.0"/><language>
 en</language><managingEditor>
 contact@wonyoungjang.org (Wonyoung Jang)</managingEditor><webMaster>
 contact@wonyoungjang.org (Wonyoung Jang)</webMaster><copyright>
 &lt;!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--></copyright><lastBuildDate>
-Tue, 16 Jul 2024 17:37:47 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml"/><item><title>
+Wed, 17 Jul 2024 16:04:12 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml"/><item><title>
 All Logseq elements</title><link>
 https://wonyoungjang.org/all-logseq-elements/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/all-logseq-elements/</guid><description>
-Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Single formatting link h3 Bold
+Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Nested headings link h1 Heading 2 link h2 heading:: 2
++ ### Heading 3 heading:: 3
++ #### Heading 4 heading:: 4
++ ##### Heading 5 heading:: 5
++ ###### Heading 6 heading:: 6
+Text styling link h2 Single formatting link h3 Bold
 Italic
-Highlight Double formatting link h3 Bold + italic
-Bold + highlight
-Italic + bold
-Italic + highlight
-Highlight + bold Highlight + italic Triple formatting link h3 Bold + italic + highlight
-Bold + highlight + italic</description></item><item><title>
+Highlight Double formatting link h3 Bold + italic</description></item><item><title>
 List of admonitions for wonyoungjang.org</title><link>
 https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
