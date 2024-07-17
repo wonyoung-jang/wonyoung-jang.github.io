@@ -1,0 +1,35 @@
+.component {
+  &:not(
+    .badge,
+    .tooltip,
+    .snackbar,
+    progress,
+    .top-app-bar, 
+    .bottom-app-bar,
+    .navigation-bar,
+    .navigation-rail,
+    .navigation-drawer,
+    .tabs,
+    .dialog,
+    .bottom-sheets,
+    .side-sheets,
+    .menus):hover {
+    border: var(--container-outline-hover, initial);
+    box-shadow: var(--container-elevation-hover, initial);
+
+    &::after {
+      opacity: var(--state-hover-opacity);
+      background-size: 50000%;
+      animation: rippleHover var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both;
+    }
+  }
+}
+
+@keyframes rippleHover {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 50000%;
+  }
+}

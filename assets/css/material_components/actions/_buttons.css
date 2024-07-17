@@ -10,8 +10,7 @@
   
   min-width: var(--size-10);
   user-select: none;
-
-  --bg-color: none;
+  cursor: pointer;
   
   font-size: var(--typescale-label-large-size);
   line-height: var(--typescale-label-large-line-height);
