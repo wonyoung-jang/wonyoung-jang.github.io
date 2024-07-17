@@ -35,6 +35,7 @@ body {
 main {
   max-height: calc(100dvh - 128px);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Expansions */

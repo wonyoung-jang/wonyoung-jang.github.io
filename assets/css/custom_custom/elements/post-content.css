@@ -1,5 +1,13 @@
-#post-content.pane {
-  max-width: var(--input-char-width);
+#post-content {
+  & p,
+  & mark,
+  & pre,
+  & ul,
+  & ol,
+  & li,
+  & blockquote {
+    max-width: var(--input-char-width);
+  }
 
   & p,
   & mark {
@@ -27,7 +35,8 @@
 
   & p {
     &:has(img, svg, video) {
-      max-width: unset;
+      max-width: 100%;
+
       & img,
       & svg,
       & video {
@@ -40,7 +49,7 @@
   }
 
   & p:first-child {
-    max-width: unset;
+    max-width: 100%;
     
     & img,
     & svg,
