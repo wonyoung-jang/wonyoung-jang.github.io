@@ -1,0 +1,11 @@
+<label class="component switch">
+  <input class="track" type="checkbox">
+  <span class="handle">
+    {{ if eq .type "With icon" }}
+      <div class="icon-container">
+        <i class="close-icon">close</i>
+        <i class="check-icon">check</i>
+      </div>
+    {{ end }}
+  </span>
+</label>

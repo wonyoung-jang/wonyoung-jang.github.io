@@ -350,77 +350,27 @@
     {{/*  Sliders  */}}
     <div class="component-group-header">Sliders</div>
     <div class="component-group">
-
-      {{/*  Continuous  */}}
       <div class="sub-component-group-header">Continuous</div>
-
-      <div class="slider">
-        <input type="range">
-        <span class="tracking-dot"></span>
-      </div>
-
-      {{/*  Centered  */}}
+      {{ partial "components/selections/sliders.html" (dict "trackingDot" true) }}
+    
       <div class="sub-component-group-header">Centered</div>
-
-      <div class="slider">
-        <input type="range" value="50" list="markers">
-        <datalist id="markers">
-          <option value="0"></option>
-          <option value="50"></option>
-          <option value="100"></option>
-        </datalist>
-      </div>
-
-      {{/*  Discrete  */}}
+      {{ partial "components/selections/sliders.html" (dict "value" "50" "list" "markers" "datalist" "markers" "markers" (slice "0" "50" "100")) }}
+    
       <div class="sub-component-group-header">Discrete</div>
-
-      <div class="slider">
-        <input type="range" step="25" list="markers-discrete">
-        <datalist id="markers-discrete">
-          <option value="0"></option>
-          <option value="25"></option>
-          <option value="50"></option>
-          <option value="75"></option>
-          <option value="100"></option>
-        </datalist>
-      </div>
-
-      {{/*  Range selection  */}}
+      {{ partial "components/selections/sliders.html" (dict "step" "25" "list" "markers-discrete" "datalist" "markers-discrete" "markers" (slice "0" "25" "50" "75" "100")) }}
+    
       <div class="sub-component-group-header">Range</div>
-
-      <div class="slider" range>
-        <input type="range" list="markers-range" left>
-        <input type="range" list="markers-range" right>
-        <datalist id="markers-range">
-          <option value="0"></option>
-          <option value="100"></option>
-        </datalist>
-      </div>
-
+      {{ partial "components/selections/sliders.html" (dict "range" true "id" "range" "datalist" "markers-range" "markers" (slice "0" "100")) }}
     </div>
-
+    
     {{/*  Switches  */}}
     <div class="component-group-header">Switches</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">No icon</div>
-
-      <label class="component switch">
-          <input class="track" type="checkbox">
-          <span class="handle"></span>
-      </label>
-
+      {{ partial "components/selections/switches.html" dict }}
+    
       <div class="sub-component-group-header">With icon</div>
-
-      <label class="component switch">
-          <input class="track" type="checkbox">
-          <span class="handle">
-            <div class="icon-container">
-              <i class="close-icon">close</i>
-              <i class="check-icon">check</i>
-            </div>
-          </span>
-      </label>
+      {{ partial "components/selections/switches.html" (dict "withIcon" true) }}
     </div>
 
     {{/*  Time pickers  */}}
