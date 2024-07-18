@@ -149,7 +149,7 @@
   }
 
   
-  &[range] {
+  &.range {
     & input[left] {
       &::-moz-range-progress {
         background-color: var(--color-secondary-container);

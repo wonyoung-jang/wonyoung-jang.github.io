@@ -17,7 +17,7 @@
 
     {{/*  Backlinks  */}}
     {{ if gt (len $backlinks) 1 }}
-        <nav id="backlinks" aria-label="Backlinks">
+        <div id="backlinks">
             <span class="page-links-title title-large">Links to this page</span>
             {{ range $backlinks }}
                 {{ if eq .Title "" }}
@@ -35,13 +35,13 @@
                     </div>
                 </a>
             {{ end }}
-        </nav>
+        </div>
     {{ end }}
 
     {{/* Related */}}
     {{ $related := site.RegularPages.Related . | complement $backlinks | complement $nextprev |first 4 }}
     {{ with $related }}
-        <nav id="related-pages">
+        <div id="related-pages">
             <span class="page-links-title title-large">See also</span>
             {{ range $i, $p := . }}
                 <a  class="component card elevated"
@@ -56,9 +56,10 @@
                     </div>
                 </a>
             {{ end }}
-        </nav>
+        </div>
     {{ end }}
 
+    {{/*  Share links  */}}
     <nav id="share-links" aria-label="Share Links">
         <span class="page-links-title title-large">Share</span>
 

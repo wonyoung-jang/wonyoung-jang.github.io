@@ -1,6 +1,7 @@
 {{ define "partials/components/actions/segmented-button.html" }}
   <div class="component segmented-button">
     {{ $name := .name }} 
+    
     {{ range $index, $button := .buttons }}
       <input
         type="radio"

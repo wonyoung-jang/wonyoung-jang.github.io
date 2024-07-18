@@ -1,10 +1,9 @@
-
-  {{ if eq .size "large" }}
-    <div class="component badge" {{ .size }}>
-      {{ if .label }}
-        <div class="label">{{ .label }}</div>
-      {{ end }}
-    </div>
-  {{ else }}
-    <div class="component badge"></div>
-  {{ end }}
+{{ if eq .size "large" }}
+  <div class="component badge" {{ .size }}>
+    {{ if .label }}
+      <div class="label">{{ .label }}</div>
+    {{ end }}
+  </div>
+{{ else }}
+  <div class="component badge"></div>
+{{ end }}
