@@ -334,24 +334,17 @@
     <div class="component-group-header">Radio buttons</div>
     <div class="component-group">
       <div class="sub-component-group-header">Radio button</div>
-      <fieldset>
-        <legend>Radio button</legend>
-
-        <div class="component radio-button">
-          <input type="radio" id="radio1" name="radio" value="radio1"/>
-          <label for="radio1">Radio1</label>
-        </div>
-        
-        <div class="component radio-button">
-          <input type="radio" id="radio2" name="radio" value="radio2" checked/>
-          <label for="radio2">Radio2</label>
-        </div>
-
-        <div class="component radio-button">
-          <input type="radio" id="radio3" name="radio" value="radio3"/>
-          <label for="radio3">Radio3</label>
-        </div>
-      </fieldset>
+      {{ $radioData := dict 
+        "legend" "Radio button" 
+        "name" "radio"
+        "options" (slice
+          (dict "id" "radio1" "value" "radio1" "label" "Radio1" "checked" false)
+          (dict "id" "radio2" "value" "radio2" "label" "Radio2" "checked" true)
+          (dict "id" "radio3" "value" "radio3" "label" "Radio3" "checked" false)
+        )
+      }}
+      
+      {{ partial "components/selections/radio-buttons.html" $radioData }}
     </div>
 
     {{/*  Sliders  */}}
