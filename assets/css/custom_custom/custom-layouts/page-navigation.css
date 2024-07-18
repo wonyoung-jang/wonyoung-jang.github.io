@@ -10,7 +10,7 @@
   --min-height: auto;
   --padding: var(--spacing-panes);
   --margin: 0;
-  --gap: var(--size-2);
+  --gap: var(--size-4);
   --border: inherit;
   
   & .prev,
@@ -25,9 +25,10 @@
     padding: calc(var(--spacing-panes));
     gap: var(--size-2);
   
-    --container-shape: var(--shape-corner-s);
-    --bg-color: var(--color-on-secondary-fixed);
-    --icon-color: var(--color-secondary-fixed);
+    --container-shape: var(--shape-corner-xs);
+    --bg-color: var(--color-surface-container-lowest);
+    color: var(--color-on-surface);
+    box-shadow: var(--elevation1);
 
     & i {
       font-size: 18px;
@@ -38,10 +39,7 @@
       flex-flow: row nowrap;
       align-items: center;
       justify-content: flex-start;
-      
-      & * {
-        color: var(--color-secondary-fixed-dim);
-      }
+      color: var(--color-on-surface-variant);
     }
     
     &.empty {
