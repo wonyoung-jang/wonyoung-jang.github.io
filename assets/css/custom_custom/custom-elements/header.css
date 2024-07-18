@@ -18,4 +18,11 @@ header {
   color: var(--color-on-surface);
   display: none;
   flex-flow: row nowrap;
+
+  & .site-id-title {
+    font-family: var(--typescale-title-large-font);
+    font-size:   var(--typescale-title-large-size);
+    font-weight: var(--typescale-title-large-weight);
+    line-height: var(--typescale-title-large-line-height);
+  }
 }
