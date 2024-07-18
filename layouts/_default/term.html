@@ -4,7 +4,7 @@
     <article class="layout panes canonical-feed">
         <section class="layout pane" id="subsection-page">
             {{ range $index, $page := $pages }}        
-                <a  class="component card" elevated
+                <a  class="component card elevated"
                     aria-label="post link to {{ .Title | plainify }}" 
                     href="{{ .Permalink }}">
 

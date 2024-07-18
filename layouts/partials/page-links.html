@@ -23,7 +23,7 @@
                 {{ if eq .Title "" }}
                     {{- continue -}}
                 {{ end }}
-                <a  class="component card" elevated
+                <a  class="component card elevated"
                     href="{{ .RelPermalink }}">
                     <div class="card-content">
                         <span class="title-small">
@@ -44,7 +44,7 @@
         <nav id="related-pages">
             <span class="page-links-title title-large">See also</span>
             {{ range $i, $p := . }}
-                <a  class="component card" elevated
+                <a  class="component card elevated"
                     href="{{ .RelPermalink }}">
                     <div class="card-content">
                         <span class="title-small">

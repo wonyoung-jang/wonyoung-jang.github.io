@@ -12,11 +12,12 @@
     <div class="component-group-header">Cards</div>
     <div class="component-group">
       <div class="sub-component-group-header">Elevated</div>
-      <div class="component card" elevated>
-        <div>Elevated</div>
-      </div>
+      {{ partial "components/containments/cards.html" (dict
+        "type" "elevated"
+        ) 
+      }}
 
-      <div class="component card" elevated horizontal>
+      <div class="component card elevated" horizontal>
         <div class="content">
           <div class="monogram">W</div>
           
@@ -31,7 +32,7 @@
         </div>
       </div>
 
-      <div class="component card" elevated stacked>
+      <div class="component card elevated" stacked>
         <div class="content">
           <div class="monogram">W</div>
           
@@ -68,11 +69,12 @@
       </div>
 
       <div class="sub-component-group-header">Filled</div>
-      <div class="component card" filled>
-        <div>Filled</div>
-      </div>
+      {{ partial "components/containments/cards.html" (dict
+        "type" "filled"
+        ) 
+      }}
 
-      <div class="component card" filled horizontal>
+      <div class="component card filled" horizontal>
         <div class="content">
           <div class="monogram">W</div>
           
@@ -87,7 +89,7 @@
         </div>
       </div>
 
-      <div class="component card" filled stacked>
+      <div class="component card filled" stacked>
         <div class="content">
           <div class="monogram">W</div>
           
@@ -124,11 +126,12 @@
       </div>
 
       <div class="sub-component-group-header">Outlined</div>
-      <div class="component card" outlined>
-        <div>Outlined</div>
-      </div>
+      {{ partial "components/containments/cards.html" (dict
+        "type" "outlined"
+        ) 
+      }}
 
-      <div class="component card" outlined horizontal>
+      <div class="component card outlined" horizontal>
         <div class="content">
           <div class="monogram">W</div>
           
@@ -143,7 +146,7 @@
         </div>
       </div>
 
-      <div class="component card" outlined stacked>
+      <div class="component card outlined" stacked>
         <div class="content">
           <div class="monogram">W</div>
           

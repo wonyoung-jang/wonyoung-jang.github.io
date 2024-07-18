@@ -30,7 +30,7 @@
     min-height: var(--size-16);
   }
 
-  &[elevated] {
+  &.elevated {
     --bg-color: var(--color-surface-container-low);
     --icon-color: var(--color-on-surface);
 
@@ -40,12 +40,12 @@
     --container-elevation-press: var(--elevation1);
   }
 
-  &[filled] {
+  &.filled {
     --bg-color: var(--color-surface-container-highest);
     --icon-color: var(--color-on-surface);
   }
   
-  &[outlined] {
+  &.outlined {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
 
