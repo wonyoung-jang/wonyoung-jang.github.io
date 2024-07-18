@@ -14,8 +14,8 @@ resources:
 - tokens
 description: States available for wonyounjang.org
 title: States
-lastMod: 2024-07-13
+lastMod: 2024-07-18
 ---
-![tokens-state.png](/assets/tokens-state_1719437133480_0.png)
+![states.webp](/assets/states_1721309641312_0.webp)
 
 See: [Material Design 3 - States](https://m3.material.io/foundations/interaction/states/overview)
