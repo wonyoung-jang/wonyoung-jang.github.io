@@ -9,56 +9,57 @@ footer {
   padding-block: 21dvh 3dvh;
   padding-inline: 8dvw;
   gap: 5dvh;
-}
-
-.footer-links {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-
-  & .footer-links-list {
-    flex: 1 1 0;
+  
+  & .footer-links {
     display: flex;
-    flex-flow: column nowrap;
-    padding: var(--spacing-panes);
-
-    & span:first-child {
-      color: var(--color-on-surface-variant);
-    }
-  }
-
-  & a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    flex-flow: row wrap;
     width: 100%;
-    min-height: var(--size-8);
+  
+    & .footer-links-list {
+      flex: 1 1 0;
+      display: flex;
+      flex-flow: column nowrap;
+      padding: var(--spacing-panes);
+  
+      & span:first-child {
+        color: var(--color-on-surface-variant);
+      }
+    }
+  
+    & a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+      min-height: var(--size-8);
+    }
+  
+    & span {
+      margin-block: var(--spacing-panes);
+    }
   }
-
-  & span {
-    margin-block: var(--spacing-panes);
-  }
-}
-
-.copyright {
-  flex: 1 1 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-
-  & #copyright-button {
+  
+  & .copyright {
     flex: 1 1 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-on-surface-variant);
-
-    &:hover {
-      color: var(--color-on-surface);
-      text-decoration: underline;
+    flex-flow: row nowrap;
+    align-items: stretch;
+  
+    & #copyright-button {
+      flex: 1 1 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--color-on-surface-variant);
+  
+      &:hover {
+        color: var(--color-on-surface);
+        text-decoration: underline;
+      }
     }
   }
 }
+
 
 /* Compact: add space for scrollbar */
 @media screen and (max-width: 599px) {

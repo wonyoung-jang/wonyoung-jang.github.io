@@ -7,7 +7,7 @@ body {
     }
 
     & #sun {
-      transform: translate(-var(--size-3), 0px);
+      transform: translate(calc(-1 * var(--size-3)), 0px);
       opacity: 1;
     }
 
@@ -52,7 +52,7 @@ body {
 
 @keyframes rise-moon {
   0% {
-    transform: translate(-var(--size-9), var(--size-12));
+    transform: translate(calc(-1 * var(--size-9)), var(--size-12));
     opacity: 0;
   }
   100% {
@@ -63,11 +63,11 @@ body {
 
 @keyframes rise-sun {
   0% {
-    transform: translate(-var(--size-15), var(--size-12));
+    transform: translate(calc(-1 * var(--size-15)), var(--size-12));
     opacity: 0;
   }
   100% {
-    transform: translate(-var(--size-3), 0px);
+    transform: translate(calc(-1 * var(--size-3)), 0px);
     opacity: 1;
   }
 }
@@ -85,7 +85,7 @@ body {
 
 @keyframes set-sun {
   0% {
-    transform: translate(-var(--size-3), 0px);
+    transform: translate(calc(-1 * var(--size-3)), 0px);
     opacity: 1;
   }
   100% {

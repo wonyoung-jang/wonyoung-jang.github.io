@@ -98,7 +98,6 @@ video {
   max-height: 100%;
 
   border-radius: var(--shape-corner-s);
-
   object-fit: cover;
   object-position: center;
   transition-duration: var(--motion-duration-short3);

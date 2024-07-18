@@ -23,15 +23,15 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1_base.min.ae3ff7eb5e92501e92b9ef5dae3b013e0709f64edb717094b5af28fd1cca5d55.css" integrity="sha256-rj/3616SUB6Sue9drjsBPgcJ9k7bcXCUta8o/RzKXVU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/base.min.ee6e0943cd8212b5e6f0009418128e415020acc37f889bf2c9230b0fda516cde.css" integrity="sha256-7m4JQ82CErXm8ACUGBKOQVAgrMN/iJvyySMLD9pRbN4=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2_material_components.min.827260e6ae3b9f9334749b0e7600eee2b90d8ad4c231df067808ff7b07ce674e.css" integrity="sha256-gnJg5q47n5M0dJsOdgDu4rkNitTCMd8GeAj/ewfOZ04=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/custom.min.4c351b4171bec63aa0e641db32b3956989dfc14eb6644a063028bb3beb622b0b.css" integrity="sha256-TDUbQXG&#43;xjqg5kHbMrOVaYnfwU62ZEoGMCi7O&#43;tiKws=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3_custom.min.d02814cb6314df9b040ba4ab842d43ab28feea5dd37d5f39bde3e6fa3e49b013.css" integrity="sha256-0CgUy2MU35sEC6SrhC1Dqyj&#43;6l3TfV85vePm&#43;j5JsBM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/helpers.min.7e180488471764eb494921b21a9133886273c2e3020405b6baff42b9c9619161.css" integrity="sha256-fhgEiEcXZOtJSSGyGpEziGJzwuMCBAW2uv9CuclhkWE=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/4_material_layouts.min.31d4ff3f9010c77701df708ea5d49201a73408f7d0a34d3642c149d4a7375c82.css" integrity="sha256-MdT/P5AQx3cB33COpdSSAac0CPfQo002QsFJ1Kc3XII=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material_components.min.9413c8a3a3cb078e4b448cab645a0e0d212e58629f6066b9d3d0b460d051ebf7.css" integrity="sha256-lBPIo6PLB45LRIyrZFoODSEuWGKfYGa509C0YNBR6/c=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/5_helpers.min.137fca5cb391852700abcdc0f5ca0ba2b5b7df06f0e563b7e7fb434de72a0bd6.css" integrity="sha256-E3/KXLORhScAq83A9coLorW33wbw5WO35/tDTecqC9Y=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/material_layouts.min.31d4ff3f9010c77701df708ea5d49201a73408f7d0a34d3642c149d4a7375c82.css" integrity="sha256-MdT/P5AQx3cB33COpdSSAac0CPfQo002QsFJ1Kc3XII=" rel="preload stylesheet" as="style">
 
 
 
@@ -1488,49 +1488,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
