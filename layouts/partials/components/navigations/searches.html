@@ -1,0 +1,95 @@
+
+
+
+
+<span class="component search" 
+  {{ with .type }}
+    {{ . }} 
+  {{ end }}
+
+  {{ with .view }}
+    {{ . }} 
+  {{ end }}>
+
+  {{ if eq .type "view" }}
+  
+    <div class="header">
+      <div class="component button icon-button">
+        <i>arrow_back</i>
+      </div>
+  
+      <input  
+        id="searchInput"  
+        placeholder="Search"
+        aria-label="search" 
+        type="search"
+        autocomplete="off" 
+        maxlength="64">
+      
+      <div class="component button icon-button">
+        <i>close</i>
+      </div>
+    </div>
+    
+    <hr>
+
+    {{ if .showList }}
+      <div class="list-container">
+        <div class="component list-item" one with-icon>
+          <div class="icon-container">
+            <i>home</i>
+          </div>
+          <div class="label">Home</div>
+        </div>
+        
+        <div class="component list-item" one with-icon>
+          <div class="icon-container">
+            <i>folder</i>
+          </div>
+          <div class="label">Folder</div>
+        </div>
+        
+        <div class="component list-item" one with-icon>
+          <div class="icon-container">
+            <i>note</i>
+          </div>
+          <div class="label">Note</div>
+        </div>
+        
+        <div class="component list-item" one with-icon>
+          <div class="icon-container">
+            <i>token</i>
+          </div>
+          <div class="label">Token</div>
+        </div>
+      </div>
+    {{ else }}  
+      <div class="list-container"></div>
+    {{ end }}
+
+  {{ else}}
+
+    <div class="component button icon-button">
+      <i>menu</i>
+    </div>
+
+    <input  
+      id="searchInput"  
+      placeholder="Search"
+      aria-label="search" 
+      type="search"
+      autocomplete="off" 
+      maxlength="64">
+    
+    <div class="component button icon-button">
+      <i>search</i>
+    </div>
+
+    {{ with .avatar }}
+      <div class="component button icon-button">
+        <div class="avatar">{{ . }}</div>
+      </div>
+    {{ end }}
+
+  {{ end }}
+</span>

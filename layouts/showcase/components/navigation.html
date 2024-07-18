@@ -636,197 +636,48 @@
 
       {{/*  Search bar  */}}
       <div class="sub-component-group-header">Search bar</div>      
-      <span class="component search" bar>
-        <div class="component button icon-button">
-          <i>menu</i>
-        </div>
-        <input  id="searchInput"  
-                placeholder="Search"
-                aria-label="search" 
-                type="search"
-                autocomplete="off" 
-                maxlength="64">
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "bar"
+        ) 
+      }}
 
-        <div class="component button icon-button">
-          <i>search</i>
-        </div>
-      </span>
-
-      <span class="component search" bar>
-        <div class="component button icon-button">
-          <i>menu</i>
-        </div>
-        <input  id="searchInput"  
-                placeholder="Search"
-                aria-label="search" 
-                type="search"
-                autocomplete="off" 
-                maxlength="64">
-        <div class="component button icon-button">
-          <i>search</i>
-        </div>        
-        <div class="component button icon-button">
-          <div class="avatar">A</div>
-        </div>
-      </span>
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "bar"
+        "avatar" "A"
+        )
+      }}
 
       {{/*  Search view modal  */}}
       <div class="sub-component-group-header">Search view - modal</div>
 
-      <span class="component search" view modal>
-        
-        <div class="header">
-          <div class="component button icon-button">
-            <i>arrow_back</i>
-          </div>
-          <input  id="searchInput"  
-                  placeholder="Search"
-                  aria-label="search" 
-                  type="search"
-                  autocomplete="off" 
-                  maxlength="64">
-          <div class="component button icon-button">
-            <i>close</i>
-          </div>
-        </div>
-        
-        <hr>
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "modal"
+        ) 
+      }}
 
-        <div class="list-container"></div>
-
-      </span>
-
-      <span class="component search" view modal>
-        
-        <div class="header">
-          <div class="component button icon-button">
-            <i>arrow_back</i>
-          </div>
-          <input  id="searchInput"  
-                  placeholder="Search"
-                  aria-label="search" 
-                  type="search"
-                  autocomplete="off" 
-                  maxlength="64">
-          <div class="component button icon-button">
-            <i>close</i>
-          </div>
-        </div>
-        
-        <hr>
-
-        <div class="list-container">
-
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>home</i>
-            </div>
-            <div class="label">Home</div>
-          </div>
-          
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>folder</i>
-            </div>
-            <div class="label">Folder</div>
-          </div>
-          
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>note</i>
-            </div>
-            <div class="label">Note</div>
-          </div>
-          
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>token</i>
-            </div>
-            <div class="label">Token</div>
-          </div>
-
-        </div>
-
-      </span>
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "modal"
+        "showList" true
+        ) 
+      }}
 
       {{/*  Search view full-screen  */}}
       <div class="sub-component-group-header">Search view - full-screen</div>
 
-      <span class="component search" view full>
-        
-        <div class="header">
-          <div class="component button icon-button">
-            <i>arrow_back</i>
-          </div>
-          <input  id="searchInput"  
-                  placeholder="Search"
-                  aria-label="search" 
-                  type="search"
-                  autocomplete="off" 
-                  maxlength="64">
-          <div class="component button icon-button">
-            <i>close</i>
-          </div>
-        </div>
-        
-        <hr>
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "full"
+        ) 
+      }}
 
-        <div class="list-container"></div>
-
-      </span>
-
-      <span class="component search" view full>
-        
-        <div class="header">
-          <div class="component button icon-button">
-            <i>arrow_back</i>
-          </div>
-          <input  id="searchInput"  
-                  placeholder="Search"
-                  aria-label="search" 
-                  type="search"
-                  autocomplete="off" 
-                  maxlength="64">
-          <div class="component button icon-button">
-            <i>close</i>
-          </div>
-        </div>
-        
-        <hr>
-
-        <div class="list-container">
-
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>home</i>
-            </div>
-            <div class="label">Home</div>
-          </div>
-          
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>folder</i>
-            </div>
-            <div class="label">Folder</div>
-          </div>
-          
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>note</i>
-            </div>
-            <div class="label">Note</div>
-          </div>
-          
-          <div class="component list-item" one with-icon>
-            <div class="icon-container">
-              <i>token</i>
-            </div>
-            <div class="label">Token</div>
-          </div>
-
-        </div>
-
-      </span>
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "full"
+        "showList" true
+        )
+      }}
     </div>
 
     {{/*  Tabs  */}}
