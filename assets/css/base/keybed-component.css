@@ -30,20 +30,20 @@
 }
 
 .component {
-  display:          var(--container-display, initial);
-  flex-flow:        var(--container-flex-flow, initial);
-  justify-content:  var(--container-justify-content, initial);
-  align-items:      var(--container-align-items, initial);
-  gap:              var(--container-gap, initial);
-  height:           var(--container-height, initial);
-  width:            var(--container-width, initial);
-  padding:          var(--container-padding, initial);
+  display:          var(--container-display,);
+  flex-flow:        var(--container-flex-flow,);
+  justify-content:  var(--container-justify-content,);
+  align-items:      var(--container-align-items,);
+  gap:              var(--container-gap,);
+  height:           var(--container-height,);
+  width:            var(--container-width,);
+  padding:          var(--container-padding,);
 
-  border:           var(--container-outline, initial);
-  border-radius:    var(--container-shape, initial);
-  box-shadow:       var(--container-elevation, initial);
+  border:           var(--container-outline,);
+  border-radius:    var(--container-shape,);
+  box-shadow:       var(--container-elevation,);
 
-  background-color: var(--bg-color, initial);
+  background-color: var(--bg-color,);
 
   color:            var(--icon-color, var(--text-color,));
   

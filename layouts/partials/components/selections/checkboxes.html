@@ -1,0 +1,13 @@
+<label class="component checkbox {{ if .error }}error-check{{ end }}">
+  <input type="checkbox">
+
+  {{ if .indeterminate }}
+    <i>check_indeterminate_small</i>
+  {{ else }}
+    <i>{{ .icon }}</i>
+  {{ end }}
+
+  {{ with .label }}
+    <span>{{ . }}</span>
+  {{ end }}
+</label>

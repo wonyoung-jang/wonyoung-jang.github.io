@@ -12,41 +12,41 @@
     <div class="component-group-header">Badges</div>
     <div class="component-group">
       <div class="sub-component-group-header">Badge</div>
-      {{ partial "components/communication/badges.html" (dict 
+      {{ partial "components/communications/badges.html" (dict 
           "size" "large" 
           "label" "3"
         ) 
       }}
 
-      {{ partial "components/communication/badges.html" }}
+      {{ partial "components/communications/badges.html" }}
     </div>
     
     {{/*  Progress indicators  */}}
     <div class="component-group-header">Progress indicators</div>
     <div class="component-group">
       <div class="sub-component-group-header">Linear - determinate</div>
-      {{ partial "components/communication/progress-indicators.html" (dict 
+      {{ partial "components/communications/progress-indicators.html" (dict 
           "type" "linear" 
           "determinate" true
         ) 
       }}
       
       <div class="sub-component-group-header">Linear - indeterminate</div>
-      {{ partial "components/communication/progress-indicators.html" (dict 
+      {{ partial "components/communications/progress-indicators.html" (dict 
           "type" "linear" 
           "determinate" false
         ) 
       }}
       
       <div class="sub-component-group-header">Circular - determinate</div>
-      {{ partial "components/communication/progress-indicators.html" (dict 
+      {{ partial "components/communications/progress-indicators.html" (dict 
           "type" "circular" 
           "determinate" true
         ) 
       }}
       
       <div class="sub-component-group-header">Circular - indeterminate</div>
-      {{ partial "components/communication/progress-indicators.html" (dict 
+      {{ partial "components/communications/progress-indicators.html" (dict 
           "type" "circular" 
           "determinate" false
         ) 
@@ -57,31 +57,31 @@
     <div class="component-group-header">Snackbars</div>
     <div class="component-group">
       <div class="sub-component-group-header">No close affordance</div>
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar"
         )
       }}
 
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar with action" 
           "action" "Action"
         )
       }}
 
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar<br>without action" 
           "two" true
         )
       }}
 
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar with action<br>with action" 
           "two" true 
           "action" "Action"
         ) 
       }}
 
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar with longer action<br>with action" 
           "two" true 
           "action" "Longer action" 
@@ -90,20 +90,20 @@
       }}
     
       <div class="sub-component-group-header">With close affordance</div>
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar with close button" 
           "closeButton" true
         )
       }}
       
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar with action" 
           "action" "Action" 
           "closeButton" true
         ) 
       }}
       
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar with action<br>with action" 
           "two" true 
           "action" "Action" 
@@ -111,7 +111,7 @@
         ) 
       }}
       
-      {{ partial "components/communication/snackbars.html" (dict 
+      {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar<br>with longer action" 
           "two" true 
           "action" "Longer action" 
@@ -125,18 +125,18 @@
     <div class="component-group-header">Tooltips</div>
     <div class="component-group">
       <div class="sub-component-group-header">Plain tooltip</div>
-      {{ partial "components/communication/tooltips.html" (dict 
+      {{ partial "components/communications/tooltips.html" (dict 
           "text" "Plain tooltip"
         ) 
       }}
 
-      {{ partial "components/communication/tooltips.html" (dict 
+      {{ partial "components/communications/tooltips.html" (dict 
           "text" "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dignissimos iure perferendis, amet error alias hic ab eius minus ipsum nam voluptatem quos, veniam quod cumque. Voluptas, distinctio provident?"
         ) 
       }}
     
       <div class="sub-component-group-header">Rich tooltip</div>
-      {{ partial "components/communication/tooltips.html" (dict 
+      {{ partial "components/communications/tooltips.html" (dict 
           "rich" true 
           "title" "Rich tooltip" 
           "text" "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dignissimos iure perferendis, amet error alias hic ab eius minus ipsum nam voluptatem quos, veniam quod cumque. Voluptas, distinctio provident?" 
@@ -144,7 +144,7 @@
         ) 
       }}
       
-      {{ partial "components/communication/tooltips.html" (dict 
+      {{ partial "components/communications/tooltips.html" (dict 
           "rich" true 
           "title" "Rich tooltip" 
           "text" "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dignissimos iure perferendis, amet error alias hic ab eius minus ipsum nam voluptatem quos, veniam quod cumque. Voluptas, distinctio provident?"

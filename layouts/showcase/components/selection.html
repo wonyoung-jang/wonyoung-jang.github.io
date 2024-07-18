@@ -13,59 +13,63 @@
     <div class="component-group">
       <div class="sub-component-group-header">Primary</div>
       {{/*  Selected  */}}
-      <label class="component checkbox">
-        <input type="checkbox">
-        <span class="checkmark"><i>check_small</i></span>
-      </label>
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "icon" "check_small" 
+        ) 
+      }}
 
       {{/*  Labeled  */}}
-      <label class="component checkbox">
-        <input type="checkbox">
-        <span class="checkmark"><i>check_small</i></span>
-        <span class="label-large">Checkbox label</span>
-      </label>
-
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "icon" "check_small" 
+        "label" "Checkbox label"
+        ) 
+      }}
+    
       {{/*  Indeterminate  */}}
-      <label class="component checkbox">
-        <input type="checkbox">
-        <span class="checkmark"><i>check_indeterminate_small</i></span>
-      </label>
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" true
+        ) 
+      }}
 
       {{/*  Labeled  */}}
-      <label class="component checkbox">
-        <input type="checkbox">
-        <span class="checkmark"><i>check_indeterminate_small</i></span>
-        <span class="label-large">Indeterminate label</span>
-      </label>
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" true
+        "label" "Indeterminate label"
+        ) 
+      }}
 
       {{/*  Error  */}}
       <div class="sub-component-group-header">Error</div>
 
       {{/*  Selected  */}}
-      <label class="component checkbox" error>
-        <input type="checkbox">
-        <span class="checkmark "><i>check_small</i></span>
-      </label>
-      
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "icon" "check_small" 
+        "error" true
+        ) 
+      }}
+
       {{/*  Labeled  */}}
-      <label class="component checkbox" error>
-        <input type="checkbox">
-        <span class="checkmark"><i>check_small</i></span>
-        <span class="label-large">Checkbox label</span>
-      </label>
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "icon" "check_small" 
+        "label" "Checkbox label"
+        "error" true
+        ) 
+      }}
 
       {{/*  Indeterminate  */}}
-      <label class="component checkbox" error>
-        <input type="checkbox">
-        <span class="checkmark"><i>check_indeterminate_small</i></span>
-      </label>
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" true
+        "error" true
+        ) 
+      }}
 
       {{/*  Labeled  */}}
-      <label class="component checkbox" error>
-        <input type="checkbox">
-        <span class="checkmark"><i>check_indeterminate_small</i></span>
-        <span class="label-large">Indeterminate label</span>
-      </label>
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" true
+        "label" "Indeterminate label"
+        "error" true
+        ) 
+      }}
     </div>
 
     {{/*  Chips  */}}

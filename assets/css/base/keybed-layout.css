@@ -19,21 +19,21 @@
 }
 
 .layout {
-  flex:             var(--flex, initial);
-  display:          var(--display, initial);
-  flex-flow:        var(--flex-flow, initial);
-  align-items:      var(--align-items, initial);
-  align-content:    var(--align-content, initial);
-  justify-content:  var(--justify-content, initial);
-  width:            var(--width, initial);
-  height:           var(--height, initial);
-  min-height:       var(--min-height, initial);
-  padding:          var(--padding, initial);
-  margin:           var(--margin, initial);
-  gap:              var(--gap, initial);
+  flex:             var(--flex,);
+  display:          var(--display,);
+  flex-flow:        var(--flex-flow,);
+  align-items:      var(--align-items,);
+  align-content:    var(--align-content,);
+  justify-content:  var(--justify-content,);
+  width:            var(--width,);
+  height:           var(--height,);
+  min-height:       var(--min-height,);
+  padding:          var(--padding,);
+  margin:           var(--margin,);
+  gap:              var(--gap,);
 
-  border-radius:    var(--shape, initial);
-  border:           var(--border, initial);
+  border-radius:    var(--shape,);
+  border:           var(--border,);
 
-  background-color: var(--bg, initial);
+  background-color: var(--bg,);
 }

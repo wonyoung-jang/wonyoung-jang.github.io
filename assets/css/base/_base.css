@@ -150,7 +150,7 @@ i {
   block-size: var(--size-6);
   min-block-size: var(--size-6);
 
-  line-height: normal;
+  line-height: 1;
 }
 
 /* Basic typography */
