@@ -26,3 +26,12 @@
   max-height: var(--size-12);
   padding: var(--size-2);
 }
+
+.share-icon {
+  min-width: var(--size-12);
+  min-height: var(--size-12);
+  max-width: var(--size-12);
+  max-height: var(--size-12);
+  padding: var(--size-3);
+  fill: var(--color-secondary);
+}

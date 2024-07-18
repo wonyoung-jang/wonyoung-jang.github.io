@@ -45,10 +45,12 @@
     & .share-buttons,
     & .action-buttons {
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-start;
       gap: var(--size-2);
       padding: var(--size-1);
+      width: 100%;
 
       & .button {
         flex: 1 1 0;
@@ -60,9 +62,4 @@
       margin-block: var(--size-5) var(--size-3);
     }
   }
-}
-
-.share-buttons svg {
-  padding: var(--size-2) !important;
-  margin: 0 !important;
 }
