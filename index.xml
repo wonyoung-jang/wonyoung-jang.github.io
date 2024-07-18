@@ -5,7 +5,24 @@ en</language><managingEditor>
 contact@wonyoungjang.org (Wonyoung Jang)</managingEditor><webMaster>
 contact@wonyoungjang.org (Wonyoung Jang)</webMaster><copyright>
 &lt;!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--></copyright><lastBuildDate>
-Wed, 17 Jul 2024 18:16:49 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml"/><item><title>
+Thu, 18 Jul 2024 10:22:40 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml"/><item><title>
+All Logseq elements</title><link>
+https://wonyoungjang.org/all-logseq-elements/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/all-logseq-elements/</guid><description>
+Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Nested headings link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Single formatting link h3 Bold
+Italic
+Highlight Double formatting link h3 Bold + italic
+Bold + highlight</description></item><item><title>
+States</title><link>
+https://wonyoungjang.org/states/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/states/</guid><description>
+See: Material Design 3 - States</description></item><item><title>
 Actions</title><link>
 https://wonyoungjang.org/actions/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
@@ -13,20 +30,6 @@ contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/actions/</guid><description>
 See: Material Design 3 - Components</description></item><item><title>
-All Logseq elements</title><link>
-https://wonyoungjang.org/all-logseq-elements/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/all-logseq-elements/</guid><description>
-Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Nested headings link h1 Heading 2 link h2 heading:: 2
-+ ### Heading 3 heading:: 3
-+ #### Heading 4 heading:: 4
-+ ##### Heading 5 heading:: 5
-+ ###### Heading 6 heading:: 6
-Text styling link h2 Single formatting link h3 Bold
-Italic
-Highlight Double formatting link h3 Bold + italic</description></item><item><title>
 Communication</title><link>
 https://wonyoungjang.org/communication/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
@@ -69,13 +72,6 @@ contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/elevations/</guid><description>
 See: Material Design 3 - Elevation</description></item><item><title>
-States</title><link>
-https://wonyoungjang.org/states/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/states/</guid><description>
-See: Material Design 3 - States</description></item><item><title>
 ErgoDox EZ LEGO tenting kits</title><link>
 https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/</link><pubDate>
 Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
