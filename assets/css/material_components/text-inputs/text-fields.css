@@ -11,7 +11,7 @@
   --container-outline: initial;
   --container-elevation: initial;
 
-  & input[type="text"] {
+  & input {
     flex: 1 1 auto;
     color: var(--color-on-surface);
     outline: none;
@@ -75,7 +75,7 @@
       }
 
       &:has(label) { 
-        & input[type="text"] {
+        & input {
           flex: 1 1 auto;
           padding-block-start: var(--size-2);
           color: var(--color-on-surface);
@@ -95,7 +95,7 @@
         }
       }
 
-      & input[type="text"] {
+      & input {
         flex: 1 1 auto;
         color: var(--color-on-surface);
 
@@ -123,7 +123,7 @@
       --container-outline: var(--container-outline-focus);
 
       &:has(label) { 
-        & input[type="text"] {
+        & input {
           flex: 1 1 auto;
           padding-block-start: var(--size-2);
           color: var(--color-on-surface);
@@ -160,7 +160,7 @@
         }
       }
 
-      & input[type="text"] {
+      & input {
         flex: 1 1 auto;
         color: var(--color-on-surface);
 
@@ -204,12 +204,12 @@
   }
   
   /* Multi line input */
-  &:has(textarea[type="text"]) {
+  &:has(textarea) {
     padding: var(--size-4);
     height: auto;
     color: transparent;
 
-    & textarea[type="text"] {
+    & textarea {
       flex: 1 1 auto;
       resize: vertical;
       min-height: var(--size-14);
@@ -228,7 +228,7 @@
     &:focus,
     &:focus-within,
     &:focus-visible {
-      & textarea[type="text"] {
+      & textarea {
         padding-block-start: var(--size-2);
         color: var(--color-on-surface);
       

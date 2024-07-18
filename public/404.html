@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.ee6e0943cd8212b5e6f0009418128e415020acc37f889bf2c9230b0fda516cde.css" integrity="sha256-7m4JQ82CErXm8ACUGBKOQVAgrMN/iJvyySMLD9pRbN4=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.d18c7ef00d76b6ccf038d7d32243128ed11e994315ede81cde43b2afa14087d2.css" integrity="sha256-0Yx&#43;8A12tszwONfTIkMSjtEemUMV7egc3kOyr6FAh9I=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.d7fa5d2557abcf7424003b5f153985a32221c656359afcf2030e226a86862b10.css" integrity="sha256-1/pdJVerz3QkADtfFTmFoyIhxlY1mvzyAw4iaoaGKxA=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3custom.min.4b0fa2f92de7040ba77cb1838d65b4dfe1d46d9a264a96c1c3146aa63b7df60f.css" integrity="sha256-Sw&#43;i&#43;S3nBAunfLGDjWW03&#43;HUbZomSpbBwxRqpjt99g8=" rel="preload stylesheet" as="style">
 
@@ -35,13 +35,13 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/404.html">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/404.html">
 
 
 
@@ -57,7 +57,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/404.html">
+<meta property="og:url" content="https://wonyoungjang.org/404.html">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="404 Page not found">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -86,7 +86,7 @@
     <section class="start">
         <a  class="component button common-button"
     id="site-headline"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -1004,7 +1004,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -1027,6 +1027,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

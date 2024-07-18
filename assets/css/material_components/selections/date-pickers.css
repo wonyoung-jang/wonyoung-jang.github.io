@@ -26,7 +26,7 @@
   --container-outline-press: initial;
   --container-elevation-press: initial;
 
-  max-width: var(--size-82);
+  min-width: var(--size-82);
   max-height: var(--size-128);
   
   & .header {

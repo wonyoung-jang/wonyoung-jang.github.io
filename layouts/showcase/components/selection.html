@@ -319,7 +319,8 @@
         <hr>
 
         <div class="component text-field" outlined>
-          <input type="text" placeholder="mm/dd/yyyy">
+          <input type="date" name="date" placeholder=" "/>
+          <label>Date</label>
         </div>
 
         <div class="date-picker-actions">
@@ -343,11 +344,13 @@
 
         <div class="text-field-container">
           <div class="component text-field" outlined>
-            <input type="text" placeholder="Start date">
+            <input type="date" value="Start date">
+            <label>Start</label>
           </div>
           
           <div class="component text-field" outlined>
-            <input type="text" placeholder="End date">
+            <input type="date" values="End date">
+            <label>End</label>
           </div>
         </div>
 
@@ -434,6 +437,7 @@
 
       <div class="sub-component-group-header">Time input/keyboard picker</div>
 
+      {{/*  TODO 12H Time input picker  */}}
       <div class="component time-picker">
 
         <div class="time-picker-headline">Enter time</div>
@@ -468,6 +472,7 @@
         </div>
       </div>
 
+      {{/*  TODO 24H Time input picker  */}}
       <div class="component time-picker">
 
         <div class="time-picker-headline">Enter time</div>
@@ -496,55 +501,7 @@
           </div>
         </div>
       </div>
-      
-      {{/*  TODO Clock face  - 12 hour */}}
-      {{/*  <div class="sub-component-group-header">Clock face - 12 hour</div>
-      <div class="clock-face">
-    		<div class="center-circle">
-    		</div>
-    		<div class="hour-12">
-            <div class="hour">12</div>
-    		</div>
-    		<div class="hour-11">
-            <div class="hour">11</div>
-    		</div>
-    		<div class="hour-10">
-            <div class="hour">10</div>
-    		</div>
-    		<div class="hour-9">
-            <div class="hour">9</div>
-    		</div>
-    		<div class="hour-8">
-            <div class="hour">8</div>
-    		</div>
-    		<div class="hour-7 current">
-      			<span class="hour-line"></span>
-            <div class="hour">7</div>
-    		</div>
-    		<div class="hour-6">
-            <div class="hour">6</div>
-    		</div>
-    		<div class="hour-5">
-            <div class="hour">5</div>
-    		</div>
-    		<div class="hour-4">
-            <div class="hour">4</div>
-    		</div>
-    		<div class="hour-3">
-            <div class="hour">3</div>
-    		</div>
-    		<div class="hour-2">
-            <div class="hour">2</div>
-    		</div>
-    		<div class="hour-1">
-            <div class="hour">1</div>
-    		</div>
-      </div>  */}}
-
-      {{/*  TODO Clock face  - 24 hour */}}
-
     </div>
-
 
   </section>
 
