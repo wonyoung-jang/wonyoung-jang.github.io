@@ -26,7 +26,7 @@
   --container-outline-press: initial;
   --container-elevation-press: initial;
   
-  max-width: 640px;
+  max-width: var(--size-160);
   margin-top: var(--size-18);
   margin-inline: var(--size-14);
 

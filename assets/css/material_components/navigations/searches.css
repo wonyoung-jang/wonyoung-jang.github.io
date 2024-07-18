@@ -96,7 +96,7 @@
     --container-outline-press: initial;
     --container-elevation-press: initial;
 
-    min-width: 360px;
+    min-width: var(--size-90);
 
     & .header {
       display: flex;
@@ -171,7 +171,7 @@
     --container-outline-press: initial;
     --container-elevation-press: initial;
 
-    min-width: 360px;
+    min-width: var(--size-90);
 
     & .header {
       display: flex;

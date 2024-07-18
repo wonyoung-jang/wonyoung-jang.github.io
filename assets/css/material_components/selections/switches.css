@@ -71,8 +71,8 @@
     
       &::before {
         position: absolute;
-        width: 16px;
-        height: 16px;
+        width: var(--size-4);
+        height: var(--size-4);
         top: 6px;
         left: 6px;
         transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
@@ -106,14 +106,14 @@
 
       &::before {
         position: absolute;
-        width: 24px;
-        height: 24px;
+        width: var(--size-6);
+        height: var(--size-6);
         top: 2px;
         left: 2px;
         transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
         border-radius: var(--shape-corner-full);
         background-color: var(--color-on-primary);
-        transform: translateX(20px);
+        transform: translateX(var(--size-5));
       }
 
       &:has(.icon-container) {
@@ -126,7 +126,7 @@
         color: var(--color-on-primary-container);
         background-color: var(--color-primary-container);
         transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
-        transform: translateX(20px);
+        transform: translateX(var(--size-5));
         
         &.close-icon {
           opacity: 0;

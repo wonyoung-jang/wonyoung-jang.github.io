@@ -16,7 +16,7 @@
   --container-outline-press: initial;
   --container-elevation-press: initial;
 
-  max-width: 40px;
+  max-width: var(--size-10);
 
   --icon-color: var(--color-on-surface-variant);
 
@@ -111,8 +111,8 @@
 
   & i, 
   & img {
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
+    font-size: var(--size-6);
+    width: var(--size-6);
+    height: var(--size-6);
   }
 }

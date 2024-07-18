@@ -1,6 +1,6 @@
 .key-color {
   background-color: var(--palette-primary-60);
-  height: 64px;
+  height: var(--size-16);
   width: 100%;
 }
 

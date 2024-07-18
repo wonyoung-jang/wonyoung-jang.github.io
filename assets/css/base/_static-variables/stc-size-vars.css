@@ -37,14 +37,22 @@
 
     --size-31:  calc(var(--size-1) * 31);   /* 124px */
     --size-32:  calc(var(--size-1) * 32);   /* 128px */
+    --size-38:  calc(var(--size-1) * 38);   /* 152px */
+    --size-39:  calc(var(--size-1) * 39);   /* 156px */
     --size-40:  calc(var(--size-1) * 40);   /* 160px */
     
     --size-50:  calc(var(--size-1) * 50);   /* 200px */
+    --size-64:  calc(var(--size-1) * 64);   /* 256px */
+    --size-70:  calc(var(--size-1) * 70);   /* 280px */
+    --size-82:  calc(var(--size-1) * 82);   /* 328px */
     --size-90:  calc(var(--size-1) * 90);   /* 360px */
     --size-100: calc(var(--size-1) * 100);  /* 400px */
 
     --size-103: calc(var(--size-1) * 103);  /* 412px */
+    --size-128: calc(var(--size-1) * 128);  /* 512px */
+    --size-140: calc(var(--size-1) * 140);  /* 560px */
     --size-150: calc(var(--size-1) * 150);  /* 600px */
+    --size-160: calc(var(--size-1) * 160);  /* 640px */
     --size-200: calc(var(--size-1) * 200);  /* 800px */
     
     --size-210: calc(var(--size-1) * 210);  /* 840px */

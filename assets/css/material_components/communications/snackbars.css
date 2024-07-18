@@ -65,7 +65,7 @@
       }
 
       & .actions {
-        padding: 0px var(--size-2) 4px var(--size-2);
+        padding: 0px var(--size-2) var(--size-1) var(--size-2);
       }
     }
   }
@@ -104,7 +104,7 @@
         }
 
         & .actions {
-          padding: 0px var(--size-2) 4px var(--size-2);
+          padding: 0px var(--size-2) var(--size-1) var(--size-2);
         }
       }
     }

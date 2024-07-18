@@ -9,7 +9,7 @@ blockquote {
   border-radius: var(--shape-corner-m);
   box-shadow: var(--elevation1);
   
-  min-height: 96px;
+  min-height: var(--size-24);
 
   background-color: var(--color-surface-container-low,);
   
@@ -19,7 +19,7 @@ blockquote {
 
   &[class*="-container"] {
     outline: unset;
-    padding: 32px 16px 32px var(--icon-size);
+    padding: var(--size-8) var(--size-4) var(--size-8) var(--icon-size);
     background-color: var(--bg-color,);
   }
   
@@ -37,7 +37,7 @@ blockquote {
     left: 0;
     width: var(--icon-size);
     height: 100%;
-    font-size: 48px;
+    font-size: var(--size-12);
     color: var(--icon-color,);
   }
 

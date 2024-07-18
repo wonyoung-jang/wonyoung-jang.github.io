@@ -45,7 +45,7 @@
   --container-justify-content: flex-start;
   --container-padding: var(--size-2) var(--size-4);
   --container-width: 100%;
-  --container-gap: 16px;
+  --container-gap: var(--size-4);
 
   --icon-color: var(--color-on-surface);
   --text-color: var(--color-on-surface);
@@ -67,8 +67,8 @@
 
   & .monogram {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: var(--size-10);
+    height: var(--size-10);
     justify-content: center;
     align-items: center;
     background-color: var(--color-primary-container);
@@ -76,15 +76,15 @@
   }
 
   & .image {
-    width: 56px;
-    height: 56px;
+    width: var(--size-14);
+    height: var(--size-14);
     border-radius: var(--shape-corner-none);
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
   }
 
   & .video {
     width: 114px;
-    height: 64px;
+    height: var(--size-16);
     border-radius: var(--shape-corner-none);
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
   }
@@ -124,21 +124,21 @@
   }
   
   &[one] {
-    min-height: 56px;
+    min-height: var(--size-14);
 
     &:has(.image) {
       --container-padding: var(--size-3) var(--size-4);
-      min-height: 72px;
+      min-height: var(--size-18);
     }
 
     &:has(.video) {
       --container-padding: var(--size-3) var(--size-4);
-      min-height: 88px;
+      min-height: var(--size-22);
     }
   }
   
   &[two] {
-    min-height: 72px;
+    min-height: var(--size-18);
 
     & .supporting-text {
       display: -webkit-box;
@@ -150,18 +150,18 @@
 
     &:has(.image) {
       --container-padding: var(--size-3) var(--size-4);
-      min-height: 72px;
+      min-height: var(--size-18);
     }
 
     &:has(.video) {
       --container-padding: var(--size-3) var(--size-4);
-      min-height: 88px;
+      min-height: var(--size-22);
     }
   }
   
   &[three] {
     --container-padding: var(--size-3) var(--size-4);
-    min-height: 88px;
+    min-height: var(--size-22);
     
     & .supporting-text {
       display: -webkit-box;

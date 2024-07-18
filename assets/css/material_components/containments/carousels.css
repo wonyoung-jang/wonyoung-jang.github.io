@@ -30,7 +30,7 @@
 
   &.uncontained {
     & .carousel-item {
-      min-width: 128px;
+      min-width: var(--size-32);
     }
 
     & .carousel-item:last-of-type {

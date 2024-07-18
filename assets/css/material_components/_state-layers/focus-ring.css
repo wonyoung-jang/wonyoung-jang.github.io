@@ -23,12 +23,12 @@ a:not(.component):focus-visible {
     outline-width: 0px;
   }
   to {
-    outline-width: 8px;
+    outline-width: var(--size-2);
   }
 }
 
 @keyframes outward-shrink {
   from {
-    outline-width: 8px;
+    outline-width: var(--size-2);
   }
 }

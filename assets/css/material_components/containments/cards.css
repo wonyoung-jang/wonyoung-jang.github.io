@@ -27,7 +27,7 @@
   }
 
   & img {
-    min-height: 64px;
+    min-height: var(--size-16);
   }
 
   &[elevated] {
@@ -264,13 +264,13 @@
     justify-content: center;
     overflow: hidden;
     margin: var(--size-5) var(--size-1) var(--size-5) var(--size-5);
-    max-width: 64px;
-    max-height: 64px;
+    max-width: var(--size-16);
+    max-height: var(--size-16);
     
     & img {
       aspect-ratio: 1 / 1;
-      min-width: 64px;
-      min-height: 64px;
+      min-width: var(--size-16);
+      min-height: var(--size-16);
     }
   }
 
@@ -339,7 +339,7 @@
       margin: unset;
       border-radius: inherit;
       max-width: 100%;
-      max-height: 256px;
+      max-height: var(--size-64);
       
       & img {
         aspect-ratio: 16 / 9;

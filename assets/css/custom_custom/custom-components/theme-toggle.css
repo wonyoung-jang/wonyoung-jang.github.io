@@ -7,7 +7,7 @@ body {
     }
 
     & #sun {
-      transform: translate(-12px, 0px);
+      transform: translate(-var(--size-3), 0px);
       opacity: 1;
     }
 
@@ -30,7 +30,7 @@ body {
     }
 
     & #moon {
-      transform: translate(12px, 0px);
+      transform: translate(var(--size-3), 0px);
       opacity: 1;
     }
 
@@ -52,44 +52,44 @@ body {
 
 @keyframes rise-moon {
   0% {
-    transform: translate(-36px, 48px);
+    transform: translate(-var(--size-9), var(--size-12));
     opacity: 0;
   }
   100% {
-    transform: translate(12px, 0px);
+    transform: translate(var(--size-3), 0px);
     opacity: 1;
   }
 }
 
 @keyframes rise-sun {
   0% {
-    transform: translate(-60px, 48px);
+    transform: translate(-var(--size-15), var(--size-12));
     opacity: 0;
   }
   100% {
-    transform: translate(-12px, 0px);
+    transform: translate(-var(--size-3), 0px);
     opacity: 1;
   }
 }
 
 @keyframes set-moon {
   0% {
-    transform: translate(12px, 0px);
+    transform: translate(var(--size-3), 0px);
     opacity: 1;
   }
   100% {
-    transform: translate(60px, 48px);
+    transform: translate(var(--size-15), var(--size-12));
     opacity: 0;
   }
 }
 
 @keyframes set-sun {
   0% {
-    transform: translate(-12px, 0px);
+    transform: translate(-var(--size-3), 0px);
     opacity: 1;
   }
   100% {
-    transform: translate(36px, 48px);
+    transform: translate(var(--size-9), var(--size-12));
     opacity: 0;
   }
 }

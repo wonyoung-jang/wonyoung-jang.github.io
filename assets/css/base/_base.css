@@ -33,7 +33,7 @@ body {
 
 /* Main (content) */
 main {
-  max-height: calc(100dvh - 128px);
+  max-height: calc(100dvh - var(--size-32));
   overflow-y: auto;
   overflow-x: hidden;
 }

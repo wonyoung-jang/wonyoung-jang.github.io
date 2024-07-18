@@ -3,7 +3,7 @@
   --container-flex-flow: row wrap;
   --container-justify-content: flex-start;
   --container-align-items: center;
-  --container-gap: 4px;
+  --container-gap: var(--size-1);
 
   --container-outline: initial;
   --container-elevation: initial;
@@ -41,9 +41,9 @@
   }
 
   &[small] {
-    --container-height: 64px;
+    --container-height: var(--size-16);
     --container-width: 100%;
-    --container-padding: 8px 4px;
+    --container-padding: var(--size-2) var(--size-1);
 
     font-size: var(--typescale-title-large-size);
     line-height: var(--typescale-title-large-line-height);
@@ -60,10 +60,10 @@
   }
 
   &[medium] {
-    --container-gap: 4px;
-    --container-height: 112px;
+    --container-gap: var(--size-1);
+    --container-height: var(--size-28);
     --container-width: 100%;
-    --container-padding: 8px 4px 24px 4px;
+    --container-padding: var(--size-2) var(--size-1) var(--size-6) var(--size-1);
 
     font-size: var(--typescale-headline-small-size);
     line-height: var(--typescale-headline-small-line-height);
@@ -72,10 +72,10 @@
   }
 
   &[large] {
-    --container-gap: 40px;
-    --container-height: 152px;
+    --container-gap: var(--size-10);
+    --container-height: var(--size-38);
     --container-width: 100%;
-    --container-padding: 8px 4px 28px 4px;
+    --container-padding: var(--size-2) var(--size-1) var(--size-7) var(--size-1);
 
     font-size: var(--typescale-headline-medium-size);
     line-height: var(--typescale-headline-medium-line-height);

@@ -14,7 +14,7 @@ description: A work in progress page showcasing how elements are rendered from L
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-07-17
+lastMod: 2024-07-18
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 
@@ -33,19 +33,14 @@ lastMod: 2024-07-17
 # Nested headings
 
   + ## Heading 2
-heading:: 2
 
     + ### Heading 3
-heading:: 3
 
       + #### Heading 4
-heading:: 4
 
         + ##### Heading 5
-heading:: 5
 
           + ###### Heading 6
-heading:: 6
 
 ## Text styling
 
@@ -120,7 +115,7 @@ heading:: 6
 
     + **Output**: {{embed [About]({{< ref "/About" >}})}}
 
-  + ## Tags
+  + ### Tags
 
     + #page
 
@@ -145,34 +140,43 @@ heading:: 6
 ## Logseq tables
 
   + | Table | Table | Table |
+| Value | Value | Value |
+
+  + | Table | Table | Table |
 |-|-|-|
 | Value | Value | Value |
 
 ## Logseq tasks
 
-  + TODO A todo task
+  + ### Tasks
 
-  + DOING A doing task
+    + TODO A todo task
 
-  + DONE A done task
+    + DOING A doing task
 
-  + NOW A now task
+    + DONE A done task
 
-  + LATER A later task
+    + NOW A now task
 
-  + WAITING A waiting task
+    + LATER A later task
 
-  + CANCELED A canceled task
+    + WAITING A waiting task
 
-  + TODO [#A] A high priority task
+    + CANCELED A canceled task
 
-  + TODO [#B] A medium priority task
+  + ### Tasks with priorities
 
-  + TODO [#C] A low priority task
+    + TODO [#A] A high priority task
+
+    + TODO [#B] A medium priority task
+
+    + TODO [#C] A low priority task
 
 ## Logseq other
 
-  + draws/2024-07-16-17-32-44.excalidraw
+  + ### Excalidraw
+
+    + draws/2024-07-16-17-32-44.excalidraw
 
 ---
 

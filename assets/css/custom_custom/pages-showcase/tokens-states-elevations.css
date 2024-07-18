@@ -1,8 +1,8 @@
 .state-opacities-container,
 .elevations-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
-  grid-auto-rows: minmax(128px, auto);
+  grid-template-columns: repeat(auto-fit, minmax(var(--size-32), 1fr));
+  grid-auto-rows: minmax(var(--size-32), auto);
   gap: var(--size-2);
   margin: var(--spacing-panes);
 

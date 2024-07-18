@@ -9,7 +9,7 @@
 }
 
 .archive-month-header {
-  width: 200px;
+  width: var(--size-50);
 }
 
 .archive-entry {

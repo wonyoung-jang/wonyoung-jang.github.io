@@ -7,7 +7,7 @@
   --justify-content: initial;
   --width: 100%;
   --height: auto;
-  --min-height: calc(100dvh - 128px);
+  --min-height: calc(100dvh - var(--size-32));
   --margin: 0;
   --gap: 0;
   --border: initial;

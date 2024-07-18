@@ -14,7 +14,7 @@
   }
   
   & li ul li ul li {
-    margin-left: 16px;
+    margin-left: var(--size-4);
   }
   
   & li {
@@ -67,7 +67,7 @@
   
   & .indicator {
     position: absolute;
-    width: 156px;
+    width: var(--size-39);
     transform: translateY(0);
     transition-duration: 500ms, 200ms;
     transition-property: transform, opacity, height;

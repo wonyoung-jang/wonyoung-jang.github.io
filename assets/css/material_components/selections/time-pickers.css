@@ -50,8 +50,8 @@
   flex-flow: row nowrap;
   
   & .time-input-option {
-    width: 96px;
-    height: 72px;
+    width: var(--size-24);
+    height: var(--size-18);
     background-color: var(--color-surface-container-highest);
     border-radius: var(--shape-corner-s);
     display: flex;

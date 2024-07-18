@@ -186,9 +186,13 @@
 <script defer>
   let pages = [
     
-      "\/actions\/",
-    
       "\/all-logseq-elements\/",
+    
+      "\/resources\/references\/",
+    
+      "\/resources\/",
+    
+      "\/actions\/",
     
       "\/communication\/",
     
@@ -197,10 +201,6 @@
       "\/containment\/",
     
       "\/navigation\/",
-    
-      "\/resources\/references\/",
-    
-      "\/resources\/",
     
       "\/selections\/",
     
@@ -1214,6 +1214,7 @@
 <script defer>
     var mybutton = document.getElementById("top-link");
     var scrollWrapper = document.querySelector("main");
+    
     function handleScroll() {
         if (scrollWrapper.scrollTop > 360) {
             mybutton.style.visibility = "visible";
@@ -1223,8 +1224,10 @@
             mybutton.style.opacity = "0";
         }
     }
+
     window.addEventListener("scroll", handleScroll);
     scrollWrapper.addEventListener("scroll", handleScroll);
+   
     mybutton.addEventListener("click", function() {
         scrollWrapper.scrollTo({
             top: 0,

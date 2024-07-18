@@ -23,15 +23,15 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1_base.min.6de10cc7a0eebd0d4dab9d24a28f713eaae8ec7078543c14fa77d6bf0b6627f2.css" integrity="sha256-beEMx6DuvQ1Nq50koo9xPqro7HB4VDwU&#43;nfWvwtmJ/I=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1_base.min.ee6e0943cd8212b5e6f0009418128e415020acc37f889bf2c9230b0fda516cde.css" integrity="sha256-7m4JQ82CErXm8ACUGBKOQVAgrMN/iJvyySMLD9pRbN4=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2_material_components.min.e29bbf9dc842df18823b0cb2ad167081595525f9350506131f5fb53def909868.css" integrity="sha256-4pu/nchC3xiCOwyyrRZwgVlVJfk1BQYTH1&#43;1Pe&#43;QmGg=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2_material_components.min.9413c8a3a3cb078e4b448cab645a0e0d212e58629f6066b9d3d0b460d051ebf7.css" integrity="sha256-lBPIo6PLB45LRIyrZFoODSEuWGKfYGa509C0YNBR6/c=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3_custom.min.d02814cb6314df9b040ba4ab842d43ab28feea5dd37d5f39bde3e6fa3e49b013.css" integrity="sha256-0CgUy2MU35sEC6SrhC1Dqyj&#43;6l3TfV85vePm&#43;j5JsBM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3_custom.min.5e99d845e305dddd886667eaefb531262da2345eea2a6b29dca47248632db59b.css" integrity="sha256-XpnYReMF3d2IZmfq77UxJi2iNF7qKmsp3KRySGMttZs=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4_material_layouts.min.31d4ff3f9010c77701df708ea5d49201a73408f7d0a34d3642c149d4a7375c82.css" integrity="sha256-MdT/P5AQx3cB33COpdSSAac0CPfQo002QsFJ1Kc3XII=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/5_helpers.min.137fca5cb391852700abcdc0f5ca0ba2b5b7df06f0e563b7e7fb434de72a0bd6.css" integrity="sha256-E3/KXLORhScAq83A9coLorW33wbw5WO35/tDTecqC9Y=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/5_helpers.min.7e180488471764eb494921b21a9133886273c2e3020405b6baff42b9c9619161.css" integrity="sha256-fhgEiEcXZOtJSSGyGpEziGJzwuMCBAW2uv9CuclhkWE=" rel="preload stylesheet" as="style">
 
 
 
@@ -71,7 +71,7 @@
   <meta itemprop="name" content="All Logseq elements">
   <meta itemprop="description" content="A work in progress page showcasing how elements are rendered from Logseq">
   <meta itemprop="dateModified" content="2024-07-17T16:04:12-04:00">
-  <meta itemprop="wordCount" content="288">
+  <meta itemprop="wordCount" content="303">
   <meta itemprop="keywords" content="References">
 
   <meta name="twitter:card" content="summary">
@@ -186,6 +186,10 @@
 <script defer>
   let pages = [
     
+      "\/resources\/references\/",
+    
+      "\/resources\/",
+    
       "\/actions\/",
     
       "\/communication\/",
@@ -195,10 +199,6 @@
       "\/containment\/",
     
       "\/navigation\/",
-    
-      "\/resources\/references\/",
-    
-      "\/resources\/",
     
       "\/selections\/",
     
@@ -827,7 +827,7 @@
         
         
             <div class="label-large">
-                <p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;2 min read
+                <p title='2024-07-18 00:00:00 +0000 UTC'>July 18, 2024&nbsp;·&nbsp;2 min read
 
             </div>
         
@@ -890,7 +890,23 @@
     </li>
     <li><a href="#nested-headings">Nested headings</a>
       <ul>
-        <li><a href="#heading-2-1">Heading 2</a></li>
+        <li><a href="#heading-2-1">Heading 2</a>
+          <ul>
+            <li><a href="#heading-3-1">Heading 3</a>
+              <ul>
+                <li><a href="#heading-4-1">Heading 4</a>
+                  <ul>
+                    <li><a href="#heading-5-1">Heading 5</a>
+                      <ul>
+                        <li><a href="#heading-6-1">Heading 6</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a href="#text-styling">Text styling</a>
           <ul>
             <li><a href="#single-formatting">Single formatting</a></li>
@@ -903,9 +919,9 @@
           <ul>
             <li><a href="#page-reference">Page reference</a></li>
             <li><a href="#page-embed">Page embed</a></li>
+            <li><a href="#tags">Tags</a></li>
           </ul>
         </li>
-        <li><a href="#tags">Tags</a></li>
         <li><a href="#logseq-blocks">Logseq blocks</a>
           <ul>
             <li><a href="#block-reference">Block reference</a></li>
@@ -913,8 +929,17 @@
           </ul>
         </li>
         <li><a href="#logseq-tables">Logseq tables</a></li>
-        <li><a href="#logseq-tasks">Logseq tasks</a></li>
-        <li><a href="#logseq-other">Logseq other</a></li>
+        <li><a href="#logseq-tasks">Logseq tasks</a>
+          <ul>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#tasks-with-priorities">Tasks with priorities</a></li>
+          </ul>
+        </li>
+        <li><a href="#logseq-other">Logseq other</a>
+          <ul>
+            <li><a href="#excalidraw">Excalidraw</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -1026,21 +1051,72 @@
     </span>
   </a>
 </h2>
+<ul>
+<li>
+<h3 id="heading-3-1">
+  Heading 3
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#heading-3-1">
+    <i>link</i>
+    <span>
+      h3
+    </span>
+  </a>
+</h3>
+<ul>
+<li>
+<h4 id="heading-4-1">
+  Heading 4
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#heading-4-1">
+    <i>link</i>
+    <span>
+      h4
+    </span>
+  </a>
+</h4>
+<ul>
+<li>
+<h5 id="heading-5-1">
+  Heading 5
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#heading-5-1">
+    <i>link</i>
+    <span>
+      h5
+    </span>
+  </a>
+</h5>
+<ul>
+<li>
+<h6 id="heading-6-1">
+  Heading 6
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#heading-6-1">
+    <i>link</i>
+    <span>
+      h6
+    </span>
+  </a>
+</h6>
 </li>
 </ul>
-<p>heading:: 2</p>
-<pre><code>+ ### Heading 3
-</code></pre>
-<p>heading:: 3</p>
-<pre><code>  + #### Heading 4
-</code></pre>
-<p>heading:: 4</p>
-<pre><code>    + ##### Heading 5
-</code></pre>
-<p>heading:: 5</p>
-<pre><code>      + ###### Heading 6
-</code></pre>
-<p>heading:: 6</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="text-styling">
   Text styling
   <a 
@@ -1250,7 +1326,7 @@
 </ul>
 </li>
 <li>
-<h2 id="tags">
+<h3 id="tags">
   Tags
   <a 
     class="anchor"
@@ -1258,10 +1334,10 @@
     href="#tags">
     <i>link</i>
     <span>
-      h2
+      h3
     </span>
   </a>
-</h2>
+</h3>
 <ul>
 <li>#page</li>
 </ul>
@@ -1340,6 +1416,10 @@
 </h2>
 <ul>
 <li>
+<p>| Table | Table | Table |
+| Value | Value | Value |</p>
+</li>
+<li>
 <table>
 <thead>
 <tr>
@@ -1372,6 +1452,20 @@
 </h2>
 <ul>
 <li>
+<h3 id="tasks">
+  Tasks
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#tasks">
+    <i>link</i>
+    <span>
+      h3
+    </span>
+  </a>
+</h3>
+<ul>
+<li>
 <p>TODO A todo task</p>
 </li>
 <li>
@@ -1392,6 +1486,22 @@
 <li>
 <p>CANCELED A canceled task</p>
 </li>
+</ul>
+</li>
+<li>
+<h3 id="tasks-with-priorities">
+  Tasks with priorities
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#tasks-with-priorities">
+    <i>link</i>
+    <span>
+      h3
+    </span>
+  </a>
+</h3>
+<ul>
 <li>
 <p>TODO [#A] A high priority task</p>
 </li>
@@ -1400,6 +1510,8 @@
 </li>
 <li>
 <p>TODO [#C] A low priority task</p>
+</li>
+</ul>
 </li>
 </ul>
 <h2 id="logseq-other">
@@ -1415,7 +1527,23 @@
   </a>
 </h2>
 <ul>
+<li>
+<h3 id="excalidraw">
+  Excalidraw
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#excalidraw">
+    <i>link</i>
+    <span>
+      h3
+    </span>
+  </a>
+</h3>
+<ul>
 <li>draws/2024-07-16-17-32-44.excalidraw</li>
+</ul>
+</li>
 </ul>
 <hr>
 <p>See: <a href="https://docs.logseq.com/#/page/contents"target="_blank"
@@ -1439,7 +1567,7 @@
       
         
           <a  class="component card prev"
-            href="http://192.168.40.181:1313/communication/"
+            href="http://192.168.40.181:1313/actions/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -1451,31 +1579,12 @@
             </span>
             
             <span class="title-large">
-              Communication
-            </span>
-          </a>
-        
-      
-
-      
-        
-          <a  class="component card next"
-              href="http://192.168.40.181:1313/actions/"
-              accesskey="n"
-              title="Next page (ALT + SHIFT + n)">
-              
-            <span class="page-direction">
-              <label>
-                Up next
-              </label>
-              <i>arrow_forward</i> 
-            </span>
-
-            <span class="title-large">
               Actions
             </span>
           </a>
         
+      
+
       
     </nav>
 
@@ -1776,6 +1885,7 @@
 <script defer>
     var mybutton = document.getElementById("top-link");
     var scrollWrapper = document.querySelector("main");
+    
     function handleScroll() {
         if (scrollWrapper.scrollTop > 360) {
             mybutton.style.visibility = "visible";
@@ -1785,8 +1895,10 @@
             mybutton.style.opacity = "0";
         }
     }
+
     window.addEventListener("scroll", handleScroll);
     scrollWrapper.addEventListener("scroll", handleScroll);
+   
     mybutton.addEventListener("click", function() {
         scrollWrapper.scrollTo({
             top: 0,

@@ -1,9 +1,9 @@
 .github-icon,
 .site-icon {
-  min-width: 24px;
-  min-height: 24px;
-  max-width: 24px;
-  max-height: 24px;
+  min-width: var(--size-6);
+  min-height: var(--size-6);
+  max-width: var(--size-6);
+  max-height: var(--size-6);
   padding: 2px;
 }
 
@@ -20,9 +20,9 @@
 }
 
 #home-page-icon {
-  min-width: 48px;
-  min-height: 48px;
-  max-width: 48px;
-  max-height: 48px;
-  padding: 8px;
+  min-width: var(--size-12);
+  min-height: var(--size-12);
+  max-width: var(--size-12);
+  max-height: var(--size-12);
+  padding: var(--size-2);
 }
