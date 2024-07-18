@@ -79,168 +79,220 @@
       <div class="sub-component-group-header">Assist chip</div>
       
       <div class="chips-container">
-        <label class="component chip" outlined>
-          <input type="checkbox" name="chip" value="chip1">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" outlined with-icon>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-        </label>
-
-        <label class="component chip" outlined with-trailing-icon>
-          <input type="checkbox" name="chip" value="chip3">
-          <span>Chip</span>
-          <i>close</i>
-        </label>
-
-        <label class="component chip" outlined with-both-icons>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-            <i>close</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          ) 
+        }}
       </div>
       
       <div class="chips-container">
-        <label class="component chip" elevated>
-          <input type="checkbox" name="chip" value="chip1">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" elevated with-icon>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-        </label>
-
-        <label class="component chip" elevated with-trailing-icon>
-          <input type="checkbox" name="chip" value="chip3">
-          <span>Chip</span>
-          <i>close</i>
-        </label>
-
-        <label class="component chip" elevated with-both-icons>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-            <i>close</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          ) 
+        }}
       </div>
 
       {{/*  Filter chip  */}}
       <div class="sub-component-group-header">Filter chip</div>
       
       <div class="chips-container">
-        <label class="component chip" outlined>
-          <input type="checkbox" name="chip" value="chip1">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" outlined with-icon>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-        </label>
-                
-        <label class="component chip" outlined with-trailing-icon>
-          <input type="checkbox" name="chip" value="chip3">
-          <span>Chip</span>
-          <i>arrow_drop_down</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" outlined with-both-icons>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-            <i>arrow_drop_down</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "label" "Chip"
+          "trailing_icon" "arrow_drop_down"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          "trailing_icon" "arrow_drop_down"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "label" "Chip"
+          "trailing_icon" "close"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          "trailing_icon" "close"
+          ) 
+        }}
       </div>
 
       <div class="chips-container">
-        <label class="component chip" elevated>
-          <input type="checkbox" name="chip" value="chip2">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" elevated with-icon>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-        </label>
-                
-        <label class="component chip" elevated with-trailing-icon>
-          <input type="checkbox" name="chip" value="chip3">
-          <span>Chip</span>
-          <i>arrow_drop_down</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" elevated with-both-icons>
-            <input type="checkbox" name="chip" value="chip3">
-            <i>home</i>
-            <span>Chip</span>
-            <i>arrow_drop_down</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "label" "Chip"
+          "trailing_icon" "arrow_drop_down"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          "trailing_icon" "arrow_drop_down"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "label" "Chip"
+          "trailing_icon" "close"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "leading_icon" "home"
+          "label" "Chip"
+          "trailing_icon" "close"
+          ) 
+        }}
       </div>
 
       {{/*  Input chip  */}}
       <div class="sub-component-group-header">Input chip</div>
 
       <div class="chips-container">
-        <label class="component chip" input outlined>
-          <input type="checkbox" name="chipInput" value="chip3">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "type" "input"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" input outlined with-icon>
-          <input type="checkbox" name="chipInput" value="chip4">
-          <i>home</i>
-          <span>Chip</span>
-        </label>
-        
-        <label class="component chip" input outlined with-trailing-icon>
-          <input type="checkbox" name="chipInput" value="chip3">
-          <span>Chip</span>
-          <i>close</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "type" "input"
+          "name" "chips"
+          "leading_icon" "check"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label class="component chip" input outlined with-both-icons>
-          <input type="checkbox" name="chipInput" value="chip4">
-          <i>home</i>
-          <span>Chip</span>
-          <i>close</i>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "type" "input"
+          "name" "chips"
+          "label" "Chip"
+          "trailing_icon" "close"
+          ) 
+        }}
+
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "type" "input"
+          "name" "chips"
+          "leading_icon" "check"
+          "label" "Chip"
+          "trailing_icon" "close"
+          ) 
+        }}
       </div>
 
       {{/*  Suggestion chip  */}}
       <div class="sub-component-group-header">Suggestion chip</div>
 
       <div class="chips-container">
-        <label outlined class="component chip">
-          <input type="checkbox" name="chip" value="chip1">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label outlined with-icon class="component chip">
-          <input type="checkbox" name="chip" value="chip2">
-          <i>check</i>
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "outlined"
+          "name" "chips"
+          "leading_icon" "check"
+          "label" "Chip"
+          ) 
+        }}
       </div>
-
+      
       <div class="chips-container">
-        <label elevated class="component chip">
-          <input type="checkbox" name="chip" value="chip1">
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "label" "Chip"
+          ) 
+        }}
 
-        <label elevated with-icon class="component chip">
-          <input type="checkbox" name="chip" value="chip2">
-          <i>check</i>
-          <span>Chip</span>
-        </label>
+        {{ partial "components/selections/chips.html" (dict
+          "container" "elevated"
+          "name" "chips"
+          "leading_icon" "check"
+          "label" "Chip"
+          ) 
+        }}
       </div>
     </div>
     

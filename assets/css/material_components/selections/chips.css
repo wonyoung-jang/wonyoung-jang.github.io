@@ -1,12 +1,8 @@
 .chips-container {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: var(--size-2);
-  padding: 0 var(--size-4);
+  flex-flow: row wrap;
   width: 100%;
-  height: var(--size-12);
+  gap: var(--size-2);
   overflow-x: auto;
 }
 
@@ -25,9 +21,9 @@
   --container-outline: initial;
   --container-elevation: initial;
   --container-shape: var(--shape-corner-s);
-  
+
   --bg-color: initial;
-  
+
   --text-color: var(--color-on-surface);
   --icon-color: var(--color-primary);
 
@@ -42,7 +38,6 @@
   font-weight: var(--typescale-label-large-weight);
   font-family: var(--typescale-label-large-font);
   color: var(--text-color);
-  
 
   & i {
     color: var(--icon-color);
@@ -55,32 +50,27 @@
     display: none;
   }
 
-  &[input] {
+  &:has(.leading-icon) {
+    padding-left: var(--size-2);
+  }
+
+  &:has(.trailing-icon) {
+    padding-right: var(--size-2);
+  }
+
+  &.input {
     --container-padding: 0 var(--size-3);
   }
 
-  &[with-icon] {
-    --container-padding: 0 var(--size-4) 0 var(--size-2);
-  }
-
-  &[with-trailing-icon] {
-    --container-padding: 0 var(--size-2) 0 var(--size-4);
-  }
-
-  &[with-both-icons] {
-    --container-padding: 0 var(--size-2);
-  }
-  
-  &[outlined] {
+  &.outlined {
     --container-outline: 1px solid var(--color-outline);
     --container-outline-hover: 1px solid var(--color-outline);
     --container-outline-focus: 1px solid var(--color-outline);
-    --container-outline-press: 1px solid var(--color-outline);  
+    --container-outline-press: 1px solid var(--color-outline);
   }
 
-  &[elevated] {
+  &.elevated {
     --bg-color: var(--color-surface-container-low);
-
     --container-elevation: var(--elevation1);
   }
 }

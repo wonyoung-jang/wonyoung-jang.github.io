@@ -1,0 +1,10 @@
+<label class="component chip {{ .type }} {{ .container }}">
+  <input type="checkbox" name="{{ .name }}">
+  {{ with .leading_icon }}
+    <i class="leading-icon">{{ . }}</i>
+  {{ end }}
+  <span>{{ .label }}</span>
+  {{ with .trailing_icon }}
+    <i class="trailing-icon">{{ . }}</i>
+  {{ end }}
+</label>
