@@ -3,49 +3,54 @@
     action="https://formspree.io/f/xjvnaory" 
     method="POST" 
     accept-charset="UTF-8">
-
-    <label for="edit-name">{{ i18n "contact_name" }}</label>
     
     <div class="component text-field" filled>
         <input 
-            type="text" 
-            id="edit-name" 
-            name="name" 
-            placeholder="{{ i18n "contact_name_placeholder" }}" 
+            type="text"
+            placeholder=" " 
             required>
+        <label>{{ i18n "contact_name" }}</label>
+        <hr>
+        <div class="supporting-text">
+            {{ i18n "contact_name_placeholder" }}
+        </div>
     </div>
-
-    <label for="edit-mail">{{ i18n "contact_mail" }}</label>
     
     <div class="component text-field" filled>
         <input 
-            type="email" 
-            id="edit-mail" 
-            name="email" 
-            placeholder="{{ i18n "contact_mail_placeholder" }}" 
+            type="email"
+            placeholder=" " 
             required>
+        <label>{{ i18n "contact_mail" }}</label>
+        <hr>
+        <div class="supporting-text">
+            {{ i18n "contact_mail_placeholder" }}
+        </div>
     </div>
-
-    <label for="edit-subject">{{ i18n "contact_subject" }}</label>
 
     <div class="component text-field" filled>
         <input 
-            type="text" 
-            id="edit-subject" 
-            name="subject" 
-            placeholder="{{ i18n "contact_subject_placeholder" }}" 
+            type="text"
+            placeholder=" " 
             required>
+        <label>{{ i18n "contact_subject" }}</label>
+        <hr>
+        <div class="supporting-text">
+            {{ i18n "contact_subject_placeholder" }}
+        </div>
     </div>
 
-    <label for="edit-message">{{ i18n "contact_message" }}</label>
-
-    <textarea 
-        class="component text-field" filled
-        id="edit-message" 
-        type="text"
-        name="message" 
-        placeholder="{{ i18n "contact_message_placeholder" }}" 
-        required></textarea>
+    <div class="component text-field" filled>
+        <textarea 
+            type="text"
+            placeholder=" " 
+            required></textarea>
+        <label>{{ i18n "contact_message" }}</label>
+        <hr>
+        <div class="supporting-text">
+            {{ i18n "contact_message_placeholder" }}
+        </div>
+    </div>
 
     <button 
         class="component button common-button filled" 

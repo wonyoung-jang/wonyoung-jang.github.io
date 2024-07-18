@@ -1,9 +1,9 @@
 .contact-form {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--size-8);
-  margin: var(--size-3);
-  gap: var(--size-4);
+  padding: var(--size-5);
+  margin: var(--size-8);
+  gap: var(--size-13);
   border-radius: var(--shape-corner-xs);
   box-shadow: var(--elevation1);
   background: var(--color-surface-container);
@@ -14,23 +14,11 @@
     margin-top: var(--size-8);
   }
 
-  & label {
-    margin-top: var(--size-4);
-  }
-
   & .error {
     color: var(--color-on-error);
   }
 
   & .status {
     color: var(--color-inverse-primary);
-  }
-
-  & .hidden {
-    display: none;
-  }
-
-  & textarea::placeholder {
-    color: var(--color-on-surface-variant);
   }
 }
