@@ -2,7 +2,7 @@
     <article class="layout panes basic-single-pane">
         <section class="layout pane" id="sections-page">
             <div class="list-container" id="terms">
-                {{ range .Pages }}
+                {{ range .Pages.ByTitle }}
                     <a  class="component list-item" one
                         href="{{ .RelPermalink }}">
                         <span class="monogram">
