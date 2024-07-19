@@ -18,7 +18,7 @@
     {{/*  Backlinks  */}}
     {{ if gt (len $backlinks) 1 }}
         <div id="backlinks">
-            <span class="page-links-title title-large">Links to this page</span>
+            <span class="page-links-title">Links to this page</span>
             {{ range $backlinks }}
                 {{ if eq .Title "" }}
                     {{- continue -}}
@@ -26,7 +26,7 @@
                 <a  class="component card elevated"
                     href="{{ .RelPermalink }}">
                     <div class="card-content">
-                        <span class="title-small">
+                        <span class="card-title">
                             {{ .Title }}
                         </span>
                         <span class="card-description">
@@ -42,12 +42,12 @@
     {{ $related := site.RegularPages.Related . | complement $backlinks | complement $nextprev |first 4 }}
     {{ with $related }}
         <div id="related-pages">
-            <span class="page-links-title title-large">See also</span>
+            <span class="page-links-title">See also</span>
             {{ range $i, $p := . }}
                 <a  class="component card elevated"
                     href="{{ .RelPermalink }}">
                     <div class="card-content">
-                        <span class="title-small">
+                        <span class="card-title">
                             {{ .Title }}
                         </span>
                         <span class="card-description">

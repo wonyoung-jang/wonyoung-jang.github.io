@@ -33,7 +33,6 @@
   &.elevated {
     --bg-color: var(--color-surface-container-low);
     --icon-color: var(--color-on-surface);
-
     --container-elevation: var(--elevation1);
     --container-elevation-hover: var(--elevation2);
     --container-elevation-focus: var(--elevation1);
@@ -48,11 +47,14 @@
   &.outlined {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
-
     --container-outline: 1px solid var(--color-outline-variant);
     --container-outline-hover: 1px solid var(--color-outline-variant);
     --container-outline-focus: 1px solid var(--color-on-surface);
     --container-outline-press: 1px solid var(--color-outline-variant);
+  }
+
+  & .media i {
+    color: var(--color-surface-container-high);
   }
 
   &[stacked] {
@@ -179,10 +181,6 @@
     }
   }
 
-  & .media i {
-    color: var(--color-surface-container-high);
-  }
-
   &[horizontal] {
     flex: 1 0 auto;
     --container-flex-flow: row nowrap;
@@ -273,7 +271,6 @@
       min-height: var(--size-16);
     }
   }
-
   
   & .card-content {
     flex: 1 1 0;

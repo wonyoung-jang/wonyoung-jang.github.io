@@ -56,10 +56,13 @@
         flex: 1 1 0;
       }
     }
+  }
 
-    & .page-links-title {
-      width: 100%;
-      margin-block: var(--size-5) var(--size-3);
-    }
+  & .page-links-title {
+    width: 100%;
+    font-family: var(--typescale-headline-large-font);
+    font-size:   var(--typescale-headline-large-size);
+    font-weight: var(--typescale-headline-large-weight);
+    line-height: var(--typescale-headline-large-line-height);
   }
 }
