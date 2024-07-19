@@ -16,139 +16,63 @@
 
       <div class="sub-component-group-header">No FAB</div>
 
-      <div class="component bottom-app-bar">
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-      </div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        )
+      }}
 
-      <div class="component bottom-app-bar">
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>add</i>
-          </button>
-      </div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "icon_2" "add"
+        )
+      }}
 
-      <div class="component bottom-app-bar">
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>add</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>settings</i>
-          </button>
-      </div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "icon_2" "add"
+        "icon_3" "settings"
+        )
+      }}
+
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "icon_2" "add"
+        "icon_3" "settings"
+        "icon_4" "token"
+        )
+      }}
       
-      <div class="component bottom-app-bar">
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>add</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>settings</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>token</i>
-          </button>
-      </div>
-
       <div class="sub-component-group-header">With FAB</div>
 
-      <div class="component bottom-app-bar" with-fab>
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-        </span>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "fab" "add"
+        )
+      }}
 
-        <span class="end">
-          <button class="component fab primary">
-            <i>add</i>
-          </button>
-        </span>
-      </div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "icon_2" "add"
+        "fab" "add"
+        )
+      }}
 
-      <div class="component bottom-app-bar" with-fab>
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>add</i>
-          </button>
-        </span>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "icon_2" "add"
+        "icon_3" "settings"        
+        "fab" "add"
+        )
+      }}
 
-        <span class="end">
-          <button class="component fab primary">
-            <i>add</i>
-          </button>
-        </span>
-      </div>
-
-      <div class="component bottom-app-bar" with-fab>
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>add</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>settings</i>
-          </button>
-        </span>
-
-        <span class="end">
-          <button class="component fab primary">
-            <i>add</i>
-          </button>
-        </span>
-      </div>
-
-      <div class="component bottom-app-bar" with-fab>
-        <span class="start">
-          <button class="component button icon-button">
-            <i>home</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>add</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>settings</i>
-          </button>
-            
-          <button class="component button icon-button">
-            <i>token</i>
-          </button>
-        </span>
-
-        <span class="end">
-          <button class="component fab primary">
-            <i>add</i>
-          </button>
-        </span>
-      </div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1" "home"
+        "icon_2" "add"
+        "icon_3" "settings"
+        "icon_4" "token"
+        "fab" "add"
+        )
+      }}
     </div>
     
     {{/*  Top app bars  */}}

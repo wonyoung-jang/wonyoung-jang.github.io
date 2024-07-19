@@ -17,7 +17,6 @@
     }
   }
 
-
   &[large] {
     width: var(--size-24);
     height: var(--size-24);
@@ -28,7 +27,6 @@
       font-size: var(--size-9);
     }
   }
-
   
   &[extended] {
     min-width: var(--size-20);
@@ -42,7 +40,6 @@
       font-size: var(--size-6);
     }
   }
-  
   
   & i {
     font-size: var(--size-6);

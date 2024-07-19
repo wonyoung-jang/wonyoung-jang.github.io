@@ -17,7 +17,7 @@
   --text-color: initial;
   --icon-color: initial;
 
-  &[with-fab] {
+  &:has(.fab) {
     --container-padding: var(--size-4);
   }
 
