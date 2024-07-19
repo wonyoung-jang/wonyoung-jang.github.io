@@ -20,7 +20,7 @@
   min-width: var(--size-70);
   max-width: var(--size-140);
 
-  &[full] {
+  &.full {
     --container-shape: 0;
     min-width: unset;
     max-width: unset;
@@ -77,27 +77,6 @@
     line-height: var(--typescale-body-medium-line-height);
 
     margin-bottom: var(--size-6);
-  }
-
-  & .list-container {
-    align-items: flex-start;
-    align-self: stretch;
-
-    & .list-item {
-      flex: 1 0 auto;
-      background-color: unset;
-      place-items: center;
-      min-height: var(--size-14);
-    }
-
-    &[scrollable] {
-      overflow-y: auto;
-      max-height: calc(var(--size-14) * 4);
-
-      & hr {
-        min-height: 1px;
-      }
-    }
   }
 
   & .actions {
