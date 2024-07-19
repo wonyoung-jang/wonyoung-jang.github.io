@@ -294,68 +294,28 @@
       </div>
     </div>
     
-    {{/*  TODO Date pickers  */}}
+    {{/*  Date pickers  */}}
     <div class="component-group-header">Date pickers</div>
     <div class="component-group">
-
       {{/*  TODO Modal date picker  */}}
-
       {{/*  TODO Docked date picker (desktop)  */}}
-
       <div class="sub-component-group-header">Input date picker</div>
-
       {{/*  Single date input  */}}
-      <div class="component date-picker">
-        <div class="header">
-          <div class="supporting-text">Select date</div>
-          <div class="headline-container">
-            <div class="headline">Enter date</div>
-            <button class="component button icon-button"><i>today</i></button>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component text-field" outlined>
-          <input type="date" name="date" placeholder=" "/>
-          <label>Date</label>
-        </div>
-
-        <div class="date-picker-actions">
-          <button class="component button common-button">Cancel</button>
-          <button class="component button common-button">OK</button>
-        </div>
-      </div>
+      {{ partial "components/selections/date-pickers.html" (dict
+        "supporting_text" "Select date"
+        "headline" "Enter date"
+        "icon" "today"
+        ) 
+      }}
 
       {{/*  Date range input  */}}
-      <div class="component date-picker">
-        <div class="header">
-          <div class="supporting-text">Select date</div>
-          <div class="headline-container">
-            <div class="headline">Enter dates</div>
-            <button class="component button icon-button"><i>today</i></button>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="text-field-container">
-          <div class="component text-field" outlined>
-            <input type="date" value="Start date">
-            <label>Start</label>
-          </div>
-          
-          <div class="component text-field" outlined>
-            <input type="date" values="End date">
-            <label>End</label>
-          </div>
-        </div>
-
-        <div class="date-picker-actions">
-          <button class="component button common-button">Cancel</button>
-          <button class="component button common-button">OK</button>
-        </div>
-      </div>
+      {{ partial "components/selections/date-pickers.html" (dict
+        "supporting_text" "Select date"
+        "headline" "Enter date"
+        "icon" "today"
+        "date_range" true
+        ) 
+      }}
     </div>
     
     {{/*  Menus  */}}
