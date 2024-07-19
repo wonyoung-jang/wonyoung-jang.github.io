@@ -19,6 +19,11 @@
   & .pane {
     --padding: 0px;
   }
+
+  & .display-medium {
+    margin-top: var(--size-12);
+    width: 100%;
+  }
 }
 
 & .component-group-header {

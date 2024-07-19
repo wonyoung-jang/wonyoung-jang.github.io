@@ -9,8 +9,9 @@
     {{/*  || App bars  */}}
 
     {{/*  Bottom app bars  */}}
-    <div class="component-group-header">Bottom app bars</div>
+    <div class="component-group-header">App bars</div>
     <div class="component-group">
+      <div class="display-medium">Bottom app bars</div>
       <div class="sub-component-group-header">No FAB</div>
       {{ partial "components/navigations/bottom-app-bars.html" (dict
         "icon_1"  "home"
@@ -68,11 +69,9 @@
         "fab"     "add"
         )
       }}
-    </div>
     
-    {{/*  Top app bars  */}}
-    <div class="component-group-header">Top app bars</div>
-    <div class="component-group">
+      {{/*  Top app bars  */}}
+      <div class="display-medium">Top app bars</div>
       <div class="sub-component-group-header">Top app bar</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "center" "center"
@@ -115,8 +114,9 @@
     {{/*  || Navigations  */}}
 
     {{/*  Navigation bars  */}}
-    <div class="component-group-header">Navigation bars</div>
+    <div class="component-group-header">Navigations</div>
     <div class="component-group">
+      <div class="display-medium">Navigation bars</div>
       <div class="sub-component-group-header">Icon & label</div>
       {{ partial "components/navigations/navigation-bars.html" (dict
         "center" "center"
@@ -211,11 +211,9 @@
         "label_5" "Settings"
         )
       }}
-    </div>
     
-    {{/*  Navigation drawers  */}}
-    <div class="component-group-header">Navigation drawers</div>
-    <div class="component-group">
+      {{/*  Navigation drawers  */}}
+      <div class="display-medium">Navigation drawers</div>
       <div class="sub-component-group-header">With icon</div>
       {{ partial "components/navigations/navigation-drawers.html" (dict
         "headline" "Title"
@@ -249,11 +247,9 @@
         "nav_item_5" (dict "label" "Settings")
         )
       }}
-    </div>
     
-    {{/*  Navigation rails  */}}
-    <div class="component-group-header">Navigation rails</div>
-    <div class="component-group">     
+      {{/*  Navigation rails  */}}
+      <div class="display-medium">Navigation rails</div>
       <div class="sub-component-group-header">Align - top / middle / bottom</div>
       {{ partial "components/navigations/navigation-rails.html" (dict
         "icon_main" "menu"
