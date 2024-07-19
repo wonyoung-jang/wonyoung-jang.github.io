@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.ee6e0943cd8212b5e6f0009418128e415020acc37f889bf2c9230b0fda516cde.css" integrity="sha256-7m4JQ82CErXm8ACUGBKOQVAgrMN/iJvyySMLD9pRbN4=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.8f9fa32b16e18a5f5a5d7d20d625b7e44049eff9629f4c0a5a7594798aa662aa.css" integrity="sha256-j5&#43;jKxbhil9aXX0g1iW35EBJ7/lin0wKWnWUeYqmYqo=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.7d8b1e5fb6aa1c5502ac777d94e414997c5906df9938629cc8ef081548bc93ad.css" integrity="sha256-fYseX7aqHFUCrHd9lOQUmXxZBt&#43;ZOGKcyO8IFUi8k60=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.4b0fa2f92de7040ba77cb1838d65b4dfe1d46d9a264a96c1c3146aa63b7df60f.css" integrity="sha256-Sw&#43;i&#43;S3nBAunfLGDjWW03&#43;HUbZomSpbBwxRqpjt99g8=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.c6d6d5b8c429bb5eba79fbff1b52d2d501032ab1babcdec60203e9c9d0fac073.css" integrity="sha256-xtbVuMQpu166efv/G1LS1QEDKrG6vN7GAgPpydD6wHM=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.7e180488471764eb494921b21a9133886273c2e3020405b6baff42b9c9619161.css" integrity="sha256-fhgEiEcXZOtJSSGyGpEziGJzwuMCBAW2uv9CuclhkWE=" rel="preload stylesheet" as="style">
 
@@ -1421,12 +1421,12 @@
     
     
         <div id="related-pages">
-            <span class="page-links-title title-large">See also</span>
+            <span class="page-links-title">See also</span>
             
                 <a  class="component card elevated"
                     href="/actions/">
                     <div class="card-content">
-                        <span class="title-large">
+                        <span class="card-title">
                             Actions
                         </span>
                         <span class="card-description">
@@ -1438,7 +1438,7 @@
                 <a  class="component card elevated"
                     href="/communication/">
                     <div class="card-content">
-                        <span class="title-large">
+                        <span class="card-title">
                             Communication
                         </span>
                         <span class="card-description">
@@ -1450,7 +1450,7 @@
                 <a  class="component card elevated"
                     href="/containment/">
                     <div class="card-content">
-                        <span class="title-large">
+                        <span class="card-title">
                             Containment
                         </span>
                         <span class="card-description">
@@ -1462,7 +1462,7 @@
                 <a  class="component card elevated"
                     href="/navigation/">
                     <div class="card-content">
-                        <span class="title-large">
+                        <span class="card-title">
                             Navigation
                         </span>
                         <span class="card-description">
@@ -1769,49 +1769,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

@@ -116,11 +116,12 @@
     {{/*  Segmented buttons  */}}
     <div class="component-group-header">Segmented buttons</div>
     <div class="component-group">
-      <div class="sub-component-group-header">Outlined</div>
+      <div class="sub-component-group-header">Outlined - single select</div>
       
       {{ $segmentedButtons := slice
         (dict 
           "name" "segmented1" 
+          "type" "radio"
           "buttons" (slice
             (dict 
               "id" "start" 
@@ -133,6 +134,7 @@
         )
         (dict
           "name" "segmented2" 
+          "type" "radio"
           "buttons" (slice
             (dict 
               "id" "start2" 
@@ -148,6 +150,7 @@
         )
         (dict 
           "name" "segmented3" 
+          "type" "radio"
           "buttons" (slice
             (dict 
               "id" "start3" 
@@ -168,6 +171,7 @@
         )
         (dict 
           "name" "segmented4" 
+          "type" "radio"
           "buttons" (slice
             (dict 
               "id" "start4" 
@@ -193,7 +197,93 @@
       }}
 
       {{ range $segmentedButtons }}
-        {{ partial "components/actions/segmented-button.html" . }}
+        {{ partial "components/actions/segmented-buttons.html" . }}
+      {{ end }}
+    </div>
+
+    <div class="component-group">
+      <div class="sub-component-group-header">Outlined - multi select</div>
+
+      {{ $segmentedButtons := slice
+        (dict 
+          "name" "segmented1" 
+          "type" "checkbox"
+          "buttons" (slice
+            (dict 
+              "id" "startcheck" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "endcheck" 
+              "label" "End")
+          )
+        )
+        (dict
+          "name" "segmented2"
+          "type" "checkbox" 
+          "buttons" (slice
+            (dict 
+              "id" "startcheck2" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "middlecheck" 
+              "label" "Middle")
+            (dict 
+              "id" "endcheck2" 
+              "label" "End")
+          )
+        )
+        (dict 
+          "name" "segmented3" 
+          "type" "checkbox"
+          "buttons" (slice
+            (dict 
+              "id" "startcheck3" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "middlecheck1" 
+              "label" "Middle 1"
+              )
+            (dict 
+              "id" "middlecheck2" 
+              "label" "Middle 2"
+              )
+            (dict 
+              "id" "endcheck3" 
+              "label" "End")
+          )
+        )
+        (dict 
+          "name" "segmented4" 
+          "type" "checkbox"
+          "buttons" (slice
+            (dict 
+              "id" "startcheck4" 
+              "label" "Start" 
+              "checked" true)
+            (dict 
+              "id" "middlecheck3" 
+              "label" "Middle 1"
+              )
+            (dict 
+              "id" "middlecheck4" 
+              "label" "Middle 2"
+              )
+            (dict 
+              "id" "middlecheck5" 
+              "label" "Middle 3"
+              )
+            (dict 
+              "id" "endcheck4" 
+              "label" "End")
+          )
+        )
+      }}
+
+      {{ range $segmentedButtons }}
+        {{ partial "components/actions/segmented-buttons.html" . }}
       {{ end }}
     </div>
   </section>

@@ -34,7 +34,7 @@
     }
   }
   
-  & input[type="radio"] {
+  & input {
     display: none;
     
     &:checked + .button {
