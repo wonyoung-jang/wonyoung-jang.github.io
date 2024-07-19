@@ -181,85 +181,80 @@
       </div>
     </div>
 
-    {{/*  TODO Carousels  */}}
+    {{/*  Carousels  */}}
     <div class="component-group-header">Carousels</div>
     <div class="component-group">
-
       {{/*  Hero */}}
       <div class="sub-component-group-header">Hero</div>
-      <div class="component carousel hero">
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item small">
-          <i>image</i>
-        </div>
-      </div>
-      
+      {{ partial "components/containments/carousels.html" (dict
+        "type" "hero"
+        "images" (slice
+          (dict "icon" "image")
+          (dict 
+            "icon" "image"
+            "size" "small")
+          )
+        )
+      }}
+
       {{/*  Center-aligned hero */}}
       <div class="sub-component-group-header">Center-aligned hero</div>
-      <div class="component carousel center-aligned-hero">
-        <div class="component carousel-item small">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item small">
-          <i>image</i>
-        </div>
-      </div>
+      {{ partial "components/containments/carousels.html" (dict
+        "type" "center-aligned-hero"
+        "images" (slice
+          (dict 
+            "icon" "image"
+            "size" "small")
+          (dict "icon" "image")
+          (dict 
+            "icon" "image"
+            "size" "small")
+          )
+        )
+      }}
       
       {{/*  Multi-browse */}}
       <div class="sub-component-group-header">Multi-browse</div>
-      <div class="component carousel multi-browse">
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item medium">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item small">
-          <i>image</i>
-        </div>
-      </div>
-
+      {{ partial "components/containments/carousels.html" (dict
+        "type" "multi-browse"
+        "images" (slice
+          (dict "icon" "image")
+          (dict 
+            "icon" "image"
+            "size" "medium")
+          (dict 
+            "icon" "image"
+            "size" "small")
+          )
+        )
+      }}
+      
       {{/*  Uncontained */}}
       <div class="sub-component-group-header">Uncontained</div>
-      <div class="component carousel uncontained">
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>        
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>        
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>        
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>        
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-      </div>
+      {{ partial "components/containments/carousels.html" (dict
+        "type" "uncontained"
+        "images" (slice
+          (dict "icon" "image")
+          (dict "icon" "image")
+          (dict "icon" "image")
+          (dict "icon" "image")
+          (dict "icon" "image")
+          (dict "icon" "image")
+          )
+        )
+      }}
 
       {{/*  Full-screen  */}}
       <div class="sub-component-group-header">Full-screen</div>
-      <div class="component carousel full">
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-        <div class="component carousel-item">
-          <i>image</i>
-        </div>
-      </div>
+      {{ partial "components/containments/carousels.html" (dict
+        "type" "full"
+        "images" (slice
+          (dict "icon" "image")
+          (dict "icon" "image")
+          (dict "icon" "image")
+          )
+        )
+      }}
     </div>
     
     {{/*  Dialogs  */}}
