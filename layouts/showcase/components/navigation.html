@@ -13,64 +13,61 @@
     {{/*  Bottom app bars  */}}
     <div class="component-group-header">Bottom app bars</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">No FAB</div>
-
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
+        "icon_1"  "home"
         )
       }}
 
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "icon_2" "add"
+        "icon_1"  "home"
+        "icon_2"  "add"
         )
       }}
 
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "icon_2" "add"
-        "icon_3" "settings"
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "icon_3"  "settings"
         )
       }}
 
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "icon_2" "add"
-        "icon_3" "settings"
-        "icon_4" "token"
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "icon_3"  "settings"
+        "icon_4"  "token"
         )
       }}
       
       <div class="sub-component-group-header">With FAB</div>
-
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "fab" "add"
+        "icon_1"  "home"
+        "fab"     "add"
         )
       }}
 
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "icon_2" "add"
-        "fab" "add"
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "fab"     "add"
         )
       }}
 
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "icon_2" "add"
-        "icon_3" "settings"        
-        "fab" "add"
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "icon_3"  "settings"        
+        "fab"     "add"
         )
       }}
 
       {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1" "home"
-        "icon_2" "add"
-        "icon_3" "settings"
-        "icon_4" "token"
-        "fab" "add"
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "icon_3"  "settings"
+        "icon_4"  "token"
+        "fab"     "add"
         )
       }}
     </div>
@@ -80,89 +77,43 @@
     <div class="component-group">
 
       <div class="sub-component-group-header">Top app bar</div>
-      <div class="component top-app-bar" center small>
-        
-        <div class="start">
-          <button class="component button icon-button">
-            <i>menu</i>
-          </button>
-        </div>
 
-        <div class="headline">Small + center</div>
-        
-        <div class="end">
-          <button class="component button icon-button">
-            <i>account_circle</i>
-          </button>
-        </div>
-      </div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1"  "home"
+        "icon_2" "account_circle"
+        )
+      }}
 
-      <div class="component top-app-bar" small>
-        <div class="start">
-          <button class="component button icon-button">
-            <i>arrow_back</i>
-          </button>
-        </div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "small"
+        "headline" "Small"
+        "icon_1"  "arrow_back"
+        "icon_2" "account_circle"
+        )
+      }}
 
-        <div class="headline">Small</div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "medium"
+        "headline" "Medium"
+        "icon_1"  "arrow_back"
+        "icon_2" "attach_file"
+        "icon_3" "today"
+        "icon_4" "more_vert"
+        )
+      }}
 
-        <div class="end">
-          <button class="component button icon-button">
-            <i>attach_file</i>
-          </button>
-          <button class="component button icon-button">
-            <i>today</i>
-          </button>
-          <button class="component button icon-button">
-            <i>more_vert</i>
-          </button>
-        </div>
-      </div>
-
-      <div class="component top-app-bar" medium>
-        <div class="start">
-          <button class="component button icon-button">
-            <i>arrow_back</i>
-          </button>
-        </div>
-                  
-        <div class="end">
-          <button class="component button icon-button">
-            <i>attach_file</i>
-          </button>
-          <button class="component button icon-button">
-            <i>today</i>
-          </button>
-          <button class="component button icon-button">
-            <i>more_vert</i>
-          </button>
-        </div>
-
-        <div class="headline">Medium</div>
-      </div>
-
-      <div class="component top-app-bar" large>
-        <div class="start">
-          <button class="component button icon-button">
-            <i>arrow_back</i>
-          </button>
-        </div>
-        
-        <div class="end">
-          <button class="component button icon-button">
-            <i>attach_file</i>
-          </button>
-          <button class="component button icon-button">
-            <i>today</i>
-          </button>
-          <button class="component button icon-button">
-            <i>more_vert</i>
-          </button>
-        </div>
-
-        <div class="headline">Large</div>
-      </div>
-
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "large"
+        "headline" "Large"
+        "icon_1"  "arrow_back"
+        "icon_2" "attach_file"
+        "icon_3" "today"
+        "icon_4" "more_vert"
+        )
+      }}
     </div>
 
     {{/*  || Navigations  */}}
