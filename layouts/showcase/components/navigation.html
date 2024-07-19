@@ -213,73 +213,42 @@
       }}
     </div>
     
-    {{/*  TODO Navigation drawers  */}}
+    {{/*  Navigation drawers  */}}
     <div class="component-group-header">Navigation drawers</div>
     <div class="component-group">
       <div class="sub-component-group-header">With icon</div>
-
-      <div class="component navigation-drawer">
-        <div class="headline">Title</div>
-
-        <div class="component navigation-item active">
-          <i>home</i>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <i>folder</i>
-          <div class="label">Folder</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <i>note</i>
-          <div class="label">Note</div>
-        </div>
-
-        <hr mid>
-
-        <div class="section-header">Section header</div>
-
-        <div class="component navigation-item">
-          <i>token</i>
-          <div class="label">Token</div>        
-        </div>
-        
-        <div class="component navigation-item">
-          <i>settings</i>
-          <div class="label">Settings</div>            
-        </div>
-      </div>
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "headline" "Title"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
       
-    <div class="sub-component-group-header">No icon</div>
-
-    <div class="component navigation-drawer">
-      <div class="headline">Title</div>
-
-      <div class="component navigation-item active">
-        <div class="label">Home</div>
-      </div>
-      
-      <div class="component navigation-item">
-        <div class="label">Folder</div>
-      </div>
-      
-      <div class="component navigation-item">
-        <div class="label">Note</div>
-      </div>
-      
-      <hr mid>
-
-      <div class="section-header">Section header</div>
-
-      <div class="component navigation-item">
-        <div class="label">Token</div>        
-      </div>
-      
-      <div class="component navigation-item">
-        <div class="label">Settings</div>            
-      </div>
-    </div>
+      <div class="sub-component-group-header">No icon</div>
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "headline" "Title"
+        "nav_item_1" (dict "label" "Home")
+        "nav_item_2" (dict "label" "Folder")
+        "nav_item_3" (dict "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict "label" "Token")
+        "nav_item_5" (dict "label" "Settings")
+        )
+      }}
     </div>
     
     {{/*  TODO Navigation rails  */}}
