@@ -255,138 +255,71 @@
     <div class="component-group-header">Navigation rails</div>
     <div class="component-group">
       
-      <div class="sub-component-group-header">Align top</div>
-
-      <div class="component navigation-rail">
-        <div class="menu-and-fab">
-          <button class="component button icon-button">
-            <i>menu</i>
-          </button>
-
-          <button class="component button fab tertiary-container">
-            <i>add</i>
-          </button>
-        </div>
-
-        <div class="destinations">
-          <div class="component navigation-item active">
-            <div class="icon-container">
-              <i>home</i>
-            </div>
-            <div class="label">Home</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>folder</i>
-            </div>
-            <div class="label">Folder</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>note</i>
-            </div>            
-            <div class="label">Note</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>token</i>
-            </div>            
-            <div class="label">Token</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="sub-component-group-header">Align middle</div>
-
-      <div class="component navigation-rail" middle>
-        <div class="menu-and-fab">
-          <button class="component button icon-button">
-            <i>menu</i>
-          </button>
-
-          <button class="component button fab tertiary-container">
-            <i>add</i>
-          </button>
-        </div>
-
-        <div class="destinations">
-          <div class="component navigation-item active">
-            <div class="icon-container">
-              <i>home</i>
-            </div>
-            <div class="label">Home</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>folder</i>
-            </div>
-            <div class="label">Folder</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>note</i>
-            </div>            
-            <div class="label">Note</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>token</i>
-            </div>            
-            <div class="label">Token</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="sub-component-group-header">Align bottom</div>
-      
-      <div class="component navigation-rail" bottom>
-        <div class="menu-and-fab">
-          <button class="component button icon-button">
-            <i>menu</i>
-          </button>
-
-          <button class="component button fab tertiary-container">
-            <i>add</i>
-          </button>
-        </div>      
-
-        <div class="destinations">
-          <div class="component navigation-item active">
-            <div class="icon-container">
-              <i>home</i>
-            </div>
-            <div class="label">Home</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>folder</i>
-            </div>
-            <div class="label">Folder</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>note</i>
-            </div>            
-            <div class="label">Note</div>
-          </div>
-          
-          <div class="component navigation-item">
-            <div class="icon-container">
-              <i>token</i>
-            </div>            
-            <div class="label">Token</div>
-          </div>
-        </div>
-      </div>
-
+      <div class="sub-component-group-header">Align - top / middle / bottom</div>
+      {{ partial "components/navigations/navigation-rails.html" (dict
+        "icon_main" "menu"
+        "icon_fab" "add"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        )
+      }}
+        
+      {{ partial "components/navigations/navigation-rails.html" (dict
+        "align" "middle"
+        "icon_main" "menu"
+        "icon_fab" "add"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
+        
+      {{ partial "components/navigations/navigation-rails.html" (dict
+        "align" "bottom"
+        "icon_main" "menu"
+        "icon_fab" "add"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
     </div>
 
     {{/*  Searches  */}}
