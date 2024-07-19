@@ -1406,19 +1406,28 @@
     <div class="component-group">
       
       <div class="sub-component-group-header">Standard bottom sheet</div>
-
-      <div class="component bottom-sheets">
-        <div class="drag-handle"></div>
-        <div class="content"></div>
-      </div>
+      
+      {{ partial "components/containments/bottom-sheets.html" (dict
+        )
+      }}  
+      
+      {{ partial "components/containments/bottom-sheets.html" (dict
+        "drag_handle" true
+        )
+      }}  
 
       <div class="sub-component-group-header">Modal bottom sheet</div>
-
-      <div class="component bottom-sheets" modal>
-        <div class="drag-handle"></div>
-        <div class="content"></div>
-      </div>
-
+      
+      {{ partial "components/containments/bottom-sheets.html" (dict
+        "container" "modal"
+        )
+      }}  
+      
+      {{ partial "components/containments/bottom-sheets.html" (dict
+        "container" "modal"
+        "drag_handle" true
+        )
+      }} 
     </div>
 
     {{/*  Side sheets  */}}
