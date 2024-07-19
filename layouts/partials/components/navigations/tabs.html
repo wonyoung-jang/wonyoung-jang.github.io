@@ -1,0 +1,10 @@
+<div class="component tabs {{ .type }}">
+  {{ range .tabs }}
+    <span class="component tab {{ .active }}">
+      {{ with .icon }}
+        <i>{{ . }}</i>
+      {{ end }}
+      <div class="label">{{ .label }}</div>
+    </span>
+  {{ end }}
+</div>

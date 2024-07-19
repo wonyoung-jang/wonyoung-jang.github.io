@@ -33,7 +33,7 @@
     --bg-color: var(--color-surface-container-lowest);
   }
 
-  &[primary] .tab {    
+  &.primary .tab {    
     &:has(i + .label) {
       --container-height: var(--size-16);
     }
@@ -64,7 +64,7 @@
     }
   }
 
-  &[secondary] .tab {
+  &.secondary .tab {
     --container-flex-flow: row nowrap;
     --container-gap: var(--size-2);
 

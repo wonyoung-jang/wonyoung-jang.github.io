@@ -251,10 +251,9 @@
       }}
     </div>
     
-    {{/*  TODO Navigation rails  */}}
+    {{/*  Navigation rails  */}}
     <div class="component-group-header">Navigation rails</div>
-    <div class="component-group">
-      
+    <div class="component-group">     
       <div class="sub-component-group-header">Align - top / middle / bottom</div>
       {{ partial "components/navigations/navigation-rails.html" (dict
         "icon_main" "menu"
@@ -371,77 +370,61 @@
       }}
     </div>
 
-    {{/*  TODO Tabs  */}}
+    {{/*  Tabs  */}}
     <div class="component-group-header">Tabs</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">Primary</div>
-      <div class="component tabs" primary>
-        <span class="component tab active">
-          <div class="label">Tab 1</div>
-        </span>
-        <span class="component tab">
-          <div class="label">Tab 2</div>
-        </span>
-        <span class="component tab">
-          <div class="label">Tab 3</div>
-        </span>
-      </div>
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "label" "Tab 1" "active" "active")
+          (dict "label" "Tab 2")
+          (dict "label" "Tab 3")
+          )
+        )
+      }}
 
-      <div class="component tabs" primary>
-        <span class="component tab active">
-          <i>add</i>
-          <div class="label">Tab 1</div>
-        </span>
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "icon" "add" "label" "Tab 1" "active" "active")
+          (dict "icon" "add" "label" "Tab 2")
+          (dict "icon" "add" "label" "Tab 3")
+          )
+        )
+      }}
 
-        <span class="component tab">
-          <i>add</i>
-          <div class="label">Tab 2</div>
-        </span>
-
-        <span class="component tab">
-          <i>add</i>
-          <div class="label">Tab 3</div>
-        </span>
-      </div>
-
-      <div class="component tabs" primary>
-        <span class="component tab active">
-          <i>add</i>
-        </span>
-
-        <span class="component tab">
-          <i>add</i>
-        </span>
-
-        <span class="component tab">
-          <i>add</i>
-        </span>
-      </div>
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "icon" "add" "active" "active")
+          (dict "icon" "add")
+          (dict "icon" "add")
+          )
+        )
+      }}
 
       <div class="sub-component-group-header">Secondary</div>
-      <div class="component tabs" secondary>
-        <span class="component tab">Tab 1</span>
-        <span class="component tab active">Tab 2</span>
-        <span class="component tab">Tab 3</span>
-      </div>
 
-      <div class="component tabs" secondary>
-        <span class="component tab">
-          <i>add</i>
-          Tab 1
-        </span>
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "secondary"
+        "tabs" (slice
+          (dict "label" "Tab 1" "active" "active")
+          (dict "label" "Tab 2")
+          (dict "label" "Tab 3")
+          )
+        )
+      }}
 
-        <span class="component tab active">
-          <i>add</i>
-          Tab 2
-        </span>
-
-        <span class="component tab">
-          <i>add</i>
-          Tab 3
-        </span>
-      </div>
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "secondary"
+        "tabs" (slice
+          (dict "icon" "add" "label" "Tab 1" "active" "active")
+          (dict "icon" "add" "label" "Tab 2")
+          (dict "icon" "add" "label" "Tab 3")
+          )
+        )
+      }}
     </div>
 
   </section>
