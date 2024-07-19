@@ -1,7 +1,5 @@
 {{ define "main" }}
-
 <article class="layout panes basic-single-pane" id="components-showcase">
-
   <section class="layout pane" id="post-content">  
 
     {{ with .Content }}
@@ -75,9 +73,7 @@
     {{/*  Top app bars  */}}
     <div class="component-group-header">Top app bars</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">Top app bar</div>
-
       {{ partial "components/navigations/top-app-bars.html" (dict
         "center" "center"
         "size" "small"
@@ -118,7 +114,7 @@
 
     {{/*  || Navigations  */}}
 
-    {{/*  Navigation bars  */}}
+    {{/*  TODO Navigation bars  */}}
     <div class="component-group-header">Navigation bars</div>
     <div class="component-group">
       
@@ -298,7 +294,7 @@
       </div>
     </div>
     
-    {{/*  Navigation drawers  */}}
+    {{/*  TODO Navigation drawers  */}}
     <div class="component-group-header">Navigation drawers</div>
     <div class="component-group">
       <div class="sub-component-group-header">With icon</div>
@@ -367,7 +363,7 @@
     </div>
     </div>
     
-    {{/*  Navigation rails  */}}
+    {{/*  TODO Navigation rails  */}}
     <div class="component-group-header">Navigation rails</div>
     <div class="component-group">
       
@@ -554,7 +550,7 @@
       }}
     </div>
 
-    {{/*  Tabs  */}}
+    {{/*  TODO Tabs  */}}
     <div class="component-group-header">Tabs</div>
     <div class="component-group">
 
@@ -628,7 +624,5 @@
     </div>
 
   </section>
-
 </article>
-
 {{ end }}
