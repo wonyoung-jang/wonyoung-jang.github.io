@@ -981,12 +981,11 @@
     {{/*  || Sheets  */}}
 
     {{/*  Bottom sheets  */}}
-    <div class="component-group-header">Bottom sheets</div>
+    <div class="component-group-header">Sheets</div>
     <div class="component-group">
+      <div class="display-medium">Bottom sheets</div>
       <div class="sub-component-group-header">Standard bottom sheet</div>   
-      {{ partial "components/containments/bottom-sheets.html" (dict
-        )
-      }}  
+      {{ partial "components/containments/bottom-sheets.html" (dict)}}  
       
       {{ partial "components/containments/bottom-sheets.html" (dict
         "drag_handle" true
@@ -1005,11 +1004,9 @@
         "drag_handle" true
         )
       }} 
-    </div>
 
-    {{/*  Side sheets  */}}
-    <div class="component-group-header">Side sheets</div>
-    <div class="component-group">  
+      {{/*  Side sheets  */}}
+      <div class="display-medium">Side sheets</div>
       <div class="sub-component-group-header">Standard side sheet</div>
 
       {{ partial "components/containments/side-sheets.html" (dict
