@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.ee6e0943cd8212b5e6f0009418128e415020acc37f889bf2c9230b0fda516cde.css" integrity="sha256-7m4JQ82CErXm8ACUGBKOQVAgrMN/iJvyySMLD9pRbN4=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.10956e6e2a5fa1417bb21f6ee97578c9715cd766ca71887871fb33d14780c66b.css" integrity="sha256-EJVubipfoUF7sh9u6XV4yXFc12bKcYh4cfsz0UeAxms=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.8e611bc00672bc3d363dc8a3ec6ea44b41a724d1dfd6da593dc57bf31026199b.css" integrity="sha256-jmEbwAZyvD02Pcij7G6kS0GnJNHf1tpZPcV78xAmGZs=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3custom.min.ad10c8f4e5448ce2f38e61bb4d3ad74cd217d42d63275ce60bf054cd137802cc.css" integrity="sha256-rRDI9OVEjOLzjmG7TTrXTNIX1C1jJ1zmC/BUzRN4Asw=" rel="preload stylesheet" as="style">
 
@@ -845,7 +845,7 @@
                 
                 
 <article class="layout panes basic-single-pane" id="components-showcase">
-  <section class="layout pane" id="post-content">  
+  <section class="layout pane" id="post-content">
 
     
       <p><img    loading="lazy" 
@@ -4285,49 +4285,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

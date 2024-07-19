@@ -1,0 +1,35 @@
+.component:not(
+    .badge,
+    .tooltip,
+    .snackbar,
+    progress,
+    .top-app-bar,
+    .bottom-app-bar,
+    .navigation-bar,
+    .navigation-item,
+    .navigation-rail,
+    .navigation-drawer,
+    .tabs,
+    .menus,
+    .dialog,
+    .bottom-sheets,
+    .side-sheets
+  ):active {
+  border: var(--container-outline-press);
+  box-shadow: var(--container-elevation-press);
+
+  &:active::after {
+    opacity: var(--state-press-opacity);
+    background-size: 50000%;
+    animation: ripplePress var(--motion-duration-short2) var(--motion-easing-emphasized) both;
+  }
+}
+
+@keyframes ripplePress {
+  from {
+    background-size: 50000%;
+  }
+  to {
+    background-size: 0%;
+  }
+}

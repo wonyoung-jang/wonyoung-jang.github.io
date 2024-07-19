@@ -1,0 +1,22 @@
+.component:not(
+    .badge,
+    progress,
+    .top-app-bar,
+    .bottom-app-bar,
+    .navigation-bar,
+    .navigation-item,
+    .navigation-rail,
+    .navigation-drawer,
+    .tabs,
+    .dialog,
+    .bottom-sheets,
+    .side-sheets
+  ):focus-within {
+  border: var(--container-outline-focus);
+  box-shadow: var(--container-elevation-focus);
+
+  &::after {
+    opacity: var(--state-focus-opacity);
+    background-size: 50000%;
+  }
+}

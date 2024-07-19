@@ -1,10 +1,9 @@
-.component {
-  &:not(
+.component:not(
     .badge,
     .tooltip,
     .snackbar,
     progress,
-    .top-app-bar, 
+    .top-app-bar,
     .bottom-app-bar,
     .navigation-bar,
     .navigation-bar .navigation-item,
@@ -15,15 +14,15 @@
     .dialog,
     .bottom-sheets,
     .side-sheets,
-    .menus):hover {
-    border: var(--container-outline-hover, initial);
-    box-shadow: var(--container-elevation-hover, initial);
+    .menus
+  ):hover {
+  border: var(--container-outline-hover);
+  box-shadow: var(--container-elevation-hover);
 
-    &::after {
-      opacity: var(--state-hover-opacity);
-      background-size: 50000%;
-      animation: rippleHover var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both;
-    }
+  &::after {
+    opacity: var(--state-hover-opacity);
+    background-size: 50000%;
+    animation: rippleHover var(--motion-duration-extra-long4) var(--motion-easing-emphasized) both;
   }
 }
 
