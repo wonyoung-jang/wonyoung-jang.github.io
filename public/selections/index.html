@@ -1396,8 +1396,8 @@
 
       <div class="sub-component-group-header">Input date picker</div>
 
+      
       <div class="component date-picker">
-
         <div class="header">
           <div class="supporting-text">Select date</div>
           <div class="headline-container">
@@ -1417,11 +1417,10 @@
           <button class="component button common-button">Cancel</button>
           <button class="component button common-button">OK</button>
         </div>
-
       </div>
 
+      
       <div class="component date-picker">
-
         <div class="header">
           <div class="supporting-text">Select date</div>
           <div class="headline-container">
@@ -1454,25 +1453,47 @@
     
     <div class="component-group-header">Menus</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">No divider</div>
-
       <div class="component menus">
-        <div class="component menu-item">Menu item 1</div>
-        <div class="component menu-item">Menu item 2</div>
-        <div class="component menu-item">Menu item 3</div>
-        <div class="component menu-item">Menu item 4</div>
-      </div>
+  
+    <div class="component menu-item">Menu item 1</div>
+    
+  
+    <div class="component menu-item">Menu item 2</div>
+    
+  
+    <div class="component menu-item">Menu item 3</div>
+    
+  
+    <div class="component menu-item">Menu item 4</div>
+    
+  
+</div>
 
-      <div class="sub-component-group-header">With divider</div>
-
+      <div class="sub-component-group-header">With dividers</div>
       <div class="component menus">
-        <div class="component menu-item">Menu item 1</div>
-        <div class="component menu-item">Menu item 2</div>
-        <div class="component menu-item">Menu item 3</div>
-        <hr>
-        <div class="component menu-item">Menu item 4</div>
-      </div>
+  
+    <div class="component menu-item">Menu item 1</div>
+    
+      <hr>
+    
+  
+    <div class="component menu-item">Menu item 2</div>
+    
+      <hr>
+    
+  
+    <div class="component menu-item">Menu item 3</div>
+    
+      <hr>
+    
+  
+    <div class="component menu-item">Menu item 4</div>
+    
+      <hr>
+    
+  
+</div>
     </div>
 
     
@@ -2213,6 +2234,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

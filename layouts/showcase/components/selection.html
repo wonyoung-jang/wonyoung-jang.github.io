@@ -304,8 +304,8 @@
 
       <div class="sub-component-group-header">Input date picker</div>
 
+      {{/*  Single date input  */}}
       <div class="component date-picker">
-
         <div class="header">
           <div class="supporting-text">Select date</div>
           <div class="headline-container">
@@ -325,11 +325,10 @@
           <button class="component button common-button">Cancel</button>
           <button class="component button common-button">OK</button>
         </div>
-
       </div>
 
+      {{/*  Date range input  */}}
       <div class="component date-picker">
-
         <div class="header">
           <div class="supporting-text">Select date</div>
           <div class="headline-container">
@@ -359,28 +358,38 @@
       </div>
     </div>
     
-    {{/*  TODO Menus  */}}
+    {{/*  Menus  */}}
     <div class="component-group-header">Menus</div>
     <div class="component-group">
-
       <div class="sub-component-group-header">No divider</div>
+      {{ partial "components/selections/menus.html" (dict
+        "menu_items" (slice 
+          (dict "label" "Menu item 1")
+          (dict "label" "Menu item 2")
+          (dict "label" "Menu item 3")
+          (dict "label" "Menu item 4")
+          )
+        )
+      }}
 
-      <div class="component menus">
-        <div class="component menu-item">Menu item 1</div>
-        <div class="component menu-item">Menu item 2</div>
-        <div class="component menu-item">Menu item 3</div>
-        <div class="component menu-item">Menu item 4</div>
-      </div>
-
-      <div class="sub-component-group-header">With divider</div>
-
-      <div class="component menus">
-        <div class="component menu-item">Menu item 1</div>
-        <div class="component menu-item">Menu item 2</div>
-        <div class="component menu-item">Menu item 3</div>
-        <hr>
-        <div class="component menu-item">Menu item 4</div>
-      </div>
+      <div class="sub-component-group-header">With dividers</div>
+      {{ partial "components/selections/menus.html" (dict
+      "menu_items" (slice 
+          (dict 
+            "label" "Menu item 1"
+            "dividers" true)
+          (dict 
+            "label" "Menu item 2"
+            "dividers" true)
+          (dict 
+            "label" "Menu item 3"
+            "dividers" true)
+          (dict 
+            "label" "Menu item 4"
+            "dividers" true)
+          ) 
+        )
+      }}
     </div>
 
     {{/*  Radio buttons  */}}
