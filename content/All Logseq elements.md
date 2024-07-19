@@ -214,14 +214,6 @@ block-property-2:: block-property-2
 2 + 2
 ```
 
-  + ### Cards
-
-    + {{cards [components]({{< ref "/components" >}}) }}
-
-  + ### Cloze
-
-    + {{cloze [components]({{< ref "/components" >}}) }}
-
   + ### Embeds
 
     + {{tweet }}
