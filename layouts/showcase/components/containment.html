@@ -276,6 +276,7 @@
         ) 
       }}
 
+      <div class="sub-component-group-header">Full screen dialog</div>
       {{ partial "components/containments/dialogs.html" (dict 
         "type" "full"
         "headline" "Full screen dialog"
@@ -353,101 +354,8 @@
     <div class="component-group">
       {{/*  Lists  */}}
       <div class="sub-component-group-header">Lists</div>
-      
-      {{/*  One line list  */}}
-      <div class="list-container">
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>      
-
-        <hr>
-
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>      
-
-        <hr>
-
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-      </div>
-
-      {{/*  Two line list  */}}
-      <div class="list-container">
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-      </div>
-
-      {{/*  Three line list  */}}
-      <div class="list-container">
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-      </div>
-
-      {{/*  List items  */}}
 
       {{/*  One line  */}}
-      <div class="sub-component-group-header">List-item</div>
       <div class="title-large">One line lists</div>
       <div class="list-container">
         {{ partial "components/containments/lists.html" (dict
@@ -993,7 +901,6 @@
       }}  
 
       <div class="sub-component-group-header">Modal bottom sheet</div>
-      
       {{ partial "components/containments/bottom-sheets.html" (dict
         "container" "modal"
         )
@@ -1008,7 +915,6 @@
       {{/*  Side sheets  */}}
       <div class="display-medium">Side sheets</div>
       <div class="sub-component-group-header">Standard side sheet</div>
-
       {{ partial "components/containments/side-sheets.html" (dict
         "headline" "Title"
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
@@ -1038,7 +944,6 @@
       }}
       
       <div class="sub-component-group-header">Modal side sheets</div>
-      
       {{ partial "components/containments/side-sheets.html" (dict
         "type" "modal"
         "headline" "Title"
