@@ -1,7 +1,5 @@
 {{ define "main" }}
-
 <article class="layout panes basic-single-pane" id="components-showcase">
-
   <section class="layout pane" id="post-content">  
 
     {{ with .Content }}
@@ -199,7 +197,7 @@
       {{ range $segmentedButtons }}
         {{ partial "components/actions/segmented-buttons.html" . }}
       {{ end }}
-      
+
       <div class="sub-component-group-header">Outlined - multi select</div>
 
       {{ $segmentedButtons := slice
@@ -284,8 +282,7 @@
         {{ partial "components/actions/segmented-buttons.html" . }}
       {{ end }}
     </div>
+
   </section>
-
 </article>
-
 {{ end }}

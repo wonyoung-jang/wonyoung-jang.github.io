@@ -114,184 +114,103 @@
 
     {{/*  || Navigations  */}}
 
-    {{/*  TODO Navigation bars  */}}
+    {{/*  Navigation bars  */}}
     <div class="component-group-header">Navigation bars</div>
     <div class="component-group">
-      
       <div class="sub-component-group-header">Icon & label</div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        )
+      }}
 
-      <div class="component navigation-bar">
-        <div class="component navigation-item active">
-          <div class="icon-container">
-            <i>home</i>
-          </div>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>folder</i>
-          </div>
-          <div class="label">Folder</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>note</i>
-          </div>            
-          <div class="label">Note</div>
-        </div>
-      </div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "icon_4" "token"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        "label_4" "Token"
+        )
+      }}
 
-      <div class="component navigation-bar">
-        <div class="component navigation-item active">
-          <div class="icon-container">
-            <i>home</i>
-          </div>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>folder</i>
-          </div>
-          <div class="label">Folder</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>note</i>
-          </div>            
-          <div class="label">Note</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>token</i>
-          </div>            
-          <div class="label">Token</div>
-        </div>
-      </div>
-
-      <div class="component navigation-bar">
-        <div class="component navigation-item active">
-          <div class="icon-container">
-            <i>home</i>
-          </div>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>folder</i>
-          </div>
-          <div class="label">Folder</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>note</i>
-          </div>            
-          <div class="label">Note</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>token</i>
-          </div>            
-          <div class="label">Token</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>settings</i>
-          </div>            
-          <div class="label">settings</div>
-        </div>
-      </div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "icon_4" "token"
+        "icon_5" "settings"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        "label_4" "Token"
+        "label_5" "Settings"
+        )
+      }}
 
       <div class="sub-component-group-header">Icon only</div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "icon_only" true
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        )
+      }}
 
-      <div class="component navigation-bar">
-        <div class="component navigation-item active">
-          <div class="icon-container">
-            <i>home</i>
-          </div>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>folder</i>
-          </div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>note</i>
-          </div>            
-        </div>
-      </div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "icon_only" true
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "icon_4" "token"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        "label_4" "Token"
+        )
+      }}
 
-      <div class="component navigation-bar">
-        <div class="component navigation-item active">
-          <div class="icon-container">
-            <i>home</i>
-          </div>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>folder</i>
-          </div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>note</i>
-          </div>            
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>token</i>
-          </div>            
-        </div>
-      </div>
-
-      <div class="component navigation-bar">
-        <div class="component navigation-item active">
-          <div class="icon-container">
-            <i>home</i>
-          </div>
-          <div class="label">Home</div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>folder</i>
-          </div>
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>note</i>
-          </div>            
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>token</i>
-          </div>            
-        </div>
-        
-        <div class="component navigation-item">
-          <div class="icon-container">
-            <i>settings</i>
-          </div>            
-        </div>
-      </div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "icon_only" true
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "icon_4" "token"
+        "icon_5" "settings"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        "label_4" "Token"
+        "label_5" "Settings"
+        )
+      }}
     </div>
     
     {{/*  TODO Navigation drawers  */}}
