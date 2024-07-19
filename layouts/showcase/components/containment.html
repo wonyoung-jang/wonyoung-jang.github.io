@@ -1404,9 +1404,7 @@
     {{/*  Bottom sheets  */}}
     <div class="component-group-header">Bottom sheets</div>
     <div class="component-group">
-      
-      <div class="sub-component-group-header">Standard bottom sheet</div>
-      
+      <div class="sub-component-group-header">Standard bottom sheet</div>   
       {{ partial "components/containments/bottom-sheets.html" (dict
         )
       }}  
@@ -1436,135 +1434,67 @@
       
       <div class="sub-component-group-header">Standard side sheet</div>
 
-      <div class="component side-sheets">
-        <div class="header">
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "headline" "Title"
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        )
+      }}
 
-      <div class="component side-sheets">
-        <div class="header">
-          <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "headline" "Title"
+        "back_icon" true
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        )
+      }}
 
-      <div class="component side-sheets">
-        <div class="header">
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-        <hr>
-        <div class="actions">
-          <button class="component button common-button" filled-tonal>Save</button>
-          <button class="component button common-button" outlined>Cancel</button>
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "headline" "Title"
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        "actions" true
+        )
+      }}
 
-      <div class="component side-sheets">
-        <div class="header">
-          <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-        <hr>
-        <div class="actions">
-          <button class="component button common-button" filled-tonal>Save</button>
-          <button class="component button common-button" outlined>Cancel</button>
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "headline" "Title"
+        "back_icon" true
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        "actions" true
+        )
+      }}
       
       <div class="sub-component-group-header">Modal side sheets</div>
       
-      <div class="component side-sheets" modal>
-        <div class="header">
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        )
+      }}
 
-      <div class="component side-sheets" modal>
-        <div class="header">
-          <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "back_icon" true
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        )
+      }}
 
-      <div class="component side-sheets" modal>
-        <div class="header">
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-        <hr>
-        <div class="actions">
-          <button class="component button common-button" filled-tonal>Save</button>
-          <button class="component button common-button" outlined>Cancel</button>
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        "actions" true
+        )
+      }}
 
-      <div class="component side-sheets" modal>
-        <div class="header">
-          <button class="component button icon-button"><i class="back-icon">arrow_back</i></button>
-          <div class="headline">Title</div>
-          <button class="component button icon-button"><i>close</i></button>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Repudiandae doloribus deleniti reiciendis adipisci doloremque 
-          necessitatibus dolorem facilis, tenetur maxime illum et aliquid, 
-          molestias deserunt tempore ut nostrum non amet corrupti!
-        </div>
-        <hr>
-        <div class="actions">
-          <button class="component button common-button" filled-tonal>Save</button>
-          <button class="component button common-button" outlined>Cancel</button>
-        </div>
-      </div>
+      {{ partial "components/containments/side-sheets.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "back_icon" true
+        "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
+        "actions" true
+        )
+      }}
 
     </div>
 
