@@ -294,30 +294,6 @@
       </div>
     </div>
     
-    {{/*  Date pickers  */}}
-    <div class="component-group-header">Date pickers</div>
-    <div class="component-group">
-      {{/*  TODO Modal date picker  */}}
-      {{/*  TODO Docked date picker (desktop)  */}}
-      <div class="sub-component-group-header">Input date picker</div>
-      {{/*  Single date input  */}}
-      {{ partial "components/selections/date-pickers.html" (dict
-        "supporting_text" "Select date"
-        "headline" "Enter date"
-        "icon" "today"
-        ) 
-      }}
-
-      {{/*  Date range input  */}}
-      {{ partial "components/selections/date-pickers.html" (dict
-        "supporting_text" "Select date"
-        "headline" "Enter date"
-        "icon" "today"
-        "date_range" true
-        ) 
-      }}
-    </div>
-    
     {{/*  Menus  */}}
     <div class="component-group-header">Menus</div>
     <div class="component-group">
@@ -396,9 +372,34 @@
         "withIcon" true) }}
     </div>
 
-    {{/*  Time pickers  */}}
-    <div class="component-group-header">Time pickers</div>
+        
+    {{/*  || Pickers  */}}
+    <div class="component-group-header">Pickers</div>
     <div class="component-group">
+      {{/*  Date pickers  */}}
+      <div class="display-medium">Date pickers</div>
+      {{/*  TODO Modal date picker  */}}
+      {{/*  TODO Docked date picker (desktop)  */}}
+      <div class="sub-component-group-header">Input date picker</div>
+      {{/*  Single date input  */}}
+      {{ partial "components/selections/date-pickers.html" (dict
+        "supporting_text" "Select date"
+        "headline" "Enter date"
+        "icon" "today"
+        ) 
+      }}
+
+      {{/*  Date range input  */}}
+      {{ partial "components/selections/date-pickers.html" (dict
+        "supporting_text" "Select date"
+        "headline" "Enter date"
+        "icon" "today"
+        "date_range" true
+        ) 
+      }}
+
+      {{/*  Time pickers  */}}
+      <div class="display-medium">Time pickers</div>
       {{/*  TODO Dial picker  */}}
       
       {{/*  Time input picker  */}}

@@ -14,7 +14,7 @@ description: A work in progress page showcasing how elements are rendered from L
 title: All Logseq elements
 tags:
 categories:
-lastMod: 2024-07-18
+lastMod: 2024-07-19
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 
@@ -82,6 +82,25 @@ lastMod: 2024-07-18
 
     + ~~Strikethrough~~
 
+  + ### Lists
+
+    + List item 1
+
+    + List item 2
+
+    + List item 3
+
+  + ### Numbered lists
+
+    + List item 1
+logseq.order-list-type:: number
+
+    + List item 2
+logseq.order-list-type:: number
+
+    + List item 3
+logseq.order-list-type:: number
+
 ## Advanced commands
 
   + {{< logseq/orgCENTER >}}Centered text
@@ -101,7 +120,7 @@ lastMod: 2024-07-18
 
     + **Hugo**: `<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
 
-## Logseq pages
+## Pages
 
   + ### Page reference
 
@@ -119,7 +138,7 @@ lastMod: 2024-07-18
 
     + #page
 
-## Logseq blocks
+## Blocks
 
   + ### Block reference
 
@@ -137,7 +156,16 @@ lastMod: 2024-07-18
     + **Output**: {{embed ## About me
  }}
 
-## Logseq tables
+  + ### Block properties
+
+    + Block
+block-property:: block-property
+
+    + Block
+block-property:: block-property
+block-property-2:: block-property-2
+
+## Tables
 
   + | Table | Table | Table |
 | Value | Value | Value |
@@ -146,7 +174,7 @@ lastMod: 2024-07-18
 |-|-|-|
 | Value | Value | Value |
 
-## Logseq tasks
+## Tasks
 
   + ### Tasks
 
@@ -160,9 +188,15 @@ lastMod: 2024-07-18
 
     + LATER A later task
 
+    + WAIT A wait task
+
     + WAITING A waiting task
 
     + CANCELED A canceled task
+
+    + CANCELLED A cancelled task
+
+    + IN-PROGRESS An in-progress task
 
   + ### Tasks with priorities
 
@@ -172,7 +206,29 @@ lastMod: 2024-07-18
 
     + TODO [#C] A low priority task
 
-## Logseq other
+## Other
+
+  + ### Calculator
+
+```calc
+2 + 2
+```
+
+  + ### Cards
+
+    + {{cards [components]({{< ref "/components" >}}) }}
+
+  + ### Cloze
+
+    + {{cloze [components]({{< ref "/components" >}}) }}
+
+  + ### Embeds
+
+    + {{tweet }}
+
+    + {{video }}
+
+    + @@html: @@
 
   + ### Excalidraw
 
