@@ -396,78 +396,21 @@
         "withIcon" true) }}
     </div>
 
-    {{/*  TODO Time pickers  */}}
+    {{/*  Time pickers  */}}
     <div class="component-group-header">Time pickers</div>
     <div class="component-group">
-
       {{/*  TODO Dial picker  */}}
-
+      
+      {{/*  Time input picker  */}}
       <div class="sub-component-group-header">Time input/keyboard picker</div>
+      {{/*  12H Time input picker  */}}
+      {{ partial "components/selections/time-pickers.html" (dict
+        "type" "12"
+        )
+      }}
 
-      {{/*  TODO 12H Time input picker  */}}
-      <div class="component time-picker">
-
-        <div class="time-picker-headline">Enter time</div>
-
-        <div class="time-picker-container">
-          <div class="time-input-field-container">
-            <div class="time-input-option selected">
-              07
-              <span class="supporting-text">Hour</span>
-            </div>
-            <div class="time-input-separator">:</div>
-            <div class="time-input-option">
-              00
-              <span class="supporting-text">Minute</span>
-            </div>
-          </div>
-
-          <div class="period-selector-container">
-            <div class="period-option selected">AM</div>
-            <div class="period-option">PM</div>
-          </div>
-        </div>
-
-        <div class="time-picker-actions"> 
-          <div class="time-picker-start">
-            <button class="component button icon-button"><i>schedule</i></button>
-          </div>
-          <div class="time-picker-end">
-            <button class="component button common-button">Cancel</button>
-            <button class="component button common-button">OK</button>
-          </div>
-        </div>
-      </div>
-
-      {{/*  TODO 24H Time input picker  */}}
-      <div class="component time-picker">
-
-        <div class="time-picker-headline">Enter time</div>
-
-        <div class="time-picker-container">
-          <div class="time-input-field-container">
-            <div class="time-input-option selected">
-              07
-              <span class="supporting-text">Hour</span>
-            </div>
-            <div class="time-input-separator">:</div>
-            <div class="time-input-option">
-              00
-              <span class="supporting-text">Minute</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="time-picker-actions"> 
-          <div class="time-picker-start">
-            <button class="component button icon-button"><i>schedule</i></button>
-          </div>
-          <div class="time-picker-end">
-            <button class="component button common-button">Cancel</button>
-            <button class="component button common-button">OK</button>
-          </div>
-        </div>
-      </div>
+      {{/*  24H Time input picker  */}}
+      {{ partial "components/selections/time-pickers.html" dict }}
     </div>
 
   </section>
