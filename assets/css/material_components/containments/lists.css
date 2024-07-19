@@ -123,7 +123,7 @@
     font-family: var(--typescale-label-small-font);  
   }
   
-  &[one] {
+  &.one {
     min-height: var(--size-14);
 
     &:has(.image) {
@@ -137,7 +137,7 @@
     }
   }
   
-  &[two] {
+  &.two {
     min-height: var(--size-18);
 
     & .supporting-text {
@@ -159,7 +159,7 @@
     }
   }
   
-  &[three] {
+  &.three {
     --container-padding: var(--size-3) var(--size-4);
     min-height: var(--size-22);
     

@@ -348,12 +348,13 @@
       </div>
     </div>
 
-    {{/*  TODO Lists  */}}
+    {{/*  Lists  */}}
     <div class="component-group-header">Lists</div>
     <div class="component-group">
       {{/*  Lists  */}}
       <div class="sub-component-group-header">Lists</div>
-
+      
+      {{/*  One line list  */}}
       <div class="list-container">
         <div class="component list-item" one>
           <div class="content">
@@ -378,6 +379,7 @@
         </div>
       </div>
 
+      {{/*  Two line list  */}}
       <div class="list-container">
         <div class="component list-item" two>
           <div class="content">
@@ -405,6 +407,7 @@
         </div>
       </div>
 
+      {{/*  Three line list  */}}
       <div class="list-container">
         <div class="component list-item" three>
           <div class="content">
@@ -447,772 +450,531 @@
       <div class="sub-component-group-header">List-item</div>
       <div class="title-large">One line lists</div>
       <div class="list-container">
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          )
+        }}
+        
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_trailing" true
+          )
+        }}
+                
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "icon_trailing" true
+          )
+        }}
+                
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "monogram" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_trailing" true
+          "monogram" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "icon_trailing" true
+          "monogram" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "icon_leading" true
+          )
+        }}
+        
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_trailing" true
+          "icon_leading" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "icon_leading" true
+          "icon_trailing" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "image" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_trailing" true
+          "image" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "video" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_trailing" true
+          "video" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_leading" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <i>person</i>          
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "checkbox_leading" true
+          "supporting_text" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <div class="image">
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "radio" true
+          )
+        }}
 
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-      
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "radio" true
+          "supporting_text" true
+          )
+        }}
 
-        <div class="component list-item" one>
-          <div class="image">
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "switch" true
+          )
+        }}
 
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-      
-        <hr>
-
-        <div class="component list-item" one>
-          <div class="video">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-      
-        <hr>
-
-        <div class="component list-item" one>
-          <div class="video">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-      
-        <hr>
-
-        <div class="component list-item" one>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" one>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <div class="trailing-supporting-text">100+</div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" one>
-          <label class="component radio-button">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" one>
-          <label class="component radio-button">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <div class="trailing-supporting-text">100+</div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" one>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" one>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-          </div>
-          <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-          </label>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+          "icon_leading" true
+          "switch" true
+          )
+        }}
       </div>
 
       {{/*  Two line  */}}
       <div class="title-large">Two line lists</div>
       <div class="list-container">
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          )
+        }}
         
-        {{/*  With image */}}
-        <div class="component list-item" two>
-          <div class="image">
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_trailing" true
+          )
+        }}
+                
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "icon_trailing" true
+          )
+        }}
+                
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "monogram" true
+          )
+        }}
 
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_trailing" true
+          "monogram" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "icon_trailing" true
+          "monogram" true
+          )
+        }}
 
-        <div class="component list-item" two>
-          <div class="image">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        {{/*  With video */}}
-        <div class="component list-item" two>
-          <div class="video">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <div class="video">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        {{/*  With checkbox  */}}
-        <div class="component list-item" two>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" two>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <div class="trailing-supporting-text">100+</div>
-        </div>
-
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "icon_leading" true
+          )
+        }}
         
-        {{/*  With radio  */}}
-        <div class="component list-item" two>
-          <label class="component radio-button">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_trailing" true
+          "icon_leading" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "icon_leading" true
+          "icon_trailing" true
+          )
+        }}
 
-        <div class="component list-item" two>
-          <label class="component radio-button">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <div class="trailing-supporting-text">100+</div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "image" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_trailing" true
+          "image" true
+          )
+        }}
 
-        {{/*  With switch  */}}
-        <div class="component list-item" two>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-          </label>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "video" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_trailing" true
+          "video" true
+          )
+        }}
 
-        <div class="component list-item" two>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Two lines</span>
-          </div>
-          <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-          </label>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_leading" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "checkbox_leading" true
+          "supporting_text" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "radio" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "radio" true
+          "supporting_text" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "switch" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "two"
+          "headline" "List-item"
+          "supporting_text_content" "Two lines"
+          "dividers" true
+          "icon_leading" true
+          "switch" true
+          )
+        }}
       </div>
 
       {{/*  Three line  */}}
       <div class="title-large">Three line lists</div>
       <div class="list-container">
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          )
+        }}
         
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_trailing" true
+          )
+        }}
+                
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "icon_trailing" true
+          )
+        }}
+                
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "monogram" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_trailing" true
+          "monogram" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "icon_trailing" true
+          "monogram" true
+          )
+        }}
+
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "icon_leading" true
+          )
+        }}
         
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-        
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_trailing" true
+          "icon_leading" true
+          )
+        }}
 
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <i>arrow_right</i>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "icon_leading" true
+          "icon_trailing" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "image" true
+          )
+        }}
 
-        <div class="component list-item" three>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_trailing" true
+          "image" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "video" true
+          )
+        }}
 
-        <div class="component list-item" three>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_trailing" true
+          "video" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_leading" true
+          )
+        }}
 
-        <div class="component list-item" three>
-          <span class="monogram">A</span>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <i>arrow_right</i>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "checkbox_leading" true
+          "supporting_text" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "radio" true
+          )
+        }}
 
-        <div class="component list-item" three>
-          <i>person</i>          
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "radio" true
+          "supporting_text" true
+          )
+        }}
 
-        <hr>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "switch" true
+          )
+        }}
 
-        <div class="component list-item" three>
-          <i>person</i>          
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <i>person</i>          
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <i>arrow_right</i>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <div class="image">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <div class="image">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-        
-        <div class="component list-item" three>
-          <div class="video">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <div class="video">
-
-          </div>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <label class="component checkbox">
-            <input type="checkbox">
-            <span class="checkmark"><i>check_small</i></span>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <div class="trailing-supporting-text">100+</div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <label class="component radio-button">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <label class="component radio-button">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-          </label>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <div class="trailing-supporting-text">100+</div>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-          </label>
-        </div>
-
-        <hr>
-
-        <div class="component list-item" three>
-          <i>person</i>
-          <div class="content">
-            <span class="headline">List-item</span>
-            <span class="supporting-text">Three lines
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Officiis itaque et doloremque ut dolore vero ipsum ullam fuga.
-            </span>
-          </div>
-          <label class="component switch">
-            <input class="track" type="checkbox">
-            <span class="handle"></span>
-          </label>
-        </div>
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "three"
+          "headline" "List-item"
+          "supporting_text_content" "Three lines Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis itaque et doloremque ut dolore vero ipsum ullam fuga."
+          "dividers" true
+          "icon_leading" true
+          "switch" true
+          )
+        }}
       </div>
     </div>
 

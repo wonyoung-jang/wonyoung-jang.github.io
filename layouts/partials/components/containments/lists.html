@@ -1,0 +1,87 @@
+{{/*  
+      
+        {{ partial "components/containments/lists.html" (dict
+          "lines" "one"
+          "headline" "List-item"
+          "dividers" true
+
+          "checkbox_leading" true
+          "checkbox_trailing" true
+          "icon_leading" true
+          "icon_trailing" true
+          "image" true
+          "video" true
+          "monogram" true
+          "radio" true
+          "switch" true
+          "supporting_text" true
+          )
+        }}
+*/}}
+<div class="component list-item {{ .lines }}">
+  {{ if .monogram }}
+    <span class="monogram">A</span>
+  {{ end }}
+
+  {{ if .image }}
+    <div class="image">
+    </div>
+  {{ end }}
+
+  {{ if .video }}
+    <div class="video">
+    </div>
+  {{ end }}
+
+  {{ if .radio }}
+    <label class="component radio-button">
+      <input type="radio" id="radio1" name="radio" value="radio1"/>
+    </label>
+  {{ end }}
+
+  {{ if .checkbox_leading }}
+    <label class="component checkbox">
+      <input type="checkbox">
+      <span class="checkmark"><i>check_small</i></span>
+    </label>
+  {{ end }}
+
+  {{ if .icon_leading }}
+    <i>person</i>
+  {{ end }}
+  
+  <div class="content">
+    <span class="headline">{{ .headline }}</span>
+    {{ with .supporting_text_content }}
+      <span class="supporting-text">
+        {{ . }}
+      </span>
+    {{ end }}
+  </div>
+
+  {{ if .checkbox_trailing }}
+    <label class="component checkbox">
+      <input type="checkbox">
+      <span class="checkmark"><i>check_small</i></span>
+    </label>
+  {{ end }}
+  
+  {{ if .icon_trailing }}
+    <i>arrow_right</i>
+  {{ end }}
+
+  {{ if .switch }}
+    <label class="component switch">
+      <input class="track" type="checkbox">
+      <span class="handle"></span>
+    </label>
+  {{ end }}
+
+  {{ if .supporting_text }}
+    <div class="trailing-supporting-text">100+</div>
+  {{ end }}
+</div>
+
+{{ if .dividers }}
+<hr>
+{{ end }}
