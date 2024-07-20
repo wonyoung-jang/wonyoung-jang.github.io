@@ -1,4 +1,4 @@
-<div class="component dialog {{ .type }}">
+<dialog class="component dialog {{ .type }}" open>
   {{ if eq .type "full" }}
     <span class="header">
       <button class="component button icon-button"><i>close</i></button>
@@ -6,16 +6,20 @@
       <span class="component button common-button">Save</span>
     </span>
   {{ else }}
-    <i>{{ .icon }}</i>
+    {{ with .icon }}
+      <i>{{ . }}</i>
+    {{ end }}
     <span class="headline">{{ .headline }}</span>
   {{ end }}
+
   <div class="supporting-text">
     {{ .supporting_text }}
   </div>
+
   {{ if .actions }}
     <span class="actions">
       <button class="component button common-button">Cancel</button>
       <button class="component button common-button">Accept</button>
     </span>
   {{ end }}
-</div>
+</dialog>

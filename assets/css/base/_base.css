@@ -218,6 +218,21 @@ h6 {
   font-family: var(--typescale-headline-small-font);
 }
 
+hr {
+  display: flex;
+  flex-flow: row nowrap;
+  color: var(--color-outline-variant);
+  height: 1px;
+  width: 100%;
+
+  &::before {
+    content: "";
+    background: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 /* Typography styles */
 del {
   text-decoration: line-through;

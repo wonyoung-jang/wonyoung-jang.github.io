@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.8c588fa98679a71ea5bd61abfac33f3a3e0c099a11ff8012f7f916cd05f99cc3.css" integrity="sha256-jFiPqYZ5px6lvWGr&#43;sM/Oj4MCZoR/4AS9/kWzQX5nMM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.fa2fbdb95f7328950779391162c57a3a5a4e53a7e8dd36d55174a6b3432d7895.css" integrity="sha256-&#43;i&#43;9uV9zKJUHeTkRYsV6OlpOU6fo3TbVUXSms0MteJU=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.ce400def103ed59ccbb8ac4f823c51e72002503fa195c14b9cbf2a60bc523818.css" integrity="sha256-zkAN7xA&#43;1ZzLuKxPgjxR5yACUD&#43;hlcFLnL8qYLxSOBg=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.31eaaf832f99a594bbddaf34f9688df181f41c3340e81b28c9fc48e0ba90d331.css" integrity="sha256-Meqvgy&#43;ZpZS73a80&#43;WiN8YH0HDNA6BsoyfxI4LqQ0zE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.2328db3a0b2f8e8d681f2874575bdbda5907216165a50d5c92338f7ef02420e9.css" integrity="sha256-IyjbOgsvjo1oHyh0V1vb2lkHIWFlpQ1ckjOPfvAkIOk=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -63,10 +63,12 @@
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
+    <meta property="article:modified_time" content="2024-07-20T17:02:44-04:00">
 
 
   <meta itemprop="name" content="Playground">
   <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
+  <meta itemprop="dateModified" content="2024-07-20T17:02:44-04:00">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Playground">
@@ -838,27 +840,12 @@
 
                 
                 
-<style>
-  .test-set {
-    display: flex;
-    flex-flow: column nowrap;
-
-    padding: 1em;
-    border: 1px solid;
-    margin-bottom: 1em;
-    border-radius: 8px;
-    gap: 16px;
-  }
-
-  h2 {
-    margin-block: 1em;
-  }
-</style>
-
 <article class="layout panes basic-single-pane">
-  <section class="layout pane">
-    <h2>Content sectioning</h2>
-    <div class="test-set">
+  <section class="layout pane" id="playground">
+
+    <section class="test-set">
+      <h2>Content sectioning</h2>
+      <hr />
       <address>Address</address>
       <article>Article</article>
       <aside>Aside</aside>
@@ -870,55 +857,61 @@
       <h4>H4</h4>
       <h5>H5</h5>
       <h6>H6</h6>
-      <hgroup>HGroup</hgroup>
-      <main>Main</main>
+      <hgroup>
+        <h2>HGroup</h2>
+        <h3>Subtitle</h3>
+      </hgroup>
       <nav>Nav</nav>
       <section>Section</section>
       <search>Search</search>
-    </div>
+    </section>
 
-    <h2>Text content</h2>
-    <div class="test-set">
+    <section class="test-set">
+      <h2>Text content</h2>
+      <hr />
       <blockquote>Blockquote</blockquote>
-      <dd>DD</dd>
+      <dl>
+        <dt>DT</dt>
+        <dd>DD</dd>
+      </dl>
       <div>Div</div>
-      <dl>DL</dl>
-      <dt>DT</dt>
-      <figcaption>Figcaption</figcaption>
-      <figure>Figure</figure>
-      <hr />HR
-      <li>LI</li>
-      <menu>Menu</menu>
+      <figure>
+        <figcaption>Figcaption</figcaption>
+        Figure
+      </figure>
+      <hr />
+      <ul>
+        <li>LI</li>
+      </ul>
+      <menu>
+        <li>Menu</li>
+      </menu>
       <ol>
-        OL
+        <li>OL</li>
       </ol>
       <p>P</p>
       <pre>Pre</pre>
-      <ul>
-        UL
-      </ul>
-    </div>
+    </section>
 
-    <h2>Inline text semantics</h2>
-    <div class="test-set">
-      <a>A</a>
-      <abbr>ABBR</abbr>
+    <section class="test-set">
+      <h2>Inline text semantics</h2>
+      <hr />
+      <a href="#">A</a>
+      <abbr title="Abbreviation">ABBR</abbr>
       <b>B</b>
       <bdi>Bdi</bdi>
-      <bdo>Bdo</bdo>
-      <br />BR
+      <bdo dir="rtl">Bdo</bdo>
+      <br />
       <cite>Cite</cite>
       <code>Code</code>
-      <data>Data</data>
+      <data value="123">Data</data>
       <dfn>DFN</dfn>
       <em>EM</em>
       <i>I</i>
       <kbd>KBD</kbd>
       <mark>Mark</mark>
       <q>Q</q>
-      <rp>RP</rp>
-      <rt>RT</rt>
-      <ruby>Ruby</ruby>
+      <ruby> Ruby<rp>(</rp><rt>RT</rt><rp>)</rp> </ruby>
       <s>S</s>
       <samp>Samp</samp>
       <small>Small</small>
@@ -926,24 +919,185 @@
       <strong>Strong</strong>
       <sub>Sub</sub>
       <sup>Sup</sup>
-      <time>Time</time>
+      <time datetime="2024-07-20">Time</time>
       <u>U</u>
       <var>Var</var>
-      <wbr />WBR
-    </div>
+      <wbr />
+    </section>
 
-    <h2>Image and multimedia</h2>
-    <div class="test-set">
-      <area />Area
-      <audio>Audio</audio>
-      <img />Img
-      <map>Map</map>
-      <track />
-      Track
-      <video>Video</video>
-    </div>
+    <section class="test-set">
+      <h2>Image and multimedia</h2>
+      <hr />
+      Map
+      <map name="example-map">
+        Area
+        <area
+          shape="rect"
+          coords="0,0,100,100"
+          href="#"
+          alt="Area" />
+      </map>
+      
+      Audio
+      <audio controls>
+        <source
+          src="audio.mp3"
+          type="audio/mpeg" />
+      </audio>
+      
+      Img
+      <img
+        src="image.jpg"
+        alt="Img"
+        usemap="#example-map" />
+      
+      Video
+      <video controls>
+        Track
+        <track
+          kind="subtitles"
+          srclang="en"
+          label="English" />
+      </video>
+    </section>
+
+    <section class="test-set">
+      <h2>Embedded content</h2>
+      <hr />
+      <embed
+        type="text/html"
+        src="embed.html" />
+      <iframe src="iframe.html">IFrame</iframe>
+      <object
+        data="object.data"
+        type="application/pdf">
+        <param
+          name="param1"
+          value="value1" />
+        Object
+      </object>
+      <picture>
+        <source
+          media="(min-width: 800px)"
+          srcset="large.jpg" />
+        <source
+          media="(min-width: 400px)"
+          srcset="medium.jpg" />
+        <img
+          src="small.jpg"
+          alt="Picture" />
+      </picture>
+    </section>
+
+    <section class="test-set">
+      <h2>SVG and MathML</h2>
+      <hr />
+      <svg>
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="black"
+          stroke-width="3" />
+      </svg>
+      <math> E = mc2 </math>
+    </section>
+
+    <section class="test-set">
+      <h2>Demarcating edits</h2>
+      <hr />
+      <del>del</del>
+      <ins>ins</ins>
+    </section>
+
+    <section class="test-set">
+      <h2>Table content</h2>
+      <hr />
+      <table>
+        <caption>
+          Caption
+        </caption>
+        <colgroup>
+          <col style="background-color: #f1f1f1" />
+          <col style="background-color: #e1e1e1" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>TH</th>
+            <th>TH</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TD</td>
+            <td>TD</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">TFoot</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="test-set">
+      <h2>Forms</h2>
+      <hr />
+      <form>
+        <fieldset>
+          <legend>Legend</legend>
+          <label for="input1">Label</label>
+          <input
+            id="input1"
+            type="text"
+            list="datalist1" />
+          <datalist id="datalist1">
+            <option value="Option 1"></option>
+            <option value="Option 2"></option>
+          </datalist>
+
+          <button type="button">Button</button>
+          <select>
+            <optgroup label="Group 1">
+              <option>Option</option>
+            </optgroup>
+          </select>
+          <textarea>Textarea</textarea>
+          <output>Output</output>
+          <progress
+            value="50"
+            max="100">
+            Progress
+          </progress>
+          <meter
+            value="5"
+            min="0"
+            max="10">
+            Meter
+          </meter>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="test-set">
+      <h2>Interactive elements</h2>
+      <hr />
+      <details>
+        <summary>Summary</summary>
+        Details
+      </details>
+      
+      Dialog
+      <dialog open>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+    </section>
   </section>
 </article>
+
 
             </div>
 
