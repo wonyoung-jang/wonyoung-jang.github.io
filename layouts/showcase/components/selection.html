@@ -12,26 +12,24 @@
       <div class="sub-component-group-header">Primary</div>
       {{/*  Selected  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "icon" "check_small" 
         ) 
       }}
 
       {{/*  Labeled  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "icon" "check_small" 
         "label" "Checkbox label"
         ) 
       }}
     
       {{/*  Indeterminate  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "indeterminate" true
+        "indeterminate" "indeterminate"
         ) 
       }}
 
       {{/*  Labeled  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "indeterminate" true
+        "indeterminate" "indeterminate"
         "label" "Indeterminate label"
         ) 
       }}
@@ -41,14 +39,12 @@
 
       {{/*  Selected  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "icon" "check_small" 
         "error" true
         ) 
       }}
 
       {{/*  Labeled  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "icon" "check_small" 
         "label" "Checkbox label"
         "error" true
         ) 
@@ -56,14 +52,14 @@
 
       {{/*  Indeterminate  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "indeterminate" true
+        "indeterminate" "indeterminate"
         "error" true
         ) 
       }}
 
       {{/*  Labeled  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
-        "indeterminate" true
+        "indeterminate" "indeterminate"
         "label" "Indeterminate label"
         "error" true
         ) 
@@ -376,8 +372,7 @@
         ) 
       }}
     </div>
-
-        
+ 
     {{/*  || Pickers  */}}
     <div class="component-group-header">Pickers</div>
     <div class="component-group">

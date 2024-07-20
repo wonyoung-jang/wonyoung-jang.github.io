@@ -137,6 +137,10 @@
     left: 2px;
   }
 
+  &.both > input:checked + span::before {
+    content: "check";
+  }
+
   &.select > input:checked + span::before {
     content: "check";
   }
