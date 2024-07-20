@@ -13,7 +13,8 @@
     .menus,
     .dialog,
     .bottom-sheets,
-    .side-sheets
+    .side-sheets,
+    .radio-button
   ):active {
   border: var(--container-outline-press);
   box-shadow: var(--container-elevation-press);

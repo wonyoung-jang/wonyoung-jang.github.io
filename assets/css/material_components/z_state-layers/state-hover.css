@@ -14,7 +14,8 @@
     .dialog,
     .bottom-sheets,
     .side-sheets,
-    .menus
+    .menus,
+    .radio-button
   ):hover {
   border: var(--container-outline-hover);
   box-shadow: var(--container-elevation-hover);
