@@ -13,24 +13,28 @@
     --container-shape: unset;
     --container-padding: 0 var(--size-4);
     --container-outline: 1px solid var(--color-outline);
-    --container-outline-hover: 1px solid var(--color-outline);
-    --container-outline-focus: 1px solid var(--color-outline);
-    --container-outline-press: 1px solid var(--color-outline);
     cursor: pointer;
     min-width: fit-content;
-    
+    border-inline-end: 0px solid transparent;
+
     &:first-of-type {
       --container-shape: var(--shape-corner-xl-start);
-      border-inline-end: 0px;
     }
     
     &:last-of-type {
       border-inline-end: 1px solid var(--color-outline);
       --container-shape: var(--shape-corner-xl-end);
+
+      &:hover {
+        border-right: 1px solid var(--color-outline) !important;
+      }
     }
 
-    &:not(:last-of-type):hover {
-      border-inline-end: 0px;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid var(--color-outline) !important;
+      border-right: 0px solid var(--color-outline) !important;
     }
   }
   
