@@ -54,16 +54,3 @@
     }
   }
 }
-
-:not(pre, .highlight) > code {
-  display: inline-flex;
-  flex-flow: row nowrap;
-  background-color: var(--color-surface-container-highest);
-  color: var(--color-on-surface-variant);
-  border-radius: var(--shape-corner-xs);
-  padding-inline: 3px;
-  font-size: var(--typeface-label-small-size);
-  font-weight: var(--typeface-label-small-weight);
-  font-family: var(--typeface-mono);
-  line-height: var(--typeface-label-small-line-height);
-}

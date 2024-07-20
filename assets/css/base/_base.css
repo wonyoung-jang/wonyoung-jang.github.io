@@ -244,6 +244,21 @@ b {
   }
 }
 
+:not(pre) > code {
+  display: inline-flex;
+  display: inline flex;
+  flex-flow: row nowrap;
+  background-color: var(--color-add180-container);
+  color: var(--color-on-add180-container);
+  border-radius: var(--shape-corner-xs);
+  padding-inline: 5px;
+  margin-inline: 3px;
+  font-family: var(--typeface-mono);
+  font-size: var(--typeface-body-small-size);
+  font-weight: var(--typeface-body-small-weight);
+  line-height: var(--typeface-body-small-line-height);
+}
+
 mark {
   background-color: var(--color-complementary);
   color: var(--color-on-complementary);
