@@ -417,18 +417,10 @@
 
 :root {
   /* || Custom headings */
-  --color-heading-2: var(--palette-add30-40);
-  --color-heading-3: var(--palette-add60-40);
-  --color-heading-4: var(--palette-add90-40);
-  --color-heading-5: var(--palette-add120-40);
-  --color-heading-6: var(--palette-add150-40);
-}
-
-.dark {
-  /* || Custom headings */
-  --color-heading-2: var(--palette-add30-60);
-  --color-heading-3: var(--palette-add60-60);
-  --color-heading-4: var(--palette-add90-60);
-  --color-heading-5: var(--palette-add120-60);
-  --color-heading-6: var(--palette-add150-60);
+  --color-heading-1: var(--palette-sub30-50);
+  --color-heading-2: var(--palette-sub60-50);
+  --color-heading-3: var(--palette-sub90-50);
+  --color-heading-4: var(--palette-sub120-50);
+  --color-heading-5: var(--palette-sub150-50);
+  --color-heading-6: var(--palette-sub180-50);
 }

@@ -69,8 +69,8 @@
   margin-top: var(--spacing-panes);
 }
 
-header,
-footer {
+#header,
+#footer {
   background-color: var(--color-surface-container);
   border-radius: var(--shape-corner-none);
 }

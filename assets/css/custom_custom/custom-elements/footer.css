@@ -1,4 +1,4 @@
-footer {
+#footer {
   position: relative;
 
   flex: 1 1 auto;
@@ -63,7 +63,7 @@ footer {
 
 /* Compact: add space for scrollbar */
 @media screen and (max-width: 599px) {
-  footer {
+  #footer {
     margin-right: var(--size-2)
   }
 }

@@ -7,7 +7,7 @@
     {{/* Body */}}
     <body id="top">     
         {{/* Header */}}
-        <header role="banner">
+        <header id="header" role="banner">
             {{ partial "header.html" . .Page }}
         </header>
 
@@ -38,7 +38,7 @@
             {{- partialCached "top-link-fab.html" . -}}
             
             {{/* Footer */}}
-            <footer role="contentinfo">    
+            <footer id="footer" role="contentinfo">    
                 {{/* Links + Copyright */}}
                 {{- partialCached "footer.html" . -}}
             </footer>

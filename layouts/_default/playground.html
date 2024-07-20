@@ -1,0 +1,109 @@
+{{ define "main" }}
+<style>
+  .test-set {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 1em;
+    border: 1px solid;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    gap: 16px;
+  }
+
+  h2 {
+    margin-block: 1em;
+  }
+</style>
+
+<article class="layout panes basic-single-pane">
+  <section class="layout pane">
+    <h2>Content sectioning</h2>
+    <div class="test-set">
+      <address>Address</address>
+      <article>Article</article>
+      <aside>Aside</aside>
+      <footer>Footer</footer>
+      <header>Header</header>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <h5>H5</h5>
+      <h6>H6</h6>
+      <hgroup>HGroup</hgroup>
+      <main>Main</main>
+      <nav>Nav</nav>
+      <section>Section</section>
+      <search>Search</search>
+    </div>
+
+    <h2>Text content</h2>
+    <div class="test-set">
+      <blockquote>Blockquote</blockquote>
+      <dd>DD</dd>
+      <div>Div</div>
+      <dl>DL</dl>
+      <dt>DT</dt>
+      <figcaption>Figcaption</figcaption>
+      <figure>Figure</figure>
+      <hr />
+      HR
+      <li>LI</li>
+      <menu>Menu</menu>
+      <ol>
+        OL
+      </ol>
+      <p>P</p>
+      <pre>Pre</pre>
+      <ul>
+        UL
+      </ul>
+    </div>
+
+    <h2>Inline text semantics</h2>
+    <div class="test-set">
+      <a>A</a>
+      <abbr>ABBR</abbr>
+      <b>B</b>
+      <bdi>Bdi</bdi>
+      <bdo>Bdo</bdo>
+      <br />BR
+      <cite>Cite</cite>
+      <code>Code</code>
+      <data>Data</data>
+      <dfn>DFN</dfn>
+      <em>EM</em>
+      <i>I</i>
+      <kbd>KBD</kbd>
+      <mark>Mark</mark>
+      <q>Q</q>
+      <rp>RP</rp>
+      <rt>RT</rt>
+      <ruby>Ruby</ruby>
+      <s>S</s>
+      <samp>Samp</samp>
+      <small>Small</small>
+      <span>Span</span>
+      <strong>Strong</strong>
+      <sub>Sub</sub>
+      <sup>Sup</sup>
+      <time>Time</time>
+      <u>U</u>
+      <var>Var</var>
+      <wbr />WBR
+    </div>
+
+    <h2>Image and multimedia</h2>
+    <div class="test-set">
+      <area />Area
+      <audio>Audio</audio>
+      <img />Img
+      <map>Map</map>
+      <track />
+      Track
+      <video>Video</video>
+    </div>
+  </section>
+</article>
+{{ end }}

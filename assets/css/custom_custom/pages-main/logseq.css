@@ -8,8 +8,8 @@ html.is-publish-mode {
     all: unset;
   }
 
-  & header,
-  & footer,
+  & #header,
+  & #footer,
   & .page-header,
   & .page-links,
   & .page-navigation,

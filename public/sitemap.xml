@@ -271,5 +271,9 @@
     <lastmod>2024-07-17T10:51:01-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.40.181:1313/playground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

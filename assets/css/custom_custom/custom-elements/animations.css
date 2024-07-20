@@ -1,9 +1,9 @@
 /* Transitions */
 :root,
 body,
-header,
 main,
-footer,
+#header,
+#footer,
 .layout,
 #top-link {
   transition: var(--motion-duration-long2) var(--motion-easing-emphasized);
