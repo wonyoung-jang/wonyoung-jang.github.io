@@ -13,7 +13,7 @@ progress {
   --arc-duration: calc(var(--motion-duration-extra-long4) * 1.33);
   --linear-duration: calc(var(--motion-duration-extra-long4) * 2);
   
-  &[linear] {
+  &.linear {
     &::-webkit-progress-value,
     &::-moz-progress-bar {
       animation-timing-function: linear;
@@ -39,10 +39,11 @@ progress {
     background: currentColor;
   }
 
-  &[circular] {
+  &.circular {
     display: inline-block;
-    inline-size: var(--size-12);
-    block-size: var(--size-12);
+    display: inline block;
+    height: var(--size-12);
+    width: var(--size-12);
     border-radius: var(--shape-corner-full);
     border: var(--size-1) solid currentColor;
     background: none;
@@ -55,11 +56,11 @@ progress {
 
     &::-webkit-progress-value,
     &::-moz-progress-bar {
-      background: transparent;
+      background: none;
     }
   }
   
-  &[determinate] {
+  &.determinate {
     animation-iteration-count: 1;
     
     &::-webkit-progress-value,

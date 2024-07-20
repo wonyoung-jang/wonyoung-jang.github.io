@@ -1,11 +1,9 @@
-{{ if .type }}
-  <progress 
-    {{ .type }}
-    
-    {{ if .determinate }} 
-      determinate 
-    {{ else }} 
+{{- if .type -}}
+  <progress class="{{- .type }}
+    {{- if .determinate }} 
+      determinate
+    {{- else }} 
       indeterminate 
-    {{ end }}>
+    {{- end -}}">
   </progress>
-{{ end }}
+{{- end -}}
