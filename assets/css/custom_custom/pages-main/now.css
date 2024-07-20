@@ -1,22 +1,35 @@
+table.least-recently-updated-pages,
 .least-recently-updated-pages {
+  display: block;
+  border-spacing: 0px;
   overflow-x: auto;
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
 
-.least-recently-updated-pages th,
-.least-recently-updated-pages td {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
+  & tr {
+    white-space: nowrap;
+    border-radius: unset;
+  }
 
-.least-recently-updated-pages th:first-child,
-.least-recently-updated-pages td:first-child {
-  width: 100%;
-}
+  & td,
+  & th {
+    padding: var(--size-3) var(--size-5);
+    border: 1px solid var(--color-outline-variant);
+  }
 
-.least-recently-updated-pages th:last-child,
-.least-recently-updated-pages td:last-child {
-  width: 100%;
+  & td {
+    background: var(--color-surface);
+  }
+
+  & th {
+    background: var(--color-surface-container-lowest);
+    border-bottom: var(--color-outline-variant);
+    caption-side: bottom;
+    text-align: left;
+    vertical-align: top;
+
+    color: var(--color-on-surface);
+    font-family: var(--typescale-title-medium-font);
+    font-size: var(--typescale-title-medium-size);
+    line-height: var(--typescale-title-medium-line-height);
+    font-weight: var(--typescale-title-medium-weight);
+  }
 }
