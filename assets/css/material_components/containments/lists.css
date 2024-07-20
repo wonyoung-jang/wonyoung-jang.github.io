@@ -93,12 +93,11 @@
     flex: 1 0 0;
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     align-self: stretch;
     
     & .headline {
-      align-self: stretch;
       width: 100%;
       font-size: var(--typescale-body-large-size);
       line-height: var(--typescale-body-large-line-height);
@@ -107,7 +106,6 @@
     }
     
     & .supporting-text {
-      align-self: stretch;
       width: 100%;
       color: var(--color-on-surface-variant);
       font-size: var(--typescale-body-medium-size);
@@ -136,6 +134,10 @@
     &:has(.video) {
       --container-padding: var(--size-3) var(--size-4);
       min-height: var(--size-22);
+    }
+
+    & .content {
+      align-items: center;
     }
   }
   
@@ -173,6 +175,10 @@
       overflow: hidden;
     }
     
+    & .headline {
+      align-self: flex-start;
+    }
+
     & i,
     & .image,
     & .video,
