@@ -16,13 +16,20 @@ header {
 #site-headline {
   position: relative;
   color: var(--color-on-surface);
-  display: none;
   flex-flow: row nowrap;
-
+  
   & .site-id-title {
+    display: none;
     font-family: var(--typescale-title-large-font);
     font-size:   var(--typescale-title-large-size);
     font-weight: var(--typescale-title-large-weight);
     line-height: var(--typescale-title-large-line-height);
+  }
+}
+
+/* Medium: 600px-839px */
+@media screen and (min-width: 600px) {
+  #site-headline > .site-id-title {
+    display: flex;
   }
 }

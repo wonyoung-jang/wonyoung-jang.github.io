@@ -83,10 +83,3 @@
     font-family: var(--typescale-headline-medium-font);
   }
 }
-
-/* Medium: 600px-839px */
-@media screen and (min-width: 600px) {
-  a#site-headline {
-    display: flex;
-  }
-}
