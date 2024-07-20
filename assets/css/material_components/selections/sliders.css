@@ -34,7 +34,7 @@
     transition: opacity 0.2s;
   }
 
-  & input[type="range"] {
+  & input {
     height: var(--size-11);
     width: 100%;
     -webkit-appearance: none;
@@ -150,7 +150,7 @@
 
   
   &.range {
-    & input[left] {
+    & .left {
       &::-moz-range-progress {
         background-color: var(--color-secondary-container);
       }
@@ -161,7 +161,7 @@
       }
     } 
     
-    & input[right] {
+    & .right {
       &::-moz-range-progress {
         border-radius: var(--shape-corner-l-end);
       }

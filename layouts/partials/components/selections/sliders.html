@@ -1,7 +1,7 @@
 <div class="slider{{ if .range }} range{{ end }}">
   {{ if .range }}
-    <input type="range" list="markers-{{ .id }}" left>
-    <input type="range" list="markers-{{ .id }}" right>
+    <input type="range" list="markers-{{ .id }}" class="left">
+    <input type="range" list="markers-{{ .id }}" class="right">
   {{ else }}
     <input type="range"
       {{ with .value }}value="{{ . }}"{{ end }}
