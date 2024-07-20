@@ -11,7 +11,8 @@
     .dialog,
     .bottom-sheets,
     .side-sheets,
-    .radio-button
+    .radio-button,
+    .checkbox
   ):focus-within {
   border: var(--container-outline-focus);
   box-shadow: var(--container-elevation-focus);

@@ -14,7 +14,8 @@
     .dialog,
     .bottom-sheets,
     .side-sheets,
-    .radio-button
+    .radio-button,
+    .checkbox
   ):active {
   border: var(--container-outline-press);
   box-shadow: var(--container-elevation-press);
