@@ -66,3 +66,45 @@
     line-height: var(--typescale-headline-large-line-height);
   }
 }
+
+/* Compact */
+@media screen and (max-width: 599px) {
+  .page-links {
+    & #backlinks,
+    & #related-pages {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: var(--size-2);
+      
+      & .page-links-title {
+        width: 100%;
+        margin-block: var(--size-5) var(--size-3);
+      }
+
+      & .card .card-content {
+        align-items: flex-start
+      }
+    }
+  }
+}
+
+/* Large */
+@media screen and (min-width: 1200px) {
+  .page-links {
+    & #backlinks,
+    & #related-pages {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: var(--size-2);
+      
+      & .page-links-title {
+        grid-column: 1 / 5;
+        margin-block: var(--size-5) var(--size-3);
+      }
+  
+      & .card .card-content {
+        align-items: flex-start
+      }
+    }
+  }
+}
