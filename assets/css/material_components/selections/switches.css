@@ -24,7 +24,7 @@
     }
 
     &:checked + span::before {
-      content: "check";
+      content: "";
       left: var(--size-6);
       right: var(--size-1);
       color: var(--color-on-primary-container);
@@ -128,5 +128,16 @@
 
       opacity: 0;
     }
+  }
+
+  &.both > span::before {
+    content: "close";
+    width: var(--size-6);
+    height: var(--size-6);
+    left: 2px;
+  }
+
+  &.select > input:checked + span::before {
+    content: "check";
   }
 }

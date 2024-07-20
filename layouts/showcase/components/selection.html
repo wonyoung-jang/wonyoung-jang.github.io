@@ -367,9 +367,14 @@
       <div class="sub-component-group-header">No icon</div>
       {{ partial "components/selections/switches.html" dict }}
     
-      <div class="sub-component-group-header">With icon</div>
+      <div class="sub-component-group-header">With icons</div>
       {{ partial "components/selections/switches.html" (dict 
-        "withIcon" true) }}
+        "icons" "select") }}
+
+      {{ partial "components/selections/switches.html" (dict 
+        "icons" "both"
+        ) 
+      }}
     </div>
 
         
