@@ -1,17 +1,18 @@
-hr {
+hr,
+.divider {
   display: flex;
   flex-flow: row nowrap;
   color: var(--color-outline-variant);
   height: 1px;
   width: 100%;
   
-  &[mid],
-  &[start] {
+  &.mid,
+  &.start {
     padding-inline-start: var(--size-4);
   }
   
-  &[mid],
-  &[end] {
+  &.mid,
+  &.end {
     padding-inline-end: var(--size-4);
   }
   
@@ -22,7 +23,7 @@ hr {
     width: 100%;
   }
   
-  &[vertical] {
+  &.vertical {
     display: flex;
     flex-flow: column nowrap;
     color: var(--color-outline-variant);
@@ -30,14 +31,14 @@ hr {
     height: 100%;
     align-items: center;
     
-    &[mid],
-    &[start] {
+    &.mid,
+    &.start {
       padding-inline-start: unset;
       padding-block-start: var(--size-4);
     }
     
-    &[mid],
-    &[end] {
+    &.mid,
+    &.end {
       padding-inline-end: unset;
       padding-block-end: var(--size-4);
     }
