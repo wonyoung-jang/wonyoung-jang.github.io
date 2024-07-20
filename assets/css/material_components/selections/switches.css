@@ -1,141 +1,132 @@
 .switch {
-  --container-display: flex;
-  --container-flex-flow: row nowrap;
-  --container-justify-content: initial;
-  --container-align-items: initial;
-  --container-gap: initial;
+  display: flex;
+  align-items: center;
+  direction: ltr;
   --container-height: var(--size-8);
   --container-width: var(--size-13);
-  --container-padding: initial;
+  cursor: pointer;
 
-  --container-outline: 2px solid var(--color-outline);
-  --container-elevation: initial;
-  --container-shape: var(--shape-corner-full);
-  
-  --bg-color: var(--surface-container-highest);
-  
-  --text-color: initial;
-  --icon-color: initial;
-
-  --container-outline-hover: 2px solid var(--color-outline);
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: 2px solid var(--color-outline);
-  --container-elevation-focus: initial;
-
-  --container-outline-press: 2px solid var(--color-outline);
-  --container-elevation-press: initial;
-
-  &:has(.track:checked) {
-    --container-outline: 2px solid var(--color-primary);
-  }
-
-  & .handle {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
-    border-radius: var(--shape-corner-full);
-
-    &::before {
-      position: absolute;
-      content: "";
+  & > input {
+    width: var(--size-13);
+    height: var(--size-8);
+    opacity: 0;
+    
+    &:hover + span::after {
+      opacity: var(--state-hover-opacity);
+    }
+    
+    &:focus + span::after {
+      opacity: var(--state-focus-opacity);
     }
 
-    & .icon-container {
-      position: relative;
+    &:active + span::after {
+      opacity: var(--state-press-opacity);
+    }
+
+    &:checked + span::before {
+      content: "check";
+      left: var(--size-6);
+      right: var(--size-1);
+      color: var(--color-on-primary-container);
+      background-color: var(--color-on-primary);
+      width: var(--size-6);
+      height: var(--size-6);
+    }
+
+    &:checked + span::after {
+      background-color: var(--color-primary);
+      left: var(--size-4);
+      right: var(--size-1);
+    }
+    
+    &:checked + span {
+      border: none;
+      background-color: var(--color-primary);
+    }
+    
+    &:active {
+      & + span::before {
+        width: var(--size-7);
+        height: var(--size-7);
+
+        transform: translateX(calc(-1 * var(--size-1)));
+      }
+      
+      &:checked + span::before {
+        transform: translateX(0px) scale(1.2);
+      }
+    }
+  }
+
+  /* Track */
+  & > span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-on-surface);
+
+    min-height: var(--size-8);
+    min-width: var(--size-13);
+
+    border-radius: var(--shape-corner-full);
+    
+    background-color: var(--color-surface-container-highest);
+    border: 2px solid var(--color-outline);
+
+    /* Handle */
+    &::before {
+      content: "";
+      position: absolute;
+      left: var(--size-1);
+      right: var(--size-6);
+      z-index: 1;
+
       display: flex;
-      flex-flow: column nowrap;
       align-items: center;
       justify-content: center;
-    }
 
-    & i {
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      font-size: var(--size-4);
       border-radius: var(--shape-corner-full);
-    }
-  }
 
-  & .track {
-    opacity: 0;
-    width: 0;
-    height: 0;
+      background-color: var(--color-outline);
+      color: var(--color-on-surface-variant);
 
-    &:not(:checked) + .handle {
-    
-      &::before {
-        position: absolute;
-        width: var(--size-4);
-        height: var(--size-4);
-        top: 6px;
-        left: 6px;
-        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
-        border-radius: var(--shape-corner-full);
-        background-color: var(--color-outline);
-      }
+      transition: all var(--motion-duration-short4);
+      
+      font-family: var(--font-icon);
+      font-feature-settings: "liga";
 
-      &:has(.icon-container) {
-        &::before {
-          display: none;
-        }
-      }
+      font-size: var(--size-4);
+      width: var(--size-4);
+      height: var(--size-4);
 
-      & i {
-        color: var(--color-surface-container-highest);
-        background-color: var(--color-outline);
-        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
-
-        &.close-icon {
-          opacity: 1;
-        }
-
-        &.check-icon {
-          opacity: 0;
-        }
-      }
+      user-select: none;
     }
 
-    &:checked + .handle {
-      background-color: var(--color-primary);
+    /* State layer */
+    &::after {
+      content: "";
+      position: absolute;
+      left: -9px;
+      right: var(--size-13);
+      z-index: 2;
 
-      &::before {
-        position: absolute;
-        width: var(--size-6);
-        height: var(--size-6);
-        top: 2px;
-        left: 2px;
-        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
-        border-radius: var(--shape-corner-full);
-        background-color: var(--color-on-primary);
-        transform: translateX(var(--size-5));
-      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      &:has(.icon-container) {
-        &::before {
-          display: none;
-        }
-      }
+      border-radius: var(--shape-corner-full);
 
-      & i {
-        color: var(--color-on-primary-container);
-        background-color: var(--color-primary-container);
-        transition: all var(--motion-duration-medium4) var(--motion-easing-emphasized);
-        transform: translateX(var(--size-5));
-        
-        &.close-icon {
-          opacity: 0;
-        }
-        
-        &.check-icon {
-          opacity: 1;
-        }      
-      }
+      background-color: var(--color-on-surface-variant);
+
+      transition: all var(--motion-duration-medium1);
+
+      width: var(--size-10);
+      height: var(--size-10);
+      user-select: none;
+
+      opacity: 0;
     }
   }
 }

@@ -46,7 +46,8 @@ hr,
 }
 
 @media (forced-colors: active) {
-  hr::before {
+  hr::before,
+  .divider::before {
     background: CanvasText;
   }
 }
