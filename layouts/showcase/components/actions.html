@@ -27,10 +27,38 @@
           "label" "Outlined")
       }}
 
+      {{ $buttonTypesDisabled := slice
+        (dict 
+          "type" "text"
+          "label" "Text"
+          "disabled" "disabled")
+        (dict 
+          "type" "elevated"
+          "label" "Elevated"
+          "disabled" "disabled")
+        (dict 
+          "type" "filled"
+          "label" "Filled"
+          "disabled" "disabled")
+        (dict 
+          "type" "filled-tonal" 
+          "label" "Filled tonal"
+          "disabled" "disabled")
+        (dict 
+          "type" "outlined"
+          "label" "Outlined"
+          "disabled" "disabled")
+      }}
+
       {{/*  Common w/o icon  */}}
       <div class="sub-component-group-header">No icon</div>
       <section>
         {{ range $buttonTypes }}
+          {{ partial "components/actions/common-buttons.html" . }}
+        {{ end }}
+      </section>
+      <section>
+        {{ range $buttonTypesDisabled }}
           {{ partial "components/actions/common-buttons.html" . }}
         {{ end }}
       </section>
@@ -39,6 +67,12 @@
       <div class="sub-component-group-header">With icon</div>
       <section>
         {{ range $buttonTypes }}
+          {{ $withIcon := merge . (dict "icon" "add") }}
+          {{ partial "components/actions/common-buttons.html" $withIcon }}
+        {{ end }}
+      </section>
+      <section>
+        {{ range $buttonTypesDisabled }}
           {{ $withIcon := merge . (dict "icon" "add") }}
           {{ partial "components/actions/common-buttons.html" $withIcon }}
         {{ end }}

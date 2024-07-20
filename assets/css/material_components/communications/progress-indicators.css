@@ -1,7 +1,7 @@
 progress {
   position: relative;
-  inline-size: 100%;
-  block-size: var(--size-1);
+  width: 100%;
+  height: var(--size-1);
   color: var(--color-primary);
   background: var(--color-secondary-container);
   border-radius: inherit;
@@ -72,73 +72,73 @@ progress {
 
 @keyframes linear-scale {
   0% {
-    inline-size: 0%;
+    width: 0%;
     animation-timing-function: var(--motion-easing-emphasized-accelerate);
   }
   35% {
-    inline-size: 10%;
+    width: 10%;
     animation-timing-function: var(--motion-easing-emphasized);
   }
   70% {
-    inline-size: 100%;
+    width: 100%;
     animation-timing-function: var(--motion-easing-emphasized-decelerate);
   }
   100% {
-    inline-size: 0%;
+    width: 0%;
   }
 }
 
 @keyframes linear-scale-secondary {
   0% {
-    inline-size: 0%;
+    width: 0%;
     animation-timing-function: var(--motion-easing-emphasized-accelerate);
   }
   20% {
-    inline-size: 45%;
+    width: 45%;
     animation-timing-function: var(--motion-easing-emphasized);
   }
   45% {
-    inline-size: 100%;
+    width: 100%;
     animation-timing-function: var(--motion-easing-emphasized-decelerate);
   }
   100% {
-    inline-size: 0%;
+    width: 0%;
   }
 }
 
 @keyframes linear-translate {
   0% {
-    margin-inline-start: 0%;
+    margin-left: 0%;
     animation-timing-function: var(--motion-easing-emphasized-accelerate);
   }
   20% {
-    margin-inline-start: 0%;
+    margin-left: 0%;
     animation-timing-function: var(--motion-easing-emphasized);
   }
   60% {
-    margin-inline-start: 85%;
+    margin-left: 85%;
     animation-timing-function: var(--motion-easing-emphasized-decelerate);
   }
   100% {
-    margin-inline-start: 200%;
+    margin-left: 200%;
   }
 }
 
 @keyframes linear-translate-secondary {
   0% {
-    margin-inline-start: 0%;
+    margin-left: 0%;
     animation-timing-function: var(--motion-easing-emphasized-accelerate);
   }
   25% {
-    margin-inline-start: 35%;
+    margin-left: 35%;
     animation-timing-function: var(--motion-easing-emphasized);
   }
   50% {
-    margin-inline-start: 85%;
+    margin-left: 85%;
     animation-timing-function: var(--motion-easing-emphasized-decelerate);
   }
   100% {
-    margin-inline-start: 160%;
+    margin-left: 160%;
   }
 }
 

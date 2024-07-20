@@ -13,7 +13,7 @@
     .side-sheets,
     .radio-button,
     .checkbox
-  ):focus-within {
+  ):not(:disabled):focus {
   border: var(--container-outline-focus);
   box-shadow: var(--container-elevation-focus);
 

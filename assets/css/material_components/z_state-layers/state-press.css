@@ -16,7 +16,7 @@
     .side-sheets,
     .radio-button,
     .checkbox
-  ):active {
+  ):not(:disabled):active {
   border: var(--container-outline-press);
   box-shadow: var(--container-elevation-press);
 

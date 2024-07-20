@@ -17,7 +17,7 @@
     .menus,
     .radio-button,
     .checkbox
-  ):hover {
+  ):not(:disabled):hover {
   border: var(--container-outline-hover);
   box-shadow: var(--container-elevation-hover);
 
