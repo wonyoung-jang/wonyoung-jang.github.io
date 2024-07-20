@@ -92,21 +92,23 @@
   & .content {
     flex: 1 0 0;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: center;
     align-self: stretch;
     
     & .headline {
       align-self: stretch;
+      width: 100%;
       font-size: var(--typescale-body-large-size);
       line-height: var(--typescale-body-large-line-height);
       font-weight: var(--typescale-body-large-weight);
       font-family: var(--typescale-body-large-font);  
     }
-  
+    
     & .supporting-text {
       align-self: stretch;
+      width: 100%;
       color: var(--color-on-surface-variant);
       font-size: var(--typescale-body-medium-size);
       line-height: var(--typescale-body-medium-line-height);

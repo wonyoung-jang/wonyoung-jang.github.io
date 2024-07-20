@@ -35,14 +35,15 @@
 
   {{ if .radio }}
     <label class="component radio-button">
-      <input type="radio" id="radio1" name="radio" value="radio1"/>
+      <input type="radio"/>
+      <span></span>
     </label>
   {{ end }}
 
   {{ if .checkbox_leading }}
     <label class="component checkbox">
       <input type="checkbox">
-      <span class="checkmark"><i>check_small</i></span>
+      <span class="checkmark"></span>
     </label>
   {{ end }}
 
@@ -62,7 +63,7 @@
   {{ if .checkbox_trailing }}
     <label class="component checkbox">
       <input type="checkbox">
-      <span class="checkmark"><i>check_small</i></span>
+      <span></span>
     </label>
   {{ end }}
   
@@ -72,8 +73,8 @@
 
   {{ if .switch }}
     <label class="component switch">
-      <input class="track" type="checkbox">
-      <span class="handle"></span>
+      <input type="checkbox">
+      <span></span>
     </label>
   {{ end }}
 
