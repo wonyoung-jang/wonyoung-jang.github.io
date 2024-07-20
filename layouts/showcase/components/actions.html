@@ -27,29 +27,6 @@
           "label" "Outlined")
       }}
 
-      {{ $buttonTypesDisabled := slice
-        (dict 
-          "type" "text"
-          "label" "Text"
-          "disabled" "disabled")
-        (dict 
-          "type" "elevated"
-          "label" "Elevated"
-          "disabled" "disabled")
-        (dict 
-          "type" "filled"
-          "label" "Filled"
-          "disabled" "disabled")
-        (dict 
-          "type" "filled-tonal" 
-          "label" "Filled tonal"
-          "disabled" "disabled")
-        (dict 
-          "type" "outlined"
-          "label" "Outlined"
-          "disabled" "disabled")
-      }}
-
       {{/*  Common w/o icon  */}}
       <div class="sub-component-group-header">No icon</div>
       <section>
@@ -58,8 +35,9 @@
         {{ end }}
       </section>
       <section>
-        {{ range $buttonTypesDisabled }}
-          {{ partial "components/actions/common-buttons.html" . }}
+        {{ range $buttonTypes }}
+          {{ $disabled := merge . (dict "disabled" "disabled") }}
+          {{ partial "components/actions/common-buttons.html" $disabled }}
         {{ end }}
       </section>
     
@@ -72,8 +50,8 @@
         {{ end }}
       </section>
       <section>
-        {{ range $buttonTypesDisabled }}
-          {{ $withIcon := merge . (dict "icon" "add") }}
+        {{ range $buttonTypes }}
+          {{ $withIcon := merge . (dict "icon" "add" "disabled" "disabled") }}
           {{ partial "components/actions/common-buttons.html" $withIcon }}
         {{ end }}
       </section>
@@ -124,13 +102,26 @@
       
       {{/*  Icon button  */}}
       <div class="sub-component-group-header">Icon button</div>
-      {{ range $buttonTypes }}
-        {{ partial "components/actions/icon-buttons.html" (dict
-            "type" .
-            "icon" "settings"
-          )
-        }}
-      {{ end }}
+      <section>
+        {{ range $buttonTypes }}
+          {{ partial "components/actions/icon-buttons.html" (dict
+              "type" .
+              "icon" "settings"
+            )
+          }}
+        {{ end }}
+      </section>
+
+      <section>
+        {{ range $buttonTypes }}
+          {{ partial "components/actions/icon-buttons.html" (dict
+              "type" .
+              "icon" "settings"
+              "disabled" "disabled"
+            )
+          }}
+        {{ end }}
+      </section>
 
       {{/*  Icon button - toggle  */}}
       <div class="sub-component-group-header">Icon button - toggle</div>

@@ -1,4 +1,5 @@
-blockquote {
+blockquote,
+.admonition {
   position: relative;
   display: block;
 
