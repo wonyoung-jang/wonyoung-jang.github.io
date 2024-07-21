@@ -474,33 +474,11 @@ button:-moz-focusring,
 
 /* Details and summaries */
 details {
-  & summary {
-    cursor: pointer;
-    display: flex;
-    flex-flow: row nowrap;
-    padding: var(--size-6);
-    border-radius: var(--shape-corner-none);
-    align-items: center;
-    justify-content: space-between;
+  display: block;
+}
 
-    &::after {
-      content: "▲";
-      font-size: var(--size-5);
-    }
-
-    &::marker,
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  &[open] > summary::after {
-    content: "▼";
-  }
+summary {
+  display: list-item;
 }
 
 /* Dialogs */
