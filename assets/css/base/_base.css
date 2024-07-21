@@ -291,6 +291,11 @@ q {
   quotes: none;
 }
 
+/* Mark highlighting */
+mark {
+  color: var(--palette-black);
+}
+
 /* ------------------------------------------------------------------------- */
 /* || Image and multimedia */
 
