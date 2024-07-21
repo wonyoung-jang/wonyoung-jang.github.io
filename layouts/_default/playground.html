@@ -1,6 +1,61 @@
 {{ define "main" }}
 <article class="layout panes basic-single-pane">
   <section class="layout pane" id="playground">
+
+    {{/*  Used by Logseq  */}}
+    <section class="test-set">
+      <h2>Used by Logseq</h2>
+      <hr>
+      <h3>Content sectioning</h3>
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+
+      <hr>
+      <h3>Text content</h3>
+      <blockquote>blockquote</blockquote>
+      <pre>pre</pre>
+      <div>div</div>
+      <p>p</p>
+      <ul>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+      </ul>
+
+      <hr>
+      <h3>Inline text semantics</h3>
+      <span>span</span>
+      <a href="#">a</a>
+      <code>code</code>
+      <del>del</del>
+      <em>em</em>
+      <i>i</i>
+      <img src="" alt="img" />
+      <mark>mark</mark>
+      <strong>strong</strong>
+
+      <hr>
+      <h3>Tables</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>th</th>
+            <th>th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
     {{/*  TODO Content sectioning  */}}
     <section class="test-set">
       <h2>Content sectioning</h2>
@@ -29,43 +84,62 @@
     <section class="test-set">
       <h2>Text content</h2>
       <hr />
+      
       <blockquote>blockquote</blockquote>
-      <dl>
-        <dt>dt</dt>
-        <dd>dd</dd>
-      </dl>
+      <pre>pre</pre>
+      
+      <hr>
       <div>div</div>
+      <p>p</p>
+
+      <hr>
       <figure>
         figure
         <figcaption>figcaption</figcaption>
       </figure>
-      hr<hr />
+      
+      <hr>
+      hr<hr>
+
+      <hr>
       <ul>
         ul
         <li>li</li>
         <li>li</li>
         <li>li</li>
       </ul>
-      <menu>
-        menu
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
-      </menu>
       <ol>
         ol
         <li>li</li>
         <li>li</li>
         <li>li</li>
       </ol>
-      <p>p</p>
-      <pre>pre</pre>
+    
+
+      <hr>
+      <dl>
+        dl
+        <dt>dt</dt>
+        <dd>dd</dd>
+      </dl>
+      
+      <hr>
+      <menu>
+        menu
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+      </menu>
     </section>
 
     {{/*  TODO Inline text semantics  */}}
     <section class="test-set">
       <h2>Inline text semantics</h2>
       <hr />
+
+      <span>span</span>
+
+      <hr>
       <a href="#">a</a>
       <abbr title="Abbreviation">abbr</abbr>
       
@@ -85,18 +159,25 @@
       <hr>
       <bdi>bdi Bidirectional Isolate element</bdi>
       <bdo dir="rtl">bdo Bidirectional Text Override element</bdo>
+      
+      <hr>
       br<br />Line Break element
+      
+      <hr>
+      <span>Subscript<sub>sub</sub></span>
+      <span>Superscript<sup>sup</sup></span>
+
+      <hr>
+      <mark>mark</mark>
+
+      <hr>
       <cite>cite Citation element</cite>
       <data value="123">data</data>
       <dfn>dfn</dfn>
-      <mark>mark</mark>
       <q>q</q>
       <ruby> ruby<rp>(</rp><rt>rt</rt><rp>)</rp> </ruby>
       <s>s</s>
       <small>small</small>
-      <span>span</span>
-      <sub>sub</sub>
-      <sup>sup</sup>
       <time datetime="2024-07-20">time</time>
       <u>u</u>
       <var>var</var>

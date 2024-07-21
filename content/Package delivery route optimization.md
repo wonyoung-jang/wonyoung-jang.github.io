@@ -22,20 +22,20 @@ lastMod: 2024-07-07
 
 ## Requirements
 
-  + Implement a hash table data structure (without external libraries) to store package data
+Implement a hash table data structure (without external libraries) to store package data
 
-  + Create an insertion function to add package details (`address`, `deadline`, `city`, `zip code`, `weight`, `status`) to the hash table
+Create an insertion function to add package details (`address`, `deadline`, `city`, `zip code`, `weight`, `status`) to the hash table
 
-  + Create a lookup function to retrieve package details based on package ID
+Create a lookup function to retrieve package details based on package ID
 
-  + Write a program to simulate package delivery, utilizing provided distance and location data
+Write a program to simulate package delivery, utilizing provided distance and location data
 
-  + Ensure that all packages are delivered with less than a 140 total mileage of all trucks
+Ensure that all packages are delivered with less than a 140 total mileage of all trucks
 
-  + Create an interface allowing users to track package delivery status and view total truck mileage
+Create an interface allowing users to track package delivery status and view total truck mileage
 
-  + Explain the strengths of my delivery algorithm, verify it meets requirements, and suggest two alternative algorithms suitable for the task
+Explain the strengths of my delivery algorithm, verify it meets requirements, and suggest two alternative algorithms suitable for the task
 
-  + Describe changes I would implement with hindsight and the reasoning behind the modifications
+Describe changes I would implement with hindsight and the reasoning behind the modifications
 
-  + Confirm the chosen data structure's suitability and propose two alternative data structures that would also work
+Confirm the chosen data structure's suitability and propose two alternative data structures that would also work

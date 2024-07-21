@@ -1,3 +1,8 @@
 .hugo_build.lock
 ~TASKS.txt
 .vscode/extensions.json
+bullets.html
+nobullets.html
+symbols-bullets.txt
+.gitignore
+symbols-nobullets.txt
