@@ -22,3 +22,17 @@ h5[id*=""] {
 h6[id*=""] {
   color: var(--color-heading-6);
 }
+
+/* Highlights */
+mark.highlight-text,
+.highlight-text {
+  background-color: var(--color-complementary);
+  color: var(--color-on-complementary);
+  padding-inline: 5px;
+  border-radius: var(--shape-corner-xs);
+  max-width: fit-content;
+
+  & * {
+    color: inherit;
+  }
+}

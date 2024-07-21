@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="layout panes basic-single-pane">
   <section class="layout pane" id="playground">
-
+    {{/*  TODO Content sectioning  */}}
     <section class="test-set">
       <h2>Content sectioning</h2>
       <hr />
@@ -17,14 +17,15 @@
       <h5>H5</h5>
       <h6>H6</h6>
       <hgroup>
-        <h2>HGroup</h2>
-        <h3>Subtitle</h3>
+        <h2>hgroup</h2>
+        <h3>subtitle</h3>
       </hgroup>
-      <nav>Nav</nav>
-      <section>Section</section>
-      <search>Search</search>
+      <nav>nav</nav>
+      <section>section</section>
+      <search>search</search>
     </section>
-
+      
+    {{/*  TODO Text content  */}}
     <section class="test-set">
       <h2>Text content</h2>
       <hr />
@@ -52,16 +53,17 @@
       <pre>Pre</pre>
     </section>
 
+    {{/*  TODO Inline text semantics  */}}
     <section class="test-set">
       <h2>Inline text semantics</h2>
       <hr />
-      <a href="#">A</a>
-      <abbr title="Abbreviation">ABBR</abbr>
-      <b>B</b>
-      <bdi>Bdi</bdi>
-      <bdo dir="rtl">Bdo</bdo>
-      <br />
-      <cite>Cite</cite>
+      <a href="#">a</a>
+      <abbr title="Abbreviation">abbr</abbr>
+      <b>b</b>
+      <bdi>Bdi Bidirectional Isolate element</bdi>
+      <bdo dir="rtl">Bdo Bidirectional Text Override element</bdo>
+      Br<br />Line Break element
+      <cite>Cite Citation element</cite>
       <code>Code</code>
       <data value="123">Data</data>
       <dfn>DFN</dfn>
@@ -84,6 +86,7 @@
       <wbr />
     </section>
 
+    {{/*  TODO Image and multimedia  */}}
     <section class="test-set">
       <h2>Image and multimedia</h2>
       <hr />
@@ -120,6 +123,7 @@
       </video>
     </section>
 
+    {{/*  TODO Embedded content  */}}
     <section class="test-set">
       <h2>Embedded content</h2>
       <hr />
@@ -148,27 +152,88 @@
       </picture>
     </section>
 
+    {{/*  SVG and MathML  */}}
     <section class="test-set">
       <h2>SVG and MathML</h2>
       <hr />
-      <svg>
-        <circle
-          cx="50"
-          cy="50"
-          r="40"
-          stroke="black"
-          stroke-width="3" />
+      <strong>SVG</strong>
+      <p>Container defining a new coordinate system and viewport</p>
+      <svg 
+        class="site-icon"
+        viewBox="0 0 512 512" 
+        xmlns="http://www.w3.org/2000/svg">
+        <path 
+            class="site-icon-w"
+            d=" M142.079 24.0422
+                H223.663
+                L253.288 112.721
+                L283.37 24.0422
+                H364.954
+                L310.261 161.312
+                L336.681 220.027
+                L403.642 10
+                L502 10
+                L378.297 301.511
+                H302
+                L253.288 208.689
+                L206.343 379.425
+                H129.317
+                L10 10
+                H105.33
+                L173.527 220.027
+                L195.86 161.312
+                L142.079 24.0422Z"/>
+        <path 
+            class="site-icon-j-right"
+            d=" M302 502
+                V301.511
+                H378.297
+                L379.022 409.178
+                C379.041 411.901 379.086 414.616 379.067 417.339
+                C379.001 426.663 378.235 449.565 372.5 460.27
+                C365.471 473.895 351.339 484.523 338.903 492.153
+                C326.467 499.783 302 502 302 502Z"/>
+        <path 
+            class="site-icon-j-left"
+            d=" M283.37 502
+                V436
+                L240.157 449.616
+                C223.403 454.895 206.343 442.384 206.343 424.817
+                V396.818
+                H129.317
+                L138.281 439.964
+                C141.046 453.269 147.244 465.62 156.259 475.788
+                V475.788
+                C171.04 492.458 192.252 502 214.531 502
+                L283.37 502Z"/>
       </svg>
-      <math> E = mc2 </math>
+      <hr>
+      <strong>Math</strong>
+      <p>The top-level element in MathML</p>
+      <math>
+        <mrow>
+          <mo>E</mo>
+          <mo>=</mo>
+          <msup>
+            <mi>mc</mi>
+            <mn>2</mn>
+          </msup>  
+        </mrow>
+      </math>
     </section>
 
+    {{/*  Demarcating edits  */}}
     <section class="test-set">
       <h2>Demarcating edits</h2>
       <hr />
-      <del>del</del>
-      <ins>ins</ins>
+      <strong>Del</strong>
+      <del>Represents a range of text that has been deleted from a document</del>
+      <hr>
+      <strong>Ins</strong>
+      <ins>Represents a range of text that has been added to a document</ins>
     </section>
 
+    {{/*  TODO Tables  */}}
     <section class="test-set">
       <h2>Table content</h2>
       <hr />
@@ -200,6 +265,7 @@
       </table>
     </section>
 
+    {{/*  TODO Forms  */}}
     <section class="test-set">
       <h2>Forms</h2>
       <hr />
@@ -239,20 +305,25 @@
       </form>
     </section>
 
+    {{/*  Interactive  */}}
     <section class="test-set">
       <h2>Interactive elements</h2>
       <hr />
+      <strong>Details & summary</strong>
       <details>
         <summary>Summary</summary>
         Details
       </details>
-      
-      Dialog
+
+      <hr>
+
+      <strong>Dialog</strong>
       <dialog open>
+        <p>dialog</p>
         <form method="dialog">
-          <button>Close</button>
+          <button>button</button>
         </form>
-      </dialog>
+      </dialog>      
     </section>
   </section>
 </article>

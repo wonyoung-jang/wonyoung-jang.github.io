@@ -1,3 +1,8 @@
+
+/* ------------------------------------------------------------------------- */
+/* || All */
+
+/* Basic resets */
 *,
 *::before,
 *::after {
@@ -10,17 +15,62 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Material Symbols Outlined icons */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/material-symbols-outlined.woff2") format("woff2")
+}
+
+/* Scrollbar */
+@media (pointer: fine) {
+  /* Firefox */
+  * {
+    scrollbar-color: var(--color-primary) transparent;
+    scrollbar-width: thin;
+
+    /* Chromium + Safari */
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: var(--size-2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: var(--size-1);
+    }
+  }
+}
+
+/* Hidden */
+[hidden] {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* || Main sectioning */
+
+html,
 :root {
   font-size: var(--root-font-size);
   font-family: var(--typeface-plain);
   font-weight: var(--typeface-weight-regular);
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
+
+
+/* ------------------------------------------------------------------------- */
+/* || Sectioning root */
 
 /* Body */
 body {
   display: flex;
   flex-flow: column nowrap;
+  margin: 0;
   min-width: 100dvw;
   min-height: 100dvh;
   align-items: stretch;
@@ -31,149 +81,16 @@ body {
   color: var(--color-on-surface);
 }
 
-/* Main (content) */
+
+/* ------------------------------------------------------------------------- */
+/* || Content sectioning */
+
+/* Main */
 main {
+  display: block;
   max-height: calc(100dvh - var(--size-32));
   overflow-y: auto;
   overflow-x: hidden;
-}
-
-/* Expansions */
-details {
-  & summary {
-    cursor: pointer;
-    display: flex;
-    flex-flow: row nowrap;
-    padding: var(--size-6);
-    border-radius: var(--shape-corner-none);
-    align-items: center;
-    justify-content: space-between;
-
-    &::after {
-      content: "▲";
-      font-size: var(--size-5);
-    }
-
-    &::marker,
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  &[open] > summary::after {
-    content: "▼";
-  }
-}
-
-/* Default inputs */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* Lists */
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-/* Imagery */
-img,
-svg,
-video {
-  display: block;
-
-  max-width: 100%;
-  max-height: 100%;
-
-  border-radius: var(--shape-corner-s);
-  object-fit: cover;
-  object-position: center;
-  transition-duration: var(--motion-duration-short3);
-  transition-property: transform, border-radius, padding;
-}
-
-svg {
-  fill: currentColor;
-}
-
-/* Material Symbols Outlined icons */
-@font-face {
-  font-family: "Material Symbols Outlined";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/material-symbols-outlined.woff2") format("woff2")
-}
-
-/* Icons */
-i {
-  font-family: var(--font-icon);
-  font-weight: normal;
-  font-style: normal;
-  font-size: var(--size-6);
-  letter-spacing: normal;
-  text-transform: none;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  white-space: nowrap;
-  word-wrap: normal;
-
-  direction: ltr;
-
-  font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
-  user-select: none;
-
-  vertical-align: middle;
-  text-align: center;
-
-  overflow: hidden;
-
-  inline-size: var(--size-6);
-  min-inline-size: var(--size-6);
-  block-size: var(--size-6);
-  min-block-size: var(--size-6);
-
-  line-height: 1;
-}
-
-/* Basic typography */
-p,
-a,
-b,
-strong,
-em,
-del,
-mark.highlight-text,
-.highlight-text {
-  font-size: var(--typescale-body-large-size);
-  line-height: var(--typescale-body-large-line-height);
-  font-weight: var(--typescale-body-large-weight);
-  font-family: var(--typescale-body-large-font);
-  color: var(--color-on-surface);
-}
-
-label {
-  font-size: var(--typescale-label-large-size);
-  line-height: var(--typescale-label-large-line-height);
-  font-weight: var(--typescale-label-large-weight);
-  font-family: var(--typescale-label-large-font);
-  color: var(--color-on-surface-variant);
 }
 
 /* Headings */
@@ -219,6 +136,20 @@ h6 {
   font-family: var(--typescale-headline-small-font);
 }
 
+
+/* ------------------------------------------------------------------------- */
+/* || Text content */
+
+/* Paragraphs */
+p {
+  font-size: var(--typescale-body-large-size);
+  line-height: var(--typescale-body-large-line-height);
+  font-weight: var(--typescale-body-large-weight);
+  font-family: var(--typescale-body-large-font);
+  color: var(--color-on-surface);
+}
+
+/* Thematic break */
 hr {
   display: flex;
   flex-flow: row nowrap;
@@ -234,23 +165,47 @@ hr {
   }
 }
 
-/* Typography styles */
-del {
-  text-decoration: line-through;
+/* Lists */
+ul,
+ol,
+li {
+  list-style: none;
 }
 
-em {
-  font-style: italic;
+/* Pre */
+pre {
+  font-family: var(--typeface-mono);
+  font-size: var(--typeface-body-small-size);
+  font-weight: var(--typeface-body-small-weight);
+  line-height: var(--typeface-body-small-line-height);
 }
 
+
+/* ------------------------------------------------------------------------- */
+/* || Inline text semantics */
+
+/* Basic typography */
+a,
+b,
 strong,
-b {
-  font-weight: var(--typeface-weight-bold);
-  -webkit-font-smoothing: antialiased;
+em,
+del,
+mark {
+  font-size: var(--typescale-body-large-size);
+  line-height: var(--typescale-body-large-line-height);
+  font-weight: var(--typescale-body-large-weight);
+  font-family: var(--typescale-body-large-font);
+  color: var(--color-on-surface);
+}
 
-  & * {
-    font-weight: inherit;
-  }
+/* Mono text */
+code,
+kbd,
+samp {
+  font-family: var(--typeface-mono);
+  font-size: var(--typeface-body-small-size);
+  font-weight: var(--typeface-body-small-weight);
+  line-height: var(--typeface-body-small-line-height);
 }
 
 :not(pre) > code {
@@ -262,24 +217,165 @@ b {
   border-radius: var(--shape-corner-xs);
   padding-inline: 5px;
   margin-inline: 3px;
-  font-family: var(--typeface-mono);
-  font-size: var(--typeface-body-small-size);
-  font-weight: var(--typeface-body-small-weight);
-  line-height: var(--typeface-body-small-line-height);
 }
 
-mark.highlight-text,
-.highlight-text {
-  background-color: var(--color-complementary);
-  color: var(--color-on-complementary);
-  padding-inline: 5px;
-  border-radius: var(--shape-corner-xs);
-  max-width: fit-content;
+/* Links */
+a {
+  background-color: transparent;
+  text-decoration: none;
 
-  & * {
-    color: inherit;
+  &:not(.component) {
+    color: var(--color-sub60);
+  
+    &[rel*="external"] {
+      color: var(--color-add60);
+    }
+    
+    &:hover {
+      color: var(--color-on-sub60-container);
+
+      &[rel*="external"] {
+        color: var(--color-on-add60-container);
+      }
+    }
+  }
+  
+  &:hover {
+    text-decoration: none;
   }
 }
+
+/* Abbreviations */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/* Bold and strong */
+b,
+strong {
+  font-weight: var(--typeface-weight-bold);
+  -webkit-font-smoothing: antialiased;
+
+  & * {
+    font-weight: inherit;
+  }
+}
+
+/* Italic */
+em {
+  font-style: italic;
+}
+
+/* Small */
+small {
+  font-size: 80%;
+}
+
+/* Subscript and superscript */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  margin-left: var(--size-1);
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* TODO Icons */
+i {
+  font-family: var(--font-icon);
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--size-6);
+  letter-spacing: normal;
+  text-transform: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  word-wrap: normal;
+
+  direction: ltr;
+
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+
+  vertical-align: middle;
+  text-align: center;
+
+  overflow: hidden;
+
+  inline-size: var(--size-6);
+  min-inline-size: var(--size-6);
+  block-size: var(--size-6);
+  min-block-size: var(--size-6);
+
+  line-height: 1;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* || Image and multimedia */
+
+/* Images and videos */
+img,
+video {
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  border-style: none;
+  border-radius: var(--shape-corner-s);
+  object-fit: cover;
+  object-position: center;
+  transition-duration: var(--motion-duration-short3);
+  transition-property: transform, border-radius, padding;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* || Embedded content */
+
+
+/* ------------------------------------------------------------------------- */
+/* || SVG and MathML */
+
+/* SVG */
+svg {
+  fill: currentColor;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* || Demarcating edits */
+
+/* Deletion */
+del {
+  text-decoration: line-through;
+}
+
+/* Insertion */
+ins {
+  text-decoration: underline;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* || Table content */
 
 /* Tables */
 table {
@@ -287,22 +383,162 @@ table {
   border-collapse: collapse; 
 }
 
-/* Scrollbar */
-@media (pointer: fine) {
-  /* Firefox */
-  * {
-    scrollbar-color: var(--color-primary) transparent;
-    scrollbar-width: thin;
 
-    /* Chromium + Safari */
-    &::-webkit-scrollbar {
-      background-color: transparent;
-      width: var(--size-2);
+/* ------------------------------------------------------------------------- */
+/* || Forms */
+
+/* Fieldsets */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/* Labels */
+label {
+  font-size: var(--typescale-label-large-size);
+  line-height: var(--typescale-label-large-line-height);
+  font-weight: var(--typescale-label-large-weight);
+  font-family: var(--typescale-label-large-font);
+  color: var(--color-on-surface-variant);
+}
+
+/* Legends */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* Progress */
+progress {
+  vertical-align: baseline;
+}
+
+/* Default inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background-color: transparent;
+}
+
+/* Textareas */
+textarea {
+  overflow: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  outline-offset: -2px; 
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* File input */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* || Interactive elements */
+
+/* Details and summaries */
+details {
+  & summary {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: var(--size-6);
+    border-radius: var(--shape-corner-none);
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      content: "▲";
+      font-size: var(--size-5);
     }
 
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--color-primary);
-      border-radius: var(--size-1);
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
+
+  &[open] > summary::after {
+    content: "▼";
+  }
+}
+
+/* Dialogs */
+dialog {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--color-surface-container);
+  color: var(--color-on-surface);
 }
