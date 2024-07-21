@@ -29,8 +29,6 @@ i.icon,
   min-inline-size: var(--size-6);
   block-size: var(--size-6);
   min-block-size: var(--size-6);
-
-  line-height: 1;
 }
 
 .github-icon,

@@ -29,7 +29,8 @@
     align-items: center;
     height: 100%;
 
-    & i {
+    & i.icon,
+& .icon {
       width: var(--size-4);
     }
   }

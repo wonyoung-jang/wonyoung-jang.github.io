@@ -9,11 +9,13 @@ hr.divider,
   &.mid,
   &.start {
     padding-inline-start: var(--size-4);
+    padding-left: var(--size-4);
   }
   
   &.mid,
   &.end {
     padding-inline-end: var(--size-4);
+    padding-right: var(--size-4);
   }
   
   &::before {
@@ -34,13 +36,17 @@ hr.divider,
     &.mid,
     &.start {
       padding-inline-start: unset;
+      padding-left: unset;
       padding-block-start: var(--size-4);
+      padding-top: var(--size-4);
     }
     
     &.mid,
     &.end {
       padding-inline-end: unset;
+      padding-right: unset;
       padding-block-end: var(--size-4);
+      padding-bottom: var(--size-4);
     }
   }
 }

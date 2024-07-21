@@ -6,7 +6,8 @@
   opacity: 0;
   z-index: 9999;
 
-  & i {
+  & i.icon,
+  & .icon {
     color: var(--icon-color);
   }
 }

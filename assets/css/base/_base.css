@@ -78,6 +78,10 @@ body {
   background-color: var(--color-surface-dim);
 
   color: var(--color-on-surface);
+  font-size: var(--typescale-body-large-size);
+  line-height: var(--typescale-body-large-line-height);
+  font-weight: var(--typescale-body-large-weight);
+  font-family: var(--typescale-body-large-font);
 }
 
 

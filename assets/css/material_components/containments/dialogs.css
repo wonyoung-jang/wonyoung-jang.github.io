@@ -88,13 +88,15 @@
   }
 
   &:has(> i) {
-    & i,
+    & i.icon,
+& .icon,
     & .headline {
       width: 100%;
       justify-content: center;
     }
 
-    & i {
+    & i.icon,
+& .icon {
       margin-bottom: var(--size-4);
     }
   }

@@ -179,7 +179,8 @@
       align-self: flex-start;
     }
 
-    & i,
+    & i.icon,
+& .icon,
     & .image,
     & .video,
     & .checkbox,

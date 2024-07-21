@@ -63,7 +63,8 @@
       background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     }
 
-    & i {
+    & i.icon,
+& .icon {
       color: var(--color-on-surface-variant);
     }
   }

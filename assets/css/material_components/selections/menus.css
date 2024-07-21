@@ -31,10 +31,4 @@
     --text-color: var(--color-on-surface);
     --icon-color: var(--color-on-surface-variant);
   }
-
-  & .divider {
-    padding: unset;
-    margin: unset;
-    padding-block: var(--size-4);
-  }
 }

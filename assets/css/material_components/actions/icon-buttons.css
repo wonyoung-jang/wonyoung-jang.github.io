@@ -28,7 +28,8 @@
     &:checked + .icon-button {
       --icon-color: var(--color-primary);
 
-      & i,
+      & i.icon,
+& .icon,
       & svg {
         font-variation-settings: "FILL" 1;
       }
@@ -58,7 +59,8 @@
         --icon-color: var(--color-on-primary);
       }
 
-      & i,
+      & i.icon,
+& .icon,
       & svg {
         font-variation-settings: "FILL" 1;
       }
@@ -88,7 +90,8 @@
         --icon-color: var(--color-on-secondary-container);
       }
 
-      & i,
+      & i.icon,
+& .icon,
       & svg {
         font-variation-settings: "FILL" 1;
       }
@@ -106,7 +109,8 @@
         --bg-color: var(--color-inverse-surface);
         --icon-color: var(--color-inverse-on-surface);
        
-        & i,
+        & i.icon,
+& .icon,
         & svg {
           font-variation-settings: "FILL" 1;
         }
@@ -114,7 +118,8 @@
     }
   }
 
-  & i,
+  & i.icon,
+& .icon,
   & svg, 
   & img {
     font-size: var(--size-6);

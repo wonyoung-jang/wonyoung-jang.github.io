@@ -30,7 +30,8 @@
     color: var(--color-on-surface);
     box-shadow: var(--elevation1);
 
-    & i {
+    & i.icon,
+& .icon {
       font-size: 18px;
     }
     

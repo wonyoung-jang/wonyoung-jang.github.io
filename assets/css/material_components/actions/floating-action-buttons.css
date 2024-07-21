@@ -12,7 +12,8 @@
     border-radius: var(--shape-corner-m);
     padding: 0;
     
-    & i {
+    & i.icon,
+& .icon {
       font-size: var(--size-5);
     }
   }
@@ -23,7 +24,8 @@
     border-radius: var(--size-9);
     padding: var(--size-4);
     
-    & i {
+    & i.icon,
+& .icon {
       font-size: var(--size-9);
     }
   }
@@ -36,12 +38,14 @@
     padding: var(--size-4);
     gap: var(--size-4);
     
-    & i {
+    & i.icon,
+& .icon {
       font-size: var(--size-6);
     }
   }
   
-  & i {
+  & i.icon,
+& .icon {
     font-size: var(--size-6);
   }
 }

@@ -28,7 +28,8 @@ blockquote.admonition,
     word-break: break-word;
   }
 
-  & i {
+  & i.icon,
+& .icon {
     position: absolute;
     display: flex;
     align-items: center;

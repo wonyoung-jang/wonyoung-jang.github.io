@@ -39,14 +39,15 @@
   font-family: var(--typescale-label-large-font);
   color: var(--text-color);
 
-  & i {
+  & i.icon,
+  & .icon {
     color: var(--icon-color);
     font-size: 18px;
     padding: 0;
     margin: 0;
   }
 
-  & input[type="checkbox"] {
+  & input {
     display: none;
   }
 
@@ -73,9 +74,10 @@
     --bg-color: var(--color-surface-container-low);
     --container-elevation: var(--elevation1);
   }
+
+  &:has(input:checked) {
+    background-color: var(--color-secondary-container);
+    color: var(--color-on-secondary-container);
+  }
 }
 
-.chip:has(input[type="checkbox"]:checked) {
-  background-color: var(--color-secondary-container);
-  color: var(--color-on-secondary-container);
-}
