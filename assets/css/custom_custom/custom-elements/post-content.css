@@ -26,14 +26,9 @@
     margin-block-end: 0.5em;
   }
 
-  & ul,
-  & ol {
-    list-style-type: none;
-  }
-
   & li {
+    margin-left: 1em;
     margin-inline-start: 1em;
-    margin-block-end: 0.5em;
   }  
 
   & figure:has(img, svg, video) {

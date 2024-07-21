@@ -176,6 +176,11 @@ li {
   list-style: none;
 }
 
+li {
+  margin-left: 1em;
+  margin-inline-start: 1em;
+}
+
 /* Pre */
 pre {
   font-family: var(--typeface-mono);
