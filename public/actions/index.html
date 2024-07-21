@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.b547a4a44f557722ad9aefded47ff9de2098dbf43ae5a8e00d887a2b807dac17.css" integrity="sha256-tUekpE9VdyKtmu/e1H/53iCY2/Q65ajgDYh6K4B9rBc=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.ce400def103ed59ccbb8ac4f823c51e72002503fa195c14b9cbf2a60bc523818.css" integrity="sha256-zkAN7xA&#43;1ZzLuKxPgjxR5yACUD&#43;hlcFLnL8qYLxSOBg=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.95b4f7b56f71cb6801b631e0162003cdb876a7e427b6cbe5131167c0b8055fd4.css" integrity="sha256-lbT3tW9xy2gBtjHgFiADzbh2p&#43;QntsvlExFnwLgFX9Q=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3custom.min.6fee29409c53b18e0f402d0e05af8b9abff29e68b61612e4dede721d40f1f584.css" integrity="sha256-b&#43;4pQJxTsY4PQC0OBa&#43;Lmr/ynmi2FhLk3t5yHUDx9YQ=" rel="preload stylesheet" as="style">
 
@@ -311,15 +311,21 @@
     
     <div id="max-width-selector-container">
       <div class="title-large">Content text width</div>
-      <div class="component segmented-button">
-        <input type="radio" name="width" id="width-selector-60" value="60"/>
-        <label for="width-selector-60" class="component button">60ch</label>
+      <div class="component segmented-buttons">
+        <label class="component button">
+          <input type="radio" name="width" id="width-selector-60" value="60"/>
+          60ch
+        </label>
         
-        <input type="radio" name="width" id="width-selector-120" value="120"/>
-        <label for="width-selector-120" class="component button">120ch</label>
+        <label class="component button">
+          <input type="radio" name="width" id="width-selector-120" value="120"/>
+          120ch
+        </label>
         
-        <input type="radio" name="width" id="width-selector-max" value="max"/>
-        <label for="width-selector-max" class="component button">Max</label>
+        <label class="component button">
+          <input type="radio" name="width" id="width-selector-max" value="max"/>
+          Max
+        </label>
       </div>
     </div>
 
@@ -1477,8 +1483,9 @@
 
       
       <div class="sub-component-group-header">Icon button - toggle</div>
-      
-        <button class="component button icon-button text" ZgotmplZ>
+      <section>
+        
+          <button class="component button icon-button text" ZgotmplZ>
   
     <input type="checkbox" id="text" />
     <label for="text" class="component button icon-button">
@@ -1490,8 +1497,8 @@
     </label>
   
 </button>
-      
-        <button class="component button icon-button filled" ZgotmplZ>
+        
+          <button class="component button icon-button filled" ZgotmplZ>
   
     <input type="checkbox" id="filled" />
     <label for="filled" class="component button icon-button">
@@ -1503,8 +1510,8 @@
     </label>
   
 </button>
-      
-        <button class="component button icon-button filled-tonal" ZgotmplZ>
+        
+          <button class="component button icon-button filled-tonal" ZgotmplZ>
   
     <input type="checkbox" id="filled-tonal" />
     <label for="filled-tonal" class="component button icon-button">
@@ -1516,8 +1523,8 @@
     </label>
   
 </button>
-      
-        <button class="component button icon-button outlined" ZgotmplZ>
+        
+          <button class="component button icon-button outlined" ZgotmplZ>
   
     <input type="checkbox" id="outlined" />
     <label for="outlined" class="component button icon-button">
@@ -1529,7 +1536,64 @@
     </label>
   
 </button>
+        
+      </section>
+
+      <section>
+        
+          <button class="component button icon-button text" disabled>
+  
+    <input type="checkbox" id="text" />
+    <label for="text" class="component button icon-button">
       
+        <i class="icon">
+          settings
+        </i>
+      
+    </label>
+  
+</button>
+        
+          <button class="component button icon-button filled" disabled>
+  
+    <input type="checkbox" id="filled" />
+    <label for="filled" class="component button icon-button">
+      
+        <i class="icon">
+          settings
+        </i>
+      
+    </label>
+  
+</button>
+        
+          <button class="component button icon-button filled-tonal" disabled>
+  
+    <input type="checkbox" id="filled-tonal" />
+    <label for="filled-tonal" class="component button icon-button">
+      
+        <i class="icon">
+          settings
+        </i>
+      
+    </label>
+  
+</button>
+        
+          <button class="component button icon-button outlined" disabled>
+  
+    <input type="checkbox" id="outlined" />
+    <label for="outlined" class="component button icon-button">
+      
+        <i class="icon">
+          settings
+        </i>
+      
+    </label>
+  
+</button>
+        
+      </section>
     </div>
 
     
@@ -1540,209 +1604,265 @@
       
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="radio"
-      id="start"
-      name="segmented1"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="start"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="start"
+        name="segmented1"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="radio"
-      id="end"
-      name="segmented1"
-      value=""
-      />
     <label
-      for="end"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="end"
+        name="segmented1"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="radio"
-      id="start2"
-      name="segmented2"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="start2"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="start2"
+        name="segmented2"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="radio"
-      id="middle"
-      name="segmented2"
-      value=""
-      />
     <label
-      for="middle"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="middle"
+        name="segmented2"
+        value=""
+        />
+
       Middle
+
     </label>
   
-    <input
-      type="radio"
-      id="end2"
-      name="segmented2"
-      value=""
-      />
     <label
-      for="end2"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="end2"
+        name="segmented2"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="radio"
-      id="start3"
-      name="segmented3"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="start3"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="start3"
+        name="segmented3"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="radio"
-      id="middle1"
-      name="segmented3"
-      value=""
-      />
     <label
-      for="middle1"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="middle1"
+        name="segmented3"
+        value=""
+        />
+
       Middle 1
+
     </label>
   
-    <input
-      type="radio"
-      id="middle2"
-      name="segmented3"
-      value=""
-      />
     <label
-      for="middle2"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="middle2"
+        name="segmented3"
+        value=""
+        />
+
       Middle 2
+
     </label>
   
-    <input
-      type="radio"
-      id="end3"
-      name="segmented3"
-      value=""
-      />
     <label
-      for="end3"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="end3"
+        name="segmented3"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="radio"
-      id="start4"
-      name="segmented4"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="start4"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="start4"
+        name="segmented4"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="radio"
-      id="middle3"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="middle3"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="middle3"
+        name="segmented4"
+        value=""
+        />
+
       Middle 1
+
     </label>
   
-    <input
-      type="radio"
-      id="middle4"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="middle4"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="middle4"
+        name="segmented4"
+        value=""
+        />
+
       Middle 2
+
     </label>
   
-    <input
-      type="radio"
-      id="middle5"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="middle5"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="middle5"
+        name="segmented4"
+        value=""
+        />
+
       Middle 3
+
     </label>
   
-    <input
-      type="radio"
-      id="end4"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="end4"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="end4"
+        name="segmented4"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
@@ -1754,214 +1874,330 @@
       
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="checkbox"
-      id="startcheck"
-      name="segmented1"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="startcheck"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="startcheck"
+        name="segmented1"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="checkbox"
-      id="endcheck"
-      name="segmented1"
-      value=""
-      />
     <label
-      for="endcheck"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="endcheck"
+        name="segmented1"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="checkbox"
-      id="startcheck2"
-      name="segmented2"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="startcheck2"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="startcheck2"
+        name="segmented2"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="checkbox"
-      id="middlecheck"
-      name="segmented2"
-      value=""
-      />
     <label
-      for="middlecheck"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="middlecheck"
+        name="segmented2"
+        value=""
+        />
+
       Middle
+
     </label>
   
-    <input
-      type="checkbox"
-      id="endcheck2"
-      name="segmented2"
-      value=""
-      />
     <label
-      for="endcheck2"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="endcheck2"
+        name="segmented2"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="checkbox"
-      id="startcheck3"
-      name="segmented3"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="startcheck3"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="startcheck3"
+        name="segmented3"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="checkbox"
-      id="middlecheck1"
-      name="segmented3"
-      value=""
-      />
     <label
-      for="middlecheck1"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="middlecheck1"
+        name="segmented3"
+        value=""
+        />
+
       Middle 1
+
     </label>
   
-    <input
-      type="checkbox"
-      id="middlecheck2"
-      name="segmented3"
-      value=""
-      />
     <label
-      for="middlecheck2"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="middlecheck2"
+        name="segmented3"
+        value=""
+        />
+
       Middle 2
+
     </label>
   
-    <input
-      type="checkbox"
-      id="endcheck3"
-      name="segmented3"
-      value=""
-      />
     <label
-      for="endcheck3"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="endcheck3"
+        name="segmented3"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
-        <div class="component segmented-button">
-   
+        <div class="component segmented-buttons">
   
   
   
-    <input
-      type="checkbox"
-      id="startcheck4"
-      name="segmented4"
-      value=""
-      
-        checked
-      />
+  
     <label
-      for="startcheck4"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="startcheck4"
+        name="segmented4"
+        value=""
+        
+          checked
+        />
+
       Start
+
     </label>
   
-    <input
-      type="checkbox"
-      id="middlecheck3"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="middlecheck3"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="middlecheck3"
+        name="segmented4"
+        value=""
+        />
+
       Middle 1
+
     </label>
   
-    <input
-      type="checkbox"
-      id="middlecheck4"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="middlecheck4"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="middlecheck4"
+        name="segmented4"
+        value=""
+        />
+
       Middle 2
+
     </label>
   
-    <input
-      type="checkbox"
-      id="middlecheck5"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="middlecheck5"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="middlecheck5"
+        name="segmented4"
+        value=""
+        />
+
       Middle 3
+
     </label>
   
-    <input
-      type="checkbox"
-      id="endcheck4"
-      name="segmented4"
-      value=""
-      />
     <label
-      for="endcheck4"
-      class="component button">
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="checkbox"
+        id="endcheck4"
+        name="segmented4"
+        value=""
+        />
+
       End
+
     </label>
   
 </div>
 
       
+
+      <div class="sub-component-group-header">Outlined - disabled</div>
+  
+      <div class="component segmented-buttons">
+  
+  
+  
+  
+    <label
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="start2"
+        name="segmented2"
+        value=""
+        
+          checked
+        />
+
+      Start
+
+    </label>
+  
+    <label
+      class="component button"
+      disabled>
+
+      <input
+        disabled
+        type="radio"
+        id="middle"
+        name="segmented2"
+        value=""
+        />
+
+      Middle
+
+    </label>
+  
+    <label
+      class="component button"
+      ZgotmplZ>
+
+      <input
+        ZgotmplZ
+        type="radio"
+        id="end2"
+        name="segmented2"
+        value=""
+        />
+
+      End
+
+    </label>
+  
+</div>
+
     </div>
 
   </section>

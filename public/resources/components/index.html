@@ -843,7 +843,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Actions" 
                     href="http://192.168.40.181:1313/actions/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -851,7 +851,7 @@
                                 src="/assets/actions_1721246174666_0.webp" 
                                 alt="Cover image for Actions">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
@@ -864,7 +864,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Communication" 
                     href="http://192.168.40.181:1313/communication/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -872,7 +872,7 @@
                                 src="/assets/communication_1721246145910_0.webp" 
                                 alt="Cover image for Communication">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
@@ -885,7 +885,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Containment" 
                     href="http://192.168.40.181:1313/containment/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -893,7 +893,7 @@
                                 src="/assets/containment_1721246195262_0.webp" 
                                 alt="Cover image for Containment">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
@@ -906,7 +906,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Navigation" 
                     href="http://192.168.40.181:1313/navigation/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -914,7 +914,7 @@
                                 src="/assets/navigation_1721246328721_0.webp" 
                                 alt="Cover image for Navigation">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
@@ -927,7 +927,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Selections" 
                     href="http://192.168.40.181:1313/selections/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -935,7 +935,7 @@
                                 src="/assets/selections_1721246316916_0.webp" 
                                 alt="Cover image for Selections">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
@@ -948,7 +948,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Text inputs" 
                     href="http://192.168.40.181:1313/text-inputs/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -956,7 +956,7 @@
                                 src="/assets/text-inputs_1721246304147_0.webp" 
                                 alt="Cover image for Text inputs">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
@@ -1164,49 +1164,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

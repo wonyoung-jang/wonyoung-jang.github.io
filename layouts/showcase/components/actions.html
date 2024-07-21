@@ -125,15 +125,30 @@
 
       {{/*  Icon button - toggle  */}}
       <div class="sub-component-group-header">Icon button - toggle</div>
-      {{ range $buttonTypes }}
-        {{ partial "components/actions/icon-buttons.html" (dict
-            "id" .
-            "type" .
-            "icon" "settings"
-            "toggle" true
-          )
-        }}
-      {{ end }}
+      <section>
+        {{ range $buttonTypes }}
+          {{ partial "components/actions/icon-buttons.html" (dict
+              "id" .
+              "type" .
+              "icon" "settings"
+              "toggle" true
+            )
+          }}
+        {{ end }}
+      </section>
+
+      <section>
+        {{ range $buttonTypes }}
+          {{ partial "components/actions/icon-buttons.html" (dict
+              "id" .
+              "type" .
+              "icon" "settings"
+              "toggle" true
+              "disabled" "disabled"
+            )
+          }}
+        {{ end }}
+      </section>
     </div>
 
     {{/*  Segmented buttons  */}}
@@ -306,6 +321,27 @@
       {{ range $segmentedButtons }}
         {{ partial "components/actions/segmented-buttons.html" . }}
       {{ end }}
+
+      <div class="sub-component-group-header">Outlined - disabled</div>
+  
+      {{ partial "components/actions/segmented-buttons.html" (dict
+        "name" "segmented2" 
+        "type" "radio"
+        "buttons" (slice
+          (dict 
+            "id" "start2" 
+            "label" "Start" 
+            "checked" true)
+          (dict 
+            "id" "middle" 
+            "label" "Middle"
+            "disabled" "disabled")
+          (dict 
+            "id" "end2" 
+            "label" "End")
+          )
+        ) 
+      }}
     </div>
 
   </section>

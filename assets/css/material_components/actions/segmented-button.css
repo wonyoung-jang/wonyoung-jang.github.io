@@ -1,4 +1,4 @@
-.segmented-button {
+.segmented-buttons {
   --container-display: flex;
   --container-flex-flow: row nowrap;
   --container-align-items: center;
@@ -6,6 +6,7 @@
 
   overflow-x: auto;
   
+  & label.button,
   & .button {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
@@ -36,19 +37,27 @@
       border: 1px solid var(--color-outline) !important;
       border-right: 0px solid var(--color-outline) !important;
     }
-  }
-  
-  & input {
-    display: none;
-    
-    &:checked + .button {
+
+    & input {
+      display: none;
+    }
+      
+    &:has(input:checked) {
       --bg-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
       --text-color: var(--color-on-secondary-container);
     }
+
+    &:has(input:disabled) {
+      --container-outline: 1px solid var(--color-outline-disabled);
+      --container-elevation: var(--elevation-disabled);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
+  
 }
 
-.segmented-button {
+.segmented-buttons {
   width: 100%;
 }

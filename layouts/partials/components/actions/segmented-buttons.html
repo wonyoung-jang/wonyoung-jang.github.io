@@ -1,20 +1,24 @@
-<div class="component segmented-button">
-  {{ $name := .name }} 
+<div class="component segmented-buttons">
+  {{ $name := .name }}
   {{ $type := .type }}
   
   {{ range $index, $button := .buttons }}
-    <input
-      type="{{ $type }}"
-      id="{{ $button.id }}"
-      name="{{ $name }}"
-      value="{{ $button.value }}"
-      {{ if $button.checked }}
-        checked
-      {{end}}/>
     <label
-      for="{{ $button.id }}"
-      class="component button">
+      class="component button"
+      {{ .disabled }}>
+
+      <input
+        {{ .disabled }}
+        type="{{ $type }}"
+        id="{{ $button.id }}"
+        name="{{ $name }}"
+        value="{{ $button.value }}"
+        {{ if $button.checked }}
+          checked
+        {{end}}/>
+
       {{ $button.label }}
+
     </label>
   {{ end }}
 </div>

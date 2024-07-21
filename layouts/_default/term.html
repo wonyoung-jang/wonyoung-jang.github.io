@@ -7,7 +7,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to {{ .Title | plainify }}" 
                     href="{{ .Permalink }}">
-
+                    
                     {{ $imageURL := partial "first-image.html" . }}
                     {{ if $imageURL }}
                         <div class="card-image">
@@ -15,7 +15,7 @@
                                 src="{{ $imageURL }}" 
                                 alt="Cover image for {{ .Title }}">
                         </div>
-                    {{ end }}
+                    {{ end }}  
 
                     <div class="card-content">
                         <div class="card-meta">{{ partial "post-meta.html" . }}</div>

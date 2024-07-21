@@ -843,7 +843,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Feed layout" 
                     href="http://192.168.40.181:1313/feed-layout/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -851,7 +851,7 @@
                                 src="/assets/layout-feed_1719436990845_0.png" 
                                 alt="Cover image for Feed layout">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024&nbsp;·&nbsp;1 min read
@@ -864,7 +864,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Fixed and flexible layout" 
                     href="http://192.168.40.181:1313/fixed-and-flexible-layout/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -872,7 +872,7 @@
                                 src="/assets/layout-fixed-flex_1719437014013_0.png" 
                                 alt="Cover image for Fixed and flexible layout">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024&nbsp;·&nbsp;1 min read
@@ -885,7 +885,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to List-detail layout" 
                     href="http://192.168.40.181:1313/list-detail-layout/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -893,7 +893,7 @@
                                 src="/assets/layout-list-detail_1719437058105_0.png" 
                                 alt="Cover image for List-detail layout">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024&nbsp;·&nbsp;1 min read
@@ -906,7 +906,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Single pane layout" 
                     href="http://192.168.40.181:1313/single-pane-layout/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -914,7 +914,7 @@
                                 src="/assets/layout-single-pane_1719437108466_0.png" 
                                 alt="Cover image for Single pane layout">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024&nbsp;·&nbsp;1 min read
@@ -927,7 +927,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Supporting pane layout" 
                     href="http://192.168.40.181:1313/supporting-pane-layout/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -935,7 +935,7 @@
                                 src="/assets/layout-supporting-pane_1719437145639_0.png" 
                                 alt="Cover image for Supporting pane layout">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024&nbsp;·&nbsp;1 min read
@@ -948,7 +948,7 @@
                 <a  class="component card elevated"
                     aria-label="post link to Split-pane layout" 
                     href="http://192.168.40.181:1313/split-pane-layout/">
-
+                    
                     
                     
                         <div class="card-image">
@@ -956,7 +956,7 @@
                                 src="/assets/layout-split-pane_1719437118553_0.png" 
                                 alt="Cover image for Split-pane layout">
                         </div>
-                    
+                      
 
                     <div class="card-content">
                         <div class="card-meta"><p title='2024-07-07 00:00:00 +0000 UTC'>July 7, 2024&nbsp;·&nbsp;1 min read
@@ -1164,49 +1164,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
