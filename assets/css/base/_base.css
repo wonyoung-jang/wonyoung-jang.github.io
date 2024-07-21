@@ -79,9 +79,10 @@ body {
 
   color: var(--color-on-surface);
   font-size: var(--typescale-body-large-size);
-  line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typescale-body-large-weight);
   font-family: var(--typescale-body-large-font);
+
+  line-height: inherit;
 }
 
 
@@ -90,7 +91,6 @@ body {
 
 /* Main */
 main {
-  display: block;
   max-height: calc(100dvh - var(--size-32));
   overflow-y: auto;
   overflow-x: hidden;

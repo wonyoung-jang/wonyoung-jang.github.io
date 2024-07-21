@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      https://wonyoungjang.org/resources/tokens/
+      http://192.168.40.181:1313/resources/tokens/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Thu, 18 Jul 2024 10:22:40 -0400
       </lastBuildDate>
     
-      <atom:link href="https://wonyoungjang.org/resources/tokens/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/resources/tokens/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           States
         </title>
 
         <link>
-          https://wonyoungjang.org/states/
+          http://192.168.40.181:1313/states/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/states/
+          http://192.168.40.181:1313/states/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/elevations/
+          http://192.168.40.181:1313/elevations/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/elevations/
+          http://192.168.40.181:1313/elevations/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/colors/
+          http://192.168.40.181:1313/colors/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/colors/
+          http://192.168.40.181:1313/colors/
         </guid>
 
         <description>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/motion/
+          http://192.168.40.181:1313/motion/
         </link>
 
         <pubDate>
@@ -155,7 +155,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/motion/
+          http://192.168.40.181:1313/motion/
         </guid>
 
         <description>
@@ -168,7 +168,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/shapes/
+          http://192.168.40.181:1313/shapes/
         </link>
 
         <pubDate>
@@ -183,7 +183,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/shapes/
+          http://192.168.40.181:1313/shapes/
         </guid>
 
         <description>
@@ -196,7 +196,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/typography/
+          http://192.168.40.181:1313/typography/
         </link>
 
         <pubDate>
@@ -211,7 +211,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/typography/
+          http://192.168.40.181:1313/typography/
         </guid>
 
         <description>
