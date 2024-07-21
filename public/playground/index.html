@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.c3982e11c67f5fbdaa302f6d629374f65f14b8b1038cc3762235c18ba705d0df.css" integrity="sha256-w5guEcZ/X72qMC9tYpN09l8UuLEDjMN2IjXBi6cF0N8=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.8d31cbca1c3fd6027d52ff87c0cdaa6acaeb56c7cf4a11a60cb9f411d7ba47ab.css" integrity="sha256-jTHLyhw/1gJ9Uv&#43;HwM2qasrrVsfPShGmDLn0Ede6R6s=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.ce400def103ed59ccbb8ac4f823c51e72002503fa195c14b9cbf2a60bc523818.css" integrity="sha256-zkAN7xA&#43;1ZzLuKxPgjxR5yACUD&#43;hlcFLnL8qYLxSOBg=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.c4f7ad63cd0b41afaf904498127ee0d16a42948c0cf5e39501f70ea44b5bee4d.css" integrity="sha256-xPetY80LQa&#43;vkESYEn7g0WpClIwM9eOVAfcOpEtb7k0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.2d4f442016d75829582868e3a6ea946fabaa9fe0ee19b5e2846c7aa1eec2e280.css" integrity="sha256-LU9EIBbXWClYKGjjpuqUb6uqn&#43;DuGbXihGx6oe7C4oA=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -154,8 +154,8 @@
             id="theme-toggle" 
             accesskey="t" 
             title="Toggle Theme (ALT + SHIFT + t)" >
-        <i id="moon">dark_mode</i>
-        <i id="sun">light_mode</i>
+        <i class="icon" id="moon">dark_mode</i>
+        <i class="icon" id="sun">light_mode</i>
     </button>
 
 
@@ -165,7 +165,7 @@
   accesskey="r"
   title="Random page (ALT + SHIFT + R)"
   onclick="navigateToRandomPage(); return false;">
-  <i>ifl</i>
+  <i class="icon">ifl</i>
 </button>
 
 
@@ -303,7 +303,7 @@
 </script>
 
         <button class="component button icon-button" id="theme-controls">
-  <i>palette</i> 
+  <i class="icon">palette</i> 
   <menu class="menu" id="theme-controls-menu">
     <span class="theme-controls-title headline-medium">Theme controls</span>
     
@@ -703,33 +703,33 @@
     <div class="component tabs title-medium primary">
         
             <a class="component tab" href="/">
-                <i>home</i>
+                <i class="icon">home</i>
                 <div class="label">
                     Home
                 </div>
             </a>
             <div class="sub-tabs-container">
                 <a class="component tab" href="/projects/">
-                    <i>folder_shared</i>
+                    <i class="icon">folder_shared</i>
                     <div class="label">
                         Projects
                     </div>
                 </a>
                     <div class="component tabs title-medium sub-tabs">
             <a class="component tab" href="/projects/design/">
-                <i>design_services</i>
+                <i class="icon">design_services</i>
                 <div class="label">
                     Designs
                 </div>
             </a>
             <a class="component tab" href="/projects/software/">
-                <i>terminal</i>
+                <i class="icon">terminal</i>
                 <div class="label">
                     Software
                 </div>
             </a>
             <a class="component tab" href="/projects/university/">
-                <i>school</i>
+                <i class="icon">school</i>
                 <div class="label">
                     University
                 </div>
@@ -738,32 +738,32 @@
             </div>
             <div class="sub-tabs-container">
                 <a class="component tab" href="/resources/">
-                    <i>library_books</i>
+                    <i class="icon">library_books</i>
                     <div class="label">
                         Resources
                     </div>
                 </a>
                     <div class="component tabs title-medium sub-tabs">
             <a class="component tab" href="/resources/components/">
-                <i>settings</i>
+                <i class="icon">settings</i>
                 <div class="label">
                     Components
                 </div>
             </a>
             <a class="component tab" href="/resources/layouts/">
-                <i>view_quilt</i>
+                <i class="icon">view_quilt</i>
                 <div class="label">
                     Layouts
                 </div>
             </a>
             <a class="component tab" href="/resources/references/">
-                <i>bookmark_border</i>
+                <i class="icon">bookmark_border</i>
                 <div class="label">
                     References
                 </div>
             </a>
             <a class="component tab" href="/resources/tokens/">
-                <i>token</i>
+                <i class="icon">token</i>
                 <div class="label">
                     Tokens
                 </div>
@@ -771,13 +771,13 @@
                     </div>
             </div>
             <a class="component tab" href="/now/">
-                <i>update</i>
+                <i class="icon">update</i>
                 <div class="label">
                     Now
                 </div>
             </a>
             <a class="component tab" href="/search/">
-                <i>search</i>
+                <i class="icon">search</i>
                 <div class="label">
                     Search
                 </div>
@@ -900,31 +900,35 @@
       <hr />
       <a href="#">a</a>
       <abbr title="Abbreviation">abbr</abbr>
+      
       <b>b</b>
-      <bdi>Bdi Bidirectional Isolate element</bdi>
-      <bdo dir="rtl">Bdo Bidirectional Text Override element</bdo>
-      Br<br />Line Break element
-      <cite>Cite Citation element</cite>
-      <code>Code</code>
-      <data value="123">Data</data>
-      <dfn>DFN</dfn>
-      <em>EM</em>
-      <i>I</i>
-      <kbd>KBD</kbd>
-      <mark>Mark</mark>
-      <q>Q</q>
-      <ruby> Ruby<rp>(</rp><rt>RT</rt><rp>)</rp> </ruby>
-      <s>S</s>
-      <samp>Samp</samp>
-      <small>Small</small>
-      <span>Span</span>
-      <strong>Strong</strong>
-      <sub>Sub</sub>
-      <sup>Sup</sup>
-      <time datetime="2024-07-20">Time</time>
-      <u>U</u>
-      <var>Var</var>
-      <wbr />
+      <strong>strong</strong>
+      
+      <code>code</code>
+      <kbd>kbd</kbd>
+      <samp>samp</samp>
+      
+      <em>em</em>
+      <i>i</i>
+
+      <bdi>bdi Bidirectional Isolate element</bdi>
+      <bdo dir="rtl">bdo Bidirectional Text Override element</bdo>
+      br<br />Line Break element
+      <cite>cite Citation element</cite>
+      <data value="123">data</data>
+      <dfn>dfn</dfn>
+      <mark>mark</mark>
+      <q>q</q>
+      <ruby> ruby<rp>(</rp><rt>rt</rt><rp>)</rp> </ruby>
+      <s>s</s>
+      <small>small</small>
+      <span>span</span>
+      <sub>sub</sub>
+      <sup>sup</sup>
+      <time datetime="2024-07-20">time</time>
+      <u>u</u>
+      <var>var</var>
+      wbr<wbr />
     </section>
 
     
@@ -1188,7 +1192,7 @@
               <label>
                 Up next
               </label>
-              <i>arrow_forward</i> 
+              <i class="icon">arrow_forward</i> 
             </span>
 
             <span class="title-large">
@@ -1420,14 +1424,14 @@
                 rel="noopener noreferrer" 
                 aria-label="share Playground via email" 
                 href="mailto:?subject=Playground&body=http%3a%2f%2f192.168.40.181%3a1313%2fplayground%2f">
-                <i>email</i> 
+                <i class="icon">email</i> 
                 Email
             </a>
     
             <a  class="component button common-button filled-tonal"
                 aria-label="print Playground"
                 href="javascript:window.print()">
-                <i>print</i> 
+                <i class="icon">print</i> 
                 Print
             </a>
         </div>
@@ -1441,7 +1445,7 @@
     aria-label="go to top" 
     title="Go to Top (ALT + SHIFT + g)" 
     accesskey="g">
-    <i>vertical_align_top</i> 
+    <i class="icon">vertical_align_top</i> 
 </a>
 
 <script defer>
@@ -1623,6 +1627,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

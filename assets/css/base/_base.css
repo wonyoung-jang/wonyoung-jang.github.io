@@ -140,6 +140,11 @@ h6 {
 /* ------------------------------------------------------------------------- */
 /* || Text content */
 
+/* Blockquotes */
+blockquote {
+  quotes: none;
+}
+
 /* Paragraphs */
 p {
   font-size: var(--typescale-body-large-size);
@@ -264,7 +269,8 @@ strong {
 }
 
 /* Italic */
-em {
+em,
+i {
   font-style: italic;
 }
 
@@ -291,41 +297,10 @@ sup {
   top: -0.5em;
 }
 
-/* TODO Icons */
-i {
-  font-family: var(--font-icon);
-  font-weight: normal;
-  font-style: normal;
-  font-size: var(--size-6);
-  letter-spacing: normal;
-  text-transform: none;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  white-space: nowrap;
-  word-wrap: normal;
-
-  direction: ltr;
-
-  font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
-  user-select: none;
-
-  vertical-align: middle;
-  text-align: center;
-
-  overflow: hidden;
-
-  inline-size: var(--size-6);
-  min-inline-size: var(--size-6);
-  block-size: var(--size-6);
-  min-block-size: var(--size-6);
-
-  line-height: 1;
+/* Inline quotation */
+q {
+  quotes: none;
 }
-
 
 /* ------------------------------------------------------------------------- */
 /* || Image and multimedia */

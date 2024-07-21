@@ -2,59 +2,59 @@ main:
   - identifier: Home
     name: Home
     pageRef: /
-    pre: <i>home</i>
+    pre: <i class="icon">home</i>
     weight: 1
     
   - identifier: Projects
     name: Projects
     pageRef: /projects
-    pre: <i>folder_shared</i>
+    pre: <i class="icon">folder_shared</i>
     weight: 10
   - name: Designs
     pageRef: /projects/design
-    pre: <i>design_services</i>
+    pre: <i class="icon">design_services</i>
     parent: Projects
   - name: Software
     pageRef: /projects/software
-    pre: <i>terminal</i>
+    pre: <i class="icon">terminal</i>
     parent: Projects
   - name: University
     pageRef: /projects/university
-    pre: <i>school</i>
+    pre: <i class="icon">school</i>
     parent: Projects
 
   - identifier: Resources
     name: Resources
     pageRef: /resources
-    pre: <i>library_books</i>
+    pre: <i class="icon">library_books</i>
     weight: 20
   - name: Components
     pageRef: /resources/components
-    pre: <i>settings</i>
+    pre: <i class="icon">settings</i>
     parent: Resources
   - name: Layouts
     pageRef: /resources/layouts
-    pre: <i>view_quilt</i>
+    pre: <i class="icon">view_quilt</i>
     parent: Resources
   - name: References
     pageRef: /resources/references
-    pre: <i>bookmark_border</i>
+    pre: <i class="icon">bookmark_border</i>
     parent: Resources
   - name: Tokens
     pageRef: /resources/tokens
-    pre: <i>token</i>
+    pre: <i class="icon">token</i>
     parent: Resources
 
   - identifier: Now
     name: Now
     pageRef: /now
-    pre: <i>update</i>
+    pre: <i class="icon">update</i>
     weight: 30
 
   - identifier: Search
     name: Search
     pageRef: /search
-    pre: <i>search</i>
+    pre: <i class="icon">search</i>
     weight: 40
 
 footer:

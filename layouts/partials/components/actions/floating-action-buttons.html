@@ -2,7 +2,7 @@
   <button 
     class="component button {{ .class }} fab" {{ with .size }}{{ . }}{{ end }} {{ if .extended }}extended{{ end }}>
     {{ if or (not .extended) (and .extended .icon) }}
-      <i>
+      <i class="icon">
         {{ .icon }}
       </i>
     {{ end }}

@@ -1,3 +1,38 @@
+i.icon,
+.icon {
+  font-family: var(--font-icon);
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--size-6);
+  letter-spacing: normal;
+  text-transform: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  word-wrap: normal;
+
+  direction: ltr;
+
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+
+  vertical-align: middle;
+  text-align: center;
+
+  overflow: hidden;
+
+  inline-size: var(--size-6);
+  min-inline-size: var(--size-6);
+  block-size: var(--size-6);
+  min-block-size: var(--size-6);
+
+  line-height: 1;
+}
+
 .github-icon,
 .site-icon {
   min-width: var(--size-6);
