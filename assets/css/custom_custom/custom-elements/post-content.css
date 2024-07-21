@@ -16,12 +16,12 @@
     margin-block-end: 2em;
   }
 
-  & h1[id*=""],
-  & h2[id*=""],
-  & h3[id*=""],
-  & h4[id*=""],
-  & h5[id*=""],
-  & h6[id*=""] {
+  & h1[id],
+  & h2[id],
+  & h3[id],
+  & h4[id],
+  & h5[id],
+  & h6[id] {
     margin-block-start: 1em;
     margin-block-end: 0.5em;
   }
