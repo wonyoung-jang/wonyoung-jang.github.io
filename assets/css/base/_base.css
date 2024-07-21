@@ -176,7 +176,8 @@ li {
   list-style: none;
 }
 
-li {
+li,
+dd {
   margin-left: 1em;
   margin-inline-start: 1em;
 }

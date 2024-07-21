@@ -1,8 +1,13 @@
+{{ $isCoverImage := not (.Page.Scratch.Get "coverImage") }}
+
 {{- if .IsBlock -}}
-  <figure>
-    <img 
+  <figure
+    {{- if $isCoverImage }} 
+      class="cover-image"
+    {{ end }}>
+    <img
       src="{{ .Destination | safeURL }}"
-      {{- with .Text }} 
+      {{- with .Text }}
         alt="{{ . }}"
       {{ end -}}>
     <figcaption>
@@ -10,12 +15,19 @@
     </figcaption>
   </figure>
 {{- else -}}
-  <img 
+  <img
     src="{{ .Destination | safeURL }}"
     {{- with .Text }}
       alt="{{ . }}"
     {{ end -}}
-    {{- with .Title }} 
+    {{- with .Title }}
       title="{{ . }}"
+    {{ end -}}
+    {{- if $isCoverImage }} 
+      class="cover-image"
     {{ end -}}>
 {{- end -}}
+
+{{ if $isCoverImage }}
+  {{ .Page.Scratch.Set "coverImage" true }}
+{{ end }}
