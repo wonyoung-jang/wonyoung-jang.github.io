@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow">
 
 
-<meta name="description" content="Playground - Wonyoung Jang">
+<meta name="description" content="Testing ground for semantic HTML">
 <meta name="author" content="Wonyoung Jang">
     <meta name="google-site-verification" content="G-RTMKJG4NFZ">
 
@@ -60,19 +60,17 @@
 <meta property="og:url" content="http://192.168.40.181:1313/playground/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Playground">
-  <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
+  <meta property="og:description" content="Testing ground for semantic HTML">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:modified_time" content="2024-07-20T17:02:44-04:00">
 
 
   <meta itemprop="name" content="Playground">
-  <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
-  <meta itemprop="dateModified" content="2024-07-20T17:02:44-04:00">
+  <meta itemprop="description" content="Testing ground for semantic HTML">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Playground">
-  <meta name="twitter:description" content="Wonyoung Jang&#39;s personal website">
+  <meta name="twitter:description" content="Testing ground for semantic HTML">
 
 
     </head>
@@ -833,6 +831,10 @@
 
         
         
+            <span class="description title-small">
+                Testing ground for semantic HTML
+            </span>
+        
         
         
         
@@ -846,17 +848,17 @@
     <section class="test-set">
       <h2>Content sectioning</h2>
       <hr />
-      <address>Address</address>
-      <article>Article</article>
-      <aside>Aside</aside>
-      <footer>Footer</footer>
-      <header>Header</header>
-      <h1>H1</h1>
-      <h2>H2</h2>
-      <h3>H3</h3>
-      <h4>H4</h4>
-      <h5>H5</h5>
-      <h6>H6</h6>
+      <address>address</address>
+      <article>article</article>
+      <aside>aside</aside>
+      <footer>footer</footer>
+      <header>header</header>
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
       <hgroup>
         <h2>hgroup</h2>
         <h3>subtitle</h3>
@@ -870,28 +872,37 @@
     <section class="test-set">
       <h2>Text content</h2>
       <hr />
-      <blockquote>Blockquote</blockquote>
+      <blockquote>blockquote</blockquote>
       <dl>
-        <dt>DT</dt>
-        <dd>DD</dd>
+        <dt>dt</dt>
+        <dd>dd</dd>
       </dl>
-      <div>Div</div>
+      <div>div</div>
       <figure>
-        <figcaption>Figcaption</figcaption>
-        Figure
+        figure
+        <figcaption>figcaption</figcaption>
       </figure>
-      <hr />
+      hr<hr />
       <ul>
-        <li>LI</li>
+        ul
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
       </ul>
       <menu>
-        <li>Menu</li>
+        menu
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
       </menu>
       <ol>
-        <li>OL</li>
+        ol
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
       </ol>
-      <p>P</p>
-      <pre>Pre</pre>
+      <p>p</p>
+      <pre>pre</pre>
     </section>
 
     
@@ -935,9 +946,9 @@
     <section class="test-set">
       <h2>Image and multimedia</h2>
       <hr />
-      Map
+      map
       <map name="example-map">
-        Area
+        area
         <area
           shape="rect"
           coords="0,0,100,100"
@@ -945,22 +956,22 @@
           alt="Area" />
       </map>
       
-      Audio
+      audio
       <audio controls>
         <source
           src="audio.mp3"
           type="audio/mpeg" />
       </audio>
       
-      Img
+      img
       <img
         src="image.jpg"
         alt="Img"
         usemap="#example-map" />
       
-      Video
+      video
       <video controls>
-        Track
+        track
         <track
           kind="subtitles"
           srclang="en"
@@ -972,25 +983,32 @@
     <section class="test-set">
       <h2>Embedded content</h2>
       <hr />
+      embed
       <embed
         type="text/html"
         src="embed.html" />
-      <iframe src="iframe.html">IFrame</iframe>
+      iframe
+      <iframe src="iframe.html">iframe</iframe>
+      object
       <object
         data="object.data"
         type="application/pdf">
+        param
         <param
           name="param1"
           value="value1" />
-        Object
       </object>
+      picture
       <picture>
+        source
         <source
           media="(min-width: 800px)"
           srcset="large.jpg" />
+        source
         <source
           media="(min-width: 400px)"
           srcset="medium.jpg" />
+        img
         <img
           src="small.jpg"
           alt="Picture" />
@@ -1001,7 +1019,7 @@
     <section class="test-set">
       <h2>SVG and MathML</h2>
       <hr />
-      <strong>SVG</strong>
+      <strong>svg</strong>
       <p>Container defining a new coordinate system and viewport</p>
       <svg 
         class="site-icon"
@@ -1053,7 +1071,7 @@
                 L283.37 502Z"/>
       </svg>
       <hr>
-      <strong>Math</strong>
+      <strong>math</strong>
       <p>The top-level element in MathML</p>
       <math>
         <mrow>
@@ -1071,10 +1089,10 @@
     <section class="test-set">
       <h2>Demarcating edits</h2>
       <hr />
-      <strong>Del</strong>
+      <strong>del</strong>
       <del>Represents a range of text that has been deleted from a document</del>
       <hr>
-      <strong>Ins</strong>
+      <strong>ins</strong>
       <ins>Represents a range of text that has been added to a document</ins>
     </section>
 
@@ -1082,29 +1100,30 @@
     <section class="test-set">
       <h2>Table content</h2>
       <hr />
+      table
       <table>
         <caption>
-          Caption
+          caption
         </caption>
         <colgroup>
-          <col style="background-color: #f1f1f1" />
-          <col style="background-color: #e1e1e1" />
+          <col />
+          <col />
         </colgroup>
         <thead>
           <tr>
-            <th>TH</th>
-            <th>TH</th>
+            <th>th</th>
+            <th>th</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>TD</td>
-            <td>TD</td>
+            <td>td</td>
+            <td>td</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="2">TFoot</td>
+            <td colspan="2">tfoot</td>
           </tr>
         </tfoot>
       </table>
@@ -1116,35 +1135,38 @@
       <hr />
       <form>
         <fieldset>
-          <legend>Legend</legend>
-          <label for="input1">Label</label>
+          <legend>legend</legend>
+          <label for="input1">label</label>
+          input
           <input
             id="input1"
             type="text"
             list="datalist1" />
+          datalist
           <datalist id="datalist1">
             <option value="Option 1"></option>
             <option value="Option 2"></option>
           </datalist>
-
-          <button type="button">Button</button>
+          <button type="button">button</button>
+          select
           <select>
+            optgroup
             <optgroup label="Group 1">
-              <option>Option</option>
+              <option>option</option>
             </optgroup>
           </select>
-          <textarea>Textarea</textarea>
-          <output>Output</output>
+          <textarea>textarea</textarea>
+          <output>output</output>
+          progress
           <progress
             value="50"
             max="100">
-            Progress
           </progress>
+          meter
           <meter
             value="5"
             min="0"
             max="10">
-            Meter
           </meter>
         </fieldset>
       </form>
@@ -1154,7 +1176,7 @@
     <section class="test-set">
       <h2>Interactive elements</h2>
       <hr />
-      <strong>Details & summary</strong>
+      <strong>details & summary</strong>
       <details>
         <summary>Summary</summary>
         Details
@@ -1162,7 +1184,7 @@
 
       <hr>
 
-      <strong>Dialog</strong>
+      <strong>dialog</strong>
       <dialog open>
         <p>dialog</p>
         <form method="dialog">
@@ -1313,23 +1335,6 @@
 
     
     
-    
-        <div id="related-pages">
-            <span class="page-links-title">See also</span>
-            
-                <a  class="component card elevated"
-                    href="/graph/">
-                    <div class="card-content">
-                        <span class="card-title">
-                            
-                        </span>
-                        <span class="card-description">
-                            
-                        </span>
-                    </div>
-                </a>
-            
-        </div>
     
 
     
@@ -1627,49 +1632,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

@@ -5,17 +5,17 @@
     <section class="test-set">
       <h2>Content sectioning</h2>
       <hr />
-      <address>Address</address>
-      <article>Article</article>
-      <aside>Aside</aside>
-      <footer>Footer</footer>
-      <header>Header</header>
-      <h1>H1</h1>
-      <h2>H2</h2>
-      <h3>H3</h3>
-      <h4>H4</h4>
-      <h5>H5</h5>
-      <h6>H6</h6>
+      <address>address</address>
+      <article>article</article>
+      <aside>aside</aside>
+      <footer>footer</footer>
+      <header>header</header>
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
       <hgroup>
         <h2>hgroup</h2>
         <h3>subtitle</h3>
@@ -29,28 +29,37 @@
     <section class="test-set">
       <h2>Text content</h2>
       <hr />
-      <blockquote>Blockquote</blockquote>
+      <blockquote>blockquote</blockquote>
       <dl>
-        <dt>DT</dt>
-        <dd>DD</dd>
+        <dt>dt</dt>
+        <dd>dd</dd>
       </dl>
-      <div>Div</div>
+      <div>div</div>
       <figure>
-        <figcaption>Figcaption</figcaption>
-        Figure
+        figure
+        <figcaption>figcaption</figcaption>
       </figure>
-      <hr />
+      hr<hr />
       <ul>
-        <li>LI</li>
+        ul
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
       </ul>
       <menu>
-        <li>Menu</li>
+        menu
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
       </menu>
       <ol>
-        <li>OL</li>
+        ol
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
       </ol>
-      <p>P</p>
-      <pre>Pre</pre>
+      <p>p</p>
+      <pre>pre</pre>
     </section>
 
     {{/*  TODO Inline text semantics  */}}
@@ -94,9 +103,9 @@
     <section class="test-set">
       <h2>Image and multimedia</h2>
       <hr />
-      Map
+      map
       <map name="example-map">
-        Area
+        area
         <area
           shape="rect"
           coords="0,0,100,100"
@@ -104,22 +113,22 @@
           alt="Area" />
       </map>
       
-      Audio
+      audio
       <audio controls>
         <source
           src="audio.mp3"
           type="audio/mpeg" />
       </audio>
       
-      Img
+      img
       <img
         src="image.jpg"
         alt="Img"
         usemap="#example-map" />
       
-      Video
+      video
       <video controls>
-        Track
+        track
         <track
           kind="subtitles"
           srclang="en"
@@ -131,25 +140,32 @@
     <section class="test-set">
       <h2>Embedded content</h2>
       <hr />
+      embed
       <embed
         type="text/html"
         src="embed.html" />
-      <iframe src="iframe.html">IFrame</iframe>
+      iframe
+      <iframe src="iframe.html">iframe</iframe>
+      object
       <object
         data="object.data"
         type="application/pdf">
+        param
         <param
           name="param1"
           value="value1" />
-        Object
       </object>
+      picture
       <picture>
+        source
         <source
           media="(min-width: 800px)"
           srcset="large.jpg" />
+        source
         <source
           media="(min-width: 400px)"
           srcset="medium.jpg" />
+        img
         <img
           src="small.jpg"
           alt="Picture" />
@@ -160,7 +176,7 @@
     <section class="test-set">
       <h2>SVG and MathML</h2>
       <hr />
-      <strong>SVG</strong>
+      <strong>svg</strong>
       <p>Container defining a new coordinate system and viewport</p>
       <svg 
         class="site-icon"
@@ -212,7 +228,7 @@
                 L283.37 502Z"/>
       </svg>
       <hr>
-      <strong>Math</strong>
+      <strong>math</strong>
       <p>The top-level element in MathML</p>
       <math>
         <mrow>
@@ -230,10 +246,10 @@
     <section class="test-set">
       <h2>Demarcating edits</h2>
       <hr />
-      <strong>Del</strong>
+      <strong>del</strong>
       <del>Represents a range of text that has been deleted from a document</del>
       <hr>
-      <strong>Ins</strong>
+      <strong>ins</strong>
       <ins>Represents a range of text that has been added to a document</ins>
     </section>
 
@@ -241,29 +257,30 @@
     <section class="test-set">
       <h2>Table content</h2>
       <hr />
+      table
       <table>
         <caption>
-          Caption
+          caption
         </caption>
         <colgroup>
-          <col style="background-color: #f1f1f1" />
-          <col style="background-color: #e1e1e1" />
+          <col />
+          <col />
         </colgroup>
         <thead>
           <tr>
-            <th>TH</th>
-            <th>TH</th>
+            <th>th</th>
+            <th>th</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>TD</td>
-            <td>TD</td>
+            <td>td</td>
+            <td>td</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="2">TFoot</td>
+            <td colspan="2">tfoot</td>
           </tr>
         </tfoot>
       </table>
@@ -275,35 +292,38 @@
       <hr />
       <form>
         <fieldset>
-          <legend>Legend</legend>
-          <label for="input1">Label</label>
+          <legend>legend</legend>
+          <label for="input1">label</label>
+          input
           <input
             id="input1"
             type="text"
             list="datalist1" />
+          datalist
           <datalist id="datalist1">
             <option value="Option 1"></option>
             <option value="Option 2"></option>
           </datalist>
-
-          <button type="button">Button</button>
+          <button type="button">button</button>
+          select
           <select>
+            optgroup
             <optgroup label="Group 1">
-              <option>Option</option>
+              <option>option</option>
             </optgroup>
           </select>
-          <textarea>Textarea</textarea>
-          <output>Output</output>
+          <textarea>textarea</textarea>
+          <output>output</output>
+          progress
           <progress
             value="50"
             max="100">
-            Progress
           </progress>
+          meter
           <meter
             value="5"
             min="0"
             max="10">
-            Meter
           </meter>
         </fieldset>
       </form>
@@ -313,7 +333,7 @@
     <section class="test-set">
       <h2>Interactive elements</h2>
       <hr />
-      <strong>Details & summary</strong>
+      <strong>details & summary</strong>
       <details>
         <summary>Summary</summary>
         Details
@@ -321,7 +341,7 @@
 
       <hr>
 
-      <strong>Dialog</strong>
+      <strong>dialog</strong>
       <dialog open>
         <p>dialog</p>
         <form method="dialog">
