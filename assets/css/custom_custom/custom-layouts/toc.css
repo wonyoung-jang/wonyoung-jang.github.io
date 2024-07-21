@@ -13,13 +13,14 @@
     list-style: none;
   }
   
-  & li ul li ul li {
-    margin-left: var(--size-4);
-  }
-  
   & li {
     display: flex;
     flex-flow: column nowrap;
+    margin-left: unset;
+  }
+  
+  & li ul li ul li {
+    margin-left: var(--size-4);
   }
   
   & li a {
