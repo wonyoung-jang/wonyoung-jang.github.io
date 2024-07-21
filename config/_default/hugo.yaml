@@ -22,6 +22,10 @@ markup:
     ordered: false
     startLevel: 1
     endLevel: 6
+    
+  goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
 
 # Outputs
 outputs:

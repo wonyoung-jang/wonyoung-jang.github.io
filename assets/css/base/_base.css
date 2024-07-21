@@ -299,6 +299,7 @@ mark {
 /* || Image and multimedia */
 
 /* Images and videos */
+figure,
 img,
 video {
   display: block;

@@ -32,207 +32,207 @@ lastMod: 2024-07-19
 
 # Nested headings
 
-## Heading 2
+  + ## Heading 2
 
-### Heading 3
+    + ### Heading 3
 
-#### Heading 4
+      + #### Heading 4
 
-##### Heading 5
+        + ##### Heading 5
 
-###### Heading 6
+          + ###### Heading 6
 
 ## Text styling
 
-### Single formatting
+  + ### Single formatting
 
-**Bold**
+    + **Bold**
 
-_Italic_
+    + _Italic_
 
-{{< logseq/mark >}}Highlight{{< / logseq/mark >}}
+    + {{< logseq/mark >}}Highlight{{< / logseq/mark >}}
 
-### Double formatting
+  + ### Double formatting
 
-**_Bold + italic_**
+    + **_Bold + italic_**
 
-**{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
+    + **{{< logseq/mark >}}Bold + highlight{{< / logseq/mark >}}**
 
-_**Italic + bold**_
+    + _**Italic + bold**_
 
-*{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
+    + *{{< logseq/mark >}}Italic + highlight{{< / logseq/mark >}}*
 
-{{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
+    + {{< logseq/mark >}}**Highlight + bold**{{< / logseq/mark >}}
 
-{{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
+    + {{< logseq/mark >}}*Highlight + italic*{{< / logseq/mark >}}
 
-### Triple formatting
+  + ### Triple formatting
 
-**_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
+    + **_{{< logseq/mark >}}Bold + italic + highlight{{< / logseq/mark >}}_**
 
-**{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
+    + **{{< logseq/mark >}}*Bold + highlight + italic*{{< / logseq/mark >}}**
 
-_**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
+    + _**{{< logseq/mark >}}Italic + bold + highlight{{< / logseq/mark >}}**_
 
-_{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
+    + _{{< logseq/mark >}}**Italic + highlight + bold**{{< / logseq/mark >}}_
 
-{{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
+    + {{< logseq/mark >}}**_Highlight + bold + italic_**{{< / logseq/mark >}}
 
-{{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
+    + {{< logseq/mark >}}_**Highlight + italic + bold**_{{< / logseq/mark >}}
 
-~~Strikethrough~~
+    + ~~Strikethrough~~
 
-### Lists
+  + ### Lists
 
-List item 1
+    + List item 1
 
-List item 2
+    + List item 2
 
-List item 3
+    + List item 3
 
-### Numbered lists
+  + ### Numbered lists
 
-List item 1
+    + List item 1
 logseq.order-list-type:: number
 
-List item 2
+    + List item 2
 logseq.order-list-type:: number
 
-List item 3
+    + List item 3
 logseq.order-list-type:: number
 
 ## Advanced commands
 
-{{< logseq/orgCENTER >}}Centered text
+  + {{< logseq/orgCENTER >}}Centered text
 {{< / logseq/orgCENTER >}}
 
-**Hugo**: `<blockquote class="centered">Centered text</blockquote>`
+    + **Hugo**: `<blockquote class="centered">Centered text</blockquote>`
 
->Blockquote with ">"
+  + >Blockquote with ">"
 
-**Hugo**: `<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
+    + **Hugo**: `<blockquote><p>Blockquote with &ldquo;&gt;&rdquo;</p></blockquote>`
 
-`Inline code with backticks`
+  + `Inline code with backticks`
 
-**Hugo**: `<p><code>Blockquote with backticks</code></p>`
+    + **Hugo**: `<p><code>Blockquote with backticks</code></p>`
 
-An external link: https://www.pbs.org/video/art21-fantasy/
+  + An external link: https://www.pbs.org/video/art21-fantasy/
 
-**Hugo**: `<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
+    + **Hugo**: `<a href="https://www.pbs.org/video/art21-fantasy/"target="_blank" rel="external noopener noreferrer me">https://www.pbs.org/video/art21-fantasy/</a>`
 
 ## Pages
 
-### Page reference
+  + ### Page reference
 
-**Input**: `[About]({{< ref "/about" >}})`
+    + **Input**: `[About]({{< ref "/about" >}})`
 
-**Output**: [About]({{< ref "/About" >}})
+    + **Output**: [About]({{< ref "/About" >}})
 
-### Page embed
+  + ### Page embed
 
-**Input**: `{{embed [About]({{< ref "/about" >}})}}`
+    + **Input**: `{{embed [About]({{< ref "/about" >}})}}`
 
-**Output**: {{embed [About]({{< ref "/About" >}})}}
+    + **Output**: {{embed [About]({{< ref "/About" >}})}}
 
-### Tags
+  + ### Tags
 
-#page
+    + #page
 
 ## Blocks
 
-### Block reference
+  + ### Block reference
 
-**Input**: `## About me
+    + **Input**: `## About me
 `
 
-**Output**: ## About me
+    + **Output**: ## About me
 
 
-### Block embed
+  + ### Block embed
 
-**Input**: `{{embed ## About me
+    + **Input**: `{{embed ## About me
  }}`
 
-**Output**: {{embed ## About me
+    + **Output**: {{embed ## About me
  }}
 
-### Block properties
+  + ### Block properties
 
-Block
+    + Block
 block-property:: block-property
 
-Block
+    + Block
 block-property:: block-property
 block-property-2:: block-property-2
 
 ## Tables
 
-| Table | Table | Table |
+  + | Table | Table | Table |
 | Value | Value | Value |
 
-| Table | Table | Table |
+  + | Table | Table | Table |
 |-|-|-|
 | Value | Value | Value |
 
 ## Tasks
 
-### Tasks
+  + ### Tasks
 
-TODO A todo task
+    + TODO A todo task
 
-DOING A doing task
+    + DOING A doing task
 
-DONE A done task
+    + DONE A done task
 
-NOW A now task
+    + NOW A now task
 
-LATER A later task
+    + LATER A later task
 
-WAIT A wait task
+    + WAIT A wait task
 
-WAITING A waiting task
+    + WAITING A waiting task
 
-CANCELED A canceled task
+    + CANCELED A canceled task
 
-CANCELLED A cancelled task
+    + CANCELLED A cancelled task
 
-IN-PROGRESS An in-progress task
+    + IN-PROGRESS An in-progress task
 
-### Tasks with priorities
+  + ### Tasks with priorities
 
-TODO [#A] A high priority task
+    + TODO [#A] A high priority task
 
-TODO [#B] A medium priority task
+    + TODO [#B] A medium priority task
 
-TODO [#C] A low priority task
+    + TODO [#C] A low priority task
 
 ## Other
 
-### Calculator
+  + ### Calculator
 
 ```calc
 2 + 2
 ```
 
-### Cards
+  + ### Cards
 
-{{cards [About]({{< ref "/About" >}}) }}
+    + {{cards [About]({{< ref "/About" >}}) }}
 
-### Cloze
+  + ### Cloze
 
-{{cloze [About]({{< ref "/About" >}}) }}
+    + {{cloze [About]({{< ref "/About" >}}) }}
 
-### Embeds
+  + ### Embeds
 
-{{tweet }}
+    + {{tweet }}
 
-{{video }}
+    + {{video }}
 
-@@html: @@
+    + @@html: @@
 
-### Excalidraw
+  + ### Excalidraw
 
-[[draws/2024-07-16-17-32-44.excalidraw]]
+    + [[draws/2024-07-16-17-32-44.excalidraw]]
 
 ---
 

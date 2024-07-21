@@ -22,9 +22,9 @@ lastMod: 2024-07-10
 
 My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:
 
-They are individually adjusted with thumbscrews, which can be finnicky
+  + They are individually adjusted with thumbscrews, which can be finnicky
 
-The maximum tenting may not be as extreme as you might like
+  + The maximum tenting may not be as extreme as you might like
 
 With a custom tenting kit, I wanted to build one that's easily adjustable (one adjustment "move" per side of keyboard), and one that you can easily take the keyboard off of when desired. I chose LEGO because that's what I had on hand.
 
@@ -57,19 +57,19 @@ The following are some alternative solutions I found in my preliminary research.
 
 Other LEGO based solutions:
 
-[Reddit - Ergodox Lego Tilt Kit by 41br05](https://www.reddit.com/r/ergodox/comments/m3l6y3/ergodox_lego_tilt_kit/)
+  + [Reddit - Ergodox Lego Tilt Kit by 41br05](https://www.reddit.com/r/ergodox/comments/m3l6y3/ergodox_lego_tilt_kit/)
 
-[Twitter - Start Wearing Purple by Schneems](https://twitter.com/schneems/status/1220387019030978561)
+  + [Twitter - Start Wearing Purple by Schneems](https://twitter.com/schneems/status/1220387019030978561)
 
 ### 3D printing
 
 I definitely would have experimented with the following if I had a 3D printer at home:
 
-[Thingiverse - Ergodox Tent Kit bracket for 1/4-20 threaded rod by schneems](https://www.thingiverse.com/thing:4789211)
+  + [Thingiverse - Ergodox Tent Kit bracket for 1/4-20 threaded rod by schneems](https://www.thingiverse.com/thing:4789211)
 
-[Thingiverse - Ergodox EZ tent kit by rothgar](https://www.thingiverse.com/thing:1433117)
+  + [Thingiverse - Ergodox EZ tent kit by rothgar](https://www.thingiverse.com/thing:1433117)
 
-[GitHub - ergodox-tent: A tent for the Ergodox acrylic case designed by Litster](https://github.com/Ergodox-io/ergodox-tent)
+  + [GitHub - ergodox-tent: A tent for the Ergodox acrylic case designed by Litster](https://github.com/Ergodox-io/ergodox-tent)
 
 ### Useful articles
 

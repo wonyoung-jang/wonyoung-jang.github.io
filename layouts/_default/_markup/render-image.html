@@ -1,11 +1,21 @@
-<img    loading="lazy" 
-        src="   {{- with (.Page.Resources.GetMatch .Destination) -}} 
-                {{- (.Resize "1000x").Permalink -}}                     
-            {{- else -}} 
-                {{- .Destination | safeURL  -}}                         
-            {{- end -}} 
-        "
-        alt="{{- .Text -}}"
-        {{- with .Title -}} 
-            title="{{- . -}}"
-        {{- end -}}/> 
+{{- if .IsBlock -}}
+  <figure>
+    <img 
+      src="{{ .Destination | safeURL }}"
+      {{- with .Text }} 
+        alt="{{ . }}"
+      {{ end -}}>
+    <figcaption>
+      {{ .Title }}
+    </figcaption>
+  </figure>
+{{- else -}}
+  <img 
+    src="{{ .Destination | safeURL }}"
+    {{- with .Text }}
+      alt="{{ . }}"
+    {{ end -}}
+    {{- with .Title }} 
+      title="{{ . }}"
+    {{ end -}}>
+{{- end -}}
