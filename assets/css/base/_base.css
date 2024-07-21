@@ -213,17 +213,6 @@ samp {
   line-height: var(--typeface-body-small-line-height);
 }
 
-:not(pre) > code {
-  display: inline-flex;
-  display: inline flex;
-  flex-flow: row nowrap;
-  background-color: var(--color-add180-container);
-  color: var(--color-on-add180-container);
-  border-radius: var(--shape-corner-xs);
-  padding-inline: 5px;
-  margin-inline: 3px;
-}
-
 /* Links */
 a {
   background-color: transparent;
