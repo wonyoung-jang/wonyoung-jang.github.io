@@ -1,6 +1,7 @@
 .component{
   &.button,
-  &.card {
+  &.card,
+  &.checkbox {
     &.disabled,
     &:disabled {
       border: var(--container-outline-disabled);

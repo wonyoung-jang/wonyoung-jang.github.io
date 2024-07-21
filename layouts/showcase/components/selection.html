@@ -9,13 +9,18 @@
     {{/*  Checkboxes  */}}
     <span class="component-group-header">Checkboxes</span>
     <div class="component-group">
-      <div class="sub-component-group-header">Primary</div>
       {{/*  Selected  */}}
+      <div class="sub-component-group-header">Primary</div>
       {{ partial "components/selections/checkboxes.html" (dict 
         ) 
       }}
-
-      {{/*  Labeled  */}}
+      
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "disabled" "disabled"
+        "checked" "checked"
+        ) 
+      }}
+      
       {{ partial "components/selections/checkboxes.html" (dict 
         "label" "Checkbox label"
         ) 
@@ -27,7 +32,13 @@
         ) 
       }}
 
-      {{/*  Labeled  */}}
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" "indeterminate"
+        "disabled" "disabled"
+        "checked" "checked"
+        ) 
+      }}
+      
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
         "label" "Indeterminate label"
@@ -36,14 +47,18 @@
 
       {{/*  Error  */}}
       <div class="sub-component-group-header">Error</div>
-
-      {{/*  Selected  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
         "error" true
         ) 
       }}
 
-      {{/*  Labeled  */}}
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "error" true
+        "disabled" "disabled"
+        "checked" "checked"
+        ) 
+      }}
+
       {{ partial "components/selections/checkboxes.html" (dict 
         "label" "Checkbox label"
         "error" true
@@ -57,7 +72,14 @@
         ) 
       }}
 
-      {{/*  Labeled  */}}
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" "indeterminate"
+        "error" true
+        "disabled" "disabled"
+        "checked" "checked"
+        ) 
+      }}
+
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
         "label" "Indeterminate label"
