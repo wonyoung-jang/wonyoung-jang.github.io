@@ -159,7 +159,8 @@ b,
 strong,
 em,
 del,
-mark {
+mark.highlight-text,
+.highlight-text {
   font-size: var(--typescale-body-large-size);
   line-height: var(--typescale-body-large-line-height);
   font-weight: var(--typescale-body-large-weight);
@@ -267,7 +268,8 @@ b {
   line-height: var(--typeface-body-small-line-height);
 }
 
-mark {
+mark.highlight-text,
+.highlight-text {
   background-color: var(--color-complementary);
   color: var(--color-on-complementary);
   padding-inline: 5px;

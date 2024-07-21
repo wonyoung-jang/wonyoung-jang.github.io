@@ -1,6 +1,7 @@
 #post-content {
   & p,
-  & mark,
+  & mark.highlight-text,
+  & .highlight-text,
   & pre,
   & ul,
   & ol,
@@ -10,7 +11,8 @@
   }
 
   & p,
-  & mark {
+  & mark.highlight-text,
+  & .highlight-text {
     margin-block-end: 2em;
   }
 
