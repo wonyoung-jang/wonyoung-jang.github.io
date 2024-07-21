@@ -1,13 +1,17 @@
-.component:is(
-  .button
-):disabled {
-  border: var(--container-outline-disabled);
-  box-shadow: var(--container-elevation-disabled);
-  pointer-events: none;
-  cursor: not-allowed;
-  
-  &:disabled::after {
-    opacity: var(--state-disabled-opacity);
-    background-size: 50000%;
+.component{
+  &.button,
+  &.card {
+    &.disabled,
+    &:disabled {
+      border: var(--container-outline-disabled);
+      box-shadow: var(--container-elevation-disabled);
+      pointer-events: none;
+      cursor: not-allowed;
+      
+      &:disabled::after {
+        opacity: var(--state-disabled-opacity);
+        background-size: 50000%;
+      }
+    }
   }
 }

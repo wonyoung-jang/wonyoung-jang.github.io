@@ -12,6 +12,14 @@
       <div class="sub-component-group-header">Elevated</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "elevated"
+        "showcase" "Elevated"
+        ) 
+      }}
+
+      {{ partial "components/containments/cards.html" (dict
+        "type" "elevated"
+        "showcase" "Disabled"
+        "disabled" "disabled"
         ) 
       }}
 
@@ -69,6 +77,14 @@
       <div class="sub-component-group-header">Filled</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "filled"
+        "showcase" "Filled"
+        ) 
+      }}
+
+      {{ partial "components/containments/cards.html" (dict
+        "type" "filled"
+        "showcase" "Disabled"
+        "disabled" "disabled"
         ) 
       }}
 
@@ -126,9 +142,17 @@
       <div class="sub-component-group-header">Outlined</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "outlined"
+        "showcase" "Outlined"
         ) 
       }}
 
+      {{ partial "components/containments/cards.html" (dict
+        "type" "outlined"
+        "showcase" "Disabled"
+        "disabled" "disabled"
+        ) 
+      }}
+      
       <div class="component card outlined" horizontal>
         <div class="content">
           <div class="monogram">W</div>
