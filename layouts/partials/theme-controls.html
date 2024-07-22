@@ -8,16 +8,19 @@
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="width" id="width-selector-60" value="60"/>
+          <i class="icon">check</i>
           60ch
         </label>
         
         <label class="component button">
           <input type="radio" name="width" id="width-selector-120" value="120"/>
+          <i class="icon">check</i>
           120ch
         </label>
         
         <label class="component button">
           <input type="radio" name="width" id="width-selector-max" value="max"/>
+          <i class="icon">check</i>
           Max
         </label>
       </div>
@@ -29,11 +32,13 @@
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
+          <i class="icon">check</i>
           Cooler
         </label>
         
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
+          <i class="icon">check</i>
           Warmer
         </label>
       </div>
@@ -191,6 +196,9 @@
       } else if (savedWidth === "max") {
         widthSelectorMax.checked = true;
       }
+    } else {
+      widthSelector60.checked = true;
+      localStorage.setItem("max-char-width", "60");
     }
 
     if (savedTemperature !== null) {
@@ -199,18 +207,31 @@
       } else if (savedTemperature === "warm") {
         tertiarySelectorWarm.checked = true;
       }
+    } else {
+      tertiarySelectorCool.checked = true;
+      localStorage.setItem("tertiary-temperature", "cool");
     }
+    
 
     if (savedHue !== null) {
       hueSelector.value = savedHue;
+    } else {
+      hueSelector.value = 305;
+      localStorage.setItem("theme-hue", 305);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
+    } else {
+      chromaSelector.value = 55;
+      localStorage.setItem("theme-chroma", 55);
     }
 
     if (savedShape !== null) {
       shapeSelector.value = savedShape;
+    } else {
+      shapeSelector.value = 4;
+      localStorage.setItem("theme-shape", 4);
     }
 
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
@@ -219,10 +240,16 @@
 
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
+    } else {
+      fontSizeSelector.value = 16;
+      localStorage.setItem("typography-font-size", 16);
     }
 
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
+    } else {
+      lineHeightSelector.value = 1.5;
+      localStorage.setItem("typography-line-height", 1.5);
     }
 
     function updateWidth() {

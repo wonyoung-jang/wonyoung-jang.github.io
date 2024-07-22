@@ -54,6 +54,10 @@
       --bg-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
       --text-color: var(--color-on-secondary-container);
+      
+      &:has(.icon) {
+        padding-left: var(--size-2);
+      }
 
       & i.icon,
       & .icon {

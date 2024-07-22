@@ -169,7 +169,4 @@
     flex-flow: row nowrap;
     margin-bottom: var(--size-4);
   }
-  & * {
-    flex: 1 1 0;
-  }
 }

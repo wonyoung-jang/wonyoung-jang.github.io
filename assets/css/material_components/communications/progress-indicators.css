@@ -20,20 +20,26 @@ progress.progress-indicator,
   --icon-color: var(--color-primary);
 
   color: var(--color-primary);
-  background: var(--color-secondary-container);
-  
-  flex: none;
+  background-color: var(--color-secondary-container);
+
   overflow: hidden;
-  writing-mode: horizontal-tb;
-  direction: ltr;
   --arc-duration: calc(var(--motion-duration-extra-long4) * 1.33);
   --linear-duration: calc(var(--motion-duration-extra-long4) * 2);
   
+  &::-webkit-progress-bar {
+    background: none;
+  }
+  
+  &::-webkit-progress-value,
+  &::-moz-progress-bar {
+    background: currentColor;
+  }
+
   &.linear {
+    &::-webkit-progress-bar,
     &::-webkit-progress-value,
     &::-moz-progress-bar {
       animation-timing-function: linear;
-      animation-iteration-count: infinite;
       animation-duration: var(--linear-duration);
       animation-name:
         linear-scale, 
@@ -42,43 +48,41 @@ progress.progress-indicator,
         linear-translate-secondary;
     }
   }
-  
-  &::-webkit-progress-bar {
-    background: none;
-  }
-  
-  &::-webkit-progress-value {
-    background: currentColor;
-  }
-
-  &::-moz-progress-bar {
-    background: currentColor;
-  }
 
   &.circular {
-    display: inline-block;
-    display: inline block;
-    height: var(--size-12);
-    width: var(--size-12);
-    border-radius: var(--shape-corner-full);
+    --container-display: inline-block;
+    --container-height: var(--size-12);
+    --container-width: var(--size-12);
+    --container-shape: var(--shape-corner-full);
     border: var(--size-1) solid currentColor;
     background: none;
     flex: none;
 
     animation-timing-function: var(--motion-easing-emphasized);
-    animation-iteration-count: infinite;
     animation-duration: var(--arc-duration);
     animation-name: to-circular;
 
+    &::-webkit-progress-bar,
     &::-webkit-progress-value,
     &::-moz-progress-bar {
       background: none;
+    }
+  }
+
+  &.indeterminate {
+    animation-iteration-count: infinite;
+    
+    &::-webkit-progress-bar,
+    &::-webkit-progress-value,
+    &::-moz-progress-bar {
+      animation-iteration-count: infinite;
     }
   }
   
   &.determinate {
     animation-iteration-count: 1;
     
+    &::-webkit-progress-bar,
     &::-webkit-progress-value,
     &::-moz-progress-bar {
       animation-iteration-count: 1;

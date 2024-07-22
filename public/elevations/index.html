@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.e9cfea9e82439ef08de66fcd44e72cf1e149e739586569bfbe46b2257aa679f5.css" integrity="sha256-6c/qnoJDnvCN5m/NROcs8eFJ5zlYZWm/vkayJXqmefU=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.f8ff0c6d3cb47ff76405e81ba942732d1a05049ed39e578f80f177cd5141f32c.css" integrity="sha256-&#43;P8MbTy0f/dkBegbqUJzLRoFBJ7TnlePgPF3zVFB8yw=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.2309ad3a1af0217b17274a3c86f2360c54dd0fd16b4bc2eb937b15b46fc6235a.css" integrity="sha256-IwmtOhrwIXsXJ0o8hvI2DFTdD9FrS8Lrk3sVtG/GI1o=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.6515b472e4fdae78d3bcf67920506c56c5fcfeba614b6d0143a63d0e07b251ea.css" integrity="sha256-ZRW0cuT9rnjTvPZ5IFBsVsX8/rphS20BQ6Y9DgeyUeo=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.7f26f6459d505e2575e55a823983ccfded598290338a7e4a6023a6c11b8e013a.css" integrity="sha256-fyb2RZ1QXiV15VqCOYPM/e1ZgpAzin5KYCOmwRuOATo=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -314,16 +314,19 @@
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="width" id="width-selector-60" value="60"/>
+          <i class="icon">check</i>
           60ch
         </label>
         
         <label class="component button">
           <input type="radio" name="width" id="width-selector-120" value="120"/>
+          <i class="icon">check</i>
           120ch
         </label>
         
         <label class="component button">
           <input type="radio" name="width" id="width-selector-max" value="max"/>
+          <i class="icon">check</i>
           Max
         </label>
       </div>
@@ -335,11 +338,13 @@
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
+          <i class="icon">check</i>
           Cooler
         </label>
         
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
+          <i class="icon">check</i>
           Warmer
         </label>
       </div>
@@ -497,6 +502,9 @@
       } else if (savedWidth === "max") {
         widthSelectorMax.checked = true;
       }
+    } else {
+      widthSelector60.checked = true;
+      localStorage.setItem("max-char-width", "60");
     }
 
     if (savedTemperature !== null) {
@@ -505,18 +513,31 @@
       } else if (savedTemperature === "warm") {
         tertiarySelectorWarm.checked = true;
       }
+    } else {
+      tertiarySelectorCool.checked = true;
+      localStorage.setItem("tertiary-temperature", "cool");
     }
+    
 
     if (savedHue !== null) {
       hueSelector.value = savedHue;
+    } else {
+      hueSelector.value = 305;
+      localStorage.setItem("theme-hue", 305);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
+    } else {
+      chromaSelector.value = 55;
+      localStorage.setItem("theme-chroma", 55);
     }
 
     if (savedShape !== null) {
       shapeSelector.value = savedShape;
+    } else {
+      shapeSelector.value = 4;
+      localStorage.setItem("theme-shape", 4);
     }
 
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
@@ -525,10 +546,16 @@
 
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
+    } else {
+      fontSizeSelector.value = 16;
+      localStorage.setItem("typography-font-size", 16);
     }
 
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
+    } else {
+      lineHeightSelector.value = 1.5;
+      localStorage.setItem("typography-line-height", 1.5);
     }
 
     function updateWidth() {
@@ -1451,6 +1478,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
