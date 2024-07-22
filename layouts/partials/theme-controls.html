@@ -23,6 +23,22 @@
       </div>
     </div>
 
+    {{/*  Tertiary color temperature */}}
+    <div id="tertiary-temperature-selector-container">
+      <div class="title-large">Tertiary temperature</div>
+      <div class="component segmented-buttons">
+        <label class="component button">
+          <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
+          Cooler
+        </label>
+        
+        <label class="component button">
+          <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
+          Warmer
+        </label>
+      </div>
+    </div>
+
     {{/*  Colors  */}}
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
@@ -143,10 +159,11 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
-    var widthSelector = document.getElementById("width-selector");
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
+    var tertiarySelectorCool = document.getElementById("tertiary-selector-cool");
+    var tertiarySelectorWarm = document.getElementById("tertiary-selector-warm");
     var hueSelector = document.getElementById("hue-selector");
     var chromaSelector = document.getElementById("chroma-selector");
     var shapeSelector = document.getElementById("shape-selector");
@@ -156,6 +173,7 @@
 
     // Load saved values from localStorage
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
     var savedChroma = localStorage.getItem("theme-chroma");
     var savedShape = localStorage.getItem("theme-shape");
@@ -174,21 +192,35 @@
         widthSelectorMax.checked = true;
       }
     }
+
+    if (savedTemperature !== null) {
+      if (savedTemperature === "cool") {
+        tertiarySelectorCool.checked = true;
+      } else if (savedTemperature === "warm") {
+        tertiarySelectorWarm.checked = true;
+      }
+    }
+
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     }
+
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     }
+
     if (savedShape !== null) {
       shapeSelector.value = savedShape;
     }
+
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
     if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
     if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
     }
+
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
     }
@@ -205,6 +237,18 @@
       }
 
       localStorage.setItem("max-char-width", width);
+    }
+
+    function updateTemperature() {
+      var temperature = document.querySelector('input[name="temperature"]:checked').value;
+
+      if (temperature === "cool") {
+        root.style.setProperty("--input-tertiary-temperature", "-1");
+      } else if (temperature === "warm") {
+        root.style.setProperty("--input-tertiary-temperature", "1");
+      }
+      
+      localStorage.setItem("tertiary-temperature", temperature);
     }
 
     function updateColor() {
@@ -248,6 +292,7 @@
 
     // Apply saved or default values
     updateWidth();
+    updateTemperature();
     updateColor();
     updateShape();
     updateTypography();
@@ -255,7 +300,9 @@
     // Event listeners
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
-    widthSelectorMax.addEventListener("change", updateWidth);    
+    widthSelectorMax.addEventListener("change", updateWidth);
+    tertiarySelectorCool.addEventListener("change", updateTemperature);
+    tertiarySelectorWarm.addEventListener("change", updateTemperature);
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
     shapeSelector.addEventListener("input", updateShape);

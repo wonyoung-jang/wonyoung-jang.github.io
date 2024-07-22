@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.4aed2cb632c2038eb29a4b04d19f6b96290c7e6fa0db0c84b40e5413d723204b.css" integrity="sha256-Su0stjLCA46ymksE0Z9rlikMfm&#43;g2wyEtA5UE9cjIEs=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.e9cfea9e82439ef08de66fcd44e72cf1e149e739586569bfbe46b2257aa679f5.css" integrity="sha256-6c/qnoJDnvCN5m/NROcs8eFJ5zlYZWm/vkayJXqmefU=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.1f975f14dca70e898cf59e4719c9264932371937d37c498ce02902947a87a7f2.css" integrity="sha256-H5dfFNynDomM9Z5HGckmSTI3GTfTfEmM4CkClHqHp/I=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.fe4b3529154c8e3422a5c0fb2a9354ca2f20fddd1f5731a0435dea85cd0e90d4.css" integrity="sha256-/ks1KRVMjjQipcD7KpNUyi8g/d0fVzGgQ13qhc0OkNQ=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.0331af464a33575ac9d26c903da19f88dd804032630e830bff4efd5c68724274.css" integrity="sha256-AzGvRkozV1rJ0myQPaGfiN2AQDJjDoML/079XGhyQnQ=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.f712463bde362cd234ab5a833e9e86a552e009a2153f3b32f3e2a368a336decd.css" integrity="sha256-9xJGO942LNI0q1qDPp6GpVLgCaIVPzsy8&#43;KjaKM23s0=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -328,6 +328,22 @@
     </div>
 
     
+    <div id="tertiary-temperature-selector-container">
+      <div class="title-large">Tertiary temperature</div>
+      <div class="component segmented-buttons">
+        <label class="component button">
+          <input type="radio" name="temperature" id="tertiary-selector-cool" value="-1"/>
+          Cooler
+        </label>
+        
+        <label class="component button">
+          <input type="radio" name="temperature" id="tertiary-selector-warm" value="1"/>
+          Warmer
+        </label>
+      </div>
+    </div>
+
+    
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
       <div class="slider">
@@ -376,45 +392,45 @@
         
         <fieldset class="typography-fieldset">
           <legend class="title-large">Brand font family</legend>
-          <div class="component radio-button">
-              <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
-              <label for="brand-raleway">Raleway</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="brand-arial" name="brand-font" value="Arial">
-              <label for="brand-arial">Arial</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
-              <label for="brand-times">Times New Roman</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
-              <label for="brand-courier">Courier New</label>
-          </div>
+          <label class="component radio-button">
+            <input type="radio" id="brand-raleway" name="brand-font" value="Raleway" checked>
+            <span>Raleway</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="brand-arial" name="brand-font" value="Arial">
+            <span>Arial</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
+            <span>Times New Roman</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
+            <span>Courier New</span>
+          </label>
         </fieldset>
 
         <hr class="divider">
-        
+
         
         <fieldset class="typography-fieldset">
           <legend class="title-large">Plain font family</legend>
-          <div class="component radio-button">
-              <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
-              <label for="plain-ibm">IBM Plex Sans</label>
-          </div>
-          <div class="component radio-button">
+          <label class="component radio-button">
+            <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
+            <span>IBM Plex Sans</span>
+          </label>
+          <label class="component radio-button">
             <input type="radio" id="plain-arial" name="plain-font" value="Arial">
-            <label for="plain-arial">Arial</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
-              <label for="plain-times">Times New Roman</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
-              <label for="plain-courier">Courier New</label>
-          </div>
+            <span>Arial</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
+            <span>Times New Roman</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
+            <span>Courier New</span>
+          </label>
         </fieldset>
 
         <hr class="divider">
@@ -422,23 +438,23 @@
         
         <fieldset class="typography-fieldset">
           <legend class="title-large">Code font family</legend>
-          <div class="component radio-button">
-              <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
-              <label for="code-ibm">IBM Plex Mono</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="code-arial" name="code-font" value="Arial">
-              <label for="code-arial">Arial</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="code-times" name="code-font" value="Times New Roman">
-              <label for="code-times">Times New Roman</label>
-          </div>
-          <div class="component radio-button">
-              <input type="radio" id="code-courier" name="code-font" value="Courier New">
-              <label for="code-courier">Courier New</label>
-            </div>
-          </fieldset>
+          <label class="component radio-button">
+            <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
+            <span>IBM Plex Mono</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="code-arial" name="code-font" value="Arial">
+            <span>Arial</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="code-times" name="code-font" value="Times New Roman">
+            <span>Times New Roman</span>
+          </label>
+          <label class="component radio-button">
+            <input type="radio" id="code-courier" name="code-font" value="Courier New">
+            <span>Courier New</span>
+          </label>
+        </fieldset>
       </div>
     </div>
   </menu>
@@ -447,10 +463,11 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
-    var widthSelector = document.getElementById("width-selector");
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
+    var tertiarySelectorCool = document.getElementById("tertiary-selector-cool");
+    var tertiarySelectorWarm = document.getElementById("tertiary-selector-warm");
     var hueSelector = document.getElementById("hue-selector");
     var chromaSelector = document.getElementById("chroma-selector");
     var shapeSelector = document.getElementById("shape-selector");
@@ -460,6 +477,7 @@
 
     
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
     var savedChroma = localStorage.getItem("theme-chroma");
     var savedShape = localStorage.getItem("theme-shape");
@@ -476,6 +494,13 @@
         widthSelector120.checked = true;
       } else if (savedWidth === "max") {
         widthSelectorMax.checked = true;
+      }
+    }
+    if (savedTemperature !== null) {
+      if (savedTemperature === "-1") {
+        tertiarySelectorCool.checked = true;
+      } else if (savedTemperature === "1") {
+        tertiarySelectorWarm.checked = true;
       }
     }
     if (savedHue !== null) {
@@ -509,6 +534,18 @@
       }
 
       localStorage.setItem("max-char-width", width);
+    }
+
+    function updateTemperature() {
+      var temperature = document.querySelector('input[name="tempearture"]:checked').value;
+
+      if (temperature === "-1") {
+        root.style.setProperty("--input-tertiary-temperature", temperature);
+      } else if (temperature === "1") {
+        root.style.setProperty("--input-tertiary-temperature", temperature);
+      }
+      
+      localStorage.setItem("tertiary-temperature", temperature);
     }
 
     function updateColor() {
@@ -552,6 +589,7 @@
 
     
     updateWidth();
+    updateTemperature();
     updateColor();
     updateShape();
     updateTypography();
@@ -559,7 +597,9 @@
     
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
-    widthSelectorMax.addEventListener("change", updateWidth);    
+    widthSelectorMax.addEventListener("change", updateWidth);
+    tertiarySelectorCool.addEventListener("change", updateTemperature);
+    tertiarySelectorWarm.addEventListener("change", updateTemperature);
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
     shapeSelector.addEventListener("input", updateShape);

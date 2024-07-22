@@ -6,3 +6,4 @@ nobullets.html
 symbols-bullets.txt
 .gitignore
 symbols-nobullets.txt
+assets/css/_unused/*

@@ -4,10 +4,13 @@
   /* Color primary */
   --input-color-hue: 302.8deg;
   --input-color-chroma: 58;
-
+  
+  /* Color tertiary cooler(-1) or warmer(1) */
+  --input-tertiary-temperature: -1;
+  
   /* Color harmonization */
   --harmonization: calc(360deg / var(--scale-fibonacci) / 17);
-  
+
   /* || Typography */
 
   /* Typescale factors (L → B → T → H → D) */

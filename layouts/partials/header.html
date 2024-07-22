@@ -5,23 +5,23 @@
     {{/* Site Headline */}}
     <section class="start">
         {{/* Site ID */}}
-        {{- partialCached "top-app-bar/siteid-button.html" . -}}
+        {{- partialCached "siteid-button.html" . -}}
     </section>
     
     {{/* Buttons */}}
     <section class="end">
         
         {{/* Language switch */}}
-        {{- partialCached "top-app-bar/translation_list.html" . -}}
+        {{- partialCached "translation_list.html" . -}}
 
         {{/* Theme toggle */}}
-        {{- partialCached "top-app-bar/theme-button.html" . -}}        
+        {{- partialCached "theme-button.html" . -}}        
         
         {{/* Random page */}}
-        {{ partial "top-app-bar/random-button.html" . }}
+        {{ partial "random-button.html" . }}
 
         {{/* Theme selector */}}
-        {{- partialCached "top-app-bar/theme-controls.html" . -}} 
+        {{- partialCached "theme-controls.html" . -}} 
     </section>
 </nav>
 

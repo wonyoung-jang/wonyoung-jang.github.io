@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.60c077421995a70176fcb9fe906413e4ff9db6000806cd1b4295f68592e16ceb.css" integrity="sha256-YMB3QhmVpwF2/Ln&#43;kGQT5P&#43;dtgAIBs0bQpX2hZLhbOs=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.e9cfea9e82439ef08de66fcd44e72cf1e149e739586569bfbe46b2257aa679f5.css" integrity="sha256-6c/qnoJDnvCN5m/NROcs8eFJ5zlYZWm/vkayJXqmefU=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.1f975f14dca70e898cf59e4719c9264932371937d37c498ce02902947a87a7f2.css" integrity="sha256-H5dfFNynDomM9Z5HGckmSTI3GTfTfEmM4CkClHqHp/I=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.fe4b3529154c8e3422a5c0fb2a9354ca2f20fddd1f5731a0435dea85cd0e90d4.css" integrity="sha256-/ks1KRVMjjQipcD7KpNUyi8g/d0fVzGgQ13qhc0OkNQ=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.1c9c2e10a971d3e7b6ff9bb0bed66b12bd0d2ffa72e0f3a1e1a4e28e9315aca3.css" integrity="sha256-HJwuEKlx0&#43;e2/5uwvtZrEr0NL/py4POh4aTijpMVrKM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.f712463bde362cd234ab5a833e9e86a552e009a2153f3b32f3e2a368a336decd.css" integrity="sha256-9xJGO942LNI0q1qDPp6GpVLgCaIVPzsy8&#43;KjaKM23s0=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -333,6 +333,22 @@
     </div>
 
     
+    <div id="tertiary-temperature-selector-container">
+      <div class="title-large">Tertiary temperature</div>
+      <div class="component segmented-buttons">
+        <label class="component button">
+          <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
+          Cooler
+        </label>
+        
+        <label class="component button">
+          <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
+          Warmer
+        </label>
+      </div>
+    </div>
+
+    
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
       <div class="slider">
@@ -452,10 +468,11 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
-    var widthSelector = document.getElementById("width-selector");
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
+    var tertiarySelectorCool = document.getElementById("tertiary-selector-cool");
+    var tertiarySelectorWarm = document.getElementById("tertiary-selector-warm");
     var hueSelector = document.getElementById("hue-selector");
     var chromaSelector = document.getElementById("chroma-selector");
     var shapeSelector = document.getElementById("shape-selector");
@@ -465,6 +482,7 @@
 
     
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
     var savedChroma = localStorage.getItem("theme-chroma");
     var savedShape = localStorage.getItem("theme-shape");
@@ -483,21 +501,35 @@
         widthSelectorMax.checked = true;
       }
     }
+
+    if (savedTemperature !== null) {
+      if (savedTemperature === "cool") {
+        tertiarySelectorCool.checked = true;
+      } else if (savedTemperature === "warm") {
+        tertiarySelectorWarm.checked = true;
+      }
+    }
+
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     }
+
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     }
+
     if (savedShape !== null) {
       shapeSelector.value = savedShape;
     }
+
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
     if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
     if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
     }
+
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
     }
@@ -514,6 +546,18 @@
       }
 
       localStorage.setItem("max-char-width", width);
+    }
+
+    function updateTemperature() {
+      var temperature = document.querySelector('input[name="temperature"]:checked').value;
+
+      if (temperature === "cool") {
+        root.style.setProperty("--input-tertiary-temperature", "-1");
+      } else if (temperature === "warm") {
+        root.style.setProperty("--input-tertiary-temperature", "1");
+      }
+      
+      localStorage.setItem("tertiary-temperature", temperature);
     }
 
     function updateColor() {
@@ -557,6 +601,7 @@
 
     
     updateWidth();
+    updateTemperature();
     updateColor();
     updateShape();
     updateTypography();
@@ -564,7 +609,9 @@
     
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
-    widthSelectorMax.addEventListener("change", updateWidth);    
+    widthSelectorMax.addEventListener("change", updateWidth);
+    tertiarySelectorCool.addEventListener("change", updateTemperature);
+    tertiarySelectorWarm.addEventListener("change", updateTemperature);
     hueSelector.addEventListener("input", updateColor);
     chromaSelector.addEventListener("input", updateColor);
     shapeSelector.addEventListener("input", updateShape);

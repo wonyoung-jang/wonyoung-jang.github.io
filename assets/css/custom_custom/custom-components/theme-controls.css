@@ -150,6 +150,7 @@
 }
 
 #max-width-selector-container,
+#tertiary-temperature-selector-container,
 #color-selector-container,
 #shape-selector-container,
 #font-size-selector-container,
@@ -161,6 +162,7 @@
   gap: var(--size-3);
 }
 
+#tertiary-temperature-selector-container,
 #max-width-selector-container {
   & div:first-child {
     display: flex;

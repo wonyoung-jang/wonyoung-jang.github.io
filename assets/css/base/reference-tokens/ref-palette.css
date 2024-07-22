@@ -10,7 +10,7 @@
     --hue-error:    25deg;
 
     /* Calculate these hues */
-    --hue-tertiary:         calc(var(--hue-primary) - 60deg);
+    --hue-tertiary:         calc(var(--hue-primary) + calc(var(--input-tertiary-temperature) * 60deg));
     --hue-complementary:    calc(var(--hue-primary) + 180deg);
 
     /* Admonition hues (harmonized) */
