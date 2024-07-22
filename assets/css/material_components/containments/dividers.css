@@ -1,10 +1,10 @@
 hr.divider,
 .divider {
-  display: flex;
-  flex-flow: row nowrap;
+  --container-display: flex;
+  --contaner-flex-flow: row nowrap;
+  --container-height: 1px;
+  --container-width: 100%;
   color: var(--color-outline-variant);
-  height: 1px;
-  width: 100%;
 
   &.mid,
   &.start {

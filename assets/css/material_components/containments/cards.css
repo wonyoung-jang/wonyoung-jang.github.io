@@ -51,6 +51,7 @@
     --container-outline-hover: 1px solid var(--color-outline-variant);
     --container-outline-focus: 1px solid var(--color-on-surface);
     --container-outline-press: 1px solid var(--color-outline-variant);
+    --container-outline-disabled: 1px solid var(--color-outline);
   }
 
   & .media i {
