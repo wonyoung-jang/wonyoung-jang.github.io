@@ -2,9 +2,13 @@
 {{ $sortedPages := sort $pages ".Lastmod" "asc" }}
 {{ $leastUpdated := first 8 $sortedPages }}
 
-<h3>Least recently updated</h3>
 
 <table class="least-recently-updated-pages">
+  <caption>
+    <h3>
+      Least recently updated
+    </h3>
+  </caption>
   <thead>
     <tr>
       <th>Page Title</th>
