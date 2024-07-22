@@ -37,7 +37,7 @@
     z-index: 1;
   }
 
-  &:has(i:first-child) {
+  &:has(.leading-icon) {
     & label {
       padding-inline-start: var(--size-13);
     }
@@ -48,11 +48,6 @@
     --bg-color: var(--color-surface-container-highest);
     --text-color: var(--color-on-surface);
     --icon-color: var(--color-on-surface);
-    
-    & i.icon,
-& .icon:last-child {
-      display: none;
-    }
 
     & hr {
       position: absolute;
@@ -241,19 +236,18 @@
   }
 
 
-  &:has(i:last-child) {
+  &:has(.trailing-icon) {
     padding-right: var(--size-3);
   }
 
-  &:has(i:first-child) {
+  &:has(.leading-icon) {
     padding-left: var(--size-3);
   }
 
-  & i.icon,
-& .icon {
+  & .icon {
     color: var(--color-on-surface-variant);
 
-    &:last-child {
+    &.trailing-icon {
       margin-left: auto;
     }
   }
