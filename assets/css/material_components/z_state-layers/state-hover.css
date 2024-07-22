@@ -1,10 +1,5 @@
 .component:not(
-    .badge,
-    .tooltip,
     .snackbar,
-    progress,
-    .top-app-bar,
-    .bottom-app-bar,
     .navigation-bar,
     .navigation-bar .navigation-item,
     .navigation-rail,
@@ -12,7 +7,6 @@
     .navigation-drawer,
     .tabs,
     .dialog,
-    .bottom-sheets,
     .side-sheets,
     .menus,
     .radio-button,

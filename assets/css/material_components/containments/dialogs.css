@@ -89,14 +89,14 @@
 
   &:has(> i) {
     & i.icon,
-& .icon,
+    & .icon,
     & .headline {
       width: 100%;
       justify-content: center;
     }
 
     & i.icon,
-& .icon {
+    & .icon {
       margin-bottom: var(--size-4);
     }
   }

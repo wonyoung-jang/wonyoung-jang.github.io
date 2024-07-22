@@ -1,15 +1,10 @@
 .component:not(
-    .badge,
-    progress,
-    .top-app-bar,
-    .bottom-app-bar,
     .navigation-bar,
     .navigation-item,
     .navigation-rail,
     .navigation-drawer,
     .tabs,
     .dialog,
-    .bottom-sheets,
     .side-sheets,
     .radio-button,
     .checkbox

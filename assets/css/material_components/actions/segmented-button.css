@@ -5,7 +5,7 @@
   --container-padding: 0;
 
   overflow-x: auto;
-  
+
   & label.button,
   & .button {
     --bg-color: var(--color-surface);
@@ -21,7 +21,7 @@
     &:first-of-type {
       --container-shape: var(--shape-corner-xl-start);
     }
-    
+
     &:last-of-type {
       border-inline-end: 1px solid var(--color-outline);
       --container-shape: var(--shape-corner-xl-end);
@@ -41,7 +41,7 @@
     & input {
       display: none;
     }
-      
+
     &:has(input:checked) {
       --bg-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
@@ -55,7 +55,6 @@
       cursor: not-allowed;
     }
   }
-  
 }
 
 .segmented-buttons {

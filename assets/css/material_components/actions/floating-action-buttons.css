@@ -11,9 +11,9 @@
     height: var(--size-12);
     border-radius: var(--shape-corner-m);
     padding: 0;
-    
+
     & i.icon,
-& .icon {
+    & .icon {
       font-size: var(--size-5);
     }
   }
@@ -23,13 +23,13 @@
     height: var(--size-24);
     border-radius: var(--size-9);
     padding: var(--size-4);
-    
+
     & i.icon,
-& .icon {
+    & .icon {
       font-size: var(--size-9);
     }
   }
-  
+
   &[extended] {
     min-width: var(--size-20);
     width: auto;
@@ -37,16 +37,15 @@
     border-radius: var(--shape-corner-l);
     padding: var(--size-4);
     gap: var(--size-4);
-    
+
     & i.icon,
-& .icon {
+    & .icon {
       font-size: var(--size-6);
     }
   }
-  
+
   & i.icon,
-& .icon {
+  & .icon {
     font-size: var(--size-6);
   }
 }
-
