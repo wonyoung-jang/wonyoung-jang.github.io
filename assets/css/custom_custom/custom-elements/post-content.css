@@ -45,16 +45,16 @@
   }
 
   & .cover-image {
-    max-width: 100%;
-    border-radius: inherit;
     margin: var(--size-5) auto;
     
     & img,
     & svg,
     & video {
-      max-inline-size: 100%;
-      max-block-size: fit-content;
-      align-items: center;
+      border-radius: inherit;
+      max-width: 70%;
+      max-height: 100%;
+      margin: var(--size-5) auto;
+      box-shadow: var(--elevation4);
     }
   } 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.fe4b3529154c8e3422a5c0fb2a9354ca2f20fddd1f5731a0435dea85cd0e90d4.css" integrity="sha256-/ks1KRVMjjQipcD7KpNUyi8g/d0fVzGgQ13qhc0OkNQ=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.f712463bde362cd234ab5a833e9e86a552e009a2153f3b32f3e2a368a336decd.css" integrity="sha256-9xJGO942LNI0q1qDPp6GpVLgCaIVPzsy8&#43;KjaKM23s0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.62da6813d594cfa287cc864ef3c5fdea81a6712d836ac0f616103702d0e63d5d.css" integrity="sha256-YtpoE9WUz6KHzIZO88X96oGmcS2DasD2FhA3AtDmPV0=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -35,15 +35,15 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/projects/design/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/projects/design/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/projects/design/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/projects/design/">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/projects/design/">
+<meta property="og:url" content="http://192.168.40.181:1313/projects/design/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Design">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -89,7 +89,7 @@
     <section class="start">
         <a  class="component button common-button"
     id="site-headline"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -895,7 +895,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to ErgoDox EZ LEGO tenting kits" 
-                    href="https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/">
+                    href="http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/">
                     
                     
                     
@@ -916,7 +916,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Pit signs for robotics competition" 
-                    href="https://wonyoungjang.org/pit-signs-for-robotics-competition/">
+                    href="http://192.168.40.181:1313/pit-signs-for-robotics-competition/">
                     
                     
                     
@@ -1110,7 +1110,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -1133,49 +1133,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
