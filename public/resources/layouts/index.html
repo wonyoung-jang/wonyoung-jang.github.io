@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -35,15 +35,15 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/resources/layouts/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/resources/layouts/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resources/layouts/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/resources/layouts/">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/resources/layouts/">
+<meta property="og:url" content="https://wonyoungjang.org/resources/layouts/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Layouts">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -89,7 +89,7 @@
     <section class="start">
         <a  class="component button common-button"
     id="site-headline"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -333,12 +333,12 @@
       <div class="title-large">Tertiary temperature</div>
       <div class="component segmented-buttons">
         <label class="component button">
-          <input type="radio" name="temperature" id="tertiary-selector-cool" value="-1"/>
+          <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
           Cooler
         </label>
         
         <label class="component button">
-          <input type="radio" name="temperature" id="tertiary-selector-warm" value="1"/>
+          <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
           Warmer
         </label>
       </div>
@@ -497,28 +497,35 @@
         widthSelectorMax.checked = true;
       }
     }
+
     if (savedTemperature !== null) {
-      if (savedTemperature === "-1") {
+      if (savedTemperature === "cool") {
         tertiarySelectorCool.checked = true;
-      } else if (savedTemperature === "1") {
+      } else if (savedTemperature === "warm") {
         tertiarySelectorWarm.checked = true;
       }
     }
+
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     }
+
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     }
+
     if (savedShape !== null) {
       shapeSelector.value = savedShape;
     }
+
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
     if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
     if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
     }
+
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
     }
@@ -538,12 +545,12 @@
     }
 
     function updateTemperature() {
-      var temperature = document.querySelector('input[name="tempearture"]:checked').value;
+      var temperature = document.querySelector('input[name="temperature"]:checked').value;
 
-      if (temperature === "-1") {
-        root.style.setProperty("--input-tertiary-temperature", temperature);
-      } else if (temperature === "1") {
-        root.style.setProperty("--input-tertiary-temperature", temperature);
+      if (temperature === "cool") {
+        root.style.setProperty("--input-tertiary-temperature", "-1");
+      } else if (temperature === "warm") {
+        root.style.setProperty("--input-tertiary-temperature", "1");
       }
       
       localStorage.setItem("tertiary-temperature", temperature);
@@ -888,7 +895,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Feed layout" 
-                    href="http://192.168.40.181:1313/feed-layout/">
+                    href="https://wonyoungjang.org/feed-layout/">
                     
                     
                     
@@ -909,7 +916,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Fixed and flexible layout" 
-                    href="http://192.168.40.181:1313/fixed-and-flexible-layout/">
+                    href="https://wonyoungjang.org/fixed-and-flexible-layout/">
                     
                     
                     
@@ -930,7 +937,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to List-detail layout" 
-                    href="http://192.168.40.181:1313/list-detail-layout/">
+                    href="https://wonyoungjang.org/list-detail-layout/">
                     
                     
                     
@@ -951,7 +958,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Single pane layout" 
-                    href="http://192.168.40.181:1313/single-pane-layout/">
+                    href="https://wonyoungjang.org/single-pane-layout/">
                     
                     
                     
@@ -972,7 +979,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Supporting pane layout" 
-                    href="http://192.168.40.181:1313/supporting-pane-layout/">
+                    href="https://wonyoungjang.org/supporting-pane-layout/">
                     
                     
                     
@@ -993,7 +1000,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Split-pane layout" 
-                    href="http://192.168.40.181:1313/split-pane-layout/">
+                    href="https://wonyoungjang.org/split-pane-layout/">
                     
                     
                     
@@ -1187,7 +1194,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -1210,6 +1217,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

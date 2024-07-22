@@ -1,14 +1,14 @@
 :root {
-  --ct-text-size: 16px;
+  --font-size: 16px;
   --ct-line-height: 1.5;
   --ls-font-family: "IBM Plex Sans", sans-serif;
   --ct-page-title-font-family: "Raleway", sans-serif;
-  --ct-code-font-family: "Fira Code", monospace;
+  --ct-code-font-family: "IBM Plex Sans", monospace;
 }
 
 html,
 body {
-  font-size: var(--ct-text-size);
+  font-size: var(--font-size);
   font-family: var(--ls-font-family);
   overscroll-behavior-y: none;
   -webkit-font-smoothing: auto;
@@ -59,6 +59,7 @@ i {
     padding: 0 1rem;
   }
 }
+
 /* Fix iphone issues */
 html.is-native-iphone #left-sidebar {
   top: 0;
@@ -88,6 +89,7 @@ html.is-native-iphone #left-sidebar {
     background-color: transparent;
   }
 }
+
 :not(.color-level) .color-level {
   box-shadow: 0 0 0 2px var(--color-level-2);
 }
@@ -723,7 +725,7 @@ pre {
   font-style: var(--ct-inline-code-font-style);
   border-radius: var(--ct-inline-code-border-radius);
   padding: var(--ct-inline-code-padding);
-  background: var(--ls-tertiary-background-color);
+  background: rgb(7, 54, 43);
   color: var(--ct-inline-code-color);
 }
 
@@ -1138,9 +1140,9 @@ html[data-theme=dark] {
   --ls-active-secondary-color: var(--ct-secondary-color);
   --ls-external-link-color: var(--ct-secondary-color);
   --ls-guideline-color: var(--ls-tertiary-background-color);
-  --ls-block-bullet-color: var(--ls-tertiary-background-color);
-  --ls-bullet-closed-color: var(--ls-secondary-text-color);
-  --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
+  --ls-block-bullet-color: white;
+  --ls-bullet-closed-color: green;
+  --ls-block-bullet-border-color: green;
   --ct-block-arrow-color: rgb(165, 165, 165);
   --ct-page-reference-color: var(--ls-active-primary-color);
   --ls-icon-color: var(--ls-primary-text-color);
@@ -1202,10 +1204,10 @@ html[data-theme=white] {
 }
 
 :root {
-  --ls-block-bullet-threading-width: 3px;
+  --ls-block-bullet-threading-width: 1px;
 }
 
-/* Mine */
+/* || Mine */
 *,
 *::before,
 *::after {
