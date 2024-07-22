@@ -73,53 +73,53 @@
 
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar<br>without action" 
-          "two" true
+          "size" "two"
         )
       }}
 
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar with action<br>with action" 
-          "two" true 
+          "size" "two" 
           "action" "Action"
         ) 
       }}
 
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar with longer action<br>with action" 
-          "two" true 
+          "size" "two" 
           "action" "Longer action" 
-          "longerAction" true
+          "longerAction" "longer-action"
         ) 
       }}
     
       <div class="sub-component-group-header">With close affordance</div>
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar with close button" 
-          "closeButton" true
+          "closeButton" "close"
         )
       }}
       
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar with action" 
           "action" "Action" 
-          "closeButton" true
+          "closeButton" "close"
         ) 
       }}
       
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar with action<br>with action" 
-          "two" true 
+          "size" "two" 
           "action" "Action" 
-          "closeButton" true
+          "closeButton" "close"
         ) 
       }}
       
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Two-line snackbar<br>with longer action" 
-          "two" true 
+          "size" "two" 
           "action" "Longer action" 
-          "longerAction" true 
-          "closeButton" true
+          "longerAction" "longer-action" 
+          "closeButton" "close"
         ) 
       }}
     </div>

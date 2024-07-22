@@ -1,36 +1,19 @@
-<div class="component snackbar
-  {{ if .two }}
-    two
-  {{ end }}
-
-  {{ if or .action .longerAction }} 
-    with-action
-  {{ end }}
-
-  {{ if .longerAction }} 
-    with-longer-action
-  {{ end }}
-   
-  {{ if .closeButton }} 
-    with-close-button
-  {{ end }}">
+<div class="component snackbar {{ .size }}">
   
   <div class="supporting-text">
     {{ .text | safeHTML }}
   </div>
 
   {{ if or .action .closeButton }}
-    <div class="actions">
-      {{ if .action }}
-        <button class="component button common-button">
-          {{ .action }}
-        </button>
-      {{ end }}
+    <div class="actions {{ .longerAction }}">
+      <button class="component button common-button">
+        {{ .action }}
+      </button>
 
-      {{ if .closeButton }}
+      {{ with .closeButton }}
         <button class="component button icon-button">
           <i class="icon" class="close-icon">
-            close
+            {{ . }}
           </i>
         </button>
       {{ end }}

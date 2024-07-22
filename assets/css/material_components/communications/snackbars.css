@@ -55,10 +55,10 @@
     }
   }
 
-  &.with-action {
+  &:has(.actions) {
     --container-padding: 0px 0px 0px var(--size-4);
 
-    &.with-longer-action {
+    &:has(.longer-action) {
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
@@ -70,10 +70,10 @@
     }
   }
   
-  &.with-close-button {
+  &:has(.close-icon) {
     --container-padding: 0px 0px 0px var(--size-4);
 
-    &.with-longer-action {
+    &:has(.longer-action) {
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
@@ -88,16 +88,16 @@
   &.two {
     --container-height: var(--size-17);
 
-    &.with-longer-action {
+    &:has(.longer-action) {
       --container-flex-flow: column nowrap;
       --container-height: initial;
       --container-gap: 14px;
     }
 
-    &.with-action {
+    &:has(.actions) {
       --container-padding: 0px 0px 0px var(--size-4);
 
-      &.with-longer-action {
+      &:has(.longer-action) {
         & .supporting-text {
           align-self: flex-start;
           padding: 14px var(--size-1) 0px var(--size-1);
@@ -109,10 +109,10 @@
       }
     }
 
-    &.with-close-button {
+    &:has(.close-icon) {
       --container-padding: 0px 0px 0px var(--size-4);
 
-      &.with-longer-action {
+      &:has(.longer-action) {
         & .supporting-text {
           align-self: flex-start;
           padding: 14px var(--size-1) 0px var(--size-1);
