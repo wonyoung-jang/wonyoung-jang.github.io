@@ -1,12 +1,28 @@
-progress {
+progress.progress-indicator,
+.progress-indicator {
   position: relative;
-  width: 100%;
-  height: var(--size-1);
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: initial;
+  --container-align-items: initial;
+  --container-gap: initial;
+  --container-height: var(--size-1);
+  --container-width: 100%;
+  --container-padding: initial;
+
+  --container-outline: none;
+  --container-elevation: initial;
+  --container-shape: inherit;
+  
+  --bg-color: var(--color-secondary-container);
+  
+  --text-color: var(--color-primary);
+  --icon-color: var(--color-primary);
+
   color: var(--color-primary);
   background: var(--color-secondary-container);
-  border-radius: inherit;
+  
   flex: none;
-  border: none;
   overflow: hidden;
   writing-mode: horizontal-tb;
   direction: ltr;
