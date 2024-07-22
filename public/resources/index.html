@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.e9cfea9e82439ef08de66fcd44e72cf1e149e739586569bfbe46b2257aa679f5.css" integrity="sha256-6c/qnoJDnvCN5m/NROcs8eFJ5zlYZWm/vkayJXqmefU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.d9a86540054c00f1540b5ef87a71022db09ca9617ee72d84d87d312e9ff4028f.css" integrity="sha256-2ahlQAVMAPFUC174enECLbCcqWF&#43;5y2E2H0xLp/0Ao8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.f8ff0c6d3cb47ff76405e81ba942732d1a05049ed39e578f80f177cd5141f32c.css" integrity="sha256-&#43;P8MbTy0f/dkBegbqUJzLRoFBJ7TnlePgPF3zVFB8yw=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.99bbe96ef05311532d81c245333784354760e816028b6be4cb2b322531e634c8.css" integrity="sha256-mbvpbvBTEVMtgcJFMzeENUdg6BYCi2vkyysyJTHmNMg=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.6515b472e4fdae78d3bcf67920506c56c5fcfeba614b6d0143a63d0e07b251ea.css" integrity="sha256-ZRW0cuT9rnjTvPZ5IFBsVsX8/rphS20BQ6Y9DgeyUeo=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.7f26f6459d505e2575e55a823983ccfded598290338a7e4a6023a6c11b8e013a.css" integrity="sha256-fyb2RZ1QXiV15VqCOYPM/e1ZgpAzin5KYCOmwRuOATo=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -35,15 +35,15 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/resources/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/resources/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resources/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/resources/">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/resources/">
+<meta property="og:url" content="https://wonyoungjang.org/resources/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Resources">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -89,7 +89,7 @@
     <section class="start">
         <a  class="component button common-button"
     id="site-headline"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -313,16 +313,19 @@
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="width" id="width-selector-60" value="60"/>
+          <i class="icon">check</i>
           60ch
         </label>
         
         <label class="component button">
           <input type="radio" name="width" id="width-selector-120" value="120"/>
+          <i class="icon">check</i>
           120ch
         </label>
         
         <label class="component button">
           <input type="radio" name="width" id="width-selector-max" value="max"/>
+          <i class="icon">check</i>
           Max
         </label>
       </div>
@@ -334,11 +337,13 @@
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
+          <i class="icon">check</i>
           Cooler
         </label>
         
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
+          <i class="icon">check</i>
           Warmer
         </label>
       </div>
@@ -496,6 +501,9 @@
       } else if (savedWidth === "max") {
         widthSelectorMax.checked = true;
       }
+    } else {
+      widthSelector60.checked = true;
+      localStorage.setItem("max-char-width", "60");
     }
 
     if (savedTemperature !== null) {
@@ -504,18 +512,31 @@
       } else if (savedTemperature === "warm") {
         tertiarySelectorWarm.checked = true;
       }
+    } else {
+      tertiarySelectorCool.checked = true;
+      localStorage.setItem("tertiary-temperature", "cool");
     }
+    
 
     if (savedHue !== null) {
       hueSelector.value = savedHue;
+    } else {
+      hueSelector.value = 305;
+      localStorage.setItem("theme-hue", 305);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
+    } else {
+      chromaSelector.value = 55;
+      localStorage.setItem("theme-chroma", 55);
     }
 
     if (savedShape !== null) {
       shapeSelector.value = savedShape;
+    } else {
+      shapeSelector.value = 4;
+      localStorage.setItem("theme-shape", 4);
     }
 
     if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
@@ -524,10 +545,16 @@
 
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
+    } else {
+      fontSizeSelector.value = 16;
+      localStorage.setItem("typography-font-size", 16);
     }
 
     if (savedLineHeight !== null) {
       lineHeightSelector.value = savedLineHeight;
+    } else {
+      lineHeightSelector.value = 1.5;
+      localStorage.setItem("typography-line-height", 1.5);
     }
 
     function updateWidth() {
@@ -1153,7 +1180,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>

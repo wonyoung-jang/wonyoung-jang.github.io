@@ -1,91 +1,100 @@
-progress.progress-indicator,
 .progress-indicator {
-  position: relative;
-  --container-display: flex;
+  --container-display: inline-flex;
   --container-flex-flow: row nowrap;
-  --container-justify-content: initial;
-  --container-align-items: initial;
-  --container-gap: initial;
-  --container-height: var(--size-1);
-  --container-width: 100%;
-  --container-padding: initial;
+  --container-justify-content: center;
+  --container-align-items: center;
+  --container-gap: 0;
+  --container-padding: 0;
 
-  --container-outline: none;
-  --container-elevation: initial;
-  --container-shape: inherit;
+  --container-elevation: none;
+  --container-shape: var(--shape-corner-full);
   
   --bg-color: var(--color-secondary-container);
+  background: var(--color-secondary-container);
   
   --text-color: var(--color-primary);
   --icon-color: var(--color-primary);
 
-  color: var(--color-primary);
-  background-color: var(--color-secondary-container);
-
-  overflow: hidden;
   --arc-duration: calc(var(--motion-duration-extra-long4) * 1.33);
   --linear-duration: calc(var(--motion-duration-extra-long4) * 2);
   
-  &::-webkit-progress-bar {
-    background: none;
+  overflow: hidden;
+
+  & progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    flex: 1 1 auto;
+    background: inherit;
   }
-  
-  &::-webkit-progress-value,
-  &::-moz-progress-bar {
-    background: currentColor;
+
+  & progress[value]::-webkit-progress-bar {
+    background: var(--color-secondary-container);
+    border-radius: var(--shape-corner-full);
   }
 
   &.linear {
-    &::-webkit-progress-bar,
-    &::-webkit-progress-value,
-    &::-moz-progress-bar {
+    --container-height: var(--size-1);
+    --container-width: 100%;
+    --container-outline: none;
+
+    & progress[value]::-webkit-progress-value {
+      background: var(--color-primary);
+      border-radius: var(--shape-corner-full);
       animation-timing-function: linear;
       animation-duration: var(--linear-duration);
-      animation-name:
-        linear-scale, 
-        linear-translate,
-        linear-scale-secondary,
-        linear-translate-secondary;
+      animation-name: linear-scale, linear-translate, linear-scale-secondary, linear-translate-secondary;
+    }
+    
+    & progress[value]::-moz-progress-bar {
+      background: var(--color-primary);
+      border-radius: var(--shape-corner-full);
+      animation-timing-function: linear;
+      animation-duration: var(--linear-duration);
+      animation-name: linear-scale, linear-translate, linear-scale-secondary, linear-translate-secondary;
     }
   }
 
   &.circular {
-    --container-display: inline-block;
     --container-height: var(--size-12);
     --container-width: var(--size-12);
-    --container-shape: var(--shape-corner-full);
-    border: var(--size-1) solid currentColor;
-    background: none;
-    flex: none;
-
+    --container-outline: var(--size-1) solid currentColor;
     animation-timing-function: var(--motion-easing-emphasized);
     animation-duration: var(--arc-duration);
     animation-name: to-circular;
+    background: none;
 
-    &::-webkit-progress-bar,
-    &::-webkit-progress-value,
-    &::-moz-progress-bar {
+    & progress[value]::-webkit-progress-bar {
       background: none;
+    }
+
+    & progress[value]::-moz-progress-bar {
+      background: none;
+    }
+  }
+
+  &.determinate {
+    animation-iteration-count: 1;
+    & progress[value]::-webkit-progress-value {
+      animation-iteration-count: 1;
+    }
+
+    & progress[value]::-moz-progress-bar {
+      animation-iteration-count: 1;
     }
   }
 
   &.indeterminate {
     animation-iteration-count: infinite;
-    
-    &::-webkit-progress-bar,
-    &::-webkit-progress-value,
-    &::-moz-progress-bar {
+    & progress[value]::-webkit-progress-value {
       animation-iteration-count: infinite;
     }
-  }
-  
-  &.determinate {
-    animation-iteration-count: 1;
-    
-    &::-webkit-progress-bar,
-    &::-webkit-progress-value,
-    &::-moz-progress-bar {
-      animation-iteration-count: 1;
+
+    & progress[value]::-moz-progress-bar {
+      animation-iteration-count: infinite;
     }
   }
 }
@@ -93,15 +102,12 @@ progress.progress-indicator,
 @keyframes linear-scale {
   0% {
     width: 0%;
-    animation-timing-function: var(--motion-easing-emphasized-accelerate);
   }
   35% {
     width: 10%;
-    animation-timing-function: var(--motion-easing-emphasized);
   }
   70% {
     width: 100%;
-    animation-timing-function: var(--motion-easing-emphasized-decelerate);
   }
   100% {
     width: 0%;
@@ -111,15 +117,12 @@ progress.progress-indicator,
 @keyframes linear-scale-secondary {
   0% {
     width: 0%;
-    animation-timing-function: var(--motion-easing-emphasized-accelerate);
   }
   20% {
     width: 45%;
-    animation-timing-function: var(--motion-easing-emphasized);
   }
   45% {
     width: 100%;
-    animation-timing-function: var(--motion-easing-emphasized-decelerate);
   }
   100% {
     width: 0%;
@@ -129,36 +132,38 @@ progress.progress-indicator,
 @keyframes linear-translate {
   0% {
     margin-left: 0%;
-    animation-timing-function: var(--motion-easing-emphasized-accelerate);
+    margin-inline-start: 0%;
   }
   20% {
     margin-left: 0%;
-    animation-timing-function: var(--motion-easing-emphasized);
+    margin-inline-start: 0%;
   }
   60% {
     margin-left: 85%;
-    animation-timing-function: var(--motion-easing-emphasized-decelerate);
+    margin-inline-start: 85%;
   }
   100% {
     margin-left: 200%;
+    margin-inline-start: 200%;
   }
 }
 
 @keyframes linear-translate-secondary {
   0% {
     margin-left: 0%;
-    animation-timing-function: var(--motion-easing-emphasized-accelerate);
+    margin-inline-start: 0%;
   }
   25% {
     margin-left: 35%;
-    animation-timing-function: var(--motion-easing-emphasized);
+    margin-inline-start: 35%;
   }
   50% {
     margin-left: 85%;
-    animation-timing-function: var(--motion-easing-emphasized-decelerate);
+    margin-inline-start: 85%;
   }
   100% {
     margin-left: 160%;
+    margin-inline-start: 160%;
   }
 }
 

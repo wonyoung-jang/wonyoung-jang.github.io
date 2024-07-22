@@ -15,7 +15,7 @@
     .divider,
     .tooltip,
     .top-app-bar,
-    progress,
+    .progress-indicator,
     .search.view
   )::after {
     content: "";

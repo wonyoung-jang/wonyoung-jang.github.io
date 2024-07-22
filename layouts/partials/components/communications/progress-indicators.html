@@ -1,8 +1,4 @@
-<progress class="component progress-indicator 
-  {{ .type }}
-  {{ if .determinate -}} 
-    determinate
-  {{ else -}} 
-    indeterminate 
-  {{ end -}}">
-</progress>
+<div class="component progress-indicator {{ .type }} {{ .determinate }}">
+  <progress value>
+  </progress>
+</div>
