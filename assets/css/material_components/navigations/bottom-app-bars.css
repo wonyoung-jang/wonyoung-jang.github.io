@@ -11,9 +11,9 @@
   --container-outline: initial;
   --container-elevation: var(--elevation2);
   --container-shape: initial;
-  
+
   --bg-color: var(--color-surface-container);
-  
+
   --text-color: initial;
   --icon-color: initial;
 
@@ -30,7 +30,7 @@
     height: 100%;
 
     & i.icon,
-& .icon {
+    & .icon {
       width: var(--size-4);
     }
   }

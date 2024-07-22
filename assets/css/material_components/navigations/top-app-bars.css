@@ -23,7 +23,7 @@
 
   & .headline {
     flex: 1 1 auto;
-    display: flex; 
+    display: flex;
     flex-flow: row nowrap;
     align-self: stretch;
     align-items: center;
@@ -52,10 +52,10 @@
   }
 
   &.medium,
-  &.large {    
+  &.large {
     & .headline {
       flex: 1 1 100%;
-      padding-inline: var(--size-3)
+      padding-inline: var(--size-3);
     }
   }
 

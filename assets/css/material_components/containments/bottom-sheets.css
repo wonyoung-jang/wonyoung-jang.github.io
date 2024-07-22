@@ -39,6 +39,7 @@
     width: var(--size-8);
     margin: 22px auto;
     background-color: var(--color-on-surface-variant);
+    cursor: grab;
   }
 
   & .content {

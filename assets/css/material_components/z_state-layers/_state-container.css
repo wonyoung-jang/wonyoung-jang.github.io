@@ -7,7 +7,17 @@
     z-index: 2;
   }
 
-  &::after {
+  &:not(
+    .top-app-bar,
+    .bottom-app-bar,
+    .badge,
+    .date-picker,
+    .divider,
+    .bottom-sheets,
+    .tooltip,
+    progress,
+    .search.view
+  )::after {
     content: "";
     position: absolute;
     border-radius: inherit;

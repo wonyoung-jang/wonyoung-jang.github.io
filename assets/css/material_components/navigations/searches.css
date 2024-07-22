@@ -1,5 +1,5 @@
 .search {
-  &[bar] {
+  &.bar {
     --container-display: flex;
     --container-flex-flow: row nowrap;
     --container-align-items: center;
@@ -64,12 +64,12 @@
     }
 
     & i.icon,
-& .icon {
+    & .icon {
       color: var(--color-on-surface-variant);
     }
   }
 
-  &[view][modal] {
+  &.view.modal {
     --container-display: flex;
     --container-flex-flow: column nowrap;
     --container-justify-content: initial;
@@ -144,7 +144,7 @@
     }
   }
 
-  &[view][full] {
+  &.view.full {
     --container-display: flex;
     --container-flex-flow: column nowrap;
     --container-justify-content: initial;
