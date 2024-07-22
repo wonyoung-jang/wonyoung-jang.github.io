@@ -55,10 +55,10 @@
     }
   }
 
-  &[with-action] {
+  &.with-action {
     --container-padding: 0px 0px 0px var(--size-4);
 
-    &[with-longer-action] {
+    &.with-longer-action {
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
@@ -70,10 +70,10 @@
     }
   }
   
-  &[with-close-button] {
+  &.with-close-button {
     --container-padding: 0px 0px 0px var(--size-4);
 
-    &[with-longer-action] {
+    &.with-longer-action {
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
@@ -85,19 +85,19 @@
     }
   }
 
-  &[two] {
+  &.two {
     --container-height: var(--size-17);
 
-    &[with-longer-action] {
+    &.with-longer-action {
       --container-flex-flow: column nowrap;
       --container-height: initial;
       --container-gap: 14px;
     }
 
-    &[with-action] {
+    &.with-action {
       --container-padding: 0px 0px 0px var(--size-4);
 
-      &[with-longer-action] {
+      &.with-longer-action {
         & .supporting-text {
           align-self: flex-start;
           padding: 14px var(--size-1) 0px var(--size-1);
@@ -109,10 +109,10 @@
       }
     }
 
-    &[with-close-button] {
+    &.with-close-button {
       --container-padding: 0px 0px 0px var(--size-4);
 
-      &[with-longer-action] {
+      &.with-longer-action {
         & .supporting-text {
           align-self: flex-start;
           padding: 14px var(--size-1) 0px var(--size-1);
