@@ -2,7 +2,7 @@
     <div class="home-buttons" id="projects">
         <h3>Projects</h3>
         {{ range . }}
-            <a  class="component button fab secondary-container" extended
+            <a  class="component button fab secondary-container extended"
                 id="{{ .name | urlize }}"
                 href="{{ trim .url " " }}" 
                 rel="noopener" 
@@ -17,7 +17,7 @@
     <div class="home-buttons" id="resources">
         <h3>Resources</h3>
         {{ range . }}
-            <a  class="component button fab tertiary-container" extended
+            <a  class="component button fab tertiary-container extended"
                 id="{{ .name | urlize }}"
                 href="{{ trim .url " " }}" 
                 rel="noopener" 
