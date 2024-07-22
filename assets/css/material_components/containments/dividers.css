@@ -5,26 +5,26 @@ hr.divider,
   color: var(--color-outline-variant);
   height: 1px;
   width: 100%;
-  
+
   &.mid,
   &.start {
     padding-inline-start: var(--size-4);
     padding-left: var(--size-4);
   }
-  
+
   &.mid,
   &.end {
     padding-inline-end: var(--size-4);
     padding-right: var(--size-4);
   }
-  
+
   &::before {
     content: "";
     background: currentColor;
     height: 100%;
     width: 100%;
   }
-  
+
   &.vertical {
     display: flex;
     flex-flow: column nowrap;
@@ -32,7 +32,7 @@ hr.divider,
     width: 1px;
     height: 100%;
     align-items: center;
-    
+
     &.mid,
     &.start {
       padding-inline-start: unset;
@@ -40,7 +40,7 @@ hr.divider,
       padding-block-start: var(--size-4);
       padding-top: var(--size-4);
     }
-    
+
     &.mid,
     &.end {
       padding-inline-end: unset;

@@ -29,7 +29,7 @@
   & li {
     margin-left: 1em;
     margin-inline-start: 1em;
-  }  
+  }
 
   & figure:has(img, svg, video) {
     max-width: 100%;
@@ -46,7 +46,7 @@
 
   & .cover-image {
     margin: var(--size-5) auto;
-    
+
     & img,
     & svg,
     & video {
@@ -54,17 +54,15 @@
       max-width: 70%;
       max-height: 100%;
       margin: var(--size-5) auto;
-      box-shadow: var(--elevation4);
-      border: 1px solid var(--color-outline-variant);
     }
-  } 
+  }
 
   & *:not(pre) > code {
     display: inline-flex;
     display: inline flex;
     flex-flow: row nowrap;
-    background-color: var(--color-add180-container);
-    color: var(--color-on-add180-container);
+    background-color: var(--color-surface-container-high);
+    color: var(--color-on-surface-variant);
     border-radius: var(--shape-corner-xs);
     padding-inline: 5px;
     margin-inline: 3px;
