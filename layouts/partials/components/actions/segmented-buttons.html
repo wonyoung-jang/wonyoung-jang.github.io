@@ -16,8 +16,12 @@
         {{ if $button.checked }}
           checked
         {{end}}/>
-
-      {{ $button.label }}
+        {{ with .icon }}
+          <i class="icon">
+            {{ . }}
+          </i>
+        {{ end }}
+      {{ .label }}
 
     </label>
   {{ end }}

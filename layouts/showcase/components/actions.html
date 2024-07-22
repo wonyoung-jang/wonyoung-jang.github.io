@@ -164,10 +164,12 @@
             (dict 
               "id" "start" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "end" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
         (dict
@@ -177,13 +179,16 @@
             (dict 
               "id" "start2" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "middle" 
-              "label" "Middle")
+              "label" "Middle"
+              "icon" "check")
             (dict 
               "id" "end2" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
         (dict 
@@ -193,18 +198,20 @@
             (dict 
               "id" "start3" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "middle1" 
               "label" "Middle 1"
-              )
+              "icon" "check")
             (dict 
               "id" "middle2" 
               "label" "Middle 2"
-              )
+              "icon" "check")
             (dict 
               "id" "end3" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
         (dict 
@@ -214,22 +221,24 @@
             (dict 
               "id" "start4" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "middle3" 
               "label" "Middle 1"
-              )
+              "icon" "check")
             (dict 
               "id" "middle4" 
               "label" "Middle 2"
-              )
+              "icon" "check")
             (dict 
               "id" "middle5" 
               "label" "Middle 3"
-              )
+              "icon" "check")
             (dict 
               "id" "end4" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
       }}
@@ -248,10 +257,12 @@
             (dict 
               "id" "startcheck" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "endcheck" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
         (dict
@@ -261,13 +272,16 @@
             (dict 
               "id" "startcheck2" 
               "label" "Start" 
-              "checked" true)
+              "checked" true 
+              "icon" "check")
             (dict 
               "id" "middlecheck" 
-              "label" "Middle")
+              "label" "Middle" 
+              "icon" "check")
             (dict 
               "id" "endcheck2" 
-              "label" "End")
+              "label" "End" 
+              "icon" "check")
           )
         )
         (dict 
@@ -277,18 +291,20 @@
             (dict 
               "id" "startcheck3" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "middlecheck1" 
               "label" "Middle 1"
-              )
+              "icon" "check")
             (dict 
               "id" "middlecheck2" 
               "label" "Middle 2"
-              )
+              "icon" "check")
             (dict 
               "id" "endcheck3" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
         (dict 
@@ -298,22 +314,24 @@
             (dict 
               "id" "startcheck4" 
               "label" "Start" 
-              "checked" true)
+              "checked" true
+              "icon" "check")
             (dict 
               "id" "middlecheck3" 
               "label" "Middle 1"
-              )
+              "icon" "check")
             (dict 
               "id" "middlecheck4" 
               "label" "Middle 2"
-              )
+              "icon" "check")
             (dict 
               "id" "middlecheck5" 
               "label" "Middle 3"
-              )
+              "icon" "check")
             (dict 
               "id" "endcheck4" 
-              "label" "End")
+              "label" "End"
+              "icon" "check")
           )
         )
       }}
@@ -325,20 +343,23 @@
       <div class="sub-component-group-header">Outlined - disabled</div>
   
       {{ partial "components/actions/segmented-buttons.html" (dict
-        "name" "segmented2" 
+        "name" "segmenteddisabled" 
         "type" "radio"
         "buttons" (slice
           (dict 
             "id" "start2" 
             "label" "Start" 
-            "checked" true)
+            "checked" true
+            "icon" "check")
           (dict 
             "id" "middle" 
             "label" "Middle"
-            "disabled" "disabled")
+            "disabled" "disabled" 
+            "icon" "check")
           (dict 
             "id" "end2" 
-            "label" "End")
+            "label" "End"
+            "icon" "check")
           )
         ) 
       }}
