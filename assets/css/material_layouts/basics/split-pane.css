@@ -1,6 +1,6 @@
 .basic-split-pane {
   --flex-flow: row nowrap;
-    
+
   & .pane {
     --flex: 1 1 0;
   }
@@ -12,7 +12,7 @@
     & .pane {
       --display: none;
       --flex: 1 1 0;
-      --width: calc(50% - var(--spacing-panes) / 2);    
+      --width: calc(50% - var(--spacing-panes) / 2);
     }
 
     &::before {

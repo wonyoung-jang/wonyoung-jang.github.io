@@ -49,6 +49,8 @@
     --container-outline-hover: 1px solid var(--color-outline);
     --container-outline-focus: 1px solid var(--color-primary);
     --container-outline-press: 1px solid var(--color-outline);
+    --disabled-outline: color-mix(in lch, var(--color-on-surface) 12%, transparent);
+    --container-outline-disabled: 1px solid var(--disabled-outline);
   }
 }
 

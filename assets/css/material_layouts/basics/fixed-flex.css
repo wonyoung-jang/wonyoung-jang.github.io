@@ -1,6 +1,6 @@
 .basic-fixed-flex#single {
   --flex-flow: column nowrap;
-  
+
   & .pane {
     --display: flex;
     --flex: 1 1 auto;
@@ -14,10 +14,10 @@
 
 .basic-fixed-flex:not(#single) {
   --flex-flow: row nowrap;
-    
+
   & .pane {
     --flex: 1 1 0;
-    
+
     &.fixed-pane {
       --flex: 0 0 var(--fixed-pane-width);
       --width: var(--fixed-pane-width);
@@ -33,7 +33,7 @@
     & .pane {
       --display: none;
       --flex: 1 1 0;
-      --width: calc(50% - var(--spacing-panes) / 2);    
+      --width: calc(50% - var(--spacing-panes) / 2);
 
       &.fixed-pane {
         --flex: 0 0 var(--fixed-pane-width);
@@ -54,10 +54,10 @@
 @media screen and (min-width: 1200px) {
   .basic-fixed-flex#single {
     --flex-flow: row-reverse nowrap;
-    
+
     & .pane {
       --flex: 1 1 0;
-      
+
       &.fixed-pane {
         --flex: 0 0 var(--fixed-pane-width);
         --width: var(--fixed-pane-width);

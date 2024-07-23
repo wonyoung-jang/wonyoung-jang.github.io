@@ -58,7 +58,6 @@
         --icon-color: var(--color-on-primary);
       }
 
-      & i.icon,
       & .icon,
       & svg {
         font-variation-settings: "FILL" 1;
@@ -89,7 +88,6 @@
         --icon-color: var(--color-on-secondary-container);
       }
 
-      & i.icon,
       & .icon,
       & svg {
         font-variation-settings: "FILL" 1;
@@ -102,13 +100,14 @@
     --container-outline-hover: 1px solid var(--color-outline);
     --container-outline-focus: 1px solid var(--color-outline);
     --container-outline-press: 1px solid var(--color-outline);
+    --disabled-outline: color-mix(in lch, var(--color-on-surface) 12%, transparent);
+    --container-outline-disabled: 1px solid var(--disabled-outline);
 
     & input[type="checkbox"] {
       &:checked + .icon-button {
         --bg-color: var(--color-inverse-surface);
         --icon-color: var(--color-inverse-on-surface);
 
-        & i.icon,
         & .icon,
         & svg {
           font-variation-settings: "FILL" 1;
@@ -117,7 +116,6 @@
     }
   }
 
-  & i.icon,
   & .icon,
   & svg,
   & img {

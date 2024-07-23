@@ -44,7 +44,6 @@
     }
   }
 
-  & i.icon,
   & .icon {
     font-size: var(--size-6);
   }

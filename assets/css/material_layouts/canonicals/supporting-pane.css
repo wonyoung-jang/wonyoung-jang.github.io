@@ -17,7 +17,7 @@
     & .focus-pane {
       --flex: 2 1 0;
     }
-  
+
     & .supporting-pane {
       --flex: 1 2 0;
     }

@@ -4,8 +4,9 @@
   &.checkbox {
     &.disabled,
     &:disabled {
-      border: var(--container-outline-disabled);
-      box-shadow: var(--container-elevation-disabled);
+      --container-outline: var(--container-outline-disabled);
+      --container-elevation: var(--container-elevation-disabled);
+      --state-color: none;
       pointer-events: none;
       cursor: not-allowed;
       
