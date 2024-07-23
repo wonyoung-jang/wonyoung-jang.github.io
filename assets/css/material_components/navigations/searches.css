@@ -18,7 +18,7 @@
     width: 100%;
 
     & > .icon-button,
-    & > i {
+    & > .icon {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -122,9 +122,10 @@
       }
     }
 
-    & hr {
+    & .divider {
       color: var(--color-outline);
     }
+
     & .list-container {
       align-self: stretch;
       flex: 0;
@@ -196,9 +197,10 @@
       }
     }
 
-    & hr {
+    & .divider {
       color: var(--color-outline);
     }
+
     & .list-container {
       align-self: stretch;
       flex: 0;
