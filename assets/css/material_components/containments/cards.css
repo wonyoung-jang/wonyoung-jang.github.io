@@ -51,7 +51,8 @@
     --container-outline-hover: 1px solid var(--color-outline-variant);
     --container-outline-focus: 1px solid var(--color-on-surface);
     --container-outline-press: 1px solid var(--color-outline-variant);
-    --container-outline-disabled: 1px solid var(--color-outline);
+    --disabled-outline: color-mix(in lch, 12% var(--color-outline), transparent);
+    --container-outline-disabled: 1px solid var(--disabled-outline);
   }
 
   & .media i {
