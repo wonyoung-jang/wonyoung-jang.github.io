@@ -1,14 +1,12 @@
 <label class="component chip {{ .type }} {{ .container }}">
   <input type="checkbox" name="{{ .name }}">
 
-  {{/*  OPTIONAL - Leading icon  */}}
   {{ with .leading_icon }}
     <i class="icon leading-icon">{{ . }}</i>
   {{ end }}
 
   <span>{{ .label }}</span>
   
-  {{/*  OPTIONAL - Trailing icon  */}}
   {{ with .trailing_icon }}
     <i class="icon trailing-icon">{{ . }}</i>
   {{ end }}

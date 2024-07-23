@@ -115,7 +115,7 @@
       color: var(--color-outline);
     }
 
-    & .list-container {
+    & .set.lists {
       align-self: stretch;
       flex: 0;
       margin: unset;
@@ -179,7 +179,7 @@
       color: var(--color-outline);
     }
 
-    & .list-container {
+    & .set.lists {
       align-self: stretch;
       flex: 0;
       margin: unset;

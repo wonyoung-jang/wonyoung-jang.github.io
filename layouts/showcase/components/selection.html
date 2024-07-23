@@ -93,25 +93,25 @@
     <div class="component-group">
       {{/*  Assist chip  */}}
       <div class="sub-component-group-header">Assist chip</div>
-      
-      <div class="chips-container">
-        {{ partial "components/selections/chips.html" (dict
-          "container" "outlined"
-          "name" "chips"
-          "label" "Chip"
-          ) 
+    
+      <div class="set chips">
+        {{ partial "components/selections/chips.html" 
+          (dict
+            "container" "outlined"
+            "name" "chips"
+            "label" "Chip") 
         }}
 
-        {{ partial "components/selections/chips.html" (dict
-          "container" "outlined"
-          "name" "chips"
-          "leading_icon" "home"
-          "label" "Chip"
-          ) 
+        {{ partial "components/selections/chips.html" 
+          (dict
+            "container" "outlined"
+            "name" "chips"
+            "leading_icon" "home"
+            "label" "Chip")  
         }}
       </div>
-      
-      <div class="chips-container">
+
+      <div class="set chips">
         {{ partial "components/selections/chips.html" (dict
           "container" "elevated"
           "name" "chips"
@@ -131,7 +131,7 @@
       {{/*  Filter chip  */}}
       <div class="sub-component-group-header">Filter chip</div>
       
-      <div class="chips-container">
+      <div class="set chips">
         {{ partial "components/selections/chips.html" (dict
           "container" "outlined"
           "name" "chips"
@@ -182,7 +182,7 @@
         }}
       </div>
 
-      <div class="chips-container">
+      <div class="set chips">
         {{ partial "components/selections/chips.html" (dict
           "container" "elevated"
           "name" "chips"
@@ -236,7 +236,7 @@
       {{/*  Input chip  */}}
       <div class="sub-component-group-header">Input chip</div>
 
-      <div class="chips-container">
+      <div class="set chips">
         {{ partial "components/selections/chips.html" (dict
           "container" "outlined"
           "type" "input"
@@ -277,7 +277,7 @@
       {{/*  Suggestion chip  */}}
       <div class="sub-component-group-header">Suggestion chip</div>
 
-      <div class="chips-container">
+      <div class="set chips">
         {{ partial "components/selections/chips.html" (dict
           "container" "outlined"
           "name" "chips"
@@ -294,7 +294,7 @@
         }}
       </div>
       
-      <div class="chips-container">
+      <div class="set chips">
         {{ partial "components/selections/chips.html" (dict
           "container" "elevated"
           "name" "chips"
@@ -328,19 +328,17 @@
 
       <div class="sub-component-group-header">With dividers</div>
       {{ partial "components/selections/menus.html" (dict
-      "menu_items" (slice 
+        "type" "button"
+        "dividers" true
+        "menu_items" (slice 
           (dict 
-            "label" "Menu item 1"
-            "dividers" true)
+            "label" "Menu item 1")
           (dict 
-            "label" "Menu item 2"
-            "dividers" true)
+            "label" "Menu item 2")
           (dict 
-            "label" "Menu item 3"
-            "dividers" true)
+            "label" "Menu item 3")
           (dict 
-            "label" "Menu item 4"
-            "dividers" true)
+            "label" "Menu item 4")
           ) 
         )
       }}

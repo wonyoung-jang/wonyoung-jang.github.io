@@ -1,9 +1,11 @@
-<div class="component menus">
+{{ $dividers := .dividers}}
+
+<menu class="component menus">
   {{ range .menu_items }}
     <div class="component menu-item">{{ .label }}</div>
-
-    {{ if .dividers }}
-      <hr class="divider">
+    
+    {{ if $dividers }}
+    <hr class="divider">
     {{ end }}
   {{ end }}
-</div>
+</menu>

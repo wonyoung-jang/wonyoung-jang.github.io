@@ -1,11 +1,3 @@
-.chips-container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  gap: var(--size-2);
-  overflow-x: auto;
-}
-
 .chip {
   cursor: pointer;
 
@@ -38,8 +30,7 @@
   font-weight: var(--typescale-label-large-weight);
   font-family: var(--typescale-label-large-font);
   color: var(--text-color);
-
-  & i.icon,
+  
   & .icon {
     color: var(--icon-color);
     font-size: 18px;

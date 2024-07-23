@@ -1,0 +1,63 @@
+.set {
+  --flex: initial;
+  --display: initial;
+  --flex-flow: initial;
+  --align-items: initial;
+  --align-content: initial;
+  --justify-content: initial;
+  --width: initial;
+  --gap: initial;
+  --overflow: initial;
+}
+
+.set {
+  flex:             var(--flex);
+  display:          var(--display);
+  flex-flow:        var(--flex-flow);
+  align-items:      var(--align-items);
+  align-content:    var(--align-content);
+  justify-content:  var(--justify-content);
+  width:            var(--width);
+  gap:              var(--gap);
+  overflow:         var(--overflow);
+}
+
+.set.tabs {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: row nowrap;
+  --align-items: stretch;
+  --align-content: stretch;
+  --justify-content: space-between;
+  --width: 100%;
+  --gap: 0;
+  --overflow: hidden;
+}
+
+.set.lists {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: flex-start;
+  --align-content: stretch;
+  --justify-content: flex-start;
+  --width: 100%;
+  --gap: 0;
+  --overflow: hidden;
+  
+  & .divider {
+    color: var(--color-outline);
+  }
+}
+
+.set.chips {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: row wrap;
+  --align-items: center;
+  --align-content: stretch;
+  --justify-content: flex-start;
+  --width: 100%;
+  --gap: var(--size-2);
+  --overflow: auto;
+}
