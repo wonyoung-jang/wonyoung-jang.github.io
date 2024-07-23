@@ -6,9 +6,9 @@
   --container-gap: initial;
   --container-height: 6px;
   --container-width: 6px;
-  
+
   --container-shape: var(--shape-corner-full);
-  
+
   --bg-color: var(--color-error);
 
   &.large {
@@ -18,7 +18,6 @@
     min-width: var(--size-4);
   }
 
-  
   & > span {
     color: var(--color-on-error);
     font-family: var(--typescale-label-small-font);
