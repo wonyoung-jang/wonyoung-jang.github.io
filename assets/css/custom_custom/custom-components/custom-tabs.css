@@ -1,7 +1,7 @@
-.tabs:has(.sub-tabs-container) {
-  --container-gap: 3px;
-  --container-padding: 0 var(--size-1);
-  --bg-color: inherit;
+.set.tabs:has(.sub-tabs-container) {
+  --gap: 3px;
+  --overflow: visible;
+  padding: 0 var(--size-1);
 
   & .tab {
     --container-shape: var(--shape-corner-m-top);
@@ -14,19 +14,20 @@
 
   & .sub-tabs {
     position: absolute;
-    top: auto;
-    left: 0;
+
     display: none;
+
     flex-flow: column nowrap;
     align-items: stretch;
     justify-content: flex-start;
     min-width: fit-content;
     width: 100%;
     box-shadow: var(--elevation2);
-    z-index: 6;
+    border-radius: unset;
+    z-index: 7;
     
     & .tab {
-      flex: 1 1 0;
+      flex: 1 1 auto;
       
       flex-flow: row nowrap;
       align-items: center;
@@ -34,9 +35,8 @@
       gap: var(--size-2);
       padding: var(--size-7);
       border-bottom: 1px solid var(--color-outline-variant);
+      border-radius: unset;
       z-index: 7;
-      
-      --container-shape: unset;
 
       &::before {
         visibility: hidden;

@@ -1,18 +1,16 @@
-.tabs:not(.sub-tabs) {
+.set.tabs:not(.sub-tabs) {
   position: relative;
   align-self: center;
-
-  --container-display: flex;
-  --contianer-flex-flow: row nowrap;
-  --container-justify-content: space-around;
-  --container-align-items: stretch;
-  --container-gap: 0;
-  --container-width: 100%;
-  --container-height: initial;
   
-  --container-padding: 0;
-
-  --container-shape: initial;
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: row nowrap;
+  --align-items: stretch;
+  --align-content: stretch;
+  --justify-content: flex-start;
+  --width: 100%;
+  --gap: 0;
+  --overflow: hidden;
 
   & .divider {
     color: var(--color-surface-variant);

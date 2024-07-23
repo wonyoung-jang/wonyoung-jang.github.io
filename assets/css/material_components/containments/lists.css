@@ -1,3 +1,19 @@
+.set.lists {
+  --flex: 1 1 auto;
+  --display: flex;
+  --flex-flow: column nowrap;
+  --align-items: flex-start;
+  --align-content: stretch;
+  --justify-content: flex-start;
+  --width: 100%;
+  --gap: 0;
+  --overflow: hidden;
+
+  & .divider {
+    color: var(--color-outline);
+  }
+}
+
 .list-item {  
   --container-display: flex;
   --container-flex-flow: row nowrap;
