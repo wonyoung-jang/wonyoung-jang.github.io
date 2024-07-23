@@ -1,4 +1,4 @@
-.radio-button {
+.radio {
   --container-display: flex;
   --container-align-items: center;
   --container-gap: var(--size-2);

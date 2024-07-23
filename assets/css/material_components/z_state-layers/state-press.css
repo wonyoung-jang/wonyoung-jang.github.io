@@ -9,7 +9,7 @@
     .menus,
     .dialog,
     .side-sheets,
-    .radio-button,
+    .radio,
     .checkbox,
     .text-field
   ):not(:disabled):active {

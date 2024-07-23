@@ -19,7 +19,7 @@
     padding: unset;
   }
 
-  & .radio-button {
+  & .radio {
     padding: unset;
     height: var(--size-6);
     width: var(--size-6);
@@ -87,7 +87,7 @@
     font-family: var(--typescale-label-small-font);  
   }
 
-  & .radio-button,
+  & .radio,
   & .switch,
   & .checkbox {
     display: flex;
@@ -158,7 +158,7 @@
     & .image,
     & .video,
     & .checkbox,
-    & .radio-button,
+    & .radio,
     & .switch,
     & .trailing-supporting-text {
       align-self: flex-start;

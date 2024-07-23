@@ -9,7 +9,7 @@
     .dialog,
     .side-sheets,
     .menus,
-    .radio-button,
+    .radio,
     .checkbox
   ):not(:disabled):hover {
   border: var(--container-outline-hover);

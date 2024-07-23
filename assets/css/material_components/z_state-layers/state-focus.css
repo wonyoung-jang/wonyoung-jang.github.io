@@ -6,7 +6,7 @@
     .tabs,
     .dialog,
     .side-sheets,
-    .radio-button,
+    .radio,
     .checkbox
   ):not(:disabled):focus {
   border: var(--container-outline-focus);
