@@ -12,8 +12,8 @@
   user-select: none;
   cursor: pointer;
   
-  font-size: var(--typescale-label-large-size);
-  line-height: var(--typescale-label-large-line-height);
-  font-weight: var(--typescale-label-large-weight);
   font-family: var(--typescale-label-large-font);
+  font-size: var(--typescale-label-large-size);
+  font-weight: var(--typescale-label-large-weight);
+  line-height: var(--typescale-label-large-line-height);
 }

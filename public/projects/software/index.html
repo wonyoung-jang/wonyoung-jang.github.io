@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.d9a86540054c00f1540b5ef87a71022db09ca9617ee72d84d87d312e9ff4028f.css" integrity="sha256-2ahlQAVMAPFUC174enECLbCcqWF&#43;5y2E2H0xLp/0Ao8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.99bbe96ef05311532d81c245333784354760e816028b6be4cb2b322531e634c8.css" integrity="sha256-mbvpbvBTEVMtgcJFMzeENUdg6BYCi2vkyysyJTHmNMg=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.3378ff09a3231aa895c78fddd7ef14aa8d0386adec8be94105a550c604baa77e.css" integrity="sha256-M3j/CaMjGqiVx4/d1&#43;8Uqo0Dhq3si&#43;lBBaVQxgS6p34=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3custom.min.7f26f6459d505e2575e55a823983ccfded598290338a7e4a6023a6c11b8e013a.css" integrity="sha256-fyb2RZ1QXiV15VqCOYPM/e1ZgpAzin5KYCOmwRuOATo=" rel="preload stylesheet" as="style">
 
@@ -35,15 +35,15 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/projects/software/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/projects/software/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/projects/software/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/projects/software/">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/projects/software/">
+<meta property="og:url" content="http://192.168.40.181:1313/projects/software/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Software">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -89,7 +89,7 @@
     <section class="start">
         <a  class="component button common-button"
     id="site-headline"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -922,7 +922,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Realtime multiplayer drawing" 
-                    href="https://wonyoungjang.org/realtime-multiplayer-drawing/">
+                    href="http://192.168.40.181:1313/realtime-multiplayer-drawing/">
                     
                     
                     
@@ -943,7 +943,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Wonyoungjang.org" 
-                    href="https://wonyoungjang.org/wonyoungjang.org/">
+                    href="http://192.168.40.181:1313/wonyoungjang.org/">
                     
                     
                     
@@ -964,7 +964,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Q-learning tournament scheduler" 
-                    href="https://wonyoungjang.org/q-learning-tournament-scheduler/">
+                    href="http://192.168.40.181:1313/q-learning-tournament-scheduler/">
                     
                     
                     
@@ -985,7 +985,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Save top level reddit comments" 
-                    href="https://wonyoungjang.org/save-top-level-reddit-comments/">
+                    href="http://192.168.40.181:1313/save-top-level-reddit-comments/">
                     
                     
                     
@@ -1006,7 +1006,7 @@
                     
                 <a  class="component card elevated"
                     aria-label="post link to Logseq markdown tokenizer" 
-                    href="https://wonyoungjang.org/logseq-markdown-tokenizer/">
+                    href="http://192.168.40.181:1313/logseq-markdown-tokenizer/">
                     
                     
                     
@@ -1200,7 +1200,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -1223,6 +1223,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
