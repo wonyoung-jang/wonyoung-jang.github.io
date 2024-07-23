@@ -31,4 +31,8 @@
     --text-color: var(--color-on-surface);
     --icon-color: var(--color-on-surface-variant);
   }
+  
+  & .divider {
+    color: var(--color-surface-variant);
+  }
 }

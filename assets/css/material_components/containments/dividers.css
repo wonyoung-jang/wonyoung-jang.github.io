@@ -1,4 +1,3 @@
-hr.divider,
 .divider {
   --container-display: flex;
   --contaner-flex-flow: row nowrap;
@@ -52,7 +51,6 @@ hr.divider,
 }
 
 @media (forced-colors: active) {
-  hr.divider::before,
   .divider::before {
     background: CanvasText;
   }

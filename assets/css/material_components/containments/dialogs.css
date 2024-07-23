@@ -53,6 +53,10 @@
       color: var(--color-on-surface);
       padding: var(--size-6);
     }
+
+    & .divider {
+      color: var(--color-surface-variant);
+    }
   }
 
   & .headline {
@@ -99,5 +103,9 @@
     & .icon {
       margin-bottom: var(--size-4);
     }
+  }
+
+  & .divider {
+    color: var(--color-outline);
   }
 }

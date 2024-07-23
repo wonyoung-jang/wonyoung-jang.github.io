@@ -36,6 +36,10 @@
       }
     }
   }
+
+  & .divider {
+    color: var(--color-outline);
+  }
 }
 
 .list-item {  

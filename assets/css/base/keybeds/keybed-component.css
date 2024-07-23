@@ -27,6 +27,9 @@
 
   --container-outline-press: initial;
   --container-elevation-press: initial;
+
+  --container-outline-disabled: initial;
+  --container-elevation-disabled: initial;
 }
 
 .component {

@@ -82,4 +82,8 @@
     padding: var(--size-4) var(--size-6) 0px var(--size-6);
     gap: var(--size-2);
   }
+
+  & .divider {
+    color: var(--color-outline);
+  }
 }

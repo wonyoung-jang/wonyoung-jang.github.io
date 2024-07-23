@@ -40,6 +40,10 @@
     padding: 18px var(--size-4);
   }
 
+  & .divider {
+    color: var(--color-outline);
+  }
+
   & .navigation-item {
     flex: 1 0 0;
     align-self: stretch;

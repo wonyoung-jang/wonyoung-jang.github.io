@@ -51,6 +51,7 @@
   --color-surface-dim:                  var(--palette-neutral-87);
   --color-surface:                      var(--palette-neutral-98);
   --color-surface-bright:               var(--palette-neutral-98);
+  --color-surface-variant:              var(--palette-neutral-variant-90);
   
   /* On surface roles */
   --color-on-surface:                   var(--palette-neutral-10);
@@ -251,6 +252,7 @@
   --color-surface-dim:                  var(--palette-neutral-6);
   --color-surface:                      var(--palette-neutral-6);
   --color-surface-bright:               var(--palette-neutral-24);
+  --color-surface-variant:              var(--palette-neutral-variant-30);
   
   /* On surface roles */
   --color-on-surface:                   var(--palette-neutral-90);
