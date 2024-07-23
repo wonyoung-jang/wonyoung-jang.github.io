@@ -14,16 +14,16 @@
 
   --bg-color: inherit;
   --icon-color: var(--color-on-surface);
-  
+
   &:has(.actions) {
     --state-color: none;
     --container-elevation-hover: intial;
     --container-elevation-focus: intial;
     --container-elevation-press: intial;
-  }    
+  }
 
   & * {
-    color: var(--icon-color,);
+    color: var(--icon-color);
   }
 
   & img {
@@ -43,7 +43,7 @@
     --bg-color: var(--color-surface-container-highest);
     --icon-color: var(--color-on-surface);
   }
-  
+
   &.outlined {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
@@ -84,7 +84,7 @@
 
         display: flex;
         width: var(--size-10);
-        height: var(--size-10);    
+        height: var(--size-10);
         flex-flow: column;
         justify-content: center;
         align-items: center;
@@ -93,7 +93,7 @@
         color: var(--color-surface);
         background-color: var(--color-primary);
       }
-  
+
       & .text {
         flex: 1 0 0;
         display: flex;
@@ -101,15 +101,15 @@
         align-items: flex-start;
         gap: var(--size-1);
         color: var(--color-on-surface);
-  
+
         & .header {
           align-self: stretch;
           font-size: var(--typescale-title-medium-size);
           line-height: var(--typescale-title-medium-line-height);
           font-weight: var(--typescale-title-medium-weight);
-          font-family: var(--typescale-title-medium-font);      
+          font-family: var(--typescale-title-medium-font);
         }
-  
+
         & .subhead {
           align-self: stretch;
           font-size: var(--typescale-body-medium-size);
@@ -146,7 +146,7 @@
         flex-flow: column nowrap;
         align-items: flex-start;
         gap: var(--size-4);
-        
+
         & .title {
           color: var(--color-on-surface);
           font-size: var(--typescale-body-large-size);
@@ -207,7 +207,7 @@
 
         display: flex;
         width: var(--size-10);
-        height: var(--size-10);    
+        height: var(--size-10);
         flex-flow: column;
         justify-content: center;
         align-items: center;
@@ -216,7 +216,7 @@
         color: var(--color-surface);
         background-color: var(--color-primary);
       }
-  
+
       & .text {
         flex: 1 0 0;
         display: flex;
@@ -225,14 +225,14 @@
         width: max-content;
         gap: var(--size-1);
         color: var(--color-on-surface);
-  
+
         & .header {
           font-size: var(--typescale-title-medium-size);
           line-height: var(--typescale-title-medium-line-height);
           font-weight: var(--typescale-title-medium-weight);
-          font-family: var(--typescale-title-medium-font);      
+          font-family: var(--typescale-title-medium-font);
         }
-  
+
         & .subhead {
           font-size: var(--typescale-body-medium-size);
           line-height: var(--typescale-body-medium-line-height);
@@ -266,14 +266,14 @@
     margin: var(--size-5) var(--size-1) var(--size-5) var(--size-5);
     max-width: var(--size-16);
     max-height: var(--size-16);
-    
+
     & img {
       aspect-ratio: 1 / 1;
       min-width: var(--size-16);
       min-height: var(--size-16);
     }
   }
-  
+
   & .card-content {
     flex: 1 1 0;
     display: flex;
@@ -281,23 +281,23 @@
     padding: var(--size-5);
 
     & .card-meta,
-    & .card-title, 
-    & .card-description { 
+    & .card-title,
+    & .card-description {
       display: flex;
       flex-flow: row nowrap;
     }
 
     & .card-meta {
       color: var(--color-on-surface-variant);
-      
-      & * { 
+
+      & * {
         font-family: var(--typescale-label-large);
         font-weight: var(--typescale-label-large-weight);
         font-size: var(--typescale-label-large-size);
         line-height: var(--typescale-label-large-line-height);
       }
     }
-  
+
     & .card-title {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -312,7 +312,7 @@
       font-size: var(--typescale-headline-small-size);
       line-height: var(--typescale-headline-small-line-height);
     }
-    
+
     & .card-description {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -333,13 +333,13 @@
   & .card {
     --container-flex-flow: column nowrap;
     --container-align-items: stretch;
-    
+
     & .card-image {
       margin: unset;
       border-radius: inherit;
       max-width: 100%;
       max-height: var(--size-64);
-      
+
       & img {
         aspect-ratio: 16 / 9;
         width: 100%;

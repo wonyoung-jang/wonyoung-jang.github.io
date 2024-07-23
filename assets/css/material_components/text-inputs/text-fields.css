@@ -70,7 +70,7 @@
         color: var(--color-primary);
       }
 
-      &:has(label) { 
+      &:has(label) {
         & input {
           flex: 1 1 auto;
           padding-block-start: var(--size-2);
@@ -80,14 +80,14 @@
             color: transparent;
           }
         }
-          
+
         & label {
           top: 0px;
           color: var(--color-primary);
           font-size: var(--typescale-body-small-size);
           line-height: var(--typescale-body-small-line-height);
           font-weight: var(--typescale-body-small-weight);
-          font-family: var(--typescale-body-small-font);    
+          font-family: var(--typescale-body-small-font);
         }
       }
 
@@ -103,22 +103,23 @@
   }
 
   &.outlined {
-    --container-outline: 1px solid var(--color-outline);
     --container-shape: var(--shape-corner-xs);
     --bg-color: inherit;
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);
-
+    
+    --container-outline: 1px solid var(--color-outline);
     --container-outline-hover: 1px solid var(--color-on-surface);
     --container-outline-focus: 2px solid var(--color-primary);
-    --container-outline-press: 1px solid var(--color-primary);
+    --disabled-outline: color-mix(in lch, 12% var(--color-on-surface), transparent);
+    --container-outline-disabled: 1px solid var(--disabled-outline);
 
     &:focus,
     &:focus-within,
     &:focus-visible {
       --container-outline: var(--container-outline-focus);
 
-      &:has(label) { 
+      &:has(label) {
         & input {
           flex: 1 1 auto;
           padding-block-start: var(--size-2);
@@ -176,7 +177,7 @@
     &:focus-within,
     &:focus-visible {
       & .suffix-content {
-        display: inline
+        display: inline;
       }
     }
   }
@@ -194,11 +195,11 @@
     font-size: var(--typescale-body-small-size);
     line-height: var(--typescale-body-small-line-height);
     font-weight: var(--typescale-body-small-weight);
-    font-family: var(--typescale-body-small-font);      
+    font-family: var(--typescale-body-small-font);
 
     color: var(--color-on-surface-variant);
   }
-  
+
   /* Multi line input */
   &:has(textarea) {
     padding: var(--size-4);
@@ -220,21 +221,20 @@
       align-items: flex-start;
       top: var(--size-4);
     }
-    
+
     &:focus,
     &:focus-within,
     &:focus-visible {
       & textarea {
         padding-block-start: var(--size-2);
         color: var(--color-on-surface);
-      
+
         &::placeholder {
           color: var(--color-on-surface);
         }
       }
     }
   }
-
 
   &:has(.trailing-icon) {
     padding-right: var(--size-3);
