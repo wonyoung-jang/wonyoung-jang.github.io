@@ -74,6 +74,10 @@
       font-family: var(--typescale-body-medium-font);
     }
   }
+  
+  & .trailing {
+    margin-left: auto;
+  }
 
   & .trailing-supporting-text {
     color: var(--color-on-surface-variant);
@@ -82,7 +86,18 @@
     font-weight: var(--typescale-label-small-weight);
     font-family: var(--typescale-label-small-font);  
   }
-  
+
+  & .radio-button,
+  & .switch,
+  & .checkbox {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+  }
+
   &.one {
     min-height: var(--size-14);
 
@@ -139,8 +154,7 @@
       align-self: flex-start;
     }
 
-    & i.icon,
-& .icon,
+    & .icon,
     & .image,
     & .video,
     & .checkbox,
@@ -148,6 +162,8 @@
     & .switch,
     & .trailing-supporting-text {
       align-self: flex-start;
+      margin-top: var(--size-3);
+      margin-block-start: var(--size-3);
     }
   }
 }

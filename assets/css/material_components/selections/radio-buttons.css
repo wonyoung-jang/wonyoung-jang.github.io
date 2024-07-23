@@ -3,7 +3,7 @@
   --container-align-items: center;
   --container-gap: var(--size-2);
   --container-height: var(--size-10);
-  --container-width: auto;
+  --container-width: initial;
 
   --text-color: var(--color-on-surface-variant);
   --icon-color: var(--color-on-surface-variant);
@@ -17,9 +17,13 @@
     --icon-color: var(--color-primary);
   }
 
+  &:has(span:empty) {
+    --container-gap: 0;
+  } 
+
   & > input {
-    inline-size: var(--size-5);
-    block-size: var(--size-5);
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0;
 
     &:checked + span::before {

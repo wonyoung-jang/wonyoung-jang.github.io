@@ -1,14 +1,20 @@
 .switch {
-  display: flex;
-  align-items: center;
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-align-items: center;
+  --container-justify-content: flex-start;
   direction: ltr;
   --container-height: var(--size-8);
   --container-width: var(--size-13);
   cursor: pointer;
 
+  &:has(span:empty) {
+    --container-gap: 0;
+  }
+
   & > input {
-    width: var(--size-13);
-    height: var(--size-8);
+    width: 100%;
+    height: 100%;
     opacity: 0;
     
     &:hover + span::after {

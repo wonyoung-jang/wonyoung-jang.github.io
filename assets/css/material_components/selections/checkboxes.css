@@ -12,6 +12,14 @@
 
   white-space: nowrap;
   cursor: pointer;
+  
+  &:has(input:checked) {
+    --icon-color: var(--color-primary);
+  }
+  
+  &:has(span:empty) {
+    --container-gap: 0;
+  }
 
   &.error-check {
     & > input:checked + span::before {
@@ -28,13 +36,9 @@
     }
   }
 
-  &:has(input:checked) {
-    --icon-color: var(--color-primary);
-  }
-
   & > input {
-    inline-size: var(--size-5);
-    block-size: var(--size-5);
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0;
 
     &:checked + span::before {
