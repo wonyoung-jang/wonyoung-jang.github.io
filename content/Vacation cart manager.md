@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/vacation-cart-manager
-keywords: 
-type: 
 date: 2023-11-21
+description: Developed a Spring Java backend for a travel agency's web app, interfacing
+  with an existing Angular front end, updating legacy systems
+githubrepo: https://github.com/wonyoung-jang/vacation-cart-manager
+lastMod: 2024-07-07
 projects:
 - university
-description: Developed a Spring Java backend for a travel agency's web app, interfacing with an existing Angular front end, updating legacy systems
 title: Vacation cart manager
-lastMod: 2024-07-07
 ---
 ![🖼 vacation-cart-manager.webp](/assets/vacation-cart-manager.webp)
 

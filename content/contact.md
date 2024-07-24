@@ -1,18 +1,9 @@
 ---
-aliases: 
-draft: false
-slug: 
-layout: 
-githubrepo: 
-keywords: 
-type: 
 date:
 - 2024-04-01 Monday
 description: Contact page
-title: Contact
-tags:
-categories:
 lastMod: 2024-07-07
+title: Contact
 ---
 ## Contact me directly
 

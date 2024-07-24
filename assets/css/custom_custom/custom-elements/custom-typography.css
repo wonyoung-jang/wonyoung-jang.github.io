@@ -24,7 +24,6 @@ h6[id] {
 }
 
 /* Highlights */
-mark.highlight-text,
 .highlight-text {
   background-color: var(--color-complementary);
   color: var(--color-on-complementary);

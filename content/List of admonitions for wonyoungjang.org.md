@@ -1,20 +1,11 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: 
-keywords: 
-type: 
 date:
 - 2024-04-24 Wednesday
+description: This page is a list of admonitions used on wonyoungjang.org
+lastMod: 2024-07-07
 resources:
 - references
-description: This page is a list of admonitions used on wonyoungjang.org
 title: List of admonitions for wonyoungjang.org
-lastMod: 2024-07-07
 ---
 ![list-of-admonitions.png](/assets/list-of-admonitions_1719437030704_0.png)
 

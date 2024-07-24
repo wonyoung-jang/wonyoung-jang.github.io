@@ -1,19 +1,11 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
-keywords: 
-type: 
 date: 2024-03-05
+description: WonyoungJang.org (this site)
+githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
+lastMod: 2024-07-07
 projects:
 - software
-description: WonyoungJang.org (this site)
 title: Wonyoungjang.org
-lastMod: 2024-07-07
 ---
 ![wonyoungjang-org.webp](/assets/wonyoungjang-org.webp)
 

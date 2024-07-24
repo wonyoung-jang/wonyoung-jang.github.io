@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/package-delivery-network
-keywords: 
-type: 
 date: 2024-01-08
+description: Designing a hash table-based package delivery tracking system in Python,
+  with package insertion, look-up, delivery routing, and a user interface
+githubrepo: https://github.com/wonyoung-jang/package-delivery-network
+lastMod: 2024-07-07
 projects:
 - university
-description: Designing a hash table-based package delivery tracking system in Python, with package insertion, look-up, delivery routing, and a user interface
 title: Package delivery route optimization
-lastMod: 2024-07-07
 ---
 ![🖼 package-delivery-network.webp](/assets/package-delivery-network.webp)
 

@@ -1,20 +1,11 @@
 ---
-aliases: 
-draft: false
-slug: 
-layout: 
-githubrepo: 
-keywords: 
-type: 
 date:
 - 2024-07-05 Friday
+description: A Figma template of pit signs to print for a large team event
+lastMod: 2024-07-07
 projects:
 - design
-description: A Figma template of pit signs to print for a large team event
 title: Pit signs for robotics competition
-tags:
-categories:
-lastMod: 2024-07-07
 ---
 ![pit-sign-figma-design-template.webp](/assets/pit-sign-figma-design-template_1720201629920_0.webp)
 

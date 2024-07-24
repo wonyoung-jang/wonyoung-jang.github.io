@@ -1,20 +1,13 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: selection
-githubrepo: 
-keywords: 
-type: showcase/components
 date:
 - 2024-06-10 Monday
+description: Selection components available for wonyoungjang.org
+lastMod: 2024-07-17
+layout: selection
 resources:
 - components
-description: Selection components available for wonyoungjang.org
 title: Selections
-lastMod: 2024-07-17
+type: showcase/components
 ---
 ![selections.webp](/assets/selections_1721246316916_0.webp)
 

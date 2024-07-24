@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/cs-career-chatbot
-keywords: 
-type: 
 date: 2024-01-22
+description: Built a Pandorabot chatbot to help students find computing jobs matching
+  their skills, assisting a university career advisor
+githubrepo: https://github.com/wonyoung-jang/cs-career-chatbot
+lastMod: 2024-07-07
 projects:
 - university
-description: Built a Pandorabot chatbot to help students find computing jobs matching their skills, assisting a university career advisor
 title: CS career chatbot
-lastMod: 2024-07-07
 ---
 ![pandorabots.webp](/assets/pandorabots.webp)
 

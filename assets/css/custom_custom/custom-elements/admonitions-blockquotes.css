@@ -1,4 +1,3 @@
-blockquote.admonition,
 .admonition {
   position: relative;
   display: block;
@@ -9,27 +8,26 @@ blockquote.admonition,
   outline: 1px solid var(--color-outline-variant);
   border-radius: var(--shape-corner-m);
   box-shadow: var(--elevation1);
-  
+
   min-height: var(--size-24);
 
-  background-color: var(--color-surface-container-low,);
-  
-  color: var(--text-color,);
+  background-color: var(--color-surface-container-low);
+
+  color: var(--text-color);
 
   --icon-size: calc(var(--spacing-panes) * 5);
 
   &[class*="-container"] {
     outline: unset;
     padding: var(--size-8) var(--size-4) var(--size-8) var(--icon-size);
-    background-color: var(--bg-color,);
+    background-color: var(--bg-color);
   }
-  
+
   & a {
     word-break: break-word;
   }
 
-  & i.icon,
-& .icon {
+  & .icon {
     position: absolute;
     display: flex;
     align-items: center;
@@ -40,18 +38,18 @@ blockquote.admonition,
     width: var(--icon-size);
     height: 100%;
     font-size: var(--size-12);
-    color: var(--icon-color,);
+    color: var(--icon-color);
   }
 
   &.centered {
     box-shadow: unset;
     padding: unset;
     background-color: unset;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-  }  
+  }
 }

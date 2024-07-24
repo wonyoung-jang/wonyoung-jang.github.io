@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/dvd-rental-revenue
-keywords: 
-type: 
 date: 2023-07-12
+description: Created a PostgreSQL lab report with SQL, extracting detailed data and
+  summaries from the DVD Rental Database for a business query
+githubrepo: https://github.com/wonyoung-jang/dvd-rental-revenue
+lastMod: 2024-07-07
 projects:
 - university
-description: Created a PostgreSQL lab report with SQL, extracting detailed data and summaries from the DVD Rental Database for a business query
 title: DVD rental database
-lastMod: 2024-07-07
 ---
 ![🖼 dvd-rental-database.webp](/assets/dvd-rental-database.webp)
 

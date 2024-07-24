@@ -4,7 +4,7 @@
   flex-flow: column nowrap;
   align-self: stretch;
   align-items: stretch;
-  
+
   & #searchResults {
     max-width: unset;
 

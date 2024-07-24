@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/hotel-reservation-manager
-keywords: 
-type: 
 date: 2023-11-27
+description: Upgraded a Spring hotel booking app with multilingual, timezone, and
+  currency features. Deployed via Docker
+githubrepo: https://github.com/wonyoung-jang/hotel-reservation-manager
+lastMod: 2024-07-07
 projects:
 - university
-description: Upgraded a Spring hotel booking app with multilingual, timezone, and currency features. Deployed via Docker
 title: Hotel reservation manager
-lastMod: 2024-07-07
 ---
 ![🖼 hotel-reservation-manager.webp](/assets/hotel-reservation-manager.webp)
 

@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/student-record-system
-keywords: 
-type: 
 date: 2023-07-01
+description: Developing a system in C++ to manage and maintain a student roster, involving
+  data manipulation and object-oriented programming
+githubrepo: https://github.com/wonyoung-jang/student-record-system
+lastMod: 2024-07-07
 projects:
 - university
-description: Developing a system in C++ to manage and maintain a student roster, involving data manipulation and object-oriented programming
 title: Student record system
-lastMod: 2024-07-07
 ---
 ![student-record-system.webp](/assets/student-record-system.webp)
 

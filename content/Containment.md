@@ -1,20 +1,13 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: containment
-githubrepo: 
-keywords: 
-type: showcase/components
 date:
 - 2024-06-10 Monday
+description: Containment components available for wonyoungjang.org
+lastMod: 2024-07-17
+layout: containment
 resources:
 - components
-description: Containment components available for wonyoungjang.org
 title: Containment
-lastMod: 2024-07-17
+type: showcase/components
 ---
 ![containment.webp](/assets/containment_1721246195262_0.webp)
 

@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/retail-inventory-manager
-keywords: 
-type: 
 date: 2023-11-18
+description: Customized a Spring app with HTML and Java for inventory management,
+  showcasing software development skills for a client's needs
+githubrepo: https://github.com/wonyoung-jang/retail-inventory-manager
+lastMod: 2024-07-07
 projects:
 - university
-description: Customized a Spring app with HTML and Java for inventory management, showcasing software development skills for a client's needs
 title: Retail inventory manager
-lastMod: 2024-07-07
 ---
 ![🖼 retail-inventory.webp](/assets/retail-inventory.webp)
 

@@ -1,19 +1,12 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/logseq-tokenizer
-keywords: 
-type: 
 date: 2024-01-13
+description: Estimate the cost of tokenizing markdown files for OpenAI's text-embedding
+  models
+githubrepo: https://github.com/wonyoung-jang/logseq-tokenizer
+lastMod: 2024-07-07
 projects:
 - software
-description: Estimate the cost of tokenizing markdown files for OpenAI's text-embedding models
 title: Logseq markdown tokenizer
-lastMod: 2024-07-07
 ---
 ![logseq-tokenizer.webp](/assets/logseq-tokenizer.webp)
 

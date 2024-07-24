@@ -1,19 +1,11 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/top-reddit-comments
-keywords: 
-type: 
 date: 2024-01-28
+description: Extract the parent comments of a reddit post
+githubrepo: https://github.com/wonyoung-jang/top-reddit-comments
+lastMod: 2024-07-07
 projects:
 - software
-description: Extract the parent comments of a reddit post
 title: Save top level reddit comments
-lastMod: 2024-07-07
 ---
 ![reddit-top-comments.webp](/assets/reddit-top-comments.webp)
 

@@ -1,20 +1,13 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: motion
-githubrepo: 
-keywords: 
-type: showcase/tokens
 date:
 - 2024-06-10 Monday
+description: Motion available for wonyoungjang.org
+lastMod: 2024-07-08
+layout: motion
 resources:
 - tokens
-description: Motion available for wonyoungjang.org
 title: Motion
-lastMod: 2024-07-08
+type: showcase/tokens
 ---
 ![tokens-motion.png](/assets/tokens-motion_1719437088987_0.png)
 

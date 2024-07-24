@@ -1,20 +1,13 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: navigation
-githubrepo: 
-keywords: 
-type: showcase/components
 date:
 - 2024-06-10 Monday
+description: Navigation components available for wonyoungjang.org
+lastMod: 2024-07-17
+layout: navigation
 resources:
 - components
-description: Navigation components available for wonyoungjang.org
 title: Navigation
-lastMod: 2024-07-17
+type: showcase/components
 ---
 ![navigation.webp](/assets/navigation_1721246328721_0.webp)
 

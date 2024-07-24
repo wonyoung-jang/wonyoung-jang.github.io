@@ -131,7 +131,7 @@
         </guid>
 
         <description>
-          Navigation&#xD;link&#xD;h2&#xD;ALT+SHIFT+h → Go to home page&#xA;ALT+SHIFT+g → Go back to top&#xA;ALT+SHIFT+s → Go to search page&#xA;ALT+SHIFT+r → Go to random page&#xA;ALT+SHIFT+p → Go to previous page&#xA;ALT+SHIFT+n → Go to next page&#xA;Appearance&#xD;link&#xD;h2&#xD;ALT+SHIFT+t → Toggle light/dark themes
+          Windows&#xD;link&#xD;h2&#xD;Firefox&#xD;link&#xD;h3&#xD;Appearance&#xD;link&#xD;h4&#xD;ALT + SHIFT + t → Toggle light/dark themes Navigation&#xD;link&#xD;h4&#xD;ALT + SHIFT + g → Go back to top&#xA;ALT + SHIFT + h → Go to home page&#xA;ALT + SHIFT + r → Go to random page&#xA;ALT + SHIFT + p → Go to previous page&#xA;ALT + SHIFT + n → Go to next page
         </description>
       </item>
   </channel>

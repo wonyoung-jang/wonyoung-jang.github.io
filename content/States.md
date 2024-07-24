@@ -1,20 +1,13 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: states
-githubrepo: 
-keywords: 
-type: showcase/tokens
 date:
 - 2024-06-10 Monday
+description: States available for wonyounjang.org
+lastMod: 2024-07-18
+layout: states
 resources:
 - tokens
-description: States available for wonyounjang.org
 title: States
-lastMod: 2024-07-18
+type: showcase/tokens
 ---
 ![states.webp](/assets/states_1721309641312_0.webp)
 

@@ -1,19 +1,11 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
-keywords: 
-type: 
 date: 2024-02-25
+description: A FLLC event scheduler using Q-Learning
+githubrepo: https://github.com/wonyoung-jang/fllc-qlearning-scheduler
+lastMod: 2024-07-07
 projects:
 - software
-description: A FLLC event scheduler using Q-Learning
 title: Q-learning tournament scheduler
-lastMod: 2024-07-07
 ---
 ![fllc-qlearning.webp](/assets/fllc-qlearning.webp)
 

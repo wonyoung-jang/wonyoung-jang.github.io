@@ -1,19 +1,11 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: https://github.com/wonyoung-jang/realtime-multiplayer-drawing
-keywords: 
-type: 
 date: 2024-03-08
+description: Draw in realtime on a blank canvas with others on the same server
+githubrepo: https://github.com/wonyoung-jang/realtime-multiplayer-drawing
+lastMod: 2024-07-07
 projects:
 - software
-description: Draw in realtime on a blank canvas with others on the same server
 title: Realtime multiplayer drawing
-lastMod: 2024-07-07
 ---
 ![realtime-drawing.webp](/assets/realtime-drawing.webp)
 

@@ -36,15 +36,15 @@
     right: 0.5rem;
     z-index: 100;
     padding: var(--size-2);
-    
+
     border-radius: var(--shape-corner-m);
-    
+
     background-color: var(--color-tertiary-container);
-    
+
     font-family: "IBM Plex Mono", monospace;
     font-weight: var(--typeface-weight-bold);
     color: var(--color-on-tertiary-container);
-    
+
     cursor: pointer;
   }
 

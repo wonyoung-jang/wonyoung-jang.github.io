@@ -1,20 +1,11 @@
 ---
-aliases: 
-draft: false
-slug: 
-layout: 
-githubrepo: 
-keywords: 
-type: 
 date:
 - 2024-06-24 Monday
+description: A work in progress page showcasing how elements are rendered from Logseq
+lastMod: 2024-07-19
 resources:
 - references
-description: A work in progress page showcasing how elements are rendered from Logseq
 title: All Logseq elements
-tags:
-categories:
-lastMod: 2024-07-19
 ---
 ![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
 

@@ -1,18 +1,9 @@
 ---
-aliases: 
-tags:
-categories:
-draft: false
-slug: 
-layout: 
-githubrepo: 
-keywords: 
-type: 
 date:
 - 2024-04-01 Monday
 description: About page
-title: About
 lastMod: 2024-07-07
+title: About
 ---
 ## About me
 Hello!
