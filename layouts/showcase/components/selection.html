@@ -365,16 +365,37 @@
     <div class="component-group-header">Sliders</div>
     <div class="component-group">
       <div class="sub-component-group-header">Continuous</div>
-      {{ partial "components/selections/sliders.html" (dict "trackingDot" true) }}
+      {{ partial "components/selections/sliders.html" (dict 
+        "trackingDot" true
+        ) 
+      }}
     
       <div class="sub-component-group-header">Centered</div>
-      {{ partial "components/selections/sliders.html" (dict "value" "50" "list" "markers" "datalist" "markers" "markers" (slice "0" "50" "100")) }}
+      {{ partial "components/selections/sliders.html" (dict 
+        "value" "50" 
+        "list" "markers" 
+        "datalist" "markers" 
+        "markers" (slice "0" "50" "100")
+        ) 
+      }}
     
       <div class="sub-component-group-header">Discrete</div>
-      {{ partial "components/selections/sliders.html" (dict "step" "25" "list" "markers-discrete" "datalist" "markers-discrete" "markers" (slice "0" "25" "50" "75" "100")) }}
+      {{ partial "components/selections/sliders.html" (dict 
+        "step" "25" 
+        "list" "markers-discrete" 
+        "datalist" "markers-discrete" 
+        "markers" (slice "0" "25" "50" "75" "100")
+        )
+      }}
     
       <div class="sub-component-group-header">Range</div>
-      {{ partial "components/selections/sliders.html" (dict "range" true "id" "range" "datalist" "markers-range" "markers" (slice "0" "100")) }}
+      {{ partial "components/selections/sliders.html" (dict 
+        "range" true 
+        "datalist"
+        "markers-r ange" 
+        "markers" (slice "0" "100")
+        ) 
+      }}
     </div>
     
     {{/*  Switches  */}}

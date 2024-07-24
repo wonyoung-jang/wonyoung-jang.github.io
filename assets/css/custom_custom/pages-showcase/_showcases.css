@@ -15,6 +15,12 @@
   }
 }
 
+.component-group#cards {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
 #components-showcase {
   & .pane {
     --padding: 0px;

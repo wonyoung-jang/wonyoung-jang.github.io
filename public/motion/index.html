@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.d240d0e9dfb57a4a29222ec422181d1174285b23cf6e9c15f4da9d15da737449.css" integrity="sha256-0kDQ6d&#43;1ekopIi7EIhgdEXQoWyPPbpwV9NqdFdpzdEk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.ac66bb81c9be0265ae80083b5c5a18d333bb699825b43f1c7e52ea3309cb7a0f.css" integrity="sha256-rGa7gcm&#43;AmWugAg7XFoY0zO7aZgltD8cflLqMwnLeg8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.40cadf23a3363d7fce9b16184b4e1dbba76033a5c2b2fe7b54b96fa1f17ca73d.css" integrity="sha256-QMrfI6M2PX/OmxYYS04du6dgM6XCsv57VLlvofF8pz0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.fe824e317e57f023ebdf1857b2c37ccf06d88a58035a2c6eba73e0f8406abd19.css" integrity="sha256-/oJOMX5X8CPr3xhXssN8zwbYilgDWixuunPg&#43;EBqvRk=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.d5ce095cae35d63009418b7aa6113d6959fb7024e7822d6f87486c1634e31d49.css" integrity="sha256-1c4JXK411jAJQYt6phE9aVn7cCTngi1vh0hsFjTjHUk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.00d3e3473d84c073e7cd48c82e5c7d24ce5fd4b1f8c1490dc399e0f14cd20be6.css" integrity="sha256-ANPjRz2EwHPnzUjILlx9JM5f1LH4wUkNw5ng8UzSC&#43;Y=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -1635,6 +1635,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
