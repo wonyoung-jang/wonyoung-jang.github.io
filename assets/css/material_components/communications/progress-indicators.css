@@ -21,9 +21,6 @@
   overflow: hidden;
 
   & progress[value] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     border: none;
     outline: none;
     border-radius: inherit;
