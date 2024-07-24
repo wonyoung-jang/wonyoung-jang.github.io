@@ -14,9 +14,6 @@
 
   --bg-color: var(--color-surface-container);
 
-  --text-color: initial;
-  --icon-color: initial;
-
   &:has(.fab) {
     --container-padding: var(--size-4);
   }

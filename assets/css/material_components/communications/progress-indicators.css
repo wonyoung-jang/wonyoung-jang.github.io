@@ -8,28 +8,37 @@
 
   --container-elevation: none;
   --container-shape: var(--shape-corner-full);
-  
+
   --bg-color: var(--color-secondary-container);
   background: var(--color-secondary-container);
-  
+
   --text-color: var(--color-primary);
   --icon-color: var(--color-primary);
 
   --arc-duration: calc(var(--motion-duration-extra-long4) * 1.33);
   --linear-duration: calc(var(--motion-duration-extra-long4) * 2);
-  
-  overflow: hidden;
 
-  & progress[value] {
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--color-secondary-container);
+  }
+
+  & progress {
     border-radius: inherit;
     background: none;
-    flex: 1 1 auto;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    min-width: 100%;
+    border: none;
+    width: 100%;
   }
-  
+
   &.circular {
     --container-height: var(--size-12);
     --container-width: var(--size-12);
@@ -38,84 +47,61 @@
     animation-duration: var(--arc-duration);
     animation-name: to-circular;
     background: none;
+
+    &::before {
+      background: none;
+    }
+
+    & progress::-webkit-progress-bar {
+      background: none;
+    }
   }
-  
+
   &.linear {
     --container-height: var(--size-1);
     --container-width: 100%;
     --container-outline: none;
+
+    & progress {
+      animation-timing-function: var(--motion-easing-linear);
+      animation-duration: var(--linear-duration);
+      animation-name: linear-scale, linear-translate, linear-scale-secondary, linear-translate-secondary;  
+    }
   }
   
-  /* Webkit */
-  &.linear {
-    & progress::-webkit-progress-bar {
-      background: var(--color-secondary-container);
-    }
-
-    & progress::-webkit-progress-value {
-      background: var(--color-primary);
-
-      
-      animation-timing-function: linear;
-      animation-duration: var(--linear-duration);
-      animation-name: linear-translate-webkit, linear-translate-secondary-webkit;  
-    }
-  }
-
-  &.circular {
-    & progress::-webkit-progress-bar,
-    & progress::-webkit-progress-value {
-      background: none;
-    }
-  }
-
   &.determinate {
     animation-iteration-count: 1;
-
-    & progress::-webkit-progress-value {
-      animation-iteration-count: 1;
-    }
+  }
+  
+  &.indeterminate,
+  &.indeterminate progress {
+    animation-iteration-count: infinite;
   }
 
-  &.indeterminate {
-    animation-iteration-count: infinite;
+  /* Webkit */
+  &.linear progress::-webkit-progress-bar {
+    background: var(--color-primary);
+    border-radius: var(--shape-corner-full);
+  }
 
-    & progress::-webkit-progress-value {
-      animation-iteration-count: infinite;
-    }
+  &.linear progress::-webkit-progress-value {
+    background: none;
+    border-radius: var(--shape-corner-full);
   }
 
   /* Firefox */
-  &.linear {  
-    & progress::-moz-progress-bar {
-      background: var(--color-primary);
-      border-radius: var(--shape-corner-full);
-      animation-timing-function: linear;
-      animation-duration: var(--linear-duration);
-      animation-name: linear-scale, linear-translate, linear-scale-secondary, linear-translate-secondary;
-    }
+  &.linear progress::-moz-progress-bar {
+    background: var(--color-primary);
+    border-radius: var(--shape-corner-full);
   }
 
-  &.circular {
-    & progress::-moz-progress-bar {
-      background: none;
-    }
+  &.circular progress::-moz-progress-bar {
+    background: none;
+    border-radius: var(--shape-corner-full);
   }
 
-  &.determinate {
-    animation-iteration-count: 1;
-
-    & progress::-moz-progress-bar {
-      animation-iteration-count: 1;
-    }
-  }
-
-  &.indeterminate {
+  &.indeterminate progress::-moz-progress-bar {
     animation-iteration-count: infinite;
-
-    & progress::-moz-progress-bar {
-      animation-iteration-count: infinite;
-    }
   }
 }
 
@@ -157,13 +143,13 @@
 
 @keyframes linear-translate {
   0% {
-    margin-left: 0%;
+    margin-left: -100%;
   }
   20% {
-    margin-left: 0%;
+    margin-left: -50%;
   }
   60% {
-    margin-left: 85%;
+    margin-left: 50%;
   }
   100% {
     margin-left: 200%;
@@ -172,10 +158,10 @@
 
 @keyframes linear-translate-secondary {
   0% {
-    margin-left: 0%;
+    margin-left: -100%;
   }
   25% {
-    margin-left: 35%;
+    margin-left: 50%;
   }
   50% {
     margin-left: 85%;

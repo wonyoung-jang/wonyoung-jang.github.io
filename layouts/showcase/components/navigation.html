@@ -15,24 +15,6 @@
       <div class="sub-component-group-header">No FAB</div>
       {{ partial "components/navigations/bottom-app-bars.html" (dict
         "icon_1"  "home"
-        )
-      }}
-
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1"  "home"
-        "icon_2"  "add"
-        )
-      }}
-
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1"  "home"
-        "icon_2"  "add"
-        "icon_3"  "settings"
-        )
-      }}
-
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1"  "home"
         "icon_2"  "add"
         "icon_3"  "settings"
         "icon_4"  "token"
@@ -40,27 +22,6 @@
       }}
       
       <div class="sub-component-group-header">With FAB</div>
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1"  "home"
-        "fab"     "add"
-        )
-      }}
-
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1"  "home"
-        "icon_2"  "add"
-        "fab"     "add"
-        )
-      }}
-
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
-        "icon_1"  "home"
-        "icon_2"  "add"
-        "icon_3"  "settings"        
-        "fab"     "add"
-        )
-      }}
-
       {{ partial "components/navigations/bottom-app-bars.html" (dict
         "icon_1"  "home"
         "icon_2"  "add"
@@ -72,27 +33,20 @@
     
       {{/*  Top app bars  */}}
       <div class="display-medium">Top app bars</div>
-      <div class="sub-component-group-header">Top app bar</div>
+      <div class="sub-component-group-header">Center-aligned</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "center" "center"
         "size" "small"
-        "headline" "Small + center"
+        "headline" "Title"
         "icon_1"  "home"
         "icon_2" "account_circle"
         )
       }}
 
+      <div class="sub-component-group-header">Small</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "size" "small"
-        "headline" "Small"
-        "icon_1"  "arrow_back"
-        "icon_2" "account_circle"
-        )
-      }}
-
-      {{ partial "components/navigations/top-app-bars.html" (dict
-        "size" "medium"
-        "headline" "Medium"
+        "headline" "Title"
         "icon_1"  "arrow_back"
         "icon_2" "attach_file"
         "icon_3" "today"
@@ -100,9 +54,21 @@
         )
       }}
 
+      <div class="sub-component-group-header">Medium</div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "medium"
+        "headline" "Title"
+        "icon_1"  "arrow_back"
+        "icon_2" "attach_file"
+        "icon_3" "today"
+        "icon_4" "more_vert"
+        )
+      }}
+
+      <div class="sub-component-group-header">Large</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "size" "large"
-        "headline" "Large"
+        "headline" "Title"
         "icon_1"  "arrow_back"
         "icon_2" "attach_file"
         "icon_3" "today"
@@ -117,35 +83,6 @@
     <div class="component-group-header">Navigations</div>
     <div class="component-group">
       <div class="display-medium">Navigation bars</div>
-      <div class="sub-component-group-header">Icon & label</div>
-      {{ partial "components/navigations/navigation-bars.html" (dict
-        "center" "center"
-        "size" "small"
-        "headline" "Small + center"
-        "icon_1" "home"
-        "icon_2" "folder"
-        "icon_3" "note"
-        "label_1" "Home"
-        "label_2" "Folder"
-        "label_3" "Note"
-        )
-      }}
-
-      {{ partial "components/navigations/navigation-bars.html" (dict
-        "center" "center"
-        "size" "small"
-        "headline" "Small + center"
-        "icon_1" "home"
-        "icon_2" "folder"
-        "icon_3" "note"
-        "icon_4" "token"
-        "label_1" "Home"
-        "label_2" "Folder"
-        "label_3" "Note"
-        "label_4" "Token"
-        )
-      }}
-
       {{ partial "components/navigations/navigation-bars.html" (dict
         "center" "center"
         "size" "small"
@@ -163,55 +100,6 @@
         )
       }}
 
-      <div class="sub-component-group-header">Icon only</div>
-      {{ partial "components/navigations/navigation-bars.html" (dict
-        "icon_only" true
-        "center" "center"
-        "size" "small"
-        "headline" "Small + center"
-        "icon_1" "home"
-        "icon_2" "folder"
-        "icon_3" "note"
-        "label_1" "Home"
-        "label_2" "Folder"
-        "label_3" "Note"
-        )
-      }}
-
-      {{ partial "components/navigations/navigation-bars.html" (dict
-        "icon_only" true
-        "center" "center"
-        "size" "small"
-        "headline" "Small + center"
-        "icon_1" "home"
-        "icon_2" "folder"
-        "icon_3" "note"
-        "icon_4" "token"
-        "label_1" "Home"
-        "label_2" "Folder"
-        "label_3" "Note"
-        "label_4" "Token"
-        )
-      }}
-
-      {{ partial "components/navigations/navigation-bars.html" (dict
-        "icon_only" true
-        "center" "center"
-        "size" "small"
-        "headline" "Small + center"
-        "icon_1" "home"
-        "icon_2" "folder"
-        "icon_3" "note"
-        "icon_4" "token"
-        "icon_5" "settings"
-        "label_1" "Home"
-        "label_2" "Folder"
-        "label_3" "Note"
-        "label_4" "Token"
-        "label_5" "Settings"
-        )
-      }}
-    
       {{/*  Navigation drawers  */}}
       <div class="display-medium">Navigation drawers</div>
       <div class="sub-component-group-header">Standard</div>

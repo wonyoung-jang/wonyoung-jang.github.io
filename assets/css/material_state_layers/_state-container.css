@@ -1,3 +1,4 @@
+/* container outline and container elevation */
 .component {
   position: relative;
   border: var(--container-outline, initial);
@@ -8,6 +9,7 @@
   }
 }
 
+/* state layer */
 .component:not(
   .badge,
   .bottom-app-bar,

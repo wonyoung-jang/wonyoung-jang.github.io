@@ -23,6 +23,36 @@
         ) 
       }}
 
+      <div class="sub-component-group-header">Filled</div>
+      {{ partial "components/containments/cards.html" (dict
+        "type" "filled"
+        "showcase" "Filled"
+        ) 
+      }}
+
+      {{ partial "components/containments/cards.html" (dict
+        "type" "filled"
+        "showcase" "Disabled"
+        "disabled" "disabled"
+        ) 
+      }}
+
+      <div class="sub-component-group-header">Outlined</div>
+      {{ partial "components/containments/cards.html" (dict
+        "type" "outlined"
+        "showcase" "Outlined"
+        ) 
+      }}
+
+      {{ partial "components/containments/cards.html" (dict
+        "type" "outlined"
+        "showcase" "Disabled"
+        "disabled" "disabled"
+        ) 
+      }}
+      
+      <div class="sub-component-group-header">Example cards</div>
+      
       <div class="component card elevated" horizontal>
         <div class="content">
           <div class="monogram">W</div>
@@ -73,20 +103,6 @@
           </div>
         </div>
       </div>
-
-      <div class="sub-component-group-header">Filled</div>
-      {{ partial "components/containments/cards.html" (dict
-        "type" "filled"
-        "showcase" "Filled"
-        ) 
-      }}
-
-      {{ partial "components/containments/cards.html" (dict
-        "type" "filled"
-        "showcase" "Disabled"
-        "disabled" "disabled"
-        ) 
-      }}
 
       <div class="component card filled" horizontal>
         <div class="content">
@@ -139,20 +155,6 @@
         </div>
       </div>
 
-      <div class="sub-component-group-header">Outlined</div>
-      {{ partial "components/containments/cards.html" (dict
-        "type" "outlined"
-        "showcase" "Outlined"
-        ) 
-      }}
-
-      {{ partial "components/containments/cards.html" (dict
-        "type" "outlined"
-        "showcase" "Disabled"
-        "disabled" "disabled"
-        ) 
-      }}
-      
       <div class="component card outlined" horizontal>
         <div class="content">
           <div class="monogram">W</div>
@@ -211,7 +213,7 @@
       {{/*  Hero */}}
       <div class="sub-component-group-header">Hero</div>
       {{ partial "components/containments/carousels.html" (dict
-        "type" "hero"
+        "layout" "hero"
         "images" (slice
           (dict "icon" "image")
           (dict 
@@ -224,7 +226,7 @@
       {{/*  Center-aligned hero */}}
       <div class="sub-component-group-header">Center-aligned hero</div>
       {{ partial "components/containments/carousels.html" (dict
-        "type" "center-aligned-hero"
+        "layout" "center-aligned-hero"
         "images" (slice
           (dict 
             "icon" "image"
@@ -240,7 +242,7 @@
       {{/*  Multi-browse */}}
       <div class="sub-component-group-header">Multi-browse</div>
       {{ partial "components/containments/carousels.html" (dict
-        "type" "multi-browse"
+        "layout" "multi-browse"
         "images" (slice
           (dict "icon" "image")
           (dict 
@@ -256,7 +258,7 @@
       {{/*  Uncontained */}}
       <div class="sub-component-group-header">Uncontained</div>
       {{ partial "components/containments/carousels.html" (dict
-        "type" "uncontained"
+        "layout" "uncontained"
         "images" (slice
           (dict "icon" "image")
           (dict "icon" "image")
@@ -271,7 +273,7 @@
       {{/*  Full-screen  */}}
       <div class="sub-component-group-header">Full-screen</div>
       {{ partial "components/containments/carousels.html" (dict
-        "type" "full"
+        "layout" "full"
         "images" (slice
           (dict "icon" "image")
           (dict "icon" "image")

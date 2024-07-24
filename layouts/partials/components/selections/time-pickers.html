@@ -1,4 +1,4 @@
-<div class="component time-picker">
+<div class="component time-picker {{ .type }}">
   <div class="time-picker-headline">{{ .headline }}</div>
   {{ if eq .type "12" }}
     <div class="time-picker-container">
