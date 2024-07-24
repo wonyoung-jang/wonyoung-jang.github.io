@@ -44,6 +44,7 @@
       }
     }
 
+    & search,
     & input {
       flex: 1 1 auto;
       border-radius: unset;
@@ -68,7 +69,6 @@
       background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     }
 
-    & i.icon,
     & .icon {
       color: var(--color-on-surface-variant);
     }
@@ -110,6 +110,7 @@
         padding: var(--size-6);
       }
 
+      & search,
       & input {
         flex: 1 0 0;
         color: var(--color-on-surface);

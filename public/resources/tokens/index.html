@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.d240d0e9dfb57a4a29222ec422181d1174285b23cf6e9c15f4da9d15da737449.css" integrity="sha256-0kDQ6d&#43;1ekopIi7EIhgdEXQoWyPPbpwV9NqdFdpzdEk=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.e7aaacb5109659da7eb1da70ce690992e5388de8d789a50cb0670321c34a912e.css" integrity="sha256-56qstRCWWdp&#43;sdpwzmkJkuU4jejXiaUMsGcDIcNKkS4=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.40cadf23a3363d7fce9b16184b4e1dbba76033a5c2b2fe7b54b96fa1f17ca73d.css" integrity="sha256-QMrfI6M2PX/OmxYYS04du6dgM6XCsv57VLlvofF8pz0=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3custom.min.d5ce095cae35d63009418b7aa6113d6959fb7024e7822d6f87486c1634e31d49.css" integrity="sha256-1c4JXK411jAJQYt6phE9aVn7cCTngi1vh0hsFjTjHUk=" rel="preload stylesheet" as="style">
 
@@ -69,7 +69,7 @@
 
   <meta itemprop="name" content="Tokens">
   <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
-  <meta itemprop="dateModified" content="2024-07-18T10:22:40-04:00">
+  <meta itemprop="dateModified" content="2024-07-24T10:25:11-04:00">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tokens">
@@ -1278,49 +1278,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
