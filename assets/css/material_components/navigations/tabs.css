@@ -17,7 +17,7 @@
   }
 
   & .tab {
-    flex: 1 0 0;
+    flex: 1 1 0;
 
     --container-width: initial;
     --container-height: var(--size-12);
@@ -36,7 +36,7 @@
   }
 
   &.primary .tab {    
-    &:has(i + .label) {
+    &:has(.icon + .label) {
       --container-height: var(--size-16);
     }
     

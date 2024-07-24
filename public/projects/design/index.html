@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.ac66bb81c9be0265ae80083b5c5a18d333bb699825b43f1c7e52ea3309cb7a0f.css" integrity="sha256-rGa7gcm&#43;AmWugAg7XFoY0zO7aZgltD8cflLqMwnLeg8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.fe824e317e57f023ebdf1857b2c37ccf06d88a58035a2c6eba73e0f8406abd19.css" integrity="sha256-/oJOMX5X8CPr3xhXssN8zwbYilgDWixuunPg&#43;EBqvRk=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.d71b030acef59d5112c382f7d3aefbc30027ac124fb99cfde8037ac5d337bf66.css" integrity="sha256-1xsDCs71nVESw4L30677wwAnrBJPuZz96AN6xdM3v2Y=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.00d3e3473d84c073e7cd48c82e5c7d24ce5fd4b1f8c1490dc399e0f14cd20be6.css" integrity="sha256-ANPjRz2EwHPnzUjILlx9JM5f1LH4wUkNw5ng8UzSC&#43;Y=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.393f9acf3879a5eac00c55c8c2007053c5e3aeb8424c98b0555c33ea441abe1e.css" integrity="sha256-OT&#43;azzh5perADFXIwgBwU8XjrrhCTJiwVVwz6kQavh4=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.a937eefe15a34824b099b39d3f71c748f05e3b13e668c3031739e028a81e9ed1.css" integrity="sha256-qTfu/hWjSCSwmbOdP3HHSPBeOxPmaMMDFzngKKgentE=" rel="preload stylesheet" as="style">
 
@@ -35,15 +35,15 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/projects/design/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/projects/design/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/projects/design/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/projects/design/">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/projects/design/">
+<meta property="og:url" content="http://192.168.40.181:1313/projects/design/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Design">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -89,7 +89,7 @@
     <section class="start">
         <a  class="component button common-button"
     id="site-headline"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -921,7 +921,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to ErgoDox EZ LEGO tenting kits" 
-            href="https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/">
+            href="http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/">
             
           
           
@@ -948,7 +948,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to Pit signs for robotics competition" 
-            href="https://wonyoungjang.org/pit-signs-for-robotics-competition/">
+            href="http://192.168.40.181:1313/pit-signs-for-robotics-competition/">
             
           
           
@@ -1147,7 +1147,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>
@@ -1170,6 +1170,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

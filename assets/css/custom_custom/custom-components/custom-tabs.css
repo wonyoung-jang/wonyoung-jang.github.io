@@ -51,3 +51,18 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 599px) {
+  .set.tabs:has(.sub-tabs-container) {
+    & .tab {
+      max-height: var(--size-12);
+    }
+    & .tab .icon {
+      display: none;
+    }
+  }
+
+  main {
+    max-height: calc(100dvh - var(--size-28));
+  }
+}
