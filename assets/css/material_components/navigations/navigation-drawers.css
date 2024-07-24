@@ -10,10 +10,17 @@
   min-width: var(--size-90);
 
   --container-outline: initial;
-  --container-elevation: initial;
-  --container-shape: var(--shape-corner-l);
   
-  --bg-color: var(--color-surface-container-low);
+  &.standard {
+    --bg-color: inherit;
+    --container-elevation: var(--elevation0);
+  }
+  
+  &.modal {
+    --bg-color: var(--color-surface-container-low);
+    --container-shape: var(--shape-corner-l-end);
+    --container-elevation: var(--elevation1);
+  }
   
   & .headline,
   & .section-header {

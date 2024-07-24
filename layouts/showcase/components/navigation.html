@@ -214,8 +214,9 @@
     
       {{/*  Navigation drawers  */}}
       <div class="display-medium">Navigation drawers</div>
-      <div class="sub-component-group-header">With icon</div>
+      <div class="sub-component-group-header">Standard</div>
       {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "standard"
         "headline" "Title"
         "nav_item_1" (dict 
           "icon" "home" 
@@ -236,8 +237,43 @@
         )
       }}
       
-      <div class="sub-component-group-header">No icon</div>
       {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "standard"
+        "headline" "Title"
+        "nav_item_1" (dict "label" "Home")
+        "nav_item_2" (dict "label" "Folder")
+        "nav_item_3" (dict "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict "label" "Token")
+        "nav_item_5" (dict "label" "Settings")
+        )
+      }}
+      
+      <div class="sub-component-group-header">Modal</div>
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
+      
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "modal"
         "headline" "Title"
         "nav_item_1" (dict "label" "Home")
         "nav_item_2" (dict "label" "Folder")
