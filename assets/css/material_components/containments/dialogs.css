@@ -25,6 +25,7 @@
     min-width: unset;
     max-width: unset;
     --container-padding: initial;
+    --container-elevation: var(--elevation0);
 
     & .header {
       display: flex;

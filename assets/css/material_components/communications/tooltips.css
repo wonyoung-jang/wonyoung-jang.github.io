@@ -17,15 +17,6 @@
   --text-color: var(--color-inverse-on-surface);
   --icon-color: var(--color-inverse-on-surface);
 
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
-
   min-height: var(--size-6);
   
   & .supporting-text {
@@ -46,6 +37,10 @@
 
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);
+
+    --container-elevation-hover: var(--container-elevation);
+    --container-elevation-focus: var(--container-elevation);
+    --container-elevation-press: var(--container-elevation);
 
     & .subhead {
       margin-bottom: var(--size-1);

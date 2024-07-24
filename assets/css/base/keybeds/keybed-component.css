@@ -20,15 +20,13 @@
   --state-color: var(--state-color, var(--text-color, initial));
 
   --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
   --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
   --container-outline-press: initial;
-  --container-elevation-press: initial;
-
   --container-outline-disabled: initial;
+  
+  --container-elevation-hover: initial;
+  --container-elevation-focus: initial;
+  --container-elevation-press: initial;
   --container-elevation-disabled: initial;
 }
 

@@ -15,6 +15,11 @@
     --bg-color: var(--color-surface-container-high);
     --icon-color: var(--color-on-surface);
 
+    --container-elevation-hover: var(--container-elevation);
+    --container-elevation-focus: var(--container-elevation);
+    --container-elevation-press: var(--container-elevation);
+    --container-elevation-disabled: var(--container-elevation);
+
     width: 100%;
 
     & > .icon-button,

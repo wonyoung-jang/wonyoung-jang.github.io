@@ -1,18 +1,28 @@
 .component:not(
-    .snackbar,
-    .bottom-app-bar,
-    .navigation-bar,
-    .navigation-item,
-    .navigation-rail,
-    .navigation-drawer,
-    .set.tabs,
-    .menus,
-    .dialog,
-    .side-sheets,
-    .radio,
-    .checkbox,
-    .text-field
-  ):not(:disabled):active {
+  .badge,
+  .bottom-app-bar,
+  .bottom-sheets,
+  .date-picker,
+  .divider,
+  .tooltip,
+  .top-app-bar,
+  .progress-indicator,
+  .search.view,
+  .snackbar,
+  .bottom-app-bar,
+  .navigation-bar,
+  .navigation-item,
+  .navigation-rail,
+  .navigation-drawer,
+  .set.tabs,
+  .menus,
+  .dialog,
+  .side-sheets,
+  .radio,
+  .checkbox,
+  .text-field
+):not(:disabled):active {
+  
   border: var(--container-outline-press);
   box-shadow: var(--container-elevation-press);
 

@@ -9,6 +9,7 @@
   --container-elevation-hover: var(--elevation1);
   --container-elevation-focus: var(--elevation0);
   --container-elevation-press: var(--elevation0);
+  --container-elevation-disabled: var(--elevation0);
 
   --container-shape: var(--shape-corner-m);
 
@@ -37,6 +38,7 @@
     --container-elevation-hover: var(--elevation2);
     --container-elevation-focus: var(--elevation1);
     --container-elevation-press: var(--elevation1);
+    --container-elevation-disabled: var(--elevation1);
   }
 
   &.filled {

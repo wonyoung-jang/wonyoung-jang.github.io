@@ -41,7 +41,11 @@
   &.elevated {
     --bg-color: var(--color-surface-container-low);
     --icon-color: var(--color-primary);
-    --container-elevation: var(--elevation-2);
+    --container-elevation: var(--elevation1);
+    --container-elevation-hover: var(--elevation2);
+    --container-elevation-focus: var(--elevation1);
+    --container-elevation-press: var(--elevation1);
+    --container-elevation-disabled: var(--elevation0);
   }
 
   &.outlined {

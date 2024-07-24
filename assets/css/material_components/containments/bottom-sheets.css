@@ -17,22 +17,13 @@
   --text-color: initial;
   --icon-color: initial;
 
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
+  --container-elevation-hover: var(--container-elevation);
+  --container-elevation-focus: var(--container-elevation);
+  --container-elevation-press: var(--container-elevation);
   
   max-width: var(--size-160);
   margin-top: var(--size-18);
   margin-inline: var(--size-14);
-
-  &.modal {
-    --container-elevation: unset;
-  }
 
   & .drag-handle {
     height: var(--size-1);

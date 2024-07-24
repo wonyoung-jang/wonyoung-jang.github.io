@@ -6,30 +6,31 @@
   & * {
     z-index: 2;
   }
+}
 
-  &:not(
-    .badge,
-    .bottom-app-bar,
-    .bottom-sheets,
-    .date-picker,
-    .divider,
-    .tooltip,
-    .top-app-bar,
-    .progress-indicator,
-    .search.view
-  )::after {
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-    inset: 0;
-    z-index: 1;
-    background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
-    background-position: center;
-    opacity: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    transition: none;  
-  }
+.component:not(
+  .badge,
+  .bottom-app-bar,
+  .bottom-sheets,
+  .date-picker,
+  .divider,
+  .tooltip,
+  .top-app-bar,
+  .progress-indicator,
+  .search.view
+)::after {
+
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+  z-index: 1;
+  background-image: radial-gradient(circle, var(--state-color, initial) 1%, transparent 1%);
+  background-position: center;
+  opacity: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  transition: none;  
 }
   
 /* TODO Dragged
