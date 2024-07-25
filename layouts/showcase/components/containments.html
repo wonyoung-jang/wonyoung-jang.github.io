@@ -7,9 +7,9 @@
     {{ end }}
 
     {{/*  Cards  */}}
-    <div class="component-group-header">Cards</div>
-    <div class="layout component-group" id="cards">
-      <div class="sub-component-group-header">Elevated</div>
+    <div class="showcase-components-header">Cards</div>
+    <div class="layout showcase-components" id="cards">
+      <div class="sub-showcase-components-header">Elevated</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "elevated"
         "showcase" "Elevated"
@@ -23,7 +23,7 @@
         ) 
       }}
 
-      <div class="sub-component-group-header">Filled</div>
+      <div class="sub-showcase-components-header">Filled</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "filled"
         "showcase" "Filled"
@@ -37,7 +37,7 @@
         ) 
       }}
 
-      <div class="sub-component-group-header">Outlined</div>
+      <div class="sub-showcase-components-header">Outlined</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "outlined"
         "showcase" "Outlined"
@@ -51,7 +51,7 @@
         ) 
       }}
       
-      <div class="sub-component-group-header">Example cards</div>
+      <div class="sub-showcase-components-header">Example cards</div>
       
       <div class="component card elevated" horizontal>
         <div class="content">
@@ -208,10 +208,10 @@
     </div>
 
     {{/*  Carousels  */}}
-    <div class="component-group-header">Carousels</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Carousels</div>
+    <div class="layout showcase-components">
       {{/*  Hero */}}
-      <div class="sub-component-group-header">Hero</div>
+      <div class="sub-showcase-components-header">Hero</div>
       {{ partial "components/containments/carousels.html" (dict
         "layout" "hero"
         "images" (slice
@@ -224,7 +224,7 @@
       }}
 
       {{/*  Center-aligned hero */}}
-      <div class="sub-component-group-header">Center-aligned hero</div>
+      <div class="sub-showcase-components-header">Center-aligned hero</div>
       {{ partial "components/containments/carousels.html" (dict
         "layout" "center-aligned-hero"
         "images" (slice
@@ -240,7 +240,7 @@
       }}
       
       {{/*  Multi-browse */}}
-      <div class="sub-component-group-header">Multi-browse</div>
+      <div class="sub-showcase-components-header">Multi-browse</div>
       {{ partial "components/containments/carousels.html" (dict
         "layout" "multi-browse"
         "images" (slice
@@ -256,7 +256,7 @@
       }}
       
       {{/*  Uncontained */}}
-      <div class="sub-component-group-header">Uncontained</div>
+      <div class="sub-showcase-components-header">Uncontained</div>
       {{ partial "components/containments/carousels.html" (dict
         "layout" "uncontained"
         "images" (slice
@@ -271,7 +271,7 @@
       }}
 
       {{/*  Full-screen  */}}
-      <div class="sub-component-group-header">Full-screen</div>
+      <div class="sub-showcase-components-header">Full-screen</div>
       {{ partial "components/containments/carousels.html" (dict
         "layout" "full"
         "images" (slice
@@ -284,9 +284,9 @@
     </div>
     
     {{/*  Dialogs  */}}
-    <div class="component-group-header">Dialogs</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">Basic dialog</div>
+    <div class="showcase-components-header">Dialogs</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Basic dialog</div>
       {{ partial "components/containments/dialogs.html" (dict 
         "headline" "Basic dialog"
         "supporting_text" "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis voluptas, repellat, impedit, sit reprehenderit nam et ipsa eius amet rem! Eligendi sequi magnam exercitationem vel dignissimos similique, atque earum."
@@ -302,7 +302,7 @@
         ) 
       }}
 
-      <div class="sub-component-group-header">Full screen dialog</div>
+      <div class="sub-showcase-components-header">Full screen dialog</div>
       {{ partial "components/containments/dialogs.html" (dict 
         "type" "full"
         "headline" "Full screen dialog"
@@ -312,10 +312,10 @@
     </div>
     
     {{/*  Dividers  */}}
-    <div class="component-group-header">Dividers</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Dividers</div>
+    <div class="layout showcase-components">
 
-      <div class="sub-component-group-header">Horizontal</div>
+      <div class="sub-showcase-components-header">Horizontal</div>
 
       <div class="divider-showcase-container">
         <div class="title-small">Mid inset</div>
@@ -339,7 +339,7 @@
         }}
       </div>
 
-      <div class="sub-component-group-header">Vertical</div>
+      <div class="sub-showcase-components-header">Vertical</div>
       <div class="divider-showcase-container-vertical">
         <div class="title-small">
           Mid inset
@@ -376,10 +376,10 @@
     </div>
 
     {{/*  Lists  */}}
-    <div class="component-group-header">Lists</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Lists</div>
+    <div class="layout showcase-components">
       {{/*  Lists  */}}
-      <div class="sub-component-group-header">Lists</div>
+      <div class="sub-showcase-components-header">Lists</div>
 
       {{/*  One line  */}}
       <div class="title-large">One line lists</div>
@@ -915,10 +915,10 @@
     {{/*  || Sheets  */}}
 
     {{/*  Bottom sheets  */}}
-    <div class="component-group-header">Sheets</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Sheets</div>
+    <div class="layout showcase-components">
       <div class="display-medium">Bottom sheets</div>
-      <div class="sub-component-group-header">Standard bottom sheet</div>   
+      <div class="sub-showcase-components-header">Standard bottom sheet</div>   
       {{ partial "components/containments/bottom-sheets.html" (dict)}}  
       
       {{ partial "components/containments/bottom-sheets.html" (dict
@@ -926,7 +926,7 @@
         )
       }}  
 
-      <div class="sub-component-group-header">Modal bottom sheet</div>
+      <div class="sub-showcase-components-header">Modal bottom sheet</div>
       {{ partial "components/containments/bottom-sheets.html" (dict
         "container" "modal"
         )
@@ -940,7 +940,7 @@
 
       {{/*  Side sheets  */}}
       <div class="display-medium">Side sheets</div>
-      <div class="sub-component-group-header">Standard side sheet</div>
+      <div class="sub-showcase-components-header">Standard side sheet</div>
       {{ partial "components/containments/side-sheets.html" (dict
         "headline" "Title"
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
@@ -969,7 +969,7 @@
         )
       }}
       
-      <div class="sub-component-group-header">Modal side sheets</div>
+      <div class="sub-showcase-components-header">Modal side sheets</div>
       {{ partial "components/containments/side-sheets.html" (dict
         "type" "modal"
         "headline" "Title"

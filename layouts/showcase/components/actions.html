@@ -7,8 +7,8 @@
     {{ end }}
     
     {{/*  Common buttons  */}}
-    <div class="component-group-header">Common buttons</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Common buttons</div>
+    <div class="layout showcase-components">
       {{ $buttonTypes := slice
         (dict 
           "type" "text"
@@ -28,7 +28,7 @@
       }}
 
       {{/*  Common w/o icon  */}}
-      <div class="sub-component-group-header">No icon</div>
+      <div class="sub-showcase-components-header">No icon</div>
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/common-buttons.html" . }}
@@ -42,7 +42,7 @@
       </section>
     
       {{/*  Common w/ icon  */}}
-      <div class="sub-component-group-header">With icon</div>
+      <div class="sub-showcase-components-header">With icon</div>
       <section>
         {{ range $buttonTypes }}
           {{ $withIcon := merge . (dict "icon" "add") }}
@@ -58,8 +58,8 @@
     </div>
 
     {{/*  FABs  */}}
-    <div class="component-group-header">Floating action buttons (FABs)</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Floating action buttons (FABs)</div>
+    <div class="layout showcase-components">
       {{ $containerClasses := slice "surface-container-high" "primary-container" "secondary-container" "tertiary-container" }}
       {{ $fabTypes := slice
         (dict 
@@ -88,7 +88,7 @@
       }}
 
       {{ range $fabType := $fabTypes }}
-        <div class="sub-component-group-header">{{ $fabType.title }}</div>
+        <div class="sub-showcase-components-header">{{ $fabType.title }}</div>
         <section>
           {{ range $class := $containerClasses }}
             {{ $fabConfig := merge $fabType (dict "class" $class) }}
@@ -99,12 +99,12 @@
     </div>
 
     {{/*  Icon buttons  */}}
-    <div class="component-group-header">Icon buttons</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Icon buttons</div>
+    <div class="layout showcase-components">
       {{ $buttonTypes := slice "text" "filled" "filled-tonal" "outlined" }}
       
       {{/*  Icon button  */}}
-      <div class="sub-component-group-header">Icon button</div>
+      <div class="sub-showcase-components-header">Icon button</div>
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/icon-buttons.html" (dict
@@ -127,7 +127,7 @@
       </section>
 
       {{/*  Icon button - toggle  */}}
-      <div class="sub-component-group-header">Icon button - toggle</div>
+      <div class="sub-showcase-components-header">Icon button - toggle</div>
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/icon-buttons.html" (dict
@@ -155,9 +155,9 @@
     </div>
 
     {{/*  Segmented buttons  */}}
-    <div class="component-group-header">Segmented buttons</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">Outlined - single select</div>
+    <div class="showcase-components-header">Segmented buttons</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Outlined - single select</div>
       
       {{ $segmentedButtons := slice
         (dict 
@@ -250,7 +250,7 @@
         {{ partial "components/actions/segmented-buttons.html" . }}
       {{ end }}
 
-      <div class="sub-component-group-header">Outlined - multi select</div>
+      <div class="sub-showcase-components-header">Outlined - multi select</div>
 
       {{ $segmentedButtons := slice
         (dict 
@@ -343,7 +343,7 @@
         {{ partial "components/actions/segmented-buttons.html" . }}
       {{ end }}
 
-      <div class="sub-component-group-header">Outlined - disabled</div>
+      <div class="sub-showcase-components-header">Outlined - disabled</div>
   
       {{ partial "components/actions/segmented-buttons.html" (dict
         "name" "segmenteddisabled" 

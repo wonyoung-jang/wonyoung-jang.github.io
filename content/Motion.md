@@ -1,9 +1,9 @@
 ---
 date:
 - 2024-06-10 Monday
-description: Motion available for wonyoungjang.org
+description: Motions available for wonyoungjang.org
 lastMod: 2024-07-08
-layout: motion
+layout: motions
 resources:
 - tokens
 title: Motion

@@ -24,7 +24,7 @@
   }
 }
 
-& .component-group-header {
+& .showcase-components-header {
   width: 100%;
   padding: var(--size-5) var(--size-4);
   color: var(--color-on-surface);
@@ -41,7 +41,7 @@
   }
 }
 
-& .component-group {
+& .showcase-components {
   margin-bottom: var(--size-6);
   
   --layout-display: flex;
@@ -60,7 +60,7 @@
     --layout-align-items: stretch;
   }
 
-  & .sub-component-group-header {
+  & .sub-showcase-components-header {
     width: 100%;
     color: var(--color-on-surface-variant);
 

@@ -7,9 +7,9 @@
     {{ end }}
  
     {{/*  Badges  */}}
-    <div class="component-group-header">Badges</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">Badge</div>
+    <div class="showcase-components-header">Badges</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Badge</div>
       {{ partial "components/communications/badges.html" (dict 
           "size" "large" 
           "label" "999+"
@@ -26,30 +26,30 @@
     </div>
     
     {{/*  Progress indicators  */}}
-    <div class="component-group-header">Progress indicators</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">Linear - determinate</div>
+    <div class="showcase-components-header">Progress indicators</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Linear - determinate</div>
       {{ partial "components/communications/progress-indicators.html" (dict 
           "config" "linear" 
           "determinate" "determinate"
         ) 
       }}
       
-      <div class="sub-component-group-header">Linear - indeterminate</div>
+      <div class="sub-showcase-components-header">Linear - indeterminate</div>
       {{ partial "components/communications/progress-indicators.html" (dict 
           "config" "linear"
           "determinate" "indeterminate" 
         ) 
       }}
       
-      <div class="sub-component-group-header">Circular - determinate</div>
+      <div class="sub-showcase-components-header">Circular - determinate</div>
       {{ partial "components/communications/progress-indicators.html" (dict 
           "config" "circular" 
           "determinate" "determinate"
         ) 
       }}
       
-      <div class="sub-component-group-header">Circular - indeterminate</div>
+      <div class="sub-showcase-components-header">Circular - indeterminate</div>
       {{ partial "components/communications/progress-indicators.html" (dict 
           "config" "circular" 
           "determinate" "indeterminate"
@@ -59,9 +59,9 @@
     </div>
     
     {{/*  Snackbars  */}}
-    <div class="component-group-header">Snackbars</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">No close affordance</div>
+    <div class="showcase-components-header">Snackbars</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">No close affordance</div>
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar"
         )
@@ -94,7 +94,7 @@
         ) 
       }}
     
-      <div class="sub-component-group-header">With close affordance</div>
+      <div class="sub-showcase-components-header">With close affordance</div>
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar with close button" 
           "closeButton" "close"
@@ -127,9 +127,9 @@
     </div>
         
     {{/*  Tooltips  */}}
-    <div class="component-group-header">Tooltips</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">Plain tooltip</div>
+    <div class="showcase-components-header">Tooltips</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Plain tooltip</div>
       {{ partial "components/communications/tooltips.html" (dict 
           "text" "Plain tooltip"
         ) 
@@ -140,7 +140,7 @@
         ) 
       }}
     
-      <div class="sub-component-group-header">Rich tooltip</div>
+      <div class="sub-showcase-components-header">Rich tooltip</div>
       {{ partial "components/communications/tooltips.html" (dict 
           "rich" true 
           "title" "Rich tooltip" 

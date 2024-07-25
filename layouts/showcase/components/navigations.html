@@ -9,10 +9,10 @@
     {{/*  || App bars  */}}
 
     {{/*  Bottom app bars  */}}
-    <div class="component-group-header">App bars</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">App bars</div>
+    <div class="layout showcase-components">
       <div class="display-medium">Bottom app bars</div>
-      <div class="sub-component-group-header">No FAB</div>
+      <div class="sub-showcase-components-header">No FAB</div>
       {{ partial "components/navigations/bottom-app-bars.html" (dict
         "icon_1"  "home"
         "icon_2"  "add"
@@ -21,7 +21,7 @@
         )
       }}
       
-      <div class="sub-component-group-header">With FAB</div>
+      <div class="sub-showcase-components-header">With FAB</div>
       {{ partial "components/navigations/bottom-app-bars.html" (dict
         "icon_1"  "home"
         "icon_2"  "add"
@@ -33,7 +33,7 @@
     
       {{/*  Top app bars  */}}
       <div class="display-medium">Top app bars</div>
-      <div class="sub-component-group-header">Center-aligned</div>
+      <div class="sub-showcase-components-header">Center-aligned</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "center" "center"
         "size" "small"
@@ -43,7 +43,7 @@
         )
       }}
 
-      <div class="sub-component-group-header">Small</div>
+      <div class="sub-showcase-components-header">Small</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "size" "small"
         "headline" "Title"
@@ -54,7 +54,7 @@
         )
       }}
 
-      <div class="sub-component-group-header">Medium</div>
+      <div class="sub-showcase-components-header">Medium</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "size" "medium"
         "headline" "Title"
@@ -65,7 +65,7 @@
         )
       }}
 
-      <div class="sub-component-group-header">Large</div>
+      <div class="sub-showcase-components-header">Large</div>
       {{ partial "components/navigations/top-app-bars.html" (dict
         "size" "large"
         "headline" "Title"
@@ -80,8 +80,8 @@
     {{/*  || Navigations  */}}
 
     {{/*  Navigation bars  */}}
-    <div class="component-group-header">Navigations</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Navigations</div>
+    <div class="layout showcase-components">
       <div class="display-medium">Navigation bars</div>
       {{ partial "components/navigations/navigation-bars.html" (dict
         "center" "center"
@@ -102,7 +102,7 @@
 
       {{/*  Navigation drawers  */}}
       <div class="display-medium">Navigation drawers</div>
-      <div class="sub-component-group-header">Standard</div>
+      <div class="sub-showcase-components-header">Standard</div>
       {{ partial "components/navigations/navigation-drawers.html" (dict
         "type" "standard"
         "headline" "Title"
@@ -137,7 +137,7 @@
         )
       }}
       
-      <div class="sub-component-group-header">Modal</div>
+      <div class="sub-showcase-components-header">Modal</div>
       {{ partial "components/navigations/navigation-drawers.html" (dict
         "type" "modal"
         "headline" "Title"
@@ -174,7 +174,7 @@
     
       {{/*  Navigation rails  */}}
       <div class="display-medium">Navigation rails</div>
-      <div class="sub-component-group-header">Align - top / middle / bottom</div>
+      <div class="sub-showcase-components-header">Align - top / middle / bottom</div>
       {{ partial "components/navigations/navigation-rails.html" (dict
         "icon_main" "menu"
         "icon_fab" "add"
@@ -242,10 +242,10 @@
     </div>
 
     {{/*  Searches  */}}
-    <div class="component-group-header">Searches</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Searches</div>
+    <div class="layout showcase-components">
       {{/*  Search bar  */}}
-      <div class="sub-component-group-header">Search bar</div>      
+      <div class="sub-showcase-components-header">Search bar</div>      
       {{ partial "components/navigations/searches.html" (dict 
         "type" "bar"
         ) 
@@ -258,7 +258,7 @@
       }}
 
       {{/*  Search view modal  */}}
-      <div class="sub-component-group-header">Search view - modal</div>
+      <div class="sub-showcase-components-header">Search view - modal</div>
 
       {{ partial "components/navigations/searches.html" (dict 
         "type" "view"
@@ -274,7 +274,7 @@
       }}
 
       {{/*  Search view full-screen  */}}
-      <div class="sub-component-group-header">Search view - full-screen</div>
+      <div class="sub-showcase-components-header">Search view - full-screen</div>
 
       {{ partial "components/navigations/searches.html" (dict 
         "type" "view"
@@ -291,9 +291,9 @@
     </div>
 
     {{/*  Tabs  */}}
-    <div class="component-group-header">Tabs</div>
-    <div class="layout component-group">
-      <div class="sub-component-group-header">Primary</div>
+    <div class="showcase-components-header">Tabs</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Primary</div>
       {{ partial "components/navigations/tabs.html" (dict
         "type" "primary"
         "tabs" (slice
@@ -324,7 +324,7 @@
         )
       }}
 
-      <div class="sub-component-group-header">Secondary</div>
+      <div class="sub-showcase-components-header">Secondary</div>
 
       {{ partial "components/navigations/tabs.html" (dict
         "type" "secondary"

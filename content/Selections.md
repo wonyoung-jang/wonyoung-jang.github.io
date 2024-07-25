@@ -3,7 +3,7 @@ date:
 - 2024-06-10 Monday
 description: Selection components available for wonyoungjang.org
 lastMod: 2024-07-17
-layout: selection
+layout: selections
 resources:
 - components
 title: Selections

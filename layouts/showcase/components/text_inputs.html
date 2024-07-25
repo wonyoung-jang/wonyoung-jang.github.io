@@ -7,12 +7,12 @@
     {{ end }}
 
     {{/*  Text fields  */}}
-    <div class="component-group-header">Text fields</div>
-    <div class="layout component-group">
+    <div class="showcase-components-header">Text fields</div>
+    <div class="layout showcase-components">
       {{/*  Text field configurations  */}}
 
       {{/*  Filled  */}}
-      <div class="sub-component-group-header">Filled</div>
+      <div class="sub-showcase-components-header">Filled</div>
       {{ partial "components/text-inputs/text-fields.html" (dict 
         "type" "filled" 
         "label" "Label text" 
@@ -69,7 +69,7 @@
       }}
 
       {{/*  Outlined  */}}
-      <div class="sub-component-group-header">Outlined</div>
+      <div class="sub-showcase-components-header">Outlined</div>
       {{ partial "components/text-inputs/text-fields.html" (dict 
         "type" "outlined" 
         "label" "Label text" 
