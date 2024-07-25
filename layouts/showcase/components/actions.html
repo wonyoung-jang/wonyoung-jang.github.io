@@ -8,7 +8,7 @@
     
     {{/*  Common buttons  */}}
     <div class="component-group-header">Common buttons</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{ $buttonTypes := slice
         (dict 
           "type" "text"
@@ -59,7 +59,7 @@
 
     {{/*  FABs  */}}
     <div class="component-group-header">Floating action buttons (FABs)</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{ $containerClasses := slice "surface-container-high" "primary-container" "secondary-container" "tertiary-container" }}
       {{ $fabTypes := slice
         (dict 
@@ -100,7 +100,7 @@
 
     {{/*  Icon buttons  */}}
     <div class="component-group-header">Icon buttons</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{ $buttonTypes := slice "text" "filled" "filled-tonal" "outlined" }}
       
       {{/*  Icon button  */}}
@@ -156,7 +156,7 @@
 
     {{/*  Segmented buttons  */}}
     <div class="component-group-header">Segmented buttons</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Outlined - single select</div>
       
       {{ $segmentedButtons := slice

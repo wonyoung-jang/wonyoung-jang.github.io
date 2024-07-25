@@ -10,7 +10,7 @@
 
     {{/*  Bottom app bars  */}}
     <div class="component-group-header">App bars</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="display-medium">Bottom app bars</div>
       <div class="sub-component-group-header">No FAB</div>
       {{ partial "components/navigations/bottom-app-bars.html" (dict
@@ -81,7 +81,7 @@
 
     {{/*  Navigation bars  */}}
     <div class="component-group-header">Navigations</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="display-medium">Navigation bars</div>
       {{ partial "components/navigations/navigation-bars.html" (dict
         "center" "center"
@@ -243,7 +243,7 @@
 
     {{/*  Searches  */}}
     <div class="component-group-header">Searches</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{/*  Search bar  */}}
       <div class="sub-component-group-header">Search bar</div>      
       {{ partial "components/navigations/searches.html" (dict 
@@ -292,7 +292,7 @@
 
     {{/*  Tabs  */}}
     <div class="component-group-header">Tabs</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Primary</div>
       {{ partial "components/navigations/tabs.html" (dict
         "type" "primary"

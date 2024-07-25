@@ -8,7 +8,7 @@
 
     {{/*  Checkboxes  */}}
     <span class="component-group-header">Checkboxes</span>
-    <div class="component-group">
+    <div class="layout component-group">
       {{/*  Selected  */}}
       <div class="sub-component-group-header">Primary</div>
       {{ partial "components/selections/checkboxes.html" (dict 
@@ -90,7 +90,7 @@
 
     {{/*  Chips  */}}
     <div class="component-group-header">Chips</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{/*  Assist chip  */}}
       <div class="sub-component-group-header">Assist chip</div>
     
@@ -314,7 +314,7 @@
     
     {{/*  Menus  */}}
     <div class="component-group-header">Menus</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">No divider</div>
       {{ partial "components/selections/menus.html" (dict
         "menu_items" (slice 
@@ -346,7 +346,7 @@
 
     {{/*  Radio buttons  */}}
     <div class="component-group-header">Radio buttons</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Radio button</div>
       {{ $radioData := dict 
         "legend" "Radio button" 
@@ -363,7 +363,7 @@
 
     {{/*  Sliders  */}}
     <div class="component-group-header">Sliders</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Continuous</div>
       {{ partial "components/selections/sliders.html" (dict 
         "config" "continuous"
@@ -404,7 +404,7 @@
     
     {{/*  Switches  */}}
     <div class="component-group-header">Switches</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">No icon</div>
       {{ partial "components/selections/switches.html" dict }}
     
@@ -422,7 +422,7 @@
  
     {{/*  || Pickers  */}}
     <div class="component-group-header">Pickers</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{/*  Date pickers  */}}
       <div class="display-medium">Date pickers</div>
       {{/*  Modal input  */}}

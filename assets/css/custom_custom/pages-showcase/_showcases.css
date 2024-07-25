@@ -13,12 +13,6 @@
   }
 }
 
-.component-group#cards {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: stretch;
-}
-
 #components-showcase {
   & .pane {
     --padding: 0px;
@@ -48,15 +42,23 @@
 }
 
 & .component-group {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--size-7);
   margin-bottom: var(--size-6);
-  background-color: var(--color-surface-container-lowest);
-  border-radius: var(--shape-corner-s-bottom);
-  padding: var(--size-5);
+  
+  --layout-display: flex;
+  --layout-flex-flow: row wrap;
+  --layout-align-items: flex-start;
+  --layout-justify-content: flex-start;
+  --layout-padding: var(--size-5);
+  --layout-gap: var(--size-7);
+  
+  --layout-shape: var(--shape-corner-s-bottom);
+  
+  --layout-bg: var(--color-surface-container-lowest);
+
+  &#cards {
+    --layout-flex-flow: column nowrap;
+    --layout-align-items: stretch;
+  }
 
   & .sub-component-group-header {
     width: 100%;
@@ -102,7 +104,7 @@
       height: fit-content;
     }
     
-    & hr {
+    & .divider {
       flex: 1 1 auto;
       width: 100%;
     }

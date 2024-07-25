@@ -8,7 +8,7 @@
 
     {{/*  Cards  */}}
     <div class="component-group-header">Cards</div>
-    <div class="component-group" id="cards">
+    <div class="layout component-group" id="cards">
       <div class="sub-component-group-header">Elevated</div>
       {{ partial "components/containments/cards.html" (dict
         "type" "elevated"
@@ -209,7 +209,7 @@
 
     {{/*  Carousels  */}}
     <div class="component-group-header">Carousels</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{/*  Hero */}}
       <div class="sub-component-group-header">Hero</div>
       {{ partial "components/containments/carousels.html" (dict
@@ -285,7 +285,7 @@
     
     {{/*  Dialogs  */}}
     <div class="component-group-header">Dialogs</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Basic dialog</div>
       {{ partial "components/containments/dialogs.html" (dict 
         "headline" "Basic dialog"
@@ -313,7 +313,7 @@
     
     {{/*  Dividers  */}}
     <div class="component-group-header">Dividers</div>
-    <div class="component-group">
+    <div class="layout component-group">
 
       <div class="sub-component-group-header">Horizontal</div>
 
@@ -377,7 +377,7 @@
 
     {{/*  Lists  */}}
     <div class="component-group-header">Lists</div>
-    <div class="component-group">
+    <div class="layout component-group">
       {{/*  Lists  */}}
       <div class="sub-component-group-header">Lists</div>
 
@@ -916,7 +916,7 @@
 
     {{/*  Bottom sheets  */}}
     <div class="component-group-header">Sheets</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="display-medium">Bottom sheets</div>
       <div class="sub-component-group-header">Standard bottom sheet</div>   
       {{ partial "components/containments/bottom-sheets.html" (dict)}}  

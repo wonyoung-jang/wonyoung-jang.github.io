@@ -8,7 +8,7 @@
  
     {{/*  Badges  */}}
     <div class="component-group-header">Badges</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Badge</div>
       {{ partial "components/communications/badges.html" (dict 
           "size" "large" 
@@ -27,7 +27,7 @@
     
     {{/*  Progress indicators  */}}
     <div class="component-group-header">Progress indicators</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Linear - determinate</div>
       {{ partial "components/communications/progress-indicators.html" (dict 
           "config" "linear" 
@@ -60,7 +60,7 @@
     
     {{/*  Snackbars  */}}
     <div class="component-group-header">Snackbars</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">No close affordance</div>
       {{ partial "components/communications/snackbars.html" (dict 
           "text" "Single line snackbar"
@@ -128,7 +128,7 @@
         
     {{/*  Tooltips  */}}
     <div class="component-group-header">Tooltips</div>
-    <div class="component-group">
+    <div class="layout component-group">
       <div class="sub-component-group-header">Plain tooltip</div>
       {{ partial "components/communications/tooltips.html" (dict 
           "text" "Plain tooltip"
