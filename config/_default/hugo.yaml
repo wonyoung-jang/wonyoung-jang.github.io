@@ -1,6 +1,6 @@
 baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
-theme: "Polyrhythmic"
+theme: "PolyRhythmic"
 
 # languageCode: en-US
 
@@ -27,6 +27,11 @@ markup:
   goldmark:
     parser:
       wrapStandAloneImageWithinParagraph: false
+
+# Modules
+module:
+  imports:
+  - path: PolyRhythmic
 
 # Outputs
 outputs:
