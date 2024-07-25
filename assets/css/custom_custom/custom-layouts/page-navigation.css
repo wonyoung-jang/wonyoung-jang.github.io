@@ -1,17 +1,17 @@
 .page-navigation {
-  --flex: initial;
-  --display: flex;
-  --flex-flow: column nowrap;
-  --align-items: stretch;
-  --align-content: initial;
-  --justify-content: flex-start;
-  --width: 100%;
-  --height: auto;
-  --min-height: auto;
-  --padding: var(--spacing-panes);
-  --margin: 0;
-  --gap: var(--size-4);
-  --border: inherit;
+  --layout-flex: initial;
+  --layout-display: flex;
+  --layout-flex-flow: column nowrap;
+  --layout-align-items: stretch;
+  --layout-align-content: initial;
+  --layout-justify-content: flex-start;
+  --layout-width: 100%;
+  --layout-height: auto;
+  --layout-min-height: auto;
+  --layout-padding: var(--spacing-panes);
+  --layout-margin: 0;
+  --layout-gap: var(--size-4);
+  --layout-border: inherit;
   
   & .prev,
   & .next {
@@ -30,8 +30,7 @@
     color: var(--color-on-surface);
     box-shadow: var(--elevation1);
 
-    & i.icon,
-& .icon {
+    & .icon {
       font-size: 18px;
     }
     
@@ -55,7 +54,7 @@
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
   .page-navigation {
-    --flex-flow: row nowrap;
+    --layout-flex-flow: row nowrap;
     
     & .prev,
     & .next {

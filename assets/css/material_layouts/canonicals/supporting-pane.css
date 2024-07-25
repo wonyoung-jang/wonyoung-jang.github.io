@@ -1,25 +1,25 @@
 .panes.canonical-supporting-pane {
-  --flex-flow: column nowrap;
+  --layout-flex-flow: column nowrap;
 
   & .focus-pane {
-    --flex: 1 1 auto;
+    --layout-flex: 1 1 auto;
   }
 
   & .supporting-pane {
-    --flex: 1 1 auto;
+    --layout-flex: 1 1 auto;
   }
 }
 
 @media screen and (min-width: 840px) {
   .panes.canonical-supporting-pane {
-    --flex-flow: row nowrap;
+    --layout-flex-flow: row nowrap;
 
     & .focus-pane {
-      --flex: 2 1 0;
+      --layout-flex: 2 1 0;
     }
 
     & .supporting-pane {
-      --flex: 1 2 0;
+      --layout-flex: 1 2 0;
     }
   }
 }

@@ -1,18 +1,18 @@
 .page-links {
-  --flex: initial;
-  --display: flex;
-  --flex-flow: column nowrap;
-  --align-items: stretch;
-  --align-content: initial;
-  --justify-content: flex-start;
-  --width: 100%;
-  --height: auto;
-  --min-height: auto;
-  --padding: var(--spacing-panes);
-  --margin: 0;
-  --gap: var(--size-24);
+  --layout-flex: initial;
+  --layout-display: flex;
+  --layout-flex-flow: column nowrap;
+  --layout-align-items: stretch;
+  --layout-align-content: initial;
+  --layout-justify-content: flex-start;
+  --layout-width: 100%;
+  --layout-height: auto;
+  --layout-min-height: auto;
+  --layout-padding: var(--spacing-panes);
+  --layout-margin: 0;
+  --layout-gap: var(--size-24);
 
-  --border: inherit;
+  --layout-border: inherit;
   
   & #share-links {
     flex: 1 1 0;

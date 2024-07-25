@@ -1,6 +1,7 @@
+{{ $dial := eq .type "dial" }}
 <div class="component time-picker {{ .type }}">
   <div class="time-picker-headline">{{ .headline }}</div>
-  {{ if eq .type "12" }}
+  {{ if eq .display "12" }}
     <div class="time-picker-container">
       <div class="time-input-field-container">
         <div class="time-input-option selected">
@@ -33,6 +34,12 @@
         </div>
       </div>
     </div>
+  {{ end }}
+
+  {{ if $dial }}
+  <div class="time-picker-dial-container">
+
+  </div>
   {{ end }}
 
   <div class="time-picker-actions"> 

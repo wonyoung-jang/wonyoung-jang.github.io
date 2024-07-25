@@ -5,10 +5,10 @@
 }
 
 #showcase.canonical-feed .pane {
-  --gap: var(--size-2);
-  --display: flex;
-  --flex-flow: row wrap;
-  --align-content: stretch;
+  --layout-gap: var(--size-2);
+  --layout-display: flex;
+  --layout-flex-flow: row wrap;
+  --layout-align-content: stretch;
 
   & .card {
     place-items: center;

@@ -1,26 +1,26 @@
 .basic-fixed-flex#single {
-  --flex-flow: column nowrap;
+  --layout-flex-flow: column nowrap;
 
   & .pane {
-    --display: flex;
-    --flex: 1 1 auto;
-    --width: 100%;
+    --layout-display: flex;
+    --layout-flex: 1 1 auto;
+    --layout-width: 100%;
   }
 
   & #toc {
-    --flex: 0 0 auto;
+    --layout-flex: 0 0 auto;
   }
 }
 
 .basic-fixed-flex:not(#single) {
-  --flex-flow: row nowrap;
+  --layout-flex-flow: row nowrap;
 
   & .pane {
-    --flex: 1 1 0;
+    --layout-flex: 1 1 0;
 
     &.fixed-pane {
-      --flex: 0 0 var(--fixed-pane-width);
-      --width: var(--fixed-pane-width);
+      --layout-flex: 0 0 var(--fixed-pane-width);
+      --layout-width: var(--fixed-pane-width);
     }
   }
 }
@@ -28,16 +28,16 @@
 /* Compact: 0-599px */
 @media screen and (max-width: 599px) {
   .basic-fixed-flex:not(#single) {
-    --flex-flow: row nowrap;
+    --layout-flex-flow: row nowrap;
 
     & .pane {
-      --display: none;
-      --flex: 1 1 0;
-      --width: calc(50% - var(--spacing-panes) / 2);
+      --layout-display: none;
+      --layout-flex: 1 1 0;
+      --layout-width: calc(50% - var(--spacing-panes) / 2);
 
       &.fixed-pane {
-        --flex: 0 0 var(--fixed-pane-width);
-        --width: var(--fixed-pane-width);
+        --layout-flex: 0 0 var(--fixed-pane-width);
+        --layout-width: var(--fixed-pane-width);
       }
     }
 
@@ -53,14 +53,14 @@
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
   .basic-fixed-flex#single {
-    --flex-flow: row-reverse nowrap;
+    --layout-flex-flow: row-reverse nowrap;
 
     & .pane {
-      --flex: 1 1 0;
+      --layout-flex: 1 1 0;
 
       &.fixed-pane {
-        --flex: 0 0 var(--fixed-pane-width);
-        --width: var(--fixed-pane-width);
+        --layout-flex: 0 0 var(--fixed-pane-width);
+        --layout-width: var(--fixed-pane-width);
       }
     }
   }

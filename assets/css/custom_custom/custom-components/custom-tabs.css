@@ -1,6 +1,6 @@
 .set.tabs:has(.sub-tabs-container) {
-  --gap: 3px;
-  --overflow: visible;
+  --set-gap: 3px;
+  --set-overflow: visible;
   padding: 0 var(--size-1);
 
   & .tab {

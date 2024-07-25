@@ -27,6 +27,57 @@
   --container-elevation-press: initial;
 }
 
+.time-picker.dial {
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: flex-start;
+  --container-align-items: flex-start;
+  --container-gap: initial;
+  --container-height: auto;
+  --container-width: auto;
+  --container-padding: var(--size-6);
+
+  --container-outline: initial;
+  --container-elevation: var(--elevation3);
+  --container-shape: var(--shape-corner-xl);
+  
+  --bg-color: var(--color-surface-container-high);
+  
+  --text-color: initial;
+  --icon-color: initial;
+
+  --container-outline-hover: initial;
+  --container-elevation-hover: initial;
+
+  --container-outline-focus: initial;
+  --container-elevation-focus: initial;
+
+  --container-outline-press: initial;
+  --container-elevation-press: initial;
+
+  & .time-picker-dial-container {
+    position: relative;
+    align-self: center;
+    height: var(--size-64);
+    width: var(--size-64);
+    border: 2px dashed var(--color-outline);
+    border-radius: 50%;
+    margin-top: var(--size-9);
+
+    &::after {
+      content: '';
+      position: absolute;
+      
+      transform: translate(128px, 128px);
+      height: var(--size-2);
+      width: var(--size-2);
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      z-index: 1;
+    }
+  }
+}
+
 /* Headline */
 .time-picker-headline {
   color: var(--color-on-surface-variant);

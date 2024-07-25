@@ -1,17 +1,17 @@
 .layout.page-header {
-  --display: flex;
-  --flex-flow: column nowrap;
-  --align-items: stretch;
-  --align-content: initial;
-  --justify-content: initial;
-  --height: max-content;
-  --padding: var(--size-13) var(--size-8);
-  --gap: var(--size-7);
+  --layout-display: flex;
+  --layout-flex-flow: column nowrap;
+  --layout-align-items: stretch;
+  --layout-align-content: initial;
+  --layout-justify-content: initial;
+  --layout-height: max-content;
+  --layout-padding: var(--size-13) var(--size-8);
+  --layout-gap: var(--size-7);
   
-  --shape: var(--shape-corner-xl-bottom);
-  --border: initial;
+  --layout-shape: var(--shape-corner-xl-bottom);
+  --layout-border: initial;
 
-  --bg: var(--color-surface-container-low);
+  --layout-bg: var(--color-surface-container-low);
   
   & .title,
   & .description {

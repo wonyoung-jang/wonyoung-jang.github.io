@@ -1,23 +1,23 @@
 .set {
-  --flex:             initial;
-  --display:          initial;
-  --flex-flow:        initial;
-  --align-items:      initial;
-  --align-content:    initial;
-  --justify-content:  initial;
-  --width:            initial;
-  --gap:              initial;
-  --overflow:         initial;
+  --set-flex:             initial;
+  --set-display:          initial;
+  --set-flex-flow:        initial;
+  --set-align-items:      initial;
+  --set-align-content:    initial;
+  --set-justify-content:  initial;
+  --set-width:            initial;
+  --set-gap:              initial;
+  --set-overflow:         initial;
 }
 
 .set {
-  flex:             var(--flex);
-  display:          var(--display);
-  flex-flow:        var(--flex-flow);
-  align-items:      var(--align-items);
-  align-content:    var(--align-content);
-  justify-content:  var(--justify-content);
-  width:            var(--width);
-  gap:              var(--gap);
-  overflow:         var(--overflow);
+  flex:             var(--set-flex);
+  display:          var(--set-display);
+  flex-flow:        var(--set-flex-flow);
+  align-items:      var(--set-align-items);
+  align-content:    var(--set-align-content);
+  justify-content:  var(--set-justify-content);
+  width:            var(--set-width);
+  gap:              var(--set-gap);
+  overflow:         var(--set-overflow);
 }
