@@ -1,4 +1,4 @@
-.token-set {
+.showcase-tokens {
   --layout-flex: initial;
   --layout-display: flex;
   --layout-flex-flow: column nowrap;
@@ -15,12 +15,12 @@
   --layout-shape: initial;
   --layout-border: initial;
 
-  --layout-bg: var(--color-token-set-container);
+  --layout-bg: var(--color-showcase-tokens-container);
 
   margin-top: var(--size-15);
   overflow-x: auto;
 
-  & .token-set-title {
+  & .showcase-tokens-title {
     flex: 1 1 0;
     display: flex;
     flex-flow: row nowrap; 

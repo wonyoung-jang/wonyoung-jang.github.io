@@ -1,12 +1,12 @@
-<details class="layout token-set" open>
-  <summary class="token-set-title">Semantic color swatches</summary>
+<details class="layout showcase-tokens" open>
+  <summary class="showcase-tokens-title">Semantic color swatches</summary>
   
   {{ range $group, $swatches := site.Data.palettes }}
     {{ if eq $group "main" }}
       {{ continue }}
     {{ end }}
-    <details class="layout token-set" open>
-      <summary class="token-set-title">{{ title $group }} color swatches</summary>
+    <details class="layout showcase-tokens" open>
+      <summary class="showcase-tokens-title">{{ title $group }} color swatches</summary>
       <div class="swatches-{{ $group }}">
         {{ range $swatches }}
           {{ $name := . }}

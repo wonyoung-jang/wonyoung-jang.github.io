@@ -1,6 +1,6 @@
 body {
   &.dark {
-    --color-token-set-container: var(--palette-neutral-variant-10);
+    --color-showcase-tokens-container: var(--palette-neutral-variant-10);
 
     & #moon {
       opacity: 0;
@@ -23,7 +23,7 @@ body {
   }
  
   &:not(.dark) {
-    --color-token-set-container: var(--palette-neutral-variant-90);
+    --color-showcase-tokens-container: var(--palette-neutral-variant-90);
     
     & #sun {
       opacity: 0;

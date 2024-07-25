@@ -34,7 +34,7 @@
   width: 100%;
   padding: var(--size-5) var(--size-4);
   color: var(--color-on-surface);
-  background-color: var(--color-token-set-container);
+  background-color: var(--color-showcase-tokens-container);
   border-radius: var(--shape-corner-s-top);
 
   font-size: var(--typescale-display-small-size);
