@@ -9,9 +9,10 @@
             {{ range $palettes }}
                 {{ $name := . }}
                 <label>{{ title $name }}</label>
-                <div class="component palette {{ $name }}">
+                <div class="set palette {{ $name }}">
                     {{ range seq 0 10 100 }}
                         <div 
+                            class="component color-palette-cell"
                             style="background-color: var(--palette-{{ $name }}-{{ . }})">
                             {{ . }}
                         </div>

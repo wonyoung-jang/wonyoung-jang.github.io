@@ -10,7 +10,8 @@
   align-items: stretch;
   padding: var(--size-2);
   
-  & div,
+  & .swatch,
+  & .color-swatch-cell,
   & span {
     flex: 1 1 0;
   }

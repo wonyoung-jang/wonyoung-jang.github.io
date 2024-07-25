@@ -3,9 +3,10 @@
 
   <div class="key-color"></div>
 
-  <div class="component palette" id="absolute-hues">
+  <div class="set palette" id="absolute-hues">
     {{ range seq 0 30 330 }}
       <div
+        class="component color-palette-cell"
         style="background-color: var(--palette-hue-{{ . }});">
         {{ . }}
       </div>

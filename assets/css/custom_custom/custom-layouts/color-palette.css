@@ -1,22 +1,18 @@
 .palette {
-  --container-display: flex;
-  --container-flex-flow: row nowrap;
-  --container-justify-content: space-between;
-  --container-align-items: center;
-  --container-gap: initial;
-  --container-height: initial;
-  --container-width: initial;
-  --container-padding: initial;
+  --set-flex:             initial;
+  --set-display:          flex;
+  --set-flex-flow:        row nowrap;
+  --set-align-items:      center;
+  --set-align-content:    initial;
+  --set-justify-content:  space-between;
+  --set-width:            initial;
+  --set-gap:              initial;
+  --set-overflow:         initial;
 
-  --container-outline: initial;
-  --container-elevation: initial;
-  --container-shape: unset;
-
-  --bg-color: unset;
-
+  background-color: unset;
   color: var(--palette-white);
 
-  & div {
+  & .color-palette-cell {
     flex: 1 1 0;
 
     display: flex;
@@ -42,7 +38,7 @@
     padding: var(--spacing-panes);
     color: var(--palette-white);
 
-    & div {
+    & .color-palette-cell {
       color: var(--palette-black);
     }
   }

@@ -1,9 +1,8 @@
 .swatch {
-  --container-display: flex;
-  --container-flex-flow: column nowrap;
-  --container-shape: unset;
+  --set-display: flex;
+  --set-flex-flow: column nowrap;
 
-  & div {
+  & .color-swatch-cell {
     display: grid;
     grid-template-rows: repeat(13, 1fr);
 

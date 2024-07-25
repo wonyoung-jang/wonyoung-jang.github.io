@@ -10,12 +10,12 @@
       <div class="swatches-{{ $group }}">
         {{ range $swatches }}
           {{ $name := . }}
-          <div class="component swatch">
-            <div class="{{ $name }}">
+          <div class="set swatch">
+            <div class="component color-swatch-cell {{ $name }}">
               <span>{{ title $name }}</span>
               <span>On {{ title $name }}</span>
             </div>
-            <div class="{{ $name }}-container">
+            <div class="component color-swatch-cell {{ $name }}-container">
               <span>{{ title $name }} Container</span>
               <span>On {{ title $name }} Container</span>
             </div>
