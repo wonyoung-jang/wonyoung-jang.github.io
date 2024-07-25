@@ -57,6 +57,7 @@
     & .tab {
       max-height: var(--size-12);
     }
+    
     & .tab .icon {
       display: none;
     }

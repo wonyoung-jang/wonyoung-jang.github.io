@@ -1,4 +1,4 @@
-.set.tabs:not(.sub-tabs) {
+.tabs:not(.sub-tabs) {
   position: relative;
   align-self: center;
   
@@ -37,7 +37,7 @@
   }
 
   &.primary .tab {    
-    &:has(.icon + .label) {
+    &:has(.icon) {
       --container-height: var(--size-16);
     }
     

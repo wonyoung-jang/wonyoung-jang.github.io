@@ -1,11 +1,13 @@
-<nav class="toc" aria-label="Page Content">
-    <h2 class="headline">
-        On this page
-    </h2>
-    
-    <div class="title">
-        {{ .Title }}
-    </div>
-    
-    {{ .TableOfContents }}
+<nav
+  class="layout toc"
+  aria-label="Page Content">
+  <span class="headline">
+    On this page
+  </span>
+
+  <span class="title">
+    {{ .Title }}
+  </span>
+
+  {{ .TableOfContents }}
 </nav>
