@@ -396,10 +396,19 @@
         "config" "range"
         "range" true 
         "datalist"
-        "markers-r ange" 
+        "markers-range" 
         "markers" (slice "0" "100")
         ) 
       }}
+
+      <div class="sub-showcase-components-header">Disabled</div>
+      {{ partial "components/selections/sliders.html" (dict 
+        "config" "continuous"
+        "disabled" "disabled"
+        "trackingDot" true
+        ) 
+      }}
+    
     </div>
     
     {{/*  Switches  */}}
@@ -407,6 +416,11 @@
     <div class="layout showcase-components">
       <div class="sub-showcase-components-header">No icon</div>
       {{ partial "components/selections/switches.html" dict }}
+
+      {{ partial "components/selections/switches.html" (dict
+        "disabled" "disabled"
+        ) 
+      }}
     
       <div class="sub-showcase-components-header">With icons</div>
       {{ partial "components/selections/switches.html" (dict 
@@ -415,7 +429,19 @@
       }}
 
       {{ partial "components/selections/switches.html" (dict 
+        "icons" "select"
+        "disabled" "disabled"
+        ) 
+      }}
+
+      {{ partial "components/selections/switches.html" (dict 
         "icons" "both"
+        ) 
+      }}
+
+      {{ partial "components/selections/switches.html" (dict 
+        "icons" "both"
+        "disabled" "disabled"
         ) 
       }}
     </div>

@@ -1,7 +1,15 @@
 .component{
   &.button,
   &.card,
-  &.checkbox {
+  &.carousel-item,
+  &.checkbox,
+  &.chip,
+  &.date-picker.docked,
+  &.list,
+  &.menu,
+  &.radio,
+  &.slider,
+  &.switch {
     &.disabled,
     &:disabled {
       --container-outline: var(--container-outline-disabled);
@@ -17,3 +25,19 @@
     }
   }
 }
+
+/* 
+TODO button.common
+TODO button.icon
+TODO button.segmented
+TODO card
+TODO carousel
+TODO checkboxes
+TODO chips
+TODO picker-date.docked
+TODO lists
+TODO menus
+TODO radio
+TODO sliders
+TODO switch
+*/

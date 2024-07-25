@@ -1,9 +1,10 @@
-<div class="slider{{ if .range }} range{{ end }}">
+<div class="component slider{{ if .range }} range{{ end }}" {{ .disabled }}>
   {{ if .range }}
-    <input type="range" list="markers-{{ .id }}" class="left">
-    <input type="range" list="markers-{{ .id }}" class="right">
+    <input type="range" list="markers-{{ .id }}" class="left" {{ .disabled }}>
+    <input type="range" list="markers-{{ .id }}" class="right" {{ .disabled }}>
   {{ else }}
-    <input type="range"
+    <input type="range" 
+      {{ .disabled }}
       {{ with .value }}value="{{ . }}"{{ end }}
       {{ with .step }}step="{{ . }}"{{ end }}
       {{ with .list }}list="{{ . }}"{{ end }}>
