@@ -12,9 +12,13 @@
   &.switch {
     &.disabled,
     &:disabled {
+
+      --bg-color: var(--container-color-disabled);
       --container-outline: var(--container-outline-disabled);
       --container-elevation: var(--container-elevation-disabled);
-      --state-color: none;
+      --icon-color: var(--state-color-content-disabled);
+      --text-color: var(--state-color-content-disabled);
+
       pointer-events: none;
       cursor: not-allowed;
       
@@ -27,17 +31,17 @@
 }
 
 /* 
-TODO button.common
-TODO button.icon
-TODO button.segmented
-TODO card
-TODO carousel
-TODO checkboxes
-TODO chips
-TODO picker-date.docked
-TODO lists
-TODO menus
-TODO radio
-TODO sliders
-TODO switch
+TODO review: disabled state for button.common
+TODO review: disabled state for button.icon
+TODO review: disabled state for button.segmented
+TODO review: disabled state for card
+TODO review: disabled state for carousel
+TODO review: disabled state for checkboxes
+TODO review: disabled state for chips
+TODO review: disabled state for picker-date.docked
+TODO review: disabled state for lists
+TODO review: disabled state for menus
+TODO review: disabled state for radio
+TODO review: disabled state for sliders
+TODO review: disabled state for switch
 */
