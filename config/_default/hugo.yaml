@@ -28,11 +28,6 @@ markup:
     parser:
       wrapStandAloneImageWithinParagraph: false
 
-# Modules
-module:
-  imports:
-  - path: PolyRhythmic
-
 # Outputs
 outputs:
   home:
