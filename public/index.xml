@@ -10,7 +10,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/
+      https://wonyoungjang.org/
     </link>
 
     <description>
@@ -48,14 +48,14 @@
         Thu, 25 Jul 2024 12:37:22 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           All Logseq elements
         </title>
 
         <link>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </link>
 
         <pubDate>
@@ -70,11 +70,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/all-logseq-elements/
+          https://wonyoungjang.org/all-logseq-elements/
         </guid>
 
         <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Nested headings&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight
+          Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Nested headings link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Single formatting link h3 Bold&#xA;Italic&#xA;Highlight Double formatting link h3 Bold + italic&#xA;Bold + highlight
         </description>
       </item>
       <item>
@@ -83,7 +83,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/states/
+          https://wonyoungjang.org/states/
         </link>
 
         <pubDate>
@@ -98,7 +98,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/states/
+          https://wonyoungjang.org/states/
         </guid>
 
         <description>
@@ -111,7 +111,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/actions/
+          https://wonyoungjang.org/actions/
         </link>
 
         <pubDate>
@@ -126,7 +126,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/actions/
+          https://wonyoungjang.org/actions/
         </guid>
 
         <description>
@@ -139,7 +139,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/communication/
+          https://wonyoungjang.org/communication/
         </link>
 
         <pubDate>
@@ -154,7 +154,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/communication/
+          https://wonyoungjang.org/communication/
         </guid>
 
         <description>
@@ -167,7 +167,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/containment/
+          https://wonyoungjang.org/containment/
         </link>
 
         <pubDate>
@@ -182,7 +182,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/containment/
+          https://wonyoungjang.org/containment/
         </guid>
 
         <description>
@@ -195,7 +195,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/navigation/
+          https://wonyoungjang.org/navigation/
         </link>
 
         <pubDate>
@@ -210,7 +210,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/navigation/
+          https://wonyoungjang.org/navigation/
         </guid>
 
         <description>
@@ -223,7 +223,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/selections/
+          https://wonyoungjang.org/selections/
         </link>
 
         <pubDate>
@@ -238,7 +238,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/selections/
+          https://wonyoungjang.org/selections/
         </guid>
 
         <description>
@@ -251,7 +251,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/text-inputs/
+          https://wonyoungjang.org/text-inputs/
         </link>
 
         <pubDate>
@@ -266,7 +266,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/text-inputs/
+          https://wonyoungjang.org/text-inputs/
         </guid>
 
         <description>
@@ -279,7 +279,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/elevations/
+          https://wonyoungjang.org/elevations/
         </link>
 
         <pubDate>
@@ -294,7 +294,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/elevations/
+          https://wonyoungjang.org/elevations/
         </guid>
 
         <description>
@@ -307,7 +307,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
         </link>
 
         <pubDate>
@@ -322,11 +322,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+          https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/
         </guid>
 
         <description>
-          Purpose&#xD;link&#xD;h2&#xD;My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:&#xA;They are individually adjusted with thumbscrews, which can be finnicky&#xA;The maximum tenting may not be as extreme as you might like&#xA;With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.
+          Purpose link h2 My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:&#xA;They are individually adjusted with thumbscrews, which can be finnicky&#xA;The maximum tenting may not be as extreme as you might like&#xA;With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.
         </description>
       </item>
       <item>
@@ -335,7 +335,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/colors/
+          https://wonyoungjang.org/colors/
         </link>
 
         <pubDate>
@@ -350,7 +350,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/colors/
+          https://wonyoungjang.org/colors/
         </guid>
 
         <description>
@@ -363,7 +363,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/feed-layout/
+          https://wonyoungjang.org/feed-layout/
         </link>
 
         <pubDate>
@@ -378,7 +378,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/feed-layout/
+          https://wonyoungjang.org/feed-layout/
         </guid>
 
         <description>
@@ -391,7 +391,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/fixed-and-flexible-layout/
+          https://wonyoungjang.org/fixed-and-flexible-layout/
         </link>
 
         <pubDate>
@@ -406,7 +406,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/fixed-and-flexible-layout/
+          https://wonyoungjang.org/fixed-and-flexible-layout/
         </guid>
 
         <description>
@@ -419,7 +419,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-detail-layout/
+          https://wonyoungjang.org/list-detail-layout/
         </link>
 
         <pubDate>
@@ -434,7 +434,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-detail-layout/
+          https://wonyoungjang.org/list-detail-layout/
         </guid>
 
         <description>
@@ -447,7 +447,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/motion/
+          https://wonyoungjang.org/motion/
         </link>
 
         <pubDate>
@@ -462,7 +462,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/motion/
+          https://wonyoungjang.org/motion/
         </guid>
 
         <description>
@@ -475,7 +475,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/now/
+          https://wonyoungjang.org/now/
         </link>
 
         <pubDate>
@@ -490,11 +490,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/now/
+          https://wonyoungjang.org/now/
         </guid>
 
         <description>
-          keepThis is a now page. Inspired by: https://nownownow.com/about sticky_note_2Last update: 2024-06-28 Friday Material redesign of my site&#xD;link&#xD;h2&#xD;I&amp;rsquo;ve redesigned this site, wonyoungjang.org using Google&amp;rsquo;s Material Design 3 as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.
+          keepThis is a now page. Inspired by: https://nownownow.com/about sticky_note_2Last update: 2024-06-28 Friday Material redesign of my site link h2 I&amp;rsquo;ve redesigned this site, wonyoungjang.org using Google&amp;rsquo;s Material Design 3 as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.
         </description>
       </item>
       <item>
@@ -503,7 +503,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/shapes/
+          https://wonyoungjang.org/shapes/
         </link>
 
         <pubDate>
@@ -518,7 +518,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/shapes/
+          https://wonyoungjang.org/shapes/
         </guid>
 
         <description>
@@ -531,7 +531,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/single-pane-layout/
+          https://wonyoungjang.org/single-pane-layout/
         </link>
 
         <pubDate>
@@ -546,7 +546,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/single-pane-layout/
+          https://wonyoungjang.org/single-pane-layout/
         </guid>
 
         <description>
@@ -559,7 +559,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/supporting-pane-layout/
+          https://wonyoungjang.org/supporting-pane-layout/
         </link>
 
         <pubDate>
@@ -574,7 +574,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/supporting-pane-layout/
+          https://wonyoungjang.org/supporting-pane-layout/
         </guid>
 
         <description>
@@ -587,7 +587,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/typography/
+          https://wonyoungjang.org/typography/
         </link>
 
         <pubDate>
@@ -602,7 +602,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/typography/
+          https://wonyoungjang.org/typography/
         </guid>
 
         <description>
@@ -615,7 +615,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/about/
+          https://wonyoungjang.org/about/
         </link>
 
         <pubDate>
@@ -630,11 +630,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/about/
+          https://wonyoungjang.org/about/
         </guid>
 
         <description>
-          About me&#xD;link&#xD;h2&#xD;Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.
+          About me link h2 Hello!&#xA;Personally, I&amp;rsquo;m interested in programming, making music, formal logic, backpacking, magic and cardistry, and cooking. This site is a collection of my projects and notes related to various areas of my life.&#xA;I have a Bachelor of Science in Computer Science and a Bachelor of Arts in Psychology.&#xA;I grew up in The Bronx, NYC where I started learning magic tricks at the age of 5, attended the Lang Science Program at The American Museum of Natural History from the summer of fifth grade to high school graduation, built (awful) text-based games in BASIC, and where I eventually moved out of to pursue my higher education.
         </description>
       </item>
       <item>
@@ -643,7 +643,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/contact/
+          https://wonyoungjang.org/contact/
         </link>
 
         <pubDate>
@@ -658,11 +658,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/contact/
+          https://wonyoungjang.org/contact/
         </guid>
 
         <description>
-          Contact me directly&#xD;link&#xD;h2&#xD;The best way to contact me directly is through email at contact@wonyoungjang.org.&#xA;Give me feedback&#xD;link&#xD;h2&#xD;Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.
+          Contact me directly link h2 The best way to contact me directly is through email at contact@wonyoungjang.org.&#xA;Give me feedback link h2 Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.
         </description>
       </item>
       <item>
@@ -671,7 +671,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -686,11 +686,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
         </guid>
 
         <description>
-          What an admonition is&#xD;link&#xD;h2&#xD;An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
+          What an admonition is link h2 An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
         </description>
       </item>
       <item>
@@ -699,7 +699,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
+          https://wonyoungjang.org/pit-signs-for-robotics-competition/
         </link>
 
         <pubDate>
@@ -714,11 +714,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
+          https://wonyoungjang.org/pit-signs-for-robotics-competition/
         </guid>
 
         <description>
-          Pit signs&#xD;link&#xD;h2&#xD;At one of my past employers, we ran large robotics competitions. For one such competition, we customized and printed these &amp;ldquo;pit signs&amp;rdquo; for each team participating in the competition. The teams could then take them home at the end.&#xA;I&amp;rsquo;ve templated these signs so anybody may create similar ones.&#xA;Figma Design Kit
+          Pit signs link h2 At one of my past employers, we ran large robotics competitions. For one such competition, we customized and printed these &amp;ldquo;pit signs&amp;rdquo; for each team participating in the competition. The teams could then take them home at the end.&#xA;I&amp;rsquo;ve templated these signs so anybody may create similar ones.&#xA;Figma Design Kit
         </description>
       </item>
       <item>
@@ -727,7 +727,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/search/
+          https://wonyoungjang.org/search/
         </link>
 
         <pubDate>
@@ -742,7 +742,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/search/
+          https://wonyoungjang.org/search/
         </guid>
 
         <description>
@@ -755,7 +755,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/sitemap/
+          https://wonyoungjang.org/sitemap/
         </link>
 
         <pubDate>
@@ -770,7 +770,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/sitemap/
+          https://wonyoungjang.org/sitemap/
         </guid>
 
         <description>
@@ -783,7 +783,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/split-pane-layout/
+          https://wonyoungjang.org/split-pane-layout/
         </link>
 
         <pubDate>
@@ -798,7 +798,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/split-pane-layout/
+          https://wonyoungjang.org/split-pane-layout/
         </guid>
 
         <description>
@@ -811,7 +811,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -826,11 +826,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </guid>
 
         <description>
-          Windows&#xD;link&#xD;h2&#xD;Firefox&#xD;link&#xD;h3&#xD;Appearance&#xD;link&#xD;h4&#xD;ALT + SHIFT + t → Toggle light/dark themes Navigation&#xD;link&#xD;h4&#xD;ALT + SHIFT + g → Go back to top&#xA;ALT + SHIFT + h → Go to home page&#xA;ALT + SHIFT + r → Go to random page&#xA;ALT + SHIFT + p → Go to previous page&#xA;ALT + SHIFT + n → Go to next page
+          Windows link h2 Firefox link h3 Appearance link h4 ALT + SHIFT + t → Toggle light/dark themes Navigation link h4 ALT + SHIFT + g → Go back to top&#xA;ALT + SHIFT + h → Go to home page&#xA;ALT + SHIFT + r → Go to random page&#xA;ALT + SHIFT + p → Go to previous page&#xA;ALT + SHIFT + n → Go to next page
         </description>
       </item>
       <item>
@@ -839,7 +839,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/realtime-multiplayer-drawing/
+          https://wonyoungjang.org/realtime-multiplayer-drawing/
         </link>
 
         <pubDate>
@@ -854,11 +854,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/realtime-multiplayer-drawing/
+          https://wonyoungjang.org/realtime-multiplayer-drawing/
         </guid>
 
         <description>
-          Introduction&#xD;link&#xD;h2&#xD;This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.&#xA;Why&#xD;link&#xD;h2&#xD;While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.
+          Introduction link h2 This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.&#xA;Why link h2 While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.
         </description>
       </item>
       <item>
@@ -867,7 +867,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/wonyoungjang.org/
+          https://wonyoungjang.org/wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -882,11 +882,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/wonyoungjang.org/
+          https://wonyoungjang.org/wonyoungjang.org/
         </guid>
 
         <description>
-          How it&amp;rsquo;s made&#xD;link&#xD;h2&#xD;Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.
+          How it&amp;rsquo;s made link h2 Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.
         </description>
       </item>
       <item>
@@ -895,7 +895,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/q-learning-tournament-scheduler/
+          https://wonyoungjang.org/q-learning-tournament-scheduler/
         </link>
 
         <pubDate>
@@ -910,11 +910,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/q-learning-tournament-scheduler/
+          https://wonyoungjang.org/q-learning-tournament-scheduler/
         </guid>
 
         <description>
-          A brief history&#xD;link&#xD;h2&#xD;A nerd snipe from a coworker&#xD;link&#xD;h3&#xD;My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts&#xD;link&#xD;h3&#xD;Since this was not a necessary project for my job, I started to work on the problem in my free time.
+          A brief history link h2 A nerd snipe from a coworker link h3 My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts link h3 Since this was not a necessary project for my job, I started to work on the problem in my free time.
         </description>
       </item>
       <item>
@@ -923,7 +923,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/save-top-level-reddit-comments/
+          https://wonyoungjang.org/save-top-level-reddit-comments/
         </link>
 
         <pubDate>
@@ -938,11 +938,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/save-top-level-reddit-comments/
+          https://wonyoungjang.org/save-top-level-reddit-comments/
         </guid>
 
         <description>
-          Premise&#xD;link&#xD;h2&#xD;Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion&#xD;link&#xD;h2&#xD;This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.
+          Premise link h2 Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion link h2 This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.
         </description>
       </item>
       <item>
@@ -951,7 +951,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/disaster-recovery-robot-simulation/
+          https://wonyoungjang.org/disaster-recovery-robot-simulation/
         </link>
 
         <pubDate>
@@ -966,11 +966,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/disaster-recovery-robot-simulation/
+          https://wonyoungjang.org/disaster-recovery-robot-simulation/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Familiarize with CoppeliaSim robotics virtual environment and tools&#xA;Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment&#xA;Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Familiarize with CoppeliaSim robotics virtual environment and tools&#xA;Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment&#xA;Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task
         </description>
       </item>
       <item>
@@ -979,7 +979,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/cs-career-chatbot/
+          https://wonyoungjang.org/cs-career-chatbot/
         </link>
 
         <pubDate>
@@ -994,11 +994,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/cs-career-chatbot/
+          https://wonyoungjang.org/cs-career-chatbot/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Develop a Pandorabot chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Develop a Pandorabot chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods
         </description>
       </item>
       <item>
@@ -1007,7 +1007,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/logseq-markdown-tokenizer/
+          https://wonyoungjang.org/logseq-markdown-tokenizer/
         </link>
 
         <pubDate>
@@ -1022,11 +1022,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/logseq-markdown-tokenizer/
+          https://wonyoungjang.org/logseq-markdown-tokenizer/
         </guid>
 
         <description>
-          Problem&#xD;link&#xD;h2&#xD;Logseq does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution&#xD;link&#xD;h2&#xD;Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
+          Problem link h2 Logseq does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution link h2 Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
         </description>
       </item>
       <item>
@@ -1035,7 +1035,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/package-delivery-route-optimization/
+          https://wonyoungjang.org/package-delivery-route-optimization/
         </link>
 
         <pubDate>
@@ -1050,11 +1050,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/package-delivery-route-optimization/
+          https://wonyoungjang.org/package-delivery-route-optimization/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Implement a hash table data structure (without external libraries) to store package data&#xA;Create an insertion function to add package details (address, deadline, city, zip code, weight, status) to the hash table&#xA;Create a lookup function to retrieve package details based on package ID
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Implement a hash table data structure (without external libraries) to store package data&#xA;Create an insertion function to add package details (address, deadline, city, zip code, weight, status) to the hash table&#xA;Create a lookup function to retrieve package details based on package ID
         </description>
       </item>
       <item>
@@ -1063,7 +1063,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/hotel-reservation-manager/
+          https://wonyoungjang.org/hotel-reservation-manager/
         </link>
 
         <pubDate>
@@ -1078,11 +1078,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/hotel-reservation-manager/
+          https://wonyoungjang.org/hotel-reservation-manager/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Integrate resource bundles in the Spring application for English and French translations, including a welcome message&#xA;Implement multithreading to display the welcome message in both English and French simultaneously&#xA;Modify the front end to show reservation prices in USD, CAD, and EUR
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Integrate resource bundles in the Spring application for English and French translations, including a welcome message&#xA;Implement multithreading to display the welcome message in both English and French simultaneously&#xA;Modify the front end to show reservation prices in USD, CAD, and EUR
         </description>
       </item>
       <item>
@@ -1091,7 +1091,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/vacation-cart-manager/
+          https://wonyoungjang.org/vacation-cart-manager/
         </link>
 
         <pubDate>
@@ -1106,11 +1106,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/vacation-cart-manager/
+          https://wonyoungjang.org/vacation-cart-manager/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion
         </description>
       </item>
       <item>
@@ -1119,7 +1119,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/retail-inventory-manager/
+          https://wonyoungjang.org/retail-inventory-manager/
         </link>
 
         <pubDate>
@@ -1134,11 +1134,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/retail-inventory-manager/
+          https://wonyoungjang.org/retail-inventory-manager/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Customize the HTML user interface of the Spring application to reflect the specific customer&amp;rsquo;s shop name, product names, and part names&#xA;Add an About page that accurately describes the customer&amp;rsquo;s company and ensure proper navigation within the application
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Customize the HTML user interface of the Spring application to reflect the specific customer&amp;rsquo;s shop name, product names, and part names&#xA;Add an About page that accurately describes the customer&amp;rsquo;s company and ensure proper navigation within the application
         </description>
       </item>
       <item>
@@ -1147,7 +1147,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/dvd-rental-database/
+          https://wonyoungjang.org/dvd-rental-database/
         </link>
 
         <pubDate>
@@ -1162,11 +1162,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/dvd-rental-database/
+          https://wonyoungjang.org/dvd-rental-database/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Create a PostgreSQL real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Create a PostgreSQL real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report
         </description>
       </item>
       <item>
@@ -1175,7 +1175,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/student-record-system/
+          https://wonyoungjang.org/student-record-system/
         </link>
 
         <pubDate>
@@ -1190,11 +1190,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/student-record-system/
+          https://wonyoungjang.org/student-record-system/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data
         </description>
       </item>
       <item>
@@ -1203,7 +1203,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/food-shop-database-management/
+          https://wonyoungjang.org/food-shop-database-management/
         </link>
 
         <pubDate>
@@ -1218,11 +1218,11 @@
         
 
         <guid>
-          http://192.168.40.181:1313/food-shop-database-management/
+          https://wonyoungjang.org/food-shop-database-management/
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance
         </description>
       </item>
       <item>
@@ -1231,7 +1231,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/graph/
+          https://wonyoungjang.org/graph/
         </link>
 
         <pubDate>
@@ -1246,7 +1246,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/graph/
+          https://wonyoungjang.org/graph/
         </guid>
 
         <description>
@@ -1259,7 +1259,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/archives/
+          https://wonyoungjang.org/archives/
         </link>
 
         <pubDate>
@@ -1274,7 +1274,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/archives/
+          https://wonyoungjang.org/archives/
         </guid>
 
         <description>
@@ -1287,7 +1287,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/playground/
+          https://wonyoungjang.org/playground/
         </link>
 
         <pubDate>
@@ -1302,7 +1302,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/playground/
+          https://wonyoungjang.org/playground/
         </guid>
 
         <description>
