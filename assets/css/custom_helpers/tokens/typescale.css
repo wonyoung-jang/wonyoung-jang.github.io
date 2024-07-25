@@ -111,8 +111,8 @@
 /* || Code */
 
 .code-typeface {
-  font-family: var(--typeface-mono);
-  font-size:   var(--typescale-body-small-size);
-  font-weight: var(--typescale-body-small-weight);
-  line-height: var(--typescale-body-small-line-height);
+  font-family: var(--typescale-code-large-font);
+  font-size:   var(--typescale-code-large-size);
+  font-weight: var(--typescale-code-large-weight);
+  line-height: var(--typescale-code-large-line-height);
 }

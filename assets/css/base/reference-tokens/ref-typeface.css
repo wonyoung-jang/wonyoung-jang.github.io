@@ -1,8 +1,8 @@
 :root {
   /* Fonts */
-  --typeface-brand:               "Raleway", sans-serif;
-  --typeface-plain:               "IBM Plex Sans", sans-serif;
-  --typeface-mono:                "IBM Plex Mono", monospace;
+  --typeface-brand:               var(--typeface-brand), "Raleway", sans-serif;
+  --typeface-plain:               var(--typeface-plain), "IBM Plex Sans", sans-serif;
+  --typeface-mono:                var(--typeface-code), "IBM Plex Mono", monospace;
 
   /* Icons */
   --typeface-icon-outlined:       'Material Symbols Outlined';

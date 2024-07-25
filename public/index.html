@@ -23,13 +23,13 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.9531e8c264756cea080e2d3dde4dbbd03dc51940a78d7d125764e486e1a74d71.css" integrity="sha256-lTHowmR1bOoIDi093k270D3FGUCnjX0SV2TkhuGnTXE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.b12d2fe24890e0897319cbb118a7e1223d2935d8aa7831f88a2edf8d7f6daafa.css" integrity="sha256-sS0v4kiQ4IlzGcuxGKfhIj0pNdiqeDH4ii7fjX9tqvo=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.22242c30b614ca8e75ebeb9f20e0ca1ba83c0f069cf414bd8a78b63fc895ee4f.css" integrity="sha256-IiQsMLYUyo516&#43;ufIODKG6g8Dwac9BS9ini2P8iV7k8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.c6bff13673ef94644759aaf4399ed0bd2a5a6b0940407950289f64f88cd4f6a2.css" integrity="sha256-xr/xNnPvlGRHWar0OZ7QvSpaawlAQHlQKJ9k&#43;IzU9qI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.7e6c2697bedf451023d8be142240e18affb613abbae2c9014d9d8515cdd02c2c.css" integrity="sha256-fmwml77fRRAj2L4UIkDhiv&#43;2E6u64skBTZ2FFc3QLCw=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/4helpers.min.5f81fc0333bb60f2642b8d68f07abe72010c54e3c81601393b49e76da0722ef6.css" integrity="sha256-X4H8AzO7YPJkK41o8Hq&#43;cgEMVOPIFgE5O0nnbaByLvY=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/4helpers.min.59adc602b2a4e2fc4487d9a6a872a52491def4ae8baad8dfa9e97944cdc513a7.css" integrity="sha256-Wa3GArKk4vxEh9mmqHKlJJHe9K6Lqtjfqel5RM3FE6c=" rel="preload stylesheet" as="style">
 
 
 
@@ -71,7 +71,7 @@
 
   <meta itemprop="name" content="Wonyoung Jang">
   <meta itemprop="description" content="Wonyoung Jang&#39;s personal website">
-  <meta itemprop="dateModified" content="2024-07-24T15:05:21-04:00">
+  <meta itemprop="dateModified" content="2024-07-25T12:37:22-04:00">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Wonyoung Jang">
@@ -426,6 +426,8 @@
             <span>Courier New</span>
           </label>
         </fieldset>
+        
+        <div class="example title-small">Example: Brand text</div>
 
         <hr class="divider">
 
@@ -450,6 +452,8 @@
           </label>
         </fieldset>
 
+        <div class="example body-large">Example: Plain text</div>
+
         <hr class="divider">
         
         
@@ -472,6 +476,9 @@
             <span>Courier New</span>
           </label>
         </fieldset>
+
+        <div class="example code-typeface">Example: Code text</div>
+
       </div>
     </div>
   </menu>
@@ -1257,6 +1264,49 @@ You&#39;re welcome to use anything you find here.
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

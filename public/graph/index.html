@@ -23,13 +23,13 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.9531e8c264756cea080e2d3dde4dbbd03dc51940a78d7d125764e486e1a74d71.css" integrity="sha256-lTHowmR1bOoIDi093k270D3FGUCnjX0SV2TkhuGnTXE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.b12d2fe24890e0897319cbb118a7e1223d2935d8aa7831f88a2edf8d7f6daafa.css" integrity="sha256-sS0v4kiQ4IlzGcuxGKfhIj0pNdiqeDH4ii7fjX9tqvo=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.839e915c97858b2e31f4a8b80f22b72db002f4652558436ab8e12313660f7ca0.css" integrity="sha256-g56RXJeFiy4x9Ki4DyK3LbAC9GUlWENquOEjE2YPfKA=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.22242c30b614ca8e75ebeb9f20e0ca1ba83c0f069cf414bd8a78b63fc895ee4f.css" integrity="sha256-IiQsMLYUyo516&#43;ufIODKG6g8Dwac9BS9ini2P8iV7k8=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.43de04a6a69c56038382e6712fa36c35ef93ad11088106796e0577660550a933.css" integrity="sha256-Q94EpqacVgODguZxL6NsNe&#43;TrREIgQZ5bgV3ZgVQqTM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.c6bff13673ef94644759aaf4399ed0bd2a5a6b0940407950289f64f88cd4f6a2.css" integrity="sha256-xr/xNnPvlGRHWar0OZ7QvSpaawlAQHlQKJ9k&#43;IzU9qI=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/4helpers.min.5f81fc0333bb60f2642b8d68f07abe72010c54e3c81601393b49e76da0722ef6.css" integrity="sha256-X4H8AzO7YPJkK41o8Hq&#43;cgEMVOPIFgE5O0nnbaByLvY=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/4helpers.min.59adc602b2a4e2fc4487d9a6a872a52491def4ae8baad8dfa9e97944cdc513a7.css" integrity="sha256-Wa3GArKk4vxEh9mmqHKlJJHe9K6Lqtjfqel5RM3FE6c=" rel="preload stylesheet" as="style">
 
 
 
@@ -312,6 +312,7 @@
     
     <div id="max-width-selector-container">
       <div class="title-large">Content text width</div>
+      
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="width" id="width-selector-60" value="60"/>
@@ -336,6 +337,7 @@
     
     <div id="tertiary-temperature-selector-container">
       <div class="title-large">Tertiary temperature</div>
+
       <div class="component segmented-buttons">
         <label class="component button">
           <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
@@ -349,6 +351,11 @@
           Warmer
         </label>
       </div>
+
+      <section class="color-temp-reference">
+        <div id="primary">Primary</div>
+        <div id="tertiary">Tertiary</div>
+      </section>
     </div>
 
     
@@ -418,6 +425,8 @@
           </label>
         </fieldset>
 
+        <div class="title-small">Example: Brand text</div>
+
         <hr class="divider">
 
         
@@ -441,6 +450,8 @@
           </label>
         </fieldset>
 
+        <div>Example: Plain text</div>
+
         <hr class="divider">
         
         
@@ -463,6 +474,9 @@
             <span>Courier New</span>
           </label>
         </fieldset>
+
+        <div class="code-typeface">Example: Code text</div>
+
       </div>
     </div>
   </menu>
@@ -903,16 +917,18 @@
                 
                 <article class="layout panes basic-fixed-flex" id="single">
     <aside class="layout pane fixed-pane" id="toc">
-      <nav class="toc" aria-label="Page Content">
-    <h2 class="headline">
-        On this page
-    </h2>
+      <nav
+  class="layout toc"
+  aria-label="Page Content">
+  <span class="headline">
+    On this page
+  </span>
+
+  <span class="title">
     
-    <div class="title">
-        
-    </div>
-    
-    
+  </span>
+
+  
 </nav>
 
     </aside>

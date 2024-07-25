@@ -179,6 +179,12 @@
   }
 }
 
+#typography-selector {
+  & .example {
+    text-align: right;
+  }
+}
+
 #tertiary-temperature-selector-container {
   & .color-temp-reference {
     display: flex;

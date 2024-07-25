@@ -1,81 +1,87 @@
 :root {
   /* 1 Label */
-  --typescale-label-small-size:             calc(var(--typescale-label-medium-size) / var(--scale-back-size));
-  --typescale-label-small-line-height:      var(--scale-line-height-label);
-  --typescale-label-small-weight:           var(--typeface-weight-medium);
   --typescale-label-small-font:             var(--typeface-plain);
+  --typescale-label-small-size:             calc(var(--typescale-label-medium-size) / var(--scale-back-size));
+  --typescale-label-small-weight:           var(--typeface-weight-medium);
+  --typescale-label-small-line-height:      var(--scale-line-height-label);
   
-  --typescale-label-medium-size:            calc(var(--typescale-body-medium-size) / var(--scale-back-type));
-  --typescale-label-medium-line-height:     var(--scale-line-height-label);
-  --typescale-label-medium-weight:          var(--typeface-weight-medium);
   --typescale-label-medium-font:            var(--typeface-plain);
+  --typescale-label-medium-size:            calc(var(--typescale-body-medium-size) / var(--scale-back-type));
+  --typescale-label-medium-weight:          var(--typeface-weight-medium);
+  --typescale-label-medium-line-height:     var(--scale-line-height-label);
   
-  --typescale-label-large-size:             calc(var(--typescale-label-medium-size) * var(--scale-up-size));
-  --typescale-label-large-line-height:      var(--scale-line-height-label);
-  --typescale-label-large-weight:           var(--typeface-weight-medium);
   --typescale-label-large-font:             var(--typeface-plain);
+  --typescale-label-large-size:             calc(var(--typescale-label-medium-size) * var(--scale-up-size));
+  --typescale-label-large-weight:           var(--typeface-weight-medium);
+  --typescale-label-large-line-height:      var(--scale-line-height-label);
     
   /* 2 Body */  
-  --typescale-body-small-size:              calc(var(--typescale-body-medium-size) / var(--scale-back-size));
-  --typescale-body-small-line-height:       var(--scale-line-height-body);
-  --typescale-body-small-weight:            var(--typeface-weight-regular);
   --typescale-body-small-font:              var(--typeface-plain);
+  --typescale-body-small-size:              calc(var(--typescale-body-medium-size) / var(--scale-back-size));
+  --typescale-body-small-weight:            var(--typeface-weight-regular);
+  --typescale-body-small-line-height:       var(--scale-line-height-body);
   
-  --typescale-body-medium-size:             calc(var(--typescale-title-medium-size) / var(--scale-back-type));
-  --typescale-body-medium-line-height:      var(--scale-line-height-body);
-  --typescale-body-medium-weight:           var(--typeface-weight-regular);
   --typescale-body-medium-font:             var(--typeface-plain);
+  --typescale-body-medium-size:             calc(var(--typescale-title-medium-size) / var(--scale-back-type));
+  --typescale-body-medium-weight:           var(--typeface-weight-regular);
+  --typescale-body-medium-line-height:      var(--scale-line-height-body);
   
-  --typescale-body-large-size:              calc(var(--typescale-body-medium-size) * var(--scale-up-size));
-  --typescale-body-large-line-height:       var(--scale-line-height-body);
-  --typescale-body-large-weight:            var(--typeface-weight-regular);
   --typescale-body-large-font:              var(--typeface-plain);
+  --typescale-body-large-size:              calc(var(--typescale-body-medium-size) * var(--scale-up-size));
+  --typescale-body-large-weight:            var(--typeface-weight-regular);
+  --typescale-body-large-line-height:       var(--scale-line-height-body);
     
   /* 3 Title */ 
-  --typescale-title-small-size:             calc(var(--typescale-title-medium-size) / var(--scale-back-size));
-  --typescale-title-small-line-height:      var(--scale-line-height-title);
-  --typescale-title-small-weight:           var(--typeface-weight-bold);
   --typescale-title-small-font:             var(--typeface-brand);
+  --typescale-title-small-size:             calc(var(--typescale-title-medium-size) / var(--scale-back-size));
+  --typescale-title-small-weight:           var(--typeface-weight-bold);
+  --typescale-title-small-line-height:      var(--scale-line-height-title);
   
-  --typescale-title-medium-size:            var(--input-font-size);
-  --typescale-title-medium-line-height:     var(--scale-line-height-title);
-  --typescale-title-medium-weight:          var(--typeface-weight-bold);
   --typescale-title-medium-font:            var(--typeface-brand);
+  --typescale-title-medium-size:            var(--input-font-size);
+  --typescale-title-medium-weight:          var(--typeface-weight-bold);
+  --typescale-title-medium-line-height:     var(--scale-line-height-title);
   
-  --typescale-title-large-size:             calc(var(--typescale-title-medium-size) * var(--scale-up-size));
-  --typescale-title-large-line-height:      var(--scale-line-height-title);
-  --typescale-title-large-weight:           var(--typeface-weight-bold);
   --typescale-title-large-font:             var(--typeface-brand);
+  --typescale-title-large-size:             calc(var(--typescale-title-medium-size) * var(--scale-up-size));
+  --typescale-title-large-weight:           var(--typeface-weight-bold);
+  --typescale-title-large-line-height:      var(--scale-line-height-title);
   
   /* 4 Headline */
-  --typescale-headline-small-size:          calc(var(--typescale-headline-medium-size) / var(--scale-back-size));
-  --typescale-headline-small-line-height:   var(--scale-line-height-headline);
-  --typescale-headline-small-weight:        var(--typeface-weight-bold);
   --typescale-headline-small-font:          var(--typeface-brand);
+  --typescale-headline-small-size:          calc(var(--typescale-headline-medium-size) / var(--scale-back-size));
+  --typescale-headline-small-weight:        var(--typeface-weight-bold);
+  --typescale-headline-small-line-height:   var(--scale-line-height-headline);
   
-  --typescale-headline-medium-size:         calc(var(--typescale-title-medium-size) * var(--scale-up-type));
-  --typescale-headline-medium-line-height:  var(--scale-line-height-headline);
-  --typescale-headline-medium-weight:       var(--typeface-weight-bold);
   --typescale-headline-medium-font:         var(--typeface-brand);
+  --typescale-headline-medium-size:         calc(var(--typescale-title-medium-size) * var(--scale-up-type));
+  --typescale-headline-medium-weight:       var(--typeface-weight-bold);
+  --typescale-headline-medium-line-height:  var(--scale-line-height-headline);
 
-  --typescale-headline-large-size:          calc(var(--typescale-headline-medium-size) * var(--scale-up-size));
-  --typescale-headline-large-line-height:   var(--scale-line-height-headline);
-  --typescale-headline-large-weight:        var(--typeface-weight-bold);
   --typescale-headline-large-font:          var(--typeface-brand);
+  --typescale-headline-large-size:          calc(var(--typescale-headline-medium-size) * var(--scale-up-size));
+  --typescale-headline-large-weight:        var(--typeface-weight-bold);
+  --typescale-headline-large-line-height:   var(--scale-line-height-headline);
   
   /* 5 Display */
-  --typescale-display-small-size:           calc(var(--typescale-display-medium-size) / var(--scale-back-size));
-  --typescale-display-small-line-height:    var(--scale-line-height-display);
-  --typescale-display-small-weight:         var(--typeface-weight-bold);
   --typescale-display-small-font:           var(--typeface-brand);
+  --typescale-display-small-size:           calc(var(--typescale-display-medium-size) / var(--scale-back-size));
+  --typescale-display-small-weight:         var(--typeface-weight-bold);
+  --typescale-display-small-line-height:    var(--scale-line-height-display);
   
-  --typescale-display-medium-size:          calc(var(--typescale-headline-medium-size) * var(--scale-up-type));
-  --typescale-display-medium-line-height:   var(--scale-line-height-display);
-  --typescale-display-medium-weight:        var(--typeface-weight-bold);
   --typescale-display-medium-font:          var(--typeface-brand);
+  --typescale-display-medium-size:          calc(var(--typescale-headline-medium-size) * var(--scale-up-type));
+  --typescale-display-medium-weight:        var(--typeface-weight-bold);
+  --typescale-display-medium-line-height:   var(--scale-line-height-display);
   
-  --typescale-display-large-size:           calc(var(--typescale-display-medium-size) * var(--scale-up-size));
-  --typescale-display-large-line-height:    var(--scale-line-height-display);
-  --typescale-display-large-weight:         var(--typeface-weight-bold);
   --typescale-display-large-font:           var(--typeface-brand);
+  --typescale-display-large-size:           calc(var(--typescale-display-medium-size) * var(--scale-up-size));
+  --typescale-display-large-weight:         var(--typeface-weight-bold);
+  --typescale-display-large-line-height:    var(--scale-line-height-display);
+
+  /* ^ Code */
+  --typescale-code-large-font:              var(--typeface-code);
+  --typescale-code-large-size:              calc(var(--typescale-body-medium-size) * var(--scale-up-size));
+  --typescale-code-large-weight:            var(--typeface-weight-regular);
+  --typescale-code-large-line-height:       var(--scale-line-height-body);
 }
