@@ -164,9 +164,40 @@
 
 #tertiary-temperature-selector-container,
 #max-width-selector-container {
-  & div:first-child {
+  & div {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: var(--size-4);
+  }
+}
+
+#tertiary-temperature-selector-container {
+  & .color-temp-reference {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  & #primary,
+  & #tertiary {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: center;
+    padding: var(--size-3);
+    width: 100%;
+  }
+
+  & #primary {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border-radius: var(--shape-corner-m-start);
+  }
+  
+  & #tertiary {
+    background-color: var(--color-tertiary);
+    color: var(--color-on-tertiary);
+    border-radius: var(--shape-corner-m-end);
   }
 }
