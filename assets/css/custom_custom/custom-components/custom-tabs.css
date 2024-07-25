@@ -24,7 +24,7 @@
     width: 100%;
     box-shadow: var(--elevation2);
     border-radius: unset;
-    z-index: 7;
+    z-index: 1;
     
     & .tab {
       flex: 1 1 auto;
@@ -34,7 +34,7 @@
       gap: var(--size-2);
       padding: var(--size-7);
       border-radius: unset;
-      z-index: 7;
+      z-index: 1;
 
       &::before {
         visibility: hidden;

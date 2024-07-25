@@ -6,7 +6,6 @@
 
   overflow-x: auto;
 
-  & label.button,
   & .button {
     --bg-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
@@ -19,7 +18,6 @@
     min-width: fit-content;
     border-inline-end: 0px solid transparent;
 
-    & i.icon,
     & .icon {
       font-size: 18px;
       color: var(--color-on-surface);
