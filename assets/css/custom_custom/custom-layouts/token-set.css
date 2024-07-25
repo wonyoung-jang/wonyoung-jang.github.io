@@ -1,21 +1,21 @@
 .token-set {
-  --flex: initial;
-  --display: flex;
-  --flex-flow: column nowrap;
-  --align-items: stretch;
-  --align-content: initial;
-  --justify-content: initial;
-  --width: 100%;
-  --height: initial;
-  --min-height: initial;
-  --padding: initial;
-  --margin: initial;
-  --gap: initial;
+  --layout-flex: initial;
+  --layout-display: flex;
+  --layout-flex-flow: column nowrap;
+  --layout-align-items: stretch;
+  --layout-align-content: initial;
+  --layout-justify-content: initial;
+  --layout-width: 100%;
+  --layout-height: initial;
+  --layout-min-height: initial;
+  --layout-padding: initial;
+  --layout-margin: initial;
+  --layout-gap: initial;
 
-  --shape: initial;
-  --border: initial;
+  --layout-shape: initial;
+  --layout-border: initial;
 
-  --bg: var(--color-token-set-container);
+  --layout-bg: var(--color-token-set-container);
 
   margin-top: var(--size-15);
   overflow-x: auto;

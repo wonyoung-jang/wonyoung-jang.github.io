@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.bafbe69220ffddae70fbd3c70375c4f9ba99c455dcf586e4545e329c32e9fd43.css" integrity="sha256-uvvmkiD/3a5w&#43;9PHA3XE&#43;bqZxFXc9YbkVF4ynDLp/UM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.9531e8c264756cea080e2d3dde4dbbd03dc51940a78d7d125764e486e1a74d71.css" integrity="sha256-lTHowmR1bOoIDi093k270D3FGUCnjX0SV2TkhuGnTXE=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.839e915c97858b2e31f4a8b80f22b72db002f4652558436ab8e12313660f7ca0.css" integrity="sha256-g56RXJeFiy4x9Ki4DyK3LbAC9GUlWENquOEjE2YPfKA=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.d7db97234a0e3474ae834bf793e4ce4ab644e568134632bc2b26a11160343422.css" integrity="sha256-19uXI0oONHSug0v3k&#43;TOSrZE5WgTRjK8KyahEWA0NCI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.0f8713fb5262a4360fc94acd63a068324702faa3b6c999323a1cfa2bc7dbe8fa.css" integrity="sha256-D4cT&#43;1JipDYPyUrNY6BoMkcC&#43;qO2yZkyOhz6K8fb6Po=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.5f81fc0333bb60f2642b8d68f07abe72010c54e3c81601393b49e76da0722ef6.css" integrity="sha256-X4H8AzO7YPJkK41o8Hq&#43;cgEMVOPIFgE5O0nnbaByLvY=" rel="preload stylesheet" as="style">
 
@@ -2911,6 +2911,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

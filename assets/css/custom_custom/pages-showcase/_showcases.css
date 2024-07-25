@@ -1,7 +1,5 @@
-#showcase {  
-  & .pane {
-    border: 2px dotted var(--color-outline-variant);
-  }
+#showcase .pane {
+  --layout-border: 2px dotted var(--color-outline-variant);
 }
 
 #showcase.canonical-feed .pane {
