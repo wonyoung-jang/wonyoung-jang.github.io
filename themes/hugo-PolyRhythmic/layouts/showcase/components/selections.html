@@ -711,6 +711,12 @@
         "disabled" "disabled"
         ) 
       }}
+
+      {{ partial "components/selections/switches.html" (dict
+        "disabled" "disabled"
+        "checked" "checked"
+        ) 
+      }}
     
       <div class="sub-showcase-components-header">With icons</div>
       {{ partial "components/selections/switches.html" (dict 
@@ -719,19 +725,20 @@
       }}
 
       {{ partial "components/selections/switches.html" (dict 
+        "icons" "both"
+        ) 
+      }}
+
+      {{ partial "components/selections/switches.html" (dict 
+        "icons" "both"
+        "disabled" "disabled"
+        ) 
+      }}
+      
+      {{ partial "components/selections/switches.html" (dict 
         "icons" "select"
         "disabled" "disabled"
-        ) 
-      }}
-
-      {{ partial "components/selections/switches.html" (dict 
-        "icons" "both"
-        ) 
-      }}
-
-      {{ partial "components/selections/switches.html" (dict 
-        "icons" "both"
-        "disabled" "disabled"
+        "checked" "checked"
         ) 
       }}
     </div>
