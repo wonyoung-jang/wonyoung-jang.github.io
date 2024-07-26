@@ -51,8 +51,7 @@
     & svg,
     & video {
       border-radius: inherit;
-      max-width: 70%;
-      max-height: 100%;
+      max-width: 88%;
       margin: var(--size-5) auto;
     }
   }
