@@ -17,6 +17,11 @@
       
       {{ partial "components/selections/checkboxes.html" (dict 
         "disabled" "disabled"
+        ) 
+      }}
+      
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "disabled" "disabled"
         "checked" "checked"
         ) 
       }}
@@ -29,6 +34,12 @@
       {{/*  Indeterminate  */}}
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
+        ) 
+      }}
+
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" "indeterminate"
+        "disabled" "disabled"
         ) 
       }}
 
@@ -55,6 +66,12 @@
       {{ partial "components/selections/checkboxes.html" (dict 
         "error" true
         "disabled" "disabled"
+        ) 
+      }}
+
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "error" true
+        "disabled" "disabled"
         "checked" "checked"
         ) 
       }}
@@ -69,6 +86,13 @@
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
         "error" true
+        ) 
+      }}
+
+      {{ partial "components/selections/checkboxes.html" (dict 
+        "indeterminate" "indeterminate"
+        "error" true
+        "disabled" "disabled"
         ) 
       }}
 
