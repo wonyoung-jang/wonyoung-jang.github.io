@@ -25,6 +25,82 @@
 
   --container-outline-press: initial;
   --container-elevation-press: initial;
+
+  &.vertical .time-picker-body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    & .supporting-text {
+      display: none;
+    }
+  }
+
+  &.horizontal .time-picker-body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-13);
+    height: 100%;
+    width: 100%;
+
+    & .time-picker-dial-container {
+      margin-top: unset;
+    }
+
+    & .time-picker-container {
+      flex-flow: column nowrap;
+      gap: var(--size-4);
+
+      & .supporting-text {
+        display: none;
+      }
+
+
+      & .period-selector-container {
+        flex-flow: row nowrap;
+        margin-left: unset;
+        margin-top: unset;
+        
+        & .period-option {
+          flex: 1;
+          width: 108px;
+          height: 38px;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+      
+          border: 1px solid var(--color-outline);
+        
+          color: var(--color-on-surface);
+          font-size: var(--typescale-title-medium-size);
+          font-weight: var(--typescale-title-medium-weight);
+          font-family: var(--typescale-title-medium-family);
+          line-height: var(--typescale-title-medium-line-height);
+          
+          &:first-child {
+            border-radius: var(--shape-corner-s-start);
+            border-right: none;
+          }
+      
+          &:last-child {
+            border-radius: var(--shape-corner-s-end);
+          }
+          
+          &.selected {
+            background-color: var(--color-tertiary-container);
+            color: var(--color-on-tertiary-container);
+          }
+        }
+      }
+    }
+  }
 }
 
 .time-picker.dial {
@@ -63,18 +139,6 @@
     border: 2px dashed var(--color-outline);
     border-radius: 50%;
     margin-top: var(--size-9);
-
-    &::after {
-      content: '';
-      position: absolute;
-      
-      transform: translate(128px, 128px);
-      height: var(--size-2);
-      width: var(--size-2);
-      border-radius: 50%;
-      background-color: var(--color-primary);
-      z-index: 1;
-    }
   }
 }
 
