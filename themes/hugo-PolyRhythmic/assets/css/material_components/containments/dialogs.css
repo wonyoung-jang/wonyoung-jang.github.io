@@ -8,10 +8,8 @@
   --container-width: initial;
   --container-padding: var(--size-6);
 
-  --container-outline: initial;
   --container-elevation: var(--elevation3);
   --container-shape: var(--shape-corner-xl);
-
   --bg-color: var(--color-surface-container-high);
 
   --text-color: initial;
@@ -19,12 +17,14 @@
 
   min-width: var(--size-70);
   max-width: var(--size-140);
+  border-radius: var(--container-shape);
 
   &.full {
-    --container-shape: 0;
     min-width: unset;
     max-width: unset;
     --container-padding: initial;
+    
+    --container-shape: unset;
     --container-elevation: var(--elevation0);
 
     & .header {
@@ -93,14 +93,12 @@
   }
 
   &:has(> i) {
-    & i.icon,
     & .icon,
     & .headline {
       width: 100%;
       justify-content: center;
     }
 
-    & i.icon,
     & .icon {
       margin-bottom: var(--size-4);
     }
