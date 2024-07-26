@@ -25,6 +25,12 @@
 
   --container-outline-press: initial;
   --container-elevation-press: initial;
+  
+  &.dial {
+    & .supporting-text {
+      display: none;
+    }
+  }
 
   &.vertical .time-picker-body {
     display: flex;
@@ -33,10 +39,6 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    
-    & .supporting-text {
-      display: none;
-    }
   }
 
   &.horizontal .time-picker-body {
@@ -51,15 +53,10 @@
     & .time-picker-dial-container {
       margin-top: unset;
     }
-
+    
     & .time-picker-container {
       flex-flow: column nowrap;
       gap: var(--size-4);
-
-      & .supporting-text {
-        display: none;
-      }
-
 
       & .period-selector-container {
         flex-flow: row nowrap;
@@ -67,35 +64,17 @@
         margin-top: unset;
         
         & .period-option {
-          flex: 1;
           width: 108px;
           height: 38px;
-          display: flex;
-          flex-flow: column nowrap;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-      
-          border: 1px solid var(--color-outline);
-        
-          color: var(--color-on-surface);
-          font-size: var(--typescale-title-medium-size);
-          font-weight: var(--typescale-title-medium-weight);
-          font-family: var(--typescale-title-medium-family);
-          line-height: var(--typescale-title-medium-line-height);
           
           &:first-child {
             border-radius: var(--shape-corner-s-start);
             border-right: none;
+            border-bottom: 1px solid var(--color-outline);
           }
       
           &:last-child {
             border-radius: var(--shape-corner-s-end);
-          }
-          
-          &.selected {
-            background-color: var(--color-tertiary-container);
-            color: var(--color-on-tertiary-container);
           }
         }
       }
