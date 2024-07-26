@@ -79,11 +79,11 @@
       </item>
       <item>
         <title>
-          States
+          Colors
         </title>
 
         <link>
-          http://192.168.40.181:1313/states/
+          http://192.168.40.181:1313/colors/
         </link>
 
         <pubDate>
@@ -98,20 +98,20 @@
         
 
         <guid>
-          http://192.168.40.181:1313/states/
+          http://192.168.40.181:1313/colors/
         </guid>
 
         <description>
-          See: Material Design 3 - States
+          See: Material Design 3 - Colors
         </description>
       </item>
       <item>
         <title>
-          Actions
+          Elevations
         </title>
 
         <link>
-          http://192.168.40.181:1313/actions/
+          http://192.168.40.181:1313/elevations/
         </link>
 
         <pubDate>
@@ -126,11 +126,291 @@
         
 
         <guid>
-          http://192.168.40.181:1313/actions/
+          http://192.168.40.181:1313/elevations/
         </guid>
 
         <description>
-          See: Material Design 3 - Components
+          See: Material Design 3 - Elevation
+        </description>
+      </item>
+      <item>
+        <title>
+          Feed layout
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/feed-layout/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/feed-layout/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Canonical layouts - Feed
+        </description>
+      </item>
+      <item>
+        <title>
+          Fixed and flexible layout
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/fixed-and-flexible-layout/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/fixed-and-flexible-layout/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Layout basics - Parts of layout
+        </description>
+      </item>
+      <item>
+        <title>
+          List of admonitions for wonyoungjang.org
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
+        </guid>
+
+        <description>
+          What an admonition is&#xD;link&#xD;h2&#xD;An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
+        </description>
+      </item>
+      <item>
+        <title>
+          List-detail layout
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/list-detail-layout/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/list-detail-layout/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Canonical layouts - List-detail
+        </description>
+      </item>
+      <item>
+        <title>
+          Motion
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/motion/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/motion/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Motion
+        </description>
+      </item>
+      <item>
+        <title>
+          Shapes
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/shapes/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/shapes/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Shapes
+        </description>
+      </item>
+      <item>
+        <title>
+          Single pane layout
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/single-pane-layout/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/single-pane-layout/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Layout basics - Parts of layout
+        </description>
+      </item>
+      <item>
+        <title>
+          Split-pane layout
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/split-pane-layout/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/split-pane-layout/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Layout basics - Parts of layout
+        </description>
+      </item>
+      <item>
+        <title>
+          Supporting pane layout
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/supporting-pane-layout/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/supporting-pane-layout/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Canonical layouts - Supporting pane
+        </description>
+      </item>
+      <item>
+        <title>
+          Typography
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/typography/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/typography/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Typography
         </description>
       </item>
       <item>
@@ -247,6 +527,62 @@
       </item>
       <item>
         <title>
+          States
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/states/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/states/
+        </guid>
+
+        <description>
+          See: Material Design 3 - States
+        </description>
+      </item>
+      <item>
+        <title>
+          Actions
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/actions/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/actions/
+        </guid>
+
+        <description>
+          See: Material Design 3 - Components
+        </description>
+      </item>
+      <item>
+        <title>
           Text inputs
         </title>
 
@@ -271,34 +607,6 @@
 
         <description>
           See: Material Design 3 - Components
-        </description>
-      </item>
-      <item>
-        <title>
-          Elevations
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/elevations/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/elevations/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Elevation
         </description>
       </item>
       <item>
@@ -331,146 +639,6 @@
       </item>
       <item>
         <title>
-          Colors
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/colors/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/colors/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Colors
-        </description>
-      </item>
-      <item>
-        <title>
-          Feed layout
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/feed-layout/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/feed-layout/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Canonical layouts - Feed
-        </description>
-      </item>
-      <item>
-        <title>
-          Fixed and flexible layout
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/fixed-and-flexible-layout/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/fixed-and-flexible-layout/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Layout basics - Parts of layout
-        </description>
-      </item>
-      <item>
-        <title>
-          List-detail layout
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/list-detail-layout/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/list-detail-layout/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Canonical layouts - List-detail
-        </description>
-      </item>
-      <item>
-        <title>
-          Motion
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/motion/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/motion/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Motion
-        </description>
-      </item>
-      <item>
-        <title>
           Now
         </title>
 
@@ -495,118 +663,6 @@
 
         <description>
           keepThis is a now page. Inspired by: https://nownownow.com/about sticky_note_2Last update: 2024-06-28 Friday Material redesign of my site&#xD;link&#xD;h2&#xD;I&amp;rsquo;ve redesigned this site, wonyoungjang.org using Google&amp;rsquo;s Material Design 3 as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.
-        </description>
-      </item>
-      <item>
-        <title>
-          Shapes
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/shapes/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/shapes/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Shapes
-        </description>
-      </item>
-      <item>
-        <title>
-          Single pane layout
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/single-pane-layout/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/single-pane-layout/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Layout basics - Parts of layout
-        </description>
-      </item>
-      <item>
-        <title>
-          Supporting pane layout
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/supporting-pane-layout/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/supporting-pane-layout/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Canonical layouts - Supporting pane
-        </description>
-      </item>
-      <item>
-        <title>
-          Typography
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/typography/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/typography/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Typography
         </description>
       </item>
       <item>
@@ -663,34 +719,6 @@
 
         <description>
           Contact me directly&#xD;link&#xD;h2&#xD;The best way to contact me directly is through email at contact@wonyoungjang.org.&#xA;Give me feedback&#xD;link&#xD;h2&#xD;Give me feedback! I&amp;rsquo;m always learning and will take all of your feedback seriously.
-        </description>
-      </item>
-      <item>
-        <title>
-          List of admonitions for wonyoungjang.org
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
-        </guid>
-
-        <description>
-          What an admonition is&#xD;link&#xD;h2&#xD;An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
         </description>
       </item>
       <item>
@@ -775,34 +803,6 @@
 
         <description>
           
-        </description>
-      </item>
-      <item>
-        <title>
-          Split-pane layout
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/split-pane-layout/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/split-pane-layout/
-        </guid>
-
-        <description>
-          See: Material Design 3 - Layout basics - Parts of layout
         </description>
       </item>
       <item>

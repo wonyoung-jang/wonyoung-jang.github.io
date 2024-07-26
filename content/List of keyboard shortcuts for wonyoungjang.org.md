@@ -1,12 +1,12 @@
 ---
 date: 2024-03-29
 description: This page is a list of keyboard shortcuts for navigating this site
-lastMod: 2024-07-24
+lastMod: 2024-07-26
 resources:
 - references
 title: List of keyboard shortcuts for wonyoungjang.org
 ---
-![list-of-keyboard-shortcuts.png](/assets/list-of-keyboard-shortcuts_1719437044181_0.png)
+![list-of-keyboard-shortcuts.webp](/assets/list-of-keyboard-shortcuts_1722025498541_0.webp)
 
 ## Windows
 
@@ -129,7 +129,7 @@ title: List of keyboard shortcuts for wonyoungjang.org
       + `CONTROL` + `ALT` + `t`
 
     + #### Navigation
-    
+
       + `CONTROL` + `ALT` + `g` → Go back to top
 
       + `CONTROL` + `ALT` + `h` → Go to home page

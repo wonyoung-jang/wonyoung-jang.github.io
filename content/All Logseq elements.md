@@ -2,12 +2,12 @@
 date:
 - 2024-06-24 Monday
 description: A work in progress page showcasing how elements are rendered from Logseq
-lastMod: 2024-07-19
+lastMod: 2024-07-26
 resources:
 - references
 title: All Logseq elements
 ---
-![logseq-elements.png](/assets/logseq-elements_1719436919750_0.png)
+![logseq-elements.webp](/assets/logseq-elements_1722025479643_0.webp)
 
 # Heading 1
 

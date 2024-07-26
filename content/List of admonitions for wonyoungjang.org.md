@@ -2,12 +2,12 @@
 date:
 - 2024-04-24 Wednesday
 description: This page is a list of admonitions used on wonyoungjang.org
-lastMod: 2024-07-07
+lastMod: 2024-07-26
 resources:
 - references
 title: List of admonitions for wonyoungjang.org
 ---
-![list-of-admonitions.png](/assets/list-of-admonitions_1719437030704_0.png)
+![list-of-admonitions.webp](/assets/list-of-admonitions_1722025510158_0.webp)
 
 ## What an admonition is
 

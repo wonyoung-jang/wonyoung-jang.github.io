@@ -2,7 +2,7 @@
 date:
 - 2024-06-10 Monday
 description: Communication components available for wonyoungjang.org
-lastMod: 2024-07-17
+lastMod: 2024-07-25
 layout: communications
 resources:
 - components

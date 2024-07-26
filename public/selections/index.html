@@ -182,15 +182,37 @@
     
       "\/all-logseq-elements\/",
     
+      "\/colors\/",
+    
+      "\/elevations\/",
+    
+      "\/feed-layout\/",
+    
+      "\/fixed-and-flexible-layout\/",
+    
+      "\/resources\/layouts\/",
+    
+      "\/list-of-admonitions-for-wonyoungjang.org\/",
+    
+      "\/list-detail-layout\/",
+    
+      "\/motion\/",
+    
       "\/resources\/references\/",
     
       "\/resources\/",
     
-      "\/states\/",
+      "\/shapes\/",
+    
+      "\/single-pane-layout\/",
+    
+      "\/split-pane-layout\/",
+    
+      "\/supporting-pane-layout\/",
     
       "\/resources\/tokens\/",
     
-      "\/actions\/",
+      "\/typography\/",
     
       "\/communication\/",
     
@@ -200,9 +222,11 @@
     
       "\/navigation\/",
     
-      "\/text-inputs\/",
+      "\/states\/",
     
-      "\/elevations\/",
+      "\/actions\/",
+    
+      "\/text-inputs\/",
     
       "\/projects\/design\/",
     
@@ -210,41 +234,17 @@
     
       "\/projects\/",
     
-      "\/colors\/",
-    
-      "\/feed-layout\/",
-    
-      "\/fixed-and-flexible-layout\/",
-    
-      "\/resources\/layouts\/",
-    
-      "\/list-detail-layout\/",
-    
-      "\/motion\/",
-    
       "\/now\/",
-    
-      "\/shapes\/",
-    
-      "\/single-pane-layout\/",
-    
-      "\/supporting-pane-layout\/",
-    
-      "\/typography\/",
     
       "\/about\/",
     
       "\/contact\/",
-    
-      "\/list-of-admonitions-for-wonyoungjang.org\/",
     
       "\/pit-signs-for-robotics-competition\/",
     
       "\/search\/",
     
       "\/sitemap\/",
-    
-      "\/split-pane-layout\/",
     
       "\/list-of-keyboard-shortcuts-for-wonyoungjang.org\/",
     
@@ -917,7 +917,7 @@
         
         
             <div class="label-large">
-                <p title='2024-07-17 00:00:00 +0000 UTC'>July 17, 2024&nbsp;·&nbsp;1 min read
+                <p title='2024-07-25 00:00:00 +0000 UTC'>July 25, 2024&nbsp;·&nbsp;1 min read
 
             </div>
         
@@ -2479,7 +2479,7 @@
       
         
           <a  class="component card prev"
-            href="http://192.168.40.181:1313/text-inputs/"
+            href="http://192.168.40.181:1313/states/"
             accesskey="p"
             title="Previous page (ALT + SHIFT + p)">
 
@@ -2491,7 +2491,7 @@
             </span>
             
             <span class="title-large">
-              Text inputs
+              States
             </span>
           </a>
         
@@ -2672,13 +2672,13 @@
                 </a>
             
                 <a  class="component card elevated"
-                    href="/colors/">
+                    href="/text-inputs/">
                     <div class="card-content">
                         <span class="card-title">
-                            Colors
+                            Text inputs
                         </span>
                         <span class="card-description">
-                            Colors available for wonyoungjang.org
+                            Text input components available for wonyoungjang.org
                         </span>
                     </div>
                 </a>
@@ -2981,49 +2981,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
