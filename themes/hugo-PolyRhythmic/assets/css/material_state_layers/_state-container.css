@@ -10,9 +10,10 @@
 /* Containers (background, elevation, outline, shape) */
 .component:not(
     .divider,
-    .segmented-buttons
+    .segmented-buttons,
+    .tab
   )::before {
-    
+
   content: "";
   position: absolute;
   inset: 0;

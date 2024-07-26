@@ -1,16 +1,40 @@
 .set.tabs:has(.sub-tabs-container) {
-  --set-gap: 3px;
-  --set-overflow: visible;
+  background-color: var(--color-surface-container);
   padding: 0 var(--size-1);
+  
+  --set-gap: 7px;
+  --set-overflow: visible;
+  
 
   & .tab {
     --container-shape: var(--shape-corner-m-top);
+
+    &.active {
+      --bg-color: var(--color-surface-container-low);
+    }
+
+    &:not(.active) {
+      background-color: var(--color-surface-container-high);
+    }
+
+    &::before {
+      all: unset;
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      flex: 0 1 auto;
+      background-color: var(--bg-color);
+      box-shadow: var(--container-elevation);
+      border: var(--container-outline);
+      border-radius: var(--container-shape);
+    }
   }
   
   & .sub-tabs-container {
     flex: 1 1 0;
     position: relative;
-  
+
     & .sub-tabs {
       position: absolute;
   
@@ -32,8 +56,26 @@
         justify-content: flex-start;
         gap: var(--size-2);
         padding: var(--size-7);
+        --bg-color: var(--color-surface-container);
         --container-shape: var(--shape-corner-none);
         z-index: 1;
+
+        &.active {
+          --bg-color: var(--color-surface-container-high);
+        }
+
+        &::before {
+          all: unset;
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: -1;
+          flex: 0 1 auto;
+          background-color: var(--bg-color);
+          box-shadow: var(--container-elevation);
+          border: var(--container-outline);
+          border-radius: var(--container-shape);
+        }
       }
     }
   

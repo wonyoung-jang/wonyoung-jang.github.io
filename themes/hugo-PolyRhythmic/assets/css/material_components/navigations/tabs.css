@@ -1,6 +1,7 @@
 .tabs:not(.sub-tabs) {
   position: relative;
   align-self: center;
+  background-color: var(--color-surface);
   
   --set-flex: 1 1 auto;
   --set-display: flex;
@@ -29,7 +30,6 @@
 
     --icon-color: var(--color-on-surface-variant);
     --text-color: var(--color-on-surface-variant);
-    --bg-color: var(--color-surface-container-lowest);
   }
 
   &.primary .tab {    
@@ -38,16 +38,12 @@
     }
     
     &.active {
-      --icon-color: var(--color-on-secondary-container);
-      --text-color: var(--color-on-secondary-container);
-      --bg-color: var(--color-secondary-container);
-
+      --icon-color: var(--color-primary);
+      --text-color: var(--color-primary);
       font-weight: var(--typeface-weight-bold);
     }
 
-    /* TODO Primary tab active indicator         
     &::before {
-      all: unset;
       content: '';
       display: block;
       position: absolute;
@@ -62,7 +58,7 @@
 
     &:not(.active)::before {
       display: none;
-    } */
+    }
   }
 
   &.secondary .tab {
@@ -72,12 +68,10 @@
     &.active {
       --icon-color: var(--color-primary);
       --text-color: var(--color-primary);
-      --bg-color: var(--color-surface);
 
       font-weight: var(--typeface-weight-bold);
     }
     
-    /* TODO Secondary tab active indicator    
     &::before {
       content: '';
       display: block;
@@ -92,6 +86,6 @@
 
     &:not(.active)::before {
       display: none;
-    } */
+    }
   }
 }
