@@ -1,0 +1,48 @@
+:root {
+  /* || Colors */
+
+  /* Color primary */
+  --input-color-hue: 302.8deg;
+  --input-color-chroma: 58;
+  
+  /* Color tertiary cooler(-1) or warmer(1) */
+  --input-tertiary-temperature: -1;
+  
+  /* Color harmonization */
+  --harmonization: calc(360deg / var(--scale-fibonacci) / 17);
+
+  /* || Typography */
+
+  /* Typescale factors (L → B → T → H → D) */
+  --scale-up-type:            var(--scale-min-6);
+  --scale-back-type:          var(--scale-min-2);
+
+  /* Typescale factors (S → M → L) */
+  --scale-up-size:            var(--scale-maj-2);
+  --scale-back-size:          var(--scale-min-2);
+
+  /* Line heights */
+  --input-line-height:            var(--scale-perfect-fifth);
+  --scale-line-height-display:    var(--input-line-height) / 0.94;
+  --scale-line-height-headline:   var(--input-line-height) / 0.96;
+  --scale-line-height-title:      var(--input-line-height) / 0.98;
+  --scale-line-height-body:       var(--input-line-height);
+  --scale-line-height-label:      var(--input-line-height) * 1.02;
+
+  /* Icon font family */
+  --font-icon: var(--typeface-icon-outlined);
+  
+  /* Font size */
+  --input-font-size:  14px;
+
+  /* Line character width */
+  --input-char-width: 60ch;
+
+  /* || Shapes */
+
+  /* Shape corner */
+  --input-shape-corner: 1.7px;
+
+  /* Shape scale */
+  --input-shape-scale: var(--scale-octave);
+}

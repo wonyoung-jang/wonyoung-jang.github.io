@@ -1,0 +1,12 @@
+<h{{ .Level }} id="{{ .Anchor }}">
+  {{ .Text | safeHTML }}
+  <a 
+    class="anchor"
+    aria-hidden="true"
+    href="#{{ .Anchor }}">
+    <i class="icon">link</i>
+    <span>
+      h{{ .Level }}
+    </span>
+  </a>
+</h{{ .Level }}>

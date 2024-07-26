@@ -1,0 +1,57 @@
+/* Common Buttons */
+.common-button {
+  --container-padding: 0 var(--size-3);
+  --container-gap: var(--size-2);
+
+  --bg-color: none;
+  --icon-color: var(--color-primary);
+
+  min-width: var(--size-10);
+
+  &:has(> i) {
+    padding-left: var(--size-3);
+    padding-right: var(--size-4);
+
+    & > i {
+      font-size: 18px;
+    }
+  }
+
+  &.filled,
+  &.filled-tonal,
+  &.elevated,
+  &.outlined {
+    --container-padding: 0 var(--size-6);
+
+    &:has(i) {
+      padding-left: var(--size-4);
+    }
+  }
+
+  &.filled {
+    --bg-color: var(--color-primary);
+    --icon-color: var(--color-on-primary);
+  }
+
+  &.filled-tonal {
+    --bg-color: var(--color-secondary-container);
+    --icon-color: var(--color-on-secondary-container);
+  }
+
+  &.elevated {
+    --bg-color: var(--color-surface-container-low);
+    --icon-color: var(--color-primary);
+    --container-elevation: var(--elevation1);
+    --container-elevation-hover: var(--elevation2);
+    --container-elevation-focus: var(--elevation1);
+    --container-elevation-press: var(--elevation1);
+    --container-elevation-disabled: var(--elevation0);
+  }
+
+  &.outlined {
+    --container-outline: 1px solid var(--color-outline);
+    --container-outline-hover: 1px solid var(--color-outline);
+    --container-outline-focus: 1px solid var(--color-primary);
+    --container-outline-press: 1px solid var(--color-outline);
+  }
+}

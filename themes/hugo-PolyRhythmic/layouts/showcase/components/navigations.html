@@ -1,0 +1,352 @@
+{{ define "main" }}
+<article class="layout panes basic-single-pane" id="components-showcase">
+  <section class="layout pane" id="post-content">  
+
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+    
+    {{/*  || App bars  */}}
+
+    {{/*  Bottom app bars  */}}
+    <div class="showcase-components-header">App bars</div>
+    <div class="layout showcase-components">
+      <div class="display-medium">Bottom app bars</div>
+      <div class="sub-showcase-components-header">No FAB</div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "icon_3"  "settings"
+        "icon_4"  "token"
+        )
+      }}
+      
+      <div class="sub-showcase-components-header">With FAB</div>
+      {{ partial "components/navigations/bottom-app-bars.html" (dict
+        "icon_1"  "home"
+        "icon_2"  "add"
+        "icon_3"  "settings"
+        "icon_4"  "token"
+        "fab"     "add"
+        )
+      }}
+    
+      {{/*  Top app bars  */}}
+      <div class="display-medium">Top app bars</div>
+      <div class="sub-showcase-components-header">Center-aligned</div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "center" "center"
+        "size" "small"
+        "headline" "Title"
+        "icon_1"  "home"
+        "icon_2" "account_circle"
+        )
+      }}
+
+      <div class="sub-showcase-components-header">Small</div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "small"
+        "headline" "Title"
+        "icon_1"  "arrow_back"
+        "icon_2" "attach_file"
+        "icon_3" "today"
+        "icon_4" "more_vert"
+        )
+      }}
+
+      <div class="sub-showcase-components-header">Medium</div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "medium"
+        "headline" "Title"
+        "icon_1"  "arrow_back"
+        "icon_2" "attach_file"
+        "icon_3" "today"
+        "icon_4" "more_vert"
+        )
+      }}
+
+      <div class="sub-showcase-components-header">Large</div>
+      {{ partial "components/navigations/top-app-bars.html" (dict
+        "size" "large"
+        "headline" "Title"
+        "icon_1"  "arrow_back"
+        "icon_2" "attach_file"
+        "icon_3" "today"
+        "icon_4" "more_vert"
+        )
+      }}
+    </div>
+
+    {{/*  || Navigations  */}}
+
+    {{/*  Navigation bars  */}}
+    <div class="showcase-components-header">Navigations</div>
+    <div class="layout showcase-components">
+      <div class="display-medium">Navigation bars</div>
+      {{ partial "components/navigations/navigation-bars.html" (dict
+        "center" "center"
+        "size" "small"
+        "headline" "Small + center"
+        "icon_1" "home"
+        "icon_2" "folder"
+        "icon_3" "note"
+        "icon_4" "token"
+        "icon_5" "settings"
+        "label_1" "Home"
+        "label_2" "Folder"
+        "label_3" "Note"
+        "label_4" "Token"
+        "label_5" "Settings"
+        )
+      }}
+
+      {{/*  Navigation drawers  */}}
+      <div class="display-medium">Navigation drawers</div>
+      <div class="sub-showcase-components-header">Standard</div>
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "standard"
+        "headline" "Title"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
+      
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "standard"
+        "headline" "Title"
+        "nav_item_1" (dict "label" "Home")
+        "nav_item_2" (dict "label" "Folder")
+        "nav_item_3" (dict "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict "label" "Token")
+        "nav_item_5" (dict "label" "Settings")
+        )
+      }}
+      
+      <div class="sub-showcase-components-header">Modal</div>
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
+      
+      {{ partial "components/navigations/navigation-drawers.html" (dict
+        "type" "modal"
+        "headline" "Title"
+        "nav_item_1" (dict "label" "Home")
+        "nav_item_2" (dict "label" "Folder")
+        "nav_item_3" (dict "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict "label" "Token")
+        "nav_item_5" (dict "label" "Settings")
+        )
+      }}
+    
+      {{/*  Navigation rails  */}}
+      <div class="display-medium">Navigation rails</div>
+      <div class="sub-showcase-components-header">Align - top / middle / bottom</div>
+      {{ partial "components/navigations/navigation-rails.html" (dict
+        "icon_main" "menu"
+        "icon_fab" "add"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        )
+      }}
+        
+      {{ partial "components/navigations/navigation-rails.html" (dict
+        "align" "middle"
+        "icon_main" "menu"
+        "icon_fab" "add"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
+        
+      {{ partial "components/navigations/navigation-rails.html" (dict
+        "align" "bottom"
+        "icon_main" "menu"
+        "icon_fab" "add"
+        "nav_item_1" (dict 
+          "icon" "home" 
+          "label" "Home")
+        "nav_item_2" (dict 
+          "icon" "folder" 
+          "label" "Folder")
+        "nav_item_3" (dict 
+          "icon" "note" 
+          "label" "Note")
+        "section_header" "Section header"
+        "nav_item_4" (dict 
+          "icon" "token" 
+          "label" "Token")
+        "nav_item_5" (dict 
+          "icon" "settings" 
+          "label" "Settings")
+        )
+      }}
+    </div>
+
+    {{/*  Searches  */}}
+    <div class="showcase-components-header">Searches</div>
+    <div class="layout showcase-components">
+      {{/*  Search bar  */}}
+      <div class="sub-showcase-components-header">Search bar</div>      
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "bar"
+        ) 
+      }}
+
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "bar"
+        "avatar" "A"
+        )
+      }}
+
+      {{/*  Search view modal  */}}
+      <div class="sub-showcase-components-header">Search view - modal</div>
+
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "modal"
+        ) 
+      }}
+
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "modal"
+        "showList" true
+        ) 
+      }}
+
+      {{/*  Search view full-screen  */}}
+      <div class="sub-showcase-components-header">Search view - full-screen</div>
+
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "full"
+        ) 
+      }}
+
+      {{ partial "components/navigations/searches.html" (dict 
+        "type" "view"
+        "view" "full"
+        "showList" true
+        )
+      }}
+    </div>
+
+    {{/*  Tabs  */}}
+    <div class="showcase-components-header">Tabs</div>
+    <div class="layout showcase-components">
+      <div class="sub-showcase-components-header">Primary</div>
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "label" "Tab 1" "active" "active")
+          (dict "label" "Tab 2")
+          (dict "label" "Tab 3")
+          )
+        )
+      }}
+
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "icon" "add" "label" "Tab 1" "active" "active")
+          (dict "icon" "add" "label" "Tab 2")
+          (dict "icon" "add" "label" "Tab 3")
+          )
+        )
+      }}
+
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "icon" "add" "active" "active")
+          (dict "icon" "add")
+          (dict "icon" "add")
+          )
+        )
+      }}
+
+      <div class="sub-showcase-components-header">Secondary</div>
+
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "secondary"
+        "tabs" (slice
+          (dict "label" "Tab 1" "active" "active")
+          (dict "label" "Tab 2")
+          (dict "label" "Tab 3")
+          )
+        )
+      }}
+
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "secondary"
+        "tabs" (slice
+          (dict "icon" "add" "label" "Tab 1" "active" "active")
+          (dict "icon" "add" "label" "Tab 2")
+          (dict "icon" "add" "label" "Tab 3")
+          )
+        )
+      }}
+    </div>
+
+  </section>
+</article>
+{{ end }}

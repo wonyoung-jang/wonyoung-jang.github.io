@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      https://wonyoungjang.org/resources/components/
+      http://192.168.40.181:1313/resources/components/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Thu, 25 Jul 2024 12:37:22 -0400
       </lastBuildDate>
     
-      <atom:link href="https://wonyoungjang.org/resources/components/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/resources/components/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           Actions
         </title>
 
         <link>
-          https://wonyoungjang.org/actions/
+          http://192.168.40.181:1313/actions/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/actions/
+          http://192.168.40.181:1313/actions/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/communication/
+          http://192.168.40.181:1313/communication/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/communication/
+          http://192.168.40.181:1313/communication/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/containment/
+          http://192.168.40.181:1313/containment/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/containment/
+          http://192.168.40.181:1313/containment/
         </guid>
 
         <description>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/navigation/
+          http://192.168.40.181:1313/navigation/
         </link>
 
         <pubDate>
@@ -155,7 +155,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/navigation/
+          http://192.168.40.181:1313/navigation/
         </guid>
 
         <description>
@@ -168,7 +168,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/selections/
+          http://192.168.40.181:1313/selections/
         </link>
 
         <pubDate>
@@ -183,7 +183,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/selections/
+          http://192.168.40.181:1313/selections/
         </guid>
 
         <description>
@@ -196,7 +196,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/text-inputs/
+          http://192.168.40.181:1313/text-inputs/
         </link>
 
         <pubDate>
@@ -211,7 +211,7 @@
         
 
         <guid>
-          https://wonyoungjang.org/text-inputs/
+          http://192.168.40.181:1313/text-inputs/
         </guid>
 
         <description>

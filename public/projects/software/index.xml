@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      https://wonyoungjang.org/projects/software/
+      http://192.168.40.181:1313/projects/software/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Wed, 24 Jul 2024 10:25:11 -0400
       </lastBuildDate>
     
-      <atom:link href="https://wonyoungjang.org/projects/software/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/projects/software/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           Realtime multiplayer drawing
         </title>
 
         <link>
-          https://wonyoungjang.org/realtime-multiplayer-drawing/
+          http://192.168.40.181:1313/realtime-multiplayer-drawing/
         </link>
 
         <pubDate>
@@ -71,11 +71,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/realtime-multiplayer-drawing/
+          http://192.168.40.181:1313/realtime-multiplayer-drawing/
         </guid>
 
         <description>
-          Introduction link h2 This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.&#xA;Why link h2 While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.
+          Introduction&#xD;link&#xD;h2&#xD;This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.&#xA;Why&#xD;link&#xD;h2&#xD;While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.
         </description>
       </item>
       <item>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/wonyoungjang.org/
+          http://192.168.40.181:1313/wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -99,11 +99,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/wonyoungjang.org/
+          http://192.168.40.181:1313/wonyoungjang.org/
         </guid>
 
         <description>
-          How it&amp;rsquo;s made link h2 Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.
+          How it&amp;rsquo;s made&#xD;link&#xD;h2&#xD;Pages (notes, articles, projects) are written in Logseq markdown.&#xA;Pages with a public property are exported and converted to Hugo markdown using the Logseq Schrödinger plugin.&#xA;The exported assets and pages folders are placed in the content folder of this Hugo site.&#xA;hugo -D + hugo serve -D to build and serve the site locally.&#xA;GitHub Actions to serve the site publicly.
         </description>
       </item>
       <item>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/q-learning-tournament-scheduler/
+          http://192.168.40.181:1313/q-learning-tournament-scheduler/
         </link>
 
         <pubDate>
@@ -127,11 +127,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/q-learning-tournament-scheduler/
+          http://192.168.40.181:1313/q-learning-tournament-scheduler/
         </guid>
 
         <description>
-          A brief history link h2 A nerd snipe from a coworker link h3 My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts link h3 Since this was not a necessary project for my job, I started to work on the problem in my free time.
+          A brief history&#xD;link&#xD;h2&#xD;A nerd snipe from a coworker&#xD;link&#xD;h3&#xD;My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts&#xD;link&#xD;h3&#xD;Since this was not a necessary project for my job, I started to work on the problem in my free time.
         </description>
       </item>
       <item>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/save-top-level-reddit-comments/
+          http://192.168.40.181:1313/save-top-level-reddit-comments/
         </link>
 
         <pubDate>
@@ -155,11 +155,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/save-top-level-reddit-comments/
+          http://192.168.40.181:1313/save-top-level-reddit-comments/
         </guid>
 
         <description>
-          Premise link h2 Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion link h2 This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.
+          Premise&#xD;link&#xD;h2&#xD;Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion&#xD;link&#xD;h2&#xD;This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.
         </description>
       </item>
       <item>
@@ -168,7 +168,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/logseq-markdown-tokenizer/
+          http://192.168.40.181:1313/logseq-markdown-tokenizer/
         </link>
 
         <pubDate>
@@ -183,11 +183,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/logseq-markdown-tokenizer/
+          http://192.168.40.181:1313/logseq-markdown-tokenizer/
         </guid>
 
         <description>
-          Problem link h2 Logseq does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution link h2 Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
+          Problem&#xD;link&#xD;h2&#xD;Logseq does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution&#xD;link&#xD;h2&#xD;Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
         </description>
       </item>
   </channel>

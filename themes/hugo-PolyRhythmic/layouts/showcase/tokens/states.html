@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <article class="layout panes basic-single-pane">
+        <section class="layout pane" id="post-content">  
+            {{ with .Content }}
+                {{ . }}
+            {{ end }}
+            
+            <details class="layout showcase-tokens" open>
+                <summary class="showcase-tokens-title">States</summary>
+                <section class="state-opacities-container">
+                    <div>Enabled</div>
+                    <div>Disabled</div>
+                    <div>Hovered</div>
+                    <div>Focused</div>
+                    <div>Pressed</div>
+                    <div>Dragged</div>
+                </section>
+            </details>
+            
+        </section>
+    </article>
+{{ end }}

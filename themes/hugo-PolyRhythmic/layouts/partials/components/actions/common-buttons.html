@@ -1,0 +1,10 @@
+<button class="component button common-button {{ .type }}" {{ .disabled }}>
+  {{ with .icon }}
+    <i class="icon">
+      {{ . }}
+    </i>
+  {{ end }}
+  {{with .label }}
+    {{ . }}
+  {{ end }}
+</button>

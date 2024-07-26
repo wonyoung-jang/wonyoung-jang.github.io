@@ -1,0 +1,39 @@
+.bottom-app-bar {
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-justify-content: initial;
+  --container-align-items: center;
+  --container-gap: 0;
+  --container-height: var(--size-20);
+  --container-width: 100%;
+  --container-padding: var(--size-3) var(--size-1) var(--size-3) var(--size-4);
+
+  --container-outline: initial;
+  --container-elevation: var(--elevation2);
+  --container-shape: initial;
+
+  --bg-color: var(--color-surface-container);
+
+  &:has(.fab) {
+    --container-padding: var(--size-4);
+  }
+
+  & .start {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: stretch;
+    align-items: center;
+    height: 100%;
+
+    & i.icon,
+    & .icon {
+      width: var(--size-4);
+    }
+  }
+
+  & .end {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}

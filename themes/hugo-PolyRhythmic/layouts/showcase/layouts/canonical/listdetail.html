@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<article class="layout panes canonical-list-detail" id="showcase">
+    <section class="layout pane list-pane">
+        <h2>List pane</h2>
+        {{ if .Content }}
+            {{ .Content }}
+        {{ end }}
+    </section>
+    
+    <section class="layout pane detail-pane">
+        <h2>Detail pane</h2>
+    </section>
+</article>
+
+{{ end }}

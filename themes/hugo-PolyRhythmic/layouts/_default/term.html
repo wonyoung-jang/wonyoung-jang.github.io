@@ -1,0 +1,34 @@
+{{- define "main" -}}
+  {{ $pages := union .RegularPages .Sections }}
+  <article class="layout panes canonical-feed">
+    <section class="layout pane" id="subsection-page">
+      {{ range $index, $page := $pages }}        
+        <a  class="component card elevated"
+            aria-label="post link to {{ .Title | plainify }}" 
+            href="{{ .Permalink }}">
+            
+          {{ $imageURL := partial "first-image.html" . }}
+          {{ if $imageURL }}
+            <div class="card-image">
+              <img    
+                src="{{ $imageURL }}" 
+                alt="Cover image for {{ .Title }}">
+            </div>
+          {{ end }}  
+
+          <div class="card-content">
+              <div class="card-meta">
+                {{ partial "post-meta.html" . }}
+              </div>
+              <span class="card-title">
+                {{ .Title }}
+              </span>
+              <p class="card-description">
+                {{ .Description }}
+              </p>
+          </div>
+        </a>
+      {{ end }}
+    </section>
+  </article>
+{{- end -}}

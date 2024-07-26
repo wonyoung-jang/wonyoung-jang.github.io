@@ -1,0 +1,8 @@
+:root {
+  /* State opacities */
+  --state-hover-opacity:    8%;
+  --state-press-opacity:    12%;
+  --state-focus-opacity:    12%;
+  --state-drag-opacity:     16%;
+  --state-disabled-opacity: 38%;
+}

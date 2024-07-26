@@ -1,0 +1,57 @@
+.divider {
+  --container-display: flex;
+  --contaner-flex-flow: row nowrap;
+  --container-height: 1px;
+  --container-width: 100%;
+  color: var(--color-outline-variant);
+
+  &.mid,
+  &.start {
+    padding-inline-start: var(--size-4);
+    padding-left: var(--size-4);
+  }
+
+  &.mid,
+  &.end {
+    padding-inline-end: var(--size-4);
+    padding-right: var(--size-4);
+  }
+
+  &::before {
+    content: "";
+    background: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  &.vertical {
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--color-outline-variant);
+    width: 1px;
+    height: 100%;
+    align-items: center;
+
+    &.mid,
+    &.start {
+      padding-inline-start: unset;
+      padding-left: unset;
+      padding-block-start: var(--size-4);
+      padding-top: var(--size-4);
+    }
+
+    &.mid,
+    &.end {
+      padding-inline-end: unset;
+      padding-right: unset;
+      padding-block-end: var(--size-4);
+      padding-bottom: var(--size-4);
+    }
+  }
+}
+
+@media (forced-colors: active) {
+  .divider::before {
+    background: CanvasText;
+  }
+}

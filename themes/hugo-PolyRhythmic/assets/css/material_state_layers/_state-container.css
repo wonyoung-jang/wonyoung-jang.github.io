@@ -1,0 +1,39 @@
+/* container outline and container elevation */
+.component {
+  position: relative;
+  border: var(--container-outline);
+  box-shadow: var(--container-elevation);
+
+  & * {
+    z-index: 2;
+  }
+}
+
+/* state layer */
+.component:not(
+  .badge,
+  .bottom-app-bar,
+  .bottom-sheets,
+  .date-picker,
+  .divider,
+  .tooltip,
+  .top-app-bar,
+  .progress,
+  .search.view
+)::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+  z-index: 0;
+  background-image: radial-gradient(circle, var(--state-color) 1%, transparent 1%);
+  background-position: center;
+  opacity: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+/* TODO Dragged
+  .chip
+  .card
+*/

@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      https://wonyoungjang.org/resources/references/
+      http://192.168.40.181:1313/resources/references/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Wed, 24 Jul 2024 10:25:11 -0400
       </lastBuildDate>
     
-      <atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:1313/resources/references/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           All Logseq elements
         </title>
 
         <link>
-          https://wonyoungjang.org/all-logseq-elements/
+          http://192.168.40.181:1313/all-logseq-elements/
         </link>
 
         <pubDate>
@@ -71,11 +71,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/all-logseq-elements/
+          http://192.168.40.181:1313/all-logseq-elements/
         </guid>
 
         <description>
-          Heading 1 link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Nested headings link h1 Heading 2 link h2 Heading 3 link h3 Heading 4 link h4 Heading 5 link h5 Heading 6 link h6 Text styling link h2 Single formatting link h3 Bold&#xA;Italic&#xA;Highlight Double formatting link h3 Bold + italic&#xA;Bold + highlight
+          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Nested headings&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight
         </description>
       </item>
       <item>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -99,11 +99,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
         </guid>
 
         <description>
-          What an admonition is link h2 An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
+          What an admonition is&#xD;link&#xD;h2&#xD;An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
         </description>
       </item>
       <item>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </link>
 
         <pubDate>
@@ -127,11 +127,11 @@
         
 
         <guid>
-          https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/
+          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
         </guid>
 
         <description>
-          Windows link h2 Firefox link h3 Appearance link h4 ALT + SHIFT + t → Toggle light/dark themes Navigation link h4 ALT + SHIFT + g → Go back to top&#xA;ALT + SHIFT + h → Go to home page&#xA;ALT + SHIFT + r → Go to random page&#xA;ALT + SHIFT + p → Go to previous page&#xA;ALT + SHIFT + n → Go to next page
+          Windows&#xD;link&#xD;h2&#xD;Firefox&#xD;link&#xD;h3&#xD;Appearance&#xD;link&#xD;h4&#xD;ALT + SHIFT + t → Toggle light/dark themes Navigation&#xD;link&#xD;h4&#xD;ALT + SHIFT + g → Go back to top&#xA;ALT + SHIFT + h → Go to home page&#xA;ALT + SHIFT + r → Go to random page&#xA;ALT + SHIFT + p → Go to previous page&#xA;ALT + SHIFT + n → Go to next page
         </description>
       </item>
   </channel>
