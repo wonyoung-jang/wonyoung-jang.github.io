@@ -583,40 +583,48 @@
     {{/*  Radio buttons  */}}
     <div class="showcase-components-header">Radio buttons</div>
     <div class="layout showcase-components">
-      <div class="sub-showcase-components-header">Radio button</div>
+      <div class="sub-showcase-components-header">Radios</div>
       {{ $radioData := dict 
         "legend" "Radio button" 
         "name" "radio"
         "options" (slice
           (dict
-            "id" "radio1" 
-            "value" "radio1" 
+            "checked" false
+          )
+          (dict
             "label" "Radio1" 
             "checked" false
-            )
+          )
           (dict
-            "id" "radio2" 
-            "value" "radio2" 
             "label" "Radio2" 
             "checked" true
-            )
+          )
           (dict
-            "id" "radio3" 
-            "value" "radio3" 
             "label" "Radio3" 
             "checked" false
-            )
+          )
+        )
+      }}
+
+      {{ $radioDataDisabled := dict 
+        "legend" "Disabled radios" 
+        "name" "radio-disabled"
+        "options" (slice
           (dict
-            "id" "radio4" 
             "disabled" "disabled"
-            "value" "radio4" 
             "label" "Disabled" 
             "checked" false
-            )
+          )
+          (dict
+            "disabled" "disabled"
+            "label" "Disabled" 
+            "checked" true
+          )
         )
       }}
       
       {{ partial "components/selections/radio-buttons.html" $radioData }}
+      {{ partial "components/selections/radio-buttons.html" $radioDataDisabled }}
     </div>
 
     {{/*  Sliders  */}}
