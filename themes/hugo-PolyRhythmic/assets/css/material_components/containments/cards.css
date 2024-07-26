@@ -14,6 +14,7 @@
   --container-shape: var(--shape-corner-m);
 
   --bg-color: inherit;
+  --text-color: var(--color-on-surface);
   --icon-color: var(--color-on-surface);
 
   &:has(.actions) {

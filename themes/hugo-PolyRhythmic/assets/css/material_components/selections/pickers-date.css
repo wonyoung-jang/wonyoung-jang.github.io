@@ -29,6 +29,16 @@
   min-width: var(--size-82);
   max-height: var(--size-128);
   
+  &.docked {
+    --container-width: 328px;
+    --container-height: 428px;
+  }
+
+  &.modal {
+    --container-width: 328px;
+    --container-height: 512px;
+  }
+
   & .header {
     display: flex;
     flex-flow: column nowrap;

@@ -715,6 +715,7 @@
       {{/*  TODO Day selection  */}}
       {{ partial "components/selections/date-pickers.html" (dict
         "type" "docked"
+        "config" "day"
         "supporting_text" "Select date (Day selection)"
         "headline" "Enter date"
         "icon" "today"
@@ -724,6 +725,7 @@
       {{/*  TODO Month selection  */}}
       {{ partial "components/selections/date-pickers.html" (dict
         "type" "docked"
+        "config" "month"
         "supporting_text" "Select date (Month selection)"
         "headline" "Enter date"
         "icon" "today"
@@ -733,6 +735,7 @@
       {{/*  TODO Year selection  */}}
       {{ partial "components/selections/date-pickers.html" (dict
         "type" "docked"
+        "config" "year"
         "supporting_text" "Select date (Year selection)"
         "headline" "Enter date"
         "icon" "today"
@@ -744,6 +747,7 @@
       {{/*  TODO Single date selection  */}}
       {{ partial "components/selections/date-pickers.html" (dict
         "type" "modal"
+        "config" "single"
         "supporting_text" "Select date (Single date selection)"
         "headline" "Enter date"
         "icon" "today"
@@ -753,6 +757,7 @@
       {{/*  TODO Date range selection  */}}
       {{ partial "components/selections/date-pickers.html" (dict
         "type" "modal"
+        "config" "range"
         "supporting_text" "Select date (Date range selection)"
         "headline" "Enter date"
         "icon" "today"
@@ -763,6 +768,7 @@
       {{/*  TODO Year selection */}}
       {{ partial "components/selections/date-pickers.html" (dict
         "type" "modal"
+        "config" "year"
         "supporting_text" "Select date (Year selection)"
         "headline" "Enter date"
         "icon" "today"
@@ -793,7 +799,7 @@
       {{/*  Time pickers  */}}
       <div class="display-medium">Time pickers</div>
       {{/*  TODO Dial  */}}
-      <div class="sub-showcase-components-header">Dial</div>
+      <div class="sub-showcase-components-header">Dial - 12-hour clock</div>
       {{/*  TODO 12H Time input picker - vertical  */}}
       {{ partial "components/selections/time-pickers.html" (dict
         "type" "dial"
@@ -812,6 +818,7 @@
         )
       }}
 
+      <div class="sub-showcase-components-header">Dial - 24-hour clock</div>
       {{/*  TODO 24H Time input picker - vertical  */}}
       {{ partial "components/selections/time-pickers.html" (dict
         "type" "dial"
