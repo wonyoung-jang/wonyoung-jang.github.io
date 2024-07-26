@@ -2,12 +2,12 @@
 date: 2024-03-05
 description: WonyoungJang.org (this site)
 githubrepo: https://github.com/wonyoung-jang/wonyoung-jang.github.io
-lastMod: 2024-07-07
+lastMod: 2024-07-26
 projects:
 - software
 title: Wonyoungjang.org
 ---
-![wonyoungjang-org.webp](/assets/wonyoungjang-org.webp)
+![project_wonyoungjang_org.webp](/assets/project_wonyoungjang_org_1722029422690_0.webp)
 
 ## How it's made
 
