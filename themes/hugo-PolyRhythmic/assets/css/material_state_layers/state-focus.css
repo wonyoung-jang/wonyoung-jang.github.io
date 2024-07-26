@@ -1,26 +1,27 @@
 .component:not(
-  .badge,
-  .bottom-app-bar,
-  .bottom-sheets,
-  .date-picker,
-  .divider,
-  .tooltip,
-  .top-app-bar,
-  .progress,
-  .search.view,
-  .navigation-bar,
-  .navigation-item,
-  .navigation-rail,
-  .navigation-drawer,
-  .set.tabs,
-  .dialog,
-  .side-sheets,
-  .radio,
-  .checkbox
-):not(:disabled):focus {
-  
-  border: var(--container-outline-focus);
-  box-shadow: var(--container-elevation-focus);
+    .badge,
+    .bottom-app-bar,
+    .bottom-sheets,
+    .date-picker,
+    .divider,
+    .tooltip,
+    .top-app-bar,
+    .progress,
+    .search.view,
+    .navigation-bar,
+    .navigation-item,
+    .navigation-rail,
+    .navigation-drawer,
+    .set.tabs,
+    .dialog,
+    .side-sheets,
+    .radio,
+    .checkbox
+  ):not(:disabled):focus {
+  &::before {
+    border: var(--container-outline-focus);
+    box-shadow: var(--container-elevation-focus);
+  }
 
   &::after {
     opacity: var(--state-focus-opacity);

@@ -12,10 +12,6 @@
   --set-gap: 0;
   --set-overflow: hidden;
 
-  & .divider {
-    color: var(--color-surface-variant);
-  }
-
   & .tab {
     flex: 1 1 0;
     cursor: pointer;
@@ -42,14 +38,16 @@
     }
     
     &.active {
-      --icon-color: var(--color-primary);
-      --text-color: var(--color-primary);
-      --bg-color: var(--color-surface);
+      --icon-color: var(--color-on-secondary-container);
+      --text-color: var(--color-on-secondary-container);
+      --bg-color: var(--color-secondary-container);
 
       font-weight: var(--typeface-weight-bold);
     }
-    
+
+    /* TODO Primary tab active indicator         
     &::before {
+      all: unset;
       content: '';
       display: block;
       position: absolute;
@@ -64,7 +62,7 @@
 
     &:not(.active)::before {
       display: none;
-    }
+    } */
   }
 
   &.secondary .tab {
@@ -79,6 +77,7 @@
       font-weight: var(--typeface-weight-bold);
     }
     
+    /* TODO Secondary tab active indicator    
     &::before {
       content: '';
       display: block;
@@ -93,6 +92,6 @@
 
     &:not(.active)::before {
       display: none;
-    }
+    } */
   }
 }

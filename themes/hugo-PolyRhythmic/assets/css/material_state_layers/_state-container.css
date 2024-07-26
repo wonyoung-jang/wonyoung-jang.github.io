@@ -1,33 +1,46 @@
-/* container outline and container elevation */
 .component {
   position: relative;
-  border: var(--container-outline);
-  box-shadow: var(--container-elevation);
+  z-index: 1;
 
   & * {
     z-index: 2;
   }
 }
 
-/* state layer */
+/* Containers (background, elevation, outline, shape) */
 .component:not(
-  .badge,
-  .bottom-app-bar,
-  .bottom-sheets,
-  .date-picker,
-  .divider,
-  .tooltip,
-  .top-app-bar,
-  .progress,
-  .search.view
-)::after {
+    .divider,
+    .segmented-buttons
+  )::before {
   content: "";
   position: absolute;
-  border-radius: inherit;
   inset: 0;
-  z-index: 0;
+  z-index: -1;
+  background-color: var(--bg-color);
+  box-shadow: var(--container-elevation);
+  border: var(--container-outline);
+  border-radius: var(--container-shape);
+}
+
+/* State layers */
+.component:not(
+    .badge,
+    .bottom-app-bar,
+    .bottom-sheets,
+    .date-picker,
+    .divider,
+    .tooltip,
+    .top-app-bar,
+    .progress,
+    .search.view
+  )::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   background-image: radial-gradient(circle, var(--state-color) 1%, transparent 1%);
   background-position: center;
+  border-radius: var(--container-shape);
   opacity: 0;
   inline-size: 100%;
   block-size: 100%;

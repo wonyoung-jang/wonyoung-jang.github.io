@@ -40,13 +40,8 @@
   width:            var(--container-width);
   padding:          var(--container-padding);
 
-  border:           var(--container-outline);
-  border-radius:    var(--container-shape);
-  box-shadow:       var(--container-elevation);
-
-  background-color: var(--bg-color);
-
-  color:            var(--text-color, var(--icon-color));
+  color:            var(--text-color);
+  color:            var(--icon-color);
   
   --state-color:    var(--icon-color, var(--text-color));
 }

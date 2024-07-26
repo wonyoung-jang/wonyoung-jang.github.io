@@ -1,29 +1,30 @@
 .component:not(
-  .badge,
-  .bottom-app-bar,
-  .bottom-sheets,
-  .date-picker,
-  .divider,
-  .tooltip,
-  .top-app-bar,
-  .progress,
-  .search.view,
-  .snackbar,
-  .navigation-bar,
-  .navigation-bar .navigation-item,
-  .navigation-rail,
-  .navigation-rail .navigation-item,
-  .navigation-drawer,
-  .set.tabs,
-  .dialog,
-  .side-sheets,
-  .menus,
-  .radio,
-  .checkbox
-):not(:disabled):hover {
-  
-  border: var(--container-outline-hover);
-  box-shadow: var(--container-elevation-hover);
+    .badge,
+    .bottom-app-bar,
+    .bottom-sheets,
+    .date-picker,
+    .divider,
+    .tooltip,
+    .top-app-bar,
+    .progress,
+    .search.view,
+    .snackbar,
+    .navigation-bar,
+    .navigation-bar .navigation-item,
+    .navigation-rail,
+    .navigation-rail .navigation-item,
+    .navigation-drawer,
+    .set.tabs,
+    .dialog,
+    .side-sheets,
+    .menus,
+    .radio,
+    .checkbox
+  ):not(:disabled):hover {
+  &::before {
+    border: var(--container-outline-hover);
+    box-shadow: var(--container-elevation-hover);
+  }
 
   &::after {
     opacity: var(--state-hover-opacity);

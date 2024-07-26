@@ -14,9 +14,15 @@
     --container-shape: unset;
     --container-padding: 0 var(--size-4);
     --container-outline: 1px solid var(--color-outline);
+    --container-outline-hover: 1px solid var(--color-outline);
+    --container-outline-focus: 1px solid var(--color-outline);
+    --container-outline-press: 1px solid var(--color-outline);
+    --container-outline-disabled: 1px solid var(--color-outline-variant);
+    
     cursor: pointer;
     min-width: fit-content;
     border-inline-end: 0px solid transparent;
+    border-right: 0px solid transparent;
 
     & .icon {
       font-size: 18px;
@@ -29,19 +35,27 @@
     }
 
     &:last-of-type {
-      border-inline-end: 1px solid var(--color-outline);
       --container-shape: var(--shape-corner-xl-end);
 
-      &:hover {
-        border-right: 1px solid var(--color-outline) !important;
+      &::before {
+        border-inline-end: 1px solid var(--color-outline);
+        border-right: 1px solid var(--color-outline);
+      }
+
+      &:hover::before {
+        border-inline-end: 0px solid var(--color-outline);
+        border-right: 0px solid var(--color-outline);
       }
     }
 
     &:hover,
     &:focus,
     &:active {
-      border: 1px solid var(--color-outline) !important;
-      border-right: 0px solid var(--color-outline) !important;
+      &::before {
+        --container-outline: 1px solid var(--color-outline);
+        border-inline-end: 0px solid var(--color-outline);
+        border-right: 0px solid var(--color-outline);
+      }
     }
 
     & input {
@@ -57,7 +71,6 @@
         padding-left: var(--size-2);
       }
 
-      & i.icon,
       & .icon {
         display: block;
         color: var(--color-on-secondary-container);
@@ -65,7 +78,6 @@
     }
 
     &:has(input:disabled) {
-      --container-outline: 1px solid var(--color-outline-disabled);
       --container-elevation: var(--elevation-disabled);
       pointer-events: none;
       cursor: not-allowed;
