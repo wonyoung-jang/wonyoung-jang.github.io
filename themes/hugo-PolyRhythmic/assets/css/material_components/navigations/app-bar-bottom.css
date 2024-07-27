@@ -1,16 +1,9 @@
-.bottom-app-bar {
-  --container-display: flex;
-  --container-flex-flow: row nowrap;
-  --container-justify-content: initial;
-  --container-align-items: center;
+.app-bar.bottom {
   --container-gap: 0;
   --container-height: var(--size-20);
   --container-width: 100%;
   --container-padding: var(--size-3) var(--size-1) var(--size-3) var(--size-4);
-
   --container-elevation: var(--elevation2);
-  --container-shape: var(--shape-corner-none);
-  --container-color: var(--color-surface-container);
 
   &:has(.fab) {
     --container-padding: var(--size-4);

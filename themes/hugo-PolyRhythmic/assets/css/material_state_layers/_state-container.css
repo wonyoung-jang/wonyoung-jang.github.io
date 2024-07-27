@@ -27,12 +27,11 @@
 /* State layers */
 .component:not(
     .badge,
-    .bottom-app-bar,
+    .app-bar,
     .bottom-sheets,
     .date-picker,
     .divider,
     .tooltip,
-    .top-app-bar,
     .progress,
     .search.view
   )::after {

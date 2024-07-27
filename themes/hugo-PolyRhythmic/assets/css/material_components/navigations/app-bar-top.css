@@ -1,15 +1,14 @@
-.top-app-bar {
+.app-bar.top {
   --container-display: flex;
-  --container-flex-flow: row wrap;
+  --container-flex-flow: row nowrap;
   --container-justify-content: flex-start;
   --container-align-items: center;
-  --container-gap: var(--size-1);
-
   --container-outline: initial;
   --container-elevation: initial;
   --container-shape: 0;
-
   --container-color: var(--color-surface-container);
+  
+  --container-gap: var(--size-1);
   color: var(--color-on-surface);
 
   & .start,
@@ -53,6 +52,8 @@
 
   &.medium,
   &.large {
+    --container-flex-flow: row wrap;
+    
     & .headline {
       flex: 1 1 100%;
       padding-inline: var(--size-3);

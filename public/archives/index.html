@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.109d7700617a0dea5696c733ba04cce3ca8c330a29ec0e40317ba0770172a423.css" integrity="sha256-EJ13AGF6DepWlsczugTM48qMMwop7A5AMXugdwFypCM=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.1e0c3a2e6b00b589014a191a7540cd879f317b5f27aba8929d32eca29741953d.css" integrity="sha256-Hgw6LmsAtYkBShkadUDNh58xe18nq6iSnTLsopdBlT0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.bd32894e011242a6d671e72e685edfa4da8dab322bc1743a625d14c85034a871.css" integrity="sha256-vTKJTgESQqbWcecuaF7fpNqNqzIrwXQ6Yl0UyFA0qHE=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.32c3b6ef03a8fee9c9c3077474c23bcdd1285326bcc30d9777ee40174571ff0b.css" integrity="sha256-MsO27wOo/unJwwd0dMI7zdEoUya8ww2Xd&#43;5AF0Vx/ws=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.0dcec177446b76854c9d08a69e433f3a6f23d2c33afbefe918e8779cd1c2fae5.css" integrity="sha256-Dc7Bd0RrdoVMnQimnkM/Om8j0sM6&#43;&#43;/pGOh3nNHC&#43;uU=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.24cc205ab5de9c645a37e9bb2ba466ac04ffb15e5ef3a7a2dcaa2a5705e06dec.css" integrity="sha256-JMwgWrXenGRaN&#43;m7K6RmrAT/sV5e86ei3KoqVwXgbew=" rel="preload stylesheet" as="style">
 
@@ -81,7 +81,7 @@
         
         <header id="header" role="banner">
             
-<nav    class="component top-app-bar center small"
+<nav    class="component app-bar top center small"
         aria-label="Top App Bar">
         
     
@@ -1646,6 +1646,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
