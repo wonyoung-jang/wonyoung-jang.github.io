@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.109d7700617a0dea5696c733ba04cce3ca8c330a29ec0e40317ba0770172a423.css" integrity="sha256-EJ13AGF6DepWlsczugTM48qMMwop7A5AMXugdwFypCM=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.1e0c3a2e6b00b589014a191a7540cd879f317b5f27aba8929d32eca29741953d.css" integrity="sha256-Hgw6LmsAtYkBShkadUDNh58xe18nq6iSnTLsopdBlT0=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.c3a8d5e01403faa035572aad105e7d1e9e610af807a16e71e1545bab8057a5f7.css" integrity="sha256-w6jV4BQD&#43;qA1VyqtEF59Hp5hCvgHoW5x4VRbq4BXpfc=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.32c3b6ef03a8fee9c9c3077474c23bcdd1285326bcc30d9777ee40174571ff0b.css" integrity="sha256-MsO27wOo/unJwwd0dMI7zdEoUya8ww2Xd&#43;5AF0Vx/ws=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.6ebae442d3afcbd0d2f70aec699f04f08e153670e389e92518a9e0b120ff4921.css" integrity="sha256-brrkQtOvy9DS9wrsaZ8E8I4VNnDjieklGKngsSD/SSE=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.24cc205ab5de9c645a37e9bb2ba466ac04ffb15e5ef3a7a2dcaa2a5705e06dec.css" integrity="sha256-JMwgWrXenGRaN&#43;m7K6RmrAT/sV5e86ei3KoqVwXgbew=" rel="preload stylesheet" as="style">
 
@@ -83,7 +83,7 @@
         
         <header id="header" role="banner">
             
-<nav    class="component top-app-bar center small"
+<nav    class="component app-bar top center small"
         aria-label="Top App Bar">
         
     
@@ -152,7 +152,7 @@
         
 
         <button
-  class="component button icon-button"
+  class="component button icon"
   id="random-button"
   accesskey="r"
   title="Random page (ALT + SHIFT + R)"
@@ -295,7 +295,7 @@
 </script>
 
         
-    <button class="component button icon-button"
+    <button class="component button icon"
             id="theme-toggle" 
             accesskey="t" 
             title="Toggle Theme (ALT + SHIFT + t)" >
@@ -303,7 +303,7 @@
         <i class="icon" id="sun">light_mode</i>
     </button>
 
-<button class="component button icon-button" id="theme-controls">
+<button class="component button icon" id="theme-controls">
   <i class="icon">palette</i> 
   <menu class="menu" id="theme-controls-menu">
     <span class="theme-controls-title headline-medium">Theme controls</span>
@@ -311,20 +311,20 @@
     <div id="max-width-selector-container">
       <div class="title-large">Content text width</div>
       
-      <div class="component segmented-buttons">
-        <label class="component button">
+      <div class="set segmented-buttons">
+        <label class="component button segmented">
           <input type="radio" name="width" id="width-selector-60" value="60"/>
           <i class="icon">check</i>
           60ch
         </label>
         
-        <label class="component button">
+        <label class="component button segmented">
           <input type="radio" name="width" id="width-selector-120" value="120"/>
           <i class="icon">check</i>
           120ch
         </label>
         
-        <label class="component button">
+        <label class="component button segmented">
           <input type="radio" name="width" id="width-selector-max" value="max"/>
           <i class="icon">check</i>
           Max
@@ -336,14 +336,14 @@
     <div id="tertiary-temperature-selector-container">
       <div class="title-large">Tertiary temperature</div>
 
-      <div class="component segmented-buttons">
-        <label class="component button">
+      <div class="set segmented-buttons">
+        <label class="component button segmented">
           <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
           <i class="icon">check</i>
           Cooler
         </label>
         
-        <label class="component button">
+        <label class="component button segmented">
           <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
           <i class="icon">check</i>
           Warmer
@@ -1980,7 +1980,7 @@ block-property-2:: block-property-2</p>
         
         
         <div class="share-buttons">
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on twitter"
@@ -1991,7 +1991,7 @@ block-property-2:: block-property-2</p>
                 </svg>
             </a>
     
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on linkedin"
@@ -2002,7 +2002,7 @@ block-property-2:: block-property-2</p>
                 </svg>
             </a>
     
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on reddit"
@@ -2013,7 +2013,7 @@ block-property-2:: block-property-2</p>
                 </svg>
             </a>
     
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on facebook"
@@ -2024,7 +2024,7 @@ block-property-2:: block-property-2</p>
                 </svg>
             </a>
     
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on whatsapp"
@@ -2035,7 +2035,7 @@ block-property-2:: block-property-2</p>
                     </svg>
             </a>
     
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on telegram"
@@ -2046,7 +2046,7 @@ block-property-2:: block-property-2</p>
                 </svg>
             </a>
     
-            <a  class="component button icon-button"
+            <a  class="component button icon"
                 target="_blank" 
                 rel="external noopener noreferrer" 
                 aria-label="share All Logseq elements on ycombinator"

@@ -26,14 +26,14 @@
 
 /* State layers */
 .component:not(
-    .badge,
     .app-bar,
-    .sheet,
-    .picker,
+    .badge,
     .divider,
-    .tooltip,
+    .picker,
     .progress,
-    .search.view
+    .search.view,
+    .sheet,
+    .tooltip
   )::after {
 
   --state-color: var(--icon-color, var(--text-color));

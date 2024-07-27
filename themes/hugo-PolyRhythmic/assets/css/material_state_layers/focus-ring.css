@@ -16,7 +16,7 @@
 }
 
 a:not(.component):focus-visible {
-  text-decoration: underline;
+  text-decoration: underline !important;
 } 
 
 @keyframes outward-grow {

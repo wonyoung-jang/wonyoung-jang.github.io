@@ -1,20 +1,20 @@
-.component{
-  &.button,
-  &.card,
-  &.carousel-item,
-  &.checkbox,
-  &.chip,
-  &.picker.date.docked,
-  &.list-item,
-  &.menu-item,
-  &.radio,
-  &.slider,
-  &.switch {
-    &.disabled,
-    &:disabled {
-      pointer-events: none;
-      cursor: not-allowed;
-      opacity: var(--state-disabled-opacity);
-    }
+.component:is(
+    .button,
+    .card,
+    .carousel-item,
+    .checkbox,
+    .chip,
+    .picker.date.docked,
+    .list-item,
+    .menu-item,
+    .radio,
+    .slider,
+    .switch,
+    .text-field) {
+  &.disabled,
+  &:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: var(--state-disabled-opacity);
   }
 }

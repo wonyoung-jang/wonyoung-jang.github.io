@@ -1,23 +1,31 @@
-.component:not(
-    .badge,
-    .app-bar,
-    .sheet,
-    .picker,
-    .divider,
-    .tooltip,
-    .progress,
-    .search.view,
-    .snackbar,
-    .navigation,
-    .navigation-item,
-    .set.tabs,
-    .menus,
-    .dialog,
-    .radio,
+.component:is(
+    .button,
+    .card,
+    .carousel,
     .checkbox,
-    .text-field,
-    :has(.button, .radio, .checkbox, .switch)
+    .chip,
+    .picker.date.docked,
+    .picker.date.modal,
+    .dialog,
+    .list-item,
+    .menu-item,
+    .navigation,
+    .radio,
+    .slider
+    .search.bar
+    .search.view,
+    .switch,
+    .snackbar,
+    .tab,
+    .picker.time,
+    .tooltip.rich
+  ):not(:has(
+    .button, 
+    .checkbox, 
+    .radio, 
+    .switch)
   ):not(:disabled):active {
+
   &::before {
     border: var(--container-outline-press);
     box-shadow: var(--container-elevation-press);
