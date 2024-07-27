@@ -161,86 +161,29 @@
       
       {{ $segmentedButtons := slice
         (dict 
-          "name" "segmented1" 
-          "type" "radio"
-          "buttons" (slice
-            (dict 
-              "id" "start" 
-              "label" "Start" 
-              "checked" true
-              "icon" "check")
-            (dict 
-              "id" "end" 
-              "label" "End"
-              "icon" "check")
-          )
-        )
-        (dict
-          "name" "segmented2" 
-          "type" "radio"
-          "buttons" (slice
-            (dict 
-              "id" "start2" 
-              "label" "Start" 
-              "checked" true
-              "icon" "check")
-            (dict 
-              "id" "middle" 
-              "label" "Middle"
-              "icon" "check")
-            (dict 
-              "id" "end2" 
-              "label" "End"
-              "icon" "check")
-          )
-        )
-        (dict 
-          "name" "segmented3" 
-          "type" "radio"
-          "buttons" (slice
-            (dict 
-              "id" "start3" 
-              "label" "Start" 
-              "checked" true
-              "icon" "check")
-            (dict 
-              "id" "middle1" 
-              "label" "Middle 1"
-              "icon" "check")
-            (dict 
-              "id" "middle2" 
-              "label" "Middle 2"
-              "icon" "check")
-            (dict 
-              "id" "end3" 
-              "label" "End"
-              "icon" "check")
-          )
-        )
-        (dict 
           "name" "segmented4" 
           "type" "radio"
           "buttons" (slice
             (dict 
               "id" "start4" 
-              "label" "Start" 
+              "label" "Single" 
               "checked" true
               "icon" "check")
             (dict 
               "id" "middle3" 
-              "label" "Middle 1"
+              "label" "Single"
               "icon" "check")
             (dict 
               "id" "middle4" 
-              "label" "Middle 2"
+              "label" "Single"
               "icon" "check")
             (dict 
               "id" "middle5" 
-              "label" "Middle 3"
+              "label" "Single"
               "icon" "check")
             (dict 
               "id" "end4" 
-              "label" "End"
+              "label" "Single"
               "icon" "check")
           )
         )
@@ -254,86 +197,29 @@
 
       {{ $segmentedButtons := slice
         (dict 
-          "name" "segmented1" 
-          "type" "checkbox"
-          "buttons" (slice
-            (dict 
-              "id" "startcheck" 
-              "label" "Start" 
-              "checked" true
-              "icon" "check")
-            (dict 
-              "id" "endcheck" 
-              "label" "End"
-              "icon" "check")
-          )
-        )
-        (dict
-          "name" "segmented2"
-          "type" "checkbox" 
-          "buttons" (slice
-            (dict 
-              "id" "startcheck2" 
-              "label" "Start" 
-              "checked" true 
-              "icon" "check")
-            (dict 
-              "id" "middlecheck" 
-              "label" "Middle" 
-              "icon" "check")
-            (dict 
-              "id" "endcheck2" 
-              "label" "End" 
-              "icon" "check")
-          )
-        )
-        (dict 
-          "name" "segmented3" 
-          "type" "checkbox"
-          "buttons" (slice
-            (dict 
-              "id" "startcheck3" 
-              "label" "Start" 
-              "checked" true
-              "icon" "check")
-            (dict 
-              "id" "middlecheck1" 
-              "label" "Middle 1"
-              "icon" "check")
-            (dict 
-              "id" "middlecheck2" 
-              "label" "Middle 2"
-              "icon" "check")
-            (dict 
-              "id" "endcheck3" 
-              "label" "End"
-              "icon" "check")
-          )
-        )
-        (dict 
           "name" "segmented4" 
           "type" "checkbox"
           "buttons" (slice
             (dict 
               "id" "startcheck4" 
-              "label" "Start" 
+              "label" "Multi"
               "checked" true
               "icon" "check")
             (dict 
               "id" "middlecheck3" 
-              "label" "Middle 1"
+              "label" "Multi"
               "icon" "check")
             (dict 
               "id" "middlecheck4" 
-              "label" "Middle 2"
+              "label" "Multi"
               "icon" "check")
             (dict 
               "id" "middlecheck5" 
-              "label" "Middle 3"
+              "label" "Multi"
               "icon" "check")
             (dict 
               "id" "endcheck4" 
-              "label" "End"
+              "label" "Multi"
               "icon" "check")
           )
         )
@@ -351,17 +237,13 @@
         "buttons" (slice
           (dict 
             "id" "start2" 
-            "label" "Start" 
+            "label" "Enabled" 
             "checked" true
             "icon" "check")
           (dict 
-            "id" "middle" 
-            "label" "Middle"
-            "disabled" "disabled" 
-            "icon" "check")
-          (dict 
             "id" "end2" 
-            "label" "End"
+            "disabled" "disabled"
+            "label" "Disabled"
             "icon" "check")
           )
         ) 
