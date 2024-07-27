@@ -1,7 +1,7 @@
 .component:not(
     .badge,
     .app-bar,
-    .bottom-sheets,
+    .sheet,
     .date-picker,
     .divider,
     .tooltip,
@@ -13,7 +13,6 @@
     .navigation-drawer,
     .set.tabs,
     .dialog,
-    .side-sheets,
     .radio,
     .checkbox,
     :has(.button, .radio, .checkbox, .switch)

@@ -1,7 +1,7 @@
 .component:not(
     .badge,
     .app-bar,
-    .bottom-sheets,
+    .sheet,
     .date-picker,
     .divider,
     .tooltip,
@@ -15,7 +15,6 @@
     .set.tabs,
     .menus,
     .dialog,
-    .side-sheets,
     .radio,
     .checkbox,
     .text-field,

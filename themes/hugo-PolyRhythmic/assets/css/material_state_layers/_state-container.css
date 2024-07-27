@@ -28,7 +28,7 @@
 .component:not(
     .badge,
     .app-bar,
-    .bottom-sheets,
+    .sheet,
     .date-picker,
     .divider,
     .tooltip,

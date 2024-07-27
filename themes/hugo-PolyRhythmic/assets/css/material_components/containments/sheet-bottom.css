@@ -1,22 +1,7 @@
-.bottom-sheets {
-  --container-display: flex;
-  --container-flex-flow: column nowrap;
-  --container-justify-content: initial;
-  --container-align-items: initial;
-  --container-gap: initial;
-  --container-height: initial;
+.sheet.bottom {
   --container-width: 100%;
-  --container-padding: initial;
-
-  --container-outline: initial;
   --container-elevation: var(--elevation1);
   --container-shape: var(--shape-corner-xl-top);
-  
-  --container-color: var(--color-surface-container-low);
-  
-  --text-color: initial;
-  --icon-color: initial;
-
   --container-elevation-hover: var(--container-elevation);
   --container-elevation-focus: var(--container-elevation);
   --container-elevation-press: var(--container-elevation);
@@ -39,7 +24,7 @@
 }
 
 @media screen and (min-width: 640px) {
-  .bottom-sheets {
+  .sheet.bottom {
     margin-top: var(--size-14);
     margin-inline: var(--size-14);
   }
