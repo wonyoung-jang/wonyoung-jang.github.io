@@ -1,0 +1,4 @@
+.navigation {
+  --container-display: flex;
+  --container-align-items: flex-start;
+}

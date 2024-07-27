@@ -1,30 +1,10 @@
-.navigation-bar {
-  --container-display: flex;
-  --container-flex-flow: row nowrap;
-  --container-justify-content: initial;
-  --container-align-items: flex-start;
+.navigation.bar {  
   --container-gap: var(--size-2);
-  --container-height: initial;
   --container-width: 100%;
+  
   --container-padding: 0 var(--size-2);
-
-  --container-outline: initial;
-  --container-elevation: initial;
-  --container-shape: initial;
-  
   --container-color: var(--color-surface-container);
-  
-  --text-color: initial;
-  --icon-color: initial;
-
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
+  --container-flex-flow: row nowrap;
   
   & .navigation-item {
     flex: 1 0 0;

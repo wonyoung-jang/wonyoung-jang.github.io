@@ -1,16 +1,8 @@
-.navigation-drawer {
-  --container-display: flex;
-  --container-flex-flow: column nowrap;
-  --container-justify-content: initial;
-  --container-align-items: flex-start;
-  --container-gap: initial;
-  --container-height: initial;
-  --container-width: initial;
+.navigation.drawer {  
   --container-padding: var(--size-3);
+  --container-flex-flow: column nowrap;
   min-width: var(--size-90);
 
-  --container-outline: initial;
-  
   &.standard {
     --container-color: inherit;
     --container-elevation: var(--elevation0);
