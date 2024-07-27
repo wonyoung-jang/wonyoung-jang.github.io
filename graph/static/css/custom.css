@@ -1484,3 +1484,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #005267;
   color: #6ed6ec;
 }
+
+* {
+  letter-spacing: 0.05em;
+}
