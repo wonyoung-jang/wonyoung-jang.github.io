@@ -1,26 +1,27 @@
 .segmented-buttons {
-  --container-display: flex;
-  --container-flex-flow: row nowrap;
-  --container-align-items: center;
-  --container-padding: 0;
+  --set-display: flex;
+  --set-flex-flow: row nowrap;
+  --set-align-items: stretch;
 
   overflow-x: auto;
 
-  & .button {
-    --container-color: var(--color-surface);
-    --icon-color: var(--color-on-surface);
-    --text-color: var(--color-on-surface);
+  & .segmented-button {
+    flex: 1 1 0;
+
     --container-gap: var(--size-2);
     --container-shape: unset;
     --container-padding: 0 var(--size-4);
     --container-outline: 1px solid var(--color-outline);
+    --container-color: var(--color-surface);
+    --icon-color: var(--color-on-surface);
+    --text-color: var(--color-on-surface);
+
     --container-outline-hover: 1px solid var(--color-outline);
     --container-outline-focus: 1px solid var(--color-outline);
     --container-outline-press: 1px solid var(--color-outline);
     --container-outline-disabled: 1px solid var(--color-outline-variant);
     
     cursor: pointer;
-    min-width: fit-content;
     border-inline-end: 0px solid transparent;
     border-right: 0px solid transparent;
 
@@ -30,11 +31,11 @@
       display: none;
     }
 
-    &:first-of-type {
+    &.start {
       --container-shape: var(--shape-corner-xl-start);
     }
 
-    &:last-of-type {
+    &.end {
       --container-shape: var(--shape-corner-xl-end);
 
       &::before {
