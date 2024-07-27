@@ -10,7 +10,7 @@
     <span class="showcase-components-header">Checkboxes</span>
     <div class="layout showcase-components">
       {{/*  Selected  */}}
-      <div class="sub-showcase-components-header">Primary</div>
+      <div class="sub-showcase-components-header">Regular</div>
       {{ partial "components/selections/checkboxes.html" (dict 
         ) 
       }}
@@ -27,11 +27,12 @@
       }}
       
       {{ partial "components/selections/checkboxes.html" (dict 
-        "label" "Checkbox label"
+        "label" "Label"
         ) 
       }}
     
       {{/*  Indeterminate  */}}
+      <div class="sub-showcase-components-header">Regular - indeterminate</div>
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
         ) 
@@ -52,7 +53,7 @@
       
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
-        "label" "Indeterminate label"
+        "label" "Label"
         ) 
       }}
 
@@ -77,12 +78,13 @@
       }}
 
       {{ partial "components/selections/checkboxes.html" (dict 
-        "label" "Checkbox label"
+        "label" "Label"
         "error" true
         ) 
       }}
 
       {{/*  Indeterminate  */}}
+      <div class="sub-showcase-components-header">Error - indeterminate</div>
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
         "error" true
@@ -106,7 +108,7 @@
 
       {{ partial "components/selections/checkboxes.html" (dict 
         "indeterminate" "indeterminate"
-        "label" "Indeterminate label"
+        "label" "Label"
         "error" true
         ) 
       }}
@@ -585,7 +587,6 @@
 
       <div class="sub-showcase-components-header">With dividers</div>
       {{ partial "components/selections/menus.html" (dict
-        "type" "button"
         "dividers" true
         "menu_items" (slice 
           (dict 
@@ -602,6 +603,50 @@
           ) 
         )
       }}
+
+      <div class="sub-showcase-components-header">Configurations</div>
+      <button class="component button common-button filled">
+        Menu
+        {{ partial "components/selections/menus.html" (dict
+          "dividers" true
+          "menu_items" (slice 
+            (dict 
+              "label" "Menu item 1")
+            (dict 
+              "label" "Menu item 2")
+            (dict 
+              "label" "Disabled"
+              "disabled" "disabled")
+            (dict 
+              "label" "Menu item 3")
+            (dict 
+              "label" "Menu item 4")
+            ) 
+          )
+        }}
+      </button>
+
+      <button class="component button icon-button">
+        <i class="icon">more_vert</i>
+        {{ partial "components/selections/menus.html" (dict
+          "dividers" true
+          "menu_items" (slice 
+            (dict 
+              "label" "Menu item 1")
+            (dict 
+              "label" "Menu item 2")
+            (dict 
+              "label" "Disabled"
+              "disabled" "disabled")
+            (dict 
+              "label" "Menu item 3")
+            (dict 
+              "label" "Menu item 4")
+            ) 
+          )
+        }}
+      </button>
+
     </div>
 
     {{/*  Radio buttons  */}}

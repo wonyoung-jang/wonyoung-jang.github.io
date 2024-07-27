@@ -20,7 +20,7 @@
   &[class*="-container"] {
     outline: unset;
     padding: var(--size-8) var(--size-4) var(--size-8) var(--icon-size);
-    background-color: var(--bg-color);
+    background-color: var(--container-color);
   }
 
   & a {

@@ -10,7 +10,7 @@
     --container-shape: var(--shape-corner-m-top);
 
     &.active {
-      --bg-color: var(--color-surface-container-low);
+      --container-color: var(--color-surface-container-low);
     }
 
     &:not(.active) {
@@ -24,7 +24,7 @@
       inset: 0;
       z-index: -1;
       flex: 0 1 auto;
-      background-color: var(--bg-color);
+      background-color: var(--container-color);
       box-shadow: var(--container-elevation);
       border: var(--container-outline);
       border-radius: var(--container-shape);
@@ -56,12 +56,12 @@
         justify-content: flex-start;
         gap: var(--size-2);
         padding: var(--size-7);
-        --bg-color: var(--color-surface-container);
+        --container-color: var(--color-surface-container);
         --container-shape: var(--shape-corner-none);
         z-index: 1;
 
         &.active {
-          --bg-color: var(--color-surface-container-high);
+          --container-color: var(--color-surface-container-high);
         }
 
         &::before {
@@ -71,7 +71,7 @@
           inset: 0;
           z-index: -1;
           flex: 0 1 auto;
-          background-color: var(--bg-color);
+          background-color: var(--container-color);
           box-shadow: var(--container-elevation);
           border: var(--container-outline);
           border-radius: var(--container-shape);

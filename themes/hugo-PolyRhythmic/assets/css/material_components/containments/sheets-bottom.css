@@ -12,7 +12,7 @@
   --container-elevation: var(--elevation1);
   --container-shape: var(--shape-corner-xl-top);
   
-  --bg-color: var(--color-surface-container-low);
+  --container-color: var(--color-surface-container-low);
   
   --text-color: initial;
   --icon-color: initial;

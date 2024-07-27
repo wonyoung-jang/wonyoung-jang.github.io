@@ -12,12 +12,12 @@
   --container-outline: initial;
   
   &.standard {
-    --bg-color: inherit;
+    --container-color: inherit;
     --container-elevation: var(--elevation0);
   }
   
   &.modal {
-    --bg-color: var(--color-surface-container-low);
+    --container-color: var(--color-surface-container-low);
     --container-shape: var(--shape-corner-l-end);
     --container-elevation: var(--elevation1);
   }
@@ -69,7 +69,7 @@
     --container-elevation: initial;
     --container-shape: var(--shape-corner-full);
     
-    --bg-color: initial;
+    --container-color: initial;
     
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);
@@ -87,7 +87,7 @@
     }
 
     &.active {
-      --bg-color: var(--color-secondary-container);
+      --container-color: var(--color-secondary-container);
       --text-color: var(--color-on-secondary-container);
       --icon-color: var(--color-on-secondary-container);
 

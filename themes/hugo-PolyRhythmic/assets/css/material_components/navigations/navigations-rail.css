@@ -12,7 +12,7 @@
   --container-elevation: initial;
   --container-shape: var(--shape-corner-l);
   
-  --bg-color: var(--color-surface);
+  --container-color: var(--color-surface);
   
   --text-color: initial;
   --icon-color: initial;
@@ -94,7 +94,7 @@
     --container-elevation: initial;
     --container-shape: initial;
     
-    --bg-color: initial;
+    --container-color: initial;
     
     --text-color: initial;
     --icon-color: var(--color-on-surface-variant);

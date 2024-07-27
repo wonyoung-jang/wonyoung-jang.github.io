@@ -3,7 +3,7 @@
   --container-padding: 0 var(--size-3);
   --container-gap: var(--size-2);
 
-  --bg-color: none;
+  --container-color: none;
   --icon-color: var(--color-primary);
 
   min-width: var(--size-10);
@@ -29,17 +29,17 @@
   }
 
   &.filled {
-    --bg-color: var(--color-primary);
+    --container-color: var(--color-primary);
     --icon-color: var(--color-on-primary);
   }
 
   &.filled-tonal {
-    --bg-color: var(--color-secondary-container);
+    --container-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
   }
 
   &.elevated {
-    --bg-color: var(--color-surface-container-low);
+    --container-color: var(--color-surface-container-low);
     --icon-color: var(--color-primary);
     --container-elevation: var(--elevation1);
     --container-elevation-hover: var(--elevation2);

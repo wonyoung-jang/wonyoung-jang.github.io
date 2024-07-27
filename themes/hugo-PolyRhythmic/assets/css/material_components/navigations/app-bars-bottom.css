@@ -8,11 +8,9 @@
   --container-width: 100%;
   --container-padding: var(--size-3) var(--size-1) var(--size-3) var(--size-4);
 
-  --container-outline: initial;
   --container-elevation: var(--elevation2);
-  --container-shape: initial;
-
-  --bg-color: var(--color-surface-container);
+  --container-shape: var(--shape-corner-none);
+  --container-color: var(--color-surface-container);
 
   &:has(.fab) {
     --container-padding: var(--size-4);

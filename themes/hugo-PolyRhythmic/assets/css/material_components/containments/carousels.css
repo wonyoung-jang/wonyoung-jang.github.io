@@ -49,7 +49,7 @@
     --container-elevation: none;
     --container-shape: var(--shape-corner-xl);
   
-    --bg-color: none;
+    --container-color: none;
   
     background: url(<path-to-image>) darkgray 50% / cover no-repeat;
     background-blend-mode: multiply;

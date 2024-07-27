@@ -12,7 +12,7 @@
     --container-shape: var(--shape-corner-full);
     --container-padding: var(--size-1);
 
-    --bg-color: var(--color-surface-container-high);
+    --container-color: var(--color-surface-container-high);
     --icon-color: var(--color-on-surface);
 
     --container-elevation-hover: var(--container-elevation);
@@ -88,7 +88,7 @@
     --container-elevation: initial;
     --container-shape: var(--shape-corner-xl);
     
-    --bg-color: var(--color-surface-container-high);
+    --container-color: var(--color-surface-container-high);
 
     min-width: var(--size-90);
 
@@ -154,7 +154,7 @@
     --container-elevation: initial;
     --container-shape: initial;
     
-    --bg-color: var(--color-surface-container-high);
+    --container-color: var(--color-surface-container-high);
 
     min-width: var(--size-90);
 

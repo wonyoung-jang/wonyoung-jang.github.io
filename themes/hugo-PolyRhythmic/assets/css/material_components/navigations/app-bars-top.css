@@ -9,7 +9,7 @@
   --container-elevation: initial;
   --container-shape: 0;
 
-  --bg-color: var(--color-surface-container);
+  --container-color: var(--color-surface-container);
   color: var(--color-on-surface);
 
   & .start,

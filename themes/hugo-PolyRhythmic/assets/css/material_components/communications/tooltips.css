@@ -12,7 +12,7 @@
   --container-elevation: initial;
   --container-shape: var(--shape-corner-xs);
   
-  --bg-color: var(--color-inverse-surface);
+  --container-color: var(--color-inverse-surface);
   
   --text-color: var(--color-inverse-on-surface);
   --icon-color: var(--color-inverse-on-surface);
@@ -33,7 +33,7 @@
     --container-elevation: var(--elevation2);
     --container-shape: var(--shape-corner-m);
 
-    --bg-color: var(--color-surface-container);
+    --container-color: var(--color-surface-container);
 
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);

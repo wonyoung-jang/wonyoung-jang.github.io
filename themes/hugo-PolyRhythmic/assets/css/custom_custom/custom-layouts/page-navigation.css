@@ -26,7 +26,7 @@
     gap: var(--size-2);
 
     --container-shape: var(--shape-corner-xs);
-    --bg-color: var(--color-surface-container-lowest);
+    --container-color: var(--color-surface-container-lowest);
     color: var(--color-on-surface);
     box-shadow: var(--elevation1);
 

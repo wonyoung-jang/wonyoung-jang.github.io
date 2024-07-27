@@ -26,7 +26,7 @@
   --container-elevation: initial;
   --container-shape: var(--shape-corner-s);
 
-  --bg-color: initial;
+  --container-color: initial;
 
   --text-color: var(--color-on-surface);
   --icon-color: var(--color-primary);
@@ -74,12 +74,12 @@
   }
 
   &.elevated {
-    --bg-color: var(--color-surface-container-low);
+    --container-color: var(--color-surface-container-low);
     --container-elevation: var(--elevation1);
   }
 
   &:has(input:checked) {
-    --bg-color: var(--color-secondary-container);
+    --container-color: var(--color-secondary-container);
     color: var(--color-on-secondary-container);
   }
 }

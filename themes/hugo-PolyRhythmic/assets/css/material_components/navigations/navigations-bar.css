@@ -12,7 +12,7 @@
   --container-elevation: initial;
   --container-shape: initial;
   
-  --bg-color: var(--color-surface-container);
+  --container-color: var(--color-surface-container);
   
   --text-color: initial;
   --icon-color: initial;
@@ -42,7 +42,7 @@
     --container-elevation: initial;
     --container-shape: initial;
     
-    --bg-color: var(--color-surface-container);
+    --container-color: var(--color-surface-container);
     
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);

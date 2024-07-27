@@ -9,7 +9,7 @@
 
   --container-shape: var(--shape-corner-full);
 
-  --bg-color: var(--color-error);
+  --container-color: var(--color-error);
 
   &.large {
     --container-height: var(--size-4);

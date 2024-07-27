@@ -13,7 +13,7 @@
 
   --container-shape: var(--shape-corner-m);
 
-  --bg-color: inherit;
+  --container-color: inherit;
   --text-color: var(--color-on-surface);
   --icon-color: var(--color-on-surface);
 
@@ -33,7 +33,7 @@
   }
 
   &.elevated {
-    --bg-color: var(--color-surface-container-low);
+    --container-color: var(--color-surface-container-low);
     --icon-color: var(--color-on-surface);
     --container-elevation: var(--elevation1);
     --container-elevation-hover: var(--elevation2);
@@ -45,13 +45,13 @@
   }
   
   &.filled {
-    --bg-color: var(--color-surface-container-highest);
+    --container-color: var(--color-surface-container-highest);
     --icon-color: var(--color-on-surface);
     --container-color-disabled: var(--color-surface-variant);
   }
 
   &.outlined {
-    --bg-color: var(--color-surface);
+    --container-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
     --container-outline: 1px solid var(--color-outline-variant);
     --container-outline-hover: 1px solid var(--color-outline-variant);

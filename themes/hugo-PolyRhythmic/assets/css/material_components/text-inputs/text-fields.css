@@ -45,7 +45,7 @@
 
   &.filled {
     --container-shape: var(--shape-corner-xs-top);
-    --bg-color: var(--color-surface-container-highest);
+    --container-color: var(--color-surface-container-highest);
     --text-color: var(--color-on-surface);
     --icon-color: var(--color-on-surface);
 
@@ -104,7 +104,7 @@
 
   &.outlined {
     --container-shape: var(--shape-corner-xs);
-    --bg-color: inherit;
+    --container-color: inherit;
     --text-color: var(--color-on-surface-variant);
     --icon-color: var(--color-on-surface-variant);
     

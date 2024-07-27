@@ -7,7 +7,7 @@
   overflow-x: auto;
 
   & .button {
-    --bg-color: var(--color-surface);
+    --container-color: var(--color-surface);
     --icon-color: var(--color-on-surface);
     --text-color: var(--color-on-surface);
     --container-gap: var(--size-2);
@@ -63,7 +63,7 @@
     }
 
     &:has(input:checked) {
-      --bg-color: var(--color-secondary-container);
+      --container-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
       --text-color: var(--color-on-secondary-container);
       

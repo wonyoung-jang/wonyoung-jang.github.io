@@ -11,7 +11,7 @@
   --container-elevation: initial;
   --container-shape: initial;
 
-  --bg-color: initial;
+  --container-color: initial;
 
   --text-color: initial;
   --icon-color: initial;
@@ -26,12 +26,27 @@
     --container-padding: var(--size-2) var(--size-3);
     --container-gap: var(--size-3);
 
-    --bg-color: var(--color-surface-container);
+    --container-color: var(--color-surface-container);
     --text-color: var(--color-on-surface);
     --icon-color: var(--color-on-surface-variant);
   }
   
   & .divider {
     color: var(--color-surface-variant);
+  }
+}
+
+.button:has(.menus) {
+  & .menus {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    min-width: max-content;
+    --container-display: none;
+  }
+
+  &:hover .menus {
+    --container-display: flex;
   }
 }

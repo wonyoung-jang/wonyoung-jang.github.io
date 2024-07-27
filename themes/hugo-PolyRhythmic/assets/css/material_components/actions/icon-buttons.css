@@ -5,7 +5,7 @@
 
   --container-shape: var(--shape-corner-full);
 
-  --bg-color: none;
+  --container-color: none;
 
   --container-outline-hover: initial;
   --container-elevation-hover: initial;
@@ -36,25 +36,25 @@
   }
 
   &.filled {
-    --bg-color: var(--color-primary);
+    --container-color: var(--color-primary);
     --icon-color: var(--color-on-primary);
 
     &:has(input[type="checkbox"]) {
-      --bg-color: var(--color-surface-container-highest);
+      --container-color: var(--color-surface-container-highest);
       --icon-color: var(--color-primary);
 
       & .icon-button {
-        --bg-color: var(--color-surface-container-highest);
+        --container-color: var(--color-surface-container-highest);
         --icon-color: var(--color-primary);
       }
     }
 
     &:has(input[type="checkbox"]:checked) {
-      --bg-color: var(--color-primary);
+      --container-color: var(--color-primary);
       --icon-color: var(--color-on-primary);
 
       & .icon-button {
-        --bg-color: var(--color-primary);
+        --container-color: var(--color-primary);
         --icon-color: var(--color-on-primary);
       }
 
@@ -66,25 +66,25 @@
   }
 
   &.filled-tonal {
-    --bg-color: var(--color-secondary-container);
+    --container-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
 
     &:has(input[type="checkbox"]) {
-      --bg-color: var(--color-surface-container-highest);
+      --container-color: var(--color-surface-container-highest);
       --icon-color: var(--color-on-surface-variant);
 
       & .icon-button {
-        --bg-color: var(--color-surface-container-highest);
+        --container-color: var(--color-surface-container-highest);
         --icon-color: var(--color-on-surface-variant);
       }
     }
 
     &:has(input[type="checkbox"]:checked) {
-      --bg-color: var(--color-secondary-container);
+      --container-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
 
       & .icon-button {
-        --bg-color: var(--color-secondary-container);
+        --container-color: var(--color-secondary-container);
         --icon-color: var(--color-on-secondary-container);
       }
 
@@ -105,7 +105,7 @@
 
     & input[type="checkbox"] {
       &:checked + .icon-button {
-        --bg-color: var(--color-inverse-surface);
+        --container-color: var(--color-inverse-surface);
         --icon-color: var(--color-inverse-on-surface);
 
         & .icon,
