@@ -174,7 +174,7 @@
     margin-bottom: var(--size-4);
   }
 
-  & > .segmented-buttons .button {
+  & > .segmented-buttons .segmented {
     width: 100%;
   }
 }

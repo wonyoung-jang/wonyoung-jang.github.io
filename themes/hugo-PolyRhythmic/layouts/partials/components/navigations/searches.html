@@ -10,7 +10,7 @@
   {{ if eq .type "view" }}
   
     <div class="header">
-      <div class="component button icon-button">
+      <div class="component button icon">
         <i class="icon">arrow_back</i>
       </div>
   
@@ -19,7 +19,7 @@
         aria-label="search" 
         type="search">
       
-      <div class="component button icon-button">
+      <div class="component button icon">
         <i class="icon">close</i>
       </div>
     </div>
@@ -62,7 +62,7 @@
 
   {{ else }}
 
-    <div class="component button icon-button">
+    <div class="component button icon">
       <i class="icon">menu</i>
     </div>
 
@@ -71,12 +71,12 @@
       aria-label="search" 
       type="search">
     
-    <div class="component button icon-button">
+    <div class="component button icon">
       <i class="icon">search</i>
     </div>
 
     {{ with .avatar }}
-      <div class="component button icon-button">
+      <div class="component button icon">
         <div class="avatar">{{ . }}</div>
       </div>
     {{ end }}

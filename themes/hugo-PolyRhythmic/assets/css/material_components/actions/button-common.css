@@ -1,12 +1,8 @@
-/* Common Buttons */
-.common {
+.button.common {
+  min-width: var(--size-10);
   --container-padding: 0 var(--size-3);
   --container-gap: var(--size-2);
-
-  --container-color: none;
   --icon-color: var(--color-primary);
-
-  min-width: var(--size-10);
 
   &:has(> i) {
     padding-left: var(--size-3);

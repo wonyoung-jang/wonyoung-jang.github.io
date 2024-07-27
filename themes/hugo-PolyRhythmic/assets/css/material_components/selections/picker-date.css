@@ -46,7 +46,7 @@
         line-height: var(--typescale-headline-large-line-height);
       }
 
-      & .icon-button {
+      & .button.icon {
         margin-left: auto;
         font-size: var(--size-6);
       }

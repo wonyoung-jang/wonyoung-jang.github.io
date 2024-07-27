@@ -1,30 +1,14 @@
-/* Icon Buttons */
-.icon-button {
-  --container-gap: 0;
-  --container-padding: 0;
-
-  --container-shape: var(--shape-corner-full);
-
-  --container-color: none;
-
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
-
+.button.icon {
   min-height: var(--size-10);
   min-width: var(--size-10);
-
+  --container-padding: unset;
+  --container-shape: var(--shape-corner-full);
   --icon-color: var(--color-on-surface-variant);
 
   & input[type="checkbox"] {
     display: none;
 
-    &:checked + .icon-button {
+    &:checked + .button.icon {
       --icon-color: var(--color-primary);
 
       & i.icon,
@@ -43,7 +27,7 @@
       --container-color: var(--color-surface-container-highest);
       --icon-color: var(--color-primary);
 
-      & .icon-button {
+      & .button.icon {
         --container-color: var(--color-surface-container-highest);
         --icon-color: var(--color-primary);
       }
@@ -53,7 +37,7 @@
       --container-color: var(--color-primary);
       --icon-color: var(--color-on-primary);
 
-      & .icon-button {
+      & .button.icon {
         --container-color: var(--color-primary);
         --icon-color: var(--color-on-primary);
       }
@@ -73,7 +57,7 @@
       --container-color: var(--color-surface-container-highest);
       --icon-color: var(--color-on-surface-variant);
 
-      & .icon-button {
+      & .button.icon {
         --container-color: var(--color-surface-container-highest);
         --icon-color: var(--color-on-surface-variant);
       }
@@ -83,7 +67,7 @@
       --container-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
 
-      & .icon-button {
+      & .button.icon {
         --container-color: var(--color-secondary-container);
         --icon-color: var(--color-on-secondary-container);
       }
@@ -104,7 +88,7 @@
     --container-outline-disabled: 1px solid var(--disabled-outline);
 
     & input[type="checkbox"] {
-      &:checked + .icon-button {
+      &:checked + .button.icon {
         --container-color: var(--color-inverse-surface);
         --icon-color: var(--color-inverse-on-surface);
 

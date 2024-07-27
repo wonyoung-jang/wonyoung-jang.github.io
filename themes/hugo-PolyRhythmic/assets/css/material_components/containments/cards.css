@@ -125,7 +125,7 @@
         }
       }
 
-      & .icon-button {
+      & .button.icon {
         margin-left: auto;
       }
     }

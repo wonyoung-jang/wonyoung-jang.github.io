@@ -1,5 +1,4 @@
-/* FABs */
-.fab {
+.button.fab {
   --container-width: var(--size-14);
   --container-height: var(--size-14);
   --container-shape: var(--shape-corner-l);
