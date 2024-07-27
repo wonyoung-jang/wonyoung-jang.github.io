@@ -19,7 +19,8 @@
     .side-sheets,
     .menus,
     .radio,
-    .checkbox
+    .checkbox,
+    :has(.button, .radio, .checkbox, .switch)
   ):not(:disabled):hover {
   &::before {
     border: var(--container-outline-hover);

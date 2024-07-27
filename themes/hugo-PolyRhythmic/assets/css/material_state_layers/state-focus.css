@@ -16,7 +16,8 @@
     .dialog,
     .side-sheets,
     .radio,
-    .checkbox
+    .checkbox,
+    :has(.button, .radio, .checkbox, .switch)
   ):not(:disabled):focus {
   &::before {
     border: var(--container-outline-focus);

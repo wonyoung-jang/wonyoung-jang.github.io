@@ -20,7 +20,8 @@
     .side-sheets,
     .radio,
     .checkbox,
-    .text-field
+    .text-field,
+    :has(.button, .radio, .checkbox, .switch)
   ):not(:disabled):active {
   &::before {
     border: var(--container-outline-press);
