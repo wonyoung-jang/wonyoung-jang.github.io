@@ -13,13 +13,12 @@
   & .footer-links {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    margin-top: var(--size-16);
 
     & .footer-links-list {
       flex: 1 1 0;
       display: flex;
       flex-flow: column nowrap;
-      padding: var(--spacing-panes);
 
       & span:first-child {
         color: var(--color-on-surface-variant);
@@ -44,11 +43,12 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
-
+    margin-top: var(--size-16);
+    
     & #copyright-button {
       flex: 1 1 0;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       color: var(--color-on-surface-variant);
 
