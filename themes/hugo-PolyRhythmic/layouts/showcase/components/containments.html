@@ -98,8 +98,8 @@
             exercitationem vel dignissimos similique, atque earum.
           </div>
           <div class="actions">
-            <button class="component button common-button" outlined>Action</button>
-            <button class="component button common-button" filled>Action</button>
+            <button class="component button common" outlined>Action</button>
+            <button class="component button common" filled>Action</button>
           </div>
         </div>
       </div>
@@ -149,8 +149,8 @@
             exercitationem vel dignissimos similique, atque earum.
           </div>
           <div class="actions">
-            <button class="component button common-button" outlined>Action</button>
-            <button class="component button common-button" filled>Action</button>
+            <button class="component button common" outlined>Action</button>
+            <button class="component button common" filled>Action</button>
           </div>
         </div>
       </div>
@@ -200,8 +200,8 @@
             exercitationem vel dignissimos similique, atque earum.
           </div>
           <div class="actions">
-            <button class="component button common-button" outlined>Action</button>
-            <button class="component button common-button" filled>Action</button>
+            <button class="component button common" outlined>Action</button>
+            <button class="component button common" filled>Action</button>
           </div>
         </div>
       </div>
@@ -945,20 +945,20 @@
     <div class="layout showcase-components">
       <div class="display-medium">Bottom sheets</div>
       <div class="sub-showcase-components-header">Standard bottom sheet</div>   
-      {{ partial "components/containments/bottom-sheets.html" (dict)}}  
+      {{ partial "components/containments/sheet-bottom.html" (dict)}}  
       
-      {{ partial "components/containments/bottom-sheets.html" (dict
+      {{ partial "components/containments/sheet-bottom.html" (dict
         "drag_handle" true
         )
       }}  
 
       <div class="sub-showcase-components-header">Modal bottom sheet</div>
-      {{ partial "components/containments/bottom-sheets.html" (dict
+      {{ partial "components/containments/sheet-bottom.html" (dict
         "container" "modal"
         )
       }}  
       
-      {{ partial "components/containments/bottom-sheets.html" (dict
+      {{ partial "components/containments/sheet-bottom.html" (dict
         "container" "modal"
         "drag_handle" true
         )
@@ -967,27 +967,27 @@
       {{/*  Side sheets  */}}
       <div class="display-medium">Side sheets</div>
       <div class="sub-showcase-components-header">Standard side sheet</div>
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "headline" "Title"
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
         )
       }}
 
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "headline" "Title"
         "back_icon" true
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
         )
       }}
 
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "headline" "Title"
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
         "actions" true
         )
       }}
 
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "headline" "Title"
         "back_icon" true
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
@@ -996,14 +996,14 @@
       }}
       
       <div class="sub-showcase-components-header">Modal side sheets</div>
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "type" "modal"
         "headline" "Title"
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
         )
       }}
 
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "type" "modal"
         "headline" "Title"
         "back_icon" true
@@ -1011,7 +1011,7 @@
         )
       }}
 
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "type" "modal"
         "headline" "Title"
         "content" "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus deleniti reiciendis adipisci doloremque necessitatibus dolorem facilis, tenetur maxime illum et aliquid, molestias deserunt tempore ut nostrum non amet corrupti!"
@@ -1019,7 +1019,7 @@
         )
       }}
 
-      {{ partial "components/containments/side-sheets.html" (dict
+      {{ partial "components/containments/sheet-side.html" (dict
         "type" "modal"
         "headline" "Title"
         "back_icon" true

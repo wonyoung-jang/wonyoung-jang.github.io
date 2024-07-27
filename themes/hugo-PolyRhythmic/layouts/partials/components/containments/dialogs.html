@@ -3,7 +3,7 @@
     <span class="header">
       <button class="component button icon-button"><i class="icon">close</i></button>
       <span class="headline">{{ .headline }}</span>
-      <span class="component button common-button">Save</span>
+      <span class="component button common">Save</span>
     </span>
   {{ else }}
     {{ with .icon }}
@@ -18,8 +18,8 @@
 
   {{ if .actions }}
     <span class="actions">
-      <button class="component button common-button">Cancel</button>
-      <button class="component button common-button">Accept</button>
+      <button class="component button common">Cancel</button>
+      <button class="component button common">Accept</button>
     </span>
   {{ end }}
 </dialog>

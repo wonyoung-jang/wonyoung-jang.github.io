@@ -45,7 +45,7 @@
         line-height: var(--typescale-title-large-line-height);
       }
 
-      & .common-button {
+      & .common {
         margin-left: auto;
       }
     }

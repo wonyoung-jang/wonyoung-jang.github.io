@@ -31,13 +31,13 @@
       <div class="sub-showcase-components-header">No icon</div>
       <section>
         {{ range $buttonTypes }}
-          {{ partial "components/actions/common-buttons.html" . }}
+          {{ partial "components/actions/button-common.html" . }}
         {{ end }}
       </section>
       <section>
         {{ range $buttonTypes }}
           {{ $disabled := merge . (dict "disabled" "disabled") }}
-          {{ partial "components/actions/common-buttons.html" $disabled }}
+          {{ partial "components/actions/button-common.html" $disabled }}
         {{ end }}
       </section>
     
@@ -46,13 +46,13 @@
       <section>
         {{ range $buttonTypes }}
           {{ $withIcon := merge . (dict "icon" "add") }}
-          {{ partial "components/actions/common-buttons.html" $withIcon }}
+          {{ partial "components/actions/button-common.html" $withIcon }}
         {{ end }}
       </section>
       <section>
         {{ range $buttonTypes }}
           {{ $withIcon := merge . (dict "icon" "add" "disabled" "disabled") }}
-          {{ partial "components/actions/common-buttons.html" $withIcon }}
+          {{ partial "components/actions/button-common.html" $withIcon }}
         {{ end }}
       </section>
     </div>
@@ -92,7 +92,7 @@
         <section>
           {{ range $class := $containerClasses }}
             {{ $fabConfig := merge $fabType (dict "class" $class) }}
-            {{ partial "components/actions/floating-action-buttons.html" $fabConfig }}
+            {{ partial "components/actions/button-fab.html" $fabConfig }}
           {{ end }}
         </section>
       {{ end }}
@@ -107,7 +107,7 @@
       <div class="sub-showcase-components-header">Icon button</div>
       <section>
         {{ range $buttonTypes }}
-          {{ partial "components/actions/icon-buttons.html" (dict
+          {{ partial "components/actions/button-icon.html" (dict
               "type" .
               "icon" "settings"
             )
@@ -117,7 +117,7 @@
 
       <section>
         {{ range $buttonTypes }}
-          {{ partial "components/actions/icon-buttons.html" (dict
+          {{ partial "components/actions/button-icon.html" (dict
               "type" .
               "icon" "settings"
               "disabled" "disabled"
@@ -130,7 +130,7 @@
       <div class="sub-showcase-components-header">Icon button - toggle</div>
       <section>
         {{ range $buttonTypes }}
-          {{ partial "components/actions/icon-buttons.html" (dict
+          {{ partial "components/actions/button-icon.html" (dict
               "id" .
               "type" .
               "icon" "settings"
@@ -142,7 +142,7 @@
 
       <section>
         {{ range $buttonTypes }}
-          {{ partial "components/actions/icon-buttons.html" (dict
+          {{ partial "components/actions/button-icon.html" (dict
               "id" .
               "type" .
               "icon" "settings"
@@ -190,7 +190,7 @@
       }}
 
       {{ range $segmentedButtons }}
-        {{ partial "components/actions/segmented-buttons.html" . }}
+        {{ partial "components/actions/button-segmented.html" . }}
       {{ end }}
 
       <div class="sub-showcase-components-header">Outlined - multi select</div>
@@ -226,12 +226,12 @@
       }}
 
       {{ range $segmentedButtons }}
-        {{ partial "components/actions/segmented-buttons.html" . }}
+        {{ partial "components/actions/button-segmented.html" . }}
       {{ end }}
 
       <div class="sub-showcase-components-header">Outlined - disabled</div>
   
-      {{ partial "components/actions/segmented-buttons.html" (dict
+      {{ partial "components/actions/button-segmented.html" (dict
         "name" "segmenteddisabled" 
         "type" "radio"
         "buttons" (slice

@@ -13,7 +13,7 @@
     <div class="layout showcase-components">
       <div class="display-medium">Bottom app bars</div>
       <div class="sub-showcase-components-header">No FAB</div>
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
+      {{ partial "components/navigations/app-bar-bottom.html" (dict
         "icon_1"  "home"
         "icon_2"  "add"
         "icon_3"  "settings"
@@ -22,7 +22,7 @@
       }}
       
       <div class="sub-showcase-components-header">With FAB</div>
-      {{ partial "components/navigations/bottom-app-bars.html" (dict
+      {{ partial "components/navigations/app-bar-bottom.html" (dict
         "icon_1"  "home"
         "icon_2"  "add"
         "icon_3"  "settings"
@@ -34,7 +34,7 @@
       {{/*  Top app bars  */}}
       <div class="display-medium">Top app bars</div>
       <div class="sub-showcase-components-header">Center-aligned</div>
-      {{ partial "components/navigations/top-app-bars.html" (dict
+      {{ partial "components/navigations/app-bar-top.html" (dict
         "center" "center"
         "size" "small"
         "headline" "Title"
@@ -44,7 +44,7 @@
       }}
 
       <div class="sub-showcase-components-header">Small</div>
-      {{ partial "components/navigations/top-app-bars.html" (dict
+      {{ partial "components/navigations/app-bar-top.html" (dict
         "size" "small"
         "headline" "Title"
         "icon_1"  "arrow_back"
@@ -55,7 +55,7 @@
       }}
 
       <div class="sub-showcase-components-header">Medium</div>
-      {{ partial "components/navigations/top-app-bars.html" (dict
+      {{ partial "components/navigations/app-bar-top.html" (dict
         "size" "medium"
         "headline" "Title"
         "icon_1"  "arrow_back"
@@ -66,7 +66,7 @@
       }}
 
       <div class="sub-showcase-components-header">Large</div>
-      {{ partial "components/navigations/top-app-bars.html" (dict
+      {{ partial "components/navigations/app-bar-top.html" (dict
         "size" "large"
         "headline" "Title"
         "icon_1"  "arrow_back"
@@ -83,7 +83,7 @@
     <div class="showcase-components-header">Navigations</div>
     <div class="layout showcase-components">
       <div class="display-medium">Navigation bars</div>
-      {{ partial "components/navigations/navigation-bars.html" (dict
+      {{ partial "components/navigations/navigation-bar.html" (dict
         "center" "center"
         "size" "small"
         "headline" "Small + center"
@@ -103,7 +103,7 @@
       {{/*  Navigation drawers  */}}
       <div class="display-medium">Navigation drawers</div>
       <div class="sub-showcase-components-header">Standard</div>
-      {{ partial "components/navigations/navigation-drawers.html" (dict
+      {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "standard"
         "headline" "Title"
         "nav_item_1" (dict 
@@ -125,7 +125,7 @@
         )
       }}
       
-      {{ partial "components/navigations/navigation-drawers.html" (dict
+      {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "standard"
         "headline" "Title"
         "nav_item_1" (dict "label" "Home")
@@ -138,7 +138,7 @@
       }}
       
       <div class="sub-showcase-components-header">Modal</div>
-      {{ partial "components/navigations/navigation-drawers.html" (dict
+      {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "modal"
         "headline" "Title"
         "nav_item_1" (dict 
@@ -160,7 +160,7 @@
         )
       }}
       
-      {{ partial "components/navigations/navigation-drawers.html" (dict
+      {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "modal"
         "headline" "Title"
         "nav_item_1" (dict "label" "Home")
@@ -175,7 +175,7 @@
       {{/*  Navigation rails  */}}
       <div class="display-medium">Navigation rails</div>
       <div class="sub-showcase-components-header">Align - top / middle / bottom</div>
-      {{ partial "components/navigations/navigation-rails.html" (dict
+      {{ partial "components/navigations/navigation-rail.html" (dict
         "icon_main" "menu"
         "icon_fab" "add"
         "nav_item_1" (dict 
@@ -194,7 +194,7 @@
         )
       }}
         
-      {{ partial "components/navigations/navigation-rails.html" (dict
+      {{ partial "components/navigations/navigation-rail.html" (dict
         "align" "middle"
         "icon_main" "menu"
         "icon_fab" "add"
@@ -217,7 +217,7 @@
         )
       }}
         
-      {{ partial "components/navigations/navigation-rails.html" (dict
+      {{ partial "components/navigations/navigation-rail.html" (dict
         "align" "bottom"
         "icon_main" "menu"
         "icon_fab" "add"

@@ -2,87 +2,86 @@
   --set-display: flex;
   --set-flex-flow: row nowrap;
   --set-align-items: stretch;
+  --set-overflow: auto hidden;
+}
 
-  overflow-x: auto;
+.segmented-button {
+  flex: 1 1 0;
 
-  & .segmented-button {
-    flex: 1 1 0;
+  --container-gap: var(--size-2);
+  --container-shape: unset;
+  --container-padding: 0 var(--size-4);
+  --container-outline: 1px solid var(--color-outline);
+  --container-color: var(--color-surface);
+  --icon-color: var(--color-on-surface);
+  --text-color: var(--color-on-surface);
 
-    --container-gap: var(--size-2);
-    --container-shape: unset;
-    --container-padding: 0 var(--size-4);
-    --container-outline: 1px solid var(--color-outline);
-    --container-color: var(--color-surface);
-    --icon-color: var(--color-on-surface);
-    --text-color: var(--color-on-surface);
+  --container-outline-hover: 1px solid var(--color-outline);
+  --container-outline-focus: 1px solid var(--color-outline);
+  --container-outline-press: 1px solid var(--color-outline);
+  --container-outline-disabled: 1px solid var(--color-outline-variant);
+  
+  cursor: pointer;
+  border-inline-end: 0px solid transparent;
+  border-right: 0px solid transparent;
 
-    --container-outline-hover: 1px solid var(--color-outline);
-    --container-outline-focus: 1px solid var(--color-outline);
-    --container-outline-press: 1px solid var(--color-outline);
-    --container-outline-disabled: 1px solid var(--color-outline-variant);
+  & .icon {
+    font-size: 18px;
+    color: var(--color-on-surface);
+    display: none;
+  }
+
+  &.start {
+    --container-shape: var(--shape-corner-xl-start);
+  }
+
+  &.end {
+    --container-shape: var(--shape-corner-xl-end);
+
+    &::before {
+      border-inline-end: 1px solid var(--color-outline);
+      border-right: 1px solid var(--color-outline);
+    }
+
+    &:hover::before {
+      border-inline-end: 0px solid var(--color-outline);
+      border-right: 0px solid var(--color-outline);
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      --container-outline: 1px solid var(--color-outline);
+      border-inline-end: 0px solid var(--color-outline);
+      border-right: 0px solid var(--color-outline);
+    }
+  }
+
+  & input {
+    display: none;
+  }
+
+  &:has(input:checked) {
+    --container-color: var(--color-secondary-container);
+    --icon-color: var(--color-on-secondary-container);
+    --text-color: var(--color-on-secondary-container);
     
-    cursor: pointer;
-    border-inline-end: 0px solid transparent;
-    border-right: 0px solid transparent;
+    &:has(.icon) {
+      padding-left: var(--size-2);
+    }
 
     & .icon {
-      font-size: 18px;
-      color: var(--color-on-surface);
-      display: none;
+      display: block;
+      color: var(--color-on-secondary-container);
     }
+  }
 
-    &.start {
-      --container-shape: var(--shape-corner-xl-start);
-    }
-
-    &.end {
-      --container-shape: var(--shape-corner-xl-end);
-
-      &::before {
-        border-inline-end: 1px solid var(--color-outline);
-        border-right: 1px solid var(--color-outline);
-      }
-
-      &:hover::before {
-        border-inline-end: 0px solid var(--color-outline);
-        border-right: 0px solid var(--color-outline);
-      }
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      &::before {
-        --container-outline: 1px solid var(--color-outline);
-        border-inline-end: 0px solid var(--color-outline);
-        border-right: 0px solid var(--color-outline);
-      }
-    }
-
-    & input {
-      display: none;
-    }
-
-    &:has(input:checked) {
-      --container-color: var(--color-secondary-container);
-      --icon-color: var(--color-on-secondary-container);
-      --text-color: var(--color-on-secondary-container);
-      
-      &:has(.icon) {
-        padding-left: var(--size-2);
-      }
-
-      & .icon {
-        display: block;
-        color: var(--color-on-secondary-container);
-      }
-    }
-
-    &:has(input:disabled) {
-      --container-elevation: var(--elevation-disabled);
-      pointer-events: none;
-      cursor: not-allowed;
-    }
+  &:has(input:disabled) {
+    --container-elevation: var(--elevation-disabled);
+    pointer-events: none;
+    cursor: not-allowed;
   }
 }
 
