@@ -73,6 +73,9 @@ footer:
   - identifier: Now
     name: Now
     pageRef: /now
+  - identifier: Playground
+    name: Playground
+    pageRef: /playground
   - identifier: RSS
     name: RSS
     url: https://wonyoungjang.org/index.xml
