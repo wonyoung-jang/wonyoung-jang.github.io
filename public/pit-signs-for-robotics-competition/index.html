@@ -152,15 +152,6 @@
         
         
 
-    <button class="component button icon-button"
-            id="theme-toggle" 
-            accesskey="t" 
-            title="Toggle Theme (ALT + SHIFT + t)" >
-        <i class="icon" id="moon">dark_mode</i>
-        <i class="icon" id="sun">light_mode</i>
-    </button>
-
-
         <button
   class="component button icon-button"
   id="random-button"
@@ -303,8 +294,17 @@
     randomButton.addEventListener("click", navigateToRandomPage);
   });  
 </script>
+        
+        
+    <button class="component button icon-button"
+            id="theme-toggle" 
+            accesskey="t" 
+            title="Toggle Theme (ALT + SHIFT + t)" >
+        <i class="icon" id="moon">dark_mode</i>
+        <i class="icon" id="sun">light_mode</i>
+    </button>
 
-        <button class="component button icon-button" id="theme-controls">
+<button class="component button icon-button" id="theme-controls">
   <i class="icon">palette</i> 
   <menu class="menu" id="theme-controls-menu">
     <span class="theme-controls-title headline-medium">Theme controls</span>
@@ -1479,49 +1479,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

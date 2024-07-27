@@ -14,11 +14,12 @@
         {{/* Language switch */}}
         {{- partialCached "translation_list.html" . -}}
 
+        {{/* Random page */}}
+        {{ partial "random-button.html" . }}
+        
         {{/* Theme toggle */}}
         {{- partialCached "theme-button.html" . -}}        
         
-        {{/* Random page */}}
-        {{ partial "random-button.html" . }}
 
         {{/* Theme selector */}}
         {{- partialCached "theme-controls.html" . -}} 
