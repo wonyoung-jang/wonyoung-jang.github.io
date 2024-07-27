@@ -14,7 +14,7 @@
         {{ end }}
         
         {{ if eq .Title "Now"}}
-          {{ partial "least_recently_updated.html" . }}
+          {{ partial "most_recently_updated.html" . }}
         {{ end }}
 
         {{ if eq .Type "showcase/tokens" }}

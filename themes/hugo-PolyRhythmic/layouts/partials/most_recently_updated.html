@@ -1,25 +1,25 @@
 {{ $pages := .Site.RegularPages }}
 {{ $sortedPages := sort $pages ".Lastmod" "asc" }}
-{{ $leastUpdated := first 8 $sortedPages }}
+{{ $recent := first 8 $sortedPages }}
 
 
-<table class="least-recently-updated-pages">
+<table class="most-recently-updated-pages">
   <caption>
     <h3>
-      Least recently updated
+      Most recently updated
     </h3>
   </caption>
   <thead>
     <tr>
-      <th>Page Title</th>
-      <th>Last Updated</th>
+      <th>Page</th>
+      <th>Last updated</th>
     </tr>
   </thead>
   <tbody>
     {{ $pages := .Site.RegularPages }}
-    {{ $sortedPages := sort $pages ".Lastmod" "asc" }}
-    {{ $leastUpdated := first 8 $sortedPages }}
-    {{ range $leastUpdated }}
+    {{ $sortedPages := sort $pages ".Lastmod" "desc" }}
+    {{ $recent := first 8 $sortedPages }}
+    {{ range $recent }}
       <tr>
         <td><a class="page-link" href="{{ .RelPermalink }}">{{ .Title }}</a></td>
         <td class="last-updated">{{ .Lastmod.Format "January 2, 2006" }}</td>
