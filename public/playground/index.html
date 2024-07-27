@@ -148,7 +148,6 @@
     
     <section class="end">
         
-        
 
         <button
   class="component button icon-button"
@@ -292,7 +291,7 @@
     randomButton.addEventListener("click", navigateToRandomPage);
   });  
 </script>
-        
+
         
     <button class="component button icon-button"
             id="theme-toggle" 
@@ -939,25 +938,46 @@
                 
                 <article class="layout panes basic-single-pane">
     <section class="layout pane" id="playground">
-
       
       <section class="test-set">
         <h2>Used by Logseq</h2>
+        
         <hr>
         <h3>Content sectioning</h3>
+        <b>h1</b>
         <h1>h1</h1>
+        
+        <b>h2</b>
         <h2>h2</h2>
+        
+        <b>h3</b>
         <h3>h3</h3>
+        
+        <b>h4</b>
         <h4>h4</h4>
+        
+        <b>h5</b>
         <h5>h5</h5>
+
+        <b>h6</b>
         <h6>h6</h6>
 
         <hr>
         <h3>Text content</h3>
+        
+        <b>blockquote</b>
         <blockquote>blockquote</blockquote>
+        
+        <b>pre</b>
         <pre>pre</pre>
+        
+        <b>div</b>
         <div>div</div>
+        
+        <b>p</b>
         <p>p</p>
+        
+        <b>ul, li</b>
         <ul>
           ul
           <li>li</li>
@@ -967,15 +987,24 @@
 
         <hr>
         <h3>Inline text semantics</h3>
+        
+        <b>span</b>
         <span>span</span>
+
+        <b>a</b>
         <a href="#">a</a>
+
+        <b>code</b>
         <code>code</code>
+        
+        <b>del</b>
         <del>del</del>
+        
+        <b>em</b>
         <em>em</em>
         
+        <b>figure, img, figcaption</b>
         <figure>
-          figure
-          img
           <img 
               src="/assets/logseq-elements_1719436919750_0.png" 
               alt="logseq-elements.png">
@@ -983,25 +1012,25 @@
             figcaption
           </figcaption>
         </figure>
+        
+        <b>mark</b>
         <mark>mark</mark>
+        
+        <b>strong</b>
         <strong>strong</strong>
 
         <hr>
         <h3>Tables</h3>
+        <b>table, thead, tbody, tr, th, td</b>
         <table>
-          table
           <thead>
-            thead
             <tr>
-              tr
               <th>th</th>
               <th>th</th>
             </tr>
           </thead>
           <tbody>
-            tbody
             <tr>
-              tr
               <td>td</td>
               <td>td</td>
             </tr>
@@ -1829,6 +1858,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

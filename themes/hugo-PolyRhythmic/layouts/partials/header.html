@@ -10,17 +10,15 @@
     
     {{/* Buttons */}}
     <section class="end">
-        
         {{/* Language switch */}}
         {{- partialCached "translation_list.html" . -}}
 
         {{/* Random page */}}
         {{ partial "random-button.html" . }}
-        
+
         {{/* Theme toggle */}}
         {{- partialCached "theme-button.html" . -}}        
         
-
         {{/* Theme selector */}}
         {{- partialCached "theme-controls.html" . -}} 
     </section>
