@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.109d7700617a0dea5696c733ba04cce3ca8c330a29ec0e40317ba0770172a423.css" integrity="sha256-EJ13AGF6DepWlsczugTM48qMMwop7A5AMXugdwFypCM=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.bf887b4580bbf68dd13d952733d29019c6ae237bb990fd7c4711f76529d2e6e5.css" integrity="sha256-v4h7RYC79o3RPZUnM9KQGcauI3u5kP18RxH3ZSnS5uU=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.6f40a5e5525499cc7c16bda887949c9a08eef76109e44c8e68f24994085ccd2c.css" integrity="sha256-b0Cl5VJUmcx8Fr2oh5Scmgju92EJ5EyOaPJJlAhczSw=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3custom.min.0dcec177446b76854c9d08a69e433f3a6f23d2c33afbefe918e8779cd1c2fae5.css" integrity="sha256-Dc7Bd0RrdoVMnQimnkM/Om8j0sM6&#43;&#43;/pGOh3nNHC&#43;uU=" rel="preload stylesheet" as="style">
 
@@ -1650,6 +1650,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

@@ -1,30 +1,5 @@
-.date-picker {
-  --container-display: flex;
-  --container-flex-flow: column nowrap;
-  --container-justify-content: flex-start;
-  --container-align-items: flex-start;
-  --container-gap: initial;
-  --container-height: initial;
-  --container-width: initial;
+.picker.date {
   --container-padding: var(--size-4) var(--size-6);
-
-  --container-outline: initial;
-  --container-elevation: var(--elevation3);
-  --container-shape: var(--shape-corner-xl);
-  
-  --container-color: var(--color-surface-container-high);
-  
-  --text-color: initial;
-  --icon-color: initial;
-
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
 
   min-width: var(--size-82);
   max-height: var(--size-128);

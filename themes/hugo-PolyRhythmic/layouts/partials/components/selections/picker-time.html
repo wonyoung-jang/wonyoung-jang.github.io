@@ -1,5 +1,5 @@
 {{ $dial := eq .type "dial" }}
-<div class="component time-picker {{ .type }} {{ .orientation }}">
+<div class="component picker time {{ .type }} {{ .orientation }}">
   <div class="time-picker-headline">{{ .headline }}</div>
   <div class="time-picker-body">
     {{ if eq .display "12" }}
