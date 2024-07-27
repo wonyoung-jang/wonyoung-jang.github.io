@@ -1,9 +1,8 @@
 {{- define "main" -}}
   <article class="layout panes basic-single-pane">
     <section class="layout pane">
-      {{- $pages := site.AllPages }}
-
-      {{- range $pages.GroupByPublishDate "2006" }}
+      
+      {{- range site.Pages.GroupByPublishDate "2006" }}
         {{- if ne .Key "0001" }}
           <div class="archive-year">
             {{- $year := replace .Key "0001" "" }}
@@ -11,23 +10,28 @@
               <a class="archive-header-link" href="#{{ $year }}">
                 <h4>
                   {{- $year -}}
-                  <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+                  <sup class="archive-count">
+                    &nbsp;{{ len .Pages }}
+                  </sup>
                 </h4>
               </a>
             </span>
+
             {{- range .Pages.GroupByDate "January" }}
               <div class="archive-month">
-
                 <span class="archive-month-header" id="{{ $year }}-{{ .Key }}">
                   <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
                     <h5>
                       {{- .Key -}}
-                      <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+                      <sup class="archive-count">
+                        &nbsp;{{ len .Pages }}
+                      </sup>
                     </h5>
                   </a>
                 </span>
 
                 <div class="archive-posts">
+
                   {{- range .Pages }}
                     <div class="archive-entry">
                       <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
@@ -42,13 +46,14 @@
                       </a>
                     </div>
                   {{- end }}
-                </div>
 
+                </div>
               </div>
             {{- end }}
           </div>
         {{- end }}
       {{- end }}
+
     </section>
   </article>
 {{- end -}}
