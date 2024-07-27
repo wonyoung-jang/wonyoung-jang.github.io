@@ -18,26 +18,26 @@
   /* || Duration */
 
   /* 1 Short */
-  --motion-duration-short1: 50ms;
-  --motion-duration-short2: 100ms;
-  --motion-duration-short3: 150ms;
-  --motion-duration-short4: 200ms;
+  --motion-duration-short1: var(--input-motion-duration);
+  --motion-duration-short2: calc(var(--input-motion-duration) * 2);
+  --motion-duration-short3: calc(var(--input-motion-duration) * 3);
+  --motion-duration-short4: calc(var(--input-motion-duration) * 4);
 
   /* 2 Medium */
-  --motion-duration-medium1: 250ms;
-  --motion-duration-medium2: 300ms;
-  --motion-duration-medium3: 350ms;
-  --motion-duration-medium4: 400ms;
+  --motion-duration-medium1: calc(var(--input-motion-duration) * 5);
+  --motion-duration-medium2: calc(var(--input-motion-duration) * 6);
+  --motion-duration-medium3: calc(var(--input-motion-duration) * 7);
+  --motion-duration-medium4: calc(var(--input-motion-duration) * 8);
 
   /* 3 Long */
-  --motion-duration-long1: 450ms;
-  --motion-duration-long2: 500ms;
-  --motion-duration-long3: 550ms;
-  --motion-duration-long4: 600ms;
+  --motion-duration-long1: calc(var(--input-motion-duration) * 9);
+  --motion-duration-long2: calc(var(--input-motion-duration) * 10);
+  --motion-duration-long3: calc(var(--input-motion-duration) * 11);
+  --motion-duration-long4: calc(var(--input-motion-duration) * 12);
 
   /* 4 Extra long */
-  --motion-duration-extra-long1: 700ms;
-  --motion-duration-extra-long2: 800ms;
-  --motion-duration-extra-long3: 900ms;
-  --motion-duration-extra-long4: 1000ms;
+  --motion-duration-extra-long1: calc(var(--input-motion-duration) * 14);
+  --motion-duration-extra-long2: calc(var(--input-motion-duration) * 16);
+  --motion-duration-extra-long3: calc(var(--input-motion-duration) * 18);
+  --motion-duration-extra-long4: calc(var(--input-motion-duration) * 20);
 }

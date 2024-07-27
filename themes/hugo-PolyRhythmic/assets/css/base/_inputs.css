@@ -45,4 +45,9 @@
 
   /* Shape scale */
   --input-shape-scale: var(--scale-octave);
+
+  /* || Motion  */
+
+  /* Duration */
+  --input-motion-duration: 50ms;
 }
