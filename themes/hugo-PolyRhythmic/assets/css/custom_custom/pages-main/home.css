@@ -43,7 +43,6 @@
     gap: var(--size-5);
     padding: var(--size-8);
     margin: var(--spacing-panes);
-    background-color: var(--color-surface-container-lowest);
     border-radius: var(--shape-corner-m);
 
     & .blurb {
@@ -70,7 +69,6 @@
       gap: var(--size-5);
       padding: var(--size-3);
       height: max-content;
-      background-color: var(--color-surface-container-lowest);
       border-radius: var(--shape-corner-l);
 
       & h3 {
