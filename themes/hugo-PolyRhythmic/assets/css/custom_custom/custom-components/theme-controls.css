@@ -1,10 +1,14 @@
-#theme-controls {
+.theme-controls {
   position: relative;
   
-  &:hover,
-  &:focus,
-  &:active {
+  &:has(input[type="checkbox"]:checked) {
     all: unset;
+    
+    & .controls {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1) translateY(100%);
+    }
   }
 
   & .divider {
@@ -20,29 +24,20 @@
     padding: var(--size-2);
   }
 
-  & #controls {
+  & .controls {
     position: absolute;
     z-index: 20;
     inset: auto 0 0 auto;
-    
-    max-height: 90dvh;
-    min-width: fit-content;
-    width: 50dvw;
-    
     border: none;
-    box-shadow: var(--elevation4);
-    background-color: var(--color-surface-container-high);
-    border-radius: var(--shape-corner-xs);
     color: var(--color-on-secondary-container);
-  
-    padding: var(--size-2);
-  
-    overflow-x: hidden;
+    padding: var(--size-3);
+    max-height: calc(100dvh - var(--size-16));
     overflow-y: auto;
-
+    background-color: var(--color-surface-container-low);
+  
     opacity: 0;
     visibility: hidden;
-    transform: scale(0.8) translateY(100%);
+    transform: scale(0) translateY(100%);
     transition: all var(--motion-duration-medium1);
   }
 
@@ -139,17 +134,6 @@
       var(--palette-primary-80),
       var(--palette-primary-90)
     );
-  }
-}
-
-#theme-controls:hover,
-#theme-controls:focus-visible,
-#theme-controls:focus-within,
-#theme-controls:active {
-  & #controls {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1) translateY(100%);
   }
 }
 

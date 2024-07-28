@@ -1,6 +1,12 @@
-<button class="component button icon" id="theme-controls">
-  <i class="icon">palette</i> 
-  <menu id="controls">
+<button class="component button icon theme-controls">
+  <input type="checkbox" id="theme-controls"/>
+  <label for="theme-controls" class="component button icon">
+    <i class="icon">
+      palette
+    </i> 
+  </label>
+  
+  <div class="component sheet side modal controls">
     <span class="theme-controls-title headline-medium">Theme controls</span>
     {{/*  Max char width toggle */}}
     <div id="max-width-selector-container">
@@ -223,7 +229,7 @@
 
       </div>
     </div>
-  </menu>
+  </div>
 </button>
 
 <script>
