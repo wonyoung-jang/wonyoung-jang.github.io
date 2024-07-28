@@ -175,16 +175,34 @@ hr {
 }
 
 /* Lists */
+li,
+dd {
+  margin-left: 1em;
+  margin-inline-start: 1em;
+}
+
 ul,
 ol,
 li {
   list-style: none;
 }
 
-li,
-dd {
-  margin-left: 1em;
-  margin-inline-start: 1em;
+li:not(:has(ol, ul)) {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: flex;
+    flex-flow: column nowrap;
+    height: var(--size-2);
+    width: var(--size-2);
+    background-color: var(--color-secondary);
+    border-radius: var(--shape-corner-full);
+    margin-right: var(--size-2);
+  }
 }
 
 /* Pre */
