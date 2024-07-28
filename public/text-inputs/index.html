@@ -420,16 +420,32 @@
             <span>Raleway</span>
           </label>
           <label class="component radio">
-            <input type="radio" id="brand-arial" name="brand-font" value="Arial">
-            <span>Arial</span>
-          </label>
-          <label class="component radio">
-            <input type="radio" id="brand-times" name="brand-font" value="Times New Roman">
+            <input type="radio" id="brand-times-new-roman" name="brand-font" value="Times New Roman">
             <span>Times New Roman</span>
           </label>
           <label class="component radio">
-            <input type="radio" id="brand-courier" name="brand-font" value="Courier New">
-            <span>Courier New</span>
+            <input type="radio" id="brand-times" name="brand-font" value="Times">
+            <span>Times</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="brand-georgia" name="brand-font" value="Georgia">
+            <span>Georgia</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="brand-palatino" name="brand-font" value="Palatino">
+            <span>Palatino</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="brand-bookman" name="brand-font" value="Bookman">
+            <span>Bookman</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="brand-garamond" name="brand-font" value="Garamond">
+            <span>Garamond</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="brand-century-schoolbook" name="brand-font" value="Century Schoolbook">
+            <span>Century Schoolbook</span>
           </label>
         </fieldset>
         
@@ -448,13 +464,34 @@
             <input type="radio" id="plain-arial" name="plain-font" value="Arial">
             <span>Arial</span>
           </label>
-          <label class="component radio">
-            <input type="radio" id="plain-times" name="plain-font" value="Times New Roman">
-            <span>Times New Roman</span>
           </label>
           <label class="component radio">
-            <input type="radio" id="plain-courier" name="plain-font" value="Courier New">
-            <span>Courier New</span>
+            <input type="radio" id="plain-helvetica" name="plain-font" value="Helvetica">
+            <span>Helvetica</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="plain-verdana" name="plain-font" value="Verdana">
+            <span>Verdana</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="plain-tahoma" name="plain-font" value="Tahoma">
+            <span>Tahoma</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="plain-arial-black" name="plain-font" value="Arial Black">
+            <span>Arial Black</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="plain-comic-sans" name="plain-font" value="Comic Sans MS">
+            <span>Comic Sans MS</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="plain-impact" name="plain-font" value="Impact">
+            <span>Impact</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="plain-avant-garde" name="plain-font" value="Avant Garde">
+            <span>Avant Garde</span>
           </label>
         </fieldset>
 
@@ -470,16 +507,20 @@
             <span>IBM Plex Mono</span>
           </label>
           <label class="component radio">
-            <input type="radio" id="code-arial" name="code-font" value="Arial">
-            <span>Arial</span>
-          </label>
-          <label class="component radio">
-            <input type="radio" id="code-times" name="code-font" value="Times New Roman">
-            <span>Times New Roman</span>
-          </label>
-          <label class="component radio">
-            <input type="radio" id="code-courier" name="code-font" value="Courier New">
+            <input type="radio" id="code-courier-new" name="code-font" value="Courier New">
             <span>Courier New</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="code-courier" name="code-font" value="Courier">
+            <span>Courier</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="code-andale-mono" name="code-font" value="Andale Mono">
+            <span>Andale Mono</span>
+          </label>
+          <label class="component radio">
+            <input type="radio" id="code-consolas" name="code-font" value="Consolas">
+            <span>Consolas</span>
           </label>
         </fieldset>
 
@@ -1902,6 +1943,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
