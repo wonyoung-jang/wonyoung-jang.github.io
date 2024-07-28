@@ -1,15 +1,5 @@
 .theme-controls {
   position: relative;
-  
-  &:has(input[type="checkbox"]:checked) {
-    all: unset;
-    
-    & .controls {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1) translateY(100%);
-    }
-  }
 
   & .divider {
     margin-block: var(--size-5);
@@ -27,7 +17,8 @@
   & .controls {
     position: absolute;
     z-index: 20;
-    inset: auto 0 0 auto;
+    top: auto;
+    right: 0;
     border: none;
     color: var(--color-on-secondary-container);
     padding: var(--size-3);
@@ -35,10 +26,19 @@
     overflow-y: auto;
     background-color: var(--color-surface-container-low);
   
-    opacity: 0;
     visibility: hidden;
-    transform: scale(0) translateY(100%);
-    transition: all var(--motion-duration-medium1);
+    height: 0%;
+    transition: height var(--motion-duration-medium4);
+  }
+
+  &:has(input[type="checkbox"]:checked) {
+    all: unset;
+
+    & .controls {
+      visibility: visible;
+      height: calc(100dvh - var(--size-16));
+      transition: height var(--motion-duration-medium4);
+    }
   }
 
   & .typography-fieldset {
