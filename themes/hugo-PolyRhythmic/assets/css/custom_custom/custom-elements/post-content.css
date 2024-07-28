@@ -15,12 +15,12 @@
     gap: 1em;
   }
 
-  & h1[id]:not(li),
-  & h2[id]:not(li),
-  & h3[id]:not(li),
-  & h4[id]:not(li),
-  & h5[id]:not(li),
-  & h6[id]:not(li) {
+  & h1[id],
+  & h2[id],
+  & h3[id],
+  & h4[id],
+  & h5[id],
+  & h6[id] {
     padding-top: 1em;
     padding-block-start: 1em;
     padding-bottom: 0.5em;

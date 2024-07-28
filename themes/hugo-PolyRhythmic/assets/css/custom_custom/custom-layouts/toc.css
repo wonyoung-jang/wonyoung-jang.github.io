@@ -1,3 +1,9 @@
+.toc li, 
+.toc li::before, 
+.toc ul {
+  all: unset;
+}
+
 .toc {
   position: -webkit-sticky;
   position: sticky;
