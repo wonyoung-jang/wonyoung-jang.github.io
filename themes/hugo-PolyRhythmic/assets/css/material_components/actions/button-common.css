@@ -14,7 +14,7 @@
   }
 
   &.filled,
-  &.filled-tonal,
+  &.tonal,
   &.elevated,
   &.outlined {
     --container-padding: 0 var(--size-6);
@@ -29,7 +29,7 @@
     --icon-color: var(--color-on-primary);
   }
 
-  &.filled-tonal {
+  &.tonal {
     --container-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
   }

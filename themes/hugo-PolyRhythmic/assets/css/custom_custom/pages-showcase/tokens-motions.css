@@ -1,40 +1,26 @@
 .box {
+  flex: 1 1 0;
+  position: relative;
+  cursor: pointer;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   background-color: var(--color-surface-container-highest);
-  border-radius: var(--shape-corner-xs);
-  padding: var(--size-4);
+  width: fit-content;
 
   &.skeleton {
     background-color: var(--color-surface-bright);
     animation: pulse calc(var(--motion-duration-extra-long4) * 1.5) infinite;
     min-height: var(--size-25);
   }
-
-  &:hover {
-    &.fade {
-      opacity: 0;
-      transition-property: opacity;
-    }
-  }
 }
 
 .box-container {
-  flex: 1 1 0;
   display: flex;
   flex-flow: column nowrap;
   padding: var(--spacing-panes);
   align-items: stretch;
-
-  &#motions {
-    flex-flow: row wrap;
-  }
-
-  & * {
-    flex: 1 1 0;
-  }
 }
 
 @keyframes pulse {

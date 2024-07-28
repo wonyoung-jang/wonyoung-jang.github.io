@@ -49,7 +49,7 @@
     }
   }
 
-  &.filled-tonal {
+  &.tonal {
     --container-color: var(--color-secondary-container);
     --icon-color: var(--color-on-secondary-container);
 
