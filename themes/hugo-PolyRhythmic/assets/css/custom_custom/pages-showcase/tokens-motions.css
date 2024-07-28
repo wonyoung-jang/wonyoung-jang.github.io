@@ -17,11 +17,12 @@
 .box.translate {
   width: 10%;
   height: 100%;
-  padding: var(--size-2);
+  padding: var(--size-4) var(--size-3);
   justify-content: flex-end;
   color: var(--color-on-secondary-container);
   background-color: var(--color-secondary-container);
-  border-radius: var(--shape-corner-xs);
+  border-radius: var(--shape-corner-s);
+  min-width: fit-content;
   
   &:hover,
   &:focus,
