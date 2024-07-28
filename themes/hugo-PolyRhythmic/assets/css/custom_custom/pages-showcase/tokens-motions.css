@@ -1,5 +1,4 @@
 .box {
-  flex: 1 1 0;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -7,7 +6,6 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-surface-container-highest);
-  width: fit-content;
 
   &.skeleton {
     background-color: var(--color-surface-bright);
@@ -16,11 +14,31 @@
   }
 }
 
+.box.translate {
+  width: 10%;
+  height: 100%;
+  padding: var(--size-2);
+  justify-content: flex-end;
+  color: var(--color-on-secondary-container);
+  background-color: var(--color-secondary-container);
+  border-radius: var(--shape-corner-xs);
+  
+  &:hover,
+  &:focus,
+  &:active {
+    width: 100%;
+    color: var(--color-on-primary-container);
+    background-color: var(--color-primary-container);
+    border-radius: var(--shape-corner-xl);
+    transition-property: all;
+  }
+}
+
 .box-container {
   display: flex;
   flex-flow: column nowrap;
   padding: var(--spacing-panes);
-  align-items: stretch;
+  gap: var(--size-2);
 }
 
 @keyframes pulse {
