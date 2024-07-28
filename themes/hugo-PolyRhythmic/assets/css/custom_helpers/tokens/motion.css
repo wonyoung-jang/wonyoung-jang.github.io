@@ -32,6 +32,12 @@
   animation-timing-function: var(--motion-easing-emphasized-accelerate);
 }
 
+/* Linear */
+.motion-easing-emphasized {
+  transition-timing-function: var(--motion-easing-linear);
+  animation-timing-function: var(--motion-easing-linear);
+}
+
 /* || Durations */
 
 /* Short 50-200 */
