@@ -27,6 +27,16 @@
       </div>
     </div>
 
+    {{/*  Dim images in dark mode */}}
+    <div id="dim-images-selector-container">
+      <div class="title-large">Dim images (dark mode)</div>
+
+      <label class="component switch both">
+        <input type="checkbox" id="dim-image-selector">
+        <span></span>
+      </label>
+    </div>
+
     {{/*  Tertiary color temperature */}}
     <div id="tertiary-temperature-selector-container">
       <div class="title-large">Tertiary temperature</div>
@@ -181,6 +191,7 @@
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
+    var dimImageSelector = document.getElementById("dim-image-selector");
     var tertiarySelectorCool = document.getElementById("tertiary-selector-cool");
     var tertiarySelectorWarm = document.getElementById("tertiary-selector-warm");
     var hueSelector = document.getElementById("hue-selector");
@@ -192,6 +203,7 @@
 
     // Load saved values from localStorage
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
     var savedChroma = localStorage.getItem("theme-chroma");
@@ -213,6 +225,13 @@
     } else {
       widthSelector60.checked = true;
       localStorage.setItem("max-char-width", "60");
+    }
+
+    if (savedDimImages !== null) {
+      dimImageSelector.checked = savedDimImages === "true";
+    } else {
+      dimImageSelector.checked = false;
+      localStorage.setItem("dim-images", "0.8");
     }
 
     if (savedTemperature !== null) {
@@ -280,6 +299,14 @@
       localStorage.setItem("max-char-width", width);
     }
 
+    function updateDimImages() {
+      var dimImages = dimImageSelector.checked ? "0.8" : "1";
+
+      root.style.setProperty("--input-dim-image", dimImages);
+      
+      localStorage.setItem("dim-images", dimImages);
+    }
+
     function updateTemperature() {
       var temperature = document.querySelector('input[name="temperature"]:checked').value;
 
@@ -333,6 +360,7 @@
 
     // Apply saved or default values
     updateWidth();
+    updateDimImages();
     updateTemperature();
     updateColor();
     updateShape();
@@ -342,6 +370,7 @@
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
     widthSelectorMax.addEventListener("change", updateWidth);
+    dimImageSelector.addEventListener("change", updateDimImages);
     tertiarySelectorCool.addEventListener("change", updateTemperature);
     tertiarySelectorWarm.addEventListener("change", updateTemperature);
     hueSelector.addEventListener("input", updateColor);

@@ -154,6 +154,7 @@
 }
 
 #max-width-selector-container,
+#dim-images-selector-container,
 #tertiary-temperature-selector-container,
 #color-selector-container,
 #shape-selector-container,
@@ -166,6 +167,7 @@
   gap: var(--size-3);
 }
 
+#dim-images-selector-container,
 #tertiary-temperature-selector-container,
 #max-width-selector-container {
   display: flex;

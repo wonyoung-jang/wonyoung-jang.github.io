@@ -1,6 +1,10 @@
 body {
   &.dark {
     --color-showcase-tokens-container: var(--palette-neutral-variant-10);
+    
+    & img {
+      filter: brightness(var(--input-dim-image));
+    }
 
     & #moon {
       opacity: 0;

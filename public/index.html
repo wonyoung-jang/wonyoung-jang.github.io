@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.251bf3c46f9f14d186bf93df5d0ec747ae57a2cd91c6d8a3c614052425846b02.css" integrity="sha256-JRvzxG&#43;fFNGGv5PfXQ7HR65Xos2RxtijxhQFJCWEawI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.7ada1267cd58a2f220121e09661a786a9c4633706643a9b27cb1ce4b14de8cdf.css" integrity="sha256-etoSZ81YovIgEh4JZhp4apxGM3BmQ6myfLHOSxTejN8=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.e36e6ba62b54bedc8e972ba1d2583ffdad7d56e5a80bb068c65ced9dbcba9ecc.css" integrity="sha256-425rpitUvtyOlyuh0lg//a19VuWoC7Boxlztnby6nsw=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.fa1fd2dcd144343d9a8d5d741e8e432fe1154d5fec511adb3a6d27eb2d54bffb.css" integrity="sha256-&#43;h/S3NFEND2ajV10Ho5DL&#43;EVTV/sURrbOm0n6y1Uv/s=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.283552f248a1898eaed621306ae6b7a955335825c639d4c5001de041024c8f26.css" integrity="sha256-KDVS8kihiY6u1iEwaua3qVUzWCXGOdTFAB3gQQJMjyY=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -35,17 +35,17 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/index.xml">
 
-    <link rel="alternate" type="application/json" href="https://wonyoungjang.org/index.json">
+    <link rel="alternate" type="application/json" href="http://192.168.40.181:1313/index.json">
 
 
 
-    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/">
+    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/">
 
 
 
@@ -61,7 +61,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/">
+<meta property="og:url" content="http://192.168.40.181:1313/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Wonyoung Jang">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -91,7 +91,7 @@
     <section class="start">
         <a  class="component button common"
     id="site-headline"
-    href="https://wonyoungjang.org/"
+    href="http://192.168.40.181:1313/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -336,6 +336,16 @@
     </div>
 
     
+    <div id="dim-images-selector-container">
+      <div class="title-large">Dim images (dark mode)</div>
+
+      <label class="component switch both">
+        <input type="checkbox" id="dim-image-selector">
+        <span></span>
+      </label>
+    </div>
+
+    
     <div id="tertiary-temperature-selector-container">
       <div class="title-large">Tertiary temperature</div>
 
@@ -489,6 +499,7 @@
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
+    var dimImageSelector = document.getElementById("dim-image-selector");
     var tertiarySelectorCool = document.getElementById("tertiary-selector-cool");
     var tertiarySelectorWarm = document.getElementById("tertiary-selector-warm");
     var hueSelector = document.getElementById("hue-selector");
@@ -500,6 +511,7 @@
 
     
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
     var savedChroma = localStorage.getItem("theme-chroma");
@@ -521,6 +533,13 @@
     } else {
       widthSelector60.checked = true;
       localStorage.setItem("max-char-width", "60");
+    }
+
+    if (savedDimImages !== null) {
+      dimImageSelector.checked = savedDimImages === "true";
+    } else {
+      dimImageSelector.checked = false;
+      localStorage.setItem("dim-images", "0.8");
     }
 
     if (savedTemperature !== null) {
@@ -588,6 +607,14 @@
       localStorage.setItem("max-char-width", width);
     }
 
+    function updateDimImages() {
+      var dimImages = dimImageSelector.checked ? "0.8" : "1";
+
+      root.style.setProperty("--input-dim-image", dimImages);
+      
+      localStorage.setItem("dim-images", dimImages);
+    }
+
     function updateTemperature() {
       var temperature = document.querySelector('input[name="temperature"]:checked').value;
 
@@ -641,6 +668,7 @@
 
     
     updateWidth();
+    updateDimImages();
     updateTemperature();
     updateColor();
     updateShape();
@@ -650,6 +678,7 @@
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
     widthSelectorMax.addEventListener("change", updateWidth);
+    dimImageSelector.addEventListener("change", updateDimImages);
     tertiarySelectorCool.addEventListener("change", updateTemperature);
     tertiarySelectorWarm.addEventListener("change", updateTemperature);
     hueSelector.addEventListener("input", updateColor);
@@ -1242,7 +1271,7 @@ You&#39;re welcome to use anything you find here.
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="https://wonyoungjang.org/">
+        href="http://192.168.40.181:1313/">
         © 2024 Wonyoung Jang
     </a>
 </section>

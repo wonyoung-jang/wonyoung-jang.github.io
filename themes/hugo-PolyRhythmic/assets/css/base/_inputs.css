@@ -1,6 +1,9 @@
 :root {
   /* || Colors */
 
+  /* Dim images */
+  --input-dim-image: 0.8;
+
   /* Color primary */
   --input-color-hue: 302.8deg;
   --input-color-chroma: 58;
