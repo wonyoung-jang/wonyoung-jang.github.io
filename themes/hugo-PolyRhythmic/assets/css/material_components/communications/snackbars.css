@@ -29,20 +29,28 @@
     display: flex;
     flex-flow: row nowrap;
     margin-left: auto;
-    font-size: var(--typescale-label-large-size);
-    line-height: var(--typescale-label-large-line-height);
-    font-weight: var(--typescale-label-large-weight);
-    font-family: var(--typescale-label-large-font);
-
-    & * {
+    align-items: center;
+    
+    & .button.common {
+      font-size: var(--typescale-label-large-size);
+      line-height: var(--typescale-label-large-line-height);
+      font-weight: var(--typescale-label-large-weight);
+      font-family: var(--typescale-label-large-font);
       color: var(--color-inverse-primary);
+      --state-color: var(--color-inverse-primary);
     }
 
-    & .close-icon {
-      font-size: var(--size-6);
-      width: var(--size-12);
-      height: var(--size-12);
+    & .button.icon {
+      align-items: stretch;
+      --container-height: var(--size-12);
+      --container-width: var(--size-12);
+      --container-padding: var(--size-2);
+      --state-color: var(--color-inverse-on-surface);
       color: var(--color-inverse-on-surface);
+      
+      & .icon {
+        font-size: var(--size-6);
+      }
     }
   }
 
@@ -50,68 +58,68 @@
     --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
+      & .actions {
+        padding: 0px var(--size-2) var(--size-1) var(--size-2);
+      }
+
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
-      }
-
-      & .actions {
-        padding: 0px var(--size-2) var(--size-1) var(--size-2);
       }
     }
   }
   
-  &:has(.close-icon) {
+  &:has(.button.icon) {
     --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
+      & .actions {
+        padding: 0px 0px var(--size-1) var(--size-2);
+      }
+
       & .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
       }
+    }
+  }
+}
 
+.snackbar.two {
+  --container-height: var(--size-17);
+
+  &:has(.longer-action) {
+    --container-flex-flow: column nowrap;
+    --container-height: initial;
+    --container-gap: 14px;
+  }
+
+  &:has(.actions) {
+    --container-padding: 0px 0px 0px var(--size-4);
+
+    &:has(.longer-action) {
       & .actions {
-        padding: 0px 0px var(--size-1) var(--size-2);
+        padding: 0px var(--size-2) var(--size-1) var(--size-2);
+      }
+
+      & .supporting-text {
+        align-self: flex-start;
+        padding: 14px var(--size-1) 0px var(--size-1);
       }
     }
   }
 
-  &.two {
-    --container-height: var(--size-17);
+  &:has(.button.icon) {
+    --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
-      --container-flex-flow: column nowrap;
-      --container-height: initial;
-      --container-gap: 14px;
-    }
-
-    &:has(.actions) {
-      --container-padding: 0px 0px 0px var(--size-4);
-
-      &:has(.longer-action) {
-        & .supporting-text {
-          align-self: flex-start;
-          padding: 14px var(--size-1) 0px var(--size-1);
-        }
-
-        & .actions {
-          padding: 0px var(--size-2) var(--size-1) var(--size-2);
-        }
+      & .actions {
+        padding: 0px 0px var(--size-1) var(--size-2);
       }
-    }
 
-    &:has(.close-icon) {
-      --container-padding: 0px 0px 0px var(--size-4);
-
-      &:has(.longer-action) {
-        & .supporting-text {
-          align-self: flex-start;
-          padding: 14px var(--size-1) 0px var(--size-1);
-        }
-
-        & .actions {
-          padding: 0px 0px var(--size-1) var(--size-2);
-        }
+      & .supporting-text {
+        align-self: flex-start;
+        padding: 14px var(--size-1) 0px var(--size-1);
       }
     }
   }
