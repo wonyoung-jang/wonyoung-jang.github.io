@@ -38,7 +38,6 @@
     flex: 0 1 0;
     display: flex;
     flex-flow: column nowrap;
-    text-align: center;
     text-wrap: balance;
     gap: var(--size-5);
     padding: var(--size-8);
@@ -49,13 +48,27 @@
       display: flex;
       flex-flow: row wrap;
       align-items: center;
-      justify-content: center;
       gap: var(--size-5);
       padding: var(--size-8);
       border-radius: var(--shape-corner-xl);
     }
   }
 
+  & .home-page-content {
+    margin: var(--size-8);
+    padding: var(--size-16);
+    border-radius: var(--shape-corner-m);
+    background-color: var(--color-surface-container-low);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    & li::before {
+      display: none;
+    }
+  }
+  
   & .home-buttons-container {
     display: flex;
     flex-flow: row wrap;
@@ -73,7 +86,6 @@
 
       & h3 {
         margin-block: var(--size-3) var(--size-5);
-        text-align: center;
       }
 
       & .button {

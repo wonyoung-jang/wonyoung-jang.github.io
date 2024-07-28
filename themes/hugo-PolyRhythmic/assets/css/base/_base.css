@@ -187,10 +187,11 @@ li {
   list-style: none;
 }
 
-li:not(:has(ol, ul)) {
+li:not(:has(ul, ol)) {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  gap: var(--size-1);
   width: 100%;
 
   &::before {

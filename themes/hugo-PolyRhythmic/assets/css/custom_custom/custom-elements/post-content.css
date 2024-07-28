@@ -9,12 +9,6 @@
     max-width: var(--input-char-width);
   }
   
-  & ul {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1em;
-  }
-
   & h1[id],
   & h2[id],
   & h3[id],
@@ -28,6 +22,9 @@
   }
 
   & ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
     padding-left: 1em;
     padding-inline-start: 1em;
     padding-bottom: 1em;
