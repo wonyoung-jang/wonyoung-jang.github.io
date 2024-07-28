@@ -25,11 +25,11 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.109d7700617a0dea5696c733ba04cce3ca8c330a29ec0e40317ba0770172a423.css" integrity="sha256-EJ13AGF6DepWlsczugTM48qMMwop7A5AMXugdwFypCM=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.00999e33887ef306fe88e9b5ac9c90af1a8e08778386719b1784e7f43dc91957.css" integrity="sha256-AJmeM4h&#43;8wb&#43;iOm1rJyQrxqOCHeDhnGbF4Tn9D3JGVc=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.e36e6ba62b54bedc8e972ba1d2583ffdad7d56e5a80bb068c65ced9dbcba9ecc.css" integrity="sha256-425rpitUvtyOlyuh0lg//a19VuWoC7Boxlztnby6nsw=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.35f23c732f0e71891dcc7e93cbf13f64d4a3ec1e72e7248039fcd3bf5054ef61.css" integrity="sha256-NfI8cy8OcYkdzH6Ty/E/ZNSj7B5y5ySAOfzTv1BU72E=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.2f866aac37f6fad1fe14dc6ecd5fa5d01bbaa35024ee751ea0e73e57d0fc2de4.css" integrity="sha256-L4ZqrDf2&#43;tH&#43;FNxuzV&#43;l0Bu6o1Ak7nUeoOc&#43;V9D8LeQ=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/4helpers.min.24cc205ab5de9c645a37e9bb2ba466ac04ffb15e5ef3a7a2dcaa2a5705e06dec.css" integrity="sha256-JMwgWrXenGRaN&#43;m7K6RmrAT/sV5e86ei3KoqVwXgbew=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/4helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
 
 
@@ -303,16 +303,16 @@
         <i class="icon" id="sun">light_mode</i>
     </button>
 
-<button class="component button icon outlined" id="theme-controls">
+<button class="component button icon" id="theme-controls">
   <i class="icon">palette</i> 
-  <menu class="menus" id="theme-controls-menu">
+  <menu id="controls">
     <span class="theme-controls-title headline-medium">Theme controls</span>
     
     <div id="max-width-selector-container">
       <div class="title-large">Content text width</div>
       
       <div class="set segmented-buttons">
-        <label class="component button segmented">
+        <label class="component button segmented start">
           <input type="radio" name="width" id="width-selector-60" value="60"/>
           <i class="icon">check</i>
           60ch
@@ -324,7 +324,7 @@
           120ch
         </label>
         
-        <label class="component button segmented">
+        <label class="component button segmented end">
           <input type="radio" name="width" id="width-selector-max" value="max"/>
           <i class="icon">check</i>
           Max
@@ -337,13 +337,13 @@
       <div class="title-large">Tertiary temperature</div>
 
       <div class="set segmented-buttons">
-        <label class="component button segmented">
+        <label class="component button segmented start">
           <input type="radio" name="temperature" id="tertiary-selector-cool" value="cool"/>
           <i class="icon">check</i>
           Cooler
         </label>
         
-        <label class="component button segmented">
+        <label class="component button segmented end">
           <input type="radio" name="temperature" id="tertiary-selector-warm" value="warm"/>
           <i class="icon">check</i>
           Warmer
@@ -1282,7 +1282,7 @@
         </div>
 
         <div class="action-buttons">
-            <a  class="component button common filled-tonal"
+            <a  class="component button common tonal"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="share Elevations via email" 
@@ -1291,7 +1291,7 @@
                 Email
             </a>
     
-            <a  class="component button common filled-tonal"
+            <a  class="component button common tonal"
                 aria-label="print Elevations"
                 href="javascript:window.print()">
                 <i class="icon">print</i> 
@@ -1492,6 +1492,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

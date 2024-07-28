@@ -7,7 +7,7 @@
   --set-justify-content:  space-between;
   --set-width:            initial;
   --set-gap:              initial;
-  --set-overflow:         initial;
+  --set-overflow:         hidden;
 
   background-color: unset;
   color: var(--palette-white);
@@ -50,4 +50,10 @@
   display: grid;
   grid-template-columns: 1fr 8fr;
   padding: var(--spacing-panes);
+
+  & label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
