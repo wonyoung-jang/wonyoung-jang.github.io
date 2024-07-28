@@ -7,15 +7,11 @@
   --container-height: var(--size-12);
   --container-width: 100%;
   --container-padding: 0 var(--size-4);
-
-  --container-outline: initial;
+  
   --container-elevation: var(--elevation3);
   --container-shape: var(--shape-corner-xs);
 
   --container-color: var(--color-inverse-surface);
-
-  --text-color: initial;
-  --icon-color: initial;
 
   --container-elevation-hover: var(--container-elevation);
   --container-elevation-focus: var(--container-elevation);

@@ -25,9 +25,9 @@
 
     <link crossorigin="anonymous" href="/assets/css/1base.min.109d7700617a0dea5696c733ba04cce3ca8c330a29ec0e40317ba0770172a423.css" integrity="sha256-EJ13AGF6DepWlsczugTM48qMMwop7A5AMXugdwFypCM=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2material_design.min.227b98c2e9d4f3e390cff8cc6c21ce7b83025d0d87d00d13694e327a55042812.css" integrity="sha256-InuYwunU8&#43;OQz/jMbCHOe4MCXQ2H0A0TaU4yelUEKBI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2material_design.min.00999e33887ef306fe88e9b5ac9c90af1a8e08778386719b1784e7f43dc91957.css" integrity="sha256-AJmeM4h&#43;8wb&#43;iOm1rJyQrxqOCHeDhnGbF4Tn9D3JGVc=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.6ebae442d3afcbd0d2f70aec699f04f08e153670e389e92518a9e0b120ff4921.css" integrity="sha256-brrkQtOvy9DS9wrsaZ8E8I4VNnDjieklGKngsSD/SSE=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.35f23c732f0e71891dcc7e93cbf13f64d4a3ec1e72e7248039fcd3bf5054ef61.css" integrity="sha256-NfI8cy8OcYkdzH6Ty/E/ZNSj7B5y5ySAOfzTv1BU72E=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.24cc205ab5de9c645a37e9bb2ba466ac04ffb15e5ef3a7a2dcaa2a5705e06dec.css" integrity="sha256-JMwgWrXenGRaN&#43;m7K6RmrAT/sV5e86ei3KoqVwXgbew=" rel="preload stylesheet" as="style">
 
@@ -303,9 +303,9 @@
         <i class="icon" id="sun">light_mode</i>
     </button>
 
-<button class="component button icon" id="theme-controls">
+<button class="component button icon outlined" id="theme-controls">
   <i class="icon">palette</i> 
-  <menu class="menu" id="theme-controls-menu">
+  <menu class="menus" id="theme-controls-menu">
     <span class="theme-controls-title headline-medium">Theme controls</span>
     
     <div id="max-width-selector-container">
@@ -1650,49 +1650,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

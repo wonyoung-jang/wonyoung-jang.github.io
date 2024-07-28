@@ -603,53 +603,9 @@
           ) 
         )
       }}
-
-      <div class="sub-showcase-components-header">Configurations</div>
-      <button class="component button common filled">
-        Menu
-        {{ partial "components/selections/menus.html" (dict
-          "dividers" true
-          "menu_items" (slice 
-            (dict 
-              "label" "Menu item 1")
-            (dict 
-              "label" "Menu item 2")
-            (dict 
-              "label" "Disabled"
-              "disabled" "disabled")
-            (dict 
-              "label" "Menu item 3")
-            (dict 
-              "label" "Menu item 4")
-            ) 
-          )
-        }}
-      </button>
-
-      <button class="component button icon">
-        <i class="icon">more_vert</i>
-        {{ partial "components/selections/menus.html" (dict
-          "dividers" true
-          "menu_items" (slice 
-            (dict 
-              "label" "Menu item 1")
-            (dict 
-              "label" "Menu item 2")
-            (dict 
-              "label" "Disabled"
-              "disabled" "disabled")
-            (dict 
-              "label" "Menu item 3")
-            (dict 
-              "label" "Menu item 4")
-            ) 
-          )
-        }}
-      </button>
-
     </div>
 
-    {{/*  Radio buttons  */}}
+    {{/*  Radio  */}}
     <div class="showcase-components-header">Radio buttons</div>
     <div class="layout showcase-components">
       <div class="sub-showcase-components-header">Radios</div>
