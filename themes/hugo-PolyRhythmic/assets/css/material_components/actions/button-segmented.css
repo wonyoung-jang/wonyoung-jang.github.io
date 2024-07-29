@@ -10,6 +10,7 @@
   cursor: pointer;
   border-inline-end: 0px solid transparent;
   border-right: 0px solid transparent;
+  min-width: fit-content;
   --container-gap: var(--size-2);
   --container-shape: var(--shape-corner-none);
   --container-padding: 0 var(--size-4);
