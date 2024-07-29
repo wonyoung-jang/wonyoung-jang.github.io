@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.c38e1a43ebbd71601ea8af397c0fdadd9835574cc2b4ffa621976388ad522fe8.css" integrity="sha256-w44aQ&#43;u9cWAeqK85fA/a3Zg1V0zCtP&#43;mIZdjiK1SL&#43;g=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.ee0ab5a6d7b1b6c2fb8444c54eab8dc2562353fb93897521dbf120986c4b0fb9.css" integrity="sha256-7gq1ptextsL7hETFTquNwlYjU/uTiXUh2/EgmGxLD7k=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.eb1cb93569d037044158d9cce8085c34c3de0dd46a6d8dd9e96a3006766c15d1.css" integrity="sha256-6xy5NWnQNwRBWNnM6AhcNMPeDdRqbY3Z6WowBnZsFdE=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.c6fbc0a03e2d2daeda4ef2da54aea7c79b4f0ba61b724b3d9c570912f19524d2.css" integrity="sha256-xvvAoD4tLa7aTvLaVK6nx5tPC6Ybcks9nFcJEvGVJNI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.af20a48ffbbbe9cb91d23720328513403c68f213ed94fa2595bc3f9af394f847.css" integrity="sha256-ryCkj/u76cuR0jcgMoUTQDxo8hPtlPollbw/mvOU&#43;Ec=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -296,16 +296,14 @@
   });  
 </script>
 
-        
-    <button class="component button icon"
-            id="theme-toggle" 
-            accesskey="t" 
-            title="Toggle Theme (ALT + SHIFT + t)" >
-        <i class="icon" id="moon">dark_mode</i>
-        <i class="icon" id="sun">light_mode</i>
-    </button>
-
-<button class="component button icon theme-controls">
+        <button class="component button icon"
+        id="theme-toggle" 
+        accesskey="t" 
+        title="Toggle Theme (ALT + SHIFT + t)" >
+    <i class="icon" id="moon">dark_mode</i>
+    <i class="icon" id="sun">light_mode</i>
+</button>
+<button class="theme-controls">
   <input type="checkbox" id="theme-controls"/>
   <label for="theme-controls" class="component button icon">
     <i class="icon">
@@ -389,6 +387,9 @@
         <span class="tooltip" id="chroma-tooltip"></span>
       </div>
       <div id="theme-chromas"></div>
+
+      <label class="title-large">Lightness</label>
+      <div id="theme-lightness"></div>
     </div>
       
     
@@ -539,7 +540,7 @@
   </div>
 </button>
 
-<script>
+<script defer>
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
     var widthSelector60 = document.getElementById("width-selector-60");
@@ -568,6 +569,7 @@
     var savedFontSize = localStorage.getItem('typography-font-size');
     var savedLineHeight = localStorage.getItem('typography-line-height');
 
+    
     if (savedWidth !== null) {
       if (savedWidth === "60") {
         widthSelector60.checked = true;
@@ -582,7 +584,7 @@
     }
 
     if (savedDimImages !== null) {
-      dimImageSelector.checked = savedDimImages === "true";
+      dimImageSelector.checked = true;
     } else {
       dimImageSelector.checked = false;
       localStorage.setItem("dim-images", "0.8");
@@ -1069,7 +1071,8 @@
 
     </aside>
     
-    <section class="layout pane" id="post-content">
+    <section class="layout pane">
+      <div id="post-content">
         
           <figure 
       class="cover-image"
@@ -1133,6 +1136,7 @@
         
 
         
+      </div>
     </section>
   </article>
             </div>
