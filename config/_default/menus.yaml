@@ -1,10 +1,4 @@
 main:
-  - identifier: Home
-    name: Home
-    pageRef: /
-    pre: <i class="icon">home</i>
-    weight: 1
-    
   - identifier: Projects
     name: Projects
     pageRef: /projects
