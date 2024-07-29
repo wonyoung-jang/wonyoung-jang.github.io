@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.eb1cb93569d037044158d9cce8085c34c3de0dd46a6d8dd9e96a3006766c15d1.css" integrity="sha256-6xy5NWnQNwRBWNnM6AhcNMPeDdRqbY3Z6WowBnZsFdE=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.c6fbc0a03e2d2daeda4ef2da54aea7c79b4f0ba61b724b3d9c570912f19524d2.css" integrity="sha256-xvvAoD4tLa7aTvLaVK6nx5tPC6Ybcks9nFcJEvGVJNI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.eb01beadcfefa9b6d7e5272bf4522e179767165906fd72ae44102cf25a1d155c.css" integrity="sha256-6wG&#43;rc/vqbbX5Scr9FIuF5dnFlkG/XKuRBAs8lodFVw=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -566,6 +566,7 @@
     var savedFontSize = localStorage.getItem('typography-font-size');
     var savedLineHeight = localStorage.getItem('typography-line-height');
 
+    
     if (savedWidth !== null) {
       if (savedWidth === "60") {
         widthSelector60.checked = true;
@@ -580,7 +581,7 @@
     }
 
     if (savedDimImages !== null) {
-      dimImageSelector.checked = savedDimImages === "true";
+      dimImageSelector.checked = true;
     } else {
       dimImageSelector.checked = false;
       localStorage.setItem("dim-images", "0.8");
@@ -1048,7 +1049,8 @@
 
     </aside>
     
-    <section class="layout pane" id="post-content">
+    <section class="layout pane">
+      <div id="post-content">
         
           <figure 
       class="cover-image"
@@ -1260,6 +1262,7 @@
         
 
         
+      </div>
     </section>
   </article>
             </div>

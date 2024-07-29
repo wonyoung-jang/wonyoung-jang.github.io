@@ -261,6 +261,7 @@
     var savedFontSize = localStorage.getItem('typography-font-size');
     var savedLineHeight = localStorage.getItem('typography-line-height');
 
+    // Set default values if no saved values
     if (savedWidth !== null) {
       if (savedWidth === "60") {
         widthSelector60.checked = true;
@@ -275,7 +276,7 @@
     }
 
     if (savedDimImages !== null) {
-      dimImageSelector.checked = savedDimImages === "true";
+      dimImageSelector.checked = true;
     } else {
       dimImageSelector.checked = false;
       localStorage.setItem("dim-images", "0.8");
