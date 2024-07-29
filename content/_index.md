@@ -12,7 +12,7 @@
 
 #### Shapes
 
-  + **Change the roundedness:** Slide to make things as sharp or smooth as you want.
+  + **Corner rounding:** Slide to make things as sharp or smooth as you want.
 
 #### Colors
 
@@ -30,12 +30,12 @@
 
   + **Font size**: Adjust font size.
 
-  + **Line Spacing**: Adjust content density.
-
   + **Font picker**: Choose various font families for each typeface.
+
+  + **Line spacing**: Adjust content density.
 
 ### Check out my stuff below
 
-  + **My Projects**: Take a peek at what I've been working on.
+  + **Projects**: Take a peek at what I've been working on.
 
   + **Resources**: I've collected some cool stuff you might find useful.

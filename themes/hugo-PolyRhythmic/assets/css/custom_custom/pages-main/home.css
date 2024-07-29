@@ -61,8 +61,17 @@
     background-color: var(--color-surface-container-low);
     display: flex;
     flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: var(--size-8);
+    white-space: nowrap;
+
+    text-wrap: wrap;
+
+    & li {
+      display: inline-block;
+      padding-right: var(--spacing-panes);
+      text-wrap: balance;
+    }
 
     & li::before {
       display: none;

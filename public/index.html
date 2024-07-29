@@ -27,7 +27,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.255067dcda3fe8ca4ae2b06e96141edf0c64f3c7fb9a64c55cf9f637d9ab3fbc.css" integrity="sha256-JVBn3No/6MpK4rBulhQe3wxk88f7mmTFXPn2N9mrP7w=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.5b0c3e501562b8a3ae18d2cbec3da74df82c18f0755a384f7d76de012f828462.css" integrity="sha256-Www&#43;UBViuKOuGNLL7D2nTfgsGPB1WjhPfXbeAS&#43;ChGI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.73ff16643c164e19603db2336c28e5fadf97e6ca24ca6449c6b19ab15fca2abe.css" integrity="sha256-c/8WZDwWThlgPbIzbCjl&#43;t&#43;X5sokymRJxrGasV/KKr4=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -66,7 +66,7 @@
   <meta property="og:title" content="Wonyoung Jang">
   <meta property="og:description" content="Things to dolinkh2Random page roulette: Feeling adventurous? Hit the “Random Page” button.
 Light/dark mode toggle: Toggle between day and night modes.
-Full theme controllinkh3Unlike Material Design’s specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners, and various font stylings. Shapeslinkh4Change the roundedness: Slide to make things as sharp or smooth as you want. Colorslinkh4Adjust the key color to update the theme site-wide">
+Full theme controllinkh3Unlike Material Design’s specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners, and various font stylings. Shapeslinkh4Corner rounding: Slide to make things as sharp or smooth as you want. Colorslinkh4Adjust the key color to update the theme site-wide">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
@@ -74,15 +74,15 @@ Full theme controllinkh3Unlike Material Design’s specs, I allow customizing
   <meta itemprop="name" content="Wonyoung Jang">
   <meta itemprop="description" content="Things to dolinkh2Random page roulette: Feeling adventurous? Hit the “Random Page” button.
 Light/dark mode toggle: Toggle between day and night modes.
-Full theme controllinkh3Unlike Material Design’s specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners, and various font stylings. Shapeslinkh4Change the roundedness: Slide to make things as sharp or smooth as you want. Colorslinkh4Adjust the key color to update the theme site-wide">
+Full theme controllinkh3Unlike Material Design’s specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners, and various font stylings. Shapeslinkh4Corner rounding: Slide to make things as sharp or smooth as you want. Colorslinkh4Adjust the key color to update the theme site-wide">
   <meta itemprop="dateModified" content="2024-07-28T18:19:30-04:00">
-  <meta itemprop="wordCount" content="160">
+  <meta itemprop="wordCount" content="158">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Wonyoung Jang">
   <meta name="twitter:description" content="Things to dolinkh2Random page roulette: Feeling adventurous? Hit the “Random Page” button.
 Light/dark mode toggle: Toggle between day and night modes.
-Full theme controllinkh3Unlike Material Design’s specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners, and various font stylings. Shapeslinkh4Change the roundedness: Slide to make things as sharp or smooth as you want. Colorslinkh4Adjust the key color to update the theme site-wide">
+Full theme controllinkh3Unlike Material Design’s specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners, and various font stylings. Shapeslinkh4Corner rounding: Slide to make things as sharp or smooth as you want. Colorslinkh4Adjust the key color to update the theme site-wide">
 
 
     </head>
@@ -1122,7 +1122,7 @@ You&#39;re welcome to use anything you find here.
   </a>
 </h4>
 <ul>
-<li><strong>Change the roundedness:</strong> Slide to make things as sharp or smooth as you want.</li>
+<li><strong>Corner rounding:</strong> Slide to make things as sharp or smooth as you want.</li>
 </ul>
 <h4 id="colors">
   Colors
@@ -1170,10 +1170,10 @@ You&#39;re welcome to use anything you find here.
 <p><strong>Font size</strong>: Adjust font size.</p>
 </li>
 <li>
-<p><strong>Line Spacing</strong>: Adjust content density.</p>
+<p><strong>Font picker</strong>: Choose various font families for each typeface.</p>
 </li>
 <li>
-<p><strong>Font picker</strong>: Choose various font families for each typeface.</p>
+<p><strong>Line spacing</strong>: Adjust content density.</p>
 </li>
 </ul>
 <h3 id="check-out-my-stuff-below">
@@ -1190,7 +1190,7 @@ You&#39;re welcome to use anything you find here.
 </h3>
 <ul>
 <li>
-<p><strong>My Projects</strong>: Take a peek at what I&rsquo;ve been working on.</p>
+<p><strong>Projects</strong>: Take a peek at what I&rsquo;ve been working on.</p>
 </li>
 <li>
 <p><strong>Resources</strong>: I&rsquo;ve collected some cool stuff you might find useful.</p>
@@ -1470,6 +1470,49 @@ You&#39;re welcome to use anything you find here.
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
