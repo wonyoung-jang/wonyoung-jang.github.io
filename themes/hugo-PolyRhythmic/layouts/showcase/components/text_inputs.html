@@ -23,6 +23,14 @@
       {{ partial "components/text-inputs/text-fields.html" (dict 
         "type" "filled" 
         "label" "Label text" 
+        "supporting_text" "Supporting text"
+        "disabled" "disabled"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "filled" 
+        "label" "Label text" 
         "trailing_icon" "cancel"
         ) 
       }}
@@ -74,6 +82,14 @@
         "type" "outlined" 
         "label" "Label text" 
         "supporting_text" "Supporting text"
+        ) 
+      }}
+
+      {{ partial "components/text-inputs/text-fields.html" (dict 
+        "type" "outlined" 
+        "label" "Label text" 
+        "supporting_text" "Supporting text"
+        "disabled" "disabled"
         ) 
       }}
 

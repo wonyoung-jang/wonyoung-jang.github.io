@@ -1,5 +1,7 @@
 .component:is(
-    .button,
+    .button.common,
+    .button.icon,
+    .button.segmented,
     .card,
     .carousel-item,
     .checkbox,
