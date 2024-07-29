@@ -54,6 +54,13 @@
       max-width: 88%;
       margin: var(--size-5) auto;
     }
+
+    & figcaption {
+      font-style: italic;
+      font-size: 88%;
+      max-width: 88%;
+      margin: var(--size-5) auto;
+    }
   }
 
   & *:not(pre) > code {
