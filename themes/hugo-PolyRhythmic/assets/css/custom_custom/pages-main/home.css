@@ -55,8 +55,8 @@
   }
 
   & .home-page-content {
-    margin: var(--size-8);
-    padding: var(--size-16);
+    margin: 0 var(--spacing-panes);
+    padding: 0 var(--spacing-panes);
     border-radius: var(--shape-corner-m);
     background-color: var(--color-surface-container-low);
     display: flex;

@@ -13,6 +13,7 @@
   & .footer-links {
     display: flex;
     flex-flow: row wrap;
+    gap: var(--spacing-panes);
     margin-top: var(--size-16);
 
     & .footer-links-list {
