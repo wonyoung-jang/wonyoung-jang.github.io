@@ -106,7 +106,8 @@
   }
 
   & #theme-hues,
-  & #theme-chromas {
+  & #theme-chromas,
+  & #theme-lightness {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
@@ -136,6 +137,24 @@
   }
 
   & #theme-chromas {
+    background: linear-gradient(
+      0.25turn,
+      var(--palette-chroma-0),
+      var(--palette-chroma-10),
+      var(--palette-chroma-20),
+      var(--palette-chroma-30),
+      var(--palette-chroma-40),
+      var(--palette-chroma-50),
+      var(--palette-chroma-60),
+      var(--palette-chroma-70),
+      var(--palette-chroma-80),
+      var(--palette-chroma-90),
+      var(--palette-chroma-100)
+    );
+  }
+
+  & #theme-lightness {
+    margin-top: var(--size-3);
     background: linear-gradient(
       0.25turn,
       var(--palette-primary-10),

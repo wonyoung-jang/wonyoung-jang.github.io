@@ -73,6 +73,18 @@
     --palette-hue-300:  lch(60% var(--chroma-primary) 300deg);
     --palette-hue-330:  lch(60% var(--chroma-primary) 330deg);
 
+    --palette-chroma-0: lch(50% 0 var(--hue-primary));
+    --palette-chroma-10: lch(50% 10 var(--hue-primary));
+    --palette-chroma-20: lch(50% 20 var(--hue-primary));
+    --palette-chroma-30: lch(50% 30 var(--hue-primary));
+    --palette-chroma-40: lch(50% 40 var(--hue-primary));
+    --palette-chroma-50: lch(50% 50 var(--hue-primary));
+    --palette-chroma-60: lch(50% 60 var(--hue-primary));
+    --palette-chroma-70: lch(50% 70 var(--hue-primary));
+    --palette-chroma-80: lch(50% 80 var(--hue-primary));
+    --palette-chroma-90: lch(50% 90 var(--hue-primary));
+    --palette-chroma-100: lch(50% 100 var(--hue-primary));
+
     /* Primary */
     --palette-primary-0:  var(--palette-black);
     --palette-primary-10: lch(10% var(--chroma-primary) var(--hue-primary));
