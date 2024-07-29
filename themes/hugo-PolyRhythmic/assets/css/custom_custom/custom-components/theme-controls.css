@@ -30,6 +30,7 @@
     
     overflow-y: auto;
     
+    color: var(--color-on-surface);
     background-color: var(--color-surface-container-low);
     max-height: calc(100dvh - var(--size-16));
     min-height: 0%;
