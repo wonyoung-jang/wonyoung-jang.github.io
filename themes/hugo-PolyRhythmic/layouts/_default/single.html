@@ -4,7 +4,8 @@
       {{ partial "toc.html" . }}
     </aside>
     
-    <section class="layout pane" id="post-content">
+    <section class="layout pane">
+      <div id="post-content">
         {{ with .Content }}
           {{ . }}
         {{ end }}
@@ -20,6 +21,7 @@
         {{ if eq .Type "showcase/tokens" }}
           {{ .Type }}
         {{ end }}
+      </div>
     </section>
   </article>
 {{- end -}}
