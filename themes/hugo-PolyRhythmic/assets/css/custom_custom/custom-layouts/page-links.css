@@ -13,16 +13,6 @@
   --layout-gap: var(--size-24);
 
   --layout-border: inherit;
-  
-  & #share-links {
-    flex: 1 1 0;
-    display: flex;
-    flex-flow: column nowrap;
-    
-    margin-top: var(--size-12);
-    border-radius: var(--shape-corner-m);
-    padding: var(--size-6);
-  }
 
   & #backlinks,
   & #related-pages {
@@ -41,6 +31,14 @@
   }
 
   & #share-links {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    margin-right: auto;
+    margin-top: var(--size-12);
+    padding: var(--size-6);
+
     gap: var(--size-6);
 
     & .share-buttons,
@@ -59,7 +57,9 @@
     }
 
     & .page-links-title {
-      text-align: center;
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
     }
   }
 
