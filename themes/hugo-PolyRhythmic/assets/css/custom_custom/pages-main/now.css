@@ -1,15 +1,11 @@
 .most-recently-updated-pages {
-  width: 100%;
+  min-width: 100%;
   border: 1px solid var(--color-outline-variant);
-  margin: var(--size-16) auto;
+  margin-block: var(--size-16) var(--size-1);
+  overflow-x: auto;
 
   & caption {
     margin-bottom: var(--spacing-panes);
-  }
-
-  & tr {
-    white-space: nowrap;
-    border-radius: unset;
   }
 
   & tbody {
