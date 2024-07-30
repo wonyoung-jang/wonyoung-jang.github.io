@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.11e3edc8574c6a2446748a626b149381264c84bb4a39362809959cc6f549d442.css" integrity="sha256-EePtyFdMaiRGdIpiaxSTgSZMhLtKOTYoCZWcxvVJ1EI=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.098cbcd218b3a2bff30a80f6cb5b532c1ec0b07dfffb7ab41d9360c1a500f370.css" integrity="sha256-CYy80hizor/zCoD2y1tTLB7AsH3/&#43;3q0HZNgwaUA83A=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.086e7a4f35e49db38dc4182c184599f696ed54ab17ab92565f87e0527bb01cb5.css" integrity="sha256-CG56TzXknbONxBgsGEWZ9pbtVKsXq5JWX4fgUnuwHLU=" rel="preload stylesheet" as="style">
 
@@ -576,10 +576,13 @@
             document.body.classList.add(this.value + '-contrast');
         }
     });
-});
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
+    var contrastSelectorRegular = document.getElementById("contrast-selector-regular");
+    var contrastSelectorMedium = document.getElementById("contrast-selector-medium");
+    var contrastSelectorHigh = document.getElementById("contrast-selector-high");
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
@@ -594,6 +597,7 @@
     var lineHeightSelector = document.getElementById('line-height-selector');
 
     
+    var savedContrast = localStorage.getItem("contrast");
     var savedWidth = localStorage.getItem("max-char-width");
     var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
@@ -607,6 +611,19 @@
     var savedLineHeight = localStorage.getItem('typography-line-height');
 
     
+    if (savedContrast !== null) {
+      if (savedContrast === "medium") {
+        contrastSelectorMedium.checked = true;
+      } else if (savedContrast === "high") {
+        contrastSelectorHigh.checked = true;
+      } else {
+        contrastSelectorRegular.checked = true;
+      }
+    } else {
+      contrastSelectorRegular.checked = true;
+      localStorage.setItem("contrast", "regular");
+    }
+
     if (savedWidth !== null) {
       if (savedWidth === "60") {
         widthSelector60.checked = true;
@@ -637,7 +654,6 @@
       tertiarySelectorCool.checked = true;
       localStorage.setItem("tertiary-temperature", "cool");
     }
-    
 
     if (savedHue !== null) {
       hueSelector.value = savedHue;
@@ -676,6 +692,22 @@
     } else {
       lineHeightSelector.value = 1.5;
       localStorage.setItem("typography-line-height", 1.5);
+    }
+
+    function updateContrast() {
+      var contrast = document.querySelector('input[name="contrast"]:checked').value;
+
+      if (contrast === "medium") {
+        document.body.classList.remove("high-contrast");
+        document.body.classList.add("medium-contrast");
+      } else if (contrast === "high") {
+        document.body.classList.remove("medium-contrast");
+        document.body.classList.add("high-contrast");
+      } else {
+        document.body.classList.remove("medium-contrast", "high-contrast");
+      }
+
+      localStorage.setItem("contrast", contrast);
     }
 
     function updateWidth() {
@@ -752,6 +784,7 @@
     }
 
     
+    updateContrast();
     updateWidth();
     updateDimImages();
     updateTemperature();
@@ -760,6 +793,9 @@
     updateTypography();
 
     
+    contrastSelectorRegular.addEventListener("change", updateContrast);
+    contrastSelectorMedium.addEventListener("change", updateContrast);
+    contrastSelectorHigh.addEventListener("change", updateContrast);
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
     widthSelectorMax.addEventListener("change", updateWidth);
@@ -1189,11 +1225,7 @@
         </hgroup>
         <nav>nav</nav>
         <section>section</section>
-        <search>
-          search
-          <input type="search" />
-          <button>button</button>
-        </search>
+        
       </section>
         
       
@@ -1990,49 +2022,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
