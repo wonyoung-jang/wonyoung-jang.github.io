@@ -577,10 +577,13 @@
             document.body.classList.add(this.value + '-contrast');
         }
     });
-});
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
+    var contrastSelectorRegular = document.getElementById("contrast-selector-regular");
+    var contrastSelectorMedium = document.getElementById("contrast-selector-medium");
+    var contrastSelectorHigh = document.getElementById("contrast-selector-high");
     var widthSelector60 = document.getElementById("width-selector-60");
     var widthSelector120 = document.getElementById("width-selector-120");
     var widthSelectorMax = document.getElementById("width-selector-max");
@@ -595,6 +598,7 @@
     var lineHeightSelector = document.getElementById('line-height-selector');
 
     
+    var savedContrast = localStorage.getItem("contrast");
     var savedWidth = localStorage.getItem("max-char-width");
     var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
@@ -608,6 +612,19 @@
     var savedLineHeight = localStorage.getItem('typography-line-height');
 
     
+    if (savedContrast !== null) {
+      if (savedContrast === "medium") {
+        contrastSelectorMedium.checked = true;
+      } else if (savedContrast === "high") {
+        contrastSelectorHigh.checked = true;
+      } else {
+        contrastSelectorRegular.checked = true;
+      }
+    } else {
+      contrastSelectorRegular.checked = true;
+      localStorage.setItem("contrast", "regular");
+    }
+
     if (savedWidth !== null) {
       if (savedWidth === "60") {
         widthSelector60.checked = true;
@@ -638,7 +655,6 @@
       tertiarySelectorCool.checked = true;
       localStorage.setItem("tertiary-temperature", "cool");
     }
-    
 
     if (savedHue !== null) {
       hueSelector.value = savedHue;
@@ -677,6 +693,22 @@
     } else {
       lineHeightSelector.value = 1.5;
       localStorage.setItem("typography-line-height", 1.5);
+    }
+
+    function updateContrast() {
+      var contrast = document.querySelector('input[name="contrast"]:checked').value;
+
+      if (contrast === "medium") {
+        document.body.classList.remove("high-contrast");
+        document.body.classList.add("medium-contrast");
+      } else if (contrast === "high") {
+        document.body.classList.remove("medium-contrast");
+        document.body.classList.add("high-contrast");
+      } else {
+        document.body.classList.remove("medium-contrast", "high-contrast");
+      }
+
+      localStorage.setItem("contrast", contrast);
     }
 
     function updateWidth() {
@@ -753,6 +785,7 @@
     }
 
     
+    updateContrast();
     updateWidth();
     updateDimImages();
     updateTemperature();
@@ -761,6 +794,9 @@
     updateTypography();
 
     
+    contrastSelectorRegular.addEventListener("change", updateContrast);
+    contrastSelectorMedium.addEventListener("change", updateContrast);
+    contrastSelectorHigh.addEventListener("change", updateContrast);
     widthSelector60.addEventListener("change", updateWidth);
     widthSelector120.addEventListener("change", updateWidth);
     widthSelectorMax.addEventListener("change", updateWidth);
@@ -1605,49 +1641,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
