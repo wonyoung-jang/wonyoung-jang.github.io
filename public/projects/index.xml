@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/projects/
+      https://wonyoungjang.org/projects/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Fri, 26 Jul 2024 17:33:32 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/projects/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           Design
         </title>
 
         <link>
-          http://192.168.40.181:1313/projects/design/
+          https://wonyoungjang.org/projects/design/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/projects/design/
+          https://wonyoungjang.org/projects/design/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/projects/software/
+          https://wonyoungjang.org/projects/software/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/projects/software/
+          https://wonyoungjang.org/projects/software/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/projects/university/
+          https://wonyoungjang.org/projects/university/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/projects/university/
+          https://wonyoungjang.org/projects/university/
         </guid>
 
         <description>

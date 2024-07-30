@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html   lang="en" 
         dir="auto">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,11 +23,11 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.addf7806a9855196023f178c430e05eca09896826d4334f6eb29e2685e97cc13.css" integrity="sha256-rd94BqmFUZYCPxeMQw4F7KCYloJtQzT26yniaF6XzBM=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.4cc51df2192fc03b3475800bdcaaaef7878f1a5d7236f3a790badc6afd88d4db.css" integrity="sha256-TMUd8hkvwDs0dYAL3Kqu94ePGl1yNvOnkLrcav2I1Ns=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.eb1cb93569d037044158d9cce8085c34c3de0dd46a6d8dd9e96a3006766c15d1.css" integrity="sha256-6xy5NWnQNwRBWNnM6AhcNMPeDdRqbY3Z6WowBnZsFdE=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/3custom.min.af20a48ffbbbe9cb91d23720328513403c68f213ed94fa2595bc3f9af394f847.css" integrity="sha256-ryCkj/u76cuR0jcgMoUTQDxo8hPtlPollbw/mvOU&#43;Ec=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/3custom.min.044c489965bee4489326ed0426efacdd87a55d23412b369bfc0eb4e659000b77.css" integrity="sha256-BExImWW&#43;5EiTJu0EJu&#43;s3YelXSNBKzab/A605lkAC3c=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/4helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -35,15 +35,15 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
-    <link rel="alternate" type="application/rss+xml" href="http://192.168.40.181:1313/resources/tokens/index.xml">
+    <link rel="alternate" type="application/rss+xml" href="https://wonyoungjang.org/resources/tokens/index.xml">
 
 
 
-    <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/resources/tokens/">
+    <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/resources/tokens/">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/resources/tokens/">
+<meta property="og:url" content="https://wonyoungjang.org/resources/tokens/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Tokens">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -89,7 +89,7 @@
     <section class="start">
         <a  class="component button common"
     id="site-headline"
-    href="http://192.168.40.181:1313/"
+    href="https://wonyoungjang.org/"
     accesskey="h" 
     title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
 
@@ -570,7 +570,12 @@
 <script defer>
   document.querySelectorAll('input[name="contrast"]').forEach(radio => {
     radio.addEventListener('change', function() {
-        document.body.className = this.value === 'regular' ? '' : this.value + '-contrast';
+        if (this.value === 'regular') {
+            document.body.classList.remove('medium-contrast', 'high-contrast');
+        } else {
+            document.body.classList.remove('medium-contrast', 'high-contrast');
+            document.body.classList.add(this.value + '-contrast');
+        }
     });
 });
 
@@ -1042,7 +1047,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to Colors" 
-            href="http://192.168.40.181:1313/colors/">
+            href="https://wonyoungjang.org/colors/">
             
           
           
@@ -1069,7 +1074,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to Elevations" 
-            href="http://192.168.40.181:1313/elevations/">
+            href="https://wonyoungjang.org/elevations/">
             
           
           
@@ -1096,7 +1101,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to Motion" 
-            href="http://192.168.40.181:1313/motion/">
+            href="https://wonyoungjang.org/motion/">
             
           
           
@@ -1123,7 +1128,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to Shapes" 
-            href="http://192.168.40.181:1313/shapes/">
+            href="https://wonyoungjang.org/shapes/">
             
           
           
@@ -1150,7 +1155,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to Typography" 
-            href="http://192.168.40.181:1313/typography/">
+            href="https://wonyoungjang.org/typography/">
             
           
           
@@ -1177,7 +1182,7 @@
               
         <a  class="component card elevated"
             aria-label="post link to States" 
-            href="http://192.168.40.181:1313/states/">
+            href="https://wonyoungjang.org/states/">
             
           
           
@@ -1378,7 +1383,7 @@
 
 <section class="copyright">
     <a  id="copyright-button"
-        href="http://192.168.40.181:1313/">
+        href="https://wonyoungjang.org/">
         © 2024 Wonyoung Jang
     </a>
 </section>

@@ -1,4 +1,4 @@
-:root .high-contrast {
+:not(.dark).high-contrast {
   /* SHARED MC,HC */
   --color-on-primary-fixed:             var(--palette-primary-100);
   --color-on-primary-fixed-variant:     var(--palette-primary-100);
