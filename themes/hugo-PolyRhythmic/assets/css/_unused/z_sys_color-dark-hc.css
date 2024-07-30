@@ -53,13 +53,6 @@
   /* On surface roles */
   --color-on-surface-variant:           var(--palette-neutral-variant-100);
   
-  /* Surface container roles */
-  --color-surface-container-lowest:     var(--palette-neutral-4);
-  --color-surface-container-low:        var(--palette-neutral-10);
-  --color-surface-container:            var(--palette-neutral-12);
-  --color-surface-container-high:       var(--palette-neutral-17);
-  --color-surface-container-highest:    var(--palette-neutral-24);
-  
   /* Inverse */
   --color-inverse-primary:              var(--palette-primary-20);
   
