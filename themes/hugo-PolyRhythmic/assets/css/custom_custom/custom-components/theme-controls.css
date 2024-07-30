@@ -180,6 +180,7 @@
 
 #dim-images-selector-container,
 #tertiary-temperature-selector-container,
+#contrast-selector-container,
 #max-width-selector-container {
   display: flex;
   flex-flow: column nowrap;

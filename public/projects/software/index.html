@@ -23,7 +23,7 @@
 </title><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <link crossorigin="anonymous" href="/assets/css/1base.min.21956c53de2c11257112a0c5c1e76798e97d1b55e0dc0e990a6b3ec10a0cf55a.css" integrity="sha256-IZVsU94sESVxEqDFwednmOl9G1Xg3A6ZCms&#43;wQoM9Vo=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/1base.min.addf7806a9855196023f178c430e05eca09896826d4334f6eb29e2685e97cc13.css" integrity="sha256-rd94BqmFUZYCPxeMQw4F7KCYloJtQzT26yniaF6XzBM=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/2material_design.min.eb1cb93569d037044158d9cce8085c34c3de0dd46a6d8dd9e96a3006766c15d1.css" integrity="sha256-6xy5NWnQNwRBWNnM6AhcNMPeDdRqbY3Z6WowBnZsFdE=" rel="preload stylesheet" as="style">
 
@@ -356,6 +356,32 @@
     </div>
 
     
+    <span class="theme-controls-title headline-small">Contrast</span>
+    <div id="contrast-selector-container">
+      <div class="title-large">Color contrast</div>
+      
+      <div class="set segmented-buttons">
+        <label class="component button segmented start">
+          <input type="radio" name="contrast" id="contrast-selector-regular" value="regular"/>
+          <i class="icon">check</i>
+          Regular
+        </label>
+        
+        <label class="component button segmented">
+          <input type="radio" name="contrast" id="contrast-selector-medium" value="medium"/>
+          <i class="icon">check</i>
+          Medium
+        </label>
+        
+        <label class="component button segmented end">
+          <input type="radio" name="contrast" id="contrast-selector-high" value="high"/>
+          <i class="icon">check</i>
+          High
+        </label>
+      </div>
+    </div>
+
+    
     <span class="theme-controls-title headline-small">Shapes</span>
     <div id="shape-selector-container">
       <label class="title-large" for="shape-selector">Shape</label>
@@ -542,6 +568,12 @@
 </button>
 
 <script defer>
+  document.querySelectorAll('input[name="contrast"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        document.body.className = this.value === 'regular' ? '' : this.value + '-contrast';
+    });
+});
+
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
     var widthSelector60 = document.getElementById("width-selector-60");
@@ -1342,49 +1374,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

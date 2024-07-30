@@ -53,6 +53,32 @@
       </section>
     </div>
 
+    {{/*  Contrast  */}}
+    <span class="theme-controls-title headline-small">Contrast</span>
+    <div id="contrast-selector-container">
+      <div class="title-large">Color contrast</div>
+      
+      <div class="set segmented-buttons">
+        <label class="component button segmented start">
+          <input type="radio" name="contrast" id="contrast-selector-regular" value="regular"/>
+          <i class="icon">check</i>
+          Regular
+        </label>
+        
+        <label class="component button segmented">
+          <input type="radio" name="contrast" id="contrast-selector-medium" value="medium"/>
+          <i class="icon">check</i>
+          Medium
+        </label>
+        
+        <label class="component button segmented end">
+          <input type="radio" name="contrast" id="contrast-selector-high" value="high"/>
+          <i class="icon">check</i>
+          High
+        </label>
+      </div>
+    </div>
+
     {{/*  Shape  */}}
     <span class="theme-controls-title headline-small">Shapes</span>
     <div id="shape-selector-container">
@@ -240,6 +266,17 @@
 </button>
 
 <script defer>
+  document.querySelectorAll('input[name="contrast"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        if (this.value === 'regular') {
+            document.body.classList.remove('medium-contrast', 'high-contrast');
+        } else {
+            document.body.classList.remove('medium-contrast', 'high-contrast');
+            document.body.classList.add(this.value + '-contrast');
+        }
+    });
+});
+
   document.addEventListener("DOMContentLoaded", function () {
     var root = document.documentElement;
     var widthSelector60 = document.getElementById("width-selector-60");
