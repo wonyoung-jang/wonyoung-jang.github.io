@@ -23,6 +23,8 @@ h6 {
     }
   }
 
+  &:active .anchor,
+  &:focus-within .anchor,
   &:hover .anchor {
     opacity: 1;
   }
