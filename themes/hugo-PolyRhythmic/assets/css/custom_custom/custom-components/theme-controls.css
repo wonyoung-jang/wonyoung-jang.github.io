@@ -178,16 +178,21 @@
   gap: var(--size-3);
 }
 
+#shape-selector-container,
 #dim-images-selector-container,
 #max-width-selector-container {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  align-items: stretch;
+  align-items: flex-start;
 
   & div {
     width: 100%;
     margin-bottom: var(--size-4);
+  }
+
+  & .title-large {
+    text-align: left;
   }
 
   & > .segmented-buttons .segmented {
