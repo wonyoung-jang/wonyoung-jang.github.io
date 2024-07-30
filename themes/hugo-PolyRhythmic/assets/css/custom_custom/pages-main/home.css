@@ -58,7 +58,7 @@
     margin: 0 var(--spacing-panes);
     padding: 0 var(--spacing-panes);
     border-radius: var(--shape-corner-m);
-    background-color: var(--color-surface-container-low);
+    background-color: var(--color-surface-dim);
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
