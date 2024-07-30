@@ -179,8 +179,6 @@
 }
 
 #dim-images-selector-container,
-#tertiary-temperature-selector-container,
-#contrast-selector-container,
 #max-width-selector-container {
   display: flex;
   flex-flow: column nowrap;
@@ -203,31 +201,59 @@
   }
 }
 
-#tertiary-temperature-selector-container {
+#color-selector-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  gap: var(--size-2);
+  text-align: left;
+
+  & .title-large {
+    margin-bottom: var(--size-2);
+  }
+
+  & .title-large:not(:first-child) {
+    margin-top: var(--size-5);
+  }
+
   & .color-temp-reference {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-  }
+    margin-top: var(--size-2);
 
-  & #primary,
-  & #tertiary {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: center;
-    padding: var(--size-3);
-  }
-
-  & #primary {
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
-    border-radius: var(--shape-corner-m-start);
-  }
+    & #primary,
+    & #primary-container,
+    & #tertiary,
+    & #tertiary-container { 
+      flex: 1 1 0;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: stretch;
+      justify-content: center;
+      padding: var(--size-2);
+    }
   
-  & #tertiary {
-    background-color: var(--color-tertiary);
-    color: var(--color-on-tertiary);
-    border-radius: var(--shape-corner-m-end);
+    & #primary {
+      background-color: var(--color-primary);
+      border-radius: var(--shape-corner-xl-start);
+    }
+    
+    & #tertiary {
+      background-color: var(--color-tertiary);
+      border-radius: var(--shape-corner-xl-end);
+    }
+
+    & #primary-container {
+      background-color: var(--color-on-primary);
+      border-radius: var(--shape-corner-xl-start);
+    }
+    
+    & #tertiary-container {
+      background-color: var(--color-on-tertiary);
+      border-radius: var(--shape-corner-xl-end);
+    }
   }
 }
