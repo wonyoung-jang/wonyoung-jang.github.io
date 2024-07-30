@@ -52,32 +52,21 @@ main:
     weight: 40
 
 footer:
-  - identifier: About
-    name: About
+  - name: About
     pageRef: /about
-  - identifier: Archives
-    name: Archives
+  - name: Archives
     pageRef: /archives
-  - identifier: Contact
-    name: Contact
+  - name: Contact
     pageRef: /contact
-  - identifier: Graph
-    name: Graph
+  - name: Graph
     pageRef: /graph
-  - identifier: Now
-    name: Now
+  - name: Now
     pageRef: /now
-  - identifier: Playground
-    name: Playground
-    pageRef: /playground
-  - identifier: RSS
-    name: RSS
+  - name: RSS
     url: https://wonyoungjang.org/index.xml
-  - identifier: Search
-    name: Search
+  - name: Search
     pageRef: /search
-  - identifier: Sitemap
-    name: Sitemap
+  - name: Sitemap
     pageRef: /sitemap
 
 projects:
