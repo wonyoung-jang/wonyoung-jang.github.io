@@ -272,9 +272,6 @@
   /* Complementary - No harmonization */
   --color-complementary:                var(--palette-complementary-40);
   --color-complementary-container:      var(--palette-complementary-90);
-
-  /* || Custom headings */
-  --color-heading-2: var(--palette-neutral-90)
 }
 
 :not(.dark) {
@@ -489,10 +486,6 @@
     /* Complementary - No harmonization */
     --color-complementary:                var(--palette-complementary-30);
     --color-complementary-container:      var(--palette-complementary-50);
-
-    /* || Custom headings */
-    --color-heading-2: var(--palette-neutral-90)
-
   }
 
   &.high-contrast {
@@ -1307,10 +1300,20 @@
 
 :root {
   /* || Custom headings */
-  --color-heading-1: var(--palette-sub30-50);
-  --color-heading-2: var(--palette-sub60-50);
-  --color-heading-3: var(--palette-sub90-50);
-  --color-heading-4: var(--palette-sub120-50);
-  --color-heading-5: var(--palette-sub150-50);
-  --color-heading-6: var(--palette-sub180-50);
+  --color-heading-1: var(--palette-sub30-40);
+  --color-heading-2: var(--palette-sub60-40);
+  --color-heading-3: var(--palette-sub90-40);
+  --color-heading-4: var(--palette-sub120-40);
+  --color-heading-5: var(--palette-sub150-40);
+  --color-heading-6: var(--palette-sub180-40);
+}
+
+.dark {
+  /* || Custom headings */
+  --color-heading-1: var(--palette-sub30-60);
+  --color-heading-2: var(--palette-sub60-60);
+  --color-heading-3: var(--palette-sub90-60);
+  --color-heading-4: var(--palette-sub120-60);
+  --color-heading-5: var(--palette-sub150-60);
+  --color-heading-6: var(--palette-sub180-60);
 }
