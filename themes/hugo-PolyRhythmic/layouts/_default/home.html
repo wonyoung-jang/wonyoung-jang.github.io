@@ -77,8 +77,10 @@
 
       {{/*  Home page content  */}}
       {{ with .Content }}
-        <div class="home-page-content" id="post-content">
-          {{ . }}
+        <div id="post-content">
+          <div class="home-page-content">
+            {{ . }}
+          </div>
         </div>
       {{ end }}
   

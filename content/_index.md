@@ -2,54 +2,57 @@
 date:
 - 2024-07-28 Sunday
 lastMod: 2024-07-29
-title: Wonyoungjang.Orgs
 ---
 ## Things to do
 
-![Top app bar.webp](/assets/top_app_bar_1722269964645_0.webp "Top bar")
+![Top app bar.webp](/assets/top_app_bar_1722269964645_0.webp "top bar")
 
-  + **Random page roulette**: Feeling adventurous? Hit the random page button in the top bar.
+**Random page roulette**: Feeling adventurous? Hit the random page button in the top bar.
 
 ![Random button.webp](/assets/random_button_1722268888452_0.webp)
 
-  + **Light/dark mode toggle**: Toggle between day and night modes.
+**Light/dark mode toggle**: Toggle between day and night modes.
 
 ![Theme toggle.webp](/assets/theme_toggle_1722268883217_0.webp)
 
-  + ### Full theme control
+### Full theme control
 
-  + Unlike Material Design's specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners,  and various font stylings.
+Unlike Material Design's specs, I allow customizing the temperature direction of tertiary colors, the roundedness of shape corners,  and various font stylings.
 
-  + Access the theme control panel in the top bar.
+Access the theme control panel in the top bar.
 
 ![Theme controls.webp](/assets/theme_controls_1722268942439_0.webp)
 
-  + #### Shapes
+#### Colors
 
-    + **Change the roundedness:** Slide to make things as sharp or smooth as you want.
+**Key hue:** Pick an input color hue.
 
-  + #### Colors
+**Key chroma:** Pick an input color chroma.
 
-    + Adjust the key color to update the theme site-wide
+**Tertiary temperature:** Switch between cooler and warmer directions.
 
-    + **Key hue:** Pick a input hue.
+**Contrast:** Change the contrast levels for the site.
 
-    + **Key chroma:** Pick a input chroma.
+#### Shapes
 
-    + **Tertiary Temperature:** Switch between cooler and warmer direction.
+**Shape roundness:** Slide to make things as sharp or smooth as you want.
 
-  + #### Typography
+#### Images
 
-    + **Content width**: Stretch or shrink the layout to your liking.
+**Dim images:** Lowers image brightness in dark mode.
 
-    + **Font size**: Adjust font size.
+#### Typography
 
-    + **Font picker**: Choose various font families for each typeface.
+**Content width**: Stretch or shrink content's horizontal width.
 
-    + **Line spacing**: Adjust content density.
+**Font size**: Adjust font size.
 
-  + ### Check out my stuff below
+**Line height**: Adjust vertical density of content.
 
-    + **Projects**: Take a peek at what I've been working on.
+**Font families**: Choose various font families for brand, plain, and code typefaces.
 
-    + **Resources**: I've collected some cool stuff you might find useful.
+### Check out my stuff below
+
+**Projects**: Take a peek at what I've been working on.
+
+**Resources**: I've collected some cool stuff you might find useful.
