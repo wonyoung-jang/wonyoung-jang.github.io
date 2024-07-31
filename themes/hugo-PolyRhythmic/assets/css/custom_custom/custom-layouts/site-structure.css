@@ -6,7 +6,7 @@
   --layout-align-content: initial;
   --layout-justify-content: initial;
   --layout-width: 100%;
-  --layout-height: auto;
+  --layout-height: 100%;
   --layout-min-height: calc(100dvh - var(--size-32));
   --layout-margin: 0;
   --layout-gap: 0;
