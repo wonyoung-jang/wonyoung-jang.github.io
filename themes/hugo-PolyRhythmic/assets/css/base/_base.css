@@ -26,9 +26,9 @@
 /* Scrollbar */
 @media (pointer: fine) {
   /* Firefox */
+  html,
   body,
   main,
-  html,
   * {
     scrollbar-color: var(--color-primary) transparent;
     scrollbar-width: thin;
