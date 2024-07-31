@@ -23,7 +23,7 @@
   --container-outline-press: 1px solid var(--color-outline);
   --container-outline-disabled: 1px solid var(--color-outline-variant);
   
-  & .icon {
+  & .icon:first-of-type {
     font-size: 18px;
     color: var(--color-on-surface);
     display: none;
