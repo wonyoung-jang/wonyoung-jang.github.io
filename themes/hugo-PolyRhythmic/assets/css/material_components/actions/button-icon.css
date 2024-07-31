@@ -1,9 +1,10 @@
 .button.icon {
   min-height: var(--size-10);
   min-width: var(--size-10);
-  --container-padding: unset;
+  --container-padding: 0;
   --container-shape: var(--shape-corner-full);
   --icon-color: var(--color-on-surface-variant);
+  
 
   & input[type="checkbox"] {
     display: none;
@@ -11,7 +12,6 @@
     &:checked + .button.icon {
       --icon-color: var(--color-primary);
 
-      & i.icon,
       & .icon,
       & svg {
         font-variation-settings: "FILL" 1;
@@ -98,13 +98,5 @@
         }
       }
     }
-  }
-
-  & .icon,
-  & svg,
-  & img {
-    font-size: var(--size-6);
-    width: var(--size-6);
-    height: var(--size-6);
   }
 }

@@ -6,7 +6,7 @@
   letter-spacing: normal;
   text-transform: none;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -23,11 +23,10 @@
   text-align: center;
 
   overflow: hidden;
-
-  inline-size: var(--size-6);
-  min-inline-size: var(--size-6);
-  block-size: var(--size-6);
-  min-block-size: var(--size-6);
+  height: var(--size-6);
+  width: var(--size-6);
+  min-height: var(--size-6);
+  min-width: var(--size-6);
 }
 
 .github-icon,
