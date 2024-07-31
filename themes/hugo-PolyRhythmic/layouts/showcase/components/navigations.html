@@ -300,6 +300,20 @@
           (dict "label" "Tab 1" "active" "active")
           (dict "label" "Tab 2")
           (dict "label" "Tab 3")
+          (dict "label" "Tab 4")
+          (dict "label" "Tab 5")
+          )
+        )
+      }}
+
+      {{ partial "components/navigations/tabs.html" (dict
+        "type" "primary"
+        "tabs" (slice
+          (dict "icon" "add" "active" "active")
+          (dict "icon" "list")
+          (dict "icon" "token")
+          (dict "icon" "menu")
+          (dict "icon" "folder")
           )
         )
       }}
@@ -310,16 +324,8 @@
           (dict "icon" "add" "label" "Tab 1" "active" "active")
           (dict "icon" "add" "label" "Tab 2")
           (dict "icon" "add" "label" "Tab 3")
-          )
-        )
-      }}
-
-      {{ partial "components/navigations/tabs.html" (dict
-        "type" "primary"
-        "tabs" (slice
-          (dict "icon" "add" "active" "active")
-          (dict "icon" "add")
-          (dict "icon" "add")
+          (dict "icon" "add" "label" "Tab 4")
+          (dict "icon" "add" "label" "Tab 5")
           )
         )
       }}
@@ -332,6 +338,8 @@
           (dict "label" "Tab 1" "active" "active")
           (dict "label" "Tab 2")
           (dict "label" "Tab 3")
+          (dict "label" "Tab 4")
+          (dict "label" "Tab 5")
           )
         )
       }}
@@ -342,9 +350,71 @@
           (dict "icon" "add" "label" "Tab 1" "active" "active")
           (dict "icon" "add" "label" "Tab 2")
           (dict "icon" "add" "label" "Tab 3")
+          (dict "icon" "add" "label" "Tab 4")
+          (dict "icon" "add" "label" "Tab 5")
           )
         )
       }}
+      
+      <div class="sub-showcase-components-header">Subcomponents</div>
+      <div class="set tabs primary">
+        <div class="component tab">
+          <div class="label">Primary</div>
+        </div>
+      </div>
+      <div class="set tabs primary">
+        <div class="component tab active">
+          <div class="label">Active</div>
+        </div>
+      </div>
+
+      <div class="set tabs primary">
+        <div class="component tab">
+          <i class="icon">add</i>
+        </div>
+      </div>
+      <div class="set tabs primary">
+        <div class="component tab active">
+          <i class="icon">add</i>
+        </div>
+      </div>
+      
+      <div class="set tabs primary">
+        <div class="component tab">
+          <i class="icon">add</i>
+          <div class="label">Icon & label</div>
+        </div>
+      </div>
+      <div class="set tabs primary">
+        <div class="component tab active">
+          <i class="icon">add</i>
+          <div class="label">Active</div>
+        </div>
+      </div>
+      
+      <div class="set tabs secondary">
+        <div class="component tab">
+          <div class="label">Secondary</div>
+        </div>
+      </div>
+      <div class="set tabs secondary">
+        <div class="component tab active">
+          <div class="label">Active</div>
+        </div>
+      </div>
+
+      <div class="set tabs secondary">
+        <div class="component tab">
+          <i class="icon">add</i>
+          <div class="label">Icon & label</div>
+        </div>
+      </div>
+      <div class="set tabs secondary">
+        <div class="component tab active">
+          <i class="icon">add</i>
+          <div class="label">Active</div>
+        </div>
+      </div>
     </div>
 
   </section>

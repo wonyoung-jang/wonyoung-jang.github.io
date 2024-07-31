@@ -32,8 +32,12 @@
     --text-color: var(--color-on-surface-variant);
   }
 
-  &.primary .tab {    
-    &:has(.icon) {
+  &.primary .tab {
+    &:has(.icon):not(:has(.label)) {
+      --container-height: var(--size-12);
+    }
+
+    &:has(.icon + .label) {
       --container-height: var(--size-16);
     }
     

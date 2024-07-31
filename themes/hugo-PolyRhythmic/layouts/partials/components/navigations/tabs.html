@@ -4,7 +4,10 @@
       {{ with .icon }}
         <i class="icon">{{ . }}</i>
       {{ end }}
-      <div class="label">{{ .label }}</div>
+      
+      {{ with .label }}
+        <div class="label">{{ . }}</div>
+      {{ end }}
     </span>
   {{ end }}
 </div>
