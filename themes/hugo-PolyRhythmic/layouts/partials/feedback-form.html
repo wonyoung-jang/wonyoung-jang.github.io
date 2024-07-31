@@ -7,7 +7,8 @@
     <div class="component text-field filled">
         <input 
             type="text"
-            placeholder=" " 
+            placeholder=" "
+            name="feedback" 
             required>
         <label>{{ i18n "contact_name" }}</label>
         <hr class="divider">
@@ -20,6 +21,7 @@
         <input 
             type="email"
             placeholder=" " 
+            name="feedback"
             required>
         <label>{{ i18n "contact_mail" }}</label>
         <hr class="divider">
@@ -32,6 +34,7 @@
         <input 
             type="text"
             placeholder=" " 
+            name="feedback"
             required>
         <label>{{ i18n "contact_subject" }}</label>
         <hr class="divider">
@@ -43,7 +46,8 @@
     <div class="component text-field filled">
         <textarea 
             type="text"
-            placeholder=" " 
+            placeholder=" "
+            name="feedback"
             required></textarea>
         <label>{{ i18n "contact_message" }}</label>
         <hr class="divider">
@@ -54,8 +58,8 @@
 
     <button 
         class="component button common filled" 
-        type="submit" 
-        name="submit">
+        type="submit"
+        name="feedback">
         {{ i18n "contact_submit_feedback" }}
     </button>
 </form>
