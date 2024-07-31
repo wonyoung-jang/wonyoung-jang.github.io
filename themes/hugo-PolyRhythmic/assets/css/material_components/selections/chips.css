@@ -31,12 +31,6 @@
   --text-color: var(--color-on-surface);
   --icon-color: var(--color-primary);
 
-  --container-elevation-hover: initial;
-
-  --container-elevation-focus: initial;
-
-  --container-elevation-press: initial;
-
   font-size: var(--typescale-label-large-size);
   line-height: var(--typescale-label-large-line-height);
   font-weight: var(--typescale-label-large-weight);
@@ -53,14 +47,31 @@
   & input {
     display: none;
   }
+  
+  &:has(.avatar) {
+    padding-left: var(--size-1);
 
-  &:has(.leading-icon) {
+    & .avatar {
+      height: var(--size-6);
+      width: var(--size-6);
+    }
+  }
+
+  &:has(.leading-icon, .favicon) {
     padding-left: var(--size-2);
+
+    & .favicon {
+      max-width: var(--size-5);
+      max-height: var(--size-5);
+      border-radius: var(--shape-corner-full);
+      overflow: hidden;
+    }
   }
 
   &:has(.trailing-icon) {
     padding-right: var(--size-2);
   }
+
 
   &.input {
     --container-padding: 0 var(--size-3);
