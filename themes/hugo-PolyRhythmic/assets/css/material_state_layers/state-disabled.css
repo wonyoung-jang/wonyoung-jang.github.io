@@ -14,7 +14,8 @@
     .switch,
     .text-field) {
   &.disabled,
-  &:disabled {
+  &:disabled,
+  &:has([disabled]) {
     pointer-events: none;
     cursor: not-allowed;
     opacity: var(--state-disabled-opacity);
