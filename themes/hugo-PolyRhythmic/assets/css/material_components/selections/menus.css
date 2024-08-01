@@ -35,3 +35,52 @@
     color: var(--color-surface-variant);
   }
 }
+
+.leading.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-6);
+  width: var(--size-6);
+  height: var(--size-6);
+}
+
+.leading.indent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size-6);
+  height: var(--size-6);
+}
+
+.trailing.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-6);
+  width: var(--size-6);
+  height: var(--size-6);
+}
+
+.trailing.keyboard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 13px;
+}
+
+.trailing.icon.selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-6);
+  width: var(--size-6);
+  height: var(--size-6);
+}
+
+.trailing.keyboard.selected {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 13px;
+}
