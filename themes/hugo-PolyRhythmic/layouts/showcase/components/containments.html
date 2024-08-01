@@ -281,6 +281,32 @@
           )
         )
       }}
+
+      {{/*  Subcomponents  */}}
+      <div class="sub-showcase-components-header">Subcomponents</div>
+
+      {{ partial "components/containments/carousels.html" (dict
+        "layout" "uncontained"
+        "images" (slice
+          (dict 
+            "icon" "image"
+            "size" "small")
+          (dict 
+            "icon" "image"
+            "size" "medium")
+          (dict
+            "icon" "image")
+          (dict
+            "size" "medium"
+            "label" "Label")
+          (dict
+            "size" "medium"
+            "label" "Label"
+            "supporting_text" "Supporting text")
+          )
+        )
+      }}
+
     </div>
     
     {{/*  Dialogs  */}}

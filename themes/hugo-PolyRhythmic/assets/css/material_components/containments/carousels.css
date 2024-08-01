@@ -63,5 +63,33 @@
     &.medium {
       min-width: var(--size-30);
     }
+
+    & .carousel-item-text {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: var(--size-1);
+      padding: var(--size-4);
+      color: var(--palette-white);
+      background: linear-gradient(180deg, #FFF0 0%, #0008 100%);
+      background-blend-mode: multiply;
+
+      & .label {
+        font-family: var(--typescale-title-medium-font);
+        font-size:   var(--typescale-title-medium-size);
+        font-weight: var(--typescale-title-medium-weight);
+        line-height: var(--typescale-title-medium-line-height);
+      }
+
+      & .supporting-text {
+        font-family: var(--typescale-label-small-font);
+        font-size:   var(--typescale-label-small-size);
+        font-weight: var(--typescale-label-small-weight);
+        line-height: var(--typescale-label-small-line-height);      
+      }
+    }
   }
 }
