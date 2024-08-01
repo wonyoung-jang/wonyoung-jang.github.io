@@ -108,7 +108,7 @@
       <div class="sub-showcase-components-header">Standard</div>
       {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "standard"
-        "headline" "Title"
+        "headline" "Headline"
         "nav_item_1" (dict 
           "icon" "home" 
           "label" "Home")
@@ -130,7 +130,7 @@
       
       {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "standard"
-        "headline" "Title"
+        "headline" "Headline"
         "nav_item_1" (dict "label" "Home")
         "nav_item_2" (dict "label" "Folder")
         "nav_item_3" (dict "label" "Note")
@@ -143,7 +143,7 @@
       <div class="sub-showcase-components-header">Modal</div>
       {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "modal"
-        "headline" "Title"
+        "headline" "Headline"
         "nav_item_1" (dict 
           "icon" "home" 
           "label" "Home")
@@ -165,7 +165,7 @@
       
       {{ partial "components/navigations/navigation-drawer.html" (dict
         "type" "modal"
-        "headline" "Title"
+        "headline" "Headline"
         "nav_item_1" (dict "label" "Home")
         "nav_item_2" (dict "label" "Folder")
         "nav_item_3" (dict "label" "Note")
@@ -177,6 +177,20 @@
     
       {{/*  Subcomponents  */}}
       <div class="display-medium">Subcomponents</div>
+      <div class="headline">Headline</div>
+      <div class="section-header">Section header</div>
+      <section class="subcomponent">
+        <div class="component navigation-item">
+          <i class="icon">stars</i>
+          <div class="label">Label</div>
+          <div class="badge-label">100+</div>
+        </div>
+        <div class="component navigation-item active">
+          <i class="icon">stars</i>
+          <div class="label">Label</div>
+          <div class="badge-label">100+</div>
+        </div>
+      </section>
 
       {{/*  Navigation rails  */}}
       <div class="display-medium">Navigation rails</div>
