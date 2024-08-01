@@ -194,3 +194,89 @@ datalist {
     }
   }
 }
+
+.indicator.value {
+  display: flex;
+  width: var(--size-12);
+  padding: var(--size-3) var(--size-4);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--shape-corner-full);
+  background-color: var(--color-inverse-surface);
+  color: var(--color-inverse-on-surface);
+  font-family: var(--typescale-label-large-font);
+  font-size:   var(--typescale-label-large-size);
+  font-weight: var(--typescale-label-large-weight);
+  line-height: var(--typescale-label-large-line-height);
+}
+
+.track.active {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: var(--size-100);
+  height: var(--size-4);
+  background-color: var(--color-primary);
+  border-radius: var(--shape-corner-l-start);
+}
+
+.handle {
+  display: flex;
+  width: var(--size-1);
+  height: var(--size-11);
+  border-radius: var(--shape-corner-full);
+  background-color: var(--color-primary);
+}
+
+.track.dot {
+  display: flex;
+  width: var(--size-1);
+  height: var(--size-1);
+  border-radius: var(--shape-corner-full);
+  background-color: var(--color-primary);
+}
+
+.track.inactive.right {
+  position: relative;
+  background-color: var(--color-secondary-container);
+  width: var(--size-100);
+  height: var(--size-4);
+  border-radius: var(--shape-corner-l-end);
+
+  & .track.dot {
+    position: absolute;
+    right: var(--size-1);
+    bottom: 6px;
+  }
+}
+
+.track.inactive.left {
+  position: relative;
+  background-color: var(--color-secondary-container);
+  width: var(--size-100);
+  height: var(--size-4);
+  border-radius: var(--shape-corner-l-start);
+
+  & .track.dot {
+    position: absolute;
+    left: var(--size-1);
+    bottom: 6px;
+  }
+}
+
+.discrete-dots {
+  display: flex;
+  justify-content: space-between;
+  width: var(--size-100);
+  align-items: flex-start;
+  padding: 0 var(--size-1);
+
+  & .track.dot:nth-child(1),
+  & .track.dot:nth-child(2),
+  & .track.dot:nth-child(3),
+  & .track.dot:nth-child(4),
+  & .track.dot:nth-child(5) {
+    background-color: var(--color-secondary-container);
+  }
+}
