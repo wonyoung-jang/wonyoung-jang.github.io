@@ -28,10 +28,11 @@
             <div class="content">
               <span class="headline">
                 {{ .Title }}
-                <sup class="page-count">
-                  {{len .Pages }}
-                </sup>
               </span>
+            </div>
+
+            <div class="trailing-supporting-text">
+              {{len .Pages }} {{ $.Title }}
             </div>
           </a>
           <hr class="divider">
