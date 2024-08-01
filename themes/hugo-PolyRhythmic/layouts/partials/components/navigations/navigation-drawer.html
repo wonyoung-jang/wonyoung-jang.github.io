@@ -1,8 +1,8 @@
-<div class="component navigation drawer {{ .type }}">
+<div class="set navigation drawer {{ .type }}">
   <div class="headline">{{ .headline }}</div>
 
   {{ with .nav_item_1 }}
-    <div class="component navigation-item active">
+    <div class="component item active">
       {{ with .icon }}
         <i class="icon">{{ . }}</i>
       {{ end }}
@@ -11,7 +11,7 @@
   {{ end }}
 
   {{ with .nav_item_2 }}
-    <div class="component navigation-item">
+    <div class="component item">
       {{ with .icon }}
         <i class="icon">{{ . }}</i>
       {{ end }}
@@ -20,7 +20,7 @@
   {{ end }}
 
   {{ with .nav_item_3 }}
-    <div class="component navigation-item">
+    <div class="component item">
       {{ with .icon }}
         <i class="icon">{{ . }}</i>
       {{ end }}
@@ -34,7 +34,7 @@
   {{ end }}
 
   {{ with .nav_item_4 }}
-    <div class="component navigation-item">
+    <div class="component item">
       {{ with .icon }}
         <i class="icon">{{ . }}</i>
       {{ end }}
@@ -43,7 +43,7 @@
   {{ end }}
 
   {{ with .nav_item_5 }}
-    <div class="component navigation-item">
+    <div class="component item">
       {{ with .icon }}
         <i class="icon">{{ . }}</i>
       {{ end }}

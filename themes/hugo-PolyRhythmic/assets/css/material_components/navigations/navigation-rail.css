@@ -1,11 +1,10 @@
 .navigation.rail {  
-  --container-gap: var(--size-10);
-  --container-width: var(--size-20);
-  --container-shape: var(--shape-corner-l);
-  
-  --container-padding: var(--size-11) 0 var(--size-14) 0;
-  --container-color: var(--color-surface);
-  --container-flex-flow: column nowrap;
+  --set-flex-flow: column nowrap;
+  --set-gap: var(--size-10);
+  --set-width: var(--size-20);
+  --set-shape: var(--shape-corner-l);
+  --set-padding: var(--size-11) 0 var(--size-14) 0;
+  --set-color: var(--color-surface);
   min-height: 900px;
 
   &.middle {
@@ -58,7 +57,7 @@
     padding: 18px var(--size-4);
   }
 
-  & .navigation-item {
+  & .item {
     flex: 1 0 0;
   
     --container-display: flex;

@@ -1,4 +1,4 @@
-<div class="component navigation rail {{ .align }}">
+<div class="set navigation rail {{ .align }}">
   <div class="menu-and-fab">
     <button class="component button icon">
       <i class="icon">{{ .icon_main }}</i>
@@ -11,7 +11,7 @@
 
   <div class="destinations">
     {{ with .nav_item_1 }}
-      <div class="component navigation-item active">
+      <div class="component item active">
         <div class="icon-container">
           <i class="icon">{{ .icon }}</i>
         </div>
@@ -20,7 +20,7 @@
     {{ end }}
     
     {{ with .nav_item_2 }}
-      <div class="component navigation-item">
+      <div class="component item">
         <div class="icon-container">
           <i class="icon">{{ .icon }}</i>
         </div>
@@ -29,7 +29,7 @@
     {{ end }}
     
     {{ with .nav_item_3 }}
-      <div class="component navigation-item">
+      <div class="component item">
         <div class="icon-container">
           <i class="icon">{{ .icon }}</i>
         </div>
@@ -38,7 +38,7 @@
     {{ end }}
     
     {{ with .nav_item_4 }}
-      <div class="component navigation-item">
+      <div class="component item">
         <div class="icon-container">
           <i class="icon">{{ .icon }}</i>
         </div>

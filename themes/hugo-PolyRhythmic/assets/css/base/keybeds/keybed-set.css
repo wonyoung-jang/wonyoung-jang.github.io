@@ -7,7 +7,9 @@
   --set-justify-content: initial;
   --set-width: initial;
   --set-gap: initial;
+  --set-padding: initial;
   --set-overflow: initial;
+  --set-color: initial;
 }
 
 .set {
@@ -19,5 +21,7 @@
   justify-content:  var(--set-justify-content);
   width:            var(--set-width);
   gap:              var(--set-gap);
+  padding:          var(--set-padding);
   overflow:         var(--set-overflow);
+  background-color: var(--set-color);
 }

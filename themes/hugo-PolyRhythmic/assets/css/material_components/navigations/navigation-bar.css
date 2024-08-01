@@ -1,12 +1,11 @@
 .navigation.bar {  
-  --container-gap: var(--size-2);
-  --container-width: 100%;
+  --set-flex-flow: row nowrap;
+  --set-gap: var(--size-2);
+  --set-width: 100%;
+  --set-padding: 0 var(--size-2);
+  --set-color: var(--color-surface-container);
   
-  --container-padding: 0 var(--size-2);
-  --container-color: var(--color-surface-container);
-  --container-flex-flow: row nowrap;
-  
-  & .navigation-item {
+  & .item {
     flex: 1 0 0;
   
     --container-display: flex;

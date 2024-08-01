@@ -1,6 +1,6 @@
 .navigation.drawer {  
-  --container-padding: var(--size-3);
-  --container-flex-flow: column nowrap;
+  --set-padding: var(--size-3);
+  --set-flex-flow: column nowrap;
   min-width: var(--size-90);
 
   &.standard {
@@ -43,7 +43,7 @@
     color: var(--color-outline);
   }
 
-  & .navigation-item {
+  & .item {
     flex: 1 0 0;
     align-self: stretch;
     min-height: var(--size-14);
@@ -100,7 +100,7 @@
   font-family: var(--typescale-title-small-font);
 }
 
-.navigation-item {
+.item {
   flex: 1 0 0;
   align-self: stretch;
   min-height: var(--size-14);
