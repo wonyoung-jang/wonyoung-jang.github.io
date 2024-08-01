@@ -2,14 +2,14 @@
     id="top-link"
     href="#top" 
     aria-label="go to top" 
-    title="Go to Top (ALT + SHIFT + g)" 
-    accesskey="g">
+    accesskey="g"
+    title="Go to top (g)">
     <i class="icon">vertical_align_top</i> 
 </a>
 
 <script defer>
     var mybutton = document.getElementById("top-link");
-    var scrollWrapper = document.querySelector("main");
+    var scrollWrapper = document.querySelector("html");
     
     function handleScroll() {
         if (scrollWrapper.scrollTop > 360) {

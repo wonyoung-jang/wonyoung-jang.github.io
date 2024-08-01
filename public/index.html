@@ -106,7 +106,7 @@ Colorslinkh4Key hue: Pick an input color hue.">
     id="site-headline"
     href="http://192.168.40.181:1313/"
     accesskey="h" 
-    title="Wonyoung Jang Home Page (ALT + SHIFT + h)">
+    title="Go to home (h)">
 
     <svg 
         class="site-icon"
@@ -169,7 +169,7 @@ Colorslinkh4Key hue: Pick an input color hue.">
   class="component button icon"
   id="random-button"
   accesskey="r"
-  title="Random page (ALT + SHIFT + R)"
+  title="Random page (r)"
   onclick="navigateToRandomPage(); return false;">
   <i class="icon">ifl</i>
 </button>
@@ -313,7 +313,7 @@ Colorslinkh4Key hue: Pick an input color hue.">
         <button class="component button icon"
         id="theme-toggle" 
         accesskey="t" 
-        title="Toggle Theme (ALT + SHIFT + t)" >
+        title="Toggle dark mode (t)" >
     <i class="icon" id="moon">dark_mode</i>
     <i class="icon" id="sun">light_mode</i>
 </button>
@@ -1475,14 +1475,14 @@ You&#39;re welcome to use anything you find here.
     id="top-link"
     href="#top" 
     aria-label="go to top" 
-    title="Go to Top (ALT + SHIFT + g)" 
-    accesskey="g">
+    accesskey="g"
+    title="Go to top (g)">
     <i class="icon">vertical_align_top</i> 
 </a>
 
 <script defer>
     var mybutton = document.getElementById("top-link");
-    var scrollWrapper = document.querySelector("main");
+    var scrollWrapper = document.querySelector("html");
     
     function handleScroll() {
         if (scrollWrapper.scrollTop > 360) {
