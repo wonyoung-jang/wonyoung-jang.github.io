@@ -18,7 +18,11 @@
     .picker.time,
     .text-field,
     .tooltip.rich,
-    .year
+    .year,
+    .calendar-cell.day,
+    .calendar-cell.today,
+    .calendar-cell.selected,
+    .calendar-cell.range
   ):not(:has(
       .button,
       .radio,

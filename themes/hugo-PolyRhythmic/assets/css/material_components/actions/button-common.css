@@ -4,11 +4,20 @@
   --container-gap: var(--size-2);
   --icon-color: var(--color-primary);
 
-  &:has(> i) {
+  &:has(i:first-child) {
     padding-left: var(--size-3);
     padding-right: var(--size-4);
 
-    & > i {
+    & i:first-child {
+      font-size: 18px;
+    }
+  }
+
+  &:has(i:last-child) {
+    padding-left: var(--size-2);
+    padding-right: var(--size-1);
+
+    & i:last-child {
       font-size: 18px;
     }
   }
@@ -19,7 +28,7 @@
   &.outlined {
     --container-padding: 0 var(--size-6);
 
-    &:has(i) {
+    &:has(i:first-child) {
       padding-left: var(--size-4);
     }
   }

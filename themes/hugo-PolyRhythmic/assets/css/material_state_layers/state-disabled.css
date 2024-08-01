@@ -13,7 +13,9 @@
     .slider,
     .switch,
     .text-field,
-    .year
+    .year,
+    .calendar-cell.day,
+    .calendar-cell.today
 ) {
   &.disabled,
   &:disabled,
