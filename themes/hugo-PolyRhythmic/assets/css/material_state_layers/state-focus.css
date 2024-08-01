@@ -17,7 +17,8 @@
     .tab,
     .picker.time,
     .text-field,
-    .tooltip.rich
+    .tooltip.rich,
+    .year
   ):not(:has(
       .button,
       .radio,

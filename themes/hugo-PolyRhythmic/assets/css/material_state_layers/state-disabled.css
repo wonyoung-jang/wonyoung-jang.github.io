@@ -12,7 +12,9 @@
     .radio,
     .slider,
     .switch,
-    .text-field) {
+    .text-field,
+    .year
+) {
   &.disabled,
   &:disabled,
   &:has([disabled]) {

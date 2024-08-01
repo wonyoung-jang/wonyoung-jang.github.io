@@ -82,3 +82,30 @@
     margin-top: var(--size-6);
   }
 }
+
+.year {
+  --container-display: flex;
+  --container-flex-flow: column nowrap;
+  --container-justify-content: center;
+  --container-align-items: center;
+  --container-gap: 10px;
+  --container-height: var(--size-8);
+  --container-width: var(--size-18);
+  --container-padding: var(--size-4);
+  
+  --container-shape: var(--shape-corner-full);
+  
+  --text-color: var(--color-on-surface-variant);
+  --icon-color: var(--color-on-surface-variant);
+  
+  --state-color: var(--color-on-surface-variant);
+}
+
+.year.selected {
+  --container-color: var(--color-primary);
+    
+  --text-color: var(--color-on-primary);
+  --icon-color: var(--color-on-primary);
+  
+  --state-color: var(--color-on-primary);
+}

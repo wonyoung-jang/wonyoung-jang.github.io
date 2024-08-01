@@ -16,7 +16,8 @@
     .snackbar,
     .tab,
     .picker.time,
-    .tooltip.rich
+    .tooltip.rich,
+    .year
   ):not(:has(
     .button, 
     .checkbox, 
