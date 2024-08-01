@@ -8,8 +8,7 @@
     .dialog,
     .list-item,
     .menu-item,
-    .drawer .item,
-    .subcomponent .item,
+    .drawer.item,
     .slider
     .search.bar
     .search.view,
