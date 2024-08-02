@@ -5,18 +5,6 @@
   --container-width: 100%;
   color: var(--color-outline-variant);
 
-  &.mid,
-  &.start {
-    padding-inline-start: var(--size-4);
-    padding-left: var(--size-4);
-  }
-
-  &.mid,
-  &.end {
-    padding-inline-end: var(--size-4);
-    padding-right: var(--size-4);
-  }
-
   &::before {
     content: "";
     background-color: currentColor;
@@ -24,34 +12,41 @@
     width: 100%;
   }
 
-  &.vertical {
-    display: flex;
-    flex-flow: column nowrap;
-    color: var(--color-outline-variant);
-    width: 1px;
-    height: 100%;
-    align-items: center;
-
-    &.mid,
-    &.start {
-      padding-inline-start: unset;
-      padding-left: unset;
-      padding-block-start: var(--size-4);
-      padding-top: var(--size-4);
-    }
-
-    &.mid,
-    &.end {
-      padding-inline-end: unset;
-      padding-right: unset;
-      padding-block-end: var(--size-4);
-      padding-bottom: var(--size-4);
-    }
+  &.mid {
+    --container-padding: 0 var(--size-4);
   }
-}
 
-@media (forced-colors: active) {
-  .divider::before {
-    background: CanvasText;
+  /* Left */
+  &.start {
+    --container-padding: 0 0 0 var(--size-4);
+  }
+
+  /* Right */
+  &.end {
+    --container-padding: 0 var(--size-4) 0 0;
+  }
+
+  /* Vertical */
+  &.vertical {
+    --container-display: flex;
+    --container-flex-flow: column nowrap;
+    --container-width: 1px;
+    --container-height: 100%;
+    --container-align-items: center;
+    color: var(--color-outline-variant);
+
+    &.mid {
+      --container-padding: var(--size-4) 0;
+    }
+
+    /* Top */
+    &.start {
+      --container-padding: var(--size-4) 0 0 0;
+    }
+
+    /* Bottom */
+    &.end {
+      --container-padding: 0 0 var(--size-4) 0;
+    }
   }
 }

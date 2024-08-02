@@ -18,90 +18,88 @@
         <span class="avatar monogram">A</span>
         <span class="icon avatar check">check</span>
       </section>
+
       {{/*  Used by Logseq  */}}
       <section class="test-set">
         <h2>Used by Logseq</h2>
         
         <hr>
         <h3>Content sectioning</h3>
-        <b>h1</b>
+        <b>< h1 ></b>
         <h1>h1</h1>
         
-        <b>h2</b>
+        <b>< h2 ></b>
         <h2>h2</h2>
         
-        <b>h3</b>
+        <b>< h3 ></b>
         <h3>h3</h3>
         
-        <b>h4</b>
+        <b>< h4 ></b>
         <h4>h4</h4>
         
-        <b>h5</b>
+        <b>< h5 ></b>
         <h5>h5</h5>
 
-        <b>h6</b>
+        <b>< h6 ></b>
         <h6>h6</h6>
 
         <hr>
         <h3>Text content</h3>
         
-        <b>blockquote</b>
+        <b>< blockquote ></b>
         <blockquote>blockquote</blockquote>
         
-        <b>pre</b>
+        <b>< pre ></b>
         <pre>pre</pre>
         
-        <b>div</b>
+        <b>< div ></b>
         <div>div</div>
         
-        <b>p</b>
+        <b>< p ></b>
         <p>p</p>
         
-        <b>ul, li</b>
-        <ul>
-          ul
-          <li>li</li>
-          <li>li</li>
-          <li>li</li>
-        </ul>
+        <b>< ul ></b>
+        <ul>ul</ul>
+
+        <b>< li ></b>
+        <li>li</li>
 
         <hr>
         <h3>Inline text semantics</h3>
         
-        <b>span</b>
+        <b>< span ></b>
         <span>span</span>
 
-        <b>a</b>
+        <b>< a ></b>
         <a href="#">a</a>
 
-        <b>code</b>
+        <b>< code ></b>
         <code>code</code>
         
-        <b>del</b>
+        <b>< del ></b>
         <del>del</del>
         
-        <b>em</b>
+        <b>< em ></b>
         <em>em</em>
         
-        <b>figure, img, figcaption</b>
+        <b>< figure >, < img >, < figcaption ></b>
         <figure>
           <img 
               src="/assets/logseq-elements_1719436919750_0.png" 
               alt="logseq-elements.png">
           <figcaption>
-            figcaption
           </figcaption>
         </figure>
         
-        <b>mark</b>
+        <b>< mark ></b>
         <mark>mark</mark>
         
-        <b>strong</b>
+        <b>< strong ></b>
         <strong>strong</strong>
 
         <hr>
         <h3>Tables</h3>
-        <b>table, thead, tbody, tr, th, td</b>
+        <b>< table >, < thead >, < tbody >, < tr >, < th >, < td ></b>
         <table>
           <thead>
             <tr>
@@ -118,27 +116,56 @@
         </table>
       </section>
 
-      {{/*  TODO Content sectioning  */}}
+      {{/*  Content sectioning  */}}
       <section class="test-set">
         <h2>Content sectioning</h2>
         <hr />
+
+        <b>< address ></b>
         <address>address</address>
+
+        <b>< article ></b>
         <article>article</article>
+
+        <b>< aside ></b>
         <aside>aside</aside>
+
+        <b>< footer ></b>
         <footer>footer</footer>
+
+        <b>< header ></b>
         <header>header</header>
+
+        <b>< h1 ></b>
         <h1>h1</h1>
+        
+        <b>< h2 ></b>
         <h2>h2</h2>
+        
+        <b>< h3 ></b>
         <h3>h3</h3>
+        
+        <b>< h4 ></b>
         <h4>h4</h4>
+        
+        <b>< h5 ></b>
         <h5>h5</h5>
+
+        <b>< h6 ></b>
         <h6>h6</h6>
+
+        <b>< hgroup ></b>
         <hgroup>
           <h2>hgroup</h2>
-          <h3>subtitle</h3>
+          <h6>subtitle</h6>
         </hgroup>
+
+        <b>< nav ></b>
         <nav>nav</nav>
+
+        <b>< section ></b>
         <section>section</section>
+        
         {{/*  <search>
           search
           <input type="search" />
@@ -146,50 +173,60 @@
         </search>  */}}
       </section>
         
-      {{/*  TODO Text content  */}}
+      {{/*  Text content  */}}
       <section class="test-set">
         <h2>Text content</h2>
         <hr />
         
+        <b>< blockquote ></b>
         <blockquote>blockquote</blockquote>
+
+        <b>< pre ></b>
         <pre>pre</pre>
         
         <hr>
+
+        <b>< div ></b>
         <div>div</div>
+
+        <b>< p ></b>
         <p>p</p>
 
         <hr>
+
+        <b>< figure ></b>
         <figure>
-          figure
+          <b>< figcaption ></b>
           <figcaption>figcaption</figcaption>
         </figure>
         
+        <b>< hr ></b>
         <hr>
-        hr<hr>
 
-        <hr>
+        <b>< ul > < li ></b>
         <ul>
           ul
           <li>li</li>
           <li>li</li>
           <li>li</li>
         </ul>
+
+        <b>< ol > < li ></b>
         <ol>
           ol
           <li>li</li>
           <li>li</li>
           <li>li</li>
         </ol>
-      
-
-        <hr>
+        
+        <b>< dl > < dt > < dd ></b>
         <dl>
           dl
           <dt>dt</dt>
           <dd>dd</dd>
         </dl>
-        
-        <hr>
+
+        <b>< menu > < li ></b>
         <menu>
           menu
           <li>li</li>
@@ -198,63 +235,101 @@
         </menu>
       </section>
 
-      {{/*  TODO Inline text semantics  */}}
+      {{/*  Inline text semantics  */}}
       <section class="test-set">
         <h2>Inline text semantics</h2>
         <hr />
 
+        <b>< span ></b>
         <span>span</span>
 
         <hr>
+
+        <b>< a ></b>
         <a href="#">a</a>
+
+        <b>< abbr ></b>
         <abbr title="Abbreviation">abbr</abbr>
-        
-        <hr>
+
+        <b>< b ></b>
         <b>b</b>
+
+        <b>< strong ></b>
         <strong>strong</strong>
 
-        <hr>
+        <b>< code ></b>
         <code>code</code>
+
+        <b>< kbd ></b>
         <kbd>kbd</kbd>
+
+        <b>< samp ></b>
         <samp>samp</samp>
         
-        <hr>
+        <b>< em ></b>
         <em>em</em>
+        
+        <b>< i ></b>
         <i>i</i>
 
-        <hr>
+        <b>< bdi ></b>
         <bdi>bdi Bidirectional Isolate element</bdi>
+
+        <b>< bdo ></b>
         <bdo dir="rtl">bdo Bidirectional Text Override element</bdo>
         
-        <hr>
-        br<br />Line Break element
+        <b>< br ></b>
+        <br />
         
-        <hr>
+        <b>< sub ></b>
         <span>Subscript<sub>sub</sub></span>
+        
+        <b>< sup ></b>
         <span>Superscript<sup>sup</sup></span>
 
-        <hr>
+        <b>< mark ></b>
         <mark>mark</mark>
 
-        <hr>
-        <cite>cite Citation element</cite>
+        <b>< cite ></b>
+        <cite>cite</cite>
+
+        <b>< data ></b>
         <data value="123">data</data>
+
+        <b>< dfn ></b>
         <dfn>dfn</dfn>
+
+        <b>< q ></b>
         <q>q</q>
+
+        <b>< ruby >, < rt >, < rp ></rt></b>
         <ruby> ruby<rp>(</rp><rt>rt</rt><rp>)</rp> </ruby>
+
+        <b>< s ></b>
         <s>s</s>
+
+        <b>< small ></b>
         <small>small</small>
+
+        <b>< time ></b>
         <time datetime="2024-07-20">time</time>
+
+        <b>< u ></b>
         <u>u</u>
+
+        <b>< var ></b>
         <var>var</var>
-        wbr<wbr />
+
+        <b>< wbr ></b>
+        <wbr />
       </section>
 
-      {{/*  TODO Image and multimedia  */}}
+      {{/*  Image and multimedia  */}}
       <section class="test-set">
         <h2>Image and multimedia</h2>
         <hr />
-        map
+
+        <b>< map >, < area ></b>
         <map name="example-map">
           area
           <area
@@ -264,20 +339,20 @@
             alt="Area" />
         </map>
         
-        audio
+        <b>< audio >, < source ></b>
         <audio controls>
           <source
             src="audio.mp3"
             type="audio/mpeg" />
         </audio>
         
-        img
+        <b>< img ></b>
         <img
           src="image.jpg"
           alt="Img"
           usemap="#example-map" />
         
-        video
+        <b>< video >,< track ></b>
         <video controls>
           track
           <track
@@ -287,17 +362,20 @@
         </video>
       </section>
 
-      {{/*  TODO Embedded content  */}}
+      {{/*  Embedded content  */}}
       <section class="test-set">
         <h2>Embedded content</h2>
         <hr />
-        embed
+
+        <b>< embed ></b>
         <embed
           type="text/html"
           src="embed.html" />
-        iframe
+
+        <b>< iframe ></b>
         <iframe src="iframe.html">iframe</iframe>
-        object
+
+        <b>< object >, < param ></b>
         <object
           data="object.data"
           type="application/pdf">
@@ -306,7 +384,8 @@
             name="param1"
             value="value1" />
         </object>
-        picture
+
+        <b>< picture >, < source >, < img ></b>
         <picture>
           source
           <source
@@ -327,8 +406,8 @@
       <section class="test-set">
         <h2>SVG and MathML</h2>
         <hr />
-        <strong>svg</strong>
-        <p>Container defining a new coordinate system and viewport</p>
+
+        <b>< svg >, < g >, < path ></b>
         <svg 
           class="site-icon"
           viewBox="0 0 512 512" 
@@ -378,17 +457,20 @@
                   C171.04 492.458 192.252 502 214.531 502
                   L283.37 502Z"/>
         </svg>
-        <hr>
-        <strong>math</strong>
-        <p>The top-level element in MathML</p>
+
+        <b>< math >, < mrow >, < mo >, < mi >, < mn >, < msup >, < msub ></b>
         <math>
           <mrow>
             <mo>E</mo>
             <mo>=</mo>
+            <msub>
+              <mi>m</mi>
+              <mn>0</mn>
+            </msub>
             <msup>
-              <mi>mc</mi>
+              <mi>c</mi>
               <mn>2</mn>
-            </msup>  
+            </msup>
           </mrow>
         </math>
       </section>
@@ -397,18 +479,20 @@
       <section class="test-set">
         <h2>Demarcating edits</h2>
         <hr />
-        <strong>del</strong>
+        
+        <b>< del ></b>
         <del>Represents a range of text that has been deleted from a document</del>
-        <hr>
-        <strong>ins</strong>
+
+        <b>< ins ></b>
         <ins>Represents a range of text that has been added to a document</ins>
       </section>
 
-      {{/*  TODO Tables  */}}
+      {{/*  Tables  */}}
       <section class="test-set">
         <h2>Table content</h2>
         <hr />
-        table
+
+        <b>< table >, < caption >, < colgroup >, < col >, < thead >, < tbody >, < tfoot >, < tr >, < th >, < td ></b>
         <table>
           <caption>
             caption
@@ -437,10 +521,12 @@
         </table>
       </section>
 
-      {{/*  TODO Forms  */}}
+      {{/*  Forms  */}}
       <section class="test-set">
         <h2>Forms</h2>
         <hr />
+
+        <b>< form >, < fieldset >, < legend >, < label >, < input >, < datalist >, < button >, < select >, < optgroup >, < option >, < textarea >, < output >, < progress >, < meter ></b>
         <form>
           <fieldset>
             <legend>legend</legend>
@@ -484,15 +570,14 @@
       <section class="test-set">
         <h2>Interactive elements</h2>
         <hr />
-        <strong>details & summary</strong>
+
+        <b>< details >, < summary ></b>
         <details>
           <summary>Summary</summary>
           Details
         </details>
 
-        <hr>
-
-        <strong>dialog</strong>
+        <b>< dialog ></b>
         <dialog open>
           <p>dialog</p>
           <form method="dialog">
