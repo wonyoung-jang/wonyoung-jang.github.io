@@ -10,19 +10,23 @@
     <div class="showcase-components-header">Badges</div>
     <div class="layout showcase-components">
       <div class="sub-showcase-components-header">Badge</div>
-      {{ partial "components/communications/badges.html" (dict 
-          "size" "large" 
-          "label" "999+"
-        ) 
-      }}
-
-      {{ partial "components/communications/badges.html" (dict 
-          "size" "large" 
-          "label" "3"
-        ) 
-      }}
-
       {{ partial "components/communications/badges.html" }}
+
+      {{ partial "components/communications/badges.html" (dict 
+          "size" "large" 
+          "label" "3") }}
+      
+      {{ partial "components/communications/badges.html" (dict 
+          "size" "large" 
+          "label" "999") }}
+      
+      {{ partial "components/communications/badges.html" (dict 
+          "size" "large" 
+          "label" "9999") }}
+      
+      {{ partial "components/communications/badges.html" (dict 
+          "size" "large" 
+          "label" "99999") }}
     </div>
     
     {{/*  Progress indicators  */}}

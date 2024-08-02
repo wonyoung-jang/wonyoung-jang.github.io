@@ -25,7 +25,7 @@
 
     <link crossorigin="anonymous" href="/assets/css/1_base.min.1b1275783548e63aeeef0d84eeade1cafc748e56ffef7343fd06d95daa610826.css" integrity="sha256-GxJ1eDVI5jru7w2E7q3hyvx0jlb/73ND/QbZXaphCCY=" rel="preload stylesheet" as="style">
 
-    <link crossorigin="anonymous" href="/assets/css/2_material_design.min.0845ee19c13c673cfcd1811a0073d012cce20711f7b278bee356ee2c52d2319f.css" integrity="sha256-CEXuGcE8Zzz80YEaAHPQEsziBxH3sni&#43;41buLFLSMZ8=" rel="preload stylesheet" as="style">
+    <link crossorigin="anonymous" href="/assets/css/2_material_design.min.8368f0b1a416403aa87d6ee18615542b4980136ebf1dd321afc3c0a2b5f9ec7d.css" integrity="sha256-g2jwsaQWQDqofW7hhhVUK0mAE26/HdMhr8PAorX57H0=" rel="preload stylesheet" as="style">
 
     <link crossorigin="anonymous" href="/assets/css/3_custom.min.305b68e0e47e5afe032b58b1739fc33a74189bee826fc2b03401f1b6de22ef5b.css" integrity="sha256-MFto4OR&#43;Wv4DK1ixc5/DOnQYm&#43;6Cb8KwNAHxtt4i71s=" rel="preload stylesheet" as="style">
 
@@ -1114,8 +1114,8 @@
     <div class="showcase-components-header">Badges</div>
     <div class="layout showcase-components">
       <div class="sub-showcase-components-header">Badge</div>
-      <div class="component badge large">
-  <span>999&#43;</span>
+      <div class="component badge ">
+  <span></span>
 </div>
 
 
@@ -1123,9 +1123,19 @@
   <span>3</span>
 </div>
 
+      
+      <div class="component badge large">
+  <span>999</span>
+</div>
 
-      <div class="component badge ">
-  <span></span>
+      
+      <div class="component badge large">
+  <span>9999</span>
+</div>
+
+      
+      <div class="component badge large">
+  <span>99999</span>
 </div>
 
     </div>
@@ -1902,6 +1912,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>
