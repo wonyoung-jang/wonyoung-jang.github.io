@@ -1,15 +1,11 @@
 .text-field {
   --container-display: flex;
   --container-flex-flow: row nowrap;
-  --container-justify-content: initial;
   --container-align-items: center;
   --container-gap: var(--size-4);
-  --container-height: initial;
   min-height: var(--size-14);
   --container-width: 100%;
   --container-padding: var(--size-2) var(--size-4);
-  --container-outline: initial;
-  --container-elevation: initial;
 
   & input {
     flex: 1 1 auto;

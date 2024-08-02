@@ -3,18 +3,8 @@
   --container-flex-flow: column nowrap;
   --container-justify-content: center;
   --container-align-items: flex-start;
-  --container-gap: initial;
   --container-height: auto;
   --container-width: auto;
-
-  --container-outline: initial;
-  --container-elevation: initial;
-  --container-shape: initial;
-
-  --container-color: initial;
-
-  --text-color: initial;
-  --icon-color: initial;
 
   & .menu-item {
     --container-display: flex;

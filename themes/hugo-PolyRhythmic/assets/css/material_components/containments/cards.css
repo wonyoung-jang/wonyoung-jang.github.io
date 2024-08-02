@@ -3,8 +3,7 @@
   --container-flex-flow: row nowrap;
   --container-align-items: flex-start;
   --container-justify-content: center;
-  --container-height: initial;
-
+  
   --container-elevation: var(--elevation0);
   --container-elevation-hover: var(--elevation1);
   --container-elevation-focus: var(--elevation0);

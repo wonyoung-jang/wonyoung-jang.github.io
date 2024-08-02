@@ -90,7 +90,7 @@
 
   &:has(.longer-action) {
     --container-flex-flow: column nowrap;
-    --container-height: initial;
+    --container-height: unset;
     --container-gap: 14px;
   }
 

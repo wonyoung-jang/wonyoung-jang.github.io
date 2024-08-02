@@ -3,17 +3,11 @@
   --container-flex-flow: column nowrap;
   --container-justify-content: flex-start;
   --container-align-items: flex-start;
-  --container-gap: initial;
-  --container-height: initial;
-  --container-width: initial;
   --container-padding: var(--size-6);
 
   --container-elevation: var(--elevation3);
   --container-shape: var(--shape-corner-xl);
   --container-color: var(--color-surface-container-high);
-
-  --text-color: initial;
-  --icon-color: initial;
 
   min-width: var(--size-70);
   max-width: var(--size-140);

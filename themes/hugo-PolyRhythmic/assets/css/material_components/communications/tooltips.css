@@ -1,15 +1,8 @@
 .tooltip {
   --container-display: flex;
   --container-flex-flow: row wrap;
-  --container-justify-content: initial;
-  --container-align-items: initial;
-  --container-gap: initial;
-  --container-height: initial;
-  --container-width: initial;
   --container-padding: 0 var(--size-2);
 
-  --container-outline: initial;
-  --container-elevation: initial;
   --container-shape: var(--shape-corner-xs);
   
   --container-color: var(--color-inverse-surface);

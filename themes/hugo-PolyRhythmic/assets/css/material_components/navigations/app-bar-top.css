@@ -3,12 +3,12 @@
   --container-flex-flow: row nowrap;
   --container-justify-content: flex-start;
   --container-align-items: center;
-  --container-outline: initial;
-  --container-elevation: initial;
+  --container-gap: var(--size-1);
+
   --container-shape: 0;
+
   --container-color: var(--color-surface-container);
   
-  --container-gap: var(--size-1);
   color: var(--color-on-surface);
 
   & .start,

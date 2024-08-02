@@ -3,7 +3,6 @@
   --container-align-items: center;
   --container-gap: var(--size-2);
   --container-height: var(--size-10);
-  --container-width: initial;
 
   --text-color: var(--color-on-surface-variant);
   --icon-color: var(--color-on-surface-variant);
