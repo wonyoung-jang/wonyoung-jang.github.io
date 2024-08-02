@@ -1,6 +1,6 @@
 .picker.time {
   --container-padding: var(--size-6);
-  
+
   &.dial {
     & .supporting-text {
       display: none;
@@ -28,7 +28,7 @@
     & .time-picker-dial-container {
       margin-top: unset;
     }
-    
+
     & .time-picker-container {
       flex-flow: column nowrap;
       gap: var(--size-4);
@@ -37,17 +37,17 @@
         flex-flow: row nowrap;
         margin-left: unset;
         margin-top: unset;
-        
+
         & .period-option {
           width: 108px;
           height: 38px;
-          
+
           &:first-child {
             border-radius: var(--shape-corner-s-start);
             border-right: none;
             border-bottom: 1px solid var(--color-outline);
           }
-      
+
           &:last-child {
             border-radius: var(--shape-corner-s-end);
           }
@@ -67,33 +67,10 @@
   --container-width: auto;
   --container-padding: var(--size-6);
 
-  --container-outline: initial;
   --container-elevation: var(--elevation3);
   --container-shape: var(--shape-corner-xl);
-  
+
   --container-color: var(--color-surface-container-high);
-  
-  --text-color: initial;
-  --icon-color: initial;
-
-  --container-outline-hover: initial;
-  --container-elevation-hover: initial;
-
-  --container-outline-focus: initial;
-  --container-elevation-focus: initial;
-
-  --container-outline-press: initial;
-  --container-elevation-press: initial;
-
-  & .time-picker-dial-container {
-    position: relative;
-    align-self: center;
-    height: var(--size-64);
-    width: var(--size-64);
-    border: 2px dashed var(--color-outline);
-    border-radius: 50%;
-    margin-top: var(--size-9);
-  }
 }
 
 /* Headline */
@@ -115,9 +92,9 @@
 
 /* Time input field */
 .time-input-field-container {
-  display: flex; 
+  display: flex;
   flex-flow: row nowrap;
-  
+
   & .time-input-option {
     width: var(--size-24);
     height: var(--size-18);
@@ -128,7 +105,7 @@
     align-items: center;
     cursor: pointer;
     position: relative;
-    
+
     font-size: var(--typescale-display-medium-size);
     font-weight: var(--typescale-display-medium-weight);
     font-family: var(--typescale-display-medium-family);
@@ -151,7 +128,7 @@
       color: var(--color-on-surface-variant);
     }
   }
-  
+
   /* Time input field separator */
   & .time-input-separator {
     display: flex;
@@ -172,22 +149,22 @@
   flex-flow: column nowrap;
   margin-left: var(--size-3);
   height: var(--size-20);
-  
+
   &.horizontal {
     flex-flow: row nowrap;
     margin-left: unset;
     margin-top: unset;
-    
+
     & .period-option {
       width: var(--size-27);
       height: 38px;
-      
+
       &:first-child {
         border-radius: var(--shape-corner-s-start);
         border-right: none;
         border-bottom: 1px solid var(--color-outline);
       }
-  
+
       &:last-child {
         border-radius: var(--shape-corner-s-end);
       }
@@ -205,13 +182,13 @@
     cursor: pointer;
 
     border: 1px solid var(--color-outline);
-  
+
     color: var(--color-on-surface);
     font-size: var(--typescale-title-medium-size);
     font-weight: var(--typescale-title-medium-weight);
     font-family: var(--typescale-title-medium-family);
     line-height: var(--typescale-title-medium-line-height);
-    
+
     &:first-child {
       border-radius: var(--shape-corner-s-top);
       border-bottom: none;
@@ -220,7 +197,7 @@
     &:last-child {
       border-radius: var(--shape-corner-s-bottom);
     }
-    
+
     &.selected {
       background-color: var(--color-tertiary-container);
       color: var(--color-on-tertiary-container);
@@ -265,18 +242,194 @@
   }
 }
 
-.clock-face.twelve-hour {
+.clock-face {
+  position: relative;
   width: var(--size-64);
   height: var(--size-64);
   border-radius: var(--shape-corner-full);
   background-color: var(--color-surface-container-highest);
-}
 
-.clock-face.twenty-four-hour {
-  width: var(--size-64);
-  height: var(--size-64);
-  border-radius: var(--shape-corner-full);
-  background-color: var(--color-surface-container-highest);
+  &::after {
+    position: absolute;
+    content: '';
+    inset: 49%;
+    width: var(--size-2);
+    height: var(--size-2);
+    border-radius: var(--shape-corner-full);
+    background-color: var(--color-primary);
+  }
+
+  & .hour {
+    position: absolute;
+  }
+
+  & .hour:nth-child(1) {
+    top: 6.25%;
+    right: 21.09%;
+    bottom: 75%;
+    left: 60.16%;
+  }
+
+  & .hour:nth-child(2) {
+    top: 21.09%;
+    right: 6.25%;
+    bottom: 60.16%;
+    left: 75%;
+  }
+
+  & .hour:nth-child(3) {
+    top: 40.63%;
+    right: 0.78%;
+    bottom: 40.63%;
+    left: 80.47%;
+  }
+
+  & .hour:nth-child(4) {
+    top: 60.16%;
+    right: 6.25%;
+    bottom: 21.09%;
+    left: 75%;
+  }
+
+  & .hour:nth-child(5) {
+    top: 75%;
+    right: 21.09%;
+    bottom: 6.25%;
+    left: 60.16%;
+  }
+
+  & .hour:nth-child(6) {
+    top: 80.47%;
+    right: 40.63%;
+    bottom: 0.78%;
+    left: 40.63%;
+  }
+
+  & .hour:nth-child(7) {
+    top: 75%;
+    right: 60.16%;
+    bottom: 6.25%;
+    left: 21.09%;
+  }
+
+  & .hour:nth-child(8) {
+    top: 60.16%;
+    right: 75%;
+    bottom: 21.09%;
+    left: 6.25%;
+  }
+
+  & .hour:nth-child(9) {
+    top: 40.63%;
+    right: 80.47%;
+    bottom: 0.78%;
+    left: 0.78%;
+  }
+
+  & .hour:nth-child(10) {
+    top: 21.09%;
+    right: 75%;
+    bottom: 60.16%;
+    left: 6.25%;
+  }
+
+  & .hour:nth-child(11) {
+    top: 6.25%;
+    right: 60.16%;
+    bottom: 75%;
+    left: 21.09%;
+  }
+
+  & .hour:nth-child(12) {
+    top: 0.78%;
+    right: 40.63%;
+    bottom: 80.47%;
+    left: 40.63%;
+  }
+
+  & .hour:nth-child(13) {
+    top: 15.63%;
+    right: 27.34%;
+    bottom: 65.63%;
+    left: 53.91%;
+  }
+
+  & .hour:nth-child(14) {
+    top: 25.78%;
+    right: 16.02%;
+    bottom: 55.47%;
+    left: 65.23%;
+  }
+
+  & .hour:nth-child(15) {
+    top: 40.63%;
+    right: 12.11%;
+    bottom: 40.63%;
+    left: 69.14%;    
+  }
+
+  & .hour:nth-child(16) {
+    top: 55.47%;
+    right: 16.02%;
+    bottom: 25.78%;
+    left: 65.23%;
+  }
+
+  & .hour:nth-child(17) {
+    top: 65.63%;
+    right: 27.34%;
+    bottom: 15.63%;
+    left: 53.91%;
+  }
+
+  & .hour:nth-child(18) {
+    top: 69.53%;
+    right: 40.63%;
+    bottom: 11.72%;
+    left: 40.63%;
+  }
+
+  & .hour:nth-child(19) {
+    top: 65.63%;
+    right: 53.91%;
+    bottom: 15.63%;
+    left: 27.34%;
+  }
+
+  & .hour:nth-child(20) {
+    top: 55.47%;
+    right: 65.23%;
+    bottom: 25.78%;
+    left: 16.02%;
+  }
+
+  & .hour:nth-child(21) {
+    top: 40.63%;
+    right: 69.14%;   
+    bottom: 40.63%;
+    left: 12.11%;
+  }
+
+  & .hour:nth-child(22) {
+    top: 25.78%;
+    right: 65.23%;
+    bottom: 55.47%;
+    left: 16.02%;
+  }
+
+  & .hour:nth-child(23) {
+    top: 15.63%;
+    right: 53.91%;
+    bottom: 65.63%;
+    left: 27.34%;
+  }
+
+  & .hour:nth-child(24) {
+    top: 11.72%;
+    right: 40.63%;
+    bottom: 69.53%;
+    left: 40.63%;
+  }
 }
 
 /* Hour lines */
@@ -307,17 +460,52 @@
     left: 50%;
     transform-origin: 50% 100%;
   }
-}
 
-.hour-line span:nth-child(1) { transform: translateX(-50%) rotate(0deg); }
-.hour-line span:nth-child(2) { transform: translateX(-50%) rotate(30deg); }
-.hour-line span:nth-child(3) { transform: translateX(-50%) rotate(60deg); }
-.hour-line span:nth-child(4) { transform: translateX(-50%) rotate(90deg); }
-.hour-line span:nth-child(5) { transform: translateX(-50%) rotate(120deg); }
-.hour-line span:nth-child(6) { transform: translateX(-50%) rotate(150deg); }
-.hour-line span:nth-child(7) { transform: translateX(-50%) rotate(180deg); }
-.hour-line span:nth-child(8) { transform: translateX(-50%) rotate(210deg); }
-.hour-line span:nth-child(9) { transform: translateX(-50%) rotate(240deg); }
-.hour-line span:nth-child(10) { transform: translateX(-50%) rotate(270deg); }
-.hour-line span:nth-child(11) { transform: translateX(-50%) rotate(300deg); }
-.hour-line span:nth-child(12) { transform: translateX(-50%) rotate(330deg); }
+  & span:nth-child(1) {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  & span:nth-child(2) {
+    transform: translateX(-50%) rotate(30deg);
+  }
+
+  & span:nth-child(3) {
+    transform: translateX(-50%) rotate(60deg);
+  }
+
+  & span:nth-child(4) {
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  & span:nth-child(5) {
+    transform: translateX(-50%) rotate(120deg);
+  }
+
+  & span:nth-child(6) {
+    transform: translateX(-50%) rotate(150deg);
+  }
+
+  & span:nth-child(7) {
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  & span:nth-child(8) {
+    transform: translateX(-50%) rotate(210deg);
+  }
+
+  & span:nth-child(9) {
+    transform: translateX(-50%) rotate(240deg);
+  }
+
+  & span:nth-child(10) {
+    transform: translateX(-50%) rotate(270deg);
+  }
+
+  & span:nth-child(11) {
+    transform: translateX(-50%) rotate(300deg);
+  }
+
+  & span:nth-child(12) {
+    transform: translateX(-50%) rotate(330deg);
+  }
+}

@@ -1114,20 +1114,22 @@
 
       {{/*  Time pickers  */}}
       <div class="display-medium">Time pickers</div>
-      {{/*  TODO Dial  */}}
+      {{/*  Dial  */}}
       <div class="sub-showcase-components-header">Dial - 12-hour clock</div>
-      {{/*  TODO 12H Time input picker - vertical  */}}
+      {{/*  12H Time input picker - vertical  */}}
       {{ partial "components/selections/picker-time.html" (dict
         "type" "dial"
+        "time" "twelve-hour"
         "orientation" "vertical"
         "display" "12"
         "headline" "Select time (12-hour - vertical)"
         )
       }}
 
-      {{/*  TODO 12H Time input picker - horizontal  */}}
+      {{/*  12H Time input picker - horizontal  */}}
       {{ partial "components/selections/picker-time.html" (dict
         "type" "dial"
+        "time" "twelve-hour"
         "orientation" "horizontal"
         "display" "12"
         "headline" "Select time (12-hour - horizontal)"
@@ -1135,18 +1137,20 @@
       }}
 
       <div class="sub-showcase-components-header">Dial - 24-hour clock</div>
-      {{/*  TODO 24H Time input picker - vertical  */}}
+      {{/*  24H Time input picker - vertical  */}}
       {{ partial "components/selections/picker-time.html" (dict
         "type" "dial"
+        "time" "twenty-four-hour"
         "orientation" "vertical"
         "display" "24"
         "headline" "Select time (24-hour - vertical)"
         ) 
       }}      
       
-      {{/*  TODO 24H Time input picker - horizontal  */}}
+      {{/*  24H Time input picker - horizontal  */}}
       {{ partial "components/selections/picker-time.html" (dict
         "type" "dial"
+        "time" "twenty-four-hour"
         "orientation" "horizontal"
         "display" "24"
         "headline" "Select time (24-hour - horizontal)"
@@ -1229,10 +1233,49 @@
       </div>
 
       <div class="display-medium">Clock face - 12h</div>
-      <div class="clock-face twelve-hour"></div>
+      <div class="clock-face twelve-hour">
+        <div class="hour">1</div>
+        <div class="hour">2</div>
+        <div class="hour">3</div>
+        <div class="hour">4</div>
+        <div class="hour">5</div>
+        <div class="hour">6</div>
+        <div class="hour selected">7</div>
+        <div class="hour">8</div>
+        <div class="hour">9</div>
+        <div class="hour">10</div>
+        <div class="hour">11</div>
+        <div class="hour">12</div>
+      </div>
       
       <div class="display-medium">Clock face - 24h</div>
-      <div class="clock-face twenty-four-hour"></div>
+      <div class="clock-face twenty-four-hour">
+        <div class="hour">1</div>
+        <div class="hour">2</div>
+        <div class="hour">3</div>
+        <div class="hour">4</div>
+        <div class="hour">5</div>
+        <div class="hour">6</div>
+        <div class="hour">7</div>
+        <div class="hour">8</div>
+        <div class="hour">9</div>
+        <div class="hour">10</div>
+        <div class="hour">11</div>
+        <div class="hour">12</div>
+
+        <div class="hour">13</div>
+        <div class="hour">14</div>
+        <div class="hour">15</div>
+        <div class="hour">16</div>
+        <div class="hour">17</div>
+        <div class="hour">18</div>
+        <div class="hour">19</div>
+        <div class="hour selected">20</div>
+        <div class="hour">21</div>
+        <div class="hour">22</div>
+        <div class="hour">23</div>
+        <div class="hour">24</div>
+      </div>
 
       <div class="display-medium">Input</div>
       <div class="time-input-field-container">
