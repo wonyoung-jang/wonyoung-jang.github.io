@@ -4,20 +4,19 @@
   --container-gap: var(--size-2);
   --icon-color: var(--color-primary);
 
-  &:has(i:first-child) {
-    padding-left: var(--size-3);
+  &:has(+ .icon:is(:first-child)) {
     padding-right: var(--size-4);
 
-    & i:first-child {
+    & + .icon:first-child {
       font-size: 18px;
     }
   }
 
-  &:has(i:last-child) {
+  &:has(+ .icon:is(:last-child)) {
     padding-left: var(--size-2);
     padding-right: var(--size-1);
 
-    & i:last-child {
+    & + .icon:last-child {
       font-size: 18px;
     }
   }

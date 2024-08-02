@@ -9,7 +9,6 @@
 
   & input {
     flex: 1 1 auto;
-    color: var(--color-on-surface);
     outline: none;
     background-color: transparent;
     z-index: 8;
@@ -18,6 +17,11 @@
     &::placeholder {
       color: var(--color-on-surface-variant);
     }
+  }
+
+  & input,
+  & textarea {
+    caret-color: var(--color-primary);
   }
 
   & label {
@@ -39,6 +43,7 @@
     }
   }
 
+  /* Filled text field */
   &.filled {
     --container-shape: var(--shape-corner-xs-top);
     --container-color: var(--color-surface-container-highest);
@@ -98,6 +103,7 @@
     }
   }
 
+  /* Outlined text field */
   &.outlined {
     --container-shape: var(--shape-corner-xs);
     --container-color: inherit;
