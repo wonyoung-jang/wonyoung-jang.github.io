@@ -16,7 +16,7 @@
   }
 }
 
-.list-item {  
+.list.item {  
   --container-display: flex;
   --container-flex-flow: row nowrap;
   --container-align-items: center;
