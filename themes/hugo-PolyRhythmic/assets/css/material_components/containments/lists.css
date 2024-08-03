@@ -16,10 +16,6 @@
   }
 }
 
-.lists * {
-  border: 1px solid red;
-}
-
 .list-item {  
   --container-display: flex;
   --container-flex-flow: row nowrap;

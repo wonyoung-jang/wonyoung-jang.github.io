@@ -2,7 +2,7 @@
 date:
 - 2024-06-24 Monday
 description: A work in progress page showcasing how elements are rendered from Logseq
-lastMod: 2024-07-26
+lastMod: 2024-08-03
 resources:
 - references
 title: All Logseq elements
@@ -92,6 +92,17 @@ logseq.order-list-type:: number
     + List item 3
 logseq.order-list-type:: number
 
+    + List with numbered children
+
+      + List item 1
+logseq.order-list-type:: number
+
+      + List item 2
+logseq.order-list-type:: number
+
+      + List item 3
+logseq.order-list-type:: number
+
 ## Advanced commands
 
   + {{< logseq/orgCENTER >}}Centered text
@@ -169,25 +180,29 @@ block-property-2:: block-property-2
 
   + ### Tasks
 
-    + TODO A todo task
+    + #### TODO/DOING
 
-    + DOING A doing task
+      + TODO A todo task
 
-    + DONE A done task
+      + DOING A doing task
 
-    + NOW A now task
+    + #### LATER/NOW
 
-    + LATER A later task
+      + LATER A later task
+
+      + NOW A now task
 
     + WAIT A wait task
 
     + WAITING A waiting task
 
+    + IN-PROGRESS An in-progress task
+
+    + DONE A done task
+
     + CANCELED A canceled task
 
     + CANCELLED A cancelled task
-
-    + IN-PROGRESS An in-progress task
 
   + ### Tasks with priorities
 
@@ -196,6 +211,32 @@ block-property-2:: block-property-2
     + TODO [#B] A medium priority task
 
     + TODO [#C] A low priority task
+
+  + ### Task with deadline
+
+    + TODO Deadline
+DEADLINE: <2024-08-03 Sat>
+
+    + TODO Deadline with time
+DEADLINE: <2024-08-03 Sat 14:00>
+
+    + TODO Deadline with repeater
+DEADLINE: <2024-08-03 Sat .+1d>
+
+    + TODO Deadline with time and repeater
+DEADLINE: <2024-08-03 Sat 14:00 .+1d>
+
+    + TODO Scheduled
+SCHEDULED: <2024-08-03 Sat>
+
+    + TODO Scheduled with time
+SCHEDULED: <2024-08-03 Sat 14:00>
+
+    + TODO Scheduled with repeater
+SCHEDULED: <2024-08-03 Sat .+1d>
+
+    + TODO Scheduled with time and repeater
+SCHEDULED: <2024-08-03 Sat 14:00 .+1d>
 
 ## Other
 
@@ -224,6 +265,14 @@ block-property-2:: block-property-2
   + ### Excalidraw
 
     + [[draws/2024-07-16-17-32-44.excalidraw]]
+
+  + ### Query
+
+    + {{query }}
+
+  + ### Query function
+
+    + {{function }}
 
 ---
 
