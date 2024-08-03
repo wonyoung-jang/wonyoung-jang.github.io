@@ -1,6 +1,10 @@
 {{ define "main" }}
-<article class="layout panes basic-single-pane" id="components-showcase">
-  <section class="layout pane" id="post-content">  
+<article 
+  class="layout panes basic-single-pane" 
+  id="components-showcase">
+  <section 
+    class="layout pane" 
+    id="post-content">  
 
     {{ with .Content }}
       {{ . }}
@@ -108,8 +112,8 @@
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/button-icon.html" (dict
-              "type" .
-              "icon" "settings"
+            "type" .
+            "icon" "settings"
             )
           }}
         {{ end }}
@@ -118,9 +122,9 @@
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/button-icon.html" (dict
-              "type" .
-              "icon" "settings"
-              "disabled" "disabled"
+            "type" .
+            "icon" "settings"
+            "disabled" "disabled"
             )
           }}
         {{ end }}
@@ -131,10 +135,10 @@
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/button-icon.html" (dict
-              "id" .
-              "type" .
-              "icon" "settings"
-              "toggle" true
+            "id" .
+            "type" .
+            "icon" "settings"
+            "toggle" true
             )
           }}
         {{ end }}
@@ -143,11 +147,11 @@
       <section>
         {{ range $buttonTypes }}
           {{ partial "components/actions/button-icon.html" (dict
-              "id" .
-              "type" .
-              "icon" "settings"
-              "toggle" true
-              "disabled" "disabled"
+            "id" .
+            "type" .
+            "icon" "settings"
+            "toggle" true
+            "disabled" "disabled"
             )
           }}
         {{ end }}
@@ -292,9 +296,7 @@
           type="checkbox">
         Disabled
       </label>
-
     </div>
-
   </section>
 </article>
 {{ end }}
