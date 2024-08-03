@@ -1,4 +1,4 @@
-f{{ $.Scratch.Set "md" false }}
+{{ $.Scratch.Set "md" false }}
 {{ if .IsNamedParams }}
   {{ $.Scratch.Set "md" (.Get "md") }}
 {{ else }}
