@@ -49,7 +49,7 @@ Tue, 21 Nov 2023 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/vacation-cart-manager/</guid><description>
-warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok
+warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Create a new Java project using Spring Initializr , incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok
 Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion</description></item><item><title>
 Retail inventory manager</title><link>
 https://wonyoungjang.org/retail-inventory-manager/</link><pubDate>
@@ -65,8 +65,7 @@ Wed, 12 Jul 2023 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/dvd-rental-database/</guid><description>
-warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Create a PostgreSQL real-world business report using data extracted and analyzed from the DVD Rental Database
-Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension
+warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements link h2 Create a PostgreSQL real-world business report using data extracted and analyzed from the DVD Rental Database Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension
 Identify necessary data tables and specific fields required for both the detailed and summary sections of the report</description></item><item><title>
 Student record system</title><link>
 https://wonyoungjang.org/student-record-system/</link><pubDate>

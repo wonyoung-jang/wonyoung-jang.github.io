@@ -13,9 +13,8 @@ Fri, 08 Mar 2024 00:00:00 +0000</pubDate><author>
 contact@wonyoungjang.org
 (Wonyoung Jang)</author><guid>
 https://wonyoungjang.org/realtime-multiplayer-drawing/</guid><description>
-Introduction link h2 This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.
-Why link h2 While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.
-I also thought it would be a neat alternative to texting people who are in the same area.</description></item><item><title>
+Introduction link h2 This project is a fork of GitHub - mayfer/claude-app-generator-demo , which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter .
+Why link h2 While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</description></item><item><title>
 Wonyoungjang.org</title><link>
 https://wonyoungjang.org/wonyoungjang.org/</link><pubDate>
 Tue, 05 Mar 2024 00:00:00 +0000</pubDate><author>
