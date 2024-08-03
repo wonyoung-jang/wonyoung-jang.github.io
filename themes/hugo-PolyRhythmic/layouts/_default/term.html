@@ -1,10 +1,7 @@
 {{- define "main" -}}
-{{ $pages := union .RegularPages .Sections }}
 <article class="layout panes canonical-feed">
-  <section 
-    class="layout pane" 
-    id="subsection-page">
-    {{ range $index, $page := $pages }}        
+  <section class="layout pane">
+    {{ range $index, $page := .RegularPages.ByTitle }}        
       <a  
         class="component card elevated"
         aria-label="post link to {{ .Title | plainify }}" 
