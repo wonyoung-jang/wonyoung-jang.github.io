@@ -1,13 +1,13 @@
 .component:is(
     .button,
     .card,
-    .carousel,
+    .carousel.item,
     .chip,
     .picker.date.docked,
     .picker.date.modal,
     .dialog,
-    .list-item,
-    .menus,
+    .list.item,
+    .menu.item,
     .drawer.item,
     .slider
     .search.bar
