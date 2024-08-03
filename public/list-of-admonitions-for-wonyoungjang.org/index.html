@@ -1168,15 +1168,20 @@
   </a>
 </h2>
 <blockquote class="admonition warning-container">
-    <i class="icon">warning</i>This is a warning</blockquote>
+  <i class="icon">warning</i>This is a warning</blockquote>
+
 <blockquote class="admonition caution-container">
-    <i class="icon">error</i>This is a sign of caution</blockquote>
+  <i class="icon">error</i>This is a sign of caution</blockquote>
+
 <blockquote class="admonition important-container">
-    <i class="icon">stars</i>This is important</blockquote>
+  <i class="icon">stars</i>This is important</blockquote>
+
 <blockquote class="admonition pinned-container">
-    <i class="icon">keep</i>This is pinned</blockquote>
+  <i class="icon">keep</i>This is pinned</blockquote>
+
 <blockquote class="admonition verse-container">
-    <i class="icon">lyrics</i>This is a verse</blockquote>
+  <i class="icon">lyrics</i>This is a verse</blockquote>
+
 <blockquote class="admonition export-container">
   <i class="icon">prompt_suggestion</i>This is an export</blockquote>
 
@@ -1187,17 +1192,23 @@
   <i class="icon">prompt_suggestion</i>This is a ascii export</blockquote>
 
 <blockquote class="admonition query-container">
-    <i class="icon">query_stats</i>This is a query</blockquote>
+  <i class="icon">query_stats</i>This is a query</blockquote>
+
 <blockquote class="admonition note-container">
-    <i class="icon">sticky_note_2</i>This is a note</blockquote>
+  <i class="icon">sticky_note_2</i>This is a note</blockquote>
+
 <blockquote class="admonition tip-container">
-    <i class="icon">lightbulb</i>This is a tip</blockquote>
+  <i class="icon">lightbulb</i>This is a tip</blockquote>
+
 <blockquote class="admonition example-container">
-    <i class="icon">description</i>This is an example</blockquote>
+  <i class="icon">description</i>This is an example</blockquote>
+
 <blockquote class="admonition comment-container">
-    <i class="icon">comment</i>This is a comment</blockquote>
+  <i class="icon">comment</i>This is a comment</blockquote>
+
 <blockquote class="admonition quote-container">
-    <i class="icon">format_quote</i>This is a quote</blockquote>
+  <i class="icon">format_quote</i>This is a quote</blockquote>
+
 
         
         
@@ -1662,6 +1673,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

@@ -1375,7 +1375,8 @@
   </a>
 </h2>
 <blockquote class="admonition note-container">
-    <i class="icon">sticky_note_2</i>Last update: 2024-03-18</blockquote>
+  <i class="icon">sticky_note_2</i>Last update: 2024-03-18</blockquote>
+
 <h3 id="a-schedule-validator">
   A schedule validator
   <a 
@@ -1479,7 +1480,8 @@
 <li>If I could find a way to generalize all scheduling problems and allow the user to create any kind of schedule with any kind constraints they want, and maybe solve P = NP along the way&hellip;</li>
 </ul>
 <blockquote class="admonition warning-container">
-    <i class="icon">warning</i>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</blockquote>
+  <i class="icon">warning</i>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</blockquote>
+
 
         
         
@@ -1997,6 +1999,49 @@
 
 
 
+
+    <script defer>
+        document.querySelectorAll('pre > code').forEach((codeblock) => {
+            const container = codeblock.parentNode.parentNode;
+            const copybutton = document.createElement('button');
+            copybutton.classList.add('copy-code');
+            copybutton.innerText = 'copy';
+            function copyingDone() {
+                copybutton.innerText = 'copied!';
+                setTimeout(() => {
+                    copybutton.innerText = 'copy';
+                }, 2000);
+            }
+            copybutton.addEventListener('click', (cb) => {
+                if ('clipboard' in navigator) {
+                    navigator.clipboard.writeText(codeblock.textContent);
+                    copyingDone();
+                    return;
+                }
+                const range = document.createRange();
+                range.selectNodeContents(codeblock);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    copyingDone();
+                } catch (e) { };
+                selection.removeRange(range);
+            });
+            if (container.classList.contains("highlight")) {
+                container.prepend(copybutton);
+            } else if (container.parentNode.firstChild == container) {
+                
+            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+                
+                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+            } else {
+                
+                codeblock.parentNode.prepend(copybutton);
+            }
+        });
+    </script>
 
 </footer>
         </main>

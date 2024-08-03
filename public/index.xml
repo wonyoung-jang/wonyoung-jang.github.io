@@ -133,7 +133,7 @@
         </guid>
 
         <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Nested headings&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight
+          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Nested headings&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight&#xD;Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight&#xD;Italic + bold
         </description>
       </item>
       <item>
@@ -721,7 +721,7 @@
         </guid>
 
         <description>
-          keepThis is a now page. Inspired by: https://nownownow.com/about sticky_note_2Last update: 2024-06-28 Friday Material redesign of my site&#xD;link&#xD;h2&#xD;I&amp;rsquo;ve redesigned this site, wonyoungjang.org using Google&amp;rsquo;s Material Design 3 as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.
+          keepThis is a now page. Inspired by: https://nownownow.com/about&#xD;sticky_note_2Last update: 2024-06-28 Friday&#xD;Material redesign of my site&#xD;link&#xD;h2&#xD;I&amp;rsquo;ve redesigned this site, wonyoungjang.org using Google&amp;rsquo;s Material Design 3 as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.
         </description>
       </item>
       <item>
@@ -1029,7 +1029,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Familiarize with CoppeliaSim robotics virtual environment and tools&#xA;Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment&#xA;Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Familiarize with CoppeliaSim robotics virtual environment and tools&#xA;Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment&#xA;Create or modify a robot equipped with at least two sensors to perform a specific disaster relief task
         </description>
       </item>
       <item>
@@ -1057,7 +1057,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Develop a Pandorabot chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Develop a Pandorabot chatbot that recommends one of five computing jobs to students&#xA;Implement a mechanism within the chatbot to recommend specific jobs without a predefined complexity or method&#xA;Document the development process of the chatbot, exploring various calibration approaches and AI optimization methods
         </description>
       </item>
       <item>
@@ -1113,7 +1113,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Implement a hash table data structure (without external libraries) to store package data&#xA;Create an insertion function to add package details (address, deadline, city, zip code, weight, status) to the hash table&#xA;Create a lookup function to retrieve package details based on package ID
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Implement a hash table data structure (without external libraries) to store package data&#xA;Create an insertion function to add package details (address, deadline, city, zip code, weight, status) to the hash table&#xA;Create a lookup function to retrieve package details based on package ID
         </description>
       </item>
       <item>
@@ -1141,7 +1141,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Integrate resource bundles in the Spring application for English and French translations, including a welcome message&#xA;Implement multithreading to display the welcome message in both English and French simultaneously&#xA;Modify the front end to show reservation prices in USD, CAD, and EUR
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Integrate resource bundles in the Spring application for English and French translations, including a welcome message&#xA;Implement multithreading to display the welcome message in both English and French simultaneously&#xA;Modify the front end to show reservation prices in USD, CAD, and EUR
         </description>
       </item>
       <item>
@@ -1169,7 +1169,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Create a new Java project using Spring Initializr, incorporating essential dependencies like Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok&#xA;Establish a GitLab repository for the project, ensuring regular commits and pushes to document progress, and submit the repository URL and branch history upon completion
         </description>
       </item>
       <item>
@@ -1197,7 +1197,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Customize the HTML user interface of the Spring application to reflect the specific customer&amp;rsquo;s shop name, product names, and part names&#xA;Add an About page that accurately describes the customer&amp;rsquo;s company and ensure proper navigation within the application
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Customize the HTML user interface of the Spring application to reflect the specific customer&amp;rsquo;s shop name, product names, and part names&#xA;Add an About page that accurately describes the customer&amp;rsquo;s company and ensure proper navigation within the application
         </description>
       </item>
       <item>
@@ -1225,7 +1225,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Create a PostgreSQL real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Create a PostgreSQL real-world business report using data extracted and analyzed from the DVD Rental Database&#xA;Summarize the business report, ensuring it is answerable, useful to the business, and focused on a specific metric/dimension&#xA;Identify necessary data tables and specific fields required for both the detailed and summary sections of the report
         </description>
       </item>
       <item>
@@ -1253,7 +1253,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Migrate an existing student system to a new platform, focusing on data manipulation and student roster maintenance&#xA;Develop a program with two main classes: Student and Roster, to manage student data and course enrollment&#xA;Ensure the program reads and processes a list of five students, creating student objects from the provided data
         </description>
       </item>
       <item>
@@ -1281,7 +1281,7 @@
         </guid>
 
         <description>
-          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements. Requirements&#xD;link&#xD;h2&#xD;Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance
+          warningThis project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&amp;rsquo;s main requirements.&#xD;Requirements&#xD;link&#xD;h2&#xD;Design a normalized physical database model for an ordering system (Bagel Corner)&#xA;Create a database for another business (Mister Coffee) using a provided design document&#xA;Load tables with sample data and create a view and an index to enhance query performance
         </description>
       </item>
       <item>
