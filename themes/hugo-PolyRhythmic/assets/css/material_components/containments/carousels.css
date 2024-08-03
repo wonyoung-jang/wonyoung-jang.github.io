@@ -1,13 +1,12 @@
-.carousel {
-  overflow-x: auto;
-
-  --container-display: flex;
-  --container-flex-flow: row nowrap;
-  --container-align-items: flex-start;
-  --container-gap: var(--size-2);
-  --container-width: 100%;
-  --container-padding: var(--size-2) var(--size-4);
-
+.set.carousel {
+  --set-display: flex;
+  --set-flex-flow: row nowrap;
+  --set-align-items: flex-start;
+  --set-gap: var(--size-2);
+  --set-width: 100%;
+  --set-padding: var(--size-2) var(--size-4);
+  --set-overflow: auto hidden;
+  
   &.uncontained {
     & .carousel-item {
       min-width: var(--size-32);
@@ -21,12 +20,10 @@
   }
 
   &.full {
-    overflow-x: hidden;
-    overflow-y: auto;
     max-height: var(--size-50);
-
-    --container-flex-flow: column nowrap;
-    --container-padding: unset;
+    --set-flex-flow: column nowrap;
+    --set-padding: unset;
+    --set-overflow: hidden auto;
 
     & .carousel-item {
       align-self: stretch;
