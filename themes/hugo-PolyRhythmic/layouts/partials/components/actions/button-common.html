@@ -1,10 +1,13 @@
-<button class="component button common {{ .type }}" {{ .disabled }}>
+<button 
+  class="component button common {{ .type }}" 
+  {{ .disabled }}>
   {{ with .icon }}
     <i class="icon">
       {{ . }}
     </i>
   {{ end }}
-  {{with .label }}
+
+  {{ with .label }}
     {{ . }}
   {{ end }}
 </button>

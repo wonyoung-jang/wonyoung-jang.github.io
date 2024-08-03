@@ -1,7 +1,15 @@
-<button class="component button icon {{ .type }}" {{ .disabled }}>
+<button 
+  class="component button icon {{ .type }}" 
+  {{ .disabled }}>
   {{ if .toggle }}
-    <input type="checkbox" id="{{ .id }}" />
-    <label for="{{ .id }}" class="component button icon">
+    <input 
+      type="checkbox" 
+      id="{{ .id }}" />
+      
+    <label 
+      class="component button icon"
+      for="{{ .id }}">
+
       {{ with .icon }}
         <i class="icon">
           {{ . }}
