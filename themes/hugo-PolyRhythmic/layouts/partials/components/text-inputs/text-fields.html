@@ -10,7 +10,8 @@
   {{ else }}
     <input 
         type="text" 
-        placeholder=" {{ .placeholder }} ">
+        placeholder=" {{ .placeholder }} "
+        {{ .disabled }}>
   {{ end }}
 
   {{ with .label }}

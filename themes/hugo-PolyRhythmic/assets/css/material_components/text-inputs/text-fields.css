@@ -70,28 +70,7 @@
         height: 3px;
         color: var(--color-primary);
       }
-
-      &:has(label) {
-        & input {
-          flex: 1 1 auto;
-          padding-block-start: var(--size-2);
-          color: var(--color-on-surface);
-
-          &::placeholder {
-            color: transparent;
-          }
-        }
-
-        & label {
-          top: 0px;
-          color: var(--color-primary);
-          font-size: var(--typescale-body-small-size);
-          line-height: var(--typescale-body-small-line-height);
-          font-weight: var(--typescale-body-small-weight);
-          font-family: var(--typescale-body-small-font);
-        }
-      }
-
+      
       & input {
         flex: 1 1 auto;
         color: var(--color-on-surface);
@@ -99,6 +78,41 @@
         &::placeholder {
           color: transparent;
         }
+      }
+
+      &:has(label) {
+        & input {
+          padding-block-start: var(--size-2);
+          padding-top: var(--size-2);
+        }
+
+        & label {
+          top: 0px;
+          color: var(--color-primary);
+          font-family: var(--typescale-body-small-font);
+          font-size:   var(--typescale-body-small-size);
+          font-weight: var(--typescale-body-small-weight);
+          line-height: var(--typescale-body-small-line-height);  
+        }
+      }
+    }
+
+    & textarea:not(:placeholder-shown),
+    & input:not(:placeholder-shown) {
+      flex: 1 1 auto;
+      color: var(--color-on-surface);
+
+      &:has(+ label) {
+        padding-top: var(--size-2);
+      }
+      
+      & + label {
+        top: 0px;
+        color: var(--color-primary);
+        font-family: var(--typescale-body-small-font);
+        font-size:   var(--typescale-body-small-size);
+        font-weight: var(--typescale-body-small-weight);
+        line-height: var(--typescale-body-small-line-height);
       }
     }
   }
@@ -120,6 +134,14 @@
     &:focus-within,
     &:focus-visible {
       --container-outline: var(--container-outline-focus);
+      & input {
+        flex: 1 1 auto;
+        color: var(--color-on-surface);
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
 
       &:has(label) {
         & input {
@@ -158,14 +180,24 @@
           }
         }
       }
+    }
 
-      & input {
-        flex: 1 1 auto;
-        color: var(--color-on-surface);
+    & textarea:not(:placeholder-shown),
+    & input:not(:placeholder-shown) {
+      flex: 1 1 auto;
+      color: var(--color-on-surface);
 
-        &::placeholder {
-          color: transparent;
-        }
+      &:has(+ label) {
+        padding-top: var(--size-1);
+      }
+      
+      & + label {
+        top: calc(-1 * var(--size-2));
+        color: var(--color-primary);
+        margin-inline: var(--size-2);
+        padding-inline: var(--size-1);
+        background-color: var(--color-surface-container-lowest);
+        color: var(--color-primary);
       }
     }
   }
