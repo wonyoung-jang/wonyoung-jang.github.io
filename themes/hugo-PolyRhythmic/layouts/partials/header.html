@@ -1,57 +1,57 @@
 {{/* Top App Bar */}}
-<nav    class="component app-bar top center small"
-        aria-label="Top App Bar">
-        
-    {{/* Site Headline */}}
-    <section class="start">
-        {{/* Site ID */}}
-        {{- partialCached "siteid-button.html" . -}}
-    </section>
+<nav
+  class="component app-bar top center small"
+  aria-label="Top App Bar">
+  {{/* Site Headline */}}
+  <section class="start">
+    {{/* Site ID */}} 
+    {{- partialCached "siteid-button.html" . -}}
+  </section>
+
+  {{/* Buttons */}}
+  <section class="end">
+    {{/* Language switch */}} 
+    {{- partialCached "translation_list.html" . -}} 
     
-    {{/* Buttons */}}
-    <section class="end">
-        {{/* Language switch */}}
-        {{- partialCached "translation_list.html" . -}}
-
-        {{/* Random page */}}
-        {{ partial "random-button.html" . }}
-
-        {{/* Theme toggle */}}
-        {{- partialCached "theme-button.html" . -}}        
-        
-        {{/* Theme selector */}}
-        {{- partialCached "theme-controls.html" . -}} 
-    </section>
+    {{/* Random page */}} 
+    {{ partial "random-button.html" . }} 
+    
+    {{/* Theme toggle */}} 
+    {{- partialCached "theme-button.html" . -}} 
+    
+    {{/* Theme selector */}}
+    {{- partialCached "theme-controls.html" . -}}
+  </section>
 </nav>
 
-{{/* Tabs */}}
-{{ partial "tab_menu.html" (dict "menuID" "main" "page" .) }}     
+{{/* Tabs */}} 
+{{ partial "tab_menu.html" (dict "menuID" "main" "page" .) }} 
 
-{{/*  || Scripts  */}}
+{{/* || Scripts */}}
 
 {{/* Light theme script */}}
 {{ if (eq site.Params.defaultTheme "light") }}
-    <script async>
-        if (localStorage.getItem("pref-theme") === "dark") {
-            document.body.classList.add('dark');
-        }
-    </script>
-{{/* Dark theme script */}}
+  <script async>
+    if (localStorage.getItem("pref-theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  </script>
+{{/* Dark theme script */}} 
 {{ else if (eq site.Params.defaultTheme "dark") }}
-    <script async>
-        if (localStorage.getItem("pref-theme") === "light") {
-            document.body.classList.remove('dark')
-        }
-    </script>
+  <script async>
+    if (localStorage.getItem("pref-theme") === "light") {
+      document.body.classList.remove("dark");
+    }
+  </script>
 {{/* Auto theme script */}}
 {{ else }}
-    <script async>
-        if (localStorage.getItem("pref-theme") === "dark") {
-            document.body.classList.add('dark');
-        } else if (localStorage.getItem("pref-theme") === "light") {
-            document.body.classList.remove('dark')
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.classList.add('dark');
-        }
-    </script>
+  <script async>
+    if (localStorage.getItem("pref-theme") === "dark") {
+      document.body.classList.add("dark");
+    } else if (localStorage.getItem("pref-theme") === "light") {
+      document.body.classList.remove("dark");
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.body.classList.add("dark");
+    }
+  </script>
 {{ end }}
