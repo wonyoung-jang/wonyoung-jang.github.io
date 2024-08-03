@@ -8,6 +8,7 @@
   --set-width: 100%;
   --set-gap: 0;
   --set-overflow: hidden;
+  --set-color: var(--color-surface);
   
   max-width: 100%;
 
@@ -16,18 +17,13 @@
   }
 }
 
-.list.item {  
-  --container-display: flex;
+.component.list {  
   --container-flex-flow: row nowrap;
-  --container-align-items: center;
-  --container-justify-content: flex-start;
   --container-padding: var(--size-2) var(--size-4);
-  --container-width: 100%;
   --container-gap: var(--size-4);
 
   --icon-color: var(--color-on-surface);
   --text-color: var(--color-on-surface);
-  --container-color: var(--color-surface);
 
   &:has(.component) {
     --state-color: none;
@@ -145,7 +141,7 @@
   &.three {
     --container-padding: var(--size-3) var(--size-4);
     min-height: var(--size-22);
-    
+
     & .supporting-text {
       display: -webkit-box;
       -webkit-line-clamp: 2;

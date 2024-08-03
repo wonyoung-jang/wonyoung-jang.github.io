@@ -6,14 +6,9 @@
   --set-color: var(--color-surface-container);
 }
   
-.component.navigation.bar.item {
-  flex: 1 1 0;
-  --container-display: flex;
+.component.navigation.bar {
   --container-flex-flow: column nowrap;
-  --container-justify-content: center;
-  --container-align-items: center;
   --container-gap: var(--size-1);
-  --container-width: 100%;
   --container-padding: 22px 0 26px 0;
     
   --text-color: var(--color-on-surface-variant);

@@ -33,21 +33,13 @@
   }
 }
   
-.carousel.item {
-  flex: 1 0 0;
+.component.carousel {
+  flex: 1 1 0;
   min-width: var(--size-10);
   min-height: var(--size-50);
 
-  --container-display: flex;
   --container-flex-flow: column nowrap;
-  --container-justify-content: center;
-  --container-align-items: center;
-
-  --container-outline: none;
-  --container-elevation: none;
   --container-shape: var(--shape-corner-xl);
-
-  --container-color: none;
 
   background: url(<path-to-image>) darkgray 50% / cover no-repeat;
   background-blend-mode: multiply;
