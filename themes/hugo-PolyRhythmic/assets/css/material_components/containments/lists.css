@@ -8,10 +8,16 @@
   --set-width: 100%;
   --set-gap: 0;
   --set-overflow: hidden;
+  
+  max-width: 100%;
 
   & .divider {
     color: var(--color-outline);
   }
+}
+
+.lists * {
+  border: 1px solid red;
 }
 
 .list-item {  
@@ -164,8 +170,8 @@
     & .switch,
     & .trailing-supporting-text {
       align-self: flex-start;
-      margin-top: var(--size-3);
       margin-block-start: var(--size-3);
+      margin-top: var(--size-3);
     }
   }
 }
