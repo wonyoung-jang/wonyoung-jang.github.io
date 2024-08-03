@@ -1181,24 +1181,24 @@
           <figure 
       class="cover-image"
     >
+    
     <img
       src="/assets/fllc-qlearning.webp"
         alt="fllc-qlearning.webp"
       >
-    <figcaption>
-      
-    </figcaption>
+
+    <figcaption></figcaption>
+
   </figure>
   
+
 <h2 id="a-brief-history">
   A brief history
   <a 
     class="anchor"
     href="#a-brief-history">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <h3 id="a-nerd-snipe-from-a-coworker">
@@ -1207,23 +1207,21 @@
     class="anchor"
     href="#a-nerd-snipe-from-a-coworker">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>My coworker <a href="https://xkcd.com/356/"target="_blank"
-        rel="external noopener noreferrer me">nerd sniped</a> me with this problem: Given a set of constraints, can you devise a way to create schedule for the <a href="https://www.firstinspires.org/robotics/fll"target="_blank"
-        rel="external noopener noreferrer me">FIRST LEGO League Challenge</a> event we&rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.</p>
+    rel="external noopener noreferrer me">nerd sniped</a>
+ me with this problem: Given a set of constraints, can you devise a way to create schedule for the <a href="https://www.firstinspires.org/robotics/fll"target="_blank"
+    rel="external noopener noreferrer me">FIRST LEGO League Challenge</a>
+ event we&rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.</p>
 <h3 id="early-attempts">
   Early attempts
   <a 
     class="anchor"
     href="#early-attempts">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>Since this was not a necessary project for my job, I started to work on the problem in my free time.</p>
@@ -1246,9 +1244,7 @@
     class="anchor"
     href="#getting-my-bscs">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>My job was grant funded for seven months. During this time, I began the third term of getting my degree. When the grant ended, I decided to hunker down and finish the degree in the remaining five months I had left in the term. Given that, I put the scheduling problem on the backburner, working on it only here and there in my spare time.</p>
@@ -1258,9 +1254,7 @@
     class="anchor"
     href="#capstone-opportunity">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>When I got to the final capstone project for my degree, the requirements (see below) allowed me to create whatever I want, as long as it utilized machine learning in some way. I had never tried applying ML to the scheduling problem, so I decided to revisit it and explore Q-Learning as a potential approach.</p>
@@ -1270,9 +1264,7 @@
     class="anchor"
     href="#q-learning-implementation">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>I decided against strictly supervised or unsupervised learning for one main reason: There isn&rsquo;t enough historical scheduling data out there to train on.</p>
@@ -1283,9 +1275,7 @@
     class="anchor"
     href="#a-possible-solution">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>No, not quite yet, but this has been the most promising approach so far, and I am pursuing it further.</p>
@@ -1296,9 +1286,7 @@
     class="anchor"
     href="#constraints">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <h3 id="hard-constraints">
@@ -1307,9 +1295,7 @@
     class="anchor"
     href="#hard-constraints">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>The hard constraints of a schedule are those imposed by the laws of physics and by the logical rules we usually assume without stating explicitly. There are three main hard constraints:</p>
@@ -1330,9 +1316,7 @@
     class="anchor"
     href="#soft-constraints">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>The soft constraints of a schedule are those that maximize fairness. They are not a necessary condition to run a tournament, but aiming for them while scheduling can create a more fair experience for all teams. In the current iteration, there are four soft constraints:</p>
@@ -1356,9 +1340,7 @@
     class="anchor"
     href="#time-constraints">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <p>One constraint I had to grapple with is the <strong>Back to Back Penalty</strong>. If we assume that the duration of the round will be fully spent at that location, we can assume that teams cannot magically teleport from one location to the next. However, depending on how your event is scheduled, the size  of the teams list, or the layout of the event&rsquo;s venue, I&rsquo;ve found teams scheduled back to back is necessary to generate any valid schedules.</p>
@@ -1369,9 +1351,7 @@
     class="anchor"
     href="#a-roadmap-and-some-current-problems">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <blockquote class="admonition note-container">
@@ -1383,9 +1363,7 @@
     class="anchor"
     href="#a-schedule-validator">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <ul>
@@ -1402,9 +1380,7 @@
     class="anchor"
     href="#refining-the-constraints">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <ul>
@@ -1424,9 +1400,7 @@
     class="anchor"
     href="#test-cases">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <ul>
@@ -1438,9 +1412,7 @@
     class="anchor"
     href="#general-code-cleanup">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <ul>
@@ -1457,9 +1429,7 @@
     class="anchor"
     href="#web-application">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <ul>
@@ -1471,9 +1441,7 @@
     class="anchor"
     href="#generalized-scheduling-tool">
     <i class="icon">link</i>
-    <span>
-      h3
-    </span>
+    <span>h3</span>
   </a>
 </h3>
 <ul>
@@ -1999,49 +1967,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

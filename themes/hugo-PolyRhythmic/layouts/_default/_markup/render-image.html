@@ -5,14 +5,15 @@
     {{- if $isCoverImage }} 
       class="cover-image"
     {{ end }}>
+    
     <img
       src="{{ .Destination | safeURL }}"
       {{- with .Text }}
         alt="{{ . }}"
       {{ end -}}>
-    <figcaption>
-      {{ .Title }}
-    </figcaption>
+
+    <figcaption>{{ .Title }}</figcaption>
+
   </figure>
 {{- else -}}
   <img
@@ -20,9 +21,11 @@
     {{- with .Text }}
       alt="{{ . }}"
     {{ end -}}
+
     {{- with .Title }}
       title="{{ . }}"
     {{ end -}}
+
     {{- if $isCoverImage }} 
       class="cover-image"
     {{ end -}}>

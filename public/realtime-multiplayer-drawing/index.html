@@ -71,7 +71,7 @@
   <meta itemprop="description" content="Draw in realtime on a blank canvas with others on the same server">
   <meta itemprop="datePublished" content="2024-03-08T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-07-24T10:25:11-04:00">
-  <meta itemprop="wordCount" content="219">
+  <meta itemprop="wordCount" content="221">
   <meta itemprop="keywords" content="Software">
 
   <meta name="twitter:card" content="summary">
@@ -1157,39 +1157,40 @@
           <figure 
       class="cover-image"
     >
+    
     <img
       src="/assets/realtime-drawing.webp"
         alt="realtime-drawing.webp"
       >
-    <figcaption>
-      
-    </figcaption>
+
+    <figcaption></figcaption>
+
   </figure>
   
+
 <h2 id="introduction">
   Introduction
   <a 
     class="anchor"
     href="#introduction">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <p>This project is a fork of <a href="https://github.com/mayfer/claude-app-generator-demo"target="_blank"
-        rel="external noopener noreferrer me">GitHub - mayfer/claude-app-generator-demo</a>, which was a demonstration of <a href="https://www.anthropic.com/news/claude-3-family"target="_blank"
-        rel="external noopener noreferrer me">Anthropic&rsquo;s Claude 3 Opus</a> generating an app in one go without errors. You can see a demonstration of the generation and the program here: <a href="https://twitter.com/mayfer/status/1765385826496864290"target="_blank"
-        rel="external noopener noreferrer me">murat on Twitter</a>.</p>
+    rel="external noopener noreferrer me">GitHub - mayfer/claude-app-generator-demo</a>
+, which was a demonstration of <a href="https://www.anthropic.com/news/claude-3-family"target="_blank"
+    rel="external noopener noreferrer me">Anthropic&rsquo;s Claude 3 Opus</a>
+ generating an app in one go without errors. You can see a demonstration of the generation and the program here: <a href="https://twitter.com/mayfer/status/1765385826496864290"target="_blank"
+    rel="external noopener noreferrer me">murat on Twitter</a>
+.</p>
 <h2 id="why">
   Why
   <a 
     class="anchor"
     href="#why">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <p>While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.</p>
@@ -1200,9 +1201,7 @@
     class="anchor"
     href="#improvements">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <p>Included a <code>package.json</code> file for easy installation of dependencies:</p>
@@ -1784,49 +1783,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

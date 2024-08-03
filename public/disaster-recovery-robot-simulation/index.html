@@ -1155,15 +1155,17 @@
           <figure 
       class="cover-image"
     >
+    
     <img
       src="/assets/disaster-recovery-robot.webp"
         alt="disaster-recovery-robot.webp"
       >
-    <figcaption>
-      
-    </figcaption>
+
+    <figcaption></figcaption>
+
   </figure>
   
+
 <blockquote class="admonition warning-container">
   <i class="icon">warning</i>This project was completed for coursework and is no longer maintained. Names and details have been modified for academic integrity. Below is a summary of the university&rsquo;s main requirements.</blockquote>
 
@@ -1173,15 +1175,14 @@
     class="anchor"
     href="#requirements">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <ul>
 <li>
 <p>Familiarize with <a href="https://www.coppeliarobotics.com/"target="_blank"
-        rel="external noopener noreferrer me">CoppeliaSim</a> robotics virtual environment and tools</p>
+    rel="external noopener noreferrer me">CoppeliaSim</a>
+ robotics virtual environment and tools</p>
 </li>
 <li>
 <p>Thoroughly describe a disaster scenario and integrate at least two obstacles within this environment</p>
@@ -1719,49 +1720,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>

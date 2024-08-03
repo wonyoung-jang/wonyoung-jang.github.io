@@ -75,7 +75,7 @@
         </guid>
 
         <description>
-          Introduction&#xD;link&#xD;h2&#xD;This project is a fork of GitHub - mayfer/claude-app-generator-demo, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter.&#xA;Why&#xD;link&#xD;h2&#xD;While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.&#xA;I also thought it would be a neat alternative to texting people who are in the same area.
+          Introduction&#xD;link&#xD;h2&#xD;This project is a fork of GitHub - mayfer/claude-app-generator-demo&#xD;, which was a demonstration of Anthropic&amp;rsquo;s Claude 3 Opus&#xD;generating an app in one go without errors. You can see a demonstration of the generation and the program here: murat on Twitter&#xD;.&#xA;Why&#xD;link&#xD;h2&#xD;While the demonstration shows no errors, the instructions in the README were incomplete, and others had trouble with installing the dependencies.
         </description>
       </item>
       <item>
@@ -131,7 +131,7 @@
         </guid>
 
         <description>
-          A brief history&#xD;link&#xD;h2&#xD;A nerd snipe from a coworker&#xD;link&#xD;h3&#xD;My coworker nerd sniped me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts&#xD;link&#xD;h3&#xD;Since this was not a necessary project for my job, I started to work on the problem in my free time.
+          A brief history&#xD;link&#xD;h2&#xD;A nerd snipe from a coworker&#xD;link&#xD;h3&#xD;My coworker nerd sniped&#xD;me with this problem: Given a set of constraints, can you devise a way to create schedule for the FIRST LEGO League Challenge&#xD;event we&amp;rsquo;re running later this year? I liked scheduling problems and solving puzzles so it piqued my interest.&#xA;Early attempts&#xD;link&#xD;h3&#xD;Since this was not a necessary project for my job, I started to work on the problem in my free time.
         </description>
       </item>
       <item>
@@ -159,7 +159,7 @@
         </guid>
 
         <description>
-          Premise&#xD;link&#xD;h2&#xD;Sometimes I just want the top voted parent comments of a reddit post.&#xA;Conclusion&#xD;link&#xD;h2&#xD;This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.
+          Premise&#xD;link&#xD;h2&#xD;Sometimes I just want the top voted parent comments of a reddit&#xD;post.&#xA;Conclusion&#xD;link&#xD;h2&#xD;This tool, which let&amp;rsquo;s me save as many as I want to a CSV file, so that I can work with the data outside of reddit.
         </description>
       </item>
       <item>
@@ -187,7 +187,7 @@
         </guid>
 
         <description>
-          Problem&#xD;link&#xD;h2&#xD;Logseq does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution&#xD;link&#xD;h2&#xD;Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
+          Problem&#xD;link&#xD;h2&#xD;Logseq&#xD;does not have a native way to view the character count of your notes (aka pages)&#xA;Logseq&amp;rsquo;s performance is a balance between the number of pages and the size of each page&#xA;Logseq&amp;rsquo;s graph is difficult to search and prune manually&#xA;Possible solution&#xD;link&#xD;h2&#xD;Encode Logseq&amp;rsquo;s graph to enable semantic search, then leverage this encoding to develop an automatic pruning tool of some kind.
         </description>
       </item>
   </channel>

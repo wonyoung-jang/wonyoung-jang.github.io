@@ -1113,7 +1113,7 @@
         
           <blockquote class="admonition pinned-container">
   <i class="icon">keep</i>This is a now page. Inspired by: <a href="https://nownownow.com/about"target="_blank"
-        rel="external noopener noreferrer me">https://nownownow.com/about</a></blockquote>
+    rel="external noopener noreferrer me">https://nownownow.com/about</a></blockquote>
 
 <blockquote class="admonition note-container">
   <i class="icon">sticky_note_2</i>Last update: 2024-06-28 Friday</blockquote>
@@ -1124,14 +1124,14 @@
     class="anchor"
     href="#material-redesign-of-my-site">
     <i class="icon">link</i>
-    <span>
-      h2
-    </span>
+    <span>h2</span>
   </a>
 </h2>
 <p>I&rsquo;ve redesigned this site, <a href="https://wonyoungjang.org"target="_blank"
-        rel="external noopener noreferrer me">wonyoungjang.org</a> using Google&rsquo;s <a href="https://m3.material.io/"target="_blank"
-        rel="external noopener noreferrer me">Material Design 3</a> as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.</p>
+    rel="external noopener noreferrer me">wonyoungjang.org</a>
+ using Google&rsquo;s <a href="https://m3.material.io/"target="_blank"
+    rel="external noopener noreferrer me">Material Design 3</a>
+ as a general set of guidelines. My goal is to implement the design system using pure CSS and as little JavaScript as possible.</p>
 
         
         
@@ -1655,49 +1655,6 @@
 
 
 
-
-    <script defer>
-        document.querySelectorAll('pre > code').forEach((codeblock) => {
-            const container = codeblock.parentNode.parentNode;
-            const copybutton = document.createElement('button');
-            copybutton.classList.add('copy-code');
-            copybutton.innerText = 'copy';
-            function copyingDone() {
-                copybutton.innerText = 'copied!';
-                setTimeout(() => {
-                    copybutton.innerText = 'copy';
-                }, 2000);
-            }
-            copybutton.addEventListener('click', (cb) => {
-                if ('clipboard' in navigator) {
-                    navigator.clipboard.writeText(codeblock.textContent);
-                    copyingDone();
-                    return;
-                }
-                const range = document.createRange();
-                range.selectNodeContents(codeblock);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
-                try {
-                    document.execCommand('copy');
-                    copyingDone();
-                } catch (e) { };
-                selection.removeRange(range);
-            });
-            if (container.classList.contains("highlight")) {
-                container.prepend(copybutton);
-            } else if (container.parentNode.firstChild == container) {
-                
-            } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-                
-                codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-            } else {
-                
-                codeblock.parentNode.prepend(copybutton);
-            }
-        });
-    </script>
 
 </footer>
         </main>
