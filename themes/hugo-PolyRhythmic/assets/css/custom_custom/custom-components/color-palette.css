@@ -12,7 +12,7 @@
   background-color: unset;
   color: var(--palette-white);
 
-  & .color-palette-cell {
+  .color-palette-cell {
     flex: 1 1 0;
 
     display: flex;
@@ -38,7 +38,7 @@
     padding: var(--spacing-panes);
     color: var(--palette-white);
 
-    & .color-palette-cell {
+    .color-palette-cell {
       color: var(--palette-black);
     }
   }

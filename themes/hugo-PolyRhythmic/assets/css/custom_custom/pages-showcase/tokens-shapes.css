@@ -13,7 +13,7 @@
         grid-column: 1 / -1;
     }
 
-    & [class^="shape-"] {
+    [class^="shape-"] {
         flex: 1 1 0;
         position: relative;
         display: flex;
@@ -27,8 +27,8 @@
         min-width: var(--size-20);
     }
 
-    & .shape-none,
-    & .shape-full {
+    .shape-none,
+    .shape-full {
         grid-column: span 5;
         align-self: stretch;
         max-height: var(--size-20);

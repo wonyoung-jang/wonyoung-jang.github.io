@@ -12,7 +12,7 @@
   
   max-width: 100%;
 
-  & .divider {
+  .divider {
     color: var(--color-outline);
   }
 }
@@ -29,21 +29,21 @@
     --state-color: none;
   }
 
-  & .label {
+  .label {
     margin-right: auto;
   }
 
-  & .checkbox {
+  .checkbox {
     padding: unset;
   }
 
-  & .radio {
+  .radio {
     padding: unset;
     height: var(--size-6);
     width: var(--size-6);
   }
 
-  & .monogram {
+  .monogram {
     display: flex;
     width: var(--size-10);
     height: var(--size-10);
@@ -53,7 +53,7 @@
     border-radius: var(--shape-corner-full);
   }
 
-  & .content {
+  .content {
     flex: 1 0 0;
     display: flex;
     flex-flow: row wrap;
@@ -61,7 +61,7 @@
     justify-content: center;
     align-self: stretch;
     
-    & .headline {
+    .headline {
       width: 100%;
       font-size: var(--typescale-body-large-size);
       line-height: var(--typescale-body-large-line-height);
@@ -69,7 +69,7 @@
       font-family: var(--typescale-body-large-font);  
     }
     
-    & .supporting-text {
+    .supporting-text {
       width: 100%;
       color: var(--color-on-surface-variant);
       font-size: var(--typescale-body-medium-size);
@@ -79,11 +79,11 @@
     }
   }
   
-  & .trailing {
+  .trailing {
     margin-left: auto;
   }
 
-  & .trailing-supporting-text {
+  .trailing-supporting-text {
     color: var(--color-on-surface-variant);
     font-size: var(--typescale-label-small-size);
     line-height: var(--typescale-label-small-line-height);
@@ -91,9 +91,9 @@
     font-family: var(--typescale-label-small-font);  
   }
 
-  & .radio,
-  & .switch,
-  & .checkbox {
+  .radio,
+  .switch,
+  .checkbox {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
@@ -115,7 +115,7 @@
       min-height: var(--size-22);
     }
 
-    & .content {
+    .content {
       align-items: center;
     }
   }
@@ -123,7 +123,7 @@
   &.two {
     min-height: var(--size-18);
 
-    & .supporting-text {
+    .supporting-text {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -146,7 +146,7 @@
     --container-padding: var(--size-3) var(--size-4);
     min-height: var(--size-22);
 
-    & .supporting-text {
+    .supporting-text {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -154,17 +154,17 @@
       overflow: hidden;
     }
     
-    & .headline {
+    .headline {
       align-self: flex-start;
     }
 
-    & .icon,
-    & .image,
-    & .video,
-    & .checkbox,
-    & .radio,
-    & .switch,
-    & .trailing-supporting-text {
+    .icon,
+    .image,
+    .video,
+    .checkbox,
+    .radio,
+    .switch,
+    .trailing-supporting-text {
       align-self: flex-start;
       margin-block-start: var(--size-3);
       margin-top: var(--size-3);

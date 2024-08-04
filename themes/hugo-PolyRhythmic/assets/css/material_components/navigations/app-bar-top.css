@@ -11,8 +11,8 @@
   
   color: var(--color-on-surface);
 
-  & .start,
-  & .end {
+  .start,
+  .end {
     display: flex;
     flex-flow: row nowrap;
     align-self: center;
@@ -20,7 +20,7 @@
     gap: var(--size-2);
   }
 
-  & .headline {
+  .headline {
     flex: 1 1 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -28,13 +28,13 @@
     align-items: center;
   }
 
-  & .end {
+  .end {
     color: var(--color-on-suface-variant);
     margin-left: auto;
   }
 
   &.center {
-    & .headline {
+    .headline {
       justify-content: center;
     }
   }
@@ -54,7 +54,7 @@
   &.large {
     --container-flex-flow: row wrap;
     
-    & .headline {
+    .headline {
       flex: 1 1 100%;
       padding-inline: var(--size-3);
     }

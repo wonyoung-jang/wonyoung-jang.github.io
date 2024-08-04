@@ -2,7 +2,7 @@
   --container-padding: var(--size-6);
 
   &.dial {
-    & .supporting-text {
+    .supporting-text {
       display: none;
     }
   }
@@ -25,20 +25,20 @@
     height: 100%;
     width: 100%;
 
-    & .time-picker-dial-container {
+    .time-picker-dial-container {
       margin-top: unset;
     }
 
-    & .time-picker-container {
+    .time-picker-container {
       flex-flow: column nowrap;
       gap: var(--size-4);
 
-      & .period-selector-container {
+      .period-selector-container {
         flex-flow: row nowrap;
         margin-left: unset;
         margin-top: unset;
 
-        & .period-option {
+        .period-option {
           width: 108px;
           height: 38px;
 
@@ -95,7 +95,7 @@
   display: flex;
   flex-flow: row nowrap;
 
-  & .time-input-option {
+  .time-input-option {
     width: var(--size-24);
     height: var(--size-18);
     background-color: var(--color-surface-container-highest);
@@ -117,7 +117,7 @@
       color: var(--color-on-primary-container);
     }
 
-    & .supporting-text {
+    .supporting-text {
       position: absolute;
       top: 100%;
       left: 0%;
@@ -130,7 +130,7 @@
   }
 
   /* Time input field separator */
-  & .time-input-separator {
+  .time-input-separator {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@
     margin-left: unset;
     margin-top: unset;
 
-    & .period-option {
+    .period-option {
       width: var(--size-27);
       height: 38px;
 
@@ -171,7 +171,7 @@
     }
   }
 
-  & .period-option {
+  .period-option {
     flex: 1 0 0;
     width: var(--size-13);
     height: var(--size-20);
@@ -213,8 +213,8 @@
   width: 100%;
   margin-top: var(--size-6);
 
-  & .time-picker-start,
-  & .time-picker-end {
+  .time-picker-start,
+  .time-picker-end {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -259,172 +259,172 @@
     background-color: var(--color-primary);
   }
 
-  & .hour {
+  .hour {
     position: absolute;
   }
 
-  & .hour:nth-child(1) {
+  .hour:nth-child(1) {
     top: 6.25%;
     right: 21.09%;
     bottom: 75%;
     left: 60.16%;
   }
 
-  & .hour:nth-child(2) {
+  .hour:nth-child(2) {
     top: 21.09%;
     right: 6.25%;
     bottom: 60.16%;
     left: 75%;
   }
 
-  & .hour:nth-child(3) {
+  .hour:nth-child(3) {
     top: 40.63%;
     right: 0.78%;
     bottom: 40.63%;
     left: 80.47%;
   }
 
-  & .hour:nth-child(4) {
+  .hour:nth-child(4) {
     top: 60.16%;
     right: 6.25%;
     bottom: 21.09%;
     left: 75%;
   }
 
-  & .hour:nth-child(5) {
+  .hour:nth-child(5) {
     top: 75%;
     right: 21.09%;
     bottom: 6.25%;
     left: 60.16%;
   }
 
-  & .hour:nth-child(6) {
+  .hour:nth-child(6) {
     top: 80.47%;
     right: 40.63%;
     bottom: 0.78%;
     left: 40.63%;
   }
 
-  & .hour:nth-child(7) {
+  .hour:nth-child(7) {
     top: 75%;
     right: 60.16%;
     bottom: 6.25%;
     left: 21.09%;
   }
 
-  & .hour:nth-child(8) {
+  .hour:nth-child(8) {
     top: 60.16%;
     right: 75%;
     bottom: 21.09%;
     left: 6.25%;
   }
 
-  & .hour:nth-child(9) {
+  .hour:nth-child(9) {
     top: 40.63%;
     right: 80.47%;
     bottom: 0.78%;
     left: 0.78%;
   }
 
-  & .hour:nth-child(10) {
+  .hour:nth-child(10) {
     top: 21.09%;
     right: 75%;
     bottom: 60.16%;
     left: 6.25%;
   }
 
-  & .hour:nth-child(11) {
+  .hour:nth-child(11) {
     top: 6.25%;
     right: 60.16%;
     bottom: 75%;
     left: 21.09%;
   }
 
-  & .hour:nth-child(12) {
+  .hour:nth-child(12) {
     top: 0.78%;
     right: 40.63%;
     bottom: 80.47%;
     left: 40.63%;
   }
 
-  & .hour:nth-child(13) {
+  .hour:nth-child(13) {
     top: 15.63%;
     right: 27.34%;
     bottom: 65.63%;
     left: 53.91%;
   }
 
-  & .hour:nth-child(14) {
+  .hour:nth-child(14) {
     top: 25.78%;
     right: 16.02%;
     bottom: 55.47%;
     left: 65.23%;
   }
 
-  & .hour:nth-child(15) {
+  .hour:nth-child(15) {
     top: 40.63%;
     right: 12.11%;
     bottom: 40.63%;
     left: 69.14%;    
   }
 
-  & .hour:nth-child(16) {
+  .hour:nth-child(16) {
     top: 55.47%;
     right: 16.02%;
     bottom: 25.78%;
     left: 65.23%;
   }
 
-  & .hour:nth-child(17) {
+  .hour:nth-child(17) {
     top: 65.63%;
     right: 27.34%;
     bottom: 15.63%;
     left: 53.91%;
   }
 
-  & .hour:nth-child(18) {
+  .hour:nth-child(18) {
     top: 69.53%;
     right: 40.63%;
     bottom: 11.72%;
     left: 40.63%;
   }
 
-  & .hour:nth-child(19) {
+  .hour:nth-child(19) {
     top: 65.63%;
     right: 53.91%;
     bottom: 15.63%;
     left: 27.34%;
   }
 
-  & .hour:nth-child(20) {
+  .hour:nth-child(20) {
     top: 55.47%;
     right: 65.23%;
     bottom: 25.78%;
     left: 16.02%;
   }
 
-  & .hour:nth-child(21) {
+  .hour:nth-child(21) {
     top: 40.63%;
     right: 69.14%;   
     bottom: 40.63%;
     left: 12.11%;
   }
 
-  & .hour:nth-child(22) {
+  .hour:nth-child(22) {
     top: 25.78%;
     right: 65.23%;
     bottom: 55.47%;
     left: 16.02%;
   }
 
-  & .hour:nth-child(23) {
+  .hour:nth-child(23) {
     top: 15.63%;
     right: 53.91%;
     bottom: 65.63%;
     left: 27.34%;
   }
 
-  & .hour:nth-child(24) {
+  .hour:nth-child(24) {
     top: 11.72%;
     right: 40.63%;
     bottom: 69.53%;

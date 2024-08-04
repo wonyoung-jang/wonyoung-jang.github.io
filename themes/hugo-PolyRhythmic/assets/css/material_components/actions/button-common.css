@@ -7,7 +7,7 @@
   &:has(+ .icon:is(:first-child)) {
     padding-right: var(--size-4);
 
-    & + .icon:first-child {
+    + .icon:first-child {
       font-size: 18px;
     }
   }
@@ -16,7 +16,7 @@
     padding-left: var(--size-2);
     padding-right: var(--size-1);
 
-    & + .icon:last-child {
+    + .icon:last-child {
       font-size: 18px;
     }
   }

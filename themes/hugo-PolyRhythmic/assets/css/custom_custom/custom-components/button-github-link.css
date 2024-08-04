@@ -11,7 +11,7 @@
     align-self: flex-end;
     transition: width var(--motion-duration-long4) var(--motion-easing-emphasized);
 
-    & .repo-name {
+    .repo-name {
       display: none;
     }
   }

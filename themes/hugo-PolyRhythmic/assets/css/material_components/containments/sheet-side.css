@@ -10,20 +10,20 @@
     border-left: unset;
   }
 
-  & .header,
-  & .content,
-  & .actions {
+  .header,
+  .content,
+  .actions {
     width: 100%;
   }
 
-  & .header {
+  .header {
     display: flex;
     flex-flow: row nowrap;
     padding: var(--size-3) var(--size-3) var(--size-4) var(--size-1);
     align-items: center;
     justify-content: space-between;
 
-    & .headline {
+    .headline {
       flex: 1 0 0;
       padding-left: var(--size-6);
       color: var(--color-on-surface-variant);
@@ -34,13 +34,13 @@
     }
 
     &:has(.back-icon) {
-      & .headline {
+      .headline {
         padding-left: 0px;
       }
     }
   }
 
-  & .content {
+  .content {
     flex: 1 0 0;
     display: flex;
     flex-flow: column nowrap;
@@ -49,7 +49,7 @@
     padding: var(--spacing-panes);
   }
 
-  & .actions {
+  .actions {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -58,7 +58,7 @@
     gap: var(--size-2);
   }
 
-  & .divider {
+  .divider {
     color: var(--color-outline);
   }
 }

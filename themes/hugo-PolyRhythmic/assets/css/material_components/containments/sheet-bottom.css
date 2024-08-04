@@ -10,7 +10,7 @@
   margin-top: var(--size-18);
   margin-inline: var(--size-14);
 
-  & .drag-handle {
+  .drag-handle {
     height: var(--size-1);
     width: var(--size-8);
     margin: 22px auto;
@@ -18,7 +18,7 @@
     cursor: grab;
   }
 
-  & .content {
+  .content {
     padding: var(--spacing-panes);
   }
 }

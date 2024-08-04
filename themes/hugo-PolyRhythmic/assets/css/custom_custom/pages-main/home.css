@@ -5,7 +5,7 @@
   padding: unset;
   margin: unset;
 
-  & #home-header {
+  #home-header {
     flex: 0 1 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -16,7 +16,7 @@
     padding: var(--size-14) var(--spacing-panes);
     min-height: 18dvh;
 
-    & .site-id {
+    .site-id {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -24,7 +24,7 @@
       gap: var(--size-5);
     }
 
-    & .tagline {
+    .tagline {
       color: var(--color-complementary);
 
       & strong {
@@ -34,7 +34,7 @@
     }
   }
 
-  & #home-blurb {
+  #home-blurb {
     flex: 0 1 0;
     display: flex;
     flex-flow: column nowrap;
@@ -44,7 +44,7 @@
     margin: var(--spacing-panes);
     border-radius: var(--shape-corner-m);
 
-    & .blurb {
+    .blurb {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
@@ -54,7 +54,7 @@
     }
   }
 
-  & .home-page-content {
+  .home-page-content {
     margin: 0 var(--spacing-panes);
     padding: 0 var(--spacing-panes);
     border-radius: var(--shape-corner-m);
@@ -75,13 +75,13 @@
     }
   }
   
-  & .home-buttons-container {
+  .home-buttons-container {
     display: flex;
     flex-flow: row wrap;
     gap: var(--size-3);
     margin: var(--size-8);
 
-    & .home-buttons {
+    .home-buttons {
       flex: 1 1 0;
       display: flex;
       flex-flow: column nowrap;
@@ -94,7 +94,7 @@
         margin-block: var(--size-3) var(--size-5);
       }
 
-      & .button {
+      .button {
         border-radius: var(--shape-corner-xs);
         margin-inline: var(--size-2);
       }
@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 599px) {
   #home-page {
-    & .site-id svg {
+    .site-id svg {
       display: none;
     }
   }

@@ -22,21 +22,21 @@
   }
 
   &.error-check {
-    & > input:checked + span::before {
+    > input:checked + span::before {
       color: var(--color-error);
     }
 
-    & > span::before {
+    > span::before {
       color: var(--color-error);
     }
 
-    & > input:checked:indeterminate + span::before,
-    & > input:checked.indeterminate + span::before {
+    > input:checked:indeterminate + span::before,
+    > input:checked.indeterminate + span::before {
       color: var(--color-error);
     }
   }
 
-  & > input {
+  > input {
     max-width: 100%;
     max-height: 100%;
     opacity: 0;
@@ -71,7 +71,7 @@
     }
   }
 
-  & > span {
+  > span {
     display: flex;
     align-items: center;
     color: var(--color-on-surface-variant);

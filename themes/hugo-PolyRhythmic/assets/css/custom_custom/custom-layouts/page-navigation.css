@@ -13,8 +13,8 @@
   --layout-gap: var(--size-4);
   --layout-border: inherit;
 
-  & .prev,
-  & .next {
+  .prev,
+  .next {
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
@@ -30,11 +30,11 @@
     color: var(--color-on-surface);
     box-shadow: var(--elevation1);
 
-    & .icon {
+    .icon {
       font-size: 18px;
     }
 
-    & .page-direction {
+    .page-direction {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -55,8 +55,8 @@
   .page-navigation {
     --layout-flex-flow: row nowrap;
 
-    & .prev,
-    & .next {
+    .prev,
+    .next {
       flex: 1 1 0;
     }
   }

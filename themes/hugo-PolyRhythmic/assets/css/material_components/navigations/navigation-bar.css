@@ -19,7 +19,7 @@
     --container-padding: var(--size-3) 0 var(--size-4) 0;
   }
 
-  & .icon-container {
+  .icon-container {
     display: flex;
     flex-flow: column nowrap;
     border-radius: var(--shape-corner-l);
@@ -31,7 +31,7 @@
 
     position: relative;
     
-    & .badge {
+    .badge {
       position: absolute;
       top: var(--size-1);
       right: 30%;
@@ -65,7 +65,7 @@
     }
   }
 
-  & .label {
+  .label {
     color: var(--color-on-surface-variant);
     font-size: var(--typescale-label-medium-size);
     line-height: var(--typescale-label-medium-line-height);
@@ -74,12 +74,12 @@
   }
 
   &.active {
-    & .icon-container {
+    .icon-container {
       color: var(--color-on-secondary-container);
       background-color: var(--color-secondary-container);
     }
 
-    & .label {
+    .label {
       color: var(--color-on-surface);
       font-weight: var(--typeface-weight-semi-bold);
     }

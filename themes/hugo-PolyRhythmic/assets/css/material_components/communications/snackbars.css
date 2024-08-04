@@ -17,7 +17,7 @@
   --container-elevation-focus: var(--container-elevation);
   --container-elevation-press: var(--container-elevation);
 
-  & .supporting-text {
+  .supporting-text {
     color: var(--color-inverse-on-surface);
     font-size: var(--typescale-body-medium-size);
     line-height: var(--typescale-body-medium-line-height);
@@ -25,13 +25,13 @@
     font-family: var(--typescale-body-medium-font);
   }
 
-  & .actions {
+  .actions {
     display: flex;
     flex-flow: row nowrap;
     margin-left: auto;
     align-items: center;
     
-    & .button.common {
+    .button.common {
       font-size: var(--typescale-label-large-size);
       line-height: var(--typescale-label-large-line-height);
       font-weight: var(--typescale-label-large-weight);
@@ -40,7 +40,7 @@
       --state-color: var(--color-inverse-primary);
     }
 
-    & .button.icon {
+    .button.icon {
       align-items: stretch;
       --container-height: var(--size-12);
       --container-width: var(--size-12);
@@ -48,7 +48,7 @@
       --state-color: var(--color-inverse-on-surface);
       color: var(--color-inverse-on-surface);
       
-      & .icon {
+      .icon {
         font-size: var(--size-6);
       }
     }
@@ -58,11 +58,11 @@
     --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
-      & .actions {
+      .actions {
         padding: 0px var(--size-2) var(--size-1) var(--size-2);
       }
 
-      & .supporting-text {
+      .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
       }
@@ -73,11 +73,11 @@
     --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
-      & .actions {
+      .actions {
         padding: 0px 0px var(--size-1) var(--size-2);
       }
 
-      & .supporting-text {
+      .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
       }
@@ -98,11 +98,11 @@
     --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
-      & .actions {
+      .actions {
         padding: 0px var(--size-2) var(--size-1) var(--size-2);
       }
 
-      & .supporting-text {
+      .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
       }
@@ -113,11 +113,11 @@
     --container-padding: 0px 0px 0px var(--size-4);
 
     &:has(.longer-action) {
-      & .actions {
+      .actions {
         padding: 0px 0px var(--size-1) var(--size-2);
       }
 
-      & .supporting-text {
+      .supporting-text {
         align-self: flex-start;
         padding: 14px var(--size-1) 0px var(--size-1);
       }

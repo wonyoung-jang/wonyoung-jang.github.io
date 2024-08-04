@@ -12,7 +12,7 @@
 
   min-height: var(--size-6);
   
-  & .supporting-text {
+  .supporting-text {
     align-self: center;
     font-size: var(--typescale-body-small-size);
     line-height: var(--typescale-body-small-line-height);
@@ -35,7 +35,7 @@
     --container-elevation-focus: var(--container-elevation);
     --container-elevation-press: var(--container-elevation);
 
-    & .subhead {
+    .subhead {
       margin-bottom: var(--size-1);
       padding: var(--size-3) var(--size-4) var(--size-1) var(--size-4);
       font-size: var(--typescale-title-small-size);
@@ -44,7 +44,7 @@
       font-family: var(--typescale-title-small-font);  
     }
 
-    & .supporting-text {
+    .supporting-text {
       margin-bottom: var(--size-3);
       padding: 0 var(--size-4);
       font-size: var(--typescale-body-medium-size);
@@ -53,7 +53,7 @@
       font-family: var(--typescale-body-medium-font);    
     }
     
-    & .actions {
+    .actions {
       display: flex;
       flex-flow: row nowrap;
       gap: var(--size-2);

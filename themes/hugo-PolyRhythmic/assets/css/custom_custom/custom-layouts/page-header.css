@@ -13,13 +13,13 @@
 
   --layout-bg: var(--color-surface-container-low);
   
-  & .title,
-  & .description {
+  .title,
+  .description {
     word-wrap: break-word;
     white-space: normal;
   }
   
-  & .metadata {
+  .metadata {
     color: var(--color-on-surface-variant);
   }
 }

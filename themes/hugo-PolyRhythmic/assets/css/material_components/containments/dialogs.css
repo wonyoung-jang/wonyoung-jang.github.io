@@ -21,7 +21,7 @@
     --container-shape: unset;
     --container-elevation: var(--elevation0);
 
-    & .header {
+    .header {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -30,7 +30,7 @@
       margin-top: var(--size-6);
       padding: var(--size-6) var(--size-4);
 
-      & .headline {
+      .headline {
         align-items: center;
         margin-bottom: unset;
         font-family: var(--typescale-title-large-font);
@@ -39,22 +39,22 @@
         line-height: var(--typescale-title-large-line-height);
       }
 
-      & .common {
+      .common {
         margin-left: auto;
       }
     }
 
-    & .supporting-text {
+    .supporting-text {
       color: var(--color-on-surface);
       padding: var(--size-6);
     }
 
-    & .divider {
+    .divider {
       color: var(--color-surface-variant);
     }
   }
 
-  & .headline {
+  .headline {
     display: flex;
     flex-flow: row nowrap;
     color: var(--color-on-surface);
@@ -66,7 +66,7 @@
     margin-bottom: var(--size-4);
   }
 
-  & .supporting-text {
+  .supporting-text {
     display: flex;
     flex-flow: column nowrap;
     color: var(--color-on-surface-variant);
@@ -78,7 +78,7 @@
     margin-bottom: var(--size-6);
   }
 
-  & .actions {
+  .actions {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -87,18 +87,18 @@
   }
 
   &:has(> i) {
-    & .icon,
-    & .headline {
+    .icon,
+    .headline {
       width: 100%;
       justify-content: center;
     }
 
-    & .icon {
+    .icon {
       margin-bottom: var(--size-4);
     }
   }
 
-  & .divider {
+  .divider {
     color: var(--color-outline);
   }
 }

@@ -12,7 +12,7 @@
   
   --container-color: var(--color-surface-container-lowest,);
 
-  & .tooltip {
+  .tooltip {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -136,7 +136,7 @@
     }
   }
 
-  & .tracking-dot {
+  .tracking-dot {
     position: absolute;
     right: 6px;
     top: var(--size-5);
@@ -150,7 +150,7 @@
 
   
   &.range {
-    & .left {
+    .left {
       &::-moz-range-progress {
         background-color: var(--color-secondary-container);
       }
@@ -161,7 +161,7 @@
       }
     } 
     
-    & .right {
+    .right {
       &::-moz-range-progress {
         border-radius: var(--shape-corner-l-end);
       }
@@ -244,7 +244,7 @@ datalist {
   height: var(--size-4);
   border-radius: var(--shape-corner-l-end);
 
-  & .track.dot {
+  .track.dot {
     position: absolute;
     right: var(--size-1);
     bottom: 6px;
@@ -258,7 +258,7 @@ datalist {
   height: var(--size-4);
   border-radius: var(--shape-corner-l-start);
 
-  & .track.dot {
+  .track.dot {
     position: absolute;
     left: var(--size-1);
     bottom: 6px;
@@ -272,11 +272,11 @@ datalist {
   align-items: flex-start;
   padding: 0 var(--size-1);
 
-  & .track.dot:nth-child(1),
-  & .track.dot:nth-child(2),
-  & .track.dot:nth-child(3),
-  & .track.dot:nth-child(4),
-  & .track.dot:nth-child(5) {
+  .track.dot:nth-child(1),
+  .track.dot:nth-child(2),
+  .track.dot:nth-child(3),
+  .track.dot:nth-child(4),
+  .track.dot:nth-child(5) {
     background-color: var(--color-secondary-container);
   }
 }

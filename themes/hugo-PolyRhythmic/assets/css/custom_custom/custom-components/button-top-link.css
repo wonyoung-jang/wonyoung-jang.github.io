@@ -7,7 +7,7 @@
   z-index: 9999;
 
   & i.icon,
-  & .icon {
+  .icon {
     color: var(--icon-color);
   }
 }

@@ -10,13 +10,13 @@
   align-items: stretch;
   padding: var(--size-2);
   
-  & .swatch,
-  & .color-swatch-cell,
+  .swatch,
+  .color-swatch-cell,
   & span {
     flex: 1 1 0;
   }
 
-  & [class*="surface"] {
+  [class*="surface"] {
     --container-height: var(--size-32);
     --container-padding: var(--size-3);
     pointer-events: none;

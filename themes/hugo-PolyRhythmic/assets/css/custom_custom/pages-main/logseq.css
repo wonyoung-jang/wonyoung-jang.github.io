@@ -3,22 +3,22 @@ html.is-publish-mode {
   all: unset;
 
   & main,
-  & .panes,
-  & .pane {
+  .panes,
+  .pane {
     all: unset;
   }
 
-  & #header,
-  & #footer,
-  & .page-header,
-  & .page-links,
-  & .page-navigation,
-  & #toc,
-  & #top-link {
+  #header,
+  #footer,
+  .page-header,
+  .page-links,
+  .page-navigation,
+  #toc,
+  #top-link {
     display: none;
   }
 
-  & #main-content-container {
+  #main-content-container {
     all: unset;
     flex: 1 1 auto;
     display: flex;
@@ -27,7 +27,7 @@ html.is-publish-mode {
     overflow-y: auto;
     overflow-x: hidden;
 
-    & * {
+    * {
       flex: 1 1 auto;
     }
   }

@@ -5,19 +5,19 @@
   --container-padding: var(--size-3) var(--size-4) var(--size-3) var(--size-1);
   --container-elevation: var(--elevation2);
 
-  & .start {
+  .start {
     display: flex;
     flex-flow: row nowrap;
     align-self: stretch;
     align-items: center;
     height: 100%;
 
-    & .icon {
+    .icon {
       width: var(--size-4);
     }
   }
 
-  & .end {
+  .end {
     display: flex;
     flex-flow: row nowrap;
     margin-left: auto;

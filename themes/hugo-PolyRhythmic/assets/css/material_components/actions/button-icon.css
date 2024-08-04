@@ -12,7 +12,7 @@
     &:checked + .button.icon {
       --icon-color: var(--color-primary);
 
-      & .icon,
+      .icon,
       & svg {
         font-variation-settings: "FILL" 1;
       }
@@ -27,7 +27,7 @@
       --container-color: var(--color-surface-container-highest);
       --icon-color: var(--color-primary);
 
-      & .button.icon {
+      .button.icon {
         --container-color: var(--color-surface-container-highest);
         --icon-color: var(--color-primary);
       }
@@ -37,12 +37,12 @@
       --container-color: var(--color-primary);
       --icon-color: var(--color-on-primary);
 
-      & .button.icon {
+      .button.icon {
         --container-color: var(--color-primary);
         --icon-color: var(--color-on-primary);
       }
 
-      & .icon,
+      .icon,
       & svg {
         font-variation-settings: "FILL" 1;
       }
@@ -57,7 +57,7 @@
       --container-color: var(--color-surface-container-highest);
       --icon-color: var(--color-on-surface-variant);
 
-      & .button.icon {
+      .button.icon {
         --container-color: var(--color-surface-container-highest);
         --icon-color: var(--color-on-surface-variant);
       }
@@ -67,12 +67,12 @@
       --container-color: var(--color-secondary-container);
       --icon-color: var(--color-on-secondary-container);
 
-      & .button.icon {
+      .button.icon {
         --container-color: var(--color-secondary-container);
         --icon-color: var(--color-on-secondary-container);
       }
 
-      & .icon,
+      .icon,
       & svg {
         font-variation-settings: "FILL" 1;
       }
@@ -92,7 +92,7 @@
         --container-color: var(--color-inverse-surface);
         --icon-color: var(--color-inverse-on-surface);
 
-        & .icon,
+        .icon,
         & svg {
           font-variation-settings: "FILL" 1;
         }

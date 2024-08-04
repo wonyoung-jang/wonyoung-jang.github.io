@@ -2,7 +2,7 @@
   padding: unset;
   margin: unset;
 
-  & .table-sitemap {
+  .table-sitemap {
     display: block;
     border-spacing: 0px;
     overflow-x: auto;

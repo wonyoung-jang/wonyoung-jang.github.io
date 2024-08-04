@@ -70,7 +70,7 @@
     }
   }
 
-  & .headline {
+  .headline {
     font-family: var(--typescale-label-small-font);
     font-size: var(--typescale-label-small-size);
     font-weight: var(--typescale-label-small-weight);
@@ -79,7 +79,7 @@
     color: var(--color-on-surface-variant);
   }
   
-  & .title {
+  .title {
     display: none;
     font-family: var(--typescale-headline-small-font);
     font-size: var(--typescale-headline-small-size);
@@ -93,7 +93,7 @@
 /* Large: 1200px-1599px */
 @media screen and (min-width: 1200px) {
   .toc {
-    & .title {
+    .title {
       display: block;
     }
   }

@@ -27,7 +27,7 @@
     word-break: break-word;
   }
 
-  & .icon {
+  .icon {
     position: absolute;
     display: flex;
     align-items: center;

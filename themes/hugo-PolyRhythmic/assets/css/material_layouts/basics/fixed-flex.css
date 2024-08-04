@@ -1,13 +1,13 @@
 .basic-fixed-flex#single {
   --layout-flex-flow: column nowrap;
 
-  & .pane {
+  .pane {
     --layout-display: flex;
     --layout-flex: 1 1 auto;
     --layout-width: 100%;
   }
 
-  & #toc {
+  #toc {
     --layout-flex: 0 0 auto;
   }
 }
@@ -15,7 +15,7 @@
 .basic-fixed-flex:not(#single) {
   --layout-flex-flow: row nowrap;
 
-  & .pane {
+  .pane {
     --layout-flex: 1 1 0;
 
     &.fixed-pane {
@@ -30,7 +30,7 @@
   .basic-fixed-flex:not(#single) {
     --layout-flex-flow: row nowrap;
 
-    & .pane {
+    .pane {
       --layout-display: none;
       --layout-flex: 1 1 0;
       --layout-width: calc(50% - var(--spacing-panes) / 2);
@@ -55,7 +55,7 @@
   .basic-fixed-flex#single {
     --layout-flex-flow: row-reverse nowrap;
 
-    & .pane {
+    .pane {
       --layout-flex: 1 1 0;
 
       &.fixed-pane {

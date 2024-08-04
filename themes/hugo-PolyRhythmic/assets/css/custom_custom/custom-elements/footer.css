@@ -10,13 +10,13 @@
   padding-inline: 8dvw;
   gap: 5dvh;
 
-  & .footer-links {
+  .footer-links {
     display: flex;
     flex-flow: row wrap;
     gap: var(--spacing-panes);
     margin-top: var(--size-16);
 
-    & .footer-links-list {
+    .footer-links-list {
       flex: 1 1 0;
       display: flex;
       flex-flow: column nowrap;
@@ -39,14 +39,14 @@
     }
   }
 
-  & .copyright {
+  .copyright {
     flex: 1 1 0;
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
     margin-top: var(--size-16);
     
-    & #copyright-button {
+    #copyright-button {
       flex: 1 1 0;
       display: flex;
       justify-content: flex-start;

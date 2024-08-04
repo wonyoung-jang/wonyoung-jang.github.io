@@ -106,7 +106,7 @@
         padding-top: var(--size-2);
       }
       
-      & + label {
+      + label {
         top: 0px;
         color: var(--color-primary);
         font-family: var(--typescale-body-small-font);
@@ -191,7 +191,7 @@
         padding-top: var(--size-1);
       }
       
-      & + label {
+      + label {
         top: calc(-1 * var(--size-2));
         color: var(--color-primary);
         margin-inline: var(--size-2);
@@ -202,7 +202,7 @@
     }
   }
 
-  & .suffix-content {
+  .suffix-content {
     display: none;
   }
 
@@ -210,13 +210,13 @@
     &:focus,
     &:focus-within,
     &:focus-visible {
-      & .suffix-content {
+      .suffix-content {
         display: inline;
       }
     }
   }
 
-  & .supporting-text {
+  .supporting-text {
     position: absolute;
     top: 100%;
     left: 0;
@@ -278,7 +278,7 @@
     padding-left: var(--size-3);
   }
 
-  & .icon {
+  .icon {
     color: var(--color-on-surface-variant);
 
     &.trailing-icon {

@@ -20,7 +20,7 @@
   margin-top: var(--size-15);
   overflow-x: auto;
 
-  & .showcase-tokens-title {
+  .showcase-tokens-title {
     flex: 1 1 0;
     display: flex;
     flex-flow: row nowrap; 

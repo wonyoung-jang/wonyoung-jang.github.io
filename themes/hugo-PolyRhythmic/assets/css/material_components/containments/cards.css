@@ -23,7 +23,7 @@
     --container-elevation-press: intial;
   }
 
-  & * {
+  * {
     color: var(--icon-color);
   }
 
@@ -60,7 +60,7 @@
     --container-outline-disabled: 1px solid var(--disabled-outline);
   }
 
-  & .media i {
+  .media i {
     color: var(--color-surface-container-high);
   }
 
@@ -72,7 +72,7 @@
     --container-justify-content: center;
     padding: unset !important;
 
-    & .content {
+    .content {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -81,7 +81,7 @@
       width: 100%;
       flex: 1 0 0;
 
-      & .monogram {
+      .monogram {
         font-size: var(--typescale-title-medium-size);
         line-height: var(--typescale-title-medium-line-height);
         font-weight: var(--typescale-title-medium-weight);
@@ -99,7 +99,7 @@
         background-color: var(--color-primary);
       }
 
-      & .text {
+      .text {
         flex: 1 0 0;
         display: flex;
         flex-flow: column nowrap;
@@ -107,7 +107,7 @@
         gap: var(--size-1);
         color: var(--color-on-surface);
 
-        & .header {
+        .header {
           align-self: stretch;
           font-size: var(--typescale-title-medium-size);
           line-height: var(--typescale-title-medium-line-height);
@@ -115,7 +115,7 @@
           font-family: var(--typescale-title-medium-font);
         }
 
-        & .subhead {
+        .subhead {
           align-self: stretch;
           font-size: var(--typescale-body-medium-size);
           line-height: var(--typescale-body-medium-line-height);
@@ -124,12 +124,12 @@
         }
       }
 
-      & .button.icon {
+      .button.icon {
         margin-left: auto;
       }
     }
 
-    & .media {
+    .media {
       flex: 1 0 0;
       display: flex;
       justify-content: center;
@@ -139,20 +139,20 @@
       background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     }
 
-    & .text-content {
+    .text-content {
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
       gap: var(--size-8);
       padding: var(--size-4);
 
-      & .titles {
+      .titles {
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
         gap: var(--size-4);
 
-        & .title {
+        .title {
           color: var(--color-on-surface);
           font-size: var(--typescale-body-large-size);
           line-height: var(--typescale-body-large-line-height);
@@ -160,7 +160,7 @@
           font-family: var(--typescale-body-large-font);
         }
 
-        & .subtitle {
+        .subtitle {
           color: var(--color-on-surface-variant);
           font-size: var(--typescale-body-medium-size);
           line-height: var(--typescale-body-medium-line-height);
@@ -169,7 +169,7 @@
         }
       }
 
-      & .body {
+      .body {
         color: var(--color-on-surface-variant);
         font-size: var(--typescale-body-medium-size);
         line-height: var(--typescale-body-medium-line-height);
@@ -177,7 +177,7 @@
         font-family: var(--typescale-body-medium-font);
       }
 
-      & .actions {
+      .actions {
         display: flex;
         flex-flow: row nowrap;
         align-self: stretch;
@@ -196,7 +196,7 @@
     padding: unset !important;
     width: 100%;
 
-    & .content {
+    .content {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -204,7 +204,7 @@
       gap: var(--size-4);
       flex: 1 0 0;
 
-      & .monogram {
+      .monogram {
         font-size: var(--typescale-title-medium-size);
         line-height: var(--typescale-title-medium-line-height);
         font-weight: var(--typescale-title-medium-weight);
@@ -222,7 +222,7 @@
         background-color: var(--color-primary);
       }
 
-      & .text {
+      .text {
         flex: 1 0 0;
         display: flex;
         flex-flow: column nowrap;
@@ -231,14 +231,14 @@
         gap: var(--size-1);
         color: var(--color-on-surface);
 
-        & .header {
+        .header {
           font-size: var(--typescale-title-medium-size);
           line-height: var(--typescale-title-medium-line-height);
           font-weight: var(--typescale-title-medium-weight);
           font-family: var(--typescale-title-medium-font);
         }
 
-        & .subhead {
+        .subhead {
           font-size: var(--typescale-body-medium-size);
           line-height: var(--typescale-body-medium-line-height);
           font-weight: var(--typescale-body-medium-weight);
@@ -247,7 +247,7 @@
       }
     }
 
-    & .media {
+    .media {
       flex: 0 0 auto;
       display: flex;
       justify-content: center;
@@ -262,7 +262,7 @@
 }
 
 .card {
-  & .card-image {
+  .card-image {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -279,23 +279,23 @@
     }
   }
 
-  & .card-content {
+  .card-content {
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
     padding: var(--size-5);
 
-    & .card-meta,
-    & .card-title,
-    & .card-description {
+    .card-meta,
+    .card-title,
+    .card-description {
       display: flex;
       flex-flow: row nowrap;
     }
 
-    & .card-meta {
+    .card-meta {
       color: var(--color-on-surface-variant);
 
-      & * {
+      * {
         font-family: var(--typescale-label-large);
         font-weight: var(--typescale-label-large-weight);
         font-size: var(--typescale-label-large-size);
@@ -303,7 +303,7 @@
       }
     }
 
-    & .card-title {
+    .card-title {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -318,7 +318,7 @@
       line-height: var(--typescale-headline-small-line-height);
     }
 
-    & .card-description {
+    .card-description {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -335,11 +335,11 @@
 
 /* Medium: 600px-839px */
 @media screen and (min-width: 600px) {
-  & .card {
+  .card {
     --container-flex-flow: column nowrap;
     --container-align-items: stretch;
 
-    & .card-image {
+    .card-image {
       margin: unset;
       border-radius: inherit;
       max-width: 100%;

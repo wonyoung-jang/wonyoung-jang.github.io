@@ -8,23 +8,23 @@
   --layout-flex-flow: row wrap;
   --layout-align-content: stretch;
 
-  & .card {
+  .card {
     place-items: center;
   }
 }
 
 #components-showcase {
-  & .pane {
+  .pane {
     --padding: 0px;
   }
 
-  & .display-medium {
+  .display-medium {
     margin-top: var(--size-12);
     width: 100%;
   }
 }
 
-& .showcase-components-header {
+.showcase-components-header {
   width: 100%;
   padding: var(--size-5) var(--size-4);
   color: var(--color-on-surface);
@@ -41,7 +41,7 @@
   }
 }
 
-& .showcase-components {
+.showcase-components {
   margin-bottom: var(--size-6);
   
   --layout-display: flex;
@@ -55,7 +55,7 @@
   
   --layout-bg: var(--color-surface-container-lowest);
 
-  & .sub-showcase-components-header {
+  .sub-showcase-components-header {
     width: 100%;
     color: var(--color-on-surface-variant);
 
@@ -79,7 +79,7 @@
     width: 100%;
   }
 
-  & .divider-showcase-container {
+  .divider-showcase-container {
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-gap: var(--size-3);
@@ -94,13 +94,13 @@
       height: fit-content;
     }
     
-    & .divider {
+    .divider {
       flex: 1 1 auto;
       width: 100%;
     }
   }
 
-  & .divider-showcase-container-vertical {
+  .divider-showcase-container-vertical {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
@@ -121,7 +121,7 @@
   flex-flow: row wrap;
   gap: var(--size-2);
 
-  & .component.card {
+  .component.card {
     flex: 1 1 0;
     min-height: fit-content;
     padding: var(--size-8);

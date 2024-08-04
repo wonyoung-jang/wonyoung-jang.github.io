@@ -1,11 +1,11 @@
 .panes.canonical-supporting-pane {
   --layout-flex-flow: column nowrap;
 
-  & .focus-pane {
+  .focus-pane {
     --layout-flex: 1 1 auto;
   }
 
-  & .supporting-pane {
+  .supporting-pane {
     --layout-flex: 1 1 auto;
   }
 }
@@ -14,11 +14,11 @@
   .panes.canonical-supporting-pane {
     --layout-flex-flow: row nowrap;
 
-    & .focus-pane {
+    .focus-pane {
       --layout-flex: 2 1 0;
     }
 
-    & .supporting-pane {
+    .supporting-pane {
       --layout-flex: 1 2 0;
     }
   }

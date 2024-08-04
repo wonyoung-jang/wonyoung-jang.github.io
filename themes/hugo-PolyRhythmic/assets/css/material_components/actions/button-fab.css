@@ -14,7 +14,7 @@
     --container-shape: var(--shape-corner-m);
     --container-padding: 0;
     
-    & .icon {
+    .icon {
       font-size: var(--size-5);
     }
   }
@@ -25,7 +25,7 @@
     --container-shape: var(--size-9);
     --container-padding: var(--size-4);
     
-    & .icon {
+    .icon {
       font-size: var(--size-9);
     }
   }
@@ -38,12 +38,12 @@
     --container-padding: var(--size-4);
     gap: var(--size-4);
     
-    & .icon {
+    .icon {
       font-size: var(--size-6);
     }
   }
 
-  & .icon {
+  .icon {
     font-size: var(--size-6);
   }
 }

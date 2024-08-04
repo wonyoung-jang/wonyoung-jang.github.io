@@ -1,7 +1,7 @@
 .basic-split-pane {
   --layout-flex-flow: row nowrap;
 
-  & .pane {
+  .pane {
     --layout-flex: 1 1 0;
   }
 }
@@ -9,7 +9,7 @@
 /* Compact: 0-599px */
 @media screen and (max-width: 599px) {
   .basic-split-pane {
-    & .pane {
+    .pane {
       --layout-display: none;
       --layout-flex: 1 1 0;
       --layout-width: calc(50% - var(--spacing-panes) / 2);

@@ -277,7 +277,7 @@ strong {
   font-weight: var(--typeface-weight-bold);
   -webkit-font-smoothing: antialiased;
 
-  & * {
+  * {
     font-weight: inherit;
   }
 }

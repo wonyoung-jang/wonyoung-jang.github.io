@@ -2,7 +2,7 @@
   --set-display: flex;
   --set-flex-flow: column nowrap;
 
-  & .color-swatch-cell {
+  .color-swatch-cell {
     display: grid;
     grid-template-rows: repeat(13, 1fr);
 
@@ -35,7 +35,7 @@
   flex-flow: row wrap;
   gap: var(--size-2);
 
-  & .swatch {
+  .swatch {
     flex: 1 1 0;
     min-width: fit-content;
   }

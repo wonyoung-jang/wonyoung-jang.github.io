@@ -9,7 +9,7 @@
   padding-block: var(--size-2);
   margin-bottom: var(--size-4);
 
-  & * {
+  * {
     font-size: var(--typescale-body-small-size);
     line-height: var(--typescale-body-small-line-height);
     font-weight: var(--typescale-body-small-weight);
@@ -29,7 +29,7 @@
     }
   }
 
-  & .copy-code {
+  .copy-code {
     display: none;
     position: absolute;
     top: 0.5rem;
@@ -49,7 +49,7 @@
   }
 
   &:hover {
-    & .copy-code {
+    .copy-code {
       display: block;
     }
   }

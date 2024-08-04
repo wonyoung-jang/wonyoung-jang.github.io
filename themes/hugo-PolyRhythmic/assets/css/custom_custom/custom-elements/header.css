@@ -7,17 +7,17 @@
   top: 0;
   z-index: 999999;
 
-  & .app-bar.top {
+  .app-bar.top {
     padding-inline: var(--size-3) var(--size-4);
     z-index: 3;
   }
 
-  & #site-headline {
+  #site-headline {
     position: relative;
     color: var(--color-on-surface);
     flex-flow: row nowrap;
 
-    & .site-id-title {
+    .site-id-title {
       display: none;
       font-family: var(--typescale-title-large-font);
       font-size: var(--typescale-title-large-size);

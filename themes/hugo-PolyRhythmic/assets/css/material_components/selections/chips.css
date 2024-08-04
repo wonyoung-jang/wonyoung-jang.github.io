@@ -37,7 +37,7 @@
   font-family: var(--typescale-label-large-font);
   color: var(--text-color);
   
-  & .icon {
+  .icon {
     color: var(--icon-color);
     font-size: 18px;
     padding: 0;
@@ -51,7 +51,7 @@
   &:has(.avatar) {
     padding-left: var(--size-1);
 
-    & .avatar {
+    .avatar {
       height: var(--size-6);
       width: var(--size-6);
     }
@@ -60,7 +60,7 @@
   &:has(.leading-icon, .favicon) {
     padding-left: var(--size-2);
 
-    & .favicon {
+    .favicon {
       max-width: var(--size-5);
       max-height: var(--size-5);
       border-radius: var(--shape-corner-full);

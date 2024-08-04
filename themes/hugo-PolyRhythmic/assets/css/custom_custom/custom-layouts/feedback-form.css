@@ -20,16 +20,16 @@
 
   --layout-bg: var(--color-surface-container);
 
-  & .button {
+  .button {
     cursor: pointer;
     margin-top: var(--size-21);
   }
 
-  & .error {
+  .error {
     color: var(--color-on-error);
   }
 
-  & .status {
+  .status {
     color: var(--color-inverse-primary);
   }
 }

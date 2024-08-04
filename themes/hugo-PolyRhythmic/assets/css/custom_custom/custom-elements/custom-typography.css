@@ -31,7 +31,7 @@ h6[id] {
   border-radius: var(--shape-corner-xs);
   max-width: fit-content;
 
-  & * {
+  * {
     color: inherit;
   }
 }
