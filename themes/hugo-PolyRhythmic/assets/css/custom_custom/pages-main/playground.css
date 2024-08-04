@@ -1,4 +1,6 @@
 #playground > .test-set {
+  flex: 1 1 0;
+
   display: flex;
   flex-flow: column nowrap;
 
@@ -8,7 +10,6 @@
   border-radius: 8px;
   gap: 16px;
   align-items: stretch;
-  width: 100%;
 
   & > * {
     width: 100%;
