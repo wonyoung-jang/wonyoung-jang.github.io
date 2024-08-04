@@ -1,13 +1,5 @@
-<div class="set tabs {{ .type }}">
+<div class="set tabs">
   {{ range .tabs }}
-    <span class="component tab {{ .active }}">
-      {{ with .icon }}
-        <i class="icon">{{ . }}</i>
-      {{ end }}
-
-      {{ with .label }}
-        <div class="label">{{ . }}</div>
-      {{ end }}
-    </span>
+    {{ partial "components/navigations/tab.html" . }}
   {{ end }}
 </div>

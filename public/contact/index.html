@@ -30,7 +30,7 @@
 
   <link crossorigin="anonymous" href="/assets/css/1_base.min.2e2de6648cb5ee2b06ad638fa00e385ed84c660cc749bff6598d81b52a9d1b39.css" integrity="sha256-Li3mZIy17isGrWOPoA44XthMZgzHSb/2WY2BtSqdGzk=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/2_material_design.min.0ef2ce033f48c20fee9486a6f1538e7b632f17c58c4516d4a5b0e94655cb13d3.css" integrity="sha256-DvLOAz9Iwg/ulIam8VOOe2MvF8WMRRbUpbDpRlXLE9M=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/2_material_design.min.b8b0ce758798acd5b66a3c4f3c4cb76a90005dac1aebe2d09d3d321b36af6ec1.css" integrity="sha256-uLDOdYeYrNW2ajxPPEy3apAAXawa6&#43;LQnT0yGzavbsE=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/3_custom.min.305b68e0e47e5afe032b58b1739fc33a74189bee826fc2b03401f1b6de22ef5b.css" integrity="sha256-MFto4OR&#43;Wv4DK1ixc5/DOnQYm&#43;6Cb8KwNAHxtt4i71s=" rel="preload stylesheet" as="style">
 
@@ -1684,49 +1684,6 @@
 
 
 
-
-  <script defer>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-      const container = codeblock.parentNode.parentNode;
-      const copybutton = document.createElement('button');
-      copybutton.classList.add('copy-code');
-      copybutton.innerText = 'copy';
-      function copyingDone() {
-        copybutton.innerText = 'copied!';
-        setTimeout(() => {
-          copybutton.innerText = 'copy';
-        }, 2000);
-      }
-      copybutton.addEventListener('click', (cb) => {
-        if ('clipboard' in navigator) {
-          navigator.clipboard.writeText(codeblock.textContent);
-          copyingDone();
-          return;
-        }
-        const range = document.createRange();
-        range.selectNodeContents(codeblock);
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        try {
-          document.execCommand('copy');
-          copyingDone();
-        } catch (e) { };
-        selection.removeRange(range);
-      });
-      if (container.classList.contains("highlight")) {
-        container.prepend(copybutton);
-      } else if (container.parentNode.firstChild == container) {
-        
-      } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-        
-        codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-      } else {
-        
-        codeblock.parentNode.prepend(copybutton);
-      }
-    });
-  </script>
 
 </footer>
     </main>

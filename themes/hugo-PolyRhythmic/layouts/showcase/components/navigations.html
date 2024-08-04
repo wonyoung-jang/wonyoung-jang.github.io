@@ -458,37 +458,72 @@
     <div class="layout showcase-components">
       <div class="sub-showcase-components-header">Primary</div>
       {{ partial "components/navigations/tabs.html" (dict
-        "type" "primary"
         "tabs" (slice
-          (dict "label" "Tab 1" "active" "active")
-          (dict "label" "Tab 2")
-          (dict "label" "Tab 3")
-          (dict "label" "Tab 4")
-          (dict "label" "Tab 5")
+          (dict 
+            "type" "primary"
+            "label" "Tab 1" 
+            "active" "active")
+          (dict 
+            "type" "primary"
+            "label" "Tab 2")
+          (dict 
+            "type" "primary"
+            "label" "Tab 3")
+          (dict 
+            "type" "primary"
+            "label" "Tab 4")
+          (dict 
+            "type" "primary"
+            "label" "Tab 5")
           )
         )
       }}
 
       {{ partial "components/navigations/tabs.html" (dict
-        "type" "primary"
         "tabs" (slice
-          (dict "icon" "add" "active" "active")
-          (dict "icon" "list")
-          (dict "icon" "token")
-          (dict "icon" "menu")
-          (dict "icon" "folder")
+          (dict 
+            "type" "primary"
+            "icon" "add" 
+            "active" "active")
+          (dict 
+            "type" "primary"
+            "icon" "add")
+          (dict 
+            "type" "primary"
+            "icon" "add")
+          (dict 
+            "type" "primary"
+            "icon" "add")
+          (dict 
+            "type" "primary"
+            "icon" "add")
           )
         )
       }}
 
       {{ partial "components/navigations/tabs.html" (dict
-        "type" "primary"
         "tabs" (slice
-          (dict "icon" "add" "label" "Tab 1" "active" "active")
-          (dict "icon" "add" "label" "Tab 2")
-          (dict "icon" "add" "label" "Tab 3")
-          (dict "icon" "add" "label" "Tab 4")
-          (dict "icon" "add" "label" "Tab 5")
+          (dict 
+            "type" "primary"
+            "icon" "add" 
+            "label" "Tab 1" 
+            "active" "active")
+          (dict 
+            "type" "primary"
+            "icon" "add" 
+            "label" "Tab 2")
+          (dict 
+            "type" "primary"
+            "icon" "add" 
+            "label" "Tab 3")
+          (dict 
+            "type" "primary"
+            "icon" "add" 
+            "label" "Tab 4")
+          (dict 
+            "type" "primary"
+            "icon" "add" 
+            "label" "Tab 5")
           )
         )
       }}
@@ -496,88 +531,95 @@
       <div class="sub-showcase-components-header">Secondary</div>
 
       {{ partial "components/navigations/tabs.html" (dict
-        "type" "secondary"
         "tabs" (slice
-          (dict "label" "Tab 1" "active" "active")
-          (dict "label" "Tab 2")
-          (dict "label" "Tab 3")
-          (dict "label" "Tab 4")
-          (dict "label" "Tab 5")
+          (dict 
+            "type" "secondary"
+            "label" "Tab 1"
+            "active" "active")
+          (dict 
+            "type" "secondary"
+            "label" "Tab 2")
+          (dict 
+            "type" "secondary"
+            "label" "Tab 3")
+          (dict 
+            "type" "secondary"
+            "label" "Tab 4")
+          (dict 
+            "type" "secondary"
+            "label" "Tab 5")
           )
         )
       }}
 
       {{ partial "components/navigations/tabs.html" (dict
-        "type" "secondary"
         "tabs" (slice
-          (dict "icon" "add" "label" "Tab 1" "active" "active")
-          (dict "icon" "add" "label" "Tab 2")
-          (dict "icon" "add" "label" "Tab 3")
-          (dict "icon" "add" "label" "Tab 4")
-          (dict "icon" "add" "label" "Tab 5")
+          (dict 
+            "type" "secondary"
+            "icon" "add" 
+            "label" "Tab 1" 
+            "active" "active")
+          (dict 
+            "type" "secondary"
+            "icon" "add" 
+            "label" "Tab 2")
+          (dict 
+            "type" "secondary"
+            "icon" "add" 
+            "label" "Tab 3")
+          (dict 
+            "type" "secondary"
+            "icon" "add" 
+            "label" "Tab 4")
+          (dict 
+            "type" "secondary"
+            "icon" "add" 
+            "label" "Tab 5")
           )
         )
       }}
       
       <div class="sub-showcase-components-header">Subcomponents</div>
-      <div class="set tabs primary">
-        <div class="component tab">
+      <span class="title-medium">Primary</span>
+      <section>
+        <div class="component tab primary">
           <div class="label">Primary</div>
         </div>
-      </div>
-      <div class="set tabs primary">
-        <div class="component tab active">
+        <div class="component tab active primary">
           <div class="label">Active</div>
         </div>
-      </div>
-
-      <div class="set tabs primary">
-        <div class="component tab">
+        <div class="component tab primary">
           <i class="icon">add</i>
         </div>
-      </div>
-      <div class="set tabs primary">
-        <div class="component tab active">
+        <div class="component tab active primary">
           <i class="icon">add</i>
         </div>
-      </div>
-      
-      <div class="set tabs primary">
-        <div class="component tab">
+        <div class="component tab primary">
           <i class="icon">add</i>
           <div class="label">Icon & label</div>
         </div>
-      </div>
-      <div class="set tabs primary">
-        <div class="component tab active">
+        <div class="component tab active primary">
           <i class="icon">add</i>
           <div class="label">Active</div>
         </div>
-      </div>
-      
-      <div class="set tabs secondary">
-        <div class="component tab">
+      </section>
+      <span class="title-medium">Secondary</span>
+      <section>
+        <div class="component tab secondary">
           <div class="label">Secondary</div>
         </div>
-      </div>
-      <div class="set tabs secondary">
-        <div class="component tab active">
+        <div class="component tab active secondary">
           <div class="label">Active</div>
         </div>
-      </div>
-
-      <div class="set tabs secondary">
-        <div class="component tab">
+        <div class="component tab secondary">
           <i class="icon">add</i>
           <div class="label">Icon & label</div>
         </div>
-      </div>
-      <div class="set tabs secondary">
-        <div class="component tab active">
+        <div class="component tab active secondary">
           <i class="icon">add</i>
           <div class="label">Active</div>
         </div>
-      </div>
+      </section>
     </div>
   </section>
 </article>
