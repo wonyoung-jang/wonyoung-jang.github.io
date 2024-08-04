@@ -50,6 +50,7 @@
   padding: var(--size-3);
   border-radius: var(--shape-corner-xl);
   transition-property: all;
+  transition-duration: inherit;
 }
 
 .box.translate:hover,
