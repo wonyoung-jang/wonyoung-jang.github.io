@@ -28,11 +28,11 @@
   rel="stylesheet">
 
 
-  <link crossorigin="anonymous" href="/assets/css/1_base.min.3a2c55774dc43fd0c74104ad47e794a0db8df10ee4c8728fd7e76ce0e96dd162.css" integrity="sha256-OixVd03EP9DHQQStR&#43;eUoNuN8Q7kyHKP1&#43;ds4Olt0WI=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/1_base.min.df978a1ebba38c08a05a17bdc685bb1dd7a07761d2d81e729bbdd532a93f349f.css" integrity="sha256-35eKHrujjAigWhe9xoW7Hdegd2HS2B5ym73VMqk/NJ8=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/2_material_design.min.60d2066deb59d65018b570147aa15a5da396996f1e95c654d23346c73643a418.css" integrity="sha256-YNIGbetZ1lAYtXAUeqFaXaOWmW8elcZU0jNGxzZDpBg=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/3_custom.min.7a389d2c236f853ea404252b978a0dc4b9bc9b29c572c0ebc0675335d28c0c89.css" integrity="sha256-ejidLCNvhT6kBCUrl4oNxLm8mynFcsDrwGdTNdKMDIk=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/3_custom.min.ed5efb917fb9bc6afade18a9604c91421bdcdeb2aaebf58797b0c72545c5f72d.css" integrity="sha256-7V77kX&#43;5vGr63hipYEyRQhvc3rKq6/WHl7DHJUXF9y0=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/4_helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -624,6 +624,7 @@
     
     var savedContrast = localStorage.getItem("contrast");
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedMargin = localStorage.getItem("post-content-margin");
     var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
@@ -660,6 +661,7 @@
     } else {
       widthSelector60.checked = true;
       localStorage.setItem("max-char-width", "60");
+      localStorage.setItem("post-content-margin", "0 auto");
     }
 
     if (savedDimImages !== null) {
@@ -740,10 +742,16 @@
 
       if (width === "60") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "120") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "max") {
         root.style.setProperty("--input-char-width", "100%");
+        root.style.setProperty("--input-post-content-margin", "0")
+        localStorage.setItem("post-content-margin", "0");
       }
 
       localStorage.setItem("max-char-width", width);

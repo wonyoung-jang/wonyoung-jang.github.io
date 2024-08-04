@@ -1,16 +1,8 @@
 .feedback-form {
-  box-shadow: var(--elevation1);
-  color: var(--color-on-surface);
-
-  --layout-flex: initial;
+  --layout-flex: 1 1 auto;
   --layout-display: flex;
   --layout-flex-flow: column nowrap;
   --layout-align-items: stretch;
-  --layout-align-content: initial;
-  --layout-justify-content: initial;
-  --layout-width: initial;
-  --layout-height: initial;
-  --layout-min-height: initial;
   --layout-padding: var(--size-13);
   --layout-margin: var(--size-13);
   --layout-gap: var(--size-13);
@@ -19,6 +11,9 @@
   --layout-border: initial;
 
   --layout-bg: var(--color-surface-container);
+
+  box-shadow: var(--elevation1);
+  color: var(--color-on-surface);
 
   .button {
     cursor: pointer;

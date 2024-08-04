@@ -299,6 +299,7 @@
     // Load saved values from localStorage
     var savedContrast = localStorage.getItem("contrast");
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedMargin = localStorage.getItem("post-content-margin");
     var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
@@ -335,6 +336,7 @@
     } else {
       widthSelector60.checked = true;
       localStorage.setItem("max-char-width", "60");
+      localStorage.setItem("post-content-margin", "0 auto");
     }
 
     if (savedDimImages !== null) {
@@ -415,10 +417,16 @@
 
       if (width === "60") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "120") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "max") {
         root.style.setProperty("--input-char-width", "100%");
+        root.style.setProperty("--input-post-content-margin", "0")
+        localStorage.setItem("post-content-margin", "0");
       }
 
       localStorage.setItem("max-char-width", width);

@@ -40,6 +40,7 @@
 
   /* Line character width */
   --input-char-width: 60ch;
+  --input-post-content-margin: 0 auto;
 
   /* || Shapes */
 

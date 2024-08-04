@@ -1,7 +1,7 @@
 #post-content {
-  margin: 0 auto;
   max-width: var(--input-char-width);
-
+  margin: var(--input-post-content-margin);
+  
   & p,
   .highlight-text,
   & pre,
