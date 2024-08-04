@@ -40,7 +40,6 @@
   width:            var(--container-width);
   padding:          var(--container-padding);
   
-  
   border-radius:    var(--container-shape);
 
   color:            var(--text-color, var(--icon-color));

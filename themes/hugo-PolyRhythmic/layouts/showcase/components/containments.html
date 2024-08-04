@@ -13,202 +13,188 @@
     {{/*  Cards  */}}
     <div class="showcase-components-header">Cards</div>
     <div class="layout showcase-components" id="cards">
-      <div class="sub-showcase-components-header">Elevated</div>
-      {{ partial "components/containments/cards.html" (dict
-        "type" "elevated"
-        "showcase" "Elevated"
-        ) 
-      }}
+      <div class="sub-showcase-components-header">Basic</div>
+      <section class="showcase-cards">
+        {{ partial "components/containments/cards.html" (dict
+          "type" "elevated"
+          "showcase" "Elevated") }}
 
-      {{ partial "components/containments/cards.html" (dict
-        "type" "elevated"
-        "showcase" "Disabled"
-        "disabled" "disabled"
-        ) 
-      }}
+        {{ partial "components/containments/cards.html" (dict
+          "type" "elevated"
+          "showcase" "Elevated - Disabled"
+          "disabled" "disabled") }}
 
-      <div class="sub-showcase-components-header">Filled</div>
-      {{ partial "components/containments/cards.html" (dict
-        "type" "filled"
-        "showcase" "Filled"
-        ) 
-      }}
+        {{ partial "components/containments/cards.html" (dict
+          "type" "filled"
+          "showcase" "Filled") }}
 
-      {{ partial "components/containments/cards.html" (dict
-        "type" "filled"
-        "showcase" "Disabled"
-        "disabled" "disabled"
-        ) 
-      }}
+        {{ partial "components/containments/cards.html" (dict
+          "type" "filled"
+          "showcase" "Filled- Disabled"
+          "disabled" "disabled") }}
 
-      <div class="sub-showcase-components-header">Outlined</div>
-      {{ partial "components/containments/cards.html" (dict
-        "type" "outlined"
-        "showcase" "Outlined"
-        ) 
-      }}
+        {{ partial "components/containments/cards.html" (dict
+          "type" "outlined"
+          "showcase" "Outlined") }}
 
-      {{ partial "components/containments/cards.html" (dict
-        "type" "outlined"
-        "showcase" "Disabled"
-        "disabled" "disabled"
-        ) 
-      }}
-      
-      <div class="sub-showcase-components-header">Example cards</div>
-      
-      <div class="component card elevated" horizontal>
-        <div class="content">
-          <div class="monogram">W</div>
-          
-          <div class="text">
-            <div class="header">Header - horizontal</div>
-            <div class="subhead">Subhead</div>
+        {{ partial "components/containments/cards.html" (dict
+          "type" "outlined"
+          "showcase" "Outlined - Disabled"
+          "disabled" "disabled") }}
+              
+        <div class="component card elevated" horizontal>
+          <div class="content">
+            <div class="monogram">W</div>
+            
+            <div class="text">
+              <div class="header">Header - horizontal</div>
+              <div class="subhead">Subhead</div>
+            </div>
+          </div>
+
+          <div class="media">
+            <i class="icon">image</i>
           </div>
         </div>
 
-        <div class="media">
-          <i class="icon">image</i>
-        </div>
-      </div>
+        <div class="component card elevated" stacked>
+          <div class="content">
+            <div class="monogram">W</div>
+            
+            <div class="text">
+              <div class="header">Header - stacked</div>
+              <div class="subhead">Subhead</div>
+            </div>
 
-      <div class="component card elevated" stacked>
-        <div class="content">
-          <div class="monogram">W</div>
-          
-          <div class="text">
-            <div class="header">Header - stacked</div>
-            <div class="subhead">Subhead</div>
+            <div class="component button icon">
+              <i class="icon">more_vert</i>
+            </div>
           </div>
 
-          <div class="component button icon">
-            <i class="icon">more_vert</i>
+          <div class="media">
+            <i class="icon">image</i>
           </div>
-        </div>
 
-        <div class="media">
-          <i class="icon">image</i>
-        </div>
-
-        <div class="text-content">            
-          <div class="titles">
-            <div class="title">Title</div>
-            <div class="subtitle">Subtitle</div>
-          </div>
-          <div class="body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Non blanditiis voluptas, repellat, impedit, sit reprehenderit
-            nam et ipsa eius amet rem! Eligendi sequi magnam
-            exercitationem vel dignissimos similique, atque earum.
-          </div>
-          <div class="actions">
-            <button class="component button common outlined">Action</button>
-            <button class="component button common filled">Action</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="component card filled" horizontal>
-        <div class="content">
-          <div class="monogram">W</div>
-          
-          <div class="text">
-            <div class="header">Header - horizontal</div>
-            <div class="subhead">Subhead</div>
+          <div class="text-content">            
+            <div class="titles">
+              <div class="title">Title</div>
+              <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Non blanditiis voluptas, repellat, impedit, sit reprehenderit
+              nam et ipsa eius amet rem! Eligendi sequi magnam
+              exercitationem vel dignissimos similique, atque earum.
+            </div>
+            <div class="actions">
+              <button class="component button common outlined">Action</button>
+              <button class="component button common filled">Action</button>
+            </div>
           </div>
         </div>
 
-        <div class="media">
-          <i class="icon">image</i>
-        </div>
-      </div>
-
-      <div class="component card filled" stacked>
-        <div class="content">
-          <div class="monogram">W</div>
-          
-          <div class="text">
-            <div class="header">Header - stacked</div>
-            <div class="subhead">Subhead</div>
+        <div class="component card filled" horizontal>
+          <div class="content">
+            <div class="monogram">W</div>
+            
+            <div class="text">
+              <div class="header">Header - horizontal</div>
+              <div class="subhead">Subhead</div>
+            </div>
           </div>
 
-          <div class="component button icon">
-            <i class="icon">more_vert</i>
+          <div class="media">
+            <i class="icon">image</i>
           </div>
         </div>
 
-        <div class="media">
-          <i class="icon">image</i>
-        </div>
+        <div class="component card filled" stacked>
+          <div class="content">
+            <div class="monogram">W</div>
+            
+            <div class="text">
+              <div class="header">Header - stacked</div>
+              <div class="subhead">Subhead</div>
+            </div>
 
-        <div class="text-content">            
-          <div class="titles">
-            <div class="title">Title</div>
-            <div class="subtitle">Subtitle</div>
-          </div>
-          <div class="body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Non blanditiis voluptas, repellat, impedit, sit reprehenderit
-            nam et ipsa eius amet rem! Eligendi sequi magnam
-            exercitationem vel dignissimos similique, atque earum.
-          </div>
-          <div class="actions">
-            <button class="component button common outlined">Action</button>
-            <button class="component button common filled">Action</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="component card outlined" horizontal>
-        <div class="content">
-          <div class="monogram">W</div>
-          
-          <div class="text">
-            <div class="header">Header - horizontal</div>
-            <div class="subhead">Subhead</div>
-          </div>
-        </div>
-
-        <div class="media">
-          <i class="icon">image</i>
-        </div>
-      </div>
-
-      <div class="component card outlined" stacked>
-        <div class="content">
-          <div class="monogram">W</div>
-          
-          <div class="text">
-            <div class="header">Header - stacked</div>
-            <div class="subhead">Subhead</div>
+            <div class="component button icon">
+              <i class="icon">more_vert</i>
+            </div>
           </div>
 
-          <div class="component button icon">
-            <i class="icon">more_vert</i>
+          <div class="media">
+            <i class="icon">image</i>
+          </div>
+
+          <div class="text-content">            
+            <div class="titles">
+              <div class="title">Title</div>
+              <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Non blanditiis voluptas, repellat, impedit, sit reprehenderit
+              nam et ipsa eius amet rem! Eligendi sequi magnam
+              exercitationem vel dignissimos similique, atque earum.
+            </div>
+            <div class="actions">
+              <button class="component button common outlined">Action</button>
+              <button class="component button common filled">Action</button>
+            </div>
           </div>
         </div>
 
-        <div class="media">
-          <i class="icon">image</i>
+        <div class="component card outlined" horizontal>
+          <div class="content">
+            <div class="monogram">W</div>
+            
+            <div class="text">
+              <div class="header">Header - horizontal</div>
+              <div class="subhead">Subhead</div>
+            </div>
+          </div>
+
+          <div class="media">
+            <i class="icon">image</i>
+          </div>
         </div>
 
-        <div class="text-content">            
-          <div class="titles">
-            <div class="title">Title</div>
-            <div class="subtitle">Subtitle</div>
+        <div class="component card outlined" stacked>
+          <div class="content">
+            <div class="monogram">W</div>
+            
+            <div class="text">
+              <div class="header">Header - stacked</div>
+              <div class="subhead">Subhead</div>
+            </div>
+
+            <div class="component button icon">
+              <i class="icon">more_vert</i>
+            </div>
           </div>
-          <div class="body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Non blanditiis voluptas, repellat, impedit, sit reprehenderit
-            nam et ipsa eius amet rem! Eligendi sequi magnam
-            exercitationem vel dignissimos similique, atque earum.
+
+          <div class="media">
+            <i class="icon">image</i>
           </div>
-          <div class="actions">
-            <button class="component button common outlined">Action</button>
-            <button class="component button common filled">Action</button>
+
+          <div class="text-content">            
+            <div class="titles">
+              <div class="title">Title</div>
+              <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Non blanditiis voluptas, repellat, impedit, sit reprehenderit
+              nam et ipsa eius amet rem! Eligendi sequi magnam
+              exercitationem vel dignissimos similique, atque earum.
+            </div>
+            <div class="actions">
+              <button class="component button common outlined">Action</button>
+              <button class="component button common filled">Action</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     {{/*  Carousels  */}}

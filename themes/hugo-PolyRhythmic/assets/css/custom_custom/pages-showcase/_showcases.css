@@ -125,3 +125,14 @@
     }
   }
 }
+
+.showcase-cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--size-2);
+
+  & .component.card {
+    flex: 1 1 calc(50% - var(--size-2));
+    min-height: fit-content;
+  }
+}
