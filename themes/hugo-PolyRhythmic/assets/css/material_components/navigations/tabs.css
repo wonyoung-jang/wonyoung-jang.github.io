@@ -13,7 +13,7 @@
 }
 
 .tabs:not(.sub-tabs) .tab,
-.tab {
+.component.tab {
   flex: 1 1 auto;
   cursor: pointer;
 
@@ -24,6 +24,7 @@
   --container-flex-flow: column nowrap;
   --container-justify-content: center;
   --container-align-items: center;
+  --container-color: var(--color-surface);
 
   --icon-color: var(--color-on-surface-variant);
   --text-color: var(--color-on-surface-variant);
