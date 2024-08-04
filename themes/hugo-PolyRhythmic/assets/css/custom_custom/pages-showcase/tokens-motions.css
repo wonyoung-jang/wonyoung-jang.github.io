@@ -31,41 +31,40 @@
   min-height: var(--size-30);
 }
 
+.box.translate {
+  color: var(--color-on-surface);
+  background-color: var(--color-surface-container-high);
+  border-radius: var(--shape-corner-m);
+  transition-property: all;
+  
+  & span {
+    opacity: 0;
+    margin-left: 0;
+    color: var(--color-on-primary-container);
+    background-color: var(--color-primary-container);
+    padding: var(--size-3);
+    border-radius: var(--shape-corner-xl);
+    transition-property: all;
+    transition-duration: inherit;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--color-surface-container-highest);
+    border-radius: var(--shape-corner-l);
+
+    & span {
+      opacity: 1;
+      margin-left: var(--size-10);
+    }
+  }
+}
+
 .box.skeleton {
   background-color: var(--color-surface-bright);
   animation: pulse calc(var(--motion-duration-extra-long4) * 1.5) infinite;
   min-height: var(--size-25);
-}
-
-.box.translate {
-  color: var(--color-on-secondary-container);
-  background-color: var(--color-secondary-container);
-}
-
-.box.translate span {
-  opacity: 0;
-  margin-left: 0;
-  color: var(--color-on-tertiary-container);
-  background-color: var(--color-tertiary-container);
-  padding: var(--size-3);
-  border-radius: var(--shape-corner-xl);
-  transition-property: all;
-  transition-duration: inherit;
-}
-
-.box.translate:hover,
-.box.translate:focus,
-.box.translate:active {
-  color: var(--color-on-primary-container);
-  background-color: var(--color-primary-container);
-  border-radius: var(--shape-corner-xl);
-}
-
-.box.translate:hover span,
-.box.translate:focus span,
-.box.translate:active span {
-  opacity: 1;
-  margin-left: var(--size-10);
 }
 
 @keyframes pulse {
