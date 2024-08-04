@@ -21,9 +21,7 @@
         "icon_1"  "home"
         "icon_2"  "add"
         "icon_3"  "settings"
-        "icon_4"  "token"
-        )
-      }}
+        "icon_4"  "token") }}
       
       <div class="sub-showcase-components-header">With FAB</div>
       {{ partial "components/navigations/app-bar-bottom.html" (dict
@@ -31,9 +29,7 @@
         "icon_2"  "add"
         "icon_3"  "settings"
         "icon_4"  "token"
-        "fab"     "add"
-        )
-      }}
+        "fab"     "add") }}
     
       {{/*  Top app bars  */}}
       <div class="display-medium">Top app bars</div>
@@ -43,9 +39,7 @@
         "size" "small"
         "headline" "Title"
         "icon_1"  "home"
-        "icon_2" "account_circle"
-        )
-      }}
+        "icon_2" "account_circle") }}
 
       <div class="sub-showcase-components-header">Small</div>
       {{ partial "components/navigations/app-bar-top.html" (dict
@@ -54,9 +48,7 @@
         "icon_1"  "arrow_back"
         "icon_2" "attach_file"
         "icon_3" "today"
-        "icon_4" "more_vert"
-        )
-      }}
+        "icon_4" "more_vert") }}
 
       <div class="sub-showcase-components-header">Medium</div>
       {{ partial "components/navigations/app-bar-top.html" (dict
@@ -65,9 +57,7 @@
         "icon_1"  "arrow_back"
         "icon_2" "attach_file"
         "icon_3" "today"
-        "icon_4" "more_vert"
-        )
-      }}
+        "icon_4" "more_vert") }}
 
       <div class="sub-showcase-components-header">Large</div>
       {{ partial "components/navigations/app-bar-top.html" (dict
@@ -76,9 +66,7 @@
         "icon_1"  "arrow_back"
         "icon_2" "attach_file"
         "icon_3" "today"
-        "icon_4" "more_vert"
-        )
-      }}
+        "icon_4" "more_vert") }}
     </div>
 
     {{/*  || Navigations  */}}
@@ -106,52 +94,54 @@
       
       {{/*  Subcomponents  */}}
       <div class="display-medium">Subcomponents</div>
-      <div class="component navigation bar item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
+      <section>
+        <div class="component navigation bar item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+          </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
-      <div class="component navigation bar item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
+        <div class="component navigation bar item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+          </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
-      
-      <div class="component navigation bar item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge"></div>
+        
+        <div class="component navigation bar item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge"></div>
+          </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
-      <div class="component navigation bar item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge"></div>
+        <div class="component navigation bar item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge"></div>
+          </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
 
-      <div class="component navigation bar item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge large">
-            <span>8</span>
+        <div class="component navigation bar item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge large">
+              <span>8</span>
+            </div>
           </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
-      <div class="component navigation bar item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge large">
-            <span>8</span>
+        <div class="component navigation bar item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge large">
+              <span>8</span>
+            </div>
           </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
+      </section>
 
       {{/*  Navigation drawers  */}}
       <div class="display-medium">Navigation drawers</div>
@@ -229,7 +219,7 @@
       <div class="display-medium">Subcomponents</div>
       <div class="headline">Headline</div>
       <div class="section-header">Section header</div>
-      <section class="subcomponent">
+      <section>
         <div class="component navigation drawer item active">
           <i class="icon">stars</i>
           <div class="label">Label</div>
@@ -312,95 +302,97 @@
 
       {{/*  Subcomponents  */}}
       <div class="display-medium">Subcomponents</div>
-      {{/*  Label  */}}
-      <div class="component navigation rail item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-        </div>
-        <div class="label">Label</div>
-      </div>
-      <div class="component navigation rail item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-        </div>
-        <div class="label">Label</div>
-      </div>
-      {{/*  Label - Badge  */}}
-      <div class="component navigation rail item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge"></div>
-        </div>
-        <div class="label">Label</div>
-      </div>
-      <div class="component navigation rail item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge"></div>
-        </div>
-        <div class="label">Label</div>
-      </div>
-      {{/*  Label - Badge.large  */}}
-      <div class="component navigation rail item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge large">
-            <span>8</span>
+      <section>
+        {{/*  Label  */}}
+        <div class="component navigation rail item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
           </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
-      <div class="component navigation rail item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge large">
-            <span>8</span>
+        <div class="component navigation rail item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
           </div>
+          <div class="label">Label</div>
         </div>
-        <div class="label">Label</div>
-      </div>
+        {{/*  Label - Badge  */}}
+        <div class="component navigation rail item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge"></div>
+          </div>
+          <div class="label">Label</div>
+        </div>
+        <div class="component navigation rail item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge"></div>
+          </div>
+          <div class="label">Label</div>
+        </div>
+        {{/*  Label - Badge.large  */}}
+        <div class="component navigation rail item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge large">
+              <span>8</span>
+            </div>
+          </div>
+          <div class="label">Label</div>
+        </div>
+        <div class="component navigation rail item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge large">
+              <span>8</span>
+            </div>
+          </div>
+          <div class="label">Label</div>
+        </div>
 
-      {{/*  Icon only  */}}
-      <div class="component navigation rail item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-        </div>
-      </div>
-      <div class="component navigation rail item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-        </div>
-      </div>
-      {{/*  Icon only - Badge  */}}
-      <div class="component navigation rail item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge"></div>
-        </div>
-      </div>
-      <div class="component navigation rail item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge"></div>
-        </div>
-      </div>
-      {{/*  Icon only - Badge.large  */}}
-      <div class="component navigation rail item active">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge large">
-            <span>8</span>
+        {{/*  Icon only  */}}
+        <div class="component navigation rail item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
           </div>
         </div>
-      </div>
-      <div class="component navigation rail item">
-        <div class="icon-container">
-          <i class="icon">stars</i>
-          <div class="component badge large">
-            <span>8</span>
+        <div class="component navigation rail item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
           </div>
         </div>
-      </div>
+        {{/*  Icon only - Badge  */}}
+        <div class="component navigation rail item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge"></div>
+          </div>
+        </div>
+        <div class="component navigation rail item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge"></div>
+          </div>
+        </div>
+        {{/*  Icon only - Badge.large  */}}
+        <div class="component navigation rail item active">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge large">
+              <span>8</span>
+            </div>
+          </div>
+        </div>
+        <div class="component navigation rail item">
+          <div class="icon-container">
+            <i class="icon">stars</i>
+            <div class="component badge large">
+              <span>8</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
 

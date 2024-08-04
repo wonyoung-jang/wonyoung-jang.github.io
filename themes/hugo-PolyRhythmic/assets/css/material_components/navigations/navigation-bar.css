@@ -7,6 +7,7 @@
 }
   
 .component.navigation.bar {
+  flex: 1 1 0;
   --container-flex-flow: column nowrap;
   --container-gap: var(--size-1);
   --container-padding: 22px 0 26px 0;

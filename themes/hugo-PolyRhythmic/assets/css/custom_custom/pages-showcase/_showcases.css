@@ -55,11 +55,6 @@
   
   --layout-bg: var(--color-surface-container-lowest);
 
-  &#cards {
-    --layout-flex-flow: column nowrap;
-    --layout-align-items: stretch;
-  }
-
   & .sub-showcase-components-header {
     width: 100%;
     color: var(--color-on-surface-variant);
@@ -82,11 +77,6 @@
     align-items: flex-start;
     gap: var(--size-4);
     width: 100%;
-  }
-
-  & .card {
-    flex: 1 1 0;
-    padding: var(--size-8);
   }
 
   & .divider-showcase-container {
@@ -132,7 +122,8 @@
   gap: var(--size-2);
 
   & .component.card {
-    flex: 1 1 calc(50% - var(--size-2));
+    flex: 1 1 0;
     min-height: fit-content;
+    padding: var(--size-8);
   }
 }

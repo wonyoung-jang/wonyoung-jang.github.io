@@ -50,9 +50,11 @@
   --container-padding: var(--size-4) var(--size-6);
   --container-height: var(--size-14);
   --container-shape: var(--shape-corner-full);
+  --container-width: var(--size-90);
   
   --text-color: var(--color-on-surface-variant);
   --icon-color: var(--color-on-surface-variant);
+
   
   &:has(i) {
     --container-padding: var(--size-4) var(--size-6) var(--size-4) var(--size-4);
