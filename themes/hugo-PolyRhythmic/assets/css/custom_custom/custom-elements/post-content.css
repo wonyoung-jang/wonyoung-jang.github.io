@@ -1,7 +1,7 @@
 #post-content {
   max-width: var(--input-char-width);
   margin: var(--input-post-content-margin);
-  
+
   & p,
   .highlight-text,
   & pre,
@@ -35,6 +35,7 @@
   }
 
   & figure:has(img, svg, video) {
+    margin: var(--size-2) auto;
     max-width: 100%;
 
     & img,

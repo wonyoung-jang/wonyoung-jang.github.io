@@ -28,11 +28,11 @@
   rel="stylesheet">
 
 
-  <link crossorigin="anonymous" href="/assets/css/1_base.min.33b33efd501d6d9da8b3973592328012b335a74de8775261ee268280f8aa89e8.css" integrity="sha256-M7M&#43;/VAdbZ2os5c1kjKAErM1p03od1Jh7iaCgPiqieg=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/1_base.min.df978a1ebba38c08a05a17bdc685bb1dd7a07761d2d81e729bbdd532a93f349f.css" integrity="sha256-35eKHrujjAigWhe9xoW7Hdegd2HS2B5ym73VMqk/NJ8=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/2_material_design.min.6257b53a6dc03c6d92089d9a3a4fb7c7dd8112f32732e693f3c82f9162478f94.css" integrity="sha256-Yle1Om3APG2SCJ2aOk&#43;3x92BEvMnMuaT88gvkWJHj5Q=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/2_material_design.min.60d2066deb59d65018b570147aa15a5da396996f1e95c654d23346c73643a418.css" integrity="sha256-YNIGbetZ1lAYtXAUeqFaXaOWmW8elcZU0jNGxzZDpBg=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/3_custom.min.de59cd8391b62d4cebc18a05c48ec60bcb9a1f0d64b8afafa8deade8886300e4.css" integrity="sha256-3lnNg5G2LUzrwYoFxI7GC8uaHw1kuK&#43;vqN6t6IhjAOQ=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/3_custom.min.bb3d54c03700a65037109abcbc03e60f20832c06d9ee573c8c342abb8155fd47.css" integrity="sha256-uz1UwDcAplA3EJq8vAPmDyCDLAbZ7lc8jDQqu4FV/Uc=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/4_helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -623,6 +623,7 @@
     
     var savedContrast = localStorage.getItem("contrast");
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedMargin = localStorage.getItem("post-content-margin");
     var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
@@ -659,6 +660,7 @@
     } else {
       widthSelector60.checked = true;
       localStorage.setItem("max-char-width", "60");
+      localStorage.setItem("post-content-margin", "0 auto");
     }
 
     if (savedDimImages !== null) {
@@ -739,10 +741,16 @@
 
       if (width === "60") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "120") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "max") {
         root.style.setProperty("--input-char-width", "100%");
+        root.style.setProperty("--input-post-content-margin", "0")
+        localStorage.setItem("post-content-margin", "0");
       }
 
       localStorage.setItem("max-char-width", width);
@@ -1656,6 +1664,49 @@
 
 
 
+
+  <script defer>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+      const container = codeblock.parentNode.parentNode;
+      const copybutton = document.createElement('button');
+      copybutton.classList.add('copy-code');
+      copybutton.innerText = 'copy';
+      function copyingDone() {
+        copybutton.innerText = 'copied!';
+        setTimeout(() => {
+          copybutton.innerText = 'copy';
+        }, 2000);
+      }
+      copybutton.addEventListener('click', (cb) => {
+        if ('clipboard' in navigator) {
+          navigator.clipboard.writeText(codeblock.textContent);
+          copyingDone();
+          return;
+        }
+        const range = document.createRange();
+        range.selectNodeContents(codeblock);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        try {
+          document.execCommand('copy');
+          copyingDone();
+        } catch (e) { };
+        selection.removeRange(range);
+      });
+      if (container.classList.contains("highlight")) {
+        container.prepend(copybutton);
+      } else if (container.parentNode.firstChild == container) {
+        
+      } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+        
+        codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+      } else {
+        
+        codeblock.parentNode.prepend(copybutton);
+      }
+    });
+  </script>
 
 </footer>
     </main>
