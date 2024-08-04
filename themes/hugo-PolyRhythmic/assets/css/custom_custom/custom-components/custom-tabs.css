@@ -32,7 +32,7 @@
   }
   
   & .sub-tabs-container {
-    flex: 1 1 0;
+    flex: 1 1 auto;
     position: relative;
 
     & .sub-tabs {
