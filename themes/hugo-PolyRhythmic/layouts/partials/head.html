@@ -32,24 +32,38 @@
 {{- $cssFiles := dict
   "base"                  (resources.Match "css/base/**.css")
   "custom"                (resources.Match "css/custom/**.css")
-  "material_components"   (resources.Match "css/material_components/**.css")
   "material_layouts"      (resources.Match "css/material_layouts/**.css")
-  "material_states"       (resources.Match "css/material_state_layers/**.css")
-  "material_tokens"       (resources.Match "css/material_tokens/**.css")
-  "static"                (resources.Match "css/static_variables/**.css")
+  "material_sets"         (resources.Match "css/material_sets/**.css")
+  "material_components"   (resources.Match "css/material_components/**.css")
+  "material_states"       (resources.Match "css/material_states/**.css")
+  "material_helpers"      (resources.Match "css/material_helpers/**.css")
+  "tokens_static"         (resources.Match "css/tokens_static/**.css")
+  "tokens_material"       (resources.Match "css/tokens_material/**.css")
+  "tokens_keybed"         (resources.Match "css/tokens_keybed/**.css")
+  "tokens_input"          (resources.Match "css/tokens_input/**.css")
 -}}
   
 {{- $stylesheets := dict
-  "1_base"                    (slice "base")
+  "0_tokens"    
+    (slice 
+      "tokens_static"
+      "tokens_material"
+      "tokens_keybed"
+      "tokens_input"
+    )
+  "1_base"    
+    (slice 
+      "base"
+    )
   "2_material"         
-      (slice 
-          "material_layouts" 
-          "material_components" 
-          "material_states"
-          "material_tokens"
-      )
-  "3_custom"                  (slice "custom")
-  "4_static"                  (slice "static")
+    (slice 
+      "material_layouts" 
+      "material_sets"
+      "material_components" 
+      "material_states"
+    )
+  "3_custom"  (slice "custom")
+  "5_helpers" (slice "material_helpers")
 -}}
   
 {{- range $name, $parts := $stylesheets }}
