@@ -17,7 +17,7 @@
   --text-color: initial;
   --icon-color: initial;
   
-  --state-color: initial;
+  --state-color: var(--icon-color, var(--text-color));
 
   --container-outline-hover: initial;
   --container-outline-focus: initial;
@@ -43,6 +43,5 @@
   border-radius:    var(--container-shape);
 
   color:            var(--text-color, var(--icon-color));
-  background-color:            var(--container-color);
-  --state-color:            var(--icon-color, var(--text-color));
+  background:       var(--container-color);
 }

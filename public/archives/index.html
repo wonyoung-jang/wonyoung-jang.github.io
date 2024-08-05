@@ -4,7 +4,7 @@
   dir="auto">      
 
   
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,11 +28,11 @@
   rel="stylesheet">
 
 
-  <link crossorigin="anonymous" href="/assets/css/1_base.min.33b33efd501d6d9da8b3973592328012b335a74de8775261ee268280f8aa89e8.css" integrity="sha256-M7M&#43;/VAdbZ2os5c1kjKAErM1p03od1Jh7iaCgPiqieg=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/1_base.min.addd94c545446f198355c0b0e975f9a4607284298c1d5b4db57cfdebfdcef8ae.css" integrity="sha256-rd2UxUVEbxmDVcCw6XX5pGByhCmMHVtNtXz96/3O&#43;K4=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/2_material_design.min.6257b53a6dc03c6d92089d9a3a4fb7c7dd8112f32732e693f3c82f9162478f94.css" integrity="sha256-Yle1Om3APG2SCJ2aOk&#43;3x92BEvMnMuaT88gvkWJHj5Q=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/2_material_design.min.e2e44b97642f9540659323b493919de5ce9abe043af5849bcdb1038597180f79.css" integrity="sha256-4uRLl2QvlUBlkyO0k5Gd5c6avgQ69YSbzbEDhZcYD3k=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/3_custom.min.de59cd8391b62d4cebc18a05c48ec60bcb9a1f0d64b8afafa8deade8886300e4.css" integrity="sha256-3lnNg5G2LUzrwYoFxI7GC8uaHw1kuK&#43;vqN6t6IhjAOQ=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/3_custom.min.bb3d54c03700a65037109abcbc03e60f20832c06d9ee573c8c342abb8155fd47.css" integrity="sha256-uz1UwDcAplA3EJq8vAPmDyCDLAbZ7lc8jDQqu4FV/Uc=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/4_helpers.min.626a1999c621bd7b0dfdb882da7d4479a84989bd15f8c16855a3f1e3fb9e0504.css" integrity="sha256-YmoZmcYhvXsN/biC2n1EeahJib0V&#43;MFoVaPx4/ueBQQ=" rel="preload stylesheet" as="style">
 
@@ -40,13 +40,13 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
 
 
 
 
 
-  <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/archives/">
+  <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/archives/">
 
 
 
@@ -62,7 +62,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/archives/">
+<meta property="og:url" content="https://wonyoungjang.org/archives/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Archives">
   <meta property="og:description" content="Wonyoung Jang&#39;s personal website">
@@ -100,7 +100,7 @@
     <a  
   class="component button common"
   id="site-headline"
-  href="http://192.168.40.181:1313/"
+  href="https://wonyoungjang.org/"
   accesskey="h" 
   title="Go to home (h)">
   <svg 
@@ -184,8 +184,6 @@
       "\/resources\/references\/",
     
       "\/resources\/",
-    
-      "\/playground\/",
     
       "\/colors\/",
     
@@ -623,6 +621,7 @@
     
     var savedContrast = localStorage.getItem("contrast");
     var savedWidth = localStorage.getItem("max-char-width");
+    var savedMargin = localStorage.getItem("post-content-margin");
     var savedDimImages = localStorage.getItem("dim-images");
     var savedTemperature = localStorage.getItem("tertiary-temperature");
     var savedHue = localStorage.getItem("theme-hue");
@@ -659,6 +658,7 @@
     } else {
       widthSelector60.checked = true;
       localStorage.setItem("max-char-width", "60");
+      localStorage.setItem("post-content-margin", "0 auto");
     }
 
     if (savedDimImages !== null) {
@@ -739,10 +739,16 @@
 
       if (width === "60") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "120") {
         root.style.setProperty("--input-char-width", width + "ch");
+        root.style.setProperty("--input-post-content-margin", "0 auto")
+        localStorage.setItem("post-content-margin", "0 auto");
       } else if (width === "max") {
         root.style.setProperty("--input-char-width", "100%");
+        root.style.setProperty("--input-post-content-margin", "0")
+        localStorage.setItem("post-content-margin", "0");
       }
 
       localStorage.setItem("max-char-width", width);
@@ -1109,7 +1115,7 @@
             <a
               class="archive-header-link"
               href="#2024">
-              <h4>2024<sup class="archive-count"> &nbsp;11 </sup>
+              <h4>2024<sup class="archive-count"> &nbsp;10 </sup>
               </h4>
             </a>
           </span>
@@ -1120,7 +1126,7 @@
                 <a
                   class="archive-header-link"
                   href="#2024-July">
-                  <h5>July<sup class="archive-count"> &nbsp;2 </sup>
+                  <h5>July<sup class="archive-count"> &nbsp;1 </sup>
                   </h5>
                 </a>
               </span>
@@ -1130,21 +1136,9 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Archives"
-                      href="http://192.168.40.181:1313/archives/">
+                      href="https://wonyoungjang.org/archives/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Archives</h6>
-                      </span>
-                      <div class="archive-meta"><p title='2024-07-30 00:00:00 +0000 UTC'>July 30, 2024
-</div>
-                    </a>
-                  </div>
-                  <div class="archive-entry">
-                    <a
-                      class="entry-link"
-                      aria-label="post link to Playground"
-                      href="http://192.168.40.181:1313/playground/">
-                      <span class="archive-entry-title entry-hint-parent">
-                        <h6>Playground</h6>
                       </span>
                       <div class="archive-meta"><p title='2024-07-30 00:00:00 +0000 UTC'>July 30, 2024
 </div>
@@ -1169,7 +1163,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to List of keyboard shortcuts for wonyoungjang.org"
-                      href="http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
+                      href="https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>List of keyboard shortcuts for wonyoungjang.org</h6>
                       </span>
@@ -1181,7 +1175,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Realtime multiplayer drawing"
-                      href="http://192.168.40.181:1313/realtime-multiplayer-drawing/">
+                      href="https://wonyoungjang.org/realtime-multiplayer-drawing/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Realtime multiplayer drawing</h6>
                       </span>
@@ -1193,7 +1187,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Wonyoungjang.org"
-                      href="http://192.168.40.181:1313/wonyoungjang.org/">
+                      href="https://wonyoungjang.org/wonyoungjang.org/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Wonyoungjang.org</h6>
                       </span>
@@ -1220,7 +1214,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Q-learning tournament scheduler"
-                      href="http://192.168.40.181:1313/q-learning-tournament-scheduler/">
+                      href="https://wonyoungjang.org/q-learning-tournament-scheduler/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Q-learning tournament scheduler</h6>
                       </span>
@@ -1247,7 +1241,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Save top level reddit comments"
-                      href="http://192.168.40.181:1313/save-top-level-reddit-comments/">
+                      href="https://wonyoungjang.org/save-top-level-reddit-comments/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Save top level reddit comments</h6>
                       </span>
@@ -1259,7 +1253,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Disaster recovery robot simulation"
-                      href="http://192.168.40.181:1313/disaster-recovery-robot-simulation/">
+                      href="https://wonyoungjang.org/disaster-recovery-robot-simulation/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Disaster recovery robot simulation</h6>
                       </span>
@@ -1271,7 +1265,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to CS career chatbot"
-                      href="http://192.168.40.181:1313/cs-career-chatbot/">
+                      href="https://wonyoungjang.org/cs-career-chatbot/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>CS career chatbot</h6>
                       </span>
@@ -1283,7 +1277,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Logseq markdown tokenizer"
-                      href="http://192.168.40.181:1313/logseq-markdown-tokenizer/">
+                      href="https://wonyoungjang.org/logseq-markdown-tokenizer/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Logseq markdown tokenizer</h6>
                       </span>
@@ -1295,7 +1289,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Package delivery route optimization"
-                      href="http://192.168.40.181:1313/package-delivery-route-optimization/">
+                      href="https://wonyoungjang.org/package-delivery-route-optimization/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Package delivery route optimization</h6>
                       </span>
@@ -1334,7 +1328,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Hotel reservation manager"
-                      href="http://192.168.40.181:1313/hotel-reservation-manager/">
+                      href="https://wonyoungjang.org/hotel-reservation-manager/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Hotel reservation manager</h6>
                       </span>
@@ -1346,7 +1340,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Vacation cart manager"
-                      href="http://192.168.40.181:1313/vacation-cart-manager/">
+                      href="https://wonyoungjang.org/vacation-cart-manager/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Vacation cart manager</h6>
                       </span>
@@ -1358,7 +1352,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Retail inventory manager"
-                      href="http://192.168.40.181:1313/retail-inventory-manager/">
+                      href="https://wonyoungjang.org/retail-inventory-manager/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Retail inventory manager</h6>
                       </span>
@@ -1385,7 +1379,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to DVD rental database"
-                      href="http://192.168.40.181:1313/dvd-rental-database/">
+                      href="https://wonyoungjang.org/dvd-rental-database/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>DVD rental database</h6>
                       </span>
@@ -1397,7 +1391,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Student record system"
-                      href="http://192.168.40.181:1313/student-record-system/">
+                      href="https://wonyoungjang.org/student-record-system/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Student record system</h6>
                       </span>
@@ -1436,7 +1430,7 @@
                     <a
                       class="entry-link"
                       aria-label="post link to Food shop database management"
-                      href="http://192.168.40.181:1313/food-shop-database-management/">
+                      href="https://wonyoungjang.org/food-shop-database-management/">
                       <span class="archive-entry-title entry-hint-parent">
                         <h6>Food shop database management</h6>
                       </span>
@@ -1460,7 +1454,7 @@
       
         <a
           class="component card prev"
-          href="http://192.168.40.181:1313/playground/"
+          href="https://wonyoungjang.org/colors/"
           accesskey="p"
           title="Previous page (p)">
           <span class="page-direction">
@@ -1468,7 +1462,7 @@
             <label>Previous</label>
           </span>
 
-          <span class="title-large">Playground</span>
+          <span class="title-large">Colors</span>
         </a>
        
      
@@ -1477,7 +1471,7 @@
       
         <a
           class="component card next"
-          href="http://192.168.40.181:1313/all-logseq-elements/"
+          href="https://wonyoungjang.org/all-logseq-elements/"
           accesskey="n"
           title="Next page (n)">
           <span class="page-direction">
@@ -1503,8 +1497,6 @@
    
   
 
-   
-    
    
     
    
@@ -1657,7 +1649,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on twitter"
-        href="https://twitter.com/intent/tweet/?text=Archives&url=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">      
+        href="https://twitter.com/intent/tweet/?text=Archives&url=https%3a%2f%2fwonyoungjang.org%2farchives%2f">      
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1670,7 +1662,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f&title=Archives&summary=Archives&source=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwonyoungjang.org%2farchives%2f&title=Archives&summary=Archives&source=https%3a%2f%2fwonyoungjang.org%2farchives%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1683,7 +1675,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on reddit"
-        href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f&title=Archives">
+        href="https://reddit.com/submit?url=https%3a%2f%2fwonyoungjang.org%2farchives%2f&title=Archives">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1696,7 +1688,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on facebook"
-        href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwonyoungjang.org%2farchives%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1709,7 +1701,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on whatsapp"
-        href="https://api.whatsapp.com/send?text=Archives%20-%20http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">
+        href="https://api.whatsapp.com/send?text=Archives%20-%20https%3a%2f%2fwonyoungjang.org%2farchives%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1722,7 +1714,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on telegram"
-        href="https://telegram.me/share/url?text=Archives&url=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">
+        href="https://telegram.me/share/url?text=Archives&url=https%3a%2f%2fwonyoungjang.org%2farchives%2f">
         <svg 
           class="share-icon" version="1.1" xml:space="preserve" viewBox="2 2 28 28">
           <path
@@ -1735,7 +1727,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Archives on ycombinator"
-        href="https://news.ycombinator.com/submitlink?t=Archives&u=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">
+        href="https://news.ycombinator.com/submitlink?t=Archives&u=https%3a%2f%2fwonyoungjang.org%2farchives%2f">
         <svg 
           class="share-icon" 
           version="1.1" 
@@ -1754,7 +1746,7 @@
         target="_blank" 
         rel="noopener noreferrer" 
         aria-label="share Archives via email" 
-        href="mailto:?subject=Archives&body=http%3a%2f%2f192.168.40.181%3a1313%2farchives%2f">
+        href="mailto:?subject=Archives&body=https%3a%2f%2fwonyoungjang.org%2farchives%2f">
         <i class="icon">email</i> 
         Email
       </a>
@@ -1926,7 +1918,7 @@
 <section class="copyright">
   <a  
     id="copyright-button"
-    href="http://192.168.40.181:1313/">
+    href="https://wonyoungjang.org/">
     © 2024 Wonyoung Jang
   </a>
 </section>
@@ -1949,6 +1941,49 @@
 
 
 
+
+  <script defer>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+      const container = codeblock.parentNode.parentNode;
+      const copybutton = document.createElement('button');
+      copybutton.classList.add('copy-code');
+      copybutton.innerText = 'copy';
+      function copyingDone() {
+        copybutton.innerText = 'copied!';
+        setTimeout(() => {
+          copybutton.innerText = 'copy';
+        }, 2000);
+      }
+      copybutton.addEventListener('click', (cb) => {
+        if ('clipboard' in navigator) {
+          navigator.clipboard.writeText(codeblock.textContent);
+          copyingDone();
+          return;
+        }
+        const range = document.createRange();
+        range.selectNodeContents(codeblock);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        try {
+          document.execCommand('copy');
+          copyingDone();
+        } catch (e) { };
+        selection.removeRange(range);
+      });
+      if (container.classList.contains("highlight")) {
+        container.prepend(copybutton);
+      } else if (container.parentNode.firstChild == container) {
+        
+      } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+        
+        codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+      } else {
+        
+        codeblock.parentNode.prepend(copybutton);
+      }
+    });
+  </script>
 
 </footer>
     </main>

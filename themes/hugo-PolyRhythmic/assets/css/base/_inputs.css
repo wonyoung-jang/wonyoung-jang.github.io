@@ -17,12 +17,11 @@
   /* || Typography */
 
   /* Typescale factors (L → B → T → H → D) */
-  --scale-up-type:            var(--scale-min-6);
-  --scale-back-type:          var(--scale-min-2);
+  --scale-up-type:            var(--scale-tritone);
+  --scale-back-type:          calc(1 / var(--scale-maj-2));
 
   /* Typescale factors (S → M → L) */
-  --scale-up-size:            var(--scale-maj-2);
-  --scale-back-size:          var(--scale-min-2);
+  --scale-back-size:       calc(1 / var(--scale-min-2));
 
   /* Line heights */
   --input-line-height:            var(--scale-perfect-fifth);

@@ -10,7 +10,6 @@
   --container-shape: var(--shape-corner-full);
 
   --container-color: var(--color-secondary-container);
-  background: var(--color-secondary-container);
 
   --text-color: var(--color-primary);
   --icon-color: var(--color-primary);

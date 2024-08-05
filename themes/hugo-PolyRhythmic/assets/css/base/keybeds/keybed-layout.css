@@ -11,10 +11,8 @@
   --layout-padding: initial;
   --layout-margin: initial;
   --layout-gap: initial;
-
   --layout-shape: initial;
   --layout-border: initial;
-
   --layout-bg: initial;
 }
 
@@ -31,9 +29,7 @@
   padding:          var(--layout-padding);
   margin:           var(--layout-margin);
   gap:              var(--layout-gap);
-
   border-radius:    var(--layout-shape);
   border:           var(--layout-border);
-
-  background-color: var(--layout-bg);
+  background: var(--layout-bg);
 }

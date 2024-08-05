@@ -18,7 +18,7 @@
   inset: 0;
   z-index: -1;
   flex: 0 1 auto;
-  background-color: var(--container-color);
+  background: var(--container-color);
   box-shadow: var(--container-elevation);
   border: var(--container-outline);
   border-radius: var(--container-shape);
