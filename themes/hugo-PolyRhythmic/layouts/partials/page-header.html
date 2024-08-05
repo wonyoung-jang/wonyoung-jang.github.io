@@ -7,7 +7,7 @@
       (not (eq .Title "Sitemap"))
       (not (eq .Title "Search")) 
       (not (or (eq .Title "404 Page not found") (eq .Title "Now")))) }}
-      <div class="label-large">{{ partial "post-meta.html" . }}</div>
+      <div class="label-medium">{{ partial "post-meta.html" . }}</div>
     {{ end }} 
 
     {{/* Title */}}
@@ -15,7 +15,7 @@
 
     {{/* Description */}} 
     {{ if .Description }}
-      <span class="description title-small">{{ .Description | markdownify }}</span>
+      <span class="description">{{ .Description | markdownify }}</span>
     {{ end }} 
     
     {{/* Github button */}}
