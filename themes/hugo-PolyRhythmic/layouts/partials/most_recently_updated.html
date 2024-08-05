@@ -1,4 +1,4 @@
-{{ $pages := .Site.RegularPages }}
+{{ $pages := where .Site.RegularPages ".Title" "ne" "" }}
 {{ $sortedPages := sort $pages ".Lastmod" "desc" }}
 {{ $recent := first 8 $sortedPages }}
 
