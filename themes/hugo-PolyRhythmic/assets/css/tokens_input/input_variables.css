@@ -6,7 +6,7 @@
 
   /* Color primary */
   --input-color-hue: 302.8deg;
-  --input-color-chroma: 58;
+  --input-color-chroma: 58%;
   
   /* Color tertiary cooler(-1) or warmer(1) */
   --input-tertiary-temperature: -1;

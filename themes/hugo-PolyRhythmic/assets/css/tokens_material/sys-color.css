@@ -652,7 +652,7 @@
   --color-surface-container-low:        var(--palette-neutral-10);
   --color-surface-container:            var(--palette-neutral-12);
   --color-surface-container-high:       var(--palette-neutral-17);
-  --color-surface-container-highest:    var(--palette-neutral-24);
+  --color-surface-container-highest:    var(--palette-neutral-22);
 
   /* Inverse roles */
   --color-inverse-surface:              var(--palette-neutral-90);

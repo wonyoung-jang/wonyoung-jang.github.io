@@ -368,15 +368,15 @@
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     } else {
-      hueSelector.value = 305;
-      localStorage.setItem("theme-hue", 305);
+      hueSelector.value = 302.8;
+      localStorage.setItem("theme-hue", 302.8);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     } else {
-      chromaSelector.value = 55;
-      localStorage.setItem("theme-chroma", 55);
+      chromaSelector.value = 58;
+      localStorage.setItem("theme-chroma", 58);
     }
 
     if (savedShape !== null) {
@@ -465,7 +465,7 @@
       var chroma = chromaSelector.value;
 
       root.style.setProperty("--input-color-hue", hue + "deg");
-      root.style.setProperty("--input-color-chroma", chroma);
+      root.style.setProperty("--input-color-chroma", chroma + "%");
       
       localStorage.setItem("theme-hue", hue);
       localStorage.setItem("theme-chroma", chroma);

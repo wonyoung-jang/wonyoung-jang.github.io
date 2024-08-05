@@ -4,11 +4,11 @@
   dir="auto">      
 
   
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
 
 
 <meta name="description" content="Draw in realtime on a blank canvas with others on the same server">
@@ -28,11 +28,11 @@
   rel="stylesheet">
 
 
-  <link crossorigin="anonymous" href="/assets/css/0_tokens.min.1068937f2f1f73983e46d85c44eef59c3155772d09d563f866b7af58883a0dcb.css" integrity="sha256-EGiTfy8fc5g&#43;RthcRO71nDFVdy0J1WP4ZrevWIg6Dcs=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/0_tokens.min.afa4288d544902c325fd711685f62b90f59120c936ef40dce0dde3e0704e291e.css" integrity="sha256-r6QojVRJAsMl/XEWhfYrkPWRIMk270Dc4N3j4HBOKR4=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/1_base.min.f7f967ab4609416f703438f5bb4a9d387fbbab72b46c3abc6e574708c0c8d824.css" integrity="sha256-9/lnq0YJQW9wNDj1u0qdOH&#43;7q3K0bDq8bldHCMDI2CQ=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/2_material.min.daeef81c8c824bc62de6aa230db4d7e32b34af3e257c30e611fb9804cbfee2c9.css" integrity="sha256-2u74HIyCS8Yt5qojDbTX4ys0rz4lfDDmEfuYBMv&#43;4sk=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/2_material.min.07c8ccc1fec2e89177d07c65d5c3cb3d94017b1c04dd6e1600240ab235b4583d.css" integrity="sha256-B8jMwf7C6JF30Hxl1cPLPZQBexwE3W4WACQKsjW0WD0=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/3_custom.min.a2554468d4494b15750e25fc6041b2799d60b91d7391999d52943ed936cd5628.css" integrity="sha256-olVEaNRJSxV1DiX8YEGyeZ1guR1zkZmdUpQ&#43;2TbNVig=" rel="preload stylesheet" as="style">
 
@@ -42,13 +42,13 @@
 
 
 
-<link rel="icon" href="https://wonyoungjang.org/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
 
 
 
 
 
-  <link rel="alternate" hreflang="en" href="https://wonyoungjang.org/realtime-multiplayer-drawing/">
+  <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/realtime-multiplayer-drawing/">
 
 
 
@@ -64,7 +64,7 @@
 </noscript>
 
 
-<meta property="og:url" content="https://wonyoungjang.org/realtime-multiplayer-drawing/">
+<meta property="og:url" content="http://192.168.40.181:1313/realtime-multiplayer-drawing/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Realtime multiplayer drawing">
   <meta property="og:description" content="Draw in realtime on a blank canvas with others on the same server">
@@ -104,7 +104,7 @@
     <a  
   class="component button common"
   id="site-headline"
-  href="https://wonyoungjang.org/"
+  href="http://192.168.40.181:1313/"
   accesskey="h" 
   title="Go to home (h)">
   <svg 
@@ -190,6 +190,8 @@
       "\/resources\/",
     
       "\/archives\/",
+    
+      "\/playground\/",
     
       "\/colors\/",
     
@@ -346,7 +348,7 @@
           
       <label class="title-large" for="chroma-selector">Chroma</label>
       <div class="slider">
-        <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
+        <input type="range" id="chroma-selector" min="0" max="0.4" value="0.2"/>
         <span class="tooltip" id="chroma-tooltip"></span>
       </div>
       <div id="theme-chromas"></div>
@@ -701,8 +703,8 @@
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     } else {
-      chromaSelector.value = 55;
-      localStorage.setItem("theme-chroma", 55);
+      chromaSelector.value = 0.2;
+      localStorage.setItem("theme-chroma", 0.2);
     }
 
     if (savedShape !== null) {
@@ -1321,7 +1323,7 @@
       
         <a
           class="component card prev"
-          href="https://wonyoungjang.org/wonyoungjang.org/"
+          href="http://192.168.40.181:1313/wonyoungjang.org/"
           accesskey="p"
           title="Previous page (p)">
           <span class="page-direction">
@@ -1338,7 +1340,7 @@
       
         <a
           class="component card next"
-          href="https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/"
+          href="http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/"
           accesskey="n"
           title="Next page (n)">
           <span class="page-direction">
@@ -1451,6 +1453,8 @@
    
     
    
+    
+   
      
        
     
@@ -1476,6 +1480,15 @@
       
         <a  
           class="component card elevated"
+          href="/playground/">
+          <div class="card-content">
+            <span class="card-title">Playground</span>
+            <span class="card-description"></span>
+          </div>
+        </a>
+      
+        <a  
+          class="component card elevated"
           href="/q-learning-tournament-scheduler/">
           <div class="card-content">
             <span class="card-title">Q-learning tournament scheduler</span>
@@ -1489,15 +1502,6 @@
           <div class="card-content">
             <span class="card-title">Save top level reddit comments</span>
             <span class="card-description">Extract the parent comments of a reddit post</span>
-          </div>
-        </a>
-      
-        <a  
-          class="component card elevated"
-          href="/disaster-recovery-robot-simulation/">
-          <div class="card-content">
-            <span class="card-title">Disaster recovery robot simulation</span>
-            <span class="card-description">Created an autonomous robotic system in CoppeliaSim for disaster recovery, demonstrating goal-seeking with sensor integration</span>
           </div>
         </a>
       
@@ -1518,7 +1522,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on twitter"
-        href="https://twitter.com/intent/tweet/?text=Realtime%20multiplayer%20drawing&url=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">      
+        href="https://twitter.com/intent/tweet/?text=Realtime%20multiplayer%20drawing&url=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">      
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1531,7 +1535,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f&title=Realtime%20multiplayer%20drawing&summary=Realtime%20multiplayer%20drawing&source=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f&title=Realtime%20multiplayer%20drawing&summary=Realtime%20multiplayer%20drawing&source=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1544,7 +1548,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f&title=Realtime%20multiplayer%20drawing">
+        href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f&title=Realtime%20multiplayer%20drawing">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1557,7 +1561,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on facebook"
-        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">
+        href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1570,7 +1574,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on whatsapp"
-        href="https://api.whatsapp.com/send?text=Realtime%20multiplayer%20drawing%20-%20https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">
+        href="https://api.whatsapp.com/send?text=Realtime%20multiplayer%20drawing%20-%20http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -1583,7 +1587,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on telegram"
-        href="https://telegram.me/share/url?text=Realtime%20multiplayer%20drawing&url=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">
+        href="https://telegram.me/share/url?text=Realtime%20multiplayer%20drawing&url=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">
         <svg 
           class="share-icon" version="1.1" xml:space="preserve" viewBox="2 2 28 28">
           <path
@@ -1596,7 +1600,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing on ycombinator"
-        href="https://news.ycombinator.com/submitlink?t=Realtime%20multiplayer%20drawing&u=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">
+        href="https://news.ycombinator.com/submitlink?t=Realtime%20multiplayer%20drawing&u=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">
         <svg 
           class="share-icon" 
           version="1.1" 
@@ -1615,7 +1619,7 @@
         target="_blank" 
         rel="noopener noreferrer" 
         aria-label="share Realtime multiplayer drawing via email" 
-        href="mailto:?subject=Realtime%20multiplayer%20drawing&body=https%3a%2f%2fwonyoungjang.org%2frealtime-multiplayer-drawing%2f">
+        href="mailto:?subject=Realtime%20multiplayer%20drawing&body=http%3a%2f%2f192.168.40.181%3a1313%2frealtime-multiplayer-drawing%2f">
         <i class="icon">email</i> 
         Email
       </a>
@@ -1787,7 +1791,7 @@
 <section class="copyright">
   <a  
     id="copyright-button"
-    href="https://wonyoungjang.org/">
+    href="http://192.168.40.181:1313/">
     © 2024 Wonyoung Jang
   </a>
 </section>
