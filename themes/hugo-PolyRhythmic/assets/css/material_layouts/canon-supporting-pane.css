@@ -1,4 +1,4 @@
-.panes.canonical-supporting-pane {
+.panes.canon-supporting-pane {
   --layout-flex-flow: column nowrap;
 
   .focus-pane {
@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 840px) {
-  .panes.canonical-supporting-pane {
+  .panes.canon-supporting-pane {
     --layout-flex-flow: row nowrap;
 
     .focus-pane {

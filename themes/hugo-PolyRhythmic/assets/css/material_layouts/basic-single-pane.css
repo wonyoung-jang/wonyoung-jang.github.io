@@ -1,4 +1,4 @@
-.basic-single-pane .pane {
+.basic-single-pane > .pane {
   --layout-flex: 1 1 auto;
   --layout-width: 100%;
 }

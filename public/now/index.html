@@ -32,9 +32,9 @@
 
   <link crossorigin="anonymous" href="/assets/css/1_base.min.f7f967ab4609416f703438f5bb4a9d387fbbab72b46c3abc6e574708c0c8d824.css" integrity="sha256-9/lnq0YJQW9wNDj1u0qdOH&#43;7q3K0bDq8bldHCMDI2CQ=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/2_material.min.b8acacbeb738b6fbce9b868104db482edbfe03c953658f53d96f90f909ad910a.css" integrity="sha256-uKysvrc4tvvOm4aBBNtILtv&#43;A8lTZY9T2W&#43;Q&#43;QmtkQo=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/2_material.min.7f2b858870897af524e61bc06beb7bed67f3201f93dd1cbba0ac02a04a41931f.css" integrity="sha256-fyuFiHCJevUk5hvAa&#43;t77WfzIB&#43;T3Ry7oKwCoEpBkx8=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/3_custom.min.78932b675cebf055bf383ca95263a5fe96d09ae5d06641f84936338bd9b5b9f2.css" integrity="sha256-eJMrZ1zr8FW/ODypUmOl/pbQmuXQZkH4STYzi9m1ufI=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/3_custom.min.0a99acc75a44085dbc9ec5dba3ef8aa5937fc8e4844bb2487bff2b9e252d0421.css" integrity="sha256-Cpmsx1pECF28nsXbo&#43;&#43;KpZN/yOSES7JIe/8rniUtBCE=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/5_helpers.min.348b1736fc2e6fa9eaa54aa6bb1d1004dc56d402a95d6924ca701ef58464e703.css" integrity="sha256-NIsXNvwub6nqpUqmux0QBNxW1AKpXWkkynAe9YRk5wM=" rel="preload stylesheet" as="style">
 
@@ -1749,6 +1749,49 @@
 
 
 
+
+  <script defer>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+      const container = codeblock.parentNode.parentNode;
+      const copybutton = document.createElement('button');
+      copybutton.classList.add('copy-code');
+      copybutton.innerText = 'copy';
+      function copyingDone() {
+        copybutton.innerText = 'copied!';
+        setTimeout(() => {
+          copybutton.innerText = 'copy';
+        }, 2000);
+      }
+      copybutton.addEventListener('click', (cb) => {
+        if ('clipboard' in navigator) {
+          navigator.clipboard.writeText(codeblock.textContent);
+          copyingDone();
+          return;
+        }
+        const range = document.createRange();
+        range.selectNodeContents(codeblock);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        try {
+          document.execCommand('copy');
+          copyingDone();
+        } catch (e) { };
+        selection.removeRange(range);
+      });
+      if (container.classList.contains("highlight")) {
+        container.prepend(copybutton);
+      } else if (container.parentNode.firstChild == container) {
+        
+      } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+        
+        codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
+      } else {
+        
+        codeblock.parentNode.prepend(copybutton);
+      }
+    });
+  </script>
 
 </footer>
     </main>

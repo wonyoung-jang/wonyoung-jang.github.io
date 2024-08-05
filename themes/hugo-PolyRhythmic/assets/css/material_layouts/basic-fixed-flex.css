@@ -18,7 +18,7 @@
   .pane {
     --layout-flex: 1 1 0;
 
-    &.fixed-pane {
+    &.fixed {
       --layout-flex: 0 0 var(--fixed-pane-width);
       --layout-width: var(--fixed-pane-width);
     }
@@ -35,7 +35,7 @@
       --layout-flex: 1 1 0;
       --layout-width: calc(50% - var(--spacing-panes) / 2);
 
-      &.fixed-pane {
+      &.fixed {
         --layout-flex: 0 0 var(--fixed-pane-width);
         --layout-width: var(--fixed-pane-width);
       }
@@ -58,7 +58,7 @@
     .pane {
       --layout-flex: 1 1 0;
 
-      &.fixed-pane {
+      &.fixed {
         --layout-flex: 0 0 var(--fixed-pane-width);
         --layout-width: var(--fixed-pane-width);
       }

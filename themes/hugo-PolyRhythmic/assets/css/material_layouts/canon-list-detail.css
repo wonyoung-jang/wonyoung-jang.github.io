@@ -1,4 +1,4 @@
-.canonical-list-detail {
+.canon-list-detail {
   .detail-pane,
   .list-pane {
     --layout-flex: 1 1 0;
@@ -7,7 +7,7 @@
 
 /* Compact: 0px-599px */
 @media screen and (max-width: 599px) {
-  .canonical-list-detail .detail-pane {
+  .canon-list-detail .detail-pane {
     --layout-display: none;
   }
 }
