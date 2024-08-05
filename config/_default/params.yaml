@@ -1,7 +1,4 @@
-debug: false
-
 defaultTheme: auto
-env: production
 title: Wonyoung Jang
 description: "Wonyoung Jang's personal website"
 dateFormat: January 2, 2006

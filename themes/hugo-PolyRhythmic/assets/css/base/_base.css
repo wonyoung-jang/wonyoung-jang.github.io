@@ -56,12 +56,12 @@
   font-size: var(--root-font-size);
   font-family: var(--typeface-plain);
   font-weight: var(--typeface-weight-regular);
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
   color-scheme: light dark;
   scroll-behavior: smooth;
   scroll-padding: var(--size-32);
   scroll-margin: var(--size-32);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 

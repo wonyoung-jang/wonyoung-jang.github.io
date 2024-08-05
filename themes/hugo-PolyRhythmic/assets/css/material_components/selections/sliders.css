@@ -1,14 +1,12 @@
 .slider {
-  position: relative;
-  width: 100%;
-  height: var(--size-11);
+  --container-width: 100%;
+  --container-height: var(--size-11);
+  --container-display: flex;
+  --container-flex-flow: row nowrap;
+  --container-align-items: stretch;
+  --container-justify-content: center;
   
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: center;
-  
-  border-radius: var(--shape-corner-xl);
+  --container-shape: var(--shape-corner-xl);
   
   --container-color: var(--color-surface-container-lowest,);
 
@@ -37,14 +35,14 @@
   & input {
     height: var(--size-11);
     width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background: transparent;
     cursor: grab;
     overflow: hidden;
     background: transparent;
     outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
     &:active {
       cursor: grabbing;
