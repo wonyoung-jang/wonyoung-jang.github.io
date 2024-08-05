@@ -13,7 +13,7 @@
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
       <div class="slider">
-        <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
+        <input type="range" id="hue-selector" min="0" max="360" value="268"/>
         <span class="tooltip" id="hue-tooltip"></span>
       </div>
       <div id="theme-hues"></div>
@@ -368,15 +368,15 @@
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     } else {
-      hueSelector.value = 302.8;
-      localStorage.setItem("theme-hue", 302.8);
+      hueSelector.value = 268;
+      localStorage.setItem("theme-hue", 268);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     } else {
-      chromaSelector.value = 58;
-      localStorage.setItem("theme-chroma", 58);
+      chromaSelector.value = 44;
+      localStorage.setItem("theme-chroma", 44);
     }
 
     if (savedShape !== null) {
