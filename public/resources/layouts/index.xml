@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:52153/resources/layouts/
+      https://wonyoungjang.org/resources/layouts/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Fri, 26 Jul 2024 17:07:30 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:52153/resources/layouts/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://wonyoungjang.org/resources/layouts/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           Feed layout
         </title>
 
         <link>
-          http://192.168.40.181:52153/feed-layout/
+          https://wonyoungjang.org/feed-layout/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:52153/feed-layout/
+          https://wonyoungjang.org/feed-layout/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:52153/fixed-and-flexible-layout/
+          https://wonyoungjang.org/fixed-and-flexible-layout/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:52153/fixed-and-flexible-layout/
+          https://wonyoungjang.org/fixed-and-flexible-layout/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:52153/list-detail-layout/
+          https://wonyoungjang.org/list-detail-layout/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:52153/list-detail-layout/
+          https://wonyoungjang.org/list-detail-layout/
         </guid>
 
         <description>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:52153/single-pane-layout/
+          https://wonyoungjang.org/single-pane-layout/
         </link>
 
         <pubDate>
@@ -155,7 +155,7 @@
         
 
         <guid>
-          http://192.168.40.181:52153/single-pane-layout/
+          https://wonyoungjang.org/single-pane-layout/
         </guid>
 
         <description>
@@ -168,7 +168,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:52153/split-pane-layout/
+          https://wonyoungjang.org/split-pane-layout/
         </link>
 
         <pubDate>
@@ -183,7 +183,7 @@
         
 
         <guid>
-          http://192.168.40.181:52153/split-pane-layout/
+          https://wonyoungjang.org/split-pane-layout/
         </guid>
 
         <description>
@@ -196,7 +196,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:52153/supporting-pane-layout/
+          https://wonyoungjang.org/supporting-pane-layout/
         </link>
 
         <pubDate>
@@ -211,7 +211,7 @@
         
 
         <guid>
-          http://192.168.40.181:52153/supporting-pane-layout/
+          https://wonyoungjang.org/supporting-pane-layout/
         </guid>
 
         <description>

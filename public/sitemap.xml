@@ -2,277 +2,272 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.40.181:52153/all-logseq-elements/</loc>
+    <loc>https://wonyoungjang.org/all-logseq-elements/</loc>
     <lastmod>2024-08-03T13:23:25-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/resources/references/</loc>
+    <loc>https://wonyoungjang.org/resources/references/</loc>
     <lastmod>2024-08-03T13:23:25-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/resources/</loc>
+    <loc>https://wonyoungjang.org/resources/</loc>
     <lastmod>2024-08-03T13:23:25-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/archives/</loc>
+    <loc>https://wonyoungjang.org/archives/</loc>
     <lastmod>2024-07-30T14:28:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/playground/</loc>
+    <loc>https://wonyoungjang.org/</loc>
     <lastmod>2024-07-30T14:28:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/</loc>
-    <lastmod>2024-07-30T14:28:30-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.40.181:52153/colors/</loc>
+    <loc>https://wonyoungjang.org/colors/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/elevations/</loc>
+    <loc>https://wonyoungjang.org/elevations/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/feed-layout/</loc>
+    <loc>https://wonyoungjang.org/feed-layout/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/fixed-and-flexible-layout/</loc>
+    <loc>https://wonyoungjang.org/fixed-and-flexible-layout/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/resources/layouts/</loc>
+    <loc>https://wonyoungjang.org/resources/layouts/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/list-of-admonitions-for-wonyoungjang.org/</loc>
+    <loc>https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/list-detail-layout/</loc>
+    <loc>https://wonyoungjang.org/list-detail-layout/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/motion/</loc>
+    <loc>https://wonyoungjang.org/motion/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/shapes/</loc>
+    <loc>https://wonyoungjang.org/shapes/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/single-pane-layout/</loc>
+    <loc>https://wonyoungjang.org/single-pane-layout/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/split-pane-layout/</loc>
+    <loc>https://wonyoungjang.org/split-pane-layout/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/supporting-pane-layout/</loc>
+    <loc>https://wonyoungjang.org/supporting-pane-layout/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/resources/tokens/</loc>
+    <loc>https://wonyoungjang.org/resources/tokens/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/typography/</loc>
+    <loc>https://wonyoungjang.org/typography/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/communication/</loc>
+    <loc>https://wonyoungjang.org/communication/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/resources/components/</loc>
+    <loc>https://wonyoungjang.org/resources/components/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/containment/</loc>
+    <loc>https://wonyoungjang.org/containment/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/navigation/</loc>
+    <loc>https://wonyoungjang.org/navigation/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/selections/</loc>
+    <loc>https://wonyoungjang.org/selections/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/states/</loc>
+    <loc>https://wonyoungjang.org/states/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/actions/</loc>
+    <loc>https://wonyoungjang.org/actions/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/text-inputs/</loc>
+    <loc>https://wonyoungjang.org/text-inputs/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/projects/design/</loc>
+    <loc>https://wonyoungjang.org/projects/design/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/ergodox-ez-lego-tenting-kits/</loc>
+    <loc>https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/projects/</loc>
+    <loc>https://wonyoungjang.org/projects/</loc>
     <lastmod>2024-07-26T17:33:32-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/now/</loc>
+    <loc>https://wonyoungjang.org/now/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/about/</loc>
+    <loc>https://wonyoungjang.org/about/</loc>
     <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/contact/</loc>
+    <loc>https://wonyoungjang.org/contact/</loc>
     <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/pit-signs-for-robotics-competition/</loc>
+    <loc>https://wonyoungjang.org/pit-signs-for-robotics-competition/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/search/</loc>
+    <loc>https://wonyoungjang.org/search/</loc>
     <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/sitemap/</loc>
+    <loc>https://wonyoungjang.org/sitemap/</loc>
     <lastmod>2024-07-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
+    <loc>https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/</loc>
     <lastmod>2024-07-26T17:07:30-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/realtime-multiplayer-drawing/</loc>
+    <loc>https://wonyoungjang.org/realtime-multiplayer-drawing/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/projects/software/</loc>
+    <loc>https://wonyoungjang.org/projects/software/</loc>
     <lastmod>2024-07-26T17:33:32-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/wonyoungjang.org/</loc>
+    <loc>https://wonyoungjang.org/wonyoungjang.org/</loc>
     <lastmod>2024-07-26T17:33:32-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/q-learning-tournament-scheduler/</loc>
+    <loc>https://wonyoungjang.org/q-learning-tournament-scheduler/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/save-top-level-reddit-comments/</loc>
+    <loc>https://wonyoungjang.org/save-top-level-reddit-comments/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/disaster-recovery-robot-simulation/</loc>
+    <loc>https://wonyoungjang.org/disaster-recovery-robot-simulation/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/projects/university/</loc>
+    <loc>https://wonyoungjang.org/projects/university/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/cs-career-chatbot/</loc>
+    <loc>https://wonyoungjang.org/cs-career-chatbot/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/logseq-markdown-tokenizer/</loc>
+    <loc>https://wonyoungjang.org/logseq-markdown-tokenizer/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/package-delivery-route-optimization/</loc>
+    <loc>https://wonyoungjang.org/package-delivery-route-optimization/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/hotel-reservation-manager/</loc>
+    <loc>https://wonyoungjang.org/hotel-reservation-manager/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/vacation-cart-manager/</loc>
+    <loc>https://wonyoungjang.org/vacation-cart-manager/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/retail-inventory-manager/</loc>
+    <loc>https://wonyoungjang.org/retail-inventory-manager/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/dvd-rental-database/</loc>
+    <loc>https://wonyoungjang.org/dvd-rental-database/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/student-record-system/</loc>
+    <loc>https://wonyoungjang.org/student-record-system/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/food-shop-database-management/</loc>
+    <loc>https://wonyoungjang.org/food-shop-database-management/</loc>
     <lastmod>2024-07-24T10:25:11-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.40.181:52153/graph/</loc>
+    <loc>https://wonyoungjang.org/graph/</loc>
     <lastmod>2024-07-27T15:42:34-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

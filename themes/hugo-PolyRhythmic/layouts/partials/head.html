@@ -14,9 +14,6 @@
   <meta name="google-site-verification" content="{{ site.Config.Services.GoogleAnalytics.ID }}">
 {{- end }}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 {{/* Title */}}
 <title>
   {{ if .IsHome }}
@@ -25,8 +22,6 @@
     {{ .Title }} | {{ site.Title }}
   {{ end }}
 </title>
-
-{{- partialCached "fonts.html" . -}}
 
 {{/* Styles */}}
 {{- $cssFiles := dict

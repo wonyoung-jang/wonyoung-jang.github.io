@@ -196,8 +196,8 @@
         <fieldset class="typography-fieldset">
           <legend class="title-large">Plain font family</legend>
           <label class="component radio">
-            <input type="radio" id="plain-ibm" name="plain-font" value="IBM Plex Sans" checked>
-            <span>IBM Plex Sans</span>
+            <input type="radio" id="plain-rubik" name="plain-font" value="Rubik" checked>
+            <span>Rubik</span>
           </label>
           <label class="component radio">
             <input type="radio" id="plain-roboto" name="plain-font" value="Roboto">
@@ -246,8 +246,8 @@
         <fieldset class="typography-fieldset">
           <legend class="title-large">Code font family</legend>
           <label class="component radio">
-            <input type="radio" id="code-ibm" name="code-font" value="IBM Plex Mono" checked>
-            <span>IBM Plex Mono</span>
+            <input type="radio" id="code-sometypemono" name="code-font" value="SomeType Mono" checked>
+            <span>SomeType Mono</span>
           </label>
           <label class="component radio">
             <input type="radio" id="code-courier-new" name="code-font" value="Courier New">
@@ -386,9 +386,26 @@
       localStorage.setItem("theme-shape", 4);
     }
 
-    if (savedBrandFont) document.querySelector(`input[name="brand-font"][value="${savedBrandFont}"]`).checked = true;
-    if (savedPlainFont) document.querySelector(`input[name="plain-font"][value="${savedPlainFont}"]`).checked = true;
-    if (savedCodeFont) document.querySelector(`input[name="code-font"][value="${savedCodeFont}"]`).checked = true;
+    if (savedBrandFont !== null) {
+      document.querySelector('input[name="brand-font"][value="' + savedBrandFont + '"]').checked = true;
+    } else {
+      document.querySelector('input[name="brand-font"][value="Raleway"]').checked = true;
+      localStorage.setItem("typography-brand-font", "Raleway");
+    }
+
+    if (savedPlainFont !== null) {
+      document.querySelector('input[name="plain-font"][value="' + savedPlainFont + '"]').checked = true;
+    } else {
+      document.querySelector('input[name="plain-font"][value="Rubik"]').checked = true;
+      localStorage.setItem("typography-plain-font", "Rubik");
+    }
+
+    if (savedCodeFont !== null) {
+      document.querySelector('input[name="code-font"][value="' + savedCodeFont + '"]').checked = true;
+    } else {
+      document.querySelector('input[name="code-font"][value="SomeType Mono"]').checked = true;
+      localStorage.setItem("typography-code-font", "SomeType Mono");
+    }
 
     if (savedFontSize !== null) {
       fontSizeSelector.value = savedFontSize;
