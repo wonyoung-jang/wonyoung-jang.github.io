@@ -61,7 +61,7 @@
       
       <div class="set segmented-buttons">
         <label class="component button segmented start">
-          <input type="radio" name="contrast" id="contrast-selector-regular" value="regular"/>
+          <input type="radio" name="contrast" id="contrast-selector-regular" value="regular" checked/>
           <i class="icon">check</i>
           <i class="icon">brightness_low</i>
         </label>
@@ -108,7 +108,7 @@
       
       <div class="set segmented-buttons">
         <label class="component button segmented start">
-          <input type="radio" name="width" id="width-selector-60" value="60"/>
+          <input type="radio" name="width" id="width-selector-60" value="60" checked/>
           <i class="icon">check</i>
           60ch
         </label>
@@ -503,9 +503,13 @@
       var fontSize = fontSizeSelector.value;
       var lineHeight = lineHeightSelector.value;
 
-      root.style.setProperty('--typeface-brand', brandFont);
-      root.style.setProperty('--typeface-plain', plainFont);
-      root.style.setProperty('--typeface-code', codeFont);
+      root.style.removeProperty('--typeface-brand');
+      root.style.removeProperty('--typeface-plain');
+      root.style.removeProperty('--typeface-code');
+
+      root.style.setProperty('--typeface-brand', `'${brandFont}'`);
+      root.style.setProperty('--typeface-plain', `'${plainFont}'`);
+      root.style.setProperty('--typeface-code', `'${codeFont}'`);
       root.style.setProperty('--input-font-size', fontSize + 'px');
       root.style.setProperty('--input-line-height', lineHeight + 'rem');
 
