@@ -35,6 +35,10 @@
 
               <div class="archive-posts">
                 {{- range .Pages }}
+                  {{ if eq .Title "Archives" }}
+                    {{ continue }}
+                  {{ end }}
+                  
                   <div class="archive-entry">
                     <a
                       class="entry-link"
