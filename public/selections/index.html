@@ -4,7 +4,7 @@
   dir="auto">      
 
   
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52153&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,11 +28,11 @@
   rel="stylesheet">
 
 
-  <link crossorigin="anonymous" href="/assets/css/0_tokens.min.afa4288d544902c325fd711685f62b90f59120c936ef40dce0dde3e0704e291e.css" integrity="sha256-r6QojVRJAsMl/XEWhfYrkPWRIMk270Dc4N3j4HBOKR4=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/0_tokens.min.ee35da1c21e82b7e53c8311e751a9bd4a4f54dfd0dc12a6e5a4682d177209eb9.css" integrity="sha256-7jXaHCHoK35TyDEedRqb1KT1Tf0NwSpuWkaC0Xcgnrk=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/1_base.min.f7f967ab4609416f703438f5bb4a9d387fbbab72b46c3abc6e574708c0c8d824.css" integrity="sha256-9/lnq0YJQW9wNDj1u0qdOH&#43;7q3K0bDq8bldHCMDI2CQ=" rel="preload stylesheet" as="style">
 
-  <link crossorigin="anonymous" href="/assets/css/2_material.min.07c8ccc1fec2e89177d07c65d5c3cb3d94017b1c04dd6e1600240ab235b4583d.css" integrity="sha256-B8jMwf7C6JF30Hxl1cPLPZQBexwE3W4WACQKsjW0WD0=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/2_material.min.c306056cfc4b9a653f9682809fc014e8cfcf5c4ec5c36703fdb3a2a90281f191.css" integrity="sha256-wwYFbPxLmmU/loKAn8AU6M/PXE7Fw2cD/bOiqQKB8ZE=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/3_custom.min.a2554468d4494b15750e25fc6041b2799d60b91d7391999d52943ed936cd5628.css" integrity="sha256-olVEaNRJSxV1DiX8YEGyeZ1guR1zkZmdUpQ&#43;2TbNVig=" rel="preload stylesheet" as="style">
 
@@ -42,13 +42,13 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:52153/sitelogo.svg">
 
 
 
 
 
-  <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/selections/">
+  <link rel="alternate" hreflang="en" href="http://192.168.40.181:52153/selections/">
 
 
 
@@ -64,7 +64,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/selections/">
+<meta property="og:url" content="http://192.168.40.181:52153/selections/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Selections">
   <meta property="og:description" content="Selection components available for wonyoungjang.org">
@@ -102,7 +102,7 @@
     <a  
   class="component button common"
   id="site-headline"
-  href="http://192.168.40.181:1313/"
+  href="http://192.168.40.181:52153/"
   accesskey="h" 
   title="Go to home (h)">
   <svg 
@@ -339,14 +339,14 @@
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
       <div class="slider">
-        <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
+        <input type="range" id="hue-selector" min="0" max="360" value="268"/>
         <span class="tooltip" id="hue-tooltip"></span>
       </div>
       <div id="theme-hues"></div>
           
       <label class="title-large" for="chroma-selector">Chroma</label>
       <div class="slider">
-        <input type="range" id="chroma-selector" min="0" max="0.4" value="0.2"/>
+        <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
         <span class="tooltip" id="chroma-tooltip"></span>
       </div>
       <div id="theme-chromas"></div>
@@ -694,15 +694,15 @@
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     } else {
-      hueSelector.value = 305;
-      localStorage.setItem("theme-hue", 305);
+      hueSelector.value = 268;
+      localStorage.setItem("theme-hue", 268);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     } else {
-      chromaSelector.value = 0.2;
-      localStorage.setItem("theme-chroma", 0.2);
+      chromaSelector.value = 44;
+      localStorage.setItem("theme-chroma", 44);
     }
 
     if (savedShape !== null) {
@@ -791,7 +791,7 @@
       var chroma = chromaSelector.value;
 
       root.style.setProperty("--input-color-hue", hue + "deg");
-      root.style.setProperty("--input-color-chroma", chroma);
+      root.style.setProperty("--input-color-chroma", chroma + "%");
       
       localStorage.setItem("theme-hue", hue);
       localStorage.setItem("theme-chroma", chroma);
@@ -3750,7 +3750,7 @@
       
         <a
           class="component card prev"
-          href="http://192.168.40.181:1313/states/"
+          href="http://192.168.40.181:52153/states/"
           accesskey="p"
           title="Previous page (p)">
           <span class="page-direction">
@@ -3767,7 +3767,7 @@
       
         <a
           class="component card next"
-          href="http://192.168.40.181:1313/navigation/"
+          href="http://192.168.40.181:52153/navigation/"
           accesskey="n"
           title="Next page (n)">
           <span class="page-direction">
@@ -3949,7 +3949,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on twitter"
-        href="https://twitter.com/intent/tweet/?text=Selections&url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">      
+        href="https://twitter.com/intent/tweet/?text=Selections&url=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">      
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -3962,7 +3962,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f&title=Selections&summary=Selections&source=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f&title=Selections&summary=Selections&source=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -3975,7 +3975,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on reddit"
-        href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f&title=Selections">
+        href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f&title=Selections">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -3988,7 +3988,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on facebook"
-        href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
+        href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -4001,7 +4001,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on whatsapp"
-        href="https://api.whatsapp.com/send?text=Selections%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
+        href="https://api.whatsapp.com/send?text=Selections%20-%20http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -4014,7 +4014,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on telegram"
-        href="https://telegram.me/share/url?text=Selections&url=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
+        href="https://telegram.me/share/url?text=Selections&url=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">
         <svg 
           class="share-icon" version="1.1" xml:space="preserve" viewBox="2 2 28 28">
           <path
@@ -4027,7 +4027,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Selections on ycombinator"
-        href="https://news.ycombinator.com/submitlink?t=Selections&u=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
+        href="https://news.ycombinator.com/submitlink?t=Selections&u=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">
         <svg 
           class="share-icon" 
           version="1.1" 
@@ -4046,7 +4046,7 @@
         target="_blank" 
         rel="noopener noreferrer" 
         aria-label="share Selections via email" 
-        href="mailto:?subject=Selections&body=http%3a%2f%2f192.168.40.181%3a1313%2fselections%2f">
+        href="mailto:?subject=Selections&body=http%3a%2f%2f192.168.40.181%3a52153%2fselections%2f">
         <i class="icon">email</i> 
         Email
       </a>
@@ -4218,7 +4218,7 @@
 <section class="copyright">
   <a  
     id="copyright-button"
-    href="http://192.168.40.181:1313/">
+    href="http://192.168.40.181:52153/">
     © 2024 Wonyoung Jang
   </a>
 </section>
@@ -4241,49 +4241,6 @@
 
 
 
-
-  <script defer>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-      const container = codeblock.parentNode.parentNode;
-      const copybutton = document.createElement('button');
-      copybutton.classList.add('copy-code');
-      copybutton.innerText = 'copy';
-      function copyingDone() {
-        copybutton.innerText = 'copied!';
-        setTimeout(() => {
-          copybutton.innerText = 'copy';
-        }, 2000);
-      }
-      copybutton.addEventListener('click', (cb) => {
-        if ('clipboard' in navigator) {
-          navigator.clipboard.writeText(codeblock.textContent);
-          copyingDone();
-          return;
-        }
-        const range = document.createRange();
-        range.selectNodeContents(codeblock);
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        try {
-          document.execCommand('copy');
-          copyingDone();
-        } catch (e) { };
-        selection.removeRange(range);
-      });
-      if (container.classList.contains("highlight")) {
-        container.prepend(copybutton);
-      } else if (container.parentNode.firstChild == container) {
-        
-      } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-        
-        codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.prepend(copybutton);
-      } else {
-        
-        codeblock.parentNode.prepend(copybutton);
-      }
-    });
-  </script>
 
 </footer>
     </main>

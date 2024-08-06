@@ -11,7 +11,7 @@
     </title>
     
     <link>
-      http://192.168.40.181:1313/resources/components/
+      http://192.168.40.181:52153/resources/components/
     </link>
 
     <description>
@@ -49,14 +49,14 @@
         Fri, 26 Jul 2024 17:07:30 -0400
       </lastBuildDate>
     
-      <atom:link href="http://192.168.40.181:1313/resources/components/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://192.168.40.181:52153/resources/components/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title>
           Communication
         </title>
 
         <link>
-          http://192.168.40.181:1313/communication/
+          http://192.168.40.181:52153/communication/
         </link>
 
         <pubDate>
@@ -71,7 +71,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/communication/
+          http://192.168.40.181:52153/communication/
         </guid>
 
         <description>
@@ -84,7 +84,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/containment/
+          http://192.168.40.181:52153/containment/
         </link>
 
         <pubDate>
@@ -99,7 +99,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/containment/
+          http://192.168.40.181:52153/containment/
         </guid>
 
         <description>
@@ -112,7 +112,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/navigation/
+          http://192.168.40.181:52153/navigation/
         </link>
 
         <pubDate>
@@ -127,7 +127,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/navigation/
+          http://192.168.40.181:52153/navigation/
         </guid>
 
         <description>
@@ -140,7 +140,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/selections/
+          http://192.168.40.181:52153/selections/
         </link>
 
         <pubDate>
@@ -155,7 +155,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/selections/
+          http://192.168.40.181:52153/selections/
         </guid>
 
         <description>
@@ -168,7 +168,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/actions/
+          http://192.168.40.181:52153/actions/
         </link>
 
         <pubDate>
@@ -183,7 +183,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/actions/
+          http://192.168.40.181:52153/actions/
         </guid>
 
         <description>
@@ -196,7 +196,7 @@
         </title>
 
         <link>
-          http://192.168.40.181:1313/text-inputs/
+          http://192.168.40.181:52153/text-inputs/
         </link>
 
         <pubDate>
@@ -211,7 +211,7 @@
         
 
         <guid>
-          http://192.168.40.181:1313/text-inputs/
+          http://192.168.40.181:52153/text-inputs/
         </guid>
 
         <description>

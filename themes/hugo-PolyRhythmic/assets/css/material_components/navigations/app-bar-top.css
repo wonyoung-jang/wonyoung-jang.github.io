@@ -26,6 +26,10 @@
     flex-flow: row nowrap;
     align-self: stretch;
     align-items: center;
+    font-size: var(--typescale-title-large-size);
+    line-height: var(--typescale-title-large-line-height);
+    font-weight: var(--typescale-title-large-weight);
+    font-family: var(--typescale-title-large-font);
   }
 
   .end {
@@ -44,11 +48,6 @@
   --container-height: var(--size-16);
   --container-width: 100%;
   --container-padding: var(--size-2) var(--size-1);
-
-  font-size: var(--typescale-title-large-size);
-  line-height: var(--typescale-title-large-line-height);
-  font-weight: var(--typescale-title-large-weight);
-  font-family: var(--typescale-title-large-font);
 }
 
 .app-bar.top.medium,
@@ -67,10 +66,12 @@
   --container-width: 100%;
   --container-padding: var(--size-2) var(--size-1) var(--size-6) var(--size-1);
 
-  font-size: var(--typescale-headline-small-size);
-  line-height: var(--typescale-headline-small-line-height);
-  font-weight: var(--typescale-headline-small-weight);
-  font-family: var(--typescale-headline-small-font);
+  .headline {
+    font-size: var(--typescale-headline-small-size);
+    line-height: var(--typescale-headline-small-line-height);
+    font-weight: var(--typescale-headline-small-weight);
+    font-family: var(--typescale-headline-small-font);
+  }
 }
 
 .app-bar.top.large {
@@ -79,8 +80,10 @@
   --container-width: 100%;
   --container-padding: var(--size-2) var(--size-1) var(--size-7) var(--size-1);
 
-  font-size: var(--typescale-headline-medium-size);
-  line-height: var(--typescale-headline-medium-line-height);
-  font-weight: var(--typescale-headline-medium-weight);
-  font-family: var(--typescale-headline-medium-font);
+  .headline {
+    font-size: var(--typescale-headline-medium-size);
+    line-height: var(--typescale-headline-medium-line-height);
+    font-weight: var(--typescale-headline-medium-weight);
+    font-family: var(--typescale-headline-medium-font);
+  }
 }

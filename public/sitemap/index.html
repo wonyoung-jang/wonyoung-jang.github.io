@@ -4,7 +4,7 @@
   dir="auto">      
 
   
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52153&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,7 +28,7 @@
   rel="stylesheet">
 
 
-  <link crossorigin="anonymous" href="/assets/css/0_tokens.min.afa4288d544902c325fd711685f62b90f59120c936ef40dce0dde3e0704e291e.css" integrity="sha256-r6QojVRJAsMl/XEWhfYrkPWRIMk270Dc4N3j4HBOKR4=" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous" href="/assets/css/0_tokens.min.2e66b8284ef7355e188257c2057807ca771f2cf087c9c900dc66a1d7209dec91.css" integrity="sha256-Lma4KE73NV4YglfCBXgHyncfLPCHyckA3Gah1yCd7JE=" rel="preload stylesheet" as="style">
 
   <link crossorigin="anonymous" href="/assets/css/1_base.min.f7f967ab4609416f703438f5bb4a9d387fbbab72b46c3abc6e574708c0c8d824.css" integrity="sha256-9/lnq0YJQW9wNDj1u0qdOH&#43;7q3K0bDq8bldHCMDI2CQ=" rel="preload stylesheet" as="style">
 
@@ -42,13 +42,13 @@
 
 
 
-<link rel="icon" href="http://192.168.40.181:1313/sitelogo.svg">
+<link rel="icon" href="http://192.168.40.181:52153/sitelogo.svg">
 
 
 
 
 
-  <link rel="alternate" hreflang="en" href="http://192.168.40.181:1313/sitemap/">
+  <link rel="alternate" hreflang="en" href="http://192.168.40.181:52153/sitemap/">
 
 
 
@@ -64,7 +64,7 @@
 </noscript>
 
 
-<meta property="og:url" content="http://192.168.40.181:1313/sitemap/">
+<meta property="og:url" content="http://192.168.40.181:52153/sitemap/">
   <meta property="og:site_name" content="Wonyoung Jang">
   <meta property="og:title" content="Sitemap">
   <meta property="og:description" content="A sitemap for wonyoungjang.org">
@@ -100,7 +100,7 @@
     <a  
   class="component button common"
   id="site-headline"
-  href="http://192.168.40.181:1313/"
+  href="http://192.168.40.181:52153/"
   accesskey="h" 
   title="Go to home (h)">
   <svg 
@@ -337,14 +337,14 @@
     <div id="color-selector-container">
       <label class="title-large" for="hue-selector">Hue</label>
       <div class="slider">
-        <input type="range" id="hue-selector" min="0" max="360" value="302.8"/>
+        <input type="range" id="hue-selector" min="0" max="360" value="268"/>
         <span class="tooltip" id="hue-tooltip"></span>
       </div>
       <div id="theme-hues"></div>
           
       <label class="title-large" for="chroma-selector">Chroma</label>
       <div class="slider">
-        <input type="range" id="chroma-selector" min="0" max="0.4" value="0.2"/>
+        <input type="range" id="chroma-selector" min="0" max="100" value="58"/>
         <span class="tooltip" id="chroma-tooltip"></span>
       </div>
       <div id="theme-chromas"></div>
@@ -692,15 +692,15 @@
     if (savedHue !== null) {
       hueSelector.value = savedHue;
     } else {
-      hueSelector.value = 305;
-      localStorage.setItem("theme-hue", 305);
+      hueSelector.value = 268;
+      localStorage.setItem("theme-hue", 268);
     }
 
     if (savedChroma !== null) {
       chromaSelector.value = savedChroma;
     } else {
-      chromaSelector.value = 0.2;
-      localStorage.setItem("theme-chroma", 0.2);
+      chromaSelector.value = 44;
+      localStorage.setItem("theme-chroma", 44);
     }
 
     if (savedShape !== null) {
@@ -789,7 +789,7 @@
       var chroma = chromaSelector.value;
 
       root.style.setProperty("--input-color-hue", hue + "deg");
-      root.style.setProperty("--input-color-chroma", chroma);
+      root.style.setProperty("--input-color-chroma", chroma + "%");
       
       localStorage.setItem("theme-hue", hue);
       localStorage.setItem("theme-chroma", chroma);
@@ -1141,7 +1141,7 @@
               <td>1</td>
               <td>About</td>
               <td>
-                <a href="http://192.168.40.181:1313/about/">http://192.168.40.181:1313/about/</a>
+                <a href="http://192.168.40.181:52153/about/">http://192.168.40.181:52153/about/</a>
               </td>
               <td>July 07, 2024</td>
               <td>July 07, 2024</td>
@@ -1157,7 +1157,7 @@
               <td>2</td>
               <td>Actions</td>
               <td>
-                <a href="http://192.168.40.181:1313/actions/">http://192.168.40.181:1313/actions/</a>
+                <a href="http://192.168.40.181:52153/actions/">http://192.168.40.181:52153/actions/</a>
               </td>
               <td>July 17, 2024</td>
               <td>July 24, 2024</td>
@@ -1173,7 +1173,7 @@
               <td>3</td>
               <td>All Logseq elements</td>
               <td>
-                <a href="http://192.168.40.181:1313/all-logseq-elements/">http://192.168.40.181:1313/all-logseq-elements/</a>
+                <a href="http://192.168.40.181:52153/all-logseq-elements/">http://192.168.40.181:52153/all-logseq-elements/</a>
               </td>
               <td>August 03, 2024</td>
               <td>August 03, 2024</td>
@@ -1189,7 +1189,7 @@
               <td>4</td>
               <td>Archives</td>
               <td>
-                <a href="http://192.168.40.181:1313/archives/">http://192.168.40.181:1313/archives/</a>
+                <a href="http://192.168.40.181:52153/archives/">http://192.168.40.181:52153/archives/</a>
               </td>
               <td>July 30, 2024</td>
               <td>July 30, 2024</td>
@@ -1205,7 +1205,7 @@
               <td>5</td>
               <td>Colors</td>
               <td>
-                <a href="http://192.168.40.181:1313/colors/">http://192.168.40.181:1313/colors/</a>
+                <a href="http://192.168.40.181:52153/colors/">http://192.168.40.181:52153/colors/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1221,7 +1221,7 @@
               <td>6</td>
               <td>Communication</td>
               <td>
-                <a href="http://192.168.40.181:1313/communication/">http://192.168.40.181:1313/communication/</a>
+                <a href="http://192.168.40.181:52153/communication/">http://192.168.40.181:52153/communication/</a>
               </td>
               <td>July 25, 2024</td>
               <td>July 26, 2024</td>
@@ -1237,7 +1237,7 @@
               <td>7</td>
               <td>Contact</td>
               <td>
-                <a href="http://192.168.40.181:1313/contact/">http://192.168.40.181:1313/contact/</a>
+                <a href="http://192.168.40.181:52153/contact/">http://192.168.40.181:52153/contact/</a>
               </td>
               <td>July 07, 2024</td>
               <td>July 07, 2024</td>
@@ -1253,7 +1253,7 @@
               <td>8</td>
               <td>Containment</td>
               <td>
-                <a href="http://192.168.40.181:1313/containment/">http://192.168.40.181:1313/containment/</a>
+                <a href="http://192.168.40.181:52153/containment/">http://192.168.40.181:52153/containment/</a>
               </td>
               <td>July 25, 2024</td>
               <td>July 26, 2024</td>
@@ -1269,7 +1269,7 @@
               <td>9</td>
               <td>CS career chatbot</td>
               <td>
-                <a href="http://192.168.40.181:1313/cs-career-chatbot/">http://192.168.40.181:1313/cs-career-chatbot/</a>
+                <a href="http://192.168.40.181:52153/cs-career-chatbot/">http://192.168.40.181:52153/cs-career-chatbot/</a>
               </td>
               <td>January 22, 2024</td>
               <td>July 24, 2024</td>
@@ -1285,7 +1285,7 @@
               <td>10</td>
               <td>Disaster recovery robot simulation</td>
               <td>
-                <a href="http://192.168.40.181:1313/disaster-recovery-robot-simulation/">http://192.168.40.181:1313/disaster-recovery-robot-simulation/</a>
+                <a href="http://192.168.40.181:52153/disaster-recovery-robot-simulation/">http://192.168.40.181:52153/disaster-recovery-robot-simulation/</a>
               </td>
               <td>January 25, 2024</td>
               <td>July 24, 2024</td>
@@ -1301,7 +1301,7 @@
               <td>11</td>
               <td>DVD rental database</td>
               <td>
-                <a href="http://192.168.40.181:1313/dvd-rental-database/">http://192.168.40.181:1313/dvd-rental-database/</a>
+                <a href="http://192.168.40.181:52153/dvd-rental-database/">http://192.168.40.181:52153/dvd-rental-database/</a>
               </td>
               <td>July 12, 2023</td>
               <td>July 24, 2024</td>
@@ -1317,7 +1317,7 @@
               <td>12</td>
               <td>Elevations</td>
               <td>
-                <a href="http://192.168.40.181:1313/elevations/">http://192.168.40.181:1313/elevations/</a>
+                <a href="http://192.168.40.181:52153/elevations/">http://192.168.40.181:52153/elevations/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1333,7 +1333,7 @@
               <td>13</td>
               <td>ErgoDox EZ LEGO tenting kits</td>
               <td>
-                <a href="http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/">http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/</a>
+                <a href="http://192.168.40.181:52153/ergodox-ez-lego-tenting-kits/">http://192.168.40.181:52153/ergodox-ez-lego-tenting-kits/</a>
               </td>
               <td>July 10, 2024</td>
               <td>July 24, 2024</td>
@@ -1349,7 +1349,7 @@
               <td>14</td>
               <td>Feed layout</td>
               <td>
-                <a href="http://192.168.40.181:1313/feed-layout/">http://192.168.40.181:1313/feed-layout/</a>
+                <a href="http://192.168.40.181:52153/feed-layout/">http://192.168.40.181:52153/feed-layout/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1365,7 +1365,7 @@
               <td>15</td>
               <td>Fixed and flexible layout</td>
               <td>
-                <a href="http://192.168.40.181:1313/fixed-and-flexible-layout/">http://192.168.40.181:1313/fixed-and-flexible-layout/</a>
+                <a href="http://192.168.40.181:52153/fixed-and-flexible-layout/">http://192.168.40.181:52153/fixed-and-flexible-layout/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1381,7 +1381,7 @@
               <td>16</td>
               <td>Food shop database management</td>
               <td>
-                <a href="http://192.168.40.181:1313/food-shop-database-management/">http://192.168.40.181:1313/food-shop-database-management/</a>
+                <a href="http://192.168.40.181:52153/food-shop-database-management/">http://192.168.40.181:52153/food-shop-database-management/</a>
               </td>
               <td>December 18, 2022</td>
               <td>July 24, 2024</td>
@@ -1397,7 +1397,7 @@
               <td>17</td>
               <td>Hotel reservation manager</td>
               <td>
-                <a href="http://192.168.40.181:1313/hotel-reservation-manager/">http://192.168.40.181:1313/hotel-reservation-manager/</a>
+                <a href="http://192.168.40.181:52153/hotel-reservation-manager/">http://192.168.40.181:52153/hotel-reservation-manager/</a>
               </td>
               <td>November 27, 2023</td>
               <td>July 24, 2024</td>
@@ -1413,7 +1413,7 @@
               <td>18</td>
               <td>List of admonitions for wonyoungjang.org</td>
               <td>
-                <a href="http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/">http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/</a>
+                <a href="http://192.168.40.181:52153/list-of-admonitions-for-wonyoungjang.org/">http://192.168.40.181:52153/list-of-admonitions-for-wonyoungjang.org/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1429,7 +1429,7 @@
               <td>19</td>
               <td>List of keyboard shortcuts for wonyoungjang.org</td>
               <td>
-                <a href="http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/">http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/</a>
+                <a href="http://192.168.40.181:52153/list-of-keyboard-shortcuts-for-wonyoungjang.org/">http://192.168.40.181:52153/list-of-keyboard-shortcuts-for-wonyoungjang.org/</a>
               </td>
               <td>March 29, 2024</td>
               <td>July 26, 2024</td>
@@ -1445,7 +1445,7 @@
               <td>20</td>
               <td>List-detail layout</td>
               <td>
-                <a href="http://192.168.40.181:1313/list-detail-layout/">http://192.168.40.181:1313/list-detail-layout/</a>
+                <a href="http://192.168.40.181:52153/list-detail-layout/">http://192.168.40.181:52153/list-detail-layout/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1461,7 +1461,7 @@
               <td>21</td>
               <td>Logseq markdown tokenizer</td>
               <td>
-                <a href="http://192.168.40.181:1313/logseq-markdown-tokenizer/">http://192.168.40.181:1313/logseq-markdown-tokenizer/</a>
+                <a href="http://192.168.40.181:52153/logseq-markdown-tokenizer/">http://192.168.40.181:52153/logseq-markdown-tokenizer/</a>
               </td>
               <td>January 13, 2024</td>
               <td>July 24, 2024</td>
@@ -1477,7 +1477,7 @@
               <td>22</td>
               <td>Motion</td>
               <td>
-                <a href="http://192.168.40.181:1313/motion/">http://192.168.40.181:1313/motion/</a>
+                <a href="http://192.168.40.181:52153/motion/">http://192.168.40.181:52153/motion/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1493,7 +1493,7 @@
               <td>23</td>
               <td>Navigation</td>
               <td>
-                <a href="http://192.168.40.181:1313/navigation/">http://192.168.40.181:1313/navigation/</a>
+                <a href="http://192.168.40.181:52153/navigation/">http://192.168.40.181:52153/navigation/</a>
               </td>
               <td>July 25, 2024</td>
               <td>July 26, 2024</td>
@@ -1509,7 +1509,7 @@
               <td>24</td>
               <td>Now</td>
               <td>
-                <a href="http://192.168.40.181:1313/now/">http://192.168.40.181:1313/now/</a>
+                <a href="http://192.168.40.181:52153/now/">http://192.168.40.181:52153/now/</a>
               </td>
               <td>July 08, 2024</td>
               <td>July 08, 2024</td>
@@ -1525,7 +1525,7 @@
               <td>25</td>
               <td>Package delivery route optimization</td>
               <td>
-                <a href="http://192.168.40.181:1313/package-delivery-route-optimization/">http://192.168.40.181:1313/package-delivery-route-optimization/</a>
+                <a href="http://192.168.40.181:52153/package-delivery-route-optimization/">http://192.168.40.181:52153/package-delivery-route-optimization/</a>
               </td>
               <td>January 08, 2024</td>
               <td>July 24, 2024</td>
@@ -1541,7 +1541,7 @@
               <td>26</td>
               <td>Pit signs for robotics competition</td>
               <td>
-                <a href="http://192.168.40.181:1313/pit-signs-for-robotics-competition/">http://192.168.40.181:1313/pit-signs-for-robotics-competition/</a>
+                <a href="http://192.168.40.181:52153/pit-signs-for-robotics-competition/">http://192.168.40.181:52153/pit-signs-for-robotics-competition/</a>
               </td>
               <td>July 07, 2024</td>
               <td>July 24, 2024</td>
@@ -1557,7 +1557,7 @@
               <td>27</td>
               <td>Playground</td>
               <td>
-                <a href="http://192.168.40.181:1313/playground/">http://192.168.40.181:1313/playground/</a>
+                <a href="http://192.168.40.181:52153/playground/">http://192.168.40.181:52153/playground/</a>
               </td>
               <td>July 30, 2024</td>
               <td>July 30, 2024</td>
@@ -1573,7 +1573,7 @@
               <td>28</td>
               <td>Q-learning tournament scheduler</td>
               <td>
-                <a href="http://192.168.40.181:1313/q-learning-tournament-scheduler/">http://192.168.40.181:1313/q-learning-tournament-scheduler/</a>
+                <a href="http://192.168.40.181:52153/q-learning-tournament-scheduler/">http://192.168.40.181:52153/q-learning-tournament-scheduler/</a>
               </td>
               <td>February 25, 2024</td>
               <td>July 24, 2024</td>
@@ -1589,7 +1589,7 @@
               <td>29</td>
               <td>Realtime multiplayer drawing</td>
               <td>
-                <a href="http://192.168.40.181:1313/realtime-multiplayer-drawing/">http://192.168.40.181:1313/realtime-multiplayer-drawing/</a>
+                <a href="http://192.168.40.181:52153/realtime-multiplayer-drawing/">http://192.168.40.181:52153/realtime-multiplayer-drawing/</a>
               </td>
               <td>March 08, 2024</td>
               <td>July 24, 2024</td>
@@ -1605,7 +1605,7 @@
               <td>30</td>
               <td>Retail inventory manager</td>
               <td>
-                <a href="http://192.168.40.181:1313/retail-inventory-manager/">http://192.168.40.181:1313/retail-inventory-manager/</a>
+                <a href="http://192.168.40.181:52153/retail-inventory-manager/">http://192.168.40.181:52153/retail-inventory-manager/</a>
               </td>
               <td>November 18, 2023</td>
               <td>July 24, 2024</td>
@@ -1621,7 +1621,7 @@
               <td>31</td>
               <td>Save top level reddit comments</td>
               <td>
-                <a href="http://192.168.40.181:1313/save-top-level-reddit-comments/">http://192.168.40.181:1313/save-top-level-reddit-comments/</a>
+                <a href="http://192.168.40.181:52153/save-top-level-reddit-comments/">http://192.168.40.181:52153/save-top-level-reddit-comments/</a>
               </td>
               <td>January 28, 2024</td>
               <td>July 24, 2024</td>
@@ -1637,7 +1637,7 @@
               <td>32</td>
               <td>Search</td>
               <td>
-                <a href="http://192.168.40.181:1313/search/">http://192.168.40.181:1313/search/</a>
+                <a href="http://192.168.40.181:52153/search/">http://192.168.40.181:52153/search/</a>
               </td>
               <td>July 07, 2024</td>
               <td>July 07, 2024</td>
@@ -1653,7 +1653,7 @@
               <td>33</td>
               <td>Selections</td>
               <td>
-                <a href="http://192.168.40.181:1313/selections/">http://192.168.40.181:1313/selections/</a>
+                <a href="http://192.168.40.181:52153/selections/">http://192.168.40.181:52153/selections/</a>
               </td>
               <td>July 25, 2024</td>
               <td>July 26, 2024</td>
@@ -1669,7 +1669,7 @@
               <td>34</td>
               <td>Shapes</td>
               <td>
-                <a href="http://192.168.40.181:1313/shapes/">http://192.168.40.181:1313/shapes/</a>
+                <a href="http://192.168.40.181:52153/shapes/">http://192.168.40.181:52153/shapes/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1685,7 +1685,7 @@
               <td>35</td>
               <td>Single pane layout</td>
               <td>
-                <a href="http://192.168.40.181:1313/single-pane-layout/">http://192.168.40.181:1313/single-pane-layout/</a>
+                <a href="http://192.168.40.181:52153/single-pane-layout/">http://192.168.40.181:52153/single-pane-layout/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1701,7 +1701,7 @@
               <td>36</td>
               <td>Sitemap</td>
               <td>
-                <a href="http://192.168.40.181:1313/sitemap/">http://192.168.40.181:1313/sitemap/</a>
+                <a href="http://192.168.40.181:52153/sitemap/">http://192.168.40.181:52153/sitemap/</a>
               </td>
               <td>July 07, 2024</td>
               <td>July 07, 2024</td>
@@ -1717,7 +1717,7 @@
               <td>37</td>
               <td>Split-pane layout</td>
               <td>
-                <a href="http://192.168.40.181:1313/split-pane-layout/">http://192.168.40.181:1313/split-pane-layout/</a>
+                <a href="http://192.168.40.181:52153/split-pane-layout/">http://192.168.40.181:52153/split-pane-layout/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1733,7 +1733,7 @@
               <td>38</td>
               <td>States</td>
               <td>
-                <a href="http://192.168.40.181:1313/states/">http://192.168.40.181:1313/states/</a>
+                <a href="http://192.168.40.181:52153/states/">http://192.168.40.181:52153/states/</a>
               </td>
               <td>July 18, 2024</td>
               <td>July 24, 2024</td>
@@ -1749,7 +1749,7 @@
               <td>39</td>
               <td>Student record system</td>
               <td>
-                <a href="http://192.168.40.181:1313/student-record-system/">http://192.168.40.181:1313/student-record-system/</a>
+                <a href="http://192.168.40.181:52153/student-record-system/">http://192.168.40.181:52153/student-record-system/</a>
               </td>
               <td>July 01, 2023</td>
               <td>July 24, 2024</td>
@@ -1765,7 +1765,7 @@
               <td>40</td>
               <td>Supporting pane layout</td>
               <td>
-                <a href="http://192.168.40.181:1313/supporting-pane-layout/">http://192.168.40.181:1313/supporting-pane-layout/</a>
+                <a href="http://192.168.40.181:52153/supporting-pane-layout/">http://192.168.40.181:52153/supporting-pane-layout/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1781,7 +1781,7 @@
               <td>41</td>
               <td>Text inputs</td>
               <td>
-                <a href="http://192.168.40.181:1313/text-inputs/">http://192.168.40.181:1313/text-inputs/</a>
+                <a href="http://192.168.40.181:52153/text-inputs/">http://192.168.40.181:52153/text-inputs/</a>
               </td>
               <td>July 17, 2024</td>
               <td>July 24, 2024</td>
@@ -1797,7 +1797,7 @@
               <td>42</td>
               <td>Typography</td>
               <td>
-                <a href="http://192.168.40.181:1313/typography/">http://192.168.40.181:1313/typography/</a>
+                <a href="http://192.168.40.181:52153/typography/">http://192.168.40.181:52153/typography/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1813,7 +1813,7 @@
               <td>43</td>
               <td>Vacation cart manager</td>
               <td>
-                <a href="http://192.168.40.181:1313/vacation-cart-manager/">http://192.168.40.181:1313/vacation-cart-manager/</a>
+                <a href="http://192.168.40.181:52153/vacation-cart-manager/">http://192.168.40.181:52153/vacation-cart-manager/</a>
               </td>
               <td>November 21, 2023</td>
               <td>July 24, 2024</td>
@@ -1831,7 +1831,7 @@
               <td>44</td>
               <td>University</td>
               <td>
-                <a href="http://192.168.40.181:1313/projects/university/">http://192.168.40.181:1313/projects/university/</a>
+                <a href="http://192.168.40.181:52153/projects/university/">http://192.168.40.181:52153/projects/university/</a>
               </td>
               <td>January 25, 2024</td>
               <td>July 24, 2024</td>
@@ -1847,7 +1847,7 @@
               <td>45</td>
               <td>Software</td>
               <td>
-                <a href="http://192.168.40.181:1313/projects/software/">http://192.168.40.181:1313/projects/software/</a>
+                <a href="http://192.168.40.181:52153/projects/software/">http://192.168.40.181:52153/projects/software/</a>
               </td>
               <td>March 08, 2024</td>
               <td>July 26, 2024</td>
@@ -1863,7 +1863,7 @@
               <td>46</td>
               <td>Projects</td>
               <td>
-                <a href="http://192.168.40.181:1313/projects/">http://192.168.40.181:1313/projects/</a>
+                <a href="http://192.168.40.181:52153/projects/">http://192.168.40.181:52153/projects/</a>
               </td>
               <td>July 10, 2024</td>
               <td>July 26, 2024</td>
@@ -1879,7 +1879,7 @@
               <td>47</td>
               <td>Design</td>
               <td>
-                <a href="http://192.168.40.181:1313/projects/design/">http://192.168.40.181:1313/projects/design/</a>
+                <a href="http://192.168.40.181:52153/projects/design/">http://192.168.40.181:52153/projects/design/</a>
               </td>
               <td>July 10, 2024</td>
               <td>July 24, 2024</td>
@@ -1895,7 +1895,7 @@
               <td>48</td>
               <td>Components</td>
               <td>
-                <a href="http://192.168.40.181:1313/resources/components/">http://192.168.40.181:1313/resources/components/</a>
+                <a href="http://192.168.40.181:52153/resources/components/">http://192.168.40.181:52153/resources/components/</a>
               </td>
               <td>July 25, 2024</td>
               <td>July 26, 2024</td>
@@ -1911,7 +1911,7 @@
               <td>49</td>
               <td>Tokens</td>
               <td>
-                <a href="http://192.168.40.181:1313/resources/tokens/">http://192.168.40.181:1313/resources/tokens/</a>
+                <a href="http://192.168.40.181:52153/resources/tokens/">http://192.168.40.181:52153/resources/tokens/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1927,7 +1927,7 @@
               <td>50</td>
               <td>Layouts</td>
               <td>
-                <a href="http://192.168.40.181:1313/resources/layouts/">http://192.168.40.181:1313/resources/layouts/</a>
+                <a href="http://192.168.40.181:52153/resources/layouts/">http://192.168.40.181:52153/resources/layouts/</a>
               </td>
               <td>July 26, 2024</td>
               <td>July 26, 2024</td>
@@ -1943,7 +1943,7 @@
               <td>51</td>
               <td>Resources</td>
               <td>
-                <a href="http://192.168.40.181:1313/resources/">http://192.168.40.181:1313/resources/</a>
+                <a href="http://192.168.40.181:52153/resources/">http://192.168.40.181:52153/resources/</a>
               </td>
               <td>August 03, 2024</td>
               <td>August 03, 2024</td>
@@ -1959,7 +1959,7 @@
               <td>52</td>
               <td>References</td>
               <td>
-                <a href="http://192.168.40.181:1313/resources/references/">http://192.168.40.181:1313/resources/references/</a>
+                <a href="http://192.168.40.181:52153/resources/references/">http://192.168.40.181:52153/resources/references/</a>
               </td>
               <td>August 03, 2024</td>
               <td>August 03, 2024</td>
@@ -1975,7 +1975,7 @@
               <td>53</td>
               <td>Wonyoungjang.org</td>
               <td>
-                <a href="http://192.168.40.181:1313/wonyoungjang.org/">http://192.168.40.181:1313/wonyoungjang.org/</a>
+                <a href="http://192.168.40.181:52153/wonyoungjang.org/">http://192.168.40.181:52153/wonyoungjang.org/</a>
               </td>
               <td>March 05, 2024</td>
               <td>July 26, 2024</td>
@@ -1991,7 +1991,7 @@
               <td>54</td>
               <td>Wonyoungjang.Orgs</td>
               <td>
-                <a href="http://192.168.40.181:1313/">http://192.168.40.181:1313/</a>
+                <a href="http://192.168.40.181:52153/">http://192.168.40.181:52153/</a>
               </td>
               <td>July 30, 2024</td>
               <td>July 30, 2024</td>
@@ -2016,7 +2016,7 @@
       
         <a
           class="component card prev"
-          href="http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/"
+          href="http://192.168.40.181:52153/list-of-keyboard-shortcuts-for-wonyoungjang.org/"
           accesskey="p"
           title="Previous page (p)">
           <span class="page-direction">
@@ -2033,7 +2033,7 @@
       
         <a
           class="component card next"
-          href="http://192.168.40.181:1313/search/"
+          href="http://192.168.40.181:52153/search/"
           accesskey="n"
           title="Next page (n)">
           <span class="page-direction">
@@ -2197,7 +2197,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on twitter"
-        href="https://twitter.com/intent/tweet/?text=Sitemap&url=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">      
+        href="https://twitter.com/intent/tweet/?text=Sitemap&url=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">      
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -2210,7 +2210,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f&title=Sitemap&summary=Sitemap&source=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f&title=Sitemap&summary=Sitemap&source=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -2223,7 +2223,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on reddit"
-        href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f&title=Sitemap">
+        href="https://reddit.com/submit?url=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f&title=Sitemap">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -2236,7 +2236,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on facebook"
-        href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">
+        href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -2249,7 +2249,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on whatsapp"
-        href="https://api.whatsapp.com/send?text=Sitemap%20-%20http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">
+        href="https://api.whatsapp.com/send?text=Sitemap%20-%20http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">
         <svg 
           class="share-icon" version="1.1" viewBox="0 0 512 512" xml:space="preserve">
           <path
@@ -2262,7 +2262,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on telegram"
-        href="https://telegram.me/share/url?text=Sitemap&url=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">
+        href="https://telegram.me/share/url?text=Sitemap&url=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">
         <svg 
           class="share-icon" version="1.1" xml:space="preserve" viewBox="2 2 28 28">
           <path
@@ -2275,7 +2275,7 @@
         target="_blank" 
         rel="external noopener noreferrer" 
         aria-label="share Sitemap on ycombinator"
-        href="https://news.ycombinator.com/submitlink?t=Sitemap&u=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">
+        href="https://news.ycombinator.com/submitlink?t=Sitemap&u=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">
         <svg 
           class="share-icon" 
           version="1.1" 
@@ -2294,7 +2294,7 @@
         target="_blank" 
         rel="noopener noreferrer" 
         aria-label="share Sitemap via email" 
-        href="mailto:?subject=Sitemap&body=http%3a%2f%2f192.168.40.181%3a1313%2fsitemap%2f">
+        href="mailto:?subject=Sitemap&body=http%3a%2f%2f192.168.40.181%3a52153%2fsitemap%2f">
         <i class="icon">email</i> 
         Email
       </a>
@@ -2466,7 +2466,7 @@
 <section class="copyright">
   <a  
     id="copyright-button"
-    href="http://192.168.40.181:1313/">
+    href="http://192.168.40.181:52153/">
     © 2024 Wonyoung Jang
   </a>
 </section>
