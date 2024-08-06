@@ -2,6 +2,7 @@
   --container-display: initial;
   --container-flex-flow: initial;
   --container-justify-content: initial;
+  --container-align-content: initial;
   --container-align-items: initial;
   --container-gap: initial;
   --container-height: initial;
@@ -35,6 +36,7 @@
   flex-flow:        var(--container-flex-flow);
   justify-content:  var(--container-justify-content);
   align-items:      var(--container-align-items);
+  align-content:    var(--container-align-content);
   gap:              var(--container-gap);
   height:           var(--container-height);
   width:            var(--container-width);

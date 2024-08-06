@@ -3,21 +3,27 @@
   --container-flex-flow: row nowrap;
   --container-justify-content: flex-start;
   --container-align-items: center;
-  --container-gap: var(--size-1);
-
-  --container-shape: 0;
-
   --container-color: var(--color-surface-container);
   
-  color: var(--color-on-surface);
-
   .start,
   .end {
     display: flex;
     flex-flow: row nowrap;
     align-self: center;
     align-items: center;
-    gap: var(--size-2);
+    gap: var(--size-3);
+  }
+
+  .start > * {
+    color: var(--color-on-surface);
+  }
+
+  .end > * {
+    color: var(--color-on-surface-variant);
+  }
+  
+  .end {
+    margin-left: auto;
   }
 
   .headline {
@@ -26,15 +32,11 @@
     flex-flow: row nowrap;
     align-self: stretch;
     align-items: center;
+    color: var(--color-on-surface);
     font-size: var(--typescale-title-large-size);
     line-height: var(--typescale-title-large-line-height);
     font-weight: var(--typescale-title-large-weight);
     font-family: var(--typescale-title-large-font);
-  }
-
-  .end {
-    color: var(--color-on-suface-variant);
-    margin-left: auto;
   }
 }
 
@@ -53,19 +55,18 @@
 .app-bar.top.medium,
 .app-bar.top.large {
   --container-flex-flow: row wrap;
+  --container-align-content: space-between;
   
   .headline {
-    flex: 1 1 100%;
     padding-inline: var(--size-3);
   }
 }
 
 .app-bar.top.medium {
-  --container-gap: var(--size-1);
   --container-height: var(--size-28);
   --container-width: 100%;
-  --container-padding: var(--size-2) var(--size-1) var(--size-6) var(--size-1);
-
+  --container-padding: var(--size-5) var(--size-1) var(--size-6) var(--size-1);
+  
   .headline {
     font-size: var(--typescale-headline-small-size);
     line-height: var(--typescale-headline-small-line-height);
@@ -75,11 +76,10 @@
 }
 
 .app-bar.top.large {
-  --container-gap: var(--size-10);
   --container-height: var(--size-38);
   --container-width: 100%;
-  --container-padding: var(--size-2) var(--size-1) var(--size-7) var(--size-1);
-
+  --container-padding: var(--size-5) var(--size-1) var(--size-7) var(--size-1);
+  
   .headline {
     font-size: var(--typescale-headline-medium-size);
     line-height: var(--typescale-headline-medium-line-height);
