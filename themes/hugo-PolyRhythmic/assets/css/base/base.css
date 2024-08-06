@@ -195,9 +195,9 @@ li:not(:has(ul, ol)) {
 /* Pre */
 pre {
   font-family: var(--typeface-mono);
-  font-size: var(--typeface-body-small-size);
-  font-weight: var(--typeface-body-small-weight);
-  line-height: var(--typeface-body-small-line-height);
+  font-size: var(--typeface-body-large-size);
+  font-weight: var(--typeface-body-large-weight);
+  line-height: var(--typeface-body-large-line-height);
 }
 
 
@@ -223,9 +223,9 @@ code,
 kbd,
 samp {
   font-family: var(--typeface-mono);
-  font-size: var(--typeface-body-small-size);
-  font-weight: var(--typeface-body-small-weight);
-  line-height: var(--typeface-body-small-line-height);
+  font-size: var(--typeface-body-large-size);
+  font-weight: var(--typeface-body-large-weight);
+  line-height: var(--typeface-body-large-line-height);
 }
 
 /* Links */

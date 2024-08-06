@@ -1,6 +1,7 @@
 baseURL: https://wonyoungjang.org/
 title: Wonyoung Jang
 theme: github.com/wonyoung-jang/hugo-PolyRhythmic
+minify: true
 
 languageCode: en-US
 
