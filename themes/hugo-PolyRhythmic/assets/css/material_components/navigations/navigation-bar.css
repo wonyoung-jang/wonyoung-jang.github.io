@@ -73,7 +73,7 @@
 
     .label {
       color: var(--color-on-surface);
-      font-weight: var(--typeface-weight-semi-bold);
+      font-weight: var(--typeface-weight-bold);
     }
   }
 }

@@ -29,7 +29,7 @@
     --icon-color: var(--color-on-secondary-container);
 
     .label {
-      font-weight: var(--typeface-weight-semi-bold);
+      font-weight: var(--typeface-weight-bold);
     }
   }
 }
