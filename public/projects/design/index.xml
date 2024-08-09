@@ -1,28 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design on
-Wonyoung Jang</title><link>
-https://wonyoungjang.org/projects/design/</link><description>
-Recent content in Design on Wonyoung Jang</description><generator><meta name="generator" content="Hugo 0.127.0"/><language>
-en-US</language><managingEditor>
-contact@wonyoungjang.org (Wonyoung Jang)</managingEditor><webMaster>
-contact@wonyoungjang.org (Wonyoung Jang)</webMaster><copyright>
-&lt;!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--></copyright><lastBuildDate>
-Wed, 24 Jul 2024 10:25:11 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/projects/design/index.xml" rel="self" type="application/rss+xml"/><item><title>
-ErgoDox EZ LEGO tenting kits</title><link>
-https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/ergodox-ez-lego-tenting-kits/</guid><description>
-Purposelinkh2My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:
-They are individually adjusted with thumbscrews, which can be finnicky
-The maximum tenting may not be as extreme as you might like
-With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.</description></item><item><title>
-Pit signs for robotics competition</title><link>
-https://wonyoungjang.org/pit-signs-for-robotics-competition/</link><pubDate>
-Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
-contact@wonyoungjang.org
-(Wonyoung Jang)</author><guid>
-https://wonyoungjang.org/pit-signs-for-robotics-competition/</guid><description>
-Pit signslinkh2At one of my past employers, we ran large robotics competitions. For one such competition, we customized and printed these &amp;ldquo;pit signs&amp;rdquo; for each team participating in the competition. The teams could then take them home at the end.
-I&amp;rsquo;ve templated these signs so anybody may create similar ones.
-Figma Design Kit</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>
+      
+        
+          Design on 
+        
+        Wonyoung Jang
+      
+    </title>
+    
+    <link>
+      http://192.168.40.181:1313/projects/design/
+    </link>
+
+    <description>
+      Recent content in Design on Wonyoung Jang
+    </description>
+    
+    <generator>
+      <meta name="generator" content="Hugo 0.131.0">
+    </generator>
+   
+    <language>
+      en-US
+    </language>
+    
+    
+      <managingEditor>
+        contact@wonyoungjang.org (Wonyoung Jang)
+      </managingEditor>
+    
+    
+    
+      <webMaster>
+        contact@wonyoungjang.org (Wonyoung Jang)
+      </webMaster>
+    
+    
+    
+      <copyright>
+        &lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;
+      </copyright>
+    
+
+    
+      <lastBuildDate>
+        Wed, 24 Jul 2024 10:25:11 -0400
+      </lastBuildDate>
+    
+      <atom:link href="http://192.168.40.181:1313/projects/design/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>
+          ErgoDox EZ LEGO tenting kits
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/ergodox-ez-lego-tenting-kits/
+        </guid>
+
+        <description>
+          Purpose&#xD;link&#xD;h2&#xD;My ErgoDox EZ came with some tenting legs, but they suffer from two main problems:&#xA;They are individually adjusted with thumbscrews, which can be finnicky&#xA;The maximum tenting may not be as extreme as you might like&#xA;With a custom tenting kit, I wanted to build one that&amp;rsquo;s easily adjustable (one adjustment &amp;ldquo;move&amp;rdquo; per side of keyboard), and one that you can easily take the keyboard off of when desired.
+        </description>
+      </item>
+      <item>
+        <title>
+          Pit signs for robotics competition
+        </title>
+
+        <link>
+          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
+        </link>
+
+        <pubDate>
+          Mon, 01 Jan 0001 00:00:00 +0000
+        </pubDate>
+          <author>
+            contact@wonyoungjang.org
+            
+              (Wonyoung Jang)
+            
+          </author>
+        
+
+        <guid>
+          http://192.168.40.181:1313/pit-signs-for-robotics-competition/
+        </guid>
+
+        <description>
+          &#xD;Pit signs&#xD;link&#xD;h2&#xD;At one of my past employers, we ran large robotics competitions. For one such competition, we customized and printed these &amp;ldquo;pit signs&amp;rdquo; for each team participating in the competition. The teams could then take them home at the end.&#xA;I&amp;rsquo;ve templated these signs so anybody may create similar ones.&#xA;Figma Design Kit&#xD;
+        </description>
+      </item>
+  </channel>
+</rss>
