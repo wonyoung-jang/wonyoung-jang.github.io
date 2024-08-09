@@ -1,87 +1,14 @@
 baseURL: https://wonyoungjang.org/
-title: Wonyoung Jang
-theme: github.com/wonyoung-jang/hugo-PolyRhythmic
-minify: 
-  minifyOutput: true
-
-languageCode: en-US
-
 copyright: <!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->
-
-enableRobotsTXT: true
 enableGitInfo: true
+enableRobotsTXT: true
+languageCode: en-US
+theme: github.com/wonyoung-jang/hugo-PolyRhythmic
+title: Wonyoung Jang
 
-# Markup
-markup:
-  highlight:
-    anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    lineNos: true
-    tabWidth: 4
-    style: github-dark
-
-  tableOfContents:
-    ordered: false
-    startLevel: 1
-    endLevel: 6
-    
-  goldmark:
-    parser:
-      wrapStandAloneImageWithinParagraph: false
-
-# Outputs
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-  taxonomy:
-    - HTML
-    - RSS
-  term:
-    - HTML
-    - RSS
-
-# Related
-related:
-  threshold: 10
-  includeNewer: true
-
-  indices:
-    - name: title
-      weight: 40
-      type: basic
-    - name: type
-      weight: 30
-      type: basic
-    - name: description
-      weight: 20
-      type: basic
-    - name: date
-      weight: 10
-      type: basic
-      pattern: "2006"
-
-# Services
-services:
-  googleAnalytics: 
-    ID: G-RTMKJG4NFZ
-
-# Sitemap
-sitemap:
-  filename: sitemap.xml
-  priority: 0.5
-  changefreq: daily
-
-# Taxonomies
-taxonomies:
-  project: projects
-  resource: resources
-
-####################
-# All root configs #
-####################
+################
+# KEY SETTINGS #
+################
 
 # build:
 # caches:
@@ -94,13 +21,13 @@ taxonomies:
 #   en:
 #     menus:
 #     params:
-# markup:
+# markup: → markup.yaml
 # mediatypes:
 # menus: → menus.yaml
-# minify:
+# minify: → minify.yaml
 # module:
 # outputformats:
-# outputs:
+# outputs: → outputs.yaml
 # params: → params.yaml
 # permalinks:
 # privacy:
@@ -108,6 +35,6 @@ taxonomies:
 # security:
 # segments:
 # server:
-# services:
-# sitemap:
-# taxonomies:
+# services: → services.yaml
+# sitemap: → sitemap.yaml
+# taxonomies: → taxonomies.yaml
