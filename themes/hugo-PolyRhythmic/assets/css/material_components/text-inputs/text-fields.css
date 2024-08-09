@@ -193,10 +193,9 @@
       
       + label {
         top: calc(-1 * var(--size-2));
-        color: var(--color-primary);
         margin-inline: var(--size-2);
         padding-inline: var(--size-1);
-        background-color: var(--color-surface-container-lowest);
+        background-color: inherit;
         color: var(--color-primary);
       }
     }

@@ -1,138 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>
-      
-        
-          References on 
-        
-        Wonyoung Jang
-      
-    </title>
-    
-    <link>
-      http://192.168.40.181:1313/resources/references/
-    </link>
-
-    <description>
-      Recent content in References on Wonyoung Jang
-    </description>
-    
-    <generator>
-      <meta name="generator" content="Hugo 0.131.0">
-    </generator>
-   
-    <language>
-      en-US
-    </language>
-    
-    
-      <managingEditor>
-        contact@wonyoungjang.org (Wonyoung Jang)
-      </managingEditor>
-    
-    
-    
-      <webMaster>
-        contact@wonyoungjang.org (Wonyoung Jang)
-      </webMaster>
-    
-    
-    
-      <copyright>
-        &lt;!--Creative Commons License--&gt;This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--&gt;
-      </copyright>
-    
-
-    
-      <lastBuildDate>
-        Sat, 03 Aug 2024 13:23:25 -0400
-      </lastBuildDate>
-    
-      <atom:link href="http://192.168.40.181:1313/resources/references/index.xml" rel="self" type="application/rss+xml" />
-      <item>
-        <title>
-          All Logseq elements
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/all-logseq-elements/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/all-logseq-elements/
-        </guid>
-
-        <description>
-          Heading 1&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Nested headings&#xD;link&#xD;h1&#xD;Heading 2&#xD;link&#xD;h2&#xD;Heading 3&#xD;link&#xD;h3&#xD;Heading 4&#xD;link&#xD;h4&#xD;Heading 5&#xD;link&#xD;h5&#xD;Heading 6&#xD;link&#xD;h6&#xD;Text styling&#xD;link&#xD;h2&#xD;Single formatting&#xD;link&#xD;h3&#xD;Bold&#xA;Italic&#xA;Highlight&#xD;Double formatting&#xD;link&#xD;h3&#xD;Bold + italic&#xA;Bold + highlight&#xD;Italic + bold
-        </description>
-      </item>
-      <item>
-        <title>
-          List of admonitions for wonyoungjang.org
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
-        </link>
-
-        <pubDate>
-          Mon, 01 Jan 0001 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/list-of-admonitions-for-wonyoungjang.org/
-        </guid>
-
-        <description>
-          What an admonition is&#xD;link&#xD;h2&#xD;An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:&#xA;A distinctive visual style (e.g., colored background, border, or icon)&#xA;A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)&#xA;Content that needs emphasis or special consideration&#xA;Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.
-        </description>
-      </item>
-      <item>
-        <title>
-          List of keyboard shortcuts for wonyoungjang.org
-        </title>
-
-        <link>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
-        </link>
-
-        <pubDate>
-          Fri, 29 Mar 2024 00:00:00 +0000
-        </pubDate>
-          <author>
-            contact@wonyoungjang.org
-            
-              (Wonyoung Jang)
-            
-          </author>
-        
-
-        <guid>
-          http://192.168.40.181:1313/list-of-keyboard-shortcuts-for-wonyoungjang.org/
-        </guid>
-
-        <description>
-          Windows&#xD;link&#xD;h2&#xD;Firefox&#xD;link&#xD;h3&#xD;Appearance&#xD;link&#xD;h4&#xD;ALT + SHIFT + t → Toggle light/dark themes Navigation&#xD;link&#xD;h4&#xD;ALT + SHIFT + g → Go back to top&#xA;ALT + SHIFT + h → Go to home page&#xA;ALT + SHIFT + r → Go to random page&#xA;ALT + SHIFT + p → Go to previous page&#xA;ALT + SHIFT + n → Go to next page
-        </description>
-      </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on
+Wonyoung Jang</title><link>
+https://wonyoungjang.org/resources/references/</link><description>
+Recent content in References on Wonyoung Jang</description><generator><meta name="generator" content="Hugo 0.131.0"/><language>
+en-US</language><managingEditor>
+contact@wonyoungjang.org (Wonyoung Jang)</managingEditor><webMaster>
+contact@wonyoungjang.org (Wonyoung Jang)</webMaster><copyright>
+&lt;!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).&lt;!--/Creative Commons License--></copyright><lastBuildDate>
+Sat, 03 Aug 2024 13:23:25 -0400</lastBuildDate><atom:link href="https://wonyoungjang.org/resources/references/index.xml" rel="self" type="application/rss+xml"/><item><title>
+All Logseq elements</title><link>
+https://wonyoungjang.org/all-logseq-elements/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/all-logseq-elements/</guid><description>
+Heading 1linkh1Heading 2linkh2Heading 3linkh3Heading 4linkh4Heading 5linkh5Heading 6linkh6Nested headingslinkh1Heading 2linkh2Heading 3linkh3Heading 4linkh4Heading 5linkh5Heading 6linkh6Text stylinglinkh2Single formattinglinkh3Bold
+Italic
+HighlightDouble formattinglinkh3Bold + italic
+Bold + highlightItalic + bold</description></item><item><title>
+List of admonitions for wonyoungjang.org</title><link>
+https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/</link><pubDate>
+Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/list-of-admonitions-for-wonyoungjang.org/</guid><description>
+What an admonition islinkh2An admonition is a special callout or highlighted section on a webpage used to draw attention to important information. It typically contains:
+A distinctive visual style (e.g., colored background, border, or icon)
+A label indicating the type of information (e.g., &amp;ldquo;Note&amp;rdquo;, &amp;ldquo;Warning&amp;rdquo;, &amp;ldquo;Tip&amp;rdquo;)
+Content that needs emphasis or special consideration
+Admonitions are commonly used in documentation, tutorials, and informational websites to highlight key points, cautions, or additional details.</description></item><item><title>
+List of keyboard shortcuts for wonyoungjang.org</title><link>
+https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/</link><pubDate>
+Fri, 29 Mar 2024 00:00:00 +0000</pubDate><author>
+contact@wonyoungjang.org
+(Wonyoung Jang)</author><guid>
+https://wonyoungjang.org/list-of-keyboard-shortcuts-for-wonyoungjang.org/</guid><description>
+Windowslinkh2Firefoxlinkh3Appearancelinkh4ALT + SHIFT + t → Toggle light/dark themes Navigationlinkh4ALT + SHIFT + g → Go back to top
+ALT + SHIFT + h → Go to home page
+ALT + SHIFT + r → Go to random page
+ALT + SHIFT + p → Go to previous page
+ALT + SHIFT + n → Go to next page</description></item></channel></rss>
